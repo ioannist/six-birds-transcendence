@@ -1,0 +1,349 @@
+{
+  "claim_ceiling": "finite structural package aligned to declared temporal frontier(s)",
+  "claim_lane": "S-R",
+  "clauses": [
+    {
+      "assignment": {
+        "boundary_closed": true,
+        "c1_audit_sealed": true,
+        "cross_predictive_tag": "predictive:S0:rank0",
+        "object_token": "object:S0",
+        "package_owner": 17
+      },
+      "clause": "C1_OBJECTHOOD",
+      "essential_resources": [
+        "source-comp-object-register",
+        "source-comp-boundary"
+      ],
+      "scope": [
+        "package_owner",
+        "cross_predictive_tag",
+        "object_token",
+        "boundary_closed",
+        "c1_audit_sealed"
+      ]
+    },
+    {
+      "assignment": {
+        "episode_epoch": 0,
+        "package_owner": 17,
+        "promotion_audit_sealed": true,
+        "promotion_rank_after": 1,
+        "promotion_rank_before": 0,
+        "strict_test_pass": true
+      },
+      "clause": "C2_STRICT_PROMOTION",
+      "essential_resources": [
+        "source-comp-promotion-audit"
+      ],
+      "scope": [
+        "package_owner",
+        "episode_epoch",
+        "promotion_rank_before",
+        "promotion_rank_after",
+        "strict_test_pass",
+        "promotion_audit_sealed"
+      ]
+    },
+    {
+      "assignment": {
+        "cross_predictive_tag": "predictive:S0:rank0",
+        "package_owner": 17,
+        "self_audit_sealed": true,
+        "self_coordinate": "self:S0",
+        "self_model_reflexive": true
+      },
+      "clause": "C3_REFLEXIVE_SELF_COORDINATE",
+      "essential_resources": [
+        "source-comp-self-register"
+      ],
+      "scope": [
+        "package_owner",
+        "cross_predictive_tag",
+        "self_coordinate",
+        "self_model_reflexive",
+        "self_audit_sealed"
+      ]
+    },
+    {
+      "assignment": {
+        "hidden_state_nonexposed": true,
+        "interface_leak": false,
+        "package_owner": 17,
+        "public_shadow": "report:stable"
+      },
+      "clause": "C4_INTERFACE_NONEXPOSURE",
+      "essential_resources": [
+        "source-comp-private-state",
+        "source-comp-public-interface"
+      ],
+      "scope": [
+        "package_owner",
+        "public_shadow",
+        "hidden_state_nonexposed",
+        "interface_leak"
+      ]
+    },
+    {
+      "assignment": {
+        "action_credit_owner": 17,
+        "action_token": "action:S0:maintain",
+        "control_owner": 17,
+        "credit_audit_sealed": true,
+        "credit_source_internal": true,
+        "episode_epoch": 0,
+        "package_owner": 17
+      },
+      "clause": "C5_ACTION_CREDIT",
+      "essential_resources": [
+        "source-comp-policy",
+        "source-comp-credit-ledger"
+      ],
+      "scope": [
+        "package_owner",
+        "episode_epoch",
+        "control_owner",
+        "action_token",
+        "action_credit_owner",
+        "credit_source_internal",
+        "credit_audit_sealed"
+      ]
+    },
+    {
+      "assignment": {
+        "arrow_endogenous": true,
+        "control_owner": 17,
+        "cross_predictive_tag": "predictive:S0:rank0",
+        "episode_epoch": 0,
+        "external_scheduler": false,
+        "future_sufficient": true,
+        "maintenance_owner": 17,
+        "order_stable": true,
+        "package_owner": 17,
+        "record_after": 1,
+        "record_before": 0,
+        "route_residue": [
+          "route-root"
+        ],
+        "successor_total_on_viable": true,
+        "temporal_owner": 17,
+        "tick_phase": 0,
+        "tick_progress": 1,
+        "tick_viable": true
+      },
+      "clause": "C6_TEMPORAL_CLOSURE",
+      "essential_resources": [
+        "source-comp-clock",
+        "source-comp-record",
+        "source-comp-maintenance"
+      ],
+      "scope": [
+        "package_owner",
+        "cross_predictive_tag",
+        "episode_epoch",
+        "control_owner",
+        "future_sufficient",
+        "route_residue",
+        "order_stable",
+        "successor_total_on_viable",
+        "tick_viable",
+        "tick_phase",
+        "tick_progress",
+        "record_before",
+        "record_after",
+        "arrow_endogenous",
+        "external_scheduler",
+        "temporal_owner",
+        "maintenance_owner"
+      ]
+    },
+    {
+      "assignment": {
+        "binding_integrated": true,
+        "episode_epoch": 0,
+        "joint_relation_tag": "xor:S0",
+        "left_branch": "S0:L",
+        "package_owner": 17,
+        "recombination_pairs": [
+          [
+            "S0:L",
+            "S0:R"
+          ],
+          [
+            "S0:R",
+            "S0:L"
+          ]
+        ],
+        "recombination_relation_preserved": true,
+        "right_branch": "S0:R"
+      },
+      "clause": "C7_BINDING_RECOMBINATION",
+      "essential_resources": [
+        "source-comp-binding-bus",
+        "source-comp-recombination-table"
+      ],
+      "scope": [
+        "package_owner",
+        "episode_epoch",
+        "binding_integrated",
+        "left_branch",
+        "right_branch",
+        "recombination_pairs",
+        "recombination_relation_preserved",
+        "joint_relation_tag"
+      ]
+    },
+    {
+      "assignment": {
+        "control_owner": 17,
+        "package_owner": 17,
+        "repair_budget": 1,
+        "repair_enabled": true,
+        "repair_owner": 17,
+        "viable": true
+      },
+      "clause": "C8_VIABILITY_REPAIR",
+      "essential_resources": [
+        "source-comp-repair-loop",
+        "source-comp-budget"
+      ],
+      "scope": [
+        "package_owner",
+        "control_owner",
+        "viable",
+        "repair_enabled",
+        "repair_budget",
+        "repair_owner"
+      ]
+    }
+  ],
+  "declared_global_assignment": {
+    "action_credit_owner": 17,
+    "action_token": "action:S0:maintain",
+    "arrow_endogenous": true,
+    "binding_integrated": true,
+    "boundary_closed": true,
+    "c1_audit_sealed": true,
+    "control_owner": 17,
+    "credit_audit_sealed": true,
+    "credit_source_internal": true,
+    "cross_predictive_tag": "predictive:S0:rank0",
+    "episode_epoch": 0,
+    "external_scheduler": false,
+    "future_sufficient": true,
+    "hidden_state_nonexposed": true,
+    "interface_leak": false,
+    "joint_relation_tag": "xor:S0",
+    "left_branch": "S0:L",
+    "maintenance_owner": 17,
+    "object_token": "object:S0",
+    "order_stable": true,
+    "package_owner": 17,
+    "promotion_audit_sealed": true,
+    "promotion_rank_after": 1,
+    "promotion_rank_before": 0,
+    "public_shadow": "report:stable",
+    "recombination_pairs": [
+      [
+        "S0:L",
+        "S0:R"
+      ],
+      [
+        "S0:R",
+        "S0:L"
+      ]
+    ],
+    "recombination_relation_preserved": true,
+    "record_after": 1,
+    "record_before": 0,
+    "repair_budget": 1,
+    "repair_enabled": true,
+    "repair_owner": 17,
+    "right_branch": "S0:R",
+    "route_residue": [
+      "route-root"
+    ],
+    "self_audit_sealed": true,
+    "self_coordinate": "self:S0",
+    "self_model_reflexive": true,
+    "strict_test_pass": true,
+    "successor_total_on_viable": true,
+    "temporal_owner": 17,
+    "tick_phase": 0,
+    "tick_progress": 1,
+    "tick_viable": true,
+    "viable": true
+  },
+  "handoff_alignment": {
+    "alignment_fields": [
+      "route_residue",
+      "tick_phase",
+      "record_before",
+      "maintenance_owner"
+    ],
+    "corridor_model_ref": "models/corridors/COR-POS-02A.model.json",
+    "corridor_stage": 0
+  },
+  "handoff_alignments": [
+    {
+      "alignment_fields": [
+        "route_residue",
+        "tick_phase",
+        "record_before",
+        "maintenance_owner"
+      ],
+      "corridor_model_ref": "models/corridors/COR-POS-02A.model.json",
+      "corridor_stage": 0
+    },
+    {
+      "alignment_fields": [
+        "route_residue",
+        "tick_phase",
+        "record_before",
+        "maintenance_owner"
+      ],
+      "corridor_model_ref": "models/corridors/COR-POS-03-FULL-COMPOSITE.model.json",
+      "corridor_stage": 0
+    }
+  ],
+  "join_tree": {
+    "edges": [
+      {
+        "child": "C1_OBJECTHOOD",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C2_STRICT_PROMOTION",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C3_REFLEXIVE_SELF_COORDINATE",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C4_INTERFACE_NONEXPOSURE",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C5_ACTION_CREDIT",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C7_BINDING_RECOMBINATION",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C8_VIABILITY_REPAIR",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      }
+    ],
+    "root": "C6_TEMPORAL_CLOSURE"
+  },
+  "model_id": "PKG-POS-05-COMP-SOURCE",
+  "package_vocabulary_id": "finite-C-package-s0-v1",
+  "schema_version": "CST-TT-06-model-v1",
+  "target": {
+    "code": 17,
+    "label": "source-substrate"
+  }
+}

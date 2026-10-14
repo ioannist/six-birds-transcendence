@@ -1,0 +1,16 @@
+{
+  "builder": "scripts/build_tt05_assets.py",
+  "canonical_seed": 0,
+  "finite_disturbance_words_checked": 127,
+  "invariant_search_candidates": 4096,
+  "next_phase": "CST-TT-06",
+  "phase": "CST-TT-05",
+  "project": "CST-TT",
+  "python_hash_seed": 0,
+  "randomized_search_enabled": false,
+  "rebuild_verifier": "scripts/verify_tt05_rebuild.py",
+  "schema_version": "1.0",
+  "status": "deterministic-withdrawal-autonomy-and-temporal-fiach-frozen",
+  "usage_boundary": "Python checks exact finite certificate semantics and emits witnesses; it is not represented as a Lean proof oracle.",
+  "validator": "scripts/validate_tt05.py"
+}

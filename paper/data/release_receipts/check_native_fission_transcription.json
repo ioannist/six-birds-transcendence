@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_native_fission_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_native_fission_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_native_fission_transcription.log",
+  "log_sha256": "5cd52e3b3b439c3ae873fc618bd806fe9cb5029f259a813727e558e2372b9628",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:38+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted right target drift\nCAUGHT planted branch order drift\nCAUGHT planted branch coordinate drift\nCAUGHT planted recognition drift\nPASS all16 raw branch episodes, owner expressions, full past, corridor/support/event/update coordinates; full certificates and actual-readout control kernel probes; seven planted drifts"
+}

@@ -1,0 +1,66 @@
+{
+  "grade": "actual supported acquisition continuation, not full Temporal-FIACH",
+  "raw_cell": "Bool",
+  "register": "Unit->Nat",
+  "D_A_O_H_Route": "Unit",
+  "Stage": "Fin3",
+  "Id": "Bool",
+  "first_initial": 0,
+  "second_initial": 2,
+  "history_each": [
+    [
+      "unit",
+      "unit",
+      "unit"
+    ]
+  ],
+  "updater": "register+1",
+  "row_each": [
+    [
+      "unit",
+      1
+    ]
+  ],
+  "receiver": "identity",
+  "boundary": "identity actual first post-exit entry",
+  "controls": {
+    "second_zero_weight": 0,
+    "wrong_second_initial": 0,
+    "consumed_missing": "true"
+  },
+  "raw_views": "existing RawCorridorSequenceModels canonical; independent seed0 is not runtime seed coherence",
+  "stage_binding": {
+    "primitive_contexts": "existing identity then append-prior-path raw stages",
+    "selector": {
+      "false": "middle.inl.false",
+      "true": "final.inr.true"
+    },
+    "first": "firstRaw with whole raw cell reindexing",
+    "second": "secondRaw with whole raw cell reindexing",
+    "boundary": "raw identity instruction reindexed",
+    "control": "delete consumed final.inr.true cell"
+  },
+  "normalized_branch_control": {
+    "outcome": "Bool",
+    "history": [
+      true
+    ],
+    "row": [
+      [
+        false,
+        1
+      ],
+      [
+        true,
+        0
+      ]
+    ],
+    "initial": 0,
+    "updater": "register+1 independent of outcome",
+    "receive": "identity",
+    "routes_events_funding": "existing canonical Bool raw views",
+    "alternative_supported_history": [
+      false
+    ]
+  }
+}

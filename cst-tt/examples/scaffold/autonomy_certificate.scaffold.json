@@ -1,0 +1,33 @@
+{
+  "anti_stall_status": "not-evaluated",
+  "bridge_removed": false,
+  "budget_solvency_status": "not-evaluated",
+  "disturbance_ids": [
+    "disturbance-placeholder"
+  ],
+  "endpoint_state_id": "target-state-placeholder",
+  "external_decoder_removed": false,
+  "external_scheduler_removed": false,
+  "invariant_state_ids": [
+    "target-state-placeholder"
+  ],
+  "maintenance_ownership_status": "not-evaluated",
+  "migration_controller_removed": false,
+  "package_inside_status": "not-evaluated",
+  "removed_resources": [
+    "source-placeholder",
+    "bridge-placeholder",
+    "scheduler-placeholder"
+  ],
+  "response_table_ref": "response-table-placeholder",
+  "retained_resources": [
+    "target-core-placeholder"
+  ],
+  "schema_version": "CST-TT-00",
+  "source_removed": false,
+  "target": {
+    "code": 1,
+    "label": "target-carrier"
+  },
+  "undeclared_repair_removed": false
+}

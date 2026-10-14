@@ -1,0 +1,19 @@
+{
+  "$id": "https://six-birds.example/cst-tt/full_handoff_composition_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "audit": {},
+    "certificate_id": {},
+    "component_refs": {},
+    "component_sha256": {}
+  },
+  "required": [
+    "certificate_id",
+    "component_refs",
+    "component_sha256",
+    "audit"
+  ],
+  "title": "Full Handoff Composition Certificate",
+  "type": "object"
+}

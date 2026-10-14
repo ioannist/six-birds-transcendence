@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-birds.local/cst-tt/schemas/post_withdrawal_autonomy_certificate.schema.json",
+  "title": "CST-TT-05 exact post-withdrawal autonomy certificate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "certificate_id",
+    "model_ref",
+    "model_sha256",
+    "result_status",
+    "claim_lanes",
+    "claim_ceiling",
+    "computed_invariant_state_ids",
+    "response_policy",
+    "finite_horizon",
+    "finite_words_checked",
+    "collapse_trace",
+    "theorem_evidence",
+    "audit",
+    "checker"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "CST-TT-05"
+    },
+    "certificate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "result_status": {
+      "enum": [
+        "scaffold-only",
+        "checked-finite-post-withdrawal-autonomy"
+      ]
+    },
+    "claim_lanes": {
+      "const": [
+        "A"
+      ]
+    },
+    "claim_ceiling": {
+      "const": "model-relative target autonomy for every disturbance word up to the declared finite horizon"
+    },
+    "computed_invariant_state_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "response_policy": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object"
+      }
+    },
+    "finite_horizon": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "finite_words_checked": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "collapse_trace": {
+      "const": []
+    },
+    "theorem_evidence": {
+      "type": "object"
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "withdrawal_complete",
+        "endpoint_inside",
+        "package_inside",
+        "target_owned_responses",
+        "anti_stall_on_invariant",
+        "budget_solvent_on_invariant",
+        "finite_horizon_survives",
+        "autonomy_valid",
+        "failed_obligations"
+      ],
+      "properties": {
+        "autonomy_valid": {
+          "const": true
+        }
+      }
+    },
+    "checker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "module",
+        "function",
+        "python_version",
+        "checked_at_phase"
+      ],
+      "properties": {
+        "module": {
+          "const": "cst_tt.withdrawal_autonomy_checker"
+        },
+        "function": {
+          "const": "audit_autonomy"
+        },
+        "python_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checked_at_phase": {
+          "const": "CST-TT-05"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1357 @@
+schema_version: '1.1'
+project: CST-EXP
+phase: CST-EXP-00
+rule: Every candidate must answer all 100 questions before ranking. The first 12 are the exact phase-plan core. Blank omission
+  is never allowed.
+core_question_ids:
+- Q-CORE-001
+- Q-CORE-002
+- Q-CORE-003
+- Q-CORE-004
+- Q-CORE-005
+- Q-CORE-006
+- Q-CORE-007
+- Q-CORE-008
+- Q-CORE-009
+- Q-CORE-010
+- Q-CORE-011
+- Q-CORE-012
+allowed_answer_statuses:
+- answered
+- underdetermined_with_reason
+- not_applicable_with_reason
+- blocked_with_reason
+answer_record_must_include:
+- candidate_id
+- question_id
+- status
+- response
+- claim_tags
+- assumptions
+- source_or_new_status
+- nonclaims
+questions:
+- id: Q-CORE-001
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: What exactly is transported?
+  answer_contract: Provide object_kind, source_type, target_type, carrier_of_object; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-027
+  relevant_tags:
+  - CST:S-T
+  minimum_support: A candidate without a transported object is only a slogan.
+- id: Q-CORE-002
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: On what mathematical carrier does that object live?
+  answer_contract: Provide carrier_spec, state_or_history_space, support_scope; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-001
+  - AC-002
+  - AC-003
+  - AC-019
+  relevant_tags:
+  - CST:S-T
+  minimum_support: Prevents untyped cross-carrier equality.
+- id: Q-CORE-003
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: What constitutes a bridge between distinct carriers?
+  answer_contract: Provide bridge_signature, domain, codomain, admissibility; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-021
+  - AC-024
+  - AC-041
+  - AC-042
+  relevant_tags:
+  - CST:S-T
+  minimum_support: A bridge must be data, not a success label.
+- id: Q-CORE-004
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: Is the bridge a function, relation, span, simulation, common refinement, or process?
+  answer_contract: Provide bridge_kind, why_this_kind, composition_rule; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-018
+  - AC-042
+  relevant_tags:
+  - CST:S-T
+  minimum_support: Different bridge kinds support different claims.
+- id: Q-CORE-005
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: What must be preserved exactly, and what may vary?
+  answer_contract: Provide hard_invariants, soft_invariants, permitted_variation, equivalence_relation; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-006
+  - AC-007
+  - AC-008
+  - AC-009
+  - AC-010
+  - AC-027
+  - AC-045
+  - AC-052
+  relevant_tags:
+  - CST:S-T
+  - CST:S-R
+  minimum_support: Separates success conditions from incidental similarity.
+- id: Q-CORE-006
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: Does order or path matter?
+  answer_contract: Provide route_set, path_dependence_status, holonomy_or_confluence_test; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-005
+  - AC-021
+  - AC-022
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: A successful route need not be route independent.
+- id: Q-CORE-007
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: What happens under copying, fission, fusion, and deletion?
+  answer_contract: Provide duplicate_verdict, fission_verdict, fusion_verdict, deletion_verdict; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-013
+  - AC-014
+  - AC-015
+  - AC-016
+  - AC-017
+  - AC-030
+  - AC-031
+  - AC-032
+  - AC-040
+  - AC-059
+  relevant_tags:
+  - CST:S-L
+  minimum_support: Forces relation-valued and null outcomes into view.
+- id: Q-CORE-008
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: What happens when the bridge is removed?
+  answer_contract: Provide removal_intervention, maintenance_horizon, failure_mode; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-024
+  - AC-025
+  - AC-029
+  - AC-044
+  - AC-058
+  relevant_tags:
+  - CST:A
+  minimum_support: Separates bridge-supported shadow from autonomy.
+- id: Q-CORE-009
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: Can the criterion be checked without direct access to hidden state?
+  answer_contract: Provide observability, indirect_tests, identifiability_limit; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-006
+  - AC-028
+  - AC-035
+  - AC-036
+  - AC-037
+  - AC-046
+  - AC-055
+  relevant_tags:
+  - CST:R
+  minimum_support: Connects structure to possible recognition without conflating them.
+- id: Q-CORE-010
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: Is the criterion compositional across multiple substrate changes?
+  answer_contract: Provide composition_domain, associativity, defect_law, global_coherence; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-021
+  - AC-022
+  - AC-023
+  - AC-030
+  - AC-049
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: Multi-stage migration can fail even if each leg looks valid.
+- id: Q-CORE-011
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: What is the approximate or noisy version?
+  answer_contract: Provide metric, defect, threshold, horizon, stability_margin; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-028
+  - AC-029
+  - AC-049
+  - AC-050
+  - AC-051
+  - AC-052
+  relevant_tags:
+  - CST:S-T
+  - CST:S-R
+  - CST:A
+  minimum_support: Exact toy criteria may be brittle or nonphysical.
+- id: Q-CORE-012
+  category: core_plan_questions
+  mandatory: true
+  core: true
+  question: Which conclusion, if any, requires A1, A2, or certificate soundness?
+  answer_contract: Provide assumption_ladder, structural_free_column, purchased_conclusions; an explicit underdetermination/not-applicable/blocked
+    rationale is allowed.
+  failure_if_omitted: candidate fails the phase-plan core question gate
+  related_guards:
+  - AC-010
+  - AC-011
+  - AC-012
+  - AC-019
+  - AC-020
+  - AC-033
+  - AC-034
+  - AC-038
+  - AC-047
+  - AC-048
+  relevant_tags:
+  - CST:O
+  minimum_support: Prevents ontological premises from hiding in notation.
+- id: Q-FRM-001
+  category: framing
+  mandatory: true
+  question: What is the candidate’s one-sentence claim with every motivating metaphor removed?
+  answer_contract: State a typed proposition or candidate proposition.
+  failure_if_omitted: candidate is not evaluable
+  related_guards: []
+  relevant_tags:
+  - CST:S-T
+  - CST:S-R
+  - CST:S-L
+  - CST:A
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-FRM-002
+  category: framing
+  mandatory: true
+  question: 'Which project question is primary: transport, target realization, lineage, autonomy, recognition, or ontology?'
+  answer_contract: Name one primary tag and any separately stated implications.
+  failure_if_omitted: claim lanes may be conflated
+  related_guards: []
+  relevant_tags:
+  - CST:S-T
+  - CST:S-R
+  - CST:S-L
+  - CST:A
+  - CST:R
+  - CST:O
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-FRM-003
+  category: framing
+  mandatory: true
+  question: What would count as a negative, underdetermined, or no-go outcome for this candidate?
+  answer_contract: Give at least one non-positive admissible verdict.
+  failure_if_omitted: candidate is advocacy rather than exploration
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-FRM-004
+  category: framing
+  mandatory: true
+  question: Which terms in the candidate are genuinely new rather than extracted from SBT?
+  answer_contract: List new primitives and why they are needed.
+  failure_if_omitted: source provenance is ambiguous
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-TYP-001
+  category: typing
+  mandatory: true
+  question: What exactly is proposed to be transported?
+  answer_contract: Name the object, its fields, and whether it is state-, history-, process-, quotient-, relation-, certificate-,
+    or package-valued.
+  failure_if_omitted: S-T claim is undefined
+  related_guards: []
+  relevant_tags:
+  - CST:S-T
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-TYP-002
+  category: typing
+  mandatory: true
+  question: On what mathematical carrier does the transported object live at source and target?
+  answer_contract: Give source and target types and any realization/encoding maps.
+  failure_if_omitted: cross-carrier scope is not typed
+  related_guards:
+  - AC-001
+  - AC-002
+  relevant_tags:
+  - CST:S-T
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-TYP-003
+  category: typing
+  mandatory: true
+  question: How are source and target carrier tokens individuated?
+  answer_contract: 'State the DistinctCarrier predicate and level: token, formal state space, dynamics, support, or medium
+    kind.'
+  failure_if_omitted: distinctness may be nominal only
+  related_guards:
+  - AC-001
+  - AC-002
+  - AC-003
+  relevant_tags:
+  - CST:S-T
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-TYP-004
+  category: typing
+  mandatory: true
+  question: Is the claim fixed-support, distinct-token/same-medium, or genuinely cross-medium?
+  answer_contract: Choose one scope and justify it independently of the result.
+  failure_if_omitted: scope inflation risk
+  related_guards:
+  - AC-001
+  - AC-002
+  relevant_tags:
+  - CST:S-T
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-TYP-005
+  category: typing
+  mandatory: true
+  question: What is the source package’s exact status?
+  answer_contract: Choose candidate-only, stipulated full package, simplified-certified, component-only, or another named
+    status.
+  failure_if_omitted: an integrated source subject may be smuggled
+  related_guards:
+  - AC-008
+  - AC-009
+  relevant_tags:
+  - CST:S-R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-TYP-006
+  category: typing
+  mandatory: true
+  question: What is the target package’s exact status or goal?
+  answer_contract: Name the structural specification and whether satisfaction is assumed, tested, or concluded.
+  failure_if_omitted: S-R claim is ambiguous
+  related_guards:
+  - AC-009
+  - AC-010
+  relevant_tags:
+  - CST:S-R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-TYP-007
+  category: typing
+  mandatory: true
+  question: What support carries each package during every stage?
+  answer_contract: Specify support sets/resources, overlap, and whether support changes.
+  failure_if_omitted: carrier/support may be conflated
+  related_guards:
+  - AC-043
+  relevant_tags:
+  - CST:S-T
+  - CST:S-R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-TYP-008
+  category: typing
+  mandatory: true
+  question: Which clocks or order structures index source, bridge, and target histories?
+  answer_contract: Give synchronization or translation rules and declare gaps.
+  failure_if_omitted: temporal continuation is undefined
+  related_guards:
+  - AC-004
+  - AC-045
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-BRG-001
+  category: bridge
+  mandatory: true
+  question: What constitutes a bridge between the distinct carriers?
+  answer_contract: Give the bridge data, source, target, domain, codomain, and admissibility conditions.
+  failure_if_omitted: no cross-carrier object exists
+  related_guards:
+  - AC-001
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-BRG-002
+  category: bridge
+  mandatory: true
+  question: Is the bridge a function, partial map, relation, span, simulation, bisimulation, common refinement, overlap process,
+    recovery channel, or another type?
+  answer_contract: Choose and define the form; do not use “bridge” generically.
+  failure_if_omitted: bridge properties cannot be inferred
+  related_guards: []
+  relevant_tags:
+  - CST:S-T
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-BRG-003
+  category: bridge
+  mandatory: true
+  question: Does the bridge act on states, histories, transition laws, interfaces, package records, or several levels?
+  answer_contract: List every level and compatibility square.
+  failure_if_omitted: translation may be mistaken for migration
+  related_guards:
+  - AC-041
+  relevant_tags:
+  - CST:S-T
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-BRG-004
+  category: bridge
+  mandatory: true
+  question: What makes the bridge admissible rather than merely definable?
+  answer_contract: List gates for dynamics, support, interface, resources, provenance, and controls.
+  failure_if_omitted: bridge may be smuggled
+  related_guards: []
+  relevant_tags:
+  - CST:S-T
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-BRG-005
+  category: bridge
+  mandatory: true
+  question: What causal or process-level dependence connects source and target, if any?
+  answer_contract: State whether the bridge is causal, purely comparative, or a common abstraction.
+  failure_if_omitted: comparison may be mistaken for lineage
+  related_guards:
+  - AC-017
+  - AC-042
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-BRG-006
+  category: bridge
+  mandatory: true
+  question: What information, energy/resource, decoder, or external protocol does the bridge consume?
+  answer_contract: Provide a dependency ledger.
+  failure_if_omitted: autonomy cannot later be tested
+  related_guards:
+  - AC-024
+  relevant_tags:
+  - CST:S-T
+  - CST:A
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-BRG-007
+  category: bridge
+  mandatory: true
+  question: Is there a reverse bridge, and what object does reversal recover?
+  answer_contract: Specify exact/approximate reverse and nonclaims.
+  failure_if_omitted: reversibility may be overread
+  related_guards:
+  - AC-026
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-BRG-008
+  category: bridge
+  mandatory: true
+  question: Can bridge stages be composed, and are identity bridges defined?
+  answer_contract: Give a typed composition law or mark it open.
+  failure_if_omitted: multi-stage claims are undefined
+  related_guards:
+  - AC-021
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-PRS-001
+  category: preservation
+  mandatory: true
+  question: What must be preserved exactly?
+  answer_contract: Enumerate each object/invariant and exact comparison relation.
+  failure_if_omitted: exactness is unscoped
+  related_guards:
+  - AC-027
+  relevant_tags:
+  - CST:S-T
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-PRS-002
+  category: preservation
+  mandatory: true
+  question: What is allowed to change without defeating the candidate?
+  answer_contract: List gauge, representation, support, timing, or implementation degrees of freedom.
+  failure_if_omitted: candidate may be unfalsifiable
+  related_guards: []
+  relevant_tags:
+  - CST:S-T
+  - CST:S-R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-PRS-003
+  category: preservation
+  mandatory: true
+  question: Does the candidate preserve current/public equivalence, predictive equivalence, or both?
+  answer_contract: State quotients/test families and comparison maps.
+  failure_if_omitted: public match may be overread
+  related_guards:
+  - AC-006
+  - AC-060
+  relevant_tags:
+  - CST:S-T
+  - CST:R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-PRS-004
+  category: preservation
+  mandatory: true
+  question: Which C1–C8 clauses are claimed preserved, re-established, weakened, or irrelevant?
+  answer_contract: Return a clause-by-clause status with evidence.
+  failure_if_omitted: predictive or component match may become full-package claim
+  related_guards:
+  - AC-007
+  - AC-027
+  relevant_tags:
+  - CST:S-R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-PRS-005
+  category: preservation
+  mandatory: true
+  question: Are cross-clause coherence and promotion gates preserved?
+  answer_contract: List coherence witnesses and global gate results.
+  failure_if_omitted: component witnesses may be integrated silently
+  related_guards:
+  - AC-008
+  - AC-023
+  relevant_tags:
+  - CST:S-T
+  - CST:S-R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-PRS-006
+  category: preservation
+  mandatory: true
+  question: How is hiddenness treated when source and target interfaces differ?
+  answer_contract: Declare interface families and whether hiddenness is preserved, dissolved, or redefined.
+  failure_if_omitted: absolute privacy may be claimed
+  related_guards:
+  - AC-035
+  relevant_tags:
+  - CST:S-T
+  - CST:R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-PRS-007
+  category: preservation
+  mandatory: true
+  question: What happens to action-credit/provenance information?
+  answer_contract: State whether C5 history is transported, recomputed, or lost.
+  failure_if_omitted: endpoint copy may fake provenance
+  related_guards:
+  - AC-045
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-PRS-008
+  category: preservation
+  mandatory: true
+  question: What happens to temporal closure and package-minted order?
+  answer_contract: State whether C6 is transported, re-minted, synchronized, or broken.
+  failure_if_omitted: state equality may hide temporal reset
+  related_guards:
+  - AC-004
+  - AC-045
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-PRS-009
+  category: preservation
+  mandatory: true
+  question: What happens to branchwise and recombination information?
+  answer_contract: Specify branch quotient, joint tests, and factorization defects.
+  failure_if_omitted: copy/fission may erase joint content
+  related_guards: []
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-PRS-010
+  category: preservation
+  mandatory: true
+  question: What happens to viability, maintenance ledgers, and repair apparatus?
+  answer_contract: State kernel/maintenance comparison before, during, and after handoff.
+  failure_if_omitted: snapshot package may be mistaken for maintained target
+  related_guards:
+  - AC-025
+  - AC-053
+  relevant_tags:
+  - CST:A
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-RTE-001
+  category: route_history
+  mandatory: true
+  question: Does order or path matter?
+  answer_contract: Give a route-sensitivity verdict and supporting defect/control.
+  failure_if_omitted: route existence may be overread
+  related_guards:
+  - AC-021
+  - AC-022
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-RTE-002
+  category: route_history
+  mandatory: true
+  question: What is the candidate’s holonomy or loop test?
+  answer_contract: Define alternate routes or a loop and the transported object compared.
+  failure_if_omitted: path dependence is untested
+  related_guards:
+  - AC-005
+  - AC-022
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-RTE-003
+  category: route_history
+  mandatory: true
+  question: Under what conditions is route independence claimed?
+  answer_contract: Name flatness, confluence, coherence, or another condition and its proof status.
+  failure_if_omitted: route independence is assumed
+  related_guards:
+  - AC-021
+  relevant_tags:
+  - CST:S-T
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-RTE-004
+  category: route_history
+  mandatory: true
+  question: Which source history variables must be retained beyond endpoint state?
+  answer_contract: List predictive memory, marking, resource, provenance, and temporal records.
+  failure_if_omitted: state matching may stand in for process continuation
+  related_guards:
+  - AC-004
+  - AC-005
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-RTE-005
+  category: route_history
+  mandatory: true
+  question: Can two histories be current-equal but continuation-distinct under the candidate?
+  answer_contract: Provide a split-pair test or explain why impossible.
+  failure_if_omitted: public criterion may be insufficient
+  related_guards:
+  - AC-006
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-RTE-006
+  category: route_history
+  mandatory: true
+  question: How are dormant intervals or temporal gaps represented?
+  answer_contract: State whether there is an inactive package, retained record, latent support, or no lineage verdict.
+  failure_if_omitted: reconstruction may be called continuous by default
+  related_guards:
+  - AC-040
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-LIN-001
+  category: lineage
+  mandatory: true
+  question: What is the lineage relation and on which objects is it defined?
+  answer_contract: Give its exact type, route index, and representative-independence condition.
+  failure_if_omitted: continuation remains primitive
+  related_guards: []
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-LIN-002
+  category: lineage
+  mandatory: true
+  question: Is lineage functional, partial, many-valued, branch-valued, or relation-valued?
+  answer_contract: Choose and justify multiplicity; do not assume uniqueness.
+  failure_if_omitted: unique continuation may be smuggled
+  related_guards:
+  - AC-030
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-LIN-003
+  category: lineage
+  mandatory: true
+  question: What distinguishes lineage from structural equivalence or isomorphism?
+  answer_contract: Name the historical/causal/route data added.
+  failure_if_omitted: copy may become identity
+  related_guards:
+  - AC-003
+  - AC-042
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-LIN-004
+  category: lineage
+  mandatory: true
+  question: What verdict does the candidate return for nondestructive exact copying?
+  answer_contract: Return unique, branch-valued, multiple, none, or underdetermined with rationale.
+  failure_if_omitted: copy case skipped
+  related_guards:
+  - AC-013
+  - AC-015
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-LIN-005
+  category: lineage
+  mandatory: true
+  question: What verdict does it return for symmetric duplication?
+  answer_contract: Explain whether any branch is privileged and why.
+  failure_if_omitted: symmetry problem skipped
+  related_guards:
+  - AC-013
+  - AC-031
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-LIN-006
+  category: lineage
+  mandatory: true
+  question: What verdict does it return for fission with diverging futures?
+  answer_contract: Classify branches and post-split lineage composition.
+  failure_if_omitted: fission unhandled
+  related_guards:
+  - AC-031
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-LIN-007
+  category: lineage
+  mandatory: true
+  question: What verdict does it return for fusion or many-to-one merging?
+  answer_contract: State retained, merged, or erased distinctions for each source.
+  failure_if_omitted: fusion unhandled
+  related_guards:
+  - AC-032
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-LIN-008
+  category: lineage
+  mandatory: true
+  question: What changes when the source is deleted before, during, or after target creation?
+  answer_contract: Evaluate each deletion timing without treating deletion as evidence.
+  failure_if_omitted: destruction shortcut
+  related_guards:
+  - AC-014
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-LIN-009
+  category: lineage
+  mandatory: true
+  question: What is the empty-target or extinction condition?
+  answer_contract: Define it structurally and state its ontological nonclaim.
+  failure_if_omitted: death may be smuggled
+  related_guards:
+  - AC-034
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-LIN-010
+  category: lineage
+  mandatory: true
+  question: Is the lineage criterion compositional across several carrier changes?
+  answer_contract: State transitivity/composition conditions or a counterexample.
+  failure_if_omitted: multi-hop continuation is undefined
+  related_guards:
+  - AC-021
+  - AC-030
+  relevant_tags:
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-AUT-001
+  category: autonomy
+  mandatory: true
+  question: What exactly is removed in the post-handoff withdrawal intervention?
+  answer_contract: List source dynamics, bridge, decoder, external protocol, subsidies, and retained target resources.
+  failure_if_omitted: autonomy test is underspecified
+  related_guards:
+  - AC-024
+  relevant_tags:
+  - CST:A
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-AUT-002
+  category: autonomy
+  mandatory: true
+  question: For what horizon and disturbance class must the target maintain the package?
+  answer_contract: State finite/indefinite scope and safety/viability conditions.
+  failure_if_omitted: finite and indefinite persistence may be conflated
+  related_guards:
+  - AC-029
+  relevant_tags:
+  - CST:A
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-AUT-003
+  category: autonomy
+  mandatory: true
+  question: Which target dynamics generate continued package behavior after withdrawal?
+  answer_contract: Name the endogenous transition/process law.
+  failure_if_omitted: source replay may masquerade as target dynamics
+  related_guards:
+  - AC-024
+  relevant_tags:
+  - CST:A
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-AUT-004
+  category: autonomy
+  mandatory: true
+  question: Does the target carry its own repair, audit, and maintenance apparatus?
+  answer_contract: Classify endogenous, imported-once, or permanently external support.
+  failure_if_omitted: bridge-dependent target may be called autonomous
+  related_guards:
+  - AC-024
+  - AC-040
+  relevant_tags:
+  - CST:A
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-AUT-005
+  category: autonomy
+  mandatory: true
+  question: What is the earliest failure mode after withdrawal?
+  answer_contract: Name clause, coherence, viability, or lineage failures and time to failure.
+  failure_if_omitted: autonomy claim may lack falsifier
+  related_guards: []
+  relevant_tags:
+  - CST:A
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-AUT-006
+  category: autonomy
+  mandatory: true
+  question: Does autonomy alter the lineage verdict?
+  answer_contract: Answer separately and justify any explicit implication.
+  failure_if_omitted: autonomy may be mistaken for identity
+  related_guards:
+  - AC-044
+  relevant_tags:
+  - CST:A
+  - CST:S-L
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-OBS-001
+  category: observability_recognition
+  mandatory: true
+  question: Can the criterion be checked without direct access to hidden state?
+  answer_contract: State audit access, inferred quantities, identifiability limits, and undecidable cases.
+  failure_if_omitted: criterion may be operationally opaque
+  related_guards: []
+  relevant_tags:
+  - CST:R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-OBS-002
+  category: observability_recognition
+  mandatory: true
+  question: Which interfaces are public, predictive, privileged audit, or complete-state interfaces?
+  answer_contract: List interfaces and allowed instruments.
+  failure_if_omitted: hiddenness/public match may be ambiguous
+  related_guards:
+  - AC-006
+  - AC-035
+  relevant_tags:
+  - CST:R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-OBS-003
+  category: observability_recognition
+  mandatory: true
+  question: What counterfeit or public-perfect negative control must the criterion reject?
+  answer_contract: Specify a target matching public behavior but failing a hidden/predictive/package condition.
+  failure_if_omitted: criterion may collapse to behavior
+  related_guards:
+  - AC-006
+  - AC-046
+  - AC-054
+  relevant_tags:
+  - CST:R
+  - CST:S-R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-OBS-004
+  category: observability_recognition
+  mandatory: true
+  question: What observable bridge would be required for an empirical test?
+  answer_contract: Give a Tier-R mapping, validation burden, and defeat condition, or mark absent.
+  failure_if_omitted: structural toy may be presented as empirical
+  related_guards:
+  - AC-037
+  - AC-038
+  relevant_tags:
+  - CST:R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-OBS-005
+  category: observability_recognition
+  mandatory: true
+  question: What false-positive and false-negative surfaces are expected?
+  answer_contract: List at least one of each or justify impossibility.
+  failure_if_omitted: recognition claim may be unfalsifiable
+  related_guards: []
+  relevant_tags:
+  - CST:R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-OBS-006
+  category: observability_recognition
+  mandatory: true
+  question: Does expanding the interface dissolve hiddenness or change the verdict?
+  answer_contract: Run or specify an interface-expansion control.
+  failure_if_omitted: relative hiddenness may become absolute
+  related_guards:
+  - AC-035
+  relevant_tags:
+  - CST:R
+  - CST:S-T
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-APP-001
+  category: approximation_composition
+  mandatory: true
+  question: What is the approximate or noisy version of the criterion?
+  answer_contract: Name metric/divergence/order, normalization, tolerance, support, and horizon.
+  failure_if_omitted: approximation is undefined
+  related_guards:
+  - AC-028
+  relevant_tags:
+  - CST:S-T
+  - CST:S-R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-APP-002
+  category: approximation_composition
+  mandatory: true
+  question: How do defects accumulate under bridge or route composition?
+  answer_contract: Give additive, multiplicative, max, repaired, or unknown composition law.
+  failure_if_omitted: multi-hop approximation may be overclaimed
+  related_guards: []
+  relevant_tags:
+  - CST:S-T
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-APP-003
+  category: approximation_composition
+  mandatory: true
+  question: Which local error bounds control global package error?
+  answer_contract: State a theorem/hypothesis or admit no bound.
+  failure_if_omitted: local-to-global shortcut
+  related_guards:
+  - AC-023
+  - AC-028
+  relevant_tags:
+  - CST:S-T
+  - CST:S-R
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-APP-004
+  category: approximation_composition
+  mandatory: true
+  question: Can repair reduce the defect, and what new dependencies does repair introduce?
+  answer_contract: Give repair pre/postconditions, costs, provenance, and lineage nonclaim.
+  failure_if_omitted: repair may imply identity/autonomy
+  related_guards:
+  - AC-040
+  relevant_tags:
+  - CST:S-T
+  - CST:A
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-APP-005
+  category: approximation_composition
+  mandatory: true
+  question: What happens near viability or maintenance thresholds?
+  answer_contract: State discontinuities, hysteresis, or robustness margins.
+  failure_if_omitted: small state error may cause large existence change
+  related_guards: []
+  relevant_tags:
+  - CST:S-R
+  - CST:A
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-APP-006
+  category: approximation_composition
+  mandatory: true
+  question: Is there an exact finite core from which the approximate claim can be extended?
+  answer_contract: Name the finite core and explicit extension assumptions.
+  failure_if_omitted: approximate theorem may lack anchor
+  related_guards: []
+  relevant_tags:
+  - CST:S-T
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-ASM-001
+  category: assumptions_conclusions
+  mandatory: true
+  question: Which conclusion, if any, requires certificate soundness?
+  answer_contract: Name H-CERT-SOUND only where certificate satisfaction is converted to lawful closure.
+  failure_if_omitted: soundness may be assumed silently
+  related_guards:
+  - AC-010
+  relevant_tags:
+  - CST:S-R
+  - CST:O
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-ASM-002
+  category: assumptions_conclusions
+  mandatory: true
+  question: Which conclusion, if any, requires A1?
+  answer_contract: State the exact Tier-O implication and refusal cost.
+  failure_if_omitted: structural theorem may gain ontology
+  related_guards:
+  - AC-011
+  - AC-038
+  relevant_tags:
+  - CST:O
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-ASM-003
+  category: assumptions_conclusions
+  mandatory: true
+  question: Which conclusion, if any, requires A2-P?
+  answer_contract: State its ontological role and separately identify any H-XCI structural theorem.
+  failure_if_omitted: A2 may replace transport mathematics
+  related_guards:
+  - AC-019
+  - AC-020
+  relevant_tags:
+  - CST:O
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-ASM-004
+  category: assumptions_conclusions
+  mandatory: true
+  question: Does any personal-identity reading require a premise beyond structural lineage?
+  answer_contract: Name H-IDENTITY-O or explicitly withhold the reading.
+  failure_if_omitted: A1 or S-L may be overread
+  related_guards:
+  - AC-012
+  - AC-047
+  relevant_tags:
+  - CST:S-L
+  - CST:O
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-ASM-005
+  category: assumptions_conclusions
+  mandatory: true
+  question: What is the strongest claim licensed without A1, A2-P, recognition, or identity premises?
+  answer_contract: State the free Tier-S result.
+  failure_if_omitted: assumption pricing is opaque
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-ASM-006
+  category: assumptions_conclusions
+  mandatory: true
+  question: What assumptions are merely stipulations of the toy rather than consequences?
+  answer_contract: List each stipulated source/target/bridge property.
+  failure_if_omitted: toy construction may masquerade as theorem
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-ASM-007
+  category: assumptions_conclusions
+  mandatory: true
+  question: What conclusion is lost when each major assumption is refused?
+  answer_contract: Provide a one-assumption-at-a-time refusal table.
+  failure_if_omitted: premises cannot be audited
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  - CST:O
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-ASM-008
+  category: assumptions_conclusions
+  mandatory: true
+  question: What are the candidate’s explicit nonclaims?
+  answer_contract: List at least transport/realization/lineage/autonomy/ontology boundaries not established.
+  failure_if_omitted: claim scope may expand rhetorically
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-CTL-001
+  category: controls_falsification
+  mandatory: true
+  question: What positive control should pass?
+  answer_contract: Give a minimal exact case and expected verdict.
+  failure_if_omitted: criterion has no calibration
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-CTL-002
+  category: controls_falsification
+  mandatory: true
+  question: What negative control should fail?
+  answer_contract: Give a minimal counterfeit and expected defect.
+  failure_if_omitted: criterion may be vacuous
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-CTL-003
+  category: controls_falsification
+  mandatory: true
+  question: What adversarial case most threatens the candidate?
+  answer_contract: Name one strongest internal SBT control and expected response.
+  failure_if_omitted: stress testing is incomplete
+  related_guards:
+  - AC-039
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-CTL-004
+  category: controls_falsification
+  mandatory: true
+  question: What observation or countermodel would falsify, narrow, or downgrade the candidate?
+  answer_contract: State an executable or mathematical defeat condition.
+  failure_if_omitted: candidate may be unfalsifiable
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-CTL-005
+  category: controls_falsification
+  mandatory: true
+  question: What alternative candidate gives the same verdicts on easy cases but differs on one discriminator?
+  answer_contract: Name the discriminating scenario/toy.
+  failure_if_omitted: candidate comparison lacks information value
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-CTL-006
+  category: controls_falsification
+  mandatory: true
+  question: Does the candidate survive every applicable anti-conflation guard?
+  answer_contract: List passed, failed, cured, and unresolved guard IDs.
+  failure_if_omitted: candidate cannot enter synthesis
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: reasoned structural answer or explicit underdetermination/not-applicable rationale
+  core: false
+- id: Q-TYP-009
+  category: typing
+  question: What common comparison type, span apex, or pair of embeddings makes source-target comparison well typed?
+  answer_contract: Declare the common type or explain why a relation avoids one.
+  failure_if_omitted: bare cross-carrier equality may be smuggled in
+  related_guards:
+  - AC-003
+  relevant_tags:
+  - CST:S-T
+  minimum_support: typed comparison data or explicit underdetermination
+  mandatory: true
+  core: false
+- id: Q-RTE-007
+  category: route_history
+  question: Can a valid route pass through an intermediate stage where the full package is not instantiated?
+  answer_contract: State the intermediate-gate policy and its lineage consequences.
+  failure_if_omitted: endpoint criteria may hide interruption or recreation
+  related_guards:
+  - AC-004
+  - AC-045
+  relevant_tags:
+  - CST:S-R
+  - CST:S-L
+  minimum_support: route-level analysis or explicit exclusion
+  mandatory: true
+  core: false
+- id: Q-LIN-011
+  category: lineage
+  question: Does delayed reconstruction after a dormant interval count as repair, recreation, branch, or underdetermined under
+    the criterion?
+  answer_contract: Classify the case and identify the object, if any, that persists through dormancy.
+  failure_if_omitted: repair language may smuggle continuity
+  related_guards:
+  - AC-040
+  - AC-059
+  relevant_tags:
+  - CST:S-L
+  minimum_support: criterion-relative verdict and nonclaim
+  mandatory: true
+  core: false
+- id: Q-OBS-007
+  category: observability_recognition
+  question: Is the candidate structurally identifiable from the proposed observations, or do several hidden packages remain
+    observationally equivalent?
+  answer_contract: Give the identifiable quotient or an underdetermination class.
+  failure_if_omitted: recognition may be presented as stronger than the evidence
+  related_guards:
+  - AC-006
+  - AC-035
+  - AC-055
+  relevant_tags:
+  - CST:R
+  - CST:S-R
+  minimum_support: identifiability argument or explicit non-identifiability
+  mandatory: true
+  core: false
+- id: Q-APP-007
+  category: approximation_composition
+  question: Why is the approximation threshold meaningful rather than chosen to preserve preferred scenario labels?
+  answer_contract: Give a structural margin, decision-theoretic cost, or sensitivity analysis.
+  failure_if_omitted: the threshold may encode the desired conclusion
+  related_guards:
+  - AC-049
+  - AC-052
+  relevant_tags:
+  - CST:S-T
+  - CST:S-R
+  minimum_support: threshold rationale and sensitivity boundary
+  mandatory: true
+  core: false
+- id: Q-FEA-001
+  category: theorem_toy_feasibility
+  question: What is the smallest exact finite carrier that could distinguish this candidate from its nearest alternative?
+  answer_contract: Specify carrier roles and the discriminating witness without implementing it.
+  failure_if_omitted: candidate may not be toy-testable under project constraints
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: paper specification of a finite discriminator
+  mandatory: true
+  core: false
+- id: Q-FEA-002
+  category: theorem_toy_feasibility
+  question: What is the smallest nontrivial positive witness and which negative controls must accompany it?
+  answer_contract: Name at least one positive witness and two controls.
+  failure_if_omitted: future toy may merely encode the desired answer
+  related_guards:
+  - AC-056
+  relevant_tags:
+  - CST:M
+  minimum_support: witness/control contract
+  mandatory: true
+  core: false
+- id: Q-FEA-003
+  category: theorem_toy_feasibility
+  question: 'What theorem form is realistically plausible: existence, preservation, classification, equivalence, stability,
+    no-go, or underdetermination?'
+  answer_contract: Choose a theorem shape provisionally and list its hypotheses and falsifier.
+  failure_if_omitted: candidate is not theorem-sized
+  related_guards: []
+  relevant_tags:
+  - CST:M
+  minimum_support: conjecture-grade prospectus only
+  mandatory: true
+  core: false
+- id: Q-FEA-004
+  category: theorem_toy_feasibility
+  question: What valuable no-go, non-uniqueness, or boundary result remains if the constructive candidate fails?
+  answer_contract: State a fallback result and the evidence that would trigger the pivot.
+  failure_if_omitted: project may collapse if the positive target fails
+  related_guards:
+  - AC-057
+  relevant_tags:
+  - CST:M
+  minimum_support: fallback theorem shape and pivot condition
+  mandatory: true
+  core: false
+- id: Q-FEA-005
+  category: theorem_toy_feasibility
+  question: Can the candidate be explored and later tested without a full Six Birds simulation, and what is the minimal dependency
+    set?
+  answer_contract: List required SBT primitives, genuinely new primitives, and the minimal toy/program assets.
+  failure_if_omitted: scope may silently expand beyond the authorized project
+  related_guards:
+  - AC-050
+  relevant_tags:
+  - CST:M
+  minimum_support: dependency and minimality argument
+  mandatory: true
+  core: false

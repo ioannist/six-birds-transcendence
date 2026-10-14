@@ -1,0 +1,21 @@
+{
+  "artifact_ref": "models/packages/controls/PC-07.model.json",
+  "artifact_sha256": "3e8e3c020062cb130a7a1bab9f67c1a1f5311169f8361298e3b18389aea20bab",
+  "checker": {
+    "function": "audit_package",
+    "integrated_package_valid": false,
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite package-obligation boundary only",
+  "control_id": "PC-07",
+  "control_kind": "package",
+  "expected_primary_failure": "PKG-O08-substantive-C6-temporal-closure",
+  "observed_failures": [
+    "PKG-O03-nonnegotiable-hard-gates",
+    "PKG-O08-substantive-C6-temporal-closure"
+  ],
+  "positive_baseline_ref": "models/packages/PKG-POS-01-TARGET.model.json",
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-02"
+}

@@ -1,0 +1,200 @@
+{
+  "$id": "https://six-birds.local/cst-tt/schemas/route_discipline_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "audit": {
+      "additionalProperties": false,
+      "properties": {
+        "all_expected_endpoints_match": {
+          "type": "boolean"
+        },
+        "all_routes_valid": {
+          "type": "boolean"
+        },
+        "clock_translation_holonomy_zero": {
+          "type": "boolean"
+        },
+        "current_endpoints_agree_by_boundary": {
+          "type": "boolean"
+        },
+        "direct_factored_agreement": {
+          "type": "boolean"
+        },
+        "every_boundary_pair_declared": {
+          "type": "boolean"
+        },
+        "every_declared_critical_pair_joins": {
+          "type": "boolean"
+        },
+        "executed_routes": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "boundary": {
+                "type": "string"
+              },
+              "clock_translation": {
+                "type": "integer"
+              },
+              "endpoint_state": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "route_id": {
+                "type": "string"
+              },
+              "start_state": {
+                "type": "string"
+              },
+              "valid": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "route_id",
+              "boundary",
+              "start_state",
+              "endpoint_state",
+              "valid",
+              "clock_translation"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "failed_obligations": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "flatness_valid": {
+          "type": "boolean"
+        },
+        "forbidden_verdict_fields_absent": {
+          "type": "boolean"
+        },
+        "global_now_factorization_exists": {
+          "type": "boolean"
+        },
+        "memory_or_flatness_satisfied": {
+          "type": "boolean"
+        },
+        "nonzero_translation_holonomy_witnessed": {
+          "type": "boolean"
+        },
+        "route_audit_valid": {
+          "type": "boolean"
+        },
+        "route_residue_trivial": {
+          "type": "boolean"
+        },
+        "temporal_endpoints_route_independent": {
+          "type": "boolean"
+        },
+        "transitions_functional": {
+          "type": "boolean"
+        },
+        "unique_normal_form_per_boundary": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "transitions_functional",
+        "all_routes_valid",
+        "all_expected_endpoints_match",
+        "every_boundary_pair_declared",
+        "every_declared_critical_pair_joins",
+        "unique_normal_form_per_boundary",
+        "route_residue_trivial",
+        "clock_translation_holonomy_zero",
+        "temporal_endpoints_route_independent",
+        "current_endpoints_agree_by_boundary",
+        "memory_or_flatness_satisfied",
+        "direct_factored_agreement",
+        "global_now_factorization_exists",
+        "nonzero_translation_holonomy_witnessed",
+        "forbidden_verdict_fields_absent",
+        "flatness_valid",
+        "route_audit_valid",
+        "executed_routes",
+        "failed_obligations"
+      ],
+      "type": "object"
+    },
+    "certificate_id": {
+      "type": "string"
+    },
+    "checker": {
+      "additionalProperties": false,
+      "properties": {
+        "function": {
+          "const": "audit_route_discipline"
+        },
+        "module": {
+          "const": "cst_tt.transport"
+        },
+        "python_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "module",
+        "function",
+        "python_version"
+      ],
+      "type": "object"
+    },
+    "claim_ceiling": {
+      "type": "string"
+    },
+    "claim_lanes": {
+      "const": [
+        "S-T"
+      ]
+    },
+    "model_ref": {
+      "type": "string"
+    },
+    "model_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "result_status": {
+      "enum": [
+        "checked-finite-flatness-certificate",
+        "checked-finite-route-indexed-obstruction",
+        "scaffold-only"
+      ]
+    },
+    "schema_version": {
+      "const": "CST-TT-03"
+    },
+    "theorem_ids": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "certificate_id",
+    "model_ref",
+    "model_sha256",
+    "result_status",
+    "claim_lanes",
+    "claim_ceiling",
+    "theorem_ids",
+    "audit",
+    "checker"
+  ],
+  "title": "Route holonomy and confluence certificate",
+  "type": "object"
+}

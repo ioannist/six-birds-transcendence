@@ -1,0 +1,24 @@
+{
+  "audit": {
+    "accepted": false,
+    "dimension_results": {
+      "order-step": true,
+      "predictive-step": true,
+      "progress-step": true,
+      "record-step": true,
+      "tick-step": true
+    },
+    "hard_gates_exact_and_true": false,
+    "within_declared_box": true
+  },
+  "certificate_id": "ROB-C04",
+  "claim_ceiling": "declared robustness-box boundary only",
+  "claim_lanes": [
+    "M"
+  ],
+  "description": "ownership hard gate fails",
+  "model_ref": "models/strengthenings/robustness/controls/ROB-C04.model.json",
+  "model_sha256": "94ed2b6a4d1b86d38c93d9bf9adf06a5802fec67c682e50d1ae48c71c54ab543",
+  "result_status": "checked-finite-robustness-boundary-control",
+  "schema_version": "CST-TT-07A"
+}

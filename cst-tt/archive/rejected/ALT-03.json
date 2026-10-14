@@ -1,0 +1,9 @@
+{
+  "name": "Holonomy is an endogenous arrow",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "CM-03;TTN-03",
+  "reason": "Noncommuting route structure can coexist with zero endogenous arrow.",
+  "rejected_id": "ALT-03",
+  "replacement": "separate strict record-advancement audit",
+  "status": "killed"
+}

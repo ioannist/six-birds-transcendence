@@ -1,0 +1,2 @@
+fiach_id,source_carrier,target_carrier,route_status,S-T,S-R,S-L,A,model_ref,certificate_ref,result_status,claim_ceiling
+FIACH-POS-01,17,101,route-indexed,true,true,true,true,models/fiach/FIACH-POS-01.model.json,formal/certificates/fiach/FIACH-POS-01.certificate.json,checked-finite-temporal-fiach-certificate,"structural precursor only; no consciousness, phenomenal continuity, survival, or identity conclusion"

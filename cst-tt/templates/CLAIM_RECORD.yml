@@ -1,0 +1,28 @@
+schema_version: '1.1'
+claim_id: null
+title: null
+primary_tag: null
+secondary_tags: []
+explicit_cross_tag_implication: null
+result_status: null
+statement: null
+scope:
+  source_carrier: null
+  target_carrier: null
+  distinctness_level: null
+  support: null
+  interfaces: []
+  bridge: null
+  route: null
+  time_horizon: null
+  multiplicity: null
+  exactness: null
+assumptions: []
+evidence_type: null
+source_provenance: []
+falsifier_or_failure_condition: null
+blocked_inferences: []
+anti_conflation_ids: []
+question_bank_ids: []
+nonclaims: []
+notes: null

@@ -1,0 +1,63 @@
+{
+  "audit": {
+    "all_expected_endpoints_match": true,
+    "all_routes_valid": true,
+    "clock_translation_holonomy_zero": false,
+    "current_endpoints_agree_by_boundary": true,
+    "direct_factored_agreement": true,
+    "every_boundary_pair_declared": true,
+    "every_declared_critical_pair_joins": false,
+    "executed_routes": [
+      {
+        "boundary": "same-declared-boundary",
+        "clock_translation": 0,
+        "endpoint_state": "p0",
+        "route_id": "left-order-route",
+        "start_state": "x",
+        "valid": true
+      },
+      {
+        "boundary": "same-declared-boundary",
+        "clock_translation": 1,
+        "endpoint_state": "p1",
+        "route_id": "right-order-route",
+        "start_state": "x",
+        "valid": true
+      }
+    ],
+    "failed_obligations": [
+      "every-declared-critical-pair-joins",
+      "route-residue-trivial",
+      "clock-translation-holonomy-zero",
+      "temporal-endpoints-route-independent"
+    ],
+    "flatness_valid": false,
+    "forbidden_verdict_fields_absent": true,
+    "global_now_factorization_exists": false,
+    "memory_or_flatness_satisfied": true,
+    "nonzero_translation_holonomy_witnessed": true,
+    "route_audit_valid": true,
+    "route_residue_trivial": false,
+    "temporal_endpoints_route_independent": false,
+    "transitions_functional": true,
+    "unique_normal_form_per_boundary": true
+  },
+  "certificate_id": "ROUTE-NEG-01",
+  "checker": {
+    "function": "audit_route_discipline",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite route-indexed obstruction only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_ref": "models/routes/ROUTE-NEG-01.model.json",
+  "model_sha256": "017e8e18f3ad8edb551e3c760db9b8bb960a80634668748ec03bdff419484337",
+  "result_status": "checked-finite-route-indexed-obstruction",
+  "schema_version": "CST-TT-03",
+  "theorem_ids": [
+    "TTN-04",
+    "TTN-05"
+  ]
+}

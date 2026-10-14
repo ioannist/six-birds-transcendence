@@ -1,0 +1,1813 @@
+{
+  "checks": [
+    {
+      "detail": [],
+      "name": "All core inherited and phase-04 files exist",
+      "status": "pass"
+    },
+    {
+      "detail": "all parse",
+      "name": "All repository JSON files parse",
+      "status": "pass"
+    },
+    {
+      "detail": "all parse",
+      "name": "All repository CSV files parse",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "03d484ead5b69a6400b117db580613cc42d04de957796391f96a8cfe8fe2411e",
+        "expected": "03d484ead5b69a6400b117db580613cc42d04de957796391f96a8cfe8fe2411e"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: candidates/CANDIDATE_REGISTRY.json",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "02b71e158df21014f824f07a7791d507be5f1dad26cece606b30f6da5e0d6bb3",
+        "expected": "02b71e158df21014f824f07a7791d507be5f1dad26cece606b30f6da5e0d6bb3"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: candidates/transported_object_registry.csv",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "7427d89cc5b67e5116de13da03ef59eee03ed42ba13afa4bc1af728b860ab25e",
+        "expected": "7427d89cc5b67e5116de13da03ef59eee03ed42ba13afa4bc1af728b860ab25e"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: candidates/invariant_registry.csv",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "1cbae2480478a3fbf4d037107e88dfe34d743c4a933b2f47136535c1068a6fde",
+        "expected": "1cbae2480478a3fbf4d037107e88dfe34d743c4a933b2f47136535c1068a6fde"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: candidates/bridge_registry.csv",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "f010b92dc3fe1bf5dc2905a6f7806f2e0eb06461631991855158988e2d8a7123",
+        "expected": "f010b92dc3fe1bf5dc2905a6f7806f2e0eb06461631991855158988e2d8a7123"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: ledgers/candidate_scenario_verdicts.csv",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "a8455be01e95ca2c699ba41870d6880aeef111e6747eaef05cf790b2a2e708fa",
+        "expected": "a8455be01e95ca2c699ba41870d6880aeef111e6747eaef05cf790b2a2e708fa"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: ledgers/candidate_assumption_matrix.csv",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "b4a3146675fd69193b5a2d1c7f62fbf959a441b48b95277e50e4da4e4dd769f4",
+        "expected": "b4a3146675fd69193b5a2d1c7f62fbf959a441b48b95277e50e4da4e4dd769f4"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: ledgers/candidate_question_responses.csv",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "8814335cb11c11669f07ebc21b6e8b1b781bfa5181396f70a9767381a71bac4e",
+        "expected": "8814335cb11c11669f07ebc21b6e8b1b781bfa5181396f70a9767381a71bac4e"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: ledgers/candidate_anti_conflation_audit.csv",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "bb8f1b4ad725060a4eb3c5233e73b4d894604b81095f056cc423c6cf34697993",
+        "expected": "bb8f1b4ad725060a4eb3c5233e73b4d894604b81095f056cc423c6cf34697993"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: ledgers/new_primitive_register.csv",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "d0d6b56dd25e98338f40816c4e0e9f45e185c073fb6e9ffd043d18332443eb8e",
+        "expected": "d0d6b56dd25e98338f40816c4e0e9f45e185c073fb6e9ffd043d18332443eb8e"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: scenarios/SCENARIO_REGISTRY.json",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "actual": "89bcdb48eebdf6006cb38c482bfa1b8e887769460f7421b7191bc6250b9ec0c3",
+        "expected": "89bcdb48eebdf6006cb38c482bfa1b8e887769460f7421b7191bc6250b9ec0c3"
+      },
+      "name": "Inherited CST-EXP-03 surface remains byte-frozen: corpus/machine_index/all_statement_index.csv",
+      "status": "pass"
+    },
+    {
+      "detail": "completion report",
+      "name": "Inherited CST-EXP-03 completion record reports pass",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "papers": 60,
+        "statements": 1359
+      },
+      "name": "Corpus inventory remains 60 papers and 1,359 nonquarantined statements",
+      "status": "pass"
+    },
+    {
+      "detail": 0,
+      "name": "P46 remains excluded from machine statement bank",
+      "status": "pass"
+    },
+    {
+      "detail": "expected one",
+      "name": "P46 retains one exclusion provenance record",
+      "status": "pass"
+    },
+    {
+      "detail": "version log",
+      "name": "P42/P60 revision control remains explicit",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "TS-01",
+        "TS-02",
+        "TS-03",
+        "TS-04",
+        "TS-05",
+        "TS-06",
+        "TS-07",
+        "TS-08",
+        "TS-09",
+        "TS-10"
+      ],
+      "name": "Candidate registry remains exactly TS-01 through TS-10",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "TS-01",
+        "TS-02",
+        "TS-03",
+        "TS-04",
+        "TS-05",
+        "TS-06",
+        "TS-07",
+        "TS-08",
+        "TS-09",
+        "TS-10"
+      ],
+      "name": "Phase-04 data profiles cover every candidate",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "Hard-case definition bank contains HC-01 through HC-18",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "Internal-lens definition bank contains IL-01 through IL-13",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "No-go data bank contains NG-01 through NG-18",
+      "status": "pass"
+    },
+    {
+      "detail": 7,
+      "name": "Red-team data bank contains RT-01 through RT-07",
+      "status": "pass"
+    },
+    {
+      "detail": 3,
+      "name": "Survivor bank contains SF-01 through SF-03",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "TS-01": 18,
+        "TS-02": 18,
+        "TS-03": 18,
+        "TS-04": 18,
+        "TS-05": 18,
+        "TS-06": 18,
+        "TS-07": 18,
+        "TS-08": 18,
+        "TS-09": 18,
+        "TS-10": 18
+      },
+      "name": "Every hard-case status matrix has 18 entries",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "TS-01": 13,
+        "TS-02": 13,
+        "TS-03": 13,
+        "TS-04": 13,
+        "TS-05": 13,
+        "TS-06": 13,
+        "TS-07": 13,
+        "TS-08": 13,
+        "TS-09": 13,
+        "TS-10": 13
+      },
+      "name": "Every internal-lens matrix has 13 entries",
+      "status": "pass"
+    },
+    {
+      "detail": "S/C/U/N/F only",
+      "name": "All status codes are registered",
+      "status": "pass"
+    },
+    {
+      "detail": 180,
+      "name": "Hard-case stress ledger has exactly 180 records",
+      "status": "pass"
+    },
+    {
+      "detail": 180,
+      "name": "Stress ledger covers complete candidate \u00d7 case product",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "Every stress record names a disposition and substantive finding",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "Every stress record exposes assumptions and a required response",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "Every stress record preserves a salvage",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "All stress-ledger no-go references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-01 has all 18 hard-case responses",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "fails_as_standalone",
+        "principled_underdetermination",
+        "survives",
+        "survives_conditionally"
+      ],
+      "name": "TS-01 hard-case profile includes at least two response types",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-02 has all 18 hard-case responses",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "fails_as_standalone",
+        "principled_underdetermination",
+        "survives",
+        "survives_conditionally"
+      ],
+      "name": "TS-02 hard-case profile includes at least two response types",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-03 has all 18 hard-case responses",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "fails_as_standalone",
+        "principled_underdetermination",
+        "survives",
+        "survives_conditionally"
+      ],
+      "name": "TS-03 hard-case profile includes at least two response types",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-04 has all 18 hard-case responses",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "fails_as_standalone",
+        "principled_underdetermination",
+        "survives",
+        "survives_conditionally"
+      ],
+      "name": "TS-04 hard-case profile includes at least two response types",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-05 has all 18 hard-case responses",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "fails_as_standalone",
+        "principled_underdetermination",
+        "survives",
+        "survives_conditionally"
+      ],
+      "name": "TS-05 hard-case profile includes at least two response types",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-06 has all 18 hard-case responses",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "fails_as_standalone",
+        "principled_underdetermination",
+        "survives",
+        "survives_conditionally"
+      ],
+      "name": "TS-06 hard-case profile includes at least two response types",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-07 has all 18 hard-case responses",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "fails_as_standalone",
+        "principled_underdetermination",
+        "survives",
+        "survives_conditionally"
+      ],
+      "name": "TS-07 hard-case profile includes at least two response types",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-08 has all 18 hard-case responses",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "fails_as_standalone",
+        "principled_underdetermination",
+        "survives",
+        "survives_conditionally"
+      ],
+      "name": "TS-08 hard-case profile includes at least two response types",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-09 has all 18 hard-case responses",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "fails_as_standalone",
+        "principled_underdetermination",
+        "survives",
+        "survives_conditionally"
+      ],
+      "name": "TS-09 hard-case profile includes at least two response types",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-10 has all 18 hard-case responses",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "fails_as_standalone",
+        "principled_underdetermination",
+        "survives",
+        "survives_conditionally"
+      ],
+      "name": "TS-10 hard-case profile includes at least two response types",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-01 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-02 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-03 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-04 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-05 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-06 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-07 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-08 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-09 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-10 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-11 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-12 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-13 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-14 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-15 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-16 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-17 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-18 is evaluated for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": "none",
+      "name": "Symmetric duplication has no unexplained unique-success verdict",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        [
+          "TS-02",
+          "survives",
+          "The final target-native package gate fails even if decoded behavior remains perfect during support. The candidate directly contains a nontrivial response to this challenge, subject to its stated scope."
+        ],
+        [
+          "TS-04",
+          "survives",
+          "Withdrawal makes the failure immediate and classifies it as non-autonomous on the declared target boundary. The candidate directly contains a nontrivial response to this challenge, subject to its stated scope."
+        ]
+      ],
+      "name": "External-decoder case classifies every direct survivor as a detector of non-autonomy",
+      "status": "pass"
+    },
+    {
+      "detail": "HC-16 findings",
+      "name": "Gauge-change case is treated as a carrier-individuation control",
+      "status": "pass"
+    },
+    {
+      "detail": 130,
+      "name": "Internal-lens audit has exactly 130 records",
+      "status": "pass"
+    },
+    {
+      "detail": 130,
+      "name": "Lens audit covers complete candidate \u00d7 lens product",
+      "status": "pass"
+    },
+    {
+      "detail": "complete",
+      "name": "Every lens audit records challenge, response, and amendment",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-01 has all 13 internal-lens audits",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-02 has all 13 internal-lens audits",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-03 has all 13 internal-lens audits",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-04 has all 13 internal-lens audits",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-05 has all 13 internal-lens audits",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-06 has all 13 internal-lens audits",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-07 has all 13 internal-lens audits",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-08 has all 13 internal-lens audits",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-09 has all 13 internal-lens audits",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-10 has all 13 internal-lens audits",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-01 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-02 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-03 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-04 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-05 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-06 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-07 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-08 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-09 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-10 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-11 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-12 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "IL-13 is applied to all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        [
+          "TS-01",
+          "narrowed_role_only"
+        ],
+        [
+          "TS-02",
+          "survives_conditionally"
+        ],
+        [
+          "TS-03",
+          "narrowed_role_only"
+        ],
+        [
+          "TS-04",
+          "narrowed_role_only"
+        ],
+        [
+          "TS-05",
+          "narrowed_role_only"
+        ],
+        [
+          "TS-06",
+          "survives_conditionally"
+        ],
+        [
+          "TS-07",
+          "narrowed_role_only"
+        ],
+        [
+          "TS-08",
+          "narrowed_role_only"
+        ],
+        [
+          "TS-09",
+          "narrowed_role_only"
+        ],
+        [
+          "TS-10",
+          "narrowed_role_only"
+        ]
+      ],
+      "name": "Audited-emergence lens never upgrades structure to ontology",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "Rejection/salvage log has one record per candidate",
+      "status": "pass"
+    },
+    {
+      "detail": "complete",
+      "name": "Every disposition preserves role, amendment, salvage, and boundary",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "TS-02",
+        "TS-03",
+        "TS-10"
+      ],
+      "name": "Exactly TS-02, TS-03, and TS-10 survive as family cores",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "TS-01",
+        "TS-04",
+        "TS-05",
+        "TS-06",
+        "TS-07",
+        "TS-08",
+        "TS-09"
+      ],
+      "name": "Seven noncore candidates are retained rather than silently deleted",
+      "status": "pass"
+    },
+    {
+      "detail": "all true",
+      "name": "No disposition presents its profile as a ranking",
+      "status": "pass"
+    },
+    {
+      "detail": 3,
+      "name": "Survivor registry contains exactly three families",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "SF-01": "TS-02",
+        "SF-02": "TS-03",
+        "SF-03": "TS-10"
+      },
+      "name": "Survivor cores are frozen as TS-02/TS-03/TS-10",
+      "status": "pass"
+    },
+    {
+      "detail": "complete",
+      "name": "Every survivor states claim ceiling, lineage policy, risk, and kill condition",
+      "status": "pass"
+    },
+    {
+      "detail": "none",
+      "name": "No survivor claim ceiling assumes 'same subject'",
+      "status": "pass"
+    },
+    {
+      "detail": "none",
+      "name": "No survivor claim ceiling asserts consciousness or personal identity",
+      "status": "pass"
+    },
+    {
+      "detail": 30,
+      "name": "Composition matrix is complete 3 \u00d7 10",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "TS-02"
+      ],
+      "name": "SF-01 has exactly one core in composition matrix",
+      "status": "pass"
+    },
+    {
+      "detail": 6,
+      "name": "SF-01 has at least three explicit modules/mechanisms",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "TS-03"
+      ],
+      "name": "SF-02 has exactly one core in composition matrix",
+      "status": "pass"
+    },
+    {
+      "detail": 4,
+      "name": "SF-02 has at least three explicit modules/mechanisms",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "TS-10"
+      ],
+      "name": "SF-03 has exactly one core in composition matrix",
+      "status": "pass"
+    },
+    {
+      "detail": 4,
+      "name": "SF-03 has at least three explicit modules/mechanisms",
+      "status": "pass"
+    },
+    {
+      "detail": 2,
+      "name": "Shortlist explicitly states unranked status",
+      "status": "pass"
+    },
+    {
+      "detail": "all seven",
+      "name": "Shortlist explicitly preserves component candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "No-go register has exactly 18 entries",
+      "status": "pass"
+    },
+    {
+      "detail": "complete",
+      "name": "Every no-go has claim, witness, proof spine, falsifier, and nonclaim",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "Every no-go is explicitly marked unproved",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-01.md",
+      "name": "NG-01 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-01 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-02.md",
+      "name": "NG-02 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-02 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-03.md",
+      "name": "NG-03 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-03 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-04.md",
+      "name": "NG-04 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-04 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-05.md",
+      "name": "NG-05 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-05 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-06.md",
+      "name": "NG-06 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-06 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-07.md",
+      "name": "NG-07 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-07 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-08.md",
+      "name": "NG-08 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-08 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-09.md",
+      "name": "NG-09 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-09 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-10.md",
+      "name": "NG-10 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-10 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-11.md",
+      "name": "NG-11 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-11 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-12.md",
+      "name": "NG-12 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-12 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-13.md",
+      "name": "NG-13 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-13 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-14.md",
+      "name": "NG-14 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-14 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-15.md",
+      "name": "NG-15 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-15 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-16.md",
+      "name": "NG-16 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-16 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-17.md",
+      "name": "NG-17 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-17 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "challenges/no_go_conjectures/NG-18.md",
+      "name": "NG-18 prospectus exists and says not proved",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "NG-18 candidate-impact references resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "public-shadow",
+      "name": "No-go bank covers required theme: public-shadow",
+      "status": "pass"
+    },
+    {
+      "detail": "symmetric",
+      "name": "No-go bank covers required theme: symmetric",
+      "status": "pass"
+    },
+    {
+      "detail": "predictive-quotient",
+      "name": "No-go bank covers required theme: predictive-quotient",
+      "status": "pass"
+    },
+    {
+      "detail": "recombination",
+      "name": "No-go bank covers required theme: recombination",
+      "status": "pass"
+    },
+    {
+      "detail": "decoder",
+      "name": "No-go bank covers required theme: decoder",
+      "status": "pass"
+    },
+    {
+      "detail": "route independence",
+      "name": "No-go bank covers required theme: route independence",
+      "status": "pass"
+    },
+    {
+      "detail": "global residual",
+      "name": "No-go bank covers required theme: global residual",
+      "status": "pass"
+    },
+    {
+      "detail": "global gluing",
+      "name": "No-go bank covers required theme: global gluing",
+      "status": "pass"
+    },
+    {
+      "detail": "endpoint equality",
+      "name": "No-go bank covers required theme: endpoint equality",
+      "status": "pass"
+    },
+    {
+      "detail": "temporal-gap",
+      "name": "No-go bank covers required theme: temporal-gap",
+      "status": "pass"
+    },
+    {
+      "detail": "carrier-individuation",
+      "name": "No-go bank covers required theme: carrier-individuation",
+      "status": "pass"
+    },
+    {
+      "detail": "bridge-composition",
+      "name": "No-go bank covers required theme: bridge-composition",
+      "status": "pass"
+    },
+    {
+      "detail": "finite-instrument",
+      "name": "No-go bank covers required theme: finite-instrument",
+      "status": "pass"
+    },
+    {
+      "detail": "certificate",
+      "name": "No-go bank covers required theme: certificate",
+      "status": "pass"
+    },
+    {
+      "detail": "personal identity",
+      "name": "No-go bank covers required theme: personal identity",
+      "status": "pass"
+    },
+    {
+      "detail": "trilemma",
+      "name": "No-go bank covers required theme: trilemma",
+      "status": "pass"
+    },
+    {
+      "detail": "fusion",
+      "name": "No-go bank covers required theme: fusion",
+      "status": "pass"
+    },
+    {
+      "detail": "external support",
+      "name": "No-go bank covers required theme: external support",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "Exactly 18 hard-case cards exist",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-14 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-06 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-04 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-11 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-12 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-03 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-02 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-10 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-05 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-17 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-15 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-18 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-09 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-08 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-01 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-13 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-16 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "HC-07 card lists all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "Exactly ten candidate stress cards exist",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-02 card includes all 18 hard cases",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-02 card includes all 13 internal lenses",
+      "status": "pass"
+    },
+    {
+      "detail": "heading",
+      "name": "TS-02 card preserves frozen nonclaims",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-03 card includes all 18 hard cases",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-03 card includes all 13 internal lenses",
+      "status": "pass"
+    },
+    {
+      "detail": "heading",
+      "name": "TS-03 card preserves frozen nonclaims",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-09 card includes all 18 hard cases",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-09 card includes all 13 internal lenses",
+      "status": "pass"
+    },
+    {
+      "detail": "heading",
+      "name": "TS-09 card preserves frozen nonclaims",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-07 card includes all 18 hard cases",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-07 card includes all 13 internal lenses",
+      "status": "pass"
+    },
+    {
+      "detail": "heading",
+      "name": "TS-07 card preserves frozen nonclaims",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-08 card includes all 18 hard cases",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-08 card includes all 13 internal lenses",
+      "status": "pass"
+    },
+    {
+      "detail": "heading",
+      "name": "TS-08 card preserves frozen nonclaims",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-10 card includes all 18 hard cases",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-10 card includes all 13 internal lenses",
+      "status": "pass"
+    },
+    {
+      "detail": "heading",
+      "name": "TS-10 card preserves frozen nonclaims",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-04 card includes all 18 hard cases",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-04 card includes all 13 internal lenses",
+      "status": "pass"
+    },
+    {
+      "detail": "heading",
+      "name": "TS-04 card preserves frozen nonclaims",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-06 card includes all 18 hard cases",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-06 card includes all 13 internal lenses",
+      "status": "pass"
+    },
+    {
+      "detail": "heading",
+      "name": "TS-06 card preserves frozen nonclaims",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-01 card includes all 18 hard cases",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-01 card includes all 13 internal lenses",
+      "status": "pass"
+    },
+    {
+      "detail": "heading",
+      "name": "TS-01 card preserves frozen nonclaims",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "TS-05 card includes all 18 hard cases",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "TS-05 card includes all 13 internal lenses",
+      "status": "pass"
+    },
+    {
+      "detail": "heading",
+      "name": "TS-05 card preserves frozen nonclaims",
+      "status": "pass"
+    },
+    {
+      "detail": 26,
+      "name": "External source registry has exactly 26 records",
+      "status": "pass"
+    },
+    {
+      "detail": 26,
+      "name": "External registry IDs are EXT-001 through EXT-026",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "bisimulation_dynamics",
+        "branching_identity",
+        "causal_abstraction",
+        "causal_structure_consciousness",
+        "computation_and_implementation",
+        "consciousness_empirical",
+        "copying_and_observers",
+        "distributed_state",
+        "enactivism_autonomy",
+        "logical_object_persistence",
+        "mind_uploading_identity",
+        "organizational_invariance",
+        "personal_identity",
+        "process_migration",
+        "whole_brain_emulation"
+      ],
+      "name": "External registry spans at least 12 categories",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        [
+          "EXT-007",
+          "2025"
+        ],
+        [
+          "EXT-011",
+          "2025"
+        ],
+        [
+          "EXT-013",
+          "2026"
+        ],
+        [
+          "EXT-016",
+          "2025"
+        ],
+        [
+          "EXT-020",
+          "2025"
+        ]
+      ],
+      "name": "External pass includes at least five 2025\u20132026 sources",
+      "status": "pass"
+    },
+    {
+      "detail": "complete",
+      "name": "Every external source has bibliographic identity and challenge",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "Every external source has a stable-looking source locator",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "No popular-news source is retained as load-bearing evidence",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "max": 2026,
+        "min": 1984
+      },
+      "name": "External registry covers classics and current work",
+      "status": "pass"
+    },
+    {
+      "detail": 103,
+      "name": "External crosswalk has at least 90 source-object links",
+      "status": "pass"
+    },
+    {
+      "detail": "resolve",
+      "name": "All external crosswalk source IDs resolve",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "All external crosswalk object IDs resolve",
+      "status": "pass"
+    },
+    {
+      "detail": 26,
+      "name": "Literature map contains all 26 source IDs",
+      "status": "pass"
+    },
+    {
+      "detail": "boundary",
+      "name": "Literature map states engineering analogies are not identity evidence",
+      "status": "pass"
+    },
+    {
+      "detail": "scope and interpretation fields",
+      "name": "Search log records execution date and targeted-not-exhaustive scope",
+      "status": "pass"
+    },
+    {
+      "detail": 7,
+      "name": "Exactly seven red-team memos exist",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "RT-04 memo has all adversarial-review fields",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "RT-03 memo has all adversarial-review fields",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "RT-05 memo has all adversarial-review fields",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "RT-06 memo has all adversarial-review fields",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "RT-02 memo has all adversarial-review fields",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "RT-01 memo has all adversarial-review fields",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "RT-07 memo has all adversarial-review fields",
+      "status": "pass"
+    },
+    {
+      "detail": "functionalist",
+      "name": "Red-team bank includes standpoint: functionalist",
+      "status": "pass"
+    },
+    {
+      "detail": "biological",
+      "name": "Red-team bank includes standpoint: biological",
+      "status": "pass"
+    },
+    {
+      "detail": "duplication",
+      "name": "Red-team bank includes standpoint: duplication",
+      "status": "pass"
+    },
+    {
+      "detail": "sbt audit",
+      "name": "Red-team bank includes standpoint: sbt audit",
+      "status": "pass"
+    },
+    {
+      "detail": "empirical",
+      "name": "Red-team bank includes standpoint: empirical",
+      "status": "pass"
+    },
+    {
+      "detail": "formal-methods",
+      "name": "Red-team bank includes standpoint: formal-methods",
+      "status": "pass"
+    },
+    {
+      "detail": "ontological",
+      "name": "Red-team bank includes standpoint: ontological",
+      "status": "pass"
+    },
+    {
+      "detail": 200,
+      "name": "Assumption exposure ledger has 200 records",
+      "status": "pass"
+    },
+    {
+      "detail": 20,
+      "name": "Assumption exposure covers 10 candidates \u00d7 20 assumptions",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "A1 is exposed for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "A1 may not rescue structural failure",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "A2-P is exposed for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "A2-P may not rescue structural failure",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "H-CERT-SOUND is exposed for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "H-CERT-SOUND may not rescue structural failure",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "H-IDENTITY-O is exposed for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "H-IDENTITY-O may not rescue structural failure",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "H-RECOG is exposed for all ten candidates",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "H-RECOG may not rescue structural failure",
+      "status": "pass"
+    },
+    {
+      "detail": "all ten",
+      "name": "Unique-lineage assumption explicitly faces symmetric duplication",
+      "status": "pass"
+    },
+    {
+      "detail": "all ten",
+      "name": "Autonomy assumption is cashed out by withdrawal",
+      "status": "pass"
+    },
+    {
+      "detail": {
+        "new": 350,
+        "old": 350
+      },
+      "name": "Phase-04 scenario ledger preserves all 350 rows",
+      "status": "pass"
+    },
+    {
+      "detail": 350,
+      "name": "Phase-04 scenario ledger preserves the exact key set",
+      "status": "pass"
+    },
+    {
+      "detail": "all preserved",
+      "name": "Every CST-EXP-03 scenario field is byte-for-byte preserved",
+      "status": "pass"
+    },
+    {
+      "detail": "all 350",
+      "name": "Every phase-04 scenario row is marked frozen and nonranking",
+      "status": "pass"
+    },
+    {
+      "detail": "all 350",
+      "name": "Every phase-04 scenario row adds a disposition and retained role",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        "D04-001",
+        "D04-002",
+        "D04-003",
+        "D04-004",
+        "D04-005",
+        "D04-006",
+        "D04-007",
+        "D04-008"
+      ],
+      "name": "Decision log contains exactly eight active D04 rulings",
+      "status": "pass"
+    },
+    {
+      "detail": "10",
+      "name": "Rejected-defaults log contains ten RD04 entries",
+      "status": "pass"
+    },
+    {
+      "detail": "section",
+      "name": "Unresolved-question log contains CST-EXP-04 section",
+      "status": "pass"
+    },
+    {
+      "detail": "state",
+      "name": "STATE advances to CST-EXP-04-v1 and names CST-EXP-05",
+      "status": "pass"
+    },
+    {
+      "detail": "status",
+      "name": "STATUS records no implementation authorization",
+      "status": "pass"
+    },
+    {
+      "detail": "three unranked survivor families",
+      "name": "Phase synthesis contains boundary: three unranked survivor families",
+      "status": "pass"
+    },
+    {
+      "detail": "no candidate survives as a one-predicate answer",
+      "name": "Phase synthesis contains boundary: no candidate survives as a one-predicate answer",
+      "status": "pass"
+    },
+    {
+      "detail": "not proofs",
+      "name": "Phase synthesis contains boundary: not proofs",
+      "status": "pass"
+    },
+    {
+      "detail": "ontological boundary",
+      "name": "Phase synthesis contains boundary: ontological boundary",
+      "status": "pass"
+    },
+    {
+      "detail": "exit-gate judgment",
+      "name": "Phase synthesis contains boundary: exit-gate judgment",
+      "status": "pass"
+    },
+    {
+      "detail": "none",
+      "name": "Core phase surfaces contain no prohibited ontological overclaim",
+      "status": "pass"
+    },
+    {
+      "detail": "all resolve",
+      "name": "All local Markdown links in challenge bank resolve",
+      "status": "pass"
+    },
+    {
+      "detail": "diagram",
+      "name": "Survivor architecture DOT and SVG exist",
+      "status": "pass"
+    },
+    {
+      "detail": [],
+      "name": "CST-EXP-04 adds no Lean or notebook implementation",
+      "status": "pass"
+    },
+    {
+      "detail": "boundary",
+      "name": "Challenge synthesis states no toy program is implemented",
+      "status": "pass"
+    },
+    {
+      "detail": 10,
+      "name": "EXP04 summary count matches candidates",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "EXP04 summary count matches hard_cases",
+      "status": "pass"
+    },
+    {
+      "detail": 180,
+      "name": "EXP04 summary count matches hard_case_records",
+      "status": "pass"
+    },
+    {
+      "detail": 13,
+      "name": "EXP04 summary count matches internal_lenses",
+      "status": "pass"
+    },
+    {
+      "detail": 130,
+      "name": "EXP04 summary count matches lens_records",
+      "status": "pass"
+    },
+    {
+      "detail": 18,
+      "name": "EXP04 summary count matches no_go_prospects",
+      "status": "pass"
+    },
+    {
+      "detail": 26,
+      "name": "EXP04 summary count matches external_sources",
+      "status": "pass"
+    },
+    {
+      "detail": 7,
+      "name": "EXP04 summary count matches red_team_positions",
+      "status": "pass"
+    },
+    {
+      "detail": 3,
+      "name": "EXP04 summary count matches survivor_families",
+      "status": "pass"
+    },
+    {
+      "detail": 350,
+      "name": "EXP04 summary count matches scenario_records",
+      "status": "pass"
+    },
+    {
+      "detail": 200,
+      "name": "EXP04 summary count matches assumption_exposure_records",
+      "status": "pass"
+    },
+    {
+      "detail": [
+        {
+          "core": "TS-02",
+          "id": "SF-01",
+          "mandatory_modules": "TS-04;TS-06;TS-07;TS-08;TS-09",
+          "title": "Integrated Autonomous Handoff"
+        },
+        {
+          "core": "TS-03",
+          "id": "SF-02",
+          "mandatory_modules": "TS-04;TS-07;TS-08",
+          "title": "Causal-Overlap Process Lineage"
+        },
+        {
+          "core": "TS-10",
+          "id": "SF-03",
+          "mandatory_modules": "TS-01;TS-07;TS-09",
+          "title": "Relation-Valued Predictive Ancestry"
+        }
+      ],
+      "name": "EXP04 summary records all three survivors",
+      "status": "pass"
+    },
+    {
+      "detail": "No theorem or no-go is proved; no toy program is implemented; no final target, consciousness conclusion, or personal-identity verdict is selected.",
+      "name": "EXP04 summary boundary denies proof/implementation/ontology",
+      "status": "pass"
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 305,
+  "checks_total": 305,
+  "date": "2026-08-10",
+  "mode": "pre_manifest",
+  "phase": "CST-EXP-04",
+  "project": "CST-EXP",
+  "schema_version": "1.0",
+  "status": "pass"
+}

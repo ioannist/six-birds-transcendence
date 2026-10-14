@@ -1,0 +1,1009 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\PassOptionsToPackage{breaklinks=true}{hyperref}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\newcommand{\orcidicon}{\includegraphics[width=0.32cm]{logo-orcid.pdf}}
+\newcommand{\orcidA}{\href{https://orcid.org/\orcidauthorA}{\orcidicon}}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{xurl}
+\usepackage{enumitem}
+
+\numberwithin{equation}{section}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor={blue!60!black},
+  citecolor={blue!60!black},
+  urlcolor={blue!60!black}
+}
+
+\raggedbottom
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\code}[1]{\nolinkurl{#1}}
+
+\setlength{\emergencystretch}{3em}
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+
+\fancypagestyle{firstpage}{\fancyhf{}
+  \fancyfoot[C]{\fontsize{7.5}{8}\selectfont Automorph Inc., Wilmington, DE, USA \;\texttt{ioannis@automorph.io}\; \mbox{Zenodo DOI: 10.5281/zenodo.19061345}\; \textcopyright\ 2026\; \mbox{CC-BY 4.0}}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+ 
+\title{To Flatten a Stone with Six Birds:\\[4pt]
+Critical Pairs, Holonomy, and Confluence\\
+in Rewriting Systems}
+\newcommand{\orcidauthorA}{0009-0009-7659-5964}
+\author{Ioannis Tsiokos\,\orcidA{}}
+\date{17 March 2026}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+
+\begin{abstract}
+\noindent
+Confluence is usually read as order-independence of reduction, while flatness is usually read as path-independence of transport.
+This paper argues that their local cores coincide once rewriting is equipped with its missing two-dimensional cells.
+The relevant object is not the bare reduction graph but a reduction 2-complex whose $0$-cells are states, whose $1$-cells are one-step rewrites, and whose generating $2$-cells are local peaks or, in structured rewriting settings, reachable critical pairs.
+In that setting, elementary flatness is exactly local confluence.
+We prove this core equivalence and record the supporting fact that confluence plus normalization yields a unique normal form from a chosen start state.
+We then show computationally that the corrected local/global picture survives exhaustive finite-ARS stress tests in the terminating regime, curated string-rewriting examples, and a curated left-linear term-rewriting bridge with genuine nonroot overlap.
+These experiments also show that bare graph-flatness surrogates fail, while reachable critical-pair defects align with the observed local obstruction layer.
+Finally, explicit before/after examples show that completion can be read as holonomy elimination: the local generator persists while its defect disappears.
+The full finite terminating left-linear TRS theorem package remains to be written in full generality, but the correct object, local generators, and evidence boundary are now fixed.
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+
+Confluence is rewriting theory's cleanest order-independence principle: if a state reduces in two different ways, the divergence should be joinable \cite{BaaderNipkow1998,Huet1980,DershowitzJouannaud1990,Terese2003}. Discrete transport geometry packages the same intuition in a different language: transport should be independent of route, and the obstruction is holonomy \cite{Meneses2021,BaezMuniain1994}. This paper argues that their local cores coincide once rewriting is given its missing two-dimensional cells. The relevant object is not the bare reduction graph. It is a reduction 2-complex whose $0$-cells are states, whose $1$-cells are one-step rewrites, and whose generating $2$-cells are local peaks or, in structured rewriting settings, reachable critical pairs \cite{Mimram2023,GuiraudMalbos2018,GuiraudMalbos2012}.
+
+The first temptation is also the first mistake. If one tries to read flatness directly from the bare reduction graph, one obtains surrogates that are vacuous or misleading in the terminating settings studied here. \Cref{sec:bare-graph-not-enough} shows this explicitly: directed-loop flatness collapses to acyclicity on the curated terminating examples, while ordinary undirected graph cycle structure is not diagnostic for confluence. The negative result is therefore constructive. It tells us where the geometric data must live: not on graph loops alone, but on elementary branching cells.
+
+Once those missing $2$-cells are restored, the local theorem-level core becomes clean. \Cref{sec:core-theorem} proves that elementary flatness is equivalent to local confluence. The paper then shows computationally that the corrected local/global picture survives exhaustive finite-ARS stress tests in the terminating regime, curated bounded string-rewriting examples, and a curated left-linear term-rewriting bridge with genuine nonroot overlap. In those structured settings, the relevant local generators are reachable critical pairs, and the before/after completion examples show that defect elimination can be read as holonomy elimination.
+
+This paper is also a mathematics-facing contribution to the Six Birds line of work. The general closure vocabulary comes from \cite{Tsiokos2026SixBirdsFoundations}, while the treatment of route mismatch as a disciplined mathematical defect was developed earlier in \cite{Tsiokos2026CountStone}. The present paper does not repeat that general background. Instead, it uses that vocabulary to isolate a specific claim about rewriting: the local obstructions to confluence are carried by the generating $2$-cells on which elementary holonomy is tested.
+
+The paper is organized around three levels of claim. First, there is a proved core: elementary flatness is equivalent to local confluence, and confluence plus normalization yields a unique normal form from a chosen start state. Second, there is a strong computational and structural bridge: exhaustive finite-ARS audits, curated string and term-rewriting examples, and explicit reduction 2-complex artifacts all support the corrected local geometric picture. Third, there is a deferred theorem package: the full finite terminating left-linear term-rewriting formulation in the exact target form remains to be written as a general theorem rather than a curated bridge. \Cref{sec:proved-supported-deferred} makes this boundary explicit.
+
+\paragraph{Contributions.}
+This paper makes four contributions.
+\begin{enumerate}
+    \item It identifies the correct geometric object for rewriting: a reduction 2-complex rather than a bare reduction graph.
+    \item It proves the local formal core that elementary flatness is exactly local confluence (\Cref{thm:elementary-flatness-iff-local-confluence}), together with the supporting uniqueness-of-normal-form fact under confluence and normalization (\Cref{prop:confluence-normalization-unique-normal-form}).
+    \item It shows computationally that the corrected local/global picture survives exhaustive finite-ARS stress tests and curated string and left-linear term-rewriting examples, while graph-only flatness surrogates fail (\Cref{sec:bare-graph-not-enough,sec:computational-bridge}).
+    \item It gives an explicit operational reading of completion as holonomy elimination in before/after string and term-rewriting pairs (\Cref{sec:completion-holonomy}).
+\end{enumerate}
+
+The rest of the paper proceeds as follows. \Cref{sec:preliminaries-scope} fixes the paper's scope and its minimal Six Birds placement. \Cref{sec:bare-graph-not-enough} rules out the wrong graph-only formulation. \Cref{sec:reduction-two-complex} introduces the reduction 2-complex and elementary holonomy language, and \Cref{sec:core-theorem} proves the theorem-level core. \Cref{sec:critical-pairs-curvature} identifies reachable critical pairs as the structured rewriting generators of local curvature, \Cref{sec:computational-bridge} records the finite-ARS, string, and term-rewriting evidence base, and \Cref{sec:completion-holonomy} packages the before/after examples as holonomy-elimination case studies. \Cref{sec:proved-supported-deferred} then states explicitly what is proved, what is strongly supported, and what remains final theorem-writing work.
+ \section{Preliminaries and Scope}
+\label{sec:preliminaries-scope}
+
+This section fixes the paper's minimal vocabulary and, just as importantly, its boundary. The formal theorem layer is intentionally narrower than the eventual full theorem package suggested by the paper's central slogan, while the computational layer is intentionally broader than a toy demonstration. Keeping those two levels distinct is essential for the paper's claim discipline.
+
+\subsection{Rewriting and transport viewpoints}
+
+We work throughout with rewriting systems presented at three levels of structure. The base level is abstract rewriting: states and a one-step relation. The second level is structured rewriting, where local branchings arise from overlaps of rules and are recorded by critical pairs \cite{KnuthBendix1970,BaaderNipkow1998,Terese2003}. The third level is the geometric packaging introduced in \Cref{sec:reduction-two-complex}, where states become $0$-cells, one-step rewrites become $1$-cells, and local peaks or reachable critical pairs become generating $2$-cells.
+
+At the abstract level, the central notions are reachability, joinability, local confluence, confluence, and normal form. These are defined formally in \Cref{sec:core-theorem} and are standard in rewriting theory \cite{BaaderNipkow1998,Huet1980,DershowitzJouannaud1990,Terese2003}. At the structured level, the central question is how the relevant elementary branchings are generated. In the string and term-rewriting settings used here, the correct generator layer is the layer of reachable critical pairs relative to chosen starts and exploration bounds. At the geometric level, the same question is rephrased as a local path-dependence problem: does a generating branching cell admit a filler to a common witness, or does a genuine elementary route mismatch remain?
+
+\subsection{Six Birds placement}
+\label{subsec:six-birds-placement}
+
+\begin{remark}[Six Birds primitives and the present paper]
+\label{rem:six-birds-primitives}
+We use the Six Birds vocabulary of closure mechanics introduced in \cite{Tsiokos2026SixBirdsFoundations}. The six primitives are:
+\begin{enumerate}
+    \item \textbf{P1}: operator rewrite,
+    \item \textbf{P2}: constraints or feasibility gating,
+    \item \textbf{P3}: route mismatch / holonomy,
+    \item \textbf{P4}: staging,
+    \item \textbf{P5}: packaging,
+    \item \textbf{P6}: accounting / audit.
+\end{enumerate}
+The present paper is primarily a \textbf{P3} paper. Its central object is local route mismatch in rewriting systems. \textbf{P5} and \textbf{P6} play supporting roles by packaging the rewriting layers and by keeping the defect structure explicit in machine-readable artifacts and audits. The mathematical development below is otherwise self-contained.
+\end{remark}
+
+Within the internal line of work, the present paper should be read as a mathematics-facing sequel to \cite{Tsiokos2026CountStone}. The broad finite-state and coarse-graining lineage developed in \cite{Tsiokos2026LayStone} is relevant background, but it is not re-explained here. The paper uses that background only to situate its scope; its main task is narrower, namely to isolate the correct local geometric object for confluence.
+
+\subsection{Scope and evidence boundary}
+
+The paper works in three complementary regimes.
+
+First, it proves a core theorem at the level of abstract rewriting systems: elementary flatness is equivalent to local confluence, and confluence together with normalization yields a unique normal form from a chosen start state. This is the theorem-level core of the paper.
+
+Second, it stress-tests the resulting local/global picture in a finite computational regime. On the finite-ARS side, the repository exhaustively checks all labeled systems up to four states in the terminating regime. On the structured rewriting side, it studies curated bounded string and left-linear term-rewriting examples. These examples are not treated as substitutes for general theorems. They are treated as bridge evidence that the corrected local object and the corrected local generators are the right ones.
+
+Third, it makes the two-dimensional structure explicit. The repository now contains reduction 2-complex / elementary holonomy artifacts that package the relevant $0$-cells, $1$-cells, generating $2$-cells, boundary data, canonical fillers, and defect labels. This means that the geometric language used in the paper is operational rather than merely analogical.
+
+Two scope restrictions are worth making explicit. The first is negative: the paper does not read flatness from the bare reduction graph, and it does not identify ordinary graph-loop structure with the local obstruction to confluence. The second is positive: the paper's final general target is the finite terminating left-linear term-rewriting setting, but that target is not yet claimed here as a fully general theorem. What is claimed here is the proved abstract core, together with a strong computational and structural bridge that fixes the correct object and the correct local generators.
+
+\subsection{Guide to the remaining sections}
+
+With this scope fixed, the logic of the paper is straightforward. \Cref{sec:bare-graph-not-enough} rules out the wrong graph-only formulation. \Cref{sec:reduction-two-complex} introduces the corrected local geometric object. \Cref{sec:core-theorem} proves the theorem-level core. \Cref{sec:critical-pairs-curvature} identifies reachable critical pairs as the relevant structured rewriting generators. \Cref{sec:computational-bridge} records the stress tests that now close the experimental side of the project, and \Cref{sec:completion-holonomy} shows how explicit before/after rule additions can be read as holonomy elimination. The final section, \Cref{sec:proved-supported-deferred}, states cleanly what the manuscript has proved, what it has strongly supported, and what still remains theorem-writing work.
+ \section{Why the Bare Graph Is Not Enough}
+\label{sec:bare-graph-not-enough}
+
+The most tempting geometric reading of confluence is also the wrong one: one tries to attach ``flatness'' directly to the bare reduction graph and then hopes that graph-theoretic path information will recover order-independence of reduction. The computational evidence in this project shows that this move fails for a structural reason. A graph records a $1$-skeleton. Confluence, however, is tested on specific local branchings, and those branchings are inherently $2$-dimensional data \cite{Huet1980,Terese2003,Mimram2023,GuiraudMalbos2012}. The reduction graph therefore remembers too little: it records paths, but not which pairs of paths are the elementary local comparisons whose agreement matters.
+
+Two especially tempting graph-only surrogates were stress-tested in the finite-ARS regime.
+
+\begin{enumerate}
+    \item A \emph{directed-loop flatness} surrogate, which declares a system ``flat'' whenever the directed reduction graph has no directed cycle.
+    \item An \emph{undirected cycle-rank} surrogate, which measures only the cycle-space rank of the underlying simple undirected graph.
+\end{enumerate}
+
+Neither surrogate captures confluence. The first is too weak, because in terminating examples it collapses to a vacuous acyclicity test. The second is pointed at the wrong object, because ordinary graph cycles do not encode the local branching cells on which joinability is decided.
+
+\begin{figure}[t]
+    \centering
+    \fbox{\parbox{0.72\linewidth}{\centering
+            \[
+            A \to B,\qquad A \to C,\qquad B \to D
+            \]
+            \[
+            C \text{ terminal},\qquad D \text{ terminal}
+            \]
+            \medskip
+            Local peak at $A$ with branches $B$ and $C$ is defective.
+        }}
+    \caption{A nonconfluent finite ARS whose directed reduction graph is acyclic. The obstruction lives on the local branching cell at the common source, not on an ordinary graph loop, which is why graph-only flatness surrogates miss it.}
+    \label{fig:bare-graph-failure}
+\end{figure}
+
+\begin{table}[t]
+    \caption{Curated finite-ARS comparison between graph-only surrogates and rewriting-relevant defect signals. All four examples are naively flat under the directed-loop surrogate, yet $E002$ and $E004$ are nonconfluent; meanwhile $E001$ and $E003$ are confluent despite positive undirected cycle rank.}
+    \label{tab:bare-graph-flatness-mismatch}
+    \centering
+    \smallskip
+    \small
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Example & Naively flat? & Undirected cycle rank & Nonjoinability defects & Confluent? \\
+\midrule
+$E001$ (diamond)           & yes & 1 & 0 & yes \\
+$E002$ (fork)              & yes & 0 & 1 & no \\
+$E003$ (delayed join)      & yes & 1 & 0 & yes \\
+$E004$ (counterexample)    & yes & 0 & 2 & no \\
+\bottomrule
+\end{tabular}
+ \end{table}
+
+The finite-ARS audits make the failure precise.
+
+\begin{proposition}[Bare graph surrogates are not diagnostic for confluence]
+\label{prop:bare-graph-not-diagnostic}
+The graph-only surrogates above do not diagnose confluence, even in the small terminating finite-ARS regime explored in this paper.
+\end{proposition}
+
+\begin{proof}[Audit summary]
+The curated finite-ARS examples already exhibit the mismatch clearly. In the examples $E001$--$E004$, all four reduction graphs are terminating and therefore acyclic as directed graphs, so the naive directed-loop criterion declares all four ``flat.'' Yet $E002$ and $E004$ are nonconfluent and have nonzero local defects. Thus directed-loop flatness produces false positives.
+
+The undirected cycle-rank surrogate fails in the opposite way. The example $E004$ is nonconfluent while having undirected cycle rank zero, so graph-loop absence does not imply confluence. Conversely, the examples $E001$ and $E003$ are confluent while having positive undirected cycle rank, so graph-loop presence does not imply nonconfluence. The graph cycle structure is therefore not the right local obstruction carrier.
+
+These curated mismatches are consistent with the exhaustive finite-ARS audit on all labeled systems up to four states in the terminating regime: the computational relationships that survive there are the rewriting-theoretic local/global ones, not the graph-only flatness surrogates. In particular, the exhaustive audit supports the local peak picture rather than a bare graph-loop picture.
+\end{proof}
+
+The lesson is not that path-independence language should be abandoned. The lesson is that it must be attached to the correct object. Confluence is not a statement about arbitrary loops in the $1$-skeleton; it is a statement about the agreement of specific local branchings. Those branchings become visible only after the missing $2$-cells are restored. This is the motivation for the reduction 2-complex introduced in \Cref{sec:reduction-two-complex}.
+
+Stated differently: the failure of the bare graph does not weaken the bridge to geometry. It sharpens it. The experiments show exactly where the geometric data must live. Elementary flatness cannot be read from the graph alone because the relevant local obstruction is not an ordinary graph loop. It is an elementary branching cell with two boundary routes and, when joinable, a filler to a common witness. That corrected local picture is what the next section makes precise.
+
+\begin{remark}[From graph loops to branching cells]
+\label{rem:graph-loops-to-branching-cells}
+The negative result of this section is therefore a positive design constraint for the rest of the paper. Any viable confluence-as-flatness statement must be formulated on a structure that remembers local branching cells. In the present paper, that structure is the reduction 2-complex. The local obstructions of interest are then carried by generating $2$-cells, not by graph loops in the bare reduction graph.
+\end{remark}
+ \section{Reduction 2-Complexes and Elementary Holonomy}
+\label{sec:reduction-two-complex}
+
+The bare reduction graph records states and one-step rewrites, but it does not yet record the local two-route data on which confluence is tested. The guiding correction in this paper is that the relevant geometric object is therefore not the graph alone, but a \emph{reduction 2-complex}: a directed $1$-skeleton together with generating $2$-cells for the local branching patterns that matter. In the finite abstract rewriting systems used earlier in the paper, those generating $2$-cells are local peaks. In the string and term-rewriting examples used later, they are reachable critical pairs. The common point is that each generating $2$-cell compares two admissible one-step branches from a common source.
+
+\subsection{From reduction graphs to reduction 2-complexes}
+
+\begin{definition}[Reduction 2-complex]
+\label{def:reduction-two-complex}
+For the purposes of this paper, a \emph{reduction 2-complex} associated to a rewriting system $R$ consists of the following data.
+\begin{enumerate}
+    \item A set of \emph{$0$-cells}, namely the states, words, or terms under consideration.
+    \item A set of directed \emph{$1$-cells}, namely the one-step rewrites $x \to y$.
+    \item A set of generating \emph{$2$-cells}, each attached to a local two-route branching pattern with common source. In the finite-ARS setting these are local peaks. In the string and term-rewriting settings used in this paper, these are reachable critical pairs relative to the chosen start states and exploration bounds.
+\end{enumerate}
+\end{definition}
+
+The point of \Cref{def:reduction-two-complex} is modest but essential. We are not introducing the full apparatus of higher gauge theory here. We are isolating the minimal two-dimensional structure needed to talk about local path dependence. The reduction graph supplies the $1$-skeleton; the generating peaks or reachable critical pairs supply the missing $2$-cells \cite{Mimram2023,GuiraudMalbos2018,GuiraudMalbos2012,Squier1987}.
+
+\begin{remark}[Why the bare graph is insufficient]
+\label{rem:bare-graph-insufficient}
+A graph by itself can encode paths, but not which pairs of paths are the elementary local branchings whose agreement is at stake. Curvature language therefore cannot be attached to the bare reduction graph alone in any informative way. The relevant local obstruction lives on generating $2$-cells, not merely on loops in the $1$-skeleton. This is exactly why the graph-only flatness surrogates examined in \Cref{sec:bare-graph-not-enough} fail.
+\end{remark}
+
+\subsection{Elementary holonomy}
+
+Each generating $2$-cell compares two boundary routes with the same source. If those routes can be filled to a common witness, the local discrepancy disappears. If they cannot, the local branching remembers a genuine route mismatch.
+
+\begin{definition}[Boundary data and fillers]
+\label{def:boundary-filler-data}
+Let $\sigma$ be a generating $2$-cell with source $x$ and one-step branches to $y_\ell$ and $y_r$. Its boundary data consist of
+\[
+x \to y_\ell
+\qquad\text{and}\qquad
+x \to y_r.
+\]
+A \emph{filler} for $\sigma$ is a common descendant $w$ together with directed paths
+\[
+y_\ell \to^* w
+\qquad\text{and}\qquad
+y_r \to^* w.
+\]
+When such a filler exists, we call $w$ a \emph{join witness} for $\sigma$.
+\end{definition}
+
+\begin{definition}[Elementary holonomy status]
+\label{def:elementary-holonomy-status}
+Let $\sigma$ be a generating $2$-cell in a reduction 2-complex.
+\begin{itemize}
+    \item $\sigma$ has \emph{trivial elementary holonomy} if it admits a filler in the sense of \Cref{def:boundary-filler-data}.
+    \item $\sigma$ has \emph{nontrivial elementary holonomy} if no such filler exists.
+\end{itemize}
+\end{definition}
+
+This terminology is intentionally local. The paper does not need a full group-valued holonomy theory. What it needs is a precise way to say whether the two elementary routes attached to a generating branching agree after completion to a common witness. Trivial elementary holonomy is exactly that agreement; nontrivial elementary holonomy is exactly its failure.
+
+In the machine-readable artifacts used later in the paper, two additional pieces of information are tracked.
+\begin{enumerate}
+    \item A canonical \emph{join witness} and canonical filler paths whenever the $2$-cell is joinable.
+    \item A canonical \emph{defect label} whenever it is not. The primary label is \texttt{nonjoinable}. In terminating bounded examples we also record normal-form outcome mismatch as a secondary diagnostic.
+\end{enumerate}
+These implementation choices make the local path-dependence story explicit without changing the underlying mathematical point: the first and indispensable distinction is whether the generating $2$-cell is fillable at all.
+
+\begin{remark}[Elementary holonomy and the theorem-level core]
+\label{rem:holonomy-vs-formal-core}
+The theorem-level core proved in \Cref{sec:core-theorem} uses only joinability of elementary peaks. The normal-form mismatch diagnostic belongs to the computational layer for terminating explored examples and is useful precisely because it refines the nontrivial cases. It is not needed for the basic equivalence between elementary flatness and local confluence.
+\end{remark}
+
+\subsection{Representative domains}
+
+The same two-dimensional pattern appears in the three domains used in this paper.
+\begin{itemize}
+    \item In finite abstract rewriting systems, the generating $2$-cells are local peaks.
+    \item In bounded string-rewriting examples, the generating $2$-cells are reachable critical pairs relative to the chosen start words.
+    \item In the left-linear term-rewriting bridge, the generating $2$-cells are reachable critical pairs relative to the chosen start terms.
+\end{itemize}
+Across all three domains, the reduction 2-complex records the same local question: given two admissible elementary branches from a common source, is there a canonical filler to a common witness, or does a genuine local route mismatch remain?
+
+\begin{table}[t]
+    \caption{Elementary holonomy on the representative finite-ARS, string, and term-rewriting examples used to instantiate the reduction 2-complex language. Joinable generators are trivial; defective generators are nontrivial.}
+    \label{tab:elementary-holonomy-summary}
+    \centering
+    \smallskip
+    \small
+\begin{tabular}{@{}llcccp{0.20\linewidth}@{}}
+\toprule
+Example & Domain & 2-cells & Trivial & Nontrivial & Witness / defect \\
+\midrule
+$E001$ (diamond)       & finite ARS & 1 & 1 & 0 & D \\
+$E002$ (fork)          & finite ARS & 1 & 0 & 1 & nonjoinable \\
+$E007$ (before)        & string     & 1 & 0 & 1 & nonjoinable \\
+$E008$ (after)         & string     & 1 & 1 & 0 & \texttt{y} \\
+$TRS003$ (nested)      & term rew.  & 1 & 0 & 1 & nonjoinable \\
+$TRS004$ (resolved)    & term rew.  & 1 & 1 & 0 & \texttt{p(a)} \\
+\bottomrule
+\end{tabular}
+ \end{table}
+
+This is the sense in which the paper uses the phrase \emph{elementary holonomy}. It is a local path-dependence status attached to generating $2$-cells of the reduction 2-complex. Once that language is fixed, the bridge to rewriting becomes straightforward: local confluence is the statement that the relevant elementary holonomies vanish.
+ \section{Core Theorem: Elementary Flatness and Local Confluence}
+\label{sec:core-theorem}
+
+We now state and prove the rigorous core used throughout the paper. The setting for this section is an abstract rewriting system $(X,\to)$, and $\to^*$ denotes the reflexive-transitive closure of $\to$. The theorem is intentionally local: it identifies the exact formal content of the slogan that ``flatness'' is the absence of elementary route mismatch.
+
+\subsection{Joinability, local confluence, and elementary flatness}
+
+\begin{definition}[Joinability]
+\label{def:joinability}
+Two states $b,c \in X$ are \emph{joinable} if there exists some $d \in X$ such that
+\[
+b \to^* d
+\qquad\text{and}\qquad
+c \to^* d.
+\]
+\end{definition}
+
+\begin{definition}[Normal forms]
+\label{def:normal-form}
+A state $n \in X$ is a \emph{normal form} if there is no state $m \in X$ such that $n \to m$.
+\end{definition}
+
+\begin{definition}[Local confluence]
+\label{def:local-confluence}
+The rewriting system $(X,\to)$ is \emph{locally confluent} if for all $a,b,c \in X$,
+\[
+a \to b
+\quad\text{and}\quad
+a \to c
+\quad\Longrightarrow\quad
+b \text{ and } c \text{ are joinable.}
+\]
+\end{definition}
+
+\begin{definition}[Elementary peaks and elementary flatness]
+\label{def:elementary-peak-flatness}
+An \emph{elementary peak} is a triple $(a,b,c)$ such that
+\[
+a \to b,
+\qquad
+a \to c,
+\qquad
+b \neq c.
+\]
+The rewriting system $(X,\to)$ is \emph{elementarily flat} if every elementary peak is joinable.
+\end{definition}
+
+\begin{lemma}[Reflexive joinability]
+\label{lem:joinable-refl}
+Every state is joinable with itself.
+\end{lemma}
+
+\begin{proof}
+Let $x \in X$. Since $\to^*$ is reflexive, we have $x \to^* x$. Taking $d=x$ in \Cref{def:joinability}, we conclude that $x$ is joinable with itself.
+\end{proof}
+
+\begin{theorem}[Elementary flatness iff local confluence]
+\label{thm:elementary-flatness-iff-local-confluence}
+A rewriting system is elementarily flat if and only if it is locally confluent.
+\end{theorem}
+
+\begin{proof}
+Assume first that $(X,\to)$ is locally confluent. Let $(a,b,c)$ be an elementary peak. By \Cref{def:elementary-peak-flatness}, we have $a \to b$ and $a \to c$. By local confluence, $b$ and $c$ are joinable. Hence every elementary peak is joinable, so the system is elementarily flat.
+
+Conversely, assume that $(X,\to)$ is elementarily flat. To prove local confluence, let $a,b,c \in X$ satisfy $a \to b$ and $a \to c$. There are two cases.
+
+If $b=c$, then $b$ and $c$ are joinable by \Cref{lem:joinable-refl}.
+
+If $b \neq c$, then $(a,b,c)$ is an elementary peak. By elementary flatness, $b$ and $c$ are joinable.
+
+In both cases, the two one-step descendants of $a$ are joinable. Therefore the system is locally confluent.
+\end{proof}
+
+\begin{remark}[What the theorem does and does not say]
+\label{rem:core-theorem-scope}
+\Cref{thm:elementary-flatness-iff-local-confluence} is the formal core of the paper. It does not yet identify which local branchings generate the relevant $2$-cells in a given rewriting formalism; that is the role of critical pairs in \Cref{sec:critical-pairs-curvature}. Nor does it by itself supply a local-to-global theorem such as Newman-style termination plus local confluence \cite{Huet1980,BaaderNipkow1998,DershowitzJouannaud1990,Terese2003}. Its point is narrower and more precise: once the correct elementary branchings have been identified, ``flatness'' at that level is exactly local confluence.
+\end{remark}
+
+\subsection{A supporting global normal-form fact}
+
+The local theorem above is the main formal statement needed for the paper's geometric bridge. We also record the standard supporting fact that confluence plus normalization yields a unique normal form from any chosen start state.
+
+\begin{definition}[Confluence and normalization]
+\label{def:confluence-normalization}
+The rewriting system $(X,\to)$ is \emph{confluent} if for all $a,b,c \in X$,
+\[
+a \to^* b
+\quad\text{and}\quad
+a \to^* c
+\quad\Longrightarrow\quad
+b \text{ and } c \text{ are joinable.}
+\]
+It is \emph{normalizing} if for every $a \in X$ there exists some normal form $n$ such that
+\[
+a \to^* n.
+\]
+\end{definition}
+
+\begin{proposition}[Confluence and normalization give a unique normal form]
+\label{prop:confluence-normalization-unique-normal-form}
+Assume that $(X,\to)$ is confluent and normalizing. Then for every $a \in X$ there exists a unique normal form $n$ such that $a \to^* n$.
+\end{proposition}
+
+\begin{proof}
+Fix $a \in X$. Since the system is normalizing, there exists at least one normal form $n$ with $a \to^* n$.
+
+To prove uniqueness, suppose that $n$ and $m$ are both normal forms and that
+\[
+a \to^* n,
+\qquad
+a \to^* m.
+\]
+By confluence, $n$ and $m$ are joinable. Hence there exists some $d$ such that
+\[
+n \to^* d
+\qquad\text{and}\qquad
+m \to^* d.
+\]
+But $n$ is a normal form, so the only state reachable from $n$ is $n$ itself; therefore $d=n$. Likewise, since $m$ is a normal form, we must have $d=m$. Hence $n=m$.
+\end{proof}
+
+\begin{remark}[Lean formal core]
+\label{rem:lean-formal-core-crossref}
+The definitions and baseline equivalences used in this section are mirrored in the Lean development summarized in Appendix~\ref{app:lean-formal-core}. In particular, the formal core contains the elementary-flatness/local-confluence equivalence together with the corresponding uniqueness-of-normal-form statement under confluence and normalization.
+\end{remark}
+ \section{Critical Pairs as Curvature Generators}
+\label{sec:critical-pairs-curvature}
+
+\Cref{thm:elementary-flatness-iff-local-confluence} identifies the formal core of the paper at the level of abstract rewriting systems: once the relevant elementary branchings have been identified, local confluence is exactly elementary flatness. In structured rewriting formalisms, however, those elementary branchings are not presented to us as abstract triples. They arise from concrete overlaps of rewrite rules. This is the point at which critical pairs enter \cite{KnuthBendix1970,BaaderNipkow1998,Terese2003}.
+
+The guiding claim of this section is that critical pairs are not merely a practical confluence checklist. In the structured rewriting settings studied here, their reachable layer is the structured rewriting analogue of the generating $2$-cells introduced in \Cref{sec:reduction-two-complex} \cite{SquierOtto1987,Squier1987,GuiraudMalbos2018,GuiraudMalbos2012,Mimram2023}. Put differently: in the examples studied here, reachable critical pairs are the local generators on which elementary holonomy is tested. When a reachable critical pair is defective, the corresponding generating $2$-cell has nontrivial elementary holonomy. When that defect is removed, the corresponding elementary holonomy disappears.
+
+\subsection{Strings: overlaps, reachability, and observed peaks}
+\label{subsec:string-critical-pairs}
+
+In the bounded string-rewriting examples of this paper, the local branchings of interest arise from overlaps of string rules. System-level critical pairs therefore give the natural candidate list of generating $2$-cells \cite{BonchiEtAl2022}. But the correct comparison basis for the explored reduction complex is not the raw system-wide list. It is the \emph{reachable} subset relative to the designated start words and exploration bounds.
+
+This distinction matters already in the smallest nonconfluent overlap example. In $E006$, the system has two critical pairs, but only one of them is reachable from the chosen start word \texttt{aba}. The explored graph therefore displays one local peak, not two. The local obstruction seen in the explored reduction complex is not the entire system-wide overlap inventory; it is the reachable critical-pair layer. By contrast, in the sorting example $E005$ and in the completion pair $E007$--$E008$, the reachable and graph-visible local layers coincide exactly.
+
+\begin{figure}[t]
+    \centering
+    \fbox{\parbox{0.76\linewidth}{\centering
+            \[
+            \texttt{aba} \to \texttt{aa},
+            \qquad
+            \texttt{aba} \to \texttt{ab} \to \texttt{a}
+            \]
+            \medskip
+            Reachable critical pair at source \texttt{aba}; the observed graph peak has distinct outcomes \texttt{aa} and \texttt{a}.
+        }}
+    \caption{The string overlap example $E006$. The system has two system critical pairs, but only the reachable one from the designated start word appears in the explored reduction complex. Its defect matches the unique observed local peak.}
+    \label{fig:string-overlap-nonconfluent}
+\end{figure}
+
+\subsection{Reachable critical pairs versus graph peaks}
+\label{subsec:reachable-critical-pairs-vs-peaks}
+
+The computational bridge developed in the repository compares these two local layers by a common signature:
+\[
+(\text{source},\ \text{unordered pair of branch terms}).
+\]
+On the string examples, the reachable critical-pair signatures and the graph-peak signatures agree exactly.
+
+\begin{table}[t]
+    \caption{System critical pairs, reachable critical pairs, graph peaks, and reachable defect counts in the curated string and term-rewriting examples. The relevant local comparison basis for the explored reduction complex is the reachable critical-pair layer.}
+    \label{tab:system-vs-reachable-cp-vs-graph-peak}
+    \centering
+    \smallskip
+    \small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}L{0.22\linewidth} L{0.11\linewidth} *{4}{>{\centering\arraybackslash}p{0.08\linewidth}} >{\centering\arraybackslash}p{0.11\linewidth}@{}}
+\toprule
+Example & Domain & \shortstack{System\\CPs} & \shortstack{Reach.\\CPs} & \shortstack{Graph\\peaks} & \shortstack{Defective\\CPs} & Confluent? \\
+\midrule
+$E005$ (sort)          & string    & 1 & 1 & 1 & 0 & yes \\
+$E006$ (overlap)       & string    & 2 & 1 & 1 & 1 & no \\
+$E007$ (before)        & string    & 1 & 1 & 1 & 1 & no \\
+$E008$ (after)         & string    & 1 & 1 & 1 & 0 & yes \\
+$TRS002$ (root)        & term rew. & 1 & 1 & 1 & 1 & no \\
+$TRS003$ (nested)      & term rew. & 1 & 1 & 1 & 1 & no \\
+$TRS004$ (resolved)    & term rew. & 1 & 1 & 1 & 0 & yes \\
+\bottomrule
+\end{tabularx}
+ \end{table}
+
+\begin{proposition}[Reachable critical pairs capture the observed local obstruction set in the curated string examples]
+\label{prop:reachable-critical-pairs-capture-string-obstructions}
+For the curated string examples $E005$--$E008$, the reachable critical pairs match the graph-extracted local peaks, and their defect signatures agree.
+\end{proposition}
+
+\begin{proof}[Audit summary]
+The string sorting example $E005$ has one system critical pair, one reachable critical pair, and one graph peak; all are joinable, and all local defect counts vanish. The overlap example $E006$ has two system critical pairs but only one reachable critical pair from the chosen start word. The explored graph correspondingly has one local peak, and that reachable critical pair is defective: both the nonjoinability and normal-form outcome-mismatch diagnostics are nonzero. The completion-before example $E007$ has one reachable critical pair and one graph peak, both defective. The completion-after example $E008$ has one reachable critical pair and one graph peak, both joinable. In all four cases the reachable-signature comparison is exact, and the defective-signature comparison is exact as well. Thus, on the curated string examples, reachable critical pairs capture the local obstruction set actually seen in the explored reduction complex.
+\end{proof}
+
+This is the sense in which reachable critical pairs behave as curvature generators in the string layer. They are the local overlap-generated $2$-cells on which elementary holonomy is tested. These reachable generators are the ones that appear in the explored reduction complex for the chosen starts.
+
+\subsection{Left-linear term-rewriting bridge}
+\label{subsec:left-linear-trs-bridge}
+
+The term-rewriting prototype pushes the same local picture beyond strings. The root-overlap example $TRS002$ serves as a smoke test: it has a single reachable critical pair with source term $f(a,b)$ and branch terms $g(b)$ and $h(a)$, and the explored reduction graph exhibits exactly the corresponding defective local peak. More importantly, the nested-overlap pair $TRS003$--$TRS004$ shows that this agreement survives genuine nonroot overlap structure.
+
+In $TRS003$, the two rules
+\[
+f(g(x)) \to p(x),
+\qquad
+g(a) \to b
+\]
+produce a reachable critical pair at source term $f(g(a))$ with branch terms $p(a)$ and $f(b)$. That critical pair is defective, and the explored reduction graph is nonconfluent from the chosen start term. In $TRS004$, the added rule
+\[
+f(b) \to p(a)
+\]
+makes the same local branching joinable. The critical-pair source and branch terms remain the same; what changes is the existence of a filler, and therefore the elementary holonomy status of the corresponding generating $2$-cell.
+
+\begin{figure}[t]
+    \centering
+    \fbox{\parbox{0.82\linewidth}{\centering
+            \begin{tabular}{c@{\qquad}c}
+            \textbf{$TRS003$} & \textbf{$TRS004$} \\
+            $f(g(a)) \to p(a)$ & $f(g(a)) \to p(a)$ \\
+            $f(g(a)) \to f(b)$ & $f(g(a)) \to f(b) \to p(a)$
+            \end{tabular}
+            \medskip
+            Same local generator, resolved by a filler in the right-hand system.
+        }}
+    \caption{The left-linear term-rewriting bridge. $TRS003$ and $TRS004$ share the same reachable local generator at $f(g(a))$ with branches $f(b)$ and $p(a)$; the added rule in $TRS004$ supplies a filler rather than removing the generator.}
+    \label{fig:trs-nested-overlap-pair}
+\end{figure}
+
+\begin{proposition}[The curated left-linear term-rewriting bridge exhibits the same local generator pattern]
+\label{prop:trs-critical-pairs-as-curvature-generators}
+In the curated left-linear term-rewriting examples $TRS002$--$TRS004$, reachable critical pairs agree with graph-visible local peaks, and their defect status agrees with the local confluence behavior observed in the explored reduction graphs.
+\end{proposition}
+
+\begin{proof}[Audit summary]
+The root-overlap example $TRS002$ has one reachable critical pair, one graph peak, and one nontrivial local defect. The nested-overlap example $TRS003$ also has one reachable critical pair and one graph peak; both are defective, and the explored reduction graph is nonconfluent from the chosen start term. After the additional rule is added in $TRS004$, the same reachable critical-pair source and branch terms remain, but the defect disappears: the reachable critical pair becomes joinable, the graph-visible local peak becomes fillable, and the explored reduction graph becomes confluent from the chosen start term. In all three examples, the reachable-signature comparison between critical pairs and graph peaks is exact.
+\end{proof}
+
+The term-rewriting bridge matters because it shows that the string-level picture is not an accident of substring rewriting. Once reachable critical pairs are treated as the local overlap-generated branching cells in the explored setting, the same curvature-generator reading survives in a genuine first-order rewriting setting, at least in the curated left-linear regime implemented here.
+
+\begin{remark}[Why the qualifier \emph{reachable} matters]
+\label{rem:reachable-critical-pairs-matter}
+The phrase \emph{critical pairs are curvature generators} would be too coarse if interpreted as a statement about every system critical pair independently of context. The correct local layer for the explored reduction complex is the reachable critical-pair layer relative to chosen starts. This is not a technicality. It is exactly what separates the system-wide overlap inventory from the local generator set that actually appears in the reduction 2-complex under study.
+\end{remark}
+
+Taken together, the string and left-linear term-rewriting examples justify the paper's rewriting-specific bridge claim: in structured rewriting formalisms, the relevant generating $2$-cells are supplied by reachable critical pairs, and the defective ones are precisely the local generators of nontrivial elementary holonomy. The next section places this local picture inside the broader computational evidence base.
+ \section{Computational Bridge and Stress Tests}
+\label{sec:computational-bridge}
+
+The preceding sections isolate the corrected geometric object and the theorem-level local core. This section records how that picture survives the implemented stress tests. The evidence comes in three layers:
+\begin{enumerate}
+    \item an exhaustive audit of all labeled finite abstract rewriting systems on up to four states in the terminating regime;
+    \item curated bounded string-rewriting examples;
+    \item a curated left-linear term-rewriting bridge with genuine nonroot overlap.
+\end{enumerate}
+The role of this section is not to replace theorem-writing. Its role is to show that once the object and the local generators are chosen correctly, the expected local/global relationships remain stable across every computational regime implemented in the repository.
+
+\subsection{Exhaustive finite-ARS audit}
+\label{subsec:exhaustive-finite-ars-audit}
+
+The cleanest stress test is the exhaustive finite-ARS audit. The search space contains every labeled directed rewriting relation on $n$ states for $n \leq 4$, including self-loops. This yields
+\[
+2^1 + 2^4 + 2^9 + 2^{16} = 66066
+\]
+systems in total. Of these, $572$ are terminating.
+
+\begin{proposition}[Exhaustive finite-ARS stress test]
+\label{prop:exhaustive-finite-ars-stress-test}
+Within the terminating finite-ARS search space on up to four states, the four target discrepancy classes tracked in the repository are empty.
+\end{proposition}
+
+\begin{proof}[Audit summary]
+The search checks $2$, $16$, $512$, and $65536$ labeled systems at sizes $1$, $2$, $3$, and $4$ respectively, for a total of $66066$. The terminating counts are $1$, $3$, $25$, and $543$, for a total of $572$ terminating systems. On this terminating subset, the discrepancy counts
+\[
+\begin{aligned}
+&\texttt{local\_flatness\_vs\_local\_confluence},\\
+&\texttt{terminating\_local\_flatness\_not\_confluent},\\
+&\texttt{terminating\_confluent\_not\_unique\_reachable\_normal\_forms},\\
+&\texttt{terminating\_unique\_reachable\_normal\_forms\_not\_confluent}
+\end{aligned}
+\]
+are all zero. Equivalently, on the terminating finite-ARS regime explored here, the local peak picture survives every system in the search space while the naive graph-only flatness surrogates do not.
+\end{proof}
+
+\begin{table}[t]
+\caption{Exhaustive finite-ARS audit on all labeled systems up to four states. On the terminating subset, all four discrepancy classes vanish.}
+\label{tab:exhaustive-finite-ars-summary}
+\centering
+\smallskip
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{0.96\linewidth}{L{0.14\linewidth} *{6}{>{\centering\arraybackslash}X}}
+\toprule
+Scope & \shortstack{Total\\systems} & \shortstack{Terminating} & LF$\neq$LC & \shortstack{LF \&\\$\neg$Conf} & \shortstack{Conf \&\\$\neg$UNF} & \shortstack{UNF \&\\$\neg$Conf} \\
+\midrule
+$n \leq 4$ & 66\,066 & 572 & 0 & 0 & 0 & 0 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+ 
+The same finite-ARS infrastructure was also used outside the safe theorem hypotheses. Within the same small search bound, the boundary-counterexample search found explicit witnesses to the weakened claims obtained by dropping termination or replacing joinability-based local flatness with naive graph or normal-form surrogates. The positive finite-ARS results are therefore not an artifact of an impoverished search space; they are specific to the correct hypotheses.
+
+\subsection{Curated string systems}
+\label{subsec:curated-string-systems}
+
+The string layer provides the first structured rewriting bridge. All four curated string examples explored completely under their chosen bounds, and all four exhibit the expected relation between global confluence, local peak defects, and reachable critical-pair defects.
+
+\begin{table}[t]
+\caption{Curated string examples. The table reports explored graph size, reachable critical-pair counts, reachable defect counts, normal forms, and confluence status for $E005$--$E008$.}
+\label{tab:curated-string-summary}
+\centering
+\smallskip
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}L{0.10\linewidth} *{2}{>{\centering\arraybackslash}p{0.07\linewidth}} *{2}{>{\centering\arraybackslash}p{0.10\linewidth}} Y >{\centering\arraybackslash}p{0.11\linewidth}@{}}
+\toprule
+Example & States & Edges & \shortstack{Reach.\\CPs} & \shortstack{Defective\\CPs} & Normal forms & Confluent? \\
+\midrule
+$E005$ & 6 & 6 & 1 & 0 & \texttt{abc} & yes \\
+$E006$ & 4 & 3 & 1 & 1 & \texttt{a}, \texttt{aa} & no \\
+$E007$ & 3 & 2 & 1 & 1 & \texttt{x}, \texttt{y} & no \\
+$E008$ & 3 & 3 & 1 & 0 & \texttt{y} & yes \\
+\bottomrule
+\end{tabularx}
+\end{table}
+ 
+The sorting example $E005$ explores completely to a six-state, six-edge reduction graph with one local peak, one reachable critical pair, zero local defects, zero reachable critical-pair defects, and unique normal form \texttt{abc}. The overlap example $E006$ explores completely to a four-state, three-edge reduction graph with one local peak, two system critical pairs, one reachable critical pair, and normal forms \texttt{a} and \texttt{aa}; its local peak defect counts and reachable critical-pair defect counts are both nonzero, and the explored system is nonconfluent. The completion-before example $E007$ explores completely to a three-state, two-edge reduction graph with normal forms \texttt{x} and \texttt{y}; it has one local peak, one reachable critical pair, nonzero local defects, nonzero reachable critical-pair defects, and nonconfluence. The completion-after example $E008$ explores completely to a three-state, three-edge reduction graph with unique normal form \texttt{y}; it has one local peak, one reachable critical pair, zero local defects, zero reachable critical-pair defects, and confluence.
+
+Taken together, the string examples do not merely show that some nonconfluent systems have bad critical pairs. They show the tighter statement needed for the paper: on the curated examples, the reachable critical-pair defect layer and the observed graph-peak defect layer agree exactly, and both align with the global confluence behavior of the explored system.
+
+\subsection{Curated left-linear term-rewriting bridge}
+\label{subsec:curated-trs-bridge}
+
+The left-linear term-rewriting prototype extends the same local/global pattern to a genuine first-order setting. All four curated examples explore completely under their chosen bounds.
+
+\begin{table}[t]
+\caption{Curated left-linear term-rewriting bridge. The table reports explored graph size, reachable critical-pair counts, reachable defect counts, normal forms, and confluence status for $TRS001$--$TRS004$.}
+\label{tab:curated-trs-summary}
+\centering
+\smallskip
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}L{0.12\linewidth} *{2}{>{\centering\arraybackslash}p{0.07\linewidth}} *{2}{>{\centering\arraybackslash}p{0.10\linewidth}} Y >{\centering\arraybackslash}p{0.11\linewidth}@{}}
+\toprule
+Example & States & Edges & \shortstack{Reach.\\CPs} & \shortstack{Defective\\CPs} & Normal forms & Confluent? \\
+\midrule
+$TRS001$ & 3 & 2 & 0 & 0 & \texttt{s(s(z))} & yes \\
+$TRS002$ & 3 & 2 & 1 & 1 & \texttt{g(b)}, \texttt{h(a)} & no \\
+$TRS003$ & 3 & 2 & 1 & 1 & \texttt{f(b)}, \texttt{p(a)} & no \\
+$TRS004$ & 3 & 3 & 1 & 0 & \texttt{p(a)} & yes \\
+\bottomrule
+\end{tabularx}
+\end{table}
+ 
+The Peano-addition smoke test $TRS001$ explores completely to a three-state, two-edge reduction graph with unique normal form \texttt{s(s(z))} and no critical pairs. The root-overlap example $TRS002$ explores completely to a three-state, two-edge reduction graph with one reachable critical pair, one graph peak, normal forms \texttt{g(b)} and \texttt{h(a)}, and a nontrivial reachable defect. The nested-overlap nonconfluent example $TRS003$ explores completely to a three-state, two-edge reduction graph with one reachable critical pair, one graph peak, normal forms \texttt{f(b)} and \texttt{p(a)}, and a nontrivial reachable defect. The nested-overlap resolved example $TRS004$ explores completely to a three-state, three-edge reduction graph with one reachable critical pair, one graph peak, unique normal form \texttt{p(a)}, and zero reachable defects.
+
+The term-rewriting bridge therefore reproduces the same operational pattern seen in the string layer. The local generator persists, but its defect status changes. In the defective case the explored system is nonconfluent from the chosen start term; in the resolved case the explored system is confluent. Moreover, the reachability cross-check between critical-pair signatures and graph-peak signatures is exact on all curated TRS examples.
+
+\begin{remark}[What the computational bridge does and does not establish]
+\label{rem:computational-bridge-scope}
+The computational evidence in this section is strong enough to fix the correct local geometric picture. It is not, by itself, the final theorem package for finite terminating left-linear term rewriting systems in full generality. What it does establish is that the corrected local/global story survives every implemented stress test: exhaustive finite ARS search in the terminating regime, curated string overlaps and completion pairs, and curated left-linear term-rewriting examples with genuine nonroot overlap.
+\end{remark}
+ \section{Completion as Holonomy Elimination}
+\label{sec:completion-holonomy}
+
+The preceding sections identify the local generators and show that their defect status aligns with observed confluence behavior. This section packages that local picture into the paper's most operational reading: in explicit before/after examples, a hand-specified completion step removes a local obstruction, and the corresponding elementary holonomy disappears. In this sense, completion can be read as \emph{holonomy elimination}.
+
+The point is deliberately modest. The paper is not claiming an algorithmic completion theorem in geometric language \cite{KnuthBendix1970}. It is claiming that, in explicit finite examples, the addition of the right rule changes a previously nontrivial generating $2$-cell into a trivial one. The local defect disappears, and the global behavior changes with it.
+
+\subsection{String before/after pair}
+\label{subsec:string-completion-holonomy}
+
+The string pair $E007$--$E008$ is the cleanest instance of this pattern. Before the added rule, the system has the two rules
+\[
+ab \to x,
+\qquad
+ab \to y.
+\]
+From the chosen start word \texttt{ab}, the explored reduction graph has one local peak, one reachable critical pair, and two normal forms, namely \texttt{x} and \texttt{y}. The corresponding generating $2$-cell has nontrivial elementary holonomy: there is no filler to a common witness, the local peak is defective, and the explored system is nonconfluent.
+
+After the additional rule
+\[
+x \to y
+\]
+is added, the local branching source and branch words remain exactly the same. The generating $2$-cell is not removed; it is \emph{resolved}. The branch \texttt{x} now reduces to \texttt{y}, so the local branching admits a filler with join witness \texttt{y}. The elementary holonomy of the corresponding $2$-cell becomes trivial, the local defect counts drop to zero, and the explored system becomes confluent with unique normal form \texttt{y}.
+
+\begin{figure}[t]
+    \centering
+    \fbox{\parbox{0.82\linewidth}{\centering
+            \begin{tabular}{c@{\qquad}c}
+            \textbf{Before} & \textbf{After} \\
+            $\texttt{ab} \to \texttt{x}$ & $\texttt{ab} \to \texttt{x} \to \texttt{y}$ \\
+            $\texttt{ab} \to \texttt{y}$ & $\texttt{ab} \to \texttt{y}$
+            \end{tabular}
+            \medskip
+            The generator persists while the filler $\texttt{x} \to \texttt{y}$ becomes available.
+        }}
+    \caption{Before/after string completion pair. The generator at $ab$ with branches $x$ and $y$ is nontrivial before the added rule and trivial after it, with join witness $y$ in the resolved case.}
+    \label{fig:string-completion-before-after}
+\end{figure}
+
+\subsection{Term-rewriting before/after pair}
+\label{subsec:trs-completion-holonomy}
+
+The same operational pattern appears in the left-linear term-rewriting bridge. In $TRS003$, the nested overlap between
+\[
+f(g(x)) \to p(x)
+\qquad\text{and}\qquad
+g(a) \to b
+\]
+produces a reachable critical pair with source term $f(g(a))$ and branch terms $p(a)$ and $f(b)$. In the chosen explored closure, this local branching is defective: there is no filler to a common witness, the associated generating $2$-cell has nontrivial elementary holonomy, and the explored system is nonconfluent from the chosen start term.
+
+In $TRS004$, the additional rule
+\[
+f(b) \to p(a)
+\]
+resolves the same local branching. The critical-pair source and branch terms remain the same as in $TRS003$, but the branch $f(b)$ now reduces to $p(a)$. The corresponding generating $2$-cell therefore acquires a filler with join witness $p(a)$. Its elementary holonomy becomes trivial, its defect disappears, and the explored system becomes confluent from the chosen start term.
+
+\begin{figure}[t]
+    \centering
+    \fbox{\parbox{0.84\linewidth}{\centering
+            \begin{tabular}{c@{\qquad}c}
+            \textbf{Before} & \textbf{After} \\
+            $f(g(a)) \to p(a)$ & $f(g(a)) \to p(a)$ \\
+            $f(g(a)) \to f(b)$ & $f(g(a)) \to f(b) \to p(a)$
+            \end{tabular}
+            \medskip
+            The generator remains, but the added rule $f(b) \to p(a)$ supplies a filler.
+        }}
+    \caption{Before/after term-rewriting completion pair. The generator at $f(g(a))$ with branches $f(b)$ and $p(a)$ is nontrivial before the added rule and trivial after it, with join witness $p(a)$ in the resolved case.}
+    \label{fig:trs-completion-before-after}
+\end{figure}
+
+\begin{table}[t]
+    \caption{Before/after deltas for the explicit completion pairs. In both the string and term-rewriting cases, the generating cell persists while its defect count drops to zero and confluence is restored.}
+    \label{tab:holonomy-elimination-deltas}
+    \centering
+    \smallskip
+    \small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}l l l Y >{\centering\arraybackslash}p{0.08\linewidth} >{\centering\arraybackslash}p{0.08\linewidth} >{\centering\arraybackslash}p{0.10\linewidth} >{\centering\arraybackslash}p{0.10\linewidth} >{\centering\arraybackslash}p{0.07\linewidth} >{\centering\arraybackslash}p{0.07\linewidth}@{}}
+\toprule
+ & & & & \multicolumn{2}{c}{Defective gen.} & \multicolumn{2}{c}{Holonomy} & \multicolumn{2}{c}{Confluent?} \\
+\cmidrule(lr){5-6}\cmidrule(lr){7-8}\cmidrule(lr){9-10}
+Pair & Before & After & Added rule & Bef.\ & Aft.\ & Bef.\ & Aft.\ & Bef.\ & Aft.\ \\
+\midrule
+string & E007 & E008 & $x \to y$ & 1 & 0 & nontriv.\ & triv.\ & no & yes \\
+term rew.\ & TRS003 & TRS004 & $f(b) \to p(a)$ & 1 & 0 & nontriv.\ & triv.\ & no & yes \\
+\bottomrule
+\end{tabularx}
+ \end{table}
+
+\subsection{What is eliminated}
+\label{subsec:what-is-eliminated}
+
+The key point in both pairs is that completion does not eliminate the local generator itself. The branching source remains, and the local comparison remains. What changes is the existence of a filler. In the language of this paper, the generating $2$-cell remains present while its elementary holonomy changes from nontrivial to trivial.
+
+This is exactly why the phrase \emph{holonomy elimination} is the right operational reading. The local generator survives as a $2$-cell in the reduction complex, but the route mismatch disappears. Measured in the computational artifacts, the count of generating cells does not have to drop; the count of \emph{defective} generating cells drops to zero.
+
+\begin{proposition}[Completion as holonomy elimination in the explicit before/after pairs]
+\label{prop:completion-as-holonomy-elimination}
+In the explicit string pair $E007$--$E008$ and the explicit term-rewriting pair $TRS003$--$TRS004$, the added rule leaves the local generator intact while eliminating its defect. In both cases:
+\begin{enumerate}
+    \item the relevant local branching source persists;
+    \item the generating $2$-cell changes from nontrivial elementary holonomy to trivial elementary holonomy;
+    \item the local defect counts drop to zero;
+    \item the explored system changes from nonconfluent to confluent.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}[Audit summary]
+For the string pair, the source word \texttt{ab} and the branch words \texttt{x} and \texttt{y} occur both before and after the added rule. The before-system has one reachable critical pair, one defective local peak, one nontrivial generating $2$-cell, and nonconfluence. The after-system has the same reachable critical-pair source and branch words, but the branch \texttt{x} now reaches \texttt{y}. The corresponding generating $2$-cell is therefore fillable, its elementary holonomy becomes trivial, the local defect counts vanish, and the system is confluent.
+
+For the term-rewriting pair, the source term $f(g(a))$ and the branch terms $p(a)$ and $f(b)$ likewise occur both before and after the added rule. In $TRS003$, the reachable critical pair is defective and the corresponding generating $2$-cell has nontrivial elementary holonomy. In $TRS004$, the additional rule $f(b) \to p(a)$ supplies a filler with witness $p(a)$. The local defect vanishes, the elementary holonomy becomes trivial, and the explored system becomes confluent from the chosen start term. Thus the local generator persists while its defect is eliminated in both before/after pairs.
+\end{proof}
+
+\begin{remark}[Boundary of the claim]
+\label{rem:completion-boundary}
+Nothing in this section is meant to identify completion in full generality with a geometric algorithm on reduction complexes. The claim is narrower. In the explicit case studies implemented here, the added rule removes a local route mismatch carried by a generating $2$-cell, and that removal coincides with restoration of confluence in the explored system. This is enough to justify the operational reading of completion as holonomy elimination, and no stronger algorithmic statement is needed for the paper.
+\end{remark}
+ \section{What Is Proved, What Is Supported, What Remains}
+\label{sec:proved-supported-deferred}
+
+The paper is intentionally organized around three levels of claim. This is not a hedge. It is the correct way to separate what has already been established from what has been computationally fixed and from what still remains to be written as the final theorem package. The resulting boundary is one of the paper's main strengths: it makes the bridge precise without pretending that every desirable general statement has already been formalized.
+
+\begin{table}[t]
+    \caption{Claim-support matrix for the paper. The table distinguishes statements already proved, statements strongly supported by the computational and structural evidence, and the final theorem package deferred to later work.}
+    \label{tab:claim-support-matrix}
+    \centering
+    \smallskip
+    \small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{@{}Y Y l@{}}
+\toprule
+Claim family & Evidence type & Status \\
+\midrule
+Elementary flatness $\leftrightarrow$ local confluence & Lean formal core + paper proof & proved \\[3pt]
+Confluence + normalization $\Rightarrow$ unique normal form from a start & Lean formal core + paper proof & proved \\[3pt]
+Bare graph flatness is not diagnostic for confluence & exhaustive computational + curated finite ARS & emp.\ supported \\[3pt]
+Reachable CP defects capture observed local obstruction set in curated strings & curated term level + structural artifact & emp.\ supported \\[3pt]
+Reachable CP defects capture observed local obstruction set in curated left-linear TRSs & curated term level + structural artifact & emp.\ supported \\[3pt]
+Completion acts as holonomy elimination in explicit before/after pairs & curated term level + structural artifact & emp.\ supported \\[3pt]
+Full finite terminating left-linear TRS confluence-as-flatness theorem & theorem package not yet written & deferred \\
+\bottomrule
+\end{tabularx}
+ \end{table}
+
+\subsection{What is already proved}
+\label{subsec:what-is-proved}
+
+The theorem-level core of the paper is already in place. At the level of abstract rewriting systems, \Cref{thm:elementary-flatness-iff-local-confluence} proves that elementary flatness is equivalent to local confluence. This gives the paper its central formal sentence: once the relevant elementary branchings have been identified, local confluence is exactly the vanishing of elementary route mismatch. In the terminology of the paper, local confluence is exactly elementary flatness.
+
+A second supporting fact is also already proved: under confluence and normalization, each chosen start state has a unique reachable normal form (\Cref{prop:confluence-normalization-unique-normal-form}). This is not the paper's headline theorem, but it is an important supporting bridge between the local path-filling language and the usual outcome language of rewriting theory.
+
+These core results are not merely informal manuscript claims. They are mirrored in the Lean development summarized in Appendix~\ref{app:lean-formal-core}. The formal core currently includes the elementary-flatness/local-confluence equivalence and the corresponding uniqueness-of-normal-form statement under confluence and normalization. The Lean layer therefore already secures the paper's most basic theorem-level commitments.
+
+\subsection{What is strongly supported by the computational and structural evidence}
+\label{subsec:what-is-supported}
+
+The next layer of the paper is not theorem-writing in the strict sense, but it is substantially stronger than anecdotal experimentation. The repository now contains exhaustive, curated, and structural evidence that all points in the same direction.
+
+First, the bare-graph formulation has been falsified in exactly the way the corrected theory predicts. Directed-loop flatness on the reduction graph is vacuous in the curated terminating examples, and undirected graph cycle structure is not diagnostic for confluence. The graph-only surrogates therefore fail not accidentally, but because they are attached to the wrong object.
+
+Second, the finite-ARS stress tests are now strong enough to stabilize the local/global picture in the small terminating regime. The exhaustive audit over all labeled systems up to four states finds no counterexample to the expected finite-ARS relationships on the terminating subset, while the boundary-counterexample search finds explicit failures as soon as the safe hypotheses are weakened in the wrong way. The evidence therefore distinguishes sharply between the correct local peak picture and several tempting but incorrect substitutes.
+
+Third, the curated string and left-linear term-rewriting examples support the rewriting-specific bridge. In the string layer, reachable critical-pair defects agree with the observed graph-peak defect layer and align with global confluence behavior on the explored systems. In the left-linear term-rewriting bridge, the same pattern survives genuine nonroot overlap structure. These results do not yet amount to the final fully general theorem for finite terminating left-linear term rewriting systems, but they do isolate the correct local generators and the correct comparison basis.
+
+Fourth, the reduction 2-complex / elementary holonomy layer is now explicit. The repository contains machine-readable artifacts with $0$-cells, $1$-cells, and generating $2$-cells; canonical join witnesses where they exist; and explicit trivial versus nontrivial elementary holonomy status. This matters because it turns the paper's geometric language into something operational rather than rhetorical. The corrected local object is no longer just described; it is instantiated across representative finite-ARS, string, and term-rewriting examples.
+
+Finally, the completion case studies support the paper's most memorable operational reading. In both the string and term-rewriting before/after pairs, the relevant local generator survives while its defect is eliminated. The source of the local comparison persists, but the filler becomes available. That is exactly the sense in which the repository supports reading completion as holonomy elimination.
+
+\subsection{What remains theorem-writing work}
+\label{subsec:what-remains}
+
+What remains is no longer an experimental gap. It is theorem packaging and statement refinement.
+
+The first remaining task is the full general theorem package for finite terminating left-linear term rewriting systems in the target form suggested by the paper: a confluence-as-flatness statement on the reduction 2-complex with critical pairs as the local curvature generators. The repository now fixes the right local picture, the right object, and the right examples, but the final general theorem still has to be written at that level of abstraction.
+
+The second remaining task is to connect the present formulation more explicitly to the standard critical-pair completeness bridge in the full TRS setting. The curated term-rewriting examples already show that the bridge is pointing in the right direction, but the full paper theorem should make the relation to standard critical-pair methods mathematically explicit rather than merely computationally persuasive \cite{KnuthBendix1970,BaaderNipkow1998,Terese2003,SquierOtto1987,GramlichLucas2006}.
+
+The third remaining task is presentational rather than conceptual: the reduction 2-complex language should be related, in the final theorem-level packaging, to the appropriate higher-dimensional rewriting or discrete transport vocabulary without overstating what has been proved here \cite{Mimram2023,GuiraudMalbos2018,GuiraudMalbos2012,Meneses2021,BaezMuniain1994}. That is a matter of theorem phrasing and literature integration, not more implementation.
+
+\begin{remark}[The remaining gap is not more code]
+\label{rem:remaining-gap-not-code}
+At this point, the repository has already done the experimental work needed for this paper. The finite-ARS audits are frozen, the string and term-rewriting bridges are frozen, the reduction 2-complex layer is explicit, the completion case studies are explicit, and the claim-support matrix records the current evidence boundary. What remains is theorem writing, literature positioning, and final manuscript discipline rather than new implementation.
+\end{remark}
+
+The practical consequence is simple. The paper can now be written honestly in three voices at once: a proved core, a strong computational bridge, and a clearly delimited deferred theorem package. That is not a weakness of the narrative. It is what makes the narrative trustworthy.
+ \section{Conclusion}
+\label{sec:conclusion}
+
+The paper began from a tempting but incorrect slogan: perhaps confluence can be read as flatness on the bare reduction graph. The repository evidence shows that this is the wrong level of structure. The reduction graph by itself does not remember the elementary local branchings whose agreement confluence tests. The correct object is a reduction 2-complex whose generating $2$-cells are local peaks in the finite-ARS setting and reachable critical pairs in the structured rewriting settings studied here.
+
+Once that correction is made, the local picture becomes clean. Elementary flatness is exactly local confluence. Defective local generators---concretely, reachable critical pairs in the structured settings studied here---carry nontrivial elementary holonomy. Completion, in explicit before/after examples, acts as elimination of that elementary holonomy: the generator remains, but the filler becomes available, the defect disappears, and confluence is restored.
+
+The repository now supports this picture at three levels. The formal core is proved and mirrored in Lean. The finite-ARS regime has been stress-tested exhaustively in the terminating case. The string and left-linear term-rewriting bridges show that reachable critical-pair defects match the observed local obstruction layer in the explored reduction complex, while the reduction 2-complex artifacts make the two-dimensional structure explicit.
+
+The final full theorem package for finite terminating left-linear term rewriting systems remains to be written in that exact generality. But the experimental and structural side of the project is now closed. The correct local object has been identified, the wrong graph-only surrogates have been ruled out, the local generators have been isolated, and the operational meaning of defect elimination has been made explicit.
+
+The paper's central message can therefore be stated without exaggeration. Order-independence of reduction is path-independence of transport, but only after rewriting is given its missing $2$-dimensional cells. In that corrected setting, local peaks and, in the structured settings studied here, reachable critical pairs are the local generators on which curvature lives.
+ 
+\appendix
+
+\section{Lean Formal Core}
+\label{app:lean-formal-core}
+
+The repository contains a small Lean development whose purpose is to secure the paper's formal core, not to formalize the entire computational bridge. The Lean package is rooted at \texttt{ConfluenceFlat} and currently consists of two substantive files: \code{ConfluenceFlat/Core.lean} and \code{ConfluenceFlat/UniqueNormalForm.lean}.
+
+\subsection{Formalized definitions}
+
+The file \code{ConfluenceFlat/Core.lean} formalizes the abstract rewriting notions used in \Cref{sec:core-theorem}. These include:
+\begin{itemize}
+    \item finite abstract rewriting systems,
+    \item reflexive-transitive reachability,
+    \item joinability,
+    \item normal forms,
+    \item local confluence,
+    \item elementary peaks,
+    \item elementary flatness.
+\end{itemize}
+
+The file \code{ConfluenceFlat/UniqueNormalForm.lean} adds the supporting global notions used later in \Cref{sec:core-theorem}, including:
+\begin{itemize}
+    \item confluence,
+    \item normalization,
+    \item uniqueness of normal form from a chosen start state,
+    \item existence and uniqueness of normal form under confluence and normalization.
+\end{itemize}
+
+\subsection{Formalized theorem layer}
+
+The formal core currently proves the following results by name.
+\begin{sloppypar}
+\begin{itemize}[leftmargin=1.5em]
+    \item In \code{ConfluenceFlat/Core.lean}:
+    \begin{itemize}[leftmargin=1.5em]
+        \item \code{ConfluenceFlat.FiniteARS.joinable_refl},
+        \item \code{ConfluenceFlat.FiniteARS.elementaryFlat_of_localConfluent},
+        \item \code{ConfluenceFlat.FiniteARS.localConfluent_of_elementaryFlat},
+        \item \code{ConfluenceFlat.FiniteARS.elementaryFlat_iff_localConfluent}.
+    \end{itemize}
+    \item In \code{ConfluenceFlat/UniqueNormalForm.lean}:
+    \begin{itemize}[leftmargin=1.5em]
+        \item \code{ConfluenceFlat.FiniteARS.reachable_eq_of_normalForm},
+        \item \code{ConfluenceFlat.FiniteARS.eq_of_joinable_normalForms},
+        \item \code{ConfluenceFlat.FiniteARS.uniqueNormalFormFrom_of_confluent},
+        \item \mbox{\texttt{ConfluenceFlat.FiniteARS.existsUnique}}\penalty0\texttt{NormalFormFrom\_of\_confluent\_normalizing}.
+    \end{itemize}
+\end{itemize}
+\end{sloppypar}
+
+\subsection{Correspondence to the main text}
+
+These Lean theorems mirror the theorem-level commitments made in the main text. The equivalence
+\[
+\text{elementary flatness} \iff \text{local confluence}
+\]
+is the formal counterpart of \Cref{thm:elementary-flatness-iff-local-confluence}. The existence-and-uniqueness result under confluence and normalization is the formal counterpart of \Cref{prop:confluence-normalization-unique-normal-form}. The Lean layer therefore secures the paper's proved core while leaving the computational bridge, artifact layer, and full deferred TRS theorem package outside the scope of formalization.
+ \section{Computational Protocol}
+\label{app:computational-protocol}
+
+This appendix summarizes the computational protocol used to generate the evidence layers cited throughout the paper. The purpose of the protocol is reproducibility and claim discipline rather than algorithmic novelty.
+The implementation repository for the experiments and code is \url{https://github.com/ioannist/six-birds-confluence}.
+
+\subsection{Finite-ARS exhaustive protocol}
+
+The finite-ARS audit enumerates every labeled directed rewriting relation on $n$ states for $n \leq 4$, including self-loops. This yields a total search space of
+\[
+2^1 + 2^4 + 2^9 + 2^{16} = 66066
+\]
+systems. Terminating systems are identified by directed-acyclicity of the finite reduction graph. For each terminating system, the repository computes local peak counts, nonjoinability defect counts, normal-form mismatch counts, local confluence, confluence, and uniqueness of reachable normal forms. The resulting summary and row-level artifacts are stored under \texttt{results/audits/}.
+
+\subsection{Bounded string-rewriting protocol}
+
+The string-rewriting examples are explored from designated start words under explicit depth, state-count, and word-length bounds. The exploration records a completeness flag so that the paper can distinguish complete explored closures from genuinely truncated ones. In the curated examples used here, the chosen bounds are sufficient for complete exploration. The repository computes graph-level local peaks, system critical pairs, reachable critical pairs relative to the designated starts, and the corresponding defect counts and signature comparisons.
+
+\subsection{Bounded term-rewriting protocol}
+
+The term-rewriting bridge uses a bounded first-order rewriting prototype with explicit start terms and exploration bounds. The critical-pair generator supports the left-linear overlap regime needed for the curated examples, including nonroot nonvariable-position overlaps. As in the string layer, the repository compares reachable critical-pair signatures with graph-peak signatures in the explored reduction graph and records whether the comparison is exact.
+
+\subsection{Deterministic witness and filler selection}
+
+Across the plaquette, critical-pair, and two-complex layers, witnesses and filler paths are selected deterministically. The policy is: minimize total branch-to-witness distance, break ties lexicographically on the witness, and then choose lexicographically smallest shortest paths from each branch to the chosen witness. This policy ensures that the machine-readable artifacts are stable across runs and that the resulting local generators can be compared reliably across domains.
+
+\subsection{Regression and artifact generation}
+
+The repository includes a regression harness that runs the unit tests, the curated finite-ARS checks, the curated structured rewriting checks, the small exhaustive audit, the diagram-generation step, and the results-ledger refresh. The frozen evidence boundary used in this paper is recorded by the final experiment summary, the claim-support matrix, and the central results ledger under \code{results/index.json} and \code{results/summary.csv}.
+ \section{Artifact Guide}
+\label{app:artifact-guide}
+
+The paper is backed by a machine-readable artifact layer. This appendix gives a compact guide to that layer and to the stable entry points used in the manuscript.
+
+\subsection{Artifact families}
+
+The major artifact families are:
+\begin{itemize}
+    \item audit artifacts under \texttt{results/audits/},
+    \item peak artifacts under \texttt{results/peaks/},
+    \item plaquette artifacts under \texttt{results/plaquettes/},
+    \item string-rewriting artifacts under \code{results/string_rewrite/},
+    \item critical-pair artifacts under \code{results/critical_pairs/},
+    \item term-rewriting artifacts under \code{results/term_rewrite/},
+    \item completion case-study artifacts under \code{results/case_studies/},
+    \item diagram assets under \texttt{results/diagrams/},
+    \item reduction 2-complex / elementary holonomy artifacts under \code{results/two_complex/},
+    \item freeze artifacts under \texttt{results/freeze/}.
+\end{itemize}
+
+\subsection{Section-to-artifact map}
+
+The manuscript uses these artifact families in a disciplined way. The bare-graph falsification section relies on the naive graph audit and finite-ARS artifacts. The reduction 2-complex section relies on the two-complex artifacts. The critical-pair section relies on the critical-pair, string, and term-rewriting artifacts. The completion section relies on the case-study and two-complex layers. The final boundary-setting section relies on the freeze summary and the claim-support matrix. This section-to-artifact mapping is also recorded in machine-readable form under \code{paper/notes/section_map.yaml}.
+
+\subsection{Figure and table source map}
+
+The kept figure and table slots are backed by specific artifact families rather than ad hoc manuscript data. Their intended source mapping is recorded in \code{paper/notes/figure_table_plan.yaml}. This makes it possible to reconstruct the provenance of every figure and table used in the paper without re-running the full implementation workflow manually.
+
+\subsection{Using the results ledger}
+
+The stable entry points for the artifact layer are \code{results/index.json} and \code{results/summary.csv}. These files index the non-ignored result artifacts, record stable artifact identifiers, and expose the major logical collections used throughout the project. They are the recommended first stop for anyone tracing a statement in the manuscript back to its computational or structural evidence.
+ 
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

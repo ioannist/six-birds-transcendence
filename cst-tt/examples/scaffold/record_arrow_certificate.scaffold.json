@@ -1,0 +1,32 @@
+{
+  "audit": {
+    "arrow_transport_valid": false,
+    "failed_obligations": [
+      "not-evidence"
+    ],
+    "map_total": false,
+    "maps_examined_in_bounded_search": 1,
+    "nonstrict_monotone": false,
+    "source_has_strict_arrow": false,
+    "strict_progress_preserved": false,
+    "strictly_monotone_maps_in_bounded_search": 1,
+    "target_has_strict_arrow": false
+  },
+  "certificate_id": "SCAFFOLD",
+  "checker": {
+    "function": "audit_record_arrow",
+    "module": "cst_tt.transport",
+    "python_version": "scaffold"
+  },
+  "claim_ceiling": "finite structural arrow transport only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_ref": "not-evidence",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "scaffold-only",
+  "schema_version": "CST-TT-03",
+  "theorem_ids": [
+    "TTH-10"
+  ]
+}

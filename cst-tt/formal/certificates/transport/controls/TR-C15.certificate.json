@@ -1,0 +1,23 @@
+{
+  "artifact_ref": "models/transport/controls/TR-C15.model.json",
+  "artifact_sha256": "0276708ddb6fab9b31e582cd262937cd9b791a88f144b06b17fdd94ea71fc0f9",
+  "baseline_ref": "models/transport/TR-POS-01.model.json",
+  "checker": {
+    "function": "audit_temporal_transport",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5",
+    "valid_result": false
+  },
+  "claim_ceiling": "finite structural obligation boundary only",
+  "control_id": "TR-C15",
+  "control_kind": "transport",
+  "expected_primary_failure": "route-residue-retention-noncollapsing",
+  "observed_failures": [
+    "mapped-signature-agreement",
+    "route-discipline-satisfied",
+    "route-residue-retention-noncollapsing",
+    "ownership-interface-valid"
+  ],
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-03"
+}

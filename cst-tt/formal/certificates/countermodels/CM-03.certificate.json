@@ -1,0 +1,43 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm03_holonomyWithoutArrow",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-03",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-T",
+    "S-R"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-03",
+  "finite_model_ref": "models/countermodels/CM-03.model.json",
+  "finite_model_sha256": "c6e8a7ebc4281df520cf2f567c933729659ea86518fca6b5a1d8d7d9e5d95444",
+  "minimality_status": "certified",
+  "model_family": "reversible-permutation-holonomy",
+  "name": "Holonomy without endogenous arrow",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "Noncommuting reversible route updates do not supply an endogenous record arrow.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "all ordered permutation pairs on 1..3 states",
+    "candidates_explored": 41,
+    "lower_bound_argument": "Permutation groups on one and two points are abelian; three points are the first possible noncommuting case.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 18,
+    "same_size_candidates_explored": 36,
+    "same_size_qualifying_candidates": 18,
+    "size_measure": "(state_count)",
+    "smaller_candidates_explored": 5,
+    "witness_size_vector": [
+      3
+    ]
+  },
+  "target_no_go_id": "TTN-03",
+  "toy_model_ref": "TTM-16"
+}

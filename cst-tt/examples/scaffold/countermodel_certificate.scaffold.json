@@ -1,0 +1,11 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "conclusion_failure_status": "not-evaluated",
+  "countermodel_id": "countermodel-placeholder",
+  "finite_model_ref": "finite-model-placeholder",
+  "minimality_status": "not-evaluated",
+  "premises_status": "not-evaluated",
+  "result_status": "scaffold-only",
+  "schema_version": "CST-TT-00",
+  "target_no_go_id": "TTN-01"
+}

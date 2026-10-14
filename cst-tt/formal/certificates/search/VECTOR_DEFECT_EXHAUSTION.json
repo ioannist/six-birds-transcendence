@@ -1,0 +1,12 @@
+{
+  "accepted_candidates": 256,
+  "candidates_examined": 4096,
+  "component_count": 12,
+  "equal_scalar_opposite_verdict_pairs": 32,
+  "hard_gate_count": 4,
+  "hard_singletons": 4,
+  "scalar_at_most_one_component_count": 13,
+  "scalar_small_but_rejected": 4,
+  "search_id": "VECTOR_DEFECT_EXHAUSTION",
+  "soft_singletons": 8
+}

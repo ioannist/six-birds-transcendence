@@ -1,0 +1,9 @@
+profile_id,role,model_ref,certificate_ref,accepted,principal_result
+DEF-POS-01,positive-vector-profile,models/strengthenings/defects/DEF-POS-01.model.json,formal/certificates/strengthenings/defects/DEF-POS-01.certificate.json,True,all hard gates exact; all soft dimensions within tolerance
+DEF-C01,negative-control,models/strengthenings/defects/controls/DEF-C01.model.json,formal/certificates/strengthenings/defects/controls/DEF-C01.certificate.json,False,every-hard-gate-exact
+DEF-C02,negative-control,models/strengthenings/defects/controls/DEF-C02.model.json,formal/certificates/strengthenings/defects/controls/DEF-C02.certificate.json,False,every-component-within-tolerance
+DEF-C03,negative-control,models/strengthenings/defects/controls/DEF-C03.model.json,formal/certificates/strengthenings/defects/controls/DEF-C03.certificate.json,False,expected-components-exact
+DEF-C04,negative-control,models/strengthenings/defects/controls/DEF-C04.model.json,formal/certificates/strengthenings/defects/controls/DEF-C04.certificate.json,False,component-ids-unique
+DEF-C05,negative-control,models/strengthenings/defects/controls/DEF-C05.model.json,formal/certificates/strengthenings/defects/controls/DEF-C05.certificate.json,False,component-rows-well-formed
+DEF-C06,negative-control,models/strengthenings/defects/controls/DEF-C06.model.json,formal/certificates/strengthenings/defects/controls/DEF-C06.certificate.json,False,scalar-summary-diagnostic-only
+DEF-EQUAL-SCALAR-01,scalar-nonidentifiability-pair,models/strengthenings/defects/DEF-EQUAL-SCALAR-ACCEPTED.model.json;models/strengthenings/defects/DEF-EQUAL-SCALAR-REJECTED.model.json,formal/certificates/strengthenings/defects/DEF-EQUAL-SCALAR-01.certificate.json,one-of-two,equal scalar summary; opposite exact-vector verdict

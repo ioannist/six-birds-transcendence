@@ -1,0 +1,41 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "conclusion_failure_checks": {
+    "strict_no_gap_corridor_absent": true
+  },
+  "countermodel_id": "CM-12",
+  "derived_facts": {
+    "classification": "resumed-equivalent-stream-not-strict-corridor",
+    "gap_indices": [
+      1
+    ]
+  },
+  "family": "gap-resume",
+  "model": {
+    "endpoint_temporal_signatures_equal": true,
+    "internal_temporal_gap": true,
+    "stage_count": 3,
+    "strict_no_gap_corridor": false,
+    "temporal_realized_by_stage": [
+      1,
+      0,
+      1
+    ]
+  },
+  "name": "Temporal gap followed by an equivalent resumed stream",
+  "premise_checks": {
+    "equivalent_realized_endpoints": true,
+    "explicit_internal_gap": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "Equivalent realized endpoints do not satisfy the strict no-gap temporal corridor when an internal stage is unrealized.",
+  "size_measure": "(stage_count)",
+  "size_vector": [
+    3
+  ],
+  "target_no_go_id": "TTN-09",
+  "toy_model_ref": "TTM-08"
+}

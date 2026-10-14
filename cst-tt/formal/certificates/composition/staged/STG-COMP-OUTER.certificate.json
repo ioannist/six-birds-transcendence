@@ -1,0 +1,51 @@
+{
+  "assembly_ref": "models/composition/staged/STG-COMP-OUTER.assembly.json",
+  "assembly_sha256": "5bb05fb8fba11b15f82f3cc2b2e01169a7d8ba36d1540494afb6a10836e2d809",
+  "audit": {
+    "assembly_id": "STG-COMP-OUTER",
+    "carriers_distinct": true,
+    "coordinate_maps_total": true,
+    "errors": [],
+    "exactly_eight_clause_maps": true,
+    "failed_obligations": [],
+    "forbidden_verdict_fields_absent": true,
+    "hard_gates_never_averaged": true,
+    "maps_separately_typed": true,
+    "source_package_valid": true,
+    "staged_assembly_valid": true,
+    "target_global_assembled": true,
+    "target_package_valid": true,
+    "value_maps_sound": true
+  },
+  "certificate_id": "STG-COMP-OUTER",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_staged_assembly",
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite typed clause-map preservation and target assembly only",
+  "claim_lanes": [
+    "S-T",
+    "S-R"
+  ],
+  "handoff_alignment": {},
+  "result_status": "checked-finite-compositional-staged-package-certificate",
+  "schema_version": "CST-TT-06",
+  "source_model_ref": "models/composition/packages/PKG-POS-05-COMP-SOURCE.model.json",
+  "source_model_sha256": "9482a9e8df2d7879f458ae9f7dd1af616e002420e3fe3bfd14291320752b809d",
+  "target_model_ref": "models/composition/packages/PKG-POS-07-COMP-TARGET.model.json",
+  "target_model_sha256": "7933a6eda7ad6351db73bd5998fe7efbc14264e49c072b3520a76e4c3007658a",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.PackageTheory.stagedHeterogeneousPackageAssembly",
+      "CSTTT.TargetTheory.fullTemporalHandoffComposition"
+    ],
+    "theorem_ids": [
+      "TTH-01",
+      "TTH-02",
+      "TTH-07"
+    ]
+  }
+}

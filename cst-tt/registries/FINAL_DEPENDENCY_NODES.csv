@@ -1,0 +1,175 @@
+node_id,node_type,label,status
+AS-01,assumption,FINITE-EXACT,frozen
+AS-02,assumption,H-DISTINCT,frozen
+AS-03,assumption,H-SOURCE-PKG,frozen
+AS-04,assumption,H-PREDICTIVE-SUFF,frozen
+AS-05,assumption,H-ORDER,frozen
+AS-06,assumption,H-TICK,frozen
+AS-07,assumption,H-PROGRESS,frozen
+AS-08,assumption,H-ARROW,frozen
+AS-09,assumption,H-MAINTENANCE,frozen
+AS-10,assumption,H-BRIDGE-ADM,frozen
+AS-11,assumption,H-REP-INDEP,frozen
+AS-12,assumption,H-ROUTE-MEMORY,frozen
+AS-13,assumption,H-FLATNESS,frozen
+AS-14,assumption,H-CLOCK-REL,frozen
+AS-15,assumption,H-GLOBAL-GLUE,frozen
+AS-16,assumption,H-HARD-GATES,frozen
+AS-17,assumption,H-PACKAGE-OWNERSHIP,frozen
+AS-18,assumption,H-NONREDUNDANCY,frozen
+AS-19,assumption,H-NO-GAP,frozen
+AS-20,assumption,H-WITHDRAWAL,frozen
+AS-21,assumption,H-DISTURBANCE,frozen
+AS-22,assumption,H-INVARIANT,frozen
+AS-23,assumption,H-DIRECT-PROVENANCE,frozen
+AS-24,assumption,H-ANCESTRY-SEED,frozen
+AS-25,assumption,H-NO-EX-NIHILO,frozen
+AS-26,assumption,H-FELT-TIME,frozen
+AS-27,assumption,H-CONT-TIME,frozen
+AS-28,assumption,A1,frozen
+AS-29,assumption,A2-P,frozen
+AS-30,assumption,H-CERT-SOUND,frozen
+AS-31,assumption,H-RECOGNITION,frozen
+AS-32,assumption,H-PERSONAL-IDENTITY,frozen
+AS-33,assumption,H-BOUNDED-PERTURBATION-BOX,frozen-CST-TT-07A
+AS-34,assumption,H-TOTAL-INVARIANT-POLICY,frozen-CST-TT-07A
+D-001,definition,CarrierId,frozen-scaffold
+D-002,definition,Carrier,frozen-scaffold
+D-003,definition,CarrierPair,frozen-scaffold
+D-004,definition,Stage,frozen-scaffold
+D-005,definition,Event,frozen-scaffold
+D-006,definition,Dependency,frozen-scaffold
+D-007,definition,Episode,frozen-scaffold
+D-008,definition,TemporalAlphabet,frozen-scaffold
+D-009,definition,PredictiveNow,frozen-scaffold
+D-010,definition,TemporalSignature,frozen-scaffold
+D-011,definition,TemporalClosureSpec,frozen-scaffold
+D-012,definition,TemporalClosureWitness,frozen-scaffold
+D-013,definition,ClockTranslation,frozen-scaffold
+D-014,definition,RouteComparison,frozen-scaffold
+D-015,definition,ClauseId,landed-clause-interface
+D-016,definition,ClauseSpec,landed-clause-interface
+D-017,definition,ClauseWitness,landed-clause-interface
+D-018,definition,ClauseBundle,landed-clause-interface
+D-019,definition,JoinTree,retained-scaffold-superseded-by-D-041-to-D-045
+D-020,definition,IntegratedPackageCertificate,retained-scaffold-superseded-by-D-041-to-D-045
+D-021,definition,StagedClausePreservationEvidence,retained-scaffold-superseded-by-D-041-to-D-045
+D-022,definition,TemporalBridge,frozen-scaffold
+D-023,definition,TemporalTransportCertificate,frozen-scaffold
+D-024,definition,RouteHolonomyAudit,frozen-scaffold
+D-025,definition,FlatnessCertificate,frozen-scaffold
+D-026,definition,CounterfactualAudit,frozen-scaffold
+D-027,definition,TemporalCorridorData,frozen-scaffold
+D-028,definition,TemporalCorridorCertificate,frozen-scaffold
+D-029,definition,DirectSuccessorCertificate,frozen-scaffold
+D-030,definition,ControlledSystem,frozen-scaffold
+D-031,definition,WithdrawalSpec,frozen-scaffold
+D-032,definition,ControlledInvariantCertificate,frozen-scaffold
+D-033,definition,AutonomyCertificate,frozen-scaffold
+D-034,definition,ClaimLane,frozen-scaffold
+D-035,definition,TemporalFIACHCertificate,frozen-scaffold
+D-036,definition,TemporalFIACH,frozen-scaffold
+D-037,definition,OperationalSeed,frozen-scaffold
+D-038,definition,AncestryClosure,frozen-scaffold
+D-039,definition,IAPSCertificate,frozen-scaffold
+D-040,definition,ScopedReach,landed-proof-source-and-executable-semantics
+D-041,definition,RootedJoinTree,landed-proof-source-and-executable-semantics
+D-042,definition,IntegratedPackageWitness,landed-proof-source-and-executable-semantics
+D-043,definition,StagedHeterogeneousEvidence,landed-proof-source-and-executable-semantics
+D-044,definition,TemporalSubstance,landed-proof-source-and-executable-semantics
+D-045,definition,EightClauseIntegratedPackage,landed-proof-source-and-executable-semantics
+D-046,definition,RepresentativeIndependent,landed-proof-source-and-executable-semantics
+D-047,definition,TemporalSignatureAgreement,landed-proof-source-and-executable-semantics
+D-048,definition,FiniteTemporalTransportProof,landed-proof-source-and-executable-semantics
+D-049,definition,StrictlyMonotoneOn,landed-proof-source-and-executable-semantics
+D-050,definition,FutureSufficientEncoding,landed-proof-source-and-executable-semantics
+D-051,definition,FlatAt,landed-proof-source-and-executable-semantics
+D-052,definition,MemoryRepairs,landed-proof-source-and-executable-semantics
+D-053,definition,CanonicalGlobalNow,landed-proof-source-and-executable-semantics
+D-054,definition,NormalizationCertificate,landed-proof-source-and-executable-semantics
+D-055,definition,FiniteTemporalStage,landed-proof-source-and-executable-semantics
+D-056,definition,InterventionProjection,landed-proof-source-and-executable-semantics
+D-057,definition,AtomicTemporalCorridorData,landed-proof-source-and-executable-semantics
+D-058,definition,AtomicTemporalCorridorCertificate,landed-proof-source-and-executable-semantics
+D-059,definition,CorridorSummaryData,landed-proof-source-and-executable-semantics
+D-060,definition,FrontierCompatible,landed-proof-source-and-executable-semantics
+D-061,definition,AtomicDirectSuccessorData,landed-proof-source-and-executable-semantics
+D-062,definition,AtomicDirectSuccessorCertificate,landed-proof-source-and-executable-semantics
+D-063,definition,DetachedOperationalPattern,landed-proof-source-and-executable-semantics
+D-064,definition,DirectSuccessorPathData,landed-proof-source-and-executable-semantics
+D-065,definition,ExactAutonomyData,landed-proof-source-and-executable-semantics
+D-066,definition,ExactAutonomyCertificate,landed-proof-source-and-executable-semantics
+D-067,definition,ControlledRun,landed-proof-source-and-executable-semantics
+D-068,definition,ThreeLaneStatus,landed-proof-source-and-executable-semantics
+D-069,definition,TemporalFIACHCertificate,landed-proof-source-and-executable-semantics
+D-070,definition,GeneralizedTemporalContinuity,landed-strengthening
+D-071,definition,DefectVector,landed-strengthening
+D-072,definition,TemporalMargin,landed-strengthening
+D-073,definition,ExactAutonomyPolicy,landed-strengthening
+TFM-01,toy,source-derived destructive successor,open
+TFM-02,toy,independent structural twin,open
+TFM-03,toy,source-derived symmetric duplication,open
+TFM-04,toy,fusion with recombination conflict,checked finite countermodel
+TTD-01,theorem,Direct-successor temporal validity,conditional
+TTD-02,theorem,Overlap/direct-successor relation,conditional
+TTD-03,theorem,Direct-successor detached-copy exclusion,conditional
+TTF-01,theorem,Predictive bridge descent,open
+TTF-02,theorem,Least operational ancestry,open
+TTF-03,theorem,Independent-twin exclusion,open
+TTF-04,theorem,"Fallback fission, fusion, and empty targets",open
+TTF-05,theorem,Integrated Temporal-IAPS certificate,open
+TTF-06,theorem,Destructive reconstruction versus independent twin,open
+TTF-07,theorem,Ancestry supplies no unique numerical identity,open
+TTF-08,theorem,Predictive ancestry is package-insufficient,open
+TTH-01,theorem,Acyclic local-witness gluing,conditional
+TTH-02,theorem,Staged heterogeneous package assembly,conditional
+TTH-03,theorem,Bundled heterogeneous temporal transport,conditional
+TTH-04,theorem,Strict temporal-corridor composition,conditional
+TTH-05,theorem,Post-withdrawal finite-horizon invariance,conditional
+TTH-06,theorem,Temporal-FIACH certificate soundness,conditional
+TTH-07,theorem,Full temporal handoff composition,conditional
+TTH-08,theorem,Relation-valued temporal fission,conditional
+TTH-09,theorem,Route-independent endpoint under flatness,conditional
+TTH-10,theorem,Monotone record descent transports an arrow,conditional
+TTM-01,toy,live temporal handoff,checked exact finite witness
+TTM-02,toy,detached exact temporal copy,checked finite countermodel
+TTM-03,toy,direct-successor temporal handoff,checked exact finite witness
+TTM-04,toy,external scheduler or decoder shadow,checked finite countermodel
+TTM-05,toy,replacement-order holonomy,checked finite countermodel
+TTM-06,toy,confluent completion,checked exact finite witness
+TTM-07,toy,temporal fission,checked exact finite witness
+TTM-08,toy,gap and resume,checked finite countermodel
+TTM-09,toy,anti-stall target,checked finite countermodel
+TTM-10,toy,long-run budget failure,checked finite countermodel
+TTM-11,toy,local/global package obstruction,checked finite countermodel
+TTM-12,toy,public-shadow collision,checked finite countermodel
+TTM-13,toy,scalar hard-gate failure,checked finite countermodel
+TTM-14,toy,stable tick without progress,checked finite countermodel
+TTM-15,toy,same-carrier re-encoding,checked finite countermodel
+TTM-16,toy,holonomy without arrow,checked finite countermodel
+TTM-17,toy,current-equal predictive-route mismatch,checked finite countermodel
+TTM-18,toy,integrated target C-package,checked exact finite witness
+TTM-19,toy,staged heterogeneous package assembly,checked exact finite witness
+TTM-20,toy,mixed overlap/direct continuity path,checked exact finite witness
+TTM-21,toy,exact vector defect profile,checked finite countermodel
+TTM-22,toy,hard-gate-preserving robustness box,checked exact finite witness
+TTM-23,toy,total invariant autonomy policy,checked exact finite witness
+TTM-24,toy,arbitrarily long finite-prefix countdown family,checked finite countermodel
+TTN-01,theorem,Detached-copy insufficiency,checked finite countermodel
+TTN-02,theorem,Public-shadow insufficiency,checked finite countermodel
+TTN-03,theorem,Holonomy is not an endogenous arrow,checked finite countermodel
+TTN-04,theorem,Memory-or-flatness boundary,conditional
+TTN-05,theorem,No canonical global now under translation holonomy,conditional
+TTN-06,theorem,Essential external support defeats autonomy,checked finite countermodel
+TTN-07,theorem,Stable tick phase without progress,checked finite countermodel
+TTN-08,theorem,Local-global package obstruction,checked finite countermodel
+TTN-09,theorem,Temporal gap versus resumed stream,checked finite countermodel
+TTN-10,theorem,Scalar residual hides hard-gate failure,checked finite countermodel
+TTN-11,theorem,Exact symmetry supplies no invariant unique continuer,checked finite countermodel
+TTN-12,theorem,Finite success does not imply unbounded liveness,checked finite countermodel
+TTN-13,theorem,Same-carrier re-encoding is not cross-carrier transport,checked finite countermodel
+TTN-14,theorem,Branchwise preservation need not preserve recombination,checked finite countermodel
+TTS-01,theorem,Generalized temporal-continuity path class,conditional
+TTS-02,theorem,Exact vector-valued defect acceptance,conditional
+TTS-03,theorem,Hard-gate-preserving bounded temporal robustness,conditional
+TTS-04,theorem,Model-relative unbounded controlled invariant,conditional

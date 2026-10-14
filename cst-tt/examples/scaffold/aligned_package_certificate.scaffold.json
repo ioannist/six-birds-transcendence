@@ -1,0 +1,30 @@
+{
+  "schema_version": "CST-TT-05",
+  "certificate_id": "example-package",
+  "model_ref": "models/example.json",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "scaffold-only",
+  "claim_lanes": [
+    "S-R"
+  ],
+  "claim_ceiling": "finite structural target realization aligned to one declared handoff frontier",
+  "handoff_alignment": {
+    "corridor_model_ref": "models/corridors/example.json",
+    "corridor_stage": 0,
+    "alignment_fields": [
+      "route_residue"
+    ]
+  },
+  "theorem_evidence": {},
+  "audit": {
+    "integrated_package_valid": true,
+    "failed_obligations": [],
+    "derived_global_assignment": {}
+  },
+  "checker": {
+    "module": "cst_tt.package_gluing",
+    "function": "audit_package",
+    "python_version": "3.13",
+    "checked_at_phase": "CST-TT-05"
+  }
+}

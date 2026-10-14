@@ -1,0 +1,2767 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[numbers]{natbib}
+\usepackage{doi}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{titling}
+
+
+
+\newcommand{\gradeS}{\textsf{[S]}}
+\newcommand{\gradeR}{\textsf{[R]}}
+\newcommand{\gradeO}{\textsf{[O]}}
+\newcommand{\gradeOpen}{\textsf{[OPEN]}}
+
+\newcommand{\Kviab}{K_{\mathrm{viab}}}
+\newcommand{\Kbw}{K_{\mathrm{bw}}}
+\newcommand{\Rrec}{R_{\mathrm{rec}}}
+\newcommand{\Cpkg}{\mathfrak{C}}
+\newcommand{\Certsimp}{\mathrm{Cert}_{\mathrm{simp}}}
+\newcommand{\Dfact}{\Delta_{\mathrm{fact}}}
+ 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{construction}[theorem]{Construction}
+\newtheorem{postulate}{Postulate}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algorithm}
+
+\urlstyle{same}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=period
+}
+\captionsetup[table]{skip=6pt,position=top}
+\captionsetup[figure]{skip=6pt}
+\captionsetup[algorithm]{skip=6pt,position=top}
+\crefname{algorithm}{algorithm}{algorithms}
+\Crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{theorem}{theorem}{theorems}
+\Crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{lemma}{lemmas}
+\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{proposition}{proposition}{propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{corollary}{corollary}{corollaries}
+\Crefname{corollary}{Corollary}{Corollaries}
+\crefname{definition}{definition}{definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{remark}{remark}{remarks}
+\Crefname{remark}{Remark}{Remarks}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=4pt}
+\setlength{\droptitle}{-3.2em}
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vspace{0.5em}}
+\preauthor{\begin{center}\normalsize}
+\postauthor{\par\end{center}\vspace{-0.4em}}
+\predate{\begin{center}\small}
+\postdate{\par\end{center}\vspace{0.6em}}
+\setlength{\emergencystretch}{2em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\interfootnotelinepenalty=10000
+\allowdisplaybreaks[2]
+\fancypagestyle{firstpage}{\fancyhf{}
+  \fancyfoot[C]{\scriptsize Automorph Inc., Wilmington, DE, USA \quad \texttt{ioannis@automorph.io} \quad \textcopyright\ 2026 \quad CC-BY 4.0}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\title{An Audited Closure Architecture for Consciousness:\\
+Exact Finite Models, Structural Theorems, and Conditional Realization}
+\author{Ioannis Tsiokos\,\orcidlink{0009-0009-7659-5964}}
+\date{\today}
+\hypersetup{
+  pdftitle={An Audited Closure Architecture for Consciousness: Exact Finite Models, Structural Theorems, and Conditional Realization},
+  pdfauthor={Ioannis Tsiokos},
+  hidelinks
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+
+\begin{abstract}
+Formal theories of consciousness often mix mathematical structure, empirical
+access, and ontological interpretation inside single claims. We present an
+architecture that separates them by construction: an eight-clause closure
+package (objecthood, strict promotion, a reflexive self-coordinate,
+non-exposure, action credit, temporal closure, binding, and viability)
+specified as a full design and audit contract, with every result graded as a
+structural theorem, a recognition bridge, a conditional ontological
+implication, or an open target. The evidence base consists of exact finite
+studies, meaning exhaustively enumerated rational computations on declared
+carriers, together with selected machine-checked Lean kernels. The central exact
+result: on a declared twelve-state deadline carrier, every public-lens policy
+has an empty viability kernel, the canonical predictive quotient restores a
+ten-state kernel, and the unique minimal closure-restoring refinement splits
+exactly one public fiber; extension beyond the carrier is a conditional
+schema, not a generic theorem. A structural catalog then recasts privacy, the
+explanatory gap, zombies, free will, binding, temporal experience, valence,
+quality geometry, inverted spectra, personal identity, combination, and the
+meta-problem as interface-relative factorization, quotient, viability, gauge,
+and audit results. Realization is split into seven graded claims: a mechanized
+conditional bridge purchases it only from assumed certificate soundness plus
+an ontic-closure postulate, and there is no integrated certified instance and
+no empirical validation. An auditable code baseline with executable
+finite controls and predeclared prospective empirical obligations accompanies
+the paper.
+\end{abstract}
+
+\medskip
+\noindent\textbf{Keywords.} mathematical consciousness science; structural
+theory of consciousness; exact finite-state models; predictive-state quotient;
+viability kernel; observational equivalence; formal verification.
+
+\medskip
+\noindent\textbf{Artifact note.} Every value in a numerical table in this
+paper is read from a deterministic, schema-validated snapshot
+(\texttt{paper/data/current\_results.json}) exported from the repository's
+Python compute objects; the remaining in-text exact values are pinned by the
+repository's theorem catalog and test suites, which the same artifact
+contains. An immutable public artifact
+identifier (DOI and frozen commit) will be added at release; the local
+verification baseline is reported in Appendix~\ref{app:repro}.
+
+\section{Problem, result classes, and contribution map}
+\label{sec:intro}
+
+
+Formal theories of consciousness are difficult to compare, and difficult to
+trust, partly because three different kinds of claim routinely travel in one
+sentence: mathematical claims about a formal structure, empirical claims about
+how that structure meets observation, and ontological claims about what the
+structure's satisfaction would \emph{be}. The field has begun to treat this as
+a foundational problem rather than a stylistic one. General frameworks for
+mathematical models of consciousness ask what a model must declare before it
+says anything \citep{Kleiner2020MathematicalModels, KleinerTull2021}; formal
+work on testability shows that inference procedures and prediction data can
+interact so badly that a theory becomes unfalsifiable or trivially falsified
+\citep{KleinerHoel2021, DoerigEtAl2020HardCriteria}; and large adversarial
+collaborations have demonstrated how much machinery is needed to test even two
+well-resourced theories against each other, without producing a definitive
+verdict \citep{CogitateConsortium2025}. Landscape reviews count theory families
+by the dozen \citep{SethBayne2022}. In such a field, a paper's first obligation
+is to say exactly what kind of claim each of its sentences makes.
+
+This paper takes that obligation as its organizing principle. It presents an
+architecture for consciousness built from standard finite mathematics:
+finite carriers, lenses, quotients, refinements, closure operators, viability
+kernels, and audited promotion between description layers. Around that
+architecture it assembles a catalog of exact finite results, a small set of
+machine-checked kernels, and one explicitly priced ontological bridge. Every
+scientific sentence in the paper is assigned to one of four \emph{claim lanes},
+defined in Section~\ref{sec:claims}: structural results \gradeS{} (theorems and
+exact finite constructions), recognition bridges \gradeR{} (proposed
+interpretive mappings, never derivations), ontological implications \gradeO{}
+(conditional on named postulates), and open targets \gradeOpen. The lane
+discipline is not decoration; it is enforced by a sentence-level claim ledger
+in the artifact, and the paper's central negative rule is that no amount of
+\gradeS{} material ever implies an \gradeO{} conclusion without the named
+purchases.
+
+\subsection{Research questions}
+\label{sec:questions}
+
+The paper is organized around five questions.
+
+\begin{enumerate}
+\item Under what exact finite conditions does viability under a bounded public
+self-lens force a predictive self-coordinate, or a closure-restoring refinement
+of the public description? (Section~\ref{sec:t1}.)
+\item What component results and conditional dependencies follow when
+objecthood, strict promotion, reflexivity, hiddenness, drive, temporal closure,
+binding, and viability are specified by one audit contract, while the
+current witnesses generally live on separately declared carriers?
+(Sections~\ref{sec:arch} and~\ref{sec:clusters}.)
+\item Which classical consciousness problems (privacy, the explanatory gap,
+zombies, free will, binding, the specious present, inverted spectra, personal
+identity, combination, the meta-problem) become interface-relative
+factorization, quotient, viability, gauge, audit, or transport questions under
+that contract? (Section~\ref{sec:clusters}.)
+\item Which results are exact finite constructions, which extend to conditional
+schemas, which are recognition bridges, and which remain open?
+(Sections~\ref{sec:claims}--\ref{sec:t17} throughout.)
+\item What ontological interpretation follows, and only follows, after
+explicitly purchasing certificate soundness and Ontic Closure Completeness?
+(Section~\ref{sec:t17}.)
+\end{enumerate}
+
+\subsection{Evidence base and method}
+
+The evidence base is deliberately narrow and fully auditable. Every law in the
+catalog is landed as an \emph{exact finite study}: a small, fully declared
+finite carrier on which the relevant property is computed by exhaustive
+enumeration in exact rational arithmetic, together with declared controls that
+show what removes the effect. These are computational witnesses and exhaustive
+enumerations, not behavioral or empirical experiments; no empirical data of any
+kind were collected, fitted, or used to validate the architecture
+(Section~\ref{sec:empirical}). Selected results are additionally mechanized:
+each of the nineteen law modules has a Lean kernel, and the exact scope
+boundary of each kernel (what Lean proves versus what it pins as certified
+constants matching the Python enumeration) is stated where the result is used
+and cataloged in Appendix~\ref{app:repro}. ``Machine-checked'' in this paper always
+modifies a named declaration, never the catalog as a whole.
+
+The architecture is built on an inter-layer grammar developed in a series of
+companion papers (the ``Six Birds'' corpus), which supplies audited notions of
+promotion between description layers, factorization defects, no-overreading
+rules for claims that cross layers, and limits on same-level self-audit. That
+corpus is background machinery with its own hypotheses, cited exactly where a
+theorem is imported (Appendix~\ref{app:imports}); it is not independent
+evidence for anything about consciousness, and the paper is written to be read
+without prior exposure to it: every load-bearing definition is given first in
+standard mathematical language (Section~\ref{sec:setting}).
+
+\subsection{The architecture and the two headline boundaries}
+
+Section~\ref{sec:arch} defines the central object: an eight-clause closure
+package, the \emph{C-package} $\Cpkg$. It specifies what a candidate
+structure must exhibit: multiscale objecthood (C1), strict promotion over a
+public layer (C2), a recursively stable self-coordinate (C3), non-exposure of
+the determining state at the declared interface (C4), audited self/other action
+credit (C5), a funded temporal order/tick/arrow structure (C6), strict
+recombination binding (C7), and nonempty maintained viability (C8), together
+with cross-clause coherence conditions and an audit-gate panel. The package is
+a declared \emph{target}, not an exhibited system.
+
+Two results bound everything else in the paper.
+
+First, the strongest exact result (Section~\ref{sec:t1}): on a fully declared
+twelve-state deadline carrier, \emph{every} public-lens feedback policy has an
+empty viability kernel (by exhaustive enumeration, not sampling), while the
+canonical predictive quotient restores a ten-state kernel; and among all $64$
+refinements of the public lens, the \emph{unique minimal} closure-restoring
+refinement is a seven-class quotient that splits exactly one public fiber.
+Under a deadline, on this carrier, survival forces a predictive
+self-coordinate. The result is theorem-grade on its declared carrier; its
+family-level extension is a conditional schema whose hypotheses are displayed,
+not a generic theorem.
+
+Second, the visibly open boundary (Section~\ref{sec:t17}): the realization
+claim, that satisfying the certificate \emph{is being} a subject rather than
+imitating one, is split into seven separately graded objects. A simplified
+certificate schema and a conditional bridge theorem are mechanized in Lean.
+The bridge's conclusion is purchased by two premises that are assumed, not
+proved: certificate soundness, and the postulate that lawful audited closure
+is realization. The integrated instance (one carrier satisfying a full
+certificate with a \emph{proved} soundness theorem) is recorded as open, with
+an explicit \texttt{false} marker in the artifact. A reader who declines the
+premises keeps the entire structural catalog and loses only the ontological
+reading. The refusal is priced and respected.
+
+\subsection{Contributions}
+\label{sec:contributions}
+
+In order of importance:
+
+\begin{enumerate}
+\item \textbf{A claim architecture.} An explicit, artifact-enforced separation
+among Tier~S structural results, Tier~R recognition bridges, Tier~O conditional
+interpretation, and open targets, applied to every sentence of a consciousness
+theory (Section~\ref{sec:claims}).
+\item \textbf{A declared architecture and audit contract.} The eight-clause
+C-package as a full design target with component and interaction audits, kept
+explicitly distinct from the simplified certificate schema that is currently
+mechanized, and from the still-open integrated instance
+(Sections~\ref{sec:arch},~\ref{sec:t17}).
+\item \textbf{An exact forcing result.} The deadline carrier on which public
+self-description provably fails and a unique minimal predictive refinement
+restores viability, with exhaustive policy and refinement enumeration, closure
+and perturbation audits, and controls (Section~\ref{sec:t1}).
+\item \textbf{A structural catalog.} Exact, interface-relative component
+results recasting privacy, the explanatory gap, zombies, reports, self-audit,
+binding, temporal closure, constraint prices, quality geometry, gauge freedom,
+lineage, combination, and the meta-problem as factorization, quotient,
+viability, gauge, audit, and transport facts on declared finite carriers
+(Section~\ref{sec:clusters}).
+\item \textbf{A graded realization program.} The seven-way T17 split with
+executable negative attacks, an axiom-relative conditional bridge, and an
+explicit open integrated target (Section~\ref{sec:t17}).
+\item \textbf{An audited artifact baseline.} Exact rational Python studies with
+191 passing finite-study tests, a deterministic schema-validated nineteen-law
+result snapshot with 8 passing snapshot tests, nineteen Lean law modules in a
+36-job build, dependency and contract auditors, and a declared inherited trust
+base, with release-readiness gaps reported explicitly
+(Appendix~\ref{app:repro}).
+\end{enumerate}
+
+Empirical status is a limitation and a future obligation, not a seventh
+contribution: no empirical validation exists, an inherited literature battery
+failed its own admission rules and is retained only as non-evidential protocol
+history, and the prospective empirical interface is specified as obligations
+(Section~\ref{sec:empirical}).
+
+We do not claim priority for mathematical consciousness science, axiomatic
+models, privacy or unreadability results, unity, gauge symmetry, quality
+spaces, predictive-state quotients, viability kernels, shadow prices, or
+self-reference limits taken separately; each has its own literature, credited
+in Section~\ref{sec:related}. The defensible novelty is the particular audited
+composition: the claim discipline, the exact carriers, the forcing result, and
+the conditional realization split.
+
+\subsection{What this paper does not do}
+
+Five nonclaims frame everything that follows. (i)~No empirical experiment is
+reported and no empirical prediction is tested. (ii)~No candidate subject is
+proposed, examined, or certified; no actual system is claimed to be conscious
+or not conscious. (iii)~No full classifier for consciousness is offered; the
+certificate schema that exists is simplified, and its integrated instantiation
+is open. (iv)~No unconditional ontological conclusion is drawn anywhere; Tier~O
+content is confined to one conditional bridge with named premises.
+(v)~No claim is made to be the first mathematical theory of consciousness; the
+paper works inside an existing field
+\citep{Kleiner2020MathematicalModels, SignorelliWangCoecke2021,
+ChangEtAl2020InformationClosure, KleinerTull2021}.
+
+\subsection{Reader's map}
+
+Section~\ref{sec:claims} defines the claim lanes and the minimal formal
+setting. Section~\ref{sec:arch} defines the C-package.
+Section~\ref{sec:t1} develops the exact forcing result.
+Section~\ref{sec:clusters} organizes the remaining laws into four consequence
+clusters: interface and access; self-audit and action credit; the structure of
+experience; persistence and boundaries. Section~\ref{sec:t17} prices the
+realization bridge and displays the open target. Section~\ref{sec:empirical}
+states the empirical status. Section~\ref{sec:related} positions the work.
+Section~\ref{sec:limits} collects limitations and concludes. Appendices give
+imported machinery (\ref{app:imports}), full T1 details (\ref{app:t1}), the
+per-law result compendium (\ref{app:compendium}), the T17 schema and attack
+corpus (\ref{app:t17}), the non-evidential empirical-interface history
+(\ref{app:empirical}), reproducibility and formalization (\ref{app:repro}),
+and the claim and overlap ledgers (\ref{app:ledgers}).
+
+ \section{Claim types and the minimal formal setting}
+\label{sec:claims}
+
+
+This section fixes the two pieces of infrastructure that everything else
+depends on: a typing discipline for claims, and the small stock of standard
+finite mathematics in which all results are stated.
+
+\subsection{Four claim lanes}
+\label{sec:lanes}
+
+Every scientific sentence in this paper belongs to exactly one lane.
+
+\begin{description}
+\item[Tier S (structural).] Mathematical content about declared finite
+objects. Tier~S subdivides by \emph{claim form}: a \emph{theorem-grade exact
+result} is proved or exhaustively computed on its declared carrier; a
+\emph{schema} is a definition or conditional statement whose hypotheses are
+displayed and not discharged; a \emph{pointer} re-scopes an existing result to
+a new reading without new mathematics; a \emph{composition} combines landed
+results under a declared convention. Tier~S claims are established relative to
+their carriers and interfaces, and to nothing else.
+\item[Tier R (recognition).] A proposed mapping between a structural object
+and a familiar mental or phenomenal category, for example reading a
+constraint's dual price as felt valence. Recognition bridges are hypotheses.
+They are \emph{proposed}, \emph{named}, and \emph{retractable}; they are never
+derivations, and a counterexample to a bridge retracts the bridge, not the
+mathematics under it.
+\item[Tier O (ontological).] A claim about what satisfaction of the structure
+would be. All Tier~O content in this paper is conditional on named postulates
+(Section~\ref{sec:t17}); the paper contains no unconditional Tier~O sentence.
+\item[OPEN.] A target that is stated, motivated, and not achieved. Open
+targets are recorded in the artifact with explicit markers rather than
+implied by silence.
+\end{description}
+
+Table~\ref{tbl:grades} summarizes the lanes, their evidential support, and the
+inference each lane blocks. Figure~\ref{fig:lanes} shows the same discipline as
+a flow constraint: computational and literature inputs enter only their proper
+lanes, and no arrow runs from computation or literature directly to
+realization.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{p{0.1\linewidth}p{0.2\linewidth}p{0.22\linewidth}p{0.18\linewidth}p{0.2\linewidth}}
+\toprule
+Grade & Object & Evidential support & Licensed wording & Blocked inference \\
+\midrule
+\gradeS{} theorem/ exact & declared finite carrier and result & proof, or exhaustive exact enumeration with tests; selected Lean kernels & ``proves on the declared carrier,'' ``computes exactly,'' ``exhaustively enumerates'' & generalization beyond the carrier; any empirical or phenomenal conclusion \\
+\gradeS{} schema & conditional statement with displayed hypotheses & definition-level checking; conditional proofs & ``establishes under assumptions,'' ``gives a conditional schema'' & unconditional use; silent discharge of hypotheses \\
+\gradeR{} & proposed structure-to-phenomenon mapping & argued fit of profile; no derivation & ``proposes,'' ``recognizes,'' ``interprets, conditional on'' & treating the mapping as derived or measured \\
+\gradeO{} & conditional ontological implication & named postulates plus a mechanized conditional theorem & ``implies after assuming,'' ``is conditional on,'' ``purchases'' & detaching the conclusion from its premises \\
+\gradeOpen{} & stated, unachieved target & explicit negative markers in the artifact & ``remains open,'' ``is not exhibited'' & ``follows in principle,'' ``is nearly proved'' \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Tbl-1: claim-grade legend.} Each grade names its object, its
+support, its licensed verbs, and the inference it blocks. Scope/price: the
+legend is a reporting discipline for this paper, not a proposed norm for the
+field.}
+\label{tbl:grades}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.92\linewidth}{\small\emph{[Figure F1: claim and evidence
+lanes; rendered per the artifact figure plan.]} Four horizontal lanes:
+structural result, recognition bridge, ontological implication, open
+obligation. Python enumeration and Lean declarations feed only the structural
+lane; philosophical postulates feed only the ontological lane; literature
+feeds comparison, never evidence. No arrow connects computation or literature
+directly to realization.}}
+\caption{\textbf{F1: claim and evidence lanes.} Takeaway: every sentence has
+one lane, and evidence types cannot cross lanes. Scope restriction: the
+diagram is schematic; the sentence-level assignment lives in the artifact's
+claim ledger.}
+\label{fig:lanes}
+\end{figure}
+
+\subsection{The minimal formal setting}
+\label{sec:setting}
+
+All objects are finite. Probabilities and costs are exact rationals; no
+floating-point value appears in any result.
+
+\begin{definition}[Carrier, actions, lens]
+A \emph{carrier} is a finite set $X$ of states. A \emph{transition/action
+family} over $X$ is a finite set $A$ of actions with, for each $a\in A$,
+either a map $F_a : X \to X$ or a row-stochastic kernel $P_a$ on $X$; whether
+dynamics are deterministic or stochastic is declared per construction. A
+\emph{lens} (observation map) is a map $q : X \to Y$ onto a finite value set;
+its fibers form the \emph{observational partition} $\Pi_q$ of $X$. A
+\emph{policy for $q$} is a feedback rule that selects actions measurably with
+respect to $\Pi_q$ (more generally, with respect to the history of $q$-values).
+\end{definition}
+
+\begin{definition}[Quotient, refinement, factorization defect]
+A partition $\Pi'$ \emph{refines} $\Pi$ when every block of $\Pi'$ is contained
+in a block of $\Pi$. Given two lenses $\pi_0, \pi_1$ on the same carrier, the
+\emph{factorization defect} is
+\[
+\Dfact(\pi_0,\pi_1) \;=\; \{(s,s') : \pi_0(s)=\pi_0(s') \text{ and }
+\pi_1(s)\neq\pi_1(s')\},
+\]
+the set of \emph{split pairs}: pairs identified by the coarse description and
+separated by the fine one. $\pi_1$ factors through $\pi_0$ (there is $\varphi$
+with $\pi_1=\varphi\circ\pi_0$) if and only if $\Dfact(\pi_0,\pi_1)=\emptyset$.
+A nonempty defect is the exact, checkable meaning of ``the fine content is not
+recoverable from the coarse description'' used throughout this paper.
+\end{definition}
+
+\begin{definition}[Predictive and observational equivalence]
+Fix a carrier with declared dynamics and a lens $q$. Two states (or histories)
+are \emph{observationally equivalent} when all admissible current observables
+agree on them; the induced quotient is the \emph{current public quotient} $Q$.
+They are \emph{predictively equivalent} when they agree on the full family of
+admissible \emph{future} behavior (continuation laws, or distributions over
+future observable trajectories under all admissible continuations); the induced
+quotient is the \emph{predictive quotient} $M$. Predictive equivalence refines
+observational equivalence, giving a canonical comparison map $\pi : M \to Q$.
+The gap between them, same $Q$-class with different $M$-class, is a
+factorization defect and is the recurring engine of this paper.
+\end{definition}
+
+Predictive quotients are standard mathematics: they are the finite controlled
+analog of causal-state equivalence in computational mechanics
+\citep{CrutchfieldYoung1989, ShaliziCrutchfield2001}, and we import the
+construction, not the stationary-process theorems (the distinction matters in
+Section~\ref{sec:t1}).
+
+\begin{definition}[Closure operator and audit]
+A \emph{closure operator} on a finite structured set is an extensive, monotone,
+idempotent endomap; its fixed points are the descriptions the structure
+recognizes as complete. When a closure-like operator $E$ is only approximately
+idempotent, its \emph{idempotence defect} $\delta(E)=\tfrac12\max_z
+\lVert E^2(z,\cdot)-E(z,\cdot)\rVert_1$ is computed exactly and reported rather
+than assumed small. An \emph{audit} is a declared, executable check on a
+construction, such as a defect computation, a control run, or an exhaustive
+comparison, whose outcome is recorded with the result. A \emph{gate} is a named audit
+whose passage is required before a claim may be graded; the gate vocabulary
+used here (sufficiency, descent, stability, control-of-content, no-smuggling,
+visibility, audit, strictness) is imported from the interaction calculus of
+the companion corpus (Appendix~\ref{app:imports}) and is used as a reporting
+format, not re-proved.
+\end{definition}
+
+\begin{definition}[Viability kernel]
+Fix a carrier $X$, a safety predicate, feasible action sets, and declared
+successor supports. The \emph{viability kernel} $\Kviab$ is the greatest fixed
+point of the controlled-invariance operator
+\[
+V(K) = \{\, s \in K : s \text{ safe and } \exists a \in A_{\mathrm{feas}}(s)
+\text{ with } \mathrm{Post}(s,a) \subseteq K \,\},
+\]
+computed by descending iteration; this is the standard discrete-time viability
+kernel \citep{AnayaEtAl2009Viability, AubinBayenSaintPierre2011}. For a lens
+$\ell$, we write $\Kviab(\ell)$ for the best kernel achievable by
+$\ell$-measurable policies. A nonempty kernel means controlled persistence in
+the model, nothing more.
+\end{definition}
+
+\subsubsection*{The trust chain}
+
+Every result travels the same four-step chain, and the paper reports which
+steps each result completed. (1)~A \emph{mathematical statement} on a declared
+carrier, with grade and nonclaims, in the theorem catalog. (2)~A \emph{Python
+enumeration}: exact rational computation of every quantity, with declared
+controls, under test. (3)~A \emph{Lean declaration}: a named kernel per law,
+whose scope boundary (what is proved versus what is pinned as certified
+constants matching the Python computation) is part of the result.
+(4)~An \emph{interpretation}, which is where lanes R and O begin and where the
+ledger's blocked-inference column applies. Prose never outranks an executable
+artifact: the theorem catalog controls statements, the current Python
+computations control values, the Lean sources control what is machine-checked.
+
+\subsection{Six Birds vocabulary, second}
+\label{sec:sixbirds}
+
+The companion corpus organizes the same mathematics under a six-role grammar
+(threshold, budget, route, staging, packaging, and audit; P1--P6) with a typed
+calculus of promotion between description layers: a \emph{promotion bridge}
+carries content from a lower to a higher layer; \emph{strict} promotion means
+the higher description does not factor through the lower one
+($\Dfact\neq\emptyset$); \emph{no-smuggling} and \emph{no-overreading} rules
+police what may be used and claimed across layers; and \emph{same-level
+self-audit} is provably never accepted, while level-shifted, partial audit
+is. This paper uses those results as imported theorems with exact citations
+(Appendix~\ref{app:imports}); the six roles never organize sections, are never
+renamed as neurocognitive faculties, and impose no requirement that every role
+be active in every carrier. Analogy with a sibling result is never treated as
+theorem transport.
+
+ \section{The audited closure architecture}
+\label{sec:arch}
+
+
+This section defines the paper's central object. It is a \emph{contract}: a
+declaration of what a structure must exhibit, under what audits, for the
+catalog's results to compose. It is not an exhibited system, and
+Section~\ref{sec:t17} keeps the distance between the contract and any
+instantiation explicit.
+
+\subsection{The full C-package}
+\label{sec:cpackage}
+
+\begin{definition}[Full C-package target]
+\label{def:cpackage}
+The \emph{full C-package} $\Cpkg$ is the eight-clause full-design and audit
+contract $\mathrm{C1}$--$\mathrm{C8}$, together with cross-clause coherence
+data and a full promotion-gate panel. A candidate consists of a carrier $X$,
+declared transition/action families, a public lens and exposure channels, a
+predictive self-lens, branch structure, a maintenance ledger, and protocol
+generators; the clauses constrain that data as follows.
+\begin{description}
+\item[C1 (objecthood).] A declared multiscale exposure-closure family with
+robust fixed-point structure: closure operators $E_\tau$ at declared stagings
+$\tau$, exact fixed-point and defect bookkeeping, and perturbation audits with
+declared retention thresholds.
+\item[C2 (strict promotion).] A strict promoted distinction across declared
+layers: $\Dfact(\pi_0,\pi_1)\neq\emptyset$ for the declared lower and promoted
+readouts, certified by a split pair.
+\item[C3 (reflexive self-coordinate).] A recursively stable self-coordinate:
+refinement of the public self-lens by dynamical profiles terminates at a
+predictive quotient that carries the package's own continuation coordinate.
+\item[C4 (non-exposure).] The determining predictive state is not exposed
+relative to the declared public channel family: no admissible current
+observable factors through it non-constantly on the realized support.
+Hiddenness is channel-relative by construction.
+\item[C5 (drive/credit).] A declared audit of action credit: generator
+provenance routes computed directionality into \emph{self}, \emph{other}, or
+\emph{none}, with scheduled and internalized controls that must not be
+credited as self.
+\item[C6 (temporal closure).] A maintained, funded order/tick/arrow structure:
+a staged phase carrier that persists and progresses under budget, with the
+arrow carried by the package's own audit channel rather than by external
+scheduling.
+\item[C7 (binding).] Strict recombination refinement over the branchwise
+quotient: joint content over declared branches, witnessed by
+$\Rrec \succ \Kbw$ (Section~\ref{sec:structure}).
+\item[C8 (viability).] Nonempty maintained viability: $\Kviab\neq\emptyset$
+under the declared maintenance ledger, with underfunding collapsing the
+kernel.
+\end{description}
+\end{definition}
+
+The full design object also names four \emph{derived} structures that are
+consequences of the clauses rather than clauses themselves: D1, the dual-price
+structure of binding C8 constraints (Section~\ref{sec:structure}); D2, the
+descended quality geometry of the package's own states
+(Section~\ref{sec:structure}); D3, a proposed scheduling/marking reading of
+attention-like allocation, which is recognition-grade only (the present
+repository implements no price-based attention scheduler); and D4, the declared
+report/descent channel with its no-overreading boundary
+(Section~\ref{sec:interface}).
+
+Two premises sit \emph{outside} the structural boundary and are
+stated here only so the reader can see where they will be spent
+(Section~\ref{sec:t17}): A1 (Ontic Closure Completeness) and A2 (Substrate
+Indifference) are philosophical postulates, not clauses, and no structural
+result in Sections~\ref{sec:t1}--\ref{sec:clusters} depends on them.
+
+\begin{table}[t]
+\centering\footnotesize
+\begin{tabular}{p{0.06\linewidth}p{0.2\linewidth}p{0.24\linewidth}p{0.22\linewidth}p{0.18\linewidth}}
+\toprule
+Clause & Standard object & Strongest landed evidence & Simplified (T17-S) proxy & Blocking condition / nonclaim \\
+\midrule
+C1 & closure operators $E_\tau$ with fixed-point, defect, and perturbation audits & T1: exact $E_\tau$ audit on the ten-state kernel; unique perturbed fixed point retaining $77/80$ CORE mass at $\varepsilon=1/16$ & mechanics-coupled closure with staged-transition derivation and one-step audits & a fixed point is not an object or phenomenal entity without a recognition bridge \\
+C2 & factorization defect $\Dfact\neq\emptyset$ & T1 split pair; T3 nonfactorization corollary & whole-carrier defect from strict ledger & no experiential novelty or universal explanatory gap \\
+C3 & terminal profile refinement to predictive quotient & T1: kernel-restricted refinement $6\to7\to7$, terminal $=$ canonical $M$ on the kernel & one-step complete-observation-stable quotient & one-step stability at generic grade is not recursive terminality in full generality \\
+C4 & non-exposure of determining state & T2: connector loop moves $M$ while fixing $Q$; dissolution control & single collision-generated class under the complete joint observation & no absolute privacy; expanded interfaces may expose \\
+C5 & credit rule over generator provenance & T5: exact ledgers credit self/other/none; DPI null blocked & aggregate no-fake-arrow balance control & aggregate balance does not instantiate the concrete two-component lift \\
+C6 & funded order/tick/arrow & T8: funded trace with monotone ledger, $\Delta A = 2$; unfunded stall & budget-disciplined trace proxy & the trace proxy is not the full imported clock theorem \\
+C7 & strict recombination refinement & T7: $\Rrec\succ\Kbw$ witness; marking/erasure controls & global refinement with nontrivial fiber & no phenomenal-unity derivation \\
+C8 & viability kernel under maintenance & T1 deadline contrast; T11 funded/underfunded contrast & strict viability shrinkage under collapse budget & shrinkage is proved generically, not universal empty collapse \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Tbl-2: the C-package, compactly.} Each clause with its
+standard mathematical object, its strongest landed component evidence, the
+simplified certificate's proxy for it, and the inference it blocks.
+Scope/price: component witnesses live on separately declared carriers; no
+integrated instance exists (Section~\ref{sec:t17}).}
+\label{tbl:cpackage}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.92\linewidth}{\small\emph{[Figure F2: C-package dependency
+graph; rendered per the artifact figure plan.]} Nodes C1--C8 with dependency
+edges; derived nodes D1--D4 attached to their source clauses; A1/A2 drawn
+outside the structural boundary; the simplified certificate $\Certsimp$ shown
+as a distinct inset, with no ordering arrow between it and the full package.}}
+\caption{\textbf{F2: the C-package as a dependency graph.} Takeaway: the
+clauses are one contract with declared interactions, not eight independent
+slogans. Scope restriction: the graph shows the design target; it does not
+assert an integrated instance, and no equivalence or ordering between the full
+package and the simplified certificate is implied.}
+\label{fig:cpackage}
+\end{figure}
+
+\subsection{Dependencies and independent axes}
+
+The clauses are not symmetric. A forcing cascade organizes them: under
+deadline and live-signal conditions, C3's self-coordinate is \emph{forced}
+(Section~\ref{sec:t1}); C4 hiddenness, C6 temporal closure, and C2 strictness
+are \emph{generic or declared}, holding under broad, explicitly stated
+interface conditions; and C7 binding and C5 drive are \emph{contingent axes}
+that a package may simply lack. The two contingent axes generate a four-cell
+classifier lattice of degraded packages (T1b): binding and drive both absent
+(a controller), binding without drive, drive without binding, and the full
+subject cell. The cells are axis-independently witnessed classifications
+(T7 witnesses each binding value and T5 each drive value on their own
+carriers), not four jointly built systems; the lattice is a classificatory
+schema, not a claim that these are the only possible structures.
+
+The same synthesis packet lands a scoped recognition audit \gradeR{}: for this
+catalog, every C1--C8 clause maps to composites of the declared six roles
+without introducing a seventh irreducible role. The audit is scoped to this
+package and the current role vocabulary; it does not prove any universal
+completeness of the six roles.
+
+\subsection{Why single ingredients are insufficient}
+\label{sec:insufficient}
+
+Each familiar single-ingredient proposal reappears inside the contract as one
+clause, and each is separated from sufficiency by an explicit control
+elsewhere in the catalog. Agency or regulation alone is C5/C8 material:
+the credit audit exists precisely because apparent drive can be externally
+scheduled or internalized without being creditable to self
+(Section~\ref{sec:selfaudit}), and a nonempty viability kernel is controlled
+persistence, not experience. Persistence alone (C1/C8) is exhibited by any
+maintained fixed point; the T4 study shows a certificate-free reading of the
+same public face (Section~\ref{sec:interface}). Integration or binding alone
+(C7) collapses under marking while the branch family survives
+(Section~\ref{sec:structure}). Report alone (D4) licenses only descended
+boundary content, and the report map is provably non-injective on hidden
+states (Section~\ref{sec:interface}). The contract is the conjunction plus its
+coherence conditions; the catalog's controls are what make each ``alone''
+claim fail exactly rather than rhetorically.
+
+\subsection{Where bridges enter}
+
+Three places, and only three, connect the structural contract to
+non-structural readings. First, recognition bridges \gradeR{}: the named
+proposals that D1's dual prices have the profile of felt valence
+(Section~\ref{sec:structure}), that clause patterns correspond to
+phenomenological categories, and that D3's marking dynamics point at
+attention. Each is retractable without touching Tier~S. Second, the
+ontological postulates A1/A2, spent only in Section~\ref{sec:t17}. Third, the
+prospective empirical interface, which is specified as unmet obligations in
+Section~\ref{sec:empirical}. Everything else in the paper is lane S.
+
+\subsection{The full target versus the simplified certificate}
+\label{sec:fullvssimp}
+
+One distinction must be visible before any result is stated, because the
+realization section depends on it. The full C-package $\Cpkg$ of
+Definition~\ref{def:cpackage} is the design target. What is currently
+\emph{mechanized} is a simplified, carrier-indexed certificate schema
+$\Certsimp(X)$ (Section~\ref{sec:t17}): mechanics-based clause predicates
+C1--C8, cross-clause coherence, and a simplified promotion ledger. The schemas
+are not ordered by any landed theorem: the simplified certificate uses a
+weaker imported gate ledger while adding one-step coherence restrictions
+absent from the full design definition; no implication or equivalence between
+them has been proved or is claimed. Three specific weakenings recur and are
+flagged where used: the simplified C3 is one-step stable rather than
+recursively terminal in full generality; the simplified C6 is a
+budget-disciplined trace proxy rather than the full imported clock theorem;
+and the simplified C8 proves strict viability \emph{shrinkage} under a
+dominated collapse budget, not universal empty collapse. Table~\ref{tbl:cpackage}
+carries these boundaries clause by clause.
+
+ \section{Exact forcing of a predictive self-coordinate}
+\label{sec:t1}
+
+
+The catalog's strongest result answers question~1 of
+Section~\ref{sec:questions}: there is a fully declared finite carrier on which
+self-description through the public interface provably cannot keep the system
+alive, and the unique cheapest repair is a predictive self-coordinate. This
+section states the result, gives the proof idea and the decisive enumerations,
+and fixes its boundary. Appendix~\ref{app:t1} contains the complete carrier,
+matrices, fixed-point computations, and Lean mapping. The repository name of
+this law is T1, ``the forcing of the I''; its content is an exact
+predictive-self \emph{refinement} result on a declared carrier, not a
+metaphysical theorem about selves.
+
+\subsection{The deadline carrier}
+\label{sec:t1carrier}
+
+\begin{construction}[T1-L1, the self-wheel]
+\label{con:t1}
+The carrier is $Z = P \times W$ with $|P|=6$ public positions and $|W|=2$
+hidden phases, so $N = |Z| = 12$. The public self-lens is $q(p,w)=p$: the
+system can observe its own position but not its phase. The dynamics contain a
+live, unobserved \emph{phase slip} with exact branch weights $3/4$ and $1/4$,
+placed so that public history does not reconstruct the phase: the public trace
+$(1,2,1)$ can end in either phase. A \emph{deadline} makes the hidden phase
+viability-relevant: continuation beyond the deadline requires acting on the
+phase-dependent continuation law, and a wrong commitment exits the safe set.
+\end{construction}
+
+Three quotients of $Z$ organize everything.
+\begin{itemize}
+\item The \emph{public quotient} $\Pi_q$ has the six position classes.
+\item The \emph{continuation-law quotient} $L$ groups states by
+viability-relevant continuation-law equality; it has five classes. $L$ is a
+policy abstraction, and it is \emph{incomparable} with $q$: its classes cross
+public fibers.
+\item The \emph{canonical predictive quotient} $M = q \times L$, the join of
+public class and continuation law, has nine classes, strictly refines $q$, and
+splits exactly the public fibers at positions $1$, $2$, and $5$. Its
+comparison map $M \to \Pi_q$ exists by construction.
+\end{itemize}
+
+A counting fact from the corpus's first foundations paper frames why hidden
+volume makes such refinements generic: a lens with $K$ values defines exactly
+$2^K$ of the $2^N$ predicates on the carrier, so here only $64$ of $4096$
+predicates are $q$-definable, and a uniformly sampled predicate is
+non-definable with probability $1 - 2^{-6}$. Genericity is a proxy that makes
+strict extension cheap and typical when hidden states exist; the theorem below
+is about the specific, viability-relevant obstruction, which the carrier
+certifies by the split pair $(p_1 w_0, p_1 w_1)$: same public class, different
+canonical $M$-class, hence $\Dfact(q, M) \neq \emptyset$.
+
+\subsection{The theorem}
+
+\begin{theorem}[Exact forcing and minimal restoration; T1]
+\label{thm:t1}
+\gradeS{} \emph{Grade:} theorem-grade on the exact T1-L1 carrier; conditional
+family schema beyond it. \emph{Scope:} the declared twelve-state deadline
+carrier, its action family, and its lens. On this carrier:
+\begin{enumerate}
+\item \textbf{Public exhaustion.} Every $q$-measurable feedback policy has an
+empty deadline viability kernel: $\Kviab(q) = \emptyset$, by exhaustive
+enumeration of all public-lens policies.
+\item \textbf{Predictive restoration.} The five-class continuation-law
+abstraction $L$ restores a ten-state kernel, and the canonical predictive
+quotient $M = q \times L$ restores exactly the same ten states:
+$\Kviab(L) = \Kviab(M)$, $|\Kviab(M)| = 10$, certified by a separate
+nine-class search and a refinement audit.
+\item \textbf{Unique minimal repair.} Among all $64$ refinements of the
+public lens, the unique minimal closure-restoring refinement is the
+seven-class quotient $\Pi_*$ that splits exactly the public fiber $p=1$;
+every closure-restoring refinement splits that fiber, and the maximal
+refinement that leaves $p=1$ unsplit has empty kernel.
+\end{enumerate}
+\emph{Assumptions:} deadline active; live, resettable, non-publicly-definable
+phase. \emph{Nonclaim:} this does not show that all bounded self-predicting
+systems must form selves, and it is not an empirical result about any actual
+system.
+\end{theorem}
+
+Here $p=1$ is a public \emph{position coordinate} value naming the fiber the
+minimal refinement splits; it is not a probability, and not a refinement
+parameter.
+
+Three distinct objects now exist, and the paper never identifies them: the
+canonical nine-class $M$; the unique minimal seven-class full-carrier
+refinement $\Pi_*$; and (below) the seven-class terminal quotient on the
+ten-state kernel. The last two share a class count and are different
+partitions of different domains.
+
+\subsection{Proof idea and decisive enumerations}
+
+The proof is an audit trail, not an estimate; every step is an exact
+enumeration.
+
+\emph{Exhaustion.} Enumerate every $q$-measurable feedback policy and run the
+greatest-fixed-point viability iteration for each. All public-lens policies
+yield the empty kernel. The obstruction is exactly the split pair: the two
+histories with public trace $(1,2,1)$ end in different phases with different
+continuation laws, and by the deadline the difference is lethal to one
+commitment.
+
+\emph{Restoration.} The five-class $L$ implements the policy
+(need-clockwise $\to$ clockwise, need-counterclockwise $\to$
+counterclockwise, return $\to$ stay) and restores a ten-state kernel; the
+nine-class $M$ search returns the same ten states. Note the logical roles:
+$L$ is the policy abstraction that suffices, $M$ is the canonical object that
+carries it while remaining comparable with the public lens.
+
+\emph{Minimality.} Audit the six single-fiber splits of $q$: split kernel
+sizes are $0, 10, 0, 0, 0, 0$ across the fibers $p = 0, \dots, 5$, so only the
+$p=1$ split restores the kernel. The maximal refinement leaving $p=1$ unsplit
+has empty kernel; since a finer lens can implement every coarser-lens policy,
+the best kernel never shrinks under refinement, so every refinement that
+leaves $p=1$ unsplit is empty. Uniqueness and minimality of the seven-class
+$\Pi_*$ follow over the full $64$-refinement lattice. (The monotonicity step
+is a prose lemma over the eight computed searches; the enumeration itself is
+Python-certified, as flagged below.)
+
+\emph{Controls.} Two controls show the conditions are load-bearing. Removing
+the deadline makes $\Kviab(q)$ nonempty with the public policy \emph{stay}:
+no forcing without stakes. Removing the live slip (the washout control) makes
+the phase publicly reconstructible from the calibrated start, and the audit
+then classifies the hidden coordinate as an artifact rather than a forced
+self-coordinate: a merely decodable correlate is refused.
+
+\subsection{Closure objecthood and the terminal self-lens}
+\label{sec:t1c1c3}
+
+Two further exact computations land the C1 and C3 clauses on the same
+carrier's self-package, the ten-state kernel under the canonical $M$
+policy.
+
+\emph{C1 (objecthood).} With $P$ the closed-loop Markov matrix, $C$ the
+$M$-class indicator, and $U$ the uniform prototype on realized $M$-fibers,
+the staged closure is $E_\tau = P^\tau C U$. Exact Gaussian elimination gives
+the horizon table: at $\tau = 1,2,3,4$ the idempotence defects are $1$,
+$1/8$, $1$, $3/32$, with unique CORE-uniform fixed points at odd horizons and
+a two-extremal fixed segment at even horizons (the segment's midpoint is the
+odd-horizon fixed point). The odd-horizon defect $1$ is recorded plainly:
+no smallness is claimed, and the fixed distributions are declared proxy
+objects.
+Robustness is a separate audit at $\tau=2$: mixing $P$ with the uniform
+kernel at $\varepsilon = 1/16$ collapses the segment to a \emph{unique}
+nonuniform fixed point that retains CORE mass $77/80 \ge 3/4$, sits at total
+variation $3/80$ from CORE-uniform, and has exact defect $78795/524288$; a
+second row at $\varepsilon = 1/100$ gives total variation $3/500$, evidencing
+$\mathrm{TV} = (3/5)\varepsilon$ at both tested points.
+
+\emph{C3 (terminal self-lens).} Start from the public partition restricted to
+the ten-state kernel (six classes) and repeatedly split every class by its
+exact per-action transition profile, with out-of-kernel exits labeled
+distinctly. The size trajectory is $6 \to 7 \to 7$: the public partition is
+unstable at the pair $(p_1 w_0, p_1 w_1)$, one refinement pass reaches
+stability, and all $100$ ordered-pair checks identify the terminal partition
+with canonical $M$ restricted to the kernel. Extensionally
+$M(z) = (q(z), L(z))$: the terminal self-lens carries the state's own packaged
+continuation coordinate. That is the exact, finite sense in which the carrier
+is forced to know where it is \emph{in its own continuation law}, not merely
+where it is publicly.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lr}
+\toprule
+Quantity & Exact value \\
+\midrule
+Carrier size $|Z|$; public values & $12$; $6$ \\
+Predicates definable from $q$ / total & $64$ / $4096$ \\
+Public deadline kernel $|\Kviab(q)|$ (all policies, exhaustive) & $0$ \\
+Continuation-law kernel $|\Kviab(L)|$ & $10$ \\
+Canonical predictive kernel $|\Kviab(M)|$ (${}=\Kviab(L)$, audited) & $10$ \\
+Refinements of $q$ exhaustively checked & $64$ \\
+Unique minimal restoring refinement $\Pi_*$ (splits fiber $p=1$) & $7$ classes \\
+Public partition on the ten-state kernel & $6$ classes \\
+Terminal refinement on the kernel (${}=M$ restricted, $100$ pair checks) & $7$ classes \\
+Closure defects $\delta_{\tau}$, $\tau=1,\dots,4$ & $1,\ 1/8,\ 1,\ 3/32$ \\
+Perturbation $\varepsilon$; CORE mass retained & $1/16$; $77/80$ \\
+Total-variation witness at $\varepsilon=1/16$ & $3/80$ \\
+Aggregate defect at $\varepsilon=1/16$ & $78795/524288$ \\
+No-deadline control & $\Kviab(q)\neq\emptyset$ \\
+Washout (no-slip) control & phase reconstructible; not forcing \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Tbl-3: the T1 exact result card.} Computed rows are exact
+rationals from the frozen result snapshot; the two counting rows (predicates
+$2^6$/$2^{12}$; the $64$-refinement audit scope) are definitional counts
+stated by the theorem catalog. Scope/price: the declared
+twelve-state carrier only; the full-carrier minimal seven-class split and the
+kernel-restricted seven-class terminal quotient are distinct objects despite
+the shared class count.}
+\label{tbl:t1}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.92\linewidth}{\small\emph{[Figure F3: T1 forcing and
+refinement; rendered per the artifact figure plan.]} Three aligned panels:
+(a)~the twelve-state carrier with actions, public positions, and the hidden
+phase slip; (b)~public versus predictive/refined viability kernels ($0$ versus
+$10$ states); (c)~the refinement lattice with the unique minimal seven-class
+split of the $p=1$ fiber, drawn separately from the kernel-restricted
+trajectory $6 \to 7 \to 7$.}}
+\caption{\textbf{F3: exact forcing on the declared carrier.} Takeaway: public
+self-description fails exhaustively; one minimal predictive split restores
+viability. Scope restriction: exact declared carrier; the family extension is
+conditional and is not plotted as established.}
+\label{fig:t1}
+\end{figure}
+
+\subsection{Exact carrier versus family schema}
+\label{sec:t1family}
+
+What generalizes, and at what price, is stated once and inherited everywhere.
+For substrates satisfying the published deadline-family conditions (a live,
+resettable, non-publicly-definable phase, and a deadline that makes the hidden
+continuation law viability-relevant), self-prediction through a bounded
+public self-lens generically carries a predictive non-factorization
+obstruction, and under the deadline that obstruction is viability-relevant.
+That family statement is a \emph{conditional schema} \gradeS{}: all
+hypotheses displayed, none discharged beyond the exact carrier. The
+conditions are strong, and systems lacking them fall into the controls, not
+into the forced case. No claim is made that the conditions are universal or
+empirically common, and no generic ``selfhood theorem'' is asserted.
+
+\emph{Mechanization boundary.} The Lean kernel for this law formalizes the
+full twelve-state carrier and the finite public, continuation-law, and
+canonical quotient tables; the exhaustive policy and refinement searches are
+certified by the Python study and its tests, not by a general Lean fixed-point
+theorem. Lean's C1 facts cover the $\tau=1$ operator (fixed-point verification
+by evaluation and the defect witness), not uniqueness, the $\tau=2..4$ rows,
+or the perturbation audit; Lean's C3 facts prove terminal-partition stability
+and public instability with the $6/7/7$ sizes as declared constants, while the
+refinement execution is Python-certified.
+
+\subsection{Position among precursors}
+\label{sec:t1position}
+
+The ingredients are standard and are credited as such; the composition and
+the forcing question are not found in the precursors.
+
+\emph{Computational mechanics.} Causal states quotient semi-infinite
+stationary histories by conditional future distributions, with sufficiency,
+minimality, and uniqueness theorems under those hypotheses
+\citep{CrutchfieldYoung1989, ShaliziCrutchfield2001}. T1's quotients are the
+finite controlled analog, but the problem is different: a finite deadline
+carrier with feedback control and a viability criterion, not a stationary
+process. In particular, causal-state minimality cannot prove
+Theorem~\ref{thm:t1}(3): the minimal object there is a \emph{refinement of a
+declared public lens} restoring a control property, not a minimal sufficient
+statistic. That is why the canonical $M$ has nine classes while the minimal
+restoring refinement has seven.
+
+\emph{Viability theory.} The kernel, its greatest-fixed-point
+characterization, and the descending iteration are the standard discrete-time
+constructions \citep{AnayaEtAl2009Viability, AubinBayenSaintPierre2011}. The
+paper's addition is what is being iterated over: lens-measurable policy
+classes, so that kernels become properties of \emph{interfaces}.
+
+\emph{Regulation.} The good-regulator tradition
+\citep{ConantAshby1970} shows, under its entropy-minimizing setup, that a
+simplest optimal regulator implements a mapping from reguland states to
+actions. That is a much narrower state-to-action result: it does not
+establish an internal self-model, a predictive quotient, a viability kernel,
+or an exact public-refinement minimality, and nothing here treats it as if it
+did.
+
+ \section{Structural consequence clusters}
+\label{sec:clusters}
+
+
+The remaining laws are organized consequences and exact witnesses, not
+eighteen equal headline novelties. Each subsection gives the setup shape, the
+central result with its grade, the proof idea needed for the conceptual
+consequence, and the controls; Table~\ref{tbl:catalog} collects the catalog
+compactly, and Appendix~\ref{app:compendium} holds every remaining exact
+value. Throughout, each law's repository name (``privacy of qualia,''
+``zombie,'' ``free will,'' \dots) labels the classical problem it recasts; the
+restricted content follows the name immediately, every time.
+
+\subsection{Interface and access}
+\label{sec:interface}
+
+
+Four laws share one diagram (Figure~\ref{fig:interface}): a hidden object, a
+public/report quotient, and an attempted factorization whose exact success or
+failure, always relative to a declared interface, is the content.
+
+\paragraph{T2: hiddenness at a declared interface.}
+Fix a declared public channel family $\Lambda$, the current public quotient
+$Q$ it induces, the determining predictive quotient $M$, and the comparison
+map $\pi : M \to Q$. \emph{Exposure} holds when some admissible current
+observable factors through the determining state non-constantly on the
+realized support. The imported hiddenness law (Appendix~\ref{app:imports})
+then gives a dichotomy controlled entirely by the binary exposure predicate,
+not by coupling strength.
+
+\begin{theorem}[Interface-relative non-exposure; T2]
+\gradeS{} \emph{Grade:} theorem-grade direct finite instantiation; the C4
+condition is generic and declared, not universal. \emph{Scope:} the declared
+channel family $\Lambda$ on the finite privacy-wheel carrier. Under
+non-exposure with predictive witness content, there is a connector loop that
+fixes every current public class while moving the predictive class. On the
+exact carrier: two hidden states, one public class; the loop moves $0/1$ of
+$Q$-classes and $1/1$ of $M$-classes. Adding a public $M$-reading channel
+dissolves the witness (the dissolution control); the degenerate $M=Q$ control
+has no witness and licenses no privacy claim. \emph{Nonclaim:} nothing is
+private under every possible interface, and hiddenness does not imply
+phenomenality.
+\end{theorem}
+
+The classical resonance is deliberate: ``what it is like'' talk fixes an
+explanandum of subjective character and point of view \citep{Nagel1974}.
+T2's contribution to that explanandum is exact and modest: it turns
+``private'' into a computable, channel-relative predicate with a dissolution
+control. Add one instrument, and the same carrier's privacy verdict
+flips.
+
+\paragraph{T3: the explanatory gap as a strictness certificate.}
+Strict promotion means a nonempty factorization defect. The imported
+nonfactorization dichotomy says $\Dfact(\pi_0, \pi_1)\neq\emptyset$ if and
+only if $\pi_1$ does not factor through $\pi_0$.
+
+\begin{theorem}[No-shortcut corollary; T3]
+\gradeS{} \emph{Grade:} corollary-grade. \emph{Scope:} declared source and
+target maps on a fixed finite interface. If the promoted content is strict
+over the public layer, no lower-layer shortcut derivation recovers it: the
+factor map does not exist, and any closed lower-layer compression fails
+closure for the promoted readout. Contrapositive: if a proposed derivation
+succeeds, the extension was never strict. On the exact carrier (reusing the
+T9 support below), the strict case computes factor attempt $=$ none from the
+shared-report pair; the control with report as both source and target
+computes a concrete factor map and no gap. \emph{Nonclaim:} this neither
+solves nor dissolves the philosophical explanatory gap in general, asserts no
+hidden substance, and does not say mechanism is absent: if a derivation
+succeeds, the content was non-strict, not unmechanistic.
+\end{theorem}
+
+The reading this licenses, and the only one, is structural: the
+explanatory gap, in the finite formal sense, is the \emph{audit certificate of
+strictness}, not a refutation of anything. The historical label is credited to
+\citet{Levine1983}; the hard/easy framing to \citet{Chalmers1995FacingUp}.
+Whether the philosophical gap has this structure is an interpretive question
+the theorem does not settle.
+
+\paragraph{T9: reports license descended content only.}
+Model experience as a hidden promoted object $U$ that the declared lower
+interface cannot accept directly; a report channel is a boundary-expression
+former with an audited descent. The imported no-overreading theorem says an
+accepted claim has an empty overreading defect: every suppressed use is
+admissibly bridged.
+
+\begin{theorem}[Report descent and no-overreading; T9]
+\gradeS{} \emph{Grade:} direct instantiation of imported audit theorems plus
+finite toy witness. \emph{Scope:} declared report and no-report interfaces on
+a three-state hidden support. A valid report licenses only its descended
+boundary object, never the hidden structure. The finite content: the report
+map is non-injective (states $u_0 \neq u_1$ share the report boundary
+$r_{\mathrm{shared}}$), while a differently scoped no-report instrument
+distinguishes the same pair; an overreaching claim (suppressed unbridged use)
+classifies as blocked, and a visible descent-only claim classifies as
+accepted, under the same vendored classifier. \emph{Nonclaim:} reports are
+not useless or disconnected; and hidden content is not inaccessible to all
+possible instruments, since the no-report instrument in the same study
+distinguishes what the report identifies.
+\end{theorem}
+
+In this vocabulary, the access/phenomenal distinction \citep{Block1995} is
+layer-structural: access is D4, the descended report channel; phenomenal
+structure is the hidden $U$. The mapping is comparative, not an identity
+claim, and no measurement of phenomenal consciousness is asserted. Every
+report-level claim elsewhere in this paper, including every future
+empirical-interface row, inherits T9's boundary: descent only, unless a
+further bridge is separately audited.
+
+\paragraph{T4: zombies as certificate contrast on one public face.}
+The zombie study has three separated parts.
+
+\begin{theorem}[Leibniz quotient; T4a]
+\gradeS{} \emph{Grade:} theorem-grade direct quotient instantiation.
+\emph{Scope:} the declared admissible public lens family at one layer. Any
+legitimate layer-level quantity factors through the quotient by empirical
+indiscernibility; duplicates indiscernible under \emph{all} admissible lenses
+are one object of that layer. ``Zombie'' is therefore not a public-layer
+distinction when all declared public lenses agree. \emph{Nonclaim:} sameness
+is layer-relative; there is no metaphysical identity claim at every layer, and
+empirical equivalence does not prove phenomenal identity.
+\end{theorem}
+
+\begin{theorem}[Certificate demarcation; T4b]
+\gradeS{} \emph{Grade:} schema-grade certificate contrast. \emph{Scope:} one
+public carrier face with an imported certificate battery. A subject/zombie
+distinction exists relative to a declared audit only if the certificate lens
+family separates the duplicates. The exact study realizes this as two
+\emph{certificate readings of one} public carrier face: reading A carries the
+genuine imported T2/T7/T5/T6 witnesses (hiddenness, strict recombination,
+self-credited drive, same-level-audit content); reading B carries the
+corresponding degenerate, collapsed, and no-drive controls. Public statistics
+match exhaustively over the declared current observable; an imperfect-match
+control C, which adds a public $M$-reading channel, is classified publicly
+discernible \emph{before} any certificate comparison. \emph{Nonclaim:} A and
+B are not two independently constructed integrated carriers, and no
+metaphysical zombie detector is offered.
+\end{theorem}
+
+T4c, the reading that achieving the closures is realization rather than
+imitation, is \gradeO{} and is deferred entirely to the conditional bridge
+of Section~\ref{sec:t17}; the interface cluster uses only the one-sentence
+pointer.
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.92\linewidth}{\small\emph{[Figure F4: interface-relative
+opacity; rendered per the artifact figure plan.]} One commuting/noncommuting
+factorization diagram shared by T2, T3, T4, and T9: hidden object $U$ /
+determining quotient $M$; public and report quotients; the attempted factor
+map (crossed out where the defect is nonempty); the T4 public face with its
+two certificate readings; and the exposure/dissolution control as an added
+channel.}}
+\caption{\textbf{F4: one diagram, four laws.} Takeaway: privacy, the gap,
+report limits, and zombie contrasts are the same factorization question asked
+at four interfaces. Scope restriction: every failed factorization carries its
+declared interface; no absolute privacy and no integrated zombie pair.}
+\label{fig:interface}
+\end{figure}
+
+\subsection{Self-audit, action credit, and the meta-problem}
+\label{sec:selfaudit}
+
+
+\paragraph{T5: a priced free-will construction.}
+The free-will law is four structural clauses and two foreclosures on one
+deterministic deliberation carrier; its repository name promises no
+metaphysical freedom theorem, and none is delivered.
+
+\begin{theorem}[Priced residue and audited authorship; T5]
+\label{thm:t5}
+\gradeS{} \emph{Grade:} clauses graded individually below. \emph{Scope:} one
+declared deterministic support, bounded observer budgets, declared generator
+provenance. \emph{Nonclaim:} no ontic indeterminacy, no metaphysical
+freedom, no disproof of every libertarian view.
+\begin{enumerate}
+\item \emph{Lawfulness} (framing). Choices are readouts of the run; no
+spontaneity primitive is added.
+\item \emph{External underivability} (theorem-grade toy instantiation). A
+bounded public observer at budget $B$ can face positive priced residue:
+same-summary states with different deterministic choices. The exact scores at
+budgets $0,1,2$ are $1, 1, 1/2$, non-increasing, with a split witness at every
+budget.
+\item \emph{Self-underivability} (direct imported-theorem instantiation). The
+self-model is a bounded packaging; a complete same-level self-audit
+classifies \texttt{undefined\_circular} (an out-of-scope variant:
+\texttt{outside\_scope}), and the self-model summary has its own
+same-summary/different-choice split pair.
+\item \emph{Authorship} (direct instantiation of no-fake-arrow audits).
+Directionality is credited to the agent only when it survives the
+protocol-trap and data-processing nulls and one common credit rule returns
+\emph{self}: genuine autonomous drive has unequal exact self-channel cycle
+products $8/27$ versus $1/27$; the externally scheduled apparent arrow has
+unequal \emph{other}-channel products ($0$ versus $16/81$), a real arrow
+credited to other rather than to self; and after schedule internalization the lifted kernel decomposes
+exactly into clock and content channels, both balanced ($0$ versus $0$ on
+credited products; canonical lifted cycle $1/324$ each way), so the same rule
+returns \emph{none}. Deterministic coarsening of the blocked case leaves
+equal path fluxes ($1/27$ each way): observation does not create affinity.
+\item \emph{Libertarianism foreclosed} (foreclosure argument). The positive
+residue of clauses 2--3 is bounded-observer ignorance under declared
+packaging and budget, not substrate spontaneity.
+\item \emph{Deflation foreclosed} \gradeO-flavored. ``Only a lower-layer
+event'' commits the factorization error: once the layer is strict, the layer
+claim cannot be replaced by a base-layer paraphrase without losing the
+certificate, as T3 establishes. This is a foreclosure argument with an
+ontological flavor, not a Tier~S theorem.
+\end{enumerate}
+\end{theorem}
+
+The philosophical shape is symmetric by design: the same exact carrier
+prices both the libertarian reading (residue is ignorance, not spontaneity)
+and the hard-determinist deflation (paraphrase loses a certified
+distinction). What remains is an audited, model-relative credit assignment
+(self, other, or none) on declared channels, and nothing stronger.
+
+\paragraph{T6: introspection limits without introspection nihilism.}
+\begin{theorem}[Same-level audit failure, rotating towers, confabulation; T6]
+\gradeS{} \emph{Grade:} direct instantiation of imported self-audit theorems
+plus finite toy extension. \emph{Scope:} instrument-indexed claims; complete
+same-level self-certification, not ordinary introspection. No instrument
+certifies its own complete soundness at its own level: the claim classifies
+\texttt{undefined\_circular} or \texttt{outside\_scope}; a level-shift bridge
+reclassifies it as \texttt{provisional}, never as same-level final. Every
+finite rotating-audit tower has an uncertified top: the three-level toy tower
+computes own-level statuses (\texttt{undefined\_circular} at each level),
+bridge statuses (\texttt{provisional}, \texttt{provisional}), and
+top-requires-next-level $=$ true. \emph{Confabulation corollary} (toy
+extension; schema beyond it): with an audit update missing, the unique
+closure-preserving completion from visible records is \emph{left} while the
+hidden true state is \emph{right}: coherent and wrong. With the update
+present, the unique completion is correct and the verdict disappears.
+\emph{Nonclaim:} introspection is neither impossible nor worthless; partial,
+level-shifted, bounded audit remains admissible, and self-image stability
+over time is named as dependent on an open conjecture, not claimed.
+\end{theorem}
+
+The slogan form, that the I doing the auditing is never the I being audited,
+is exactly as strong as the classifier statuses above, and no stronger.
+
+\paragraph{T16: the meta-problem as a convention-relative composition.}
+The meta-problem asks why systems like us judge there to be a hard problem
+\citep{Chalmers2018MetaProblem}. The composition law computes one exact,
+deliberately small version.
+
+\begin{theorem}[Meta-problem composition; T16]
+\gradeS{} \emph{Grade:} composition-grade and convention-relative.
+\emph{Scope:} one two-state composite carrier whose public interface and
+report channel coincide; an explicitly declared completion convention. On the
+composite package: the T2-shape privacy witness and T3-shape strict-factor
+absence hold reflexively of the package's own self-model (hidden moved
+fraction $1$, public moved fraction $0$, no factor $q \to m$); the T6-shape
+same-level certification of its report channel is blocked
+(\texttt{undefined\_circular}); and the T9-shape classification licenses the
+report as a valid descent while blocking overreading. The declared completion
+convention maps the computed flag triple (gap witness, audit blocked, factor
+absent) $=(\top,\top,\top)$ uniquely to the report
+\texttt{cannot\_derive\_own\_experience}; the exposed-interface control
+computes $(\bot,\top,\bot)$ and uniquely selects
+\texttt{derivation\_certified}. \emph{Nonclaim:} the generic claim that
+bounded reflexive subjects report a hard problem is \emph{not} derived from
+the four component laws alone; it holds relative to the declared
+convention. Moreover, on this carrier the public and report coordinates coincide,
+so several nominally distinct premises extensionally reduce to one
+nonfactorization fact (premise independence would need a carrier that
+separates them).
+\end{theorem}
+
+Under that same convention, the composition threads the intended contrast
+without deleting either side's evidence: illusionism is right that reports
+under-determine the hidden object, wrong if it deletes the object;
+mysterianism is right that no shortcut derivation exists, wrong if it treats
+the gap as failure rather than as the certificate of strictness. T16 is one
+convention-relative finite composition study; it does not settle the
+meta-problem.
+
+\subsection{The structure of experience}
+\label{sec:structure}
+
+
+Five laws and a temporal cluster give exact finite structure to binding,
+temporal experience, valence, quality geometry, and inversion, always as
+declared-carrier structure and never as phenomenal measurement.
+
+\paragraph{T7: binding as strict recombination refinement.}
+Over a declared branch family (modality/content branches), two quotients
+compete: the \emph{branchwise} quotient $\Kbw$, the strongest state obtainable
+by treating branches independently, and the \emph{recombination} quotient
+$\Rrec$, induced by admissible joint observables on assemblages, with a
+forgetful map $\eta : \Rrec \to \Kbw$.
+
+\begin{theorem}[Binding witness with marking and erasure; T7]
+\gradeS{} \emph{Grade:} theorem-grade finite instantiation of imported
+strict-refinement machinery. \emph{Scope:} the declared branch family and
+interfaces. Binding is certified by strict refinement $\Rrec \succ \Kbw$: two
+assemblages in one branchwise class and distinct recombination classes. On
+the exact carrier: the coupled regime has $\Kbw$ blocks $(2)$ and $\Rrec$
+blocks $(1,1)$ with witness (\emph{bound-diagonal}, \emph{bound-crossed});
+\emph{marking} a branch-identifying observable collapses the partitions to
+exact equality ($\Rrec = \Kbw$, both $(1,1)$); \emph{erasure} of the mark
+restores the original witness; and the aggregation control, in which no joint
+observable is ever declared, has $\Rrec = \Kbw$ from the start (a
+never-coupled product, not a marked collapse). \emph{Nonclaim:} no derivation
+of phenomenal unity or of what unity feels like, and no attention cost:
+the law contains no budget, price, or scheduling variable, so it establishes
+marking-collapse, not a priced attention mechanism.
+\end{theorem}
+
+\paragraph{T8: the specious present as a funded triple.}
+Temporal structure is treated as three separable properties of a closure:
+order (a successor), tick (a staged carrier that persists \emph{and}
+progresses), and arrow (a monotone accounting variable). Each must
+be maintained under budget.
+
+\begin{theorem}[Purchased clock and no unified now; T8]
+\gradeS{} \emph{Grade:} theorem-grade finite instantiation of imported clock
+and protocol criteria. \emph{Scope:} the declared three-phase clock carrier
+and protocol family. The experienced-present proxy is the package's
+stabilized (order, tick, arrow) triple, with width the closure timescale
+$\tau$. The single mechanism $\mathrm{advance} = b/(b+1)$ at budget $b=2$
+gives exact progress $2/3$ and tick rate $2/9$; the funded nine-step trace
+has six advances, two completed wraps, and a monotone ledger with
+$\Delta A = 2 > 0$; the unfunded control ($b=0$) stalls exactly ($0$
+progress, $0$ ticks, constant trace, no arrow). No single global ``now'' is
+guaranteed across sub-closures: the noncommuting protocol pair (rotation,
+swap) has holonomy defect $1$ and the commuting control ($R$, $R^2$) defect
+$0$, so path-dependent local time translations admit no global potential.
+Finally, felt-flow candidates route through the audit channel, never through
+holonomy alone: the holonomy-without-drive control derives an unbiased audit
+support with equal products ($3/1000$ each way) and is classified blocked.
+\emph{Nonclaim:} no universal specious-present width, no physical time or
+spacetime, and holonomy is never a directionality certificate.
+\end{theorem}
+
+\paragraph{T11: constraint prices, and valence as a named bridge.}
+Any package with C8 maintenance constraints is budgeted; closure under
+binding constraints yields exact dual prices $\lambda_i = \partial \Phi^* /
+\partial b_i$.
+
+\begin{theorem}[Exact dual prices; T11 core]
+\gradeS{} \emph{Grade:} theorem-grade finite duality core. \emph{Scope:} one
+exact rational linear program over a three-action policy simplex with two
+maintenance budgets. At binding budgets $b=(2,2)$: optimum value $76/11$,
+both constraints tight, exact local duals $\lambda = (24/11,\, 14/11)$. Slack
+regime at $b=(5,1)$: $\lambda_1 = 0$ exactly. Tightening the first budget
+across $(4,3,2,3/2)$ recomputes $\lambda_1 = (0,\, 4/3,\, 24/11,\, 24/11)$,
+non-decreasing. Proxy discipline: a declared row-permuted proxy cost yields
+unstable recovered proxy prices across two environment phases ($4$ and $0$),
+while the true LP is phase-independent by construction; a planted dual
+certificate with positive price on a slack constraint violates complementary
+slackness and is rejected. Viability tie: the kernel is nonempty when both
+budgets meet their thresholds and empty when either is underfunded by
+$1/11$. \emph{Nonclaim:} shadow-price duality is standard mathematics, and
+none of these values generalizes to actual subjects.
+\end{theorem}
+
+\begin{remark}[The valence bridge]
+\gradeR{} The identification of the dual-price profile with \emph{felt
+valence} is a recognition bridge, named here and nowhere derived: the C8 dual
+has the intended profile of graded magnitude, sign/pressure, motivational
+relevance, and a direct tie to viability. A counterexample to the identification
+retracts the bridge, not the duality mathematics. Felt valence is never
+Tier~S in this paper.
+\end{remark}
+
+\paragraph{T12: a descended quality geometry, exactly audited.}
+\begin{theorem}[Induced-kernel similarity geometry; T12]
+\gradeS{} \emph{Grade:} theorem-grade induced-kernel construction and exact
+audit; the geometry-birth grade is audit-only. \emph{Scope:} the corrected
+32-state micro-carrier (eight hues, two chroma, two texture levels), packaging
+lens forgetting texture, staged twice. The lens descends the symmetric micro
+kernel to a 16-point macro kernel $\hat P = U P^2 C$ with exact lift
+consistency $UC = I$; texture is deliberately macro-relevant (a sluggish
+grain multiplies move rates by $1/2$), so prototype content is operational,
+not decorative. The exact max-product path similarity gives warm-neighbor
+similarity $43/270$ versus cool-target $1/810$, so the warm neighbor is
+strictly nearer; $d = -\log D$ is the additive distance on positive support.
+Audits, all exact: closure defect $13441/52488$ (the swapped-prototype
+incoherent control: $2619989/3499200$, strictly larger); prototype stability
+maximum $2/3$, mean $13801/25920$; all $256$ ordered pairs connected; all
+$16^3$ multiplicative triangle checks pass; route mismatch $0$. A texture-0
+point-prototype lift preserves $UC=I$ yet changes the induced object and is
+rejected: lift consistency alone does not certify prototype content. A local
+signature table is chroma-favored at hues $0,3,7$, balanced at $1,5,6$,
+hue-favored at $2,4$; a hand-declared signature-change transport has loop
+residue $0$ on the balanced plateau and $1$ at the warm/cool boundary, with
+multiplicative residual ratios $180/169$ (plateau) and $102/59$ (boundary),
+both above one and strictly ordered. \emph{Nonclaim:} no smallness threshold
+adjudicates the audits (only the computed controls do); the full
+geometry-birth checklist (fitted inter-scale distortion, dimension
+diagnostics, and curvature via neighborhood-MDS/Procrustes transport) is
+not implemented; geometry is layer-relative; and the recovered similarity is
+descended structure, never the hidden experience.
+\end{theorem}
+
+\paragraph{T13: the inverted spectrum as a gauge computation.}
+\begin{theorem}[Descent-fixing gauge and rigidification; T13]
+\gradeS{} \emph{Grade:} theorem-grade exact finite construction; the broader
+quality-space rigidification principle is schema-grade. \emph{Scope:} an
+eight-state fiber bundle, $|Q| = 4$ public classes with two fiber points
+each, declared descents. Define the descent-fixing gauge group
+$G = \{\sigma \in \mathrm{Aut}(M) : \pi\sigma = \pi \text{ and } d\sigma = d
+\text{ for every admissible descent } d\}$. Spectrum inversion is a lawful
+distinct possibility exactly to the extent that $G$ is nontrivial. Exact
+enumeration: $|\mathrm{Aut}|=40320$ automorphisms of the support, $16$
+projection-fixing, and $G = \{\mathrm{id}, \text{global swap}\} \cong
+\mathbb{Z}_2$ in the symmetric case; adding \emph{one} declared,
+descent-visible discrimination-density orientation (calibrated by T12's
+landed local signature at one public class) recomputes $G = \{\mathrm{id}\}$.
+Route transport between two isomorphic fibers shows the same contrast: two
+admissible transports symmetric, exactly one rigidified. \emph{Nonclaim:} no
+claim that any particular quality space has nontrivial $G$; the rigidifier is
+a modeled assumption, not a measurement; and if richer quality spaces always
+rigidify, the inverted spectrum dissolves, which is an allowed outcome.
+\end{theorem}
+
+The philosophical translation is precise: ``is your red my red'' has
+determinate content exactly where the admissible descents rigidify the route;
+where $G$ remains nontrivial, the residual comparison is lawfully
+gauge-indeterminate rather than merely unreported.
+
+\paragraph{T18: the temporal consequence cluster.}
+Four thin, exact extensions of T8, plus one demotion, complete the temporal
+story.
+
+\begin{itemize}
+\item \textbf{T18a (layer-minted proper time).} \gradeS{} theorem-grade finite
+extension. The package's temporal coordinate does not factor through
+substrate time: the exact strictness witness is a state pair with equal
+substrate time and different package tick parity, so
+$\Dfact(\text{substrate time}, \text{package time}) \neq \emptyset$; T8's
+funded triple is reused unchanged. Nonclaim: no relativistic proper time, no
+claim that every subject has this clock.
+\item \textbf{T18b (enablement as a lens rewrite).} \gradeS{} theorem-grade
+exact finite instantiation. Promotion of a layer is an \emph{enablement-time}
+event: a closure rewrite that creates the variable set in which the layer's
+causation-time then runs. Exactly: the phase-omitting coarse lens has closure
+defects $(1,1,1)$ across horizons; the enriched lens has $(0,0,0)$; the
+partial-enrichment variant drops $(4/7,4/7,4/7)$ to $(0,0,0)$ using only the
+relevant parity coordinate, strictly coarser than full reveal; the no-birth
+control has zero defects before and after, so no beneficial rewrite exists.
+Nonclaim (the repository name is ``subject birth''): no subject is created or
+detected; the theorem is a finite lens-rewrite computation.
+\item \textbf{T18c (demoted).} The intended theorem, temporal closure as a
+precondition for stating the other clauses, is \emph{not} landed. The
+static source audit finds explicit horizon/deadline tokens only in T1 among
+T1/T2/T5/T7. T18c is therefore a schema-grade dependency observation,
+recorded as demoted, and nothing in this paper cites it as a theorem.
+\item \textbf{T18d (state taxonomy by funding and gating).} \gradeS{}
+taxonomy-grade finite construction. Funding and entrainment gates classify
+temporal-state rows: unfunded (tick rate $0$); funded and entrained (match
+rate $1/1$, tick $1/1$); funded but decoupled (match $1/3$, tick $1/1$). The
+rows are descended structural readings under T9's report discipline:
+no claim about actual sleep, dreaming, or clinical states is licensed without
+a recognition bridge, and none is proposed here.
+\item \textbf{T18e (no canonical now-transport).} \gradeS{} direct temporal
+reading of T13's machinery. Comparing ``nows'' across sub-closures is a route
+transport problem: two admissible transports in the symmetric case, exactly
+one after rigidification. There is no canonical inter-layer now unless the
+declared descents rigidify the transport.
+\end{itemize}
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.92\linewidth}{\small\emph{[Figure F5: structural
+consequence atlas; rendered per the artifact figure plan.]} Four exact
+panels: (a)~T7 marking/erasure partitions ($\Kbw$/$\Rrec$ block structures
+across the four regimes); (b)~T8 funded versus unfunded tick trace with the
+monotone ledger; (c)~T11 dual-price tightening curve $0, 4/3, 24/11, 24/11$
+with the slack regime marked; (d)~T13 gauge and transport counts, $2 \to 1$
+under rigidification. The felt-valence label appears outside panel (c),
+marked Tier~R.}}
+\caption{\textbf{F5: four exact structural consequences.} Takeaway: binding,
+temporal funding, constraint prices, and gauge rigidification are computed
+objects on declared carriers. Scope restriction: panel values are the exact
+snapshot values; the T8 arrow is a stepped trace, not a rate.}
+\label{fig:atlas}
+\end{figure}
+
+\subsection{Persistence and boundaries}
+\label{sec:boundaries}
+
+
+\paragraph{T10: a graded, hysteretic, clause-decomposable boundary.}
+\begin{theorem}[Existence boundary schema; T10]
+\gradeS{} \emph{Grade:} schema plus exact correspondences. \emph{Scope:} a
+three-state maintenance carrier with a threaded record accumulator (credit
+accrues $1/8$ after a nonempty kernel to a cap of $1/4$, decays $1/8$ after
+an empty one) over the budget grid $\{0, 1/4, 1/2, 3/4, 1\}$.
+Existence-boundary labels are modeled as viability collapses, that is, as
+crossings of $\Kviab=\emptyset$ under the declared ledger, and the finite
+prediction is threefold. \emph{Graded:} kernel sizes pass through intermediate
+islands, up-sweep $[0,0,1,2,3]$, down-sweep $[3,3,2,1,0]$. \emph{Hysteretic:}
+the up-sweep first-nonempty threshold is $1/2$ while the primed down-sweep
+last-nonempty threshold is $1/4$; recovery and collapse thresholds differ
+because the mechanism carries record state, not because thresholds were
+tabled separately. \emph{Clause-decomposable:} C1-style persistence can
+coexist with collapsed C7 binding (covert-awareness pattern) or collapsed C6
+temporal closure (timeless pattern), by importing the respective controls;
+full collapse zeroes all three. Robustness is conditional, not universal: a
+weaker accumulator rule loses strict hysteresis and a stronger one never
+re-crosses on the tested grid. \emph{Nonclaim:} no claim that actual loss or
+recovery of consciousness is hysteretic, and any external measure of closure
+depth would need its own descent audit, and none is given.
+\end{theorem}
+
+\paragraph{T14: identity as predictive lineage.}
+\begin{theorem}[Lineage, trauma, fission/fusion, empty target; T14]
+\gradeS{} \emph{Grade:} theorem-grade transfer of imported route-transport
+machinery plus finite extensions. \emph{Scope:} a declared memory-wheel route
+package with three histories, one current class, two predictive classes.
+Identity over time is represented by the lineage of the predictive quotient
+$M$: by the imported reachable-image factorization theorem, any
+future-sufficient self-summary factors to $M$ (the toy computes the factor
+from a strictly finer candidate and rejects the reverse). \emph{Trauma
+shape:} a loop that is current-trivial and predictively nontrivial moves
+$0/1$ of current classes and $1/1$ of predictive classes: same by all
+present tests, changed in continuation. The identity-loop control moves
+neither. \emph{Fission/fusion:} continuation maps on $M$-fibers classify
+exactly as fiber-splitting (duplicated support) and fiber-merging (merged
+support). \emph{Empty target:} the funded support has kernel size $3$; the
+underfunded support has $\Kviab=\emptyset$ and empty post-exit fiber image,
+so no continuation preserves the pre-exit $M$-fiber. \emph{Nonclaim:} no
+complete metaphysics of personal identity. Token-independence and
+death-as-dissolution readings are one-sentence Tier~O pointers deferred to
+Section~\ref{sec:t17}; the Tier~S death fact is only $\Kviab=\emptyset$ plus
+no fiber-preserving continuation, and the empty-target computation is
+Python-certified (it is outside the law's Lean kernel).
+\end{theorem}
+
+\paragraph{T15: combination as a two-gate audit on one carrier.}
+\begin{theorem}[Combination gate; T15]
+\gradeS{} \emph{Grade:} schema with an exact one-carrier construction.
+\emph{Scope:} one joint-package carrier with live states
+\emph{diagonal}/\emph{crossed} and a dead exit. Combination into a joint
+subject is certified only when the joint family passes both gates on the
+\emph{joint} carrier: (i)~C7 joint strict refinement, where the exact witness has
+$\Kbw = (2)$, $\Rrec = (1,1)$; and (ii)~C3 joint reflexivity, where per-action
+refinement of the joint public lens terminates at the pairing-valued
+predictive quotient, trajectory $1 \to 2 \to 2$, and that quotient carries the
+viability-relevant joint coordinate (public-lens kernel $\{$diagonal$\}$
+versus terminal-lens kernel $\{$diagonal, crossed$\}$). Aggregation is
+exactly the collapsed $\Rrec = \Kbw$ interface with no forced joint
+self-coordinate. The subject boundary is gate-determined by the surviving
+promoted carrier, not by a topological surface or by summing micro-packages.
+Interface contrast on the same states: the subject interface hides pairing
+(exposure false); the collective-ledger interface publishes it (exposure
+true), failing C4 by design, an institution-shaped control.
+\emph{Nonclaim:} no general verdict about real collectives, and aggregation
+of local contents is never sufficient: it is the collapsed regime.
+\end{theorem}
+
+\paragraph{T1b: the taxonomy, briefly.}
+The classifier lattice of Section~\ref{sec:arch} belongs to this cluster
+operationally: its four cells (controller, bound-without-drive,
+drive-without-binding, full subject) are assembled from independently
+witnessed T7 and T5 axis values, and it is a classification schema over
+degraded packages, not four integrated carriers and not an enumeration of
+all possible minds.
+
+\begin{table}[p]
+\centering\footnotesize
+\begin{tabular}{p{0.05\linewidth}p{0.22\linewidth}p{0.3\linewidth}p{0.16\linewidth}p{0.15\linewidth}}
+\toprule
+Law & Mathematical type & Central exact result & Interface / assumption & Lean scope \\
+\midrule
+T1 & forcing + minimal refinement & $\Kviab(q)=\emptyset$ exhaustively; $M$ restores $10$ states; unique minimal $7$-class repair & deadline; live hidden phase & carrier + quotient tables; searches Python-certified \\
+T1b & classifier schema & four cells from independent C7/C5 axes & landed axis witnesses & classifier + role table \\
+T2 & non-exposure dichotomy & loop moves $M$ ($1/1$), fixes $Q$ ($0/1$); dissolution control & declared channel family & core facts; fractions pinned \\
+T3 & nonfactorization corollary & strict pair $\Rightarrow$ no factor map; control factors & declared source/target maps & corollary on T9 support \\
+T4 & quotient + certificate contrast & public match exhaustive; certificate battery diverges; C publicly discernible & declared public lenses; imported battery & records mirrored; enumeration Python-certified \\
+T5 & priced residue + credit audit & scores $1,1,1/2$; products $8/27$ vs $1/27$ (self), $0$ vs $16/81$ (other), balanced (none); DPI null & bounded budgets; declared provenance & lift + credit rule owned; constants pinned \\
+T6 & self-audit limits & own-level \texttt{undefined\_circular} $\times 3$; bridges provisional; confabulation completion & instrument-indexed claims & vendored abstract tower + toy statuses \\
+T7 & strict recombination & $\Kbw{=}(2)$, $\Rrec{=}(1,1)$; marking collapses, erasure restores & declared branch family & criterion + witnesses \\
+T8 & funded clock + holonomy & progress $2/3$, tick $2/9$, $\Delta A{=}2$; holonomy $1$ vs $0$; flow-null blocked & declared clock/protocol/budget & traces + noncommutation; rates pinned \\
+T9 & report descent & non-injective report; no-report channel separates; overread blocked & declared report interfaces & witness + classifier \\
+T10 & boundary schema & up $[0,0,1,2,3]$ / down $[3,3,2,1,0]$; thresholds $1/2$ vs $1/4$ & toy maintenance rule and grid & sweep constants pinned \\
+T11 & exact LP duality & $\lambda=(24/11,14/11)$; slack $0$; curve monotone; proxy unstable & declared LP; valence is \gradeR & LP values pinned + relations \\
+T12 & induced-kernel geometry & $43/270$ vs $1/810$; defect $13441/52488$; signature residues $0/1$ vs $1/1$ & declared lens/prototypes; corrected values only & orders/ratios via cross-multiplication \\
+T13 & gauge rigidification & $G \cong \mathbb{Z}_2 \to \{\mathrm{id}\}$; transports $2 \to 1$ & declared descents; modeled rigidifier & counts pinned \\
+T14 & lineage transfer & trauma $0/1$ vs $1/1$; fission/fusion; empty target & declared route package & lineage facts; death extension Python-only \\
+T15 & combination gates & $\Rrec \succ \Kbw$ + refinement $1\to2\to2$ on one joint carrier & two interfaces, one carrier & stability/equivalence; refinement Python-executed \\
+T16 & convention-relative composition & flags $(\top,\top,\top)$ $\to$ hard-problem report; control $\to$ certified & declared completion convention & composite facts + both completions \\
+T18 & temporal cluster & strictness witness; defects $1{\to}0$, $4/7{\to}0$; entrainment $1/1$, $1/3$; transports $2/1$; T18c demoted & T8 base; T9 discipline & cluster constants pinned \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Tbl-4: the consequence catalog, compactly.} One row per law
+with its exact decisive result and mechanization scope; T17 has its own table
+in Section~\ref{sec:t17}. Full six-field entries (setup, result, witness,
+controls, grade, nonclaims) are in Appendix~\ref{app:compendium}.
+Scope/price: every row is carrier- and interface-relative; ``Lean scope''
+states what is proved there versus pinned as certified constants.}
+\label{tbl:catalog}
+\end{table}
+
+ \section{Conditional realization and the open integrated target}
+\label{sec:t17}
+
+
+Everything so far is Tier~S. This section is where the ontological price is
+paid: visibly, once, and only here. The realization umbrella (repository
+name T17) is \emph{seven separately graded objects}, each with one
+authoritative statement and one exact grade; a machine-readable claim
+registry in the artifact pins the seven-way contract and is validated against
+the Lean, Python, and prose surfaces. Nothing below is ever summarized as
+``one realization theorem.''
+
+\subsection{The two postulates}
+
+\begin{postulate}[A1: Ontic Closure Completeness]
+\label{post:a1}
+To be real is to be a survivor of audited closure emergence, a lawful
+promoted package that passes its gates, with no further realness
+ingredient.
+\end{postulate}
+
+\begin{postulate}[A2: Substrate Indifference]
+\label{post:a2}
+Closure laws apply identically across carriers; the carrier label is not an
+extra closure law.
+\end{postulate}
+
+Both are philosophical postulates \gradeO, stated in the design layer and
+defended in a companion philosophical paper; neither is proved by the
+structural catalog or by Lean, and the paper's Lean development being
+polymorphic in the carrier type is \emph{not} a proof of A2: A2 currently
+has no carrier-transport or invariance theorem at all, and its only formal
+footprint below is a parametric scope. A reader may refuse either postulate;
+the refusal costs the reader Section~\ref{sec:t17} and nothing else.
+
+\subsection{The seven claims}
+
+\begin{description}
+\item[T17-S (simplified certificate schema).] \gradeS{} structural schema.
+Lean defines a carrier-indexed \emph{simplified} certificate
+$\Certsimp(X)$: mechanics-based clause predicates C1--C8 over one declared
+transition/action family and lens family (the C1/C5/C6/C8 audit objects are
+equation-coupled to the declared mechanics; C4/C7 are structurally
+constrained on the same support but not transition-coupled, a schema-grade
+distinction recorded explicitly), cross-clause coherence requiring one
+nonempty communicating viable hub containing the clause witnesses, and a
+simplified promotion ledger. The schemas are not ordered by any landed
+theorem: $\Certsimp$ uses a weaker imported gate ledger while adding one-step
+restrictions absent from the full design definition; no implication or
+equivalence between $\Certsimp$ and $\Cpkg$ has been proved or is claimed,
+and no integrated instance is exhibited. T17-S does not claim its schema
+suffices for lawful closure or consciousness; that is exactly the
+additional purchase in T17-O.
+\item[T17-P (witness catalog and hygiene protocol).] \gradeS{}
+protocol/catalog. The Python protocol imports and re-verifies eight per-law
+witness fields (one row per clause, sourced from the landed laws of
+Sections~\ref{sec:t1}--\ref{sec:clusters}) and recursively scans stored
+condition-bearing values for smuggled vocabulary. Every current row carries
+the verdict \texttt{witness\_verified}; no row label is a realization
+verdict, and the protocol constructs no candidate, no integrated carrier, no
+gate-panel object, and no realization result.
+\item[T17-M (simplified certificate contrast).] \gradeS{} schema. Lean
+defines $\mathrm{SimplifiedCertificateContrast}(a,b) :=
+\mathrm{PublicMatch}(a,b) \wedge \Certsimp(a) \wedge \neg\Certsimp(b)$:
+dynamic public-statistics matching over the complete public observation, a
+simplified certificate for $a$, and its absence for $b$. This is an
+explicitly simplified approximation of T4b's demarcation target, not the
+full-certificate relation, which remains open until a full certificate
+exists.
+\item[T17-O (conditional realization bridge).] \gradeO{} axiom-relative
+conditional schema; the exact logical form is displayed below.
+\item[T17-I (integrated instance).] \gradeOpen. The required deliverable is
+absent: an exhibited carrier and package satisfying a \emph{full} design-level
+certificate, together with a \emph{proved} (not assumed) certificate-soundness
+theorem. Both artifacts record this explicitly: Lean pins
+$\texttt{singleCarrierInstanceExhibited}=\texttt{false}$ and Python pins the
+same flag with realization grade \texttt{schema}.
+\item[T17a (report-interface pointer).] \gradeS{} interface-relative pointer.
+On the finite T3/T9 carrier, hidden no-report content does not factor through
+the declared report channel. This says nothing about whether a designer could
+specify or predict content from the complete state, initial conditions, or
+dynamics.
+\item[T17b (declared-interface opacity pointer).] \gradeS{}
+interface-relative pointer. Relative to the declared current channels, T2's
+hidden structure does not descend and T9 blocks overreading the report
+boundary. Opacity may disappear under an expanded interface (T2's own
+dissolution control demonstrates this); this is not opacity to every creator
+or instrument, and it carries no moral-status conclusion.
+\end{description}
+
+\subsection{The exact form of the bridge}
+
+\begin{theorem}[Conditional realization bridge; T17-O]
+\label{thm:t17o}
+\gradeO{} \emph{Grade:} axiom-relative conditional schema, mechanized.
+\emph{Scope:} arbitrary carrier type $X$ and package $\mathrm{pkg}$;
+$\mathrm{ClosureComplete}$ and $\mathrm{Realized}$ are caller-supplied
+predicate parameters. Assume:
+\begin{itemize}
+\item[(H1)] \emph{certificate soundness}: every simplified certificate is
+sound for lawful audited closure,
+$\Certsimp(X, \mathrm{pkg}) \Rightarrow \mathrm{ClosureComplete}(X,
+\mathrm{pkg})$, an unproved schema premise that is neither A1 nor A2; and
+\item[(H2)] \emph{A1}: lawful audited closure is realization,
+$\mathrm{ClosureComplete}(X, \mathrm{pkg}) \Rightarrow
+\mathrm{Realized}(X, \mathrm{pkg})$.
+\end{itemize}
+Then every simplified-certified package is realized:
+$\Certsimp(X, \mathrm{pkg}) \Rightarrow \mathrm{Realized}(X, \mathrm{pkg})$,
+uniformly in the carrier type. \emph{Nonclaim:} neither premise is proved;
+no A2 transport or invariance theorem exists (the universal carrier parameter
+is A2's only footprint, not a proof step); no package is realized
+unconditionally; and no candidate is certified.
+\end{theorem}
+
+The theorem's mathematical content is thin by design: a
+composition of two assumed implications, checked by machine so that its
+premises cannot silently grow or shrink. Its scientific content is the
+\emph{pricing}: it fixes exactly what a reader must accept for the structural
+catalog to acquire ontological weight, and it separates the two purchases so
+they can be refused independently. Discrepancies between the generic
+simplified clauses and the concrete source constructions (the boundaries
+flagged in Section~\ref{sec:fullvssimp}) price H1, not the implication.
+
+\subsection{The negative-attack corpus}
+
+The simplified schema earned its current form adversarially: the artifact
+records more than two dozen executable blocked attacks. Each is a concrete
+package that a previous version of some clause wrongly accepted or would
+wrongly accept, now rejected by a named Lean fact, frequently with a paired
+predecessor fact recording the genuine old-pass/new-fail surface. Recurring
+attack families: disconnected packages whose clause witnesses live outside
+any communicating viable hub; hiddenness confined to underfunded states;
+joint decoders that expose a determining state two channels hide
+individually; predictive splits supported only by infeasible actions; merged
+classes with divergent enabled actions; zero-cost (unpriced) existence;
+manufactured credit symmetry from duplicated action lists; and
+public-match spoofing via undeclared feasible actions or divergent channels.
+Appendix~\ref{app:t17} tabulates the corpus. The methodological point is the
+lane discipline again: a certificate schema that has survived named,
+executable attacks is still only a schema. The attacks harden $\Certsimp$;
+they do not inhabit it.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{p{0.09\linewidth}p{0.08\linewidth}p{0.3\linewidth}p{0.22\linewidth}p{0.17\linewidth}}
+\toprule
+Claim & Grade & Proved / executed object & Missing purchase & Status \\
+\midrule
+T17-S & \gradeS & carrier-indexed $\Certsimp$: clauses, coherence, simplified ledger (Lean) & no ordering vs.\ full $\Cpkg$; no instance & schema \\
+T17-P & \gradeS & eight re-verified witness rows + hygiene scan (Python) & rows are not a certificate & catalog \\
+T17-M & \gradeS & PublicMatch $\wedge$ $\Certsimp(a)$ $\wedge$ $\neg\Certsimp(b)$ (Lean) & full-certificate contrast & schema \\
+T17-O & \gradeO & conditional bridge, uniform in carrier (Lean) & H1 soundness; A1; A2 unformalized & conditional only \\
+T17-I & \gradeOpen & explicit \texttt{false} marker in both artifacts & the integrated instance itself & open \\
+T17a & \gradeS & report-interface nonfactorization pointer & n/a & pointer \\
+T17b & \gradeS & declared-interface opacity pointer & n/a & pointer \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Tbl-5: the seven-way realization split.} Scope/price: each
+row has one grade and one authoritative statement; the machine-readable
+registry in the artifact enforces the split across Lean, Python, and prose.}
+\label{tbl:t17}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.92\linewidth}{\small\emph{[Figure F6: realization ladder;
+rendered per the artifact figure plan.]} T17-S, T17-P, and T17-M as separate
+structural rungs; the T17-O implication drawn with its two premises
+(certificate soundness; A1) as explicit unspent inputs and A2 shown only as a
+carrier-parametric footprint, never as a proved transport arrow; the ladder
+terminates at T17-I, labeled \textbf{OPEN} inside the figure.}}
+\caption{\textbf{F6: the realization ladder.} Takeaway: structure, catalog,
+contrast, conditional bridge, and open instance are five different things.
+Scope restriction: an ontological premise never looks like a theorem arrow;
+the eight witness rows are never merged visually into a certificate.}
+\label{fig:ladder}
+\end{figure}
+
+\subsection{What refusal costs}
+
+The architecture is built so that its ontological reading is refusable
+without wreckage. Decline H1 and the structural catalog stands untouched:
+one simply does not read $\Certsimp$ as sufficient for lawful closure.
+Decline A1 and lawful closure remains a mathematical property: one simply
+does not read it as realization. Decline A2 and every result remains
+carrier-indexed. What cannot be done, on pain of the factorization error of
+Section~\ref{sec:selfaudit}, is to accept the strict-promotion certificates
+and then paraphrase them away; and what cannot be claimed, on pain of
+misreading Table~\ref{tbl:t17}, is that anything in this paper certifies an
+actual subject. It does not, and it says so in machine-checked form.
+
+ \section{Empirical status and the prospective interface}
+\label{sec:empirical}
+
+
+This section exists to make one negative fact and its consequences precise.
+
+\emph{No empirical data were collected, fitted, or used to validate the
+architecture.} The catalog's evidence is exact finite computation; exact
+finite studies are not experiments on consciousness, and nothing in
+Sections~\ref{sec:t1}--\ref{sec:t17} is empirical evidence for anything about
+any actual system.
+
+\emph{The inherited literature battery is not a contribution.} An earlier
+preparation phase assembled a post hoc battery of literature-derived
+phenomenon candidates (perceptual, temporal, and dissociation phenomena) with
+proposed clause mappings. Screened against its own admission protocol
+(verified bibliographic metadata, a checked load-bearing passage, same-sample
+altered \emph{and} preserved observables, an independently frozen mapping,
+and a row-level defeat condition), the battery failed its row and
+source-verification requirements. It is therefore excluded from this paper's
+results and retained in the artifact only as non-evidential protocol history
+(status \texttt{history\_only\_non\_evidential}, per-row;
+Appendix~\ref{app:empirical}). The candidate set was assembled after the
+architecture existed and is not unbiased, preregistered, or predictive of
+anything; no phenomenon row appears in this paper as an adequacy result.
+
+\emph{What a real test would require.} Table~\ref{tbl:obligations} states the
+prospective obligations. Four ingredients are missing and are all mandatory.
+An \emph{observable bridge}: an audited descent from each formal target to
+a measured report/behavior record, in T9's sense, rather than a verbal
+mapping. A \emph{prospective mapping freeze}: clause-to-observable mappings
+fixed before data contact. An \emph{independent candidate universe}: a
+selection rule for test phenomena that does not condition on the
+architecture's successes. And a \emph{same-sample selective-dissociation
+design}: within one sample, a manipulation predicted to alter the mapped
+observable while a declared control observable is preserved, with the
+dissociation's failure predeclared as the row's defeat condition. These
+requirements are the practical face of the testability critiques that
+motivate them \citep{KleinerHoel2021, DoerigEtAl2020HardCriteria}.
+
+\emph{Two honest limits on falsifiability.} First, the present
+parameterization does not support a sharp package-level empirical falsifier:
+the architecture's exact content lives on declared toy carriers, and what a
+failed prospective row would defeat is its row (mapping and clause reading),
+not the mathematics. Structural countermodels (the executable attack
+corpus of Section~\ref{sec:t17}) are not empirical falsification in the sense
+formalized by \citet{KleinerHoel2021}. Second, no external C8 row is
+admissible under the current scope: mapping the viability clause to any
+human existence boundary would require clinical evidence types
+(loss/recovery of consciousness, anesthesia depth) that the current
+human-only, non-neural, report-level scope excludes; T10's hysteresis is a
+property of a toy accumulator until then.
+
+\begin{table}[t]
+\centering\footnotesize
+\begin{tabular}{p{0.14\linewidth}p{0.2\linewidth}p{0.24\linewidth}p{0.2\linewidth}p{0.08\linewidth}}
+\toprule
+Formal target & Missing observable bridge & Required prospective design & Predeclared defeat condition & Status \\
+\midrule
+C4/T2 hiddenness & descent from declared-channel non-exposure to a report/decoding record & fixed channel family; decoding attempt predicted to fail while a control decode succeeds & successful decode inside the declared family & not designed \\
+C7/T7 binding & descent from $\Rrec \succ \Kbw$ to a same-sample conjunction measure & marking manipulation predicted to collapse a joint-content measure, preserving branchwise measures & no marking-induced collapse & not designed \\
+C6/T8 temporal funding & descent from funded tick structure to a load-manipulated timing record & resource manipulation predicted to alter tick-like regularity, preserving order judgments & no funding sensitivity & not designed \\
+D1/T11 price profile & descent from binding-constraint duals to a graded motivational record & constraint tightening predicted to shift a graded measure monotonically; slack regime flat & non-monotone or slack-sensitive response & not designed \\
+C8/T10 boundary & \emph{none admissible}: external C8 mapping excluded under current scope & clinical loss/recovery designs out of scope & n/a & excluded \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Tbl-6: prospective empirical obligations.} These are
+obligations for future work, not results, and the rows are illustrative
+targets: every field must be frozen prospectively before any data contact.
+The inherited candidate battery supplies \emph{no} rows here; it is
+non-evidential history (Appendix~\ref{app:empirical}). Scope/price: a failed
+row defeats its mapping row, not the Tier~S mathematics; there is currently
+no sharp package-level falsifier.}
+\label{tbl:obligations}
+\end{table}
+
+ \section{Related work and demarcation}
+\label{sec:related}
+
+
+The method of this section is uniform: state each comparator in its strongest
+relevant form, state the exact overlap, state the exact difference, and claim
+nothing about a comparator that its own definitions do not support. No
+comparison here asserts that a neighboring theory is refuted by an omitted
+clause, and no ``every previous theory found one clause'' claim is made.
+
+\subsection{Mathematical consciousness science and formal theory testing}
+
+The paper's home field is mathematical consciousness science.
+\citet{Kleiner2020MathematicalModels} gives a general framework for what a
+mathematical model of consciousness must declare (experience spaces, a
+physical domain, and the mappings between them) and criteria for evaluating
+such models. \citet{KleinerTull2021} axiomatize generalized IIT as a
+mathematical structure: system classes, experience spaces, decompositions,
+integration levels, cores, and a system-state-to-experience map; describing
+that work as chiefly category-theoretic would undersell it, since it is a
+formalization of a theory class. \citet{SignorelliWangCoecke2021} develop a
+process-theoretic, compositional treatment of conscious experience and
+already derive formal results about phenomenal unity and a form of
+privacy/unreadability within their calculus. The present paper works inside
+the field these papers establish and adds a different kind of object: an
+audit-contract architecture with exhaustively computed finite carriers,
+per-sentence claim grading, and an explicitly priced ontological bridge. The
+overlap with \citet{SignorelliWangCoecke2021} deserves the sharpest
+statement: they formalize unity and unreadability compositionally; T2 and T7
+study public-interface factorization and strict recombination refinement on
+finite carriers with executable dissolution/collapse controls. These are
+different formal mechanisms for adjacent explananda, and this paper claims no
+priority for formal unity or privacy results.
+
+On testing: \citet{KleinerHoel2021} formalize when inference procedures make
+consciousness theories falsification-resistant or trivially falsified;
+\citet{DoerigEtAl2020HardCriteria} state hard criteria an empirical theory
+should meet; \citet{CogitateConsortium2025} ran a preregistered adversarial
+collaboration that challenged central predictions of both IIT and global
+workspace theory without producing a definitive verdict. This paper's
+relation to that literature is candid: it does not
+satisfy the hard criteria, is not tested by COGITATE-style designs, and says
+so (Section~\ref{sec:empirical}); its contribution to the testing discussion
+is the obligations table and the observation that structural countermodels
+are a different object from empirical falsification.
+
+\subsection{Information Closure Theory}
+
+The closest named closure comparator is Information Closure Theory
+\citep{ChangEtAl2020InformationClosure}, which defines conscious processes as
+coarse-grained processes with positive nontrivial informational closure
+(NTIC): the macro process predicts its own future as well as the environment
+does, without that prediction routing through trivial self-copying. The
+shared conviction is that closure, a description layer that accounts for
+its own continuation, is the right kind of property to make precise. The
+formal objects differ throughout: ICT's conditions are
+information-theoretic (mutual-information quantities over process
+trajectories); C1--C8 are structural (closure operators, factorization
+defects, refinement terminality, viability kernels, audit gates). T1 in
+particular computes viability-relevant predictive and refinement facts, not
+NTIC, and no result in this paper computes ICT's quantities. Accordingly, no
+reduction and no non-equivalence theorem between the formalisms is claimed in
+either direction; the comparison is between two independently defined notions
+of closure, one informational and one audited-structural.
+
+\subsection{Predictive states, viability, and regulation}
+
+Section~\ref{sec:t1position} already gave the load-bearing demarcations, so
+one summary suffices. The predictive quotient is the finite controlled
+analog of causal states \citep{CrutchfieldYoung1989, ShaliziCrutchfield2001};
+what is new in T1 is the question (does a bounded public self-lens
+\emph{survive}), the exhaustive answer (no, on the declared carrier), and the
+minimal-repair object (a refinement of a declared lens, which causal-state
+minimality does not address). The viability kernel and its iteration are
+standard \citep{AnayaEtAl2009Viability, AubinBayenSaintPierre2011}; the
+paper's use makes kernels properties of interfaces. The good-regulator
+theorem \citep{ConantAshby1970} is retained only as motivation and with its
+own narrow content stated.
+
+\subsection{Integrated Information Theory 4.0}
+
+IIT 4.0 \citep{AlbantakisEtAl2023IIT4} is the field's most developed
+axiomatic architecture: axioms about experience converted into postulates
+about intrinsic cause-effect structure, with integrated-information
+quantities, distinctions and relations, and an exclusion postulate selecting
+maximal complexes. The structural ambitions overlap: both programs posit
+that being a subject is a formal property of a structure, and both take
+quality structure seriously (IIT through cause-effect structures, this paper
+through descended similarity geometry and gauge). The differences are
+categorical rather than quantitative. First, no quantity: this paper computes
+no integrated information, no cause-effect structure, and no
+$\Phi$-like scalar, and its finite structural vocabulary must not be read as
+IIT terminology. Second, identity versus certification: IIT asserts an
+identity between experience and maximal cause-effect structure; this paper's
+strongest ontological move is a conditional bridge with two refusable
+premises, and its certificate schema is explicitly not a consciousness
+detector. Third, exclusion versus gating: where IIT's exclusion postulate
+selects one complex, T15's combination law gates joint subjects by two
+structural certificates on one carrier and leaves ``which packages exist'' to
+viability rather than maximality. This paper neither tests nor refutes IIT.
+
+\subsection{Quality spaces, structuralism, and gauge}
+
+Structuralist programs hold that the scientifically tractable content of
+experience is relational structure: quality spaces with their similarity
+geometry. Work in this tradition includes principled accounts of spatial
+experience structure \citep{HaunTononi2019}, category-theoretic and
+relational approaches \citep{TsuchiyaSaigo2021}, and topologically structured
+phenomenal spaces \citep{Prentner2019Topological}. T12 and T13 are this
+paper's contribution to that conversation, and their boundary is stated from
+this side: T12's landed object is an exact descended finite similarity
+geometry with coherence audits on a declared carrier, not an empirical
+phenomenal space, not a psychophysical fit, and not a general geometry-birth
+theorem; T13 turns inversion talk into a computable gauge group and shows
+exactly one descended asymmetry collapsing it. No clause-level comparison
+with the cited programs is made beyond this, and none of them is claimed to
+be superseded. On the philosophy side, the paper's debts are explicit:
+subjective character as explanandum \citep{Nagel1974}, the explanatory-gap
+label \citep{Levine1983}, the phenomenal/access distinction
+\citep{Block1995}, and the hard-problem and meta-problem framings
+\citep{Chalmers1995FacingUp, Chalmers2018MetaProblem}. These are explananda
+and distinctions the architecture addresses; they are premises of nothing in
+the catalog.
+
+Substrate questions are live in the adjacent literature, for example a
+recent no-go argument concerning consciousness on a chip
+\citep{KleinerLudwig2024Neurons}. This paper's A2 is a postulate with no
+formal transport theorem (Section~\ref{sec:t17}); it takes no position on
+such no-go arguments and cannot, until a carrier-transport theorem exists on
+its own side.
+
+\subsection{Six Birds provenance and owned seams}
+
+The imported machinery (promotion bridges, factorization defects,
+no-overreading, same-level self-audit limits, rotating audits, hiddenness
+normal forms, route transport, recombination quotients, protocol traps,
+closure deficits, clocks, geometry pipelines, and currency duality) comes from
+the companion corpus cataloged in Appendix~\ref{app:imports}, cited there
+theorem by theorem with hypotheses. Sibling citations show provenance and
+ownership, never independent corroboration. Three adjacent Six Birds papers
+own seams that this paper does not cross
+\citep{Tsiokos2026FoundationsVEndogenousClosure,
+Tsiokos2026FoundationsVIDynamicalLaws,
+Tsiokos2026InstitutionsStrictExtensions}. The cognition paper (Foundations~V)
+owns operational selfhood, individuation, priced attention allocation,
+control-price compression, bounded-reflexivity capacity economics, and repair
+transport; this paper's T6 owns only its finite audit witness, its D3 is
+recognition-grade, and no claim here fills Foundations~V's deferred
+global-access slot. The dynamical-laws paper (Foundations~VI) owns
+theorist-side properties of unbounded runs (solvency, escrow, carry-horizon
+confinement); this paper's clocks and rewrites are finite package-internal
+certificates, and a funded tick is neither eventual liveness nor a
+telescoping cost bound. The institutions paper owns its repeated-game
+promotion and formation theorems; T1 shares an obligation skeleton with them
+on a different carrier (carrier non-definability, saturation, strictness),
+and no result is transported: in particular, T1 computes no
+closure-deficit quantity and its canonical nine-class quotient is never
+identified with its seven-class minimal refinement. No retained sibling
+proposition is a logical premise of any theorem in this paper.
+
+ \section{Limitations, open program, and conclusion}
+\label{sec:limits}
+
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+Twelve limitations, before any conclusion.
+
+\begin{enumerate}
+\item \textbf{Exact finite models only.} Every positive result lives on a
+declared toy carrier. Nothing licenses transfer to large, noisy, or
+continuous systems beyond the displayed conditional schemas.
+\item \textbf{No empirical content.} No dataset, no parameter fit, no
+validation, no phenomenon rows (Section~\ref{sec:empirical}).
+\item \textbf{Provenance of predictions.} The artifact contains documents
+labelled as predictions, but their initial Git history does not establish
+temporal precedence over implementations, and later corrections are
+versioned. Nothing in this paper calls them preregistered.
+\item \textbf{Selected mechanization.} Lean coverage is selected, not
+catalog-wide: kernels prove core facts and pin many enumerated values as
+certified constants matching the Python computations (per-law boundaries in
+Table~\ref{tbl:catalog} and Appendix~\ref{app:repro}); the current
+manifest-level validator accepts a zero-row schema and is a known release
+blocker, so no manifest-audited coverage claim is made.
+\item \textbf{Inherited trust base.} The Lean development trusts vendored
+foundations modules and declared axioms from the companion corpus, cataloged
+in Appendix~\ref{app:repro}; their opacity guards are inherited, not
+re-proved.
+\item \textbf{T1's family boundary.} The forcing theorem is exact on one
+carrier; the family schema's hypotheses (live non-definable phase, deadline
+relevance) are strong and not claimed common (Section~\ref{sec:t1family}).
+\item \textbf{T12's open target.} Geometry birth (fitted distortion,
+dimension, curvature transport) is not landed; the landed object is an
+audited induced geometry.
+\item \textbf{T16's conventions.} The meta-problem composition is relative
+to a declared completion convention, and its carrier collapses several
+premises extensionally.
+\item \textbf{T17's open core.} The simplified/full schema relation is
+unproved in both directions, certificate soundness is assumed where used,
+A2 has no formal theorem, and T17-I, the integrated instance, is open
+(Section~\ref{sec:t17}).
+\item \textbf{T18c demoted.} The temporal-precondition claim is a dependency
+observation, not a theorem.
+\item \textbf{Recognition bridges are unproved.} Valence, phenomenological
+clause mappings, attention readings, and all state-taxonomy readings are
+named hypotheses (\gradeR), each retractable without structural loss.
+\item \textbf{Review status.} The artifact's ``external review request''
+documents record an internal author-driven review loop; they are not
+independent peer review, and this preprint has not been peer reviewed.
+\end{enumerate}
+
+\subsection{Open program}
+
+The open obligations, in order of weight: exhibit T17-I or prove that some
+declared obstruction prevents it; prove or refute an ordering between
+$\Certsimp$ and the full $\Cpkg$; formalize A2 as a carrier-transport theorem
+or retire it to purely philosophical status; extend the simplified C3 from
+one-step stability to a terminal bisimulation; land the T12 geometry-birth
+checklist; strengthen T18c or retire it; and design one prospective empirical
+row to the standard of Table~\ref{tbl:obligations}.
+
+\subsection{Conclusion}
+
+This paper's contributions, restated once in their fixed order: a claim
+architecture that keeps structural results, recognition bridges, ontological
+implications, and open targets in separate, artifact-enforced lanes; an
+eight-clause audited closure contract kept explicitly distinct from its
+mechanized simplification and from any instance; one exact forcing result,
+on whose fully declared deadline carrier every public-lens policy fails,
+the canonical predictive quotient survives, and the unique minimal repair is a
+seven-class predictive split of one public fiber; a catalog of exact,
+interface-relative structural recastings of the classical problems; a
+seven-way graded realization program whose ontological bridge is mechanized,
+priced, and refusable, with its integrated target visibly open; and an
+audited artifact whose remaining gaps are listed rather than implied away.
+
+The strongest exact result is Theorem~\ref{thm:t1}. The strongest open
+obligation is T17-I. Between them lies the paper's actual thesis, which is
+double and must remain double: structurally, a declared closure package
+organizes a family of exact finite results about self-prediction, privacy,
+report, binding, temporality, geometry, identity, combination, and audit
+limits; ontologically, realization follows only as a conditional bridge after
+purchasing certificate soundness and Ontic Closure Completeness, and the
+integrated instance that would give that bridge something unconditional to
+say does not yet exist. The two halves of the thesis are printed in different
+lanes, and the paper ends where its evidence ends.
+ 
+\appendix
+\section{Definitions and imported machinery}
+\label{app:imports}
+
+
+\subsection{Notation summary}
+
+\begin{center}\small
+\begin{tabular}{ll}
+\toprule
+Symbol & Object \\
+\midrule
+$X$ (T1: $Z = P \times W$) & finite carrier \\
+$A$, $F_a$ / $P_a$ & actions; deterministic maps / stochastic kernels \\
+$q : X \to Y$; $\Pi_q$ & public lens; its observational partition \\
+$U$ & hidden/promoted (non-descending) object \\
+$Q$, $M$, $\pi : M \to Q$ & current public and predictive quotients; comparison map \\
+$L$ & T1's continuation-law abstraction (never renamed $M$) \\
+$\Pi_*$ & T1's unique minimal closure-restoring refinement (7 classes) \\
+$\Dfact(\pi_0,\pi_1)$ & factorization defect (set of split pairs) \\
+$\Kviab(\ell)$ & viability kernel under $\ell$-measurable policies \\
+$\Kbw$, $\Rrec$, $\eta:\Rrec\to\Kbw$ & branchwise and recombination quotients; forgetful map \\
+$E_\tau$; $\delta$ & staged closure operator; idempotence defect \\
+$\lambda_i = \partial\Phi^*/\partial b_i$ & dual price of budget $b_i$ \\
+$\Cpkg$; $\Certsimp(X)$ & full C-package target; simplified certificate schema \\
+$\mathrm{Realized}$, $\mathrm{ClosureComplete}$ & caller-supplied predicates in T17-O \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Fixed distinctions the notation enforces: $Q$, $L$, and $M$ are three objects
+in T1; the nine-class canonical $M$, the seven-class full-carrier $\Pi_*$, and
+the seven-class kernel-restricted terminal quotient are pairwise distinct;
+$\Kviab$ and $\Kbw$ are unrelated despite the inherited letter; public match,
+hidden-state difference, certificate contrast, and realization are four
+things; structural dual price and felt valence are two things; and agency,
+cognition, attention, global access, report, and consciousness are
+non-equivalent throughout.
+
+\subsection{A minimal corpus primer}
+
+The companion corpus (``Six Birds'') is a discipline for \emph{audited
+emergence}: when does a coarse description become a theory with stable
+objects, how does strict extension of what is definable remain possible, and
+how do directionality and self-audit claims stay honest under observation.
+Its first foundations paper isolates the operator toolkit (theory packages
+$T = (Z, f, \Sigma_f, E, A)$: carrier, lens, definability algebra, completion
+endomap, audit functional; closure operators and ladders; drive/affinity
+audits). The second fixes the admissibility meta-theory over finite audited
+typed closure descriptions, including the channel-versus-activation
+distinction (six role \emph{channels} exist; nothing requires six
+\emph{active} roles). The third builds the finite audited interaction
+calculus this paper leans on hardest: typed cells, instruments,
+promotion bridges with gate panels, defect families, and the self-audit
+theorems. The fourth is a catalog of layer-agnostic normal-form laws
+(hiddenness, irreducibility, and others) with an explicit
+substrate-pending/obligation grading. Around the foundations sit
+phenomenon papers, each owning one engine imported below. All are cited here
+as corpus-internal sources with pinned versions in the artifact's import
+inventory; canonical public locators are pending owner confirmation and will
+be added before submission.
+
+\subsection{Imported theorem map}
+
+Each import is used under its own hypotheses; analogy is never theorem
+transport. The table names the source engine, the imported object, and the
+consuming law.
+
+\begin{center}\footnotesize
+\begin{tabular}{p{0.23\linewidth}p{0.42\linewidth}p{0.24\linewidth}}
+\toprule
+Source (corpus paper) & Imported object & Used by \\
+\midrule
+Foundations I & counting lemma ($2^K$ of $2^N$ predicates definable; strict-extension corollary) & T1 genericity framing \\
+Foundations II & channel-vs-activation discipline; recognition-hypothesis threat & T1b recognition audit \\
+Foundations III & nonfactorization dichotomy (Thms 12/13); promotion-gate soundness (Thm 19); strict promotion $\Rightarrow$ nonfactorization (Thm 20); no-overreading (Thm 23); same-level self-audit failure (Thm 24); finite rotating audit (Thm 25); gate/status vocabulary & T3, T5, T6, T9, T16, T17-S ledger \\
+Foundations IV & hiddenness normal form (F13a) and formed-closure law (F13b), substrate-pending/obligation grades; irreducibility as no-shorter-closed-description (F42) & T2 framing, T3 \\
+Hiddenness paper (HIDD) & core structural law (dissolution/preservation/degenerate/strength-independence); exposure predicate & T2, T17-S C4 \\
+Route-transport paper (HOLMEM) & $Q$/$M$ quotients, comparison map, predictive transport, loop asymmetry, reachable-image factorization & T1, T13, T14, T18e \\
+Recombination paper (MER) & branchwise/recombination quotients $\Kbw$, $\Rrec$, forgetful map $\eta$, strict-refinement witness criterion & T7, T15, T17-S C7 \\
+Protocol-trap paper (PTRAP) & autonomous two-component lift; zero-EPR trap; arrow decomposition & T5 authorship, T8 \\
+Closure-deficit paper (CAST) & closure deficit $\mathrm{CD}_\tau$; budgeted randomness curve & T5 residue \\
+Time paper (NOTCH) & order/tick/arrow triple; purchased clock; anti-stall metrics; no-global-time holonomy; enablement- vs causation-time & T8, T18a/b \\
+Geometry paper (PLOT) & induced macro kernel $\hat P = U P^\tau C$; path-cost metric; coherence audits & T12 \\
+Currency paper (SPEND) & currency roles; shadow-price duality; proxy discipline & T11 \\
+Agents paper (THROW) & viability kernel as greatest fixed point; agenthood/agency firewall; empowerment nulls & T1, T10, T11, T14 \\
+Usefulness paper (WMEW) & audited-utility certificate soundness: an accepted certificate licenses the audited lower answer, never literalization of the hidden object & T9, T3 \\
+Quantum paper (QSB) & empirical-indiscernibility principle; Leibniz-quotient factorization & T4a, T13 \\
+No-go paper (NOGO) & deterministic data-processing inequality for arrow audits (no fake arrow by coarse observation) & T5, T8 nulls \\
+Reflexive paper (REFLEX) & reflexive audit of packaging artifacts; open capacity-contraction conjecture (F3) & T6 boundary \\
+Anti-reductionism primer & no-shortcut law; within/between-layer discipline; factorization error & T3, T5(vi), T16 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Nonclaims inherited with the imports, stated once: the interaction calculus
+proves \emph{no} general bridge-stacking composition and \emph{no}
+local-to-global promotion theorem, so no law here composes bridges or glues
+local certificates globally; hiddenness normal forms are
+substrate-pending/obligation grade at the catalog layer; and no imported
+result loses its own carrier restrictions by being used here.
+
+\subsection{Trust base}
+
+The Lean development vendors selected foundations modules (the interaction
+calculus classifier, rotating-audit structure, and gate vocabulary) and
+trusts their declared axioms, which are opacity-guarded in the source corpus
+(axiom-applied wrappers guarded by opaque predicates with no public
+constructor). The consciousness-side law kernels add no axioms of their own;
+their per-declaration axiom dependencies are audited by
+\texttt{\#print axioms} tooling recorded in the artifact. What Lean does and
+does not establish per law is stated in Table~\ref{tbl:catalog} and
+Appendix~\ref{app:repro}.
+
+ \section{T1: exact carrier and proof details}
+\label{app:t1}
+
+
+\subsection{Carrier and quotients}
+
+$Z = P \times W$, $|P| = 6$, $|W| = 2$; public lens $q(p,w) = p$; live phase
+slip with exact branch weights $3/4$ and $1/4$; deadline making the hidden
+continuation law viability-relevant. Public-history ambiguity witness: the
+trace $(1,2,1)$ ends in both phases. Finite certificate: $N = 12$, $K = 6$,
+$64$ definable predicates of $4096$ total ($4032$ non-definable); split
+witness $p_1w_0 \to p_2w_1 \to p_1w_0$ versus $p_1w_0 \to p_2w_1 \to p_1w_1$;
+strict witness $(p_1w_0, p_1w_1)$. The continuation-law quotient $L$ has five
+classes implementing (need-cw $\to$ cw, need-ccw $\to$ ccw, return $\to$
+stay); $L$ is incomparable with $q$ because its transit, lethal, and return
+classes cross public fibers. Canonical $M = q \times L$: nine classes,
+strictly refining $q$, splitting exactly the public fibers at positions
+$1$, $2$, $5$.
+
+\subsection{Policy and refinement enumeration}
+
+$\Kviab(q) = \emptyset$ over every $q$-measurable feedback policy
+(exhaustive); the stored $L$-policy kernel has ten states; the canonical
+$M$ search returns the same ten states, with $\Kviab(L) = \Kviab(M)$
+certified by the refinement audit. Single-fiber split kernel sizes across
+$p = 0,\dots,5$: $(0, 10, 0, 0, 0, 0)$. The maximal refinement not splitting
+$p{=}1$ has empty kernel; monotonicity of kernels under lens refinement (a
+finer lens implements every coarser-lens policy) then closes the
+$64$-refinement lattice: the unique minimal restoring refinement is the
+seven-class $\Pi_*$ splitting exactly $p{=}1$. A separate, earlier 15-partition
+audit over four reachable states remains an exploratory CORE-local audit
+(exactly two CORE partitions survive, both factoring through $L$); it is not
+part of the minimality proof. Controls: no-deadline gives
+$\Kviab(q) \neq \emptyset$ with policy \emph{stay}; the washout/no-slip
+control makes phase publicly reconstructible and is refused as forcing.
+
+\subsection{Closure objecthood (C1)}
+
+On the ten-state kernel under the canonical $M$ policy: closed-loop matrix
+$P$; class indicator $C$; uniform prototype $U$ on realized $M$-fibers;
+$E_\tau = P^\tau C U$. Multi-state transit fibers are transient under the
+closed loop, so within-fiber prototype choice cannot change unperturbed
+$E_\tau$; the declared $C$, $U$ content is pinned extensionally, and every
+stored operator entry is checked against a fresh reconstruction from
+$P, C, U$. Horizon table (rank/fixed-space dimension; defect): $\tau = 1$:
+$10/0$, $\delta = 1$, unique CORE-uniform fixed point; $\tau = 2$: $9/1$,
+$\delta = 1/8$, two-extremal fixed segment; $\tau = 3$: $10/0$, $\delta = 1$;
+$\tau = 4$: $9/1$, $\delta = 3/32$. The even-horizon segment midpoint is the
+odd-horizon fixed point. Perturbation at $\tau = 2$,
+$P_\varepsilon = (1-\varepsilon)P + \varepsilon\,\mathrm{Unif}(K)$,
+$\varepsilon = 1/16$: rank rises to $10$; the unique fixed point has mass
+$38/155$ on each $p_1$ state, $1171/4960$ on each return state, and $1/160$
+on each of the six transient states; CORE retention $77/80 \ge 3/4$; total
+variation from CORE-uniform $3/80$; defect $78795/524288$. Second row:
+$\varepsilon = 1/100$ gives total variation $3/500$; both rows satisfy
+$\mathrm{TV} = (3/5)\varepsilon$.
+
+\subsection{Terminal self-lens (C3)}
+
+Profile refinement on the ten-state kernel from the six-class public
+partition, splitting by exact per-action transition profiles with
+out-of-kernel exits labeled distinctly: size trajectory $6 \to 7 \to 7$;
+instability witness $(p_1w_0, p_1w_1)$; all $100$ ordered-pair equivalence
+checks identify the terminal partition with canonical $M$ restricted to the
+kernel. Extensionally $M(z) = (q(z), L(z))$.
+
+\subsection{Lean mapping}
+
+The kernel declaration \texttt{forcingOfI\_T1\_kernel} formalizes the
+twelve-state carrier and the public, continuation-law, and canonical quotient
+tables. Python-certified (with tests), not Lean-derived: the exhaustive gfp
+policy searches, the $64$-refinement enumeration (whose monotonicity step is
+a prose lemma over the eight computed searches), the $\tau = 2..4$ closure
+rows, and the perturbation audit. Lean's C1 facts cover the $\tau = 1$
+operator by evaluation with the defect witness; Lean's C3 facts prove
+terminal-partition stability and public instability with $6/7/7$ as declared
+constants.
+
+ \section{Exact finite result compendium}
+\label{app:compendium}
+
+
+One six-field entry per law: \emph{setup / central result / decisive witness
+/ controls / grade / nonclaims}. All values are the current corrected
+snapshot values; superseded pre-correction values (notably in T12, T15, T16)
+never appear. T1 is in Appendix~\ref{app:t1}; T17 in Appendix~\ref{app:t17}.
+
+\paragraph{T1b (taxonomy and recognition).}
+\emph{Setup:} T1's forcing cascade; contingent axes C7 (binding) and C5
+(drive). \emph{Result:} four-cell classifier lattice (controller /
+sentient-without-self / self-without-binding / full subject); scoped
+recognition audit mapping C1--C8 to declared role composites with no seventh
+role. \emph{Witness:} each axis value independently witnessed (T7 coupled
+witness and aggregation collapse; T5 genuine-drive credit and internalized
+zero-affinity). \emph{Controls:} drive-absent cell uses the scheduled/fake
+control; binding-absent uses aggregation. \emph{Grade:} schema-grade cascade;
+proposition-grade recognition audit. \emph{Nonclaims:} not four integrated
+carriers; not the only possible structures; no universal six-role
+completeness.
+
+\paragraph{T2 (interface-relative hiddenness).}
+\emph{Setup:} two hidden states $m_0, m_1$; declared channel family with
+one-class current quotient $Q$; two-class predictive $M$. \emph{Result:}
+connector loop (swap) fixes $Q$ and moves $M$; exposure false.
+\emph{Witness:} moved-class fractions $0/1$ on $Q$, $1/1$ on $M$; declared
+current observable computed constant on the hidden support. \emph{Controls:}
+adding an $M$-reading channel dissolves the witness; the degenerate $M = Q$
+case licenses nothing. \emph{Grade:} theorem-grade direct instantiation; C4
+generic/declared, not universal. \emph{Nonclaims:} no unconditional privacy;
+no metaphysical inaccessibility; hiddenness does not imply phenomenality.
+Lean note: core facts proved on the wheel; moved-fraction numerators pinned
+as certified constants.
+
+\paragraph{T3 (no-shortcut corollary).}
+\emph{Setup:} T9's support; report boundary as lower readout, no-report
+boundary as target. \emph{Result:} strictness (nonempty $\Dfact$) $\iff$ no
+factor map; no closed lower compression recovers strict content.
+\emph{Witness:} factor attempt returns none on the strict case.
+\emph{Controls:} report-to-report target factors concretely
+($r_\mathrm{shared} \mapsto r_\mathrm{shared}$, $r_\mathrm{other} \mapsto
+r_\mathrm{other}$); no gap certified without strictness. \emph{Grade:}
+corollary-grade. \emph{Nonclaims:} no Tier~O assertion; mechanism not denied;
+the philosophical gap not solved.
+
+\paragraph{T4 (zombie study).}
+\emph{Setup:} T2's public carrier face; imported certificate battery
+(T2/T7/T5/T6). \emph{Result:} (a) layer quantities factor through the
+Leibniz quotient; (b) A/B are one K-matched public face with genuine versus
+degenerate certificate readings. \emph{Witness:} exhaustive public
+comparison: identical multisets $\{\texttt{current}: (q,q)\}$; certificate
+divergence on all four imported axes. \emph{Controls:} carrier C declares an
+$m$-reader observable and is classified publicly discernible before
+certificate comparison. \emph{Grade:} (a) theorem-grade; (b) schema-grade;
+(c) deferred \gradeO{} pointer. \emph{Nonclaims:} layer-relative sameness
+only; no integrated two-carrier pair; no zombie detector.
+
+\paragraph{T5 (priced deliberation).}
+\emph{Setup:} one deterministic support, records (public, last action,
+hidden), choice $=$ hidden XOR public; budgets $B = 0,1,2$; declared
+generator provenance. \emph{Result:} Theorem~\ref{thm:t5}'s six clauses.
+\emph{Witness:} scores $1, 1, 1/2$; self products $8/27$ vs $1/27$; other
+products $0$ vs $16/81$; internalized lift decomposes $P = C + D$ on all 81
+entries, both channels symmetric, credited products $0$ vs $0$ (canonical
+cycle $1/324$ each way); attribution triple (self, other, none).
+\emph{Controls:} DPI null (coarse fluxes $1/27$ each way); out-of-scope and
+bridge audit variants. \emph{Grade:} per clause (framing / theorem-grade toy
+/ direct instantiation / direct instantiation / foreclosure / O-flavored
+foreclosure). \emph{Nonclaims:} residue is bounded-observer ignorance;
+classifier statuses are not hidden phenomenal reports; credit is
+model-relative on declared channels. Lean note: lift, credit rule, and
+attribution owned in Lean; support counts pinned.
+
+\paragraph{T6 (introspection limits).}
+\emph{Setup:} instrument-indexed self-audit claims; three-level tower;
+completion toy with visible record and hidden true state. \emph{Result:}
+same-level completeness blocked; towers non-final; unique closure-preserving
+completions can confabulate. \emph{Witness:} statuses
+(\texttt{undefined\_circular} $\times 3$); bridges provisional; missing-update
+completion \emph{left} vs hidden \emph{right}. \emph{Controls:}
+audit-complete case completes correctly; out-of-scope variant separates
+status kinds. \emph{Grade:} direct instantiation plus finite extension.
+\emph{Nonclaims:} introspection not impossible/worthless; F3 stability
+explicitly open; no clinical claim. Lean note: vendored abstract
+rotating-audit compatibility theorem has no Python counterpart by design;
+Python owns the concrete tower statuses.
+
+\paragraph{T7 (binding).}
+\emph{Setup:} branch assemblages over modality/content branches; branchwise
+$\Kbw$ vs recombination $\Rrec$. \emph{Result:} strict refinement certifies
+binding; marking collapses it; erasure restores it. \emph{Witness:} coupled
+regime $\Kbw = (2)$, $\Rrec = (1,1)$, pair (bound-diagonal, bound-crossed);
+marked partitions exactly equal $(1,1)$. \emph{Controls:} aggregation
+(never-coupled) has $\Rrec = \Kbw = (2)$ from the start. \emph{Grade:}
+theorem-grade finite instantiation. \emph{Nonclaims:} no phenomenal-unity
+derivation; no attention cost or budget (D3 is recognition-grade).
+
+\paragraph{T8 (specious present).}
+\emph{Setup:} three-phase clock; mechanism advance $= b/(b+1)$; protocol
+permutations on $\{0,1,2\}$. \emph{Result:} funded triple with monotone
+arrow; stalls unfunded; noncommuting protocols block a global now; holonomy
+alone never certifies flow. \emph{Witness:} progress $2/3$, tick $2/9$, two
+wraps, $\Delta A = 2$; holonomy defect $1$ (rotation vs swap).
+\emph{Controls:} unfunded $0/0$, constant trace; commuting pair
+($R$, $R^2$) defect $0$; flow-null products $3/1000$ each way, blocked.
+\emph{Grade:} theorem-grade finite instantiation. \emph{Nonclaims:} no
+universal temporal window; no physical time; no spacetime.
+
+\paragraph{T9 (report theorem).}
+\emph{Setup:} hidden support $\{u_0, u_1, u_2\}$; report channel; separately
+scoped no-report instrument; vendored claim classifier. \emph{Result:}
+reports license descended boundary content only; the report map is
+non-injective; a no-report channel separates the identified pair.
+\emph{Witness:} $(u_0, u_1)$ share $r_\mathrm{shared}$; no-report values
+$n_\mathrm{left} \neq n_\mathrm{right}$; overread claim blocked.
+\emph{Controls:} visible descent-only claim accepted. \emph{Grade:} direct
+instantiation plus finite witness. \emph{Nonclaims:} reports not useless;
+hidden content not unreachable by all instruments.
+
+\paragraph{T10 (existence boundary).}
+\emph{Setup:} three-state maintenance carrier, requirements $1/2, 3/4, 1$;
+record credit (accrue $1/8$ to cap $1/4$; decay $1/8$); budget grid
+$\{0, 1/4, 1/2, 3/4, 1\}$. \emph{Result:} graded, hysteretic,
+clause-decomposable kernel collapse. \emph{Witness:} up $[0,0,1,2,3]$; down
+$[3,3,2,1,0]$; thresholds $1/2$ up vs $1/4$ down; clause patterns
+(C1 with collapsed C7; C1 with collapsed C6; full collapse).
+\emph{Controls:} weaker rule ($1/16$, cap $1/8$) loses strict hysteresis;
+stronger rule ($1/4$, cap $1/2$) never re-crosses on the grid.
+\emph{Grade:} schema plus exact correspondences. \emph{Nonclaims:} labels
+are structural readings; no clinical claim; no universal hysteresis. Lean
+note: sweep constants pinned; island naming and per-point budgets are
+Python-only facts.
+
+\paragraph{T11 (valence).}
+\emph{Setup:} exact rational LP, maximize $10q_r + 6q_e$ under two budgets.
+\emph{Result:} exact binding duals, slack zero, monotone tightening, proxy
+instability, viability tie. \emph{Witness:} optimum $q = (4/11, 6/11, 1/11)$,
+value $76/11$; $\lambda = (24/11, 14/11)$; curve $(0, 4/3, 24/11, 24/11)$.
+\emph{Controls:} slack regime $b = (5,1)$, $\lambda_1 = 0$; proxy phases give
+duals $4$ and $0$; planted dual on a slack constraint rejected by
+complementary slackness; kernel empties under $1/11$ underfunding.
+\emph{Grade:} theorem-grade duality core; the felt-valence identification is
+\gradeR{} and retractable. \emph{Nonclaims:} standard duality, no novelty
+claim; no generalization to actual subjects.
+
+\paragraph{T12 (quality geometry).}
+\emph{Setup:} 32-state micro-carrier (8 hues $\times$ 2 chroma $\times$ 2
+texture); lens forgets texture; texture factor $1/2$ breaks lumpability;
+staging $\tau = 2$; $\hat P = U P^2 C$, $E = P^2 C U$. \emph{Result:} exact
+max-product similarity with full coherence audit; regime-dependent signature
+transport. \emph{Witness:} $D = 43/270$ (warm) vs $1/810$ (cool); defect
+$13441/52488$; stability max $2/3$, mean $13801/25920$; residuals $180/169$
+and $102/59$; signature residue $0$ plateau, $1$ boundary. \emph{Controls:}
+swapped prototypes: defect $2619989/3499200$; texture-0 point lift: defect
+$167203/524880$, stability max $18/25$, rejected despite $UC = I$.
+\emph{Grade:} theorem-grade induced-kernel audit; geometry-birth audit-only.
+\emph{Nonclaims:} no curvature construction; no threshold-certified
+stability; layer-relative geometry; descended structure only.
+
+\paragraph{T13 (gauge inversion).}
+\emph{Setup:} $|Q| = 4$ public classes, two fiber points each; descents:
+projection, report, binary fiber path costs; rigidifier: one declared
+discrimination-density orientation calibrated by T12's landed signature.
+\emph{Result:} gauge group $\mathbb{Z}_2 \to$ trivial under one descended
+asymmetry; transports $2 \to 1$. \emph{Witness:} $40320$ automorphisms; $16$
+projection-fixing; $G = \{\mathrm{id}, \mathrm{swap}\}$ then
+$\{\mathrm{id}\}$. \emph{Controls:} both symmetric gauge elements fix the
+public quotient (layer sameness). \emph{Grade:} theorem-grade exact
+construction; rigidification principle schema-grade. \emph{Nonclaims:}
+rigidifier modeled, not measured; no claim any actual quality space has
+nontrivial $G$.
+
+\paragraph{T14 (lineage).}
+\emph{Setup:} memory-wheel route package; three histories; $Q = \{q_\mathrm{mid}\}$,
+$M = \{C_0, C_1\}$. \emph{Result:} $M$-lineage as identity carrier;
+trauma/control loop contrast; fission/fusion classification; empty target.
+\emph{Witness:} finer summary factors to $M$, reverse rejected; swap loop
+moves $0/1$ of $Q$, $1/1$ of $M$; splitting and merging continuations;
+funded kernel size $3$, underfunded $\emptyset$. \emph{Controls:} identity
+loop moves nothing; flat/flattenable/currentized comparators refused
+lineage. \emph{Grade:} theorem-grade transfer plus finite extensions;
+death/token readings deferred \gradeO. \emph{Nonclaims:} no metaphysics of
+personal identity; empty-target fact is Python-certified, outside the Lean
+kernel.
+
+\paragraph{T15 (combination gate).}
+\emph{Setup:} one joint carrier, live states diagonal/crossed plus dead
+exit; two interfaces on the same states. \emph{Result:} joint subjecthood
+gated by C7 strict refinement and C3 terminal joint reflexivity; aggregation
+is the collapsed regime. \emph{Witness:} $\Kbw = (2)$, $\Rrec = (1,1)$;
+refinement $1 \to 2 \to 2$; public kernel \{diagonal\} vs terminal kernel
+\{diagonal, crossed\}. \emph{Controls:} uncoupled interface has $\Rrec =
+\Kbw$; collective ledger exposes pairing (exposure true), failing C4.
+\emph{Grade:} schema with exact one-carrier construction. \emph{Nonclaims:}
+no verdict on real collectives; aggregation never suffices; Python executes
+the refinement operator (Lean proves stability/equivalence).
+
+\paragraph{T16 (meta-problem).}
+\emph{Setup:} composite states $(m, q)$; main package fixes $q$; control
+tracks $m$; declared completion convention. \emph{Result:} computed flags
+$(\top,\top,\top)$ select the hard-problem report; exposed control selects
+derivation-certified. \emph{Witness:} split pair $((m_0,q_0),(m_1,q_0))$;
+$m$-moved $1$, $q$-moved $0$; no factor $q \to m$; audit
+\texttt{undefined\_circular}; overread blocked, visible claim accepted.
+\emph{Controls:} exposed interface: factor $\{q_{m0} \mapsto m_0, q_{m1}
+\mapsto m_1\}$, flags $(\bot,\top,\bot)$. \emph{Grade:} composition-grade,
+convention-relative. \emph{Nonclaims:} not derived from the four laws alone;
+premises extensionally coincide on this carrier; illusionism/mysterianism
+not refuted.
+
+\paragraph{T18a/b/d/e and T18c.}
+\emph{Setup:} T8's clock imported; enablement lenses on $(content, \phi)$;
+entrainment gate; T13's transports. \emph{Results and witnesses:} T18a
+strictness pair (equal substrate time, different tick parity); T18b coarse
+defects $(1,1,1) \to (0,0,0)$ enriched, partial $(4/7)^3 \to (0)^3$ with the
+strictly-coarser parity lens, no-birth control all zeros; T18d rows unfunded
+(tick $0$), entrained ($1/1$, $1/1$), decoupled ($1/3$, $1/1$); T18e
+transports $2$ symmetric, $1$ rigidified. \emph{Controls:} no-birth; P3
+null; unfunded. \emph{Grades:} a/b theorem-grade finite, d taxonomy-grade,
+e direct reading; \textbf{T18c demoted} to a schema-grade dependency
+observation (explicit temporal tokens found only in T1 among T1/T2/T5/T7).
+\emph{Nonclaims:} no spacetime; no subject created or detected (T18b); no
+sleep/dream claims (T18d); no universal precondition theorem (T18c).
+
+ \section{T17: schema, registry, and negative attacks}
+\label{app:t17}
+
+
+\subsection{Clause-to-witness registry (T17-P)}
+
+The Python protocol's eight rows import actual computed witness fields from
+the landed laws; each current row's verdict is \texttt{witness\_verified},
+a witness-catalog verdict and never a realization verdict.
+
+\begin{center}\small
+\begin{tabular}{llp{0.52\linewidth}}
+\toprule
+Clause & Source law & Imported witness field (abridged) \\
+\midrule
+C1 & T1 & closure-objecthood audit: stored-operator checks; unique
+$E_2^{(1/16)}$ fixed point retaining $77/80$ CORE mass \\
+C2 & T1/T3 & strict pair plus nonfactorization check \\
+C3 & T1 & ten-state kernel terminal quotient $6,7,7$, stable, $= M$
+restricted; T6 tower as supporting audit \\
+C4 & T2 & connector witness with main exposure false \\
+C5 & T5 & provenance-routed credit: self / other / none; DPI null blocked \\
+C6 & T8 & funded metrics with monotone-ledger arrow; unfunded and
+P3-without-P6 nulls \\
+C7 & T7 & coupled witness with aggregation collapse control \\
+C8 & T1/T11 & full deadline contrast (empty public kernel, nonempty
+$L$/no-deadline kernels) plus funded/underfunded viability contrast \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Schema boundaries worth repeating}
+
+The simplified schema's own graded honesty, beyond
+Section~\ref{sec:fullvssimp}: its C3 exit check is one-step only (a genuinely
+terminal full-domain bisimulation remains an obligation); its C4 is a finite
+static specialization of the imported history/complexity-theoretic visibility
+predicate, closed under postprocessing of the declared finite joint tuple on
+kernel support; its C5 is an aggregate no-fake-arrow balance control (the
+concrete two-component lift with actual provenance routing is T5's content,
+imported through the source flags); its C6 ledger annotates trace positions
+rather than living in the carrier state; its C8 proves strict shrinkage, with
+feasible-action lists held fixed; its coherence hub witness is strictly
+stronger than C3 and C4 together, deliberately excluding multi-step
+determining distinctions at this grade (recorded by an explicit
+false-negative boundary fact); and its gate panel's
+\texttt{ctrl}/\texttt{nosmuggle}/\texttt{vis}/\texttt{audit}/admissibility
+statuses are asserted or procedural at schema grade, because the package
+carries no instrument-level records from which to derive them. Full
+source-level bridge admissibility, and any theorem about the full design
+package, remain priced future work.
+
+\subsection{Attack corpus (abridged)}
+
+Each row is an executable Lean fact rejecting a concrete adversarial package;
+paired predecessor facts record genuine old-pass/new-fail surfaces.
+
+\begin{center}\footnotesize
+\begin{tabular}{p{0.32\linewidth}p{0.58\linewidth}}
+\toprule
+Attack family & Representative blocked facts \\
+\midrule
+Disconnected/off-hub witnesses & disconnected package; disconnected union
+(communication isolation); off-hub collapse \\
+Hiddenness spoofing & dead-state hiddenness; joint-decoder exposure; HIDD
+direction; enabled-action exposure \\
+Quotient/refinement decoys & decoy-action refinement (infeasible-action
+split); enabled-action merge; dead-state refinement; observation refinement;
+coherence decoy pair; multi-step determining boundary (recorded, not
+repaired) \\
+Credit manufacturing & same-matrix credit; free external matrix; zero-weight
+protocol; duplicate-action symmetric mixture \\
+Temporal spoofing & one-off tick; drifting tick \\
+Viability spoofing & unpriced (zero-cost) existence; unshrinkable kernel;
+duplicate kernel mass (two variants) \\
+Public-match spoofing & zero-denominator dynamics; undeclared feasible
+action; two-step public mismatch; feasibility divergence; channel
+divergence; exit leakage; exit-channel complete observation \\
+Gate-panel freeloading & \texttt{gate\_panel\_not\_free} (a C2-positive
+package cannot acquire a descent-pass panel from an unrelated closure table) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Positive boundary controls accompany the corpus (for example, an infeasible
+non-lumpable decoy action does not prevent a valid package from matching
+itself). The corpus hardens the schema; it does not inhabit it, and
+$\texttt{singleCarrierInstanceExhibited} = \texttt{false}$ remains the
+registry's load-bearing negative fact.
+
+ \section{Non-evidential empirical-interface preparation history}
+\label{app:empirical}
+
+
+\emph{Protocol.} The artifact contains an admission protocol for
+literature-based phenomenon rows. A row is admissible only with: verified
+bibliographic metadata; a checked load-bearing passage; a same-sample pair of
+altered \emph{and} preserved observables; a proposed clause mapping frozen
+independently of the outcome; and a row-level countercondition whose failure
+would defeat the row. Mappings are graded as proxies or shape constraints,
+never as measurements of a clause.
+
+\emph{Current ruling.} No inherited candidate satisfies every admission
+field. The complete inherited battery therefore carries the uniform status
+\texttt{history\_only\_non\_evidential}, contributes zero rows to this paper,
+and appears nowhere in Sections~\ref{sec:intro}--\ref{sec:limits} as support
+for anything. No external C8/existence-boundary row is admissible under the
+current human-only, non-neural, report-level scope.
+
+\emph{Reinstatement gates.} A future version may reinstate a row only after:
+full-text verification of the load-bearing passage; confirmation of
+same-sample altered/preserved observables in the source; an independently
+frozen mapping (prospectively registered); and a declared countercondition.
+Candidate-level rows, source-status fields, and the append-only rejection log
+live in the artifact
+(\texttt{paper/prewriting/adequacy\_row\_ledger.csv},
+\texttt{paper/prewriting/rejected\_adequacy\_rows.md},
+\texttt{paper/prewriting/adequacy\_protocol.md}); they are audit history and
+are deliberately not reproduced here.
+
+ \section{Reproducibility and formalization}
+\label{app:repro}
+
+
+\subsection{Verified local baseline}
+
+At the preparation snapshot (2026-07-14, repository working tree): 191
+finite-study tests pass across the nineteen law modules; 8 paper-snapshot
+tests pass; the deterministic nineteen-law result snapshot
+(\texttt{paper/data/current\_results.json}) is current under its strict JSON
+schema with drift checking; the 36-job Lean build succeeds; and the
+foundations-import, T17-registry, and citation/claim auditors pass, including
+their corruption self-tests (each validator is tested against deliberately
+corrupted inputs to confirm it fails closed). This is an exact local
+baseline, not a release claim.
+
+\subsection{Commands}
+
+From the repository root:
+\begin{verbatim}
+python paper/prewriting/validate_package.py   # cross-file claim/citation integrity
+python paper/tools/export_results.py --check  # snapshot drift check
+pytest paper/tests/test_result_snapshot.py -q # snapshot schema/determinism tests
+pytest lab/tests -q                           # 191 finite-study tests
+lake build                                    # 36-job Lean build
+\end{verbatim}
+All paper tables and computed figures read
+\texttt{paper/data/current\_results.json}; none parses verdict prose or
+independently reruns a law module.
+
+\subsection{Theorem-to-artifact map}
+
+Each law has: a Python module
+(\texttt{lab/sixbirds\_consciousness/labs/}), a prediction file, a verdict
+file with versioned correction blocks, a pytest suite, and a Lean module
+(\texttt{lean/SixBirdsConsciousness/Laws/}) with a named kernel declaration
+(e.g.\ \texttt{forcingOfI\_T1\_kernel}, \texttt{privacyWheel\_T2\_kernel},
+\dots, \texttt{realization\_T17\_kernel}, \texttt{timeMinting\_T18\_kernel}).
+The catalog file \texttt{THEOREMS.md} is the canonical statement source; the
+T17 contract is machine-readable in
+\texttt{formalization/inventory/t17\_claim\_registry.yml} and audited by
+script. Per-law Lean scope boundaries are in Table~\ref{tbl:catalog}; the
+recurring pattern is that Lean owns core structural facts and pins exhaustive
+enumeration outputs as certified constants matching the Python computation.
+
+\subsection{Trust base and known limitations}
+
+Trusted, inherited: vendored foundations Lean modules and their
+opacity-guarded axioms (Appendix~\ref{app:imports}); the Lean toolchain; the
+Python interpreter and pytest. Known limitations, reported rather than
+resolved: the Lean manifest-level validator currently parses zero
+inventory/manifest rows due to a schema mismatch and must not be cited as
+catalog-wide mechanization evidence (release blocker); no immutable public
+artifact DOI or frozen release tag exists yet; release scaffolding (top-level
+README, license, citation file, dependency lock, one-command validation) is
+incomplete; continuous integration does not yet run the T17 audits or paper
+compilation; and the local audit ran on Python~3.10 while the package
+declares 3.11+ (to be repeated on a supported version at release). Prediction
+files entered version control in the same commits as implementations and are
+not preregistration evidence.
+
+ \section{Claim and overlap ledgers}
+\label{app:ledgers}
+
+
+\subsection{Sentence-level claim ledger}
+
+The artifact file \texttt{paper/prewriting/claim\_ledger.csv} is this paper's
+prose ceiling: 60 rows, one per allowed claim, each with tier, grade,
+allowed-claim wording, evidence, assumptions/scope, the \emph{blocked}
+stronger claim, and manuscript destination. Every scientific sentence in this
+paper is written to be assignable to one row; the blocked-claim column is the
+enforcement surface. The full ledger is reproduced in the artifact rather
+than here; its structure is summarized below.
+
+\begin{center}\small
+\begin{tabular}{lll}
+\toprule
+Tier & Rows & Statuses \\
+\midrule
+S (structural, incl.\ the artifact-audit row) & 50 & allowed (44 overall); allowed\_conditional; allowed\_with\_limitation; demoted \\
+R (recognition) & 4 & recognition\_only; future\_protocol\_only \\
+O (ontological) & 5 & conditional\_only; assumption \\
+OPEN & 1 & open (T17-I) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Adjacent-paper ownership}
+
+Three adjacent Six Birds papers own seams this paper does not cross
+(Section~\ref{sec:related}); the artifact's
+\texttt{paper/prewriting/overlap\_memo.md} and
+\texttt{sibling\_import\_map.csv} pin every retained sibling object to its
+governing version, hypothesis scope, and ownership boundary. The governing
+rule: no retained sibling proposition is a logical premise of any theorem
+here; sibling results are ownership boundaries or theorem-level analogies,
+and ``the same theorem'' is never claimed without a transport proof (none
+exists).
+
+\subsection{Disclosures}
+
+\emph{Review status.} This is a preprint and has not been peer reviewed. The
+artifact's ``external review request'' documents are author-generated request
+artifacts recording an internal review loop.
+
+\emph{Assistance.} Manuscript preparation and repository tooling used AI
+assistance; the artifact records the assistance history in
+\texttt{paper/prewriting/ai\_assistance\_ledger.md}. The author is
+responsible for all claims.
+
+\emph{Funding and competing interests.} To be confirmed by the author before
+submission (open item D-01 in the artifact's decision register).
+ 
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{prewriting/references_core}
+
+\end{document}

@@ -1,0 +1,59 @@
+{
+  "acceptance_rule": "hard-gates-and-componentwise-margins",
+  "claim_ceiling": "bounded exact perturbation box inside the finite structural model",
+  "claim_lanes": [
+    "S-T",
+    "S-R",
+    "S-L",
+    "A"
+  ],
+  "dimensions": [
+    {
+      "base_increment": 4,
+      "dimension_id": "predictive-step",
+      "minimum_increment": 1,
+      "radius": 2
+    },
+    {
+      "base_increment": 3,
+      "dimension_id": "order-step",
+      "minimum_increment": 1,
+      "radius": 1
+    },
+    {
+      "base_increment": 3,
+      "dimension_id": "tick-step",
+      "minimum_increment": 1,
+      "radius": 1
+    },
+    {
+      "base_increment": 2,
+      "dimension_id": "progress-step",
+      "minimum_increment": 1,
+      "radius": 1
+    },
+    {
+      "base_increment": 5,
+      "dimension_id": "record-step",
+      "minimum_increment": 1,
+      "radius": 3
+    }
+  ],
+  "hard_gates": {
+    "distinct-carriers": true,
+    "integrated-package": true,
+    "post-withdrawal-autonomy": true,
+    "route-discipline": true,
+    "strict-lineage-mode": true,
+    "target-ownership": true
+  },
+  "model_id": "ROB-POS-01",
+  "nonclaims": [
+    "not an empirical noise model",
+    "not a robustness theorem outside the declared box",
+    "not consciousness stability"
+  ],
+  "scalar_score_role": "diagnostic-only",
+  "schema_version": "CST-TT-07A-robustness-v1",
+  "title": "hard-gate-preserving temporal margin box"
+}

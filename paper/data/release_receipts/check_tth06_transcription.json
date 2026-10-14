@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_tth06_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_tth06_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_tth06_transcription.log",
+  "log_sha256": "98fa9572a596ec528a05d54fc00fb9c5faaac98db56dbcf68aac49986eb70aff",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:35:15+00:00",
+  "status": "pass",
+  "summary": "ation\nPolymorphic scope: staged target/resource instructions and the target-execution span are publicly bound. The raw frame-to-presentation constructor and exact partial POS-04 presentation equations are checked; the owning raw-interface component boundary, generic F/O soundness and common-coordinate receiver square are checked. The generic nominal protocol and its exact arbitrary-partial AF/AO owning adapters are checked. Receiver/counterfactual coherence is incorporated into the owning final gate, whose exact all-partial POS04 adapters to the nominal gate are checked. The complete whole-gate correspondence is exact for every partial assignment, preserving the frozen source/staging/package/nominal autonomy checks with complete actual lineage. The weaker legacy whole-gate identification is kernel-refuted. Reversed raw histories pass both final gates with computed outputs 1/0. Independent ACCEPT / FAITHFUL adjudication is recorded in audit/G6d_final_correspondence.md; TTH-06 is proved at the explicitly disclosed structural grades and F/O interpretation, with the frozen row text unchanged.\nLegacy G6b vectors above certify their unchanged weaker lineage. Complete named lineage, its family vectors, and F/O soundness are separately kernel-proved in POS04CompleteLineage/POS04CompleteFIACH; they are not inferred from those legacy booleans.\nCoverage limit: finite observations are compared here; unbounded word laws, generic fixed-point greatest-ness, and TTH-05 soundness are theorems, not Python transcription results. Raw POS-04 cells remain covered by check_pos04_transcription.py."
+}

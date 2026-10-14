@@ -1,0 +1,8 @@
+item_id,role,model_ref,certificate_ref,accepted,principal_result
+ROB-POS-01,positive-bounded-box,models/strengthenings/robustness/ROB-POS-01.model.json,formal/certificates/strengthenings/robustness/ROB-POS-01.certificate.json,True,945 bounded perturbations; zero violations
+ROB-C01,negative-control,models/strengthenings/robustness/controls/ROB-C01.model.json,formal/certificates/strengthenings/robustness/controls/ROB-C01.certificate.json,False,progress margin leaves box and stalls
+ROB-C02,negative-control,models/strengthenings/robustness/controls/ROB-C02.model.json,formal/certificates/strengthenings/robustness/controls/ROB-C02.certificate.json,False,record margin leaves box and loses strict advance
+ROB-C03,negative-control,models/strengthenings/robustness/controls/ROB-C03.model.json,formal/certificates/strengthenings/robustness/controls/ROB-C03.certificate.json,False,route hard gate fails
+ROB-C04,negative-control,models/strengthenings/robustness/controls/ROB-C04.model.json,formal/certificates/strengthenings/robustness/controls/ROB-C04.certificate.json,False,ownership hard gate fails
+ROB-C05,negative-control,models/strengthenings/robustness/controls/ROB-C05.model.json,formal/certificates/strengthenings/robustness/controls/ROB-C05.certificate.json,False,package hard gate fails
+ROB-C06,negative-control,models/strengthenings/robustness/controls/ROB-C06.model.json,formal/certificates/strengthenings/robustness/controls/ROB-C06.certificate.json,False,autonomy hard gate fails

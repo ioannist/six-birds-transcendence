@@ -1,0 +1,95 @@
+{
+  "$id": "https://six-birds.local/cst-tt/schemas/transport_control_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "artifact_ref": {
+      "type": "string"
+    },
+    "artifact_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "baseline_ref": {
+      "type": "string"
+    },
+    "checker": {
+      "additionalProperties": false,
+      "properties": {
+        "function": {
+          "enum": [
+            "audit_temporal_transport",
+            "audit_route_discipline",
+            "audit_memory_repair",
+            "audit_record_arrow"
+          ]
+        },
+        "module": {
+          "const": "cst_tt.transport"
+        },
+        "python_version": {
+          "type": "string"
+        },
+        "valid_result": {
+          "const": false
+        }
+      },
+      "required": [
+        "module",
+        "function",
+        "valid_result",
+        "python_version"
+      ],
+      "type": "object"
+    },
+    "claim_ceiling": {
+      "const": "finite structural obligation boundary only"
+    },
+    "control_id": {
+      "type": "string"
+    },
+    "control_kind": {
+      "enum": [
+        "transport",
+        "route",
+        "memory",
+        "record-arrow"
+      ]
+    },
+    "expected_primary_failure": {
+      "type": "string"
+    },
+    "observed_failures": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "result_status": {
+      "enum": [
+        "checked-obligation-countermodel",
+        "scaffold-only"
+      ]
+    },
+    "schema_version": {
+      "const": "CST-TT-03"
+    }
+  },
+  "required": [
+    "schema_version",
+    "control_id",
+    "control_kind",
+    "artifact_ref",
+    "artifact_sha256",
+    "baseline_ref",
+    "expected_primary_failure",
+    "observed_failures",
+    "result_status",
+    "claim_ceiling",
+    "checker"
+  ],
+  "title": "Temporal transport or route-discipline control certificate",
+  "type": "object"
+}

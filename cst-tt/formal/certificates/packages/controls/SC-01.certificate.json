@@ -1,0 +1,20 @@
+{
+  "artifact_ref": "models/packages/controls/SC-01.assembly.json",
+  "artifact_sha256": "50399ae635c13b231670e9eaaf74d3625621f62f2452939cdacdd768ce2a7e30",
+  "checker": {
+    "function": "audit_staged_assembly",
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5",
+    "staged_assembly_valid": false
+  },
+  "claim_ceiling": "finite package-obligation boundary only",
+  "control_id": "SC-01",
+  "control_kind": "staged-assembly",
+  "expected_primary_failure": "STG-O07-value-translation-soundness",
+  "observed_failures": [
+    "STG-O07-value-translation-soundness"
+  ],
+  "positive_baseline_ref": "models/packages/STG-POS-01.assembly.json",
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-02"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_staged_assignment_span_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_staged_assignment_span_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_staged_assignment_span_transcription.log",
+  "log_sha256": "a04bf771ff62a6e86d8ef6794c637e7a4506e9f75fe2214090ff29d68c8a405e",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:52+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted second instruction drift\nCAUGHT planted reused cell namespace drift\nCAUGHT planted partial instruction threshold drift\nPASS raw staged assignment span: actual distinct globals, namespace reads, partial rejection and native all-partial bridge/semantic adapters; four planted drifts caught\nScope: program/assignment transport; physical middle compatibility, supported next acquisition and full Temporal-FIACH composition remain"
+}

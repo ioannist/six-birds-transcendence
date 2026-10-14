@@ -1,0 +1,8 @@
+theorem_id,prior_status,new_status,evidence,claim_ceiling
+TTD-02,finite-discriminator-evidence-landed-theorem-open,proof-source-and-executable-certificate-landed,ODR-01,structural lineage comparison only
+TTS-01,not-present,proof-source-and-executable-certificate-landed,GCP-OVERLAP-01;GCP-DIRECT-01;GCP-MIXED-01,generalized lineage path only
+TTS-02,not-present,proof-source-and-executable-certificate-landed,DEF-POS-01;DEF-EQUAL-SCALAR-01,finite vector-defect semantics
+TTS-03,not-present,proof-source-and-executable-certificate-landed,ROB-POS-01,declared bounded box
+TTS-04,not-present,proof-source-and-executable-certificate-landed,UNB-POS-01,unbounded run inside exact finite model
+TTN-10,checked-finite-countermodel,proof-source-and-checked-finite-countermodel,VECTOR_DEFECT_EXHAUSTION,scalar insufficiency
+TTN-12,checked-finite-countermodel,proof-source-and-checked-finite-countermodel,ARBITRARILY_LONG_FINITE_PREFIX_FAMILY,finite-prefix insufficiency

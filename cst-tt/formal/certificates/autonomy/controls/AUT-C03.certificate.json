@@ -1,0 +1,179 @@
+{
+  "audit": {
+    "action_table_well_formed": true,
+    "anti_stall_on_invariant": true,
+    "autonomy_valid": false,
+    "boundary_fixed_before_evaluation": true,
+    "budget_solvent_on_invariant": true,
+    "collapse_trace": [],
+    "collapse_trace_length": 0,
+    "computed_invariant_state_ids": [
+      "T-SAFE-0",
+      "T-SAFE-1",
+      "T-WARNING-0",
+      "T-WARNING-1"
+    ],
+    "declared_invariant_matches_computed": true,
+    "declared_invariant_state_ids": [
+      "T-SAFE-0",
+      "T-SAFE-1",
+      "T-WARNING-0",
+      "T-WARNING-1"
+    ],
+    "disturbance_class_fixed_before_evaluation": true,
+    "disturbance_table_well_formed": true,
+    "endpoint_inside": true,
+    "errors": [],
+    "failed_obligations": [
+      "AUT-O04-withdrawal-shape-and-completeness"
+    ],
+    "finite_horizon": 6,
+    "finite_horizon_survives": true,
+    "finite_words_checked": 127,
+    "forbidden_verdict_fields_absent": true,
+    "mandatory_removed_roles_present": true,
+    "model_id": "AUT-C03",
+    "package_contract_hash_bound": true,
+    "package_inside": true,
+    "removal_rounds": {},
+    "removed_retained_disjoint": false,
+    "resource_closed_on_invariant": true,
+    "response_policy": [
+      {
+        "action_id": "absorb-safe-0-hit",
+        "action_owner": 101,
+        "budget_after": 1,
+        "budget_before": 1,
+        "budget_cost": 0,
+        "budget_regeneration": 0,
+        "disturbance_id": "hit",
+        "progress_delta": 1,
+        "record_delta": 1,
+        "state_id": "T-SAFE-0",
+        "successor_state_id": "T-WARNING-1"
+      },
+      {
+        "action_id": "advance-safe-0-nominal",
+        "action_owner": 101,
+        "budget_after": 1,
+        "budget_before": 1,
+        "budget_cost": 0,
+        "budget_regeneration": 0,
+        "disturbance_id": "nominal",
+        "progress_delta": 1,
+        "record_delta": 1,
+        "state_id": "T-SAFE-0",
+        "successor_state_id": "T-SAFE-1"
+      },
+      {
+        "action_id": "absorb-safe-1-hit",
+        "action_owner": 101,
+        "budget_after": 1,
+        "budget_before": 1,
+        "budget_cost": 0,
+        "budget_regeneration": 0,
+        "disturbance_id": "hit",
+        "progress_delta": 1,
+        "record_delta": 1,
+        "state_id": "T-SAFE-1",
+        "successor_state_id": "T-WARNING-0"
+      },
+      {
+        "action_id": "advance-safe-1-nominal",
+        "action_owner": 101,
+        "budget_after": 1,
+        "budget_before": 1,
+        "budget_cost": 0,
+        "budget_regeneration": 0,
+        "disturbance_id": "nominal",
+        "progress_delta": 1,
+        "record_delta": 1,
+        "state_id": "T-SAFE-1",
+        "successor_state_id": "T-SAFE-0"
+      },
+      {
+        "action_id": "repair-warning-0-hit",
+        "action_owner": 101,
+        "budget_after": 1,
+        "budget_before": 1,
+        "budget_cost": 1,
+        "budget_regeneration": 1,
+        "disturbance_id": "hit",
+        "progress_delta": 1,
+        "record_delta": 1,
+        "state_id": "T-WARNING-0",
+        "successor_state_id": "T-SAFE-1"
+      },
+      {
+        "action_id": "repair-warning-0-nominal",
+        "action_owner": 101,
+        "budget_after": 1,
+        "budget_before": 1,
+        "budget_cost": 1,
+        "budget_regeneration": 1,
+        "disturbance_id": "nominal",
+        "progress_delta": 1,
+        "record_delta": 1,
+        "state_id": "T-WARNING-0",
+        "successor_state_id": "T-SAFE-1"
+      },
+      {
+        "action_id": "repair-warning-1-hit",
+        "action_owner": 101,
+        "budget_after": 1,
+        "budget_before": 1,
+        "budget_cost": 1,
+        "budget_regeneration": 1,
+        "disturbance_id": "hit",
+        "progress_delta": 1,
+        "record_delta": 1,
+        "state_id": "T-WARNING-1",
+        "successor_state_id": "T-SAFE-0"
+      },
+      {
+        "action_id": "repair-warning-1-nominal",
+        "action_owner": 101,
+        "budget_after": 1,
+        "budget_before": 1,
+        "budget_cost": 1,
+        "budget_regeneration": 1,
+        "disturbance_id": "nominal",
+        "progress_delta": 1,
+        "record_delta": 1,
+        "state_id": "T-WARNING-1",
+        "successor_state_id": "T-SAFE-0"
+      }
+    ],
+    "response_total_on_invariant": true,
+    "retained_resources_target_owned": true,
+    "source_target_distinct": true,
+    "state_table_well_formed": true,
+    "target_owned_responses": true,
+    "transition_table_well_formed": true,
+    "withdrawal_complete": true,
+    "withdrawal_shape_valid": false
+  },
+  "checker": {
+    "checked_at_phase": "CST-TT-05",
+    "function": "audit_autonomy",
+    "module": "cst_tt.withdrawal_autonomy_checker",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite post-withdrawal autonomy boundary only",
+  "claim_lanes": [
+    "M",
+    "A"
+  ],
+  "collapse_trace": [],
+  "control_id": "AUT-C03",
+  "expected_primary_failure": "AUT-O04-withdrawal-shape-and-completeness",
+  "model_ref": "models/autonomy/controls/AUT-C03.model.json",
+  "model_sha256": "0cf759e33eec0971337e7839da34d6e5cc1686c4ab3fce52890c1ddad78eb906",
+  "observed_failures": [
+    "AUT-O04-withdrawal-shape-and-completeness"
+  ],
+  "positive_baseline_ref": "models/autonomy/AUT-POS-01.model.json",
+  "result_status": "checked-autonomy-obligation-countermodel",
+  "schema_version": "CST-TT-05",
+  "title": "removed and retained resources overlap"
+}

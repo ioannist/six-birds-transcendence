@@ -1,0 +1,46 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R"
+  ],
+  "conclusion_failure_checks": {
+    "global_witness_absent": true,
+    "overlap_compatibility_fails": true
+  },
+  "countermodel_id": "CM-08",
+  "derived_facts": {
+    "conflicting_values": [
+      0,
+      1
+    ],
+    "obstruction_coordinate": 0
+  },
+  "family": "local-global-gluing-obstruction",
+  "model": {
+    "all_local_clauses_accept": true,
+    "clause_count": 2,
+    "coordinate_count": 1,
+    "global_package_witness_exists": false,
+    "local_assignments_on_shared_coordinate": [
+      0,
+      1
+    ],
+    "overlap_compatible": false,
+    "shared_coordinate": 0,
+    "value_count": 2
+  },
+  "name": "Local clause success without a global package witness",
+  "premise_checks": {
+    "every_local_clause_accepts": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "Individually accepted local witnesses can disagree on a shared coordinate.",
+  "size_measure": "(clause_count, coordinate_count, value_count)",
+  "size_vector": [
+    2,
+    1,
+    2
+  ],
+  "target_no_go_id": "TTN-08",
+  "toy_model_ref": "TTM-11"
+}

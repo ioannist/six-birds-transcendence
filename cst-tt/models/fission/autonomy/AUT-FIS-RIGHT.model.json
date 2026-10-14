@@ -1,0 +1,585 @@
+{
+  "actions": [
+    {
+      "action_id": "fission-branch-safe-0-nominal",
+      "budget_cost": 0,
+      "budget_regeneration": 0,
+      "owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "required_resources": [
+        "fission-branch-clock",
+        "fission-branch-record",
+        "fission-branch-maintenance"
+      ]
+    },
+    {
+      "action_id": "fission-branch-safe-0-hit",
+      "budget_cost": 0,
+      "budget_regeneration": 0,
+      "owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "required_resources": [
+        "fission-branch-clock",
+        "fission-branch-record",
+        "fission-branch-maintenance",
+        "fission-branch-disturbance-sensor"
+      ]
+    },
+    {
+      "action_id": "fission-branch-safe-1-nominal",
+      "budget_cost": 0,
+      "budget_regeneration": 0,
+      "owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "required_resources": [
+        "fission-branch-clock",
+        "fission-branch-record",
+        "fission-branch-maintenance"
+      ]
+    },
+    {
+      "action_id": "fission-branch-safe-1-hit",
+      "budget_cost": 0,
+      "budget_regeneration": 0,
+      "owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "required_resources": [
+        "fission-branch-clock",
+        "fission-branch-record",
+        "fission-branch-maintenance",
+        "fission-branch-disturbance-sensor"
+      ]
+    },
+    {
+      "action_id": "fission-branch-warning-0-nominal",
+      "budget_cost": 1,
+      "budget_regeneration": 1,
+      "owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "regeneration_owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "regeneration_resource": "fission-branch-regenerator",
+      "required_resources": [
+        "fission-branch-clock",
+        "fission-branch-record",
+        "fission-branch-maintenance",
+        "fission-branch-repair-loop",
+        "fission-branch-regenerator"
+      ]
+    },
+    {
+      "action_id": "fission-branch-warning-0-hit",
+      "budget_cost": 1,
+      "budget_regeneration": 1,
+      "owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "regeneration_owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "regeneration_resource": "fission-branch-regenerator",
+      "required_resources": [
+        "fission-branch-clock",
+        "fission-branch-record",
+        "fission-branch-maintenance",
+        "fission-branch-repair-loop",
+        "fission-branch-regenerator"
+      ]
+    },
+    {
+      "action_id": "fission-branch-warning-1-nominal",
+      "budget_cost": 1,
+      "budget_regeneration": 1,
+      "owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "regeneration_owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "regeneration_resource": "fission-branch-regenerator",
+      "required_resources": [
+        "fission-branch-clock",
+        "fission-branch-record",
+        "fission-branch-maintenance",
+        "fission-branch-repair-loop",
+        "fission-branch-regenerator"
+      ]
+    },
+    {
+      "action_id": "fission-branch-warning-1-hit",
+      "budget_cost": 1,
+      "budget_regeneration": 1,
+      "owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "regeneration_owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "regeneration_resource": "fission-branch-regenerator",
+      "required_resources": [
+        "fission-branch-clock",
+        "fission-branch-record",
+        "fission-branch-maintenance",
+        "fission-branch-repair-loop",
+        "fission-branch-regenerator"
+      ]
+    }
+  ],
+  "boundary": {
+    "boundary_id": "fission-branch-boundary-v1",
+    "disturbance_class_fixed_before_evaluation": true,
+    "disturbance_class_id": "nominal-or-single-hit",
+    "fixed_before_evaluation": true
+  },
+  "claim_ceiling": "model-relative post-withdrawal autonomy over the declared finite disturbance class",
+  "claim_lane": "A",
+  "declared_invariant_state_ids": [
+    "FISSION-BRANCH-SAFE-0",
+    "FISSION-BRANCH-SAFE-1",
+    "FISSION-BRANCH-WARNING-0",
+    "FISSION-BRANCH-WARNING-1"
+  ],
+  "disturbances": [
+    {
+      "disturbance_id": "nominal",
+      "predeclared": true
+    },
+    {
+      "disturbance_id": "hit",
+      "predeclared": true
+    }
+  ],
+  "endpoint_state_id": "FISSION-BRANCH-SAFE-0",
+  "finite_horizon": 6,
+  "handoff_endpoint_event_id": "fission-right-exit",
+  "model_id": "AUT-FIS-RIGHT",
+  "nonclaims": [
+    "no consciousness or felt-continuity conclusion",
+    "no personal survival or numerical identity conclusion",
+    "no indefinite physical persistence outside the model"
+  ],
+  "package_contract": {
+    "package_certificate_ref": "formal/certificates/fission/packages/PKG-FIS-RIGHT.certificate.json",
+    "package_certificate_sha256": "082eaab0a00f5a3cfbe1eab40332a89f3514e36740bd398eecf09e3c8054eeee",
+    "package_owner": 202,
+    "package_predicate_id": "PKG-FIS-RIGHT::IntegratedPkg"
+  },
+  "schema_version": "CST-TT-06-model-v1",
+  "source": {
+    "code": 17,
+    "label": "source-substrate"
+  },
+  "states": [
+    {
+      "budget": 1,
+      "health": "safe",
+      "maintenance_owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "package_valid": true,
+      "public_state": "report:stable",
+      "required_resources": [
+        "fission-branch-binding-bus",
+        "fission-branch-boundary",
+        "fission-branch-budget",
+        "fission-branch-clock",
+        "fission-branch-credit-ledger",
+        "fission-branch-maintenance",
+        "fission-branch-object-register",
+        "fission-branch-policy",
+        "fission-branch-private-state",
+        "fission-branch-promotion-audit",
+        "fission-branch-public-interface",
+        "fission-branch-recombination-table",
+        "fission-branch-record",
+        "fission-branch-repair-loop",
+        "fission-branch-self-register"
+      ],
+      "state_id": "FISSION-BRANCH-SAFE-0",
+      "tick_phase": 0
+    },
+    {
+      "budget": 1,
+      "health": "safe",
+      "maintenance_owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "package_valid": true,
+      "public_state": "report:stable",
+      "required_resources": [
+        "fission-branch-binding-bus",
+        "fission-branch-boundary",
+        "fission-branch-budget",
+        "fission-branch-clock",
+        "fission-branch-credit-ledger",
+        "fission-branch-maintenance",
+        "fission-branch-object-register",
+        "fission-branch-policy",
+        "fission-branch-private-state",
+        "fission-branch-promotion-audit",
+        "fission-branch-public-interface",
+        "fission-branch-recombination-table",
+        "fission-branch-record",
+        "fission-branch-repair-loop",
+        "fission-branch-self-register"
+      ],
+      "state_id": "FISSION-BRANCH-SAFE-1",
+      "tick_phase": 1
+    },
+    {
+      "budget": 1,
+      "health": "warning",
+      "maintenance_owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "package_valid": true,
+      "public_state": "report:stable",
+      "required_resources": [
+        "fission-branch-binding-bus",
+        "fission-branch-boundary",
+        "fission-branch-budget",
+        "fission-branch-clock",
+        "fission-branch-credit-ledger",
+        "fission-branch-maintenance",
+        "fission-branch-object-register",
+        "fission-branch-policy",
+        "fission-branch-private-state",
+        "fission-branch-promotion-audit",
+        "fission-branch-public-interface",
+        "fission-branch-recombination-table",
+        "fission-branch-record",
+        "fission-branch-repair-loop",
+        "fission-branch-self-register"
+      ],
+      "state_id": "FISSION-BRANCH-WARNING-0",
+      "tick_phase": 0
+    },
+    {
+      "budget": 1,
+      "health": "warning",
+      "maintenance_owner": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      },
+      "package_valid": true,
+      "public_state": "report:stable",
+      "required_resources": [
+        "fission-branch-binding-bus",
+        "fission-branch-boundary",
+        "fission-branch-budget",
+        "fission-branch-clock",
+        "fission-branch-credit-ledger",
+        "fission-branch-maintenance",
+        "fission-branch-object-register",
+        "fission-branch-policy",
+        "fission-branch-private-state",
+        "fission-branch-promotion-audit",
+        "fission-branch-public-interface",
+        "fission-branch-recombination-table",
+        "fission-branch-record",
+        "fission-branch-repair-loop",
+        "fission-branch-self-register"
+      ],
+      "state_id": "FISSION-BRANCH-WARNING-1",
+      "tick_phase": 1
+    }
+  ],
+  "supported_public_trace": [
+    "report:stable",
+    "report:stable",
+    "report:stable",
+    "report:stable",
+    "report:stable",
+    "report:stable",
+    "report:stable"
+  ],
+  "target": {
+    "code": 202,
+    "label": "right-branch-substrate"
+  },
+  "tick_modulus": 2,
+  "title": "fission-branch target-owned post-withdrawal controller",
+  "transitions": [
+    {
+      "action_id": "fission-branch-safe-0-nominal",
+      "disturbance_id": "nominal",
+      "from_state": "FISSION-BRANCH-SAFE-0",
+      "to_state": "FISSION-BRANCH-SAFE-1"
+    },
+    {
+      "action_id": "fission-branch-safe-0-hit",
+      "disturbance_id": "hit",
+      "from_state": "FISSION-BRANCH-SAFE-0",
+      "to_state": "FISSION-BRANCH-WARNING-1"
+    },
+    {
+      "action_id": "fission-branch-safe-1-nominal",
+      "disturbance_id": "nominal",
+      "from_state": "FISSION-BRANCH-SAFE-1",
+      "to_state": "FISSION-BRANCH-SAFE-0"
+    },
+    {
+      "action_id": "fission-branch-safe-1-hit",
+      "disturbance_id": "hit",
+      "from_state": "FISSION-BRANCH-SAFE-1",
+      "to_state": "FISSION-BRANCH-WARNING-0"
+    },
+    {
+      "action_id": "fission-branch-warning-0-nominal",
+      "disturbance_id": "nominal",
+      "from_state": "FISSION-BRANCH-WARNING-0",
+      "to_state": "FISSION-BRANCH-SAFE-1"
+    },
+    {
+      "action_id": "fission-branch-warning-0-hit",
+      "disturbance_id": "hit",
+      "from_state": "FISSION-BRANCH-WARNING-0",
+      "to_state": "FISSION-BRANCH-SAFE-1"
+    },
+    {
+      "action_id": "fission-branch-warning-1-nominal",
+      "disturbance_id": "nominal",
+      "from_state": "FISSION-BRANCH-WARNING-1",
+      "to_state": "FISSION-BRANCH-SAFE-0"
+    },
+    {
+      "action_id": "fission-branch-warning-1-hit",
+      "disturbance_id": "hit",
+      "from_state": "FISSION-BRANCH-WARNING-1",
+      "to_state": "FISSION-BRANCH-SAFE-0"
+    }
+  ],
+  "withdrawal": {
+    "bridge_removed": true,
+    "external_decoder_removed": true,
+    "external_scheduler_removed": true,
+    "migration_controller_removed": true,
+    "removed_resources": [
+      {
+        "owner": {
+          "code": 17,
+          "label": "source-substrate"
+        },
+        "resource_id": "fission-branch-upstream-source",
+        "role": "source"
+      },
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "fission-branch-migration-bridge",
+        "role": "bridge"
+      },
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "fission-branch-migration-controller",
+        "role": "migration-controller"
+      },
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "fission-branch-external-decoder",
+        "role": "external-decoder"
+      },
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "fission-branch-external-scheduler",
+        "role": "external-scheduler"
+      },
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "fission-branch-external-repair",
+        "role": "undeclared-repair"
+      }
+    ],
+    "retained_resources": [
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-binding-bus",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-boundary",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-budget",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-clock",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-credit-ledger",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-disturbance-sensor",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-maintenance",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-object-register",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-policy",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-private-state",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-promotion-audit",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-public-interface",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-recombination-table",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-record",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-regenerator",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-repair-loop",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 202,
+          "label": "right-branch-substrate"
+        },
+        "resource_id": "fission-branch-self-register",
+        "role": "target-internal"
+      }
+    ],
+    "source_removed": true,
+    "undeclared_repair_removed": true
+  }
+}

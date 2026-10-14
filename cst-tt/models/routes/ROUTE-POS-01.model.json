@@ -1,0 +1,103 @@
+{
+  "claim_ceiling": "finite route independence under declared confluence only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "critical_pairs": [
+    {
+      "left_route": "left-then-complete",
+      "normal_form": "z",
+      "right_route": "right-then-complete"
+    }
+  ],
+  "direct_factored_pairs": [
+    {
+      "direct_route": "left-then-complete",
+      "factored_route": "right-then-complete"
+    }
+  ],
+  "interpretation": {
+    "flatness_scope": "the two declared replacement orders only",
+    "no_lineage_verdict": true,
+    "route_residue_policy": "erased only after both routes reach the certified normal form"
+  },
+  "model_id": "ROUTE-POS-01",
+  "routes": [
+    {
+      "actions": [
+        "replace-left",
+        "complete-right"
+      ],
+      "boundary": "x-to-complete",
+      "clock_translation": 2,
+      "expected_endpoint": "z",
+      "route_id": "left-then-complete",
+      "start_state": "x"
+    },
+    {
+      "actions": [
+        "replace-right",
+        "complete-left"
+      ],
+      "boundary": "x-to-complete",
+      "clock_translation": 2,
+      "expected_endpoint": "z",
+      "route_id": "right-then-complete",
+      "start_state": "x"
+    }
+  ],
+  "schema_version": "CST-TT-03",
+  "states": [
+    {
+      "current": "C-start",
+      "local_now": "N0",
+      "predictive": "P-start",
+      "route_residue": "R0",
+      "state_id": "x"
+    },
+    {
+      "current": "C-a",
+      "local_now": "N1",
+      "predictive": "P-a",
+      "route_residue": "R-a",
+      "state_id": "a"
+    },
+    {
+      "current": "C-b",
+      "local_now": "N1",
+      "predictive": "P-b",
+      "route_residue": "R-b",
+      "state_id": "b"
+    },
+    {
+      "current": "C-z",
+      "local_now": "N2",
+      "predictive": "P-z",
+      "route_residue": "R-normal",
+      "state_id": "z"
+    }
+  ],
+  "title": "acyclic confluent completion of a replacement-order critical pair",
+  "transitions": [
+    {
+      "action": "replace-left",
+      "from": "x",
+      "to": "a"
+    },
+    {
+      "action": "replace-right",
+      "from": "x",
+      "to": "b"
+    },
+    {
+      "action": "complete-right",
+      "from": "a",
+      "to": "z"
+    },
+    {
+      "action": "complete-left",
+      "from": "b",
+      "to": "z"
+    }
+  ]
+}

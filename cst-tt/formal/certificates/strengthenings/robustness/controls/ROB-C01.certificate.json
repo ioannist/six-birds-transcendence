@@ -1,0 +1,24 @@
+{
+  "audit": {
+    "accepted": false,
+    "dimension_results": {
+      "order-step": true,
+      "predictive-step": true,
+      "progress-step": false,
+      "record-step": true,
+      "tick-step": true
+    },
+    "hard_gates_exact_and_true": true,
+    "within_declared_box": false
+  },
+  "certificate_id": "ROB-C01",
+  "claim_ceiling": "declared robustness-box boundary only",
+  "claim_lanes": [
+    "M"
+  ],
+  "description": "progress margin leaves box and stalls",
+  "model_ref": "models/strengthenings/robustness/controls/ROB-C01.model.json",
+  "model_sha256": "9823ea0c7ad6710c1d7d49e2d48f0abd3e2eba779253e32bb8d98ea6421fa39e",
+  "result_status": "checked-finite-robustness-boundary-control",
+  "schema_version": "CST-TT-07A"
+}

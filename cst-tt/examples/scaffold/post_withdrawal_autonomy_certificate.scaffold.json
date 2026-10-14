@@ -1,0 +1,38 @@
+{
+  "schema_version": "CST-TT-05",
+  "certificate_id": "AUT-POS-PLACEHOLDER",
+  "model_ref": "models/autonomy/placeholder.model.json",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "scaffold-only",
+  "claim_lanes": [
+    "A"
+  ],
+  "claim_ceiling": "model-relative target autonomy for every disturbance word up to the declared finite horizon",
+  "computed_invariant_state_ids": [
+    "placeholder"
+  ],
+  "response_policy": [
+    {}
+  ],
+  "finite_horizon": 0,
+  "finite_words_checked": 1,
+  "collapse_trace": [],
+  "theorem_evidence": {},
+  "audit": {
+    "withdrawal_complete": true,
+    "endpoint_inside": true,
+    "package_inside": true,
+    "target_owned_responses": true,
+    "anti_stall_on_invariant": true,
+    "budget_solvent_on_invariant": true,
+    "finite_horizon_survives": true,
+    "autonomy_valid": true,
+    "failed_obligations": []
+  },
+  "checker": {
+    "module": "cst_tt.withdrawal_autonomy_checker",
+    "function": "audit_autonomy",
+    "python_version": "placeholder",
+    "checked_at_phase": "CST-TT-05"
+  }
+}

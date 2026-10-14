@@ -1,0 +1,129 @@
+\section{One source, two continuers}
+\label{sec:branching}
+
+The fission cases of personal-identity theory ask what happens when one source
+divides into two equally good successors \citep{Parfit1984, Olson2023SEP}. We
+cannot settle that question and do not try. We can say exactly what the
+structural checks of this paper do in such a case. The short answer is that
+continuation becomes a relation with two continuers, and nothing in the
+structure picks one of them.
+
+\paragraph{A symmetric fork that passes.}
+The chain model of Section~\ref{sec:continuation} also has a fork. One source
+system hands off to two target systems, and both branches receive identical
+inputs, so the fork is symmetric by construction.
+
+\begin{theorem}[Continuation is relation-valued]
+% claim: TTH-08
+\label{thm:fork}
+In the symmetric fork of the chain model, labelled
+\snapGSevenForkSystemIds{} (source first), the following hold.
+\begin{enumerate}
+\item The source continues to each of the two targets, and the valid targets
+are exactly these two. Each carries the chain model's handoff certificate,
+covering realization, lineage and autonomy after withdrawal, for every state of
+the finite factor.
+\item The swap of the two targets preserves validity and is an involution.
+\item No continuer is fixed by the swap.
+\end{enumerate}
+\end{theorem}
+
+The substance of the theorem is the first part. Each branch carries the chain
+model's handoff certificate: its realization check (both of its closed condition checks
+accepted, faithful receiver content, an actual entry at the target's root), its
+lineage check (future-transport laws, a passing handoff, raw transport), and a
+controller that wins its game after withdrawal. This is a kernel-checked
+computation on the model. It is the model's own certificate, not the full
+generic gate of Definition~\ref{def:certificate}. The third part follows at once, since the swap exchanges the only
+two continuers. Its consequence is the one that matters. No rule that commutes
+with the swap can select a single continuer, because the swap fixes neither.
+This does not make either choice invalid: choosing one target alone still
+gives a valid continuation. What fails is any ground in the structure for the
+choice.
+
+A smaller fork shows the same thing with less machinery.
+
+\begin{proposition}[Symmetry gives no ground for choosing]
+% claim: TTN-11
+\label{prop:symmetric-fork}
+On the two-copy model there is a symmetric fork into two distinct target
+systems, both passing the realization and autonomy checks, in which the swap
+maps valid continuers to valid continuers and fixes none of them.
+\end{proposition}
+
+Again the argument against a symmetric choice is elementary: the swap has no
+fixed point at all. We include the proposition because it shows that symmetric
+forks already arise for models far simpler than the chain.
+
+\paragraph{Ancestry does not decide identity.}
+One might hope to recover a single continuer from ancestry, that is, from
+which target descends from which source. On the chain model, after the fork,
+we can test this directly, with ancestry computed from the actual execution as
+in Section~\ref{sec:ancestry}.
+
+\begin{theorem}[Ancestry underdetermines identity]
+% claim: TTF-07
+\label{thm:identity}
+On the chain model, for every $n$, there is a safe execution of $n+1$ steps
+after withdrawal, ending in a fission, in which the source has two descendants
+holding the same state. That state passes the model's realization
+check, with conditions (4) to (7) in simplified form, and obeys its
+continuation law.
+Consider identity relations that are equivalences, that identify the source
+with at most one other node, and that identify the source with no node other
+than itself that is not its descendant under the computed ancestry. Among these there are two that
+identify the source with different descendants, and neither identification is
+forced.
+\end{theorem}
+
+The identity notion here is deliberately weak and explicit: an equivalence
+relation that pairs the source with itself and with at most one other node,
+which must be a descendant. The theorem says that ancestry, even computed from an actual
+execution, does not choose between the two descendants. It does not say that
+neither is the source, nor that identity is undefined. A stronger statement,
+that ancestry rules out identity under every possible notion, is false as
+stated, and we do not make it.
+
+These results fit the main positions in the literature without deciding
+between them. On the closest-continuer theory a tie leaves no continuer at all
+\citep{Nozick1981}, which is consistent with our result that no symmetric rule
+picks one. Such a theory makes whether one candidate continues the source
+depend on whether a rival exists. That is the standard criticism of it, and
+\citet{Hawley2005} examines what exactly is wrong with it. On the multiple-occupancy view two persons share their stages
+before the division \citep{Lewis1976}, and we have instead let the
+continuation relation have two values. \citet{Cerullo2015} argues informally
+that uploading yields branching continuers with no reason to favour either. The
+theorems above are formal structural analogues of that view on finite systems.
+Our identity notion, however, is constrained by ancestry and is shown not to
+decide, whereas his criterion is built from ancestry and is taken to settle
+continuity. \citet{Weber2025Multiplicity} states the same structure for
+uploading: the continuity relations that underlie persistence can hold from
+one to many. He argues that it is plausible that we could become several distinct
+persons, and we take no view on that. Nothing here is a claim about persons.
+
+\paragraph{Branches preserved, recombination lost.}
+Fission raises a converse question: if each branch is preserved, is the way the
+branches combine preserved too? It need not be.
+
+\begin{proposition}[Branchwise preservation is not recombination]
+% claim: TTN-14
+\label{prop:recombination}
+On the two-copy model, the staged map preserves every ordered branch record
+from source to target, yet two things fail. On the target, the two assemblages
+have equal joint couplings, so joint content no longer strictly refines the
+branch records. And the source's and the target's joint couplings differ, so
+the staged transport of the binding condition fails.
+\end{proposition}
+
+The binding condition here is in its simplified form, a declared coupling, so
+the proposition concerns that form. It is the cross-system counterpart of a
+familiar point: aggregating branch contents does not determine their
+combination \citep{TsiokosArchitecture2026}. Figure~\ref{fig:fork} draws the
+fork and the swap.
+
+\begin{figure}[tbp]
+\centering
+\input{figures/fig_fork}
+\caption{The symmetric fork. One source hands off to two targets that receive identical inputs, and each is autonomous after withdrawal. The swap of the two targets is an involution and fixes neither, so nothing in the structure selects one of them. We draw no conclusion about the identity of either branch.}
+\label{fig:fork}
+\end{figure}

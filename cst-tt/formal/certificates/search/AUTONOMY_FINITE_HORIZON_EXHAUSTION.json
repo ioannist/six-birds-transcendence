@@ -1,0 +1,10 @@
+{
+  "all_words_survive": true,
+  "certificate_word_count": 127,
+  "claim_ceiling": "finite words through the declared horizon only",
+  "disturbance_alphabet_size": 2,
+  "expected_word_count": 127,
+  "finite_horizon": 6,
+  "schema_version": "CST-TT-05",
+  "search_id": "AUTONOMY-FINITE-HORIZON-EXHAUSTION"
+}

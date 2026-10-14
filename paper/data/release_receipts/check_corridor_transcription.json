@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_corridor_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_corridor_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_corridor_transcription.log",
+  "log_sha256": "ce59e3b339c3b2de4d8e99f0eeff1399b65bf719701dbcdea38c54bd98500908",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:33:59+00:00",
+  "status": "pass",
+  "summary": "PASS: Lean-evaluated stages (all eight frontier fields, support, realization), events/owners/ordinals, dependencies, carrier chain, additive inputs and computed removal projections, audit references, derived updates; constructed COMPOSED stages/event graph/leg descriptors.\nNon-evidence: stored transport booleans and route-status labels; descriptive labels/metadata are not operative inputs.\nCOR-POS-02A sha256 6a162e3005a78178e4790efe381ebd848b733b388f6c0207081b8cd221b96aa8\nCOR-POS-02B sha256 165c98510f8ea091b2e8149fa4f02f8e8c3be892337fb4619846712ff3977e4d\nCOR-POS-02-COMPOSED sha256 4ca7c0047b05bc42c8acfa1b4f4f064b86ac125a49b46e9a6acd46835811fe88"
+}

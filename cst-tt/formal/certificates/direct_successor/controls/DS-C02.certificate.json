@@ -1,0 +1,50 @@
+{
+  "audit": {
+    "all_stages_temporally_realized": true,
+    "detached_operational_pattern": true,
+    "direct_dependency_declared": true,
+    "direct_successor_valid": false,
+    "distinct_carriers": true,
+    "edge_counterfactually_necessary": true,
+    "edge_kind_valid": true,
+    "failed_obligations": [
+      "no-storage-mediator"
+    ],
+    "forbidden_verdict_fields_absent": true,
+    "no_alternative_temporal_parent": true,
+    "no_storage_mediator": false,
+    "not_replayable_archive": true,
+    "order_step_valid": true,
+    "ownership_interface_valid": true,
+    "payload_components_complete": true,
+    "payload_hashes_match": true,
+    "predictive_step_valid": true,
+    "progress_step_valid": true,
+    "route_discipline_valid": true,
+    "single_use_temporal_token": true,
+    "source_and_target_support_valid": true,
+    "source_event_is_last": true,
+    "stage_adjacency": true,
+    "stages_well_formed": true,
+    "strict_record_step_valid": true,
+    "target_event_is_first": true,
+    "tick_step_valid": true
+  },
+  "certificate_id": "DS-C02",
+  "checker": {
+    "checked_at_phase": "CST-TT-04",
+    "function": "audit_direct_successor",
+    "module": "cst_tt.corridor",
+    "python_version": "3.13.5"
+  },
+  "control_family": "direct-successor",
+  "control_passed": true,
+  "expected_failed_obligation": "no-storage-mediator",
+  "model_ref": "models/direct_successor/controls/DS-C02.model.json",
+  "model_sha256": "419759ebceb3389fbe82ba9439a734aaaa3546ec6a35aacd442f1cba236bef84",
+  "observed_failed_obligations": [
+    "no-storage-mediator"
+  ],
+  "result_status": "checked-finite-negative-control",
+  "schema_version": "CST-TT-04"
+}

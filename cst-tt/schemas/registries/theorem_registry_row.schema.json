@@ -1,0 +1,79 @@
+{
+  "$id": "https://six-birds.local/cst-tt/schemas/theorem-registry-row.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "claim_ceiling": {
+      "type": "string"
+    },
+    "claim_lanes": {
+      "type": "string"
+    },
+    "dependencies": {
+      "type": "string"
+    },
+    "family": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "constructive",
+        "no-go",
+        "boundary",
+        "fallback",
+        "definition-boundary"
+      ],
+      "type": "string"
+    },
+    "lean_statement": {
+      "type": "string"
+    },
+    "legacy_provenance_ids": {
+      "pattern": "^$|^(PTH|FTH)-[0-9]{2}(;(PTH|FTH)-[0-9]{2})*$",
+      "type": "string"
+    },
+    "name": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "phase": {
+      "pattern": "^CST-TT-[0-9]{2}[AB]?$",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "open-scaffold",
+        "checked-finite-countermodel",
+        "proved",
+        "conditional",
+        "killed",
+        "proof-source-and-executable-certificate-landed",
+        "proof-source-and-checked-finite-countermodel",
+        "finite-discriminator-evidence-landed-theorem-open"
+      ]
+    },
+    "theorem_id": {
+      "pattern": "^(TTH|TTN|TTD|TTF|TTS)-[0-9]{2}$",
+      "type": "string"
+    },
+    "toy_dependencies": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "theorem_id",
+    "name",
+    "family",
+    "kind",
+    "phase",
+    "status",
+    "claim_lanes",
+    "dependencies",
+    "lean_statement",
+    "toy_dependencies",
+    "claim_ceiling",
+    "legacy_provenance_ids"
+  ],
+  "title": "Theorem registry row",
+  "type": "object"
+}

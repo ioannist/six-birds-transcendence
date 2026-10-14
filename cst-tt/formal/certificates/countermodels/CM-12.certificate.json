@@ -1,0 +1,42 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm12_gapResume",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-12",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-12",
+  "finite_model_ref": "models/countermodels/CM-12.model.json",
+  "finite_model_sha256": "284816cdec01d83d82dff0b77a3cace5fcbd839bc99deedb2aaf4e59cd61ebe6",
+  "minimality_status": "certified",
+  "model_family": "gap-resume",
+  "name": "Temporal gap followed by an equivalent resumed stream",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "Equivalent realized endpoints do not satisfy the strict no-gap temporal corridor when an internal stage is unrealized.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "all temporal-realization bit traces of length 1..4",
+    "candidates_explored": 30,
+    "lower_bound_argument": "A source endpoint, an internal gap, and a target endpoint require at least three stages.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 4,
+    "same_size_candidates_explored": 8,
+    "same_size_qualifying_candidates": 1,
+    "size_measure": "(stage_count)",
+    "smaller_candidates_explored": 6,
+    "witness_size_vector": [
+      3
+    ]
+  },
+  "target_no_go_id": "TTN-09",
+  "toy_model_ref": "TTM-08"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "paper/tools/verify_corpus_dois.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "corpus_doi_live",
+  "kind": "diagnostic",
+  "log_path": "lean/.validate-logs/W19a/corpus-doi-live.log",
+  "log_sha256": "e441a7144ac56c7bb902a6f393f3dc68364848805fbaef88a9f41770e9636c4e",
+  "metrics": {},
+  "recorded_at": "2026-10-13T12:12:35+00:00",
+  "status": "pass",
+  "summary": "{\"status\": \"pass\", \"published_records\": 7}"
+}

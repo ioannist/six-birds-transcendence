@@ -1,0 +1,217 @@
+\section{The continuation theorem}
+\label{sec:continuation}
+
+We now put the three checks together. In words: a handoff whose certificate
+passes has a target that realizes the conditions, a strict live-overlap
+lineage from source to target, and a target that keeps itself going once
+everything used for the transfer is withdrawn.
+
+\subsection{The certificate}
+
+We call a \emph{handoff model} the following data: a source and a target system, typed maps
+that carry each condition's cells from source to target, a cover on the
+target, the stages and routes of the episode, a record of the execution, and a
+list of resources marked as withdrawn or retained. All of these are given as
+raw data. The predicates that the checks use are defined from that data, and
+no derived object is supplied separately: not the target's assignment, not the
+predictive classes, not the success flags. The one thing that is supplied is
+evidence, namely a proof that an invariance obligation holds, used by the
+autonomy check. Given an assignment of values to
+the source's cells, we compute the target's assignment by mapping the
+source's local pieces across and gluing them on the target's cover.
+
+\begin{definition}[Continuation certificate]
+% claim: TTH-06-GEN
+\label{def:certificate}
+A handoff model with a source assignment passes the \emph{continuation
+certificate} if every check of the formal gate holds. Appendix~\ref{app:checks}
+expands the gate component by component. In summary, the gate requires the following.
+\begin{enumerate}
+\item \emph{Source.} The source assignment satisfies the eight conditions on
+the source.
+\item \emph{Realization.} The mapped pieces satisfy the cover, scope,
+totality and value-preservation checks. Each is accepted by its own condition
+on the target, and adjacent pieces agree where they overlap.
+\item \emph{Lineage.} For every route of the episode the computed handoffs
+form a strict chain (Definition~\ref{def:handoff}). The predictive and
+record readouts of source and target are related by the declared transport.
+Within each of the two systems, states with the same predictive code have the
+same observation laws for every finite sequence of actions. The translation
+from source to target commutes with initial states, transition weights,
+successors and observations on the whole set of source states the execution
+reaches. The typed endpoint obligations and the coherence of the shared
+runtime also hold, including the temporal condition's decoder.
+\item \emph{Autonomy.} After every declared role is withdrawn, a game
+invariant certificate (Lemma~\ref{lem:strategy}) covers the target's runs. It
+is a stronger object than the finite certificate of
+Definition~\ref{def:autonomy}: it ranges over full run histories, and it
+requires normalized responses in the stated sparse format, legal moves using
+only the target's own retained resources, and strict advance of order, tick,
+progress and records. In the \emph{realization-preserving} version the
+invariant includes the target's realization. In the \emph{operational}
+version it requires only membership in a declared part of the target's state
+space.
+\item \emph{Bookkeeping.} The route is recorded as route-indexed, and the
+receiver of the source's content passes its own content and intervention
+checks.
+\end{enumerate}
+\end{definition}
+
+\subsection{The theorem}
+
+\begin{theorem}[Continuation theorem]
+% claim: TTH-06-GEN
+\label{thm:continuation}
+Let a handoff model with a source assignment pass the continuation certificate
+in its realization-preserving version. Then the following hold.
+\begin{enumerate}
+\item[(R)] \emph{Realization.} The computed target assignment is total,
+restricts to every mapped piece on its scope, and is accepted by all eight
+conditions on the target.
+\item[(L)] \emph{Lineage.} For every route the computed handoffs form a
+strict chain. Moreover, within the source and within the target, any two
+states with the same predictive code give the same probability to every finite
+sequence of observations under every finite sequence of actions.
+\item[(A)] \emph{Autonomy.} After withdrawal there is a strategy for the target
+such that every history it generates, from every genuine entry state and
+following every outcome of positive probability, stays realized, uses only the
+target's own retained resources, makes only legal and affordable moves, and
+strictly advances order, tick, progress and records at every step.
+\end{enumerate}
+In the operational version, (R) and (L) hold as stated, and (A) holds with
+``stays realized'' replaced by ``stays in the declared part of the state
+space''.
+\end{theorem}
+
+We prove the theorem from three lemmas, and we state the two that carry most
+of the weight.
+
+\begin{lemma}[From one step to every future]
+% claim: TTH-06-GEN
+\label{lem:lumping}
+Consider a system with a finite list of outcomes, and suppose any two states
+with the same code satisfy three conditions. They have the same observation.
+For every action and every outcome, they move to states with the same code.
+For every action, they give equal total weight to each code class of next
+states. Then any two states with the same code give the same probability to
+every finite sequence of observations, under every finite sequence of
+actions.
+\end{lemma}
+
+\begin{lemma}[From an invariant to a strategy]
+% claim: TTH-06-GEN
+\label{lem:strategy}
+Suppose an invariant set of runs satisfies the following conditions.
+\begin{itemize}
+\item The withdrawal holds, and some entry run exists.
+\item Every entry lies in the invariant.
+\item Every run in the invariant satisfies the realization predicate and the
+resource conditions.
+\item For every run in the invariant and every disturbance, some legal action
+has normalized outcome weights (nonnegative, summing to one, with a positive
+entry), and each outcome of positive weight leads to a run in the invariant
+and satisfies the transition law.
+\end{itemize}
+Then there is a causal strategy under which every history generated from every
+entry consists of runs satisfying the realization predicate and the resource
+conditions. At each of these runs, for every disturbance, the chosen action is
+legal and normalized, and each of its positive outcomes satisfies the
+transition law.
+\end{lemma}
+
+Lemma~\ref{lem:lumping} is a lumpability argument \citep{KemenySnell1976},
+carried from a single chain to a system with actions and observations, by
+induction on the length of the sequence. Its hypothesis makes the partition
+into codes a probabilistic bisimulation in the sense of \citet{LarsenSkou1991},
+adapted so that observations label the states. It is stronger still, since it aligns
+successor codes outcome by outcome and not only the masses of the code
+classes. Its conclusion is that states with the same code agree on every
+action-observation test in the sense of \citet{LittmanSuttonSingh2002}.
+Lemma~\ref{lem:strategy} is the standard construction of a
+controlled-invariant strategy \citep{Blanchini1999, AubinBayenSaintPierre2011}.
+In the terms of infinite games, the invariant is a trap for the environment,
+which chooses the disturbance and the outcome, and the strategy keeps play
+inside it \citep[p.~36]{Mazala2002}.
+Its hypotheses exclude the vacuous cases: an empty set of entries, and empty
+responses. The third ingredient is the gluing theorem of
+Section~\ref{sec:realization}, together with the locality of each
+condition, which carries local acceptance over to the glued assignment. With
+these in hand, the proof of the theorem consists of applying each lemma to its
+own check. We say this plainly, because the theorem is only as strong as its
+definitions. Its value lies in two facts. Each check's predicates are defined from the
+model's own data. Each conclusion is a property of the model, not merely a field
+of a certificate, even though autonomy draws on a supplied proof of invariance.
+
+\paragraph{Two versions.}
+In the realization-preserving version, autonomy implies realization, because
+the invariant includes it. In the operational version, the three conclusions
+are logically independent, in the following sense. On the two-copy model we
+make three single edits of the baseline: deleting one published cell, removing
+the source's support from one overlap step, or withdrawing the target's
+retained recharge. Each edit makes exactly one of the three conclusions fail while the
+other two hold. We do not exhibit all eight patterns of success and failure.
+
+\paragraph{What the theorem does not give.}
+We prove no converse: a target that realizes the conditions and continues the
+source need not have a passing certificate. The autonomy conclusion covers the
+disturbances of the recorded execution and every outcome of positive
+probability of the chosen response. We say nothing about resource shocks or
+perturbations of the transition weights. The sparse format in which responses
+are listed is a representation choice, and the certificate depends on it.
+Autonomy in our sense is equivalent to the existence of some invariant
+certificate. This is a statement about existence, not a procedure for finding
+one. The finite construction we use to produce certificates is sound but may
+be incomplete, so its failure to produce one would not show that autonomy
+fails.
+Lineage is strict lineage. It is not identity, and realization on the target is
+not the soundness of any certificate for consciousness. Transport of the
+temporal signature alone does not establish lineage.
+
+\subsection{Instances}
+
+\begin{proposition}[A handoff that passes]
+% claim: TTH-06-INST
+\label{prop:instance}
+On the two-copy model of Section~\ref{sec:copy}, with its baseline
+assignment, the continuation certificate passes in both versions. Hence one
+handoff from the source copy to the target copy has realization on the target,
+strict lineage and autonomy after withdrawal.
+\end{proposition}
+
+The handoff is a single change of system. Conditions (4) to (7) hold in the
+simplified form of Section~\ref{sec:setting}. The autonomy check draws on the
+source's support in the recorded history, while the lineage check uses the
+source's funded execution, and we keep the two apart. A second instance, with
+the histories of the two routes exchanged, also passes.
+
+A single handoff is one step. The second instance is a chain.
+
+\begin{proposition}[A chain through three systems]
+% claim: TTH-07
+\label{prop:chain-instance}
+On the chain model, an episode passes through three distinct systems, labelled
+\snapGSevenStrictChainSystemIds{} in order, by two handoffs. For each of the
+\snapGSevenNativeFactorStates{} states of its finite factor, the following hold:
+the first and last systems are distinct; the final target owns itself; both
+handoffs realize the conditions on their targets; both satisfy their lineage
+checks; and the final target's controller wins its game after withdrawal. The
+middle system's whole signature agrees exactly between the two handoffs.
+\end{proposition}
+
+The composite lineage here is the conjunction of the two handoffs' lineages.
+The general fact that strict handoffs compose into a strict chain is
+Proposition~\ref{prop:chain}. On the chain model, conditions (4) to (7) again
+hold in simplified form, and disturbances are limited to a unit class. Several
+of the withdrawn roles coincide in this model. Its receiver preserves the
+payload and the source's classes, but not which history or route the source
+took. A general composition statement for such certificates also holds, but it is a
+formal rearrangement that does not use the agreement between the two
+handoffs, so we rely on the checked instance instead.
+Figure~\ref{fig:chain} draws the chain.
+
+\begin{figure}[tbp]
+\centering
+\input{figures/fig_chain}
+\caption{The chain through three systems. Each handoff is live, and each earlier system is withdrawn after its handoff. The box gives the predictive refinement on the model's finite factor. Conditions (4) to (7) hold in simplified form on this model.}
+\label{fig:chain}
+\end{figure}

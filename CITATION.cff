@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the paper below. The code is MIT-licensed; the manuscript, text, data and figures are licensed under CC BY 4.0 (see LICENSE)."
+title: "When a Copy Is Not a Continuation: Lean development, finite models and checking scripts"
+type: software
+authors:
+  - family-names: Tsiokos
+    given-names: Ioannis
+    orcid: "https://orcid.org/0009-0009-7659-5964"
+    affiliation: "Automorph Inc."
+repository-code: "https://github.com/ioannist/six-birds-transcendence"
+url: "https://github.com/ioannist/six-birds-transcendence"
+abstract: >-
+  The Lean 4 development, finite models, result snapshot, checking scripts and
+  manuscript sources for a paper on what makes a transfer of organization
+  between finite systems a continuation rather than a copy: realization on the
+  target, live-overlap lineage, and autonomy after withdrawal.
+keywords:
+  - continuation
+  - personal identity
+  - fission
+  - viability
+  - finite models
+  - Lean 4
+  - mathematical consciousness science
+license: MIT
+date-released: "2026-10-14"
+preferred-citation:
+  type: article
+  title: "When a Copy Is Not a Continuation"
+  authors:
+    - family-names: Tsiokos
+      given-names: Ioannis
+      orcid: "https://orcid.org/0009-0009-7659-5964"
+  year: 2026
+  doi: "10.5281/zenodo.23233188"
+  publisher:
+    name: Zenodo

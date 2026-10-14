@@ -1,0 +1,19 @@
+{
+  "deterministic": true,
+  "python_hash_seed": 0,
+  "result": {
+    "and_table_is_jointly_nonredundant": true,
+    "boolean_update_tables_examined": 16,
+    "jointly_nonredundant_table_count": 4,
+    "jointly_nonredundant_table_masks": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "nonverdict_intervention_predicates_exist": true
+  },
+  "schema_version": "CST-TT-04",
+  "search_id": "NONREDUNDANCY_TRUTH_TABLE_SEARCH",
+  "usage_boundary": "bounded finite stress evidence; not a proof oracle"
+}

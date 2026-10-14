@@ -1,0 +1,20 @@
+{
+  "artifact_ref": "models/transport/controls/ROUTE-C01.model.json",
+  "artifact_sha256": "f2b0d0bd9fd6c568f59abe8735cd9c034bf1d796f16fd0dbd811b5d3f537ead8",
+  "baseline_ref": "models/routes/ROUTE-POS-01.model.json",
+  "checker": {
+    "function": "audit_route_discipline",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5",
+    "valid_result": false
+  },
+  "claim_ceiling": "finite structural obligation boundary only",
+  "control_id": "ROUTE-C01",
+  "control_kind": "route",
+  "expected_primary_failure": "every-declared-critical-pair-joins",
+  "observed_failures": [
+    "every-declared-critical-pair-joins"
+  ],
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-03"
+}

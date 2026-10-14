@@ -1,0 +1,19 @@
+{
+  "command": [
+    "lake",
+    "build"
+  ],
+  "cwd": "lean",
+  "environment": {},
+  "exit_code": 0,
+  "id": "lean_build",
+  "kind": "lean_build",
+  "log_path": "lean/.validate-logs/W19a/lean-build.log",
+  "log_sha256": "0b8f3fa33c97639c5f37db472b7f7bbbf27a600fe9c3b440db388e4040fdd5bb",
+  "metrics": {
+    "jobs": 799
+  },
+  "recorded_at": "2026-10-13T11:33:58+00:00",
+  "status": "pass",
+  "summary": "Build completed successfully (799 jobs)."
+}

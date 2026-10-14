@@ -1,0 +1,33 @@
+{
+  "audit": {
+    "action_credit_conflict_witnessed": false,
+    "branchwise_payload_preserved": true,
+    "certificate_id": "FUSION-CONTROL-VALID-PACKAGE",
+    "common_target": true,
+    "component_hashes_valid": true,
+    "distinct_sources": true,
+    "failed_obligations": [
+      "FUS-O08-action-credit-conflict",
+      "FUS-O09-recombination-failure",
+      "FUS-O10-integrated-package-fails",
+      "FUS-O11-merger-does-not-imply-package"
+    ],
+    "fusion_boundary_valid": false,
+    "integrated_target_package_fails": false,
+    "left_lineage_valid": true,
+    "merger_does_not_imply_package": false,
+    "recombination_failure_witnessed": false,
+    "right_lineage_valid": true,
+    "target_package_audited": true
+  },
+  "claim_ceiling": "finite logical boundary control only",
+  "control_id": "FUSION-CONTROL-VALID-PACKAGE",
+  "expected_failures": [
+    "FUS-O08-action-credit-conflict",
+    "FUS-O09-recombination-failure",
+    "FUS-O10-integrated-package-fails",
+    "FUS-O11-merger-does-not-imply-package"
+  ],
+  "result_status": "checked-fusion-boundary-negative-control",
+  "schema_version": "CST-TT-06"
+}

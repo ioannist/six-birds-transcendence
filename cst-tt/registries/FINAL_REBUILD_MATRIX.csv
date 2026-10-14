@@ -1,0 +1,9 @@
+phase,status,generated_surface_count,byte_identical_surface_count,source,final_closure_rerun_status
+CST-TT-00,PASS,21,,manifests/CST-TT-00_REBUILD_VERIFICATION.json,pending-final-clean-extraction-rerun
+CST-TT-01,PASS,72,72,manifests/CST-TT-01_REBUILD_VERIFICATION.json,pending-final-clean-extraction-rerun
+CST-TT-02,PASS,74,74,manifests/CST-TT-02_REBUILD_VERIFICATION.json,pending-final-clean-extraction-rerun
+CST-TT-03,PASS,110,110,manifests/CST-TT-03_REBUILD_VERIFICATION.json,pending-final-clean-extraction-rerun
+CST-TT-04,PASS,143,143,manifests/CST-TT-04_REBUILD_VERIFICATION.json,pending-final-clean-extraction-rerun
+CST-TT-05,PASS,88,88,manifests/CST-TT-05_REBUILD_VERIFICATION.json,pending-final-clean-extraction-rerun
+CST-TT-06,PASS,131,131,manifests/CST-TT-06_REBUILD_VERIFICATION.json,pending-final-clean-extraction-rerun
+CST-TT-07A,PASS,90,90,manifests/CST-TT-07A_REBUILD_VERIFICATION.json,pending-final-clean-extraction-rerun

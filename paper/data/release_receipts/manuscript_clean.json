@@ -1,0 +1,17 @@
+{
+  "command": [
+    "latexmk",
+    "-C"
+  ],
+  "cwd": "paper",
+  "environment": {},
+  "exit_code": 0,
+  "id": "manuscript_clean",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/manuscript-clean.log",
+  "log_sha256": "a7f1bfc37e500a6c01479c278ac2b269d75bee7d2a9e482e94e5f995d1be6ec6",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:58:59+00:00",
+  "status": "pass",
+  "summary": "Rc files read (in order):\n  ./latexmkrc\nLatexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.\nLatexmk: Doing full clean up for 'main.tex'\n"
+}

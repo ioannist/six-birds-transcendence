@@ -1,0 +1,28 @@
+
+digraph CST_EXP_06 {
+  rankdir=LR;
+  graph [fontname="Helvetica", bgcolor="white", pad="0.2", nodesep="0.45", ranksep="0.7"];
+  node [shape=box, style="rounded", fontname="Helvetica", fontsize=11, margin="0.12"];
+  edge [fontname="Helvetica", fontsize=9];
+
+  pkg [label="Target package\nlocal clauses + gluing + ownership"];
+  live [label="FIACH lineage\nlive mixed-support corridor"];
+  anc [label="IAPS lineage\nleast operational ancestry"];
+  aut [label="Autonomy\nwithdrawal + controlled invariant K"];
+  primary [label="PRIMARY FT-01 / FIACH\nS-R + live S-L + A", penwidth=2];
+  fallback [label="FALLBACK FT-02 / IAPS\nS-R + ancestry S-L + A", penwidth=2];
+  nogo [label="MANDATORY FT-NG\nsymmetry · shadow · decoder · gluing\nroute · recombination · residual"];
+  excluded [label="Excluded interpretations\nconsciousness · survival · numerical identity\ncertificate soundness · A1 · A2-P", shape=note];
+
+  pkg -> primary;
+  live -> primary;
+  aut -> primary;
+  pkg -> fallback;
+  anc -> fallback;
+  aut -> fallback;
+  primary -> fallback [label="switch only under\nregistered kill criteria", style=dashed];
+  nogo -> primary [label="required controls", style=dotted];
+  nogo -> fallback [label="required controls", style=dotted];
+  primary -> excluded [label="does not imply", style=dashed];
+  fallback -> excluded [label="does not imply", style=dashed];
+}

@@ -1,0 +1,289 @@
+source,target,edge_type,reason
+AS-01,TTD-01,assumption,explicit purchased assumption
+AS-01,TTD-02,assumption,explicit purchased assumption
+AS-01,TTD-03,assumption,explicit purchased assumption
+AS-01,TTF-01,assumption,explicit purchased assumption
+AS-01,TTF-02,assumption,explicit purchased assumption
+AS-01,TTF-03,assumption,explicit purchased assumption
+AS-01,TTF-04,assumption,explicit purchased assumption
+AS-01,TTF-05,assumption,explicit purchased assumption
+AS-01,TTF-06,assumption,explicit purchased assumption
+AS-01,TTF-07,assumption,explicit purchased assumption
+AS-01,TTF-08,assumption,explicit purchased assumption
+AS-01,TTH-01,assumption,explicit purchased assumption
+AS-01,TTH-02,assumption,explicit purchased assumption
+AS-01,TTH-03,assumption,explicit purchased assumption
+AS-01,TTH-04,assumption,explicit purchased assumption
+AS-01,TTH-05,assumption,explicit purchased assumption
+AS-01,TTH-06,assumption,explicit purchased assumption
+AS-01,TTH-07,assumption,explicit purchased assumption
+AS-01,TTH-08,assumption,explicit purchased assumption
+AS-01,TTH-09,assumption,explicit purchased assumption
+AS-01,TTH-10,assumption,explicit purchased assumption
+AS-01,TTN-01,assumption,explicit purchased assumption
+AS-01,TTN-02,assumption,explicit purchased assumption
+AS-01,TTN-03,assumption,explicit purchased assumption
+AS-01,TTN-04,assumption,explicit purchased assumption
+AS-01,TTN-05,assumption,explicit purchased assumption
+AS-01,TTN-06,assumption,explicit purchased assumption
+AS-01,TTN-07,assumption,explicit purchased assumption
+AS-01,TTN-08,assumption,explicit purchased assumption
+AS-01,TTN-09,assumption,explicit purchased assumption
+AS-01,TTN-10,assumption,explicit purchased assumption
+AS-01,TTN-11,assumption,explicit purchased assumption
+AS-01,TTN-12,assumption,explicit purchased assumption
+AS-01,TTN-13,assumption,explicit purchased assumption
+AS-01,TTN-14,assumption,explicit purchased assumption
+AS-01,TTS-01,assumption,explicit purchased assumption
+AS-01,TTS-02,assumption,explicit purchased assumption
+AS-01,TTS-03,assumption,explicit purchased assumption
+AS-01,TTS-04,assumption,explicit purchased assumption
+AS-02,TTD-01,assumption,explicit purchased assumption
+AS-02,TTD-03,assumption,explicit purchased assumption
+AS-02,TTH-03,assumption,explicit purchased assumption
+AS-02,TTH-04,assumption,explicit purchased assumption
+AS-02,TTH-06,assumption,explicit purchased assumption
+AS-02,TTN-01,assumption,explicit purchased assumption
+AS-02,TTN-13,assumption,explicit purchased assumption
+AS-03,TTH-06,assumption,explicit purchased assumption
+AS-04,TTF-01,assumption,explicit purchased assumption
+AS-04,TTH-03,assumption,explicit purchased assumption
+AS-04,TTN-04,assumption,explicit purchased assumption
+AS-05,TTH-03,assumption,explicit purchased assumption
+AS-06,TTH-03,assumption,explicit purchased assumption
+AS-06,TTN-07,assumption,explicit purchased assumption
+AS-07,TTH-03,assumption,explicit purchased assumption
+AS-07,TTN-07,assumption,explicit purchased assumption
+AS-08,TTH-03,assumption,explicit purchased assumption
+AS-08,TTH-10,assumption,explicit purchased assumption
+AS-08,TTN-03,assumption,explicit purchased assumption
+AS-09,TTH-03,assumption,explicit purchased assumption
+AS-09,TTH-09,assumption,explicit purchased assumption
+AS-09,TTN-03,assumption,explicit purchased assumption
+AS-09,TTN-04,assumption,explicit purchased assumption
+AS-09,TTN-05,assumption,explicit purchased assumption
+AS-10,TTH-03,assumption,explicit purchased assumption
+AS-10,TTH-09,assumption,explicit purchased assumption
+AS-10,TTN-05,assumption,explicit purchased assumption
+AS-11,TTH-03,assumption,explicit purchased assumption
+AS-12,TTH-09,assumption,explicit purchased assumption
+AS-12,TTN-04,assumption,explicit purchased assumption
+AS-14,TTF-05,assumption,explicit purchased assumption
+AS-14,TTH-02,assumption,explicit purchased assumption
+AS-14,TTH-06,assumption,explicit purchased assumption
+AS-14,TTH-07,assumption,explicit purchased assumption
+AS-15,TTF-08,assumption,explicit purchased assumption
+AS-15,TTH-01,assumption,explicit purchased assumption
+AS-15,TTH-02,assumption,explicit purchased assumption
+AS-15,TTH-07,assumption,explicit purchased assumption
+AS-15,TTN-08,assumption,explicit purchased assumption
+AS-15,TTN-14,assumption,explicit purchased assumption
+AS-16,TTH-01,assumption,explicit purchased assumption
+AS-16,TTH-02,assumption,explicit purchased assumption
+AS-16,TTN-10,assumption,explicit purchased assumption
+AS-16,TTN-14,assumption,explicit purchased assumption
+AS-16,TTS-02,assumption,explicit purchased assumption
+AS-16,TTS-03,assumption,explicit purchased assumption
+AS-17,TTH-02,assumption,explicit purchased assumption
+AS-17,TTH-05,assumption,explicit purchased assumption
+AS-18,TTD-02,assumption,explicit purchased assumption
+AS-18,TTH-04,assumption,explicit purchased assumption
+AS-18,TTH-06,assumption,explicit purchased assumption
+AS-18,TTH-07,assumption,explicit purchased assumption
+AS-18,TTH-08,assumption,explicit purchased assumption
+AS-18,TTN-01,assumption,explicit purchased assumption
+AS-18,TTS-01,assumption,explicit purchased assumption
+AS-19,TTD-02,assumption,explicit purchased assumption
+AS-19,TTH-04,assumption,explicit purchased assumption
+AS-19,TTH-06,assumption,explicit purchased assumption
+AS-19,TTH-07,assumption,explicit purchased assumption
+AS-19,TTH-08,assumption,explicit purchased assumption
+AS-19,TTN-01,assumption,explicit purchased assumption
+AS-19,TTN-09,assumption,explicit purchased assumption
+AS-19,TTS-01,assumption,explicit purchased assumption
+AS-20,TTF-05,assumption,explicit purchased assumption
+AS-20,TTH-05,assumption,explicit purchased assumption
+AS-20,TTH-06,assumption,explicit purchased assumption
+AS-20,TTH-07,assumption,explicit purchased assumption
+AS-20,TTN-06,assumption,explicit purchased assumption
+AS-20,TTN-12,assumption,explicit purchased assumption
+AS-20,TTS-04,assumption,explicit purchased assumption
+AS-21,TTH-05,assumption,explicit purchased assumption
+AS-21,TTH-06,assumption,explicit purchased assumption
+AS-21,TTN-06,assumption,explicit purchased assumption
+AS-21,TTN-12,assumption,explicit purchased assumption
+AS-21,TTS-04,assumption,explicit purchased assumption
+AS-22,TTH-05,assumption,explicit purchased assumption
+AS-22,TTH-06,assumption,explicit purchased assumption
+AS-22,TTH-07,assumption,explicit purchased assumption
+AS-22,TTN-06,assumption,explicit purchased assumption
+AS-22,TTN-12,assumption,explicit purchased assumption
+AS-22,TTS-04,assumption,explicit purchased assumption
+AS-23,TTD-01,assumption,explicit purchased assumption
+AS-23,TTD-02,assumption,explicit purchased assumption
+AS-23,TTD-03,assumption,explicit purchased assumption
+AS-23,TTS-01,assumption,explicit purchased assumption
+AS-24,TTF-01,assumption,explicit purchased assumption
+AS-24,TTF-02,assumption,explicit purchased assumption
+AS-24,TTF-03,assumption,explicit purchased assumption
+AS-24,TTF-04,assumption,explicit purchased assumption
+AS-24,TTF-05,assumption,explicit purchased assumption
+AS-24,TTF-06,assumption,explicit purchased assumption
+AS-24,TTF-07,assumption,explicit purchased assumption
+AS-24,TTF-08,assumption,explicit purchased assumption
+AS-25,TTF-02,assumption,explicit purchased assumption
+AS-25,TTF-03,assumption,explicit purchased assumption
+AS-25,TTF-04,assumption,explicit purchased assumption
+AS-25,TTF-05,assumption,explicit purchased assumption
+AS-25,TTF-06,assumption,explicit purchased assumption
+AS-25,TTF-07,assumption,explicit purchased assumption
+AS-25,TTF-08,assumption,explicit purchased assumption
+AS-33,TTS-03,assumption,explicit purchased assumption
+AS-34,TTN-12,assumption,explicit purchased assumption
+AS-34,TTS-04,assumption,explicit purchased assumption
+D-007,D-027,definition-dependency,operational episode enters corridor data
+D-008,D-010,definition-dependency,temporal alphabet types the signature
+D-010,D-011,definition-dependency,signature is evaluated by closure semantics
+D-010,D-027,definition-dependency,frozen signature precedes corridor data
+D-011,D-012,definition-dependency,closure witness instantiates closure semantics
+D-012,D-020,definition-dependency,C6 temporal substance enters package certificate
+D-013,D-022,definition-dependency,clock translation enters bridge
+D-013,D-047,definition-dependency,clock translation types temporal-signature agreement
+D-016,D-020,definition-dependency,independent clauses enter package certificate
+D-019,D-020,definition-dependency,gluing premise enters package certificate
+D-020,D-035,definition-dependency,package certificate enters aggregate
+D-022,D-023,definition-dependency,bridge enters transport certificate
+D-023,D-029,definition-dependency,transport enters direct-successor certificate
+D-026,D-028,definition-dependency,counterfactual audit enters corridor certificate
+D-028,D-035,definition-dependency,strict corridor certificate enters aggregate
+D-030,D-032,definition-dependency,controlled system enters invariant certificate
+D-031,D-033,definition-dependency,withdrawal enters autonomy certificate
+D-032,D-033,definition-dependency,invariant enters autonomy certificate
+D-033,D-035,definition-dependency,autonomy certificate enters aggregate
+D-037,D-038,definition-dependency,operational seed enters fallback closure
+D-038,D-039,definition-dependency,fallback closure enters IAPS certificate
+D-046,D-048,definition-dependency,representative independence enters bundled transport evidence
+D-047,D-048,definition-dependency,component agreement enters bundled transport evidence
+D-048,D-057,definition-dependency,bundled temporal transport enters each atomic overlap leg
+D-056,D-058,definition-dependency,intervention projection supplies two-sided nonredundancy
+D-058,D-059,definition-dependency,atomic overlap legs enter the carrier-chain summary
+TFM-01,TTF-01,toy-evidence,canonical finite witness or control
+TFM-01,TTF-02,toy-evidence,canonical finite witness or control
+TFM-01,TTF-05,toy-evidence,canonical finite witness or control
+TFM-01,TTF-06,toy-evidence,canonical finite witness or control
+TFM-02,TTF-01,toy-evidence,canonical finite witness or control
+TFM-02,TTF-02,toy-evidence,canonical finite witness or control
+TFM-02,TTF-03,toy-evidence,canonical finite witness or control
+TFM-02,TTF-05,toy-evidence,canonical finite witness or control
+TFM-02,TTF-06,toy-evidence,canonical finite witness or control
+TFM-03,TTF-02,toy-evidence,canonical finite witness or control
+TFM-03,TTF-04,toy-evidence,canonical finite witness or control
+TFM-03,TTF-07,toy-evidence,canonical finite witness or control
+TFM-04,TTF-04,toy-evidence,canonical finite witness or control
+TFM-04,TTF-08,toy-evidence,canonical finite witness or control
+TFM-04,TTN-14,toy-evidence,canonical finite witness or control
+TTD-01,TTD-02,theorem-dependency,required theorem or boundary
+TTD-01,TTD-03,theorem-dependency,required theorem or boundary
+TTD-01,TTS-01,theorem-dependency,required theorem or boundary
+TTD-02,TTS-01,theorem-dependency,required theorem or boundary
+TTF-01,TTF-02,theorem-dependency,required theorem or boundary
+TTF-02,TTF-03,theorem-dependency,required theorem or boundary
+TTF-02,TTF-04,theorem-dependency,required theorem or boundary
+TTF-02,TTF-05,theorem-dependency,required theorem or boundary
+TTF-02,TTF-06,theorem-dependency,required theorem or boundary
+TTF-02,TTF-08,theorem-dependency,required theorem or boundary
+TTF-03,TTF-06,theorem-dependency,required theorem or boundary
+TTF-04,TTF-07,theorem-dependency,required theorem or boundary
+TTH-01,TTH-02,theorem-dependency,required theorem or boundary
+TTH-02,TTF-05,theorem-dependency,required theorem or boundary
+TTH-02,TTH-05,theorem-dependency,required theorem or boundary
+TTH-02,TTH-06,theorem-dependency,required theorem or boundary
+TTH-03,TTD-01,theorem-dependency,required theorem or boundary
+TTH-03,TTF-01,theorem-dependency,required theorem or boundary
+TTH-03,TTH-04,theorem-dependency,required theorem or boundary
+TTH-03,TTH-10,theorem-dependency,required theorem or boundary
+TTH-04,TTD-02,theorem-dependency,required theorem or boundary
+TTH-04,TTH-06,theorem-dependency,required theorem or boundary
+TTH-04,TTH-07,theorem-dependency,required theorem or boundary
+TTH-04,TTH-08,theorem-dependency,required theorem or boundary
+TTH-04,TTS-01,theorem-dependency,required theorem or boundary
+TTH-05,TTF-05,theorem-dependency,required theorem or boundary
+TTH-05,TTH-06,theorem-dependency,required theorem or boundary
+TTH-05,TTH-07,theorem-dependency,required theorem or boundary
+TTH-05,TTN-06,theorem-dependency,required theorem or boundary
+TTH-05,TTS-04,theorem-dependency,required theorem or boundary
+TTH-06,TTH-07,theorem-dependency,required theorem or boundary
+TTH-06,TTS-03,theorem-dependency,required theorem or boundary
+TTH-09,TTH-07,theorem-dependency,required theorem or boundary
+TTM-01,TTD-02,toy-evidence,canonical finite witness or control
+TTM-01,TTH-04,toy-evidence,canonical finite witness or control
+TTM-01,TTH-05,toy-evidence,canonical finite witness or control
+TTM-01,TTH-06,toy-evidence,canonical finite witness or control
+TTM-01,TTH-07,toy-evidence,canonical finite witness or control
+TTM-01,TTH-10,toy-evidence,canonical finite witness or control
+TTM-01,TTS-01,toy-evidence,canonical finite witness or control
+TTM-02,TTD-03,toy-evidence,canonical finite witness or control
+TTM-02,TTH-06,toy-evidence,canonical finite witness or control
+TTM-02,TTN-01,toy-evidence,canonical finite witness or control
+TTM-03,TTD-01,toy-evidence,canonical finite witness or control
+TTM-03,TTD-02,toy-evidence,canonical finite witness or control
+TTM-03,TTD-03,toy-evidence,canonical finite witness or control
+TTM-03,TTS-01,toy-evidence,canonical finite witness or control
+TTM-04,TTH-05,toy-evidence,canonical finite witness or control
+TTM-04,TTH-06,toy-evidence,canonical finite witness or control
+TTM-04,TTN-06,toy-evidence,canonical finite witness or control
+TTM-05,TTH-03,toy-evidence,canonical finite witness or control
+TTM-05,TTH-04,toy-evidence,canonical finite witness or control
+TTM-05,TTH-07,toy-evidence,canonical finite witness or control
+TTM-05,TTH-09,toy-evidence,canonical finite witness or control
+TTM-05,TTN-04,toy-evidence,canonical finite witness or control
+TTM-05,TTN-05,toy-evidence,canonical finite witness or control
+TTM-06,TTH-04,toy-evidence,canonical finite witness or control
+TTM-06,TTH-07,toy-evidence,canonical finite witness or control
+TTM-06,TTH-09,toy-evidence,canonical finite witness or control
+TTM-07,TTH-08,toy-evidence,canonical finite witness or control
+TTM-07,TTN-11,toy-evidence,canonical finite witness or control
+TTM-07,TTN-14,toy-evidence,canonical finite witness or control
+TTM-08,TTN-09,toy-evidence,canonical finite witness or control
+TTM-09,TTH-05,toy-evidence,canonical finite witness or control
+TTM-10,TTH-05,toy-evidence,canonical finite witness or control
+TTM-10,TTH-07,toy-evidence,canonical finite witness or control
+TTM-10,TTN-12,toy-evidence,canonical finite witness or control
+TTM-11,TTH-01,toy-evidence,canonical finite witness or control
+TTM-11,TTH-06,toy-evidence,canonical finite witness or control
+TTM-11,TTN-08,toy-evidence,canonical finite witness or control
+TTM-12,TTN-02,toy-evidence,canonical finite witness or control
+TTM-13,TTN-10,toy-evidence,canonical finite witness or control
+TTM-13,TTS-02,toy-evidence,canonical finite witness or control
+TTM-14,TTN-07,toy-evidence,canonical finite witness or control
+TTM-15,TTN-13,toy-evidence,canonical finite witness or control
+TTM-16,TTH-10,toy-evidence,canonical finite witness or control
+TTM-16,TTN-03,toy-evidence,canonical finite witness or control
+TTM-17,TTH-03,toy-evidence,canonical finite witness or control
+TTM-17,TTN-04,toy-evidence,canonical finite witness or control
+TTM-18,TTH-01,toy-evidence,canonical finite witness or control
+TTM-18,TTH-02,toy-evidence,canonical finite witness or control
+TTM-19,TTH-02,toy-evidence,canonical finite witness or control
+TTM-20,TTD-02,toy-evidence,canonical finite witness or control
+TTM-20,TTS-01,toy-evidence,canonical finite witness or control
+TTM-21,TTS-02,toy-evidence,canonical finite witness or control
+TTM-21,TTS-03,toy-evidence,canonical finite witness or control
+TTM-22,TTS-03,toy-evidence,canonical finite witness or control
+TTM-23,TTS-04,toy-evidence,canonical finite witness or control
+TTM-24,TTN-12,toy-evidence,canonical finite witness or control
+TTM-24,TTS-04,toy-evidence,canonical finite witness or control
+TTN-01,TTD-03,theorem-dependency,required theorem or boundary
+TTN-01,TTN-09,theorem-dependency,required theorem or boundary
+TTN-03,TTH-10,theorem-dependency,required theorem or boundary
+TTN-03,TTN-04,theorem-dependency,required theorem or boundary
+TTN-04,TTH-04,theorem-dependency,required theorem or boundary
+TTN-04,TTH-09,theorem-dependency,required theorem or boundary
+TTN-04,TTN-05,theorem-dependency,required theorem or boundary
+TTN-05,TTH-09,theorem-dependency,required theorem or boundary
+TTN-08,TTF-08,theorem-dependency,required theorem or boundary
+TTN-10,TTS-02,theorem-dependency,required theorem or boundary
+TTN-11,TTF-07,theorem-dependency,required theorem or boundary
+TTN-11,TTH-08,theorem-dependency,required theorem or boundary
+TTN-12,TTS-04,theorem-dependency,required theorem or boundary
+TTN-14,TTF-04,theorem-dependency,required theorem or boundary
+TTS-02,TTS-03,theorem-dependency,required theorem or boundary

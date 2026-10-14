@@ -1,0 +1,2 @@
+composition_id,left_fiach_ref,right_fiach_ref,composite_fiach_ref,intermediate_carrier,route_status,composition_valid,certificate_ref,claim_ceiling
+FIACH-COMP-01,formal/certificates/composition/fiach/FIACH-COMP-A.certificate.json,formal/certificates/composition/fiach/FIACH-COMP-B.certificate.json,formal/certificates/composition/fiach/FIACH-COMP-OUTER.certificate.json,55,route-indexed,true,formal/certificates/composition/FIACH-COMP-01.certificate.json,exact finite structural handoff composition only

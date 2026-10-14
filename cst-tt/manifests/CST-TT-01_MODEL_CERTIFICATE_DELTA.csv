@@ -1,0 +1,15 @@
+toy_id,prior_status,new_status,countermodel_ids,phase
+TTM-02,specified-not-implemented,checked-negative-instance,CM-01;CM-02,CST-TT-01
+TTM-04,specified-not-implemented,checked-negative-instance,CM-04,CST-TT-01
+TTM-05,specified-not-implemented,checked-negative-instance,CM-07,CST-TT-01
+TTM-07,specified-not-implemented,checked-negative-instance,CM-11,CST-TT-01
+TTM-08,specified-not-implemented,checked-negative-instance,CM-12,CST-TT-01
+TTM-10,specified-not-implemented,checked-negative-instance,CM-13,CST-TT-01
+TTM-11,specified-not-implemented,checked-negative-instance,CM-08,CST-TT-01
+TTM-12,specified-not-implemented,checked-negative-instance,CM-09,CST-TT-01
+TTM-13,specified-not-implemented,checked-negative-instance,CM-10,CST-TT-01
+TTM-14,specified-not-implemented,checked-negative-instance,CM-05,CST-TT-01
+TTM-15,specified-not-implemented,checked-negative-instance,CM-14,CST-TT-01
+TTM-16,specified-not-implemented,checked-negative-instance,CM-03,CST-TT-01
+TTM-17,specified-not-implemented,checked-negative-instance,CM-06,CST-TT-01
+TFM-04,specified-not-implemented,checked-negative-instance,CM-15,CST-TT-01

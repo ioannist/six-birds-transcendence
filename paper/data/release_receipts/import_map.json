@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "paper/tools/build_import_map.py",
+    "--check"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "import_map",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19b/import_map.log",
+  "log_sha256": "fb9c4b9af11b0b28fcf2273c1859683f317a4e2770478f1b83e00ae7e0c32eb5",
+  "metrics": {},
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-13T13:09:01+00:00",
+  "status": "pass",
+  "summary": "{\"doi_statuses\": {\"P05\": {\"doi\": \"10.5281/zenodo.23233137\", \"status\": \"reserved\"}, \"P07\": {\"doi\": \"10.5281/zenodo.23120470\", \"status\": \"published\"}, \"P14\": {\"doi\": \"10.5281/zenodo.23120494\", \"status\": \"published\"}, \"P18\": {\"doi\": \"\", \"status\": \"none\"}, \"P30\": {\"doi\": \"10.5281/zenodo.23087000\", \"status\": \"published\"}, \"P35\": {\"doi\": \"10.5281/zenodo.23120462\", \"status\": \"published\"}, \"P50\": {\"doi\": \"10.5281/zenodo.23088991\", \"status\": \"published\"}, \"P53\": {\"doi\": \"10.5281/zenodo.23120497\", \"status\": \"published\"}, \"P57\": {\"doi\": \"10.5281/zenodo.23184176\", \"status\": \"published\"}}, \"literal_anchor_check\": {\"no_literal_anchor (unlabelled; content compared in import_relocation.csv)\": 6, \"ok\": 13}, \"papers\": 9, \"rows\": 19}"
+}

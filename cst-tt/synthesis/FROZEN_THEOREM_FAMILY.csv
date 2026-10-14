@@ -1,0 +1,21 @@
+target_id,order,theorem_id,title,kind,source_prospectus,frozen_conjecture_shape,status
+FT-01,1,PTH-01,Acyclic local-witness gluing,constructive,TH-04,Prove a global target package witness from independently satisfiable local clause relations on a running-intersection cover.,conjecture_grade_not_proved
+FT-01,2,PTH-02,Staged heterogeneous package preservation,constructive,TH-05,"Assemble target-local clause witnesses, hard gates, and ownership into the declared finite integrated package.",conjecture_grade_not_proved
+FT-01,3,PTH-03,Live corridor composition,constructive,TH-07,"Prove composition/transitivity of no-gap mixed-support corridors under exact frontier, clock, and signature compatibility.",conjecture_grade_not_proved
+FT-01,4,PTH-04,Post-withdrawal controlled invariance,constructive_boundary,TH-06,Prove target package persistence over all finite horizons inside a target-owned controlled invariant region.,conjecture_grade_not_proved
+FT-01,5,PTH-05,FIACH certificate soundness,constructive,new_synthesis_of_TH-04_05_06_07,"A checked certificate entails S-R target package, S-L live structural lineage, and A autonomy as separate fields of one handoff record.",conjecture_grade_not_proved
+FT-01,6,PTH-06,FIACH composition,constructive,new_synthesis,"Composable FIACH episodes yield a FIACH relation from the first source to the final target, subject to route-memory and ownership-interface compatibility.",conjecture_grade_not_proved
+FT-01,7,PTH-07,Relation-valued fission,constructive_boundary,TH-08;TH-14,A symmetric valid fork relates the source to both targets and cannot be invariantly reduced to one target.,conjecture_grade_not_proved
+FT-01,8,PTH-08,Detached-copy separation,no_go_boundary,TH-22,Endpoint-isomorphic package-bearing autonomous reconstruction need not satisfy live-corridor lineage.,conjecture_grade_not_proved
+FT-01,9,PTH-09,External-support autonomy failure,no_go,TH-17,A decoder/scheduler/repair-dependent target fails the declared withdrawal autonomy predicate.,conjecture_grade_not_proved
+FT-01,10,PTH-10,Local/global package obstruction,no_go,TH-20;TH-16,Local or branchwise certificates need not form one globally coherent package or preserve recombination.,conjecture_grade_not_proved
+FT-01,11,PTH-11,Route-memory composition boundary,no_go_boundary,TH-23,Endpoint/public bridge equivalence is not a congruence when retained route memory differs.,conjecture_grade_not_proved
+FT-01,12,PTH-12,Public-shadow insufficiency,no_go,TH-13,Public/report-perfect matching cannot decide hidden package or process predicates on a model class containing shadow-colliding alternatives.,conjecture_grade_not_proved
+FT-02,1,FTH-01,Predictive quotient and bridge descent,constructive,TH-01,Define finite predictive partitions and a representative-independent cross-carrier bridge.,conjecture_grade_not_proved
+FT-02,2,FTH-02,Least operational ancestry relation,constructive,TH-09,Prove finite monotone closure stabilizes at a unique least relation.,conjecture_grade_not_proved
+FT-02,3,FTH-03,Independent-twin exclusion,constructive_boundary,TH-11,A disconnected structural twin cannot enter the least relation under no-ex-nihilo rules.,conjecture_grade_not_proved
+FT-02,4,FTH-04,"Fission, fusion, and empty targets",constructive_boundary,TH-10;TH-14;TH-16,Derive relation-valued branch/fusion forms and retain a conflict/gluing guard.,conjecture_grade_not_proved
+FT-02,5,FTH-05,IAPS integrated target theorem,constructive,TH-04;TH-05;TH-06;TH-09,An ancestral target with a glued target package and post-withdrawal invariant region is an integrated autonomous structural successor.,conjecture_grade_not_proved
+FT-02,6,FTH-06,Destructive-reconstruction/twin separation,constructive_boundary,TH-11;TH-21,A source-record-target path may qualify while an identical independent twin does not; without seed/dormancy semantics the gap case remains underdetermined.,conjecture_grade_not_proved
+FT-02,7,FTH-07,No unique identity from ancestry,no_go_boundary,TH-14,Relation membership under exact symmetry supplies no invariant unique successor or numerical-identity conclusion.,conjecture_grade_not_proved
+FT-02,8,FTH-08,Predictive ancestry is package-insufficient,no_go,TH-15,Predictive equivalence/ancestry alone does not establish the independent C-package obligations.,conjecture_grade_not_proved

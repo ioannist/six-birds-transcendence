@@ -1,0 +1,2 @@
+path_id,atomic_models,carrier_chain,path_valid,atomic_endpoint_edge_present,certificate_ref,claim_ceiling
+DS-PATH-POS-01,DS-POS-02A;DS-POS-02B,17>55>101,true,false,formal/certificates/direct_successor/DS-PATH-POS-01.certificate.json,finite path of immediate temporal edges; no new atomic endpoint edge

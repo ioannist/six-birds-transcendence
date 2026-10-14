@@ -1,0 +1,488 @@
+{
+  "assembly_id": "STG-COMP-OUTER",
+  "claim_ceiling": "finite typed clause preservation and target assembly only",
+  "claim_lanes": [
+    "S-T",
+    "S-R"
+  ],
+  "clause_maps": [
+    {
+      "clause": "C1_OBJECTHOOD",
+      "entries": [
+        {
+          "source_coordinate": "package_owner",
+          "source_value": 17,
+          "target_coordinate": "package_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "cross_predictive_tag",
+          "source_value": "predictive:S0:rank0",
+          "target_coordinate": "cross_predictive_tag",
+          "target_value": "predictive:T2:rank4",
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "object_token",
+          "source_value": "object:S0",
+          "target_coordinate": "object_token",
+          "target_value": "object:T2",
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "boundary_closed",
+          "source_value": true,
+          "target_coordinate": "boundary_closed",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "c1_audit_sealed",
+          "source_value": true,
+          "target_coordinate": "c1_audit_sealed",
+          "target_value": true,
+          "translation_attested": true
+        }
+      ]
+    },
+    {
+      "clause": "C2_STRICT_PROMOTION",
+      "entries": [
+        {
+          "source_coordinate": "package_owner",
+          "source_value": 17,
+          "target_coordinate": "package_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "episode_epoch",
+          "source_value": 0,
+          "target_coordinate": "episode_epoch",
+          "target_value": 4,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "promotion_rank_before",
+          "source_value": 0,
+          "target_coordinate": "promotion_rank_before",
+          "target_value": 4,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "promotion_rank_after",
+          "source_value": 1,
+          "target_coordinate": "promotion_rank_after",
+          "target_value": 5,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "strict_test_pass",
+          "source_value": true,
+          "target_coordinate": "strict_test_pass",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "promotion_audit_sealed",
+          "source_value": true,
+          "target_coordinate": "promotion_audit_sealed",
+          "target_value": true,
+          "translation_attested": true
+        }
+      ]
+    },
+    {
+      "clause": "C3_REFLEXIVE_SELF_COORDINATE",
+      "entries": [
+        {
+          "source_coordinate": "package_owner",
+          "source_value": 17,
+          "target_coordinate": "package_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "cross_predictive_tag",
+          "source_value": "predictive:S0:rank0",
+          "target_coordinate": "cross_predictive_tag",
+          "target_value": "predictive:T2:rank4",
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "self_coordinate",
+          "source_value": "self:S0",
+          "target_coordinate": "self_coordinate",
+          "target_value": "self:T2",
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "self_model_reflexive",
+          "source_value": true,
+          "target_coordinate": "self_model_reflexive",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "self_audit_sealed",
+          "source_value": true,
+          "target_coordinate": "self_audit_sealed",
+          "target_value": true,
+          "translation_attested": true
+        }
+      ]
+    },
+    {
+      "clause": "C4_INTERFACE_NONEXPOSURE",
+      "entries": [
+        {
+          "source_coordinate": "package_owner",
+          "source_value": 17,
+          "target_coordinate": "package_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "public_shadow",
+          "source_value": "report:stable",
+          "target_coordinate": "public_shadow",
+          "target_value": "report:stable",
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "hidden_state_nonexposed",
+          "source_value": true,
+          "target_coordinate": "hidden_state_nonexposed",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "interface_leak",
+          "source_value": false,
+          "target_coordinate": "interface_leak",
+          "target_value": false,
+          "translation_attested": true
+        }
+      ]
+    },
+    {
+      "clause": "C5_ACTION_CREDIT",
+      "entries": [
+        {
+          "source_coordinate": "package_owner",
+          "source_value": 17,
+          "target_coordinate": "package_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "episode_epoch",
+          "source_value": 0,
+          "target_coordinate": "episode_epoch",
+          "target_value": 4,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "control_owner",
+          "source_value": 17,
+          "target_coordinate": "control_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "action_token",
+          "source_value": "action:S0:maintain",
+          "target_coordinate": "action_token",
+          "target_value": "action:T2:maintain",
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "action_credit_owner",
+          "source_value": 17,
+          "target_coordinate": "action_credit_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "credit_source_internal",
+          "source_value": true,
+          "target_coordinate": "credit_source_internal",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "credit_audit_sealed",
+          "source_value": true,
+          "target_coordinate": "credit_audit_sealed",
+          "target_value": true,
+          "translation_attested": true
+        }
+      ]
+    },
+    {
+      "clause": "C6_TEMPORAL_CLOSURE",
+      "entries": [
+        {
+          "source_coordinate": "package_owner",
+          "source_value": 17,
+          "target_coordinate": "package_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "cross_predictive_tag",
+          "source_value": "predictive:S0:rank0",
+          "target_coordinate": "cross_predictive_tag",
+          "target_value": "predictive:T2:rank4",
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "episode_epoch",
+          "source_value": 0,
+          "target_coordinate": "episode_epoch",
+          "target_value": 4,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "control_owner",
+          "source_value": 17,
+          "target_coordinate": "control_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "future_sufficient",
+          "source_value": true,
+          "target_coordinate": "future_sufficient",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "route_residue",
+          "source_value": [
+            "route-root"
+          ],
+          "target_coordinate": "route_residue",
+          "target_value": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target",
+            "leg-M-T-mixed",
+            "leg-M-T-target"
+          ],
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "order_stable",
+          "source_value": true,
+          "target_coordinate": "order_stable",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "successor_total_on_viable",
+          "source_value": true,
+          "target_coordinate": "successor_total_on_viable",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "tick_viable",
+          "source_value": true,
+          "target_coordinate": "tick_viable",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "tick_phase",
+          "source_value": 0,
+          "target_coordinate": "tick_phase",
+          "target_value": 4,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "tick_progress",
+          "source_value": 1,
+          "target_coordinate": "tick_progress",
+          "target_value": 1,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "record_before",
+          "source_value": 0,
+          "target_coordinate": "record_before",
+          "target_value": 6,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "record_after",
+          "source_value": 1,
+          "target_coordinate": "record_after",
+          "target_value": 7,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "arrow_endogenous",
+          "source_value": true,
+          "target_coordinate": "arrow_endogenous",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "external_scheduler",
+          "source_value": false,
+          "target_coordinate": "external_scheduler",
+          "target_value": false,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "temporal_owner",
+          "source_value": 17,
+          "target_coordinate": "temporal_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "maintenance_owner",
+          "source_value": 17,
+          "target_coordinate": "maintenance_owner",
+          "target_value": 101,
+          "translation_attested": true
+        }
+      ]
+    },
+    {
+      "clause": "C7_BINDING_RECOMBINATION",
+      "entries": [
+        {
+          "source_coordinate": "package_owner",
+          "source_value": 17,
+          "target_coordinate": "package_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "episode_epoch",
+          "source_value": 0,
+          "target_coordinate": "episode_epoch",
+          "target_value": 4,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "binding_integrated",
+          "source_value": true,
+          "target_coordinate": "binding_integrated",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "left_branch",
+          "source_value": "S0:L",
+          "target_coordinate": "left_branch",
+          "target_value": "T2:L",
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "right_branch",
+          "source_value": "S0:R",
+          "target_coordinate": "right_branch",
+          "target_value": "T2:R",
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "recombination_pairs",
+          "source_value": [
+            [
+              "S0:L",
+              "S0:R"
+            ],
+            [
+              "S0:R",
+              "S0:L"
+            ]
+          ],
+          "target_coordinate": "recombination_pairs",
+          "target_value": [
+            [
+              "T2:L",
+              "T2:R"
+            ],
+            [
+              "T2:R",
+              "T2:L"
+            ]
+          ],
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "recombination_relation_preserved",
+          "source_value": true,
+          "target_coordinate": "recombination_relation_preserved",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "joint_relation_tag",
+          "source_value": "xor:S0",
+          "target_coordinate": "joint_relation_tag",
+          "target_value": "xor:T2",
+          "translation_attested": true
+        }
+      ]
+    },
+    {
+      "clause": "C8_VIABILITY_REPAIR",
+      "entries": [
+        {
+          "source_coordinate": "package_owner",
+          "source_value": 17,
+          "target_coordinate": "package_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "control_owner",
+          "source_value": 17,
+          "target_coordinate": "control_owner",
+          "target_value": 101,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "viable",
+          "source_value": true,
+          "target_coordinate": "viable",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "repair_enabled",
+          "source_value": true,
+          "target_coordinate": "repair_enabled",
+          "target_value": true,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "repair_budget",
+          "source_value": 1,
+          "target_coordinate": "repair_budget",
+          "target_value": 1,
+          "translation_attested": true
+        },
+        {
+          "source_coordinate": "repair_owner",
+          "source_value": 17,
+          "target_coordinate": "repair_owner",
+          "target_value": 101,
+          "translation_attested": true
+        }
+      ]
+    }
+  ],
+  "composition_role": "full-handoff-composable",
+  "hard_gates_never_averaged": true,
+  "schema_version": "CST-TT-06-model-v1",
+  "separately_typed_carrier_vocabularies": true,
+  "source_vocabulary_id": "finite-C-package-s0-v1",
+  "target_vocabulary_id": "finite-C-package-t2-v1"
+}

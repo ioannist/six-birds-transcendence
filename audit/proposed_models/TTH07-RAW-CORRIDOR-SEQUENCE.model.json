@@ -1,0 +1,41 @@
+{
+  "grade": "actual raw acquisition corridor chain, not full Temporal-FIACH",
+  "carriers": [17, 55, 101],
+  "stage_each": "Fin 3",
+  "cell_type": "Bool",
+  "raw_view_cells": {"left": false, "right": true},
+  "register_each": "Unit -> Nat",
+  "disturbance_action_outcome_history_route_each": "Unit",
+  "event_each": "Bool",
+  "clock_offsets": [0, 2],
+  "clock_rule": "offset + local stage value",
+  "paths_each": [false, true],
+  "events": {
+    "false": {"from": 0, "to": 1, "sourceSupport": true, "targetSupport": true, "advance": 1},
+    "true": {"from": 1, "to": 2, "sourceSupport": false, "targetSupport": true, "advance": 1}
+  },
+  "funding_each": {"sourcePresent": true, "targetFunded": true, "funded": true, "mixedRequired": true},
+  "realized_each": [0, 1, 2],
+  "source_initializer": 0,
+  "source_program": "register unit + 1",
+  "source_history": [["unit", "unit", "unit"]],
+  "source_row": [["unit", 1]],
+  "receiver_program": "register unit",
+  "seed_predictive_each": 0,
+  "seed_histories": [["root"], ["root", "left-mix", "left-exit"]],
+  "names": {"left": ["left-root", "left-mix", "left-exit"], "right": ["right-root", "right-mix", "right-exit"]},
+  "controls": {
+    "missing_right_cell": true,
+    "broken_right_clock_offset": 3,
+    "right_target_unfunded": false,
+    "loop_right_target": 17
+  },
+  "staged_binding": {
+    "source_raw_cells": {"false": "leftInput", "true": "leftInput"},
+    "first_instruction": "identity",
+    "second_instruction": "append left-mix,left-exit to true cell seed history; false cell unchanged",
+    "cover_each": {"indices": ["unit"], "scope": [false, true]},
+    "reuse_control": "read right request from middle branch instead of final branch"
+  },
+  "scope": "raw corridor geometry and constructor parent checks; full middle execution/seed-runtime/receiver/autonomy coherence remains separate"
+}

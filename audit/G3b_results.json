@@ -1,0 +1,3287 @@
+{
+  "ablation_note": "No pre-registered mutations in G3a. In-memory sensitivity probes are evaluator tests, not scientific ablations.",
+  "ambiguities": [
+    "Critical pairs are filtered by boundary using either side, then BOTH sides must belong to the domain and share its boundary. A malformed cross-boundary pair cannot disappear merely because its other side has the wrong boundary.",
+    "Completion records with a side on the domain boundary are all checked, including duplicates. An extra invalid completion cannot be ignored after a valid one is found.",
+    "Flatness condition 6 ranges over completed critical pairs. With no completions its zero-holonomy subcheck is vacuously true; the nonempty covering-completion and connectivity gates still reject. Holonomy of ALL declared critical pairs is reported separately, including the necessity model toggle comparison.",
+    "Unique/shared normal form means singleton terminal-reachability sets for every route, with the same singleton across the fixed domain. Completion reductions omit identity edges, as prescribed; reflexive one-vertex completion paths are valid.",
+    "Raw event action/clock coherence checks every available event in the model, following the spec global quantifier, not just events appearing in one comparison.",
+    "License evaluation stays on each predeclared same-boundary domain. Positive nonconstancy across boundaries is tested separately and is not a cross-boundary license."
+  ],
+  "clean_ablation_count": 0,
+  "counts": {
+    "CONFIRMED": 20,
+    "CONFIRMED-CONFOUNDED": 0,
+    "CONFIRMED-NARROW": 0,
+    "FAILED": 0,
+    "INVALID-CONTROL": 0,
+    "UNDETERMINED": 0
+  },
+  "models": {
+    "TTH09-LICENSE-01": {
+      "admissible": {
+        "a0": true,
+        "a1": true,
+        "n0": true,
+        "n1": true
+      },
+      "clocks": {
+        "a0": 0,
+        "a1": 1,
+        "n0": 0,
+        "n1": 1
+      },
+      "domains": {
+        "D0": {
+          "all_endpoints_equal": true,
+          "common_descendants": {
+            "a0/a0": [
+              "a0",
+              "n0"
+            ],
+            "a0/n0": [
+              "n0"
+            ],
+            "n0/a0": [
+              "n0"
+            ],
+            "n0/n0": [
+              "n0"
+            ]
+          },
+          "completed_holonomy": {
+            "a0/n0": 0
+          },
+          "completion_connectivity": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "a0",
+              "n0"
+            ]
+          },
+          "completion_normal_forms": {
+            "a0": [
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "completion_reachability": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "completion_reductions": [
+            [
+              "a0",
+              "n0"
+            ]
+          ],
+          "confluence_checks": {
+            "all_pairs_joinable": true,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "a0/n0": 0
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": true,
+            "completion_covers": true,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": true,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": true,
+            "flatness": true,
+            "normalization": true
+          },
+          "members": [
+            "a0",
+            "n0"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": true
+          },
+          "rewrite_normal_forms": {
+            "a0": [
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "rewrite_reachability": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "route_license": true
+        },
+        "D1": {
+          "all_endpoints_equal": true,
+          "common_descendants": {
+            "a1/a1": [
+              "a1",
+              "n1"
+            ],
+            "a1/n1": [
+              "n1"
+            ],
+            "n1/a1": [
+              "n1"
+            ],
+            "n1/n1": [
+              "n1"
+            ]
+          },
+          "completed_holonomy": {
+            "a1/n1": 0
+          },
+          "completion_connectivity": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "a1",
+              "n1"
+            ]
+          },
+          "completion_normal_forms": {
+            "a1": [
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "completion_reachability": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "completion_reductions": [
+            [
+              "a1",
+              "n1"
+            ]
+          ],
+          "confluence_checks": {
+            "all_pairs_joinable": true,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "a1/n1": 0
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": true,
+            "completion_covers": true,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": true,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": true,
+            "flatness": true,
+            "normalization": true
+          },
+          "members": [
+            "a1",
+            "n1"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": true
+          },
+          "rewrite_normal_forms": {
+            "a1": [
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "rewrite_reachability": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "route_license": true
+        }
+      },
+      "endpoints": {
+        "a0": 0,
+        "a1": 1,
+        "n0": 0,
+        "n1": 1
+      },
+      "event_clock_checks": {
+        "e_a0": true,
+        "e_a1": true,
+        "e_n0": true,
+        "e_n1": true
+      },
+      "event_clock_coherence": true,
+      "executed_functions": {
+        "a0": [
+          0,
+          1
+        ],
+        "a1": [
+          1,
+          0
+        ],
+        "n0": [
+          0,
+          1
+        ],
+        "n1": [
+          1,
+          0
+        ]
+      },
+      "model_id": "TTH09-LICENSE-01",
+      "well_formedness": {
+        "issues": [],
+        "pass": true
+      }
+    },
+    "TTH09-NECESSITY-01": {
+      "admissible": {
+        "r0": true,
+        "r1": true,
+        "r2": true
+      },
+      "clocks": {
+        "r0": 0,
+        "r1": 0,
+        "r2": 1
+      },
+      "domains": {
+        "D": {
+          "all_endpoints_equal": false,
+          "common_descendants": {
+            "r0/r0": [
+              "r0"
+            ],
+            "r0/r1": [],
+            "r0/r2": [],
+            "r1/r0": [],
+            "r1/r1": [
+              "r1"
+            ],
+            "r1/r2": [],
+            "r2/r0": [],
+            "r2/r1": [],
+            "r2/r2": [
+              "r2"
+            ]
+          },
+          "completed_holonomy": {},
+          "completion_connectivity": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reductions": [],
+          "confluence_checks": {
+            "all_pairs_joinable": false,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "r0/r1": 0,
+            "r0/r2": 1,
+            "r1/r2": 1
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": false,
+            "completion_covers": false,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": false,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": false,
+            "flatness": false,
+            "normalization": false
+          },
+          "members": [
+            "r0",
+            "r1",
+            "r2"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": false
+          },
+          "rewrite_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "rewrite_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "route_license": false
+        }
+      },
+      "endpoints": {
+        "r0": 0,
+        "r1": 0,
+        "r2": 1
+      },
+      "event_clock_checks": {
+        "e0": true,
+        "e1": true,
+        "e2": true
+      },
+      "event_clock_coherence": true,
+      "executed_functions": {
+        "r0": [
+          0,
+          1
+        ],
+        "r1": [
+          0,
+          1
+        ],
+        "r2": [
+          1,
+          0
+        ]
+      },
+      "model_id": "TTH09-NECESSITY-01",
+      "well_formedness": {
+        "issues": [],
+        "pass": true
+      }
+    }
+  },
+  "predictions": [
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The comparison domain is invalid; this control cannot be interpreted as a counterexample to license necessity.",
+      "id": "N-DOMAIN",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**",
+      "property": "`DomainCheck(D)` for the fixed three-route domain",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": false,
+          "common_descendants": {
+            "r0/r0": [
+              "r0"
+            ],
+            "r0/r1": [],
+            "r0/r2": [],
+            "r1/r0": [],
+            "r1/r1": [
+              "r1"
+            ],
+            "r1/r2": [],
+            "r2/r0": [],
+            "r2/r1": [],
+            "r2/r2": [
+              "r2"
+            ]
+          },
+          "completed_holonomy": {},
+          "completion_connectivity": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reductions": [],
+          "confluence_checks": {
+            "all_pairs_joinable": false,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "r0/r1": 0,
+            "r0/r2": 1,
+            "r1/r2": 1
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": false,
+            "completion_covers": false,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": false,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": false,
+            "flatness": false,
+            "normalization": false
+          },
+          "members": [
+            "r0",
+            "r1",
+            "r2"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": false
+          },
+          "rewrite_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "rewrite_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "route_license": false
+        },
+        "endpoints": {
+          "r0": 0,
+          "r1": 0,
+          "r2": 1
+        }
+      }
+    },
+    {
+      "computed": false,
+      "confidence": "High",
+      "failure_meaning": "Literal necessity has not been refuted by this mechanism; inspect whether the evaluator silently supplies a normalizer not reached by raw rewrites or selects a smaller domain.",
+      "id": "N-NORM",
+      "outcome": "CONFIRMED",
+      "predicted": false,
+      "prediction_text": "**FAIL**: distinct routes remain distinct terminal rewrite forms, so no shared boundary normal form",
+      "property": "`NormalizationLicense(D)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": false,
+          "common_descendants": {
+            "r0/r0": [
+              "r0"
+            ],
+            "r0/r1": [],
+            "r0/r2": [],
+            "r1/r0": [],
+            "r1/r1": [
+              "r1"
+            ],
+            "r1/r2": [],
+            "r2/r0": [],
+            "r2/r1": [],
+            "r2/r2": [
+              "r2"
+            ]
+          },
+          "completed_holonomy": {},
+          "completion_connectivity": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reductions": [],
+          "confluence_checks": {
+            "all_pairs_joinable": false,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "r0/r1": 0,
+            "r0/r2": 1,
+            "r1/r2": 1
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": false,
+            "completion_covers": false,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": false,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": false,
+            "flatness": false,
+            "normalization": false
+          },
+          "members": [
+            "r0",
+            "r1",
+            "r2"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": false
+          },
+          "rewrite_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "rewrite_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "route_license": false
+        },
+        "endpoints": {
+          "r0": 0,
+          "r1": 0,
+          "r2": 1
+        }
+      }
+    },
+    {
+      "computed": false,
+      "confidence": "High",
+      "failure_meaning": "The flatness definition or evaluation is accepting an empty completion or overlooking the fixed comparison domain. The proposed no-license countermodel would be unsupported.",
+      "id": "N-FLAT",
+      "outcome": "CONFIRMED",
+      "predicted": false,
+      "prediction_text": "**FAIL**: covering completions are absent; the declared comparison containing the toggle is not zero-holonomy",
+      "property": "`FlatLicense(D)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": false,
+          "common_descendants": {
+            "r0/r0": [
+              "r0"
+            ],
+            "r0/r1": [],
+            "r0/r2": [],
+            "r1/r0": [],
+            "r1/r1": [
+              "r1"
+            ],
+            "r1/r2": [],
+            "r2/r0": [],
+            "r2/r1": [],
+            "r2/r2": [
+              "r2"
+            ]
+          },
+          "completed_holonomy": {},
+          "completion_connectivity": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reductions": [],
+          "confluence_checks": {
+            "all_pairs_joinable": false,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "r0/r1": 0,
+            "r0/r2": 1,
+            "r1/r2": 1
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": false,
+            "completion_covers": false,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": false,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": false,
+            "flatness": false,
+            "normalization": false
+          },
+          "members": [
+            "r0",
+            "r1",
+            "r2"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": false
+          },
+          "rewrite_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "rewrite_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "route_license": false
+        },
+        "endpoints": {
+          "r0": 0,
+          "r1": 0,
+          "r2": 1
+        }
+      }
+    },
+    {
+      "computed": false,
+      "confidence": "High",
+      "failure_meaning": "A coincident endpoint or route label has been mistaken for a rewrite join; alternatively the declared definition is not the one evaluated.",
+      "id": "N-CONF",
+      "outcome": "CONFIRMED",
+      "predicted": false,
+      "prediction_text": "**FAIL**: the empty rewrite graph has no common descendant for two distinct routes",
+      "property": "`ConfluenceLicense(D)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": false,
+          "common_descendants": {
+            "r0/r0": [
+              "r0"
+            ],
+            "r0/r1": [],
+            "r0/r2": [],
+            "r1/r0": [],
+            "r1/r1": [
+              "r1"
+            ],
+            "r1/r2": [],
+            "r2/r0": [],
+            "r2/r1": [],
+            "r2/r2": [
+              "r2"
+            ]
+          },
+          "completed_holonomy": {},
+          "completion_connectivity": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reductions": [],
+          "confluence_checks": {
+            "all_pairs_joinable": false,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "r0/r1": 0,
+            "r0/r2": 1,
+            "r1/r2": 1
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": false,
+            "completion_covers": false,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": false,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": false,
+            "flatness": false,
+            "normalization": false
+          },
+          "members": [
+            "r0",
+            "r1",
+            "r2"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": false
+          },
+          "rewrite_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "rewrite_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "route_license": false
+        },
+        "endpoints": {
+          "r0": 0,
+          "r1": 0,
+          "r2": 1
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The stipulated raw identity actions do not execute as intended; the necessity example fails. Do not repair the tables after evaluation.",
+      "id": "N-EQUAL",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**, with predicted executed values `0,0`",
+      "property": "`Endpoint(r0) = Endpoint(r1)` with initial bit `0`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": false,
+          "common_descendants": {
+            "r0/r0": [
+              "r0"
+            ],
+            "r0/r1": [],
+            "r0/r2": [],
+            "r1/r0": [],
+            "r1/r1": [
+              "r1"
+            ],
+            "r1/r2": [],
+            "r2/r0": [],
+            "r2/r1": [],
+            "r2/r2": [
+              "r2"
+            ]
+          },
+          "completed_holonomy": {},
+          "completion_connectivity": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reductions": [],
+          "confluence_checks": {
+            "all_pairs_joinable": false,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "r0/r1": 0,
+            "r0/r2": 1,
+            "r1/r2": 1
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": false,
+            "completion_covers": false,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": false,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": false,
+            "flatness": false,
+            "normalization": false
+          },
+          "members": [
+            "r0",
+            "r1",
+            "r2"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": false
+          },
+          "rewrite_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "rewrite_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "route_license": false
+        },
+        "endpoints": {
+          "r0": 0,
+          "r1": 0,
+          "r2": 1
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The toggle branch is not separating the fixed domain; check raw action execution.",
+      "id": "N-DIFFERENT",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**, with predicted executed values `0,1`",
+      "property": "`Endpoint(r0) ≠ Endpoint(r2)` with initial bit `0`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": false,
+          "common_descendants": {
+            "r0/r0": [
+              "r0"
+            ],
+            "r0/r1": [],
+            "r0/r2": [],
+            "r1/r0": [],
+            "r1/r1": [
+              "r1"
+            ],
+            "r1/r2": [],
+            "r2/r0": [],
+            "r2/r1": [],
+            "r2/r2": [
+              "r2"
+            ]
+          },
+          "completed_holonomy": {},
+          "completion_connectivity": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reductions": [],
+          "confluence_checks": {
+            "all_pairs_joinable": false,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "r0/r1": 0,
+            "r0/r2": 1,
+            "r1/r2": 1
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": false,
+            "completion_covers": false,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": false,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": false,
+            "flatness": false,
+            "normalization": false
+          },
+          "members": [
+            "r0",
+            "r1",
+            "r2"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": false
+          },
+          "rewrite_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "rewrite_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "route_license": false
+        },
+        "endpoints": {
+          "r0": 0,
+          "r1": 0,
+          "r2": 1
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The declared clock loop or inverse-composition convention is wrong; no nonflatness evidence may be claimed.",
+      "id": "N-LOOP",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**, predicted relative holonomy `1` (toggle)",
+      "property": "`H(r0,r2) ≠ 0` as a clock-group element",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": false,
+          "common_descendants": {
+            "r0/r0": [
+              "r0"
+            ],
+            "r0/r1": [],
+            "r0/r2": [],
+            "r1/r0": [],
+            "r1/r1": [
+              "r1"
+            ],
+            "r1/r2": [],
+            "r2/r0": [],
+            "r2/r1": [],
+            "r2/r2": [
+              "r2"
+            ]
+          },
+          "completed_holonomy": {},
+          "completion_connectivity": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reductions": [],
+          "confluence_checks": {
+            "all_pairs_joinable": false,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "r0/r1": 0,
+            "r0/r2": 1,
+            "r1/r2": 1
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": false,
+            "completion_covers": false,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": false,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": false,
+            "flatness": false,
+            "normalization": false
+          },
+          "members": [
+            "r0",
+            "r1",
+            "r2"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": false
+          },
+          "rewrite_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "rewrite_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "route_license": false
+        },
+        "endpoints": {
+          "r0": 0,
+          "r1": 0,
+          "r2": 1
+        }
+      }
+    },
+    {
+      "computed": false,
+      "confidence": "High",
+      "failure_meaning": "The fixed domain no longer establishes the intended global route separation.",
+      "id": "N-GLOBAL",
+      "outcome": "CONFIRMED",
+      "predicted": false,
+      "prediction_text": "**FAIL**",
+      "property": "All routes in `D` have one endpoint",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": false,
+          "common_descendants": {
+            "r0/r0": [
+              "r0"
+            ],
+            "r0/r1": [],
+            "r0/r2": [],
+            "r1/r0": [],
+            "r1/r1": [
+              "r1"
+            ],
+            "r1/r2": [],
+            "r2/r0": [],
+            "r2/r1": [],
+            "r2/r2": [
+              "r2"
+            ]
+          },
+          "completed_holonomy": {},
+          "completion_connectivity": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reductions": [],
+          "confluence_checks": {
+            "all_pairs_joinable": false,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "r0/r1": 0,
+            "r0/r2": 1,
+            "r1/r2": 1
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": false,
+            "completion_covers": false,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": false,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": false,
+            "flatness": false,
+            "normalization": false
+          },
+          "members": [
+            "r0",
+            "r1",
+            "r2"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": false
+          },
+          "rewrite_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "rewrite_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "route_license": false
+        },
+        "endpoints": {
+          "r0": 0,
+          "r1": 0,
+          "r2": 1
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The proposed finite counterexample to literal license necessity is not established. Retain necessity as unresolved rather than force a narrowing on this evidence.",
+      "id": "N-CONVERSE",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**",
+      "property": "`r0/r1` agree, while `RouteLicense(D)` fails",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": false,
+          "common_descendants": {
+            "r0/r0": [
+              "r0"
+            ],
+            "r0/r1": [],
+            "r0/r2": [],
+            "r1/r0": [],
+            "r1/r1": [
+              "r1"
+            ],
+            "r1/r2": [],
+            "r2/r0": [],
+            "r2/r1": [],
+            "r2/r2": [
+              "r2"
+            ]
+          },
+          "completed_holonomy": {},
+          "completion_connectivity": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "completion_reductions": [],
+          "confluence_checks": {
+            "all_pairs_joinable": false,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "r0/r1": 0,
+            "r0/r2": 1,
+            "r1/r2": 1
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": false,
+            "completion_covers": false,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": false,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": false,
+            "flatness": false,
+            "normalization": false
+          },
+          "members": [
+            "r0",
+            "r1",
+            "r2"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": false
+          },
+          "rewrite_normal_forms": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "rewrite_reachability": {
+            "r0": [
+              "r0"
+            ],
+            "r1": [
+              "r1"
+            ],
+            "r2": [
+              "r2"
+            ]
+          },
+          "route_license": false
+        },
+        "endpoints": {
+          "r0": 0,
+          "r1": 0,
+          "r2": 1
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The alias-to-normal rewrite/rank/action equations do not supply the boundary normal form; no normalization nonemptiness witness is available on this domain.",
+      "id": "P0-NORM",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**",
+      "property": "`NormalizationLicense(D0)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": true,
+          "common_descendants": {
+            "a0/a0": [
+              "a0",
+              "n0"
+            ],
+            "a0/n0": [
+              "n0"
+            ],
+            "n0/a0": [
+              "n0"
+            ],
+            "n0/n0": [
+              "n0"
+            ]
+          },
+          "completed_holonomy": {
+            "a0/n0": 0
+          },
+          "completion_connectivity": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "a0",
+              "n0"
+            ]
+          },
+          "completion_normal_forms": {
+            "a0": [
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "completion_reachability": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "completion_reductions": [
+            [
+              "a0",
+              "n0"
+            ]
+          ],
+          "confluence_checks": {
+            "all_pairs_joinable": true,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "a0/n0": 0
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": true,
+            "completion_covers": true,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": true,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": true,
+            "flatness": true,
+            "normalization": true
+          },
+          "members": [
+            "a0",
+            "n0"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": true
+          },
+          "rewrite_normal_forms": {
+            "a0": [
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "rewrite_reachability": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "route_license": true
+        },
+        "endpoints": {
+          "a0": 0,
+          "n0": 0
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "Medium",
+      "failure_meaning": "The completion coverage, singleton normal-form, connectivity, or clock/action requirements are not actually met. Name the failed primitive check; do not weaken flatness.",
+      "id": "P0-FLAT",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**",
+      "property": "`FlatLicense(D0)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": true,
+          "common_descendants": {
+            "a0/a0": [
+              "a0",
+              "n0"
+            ],
+            "a0/n0": [
+              "n0"
+            ],
+            "n0/a0": [
+              "n0"
+            ],
+            "n0/n0": [
+              "n0"
+            ]
+          },
+          "completed_holonomy": {
+            "a0/n0": 0
+          },
+          "completion_connectivity": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "a0",
+              "n0"
+            ]
+          },
+          "completion_normal_forms": {
+            "a0": [
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "completion_reachability": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "completion_reductions": [
+            [
+              "a0",
+              "n0"
+            ]
+          ],
+          "confluence_checks": {
+            "all_pairs_joinable": true,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "a0/n0": 0
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": true,
+            "completion_covers": true,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": true,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": true,
+            "flatness": true,
+            "normalization": true
+          },
+          "members": [
+            "a0",
+            "n0"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": true
+          },
+          "rewrite_normal_forms": {
+            "a0": [
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "rewrite_reachability": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "route_license": true
+        },
+        "endpoints": {
+          "a0": 0,
+          "n0": 0
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The raw finite rewrite closure does not join the declared pair; the positive confluence witness is unavailable.",
+      "id": "P0-CONF",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**",
+      "property": "`ConfluenceLicense(D0)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": true,
+          "common_descendants": {
+            "a0/a0": [
+              "a0",
+              "n0"
+            ],
+            "a0/n0": [
+              "n0"
+            ],
+            "n0/a0": [
+              "n0"
+            ],
+            "n0/n0": [
+              "n0"
+            ]
+          },
+          "completed_holonomy": {
+            "a0/n0": 0
+          },
+          "completion_connectivity": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "a0",
+              "n0"
+            ]
+          },
+          "completion_normal_forms": {
+            "a0": [
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "completion_reachability": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "completion_reductions": [
+            [
+              "a0",
+              "n0"
+            ]
+          ],
+          "confluence_checks": {
+            "all_pairs_joinable": true,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "a0/n0": 0
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": true,
+            "completion_covers": true,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": true,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": true,
+            "flatness": true,
+            "normalization": true
+          },
+          "members": [
+            "a0",
+            "n0"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": true
+          },
+          "rewrite_normal_forms": {
+            "a0": [
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "rewrite_reachability": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "route_license": true
+        },
+        "endpoints": {
+          "a0": 0,
+          "n0": 0
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "This invalidates endpoint preservation or execution for the first positive comparison, even if a defective license test passes.",
+      "id": "P0-EQUAL",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**, predicted executed values `0,0`",
+      "property": "`Endpoint(a0) = Endpoint(n0)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": true,
+          "common_descendants": {
+            "a0/a0": [
+              "a0",
+              "n0"
+            ],
+            "a0/n0": [
+              "n0"
+            ],
+            "n0/a0": [
+              "n0"
+            ],
+            "n0/n0": [
+              "n0"
+            ]
+          },
+          "completed_holonomy": {
+            "a0/n0": 0
+          },
+          "completion_connectivity": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "a0",
+              "n0"
+            ]
+          },
+          "completion_normal_forms": {
+            "a0": [
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "completion_reachability": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "completion_reductions": [
+            [
+              "a0",
+              "n0"
+            ]
+          ],
+          "confluence_checks": {
+            "all_pairs_joinable": true,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "a0/n0": 0
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": true,
+            "completion_covers": true,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": true,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": true,
+            "flatness": true,
+            "normalization": true
+          },
+          "members": [
+            "a0",
+            "n0"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": true
+          },
+          "rewrite_normal_forms": {
+            "a0": [
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "rewrite_reachability": {
+            "a0": [
+              "a0",
+              "n0"
+            ],
+            "n0": [
+              "n0"
+            ]
+          },
+          "route_license": true
+        },
+        "endpoints": {
+          "a0": 0,
+          "n0": 0
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The second boundary has no genuine normalized comparison; a globally constant first-boundary example cannot replace it.",
+      "id": "P1-NORM",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**",
+      "property": "`NormalizationLicense(D1)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": true,
+          "common_descendants": {
+            "a1/a1": [
+              "a1",
+              "n1"
+            ],
+            "a1/n1": [
+              "n1"
+            ],
+            "n1/a1": [
+              "n1"
+            ],
+            "n1/n1": [
+              "n1"
+            ]
+          },
+          "completed_holonomy": {
+            "a1/n1": 0
+          },
+          "completion_connectivity": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "a1",
+              "n1"
+            ]
+          },
+          "completion_normal_forms": {
+            "a1": [
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "completion_reachability": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "completion_reductions": [
+            [
+              "a1",
+              "n1"
+            ]
+          ],
+          "confluence_checks": {
+            "all_pairs_joinable": true,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "a1/n1": 0
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": true,
+            "completion_covers": true,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": true,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": true,
+            "flatness": true,
+            "normalization": true
+          },
+          "members": [
+            "a1",
+            "n1"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": true
+          },
+          "rewrite_normal_forms": {
+            "a1": [
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "rewrite_reachability": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "route_license": true
+        },
+        "endpoints": {
+          "a1": 1,
+          "n1": 1
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "Medium",
+      "failure_meaning": "Common nonzero route translations were confused with nonzero **relative** holonomy, or some completion prerequisite fails. Report the actual failure.",
+      "id": "P1-FLAT",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**",
+      "property": "`FlatLicense(D1)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": true,
+          "common_descendants": {
+            "a1/a1": [
+              "a1",
+              "n1"
+            ],
+            "a1/n1": [
+              "n1"
+            ],
+            "n1/a1": [
+              "n1"
+            ],
+            "n1/n1": [
+              "n1"
+            ]
+          },
+          "completed_holonomy": {
+            "a1/n1": 0
+          },
+          "completion_connectivity": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "a1",
+              "n1"
+            ]
+          },
+          "completion_normal_forms": {
+            "a1": [
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "completion_reachability": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "completion_reductions": [
+            [
+              "a1",
+              "n1"
+            ]
+          ],
+          "confluence_checks": {
+            "all_pairs_joinable": true,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "a1/n1": 0
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": true,
+            "completion_covers": true,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": true,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": true,
+            "flatness": true,
+            "normalization": true
+          },
+          "members": [
+            "a1",
+            "n1"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": true
+          },
+          "rewrite_normal_forms": {
+            "a1": [
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "rewrite_reachability": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "route_license": true
+        },
+        "endpoints": {
+          "a1": 1,
+          "n1": 1
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The second raw rewrite pair does not satisfy joinability/action preservation.",
+      "id": "P1-CONF",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**",
+      "property": "`ConfluenceLicense(D1)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": true,
+          "common_descendants": {
+            "a1/a1": [
+              "a1",
+              "n1"
+            ],
+            "a1/n1": [
+              "n1"
+            ],
+            "n1/a1": [
+              "n1"
+            ],
+            "n1/n1": [
+              "n1"
+            ]
+          },
+          "completed_holonomy": {
+            "a1/n1": 0
+          },
+          "completion_connectivity": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "a1",
+              "n1"
+            ]
+          },
+          "completion_normal_forms": {
+            "a1": [
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "completion_reachability": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "completion_reductions": [
+            [
+              "a1",
+              "n1"
+            ]
+          ],
+          "confluence_checks": {
+            "all_pairs_joinable": true,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "a1/n1": 0
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": true,
+            "completion_covers": true,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": true,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": true,
+            "flatness": true,
+            "normalization": true
+          },
+          "members": [
+            "a1",
+            "n1"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": true
+          },
+          "rewrite_normal_forms": {
+            "a1": [
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "rewrite_reachability": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "route_license": true
+        },
+        "endpoints": {
+          "a1": 1,
+          "n1": 1
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The intended common toggle execution is not preserved; the positive boundary comparison is not established.",
+      "id": "P1-EQUAL",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**, predicted executed values `1,1`",
+      "property": "`Endpoint(a1) = Endpoint(n1)`",
+      "witness": {
+        "domain": {
+          "all_endpoints_equal": true,
+          "common_descendants": {
+            "a1/a1": [
+              "a1",
+              "n1"
+            ],
+            "a1/n1": [
+              "n1"
+            ],
+            "n1/a1": [
+              "n1"
+            ],
+            "n1/n1": [
+              "n1"
+            ]
+          },
+          "completed_holonomy": {
+            "a1/n1": 0
+          },
+          "completion_connectivity": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "a1",
+              "n1"
+            ]
+          },
+          "completion_normal_forms": {
+            "a1": [
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "completion_reachability": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "completion_reductions": [
+            [
+              "a1",
+              "n1"
+            ]
+          ],
+          "confluence_checks": {
+            "all_pairs_joinable": true,
+            "domain": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true
+          },
+          "critical_holonomy": {
+            "a1/n1": 0
+          },
+          "domain_checks": {
+            "admissible": true,
+            "boundary_members": true,
+            "multiple_routes": true,
+            "no_duplicates": true,
+            "rewrite_closed": true
+          },
+          "domain_pass": true,
+          "flatness_checks": {
+            "completion_connected": true,
+            "completion_covers": true,
+            "completion_members": true,
+            "completion_path_actions": true,
+            "completion_path_ends": true,
+            "completion_path_steps": true,
+            "completion_rank_decreases": true,
+            "completion_shared_unique_normal_form": true,
+            "critical_covers": true,
+            "critical_members_distinct": true,
+            "critical_nonempty": true,
+            "domain": true,
+            "event_clock_coherence": true,
+            "zero_completed_holonomy": true
+          },
+          "licenses": {
+            "confluence": true,
+            "flatness": true,
+            "normalization": true
+          },
+          "members": [
+            "a1",
+            "n1"
+          ],
+          "normalization_checks": {
+            "domain": true,
+            "rank_decreases": true,
+            "rewrite_actions": true,
+            "rewrite_boundary": true,
+            "shared_unique_normal_form": true
+          },
+          "rewrite_normal_forms": {
+            "a1": [
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "rewrite_reachability": {
+            "a1": [
+              "a1",
+              "n1"
+            ],
+            "n1": [
+              "n1"
+            ]
+          },
+          "route_license": true
+        },
+        "endpoints": {
+          "a1": 1,
+          "n1": 1
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The positive example is globally constant and does not close G0's positive-instance gap. This is a cross-boundary nonconstancy test, not a licensed cross-boundary equality.",
+      "id": "P-NONCONST",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**, predicted values `0,1`",
+      "property": "`Endpoint(n0) ≠ Endpoint(n1)` with both boundary initial bits fixed at `0`",
+      "witness": {
+        "endpoints": {
+          "a0": 0,
+          "a1": 1,
+          "n0": 0,
+          "n1": 1
+        },
+        "event_clock_checks": {
+          "e_a0": true,
+          "e_a1": true,
+          "e_n0": true,
+          "e_n1": true
+        },
+        "executed_functions": {
+          "a0": [
+            0,
+            1
+          ],
+          "a1": [
+            1,
+            0
+          ],
+          "n0": [
+            0,
+            1
+          ],
+          "n1": [
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The positive endpoint functions collapse the input bit; the second independent nonconstancy check fails.",
+      "id": "P-FUNCTION",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**",
+      "property": "For every positive route `r`, `Exec(r,0) ≠ Exec(r,1)`",
+      "witness": {
+        "endpoints": {
+          "a0": 0,
+          "a1": 1,
+          "n0": 0,
+          "n1": 1
+        },
+        "event_clock_checks": {
+          "e_a0": true,
+          "e_a1": true,
+          "e_n0": true,
+          "e_n1": true
+        },
+        "executed_functions": {
+          "a0": [
+            0,
+            1
+          ],
+          "a1": [
+            1,
+            0
+          ],
+          "n0": [
+            0,
+            1
+          ],
+          "n1": [
+            1,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "computed": true,
+      "confidence": "High",
+      "failure_meaning": "The clock transport is unrelated to executed state dynamics, so clock flatness cannot license these temporal endpoints.",
+      "id": "P-CLOCK",
+      "outcome": "CONFIRMED",
+      "predicted": true,
+      "prediction_text": "**PASS**",
+      "property": "Raw event action/clock coherence on both positive domains",
+      "witness": {
+        "endpoints": {
+          "a0": 0,
+          "a1": 1,
+          "n0": 0,
+          "n1": 1
+        },
+        "event_clock_checks": {
+          "e_a0": true,
+          "e_a1": true,
+          "e_n0": true,
+          "e_n1": true
+        },
+        "executed_functions": {
+          "a0": [
+            0,
+            1
+          ],
+          "a1": [
+            1,
+            0
+          ],
+          "n0": [
+            0,
+            1
+          ],
+          "n1": [
+            1,
+            0
+          ]
+        }
+      }
+    }
+  ],
+  "provenance_sha256": {
+    "model": "e6b32e105a735cf36f3229525e2769cd42db12e954648c44b3f313889c44e82a",
+    "predictions": "fc6cb3ef981f37887dc05c92cc84a7e85475565773397d4f90d1adc6118c98dd",
+    "spec": "5a51d5582ea71320a5edae3ec0600eb7d9b23edaa6e2a063a4bf4f5daaf6255e"
+  },
+  "schema": "CSTTT-G3b-results-v1",
+  "self_test": {
+    "detail": "34/34 sensitivity probes caught; all license gates covered; both reporting-method guards passed.",
+    "status": "PASS"
+  },
+  "sensitivity_probes": [
+    {
+      "gate": "multiple_routes",
+      "group": "domain",
+      "perturbation": "D0 keeps only a0",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "no_duplicates",
+      "group": "domain",
+      "perturbation": "append repeated a0 to D0",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "admissible",
+      "group": "domain",
+      "perturbation": "make e_a0 unavailable",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "boundary_members",
+      "group": "domain",
+      "perturbation": "change a0 boundary to b1",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "rewrite_closed",
+      "group": "domain",
+      "perturbation": "add raw rewrite a0 → a1 outside D0",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "multiple_routes",
+      "group": "domain",
+      "perturbation": "give a0 the identical raw event path as n0",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "no_duplicates",
+      "group": "domain",
+      "perturbation": "give a0 the identical raw event path as n0 despite different IDs",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "critical_members_distinct",
+      "group": "flatness",
+      "perturbation": "give a0 the identical raw event path as n0",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "domain",
+      "group": "normalization",
+      "perturbation": "make e_a0 unavailable",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "domain",
+      "group": "flatness",
+      "perturbation": "make e_a0 unavailable",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "domain",
+      "group": "confluence",
+      "perturbation": "make e_a0 unavailable",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "rewrite_boundary",
+      "group": "normalization",
+      "perturbation": "add cross-domain raw rewrite a0 → a1",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "rank_decreases",
+      "group": "normalization",
+      "perturbation": "cap a0 rank at zero",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "rewrite_actions",
+      "group": "normalization",
+      "perturbation": "change e_a0 action to toggle",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "shared_unique_normal_form",
+      "group": "normalization",
+      "perturbation": "delete a0 → n0 rewrite",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "rewrite_boundary",
+      "group": "confluence",
+      "perturbation": "add cross-domain raw rewrite a0 → a1",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "rewrite_actions",
+      "group": "confluence",
+      "perturbation": "change e_a0 action to toggle",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "all_pairs_joinable",
+      "group": "confluence",
+      "perturbation": "delete a0 → n0 rewrite",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "event_clock_coherence",
+      "group": "flatness",
+      "perturbation": "change e_a0 clock increment to 1",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "critical_nonempty",
+      "group": "flatness",
+      "perturbation": "delete the D0 critical pair",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "critical_members_distinct",
+      "group": "flatness",
+      "perturbation": "replace D0 pair by a0/a0",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "critical_covers",
+      "group": "flatness",
+      "perturbation": "replace D0 pair by a0/a0, leaving n0 uncovered",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "completion_covers",
+      "group": "flatness",
+      "perturbation": "delete D0 completion",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "completion_members",
+      "group": "flatness",
+      "perturbation": "change D0 completion join to n1 outside D0",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "completion_path_ends",
+      "group": "flatness",
+      "perturbation": "replace left completion path by [n0]",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "completion_path_steps",
+      "group": "flatness",
+      "perturbation": "insert unsupported n0 → a0 into left completion path",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "completion_path_actions",
+      "group": "flatness",
+      "perturbation": "change e_a0 action to toggle",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "completion_connected",
+      "group": "flatness",
+      "perturbation": "delete D0 completion edge, disconnecting the pair",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "completion_rank_decreases",
+      "group": "flatness",
+      "perturbation": "cap a0 rank at zero",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "completion_shared_unique_normal_form",
+      "group": "flatness",
+      "perturbation": "delete D0 completion, leaving two terminal Q forms",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "zero_completed_holonomy",
+      "group": "flatness",
+      "perturbation": "change e_a0 clock increment to 1",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "admissible",
+      "group": "domain",
+      "perturbation": "change e_a0 exit to entry, breaking declared endpoint support",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "critical_members_distinct",
+      "group": "flatness",
+      "perturbation": "change critical pair to a0/a1; do not silently filter it out",
+      "result": "CAUGHT",
+      "well_formed": true
+    },
+    {
+      "gate": "completion_path_ends",
+      "group": "flatness",
+      "perturbation": "append a second malformed completion for the existing valid pair",
+      "result": "CAUGHT",
+      "well_formed": true
+    }
+  ]
+}

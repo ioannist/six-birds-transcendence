@@ -1,0 +1,34 @@
+{
+  "audit": {
+    "current_collision_present": true,
+    "current_only_predictor_exists": true,
+    "current_only_predictor_impossible": false,
+    "failed_obligations": [],
+    "flat_alternative": true,
+    "memory_or_flatness_satisfied": true,
+    "memory_repair_valid": true,
+    "predictive_divergence_present": false,
+    "predictor_functions_examined": 1,
+    "refined_predictor_correct": true,
+    "refined_predictor_total": true,
+    "route_memory_separates_collision": false
+  },
+  "certificate_id": "MEM-FLAT-01",
+  "checker": {
+    "function": "audit_memory_repair",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite flat predictive control only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_ref": "models/memory/MEM-FLAT-01.model.json",
+  "model_sha256": "328be24c70d9364d46498d40e02dabf8afbfee9c1c71d0d7c67ff9fa14aab52a",
+  "result_status": "checked-finite-flat-predictive-control",
+  "schema_version": "CST-TT-03",
+  "theorem_ids": [
+    "TTN-04",
+    "TTH-09"
+  ]
+}

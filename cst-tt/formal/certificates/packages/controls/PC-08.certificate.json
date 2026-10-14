@@ -1,0 +1,20 @@
+{
+  "artifact_ref": "models/packages/controls/PC-08.model.json",
+  "artifact_sha256": "9969c0d08ad7ef86f850447c6c8dd41aa78eb643ea3ba67a0bb04b93b07f51c1",
+  "checker": {
+    "function": "audit_package",
+    "integrated_package_valid": false,
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite package-obligation boundary only",
+  "control_id": "PC-08",
+  "control_kind": "package",
+  "expected_primary_failure": "PKG-O03-nonnegotiable-hard-gates",
+  "observed_failures": [
+    "PKG-O03-nonnegotiable-hard-gates"
+  ],
+  "positive_baseline_ref": "models/packages/PKG-POS-01-TARGET.model.json",
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-02"
+}

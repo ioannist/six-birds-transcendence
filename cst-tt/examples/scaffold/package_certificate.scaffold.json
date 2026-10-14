@@ -1,0 +1,39 @@
+{
+  "schema_version": "CST-TT-02",
+  "certificate_id": "package-scaffold",
+  "model_ref": "not-instantiated",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "scaffold-only",
+  "claim_lanes": ["S-R"],
+  "claim_ceiling": "finite structural target realization only",
+  "theorem_evidence": {
+    "theorem_ids": [],
+    "lean_declarations": [],
+    "lean_compile_status": "pending-toolchain",
+    "bounded_exhaustion_ref": "not-run"
+  },
+  "audit": {
+    "exact_clause_coverage": false,
+    "unique_clause_slots": false,
+    "every_scope_exact": false,
+    "every_clause_accepted": false,
+    "every_hard_gate_passed": false,
+    "join_tree": {},
+    "global_constructible": false,
+    "supplied_global_matches": false,
+    "global_restricts_to_every_local": false,
+    "temporal_substance": {},
+    "target_owned": false,
+    "forbidden_field_free": true,
+    "integrated_package_valid": false,
+    "derived_global_assignment": {},
+    "failed_obligations": [],
+    "clause_audits": []
+  },
+  "checker": {
+    "module": "cst_tt.package_gluing",
+    "function": "audit_package",
+    "python_version": "not-run",
+    "checked_at_phase": "CST-TT-02"
+  }
+}

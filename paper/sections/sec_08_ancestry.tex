@@ -1,0 +1,174 @@
+\section{Continuation by ancestry, on a model that computes all eight conditions}
+\label{sec:ancestry}
+
+Strict lineage asks for live overlap. A weaker requirement asks only that the
+target descend from the source through the recorded execution, and that the
+target's own predictive future law agree with its temporal frame. This is not
+equality with the source's future: a child's predictive class can already
+differ from the source's after one step. We call continuation under this weaker requirement
+\emph{continuation by ancestry}. We prove it on a model where all eight
+conditions are computed together, and we treat fission and fusion there. The
+result is weaker than the continuation theorem in its lineage, and stronger in
+the grade of the conditions. No model in this paper has both.
+
+\subsection{Ancestry}
+
+We first collect what ancestry does and does not give. A \emph{predictive
+bridge} between source and target descends to a map between their predictive
+classes. That map is unique and does not depend on the choice of
+representatives. Starting from admissible seeds of provenance, the records of
+an execution generate a least ancestry relation. Being least, it gives no
+ancestry from nothing. Two consequences follow.
+
+\begin{proposition}[Independent twin]
+% claim: TTF-03
+\label{prop:twin}
+In the declared operational controls, an independently constructed twin that
+is structurally equivalent to the source has no ancestry from it, however the
+execution is later extended by the controls' native and fusion steps.
+\end{proposition}
+
+\begin{proposition}[Reconstruction versus twin]
+% claim: TTF-06
+\label{prop:reconstruction}
+In the declared operational controls, suppose a reconstruction is derived
+from the source after the source becomes inactive, passing the controls'
+snapshot, erasure, gap, activation and bridge-law checks, and an independent
+twin has the same content. Then the source is an ancestor of the
+reconstruction and not of the twin.
+\end{proposition}
+
+Here the source becomes inactive, but its records are retained. The
+proposition does not describe total erasure of the source's information. A
+stronger formulation, in which ancestry runs from one target to another, is
+false, and we use the rooted form above.
+
+Ancestry is not realization.
+
+\begin{proposition}[Ancestry does not give realization]
+% claim: TTF-08
+\label{prop:ancestry-not-realization}
+On the chain model there is an edit that removes the target's own credit edges.
+It leaves the input, the bridge and the computed ancestry unchanged, while the
+target's realization check fails. Before the edit, the same check passes.
+\end{proposition}
+
+So whatever lineage criterion one adopts, realization must be checked on its
+own.
+
+\subsection{The fusion model}
+
+The \emph{fusion model} has a finite physical state space of
+\snapFullNativeZeroTwoPhysicalStates{} states, with two installed programs,
+addresses, tokens and accounts. Its execution histories grow without bound.
+On it, all eight conditions are computed jointly from a single installed
+execution, at interfaces fixed before evaluation. No condition is given an
+independent witness. Three choices are stated.
+\begin{itemize}
+\item Non-exposure, condition (4), is for the current family of observations on
+the maintained part of the state space. It is not privacy against every
+future observation.
+\item Action credit and temporal closure, conditions (5) and (6), use a
+process criterion. A target qualifies once its current residence has completed
+a local directional cycle, and its whole current epoch stays authenticated. The
+links to the current generator, ownership and control are mandatory.
+\item Objecthood, condition (1), is checked on the finite physical matrix, with
+the growing histories excluded from stationarity.
+\end{itemize}
+For autonomy, a certificate on a finite part of the state space, of
+\snapFullNativeZeroTwoCEightFactorStates{} states, is lifted to every full
+history. The lift must be nonempty, cover every outcome of positive
+probability, and realize every response of the finite part.
+
+We adopted these readings explicitly, in place of two stronger requirements.
+The first is that the record of completed exchanges end exactly at a cycle
+boundary. On the earlier shared-execution model that preceded this one, every
+immediate successor of a target fails that admission rule. The second is that
+a finite state space enumerate all growing histories. In general, no finite
+state space can carry an infinite strictly progressing run. Readers who reject
+the readings should read the theorem below as conditional on them.
+
+\paragraph{Fusion.}
+The model also merges branches. A \emph{guarded fusion} combines two parents
+into a fresh output. It retires both parents, consumes a fresh capability,
+installs the common program and transfers all exclusive stock.
+
+\begin{proposition}[Fusion under ancestry]
+% claim: TTF-04
+\label{prop:fusion}
+Under the least ancestry relation, fission, guarded fusion and empty outcomes
+are characterized as relations. On the fusion model, a guarded fusion has
+\snapFullNativeZeroTwoFusionOutcomeCount{} settlement outcomes, with
+probabilities \snapFullNativeZeroTwoFusionSettlementProbabilities{}, summing
+to \snapFullNativeZeroTwoFusionProbabilitySum{}. Each outcome retires both
+parents and yields a fresh output that has its own acquisition and a further
+continuation. When the parents' actions are opposed, the outcome is empty with
+probability \snapFullNativeZeroTwoEmptyProbability{}.
+\end{proposition}
+
+\subsection{The ancestry theorem}
+
+\begin{theorem}[Continuation by ancestry]
+% claim: TTF-05
+\label{thm:ancestry}
+On the fusion model, every request of the declared protocol that executes
+successfully yields, for the request's owner and from that same execution, the
+following:
+\begin{enumerate}
+\item predictive ancestry from the source;
+\item realization of all eight computed conditions;
+\item autonomy after withdrawal that preserves that realization.
+\end{enumerate}
+The successful requests include both children of a fission, after the source
+is withdrawn and each child has completed its own local acquisition, and the
+output of a guarded fusion after its acquisition. The same three properties
+hold for every history retained from an acquired fusion output.
+\end{theorem}
+
+The theorem is stated for successful requests, and we show separately that the
+children's requests and an output's request do succeed. A companion result
+covers histories retained after acquisition, in which the owner's steps are
+interleaved with other owners' steps. These histories are not themselves
+requests of the protocol. Its content lies in
+four places:
+\begin{itemize}
+\item invariance of acceptance, ownership and withdrawal along retained
+histories;
+\item the derivation of predictive ancestry from the execution;
+\item the derivation of the whole set of conditions from the installed
+program;
+\item the autonomy argument, in which the finite certificate and its lift
+simulate each other.
+\end{itemize}
+
+Several limits must be kept in view. Disturbances are a unit class, with
+renewable ports retained. The objecthood checks keep a recorded counterexample
+to a stronger, two-step uniqueness requirement. The model's full future laws,
+which include the initial observation, are distinct from the emissions of the
+branches after actions, and neither stands in for the other. Its greatest
+operational viable set includes charged residents that have not been
+admitted, while the greatest autonomy set that preserves the conditions
+compares only admitted competitors. The lineage here is predictive ancestry
+through recorded execution, which is weaker than live overlap. A freshly fused
+output does not yet realize the conditions. It is charged but not admitted,
+and it qualifies only after its own acquisition. Finally, the certificates for
+the source, the children and the fused output are certificates at different
+checkpoints of the execution, and we do not claim that they coexist.
+
+What can be said about the architecture is this. We exhibit one designed
+model, with a finite physical state space and unbounded execution histories,
+on which the eight conditions, as adopted at interfaces fixed in advance, are
+computed jointly from a single execution, with the stated choices for
+conditions (1), (4), (5) and (6). This is not a certificate for the full
+architecture, whose complete panel of checks we do not verify. The
+architecture's integrated instance, which also requires a proof that the
+certificate is sound for what it is meant to capture, remains open
+\citep{TsiokosArchitecture2026}. Figure~\ref{fig:fusion} draws the model's
+timeline.
+
+\begin{figure}[tbp]
+\centering
+\input{figures/fig_fusion}
+\caption{The timeline of the fusion model shows fission, the source's withdrawal, each child's own acquisition, guarded fusion with both parents retired, and the fused output's own acquisition. Heavy borders mark realization checks made at different points of the execution, and we do not claim that they hold together. The inset gives the fusion's settlement probabilities and the empty control.}
+\label{fig:fusion}
+\end{figure}

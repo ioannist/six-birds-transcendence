@@ -1,0 +1,27 @@
+{
+  "claim_ceiling": "finite predictive-representation repair only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "expected_primary_failure": "route-memory-separates-collision",
+  "model_id": "MEM-C01",
+  "observations": [
+    {
+      "current": "C0",
+      "predictive": "P0",
+      "route": "left",
+      "route_residue": "R0"
+    },
+    {
+      "current": "C0",
+      "predictive": "P1",
+      "route": "right",
+      "route_residue": "R0"
+    }
+  ],
+  "refined_predictor": {
+    "C0|R0": "P0"
+  },
+  "schema_version": "CST-TT-03",
+  "title": "predictive collision with route residue erased"
+}

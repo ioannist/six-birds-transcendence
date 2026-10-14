@@ -1,0 +1,4 @@
+# Exact permitted axiom names for CSTTT declarations.
+propext
+Quot.sound
+Classical.choice

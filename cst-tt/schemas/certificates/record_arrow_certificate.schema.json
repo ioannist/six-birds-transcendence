@@ -1,0 +1,123 @@
+{
+  "$id": "https://six-birds.local/cst-tt/schemas/record_arrow_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "audit": {
+      "additionalProperties": false,
+      "properties": {
+        "arrow_transport_valid": {
+          "type": "boolean"
+        },
+        "failed_obligations": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "map_total": {
+          "type": "boolean"
+        },
+        "maps_examined_in_bounded_search": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "nonstrict_monotone": {
+          "type": "boolean"
+        },
+        "source_has_strict_arrow": {
+          "type": "boolean"
+        },
+        "strict_progress_preserved": {
+          "type": "boolean"
+        },
+        "strictly_monotone_maps_in_bounded_search": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "target_has_strict_arrow": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "map_total",
+        "source_has_strict_arrow",
+        "nonstrict_monotone",
+        "strict_progress_preserved",
+        "target_has_strict_arrow",
+        "arrow_transport_valid",
+        "maps_examined_in_bounded_search",
+        "strictly_monotone_maps_in_bounded_search",
+        "failed_obligations"
+      ],
+      "type": "object"
+    },
+    "certificate_id": {
+      "type": "string"
+    },
+    "checker": {
+      "additionalProperties": false,
+      "properties": {
+        "function": {
+          "const": "audit_record_arrow"
+        },
+        "module": {
+          "const": "cst_tt.transport"
+        },
+        "python_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "module",
+        "function",
+        "python_version"
+      ],
+      "type": "object"
+    },
+    "claim_ceiling": {
+      "const": "finite structural arrow transport only"
+    },
+    "claim_lanes": {
+      "const": [
+        "S-T"
+      ]
+    },
+    "model_ref": {
+      "type": "string"
+    },
+    "model_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "result_status": {
+      "enum": [
+        "checked-finite-record-arrow-certificate",
+        "scaffold-only"
+      ]
+    },
+    "schema_version": {
+      "const": "CST-TT-03"
+    },
+    "theorem_ids": {
+      "const": [
+        "TTH-10"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "certificate_id",
+    "model_ref",
+    "model_sha256",
+    "result_status",
+    "claim_lanes",
+    "claim_ceiling",
+    "theorem_ids",
+    "audit",
+    "checker"
+  ],
+  "title": "Cross-carrier record-arrow transport certificate",
+  "type": "object"
+}

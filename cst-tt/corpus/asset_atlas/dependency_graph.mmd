@@ -1,0 +1,85 @@
+flowchart LR
+  N01["Declared carrier/support<br/>(primitive)"]
+  N02["Lens / public record<br/>(primitive)"]
+  N03["History / reachable image<br/>(primitive)"]
+  N04["Current quotient Q<br/>(quotient)"]
+  N05["Predictive quotient M<br/>(quotient)"]
+  N06["Future sufficiency / factorization<br/>(law)"]
+  N07["Route continuation<br/>(bridge)"]
+  N08["Predictive transport<br/>(bridge)"]
+  N09["Holonomy / route residue<br/>(obstruction)"]
+  N10["Marking / erasure<br/>(operation)"]
+  N11["Recombination quotient<br/>(quotient)"]
+  N12["Relation-valued persistence<br/>(lineage)"]
+  N13["Strict promotion<br/>(realization)"]
+  N14["Carrier exactification<br/>(realization)"]
+  N15["Accepted strict tests<br/>(recognition)"]
+  N16["Carrier-event record<br/>(recognition)"]
+  N17["Global event package<br/>(realization)"]
+  N18["Local/global obstruction<br/>(obstruction)"]
+  N19["AOR completion/reflection<br/>(realization)"]
+  N20["Viability kernel<br/>(autonomy)"]
+  N21["Currency / maintenance ledger<br/>(autonomy)"]
+  N22["Endogenous repair<br/>(autonomy)"]
+  N23["Temporal closure / local clock<br/>(autonomy)"]
+  N24["Protocol trap<br/>(obstruction)"]
+  N25["Hiddenness / non-exposure<br/>(recognition)"]
+  N26["No-overreading<br/>(obstruction)"]
+  N27["Confluence / flatness<br/>(law)"]
+  N28["Adequacy residual<br/>(metric)"]
+  N29["Closure deficit<br/>(metric)"]
+  N30["No-smuggling finite semantics<br/>(method)"]
+  N31["Full C1–C8 package<br/>(target-contract)"]
+  N32["Simplified certificate<br/>(certificate)"]
+  N33["Certificate soundness H1<br/>(assumption)"]
+  N34["ClosureComplete<br/>(predicate)"]
+  N35["A1 Ontic Closure Completeness<br/>(assumption)"]
+  N36["Realized<br/>(ontology)"]
+  N37["A2 Substrate Indifference<br/>(assumption)"]
+  N38["Cross-carrier invariance H-XCI<br/>(missing-theorem)"]
+  N39["Recognition bridge<br/>(missing-empirical)"]
+  N40["Post-handoff autonomy<br/>(target-property)"]
+  N01 -->|typed-by| N02
+  N03 -->|quotiented-by| N04
+  N03 -->|quotiented-by| N05
+  N05 -->|refines| N04
+  N06 -->|makes-well-defined| N08
+  N07 -->|induces| N08
+  N08 -->|may-generate| N09
+  N27 -->|eliminates-under-conditions| N09
+  N10 -->|stress-tests| N11
+  N11 -->|informs| N12
+  N05 -->|supports| N12
+  N08 -->|supports| N12
+  N13 -->|precedes| N14
+  N14 -->|supports| N15
+  N15 -->|supports| N16
+  N16 -->|candidate-input| N17
+  N18 -->|obstructs| N17
+  N19 -->|can-complete-operationally| N17
+  N20 -->|required-for| N40
+  N21 -->|funds| N20
+  N22 -->|maintains| N20
+  N23 -->|required-for| N40
+  N24 -->|can-counterfeit| N40
+  N25 -->|is-C4-component| N31
+  N26 -->|limits| N39
+  N28 -->|measures-defect-of| N08
+  N29 -->|audits| N14
+  N30 -->|constrains| N08
+  N30 -->|constrains| N14
+  N13 -->|is-C2-component| N31
+  N11 -->|is-C7-component| N31
+  N20 -->|is-C8-component| N31
+  N23 -->|is-C6-component| N31
+  N31 -->|no-ordering-theorem| N32
+  N32 -->|requires-for-closure| N33
+  N33 -->|licenses| N34
+  N34 -->|requires-for-ontology| N35
+  N35 -->|licenses| N36
+  N37 -->|does-not-prove| N38
+  N38 -->|would-support| N08
+  N39 -->|would-recognize| N31
+  N40 -->|separate-audit| N31
+  N12 -->|does-not-imply| N36
+  N31 -->|does-not-imply-unconditionally| N36

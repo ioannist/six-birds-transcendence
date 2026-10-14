@@ -1,0 +1,16 @@
+{
+  "command": [
+    "latexmk"
+  ],
+  "cwd": "paper",
+  "environment": {},
+  "exit_code": 0,
+  "id": "manuscript_build",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/manuscript-build-recorded.log",
+  "log_sha256": "e8f30721e50dac0decbb9e5ac9678679d80006f0a4ba159b1d02e09aa6a131c0",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:59:05+00:00",
+  "status": "pass",
+  "summary": "Latexmk: All targets (build/main.pdf) are up-to-date\n------------\nRunning 'latexpand \"main.tex\" -o \"build/\"/\"main\"_flat.tex'\n------------\n"
+}

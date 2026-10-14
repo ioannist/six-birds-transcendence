@@ -1,0 +1,726 @@
+{
+  "schema": "csttt-G21-declarations-v1",
+  "source_sha256": {
+    "lean/CSTTT/FullNative/Objecthood.lean": "97f0418acdb7f659827a16fa5866ffec031cd5c004899a5a1319474ec6cae0fc",
+    "lean/CSTTT/FullNative/ObjecthoodBaseline.lean": "5ee3d848d1c67fb7a10c99ac1e6a2ccda0d9e2e75869af5fbfb14fd3cedb1ef2",
+    "lean/CSTTT/FullNative/ObjecthoodDefect.lean": "b296ad8185e35cf2220b1fe00dc38fe299c0cdf13e9f3f073e490fe675c94442",
+    "lean/CSTTT/FullNative/ObjecthoodExecution.lean": "dc643f04175f34bc18ac589389d2a3a67399285faf3467bddbe09f0141569fc4",
+    "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean": "f2115da7eadf19c4ec101777a7f478a48b48c27db82bb710973e2e9c025f7273",
+    "lean/CSTTT/FullNative/PositiveMatrix.lean": "17cb745d5c9ee2e31a7efe4080c0fc8d83da1adbac3cdebea96c905469c56097"
+  },
+  "declaration_count": 89,
+  "declarations": [
+    {
+      "name": "CSTTT.FullNative.Objecthood.stationary",
+      "kind": "def",
+      "line": 11,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.stationary_probability",
+      "kind": "theorem",
+      "line": 16,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.stationary_nonuniform",
+      "kind": "theorem",
+      "line": 24,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.stationary_one_step",
+      "kind": "theorem",
+      "line": 31,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.transition_exposure",
+      "kind": "theorem",
+      "line": 38,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.closure_power",
+      "kind": "theorem",
+      "line": 49,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.stationary_closure",
+      "kind": "theorem",
+      "line": 57,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.perturbed_closure_positive",
+      "kind": "theorem",
+      "line": 62,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.perturbed_stationary_unique",
+      "kind": "theorem",
+      "line": 73,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.core",
+      "kind": "def",
+      "line": 87,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.core_closed",
+      "kind": "theorem",
+      "line": 89,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.retention",
+      "kind": "theorem",
+      "line": 99,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.phaseLaw",
+      "kind": "def",
+      "line": 104,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.phase_probability",
+      "kind": "theorem",
+      "line": 107,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.phase_step",
+      "kind": "theorem",
+      "line": 115,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.unperturbed_eq",
+      "kind": "theorem",
+      "line": 122,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.phase_fixed_squared",
+      "kind": "theorem",
+      "line": 129,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.squared_unperturbed_nonunique",
+      "kind": "theorem",
+      "line": 138,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Objecthood.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.canonicalColumn",
+      "kind": "def",
+      "line": 6,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodBaseline.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.same_column",
+      "kind": "theorem",
+      "line": 8,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodBaseline.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.grouped",
+      "kind": "def",
+      "line": 12,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodBaseline.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.fixed_grouped",
+      "kind": "theorem",
+      "line": 15,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodBaseline.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.grouped_unique",
+      "kind": "theorem",
+      "line": 41,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodBaseline.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.baseline_stationary_unique",
+      "kind": "theorem",
+      "line": 51,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodBaseline.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.baseline_closure_unique",
+      "kind": "theorem",
+      "line": 61,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodBaseline.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.spatial",
+      "kind": "def",
+      "line": 12,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.twoZero",
+      "kind": "def",
+      "line": 13,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.fourZero",
+      "kind": "def",
+      "line": 16,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.uniformAfterOne",
+      "kind": "def",
+      "line": 19,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.uniformAfterTwo",
+      "kind": "def",
+      "line": 21,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.uniformAfterThree",
+      "kind": "def",
+      "line": 23,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.two",
+      "kind": "def",
+      "line": 25,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.four",
+      "kind": "def",
+      "line": 29,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.uniform_after_one",
+      "kind": "theorem",
+      "line": 35,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.uniform_after_two",
+      "kind": "theorem",
+      "line": 43,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.uniform_after_three",
+      "kind": "theorem",
+      "line": 50,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.two_equation",
+      "kind": "theorem",
+      "line": 57,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.four_equation",
+      "kind": "theorem",
+      "line": 68,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.closure_one",
+      "kind": "theorem",
+      "line": 78,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.closure_two",
+      "kind": "theorem",
+      "line": 83,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.absRat",
+      "kind": "def",
+      "line": 88,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.defect",
+      "kind": "def",
+      "line": 89,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.exact_defect",
+      "kind": "theorem",
+      "line": 94,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.coreUniform",
+      "kind": "def",
+      "line": 106,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.stationaryTV",
+      "kind": "def",
+      "line": 107,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.exact_stationaryTV",
+      "kind": "theorem",
+      "line": 110,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodDefect.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.actualP",
+      "kind": "def",
+      "line": 8,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.actual_matrix",
+      "kind": "theorem",
+      "line": 12,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.source_actual_matrix",
+      "kind": "theorem",
+      "line": 18,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.successors_actual_matrix",
+      "kind": "theorem",
+      "line": 21,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.P",
+      "kind": "def",
+      "line": 11,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.prototypes",
+      "kind": "def",
+      "line": 13,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.prototypes_formula",
+      "kind": "theorem",
+      "line": 15,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.prototype_count",
+      "kind": "theorem",
+      "line": 19,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.prototype_classes",
+      "kind": "theorem",
+      "line": 23,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.prototype",
+      "kind": "def",
+      "line": 27,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.C",
+      "kind": "def",
+      "line": 29,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.U",
+      "kind": "def",
+      "line": 31,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.CU",
+      "kind": "def",
+      "line": 34,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.epsilon",
+      "kind": "def",
+      "line": 36,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.perturbed",
+      "kind": "def",
+      "line": 37,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.closure",
+      "kind": "def",
+      "line": 39,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.P_formula",
+      "kind": "theorem",
+      "line": 43,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.fiber_count",
+      "kind": "theorem",
+      "line": 52,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.prototype_code",
+      "kind": "theorem",
+      "line": 59,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.C_equation",
+      "kind": "theorem",
+      "line": 63,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.U_equation",
+      "kind": "theorem",
+      "line": 67,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.CU_formula",
+      "kind": "theorem",
+      "line": 73,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.P_stochastic",
+      "kind": "theorem",
+      "line": 83,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Objecthood.perturbed_positive",
+      "kind": "theorem",
+      "line": 98,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.mass_scale",
+      "kind": "theorem",
+      "line": 7,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.nonpositive_sum",
+      "kind": "theorem",
+      "line": 13,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.zero_sum_nonpositive",
+      "kind": "theorem",
+      "line": 23,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.finite_maximum",
+      "kind": "theorem",
+      "line": 39,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.positive_stationary_unique",
+      "kind": "theorem",
+      "line": 64,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.mass_zero",
+      "kind": "theorem",
+      "line": 121,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.mass_add",
+      "kind": "theorem",
+      "line": 126,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.sum_swap",
+      "kind": "theorem",
+      "line": 132,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.mass_mul",
+      "kind": "theorem",
+      "line": 144,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.fixed_product",
+      "kind": "theorem",
+      "line": 148,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.product_identity_left",
+      "kind": "theorem",
+      "line": 172,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.fixed_identity",
+      "kind": "theorem",
+      "line": 178,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.fixed_power",
+      "kind": "theorem",
+      "line": 184,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.product_assoc",
+      "kind": "theorem",
+      "line": 192,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.nonnegative_sum",
+      "kind": "theorem",
+      "line": 213,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.positive_sum",
+      "kind": "theorem",
+      "line": 223,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.positive_product",
+      "kind": "theorem",
+      "line": 237,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.push",
+      "kind": "def",
+      "line": 246,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PositiveMatrix.push_product",
+      "kind": "theorem",
+      "line": 249,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PositiveMatrix.lean"
+    }
+  ]
+}

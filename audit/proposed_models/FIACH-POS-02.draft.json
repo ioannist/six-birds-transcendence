@@ -1,0 +1,52 @@
+{
+  "draft_id": "FIACH-POS-02",
+  "status": "partial derived evidence for a new restricted interface; not a Temporal-FIACH certificate",
+  "frozen_base_model": "cst-tt/models/fiach/FIACH-POS-01.model.json",
+  "unchanged_components": [
+    "PKG-POS-03-FIACH-SOURCE",
+    "PKG-POS-04-FIACH-TARGET",
+    "STG-POS-02-FIACH",
+    "COR-POS-01",
+    "AUT-POS-01"
+  ],
+  "rules_stated_before_values": {
+    "predictive_now_by_state": "Exploratory new restricted interface selected with frozen outcomes known: for each AUT-POS-01 state x, q(x) := x.tick_phase; observe only phase, cumulative progress, and cumulative record under finite declared disturbance words. All transition deltas match, making this factorization near-automatic. The phase code fails when health is observed: SAFE-0 and WARNING-0 share phase 0 but under hit reach warning and safe health. It does not validate the frozen static C6 code.",
+    "route_paths": "Enumerate candidate event-dependency paths from s-entry to t-exit using COR-POS-01 episode.dependencies. Their interior event IDs distinguish graph paths only. The frozen endpoint has one residue list; neither theory-route identification nor endpoint-persistent path provenance follows.",
+    "endpoint_phase": "AUT endpoint tick_phase := COR exit tick_index mod AUT tick_modulus."
+  },
+  "derived_values": {
+    "predictive_now_by_state": {
+      "T-SAFE-0": 0,
+      "T-SAFE-1": 1,
+      "T-WARNING-0": 0,
+      "T-WARNING-1": 1
+    },
+    "endpoint_phase": 0,
+    "candidate_dependency_paths": [
+      [
+        "s-entry",
+        "leg-S-T-source-mixed",
+        "t-exit"
+      ],
+      [
+        "s-entry",
+        "leg-S-T-target-mixed",
+        "t-exit"
+      ]
+    ],
+    "candidate_path_interior_ids": [
+      "leg-S-T-source-mixed",
+      "leg-S-T-target-mixed"
+    ]
+  },
+  "not_derived": [
+    "integrated binding from joint histories",
+    "state-indexed C1-C8 package validity",
+    "nontrivial FIACH source-history representatives",
+    "global flatness or nonflatness",
+    "future sufficiency for the frozen static C6 code or for health",
+    "which dependency paths count as theory routes",
+    "path-specific provenance retained at the common t-exit endpoint",
+    "TTH-05 full per-state package preservation"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "assembly_ref": "models/packages/STG-POS-02-FIACH.assembly.json",
+  "assembly_sha256": "21b33cb2a6a2d3b75979c248a2fa2093693e3a4af3f2f1b06ab263c541ec88ea",
+  "audit": {
+    "assembly_id": "STG-POS-02-FIACH",
+    "carriers_distinct": true,
+    "coordinate_maps_total": true,
+    "errors": [],
+    "exactly_eight_clause_maps": true,
+    "failed_obligations": [],
+    "forbidden_verdict_fields_absent": true,
+    "hard_gates_never_averaged": true,
+    "maps_separately_typed": true,
+    "source_package_valid": true,
+    "staged_assembly_valid": true,
+    "target_global_assembled": true,
+    "target_package_valid": true,
+    "value_maps_sound": true
+  },
+  "certificate_id": "STG-POS-02-FIACH",
+  "checker": {
+    "checked_at_phase": "CST-TT-05",
+    "function": "audit_staged_assembly",
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite typed clause preservation and endpoint-aligned target assembly only",
+  "claim_lanes": [
+    "S-T",
+    "S-R"
+  ],
+  "handoff_alignment": {
+    "corridor_model_ref": "models/corridors/COR-POS-01.model.json",
+    "source_stage": 0,
+    "target_stage": 2
+  },
+  "result_status": "checked-finite-handoff-aligned-staged-package-certificate",
+  "schema_version": "CST-TT-05",
+  "source_model_ref": "models/packages/PKG-POS-03-FIACH-SOURCE.model.json",
+  "source_model_sha256": "056e565af9eb151095013dd1d32607aec3a75bd16b85ce613de35a3f035ff949",
+  "target_model_ref": "models/packages/PKG-POS-04-FIACH-TARGET.model.json",
+  "target_model_sha256": "ca23bf7c1e4b8f62fad351cdc3466f4fd6c194565bc5963c325174239d2a3ce6",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.PackageTheory.acyclicLocalWitnessGluing",
+      "CSTTT.PackageTheory.stagedHeterogeneousPackageAssembly"
+    ],
+    "theorem_ids": [
+      "TTH-01",
+      "TTH-02"
+    ]
+  }
+}

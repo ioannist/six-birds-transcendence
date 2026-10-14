@@ -1,0 +1,23 @@
+{
+  "artifact_ref": "models/transport/controls/ROUTE-C02.model.json",
+  "artifact_sha256": "c530cdff54a606e64c086181740615787fa487911d755a9fd61b217e00f290a7",
+  "baseline_ref": "models/routes/ROUTE-POS-01.model.json",
+  "checker": {
+    "function": "audit_route_discipline",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5",
+    "valid_result": false
+  },
+  "claim_ceiling": "finite structural obligation boundary only",
+  "control_id": "ROUTE-C02",
+  "control_kind": "route",
+  "expected_primary_failure": "route-residue-trivial",
+  "observed_failures": [
+    "every-declared-critical-pair-joins",
+    "route-residue-trivial",
+    "temporal-endpoints-route-independent",
+    "direct-factored-agreement"
+  ],
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-03"
+}

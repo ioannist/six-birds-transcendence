@@ -1,0 +1,35 @@
+{
+  "claim_ceiling": "finite structural arrow transport only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "expected_primary_failure": "nonstrict-monotone",
+  "model_id": "ARROW-C02",
+  "record_map": {
+    "0": 14,
+    "1": 12,
+    "2": 10
+  },
+  "schema_version": "CST-TT-03",
+  "source_arrow_steps": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "source_records": [
+    0,
+    1,
+    2
+  ],
+  "target_records": [
+    10,
+    12,
+    14
+  ],
+  "title": "order-reversing map"
+}

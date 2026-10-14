@@ -1,0 +1,78 @@
+{
+  "$id": "https://six-birds.local/cst-tt/schemas/ancestry_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Fallback operational provenance and closure interface; no ancestry result is landed in CST-TT-00.",
+  "properties": {
+    "closure_rule_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array",
+      "uniqueItems": true
+    },
+    "no_ex_nihilo_rule_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "nodes": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "schema_version": {
+      "const": "CST-TT-00"
+    },
+    "seed_edges": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "kind": {
+            "enum": [
+              "source-to-record",
+              "record-to-target",
+              "live-dependency",
+              "guarded-fission",
+              "guarded-fusion"
+            ],
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "source",
+          "target",
+          "kind"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "nodes",
+    "seed_edges",
+    "closure_rule_ids",
+    "no_ex_nihilo_rule_id",
+    "status"
+  ],
+  "title": "Temporal-IAPS ancestry interface scaffold",
+  "type": "object"
+}

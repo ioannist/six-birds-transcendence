@@ -1,0 +1,19 @@
+{
+  "base_commit": "faaf3b714050ac6acc195d0fab0f49dae9f51a87",
+  "base_tag": "CST-TT-05-v1",
+  "bounded_candidates_examined": 7810,
+  "fallback": "Temporal-IAPS",
+  "fallback_status": "locked",
+  "fission_branches": 2,
+  "fission_controls": 6,
+  "full_handoff_compositions": 1,
+  "fusion_boundaries": 1,
+  "generated_date": "2026-08-10",
+  "phase": "CST-TT-06",
+  "primary_target": "Temporal-FIACH",
+  "primary_target_status": "survived",
+  "project": "CST-TT",
+  "route_completion_certificates": 2,
+  "schema_version": "1.0",
+  "toy_suite_pass": "13/13"
+}

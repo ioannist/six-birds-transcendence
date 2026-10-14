@@ -1,0 +1,292 @@
+{
+  "base_commit": "7ba9167d39e6751706a7ad7152911c61f77af6af",
+  "base_resolved": "7ba9167d39e6751706a7ad7152911c61f77af6af",
+  "base_tag": "CST-TT-07A-v1",
+  "builder_returncode": 0,
+  "byte_identical_surface_count": 55,
+  "generated_surface_count": 55,
+  "mismatches": [],
+  "phase": "CST-TT-08",
+  "project": "CST-TT",
+  "pytest_returncode": 0,
+  "schema_version": "1.0",
+  "status": "PASS",
+  "surfaces": [
+    {
+      "path": "CHANGELOG.md",
+      "reproduced": true,
+      "sha256": "7efef9591e0d456334086984ee4f0e4687786c42f3715116d3e46c552bcd41cc"
+    },
+    {
+      "path": "README.md",
+      "reproduced": true,
+      "sha256": "d91ee371a9356c8151c2095228f79fcc780241dc732fba0f8f56d08f1ff2b0de"
+    },
+    {
+      "path": "RESTORE_AND_VERIFY.md",
+      "reproduced": true,
+      "sha256": "ed765e28c7c4a957f78fe861b41379410ddb03471a615373cc26beaf0a59abb0"
+    },
+    {
+      "path": "STATE.md",
+      "reproduced": true,
+      "sha256": "8c8ea36b3801c821ead9161ba204f48fc23f5e1ac1b54d52e899993ba0828a75"
+    },
+    {
+      "path": "STATUS.md",
+      "reproduced": true,
+      "sha256": "4d3591e033a066ea14c1ef0941bbfe3e5d170f6bb8c6e1964339fd2e21f2dad4"
+    },
+    {
+      "path": "archive/rejected/ALT-01.json",
+      "reproduced": true,
+      "sha256": "7265ee4aa044fb82d4954f0775e7014468debd3cdd48389cdf4b7be751e39483"
+    },
+    {
+      "path": "archive/rejected/ALT-02.json",
+      "reproduced": true,
+      "sha256": "42a3fe0a30d1bfb7a9b5e163fc0aa4dede2e8e63c8a0f2618a914c244037f49c"
+    },
+    {
+      "path": "archive/rejected/ALT-03.json",
+      "reproduced": true,
+      "sha256": "6626717d488ce296f65da121015889fe6fc097a2e95b7e8720bcdc62455d54a1"
+    },
+    {
+      "path": "archive/rejected/ALT-04.json",
+      "reproduced": true,
+      "sha256": "18aeee4242e6e6df9b78d6e225a54bbd1bdc4058438bf992925df0719e135ff1"
+    },
+    {
+      "path": "archive/rejected/ALT-05.json",
+      "reproduced": true,
+      "sha256": "570e5f656239e3f14db4d27c3294fdd46b1b4769486f4edee77987df77335a4e"
+    },
+    {
+      "path": "archive/rejected/ALT-06.json",
+      "reproduced": true,
+      "sha256": "3e462f09184f2fd3cd750c1c4e60989ef9f2bd6dedc62c2a146f8d058d2464d4"
+    },
+    {
+      "path": "archive/rejected/ALT-07.json",
+      "reproduced": true,
+      "sha256": "0b29186587e2849517bcbf0e2836c02b07b879d476a387a3f673fd5029a777b9"
+    },
+    {
+      "path": "archive/rejected/ALT-08.json",
+      "reproduced": true,
+      "sha256": "1c7151699d15ae1a65175c92e2f8937fc5e9482af9341532580e7f5506017da5"
+    },
+    {
+      "path": "archive/rejected/ALT-09.json",
+      "reproduced": true,
+      "sha256": "c6b7008b03fc498c8f170ff317e98fdec9b5221e4daa1fed2673146ebcbff5d8"
+    },
+    {
+      "path": "archive/rejected/ALT-10.json",
+      "reproduced": true,
+      "sha256": "37f286168ca4322bc59c696bd57a2e60bdb82ac38dec47048a8e45984c316e68"
+    },
+    {
+      "path": "archive/rejected/ALT-11.json",
+      "reproduced": true,
+      "sha256": "3af6899bae2fbfb929cc1996d0e4a055b52b6f7efc5f661e4c772e9cf00f2523"
+    },
+    {
+      "path": "archive/rejected/ALT-12.json",
+      "reproduced": true,
+      "sha256": "bff7fee165b998c0b1d569e04fa0235709b7936c45a2715bf4ae673c34f73ef7"
+    },
+    {
+      "path": "archive/rejected/INDEX.md",
+      "reproduced": true,
+      "sha256": "f713ebf49617880d6ce46dec5d18c7c9d176c2fee9e0cd58c39e92af3da5be89"
+    },
+    {
+      "path": "archive/rejected/README.md",
+      "reproduced": true,
+      "sha256": "f713ebf49617880d6ce46dec5d18c7c9d176c2fee9e0cd58c39e92af3da5be89"
+    },
+    {
+      "path": "archive/rejected/REJECTED_CONSTRUCTIONS.csv",
+      "reproduced": true,
+      "sha256": "287ac28de4c61c23e1d3b594d1eb7fc4832c1b95b4f6b87dc2d511d539c70e64"
+    },
+    {
+      "path": "archive/rejected/REJECTED_CONSTRUCTIONS.json",
+      "reproduced": true,
+      "sha256": "8ebb5e1f88064849b0c4adf74e801ba816179df895611143f902fca7f0062674"
+    },
+    {
+      "path": "changelog/CST-TT-08.md",
+      "reproduced": true,
+      "sha256": "eab23044bf1e1df7ee947894f4cda1bf8985ad3a2ea3ce5058c5efd4cc1036b1"
+    },
+    {
+      "path": "docs/CST-TT-08_FINAL_SCIENCE_CLOSURE.md",
+      "reproduced": true,
+      "sha256": "bdbc2f61434b9a30a075e7e5997332249fd198d033d949db8d4df04def829597"
+    },
+    {
+      "path": "docs/PHASE_BOUNDARY.md",
+      "reproduced": true,
+      "sha256": "80aee991ea2060e19e22bd67af759f4bcd746307b69b7f4b4a00792646d871ac"
+    },
+    {
+      "path": "docs/RESTORE_AND_BUILD.md",
+      "reproduced": true,
+      "sha256": "ed765e28c7c4a957f78fe861b41379410ddb03471a615373cc26beaf0a59abb0"
+    },
+    {
+      "path": "formal/README.md",
+      "reproduced": true,
+      "sha256": "6c2050f5afdd64de48551bd113079b2a52f2b8ebafe9073a072f4513aedc8e6b"
+    },
+    {
+      "path": "formal/TOOLCHAIN_STATUS.json",
+      "reproduced": true,
+      "sha256": "ec3acee121ccee72bb4e17cf92fd835477629cfa58d7ae8f2ef29b0320c9e74d"
+    },
+    {
+      "path": "handoff/CST-TT-08_SCIENCE_HANDOFF.md",
+      "reproduced": true,
+      "sha256": "e5a8cb9a0896d8c898d8d0f6973267de33d7daac0a3581d430261fe59797259b"
+    },
+    {
+      "path": "handoff/FINAL_CLAIM_CEILING.md",
+      "reproduced": true,
+      "sha256": "e6fd5a111814b8f99f9c63624928998fded2be59a78f3cc4bc0ff94860e2923c"
+    },
+    {
+      "path": "handoff/FINAL_DEPENDENCY_DAG.dot",
+      "reproduced": true,
+      "sha256": "678aae327514786075e67d76b4ad2b73686117bbd801371e76953757afa43ce8"
+    },
+    {
+      "path": "handoff/FINAL_DEPENDENCY_DAG.svg",
+      "reproduced": true,
+      "sha256": "dff4349489719c776da564ff20202c398766ff78ee784a7a0163f04502c1ef32"
+    },
+    {
+      "path": "handoff/FINAL_FAILED_ALTERNATIVES.md",
+      "reproduced": true,
+      "sha256": "f713ebf49617880d6ce46dec5d18c7c9d176c2fee9e0cd58c39e92af3da5be89"
+    },
+    {
+      "path": "handoff/FINAL_MODEL_CATALOG.md",
+      "reproduced": true,
+      "sha256": "384277faaae9ae538405a0407216a0aa98dc30593a577d08aba5680897e81969"
+    },
+    {
+      "path": "handoff/FINAL_PROOF_DEPENDENCY_GUIDE.md",
+      "reproduced": true,
+      "sha256": "18f66c1bb5eb8301729c1eeaae9313b4f260b7d85c1177f48cfe2bd050dacd59"
+    },
+    {
+      "path": "handoff/FINAL_SBT_PROVENANCE.md",
+      "reproduced": true,
+      "sha256": "e41e36abd6744706f4cf4446a2d86e5f5ac65bd92a8472c98bee4fa251256260"
+    },
+    {
+      "path": "handoff/FINAL_THEOREM_AUDIT.md",
+      "reproduced": true,
+      "sha256": "692aa4f055c4e4de62cf526f636130a1618364000c7a1966d9950cc3f4f0c4e5"
+    },
+    {
+      "path": "handoff/PAPER_RESULT_TABLES.md",
+      "reproduced": true,
+      "sha256": "60d202d08c2f0bec08cc5286b5ae7c754c57ba407049a5f095c9b318a5c61dc0"
+    },
+    {
+      "path": "manifests/COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "916bd0b94a64a19a9b9ee439f7cd02be21e2d4620f4c3531f434599269902ede"
+    },
+    {
+      "path": "manifests/CST-TT-08_COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "916bd0b94a64a19a9b9ee439f7cd02be21e2d4620f4c3531f434599269902ede"
+    },
+    {
+      "path": "manifests/CST-TT-08_MODEL_CERTIFICATE_DELTA.csv",
+      "reproduced": true,
+      "sha256": "b3136c78ce74f0fbc903fbcd45c8344be19746fd15a9b413a38806cac79ac82e"
+    },
+    {
+      "path": "manifests/CST-TT-08_PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "5a86474d2f977442424cf8c0cfba702e9b54a4f7b63fff8cea13efd61aa497ea"
+    },
+    {
+      "path": "manifests/CST-TT-08_THEOREM_STATUS_DELTA.csv",
+      "reproduced": true,
+      "sha256": "d54152fcaad5583f3816c8b1ac6d38b8f526bfab6fcd02396669ff476c089ff4"
+    },
+    {
+      "path": "manifests/PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "5a86474d2f977442424cf8c0cfba702e9b54a4f7b63fff8cea13efd61aa497ea"
+    },
+    {
+      "path": "registries/FINAL_CERTIFICATE_INDEX.csv",
+      "reproduced": true,
+      "sha256": "63d167b6ab0414e8b9c8a3bf3577bc394205784637cb68d7e20ba2262338eec3"
+    },
+    {
+      "path": "registries/FINAL_CLAIM_ASSUMPTION_NONCLAIM_LEDGER.csv",
+      "reproduced": true,
+      "sha256": "e75c4d204638a3a0c81da6c801455c12b7860550683a1b0d87e7bb01b98307ea"
+    },
+    {
+      "path": "registries/FINAL_DEPENDENCY_DAG.json",
+      "reproduced": true,
+      "sha256": "433baf4983b56ffa4692a3ca5bfb0ee0fba2502a0bef1a0abc9938896d1eb95c"
+    },
+    {
+      "path": "registries/FINAL_DEPENDENCY_EDGES.csv",
+      "reproduced": true,
+      "sha256": "403a024edce03b075fa41965289a99fb8e048049bb8c6740b2ba307779dacbbf"
+    },
+    {
+      "path": "registries/FINAL_DEPENDENCY_NODES.csv",
+      "reproduced": true,
+      "sha256": "1b5e6a9c99f0ae8238e677ce5d9673fba98bb525649b84603f1298fc570f588c"
+    },
+    {
+      "path": "registries/FINAL_MODEL_INDEX.csv",
+      "reproduced": true,
+      "sha256": "cfa55e9bfa9e65e5508befb4f12d584590b0c921696dede727fde7533cb45766"
+    },
+    {
+      "path": "registries/FINAL_REBUILD_MATRIX.csv",
+      "reproduced": true,
+      "sha256": "6261ecca63c7fbec30cf5343c43411d88fb934730192813862fc7b5191503783"
+    },
+    {
+      "path": "registries/FINAL_SBT_PROVENANCE.csv",
+      "reproduced": true,
+      "sha256": "1bf17edd063609a792bccd47e2cbad5af3d2978ad08c58a55ba147c8e762e7bf"
+    },
+    {
+      "path": "registries/FINAL_THEOREM_STATUS.csv",
+      "reproduced": true,
+      "sha256": "1e3c2763259313060d690043ccb8cc48ee72e65cf8deba6f7af942dc9fcba798"
+    },
+    {
+      "path": "registries/FINAL_THEOREM_STATUS.json",
+      "reproduced": true,
+      "sha256": "b1a5243ffe23eac0d7bfc7c557b3d8d93948042e417150d049241cf378fb043a"
+    },
+    {
+      "path": "registries/FINAL_TOY_CATALOG.csv",
+      "reproduced": true,
+      "sha256": "ba4a70229e49c61cd0082c8e6c3fbce296c9fc22858077ee4a30d21a2c664227"
+    },
+    {
+      "path": "registries/PROJECT_REGISTRY.json",
+      "reproduced": true,
+      "sha256": "eeef8f0fbcf66c847d47722a879b4631b2e82bfd3e55575d1ea7ecb9ebea2bdc"
+    }
+  ],
+  "validator_returncode": 0
+}

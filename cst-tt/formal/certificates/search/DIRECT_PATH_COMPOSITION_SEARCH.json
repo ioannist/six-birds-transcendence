@@ -1,0 +1,15 @@
+{
+  "deterministic": true,
+  "python_hash_seed": 0,
+  "result": {
+    "atomic_edge_relation_not_silently_closed": true,
+    "candidate_pairs_examined": 27,
+    "compatible_atomic_pairs": 1,
+    "falsely_atomic_composites": 0,
+    "path_composition_valid_for_all_compatible_pairs": true,
+    "valid_composed_paths": 1
+  },
+  "schema_version": "CST-TT-04",
+  "search_id": "DIRECT_PATH_COMPOSITION_SEARCH",
+  "usage_boundary": "bounded finite stress evidence; not a proof oracle"
+}

@@ -1,0 +1,114 @@
+{
+  "builder_returncode": 0,
+  "generated_surface_count": 21,
+  "mismatches": [],
+  "phase": "CST-TT-00",
+  "status": "PASS",
+  "surfaces": [
+    {
+      "path": "registries/CLAIM_LANE_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "e84175218f94a53f6579b8d22fcc323a65e558c51ec03e1b304365df96a649c2"
+    },
+    {
+      "path": "registries/DEFINITION_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "0c8fcb65839338d175b07a3b7b2b7489caf374ddb92e50288a5856df36edc1c4"
+    },
+    {
+      "path": "registries/THEOREM_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "e7d1aafeafaf8bd6bbaeae5c7e8ac655bd8a71708a2e998433c7cc550b49137b"
+    },
+    {
+      "path": "registries/TEMPORAL_AMENDMENT_MAP.csv",
+      "reproduced": true,
+      "sha256": "5c8d21f3624e255745c17b7ae5b3c4c8aed428a406a6d1c315bb2cf5dfbba40d"
+    },
+    {
+      "path": "registries/TOY_MODEL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "0621db1de9159c7f8b54b0ebefc8b1c61a36b56cd8c8838c878fbdfc649cb112"
+    },
+    {
+      "path": "registries/CERTIFICATE_SCHEMA_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "3919b01a004297e01482c23ebec4b9b0843b3cb77095eaf4a12273cbdd896472"
+    },
+    {
+      "path": "registries/ASSUMPTION_LEDGER.csv",
+      "reproduced": true,
+      "sha256": "dea22b029062138daaf80aa8b8f574ebf37e2e5bdbeae4c834c5376b1bd3df7c"
+    },
+    {
+      "path": "registries/KILL_CRITERIA.csv",
+      "reproduced": true,
+      "sha256": "18fd40fe1947cd36a424f09cda6d43d2d6dfee77cd87a288a9a4cbca75d1807e"
+    },
+    {
+      "path": "registries/DEPENDENCY_EDGES.csv",
+      "reproduced": true,
+      "sha256": "cdb7bce506a4b606f1cede6f80dc01e4f041fc7cb9f8e132c2fc1494ce25f035"
+    },
+    {
+      "path": "registries/PROJECT_REGISTRY.json",
+      "reproduced": true,
+      "sha256": "b578248d62b92d442d18c81bb9ba6a90d95e760ec76acceba597096f62be2fa1"
+    },
+    {
+      "path": "docs/TARGET_FREEZE.md",
+      "reproduced": true,
+      "sha256": "a810207c8bf588fa026100ee62ac5b764299ac023736d5fa39ab221fd3767b68"
+    },
+    {
+      "path": "docs/FORMALIZATION_CONTRACT.md",
+      "reproduced": true,
+      "sha256": "6a951f48e75fd9ecb007b9c548c16e35cb50c1609165c5e04fe2406dae64ad39"
+    },
+    {
+      "path": "docs/THEOREM_AND_TOY_REGISTRY.md",
+      "reproduced": true,
+      "sha256": "6c21a68d5f45ae0aefa71eec21be1baa76490c96637daf957ff998aba71cfd06"
+    },
+    {
+      "path": "docs/TEMPORAL_AMENDMENT_MAP.md",
+      "reproduced": true,
+      "sha256": "10a0dd7034458a20f9eec4a29813de2103c803616f9d1d9b61247472cc17ccd8"
+    },
+    {
+      "path": "docs/ASSUMPTION_AND_CLAIM_CEILING.md",
+      "reproduced": true,
+      "sha256": "938d465fcc7462abcfdb52fc318124ffbd26eeaef665124ae90d98c0e1a459c3"
+    },
+    {
+      "path": "docs/CIRCULARITY_AND_TYPING_POLICY.md",
+      "reproduced": true,
+      "sha256": "1c06edb14735a2061cee0faba4290ddad6e9548dd8f7919be7a5bd026572a2ae"
+    },
+    {
+      "path": "docs/PHASE_BOUNDARY.md",
+      "reproduced": true,
+      "sha256": "63f29780e3d60ff76eda16192cace3207acafe5861abfc03cb9c2c0c7820130c"
+    },
+    {
+      "path": "docs/RESTORE_AND_BUILD.md",
+      "reproduced": true,
+      "sha256": "f5edaaa258fcdf428aa41e68760196b59cf6485f971951394839f063156b204d"
+    },
+    {
+      "path": "manifests/TT00_ASSET_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "f99fea6f7dbed77e4a365c4ccbcb5a33acb36fd93006fad50115e12b03f8044f"
+    },
+    {
+      "path": "manifests/CST-TT-00_THEOREM_STATUS_DELTA.csv",
+      "reproduced": true,
+      "sha256": "e4e5159506c79ad082ba3b321e55f07ed8d58e2b02bcf53bcbbefb6ebe445b0a"
+    },
+    {
+      "path": "manifests/CST-TT-00_MODEL_CERTIFICATE_DELTA.csv",
+      "reproduced": true,
+      "sha256": "805441c860d51c761d53f23df516bd2f2e0843cb8315fb3a6e2c9a98c1bbfdc0"
+    }
+  ]
+}

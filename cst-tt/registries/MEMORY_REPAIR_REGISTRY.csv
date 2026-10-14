@@ -1,0 +1,3 @@
+memory_model_id,role,model_ref,certificate_ref,model_sha256,current_only_predictor_exists,predictive_divergence_present,memory_or_flatness_satisfied,predictor_functions_examined,theorem_ids
+MEM-POS-01,route-memory-repair,models/memory/MEM-POS-01.model.json,formal/certificates/memory/MEM-POS-01.certificate.json,789f2d5942e9fc93024c98fef4163a2d3acfdab8efdddf43264c01a7624b3467,false,true,true,2,TTN-04
+MEM-FLAT-01,flat-alternative,models/memory/MEM-FLAT-01.model.json,formal/certificates/memory/MEM-FLAT-01.certificate.json,328be24c70d9364d46498d40e02dabf8afbfee9c1c71d0d7c67ff9fa14aab52a,true,false,true,1,TTN-04;TTH-09

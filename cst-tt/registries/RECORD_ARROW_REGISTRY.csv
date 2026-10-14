@@ -1,0 +1,2 @@
+arrow_model_id,model_ref,certificate_ref,model_sha256,maps_examined,strictly_monotone_maps,nonstrict_monotone,strict_progress_preserved,theorem_ids
+ARROW-POS-01,models/arrow/ARROW-POS-01.model.json,formal/certificates/arrow/ARROW-POS-01.certificate.json,043a83f4768551edb8475affffa59372f42bee30fd36505d231e9b3a8a7a1489,125,10,true,true,TTH-10

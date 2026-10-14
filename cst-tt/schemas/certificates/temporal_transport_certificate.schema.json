@@ -1,0 +1,222 @@
+{
+  "$id": "https://six-birds.local/cst-tt/schemas/temporal_transport_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "audit": {
+      "additionalProperties": false,
+      "properties": {
+        "alphabets_distinct": {
+          "type": "boolean"
+        },
+        "carriers_distinct": {
+          "type": "boolean"
+        },
+        "component_maps_complete": {
+          "type": "boolean"
+        },
+        "component_maps_total_on_reachable": {
+          "type": "boolean"
+        },
+        "failed_obligations": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "forbidden_verdict_fields_absent": {
+          "type": "boolean"
+        },
+        "maintenance_translated": {
+          "type": "boolean"
+        },
+        "mapped_signature_agreement": {
+          "type": "boolean"
+        },
+        "ownership_interface_valid": {
+          "type": "boolean"
+        },
+        "predictive_representative_independence": {
+          "type": "boolean"
+        },
+        "route_discipline_satisfied": {
+          "type": "boolean"
+        },
+        "route_residue_retention_noncollapsing": {
+          "type": "boolean"
+        },
+        "route_status": {
+          "enum": [
+            "flat",
+            "route-indexed",
+            "unresolved"
+          ]
+        },
+        "source_states_well_formed": {
+          "type": "boolean"
+        },
+        "source_temporal_witness_valid": {
+          "type": "boolean"
+        },
+        "state_map_targets_declared": {
+          "type": "boolean"
+        },
+        "state_map_total_on_reachable": {
+          "type": "boolean"
+        },
+        "strict_record_arrow_preserved": {
+          "type": "boolean"
+        },
+        "successor_preserved": {
+          "type": "boolean"
+        },
+        "target_states_well_formed": {
+          "type": "boolean"
+        },
+        "target_temporal_witness_valid": {
+          "type": "boolean"
+        },
+        "tick_progress_preserved": {
+          "type": "boolean"
+        },
+        "transport_valid": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "carriers_distinct",
+        "alphabets_distinct",
+        "source_states_well_formed",
+        "target_states_well_formed",
+        "source_temporal_witness_valid",
+        "target_temporal_witness_valid",
+        "state_map_total_on_reachable",
+        "state_map_targets_declared",
+        "component_maps_complete",
+        "component_maps_total_on_reachable",
+        "mapped_signature_agreement",
+        "predictive_representative_independence",
+        "successor_preserved",
+        "tick_progress_preserved",
+        "strict_record_arrow_preserved",
+        "route_discipline_satisfied",
+        "route_residue_retention_noncollapsing",
+        "maintenance_translated",
+        "ownership_interface_valid",
+        "forbidden_verdict_fields_absent",
+        "transport_valid",
+        "route_status",
+        "failed_obligations"
+      ],
+      "type": "object"
+    },
+    "certificate_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "checker": {
+      "additionalProperties": false,
+      "properties": {
+        "checked_at_phase": {
+          "const": "CST-TT-03"
+        },
+        "function": {
+          "const": "audit_temporal_transport"
+        },
+        "module": {
+          "const": "cst_tt.transport"
+        },
+        "python_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "module",
+        "function",
+        "python_version",
+        "checked_at_phase"
+      ],
+      "type": "object"
+    },
+    "claim_ceiling": {
+      "const": "finite structural temporal transport only"
+    },
+    "claim_lanes": {
+      "const": [
+        "S-T"
+      ]
+    },
+    "model_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "model_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "result_status": {
+      "enum": [
+        "checked-finite-temporal-transport-certificate",
+        "scaffold-only"
+      ]
+    },
+    "route_status": {
+      "enum": [
+        "flat",
+        "route-indexed"
+      ]
+    },
+    "schema_version": {
+      "const": "CST-TT-03"
+    },
+    "theorem_evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "lean_compile_status": {
+          "enum": [
+            "pending-toolchain",
+            "compiled"
+          ]
+        },
+        "lean_declarations": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        },
+        "theorem_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array",
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "theorem_ids",
+        "lean_declarations",
+        "lean_compile_status"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "certificate_id",
+    "model_ref",
+    "model_sha256",
+    "result_status",
+    "claim_lanes",
+    "claim_ceiling",
+    "route_status",
+    "theorem_evidence",
+    "audit",
+    "checker"
+  ],
+  "title": "Bundled heterogeneous temporal transport certificate",
+  "type": "object"
+}

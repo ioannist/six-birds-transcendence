@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_joint_temporal_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_joint_temporal_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_joint_temporal_transcription.log",
+  "log_sha256": "785b57d674c7f73cded998830b87a60b7b39759700d8c179f6413eea5848d0f3",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:36+00:00",
+  "status": "pass",
+  "summary": "PASS: caught planted drift: elapsed source order erased\nPASS: caught planted drift: target local record supplied as inherited6\nPASS: caught planted drift: joint denominator16 instead of256\nPASS: caught planted drift: target ownership collapsed to source\nPASS: caught planted drift: conditioned marginals falsely multiplied"
+}

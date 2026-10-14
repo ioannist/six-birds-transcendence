@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-birds.local/cst-tt/schemas/strict_temporal_corridor_certificate.schema.json",
+  "title": "Strict carrier-chain temporal corridor certificate",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "CST-TT-04"},
+    "certificate_id": {"type": "string", "minLength": 1},
+    "model_ref": {"type": "string", "minLength": 1},
+    "model_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "result_status": {"enum": ["not-evaluated", "checked-finite-strict-temporal-corridor"]},
+    "claim_lanes": {
+      "type": "array", "items": {"const": "S-L"}, "minItems": 1, "maxItems": 1
+    },
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "theorem_evidence": {"type": "object", "additionalProperties": true},
+    "audit": {
+      "type": "object",
+      "required": ["strict_corridor_valid", "failed_obligations", "atomic_leg_count", "route_status"],
+      "properties": {
+        "strict_corridor_valid": {"type": "boolean"},
+        "failed_obligations": {"type": "array", "items": {"type": "string"}},
+        "atomic_leg_count": {"type": "integer", "minimum": 0},
+        "route_status": {"enum": ["flat", "route-indexed", "unresolved"]}
+      },
+      "additionalProperties": true
+    },
+    "checker": {"type": "object", "additionalProperties": true}
+  },
+  "required": ["schema_version", "certificate_id", "model_ref", "model_sha256", "result_status", "claim_lanes", "claim_ceiling", "theorem_evidence", "audit", "checker"]
+}

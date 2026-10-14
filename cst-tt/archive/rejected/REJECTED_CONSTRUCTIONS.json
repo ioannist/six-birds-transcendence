@@ -1,0 +1,101 @@
+{
+  "phase": "CST-TT-08",
+  "rows": [
+    {
+      "name": "Endpoint equality as continuity",
+      "preserved_evidence": "CM-01;CM-02",
+      "reason": "Equal endpoints and even autonomous reconstruction do not supply strict temporal lineage.",
+      "rejected_id": "ALT-01",
+      "replacement": "episode-indexed strict temporal corridor",
+      "status": "killed"
+    },
+    {
+      "name": "Ultimate source and target must share one mixed stage",
+      "preserved_evidence": "docs/CORRIDOR_COMPOSITION_THEOREM.md",
+      "reason": "The rule is not stable under legitimate S-to-M-to-T composition.",
+      "rejected_id": "ALT-02",
+      "replacement": "chain of audited atomic overlap legs",
+      "status": "killed"
+    },
+    {
+      "name": "Holonomy is an endogenous arrow",
+      "preserved_evidence": "CM-03;TTN-03",
+      "reason": "Noncommuting route structure can coexist with zero endogenous arrow.",
+      "rejected_id": "ALT-03",
+      "replacement": "separate strict record-advancement audit",
+      "status": "killed"
+    },
+    {
+      "name": "Externally scheduled activity is target-owned time",
+      "preserved_evidence": "CM-04;AUT-C01",
+      "reason": "The apparent temporal process collapses when scheduler or decoder support is withdrawn.",
+      "rejected_id": "ALT-04",
+      "replacement": "target-owned temporal closure and withdrawal autonomy",
+      "status": "killed"
+    },
+    {
+      "name": "Scalar average defect decides acceptance",
+      "preserved_evidence": "CM-10;TTS-02",
+      "reason": "Equal or small scalar summaries can hide a failed hard gate.",
+      "rejected_id": "ALT-05",
+      "replacement": "exact componentwise defect vector",
+      "status": "killed"
+    },
+    {
+      "name": "Symmetry selects one unique continuer",
+      "preserved_evidence": "TTN-11;TTH-08",
+      "reason": "A fixed-point-free target swap preserves both valid branches and defeats an invariant singleton selector.",
+      "rejected_id": "ALT-06",
+      "replacement": "relation-valued continuation",
+      "status": "killed"
+    },
+    {
+      "name": "Route memory can be erased without flatness",
+      "preserved_evidence": "TTN-04;TTN-05;TTH-09",
+      "reason": "Memory erasure is licensed only by explicit confluence or normalization and zero translation holonomy.",
+      "rejected_id": "ALT-07",
+      "replacement": "retain route residue or prove flatness",
+      "status": "killed"
+    },
+    {
+      "name": "Branchwise preservation implies integrated fusion",
+      "preserved_evidence": "TTN-14",
+      "reason": "Branch marginals do not determine joint recombination or coherent action credit.",
+      "rejected_id": "ALT-08",
+      "replacement": "independent recombination and package gates",
+      "status": "killed"
+    },
+    {
+      "name": "Arbitrarily long finite success implies unbounded liveness",
+      "preserved_evidence": "TTN-12;TTS-04",
+      "reason": "Every finite horizon has a fail-next countdown; a total invariant policy is separately required.",
+      "rejected_id": "ALT-09",
+      "replacement": "model-relative total invariant policy",
+      "status": "killed"
+    },
+    {
+      "name": "Direct successorship silently broadens strict FIACH",
+      "preserved_evidence": "TTD-02;TTS-01",
+      "reason": "Direct and overlap modes are kept in a broader named path class; strict FIACH remains overlap-only.",
+      "rejected_id": "ALT-10",
+      "replacement": "GeneralizedTemporalContinuity as a separate class",
+      "status": "killed"
+    },
+    {
+      "name": "Temporal-IAPS replaces the surviving primary",
+      "preserved_evidence": "TTF-01..TTF-08",
+      "reason": "Fallback remains typed but inactive because no FIACH kill criterion fired.",
+      "rejected_id": "ALT-11",
+      "replacement": "retain as conditional fallback only",
+      "status": "open"
+    },
+    {
+      "name": "Carrier polymorphism proves substrate indifference",
+      "preserved_evidence": "AS-29;AS-30",
+      "reason": "A2-P and empirical or certificate-soundness bridges remain separate assumptions.",
+      "rejected_id": "ALT-12",
+      "replacement": "explicitly price A2-P and recognition",
+      "status": "killed"
+    }
+  ]
+}

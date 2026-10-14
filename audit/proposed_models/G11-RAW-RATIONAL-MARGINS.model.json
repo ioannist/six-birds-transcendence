@@ -1,0 +1,492 @@
+{
+  "schema": "csttt-g11a-raw-rational-margin-controls-v1",
+  "classification": "b",
+  "phase": "BEFORE_EVALUATION_DECLARATION",
+  "opening_head": "d144baa6eff78a97b1f8661438523f8bb15202f6",
+  "semantics": "N9 candidate successor: actual operational Rat observer offsets with complete original run/profile and inherited original F/O gates under erasure; no fractional return to original Nat differences or physical robustness claim",
+  "baseline": {
+    "model": "POS04FinalHandoff.raw (POS04ResourceRuntime.protocol baseline)",
+    "source_assignment": "CSTTT.POS04.Assigned.canonical",
+    "history": "RouteId.a",
+    "disturbance": "LaneDisturbance.nominal",
+    "action": "Action.cw",
+    "outcome": "Ambient.inK KState.p2w1"
+  },
+  "raw_primitives": {
+    "cells": "RationalRegisters.ExtendedCell: original typed cells plus correction : Vector",
+    "registers": "RationalRegisters.LiftRegister: original typed registers plus five Rat offset registers",
+    "initializer": "RawRationalMargin.initializer: embedded original raw initializer and literal zero offsets",
+    "updater": "RawRationalMargin.program: embedded actual original acquisition updater; each offset becomes its old value plus the consumed correction coordinate",
+    "rows": "RawRationalMargin.row: embedded original actual row expression",
+    "observers": "RawRationalMargin.observer: exact rational casts of original raw profile coordinate/order/tick/progress/record plus own offset",
+    "source_projection": "RawRationalMargin.target: extendAssignment (OwningHandoff.target model.base source) correction",
+    "gates": "RawRationalMargin.hardGate_F/O: whole FinalHandoff.HandoffPass_F/O on original model/source projection",
+    "readout": "RawRationalMargin.eventAdvance: actual extended initialRun, updateRun, five eager optional observer reads and signed rational differences"
+  },
+  "base_source_sha256": {
+    "lean/CSTTT/Targets/GenericHandoff/POS04FinalHandoff.lean": "9d2366f1c8dde87b917889f09eb37ffa29fe4d23f0bee8677504749f14d2f123",
+    "lean/CSTTT/Targets/GenericHandoff/POS04RawHandoff.lean": "8e2e2147df7aa9716163469d852e4dd3f456aaa2dbea123d0bec6316c32d0768",
+    "lean/CSTTT/Targets/GenericHandoff/POS04ExecutionFrontier.lean": "31da06158299297eda3af12a3ffcb456f7000a06f9757bf2413ee7a239ae33fd",
+    "lean/CSTTT/Targets/GenericHandoff/POS04ExecutedCorridor.lean": "813dc8ea8bce9b7aa4e53a0ab224d3ab7f6c19b59e5196ef0161caccce3fcede",
+    "lean/CSTTT/Targets/GenericHandoff/POS04RegisterDynamics.lean": "0d4b280f7dce23666f3e16ae99f237f2b7e2189d238449cfeb81b5fe24613db1"
+  },
+  "controls": [
+    {
+      "id": "zero",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "0",
+        "tick": "0",
+        "progress": "0",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "quarter",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "1/4",
+        "order": "1/4",
+        "tick": "1/4",
+        "progress": "1/4",
+        "record": "1/4"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "minus_quarter",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "-1/4",
+        "order": "-1/4",
+        "tick": "-1/4",
+        "progress": "-1/4",
+        "record": "-1/4"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "upper_boundary",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "1/2",
+        "order": "1/2",
+        "tick": "1/2",
+        "progress": "1/2",
+        "record": "1/2"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "lower_boundary",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "-1/2",
+        "order": "-1/2",
+        "tick": "-1/2",
+        "progress": "-1/2",
+        "record": "-1/2"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "plus_predictive",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "1/4",
+        "order": "0",
+        "tick": "0",
+        "progress": "0",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "minus_predictive",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "-1/4",
+        "order": "0",
+        "tick": "0",
+        "progress": "0",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "plus_order",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "1/4",
+        "tick": "0",
+        "progress": "0",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "minus_order",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "-1/4",
+        "tick": "0",
+        "progress": "0",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "plus_tick",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "0",
+        "tick": "1/4",
+        "progress": "0",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "minus_tick",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "0",
+        "tick": "-1/4",
+        "progress": "0",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "plus_progress",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "0",
+        "tick": "0",
+        "progress": "1/4",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "minus_progress",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "0",
+        "tick": "0",
+        "progress": "-1/4",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "plus_record",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "0",
+        "tick": "0",
+        "progress": "0",
+        "record": "1/4"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "minus_record",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "0",
+        "tick": "0",
+        "progress": "0",
+        "record": "-1/4"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_first_event",
+        "five_optional_numeric_reads",
+        "exact_margin_and_box",
+        "actual_original_F_and_O_gates",
+        "actual_positive_support_and_aggregated_weight"
+      ]
+    },
+    {
+      "id": "missing_correction",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": null,
+      "radius_each": "1/2",
+      "checks": [
+        "actual_offset_execution_none",
+        "program_readiness_refuted",
+        "no_default_correction"
+      ]
+    },
+    {
+      "id": "missing_positions",
+      "model": "baseline",
+      "source_assignment": "Assigned.put canonical (positions) none",
+      "correction": {
+        "predictive": "1/4",
+        "order": "1/4",
+        "tick": "1/4",
+        "progress": "1/4",
+        "record": "1/4"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_missing_consumed_expression_none",
+        "raw_readiness_refuted",
+        "actual_original_F_and_O_readouts"
+      ]
+    },
+    {
+      "id": "missing_rows_Tag_source",
+      "model": "baseline",
+      "source_assignment": "Assigned.put canonical (rows Tag.source) none",
+      "correction": {
+        "predictive": "1/4",
+        "order": "1/4",
+        "tick": "1/4",
+        "progress": "1/4",
+        "record": "1/4"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_missing_consumed_expression_none",
+        "raw_readiness_refuted",
+        "actual_original_F_and_O_readouts"
+      ]
+    },
+    {
+      "id": "missing_writers",
+      "model": "baseline",
+      "source_assignment": "Assigned.put canonical (writers) none",
+      "correction": {
+        "predictive": "1/4",
+        "order": "1/4",
+        "tick": "1/4",
+        "progress": "1/4",
+        "record": "1/4"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_missing_consumed_expression_none",
+        "raw_readiness_refuted",
+        "actual_original_F_and_O_readouts"
+      ]
+    },
+    {
+      "id": "missing_maintenance",
+      "model": "baseline",
+      "source_assignment": "Assigned.put canonical (maintenance) none",
+      "correction": {
+        "predictive": "1/4",
+        "order": "1/4",
+        "tick": "1/4",
+        "progress": "1/4",
+        "record": "1/4"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_missing_consumed_expression_none",
+        "raw_readiness_refuted",
+        "actual_original_F_and_O_readouts"
+      ]
+    },
+    {
+      "id": "constant_receiver_zero",
+      "model": "POS04FinalHandoff.constant",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "0",
+        "tick": "0",
+        "progress": "0",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_numeric_first_event",
+        "actual_receiver_readout_refuted",
+        "actual_original_F_and_O_gates_refuted"
+      ]
+    },
+    {
+      "id": "constant_receiver_quarter",
+      "model": "POS04FinalHandoff.constant",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "1/4",
+        "order": "1/4",
+        "tick": "1/4",
+        "progress": "1/4",
+        "record": "1/4"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_extended_numeric_first_event",
+        "actual_receiver_readout_refuted",
+        "actual_original_F_and_O_gates_refuted"
+      ]
+    },
+    {
+      "id": "outside_box_order_zero",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "0",
+        "order": "-1",
+        "tick": "0",
+        "progress": "0",
+        "record": "0"
+      },
+      "radius_each": "1/2",
+      "checks": [
+        "actual_order_advance_zero",
+        "five_advances_positive_refuted",
+        "declared_half_box_refuted"
+      ]
+    },
+    {
+      "id": "zero_slack_lower_boundary",
+      "model": "baseline",
+      "source_assignment": "canonical",
+      "correction": {
+        "predictive": "-1",
+        "order": "-1",
+        "tick": "-1",
+        "progress": "-1",
+        "record": "-1"
+      },
+      "radius_each": "1",
+      "checks": [
+        "actual_nonpositive_advances",
+        "strict_slack_certificate_refuted",
+        "radius_one_box"
+      ]
+    }
+  ],
+  "evaluation_rule": "No new extended fixture is instantiated, evaluated or kernel tested before this declaration packet is committed. Subsequent evaluation must report every frozen control without tuning. New failures remain failures."
+}

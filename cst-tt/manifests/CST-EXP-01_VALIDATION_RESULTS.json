@@ -1,0 +1,445 @@
+{
+  "project": "CST-EXP",
+  "phase": "CST-EXP-01",
+  "generated_at_utc": "2026-08-09T19:00:01.203377+00:00",
+  "status": "pass",
+  "checks_passed": 87,
+  "checks_total": 87,
+  "results": [
+    {
+      "name": "Required phase artifacts exist",
+      "passed": true,
+      "evidence": "{\"missing\": [], \"required\": 55}"
+    },
+    {
+      "name": "Required phase artifacts are nonempty",
+      "passed": true,
+      "evidence": "{\"empty\": []}"
+    },
+    {
+      "name": "All phase CSV ledgers parse and contain data",
+      "passed": true,
+      "evidence": "19 CSV files"
+    },
+    {
+      "name": "Phase JSON metadata parses",
+      "passed": true,
+      "evidence": "2 JSON files"
+    },
+    {
+      "name": "Both embedded source archives pass ZIP integrity",
+      "passed": true,
+      "evidence": "ZIP CRC checks pass"
+    },
+    {
+      "name": "Paper archive contains exactly 60 top-level TeX manuscripts",
+      "passed": true,
+      "evidence": "60"
+    },
+    {
+      "name": "Normative inputs and source archives match pinned hashes",
+      "passed": true,
+      "evidence": "{\"bad\": [], \"pinned\": 4}"
+    },
+    {
+      "name": "Paper inventory contains P01 through P60 exactly once",
+      "passed": true,
+      "evidence": "60"
+    },
+    {
+      "name": "Original theorem-like environment census is 1,363",
+      "passed": true,
+      "evidence": "1363"
+    },
+    {
+      "name": "P46 contributes four quarantined environments to the original census",
+      "passed": true,
+      "evidence": "4"
+    },
+    {
+      "name": "Non-quarantined machine statement bank contains 1,359 rows",
+      "passed": true,
+      "evidence": "1359"
+    },
+    {
+      "name": "Machine statement IDs are unique",
+      "passed": true,
+      "evidence": "{\"rows\": 1359, \"unique\": 1359}"
+    },
+    {
+      "name": "P46 is absent from the machine statement bank",
+      "passed": true,
+      "evidence": "0"
+    },
+    {
+      "name": "P42/P60 statement counts retain version delta",
+      "passed": true,
+      "evidence": "{\"P42\": 173, \"P60\": 157}"
+    },
+    {
+      "name": "Paper inventory hashes, bytes, and line counts match source archive",
+      "passed": true,
+      "evidence": "60/60"
+    },
+    {
+      "name": "Exactly 60 paper cards exist",
+      "passed": true,
+      "evidence": "60"
+    },
+    {
+      "name": "Paper-card IDs are exactly P01 through P60",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Every non-quarantined paper card contains provenance, extraction, support, boundary, generalization, and disposition sections",
+      "passed": true,
+      "evidence": "59/59"
+    },
+    {
+      "name": "P46 card is fail-closed metadata/exclusion only",
+      "passed": true,
+      "evidence": "# P46 — To Chat a Stone with Six Birds: Language Theory Models  > **Corpus verdict:** quarantine retained   > **Phase role:** metadata/exclusion card only   > **Claim lanes touched:** M   > **Version handling:** quarantined  ## Source identity  | Field | Value | |---|---| | Corpus ID | `P46` | | Sou"
+    },
+    {
+      "name": "No paper card absorbs report-level triage text",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Paper coverage audit has 60 unique rows",
+      "passed": true,
+      "evidence": "60"
+    },
+    {
+      "name": "Every coverage row resolves to an existing paper card",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Curated statement/provenance ledger has 378 rows",
+      "passed": true,
+      "evidence": "378"
+    },
+    {
+      "name": "Curated statement IDs are unique",
+      "passed": true,
+      "evidence": "{\"rows\": 378, \"unique\": 378}"
+    },
+    {
+      "name": "Every one of 60 papers has an explicit curated disposition",
+      "passed": true,
+      "evidence": "{\"P01\": 3, \"P02\": 4, \"P03\": 4, \"P04\": 9, \"P05\": 30, \"P06\": 13, \"P07\": 4, \"P08\": 5, \"P09\": 9, \"P10\": 5, \"P11\": 4, \"P12\": 4, \"P13\": 12, \"P14\": 10, \"P15\": 5, \"P16\": 12, \"P17\": 9, \"P18\": 5, \"P19\": 3, \"P20\": 3, \"P21\": 3, \"P22\": 9, \"P23\": 12, \"P24\": 6, \"P25\": 5, \"P26\": 3, \"P27\": 3, \"P28\": 4, \"P29\": 12, \"P30\": 17, \"P31\": 9, \"P32\": 12, \"P33\": 12, \"P34\": 9, \"P35\": 3, \"P36\": 5, \"P37\": 5, \"P38\": 2, \"P39\": 4, \"P40\": 4, \"P41\": 1, \"P42\": 14, \"P43\": 2, \"P44\": 6, \"P45\": 4, \"P46\": 1, \"P47\": 1, \"P48\": 5, \"P49\": 1, \"P50\": 9, \"P51\": 1, \"P52\": 11, \"P53\": 5, \"P54\": 2, \"P55\": 3, \"P56\": 5, \"P57\": 5, \"P58\": 4, \"P59\": 1, \"P60\": 5}"
+    },
+    {
+      "name": "P46 has exactly one exclusion record and no content record",
+      "passed": true,
+      "evidence": "1"
+    },
+    {
+      "name": "Every curated formal record resolves to machine bank and every manual record has a declared manual ID",
+      "passed": true,
+      "evidence": "{\"bad\": [], \"manual_passages\": 55}"
+    },
+    {
+      "name": "Every non-quarantined curated record has a valid source hash and line span",
+      "passed": true,
+      "evidence": "377/377"
+    },
+    {
+      "name": "Curated provenance has all fail-closed scope and nonclaim fields populated",
+      "passed": true,
+      "evidence": "377 records"
+    },
+    {
+      "name": "All curated claim lanes use the canonical seven-lane vocabulary",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "All 1,359 machine-index statement spans resolve inside source files",
+      "passed": true,
+      "evidence": "1359/1359"
+    },
+    {
+      "name": "Support/carrier ledger includes one paper-level row for every manuscript",
+      "passed": true,
+      "evidence": "60"
+    },
+    {
+      "name": "Every paper-level support record exposes support, carrier, retyping, identity, and autonomy limits",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Nine fixed-support imports are explicitly flagged",
+      "passed": true,
+      "evidence": "{\"actual\": [\"P03\", \"P08\", \"P09\", \"P14\", \"P16\", \"P18\", \"P23\", \"P24\", \"P39\"], \"expected\": [\"P03\", \"P08\", \"P09\", \"P14\", \"P16\", \"P18\", \"P23\", \"P24\", \"P39\"]}"
+    },
+    {
+      "name": "P42 is frozen as normative newer SAU revision and P60 has zero independent weight",
+      "passed": true,
+      "evidence": "version log"
+    },
+    {
+      "name": "Curated provenance preserves P42/P60 evidential status",
+      "passed": true,
+      "evidence": "{\"P42\": [\"normative-newer-revision\"], \"P60\": [\"superseded-older-revision-no-independent-weight\"]}"
+    },
+    {
+      "name": "All 18 embedded paper duplicates are recorded and not double-counted",
+      "passed": true,
+      "evidence": "18"
+    },
+    {
+      "name": "C1–C8 have exactly eight separate clause cards",
+      "passed": true,
+      "evidence": "[\"C1\", \"C2\", \"C3\", \"C4\", \"C5\", \"C6\", \"C7\", \"C8\"]"
+    },
+    {
+      "name": "Every clause card separates design contract, component evidence, transfer use, and integrated-instance boundary",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Theorem-family bank contains 25 source-scoped cards",
+      "passed": true,
+      "evidence": "25"
+    },
+    {
+      "name": "Core lineage, combination, realization, transport, persistence, confluence, and completion cards exist",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "T14 card exposes fission, fusion, empty target, and fixed-route/cross-carrier limits",
+      "passed": true,
+      "evidence": "T14 boundary vocabulary"
+    },
+    {
+      "name": "T15 card is a joint-carrier combination gate, not a lineage theorem",
+      "passed": true,
+      "evidence": "T15 boundary vocabulary"
+    },
+    {
+      "name": "T17 card records absent A2 invariance theorem, certificate-soundness purchase, and absent integrated target",
+      "passed": true,
+      "evidence": "T17 boundary vocabulary"
+    },
+    {
+      "name": "Canonical asset provenance has 196 exact links across 26 asset families",
+      "passed": true,
+      "evidence": "{\"families\": 26, \"links\": 196}"
+    },
+    {
+      "name": "Every asset link resolves to a curated provenance record",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Every canonical asset family has at least one exact source link",
+      "passed": true,
+      "evidence": "{\"A-AG-01\": 10, \"A-AOR-01\": 8, \"A-AR-01\": 9, \"A-CD-01\": 6, \"A-CF-01\": 11, \"A-CT-01\": 3, \"A-CU-01\": 11, \"A-EV-01\": 9, \"A-EX-01\": 4, \"A-FS-01\": 15, \"A-HID-01\": 9, \"A-HO-01\": 8, \"A-LG-01\": 5, \"A-NO-01\": 5, \"A-ON-01\": 7, \"A-OP-01\": 2, \"A-PQ-01\": 11, \"A-PQ-02\": 4, \"A-PR-01\": 9, \"A-PT-01\": 9, \"A-QEC-01\": 4, \"A-RE-01\": 13, \"A-RT-01\": 4, \"A-ST-01\": 4, \"A-TM-01\": 7, \"A-VI-01\": 9}"
+    },
+    {
+      "name": "Asset atlas names all 26 canonical asset IDs",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Asset reuse is frozen fail-closed to exact provenance or a genuinely new primitive",
+      "passed": true,
+      "evidence": "atlas import rule"
+    },
+    {
+      "name": "Typed map ledger contains 106 positive or explicit-negative records",
+      "passed": true,
+      "evidence": "106"
+    },
+    {
+      "name": "Every map record declares source type, target type, import status, and cross-carrier caution",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Typed map ledger covers all 60 papers, including explicit-negative records",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "P46 is absent from substantive typed maps",
+      "passed": true,
+      "evidence": "[{\"cross_carrier_caution\": \"No map content imported.\", \"fixed_support_flag\": \"quarantined\", \"imported_status\": \"quarantined-no-import\", \"map_id\": \"MAP-P46-00\", \"object_or_map\": \"none imported\", \"paper_id\": \"P46\", \"paper_title\": \"To Chat a Stone with Six Birds: Language Theory Models\", \"source_type\": \"—\", \"target_type\": \"—\", \"type_signature\": \"—\", \"version_status\": \"quarantined\"}]"
+    },
+    {
+      "name": "Lexical dependency ledger covers all and only 1,359 non-quarantined statements",
+      "passed": true,
+      "evidence": "{\"ids\": 1359, \"rows\": 1359}"
+    },
+    {
+      "name": "Every resolved explicit statement dependency points to a live machine-index statement",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "P46 is absent from lexical dependency and source-label ledgers",
+      "passed": true,
+      "evidence": "quarantine exclusion"
+    },
+    {
+      "name": "Source-label index contains 3,658 exact label locations",
+      "passed": true,
+      "evidence": "3658"
+    },
+    {
+      "name": "Dependency graph contains all required structural, obstruction, assumption, and missing-theorem nodes",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Every graph edge resolves to live nodes",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Dependency graph encodes the four critical negative/nonimplication edges",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Rendered graph artifacts are nontrivial",
+      "passed": true,
+      "evidence": "{\"png\": 272669, \"svg\": 35010}"
+    },
+    {
+      "name": "Gap-to-asset matrix contains 14 unique gaps",
+      "passed": true,
+      "evidence": "14"
+    },
+    {
+      "name": "Required G01–G08 gaps are all present",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Every gap states partial assets, missing purchase, needed result type, and kill test",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Consciousness repository inventory contains 350 non-directory files",
+      "passed": true,
+      "evidence": "350"
+    },
+    {
+      "name": "Formal/formal-metadata inventory contains 92 files",
+      "passed": true,
+      "evidence": "92"
+    },
+    {
+      "name": "Python test inventory contains 21 modules",
+      "passed": true,
+      "evidence": "21"
+    },
+    {
+      "name": "T14/T15/T17 and scaffold executable surfaces are inventoried",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Selected consciousness checks honestly report 45 passing tests",
+      "passed": true,
+      "evidence": "selected verification"
+    },
+    {
+      "name": "Incomplete full-suite, snapshot, and Lean checks are explicitly not reported as passes",
+      "passed": true,
+      "evidence": "incomplete checks retained"
+    },
+    {
+      "name": "Verification report preserves the no-integrated-instance/no-A2/no-lineage boundary",
+      "passed": true,
+      "evidence": "scope boundary"
+    },
+    {
+      "name": "Decision ledger retains all 18 CST-EXP-00 rulings and 12 CST-EXP-01 rulings",
+      "passed": true,
+      "evidence": "{\"missing_D01\": [], \"rows\": 30}"
+    },
+    {
+      "name": "Human decision log mirrors every machine decision ID",
+      "passed": true,
+      "evidence": "{\"machine_ids\": 30}"
+    },
+    {
+      "name": "Repository state declares CST-EXP-01 complete and CST-EXP-02 next",
+      "passed": true,
+      "evidence": "state headers"
+    },
+    {
+      "name": "Repository state explicitly says no target, theorem target, or toy program was selected",
+      "passed": true,
+      "evidence": "nonselection state"
+    },
+    {
+      "name": "Phase summary matches all major live CST-EXP-01 counts",
+      "passed": true,
+      "evidence": "{\"asset_families\": 26, \"asset_provenance_links\": 196, \"clause_cards\": 8, \"consciousness_repo_files\": 350, \"curated_provenance_records\": 378, \"embedded_duplicate_papers\": 18, \"gap_rows\": 14, \"lexical_dependency_rows\": 1359, \"machine_statements\": 1359, \"manual_source_passages\": 55, \"papers\": 60, \"source_labels\": 3658, \"theorem_family_cards\": 25, \"typed_map_records\": 106}"
+    },
+    {
+      "name": "Phase summary records complete/pass/frozen with no target or implementation",
+      "passed": true,
+      "evidence": "{\"completed_at_utc\": \"2026-08-09T19:10:00+00:00\", \"counts\": {\"asset_families\": 26, \"asset_provenance_links\": 196, \"clause_cards\": 8, \"consciousness_repo_files\": 350, \"curated_provenance_records\": 378, \"embedded_duplicate_papers\": 18, \"formal_inventory_files\": 92, \"gap_rows\": 14, \"lexical_dependency_rows\": 1359, \"machine_statements\": 1359, \"manual_source_passages\": 55, \"original_theorem_like_environments\": 1363, \"paper_cards\": 60, \"papers\": 60, \"phase_01_decisions\": 12, \"quarantined_environments\": 4, \"source_labels\": 3658, \"test_modules\": 21, \"theorem_family_cards\": 25, \"typed_map_records\": 106}, \"exit_gate\": \"pass\", \"frozen_at_utc\": \"2026-08-09T19:30:00+00:00\", \"next_phase\": \"CST-EXP-02\", \"phase\": \"CST-EXP-01\", \"project\": \"CST-EXP\", \"repository_state\": \"frozen\", \"scientific_conclusion_selected\": false, \"status\": \"complete\", \"target_selected\": false, \"theorem_or_program_implemented\": false, \"validation\": {\"checks_passed\": 87, \"checks_total\": 87, \"report\": \"manifests/VALIDATION_REPORT.md\", \"results\": \"manifests/VALIDATION_RESULTS.json\", \"status\": \"pass\"}, \"verification\": {\"full_lab_suite\": \"incomplete-timeout-not-a-pass\", \"lean\": \"not-run-toolchain-unavailable\", \"package_validator\": \"pass\", \"result_snapshot_test\": \"incomplete-timeout-not-a-pass\", \"selected_python_tests\": \"45 passed (latest clean rerun 24.30 s)\"}}"
+    },
+    {
+      "name": "Later exploration/implementation directories remain unexecuted",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Composition notes are explicitly unranked and do not freeze a target",
+      "passed": true,
+      "evidence": "composition boundary"
+    },
+    {
+      "name": "All six CST-EXP-01 exit gates are recorded PASS",
+      "passed": true,
+      "evidence": "6"
+    },
+    {
+      "name": "All CST-EXP-01 Python scripts compile",
+      "passed": true,
+      "evidence": "4/4"
+    },
+    {
+      "name": "Portable rebuild shell script passes syntax check",
+      "passed": true,
+      "evidence": "bash -n"
+    },
+    {
+      "name": "All local Markdown links resolve",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Repository contains no symlinks",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "All repository text artifacts are UTF-8 readable",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "No unintended empty files remain",
+      "passed": true,
+      "evidence": "[]"
+    },
+    {
+      "name": "Content manifest entries match live files",
+      "passed": true,
+      "evidence": "{\"bad\": [], \"entries\": 209}"
+    }
+  ]
+}

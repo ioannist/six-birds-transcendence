@@ -1,0 +1,23 @@
+{
+  "model_id": "TTH07-STAGE-COMPOSITION",
+  "grade": "primitive typed-map algebra only; not a Temporal-FIACH instance",
+  "source_cell_type": "Unit",
+  "middle_cell_type": "Unit",
+  "target_cell_type": "Unit",
+  "value_type_each": "Nat",
+  "index_type": "Unit",
+  "left_instruction": {"operation": "add", "parameter": 1},
+  "right_instruction": {"operation": "multiply", "parameter": 2},
+  "scope_each": ["unit"],
+  "cover_indices_each": ["unit"],
+  "cover_adjacency_each": true,
+  "instruction_semantics": "some result; absent source or intermediate scope/arrow yields none through Option.bind",
+  "positive_source_value": 3,
+  "controls": {
+    "missing_source": "source unit = none",
+    "missing_intermediate_scope": [],
+    "missing_right_arrow": "right unit unit = none",
+    "changed_left_instruction": {"operation": "add", "parameter": 2}
+  },
+  "declaration_order": "Raw operation parameters and controls declared before evaluating the model; no handoff verdict or derived endpoint supplied"
+}

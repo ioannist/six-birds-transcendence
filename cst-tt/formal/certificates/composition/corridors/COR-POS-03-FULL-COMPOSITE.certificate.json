@@ -1,0 +1,86 @@
+{
+  "audit": {
+    "all_stages_temporally_realized": true,
+    "atomic_leg_count": 2,
+    "boundary_signatures_compatible": true,
+    "carrier_chain_valid": true,
+    "distinct_endpoints": true,
+    "ends_target_only": true,
+    "event_graph_well_formed": true,
+    "every_adjacent_stage_operationally_linked": true,
+    "every_atomic_leg_valid": true,
+    "failed_obligations": [],
+    "forbidden_verdict_fields_absent": true,
+    "frontier_cover_valid": true,
+    "leg_audits": [
+      {
+        "atomic_leg_valid": true,
+        "audit_later_stage": 2,
+        "end_stage": 2,
+        "failed_obligations": [],
+        "leg_id": "leg-S-M",
+        "mixed_stage": 1,
+        "route_status": "route-indexed",
+        "source_carrier": 17,
+        "source_nonredundant": true,
+        "start_stage": 0,
+        "takeover_stage": 2,
+        "target_carrier": 55,
+        "target_nonredundant": true
+      },
+      {
+        "atomic_leg_valid": true,
+        "audit_later_stage": 4,
+        "end_stage": 4,
+        "failed_obligations": [],
+        "leg_id": "leg-M-T",
+        "mixed_stage": 3,
+        "route_status": "route-indexed",
+        "source_carrier": 55,
+        "source_nonredundant": true,
+        "start_stage": 2,
+        "takeover_stage": 4,
+        "target_carrier": 101,
+        "target_nonredundant": true
+      }
+    ],
+    "leg_count_matches_chain": true,
+    "local_temporal_steps_valid": true,
+    "mixed_stage_count": 2,
+    "route_discipline_valid": true,
+    "route_status": "route-indexed",
+    "stage_indices_contiguous": true,
+    "stages_well_formed": true,
+    "starts_source_only": true,
+    "strict_corridor_valid": true,
+    "support_nonempty_and_unique": true
+  },
+  "certificate_id": "COR-POS-03-FULL-COMPOSITE",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_strict_corridor",
+    "module": "cst_tt.corridor",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite structural temporal lineage criterion only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "model_ref": "models/corridors/COR-POS-03-FULL-COMPOSITE.model.json",
+  "model_sha256": "e4cd3049d819c37b9c32218e43159bc55b1c46fe871dca298aee11ec385e9945",
+  "result_status": "checked-finite-strict-carrier-chain-corridor",
+  "role": "full-composite",
+  "schema_version": "CST-TT-06",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.CorridorTheory.atomicTemporalCorridorCertificateSound",
+      "CSTTT.CorridorTheory.strictTemporalCorridorComposition"
+    ],
+    "theorem_ids": [
+      "TTH-04",
+      "TTH-07",
+      "TTH-08"
+    ]
+  }
+}

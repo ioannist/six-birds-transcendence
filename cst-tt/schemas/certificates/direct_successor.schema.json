@@ -1,0 +1,109 @@
+{
+  "$defs": {
+    "carrier": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "label": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "label"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://six-birds.local/cst-tt/schemas/direct_successor.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Provisional and separately named; it does not silently broaden the strict overlap corridor.",
+  "properties": {
+    "first_target_event_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "last_source_event_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "operational_dependency_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "operational_provenance_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "ownership_interface_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "predictive_transport_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "record_descent_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "CST-TT-00"
+    },
+    "source": {
+      "$ref": "#/$defs/carrier"
+    },
+    "target": {
+      "$ref": "#/$defs/carrier"
+    },
+    "temporal_transport_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "tick_translation_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "source",
+    "target",
+    "last_source_event_id",
+    "first_target_event_id",
+    "operational_dependency_id",
+    "temporal_transport_ref",
+    "operational_provenance_status",
+    "predictive_transport_status",
+    "tick_translation_status",
+    "record_descent_status",
+    "ownership_interface_status"
+  ],
+  "title": "Direct-successor temporal scaffold",
+  "type": "object"
+}

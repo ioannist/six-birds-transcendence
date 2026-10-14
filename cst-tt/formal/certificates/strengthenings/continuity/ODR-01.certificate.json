@@ -1,0 +1,49 @@
+{
+  "audit": {
+    "certificate_id": "ODR-01",
+    "claim_lane_only_structural_lineage": true,
+    "detached_copy_excluded": true,
+    "direct_embeds_generalized": true,
+    "direct_witness_not_strict": true,
+    "direct_witness_valid": true,
+    "failed_obligations": [],
+    "fallback_remains_locked": true,
+    "generalized_strictly_broader_than_overlap": true,
+    "mixed_mode_path_valid": true,
+    "overlap_direct_incomparable": true,
+    "overlap_embeds_generalized": true,
+    "primary_definition_unchanged": true,
+    "relation_result_valid": true,
+    "same_carrier_excluded": true,
+    "strict_witness_not_direct": true,
+    "strict_witness_valid": true,
+    "temporal_gap_excluded": true
+  },
+  "certificate_id": "ODR-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-07A",
+    "function": "audit_overlap_direct_relation",
+    "module": "cst_tt.strengthenings",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "structural lineage-class comparison only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "model_ref": "models/strengthenings/continuity/ODR-01.model.json",
+  "model_sha256": "c005961bf75cc77964d020374af6a7f635362ee8d2e9474a9cc0ee361a9a1b2c",
+  "result_status": "proof-source-and-executable-incomparability-certificate",
+  "schema_version": "CST-TT-07A",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.StrengtheningTheory.overlapDirectIncomparable",
+      "CSTTT.StrengtheningTheory.generalizedStrictlyBroaderThanOverlap",
+      "CSTTT.StrengtheningTheory.generalizedPathComposition"
+    ],
+    "theorem_ids": [
+      "TTD-02",
+      "TTS-01"
+    ]
+  }
+}

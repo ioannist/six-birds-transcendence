@@ -1,0 +1,190 @@
+{
+  "audit": {
+    "clause_audits": [
+      {
+        "accepted": true,
+        "clause": "C1_OBJECTHOOD",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C2_STRICT_PROMOTION",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C3_REFLEXIVE_SELF_COORDINATE",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C4_INTERFACE_NONEXPOSURE",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C5_ACTION_CREDIT",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C6_TEMPORAL_CLOSURE",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C7_BINDING_RECOMBINATION",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C8_VIABILITY_REPAIR",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      }
+    ],
+    "derived_global_assignment": {
+      "action_credit_owner": 202,
+      "action_token": "action:FB:maintain",
+      "arrow_endogenous": true,
+      "binding_integrated": true,
+      "boundary_closed": true,
+      "c1_audit_sealed": true,
+      "control_owner": 202,
+      "credit_audit_sealed": true,
+      "credit_source_internal": true,
+      "cross_predictive_tag": "predictive:FB:rank2",
+      "episode_epoch": 2,
+      "external_scheduler": false,
+      "future_sufficient": true,
+      "hidden_state_nonexposed": true,
+      "interface_leak": false,
+      "joint_relation_tag": "xor:FB",
+      "left_branch": "FB:L",
+      "maintenance_owner": 202,
+      "object_token": "object:FB",
+      "order_stable": true,
+      "package_owner": 202,
+      "promotion_audit_sealed": true,
+      "promotion_rank_after": 3,
+      "promotion_rank_before": 2,
+      "public_shadow": "report:stable",
+      "recombination_pairs": [
+        [
+          "FB:L",
+          "FB:R"
+        ],
+        [
+          "FB:R",
+          "FB:L"
+        ]
+      ],
+      "recombination_relation_preserved": true,
+      "record_after": 4,
+      "record_before": 3,
+      "repair_budget": 1,
+      "repair_enabled": true,
+      "repair_owner": 202,
+      "right_branch": "FB:R",
+      "route_residue": [
+        "fission-root",
+        "leg-S-R-mixed",
+        "leg-S-R-target"
+      ],
+      "self_audit_sealed": true,
+      "self_coordinate": "self:FB",
+      "self_model_reflexive": true,
+      "strict_test_pass": true,
+      "successor_total_on_viable": true,
+      "temporal_owner": 202,
+      "tick_phase": 2,
+      "tick_progress": 1,
+      "tick_viable": true,
+      "viable": true
+    },
+    "errors": [],
+    "every_clause_accepted": true,
+    "every_hard_gate_passed": true,
+    "every_scope_exact": true,
+    "exact_clause_coverage": true,
+    "failed_obligations": [],
+    "forbidden_field_free": true,
+    "global_constructible": true,
+    "global_restricts_to_every_local": true,
+    "integrated_package_valid": true,
+    "join_tree": {
+      "acyclic": true,
+      "all_nodes_covered": true,
+      "all_overlap_compatible": true,
+      "connected": true,
+      "edge_compatible": true,
+      "edge_count_correct": true,
+      "errors": [],
+      "exactly_one_parent_per_nonroot": true,
+      "root_declared": true,
+      "running_intersection": true,
+      "valid_shape": true
+    },
+    "model_id": "PKG-FIS-RIGHT",
+    "supplied_global_matches": true,
+    "target_owned": true,
+    "temporal_substance": {
+      "endogenous_arrow": true,
+      "errors": [],
+      "future_sufficient": true,
+      "genuine_progress": true,
+      "maintenance_owner_matches": true,
+      "no_external_scheduler": true,
+      "order_stable": true,
+      "record_descends": true,
+      "route_residue_retained": true,
+      "successor_available": true,
+      "temporal_owner_matches": true,
+      "valid": true,
+      "viable_tick": true
+    },
+    "unique_clause_slots": true
+  },
+  "certificate_id": "PKG-FIS-RIGHT",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_package",
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite structural package realization only",
+  "claim_lanes": [
+    "S-R"
+  ],
+  "model_ref": "models/fission/packages/PKG-FIS-RIGHT.model.json",
+  "model_sha256": "d8f5031f1b6b1c37c7e673e597ee83b08f69972f9abd5f4771010b1950855561",
+  "result_status": "checked-finite-integrated-package",
+  "role": "fission-right",
+  "schema_version": "CST-TT-06",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.PackageTheory.acyclicLocalWitnessGluing",
+      "CSTTT.PackageTheory.stagedHeterogeneousPackageAssembly"
+    ],
+    "theorem_ids": [
+      "TTH-01",
+      "TTH-02"
+    ]
+  }
+}

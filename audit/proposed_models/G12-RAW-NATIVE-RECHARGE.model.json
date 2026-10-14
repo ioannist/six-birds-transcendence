@@ -1,0 +1,466 @@
+{
+  "schema": "CST-TT G12 raw native recharge declaration v1",
+  "classification": "b",
+  "phase": "declaration_before_instantiation_or_evaluation",
+  "opening_head": "412ab28be24bdaf7df1c24cb776b950245c1fd78",
+  "target": "explicit finite controlled factor and unbounded actual native event-register successor for TTS-04; no current promotion",
+  "raw_sources": {
+    "lean/CSTTT/Targets/GenericHandoff/NativeComposition/PackageBundle.lean": "3ffc7c814b9ab4cde04b1bc7d79f5ae010a352a25e6a66a79289bd1279251181",
+    "lean/CSTTT/Targets/GenericHandoff/NativeComposition/PackagePrimitives.lean": "7e22c019cb5388df3814e36d63a7dcc176146b697fea91ad299e4d8ac0e43291",
+    "lean/CSTTT/Targets/GenericHandoff/NativeComposition/ModeExecution.lean": "5fc91e46a65ccef581f270317c0a8edde24d4ede03c2a88fbef61499a33eca49",
+    "lean/CSTTT/Targets/GenericHandoff/NativeComposition/Resources.lean": "58debe413d52c473f9d3deecaac0b1216085925289b9a7ca43f303b547826366",
+    "lean/CSTTT/Targets/GenericHandoff/NativeComposition/PublicationResources.lean": "e1c700ca652ae76ad22999f16645f77c530523c690cbb8c42f5c7ba8f0eb10e8",
+    "lean/CSTTT/Targets/GenericHandoff/NativeComposition/PublicationReplay.lean": "219abf7af3b790d61d90231d9282fb09692bff9cab1ead38b552b2dcd6ca0def",
+    "lean/CSTTT/Targets/GenericHandoff/NativeComposition/ClosedPackage.lean": "47fbbdd4672d2a34d448b038a3f1b3810234624a329719720c8d89e495fc140e"
+  },
+  "domains": {
+    "owner": [
+      false,
+      true
+    ],
+    "factor": "Bool x Bool x Bool, all eight literal triples in product order",
+    "disturbance": "Unit, sole constructor ()",
+    "native_action": "Bool",
+    "outcome": "same eight-factor type",
+    "retained_resource": "true Bool account",
+    "removed_resources": "false Bool account aliases all six declared roles",
+    "run_register": "Unit -> (Frame.State x Owner), unbounded Nat counter/ticks/residue; factor is finite"
+  },
+  "assignment": {
+    "canonical": "NativePackageBundle.canonical = NativePackageBundle.fromArms NativePackagePrimitives.canonical",
+    "selected": "owner specified by each control; current is pair.first, copied source is pair.second",
+    "patches": {
+      "canonical": "identity",
+      "selected_native_arm_none": "put NativePackagePrimitives.canonical (.inl owner) none, then fromArms",
+      "selected_supplement_arm_none": "put NativePackagePrimitives.canonical (.inr owner) none, then fromArms",
+      "other_bundle_none": "put NativePackageBundle.canonical (swapOwner owner) none",
+      "selected_current_recharge_zero": "map selected bundle pair; replace only pair.first.native.temporal.ledger.recharge by 0",
+      "selected_current_owner_source": "map selected bundle pair; replace only pair.first.native.temporal.resource.owner by swapOwner owner",
+      "selected_current_writers_false": "map selected bundle pair; replace only pair.first.native.temporal.writers by fun _ => false",
+      "selected_current_rows_zero": "map selected bundle pair; replace only pair.first.native.temporal.rows by fun _ _ => []"
+    }
+  },
+  "runtime": "ResourceCellReindex.raw id (fun _ p => (p.first.native,p.second.native)) (PublicationResources.runtime owner); same assignment, actual expressions/program/row/account/charge/withdrawal/record everywhere",
+  "raw_initializer": {
+    "source": "CellReindex.initializer id native_pair_projection (ModeExecution.initializer owner (swapOwner owner) (PublicationReplay.start owner))",
+    "history_program": "CellReindex.program id native_pair_projection (PublicationReplay.raw owner).execution.program",
+    "source_steps": "PublicationReplay.copies owner - 1, event ((),false,history); canonical source policy is false and all source history factors are the selector",
+    "receive_program": "CellReindex.program id native_pair_projection (PublicationReplay.raw owner).receive; selected event (history,history)",
+    "exit_program": "translated same actual execution.program, event ((),false,history), exactly once",
+    "composition": "InitialProgramComposition.iterate source history_program then after actual receive_program then after exit_program. Do not supply a derived snapshot as initializer. Exact readiness must be proved from raw expressions for every partial assignment.",
+    "entry_validation": "actual translated AcquisitionExecution Entry/fromStart/postExit supported checks independently validate the initialized candidate; a syntactic initializer is not claimed to certify Entry for mutated controls",
+    "released_entry_coverage": "both PublicationResources entries, every factor selector; canonical target time derived as 2 for owner true, 6 for owner false"
+  },
+  "policy_recipe": {
+    "selection": "each control fixed selected_action, read from declared configuration; positive policy false for every factor/disturbance",
+    "response": "For each factor x, evaluate the same composed raw entry initializer at selector x, then derive a test register by setting its counter and tick fields to zero while retaining the actual initialized factor/residue/funding/owner. Use its actual translated runtime row for the fixed selected_action and Unit disturbance, actual charge.owner and debit/credit, actual updater destination factor, and natural before/after counter and record differences (the derived zero-counter test has both pre-readouts zero; positive canonical increments must be justified by actual read equations). Construct the response as a raw StaticView expression by substituting/composing those instructions; missing consumed inputs reject. No supplied derived snapshot, fabricated funded=true, or stored package/invariant/solvency/verdict primitive.",
+    "package": "NativeClosedPackage.package owner false on the same shared assignment; package-cell expressions preserve assigned raw bundles, with declared C4-C7 grades unchanged",
+    "initial_observations": "actual substituted/composed raw initialization followed by same native factor/progress/record/true-account balance expressions; missing consumed input None",
+    "event_step": "actual native decoded-policy ResourceRuntime.update, and generic EventState.step same factor/positive increments/debit/credit derived from response. Populate LocalBinding with actual local equalities before claiming infinite return.",
+    "reserve": "global maxCost over all factor/disturbance/outcome debits; greatest Retains is exact fixed-policy invariant using credit>=debit, not synthesis of all solvent policies",
+    "non_t1_extension": "unbounded event counters and exact Rat ledger in generic EventState; actual native registers retain existing unbounded Nat counters. No new physical or predictive-class data."
+  },
+  "evaluation_contract": {
+    "independent": "exact Python raw interpreter and actual Lean optional-expression evaluation; no finite sampling used to prove all-time theorem",
+    "finite_coverage": "every eight factor and Unit disturbance for both owners; controls fixed below; report raw initialized candidate, actual supported entry, native decode, response row/positive support, increment reads, account/charge ownership/debit/credit and ledger equation",
+    "proof_only": "full eight-clause package/ResourceClosed/Legal/StepLaw, whole greatest/total and universal run laws must be kernel-proved; expensive checker proof caches require equality proofs and disclosure",
+    "negative_rule": "direct actual readout refutations, not failed sufficient checks; absence of unconsumed other owner need not reject",
+    "failure_rule": "retain any failed prediction without changing controls or raw recipes; no blanket all-negative-controls claim",
+    "resource_limit": "unit-budget unrecharged native account becomes zero after actual exit; do not infer arbitrary-budget native negative balances from generic signed-Rat depletion theorem"
+  },
+  "controls": [
+    {
+      "id": "positive_0_000",
+      "owner": false,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_0_001",
+      "owner": false,
+      "history": [
+        false,
+        false,
+        true
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_0_010",
+      "owner": false,
+      "history": [
+        false,
+        true,
+        false
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_0_011",
+      "owner": false,
+      "history": [
+        false,
+        true,
+        true
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_0_100",
+      "owner": false,
+      "history": [
+        true,
+        false,
+        false
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_0_101",
+      "owner": false,
+      "history": [
+        true,
+        false,
+        true
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_0_110",
+      "owner": false,
+      "history": [
+        true,
+        true,
+        false
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_0_111",
+      "owner": false,
+      "history": [
+        true,
+        true,
+        true
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_1_000",
+      "owner": true,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_1_001",
+      "owner": true,
+      "history": [
+        false,
+        false,
+        true
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_1_010",
+      "owner": true,
+      "history": [
+        false,
+        true,
+        false
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_1_011",
+      "owner": true,
+      "history": [
+        false,
+        true,
+        true
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_1_100",
+      "owner": true,
+      "history": [
+        true,
+        false,
+        false
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_1_101",
+      "owner": true,
+      "history": [
+        true,
+        false,
+        true
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_1_110",
+      "owner": true,
+      "history": [
+        true,
+        true,
+        false
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "positive_1_111",
+      "owner": true,
+      "history": [
+        true,
+        true,
+        true
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": false,
+      "prediction": "actual_supported_entry_and_target_owned_solvent_positive_continuation"
+    },
+    {
+      "id": "missing_selected_native_arm_0",
+      "owner": false,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_native_arm_none",
+      "selected_action": false,
+      "prediction": "actual_selected_bundle_and_consumed_initialization_none"
+    },
+    {
+      "id": "missing_selected_supplement_arm_0",
+      "owner": false,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_supplement_arm_none",
+      "selected_action": false,
+      "prediction": "actual_selected_bundle_and_consumed_initialization_none"
+    },
+    {
+      "id": "missing_other_bundle_0",
+      "owner": false,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "other_bundle_none",
+      "selected_action": false,
+      "prediction": "selected_local_initialization_and_continuation_preserved"
+    },
+    {
+      "id": "unrecharged_unit_cost_0",
+      "owner": false,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_current_recharge_zero",
+      "selected_action": false,
+      "prediction": "actual_post_exit_unfunded_balance_zero_and_no_positive_continuation"
+    },
+    {
+      "id": "wrong_charge_owner_0",
+      "owner": false,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_current_owner_source",
+      "selected_action": false,
+      "prediction": "actual_charge_owner_not_target_and_resource_closed_false"
+    },
+    {
+      "id": "writer_false_0",
+      "owner": false,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_current_writers_false",
+      "selected_action": false,
+      "prediction": "actual_record_zero_and_record_step_not_strict"
+    },
+    {
+      "id": "zero_rows_0",
+      "owner": false,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_current_rows_zero",
+      "selected_action": false,
+      "prediction": "actual_supported_exit_none_and_continuation_row_no_positive_support"
+    },
+    {
+      "id": "unavailable_action_0",
+      "owner": false,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": true,
+      "prediction": "actual_continuation_row_empty_for_the_declared_unavailable_action"
+    },
+    {
+      "id": "missing_selected_native_arm_1",
+      "owner": true,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_native_arm_none",
+      "selected_action": false,
+      "prediction": "actual_selected_bundle_and_consumed_initialization_none"
+    },
+    {
+      "id": "missing_selected_supplement_arm_1",
+      "owner": true,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_supplement_arm_none",
+      "selected_action": false,
+      "prediction": "actual_selected_bundle_and_consumed_initialization_none"
+    },
+    {
+      "id": "missing_other_bundle_1",
+      "owner": true,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "other_bundle_none",
+      "selected_action": false,
+      "prediction": "selected_local_initialization_and_continuation_preserved"
+    },
+    {
+      "id": "unrecharged_unit_cost_1",
+      "owner": true,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_current_recharge_zero",
+      "selected_action": false,
+      "prediction": "actual_post_exit_unfunded_balance_zero_and_no_positive_continuation"
+    },
+    {
+      "id": "wrong_charge_owner_1",
+      "owner": true,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_current_owner_source",
+      "selected_action": false,
+      "prediction": "actual_charge_owner_not_target_and_resource_closed_false"
+    },
+    {
+      "id": "writer_false_1",
+      "owner": true,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_current_writers_false",
+      "selected_action": false,
+      "prediction": "actual_record_zero_and_record_step_not_strict"
+    },
+    {
+      "id": "zero_rows_1",
+      "owner": true,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "selected_current_rows_zero",
+      "selected_action": false,
+      "prediction": "actual_supported_exit_none_and_continuation_row_no_positive_support"
+    },
+    {
+      "id": "unavailable_action_1",
+      "owner": true,
+      "history": [
+        false,
+        false,
+        false
+      ],
+      "assignment_recipe": "canonical",
+      "selected_action": true,
+      "prediction": "actual_continuation_row_empty_for_the_declared_unavailable_action"
+    }
+  ],
+  "claims_excluded": [
+    "current original TTS04 promotion",
+    "full P05 C-package",
+    "physical persistence",
+    "arbitrary disturbances outside Unit",
+    "all solvent policy synthesis",
+    "native negative balance from generic signed depletion",
+    "initializer Some iff actual supported Entry"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-birds.local/cst-tt/schemas/direct_successor_path_certificate.schema.json",
+  "title": "Direct temporal successor path certificate",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "CST-TT-04"},
+    "certificate_id": {"type": "string", "minLength": 1},
+    "atomic_model_refs": {"type": "array", "items": {"type": "string", "minLength": 1}, "minItems": 1},
+    "atomic_model_hashes": {"type": "array", "items": {"type": "string", "pattern": "^[0-9a-f]{64}$"}, "minItems": 1},
+    "result_status": {"enum": ["not-evaluated", "checked-finite-direct-successor-path"]},
+    "claim_lanes": {"type": "array", "items": {"const": "S-L"}, "minItems": 1, "maxItems": 1},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "audit": {
+      "type": "object",
+      "required": ["path_valid", "atomic_endpoint_edge_present", "failed_obligations"],
+      "properties": {
+        "path_valid": {"type": "boolean"},
+        "atomic_endpoint_edge_present": {"type": "boolean"},
+        "failed_obligations": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "checker": {"type": "object", "additionalProperties": true}
+  },
+  "required": ["schema_version", "certificate_id", "atomic_model_refs", "atomic_model_hashes", "result_status", "claim_lanes", "claim_ceiling", "audit", "checker"]
+}

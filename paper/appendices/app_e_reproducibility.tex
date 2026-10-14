@@ -1,0 +1,10 @@
+\section{Reproducing the results}
+\label{app:repro}
+
+We designed every result to be rechecked from the repository. Lean 4.28.0
+builds our development with its core library only and no external mathematics
+library. Our validator then checks each registered result against its
+declarations and confirms that only the standard axioms are used. Python
+scripts check the transcription of the finite models, export the result
+snapshot, and regenerate the evidence map. We give the commands, and the counts as of the release, in the artifact's reproducibility notes and in the data and
+code availability statement.

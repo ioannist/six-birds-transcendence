@@ -1,0 +1,43 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm06_currentEqualPredictivelyDifferent",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-06",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-06",
+  "finite_model_ref": "models/countermodels/CM-06.model.json",
+  "finite_model_sha256": "35e4d566177b67dec5c4e2ae5daf197c733703625fda9c3cc967a30e7f393b3e",
+  "minimality_status": "certified",
+  "model_family": "predictive-memory-collision",
+  "name": "Current-equal but predictively different routes",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "A present quotient can collide while a continuation probe separates routes; route memory repairs the collision.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "all current-observation and binary continuation-output maps on <=3 hidden states and <=2 public symbols",
+    "candidates_explored": 98,
+    "lower_bound_argument": "At least two hidden states are required for a collision with different futures; one current symbol suffices.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 48,
+    "same_size_candidates_explored": 4,
+    "same_size_qualifying_candidates": 2,
+    "size_measure": "(hidden_state_count, current_symbol_count)",
+    "smaller_candidates_explored": 6,
+    "witness_size_vector": [
+      2,
+      1
+    ]
+  },
+  "target_no_go_id": "TTN-04",
+  "toy_model_ref": "TTM-17"
+}

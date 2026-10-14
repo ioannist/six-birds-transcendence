@@ -1,0 +1,2 @@
+composition_id,left_model,right_model,composite_model,frontier_carrier,frontier_signature_equal,old_endpoint_mixed_rule,carrier_chain_rule,composition_valid,certificate_ref,claim_ceiling
+COR-COMP-01,COR-POS-02A,COR-POS-02B,COR-POS-02-COMPOSED,55,true,false,true,true,formal/certificates/corridors/COR-COMP-01.certificate.json,composition of exact finite overlap-leg chains only

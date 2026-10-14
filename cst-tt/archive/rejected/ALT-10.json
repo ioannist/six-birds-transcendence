@@ -1,0 +1,9 @@
+{
+  "name": "Direct successorship silently broadens strict FIACH",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "TTD-02;TTS-01",
+  "reason": "Direct and overlap modes are kept in a broader named path class; strict FIACH remains overlap-only.",
+  "rejected_id": "ALT-10",
+  "replacement": "GeneralizedTemporalContinuity as a separate class",
+  "status": "killed"
+}

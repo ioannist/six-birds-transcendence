@@ -1,0 +1,322 @@
+{
+  "claim_ceiling": "finite structural target realization only",
+  "claim_lane": "S-R",
+  "clauses": [
+    {
+      "assignment": {
+        "boundary_closed": true,
+        "c1_audit_sealed": true,
+        "cross_predictive_tag": "predictive:T",
+        "object_token": "object:T",
+        "package_owner": 101
+      },
+      "clause": "C1_OBJECTHOOD",
+      "essential_resources": [
+        "t-object-register",
+        "t-boundary"
+      ],
+      "scope": [
+        "package_owner",
+        "cross_predictive_tag",
+        "object_token",
+        "boundary_closed",
+        "c1_audit_sealed"
+      ]
+    },
+    {
+      "assignment": {
+        "episode_epoch": 7,
+        "package_owner": 101,
+        "promotion_audit_sealed": true,
+        "promotion_rank_after": 2,
+        "promotion_rank_before": 1,
+        "strict_test_pass": true
+      },
+      "clause": "C2_STRICT_PROMOTION",
+      "essential_resources": [
+        "t-promotion-audit"
+      ],
+      "scope": [
+        "package_owner",
+        "episode_epoch",
+        "promotion_rank_before",
+        "promotion_rank_after",
+        "strict_test_pass",
+        "promotion_audit_sealed"
+      ]
+    },
+    {
+      "assignment": {
+        "cross_predictive_tag": "predictive:T",
+        "package_owner": 101,
+        "self_audit_sealed": true,
+        "self_coordinate": "self:T",
+        "self_model_reflexive": true
+      },
+      "clause": "C3_REFLEXIVE_SELF_COORDINATE",
+      "essential_resources": [
+        "t-self-register"
+      ],
+      "scope": [
+        "package_owner",
+        "cross_predictive_tag",
+        "self_coordinate",
+        "self_model_reflexive",
+        "self_audit_sealed"
+      ]
+    },
+    {
+      "assignment": {
+        "hidden_state_nonexposed": true,
+        "interface_leak": false,
+        "package_owner": 101,
+        "public_shadow": "report:stable"
+      },
+      "clause": "C4_INTERFACE_NONEXPOSURE",
+      "essential_resources": [
+        "t-private-state",
+        "t-public-interface"
+      ],
+      "scope": [
+        "package_owner",
+        "public_shadow",
+        "hidden_state_nonexposed",
+        "interface_leak"
+      ]
+    },
+    {
+      "assignment": {
+        "action_credit_owner": 101,
+        "action_token": "action:T:maintain",
+        "control_owner": 101,
+        "credit_audit_sealed": true,
+        "credit_source_internal": true,
+        "episode_epoch": 7,
+        "package_owner": 101
+      },
+      "clause": "C5_ACTION_CREDIT",
+      "essential_resources": [
+        "t-policy",
+        "t-credit-ledger"
+      ],
+      "scope": [
+        "package_owner",
+        "episode_epoch",
+        "control_owner",
+        "action_token",
+        "action_credit_owner",
+        "credit_source_internal",
+        "credit_audit_sealed"
+      ]
+    },
+    {
+      "assignment": {
+        "arrow_endogenous": true,
+        "control_owner": 101,
+        "cross_predictive_tag": "predictive:T",
+        "episode_epoch": 7,
+        "external_scheduler": false,
+        "future_sufficient": true,
+        "maintenance_owner": 101,
+        "order_stable": true,
+        "package_owner": 101,
+        "record_after": 4,
+        "record_before": 3,
+        "route_residue": [
+          "route:T:0",
+          "route:T:1"
+        ],
+        "successor_total_on_viable": true,
+        "temporal_owner": 101,
+        "tick_phase": 1,
+        "tick_progress": 1,
+        "tick_viable": true
+      },
+      "clause": "C6_TEMPORAL_CLOSURE",
+      "essential_resources": [
+        "t-clock",
+        "t-record",
+        "t-maintenance"
+      ],
+      "scope": [
+        "package_owner",
+        "cross_predictive_tag",
+        "episode_epoch",
+        "control_owner",
+        "future_sufficient",
+        "route_residue",
+        "order_stable",
+        "successor_total_on_viable",
+        "tick_viable",
+        "tick_phase",
+        "tick_progress",
+        "record_before",
+        "record_after",
+        "arrow_endogenous",
+        "external_scheduler",
+        "temporal_owner",
+        "maintenance_owner"
+      ]
+    },
+    {
+      "assignment": {
+        "binding_integrated": true,
+        "episode_epoch": 7,
+        "joint_relation_tag": "xor:T",
+        "left_branch": "T:L",
+        "package_owner": 101,
+        "recombination_pairs": [
+          [
+            "T:L",
+            "T:R"
+          ],
+          [
+            "T:R",
+            "T:L"
+          ]
+        ],
+        "recombination_relation_preserved": true,
+        "right_branch": "T:R"
+      },
+      "clause": "C7_BINDING_RECOMBINATION",
+      "essential_resources": [
+        "t-binding-bus",
+        "t-recombination-table"
+      ],
+      "scope": [
+        "package_owner",
+        "episode_epoch",
+        "binding_integrated",
+        "left_branch",
+        "right_branch",
+        "recombination_pairs",
+        "recombination_relation_preserved",
+        "joint_relation_tag"
+      ]
+    },
+    {
+      "assignment": {
+        "control_owner": 101,
+        "package_owner": 101,
+        "repair_budget": 3,
+        "repair_enabled": true,
+        "repair_owner": 101,
+        "viable": true
+      },
+      "clause": "C8_VIABILITY_REPAIR",
+      "essential_resources": [
+        "t-repair-loop",
+        "t-budget"
+      ],
+      "scope": [
+        "package_owner",
+        "control_owner",
+        "viable",
+        "repair_enabled",
+        "repair_budget",
+        "repair_owner"
+      ]
+    }
+  ],
+  "control_title": "verdict-loaded package record",
+  "declared_global_assignment": {
+    "action_credit_owner": 101,
+    "action_token": "action:T:maintain",
+    "arrow_endogenous": true,
+    "binding_integrated": true,
+    "boundary_closed": true,
+    "c1_audit_sealed": true,
+    "control_owner": 101,
+    "credit_audit_sealed": true,
+    "credit_source_internal": true,
+    "cross_predictive_tag": "predictive:T",
+    "episode_epoch": 7,
+    "external_scheduler": false,
+    "future_sufficient": true,
+    "hidden_state_nonexposed": true,
+    "interface_leak": false,
+    "joint_relation_tag": "xor:T",
+    "left_branch": "T:L",
+    "maintenance_owner": 101,
+    "object_token": "object:T",
+    "order_stable": true,
+    "package_owner": 101,
+    "promotion_audit_sealed": true,
+    "promotion_rank_after": 2,
+    "promotion_rank_before": 1,
+    "public_shadow": "report:stable",
+    "recombination_pairs": [
+      [
+        "T:L",
+        "T:R"
+      ],
+      [
+        "T:R",
+        "T:L"
+      ]
+    ],
+    "recombination_relation_preserved": true,
+    "record_after": 4,
+    "record_before": 3,
+    "repair_budget": 3,
+    "repair_enabled": true,
+    "repair_owner": 101,
+    "right_branch": "T:R",
+    "route_residue": [
+      "route:T:0",
+      "route:T:1"
+    ],
+    "self_audit_sealed": true,
+    "self_coordinate": "self:T",
+    "self_model_reflexive": true,
+    "strict_test_pass": true,
+    "successor_total_on_viable": true,
+    "temporal_owner": 101,
+    "tick_phase": 1,
+    "tick_progress": 1,
+    "tick_viable": true,
+    "viable": true
+  },
+  "expected_primary_failure": "PKG-O10-verdict-field-separation",
+  "join_tree": {
+    "edges": [
+      {
+        "child": "C1_OBJECTHOOD",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C2_STRICT_PROMOTION",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C3_REFLEXIVE_SELF_COORDINATE",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C4_INTERFACE_NONEXPOSURE",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C5_ACTION_CREDIT",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C7_BINDING_RECOMBINATION",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      },
+      {
+        "child": "C8_VIABILITY_REPAIR",
+        "parent": "C6_TEMPORAL_CLOSURE"
+      }
+    ],
+    "root": "C6_TEMPORAL_CLOSURE"
+  },
+  "lineage": "smuggled-verdict",
+  "model_id": "PC-17",
+  "package_vocabulary_id": "finite-C-package-target-v1",
+  "schema_version": "CST-TT-02",
+  "target": {
+    "code": 101,
+    "label": "independent-target-package-carrier"
+  }
+}

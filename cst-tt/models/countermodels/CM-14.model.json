@@ -1,0 +1,39 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "conclusion_failure_checks": {
+    "cross_carrier_typing_fails": true
+  },
+  "countermodel_id": "CM-14",
+  "derived_facts": {
+    "classification": "same-carrier-reencoding-control"
+  },
+  "family": "same-carrier-reencoding",
+  "model": {
+    "carrier_count": 1,
+    "distinct_carrier_transport": false,
+    "nontrivial_reencoding": true,
+    "reencoding_map": [
+      1,
+      0
+    ],
+    "representation_count": 2,
+    "same_carrier": true
+  },
+  "name": "Same-carrier re-encoding control",
+  "premise_checks": {
+    "nontrivial_representation_change": true,
+    "single_fixed_carrier": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "A nonidentity representation map on one fixed carrier is not a distinct-carrier transport instance.",
+  "size_measure": "(carrier_count, representation_count)",
+  "size_vector": [
+    1,
+    2
+  ],
+  "target_no_go_id": "TTN-13",
+  "toy_model_ref": "TTM-15"
+}

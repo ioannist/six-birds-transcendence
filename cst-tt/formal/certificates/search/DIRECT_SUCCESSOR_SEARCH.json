@@ -1,0 +1,18 @@
+{
+  "deterministic": true,
+  "python_hash_seed": 0,
+  "result": {
+    "arbitrary_data_edge_candidates": 960,
+    "arbitrary_data_edge_passes": 0,
+    "arbitrary_data_reachability_excluded": true,
+    "candidates_examined": 2048,
+    "definition_nonuniversal": true,
+    "detached_like_candidates": 1920,
+    "detached_like_passes": 0,
+    "detached_shapes_excluded": true,
+    "valid_direct_successor_shapes": 1
+  },
+  "schema_version": "CST-TT-04",
+  "search_id": "DIRECT_SUCCESSOR_SEARCH",
+  "usage_boundary": "bounded finite stress evidence; not a proof oracle"
+}

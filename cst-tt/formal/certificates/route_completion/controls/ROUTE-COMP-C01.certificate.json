@@ -1,0 +1,27 @@
+{
+  "audit": {
+    "certificate_id": "ROUTE-COMP-C01-UNLICENSED-ERASURE",
+    "clock_translation_holonomy_zero": false,
+    "common_normal_form_present": false,
+    "endpoint_package_unchanged": true,
+    "failed_obligations": [
+      "RC-O05-route-indexed-or-flat-evidence",
+      "RC-O06-common-normal-form-when-flat",
+      "RC-O07-zero-clock-holonomy-when-flat",
+      "RC-O09-no-unlicensed-memory-erasure"
+    ],
+    "flatness_independently_certified": false,
+    "input_fiach_valid": true,
+    "mode_valid": true,
+    "no_unlicensed_memory_erasure": false,
+    "output_route_status": "unresolved",
+    "route_audit_replayed": true,
+    "route_certificate_hash_valid": true,
+    "route_completion_valid": false,
+    "route_indexed_residue_retained": false
+  },
+  "claim_ceiling": "finite route-completion boundary only",
+  "control_id": "ROUTE-COMP-C01-UNLICENSED-ERASURE",
+  "result_status": "checked-unlicensed-route-memory-erasure-control",
+  "schema_version": "CST-TT-06"
+}

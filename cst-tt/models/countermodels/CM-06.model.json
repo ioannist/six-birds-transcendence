@@ -1,0 +1,58 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "conclusion_failure_checks": {
+    "predictive_equality_fails": true,
+    "unaugmented_state_has_neither_memory_nor_flatness": true
+  },
+  "countermodel_id": "CM-06",
+  "derived_facts": {
+    "repair_available_by_route_memory": true,
+    "witness_pair": [
+      0,
+      1
+    ]
+  },
+  "family": "predictive-memory-collision",
+  "model": {
+    "continuation_probe_output": [
+      0,
+      1
+    ],
+    "current_equal_predictive_mismatch": true,
+    "current_observation": [
+      0,
+      0
+    ],
+    "current_symbol_count": 1,
+    "flat": false,
+    "hidden_state_count": 2,
+    "memory_repair_separates_witness": true,
+    "memory_retained_in_unaugmented_state": false,
+    "route_memory": [
+      0,
+      1
+    ],
+    "witness_pairs": [
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "name": "Current-equal but predictively different routes",
+  "premise_checks": {
+    "current_classes_collide": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "A present quotient can collide while a continuation probe separates routes; route memory repairs the collision.",
+  "size_measure": "(hidden_state_count, current_symbol_count)",
+  "size_vector": [
+    2,
+    1
+  ],
+  "target_no_go_id": "TTN-04",
+  "toy_model_ref": "TTM-17"
+}

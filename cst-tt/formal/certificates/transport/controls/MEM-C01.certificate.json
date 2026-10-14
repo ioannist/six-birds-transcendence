@@ -1,0 +1,22 @@
+{
+  "artifact_ref": "models/transport/controls/MEM-C01.model.json",
+  "artifact_sha256": "81706cb1bef22807c60b523a2426fbc081b75c0a8a39b139958b66a3946057af",
+  "baseline_ref": "models/memory/MEM-POS-01.model.json",
+  "checker": {
+    "function": "audit_memory_repair",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5",
+    "valid_result": false
+  },
+  "claim_ceiling": "finite structural obligation boundary only",
+  "control_id": "MEM-C01",
+  "control_kind": "memory",
+  "expected_primary_failure": "route-memory-separates-collision",
+  "observed_failures": [
+    "memory-or-flatness-satisfied",
+    "route-memory-separates-collision",
+    "refined-predictor-correct"
+  ],
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-03"
+}

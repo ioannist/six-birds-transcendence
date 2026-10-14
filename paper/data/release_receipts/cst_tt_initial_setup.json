@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "cwd": "cst-tt",
+  "environment": {},
+  "exit_code": 2,
+  "id": "cst_tt_initial_setup",
+  "kind": "diagnostic",
+  "log_path": "lean/.validate-logs/W19a/cst-tt-pytest.log",
+  "log_sha256": "4fc59bb7c9c0bba4f34d07c0ef9bd912f78975b95fb4919edce06587a40c5167",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:18:17+00:00",
+  "status": "fail",
+  "summary": "=========================== short test summary info ============================\nERROR tests/test_tt07a_defects.py\nERROR tests/test_tt07a_robustness.py\nERROR tests/test_tt07a_unbounded.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!"
+}

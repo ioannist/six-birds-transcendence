@@ -1,0 +1,3242 @@
+{
+  "model_id": "FIACH-POS-02",
+  "schema_version": "CST-TT-M0a-declaration-v1",
+  "declaration_phase": "M0a-revised-before-evaluation",
+  "claim_ceiling": "finite model-relative handoff of a declared surrogate package: substantive finite C2,C3,C7,C8 checks, C1,C4,C5,C6 surrogates; not a full P05 C-package, T17-I integrated instance, or full Temporal-FIACH",
+  "carriers": {
+    "source": {
+      "code": 17,
+      "label": "source-substrate"
+    },
+    "target": {
+      "code": 101,
+      "label": "target-substrate"
+    }
+  },
+  "declaration_rules": {
+    "stage_signatures": "For stage index i in 0,1,2, predictive/order/tick/progress/record ranks equal i. Each mixed event contributes (1,1,1) to the later intervention projection, starting at (0,0,0).",
+    "history_translation": "Target numeric history order/tick/progress/record equals source value + corridor exit index 2; route sA/sB maps to rA/rB; source owner 17 maps to target owner 101.",
+    "target_phase": "History tick index modulo target tick modulus 2; controller actions toggle phase modulo 2.",
+    "budget": "Every controller action costs 2 and regenerates 2 through its carrier-owned retained regenerator; every state has budget 2. Underfunding sets regeneration to 0 on all target actions, without changing the declared transition table.",
+    "package_assignments": "Each target state has its own C1-C8 assignment. C1-C5 refer to raw finite audit structures; C6 uses state_ref and dynamics_ref with fixed q projection; C7/C8 refer to raw relation/kernel data. No success booleans or independent predictive-code labels.",
+    "binding_probe": "For each queried ordered branch pair, admit exactly when a raw reassembly row has that pair; hit actions query the left/right pair. This is a derived display, not a separate joint observable.",
+    "route_arrival": "Theory route rA arrives at T-A0a and rB at T-B0; each state retains its distinct route residue.",
+    "past_histories": "For each carrier, A0a and A0b are distinct histories with different declared predecessor health and generator provenance. Their predecessor records are outside the audited temporal episode; the local prehistory graph carries zero audited tick/progress/record increment, so both arrive at the same present TemporalSignature without asserting a hidden strict-record reset."
+  },
+  "clause_coordinate_scopes": {
+    "C1": [
+      "object_token",
+      "boundary_id",
+      "package_owner",
+      "closure_audit_ref"
+    ],
+    "C2": [
+      "lower_readout_ref",
+      "promoted_readout_ref",
+      "split_pair_ref"
+    ],
+    "C3": [
+      "public_self_lens_ref",
+      "profile_ref",
+      "continuation_coordinate_ref"
+    ],
+    "C4": [
+      "private_state",
+      "public_state",
+      "channel_family_ref",
+      "determining_ref"
+    ],
+    "C5": [
+      "action_credit_owner",
+      "credit_resource",
+      "provenance_ref",
+      "credit_rule_ref"
+    ],
+    "C6": [
+      "state_ref",
+      "dynamics_ref"
+    ],
+    "C7": [
+      "joint_relation_ref",
+      "decomposition_ref",
+      "reassembly_ref",
+      "binding_probe_ref",
+      "branch_map_ref"
+    ],
+    "C8": [
+      "budget",
+      "repair_owner",
+      "kernel_ref",
+      "ledger_ref"
+    ]
+  },
+  "source": {
+    "table_id": "S-dynamics",
+    "states": [
+      {
+        "state_id": "S-A0a",
+        "route_residue": "sA",
+        "tick_phase": 0,
+        "health": "safe",
+        "maintenance_state": "S:safe",
+        "maintenance_owner": 17,
+        "temporal_owner": 17,
+        "owner": 17,
+        "budget": 2,
+        "public_state": "report:safe",
+        "initial_order": 0,
+        "initial_progress": 0,
+        "initial_record": 0,
+        "past_history_id": "S-left-arrival"
+      },
+      {
+        "state_id": "S-A0b",
+        "route_residue": "sA",
+        "tick_phase": 0,
+        "health": "safe",
+        "maintenance_state": "S:safe",
+        "maintenance_owner": 17,
+        "temporal_owner": 17,
+        "owner": 17,
+        "budget": 2,
+        "public_state": "report:safe",
+        "initial_order": 0,
+        "initial_progress": 0,
+        "initial_record": 0,
+        "past_history_id": "S-right-arrival"
+      },
+      {
+        "state_id": "S-A1safe",
+        "route_residue": "sA",
+        "tick_phase": 1,
+        "health": "safe",
+        "maintenance_state": "S:safe",
+        "maintenance_owner": 17,
+        "temporal_owner": 17,
+        "owner": 17,
+        "budget": 2,
+        "public_state": "report:safe",
+        "initial_order": 1,
+        "initial_progress": 1,
+        "initial_record": 1,
+        "past_history_id": null
+      },
+      {
+        "state_id": "S-A1warning",
+        "route_residue": "sA",
+        "tick_phase": 1,
+        "health": "warning",
+        "maintenance_state": "S:warning",
+        "maintenance_owner": 17,
+        "temporal_owner": 17,
+        "owner": 17,
+        "budget": 2,
+        "public_state": "report:warning",
+        "initial_order": 2,
+        "initial_progress": 2,
+        "initial_record": 2,
+        "past_history_id": null
+      },
+      {
+        "state_id": "S-B0",
+        "route_residue": "sB",
+        "tick_phase": 0,
+        "health": "safe",
+        "maintenance_state": "S:safe",
+        "maintenance_owner": 17,
+        "temporal_owner": 17,
+        "owner": 17,
+        "budget": 2,
+        "public_state": "report:safe",
+        "initial_order": 0,
+        "initial_progress": 0,
+        "initial_record": 0,
+        "past_history_id": null
+      },
+      {
+        "state_id": "S-B1safe",
+        "route_residue": "sB",
+        "tick_phase": 1,
+        "health": "safe",
+        "maintenance_state": "S:safe",
+        "maintenance_owner": 17,
+        "temporal_owner": 17,
+        "owner": 17,
+        "budget": 2,
+        "public_state": "report:safe",
+        "initial_order": 2,
+        "initial_progress": 2,
+        "initial_record": 2,
+        "past_history_id": null
+      }
+    ],
+    "disturbances": [
+      "nominal",
+      "hit"
+    ],
+    "actions": [
+      {
+        "action_id": "S-act-A0a-nominal",
+        "owner": 17,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-A0a-hit",
+        "owner": 17,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-disturbance-sensor",
+          "s-binding-bus",
+          "s-regenerator"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-A0b-nominal",
+        "owner": 17,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-A0b-hit",
+        "owner": 17,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-disturbance-sensor",
+          "s-binding-bus",
+          "s-regenerator"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-A1safe-nominal",
+        "owner": 17,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-A1safe-hit",
+        "owner": 17,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-disturbance-sensor",
+          "s-binding-bus",
+          "s-regenerator"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-A1warning-nominal",
+        "owner": 17,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-repair-loop",
+          "s-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-A1warning-hit",
+        "owner": 17,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-repair-loop",
+          "s-regenerator",
+          "s-disturbance-sensor",
+          "s-binding-bus"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-B0-nominal",
+        "owner": 17,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-B0-hit",
+        "owner": 17,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-disturbance-sensor",
+          "s-binding-bus",
+          "s-regenerator"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-B1safe-nominal",
+        "owner": 17,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "S-genuine"
+      },
+      {
+        "action_id": "S-act-B1safe-hit",
+        "owner": 17,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 17,
+        "regeneration_resource": "s-regenerator",
+        "required_resources": [
+          "s-clock",
+          "s-record",
+          "s-maintenance",
+          "s-action-credit",
+          "s-disturbance-sensor",
+          "s-binding-bus",
+          "s-regenerator"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "S-genuine"
+      }
+    ],
+    "transitions": [
+      {
+        "from_state": "S-A0a",
+        "disturbance_id": "nominal",
+        "action_id": "S-act-A0a-nominal",
+        "to_state": "S-A1safe"
+      },
+      {
+        "from_state": "S-A0a",
+        "disturbance_id": "hit",
+        "action_id": "S-act-A0a-hit",
+        "to_state": "S-A1warning"
+      },
+      {
+        "from_state": "S-A0b",
+        "disturbance_id": "nominal",
+        "action_id": "S-act-A0b-nominal",
+        "to_state": "S-A1safe"
+      },
+      {
+        "from_state": "S-A0b",
+        "disturbance_id": "hit",
+        "action_id": "S-act-A0b-hit",
+        "to_state": "S-A1warning"
+      },
+      {
+        "from_state": "S-A1safe",
+        "disturbance_id": "nominal",
+        "action_id": "S-act-A1safe-nominal",
+        "to_state": "S-A0a"
+      },
+      {
+        "from_state": "S-A1safe",
+        "disturbance_id": "hit",
+        "action_id": "S-act-A1safe-hit",
+        "to_state": "S-A0a"
+      },
+      {
+        "from_state": "S-A1warning",
+        "disturbance_id": "nominal",
+        "action_id": "S-act-A1warning-nominal",
+        "to_state": "S-A0a"
+      },
+      {
+        "from_state": "S-A1warning",
+        "disturbance_id": "hit",
+        "action_id": "S-act-A1warning-hit",
+        "to_state": "S-A0a"
+      },
+      {
+        "from_state": "S-B0",
+        "disturbance_id": "nominal",
+        "action_id": "S-act-B0-nominal",
+        "to_state": "S-B1safe"
+      },
+      {
+        "from_state": "S-B0",
+        "disturbance_id": "hit",
+        "action_id": "S-act-B0-hit",
+        "to_state": "S-B1safe"
+      },
+      {
+        "from_state": "S-B1safe",
+        "disturbance_id": "nominal",
+        "action_id": "S-act-B1safe-nominal",
+        "to_state": "S-B0"
+      },
+      {
+        "from_state": "S-B1safe",
+        "disturbance_id": "hit",
+        "action_id": "S-act-B1safe-hit",
+        "to_state": "S-B0"
+      }
+    ],
+    "kernel_id": "S-kernel",
+    "kernel_state_ids": [
+      "S-A0a",
+      "S-A0b",
+      "S-A1safe",
+      "S-A1warning",
+      "S-B0",
+      "S-B1safe"
+    ],
+    "endpoint_state_id": "S-A0a",
+    "tick_modulus": 2,
+    "resources": [
+      {
+        "resource_id": "s-clock",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-record",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-maintenance",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-action-credit",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-repair-loop",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-regenerator",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-disturbance-sensor",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-binding-bus",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-object-register",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-boundary",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-private-state",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-public-interface",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-self-register",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-recombination-table",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-budget",
+        "owner": 17
+      },
+      {
+        "resource_id": "s-policy",
+        "owner": 17
+      }
+    ],
+    "joint_binding": {
+      "assemblage_domain_id": "S-assemblages",
+      "decomposition_id": "S-decomposition",
+      "reassembly_id": "S-reassembly",
+      "relation_id": "S-joint-relation",
+      "probe_id": "S-binding-probe",
+      "branches": [
+        "S:L",
+        "S:R"
+      ],
+      "branch_local_histories": [
+        {
+          "branch_id": "S:L",
+          "ordered_records": [
+            {
+              "slot": 0,
+              "content": "red",
+              "predictive_class": "red",
+              "weight": 1
+            },
+            {
+              "slot": 1,
+              "content": "blue",
+              "predictive_class": "blue",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "branch_id": "S:R",
+          "ordered_records": [
+            {
+              "slot": 0,
+              "content": "circle",
+              "predictive_class": "circle",
+              "weight": 1
+            },
+            {
+              "slot": 1,
+              "content": "square",
+              "predictive_class": "square",
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "assemblages": [
+        {
+          "assemblage_id": "S-bound-diagonal",
+          "left_branch": "S:L",
+          "right_branch": "S:R",
+          "coupling_edges": [
+            {
+              "left_slot": 0,
+              "right_slot": 0
+            },
+            {
+              "left_slot": 1,
+              "right_slot": 1
+            }
+          ]
+        },
+        {
+          "assemblage_id": "S-bound-crossed",
+          "left_branch": "S:L",
+          "right_branch": "S:R",
+          "coupling_edges": [
+            {
+              "left_slot": 0,
+              "right_slot": 1
+            },
+            {
+              "left_slot": 1,
+              "right_slot": 0
+            }
+          ]
+        }
+      ],
+      "decomposition": [
+        {
+          "assemblage_id": "S-bound-diagonal",
+          "left_branch": "S:L",
+          "right_branch": "S:R"
+        },
+        {
+          "assemblage_id": "S-bound-crossed",
+          "left_branch": "S:L",
+          "right_branch": "S:R"
+        }
+      ],
+      "ambient_coupling_rule": "all four functions from left slots {0,1} to right slots {0,1}",
+      "admissible_coupling_maps": [
+        {
+          "coupling_id": "diagonal",
+          "right_slots_by_left_slot": [
+            0,
+            1
+          ]
+        },
+        {
+          "coupling_id": "crossed",
+          "right_slots_by_left_slot": [
+            1,
+            0
+          ]
+        }
+      ],
+      "reassembly": [
+        {
+          "left_branch": "S:L",
+          "right_branch": "S:R",
+          "coupling_id": "diagonal",
+          "assemblage_id": "S-bound-diagonal"
+        },
+        {
+          "left_branch": "S:L",
+          "right_branch": "S:R",
+          "coupling_id": "crossed",
+          "assemblage_id": "S-bound-crossed"
+        }
+      ],
+      "admissible_joint_observables": [
+        {
+          "observable_id": "S-jointPairing",
+          "rule": "from each raw coupling edge read the ordered (left content,right content) event; count events and divide by total edge count to form an exact rational distribution"
+        }
+      ],
+      "branchwise_quotient_rule": "on this assemblage domain, equality of complete ordered weighted predictive-class records for each independent branch",
+      "recombination_quotient_rule": "on the same assemblage domain, equality of branchwise state and of exact event distributions for every raw admissible_joint_observables entry; branchwise readout is always included",
+      "binding_probe_rule": "for a queried ordered branch pair, admit iff at least one raw reassembly row has that left and right branch; otherwise reject; derived display only"
+    },
+    "history_frontier": [
+      {
+        "history_id": "S-A0a",
+        "state_id": "S-A0a",
+        "signature": {
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "route": "sA",
+          "maintenance": "S:safe",
+          "owner": 17
+        },
+        "past_history_id": "S-left-arrival"
+      },
+      {
+        "history_id": "S-A0b",
+        "state_id": "S-A0b",
+        "signature": {
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "route": "sA",
+          "maintenance": "S:safe",
+          "owner": 17
+        },
+        "past_history_id": "S-right-arrival"
+      },
+      {
+        "history_id": "S-A1safe",
+        "state_id": "S-A1safe",
+        "signature": {
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 1,
+          "route": "sA",
+          "maintenance": "S:safe",
+          "owner": 17
+        },
+        "past_history_id": null
+      },
+      {
+        "history_id": "S-A1warning",
+        "state_id": "S-A1warning",
+        "signature": {
+          "order": 2,
+          "tick": 1,
+          "progress": 2,
+          "record": 2,
+          "route": "sA",
+          "maintenance": "S:warning",
+          "owner": 17
+        },
+        "past_history_id": null
+      },
+      {
+        "history_id": "S-B0",
+        "state_id": "S-B0",
+        "signature": {
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "route": "sB",
+          "maintenance": "S:safe",
+          "owner": 17
+        },
+        "past_history_id": null
+      },
+      {
+        "history_id": "S-B1safe",
+        "state_id": "S-B1safe",
+        "signature": {
+          "order": 2,
+          "tick": 1,
+          "progress": 2,
+          "record": 2,
+          "route": "sB",
+          "maintenance": "S:safe",
+          "owner": 17
+        },
+        "past_history_id": null
+      }
+    ],
+    "frontier_edges": [
+      {
+        "from": "S-A0a",
+        "to": "S-A1safe",
+        "disturbance": "nominal"
+      },
+      {
+        "from": "S-A0b",
+        "to": "S-A1safe",
+        "disturbance": "nominal"
+      },
+      {
+        "from": "S-A0a",
+        "to": "S-A1warning",
+        "disturbance": "hit"
+      },
+      {
+        "from": "S-A0b",
+        "to": "S-A1warning",
+        "disturbance": "hit"
+      },
+      {
+        "from": "S-B0",
+        "to": "S-B1safe",
+        "disturbance": "nominal"
+      }
+    ],
+    "frontier_reachable_ids": [
+      "S-A0a",
+      "S-A0b",
+      "S-A1safe",
+      "S-A1warning",
+      "S-B0",
+      "S-B1safe"
+    ],
+    "endpoint_packages": [
+      {
+        "state_id": "S-A0a",
+        "clause_assignments": {
+          "C1": {
+            "object_token": "object:S",
+            "boundary_id": "S-boundary",
+            "package_owner": 17,
+            "closure_audit_ref": "S-closure-audit"
+          },
+          "C2": {
+            "lower_readout_ref": "S-lower-readout",
+            "promoted_readout_ref": "S-promoted-readout",
+            "split_pair_ref": "S-A0a|S-B0"
+          },
+          "C3": {
+            "public_self_lens_ref": "S-public-self-lens",
+            "profile_ref": "S-profile-refinement",
+            "continuation_coordinate_ref": "S-continuation-coordinate"
+          },
+          "C4": {
+            "private_state": "S-A0a",
+            "public_state": "report:safe",
+            "channel_family_ref": "S-channels",
+            "determining_ref": "S-computed-q"
+          },
+          "C5": {
+            "action_credit_owner": 17,
+            "credit_resource": "s-action-credit",
+            "provenance_ref": "S-provenance",
+            "credit_rule_ref": "S-credit-rule"
+          },
+          "C6": {
+            "state_ref": "S-A0a",
+            "dynamics_ref": "S-dynamics"
+          },
+          "C7": {
+            "joint_relation_ref": "S-joint-relation",
+            "decomposition_ref": "S-decomposition",
+            "reassembly_ref": "S-reassembly",
+            "binding_probe_ref": "S-binding-probe",
+            "branch_map_ref": "S-to-T-branch-map"
+          },
+          "C8": {
+            "budget": 2,
+            "repair_owner": 17,
+            "kernel_ref": "S-kernel",
+            "ledger_ref": "S-dynamics"
+          }
+        }
+      },
+      {
+        "state_id": "S-B0",
+        "clause_assignments": {
+          "C1": {
+            "object_token": "object:S",
+            "boundary_id": "S-boundary",
+            "package_owner": 17,
+            "closure_audit_ref": "S-closure-audit"
+          },
+          "C2": {
+            "lower_readout_ref": "S-lower-readout",
+            "promoted_readout_ref": "S-promoted-readout",
+            "split_pair_ref": "S-A0a|S-B0"
+          },
+          "C3": {
+            "public_self_lens_ref": "S-public-self-lens",
+            "profile_ref": "S-profile-refinement",
+            "continuation_coordinate_ref": "S-continuation-coordinate"
+          },
+          "C4": {
+            "private_state": "S-B0",
+            "public_state": "report:safe",
+            "channel_family_ref": "S-channels",
+            "determining_ref": "S-computed-q"
+          },
+          "C5": {
+            "action_credit_owner": 17,
+            "credit_resource": "s-action-credit",
+            "provenance_ref": "S-provenance",
+            "credit_rule_ref": "S-credit-rule"
+          },
+          "C6": {
+            "state_ref": "S-B0",
+            "dynamics_ref": "S-dynamics"
+          },
+          "C7": {
+            "joint_relation_ref": "S-joint-relation",
+            "decomposition_ref": "S-decomposition",
+            "reassembly_ref": "S-reassembly",
+            "binding_probe_ref": "S-binding-probe",
+            "branch_map_ref": "S-to-T-branch-map"
+          },
+          "C8": {
+            "budget": 2,
+            "repair_owner": 17,
+            "kernel_ref": "S-kernel",
+            "ledger_ref": "S-dynamics"
+          }
+        }
+      }
+    ],
+    "boundary_id": "S-boundary",
+    "boundary_state_ids": [
+      "S-A0a",
+      "S-A0b",
+      "S-A1safe",
+      "S-A1warning",
+      "S-B0",
+      "S-B1safe"
+    ],
+    "past_history_graph": {
+      "events": [
+        {
+          "event_id": "S-seed",
+          "stage": "prearrival",
+          "owner": 17
+        },
+        {
+          "event_id": "S-left-arrival",
+          "stage": "arrival",
+          "owner": 17
+        },
+        {
+          "event_id": "S-right-arrival",
+          "stage": "arrival",
+          "owner": 17
+        }
+      ],
+      "edges": [
+        {
+          "from": "S-seed",
+          "to": "S-left-arrival",
+          "tick_delta": 0,
+          "progress_delta": 0,
+          "record_delta": 0,
+          "produces": "S-A0a",
+          "prior_health": "safe",
+          "generator_kind": "native-maintenance",
+          "past_branch": "left"
+        },
+        {
+          "from": "S-seed",
+          "to": "S-right-arrival",
+          "tick_delta": 0,
+          "progress_delta": 0,
+          "record_delta": 0,
+          "produces": "S-A0b",
+          "prior_health": "warning",
+          "generator_kind": "repair-after-hit",
+          "past_branch": "right"
+        }
+      ]
+    },
+    "closure_audit": {
+      "audit_id": "S-closure-audit",
+      "domain": "powerset of the six declared kernel states",
+      "stagings": [
+        {
+          "stage_id": "nominal",
+          "allowed_disturbances": [
+            "nominal"
+          ]
+        },
+        {
+          "stage_id": "all",
+          "allowed_disturbances": [
+            "nominal",
+            "hit"
+          ]
+        }
+      ],
+      "closure_rule": "E_stage(A) is reflexive-transitive reachability of A under the stage allowed disturbances using the raw transition table; fixed sets satisfy E_stage(A)=A",
+      "defect_rule": "for each A, compare one-step expansion D_stage(A)=A union successors(A) with E_stage(A); record exact symmetric-difference cardinality, with no prescribed small-defect threshold",
+      "perturbation": {
+        "epsilon_numerator": 1,
+        "epsilon_denominator": 16,
+        "rule": "P_epsilon=(1-epsilon)P+epsilon Uniform(K), where P is the equiprobable nominal/hit raw transition matrix; compute stationary fixed distributions and exact mass on CORE",
+        "core_state_ids": [
+          "S-A0a",
+          "S-A0b",
+          "S-A1safe",
+          "S-A1warning"
+        ],
+        "retention_threshold_numerator": 3,
+        "retention_threshold_denominator": 4
+      },
+      "surrogate_omission": "This powerset reachability closure plus a separate Markov perturbation is not T1 exact E_tau=P^tau C U with pinned prototypes, idempotence defects, and its ten-state robustness audit."
+    },
+    "promotion_readouts": {
+      "lower_id": "S-lower-readout",
+      "promoted_id": "S-promoted-readout",
+      "lower_rule": "public_state of raw state",
+      "promoted_rule": "(public_state, computed q(raw state))",
+      "split_pair": [
+        "S-A0a",
+        "S-B0"
+      ],
+      "factorization_defect_rule": "all ordered state pairs with equal lower and unequal promoted readouts"
+    },
+    "self_profile": {
+      "public_self_lens_id": "S-public-self-lens",
+      "profile_id": "S-profile-refinement",
+      "continuation_coordinate_id": "S-continuation-coordinate",
+      "initial_partition_rule": "equal complete current public observation (public report plus enabled disturbance set)",
+      "refinement_rule": "split each current class by, for each declared disturbance, raw action deltas, next maintenance/health and route observation, and next-state current partition class; iterate until no class splits",
+      "terminal_target_rule": "terminal equivalence equals equality of the fixed computed q on the declared kernel; q determines the package continuation coordinate (all future TemporalSignature traces)",
+      "raw_continuation_coordinate": "the complete future TemporalSignature trace function over all finite declared disturbance words, not an independently stored class label"
+    },
+    "exposure_channels": {
+      "channel_family_id": "S-channels",
+      "declared_channels": [
+        "public_report",
+        "enabled_disturbances"
+      ],
+      "determining_ref": "S-computed-q",
+      "current_observation_rule": "(public_state, enabled disturbance set) from raw state and transition table",
+      "nonexposure_rule": "there exist kernel states with equal complete current observation but different computed q and different future TemporalSignature observations",
+      "expanded_interface_negative": [
+        "public_report",
+        "enabled_disturbances",
+        "route_residue",
+        "tick_phase",
+        "maintenance_state"
+      ],
+      "surrogate_omission": "The finite same-current/different-future collision establishes nonfactorization of q through the declared channels. It does not independently implement HIDD history/complexity visibility or resolve P05 literal no-nonconstant-observable-factors-through-M reading."
+    },
+    "generator_provenance": {
+      "provenance_id": "S-provenance",
+      "credit_rule_id": "S-credit-rule",
+      "cycle_vertices": [
+        "u",
+        "v",
+        "w"
+      ],
+      "protocols": [
+        {
+          "protocol_id": "S-genuine",
+          "generator_owner": 17,
+          "channel": "self",
+          "generator_kind": "native-policy",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "self"
+            }
+          ]
+        },
+        {
+          "protocol_id": "S-scheduled",
+          "generator_owner": 901,
+          "channel": "other",
+          "generator_kind": "external-schedule",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "other"
+            }
+          ]
+        },
+        {
+          "protocol_id": "S-internalized",
+          "generator_owner": 17,
+          "channel": "self-and-other-balanced",
+          "generator_kind": "internalized-schedule",
+          "external_ancestor": "S-scheduled",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "u",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "self"
+            },
+            {
+              "from": "u",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "u",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "other"
+            },
+            {
+              "from": "u",
+              "to": "w",
+              "channel": "other"
+            }
+          ]
+        },
+        {
+          "protocol_id": "S-null",
+          "generator_owner": null,
+          "channel": "none",
+          "generator_kind": "no-generator",
+          "edges": []
+        }
+      ],
+      "credit_rule": "For each protocol and each channel self/other, count directed raw edges on the u\u2192v\u2192w\u2192u cycle and multiply their multiplicities; do the same on the reverse cycle. Exactly self-asymmetric gives self; exactly other-asymmetric gives other; both channel products equal gives none; simultaneous asymmetry is ambiguous. Generator owner/provenance must agree with the credited channel, except the internalized control is judged by the same balanced-products rule rather than its owner.",
+      "surrogate_omission": "No T5 nine-state 81-entry C+D lift or NG_ARROW_DPI audit is encoded."
+    }
+  },
+  "target": {
+    "table_id": "T-dynamics",
+    "states": [
+      {
+        "state_id": "T-A0a",
+        "route_residue": "rA",
+        "tick_phase": 0,
+        "health": "safe",
+        "maintenance_state": "T:safe",
+        "maintenance_owner": 101,
+        "temporal_owner": 101,
+        "owner": 101,
+        "budget": 2,
+        "public_state": "report:safe",
+        "initial_order": 2,
+        "initial_progress": 2,
+        "initial_record": 2,
+        "clause_assignments": {
+          "C1": {
+            "object_token": "object:T",
+            "boundary_id": "T-boundary",
+            "package_owner": 101,
+            "closure_audit_ref": "T-closure-audit"
+          },
+          "C2": {
+            "lower_readout_ref": "T-lower-readout",
+            "promoted_readout_ref": "T-promoted-readout",
+            "split_pair_ref": "T-A0a|T-B0"
+          },
+          "C3": {
+            "public_self_lens_ref": "T-public-self-lens",
+            "profile_ref": "T-profile-refinement",
+            "continuation_coordinate_ref": "T-continuation-coordinate"
+          },
+          "C4": {
+            "private_state": "T-A0a",
+            "public_state": "report:safe",
+            "channel_family_ref": "T-channels",
+            "determining_ref": "T-computed-q"
+          },
+          "C5": {
+            "action_credit_owner": 101,
+            "credit_resource": "t-action-credit",
+            "provenance_ref": "T-provenance",
+            "credit_rule_ref": "T-credit-rule"
+          },
+          "C6": {
+            "state_ref": "T-A0a",
+            "dynamics_ref": "T-dynamics"
+          },
+          "C7": {
+            "joint_relation_ref": "T-joint-relation",
+            "decomposition_ref": "T-decomposition",
+            "reassembly_ref": "T-reassembly",
+            "binding_probe_ref": "T-binding-probe",
+            "branch_map_ref": "S-to-T-branch-map"
+          },
+          "C8": {
+            "budget": 2,
+            "repair_owner": 101,
+            "kernel_ref": "T-kernel",
+            "ledger_ref": "T-dynamics"
+          }
+        },
+        "past_history_id": "T-left-arrival"
+      },
+      {
+        "state_id": "T-A0b",
+        "route_residue": "rA",
+        "tick_phase": 0,
+        "health": "safe",
+        "maintenance_state": "T:safe",
+        "maintenance_owner": 101,
+        "temporal_owner": 101,
+        "owner": 101,
+        "budget": 2,
+        "public_state": "report:safe",
+        "initial_order": 2,
+        "initial_progress": 2,
+        "initial_record": 2,
+        "clause_assignments": {
+          "C1": {
+            "object_token": "object:T",
+            "boundary_id": "T-boundary",
+            "package_owner": 101,
+            "closure_audit_ref": "T-closure-audit"
+          },
+          "C2": {
+            "lower_readout_ref": "T-lower-readout",
+            "promoted_readout_ref": "T-promoted-readout",
+            "split_pair_ref": "T-A0a|T-B0"
+          },
+          "C3": {
+            "public_self_lens_ref": "T-public-self-lens",
+            "profile_ref": "T-profile-refinement",
+            "continuation_coordinate_ref": "T-continuation-coordinate"
+          },
+          "C4": {
+            "private_state": "T-A0b",
+            "public_state": "report:safe",
+            "channel_family_ref": "T-channels",
+            "determining_ref": "T-computed-q"
+          },
+          "C5": {
+            "action_credit_owner": 101,
+            "credit_resource": "t-action-credit",
+            "provenance_ref": "T-provenance",
+            "credit_rule_ref": "T-credit-rule"
+          },
+          "C6": {
+            "state_ref": "T-A0b",
+            "dynamics_ref": "T-dynamics"
+          },
+          "C7": {
+            "joint_relation_ref": "T-joint-relation",
+            "decomposition_ref": "T-decomposition",
+            "reassembly_ref": "T-reassembly",
+            "binding_probe_ref": "T-binding-probe",
+            "branch_map_ref": "S-to-T-branch-map"
+          },
+          "C8": {
+            "budget": 2,
+            "repair_owner": 101,
+            "kernel_ref": "T-kernel",
+            "ledger_ref": "T-dynamics"
+          }
+        },
+        "past_history_id": "T-right-arrival"
+      },
+      {
+        "state_id": "T-A1safe",
+        "route_residue": "rA",
+        "tick_phase": 1,
+        "health": "safe",
+        "maintenance_state": "T:safe",
+        "maintenance_owner": 101,
+        "temporal_owner": 101,
+        "owner": 101,
+        "budget": 2,
+        "public_state": "report:safe",
+        "initial_order": 3,
+        "initial_progress": 3,
+        "initial_record": 3,
+        "clause_assignments": {
+          "C1": {
+            "object_token": "object:T",
+            "boundary_id": "T-boundary",
+            "package_owner": 101,
+            "closure_audit_ref": "T-closure-audit"
+          },
+          "C2": {
+            "lower_readout_ref": "T-lower-readout",
+            "promoted_readout_ref": "T-promoted-readout",
+            "split_pair_ref": "T-A0a|T-B0"
+          },
+          "C3": {
+            "public_self_lens_ref": "T-public-self-lens",
+            "profile_ref": "T-profile-refinement",
+            "continuation_coordinate_ref": "T-continuation-coordinate"
+          },
+          "C4": {
+            "private_state": "T-A1safe",
+            "public_state": "report:safe",
+            "channel_family_ref": "T-channels",
+            "determining_ref": "T-computed-q"
+          },
+          "C5": {
+            "action_credit_owner": 101,
+            "credit_resource": "t-action-credit",
+            "provenance_ref": "T-provenance",
+            "credit_rule_ref": "T-credit-rule"
+          },
+          "C6": {
+            "state_ref": "T-A1safe",
+            "dynamics_ref": "T-dynamics"
+          },
+          "C7": {
+            "joint_relation_ref": "T-joint-relation",
+            "decomposition_ref": "T-decomposition",
+            "reassembly_ref": "T-reassembly",
+            "binding_probe_ref": "T-binding-probe",
+            "branch_map_ref": "S-to-T-branch-map"
+          },
+          "C8": {
+            "budget": 2,
+            "repair_owner": 101,
+            "kernel_ref": "T-kernel",
+            "ledger_ref": "T-dynamics"
+          }
+        },
+        "past_history_id": null
+      },
+      {
+        "state_id": "T-A1warning",
+        "route_residue": "rA",
+        "tick_phase": 1,
+        "health": "warning",
+        "maintenance_state": "T:warning",
+        "maintenance_owner": 101,
+        "temporal_owner": 101,
+        "owner": 101,
+        "budget": 2,
+        "public_state": "report:warning",
+        "initial_order": 4,
+        "initial_progress": 4,
+        "initial_record": 4,
+        "clause_assignments": {
+          "C1": {
+            "object_token": "object:T",
+            "boundary_id": "T-boundary",
+            "package_owner": 101,
+            "closure_audit_ref": "T-closure-audit"
+          },
+          "C2": {
+            "lower_readout_ref": "T-lower-readout",
+            "promoted_readout_ref": "T-promoted-readout",
+            "split_pair_ref": "T-A0a|T-B0"
+          },
+          "C3": {
+            "public_self_lens_ref": "T-public-self-lens",
+            "profile_ref": "T-profile-refinement",
+            "continuation_coordinate_ref": "T-continuation-coordinate"
+          },
+          "C4": {
+            "private_state": "T-A1warning",
+            "public_state": "report:warning",
+            "channel_family_ref": "T-channels",
+            "determining_ref": "T-computed-q"
+          },
+          "C5": {
+            "action_credit_owner": 101,
+            "credit_resource": "t-action-credit",
+            "provenance_ref": "T-provenance",
+            "credit_rule_ref": "T-credit-rule"
+          },
+          "C6": {
+            "state_ref": "T-A1warning",
+            "dynamics_ref": "T-dynamics"
+          },
+          "C7": {
+            "joint_relation_ref": "T-joint-relation",
+            "decomposition_ref": "T-decomposition",
+            "reassembly_ref": "T-reassembly",
+            "binding_probe_ref": "T-binding-probe",
+            "branch_map_ref": "S-to-T-branch-map"
+          },
+          "C8": {
+            "budget": 2,
+            "repair_owner": 101,
+            "kernel_ref": "T-kernel",
+            "ledger_ref": "T-dynamics"
+          }
+        },
+        "past_history_id": null
+      },
+      {
+        "state_id": "T-B0",
+        "route_residue": "rB",
+        "tick_phase": 0,
+        "health": "safe",
+        "maintenance_state": "T:safe",
+        "maintenance_owner": 101,
+        "temporal_owner": 101,
+        "owner": 101,
+        "budget": 2,
+        "public_state": "report:safe",
+        "initial_order": 2,
+        "initial_progress": 2,
+        "initial_record": 2,
+        "clause_assignments": {
+          "C1": {
+            "object_token": "object:T",
+            "boundary_id": "T-boundary",
+            "package_owner": 101,
+            "closure_audit_ref": "T-closure-audit"
+          },
+          "C2": {
+            "lower_readout_ref": "T-lower-readout",
+            "promoted_readout_ref": "T-promoted-readout",
+            "split_pair_ref": "T-A0a|T-B0"
+          },
+          "C3": {
+            "public_self_lens_ref": "T-public-self-lens",
+            "profile_ref": "T-profile-refinement",
+            "continuation_coordinate_ref": "T-continuation-coordinate"
+          },
+          "C4": {
+            "private_state": "T-B0",
+            "public_state": "report:safe",
+            "channel_family_ref": "T-channels",
+            "determining_ref": "T-computed-q"
+          },
+          "C5": {
+            "action_credit_owner": 101,
+            "credit_resource": "t-action-credit",
+            "provenance_ref": "T-provenance",
+            "credit_rule_ref": "T-credit-rule"
+          },
+          "C6": {
+            "state_ref": "T-B0",
+            "dynamics_ref": "T-dynamics"
+          },
+          "C7": {
+            "joint_relation_ref": "T-joint-relation",
+            "decomposition_ref": "T-decomposition",
+            "reassembly_ref": "T-reassembly",
+            "binding_probe_ref": "T-binding-probe",
+            "branch_map_ref": "S-to-T-branch-map"
+          },
+          "C8": {
+            "budget": 2,
+            "repair_owner": 101,
+            "kernel_ref": "T-kernel",
+            "ledger_ref": "T-dynamics"
+          }
+        },
+        "past_history_id": null
+      },
+      {
+        "state_id": "T-B1safe",
+        "route_residue": "rB",
+        "tick_phase": 1,
+        "health": "safe",
+        "maintenance_state": "T:safe",
+        "maintenance_owner": 101,
+        "temporal_owner": 101,
+        "owner": 101,
+        "budget": 2,
+        "public_state": "report:safe",
+        "initial_order": 4,
+        "initial_progress": 4,
+        "initial_record": 4,
+        "clause_assignments": {
+          "C1": {
+            "object_token": "object:T",
+            "boundary_id": "T-boundary",
+            "package_owner": 101,
+            "closure_audit_ref": "T-closure-audit"
+          },
+          "C2": {
+            "lower_readout_ref": "T-lower-readout",
+            "promoted_readout_ref": "T-promoted-readout",
+            "split_pair_ref": "T-A0a|T-B0"
+          },
+          "C3": {
+            "public_self_lens_ref": "T-public-self-lens",
+            "profile_ref": "T-profile-refinement",
+            "continuation_coordinate_ref": "T-continuation-coordinate"
+          },
+          "C4": {
+            "private_state": "T-B1safe",
+            "public_state": "report:safe",
+            "channel_family_ref": "T-channels",
+            "determining_ref": "T-computed-q"
+          },
+          "C5": {
+            "action_credit_owner": 101,
+            "credit_resource": "t-action-credit",
+            "provenance_ref": "T-provenance",
+            "credit_rule_ref": "T-credit-rule"
+          },
+          "C6": {
+            "state_ref": "T-B1safe",
+            "dynamics_ref": "T-dynamics"
+          },
+          "C7": {
+            "joint_relation_ref": "T-joint-relation",
+            "decomposition_ref": "T-decomposition",
+            "reassembly_ref": "T-reassembly",
+            "binding_probe_ref": "T-binding-probe",
+            "branch_map_ref": "S-to-T-branch-map"
+          },
+          "C8": {
+            "budget": 2,
+            "repair_owner": 101,
+            "kernel_ref": "T-kernel",
+            "ledger_ref": "T-dynamics"
+          }
+        },
+        "past_history_id": null
+      }
+    ],
+    "disturbances": [
+      "nominal",
+      "hit"
+    ],
+    "actions": [
+      {
+        "action_id": "T-act-A0a-nominal",
+        "owner": 101,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-A0a-hit",
+        "owner": 101,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-disturbance-sensor",
+          "t-binding-bus",
+          "t-regenerator"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-A0b-nominal",
+        "owner": 101,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-A0b-hit",
+        "owner": 101,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-disturbance-sensor",
+          "t-binding-bus",
+          "t-regenerator"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-A1safe-nominal",
+        "owner": 101,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-A1safe-hit",
+        "owner": 101,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-disturbance-sensor",
+          "t-binding-bus",
+          "t-regenerator"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-A1warning-nominal",
+        "owner": 101,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-repair-loop",
+          "t-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-A1warning-hit",
+        "owner": 101,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-repair-loop",
+          "t-regenerator",
+          "t-disturbance-sensor",
+          "t-binding-bus"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-B0-nominal",
+        "owner": 101,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-B0-hit",
+        "owner": 101,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-disturbance-sensor",
+          "t-binding-bus",
+          "t-regenerator"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-B1safe-nominal",
+        "owner": 101,
+        "order_delta": 1,
+        "progress_delta": 1,
+        "record_delta": 1,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-regenerator"
+        ],
+        "binding_query": null,
+        "generator_protocol_id": "T-genuine"
+      },
+      {
+        "action_id": "T-act-B1safe-hit",
+        "owner": 101,
+        "order_delta": 2,
+        "progress_delta": 2,
+        "record_delta": 2,
+        "budget_cost": 2,
+        "budget_regeneration": 2,
+        "regeneration_owner": 101,
+        "regeneration_resource": "t-regenerator",
+        "required_resources": [
+          "t-clock",
+          "t-record",
+          "t-maintenance",
+          "t-action-credit",
+          "t-disturbance-sensor",
+          "t-binding-bus",
+          "t-regenerator"
+        ],
+        "binding_query": [
+          "L",
+          "R"
+        ],
+        "generator_protocol_id": "T-genuine"
+      }
+    ],
+    "transitions": [
+      {
+        "from_state": "T-A0a",
+        "disturbance_id": "nominal",
+        "action_id": "T-act-A0a-nominal",
+        "to_state": "T-A1safe"
+      },
+      {
+        "from_state": "T-A0a",
+        "disturbance_id": "hit",
+        "action_id": "T-act-A0a-hit",
+        "to_state": "T-A1warning"
+      },
+      {
+        "from_state": "T-A0b",
+        "disturbance_id": "nominal",
+        "action_id": "T-act-A0b-nominal",
+        "to_state": "T-A1safe"
+      },
+      {
+        "from_state": "T-A0b",
+        "disturbance_id": "hit",
+        "action_id": "T-act-A0b-hit",
+        "to_state": "T-A1warning"
+      },
+      {
+        "from_state": "T-A1safe",
+        "disturbance_id": "nominal",
+        "action_id": "T-act-A1safe-nominal",
+        "to_state": "T-A0a"
+      },
+      {
+        "from_state": "T-A1safe",
+        "disturbance_id": "hit",
+        "action_id": "T-act-A1safe-hit",
+        "to_state": "T-A0a"
+      },
+      {
+        "from_state": "T-A1warning",
+        "disturbance_id": "nominal",
+        "action_id": "T-act-A1warning-nominal",
+        "to_state": "T-A0a"
+      },
+      {
+        "from_state": "T-A1warning",
+        "disturbance_id": "hit",
+        "action_id": "T-act-A1warning-hit",
+        "to_state": "T-A0a"
+      },
+      {
+        "from_state": "T-B0",
+        "disturbance_id": "nominal",
+        "action_id": "T-act-B0-nominal",
+        "to_state": "T-B1safe"
+      },
+      {
+        "from_state": "T-B0",
+        "disturbance_id": "hit",
+        "action_id": "T-act-B0-hit",
+        "to_state": "T-B1safe"
+      },
+      {
+        "from_state": "T-B1safe",
+        "disturbance_id": "nominal",
+        "action_id": "T-act-B1safe-nominal",
+        "to_state": "T-B0"
+      },
+      {
+        "from_state": "T-B1safe",
+        "disturbance_id": "hit",
+        "action_id": "T-act-B1safe-hit",
+        "to_state": "T-B0"
+      }
+    ],
+    "kernel_id": "T-kernel",
+    "kernel_state_ids": [
+      "T-A0a",
+      "T-A0b",
+      "T-A1safe",
+      "T-A1warning",
+      "T-B0",
+      "T-B1safe"
+    ],
+    "endpoint_state_id": "T-A0a",
+    "tick_modulus": 2,
+    "resources": [
+      {
+        "resource_id": "t-clock",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-record",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-maintenance",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-action-credit",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-repair-loop",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-regenerator",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-disturbance-sensor",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-binding-bus",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-object-register",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-boundary",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-private-state",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-public-interface",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-self-register",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-recombination-table",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-budget",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-policy",
+        "owner": 101
+      }
+    ],
+    "joint_binding": {
+      "assemblage_domain_id": "T-assemblages",
+      "decomposition_id": "T-decomposition",
+      "reassembly_id": "T-reassembly",
+      "relation_id": "T-joint-relation",
+      "probe_id": "T-binding-probe",
+      "branches": [
+        "T:L",
+        "T:R"
+      ],
+      "branch_local_histories": [
+        {
+          "branch_id": "T:L",
+          "ordered_records": [
+            {
+              "slot": 0,
+              "content": "red",
+              "predictive_class": "red",
+              "weight": 1
+            },
+            {
+              "slot": 1,
+              "content": "blue",
+              "predictive_class": "blue",
+              "weight": 1
+            }
+          ]
+        },
+        {
+          "branch_id": "T:R",
+          "ordered_records": [
+            {
+              "slot": 0,
+              "content": "circle",
+              "predictive_class": "circle",
+              "weight": 1
+            },
+            {
+              "slot": 1,
+              "content": "square",
+              "predictive_class": "square",
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "assemblages": [
+        {
+          "assemblage_id": "T-bound-diagonal",
+          "left_branch": "T:L",
+          "right_branch": "T:R",
+          "coupling_edges": [
+            {
+              "left_slot": 0,
+              "right_slot": 0
+            },
+            {
+              "left_slot": 1,
+              "right_slot": 1
+            }
+          ]
+        },
+        {
+          "assemblage_id": "T-bound-crossed",
+          "left_branch": "T:L",
+          "right_branch": "T:R",
+          "coupling_edges": [
+            {
+              "left_slot": 0,
+              "right_slot": 1
+            },
+            {
+              "left_slot": 1,
+              "right_slot": 0
+            }
+          ]
+        }
+      ],
+      "decomposition": [
+        {
+          "assemblage_id": "T-bound-diagonal",
+          "left_branch": "T:L",
+          "right_branch": "T:R"
+        },
+        {
+          "assemblage_id": "T-bound-crossed",
+          "left_branch": "T:L",
+          "right_branch": "T:R"
+        }
+      ],
+      "ambient_coupling_rule": "all four functions from left slots {0,1} to right slots {0,1}",
+      "admissible_coupling_maps": [
+        {
+          "coupling_id": "diagonal",
+          "right_slots_by_left_slot": [
+            0,
+            1
+          ]
+        },
+        {
+          "coupling_id": "crossed",
+          "right_slots_by_left_slot": [
+            1,
+            0
+          ]
+        }
+      ],
+      "reassembly": [
+        {
+          "left_branch": "T:L",
+          "right_branch": "T:R",
+          "coupling_id": "diagonal",
+          "assemblage_id": "T-bound-diagonal"
+        },
+        {
+          "left_branch": "T:L",
+          "right_branch": "T:R",
+          "coupling_id": "crossed",
+          "assemblage_id": "T-bound-crossed"
+        }
+      ],
+      "admissible_joint_observables": [
+        {
+          "observable_id": "T-jointPairing",
+          "rule": "from each raw coupling edge read the ordered (left content,right content) event; count events and divide by total edge count to form an exact rational distribution"
+        }
+      ],
+      "branchwise_quotient_rule": "on this assemblage domain, equality of complete ordered weighted predictive-class records for each independent branch",
+      "recombination_quotient_rule": "on the same assemblage domain, equality of branchwise state and of exact event distributions for every raw admissible_joint_observables entry; branchwise readout is always included",
+      "binding_probe_rule": "for a queried ordered branch pair, admit iff at least one raw reassembly row has that left and right branch; otherwise reject; derived display only"
+    },
+    "history_images": [
+      {
+        "source_history_id": "S-A0a",
+        "target_state_id": "T-A0a",
+        "signature": {
+          "order": 2,
+          "tick": 2,
+          "progress": 2,
+          "record": 2,
+          "route": "rA",
+          "maintenance": "T:safe",
+          "owner": 101
+        },
+        "past_history_id": "T-left-arrival"
+      },
+      {
+        "source_history_id": "S-A0b",
+        "target_state_id": "T-A0b",
+        "signature": {
+          "order": 2,
+          "tick": 2,
+          "progress": 2,
+          "record": 2,
+          "route": "rA",
+          "maintenance": "T:safe",
+          "owner": 101
+        },
+        "past_history_id": "T-right-arrival"
+      },
+      {
+        "source_history_id": "S-A1safe",
+        "target_state_id": "T-A1safe",
+        "signature": {
+          "order": 3,
+          "tick": 3,
+          "progress": 3,
+          "record": 3,
+          "route": "rA",
+          "maintenance": "T:safe",
+          "owner": 101
+        },
+        "past_history_id": null
+      },
+      {
+        "source_history_id": "S-A1warning",
+        "target_state_id": "T-A1warning",
+        "signature": {
+          "order": 4,
+          "tick": 3,
+          "progress": 4,
+          "record": 4,
+          "route": "rA",
+          "maintenance": "T:warning",
+          "owner": 101
+        },
+        "past_history_id": null
+      },
+      {
+        "source_history_id": "S-B0",
+        "target_state_id": "T-B0",
+        "signature": {
+          "order": 2,
+          "tick": 2,
+          "progress": 2,
+          "record": 2,
+          "route": "rB",
+          "maintenance": "T:safe",
+          "owner": 101
+        },
+        "past_history_id": null
+      },
+      {
+        "source_history_id": "S-B1safe",
+        "target_state_id": "T-B1safe",
+        "signature": {
+          "order": 4,
+          "tick": 3,
+          "progress": 4,
+          "record": 4,
+          "route": "rB",
+          "maintenance": "T:safe",
+          "owner": 101
+        },
+        "past_history_id": null
+      }
+    ],
+    "boundary_id": "T-boundary",
+    "boundary_state_ids": [
+      "T-A0a",
+      "T-A0b",
+      "T-A1safe",
+      "T-A1warning",
+      "T-B0",
+      "T-B1safe"
+    ],
+    "past_history_graph": {
+      "events": [
+        {
+          "event_id": "T-seed",
+          "stage": "prearrival",
+          "owner": 101
+        },
+        {
+          "event_id": "T-left-arrival",
+          "stage": "arrival",
+          "owner": 101
+        },
+        {
+          "event_id": "T-right-arrival",
+          "stage": "arrival",
+          "owner": 101
+        }
+      ],
+      "edges": [
+        {
+          "from": "T-seed",
+          "to": "T-left-arrival",
+          "tick_delta": 0,
+          "progress_delta": 0,
+          "record_delta": 0,
+          "produces": "T-A0a",
+          "prior_health": "safe",
+          "generator_kind": "native-maintenance",
+          "past_branch": "left"
+        },
+        {
+          "from": "T-seed",
+          "to": "T-right-arrival",
+          "tick_delta": 0,
+          "progress_delta": 0,
+          "record_delta": 0,
+          "produces": "T-A0b",
+          "prior_health": "warning",
+          "generator_kind": "repair-after-hit",
+          "past_branch": "right"
+        }
+      ]
+    },
+    "closure_audit": {
+      "audit_id": "T-closure-audit",
+      "domain": "powerset of the six declared kernel states",
+      "stagings": [
+        {
+          "stage_id": "nominal",
+          "allowed_disturbances": [
+            "nominal"
+          ]
+        },
+        {
+          "stage_id": "all",
+          "allowed_disturbances": [
+            "nominal",
+            "hit"
+          ]
+        }
+      ],
+      "closure_rule": "E_stage(A) is reflexive-transitive reachability of A under the stage allowed disturbances using the raw transition table; fixed sets satisfy E_stage(A)=A",
+      "defect_rule": "for each A, compare one-step expansion D_stage(A)=A union successors(A) with E_stage(A); record exact symmetric-difference cardinality, with no prescribed small-defect threshold",
+      "perturbation": {
+        "epsilon_numerator": 1,
+        "epsilon_denominator": 16,
+        "rule": "P_epsilon=(1-epsilon)P+epsilon Uniform(K), where P is the equiprobable nominal/hit raw transition matrix; compute stationary fixed distributions and exact mass on CORE",
+        "core_state_ids": [
+          "T-A0a",
+          "T-A0b",
+          "T-A1safe",
+          "T-A1warning"
+        ],
+        "retention_threshold_numerator": 3,
+        "retention_threshold_denominator": 4
+      },
+      "surrogate_omission": "This powerset reachability closure plus a separate Markov perturbation is not T1 exact E_tau=P^tau C U with pinned prototypes, idempotence defects, and its ten-state robustness audit."
+    },
+    "promotion_readouts": {
+      "lower_id": "T-lower-readout",
+      "promoted_id": "T-promoted-readout",
+      "lower_rule": "public_state of raw state",
+      "promoted_rule": "(public_state, computed q(raw state))",
+      "split_pair": [
+        "T-A0a",
+        "T-B0"
+      ],
+      "factorization_defect_rule": "all ordered state pairs with equal lower and unequal promoted readouts"
+    },
+    "self_profile": {
+      "public_self_lens_id": "T-public-self-lens",
+      "profile_id": "T-profile-refinement",
+      "continuation_coordinate_id": "T-continuation-coordinate",
+      "initial_partition_rule": "equal complete current public observation (public report plus enabled disturbance set)",
+      "refinement_rule": "split each current class by, for each declared disturbance, raw action deltas, next maintenance/health and route observation, and next-state current partition class; iterate until no class splits",
+      "terminal_target_rule": "terminal equivalence equals equality of the fixed computed q on the declared kernel; q determines the package continuation coordinate (all future TemporalSignature traces)",
+      "raw_continuation_coordinate": "the complete future TemporalSignature trace function over all finite declared disturbance words, not an independently stored class label"
+    },
+    "exposure_channels": {
+      "channel_family_id": "T-channels",
+      "declared_channels": [
+        "public_report",
+        "enabled_disturbances"
+      ],
+      "determining_ref": "T-computed-q",
+      "current_observation_rule": "(public_state, enabled disturbance set) from raw state and transition table",
+      "nonexposure_rule": "there exist kernel states with equal complete current observation but different computed q and different future TemporalSignature observations",
+      "expanded_interface_negative": [
+        "public_report",
+        "enabled_disturbances",
+        "route_residue",
+        "tick_phase",
+        "maintenance_state"
+      ],
+      "surrogate_omission": "The finite same-current/different-future collision establishes nonfactorization of q through the declared channels. It does not independently implement HIDD history/complexity visibility or resolve P05 literal no-nonconstant-observable-factors-through-M reading."
+    },
+    "generator_provenance": {
+      "provenance_id": "T-provenance",
+      "credit_rule_id": "T-credit-rule",
+      "cycle_vertices": [
+        "u",
+        "v",
+        "w"
+      ],
+      "protocols": [
+        {
+          "protocol_id": "T-genuine",
+          "generator_owner": 101,
+          "channel": "self",
+          "generator_kind": "native-policy",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "self"
+            }
+          ]
+        },
+        {
+          "protocol_id": "T-scheduled",
+          "generator_owner": 901,
+          "channel": "other",
+          "generator_kind": "external-schedule",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "other"
+            }
+          ]
+        },
+        {
+          "protocol_id": "T-internalized",
+          "generator_owner": 101,
+          "channel": "self-and-other-balanced",
+          "generator_kind": "internalized-schedule",
+          "external_ancestor": "T-scheduled",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "u",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "self"
+            },
+            {
+              "from": "u",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "u",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "other"
+            },
+            {
+              "from": "u",
+              "to": "w",
+              "channel": "other"
+            }
+          ]
+        },
+        {
+          "protocol_id": "T-null",
+          "generator_owner": null,
+          "channel": "none",
+          "generator_kind": "no-generator",
+          "edges": []
+        }
+      ],
+      "credit_rule": "For each protocol and each channel self/other, count directed raw edges on the u\u2192v\u2192w\u2192u cycle and multiply their multiplicities; do the same on the reverse cycle. Exactly self-asymmetric gives self; exactly other-asymmetric gives other; both channel products equal gives none; simultaneous asymmetry is ambiguous. Generator owner/provenance must agree with the credited channel, except the internalized control is judged by the same balanced-products rule rather than its owner.",
+      "surrogate_omission": "No T5 nine-state 81-entry C+D lift or NG_ARROW_DPI audit is encoded."
+    }
+  },
+  "staged_clause_map": {
+    "map_id": "S-to-T-clause-map",
+    "target_arrivals": [
+      "T-A0a",
+      "T-B0"
+    ],
+    "coordinate_map": [
+      {
+        "clause": "C1",
+        "source_coordinate": "object_token",
+        "target_coordinate": "object_token",
+        "value_rule": "carrier_prefix"
+      },
+      {
+        "clause": "C1",
+        "source_coordinate": "boundary_id",
+        "target_coordinate": "boundary_id",
+        "value_rule": "carrier_prefix"
+      },
+      {
+        "clause": "C1",
+        "source_coordinate": "package_owner",
+        "target_coordinate": "package_owner",
+        "value_rule": "owner_17_to_101"
+      },
+      {
+        "clause": "C1",
+        "source_coordinate": "closure_audit_ref",
+        "target_coordinate": "closure_audit_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C2",
+        "source_coordinate": "lower_readout_ref",
+        "target_coordinate": "lower_readout_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C2",
+        "source_coordinate": "promoted_readout_ref",
+        "target_coordinate": "promoted_readout_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C2",
+        "source_coordinate": "split_pair_ref",
+        "target_coordinate": "split_pair_ref",
+        "value_rule": "split_pair_map"
+      },
+      {
+        "clause": "C3",
+        "source_coordinate": "public_self_lens_ref",
+        "target_coordinate": "public_self_lens_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C3",
+        "source_coordinate": "profile_ref",
+        "target_coordinate": "profile_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C3",
+        "source_coordinate": "continuation_coordinate_ref",
+        "target_coordinate": "continuation_coordinate_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C4",
+        "source_coordinate": "private_state",
+        "target_coordinate": "private_state",
+        "value_rule": "raw_state_map"
+      },
+      {
+        "clause": "C4",
+        "source_coordinate": "public_state",
+        "target_coordinate": "public_state",
+        "value_rule": "identity"
+      },
+      {
+        "clause": "C4",
+        "source_coordinate": "channel_family_ref",
+        "target_coordinate": "channel_family_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C4",
+        "source_coordinate": "determining_ref",
+        "target_coordinate": "determining_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C5",
+        "source_coordinate": "action_credit_owner",
+        "target_coordinate": "action_credit_owner",
+        "value_rule": "owner_17_to_101"
+      },
+      {
+        "clause": "C5",
+        "source_coordinate": "credit_resource",
+        "target_coordinate": "credit_resource",
+        "value_rule": "resource_prefix"
+      },
+      {
+        "clause": "C5",
+        "source_coordinate": "provenance_ref",
+        "target_coordinate": "provenance_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C5",
+        "source_coordinate": "credit_rule_ref",
+        "target_coordinate": "credit_rule_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C6",
+        "source_coordinate": "state_ref",
+        "target_coordinate": "state_ref",
+        "value_rule": "state_ref_map"
+      },
+      {
+        "clause": "C6",
+        "source_coordinate": "dynamics_ref",
+        "target_coordinate": "dynamics_ref",
+        "value_rule": "audit_ref_prefix"
+      },
+      {
+        "clause": "C7",
+        "source_coordinate": "joint_relation_ref",
+        "target_coordinate": "joint_relation_ref",
+        "value_rule": "carrier_prefix"
+      },
+      {
+        "clause": "C7",
+        "source_coordinate": "decomposition_ref",
+        "target_coordinate": "decomposition_ref",
+        "value_rule": "carrier_prefix"
+      },
+      {
+        "clause": "C7",
+        "source_coordinate": "reassembly_ref",
+        "target_coordinate": "reassembly_ref",
+        "value_rule": "carrier_prefix"
+      },
+      {
+        "clause": "C7",
+        "source_coordinate": "binding_probe_ref",
+        "target_coordinate": "binding_probe_ref",
+        "value_rule": "carrier_prefix"
+      },
+      {
+        "clause": "C7",
+        "source_coordinate": "branch_map_ref",
+        "target_coordinate": "branch_map_ref",
+        "value_rule": "identity"
+      },
+      {
+        "clause": "C8",
+        "source_coordinate": "budget",
+        "target_coordinate": "budget",
+        "value_rule": "identity"
+      },
+      {
+        "clause": "C8",
+        "source_coordinate": "repair_owner",
+        "target_coordinate": "repair_owner",
+        "value_rule": "owner_17_to_101"
+      },
+      {
+        "clause": "C8",
+        "source_coordinate": "kernel_ref",
+        "target_coordinate": "kernel_ref",
+        "value_rule": "carrier_prefix"
+      },
+      {
+        "clause": "C8",
+        "source_coordinate": "ledger_ref",
+        "target_coordinate": "ledger_ref",
+        "value_rule": "carrier_prefix"
+      }
+    ],
+    "value_translation_rules": {
+      "identity": "equal raw values",
+      "identity_mod_2": "equal phase after reducing target history tick modulo declared modulus 2",
+      "owner_17_to_101": "map source carrier owner 17 to target carrier owner 101",
+      "carrier_prefix": "replace leading source namespace S or source with target namespace T or target, retaining the remaining suffix",
+      "resource_prefix": "map source resource name to target resource name with the same suffix",
+      "raw_state_map": "lookup the explicit total raw_state_map",
+      "add_exit_stage_2": "target numeric snapshot equals source snapshot plus corridor exit stage index 2",
+      "sA_to_rA_sB_to_rB": "explicit route-code map sA\u2192rA and sB\u2192rB; preserve distinctness",
+      "computed_q": "compute q from raw source/target states under the one fixed predictive_code_rule; compare by the raw state map",
+      "audit_ref_prefix": "map source audit/table reference to corresponding target audit/table reference, then independently check its raw equations",
+      "split_pair_map": "map both source split-pair state IDs through the explicit raw state map",
+      "state_ref_map": "lookup explicit raw state map; no stored predictive label"
+    },
+    "branch_map_id": "S-to-T-branch-map",
+    "branch_map": [
+      {
+        "source": "S:L",
+        "target": "T:L"
+      },
+      {
+        "source": "S:R",
+        "target": "T:R"
+      }
+    ],
+    "raw_state_map": [
+      {
+        "source": "S-A0a",
+        "target": "T-A0a"
+      },
+      {
+        "source": "S-A0b",
+        "target": "T-A0b"
+      },
+      {
+        "source": "S-A1safe",
+        "target": "T-A1safe"
+      },
+      {
+        "source": "S-A1warning",
+        "target": "T-A1warning"
+      },
+      {
+        "source": "S-B0",
+        "target": "T-B0"
+      },
+      {
+        "source": "S-B1safe",
+        "target": "T-B1safe"
+      }
+    ],
+    "source_arrivals": [
+      {
+        "route_id": "rA",
+        "source_state": "S-A0a",
+        "target_state": "T-A0a"
+      },
+      {
+        "route_id": "rB",
+        "source_state": "S-B0",
+        "target_state": "T-B0"
+      }
+    ],
+    "assemblage_map": [
+      {
+        "source": "S-bound-diagonal",
+        "target": "T-bound-diagonal"
+      },
+      {
+        "source": "S-bound-crossed",
+        "target": "T-bound-crossed"
+      }
+    ],
+    "branch_local_content_map": [
+      {
+        "source": "red",
+        "target": "red"
+      },
+      {
+        "source": "blue",
+        "target": "blue"
+      },
+      {
+        "source": "circle",
+        "target": "circle"
+      },
+      {
+        "source": "square",
+        "target": "square"
+      }
+    ],
+    "coupling_map": [
+      {
+        "source": "diagonal",
+        "target": "diagonal"
+      },
+      {
+        "source": "crossed",
+        "target": "crossed"
+      }
+    ],
+    "joint_observable_map": [
+      {
+        "source": "S-jointPairing",
+        "target": "T-jointPairing"
+      }
+    ],
+    "joint_distribution_transport_rule": "map paired-content events through branch_local_content_map and retain exact rational weights; require equality with target observable output on the mapped assemblage"
+  },
+  "corridor": {
+    "corridor_id": "COR-POS-02",
+    "source_carrier": 17,
+    "target_carrier": 101,
+    "stages": [
+      {
+        "index": 0,
+        "active_support": [
+          17
+        ],
+        "realized": true,
+        "signature": {
+          "predictive_rank": 0,
+          "order_rank": 0,
+          "tick_index": 0,
+          "progress_rank": 0,
+          "record_value": 0,
+          "maintenance_owner": 17,
+          "route_residue": [
+            "route-root"
+          ]
+        }
+      },
+      {
+        "index": 1,
+        "active_support": [
+          17,
+          101
+        ],
+        "realized": true,
+        "signature": {
+          "predictive_rank": 1,
+          "order_rank": 1,
+          "tick_index": 1,
+          "progress_rank": 1,
+          "record_value": 1,
+          "maintenance_owner": 17,
+          "route_residue": [
+            "route-root",
+            "mixed"
+          ]
+        }
+      },
+      {
+        "index": 2,
+        "active_support": [
+          101
+        ],
+        "realized": true,
+        "signature": {
+          "predictive_rank": 2,
+          "order_rank": 2,
+          "tick_index": 2,
+          "progress_rank": 2,
+          "record_value": 2,
+          "maintenance_owner": 101,
+          "route_residue": [
+            "route-root",
+            "mixed",
+            "target"
+          ]
+        }
+      }
+    ],
+    "events": [
+      {
+        "event_id": "s-entry",
+        "stage": 0,
+        "owner": 17
+      },
+      {
+        "event_id": "source-mixed",
+        "stage": 1,
+        "owner": 17
+      },
+      {
+        "event_id": "target-mixed",
+        "stage": 1,
+        "owner": 101
+      },
+      {
+        "event_id": "t-exit",
+        "stage": 2,
+        "owner": 101
+      }
+    ],
+    "dependencies": [
+      {
+        "parent": "s-entry",
+        "child": "source-mixed"
+      },
+      {
+        "parent": "s-entry",
+        "child": "target-mixed"
+      },
+      {
+        "parent": "source-mixed",
+        "child": "t-exit"
+      },
+      {
+        "parent": "target-mixed",
+        "child": "t-exit"
+      }
+    ],
+    "atomic_legs": [
+      {
+        "leg_id": "leg-S-T",
+        "source": 17,
+        "target": 101,
+        "start_stage": 0,
+        "mixed_stage": 1,
+        "takeover_stage": 2,
+        "end_stage": 2
+      }
+    ],
+    "intervention_rule": {
+      "base": [
+        0,
+        0,
+        0
+      ],
+      "source_mixed_contribution": [
+        1,
+        1,
+        1
+      ],
+      "target_mixed_contribution": [
+        1,
+        1,
+        1
+      ],
+      "projection_fields": [
+        "predictive_rank",
+        "tick_index",
+        "record_value"
+      ],
+      "evaluate_by": "componentwise sum of retained event contributions"
+    },
+    "route_histories": [
+      {
+        "route_id": "rA",
+        "admissible_event_path": [
+          "s-entry",
+          "source-mixed",
+          "t-exit"
+        ],
+        "boundary_source_event": "s-entry",
+        "boundary_target_event": "t-exit",
+        "arrival_state_id": "T-A0a",
+        "endpoint_residue": "rA"
+      },
+      {
+        "route_id": "rB",
+        "admissible_event_path": [
+          "s-entry",
+          "target-mixed",
+          "t-exit"
+        ],
+        "boundary_source_event": "s-entry",
+        "boundary_target_event": "t-exit",
+        "arrival_state_id": "T-B0",
+        "endpoint_residue": "rB"
+      }
+    ],
+    "route_comparison_domain": [
+      [
+        "rA",
+        "rB"
+      ],
+      [
+        "rB",
+        "rA"
+      ]
+    ],
+    "current_projection_fields": [
+      "carrier",
+      "exit_stage",
+      "public_state",
+      "tick_phase",
+      "health"
+    ],
+    "future_disturbance_word": [
+      "hit"
+    ],
+    "flatness_data": {
+      "completion_system": null,
+      "path_clock_translation": null,
+      "declared_flat_pairs": []
+    },
+    "declared_route_status": "route-indexed"
+  },
+  "withdrawal": {
+    "removed_resources": [
+      {
+        "resource_id": "source-core",
+        "owner": 17
+      },
+      {
+        "resource_id": "migration-bridge",
+        "owner": 901
+      },
+      {
+        "resource_id": "migration-controller",
+        "owner": 901
+      },
+      {
+        "resource_id": "external-decoder",
+        "owner": 901
+      },
+      {
+        "resource_id": "external-scheduler",
+        "owner": 901
+      },
+      {
+        "resource_id": "external-repair",
+        "owner": 901
+      }
+    ],
+    "retained_resources": [
+      {
+        "resource_id": "t-clock",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-record",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-maintenance",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-action-credit",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-repair-loop",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-regenerator",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-disturbance-sensor",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-binding-bus",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-object-register",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-boundary",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-private-state",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-public-interface",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-self-register",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-recombination-table",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-budget",
+        "owner": 101
+      },
+      {
+        "resource_id": "t-policy",
+        "owner": 101
+      }
+    ],
+    "handoff_endpoint_event_id": "t-exit",
+    "endpoint_state_ids": [
+      "T-A0a",
+      "T-B0"
+    ],
+    "boundary_id": "T-boundary",
+    "disturbance_class": [
+      "nominal",
+      "hit"
+    ],
+    "fixed_before_evaluation": true
+  },
+  "recognition_status": "notAddressed",
+  "mutation_rules": [
+    {
+      "id": "NEG-C6-CODE",
+      "rule": "change raw T-B0.route_residue from rB to rA, leaving all other state fields and transitions fixed; q is recomputed by the unchanged projection rule"
+    },
+    {
+      "id": "NEG-C6-HEALTH",
+      "rule": "change raw T-A1warning.health to safe and maintenance_state to T:safe, leaving its initial record snapshot and transitions fixed; q is recomputed by the unchanged projection rule"
+    },
+    {
+      "id": "NEG-C7-NO-JOINT-OBSERVABLE",
+      "rule": "delete both carriers' joint_binding.admissible_joint_observables entries and the staged_clause_map.joint_observable_map row; preserve both assemblage domains, all ordered branch records, their coupling edges, admissible coupling maps, decomposition, reassembly, and the fixed quotient rules"
+    },
+    {
+      "id": "NEG-C7-UNCOUPLED",
+      "rule": "on both carriers replace only bound-crossed.coupling_edges with the same diagonal raw edges (0,0) and (1,1) as bound-diagonal; leave both ordered branch-local records, both assemblage IDs, admissible_joint_observables including jointPairing, the fixed observation and quotient rules, and the staged map unchanged; report any local reassembly/coupling consistency failure separately"
+    },
+    {
+      "id": "NEG-PKG-ENDPOINT",
+      "rule": "delete object_token from T-A0a C1 only"
+    },
+    {
+      "id": "NEG-PKG-LATER",
+      "rule": "delete object_token from T-A1safe C1 only"
+    },
+    {
+      "id": "NEG-C8-UNDERFUND",
+      "rule": "change budget_regeneration from 2 to 0 on every target action while leaving costs 2, budgets 2, and transitions fixed; no positive-budget response is thereby funded"
+    },
+    {
+      "id": "NEG-BRIDGE-REP",
+      "rule": "change raw state map S-A0b target from T-A0b to T-B0 only"
+    },
+    {
+      "id": "NEG-BRIDGE-EDGE",
+      "rule": "delete source frontier edge S-A0a to S-A1safe only"
+    },
+    {
+      "id": "NEG-ROUTE-ERASE",
+      "rule": "change raw T-B0.route_residue from rB to rA while retaining the distinct route histories and hit responses; do not change q rule"
+    },
+    {
+      "id": "NEG-CORRIDOR-DETACHED",
+      "rule": "delete mixed stage 1 and both mixed events and their incident dependency edges; retain source and target endpoints"
+    },
+    {
+      "id": "NEG-CORRIDOR-GAP",
+      "rule": "set stage 1 realized to false"
+    },
+    {
+      "id": "NEG-TTH06-LINK",
+      "rule": "set withdrawal handoff_endpoint_event_id to s-entry; leave all lanes unchanged"
+    },
+    {
+      "id": "NEG-C6-ORDER",
+      "rule": "set T-A0a/nominal action order_delta to 0; keep all other raw data fixed"
+    },
+    {
+      "id": "NEG-C6-SUCCESSOR",
+      "rule": "delete T-B1safe/hit transition; add no replacement"
+    },
+    {
+      "id": "NEG-C6-TICK",
+      "rule": "redirect T-A0a/nominal transition to T-A0a; keep its action fixed"
+    },
+    {
+      "id": "NEG-C6-ARROW",
+      "rule": "change T-A0a/hit action owner from target 101 to source 17"
+    },
+    {
+      "id": "NEG-C7-PRESERVATION",
+      "rule": "replace only the target bound-crossed assemblage raw coupling_edges by the two diagonal edges (0,0) and (1,1); preserve the source data and all staged maps; compute the same observable-transport predicate"
+    },
+    {
+      "id": "NEG-C1-CLOSURE",
+      "rule": "delete the T-A0a/nominal raw transition; recompute reachability closure and one-step defect from the same fixed rules"
+    },
+    {
+      "id": "NEG-C2-SPLIT",
+      "rule": "replace raw target public_state (and its C4 copied coordinate) by distinct report tokens for each raw (route,phase,health) class, with T-A0a/T-A0b sharing one token; leave q, lower-readout rule, and promoted-readout rule unchanged"
+    },
+    {
+      "id": "NEG-C3-PROFILE",
+      "rule": "change T-A0b/nominal raw successor to T-B1safe, leaving the fixed q projection and profile-refinement rule unchanged"
+    },
+    {
+      "id": "NEG-C4-EXPOSE",
+      "rule": "add raw route_residue and tick_phase to the declared current channel family; keep determining q and nonexposure predicate fixed"
+    },
+    {
+      "id": "NEG-C5-SCHEDULE",
+      "rule": "change the genuine protocol raw generator_owner to external owner 901 and change every one of its raw edge channel tags from self to other; keep the fixed product/credit rule"
+    },
+    {
+      "id": "NEG-C5-INTERNALIZED",
+      "rule": "delete the three reverse-cycle raw edges from both self and other channels of the internalized protocol; leave the fixed product/credit rule unchanged"
+    }
+  ],
+  "observation_interfaces": {
+    "c6_future_trace": [
+      "computed_q",
+      "order_cumulative",
+      "tick_phase",
+      "progress_cumulative",
+      "record_cumulative",
+      "route_residue",
+      "maintenance_state",
+      "health",
+      "owner"
+    ],
+    "continuations": [
+      "nominal",
+      "hit"
+    ],
+    "route_current_projection": [
+      "carrier",
+      "exit_stage",
+      "public_state",
+      "tick_phase",
+      "health"
+    ],
+    "route_future_probe": [
+      "hit"
+    ],
+    "binding_probe_domain": "all four ordered pairs of the two declared branches"
+  },
+  "clause_classification": {
+    "C1": "declared_surrogate",
+    "C2": "substantive_finite",
+    "C3": "substantive_finite",
+    "C4": "declared_surrogate",
+    "C5": "declared_surrogate",
+    "C6": "declared_surrogate",
+    "C7": "substantive_finite",
+    "C8": "substantive_finite"
+  },
+  "predictive_code_rule": {
+    "kind": "single_fixed_projection",
+    "fields": [
+      "carrier",
+      "route_residue",
+      "tick_phase",
+      "health",
+      "maintenance_state",
+      "owner"
+    ],
+    "note": "q is computed from these raw state fields; there is no stored q label or predictive-code table"
+  }
+}

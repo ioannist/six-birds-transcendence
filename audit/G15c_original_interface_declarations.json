@@ -1,0 +1,407 @@
+{
+  "schema": "csttt-G15c-declarations-v1",
+  "module": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/OriginalInterfaceObstruction.lean",
+  "source_sha256": "56de5c49a1e24de639bd84386fd47232be0d7cdcdca1e4201a14abc89e4e9674",
+  "declaration_count": 57,
+  "declarations": [
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_destination_internal",
+      "kind": "theorem",
+      "line": 13,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.phasePrediction",
+      "kind": "def",
+      "line": 14,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.native_prediction_equation",
+      "kind": "theorem",
+      "line": 16,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.phase_prediction_distinct",
+      "kind": "theorem",
+      "line": 20,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.native_prediction_exact",
+      "kind": "theorem",
+      "line": 22,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.native_class_mass",
+      "kind": "theorem",
+      "line": 28,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.native_finite_bisim",
+      "kind": "theorem",
+      "line": 41,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.observedModel",
+      "kind": "def",
+      "line": 51,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.observed_all_words",
+      "kind": "theorem",
+      "line": 59,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.context",
+      "kind": "def",
+      "line": 66,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.same_context_code",
+      "kind": "theorem",
+      "line": 68,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_full_future_kernel_equal",
+      "kind": "theorem",
+      "line": 75,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_full_future_phase_exact",
+      "kind": "theorem",
+      "line": 81,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.memory_weight_link",
+      "kind": "theorem",
+      "line": 105,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.memory_full_word_law",
+      "kind": "theorem",
+      "line": 119,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.actual_original_full_kernel_equal",
+      "kind": "theorem",
+      "line": 136,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.prediction",
+      "kind": "def",
+      "line": 150,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.classes",
+      "kind": "def",
+      "line": 152,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.classes_constant",
+      "kind": "theorem",
+      "line": 154,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_partition_full_future_exact",
+      "kind": "theorem",
+      "line": 157,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.labels",
+      "kind": "def",
+      "line": 166,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.fiber",
+      "kind": "def",
+      "line": 167,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.C",
+      "kind": "def",
+      "line": 168,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.U",
+      "kind": "def",
+      "line": 169,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.CU",
+      "kind": "def",
+      "line": 170,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.labels_equation",
+      "kind": "theorem",
+      "line": 171,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.projection_uniform",
+      "kind": "theorem",
+      "line": 173,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.closure",
+      "kind": "def",
+      "line": 177,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.uniform",
+      "kind": "def",
+      "line": 180,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.uniform_equation",
+      "kind": "theorem",
+      "line": 181,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.all_four_closures_uniform",
+      "kind": "theorem",
+      "line": 182,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.uniform_probability",
+      "kind": "theorem",
+      "line": 189,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.uniform_fixed",
+      "kind": "theorem",
+      "line": 193,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.actual_fixed_point_unique_uniform",
+      "kind": "theorem",
+      "line": 199,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.NonuniformC1",
+      "kind": "def",
+      "line": 211,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.actual_nonuniform_C1_rejected",
+      "kind": "theorem",
+      "line": 213,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.nonuniformBit",
+      "kind": "def",
+      "line": 216,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.actual_nonuniform_bit_false",
+      "kind": "theorem",
+      "line": 219,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.nonuniform_readout_true_exact",
+      "kind": "theorem",
+      "line": 222,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.nonuniform_readout_false_exact",
+      "kind": "theorem",
+      "line": 228,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.nonuniform_readout_none_exact",
+      "kind": "theorem",
+      "line": 234,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.concrete_original_readout_false",
+      "kind": "theorem",
+      "line": 236,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_objecthood_columns_equal",
+      "kind": "theorem",
+      "line": 244,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_probability_fixed_uniform",
+      "kind": "theorem",
+      "line": 266,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_checked_candidate_uniform",
+      "kind": "theorem",
+      "line": 281,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_objecthood_accept_rejected",
+      "kind": "theorem",
+      "line": 295,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.OriginalC1Possible",
+      "kind": "def",
+      "line": 300,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_C1_impossible",
+      "kind": "theorem",
+      "line": 303,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.originalC1Bit",
+      "kind": "def",
+      "line": 306,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.actual_original_C1_bit_false",
+      "kind": "theorem",
+      "line": 309,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_C1_true_exact",
+      "kind": "theorem",
+      "line": 312,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_C1_false_exact",
+      "kind": "theorem",
+      "line": 318,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_C1_none_exact",
+      "kind": "theorem",
+      "line": 324,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.concrete_original_C1_false",
+      "kind": "theorem",
+      "line": 326,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_row_scale",
+      "kind": "theorem",
+      "line": 331,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.original_funded_row_total",
+      "kind": "theorem",
+      "line": 332,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeOriginalInterfacePrototype.actual_memory_row_not_probability",
+      "kind": "theorem",
+      "line": 339,
+      "classification": "b",
+      "row_id": "TTF-05"
+    }
+  ]
+}

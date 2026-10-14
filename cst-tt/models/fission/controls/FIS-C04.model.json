@@ -1,0 +1,44 @@
+{
+  "branch_certificate_refs": {
+    "left": "formal/certificates/fission/fiach/FIACH-FIS-LEFT.certificate.json",
+    "right": "formal/certificates/fission/fiach/FIACH-FIS-RIGHT.certificate.json"
+  },
+  "branch_certificate_sha256": {
+    "left": "dd0e1a68b4e0010c33e561cd9cc3700a553030c5695a43e38e2dc8443160d63f",
+    "right": "7600a3659ead24cd84b776222d0b6dcb967736db098d4358dfc3499c6a4e8fd3"
+  },
+  "certificate_id": "FIS-C04",
+  "claim_ceiling": "relation-valued finite temporal fission; no unique continuer or numerical identity conclusion",
+  "claim_lanes": [
+    "S-L",
+    "S-R",
+    "A"
+  ],
+  "relation": [
+    {
+      "source": {
+        "code": 17,
+        "label": "source-substrate"
+      },
+      "target": {
+        "code": 201,
+        "label": "left-branch-substrate"
+      }
+    },
+    {
+      "source": {
+        "code": 17,
+        "label": "source-substrate"
+      },
+      "target": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      }
+    }
+  ],
+  "schema_version": "CST-TT-06",
+  "target_swap": {
+    "201": 202,
+    "202": 202
+  }
+}

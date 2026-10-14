@@ -1,0 +1,17 @@
+{
+  "assembled_at_utc": null,
+  "dashboard_url": "https://zenodo.org/deposit/23233137",
+  "deposition_id": 23233137,
+  "doi_reservation": {
+    "client": "datacite",
+    "identifier": "10.5281/zenodo.23233137",
+    "provider": "datacite",
+    "verified_via": "rdm_pid_table"
+  },
+  "draft_source": "created",
+  "manual_dashboard_publication_only": true,
+  "publication_date": null,
+  "reserved_doi": "10.5281/zenodo.23233137",
+  "schema_version": 1,
+  "stage": "reserved"
+}

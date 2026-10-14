@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_full_native_execution_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_full_native_execution_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_full_native_execution_transcription.log",
+  "log_sha256": "0975486d90ab0de36dc183429da8b6ab2b2ebd14cb8c274664b403da556c621a",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:17+00:00",
+  "status": "pass",
+  "summary": "PASS execution transcription: 24 account/input contexts, 1536 action rows, 576 enabled edges\nCAUGHT planted recharge drift\nCAUGHT planted port consumption drift\nCAUGHT planted receipt source drift"
+}

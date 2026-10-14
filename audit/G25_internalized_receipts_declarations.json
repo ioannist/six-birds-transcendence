@@ -1,0 +1,850 @@
+{
+  "schema": "csttt-G25-declarations-v1",
+  "source_sha256": {
+    "lean/CSTTT/FullNative/InternalizedExecution.lean": "6244e8635eb81c7396c4cbb54139f66e150a5afedf86d2d2ae24b1a48192535d",
+    "lean/CSTTT/FullNative/InternalizedCredit.lean": "ee0bc3ccde8d909c99f0a2026bfea62262ee990e92d479840c126e1eb6f900f8"
+  },
+  "declaration_count": 105,
+  "declarations": [
+    {
+      "name": "CSTTT.FullNative.Internalized.State",
+      "kind": "abbrev",
+      "line": 17,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.Flavor",
+      "kind": "inductive",
+      "line": 18,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.Channel",
+      "kind": "inductive",
+      "line": 21,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.channels",
+      "kind": "def",
+      "line": 24,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.parameter",
+      "kind": "def",
+      "line": 25,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.parameters_exact",
+      "kind": "theorem",
+      "line": 28,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.part",
+      "kind": "def",
+      "line": 30,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.Program",
+      "kind": "structure",
+      "line": 34,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.program",
+      "kind": "def",
+      "line": 36,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.Receipt",
+      "kind": "structure",
+      "line": 38,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.Execution",
+      "kind": "structure",
+      "line": 49,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.dispatchToken",
+      "kind": "def",
+      "line": 57,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.dispatchActor",
+      "kind": "def",
+      "line": 60,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.active",
+      "kind": "def",
+      "line": 63,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.issue",
+      "kind": "def",
+      "line": 66,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.advance",
+      "kind": "def",
+      "line": 70,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.rawRows",
+      "kind": "def",
+      "line": 75,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.physicalRows",
+      "kind": "def",
+      "line": 82,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.Funded",
+      "kind": "def",
+      "line": 86,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.funded_active",
+      "kind": "theorem",
+      "line": 92,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.funded_advance",
+      "kind": "theorem",
+      "line": 97,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.funded_rows",
+      "kind": "theorem",
+      "line": 103,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.supported_step",
+      "kind": "theorem",
+      "line": 109,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.funded_successor",
+      "kind": "theorem",
+      "line": 127,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.Closure",
+      "kind": "inductive",
+      "line": 132,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.closure_funded",
+      "kind": "theorem",
+      "line": 137,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.root",
+      "kind": "def",
+      "line": 143,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.roots_funded",
+      "kind": "theorem",
+      "line": 146,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.missing_program_rows",
+      "kind": "theorem",
+      "line": 154,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.disabled_channel",
+      "kind": "theorem",
+      "line": 157,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.actual_receipt_step",
+      "kind": "theorem",
+      "line": 161,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.physical_marginal",
+      "kind": "theorem",
+      "line": 173,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.actual_marginal",
+      "kind": "theorem",
+      "line": 180,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.physical_normalized",
+      "kind": "theorem",
+      "line": 186,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.Sector",
+      "kind": "def",
+      "line": 191,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.StepLaw",
+      "kind": "def",
+      "line": 196,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.LawGate",
+      "kind": "def",
+      "line": 201,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.funded_laws",
+      "kind": "theorem",
+      "line": 204,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.root_law_gate",
+      "kind": "theorem",
+      "line": 207,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.closure_law_mismatch_rejects",
+      "kind": "theorem",
+      "line": 210,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.closure_account_mismatch_rejects",
+      "kind": "theorem",
+      "line": 214,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.sector_active",
+      "kind": "theorem",
+      "line": 218,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.gated_rows",
+      "kind": "theorem",
+      "line": 221,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.gated_marginal",
+      "kind": "theorem",
+      "line": 228,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.absent_repeated_channel_disabled",
+      "kind": "theorem",
+      "line": 235,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.absent_two_channels_stop",
+      "kind": "theorem",
+      "line": 239,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.state_mem",
+      "kind": "theorem",
+      "line": 246,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.gated_reverse_support",
+      "kind": "theorem",
+      "line": 250,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.receiptOK",
+      "kind": "def",
+      "line": 11,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.consecutive",
+      "kind": "def",
+      "line": 15,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.receiptAudit",
+      "kind": "def",
+      "line": 19,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.receipt_ok_retained",
+      "kind": "theorem",
+      "line": 23,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.issued_receipt_ok",
+      "kind": "theorem",
+      "line": 27,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.closure_receipt_integrity",
+      "kind": "theorem",
+      "line": 40,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.actual_receipt_audit",
+      "kind": "theorem",
+      "line": 67,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.edges",
+      "kind": "def",
+      "line": 78,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.receiptProduct",
+      "kind": "def",
+      "line": 80,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.part_symmetric",
+      "kind": "theorem",
+      "line": 84,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.receipt_product_append",
+      "kind": "theorem",
+      "line": 89,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.receipt_product_reverse",
+      "kind": "theorem",
+      "line": 95,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.audited_marked_path_symmetry",
+      "kind": "theorem",
+      "line": 102,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.pathCredit",
+      "kind": "def",
+      "line": 124,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.actual_path_credit_neutral",
+      "kind": "theorem",
+      "line": 129,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.failed_gate_credit_rejected",
+      "kind": "theorem",
+      "line": 134,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.missing_receipts_credit_rejected",
+      "kind": "theorem",
+      "line": 137,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.malformed_receipts_credit_rejected",
+      "kind": "theorem",
+      "line": 140,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.actual_all_path_symmetry",
+      "kind": "theorem",
+      "line": 143,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.Command",
+      "kind": "inductive",
+      "line": 158,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.commandMatches",
+      "kind": "def",
+      "line": 162,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.protocolRows",
+      "kind": "def",
+      "line": 165,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.physicalProtocolRows",
+      "kind": "def",
+      "line": 168,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.protocolMass",
+      "kind": "def",
+      "line": 170,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.physicalProtocolMass",
+      "kind": "def",
+      "line": 174,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.protocolAB",
+      "kind": "def",
+      "line": 178,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.protocolBA",
+      "kind": "def",
+      "line": 179,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.holonomyReadout",
+      "kind": "def",
+      "line": 184,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.gated_protocol_projection",
+      "kind": "theorem",
+      "line": 189,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.actual_protocol_law",
+      "kind": "theorem",
+      "line": 196,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.physical_protocol_holonomy",
+      "kind": "theorem",
+      "line": 218,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.actual_protocol_holonomy",
+      "kind": "theorem",
+      "line": 223,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.holonomy_readouts_exact",
+      "kind": "theorem",
+      "line": 230,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.failed_gate_holonomy_rejected",
+      "kind": "theorem",
+      "line": 238,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.holonomy_not_directional_credit",
+      "kind": "theorem",
+      "line": 241,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.select",
+      "kind": "def",
+      "line": 250,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.runPlan",
+      "kind": "def",
+      "line": 253,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.run_plan_closure",
+      "kind": "theorem",
+      "line": 256,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.cyclePlan",
+      "kind": "def",
+      "line": 270,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.holonomyPlan",
+      "kind": "def",
+      "line": 272,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.cycleResult",
+      "kind": "def",
+      "line": 274,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.holonomyResult",
+      "kind": "def",
+      "line": 275,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.plans_present",
+      "kind": "theorem",
+      "line": 277,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.cycleEnd",
+      "kind": "def",
+      "line": 284,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.holonomyEnd",
+      "kind": "def",
+      "line": 285,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.plan_histories_actual",
+      "kind": "theorem",
+      "line": 287,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.plan_readouts",
+      "kind": "theorem",
+      "line": 295,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.actual_cycle_neutral_and_holonomy",
+      "kind": "theorem",
+      "line": 308,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.closed",
+      "kind": "def",
+      "line": 323,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.cycleCredit",
+      "kind": "def",
+      "line": 325,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.actual_closed_cycle_credit",
+      "kind": "theorem",
+      "line": 328,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.reverseSchedule",
+      "kind": "def",
+      "line": 338,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.original_protocol_holonomy",
+      "kind": "theorem",
+      "line": 340,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.comparison_with_g23",
+      "kind": "theorem",
+      "line": 344,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.firstLogged",
+      "kind": "def",
+      "line": 352,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.returnedLogged",
+      "kind": "def",
+      "line": 353,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Internalized.logged_reverse_countertrace",
+      "kind": "theorem",
+      "line": 359,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/InternalizedCredit.lean"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "autonomy_controls": 12,
+  "claim_ceiling": "exact finite structural precursor only",
+  "fallback_unlocked": false,
+  "fiach_certificates": 1,
+  "fiach_lane_controls": 6,
+  "finite_disturbance_words_checked": 127,
+  "generated_date": "2026-08-10",
+  "handoff_aligned_package_certificates": 2,
+  "handoff_aligned_staged_certificates": 1,
+  "invariant_search_candidates": 4096,
+  "invariant_search_mismatches": 0,
+  "next_phase": "CST-TT-06",
+  "phase": "CST-TT-05",
+  "phase_base_commit": "1884214d1bae82442f37fc9e6b013e222da89b1b",
+  "phase_base_tag": "CST-TT-04-v1",
+  "positive_temporal_fiach_witnesses": 1,
+  "post_withdrawal_autonomy_certificates": 1,
+  "project": "CST-TT",
+  "schema_version": "1.0"
+}

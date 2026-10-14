@@ -1,0 +1,22 @@
+{
+  "grade": "actual computed stage globals and exact executed-frame/bridge namespace translation",
+  "cell_type_each": "Unit",
+  "value_type_each": "Nat",
+  "raw_stages": {"first": "add", "increment": 1, "second": "multiply", "multiplier": 2},
+  "cover_indices_each": ["unit"],
+  "cover_scope_each": ["unit"],
+  "positive_source": 3,
+  "span_expression": "cell inl unit + cell inr unit",
+  "same_context_control": "cell inl unit + cell inl unit",
+  "controls": {
+    "source_missing": null,
+    "right_arrow_missing": "second unit unit = none",
+    "partial_first_instruction": "reject values above limit, otherwise add increment",
+    "limit": 3,
+    "rejected_source": 4,
+    "native_atomic_missing": "Assigned.put original eventTable none"
+  },
+  "native_package_stages": "existing POS04DispatchedStage.raw twice",
+  "native_bridge": "POS04ExecutionBridge.raw reindexed into final Sum.inr branch",
+  "scope": "raw program preservation and actual stage assignments; no physical middle agreement or supported second acquisition inferred"
+}

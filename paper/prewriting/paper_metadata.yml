@@ -1,0 +1,30 @@
+# Paper metadata (packet W7, 2026-10-13). No abstract text here.
+title: "When a Copy Is Not a Continuation"
+title_status: decided_by_author_2026-10-13
+author:
+  name: Ioannis Tsiokos
+  orcid: 0009-0009-7659-5964
+  affiliation: Automorph Inc., Wilmington, DE, USA
+  email: ioannis@automorph.io
+license: CC-BY-4.0
+arxiv:
+  primary: q-bio.NC
+  cross_list: [cs.LO]
+  status: decided_under_delegation_recheck_at_release
+zenodo:
+  reserved_doi: 10.5281/zenodo.23233188
+  stage: reserved
+  publication: author_only
+companions:
+  - TsiokosArchitecture2026
+  - TsiokosForcing2026
+artifact:
+  repository: https://github.com/ioannist/six-birds-transcendence
+  lean_toolchain: leanprover/lean4:v4.28.0
+  lean_libraries: core only (Init, Lean, Std); no Mathlib
+  trust_base: [propext, Quot.sound, Classical.choice]
+  release_commit: TBD (W19)
+disclosures:
+  funding: open (D-07)
+  competing_interests: open (D-07)
+  ai_assistance: see ai_assistance_ledger.md

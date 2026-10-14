@@ -1,0 +1,204 @@
+{
+  "audit": {
+    "clause_audits": [
+      {
+        "accepted": true,
+        "clause": "C1_OBJECTHOOD",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C2_STRICT_PROMOTION",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C3_REFLEXIVE_SELF_COORDINATE",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C4_INTERFACE_NONEXPOSURE",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": false,
+        "clause": "C5_ACTION_CREDIT",
+        "errors": [
+          "C5 action credit is not target-local",
+          "C5 credit source is external"
+        ],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C6_TEMPORAL_CLOSURE",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C7_BINDING_RECOMBINATION",
+        "errors": [
+          "C7 joint recombination relation fails",
+          "C7 joint relation tag is absent"
+        ],
+        "hard_gate_passed": false,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C8_VIABILITY_REPAIR",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      }
+    ],
+    "derived_global_assignment": {
+      "action_credit_owner": 301,
+      "action_token": "action:FUSED:maintain",
+      "arrow_endogenous": true,
+      "binding_integrated": true,
+      "boundary_closed": true,
+      "c1_audit_sealed": true,
+      "control_owner": 303,
+      "credit_audit_sealed": true,
+      "credit_source_internal": false,
+      "cross_predictive_tag": "predictive:FUSED:rank2",
+      "episode_epoch": 2,
+      "external_scheduler": false,
+      "future_sufficient": true,
+      "hidden_state_nonexposed": true,
+      "interface_leak": false,
+      "joint_relation_tag": "",
+      "left_branch": "FUSED:L",
+      "maintenance_owner": 303,
+      "object_token": "object:FUSED",
+      "order_stable": true,
+      "package_owner": 303,
+      "promotion_audit_sealed": true,
+      "promotion_rank_after": 3,
+      "promotion_rank_before": 2,
+      "public_shadow": "report:stable",
+      "recombination_pairs": [
+        [
+          "FUSED:L",
+          "FUSED:R"
+        ],
+        [
+          "FUSED:R",
+          "FUSED:L"
+        ]
+      ],
+      "recombination_relation_preserved": false,
+      "record_after": 4,
+      "record_before": 3,
+      "repair_budget": 1,
+      "repair_enabled": true,
+      "repair_owner": 303,
+      "right_branch": "FUSED:R",
+      "route_residue": [
+        "fusion-left-root",
+        "leg-FL-F-mixed",
+        "leg-FL-F-target"
+      ],
+      "self_audit_sealed": true,
+      "self_coordinate": "self:FUSED",
+      "self_model_reflexive": true,
+      "strict_test_pass": true,
+      "successor_total_on_viable": true,
+      "temporal_owner": 303,
+      "tick_phase": 2,
+      "tick_progress": 1,
+      "tick_viable": true,
+      "viable": true
+    },
+    "errors": [
+      "C5 action credit is not target-local",
+      "C5 credit source is external",
+      "C7 joint recombination relation fails",
+      "C7 joint relation tag is absent"
+    ],
+    "every_clause_accepted": false,
+    "every_hard_gate_passed": false,
+    "every_scope_exact": true,
+    "exact_clause_coverage": true,
+    "failed_obligations": [
+      "PKG-O02-local-scope-and-clause-acceptance",
+      "PKG-O03-nonnegotiable-hard-gates"
+    ],
+    "forbidden_field_free": true,
+    "global_constructible": true,
+    "global_restricts_to_every_local": true,
+    "integrated_package_valid": false,
+    "join_tree": {
+      "acyclic": true,
+      "all_nodes_covered": true,
+      "all_overlap_compatible": true,
+      "connected": true,
+      "edge_compatible": true,
+      "edge_count_correct": true,
+      "errors": [],
+      "exactly_one_parent_per_nonroot": true,
+      "root_declared": true,
+      "running_intersection": true,
+      "valid_shape": true
+    },
+    "model_id": "PKG-FUS-NEG-01",
+    "supplied_global_matches": true,
+    "target_owned": true,
+    "temporal_substance": {
+      "endogenous_arrow": true,
+      "errors": [],
+      "future_sufficient": true,
+      "genuine_progress": true,
+      "maintenance_owner_matches": true,
+      "no_external_scheduler": true,
+      "order_stable": true,
+      "record_descends": true,
+      "route_residue_retained": true,
+      "successor_available": true,
+      "temporal_owner_matches": true,
+      "valid": true,
+      "viable_tick": true
+    },
+    "unique_clause_slots": true
+  },
+  "certificate_id": "PKG-FUS-NEG-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_package",
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite structural package realization only",
+  "claim_lanes": [
+    "S-R"
+  ],
+  "model_ref": "models/fusion/packages/PKG-FUS-NEG-01.model.json",
+  "model_sha256": "d031c00e43cd5893a131880d81afd25e0e31a9a6b14e0eab45ab9259b09122e6",
+  "result_status": "checked-finite-package-failure-control",
+  "role": "fusion-negative",
+  "schema_version": "CST-TT-06",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.PackageTheory.acyclicLocalWitnessGluing",
+      "CSTTT.PackageTheory.stagedHeterogeneousPackageAssembly"
+    ],
+    "theorem_ids": [
+      "TTH-01",
+      "TTH-02"
+    ]
+  }
+}

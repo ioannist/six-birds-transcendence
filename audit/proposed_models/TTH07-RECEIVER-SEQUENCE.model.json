@@ -1,0 +1,25 @@
+{
+  "model_id": "TTH07-RECEIVER-SEQUENCE",
+  "grade": "actual common-coordinate receiver operation composition; not a physical three-carrier two-hop Temporal-FIACH instance",
+  "left_model": "POS04RawHandoff.raw p",
+  "right_model": "POS04RawHandoff.raw q",
+  "primitive_assignment": "canonical POS04 cells",
+  "receiver_instructions_each": "POS04ReceiverContent.instructions",
+  "delivery": {
+    "state": "identity",
+    "action": "identity",
+    "coordinate": "identity",
+    "predictive": "identity",
+    "maintenance": "identity",
+    "owner": "Assigned.swapTag",
+    "event": "identity",
+    "history": "identity",
+    "route": "identity"
+  },
+  "source_class_test_inputs": ["POS04ReceiverContent.inputA", "POS04ReceiverContent.inputB"],
+  "controls": {
+    "constant_middle_state": "p0w0; all other map and primitive fields retained",
+    "source_erasure": "apply POS04ReceiverIntervention.erase to only the left receiver primitive; right cells unchanged"
+  },
+  "declaration_order": "Raw map/control instructions declared before evaluation; existing inputs are all-input reset tests rather than realized two-hop route fixtures"
+}

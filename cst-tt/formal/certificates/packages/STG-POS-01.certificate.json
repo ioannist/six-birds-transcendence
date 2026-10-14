@@ -1,0 +1,49 @@
+{
+  "assembly_ref": "models/packages/STG-POS-01.assembly.json",
+  "assembly_sha256": "88cd6e785dff7726e537bfdd70a050f167ea8ded9ff2048f0789dd2534c0f0e5",
+  "audit": {
+    "assembly_id": "STG-POS-01",
+    "carriers_distinct": true,
+    "coordinate_maps_total": true,
+    "errors": [],
+    "exactly_eight_clause_maps": true,
+    "failed_obligations": [],
+    "forbidden_verdict_fields_absent": true,
+    "hard_gates_never_averaged": true,
+    "maps_separately_typed": true,
+    "source_package_valid": true,
+    "staged_assembly_valid": true,
+    "target_global_assembled": true,
+    "target_package_valid": true,
+    "value_maps_sound": true
+  },
+  "certificate_id": "STG-POS-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-02",
+    "function": "audit_staged_assembly",
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite typed clause preservation and target assembly only",
+  "claim_lanes": [
+    "S-T",
+    "S-R"
+  ],
+  "result_status": "checked-finite-staged-package-certificate",
+  "schema_version": "CST-TT-02",
+  "source_model_ref": "models/packages/PKG-POS-02-SOURCE.model.json",
+  "source_model_sha256": "f5a580354591dc4e0c11539000c9d9fe61235c9f7e748c6e19ddbde89683b9a6",
+  "target_model_ref": "models/packages/PKG-POS-01-TARGET.model.json",
+  "target_model_sha256": "e61ef5ed5c31a8c1d13973295083f82e9c7e67072d2d432e8a0e28ccdba46f87",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.PackageTheory.acyclicLocalWitnessGluing",
+      "CSTTT.PackageTheory.stagedHeterogeneousPackageAssembly"
+    ],
+    "theorem_ids": [
+      "TTH-01",
+      "TTH-02"
+    ]
+  }
+}

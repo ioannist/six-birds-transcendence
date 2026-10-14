@@ -1,0 +1,20 @@
+{
+  "artifact_ref": "not-evidence",
+  "artifact_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "baseline_ref": "not-evidence",
+  "checker": {
+    "function": "audit_temporal_transport",
+    "module": "cst_tt.transport",
+    "python_version": "scaffold",
+    "valid_result": false
+  },
+  "claim_ceiling": "finite structural obligation boundary only",
+  "control_id": "SCAFFOLD",
+  "control_kind": "transport",
+  "expected_primary_failure": "not-evidence",
+  "observed_failures": [
+    "not-evidence"
+  ],
+  "result_status": "scaffold-only",
+  "schema_version": "CST-TT-03"
+}

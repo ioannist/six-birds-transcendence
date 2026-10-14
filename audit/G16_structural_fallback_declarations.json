@@ -1,0 +1,85 @@
+{
+  "schema": "csttt-G16-declarations-v1",
+  "module": "lean/CSTTT/Fallback/StructuralAdjudication.lean",
+  "source_sha256": "34287e2601369d33d1e421770e207524999576a8f6072cce2d91b87b19ca9c00",
+  "declaration_count": 11,
+  "declarations": [
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.RootedReconstructionTwinSeparation",
+      "kind": "def",
+      "line": 21,
+      "classification": "b",
+      "row_id": "TTF-06"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.rooted_twin_exact",
+      "kind": "theorem",
+      "line": 26,
+      "classification": "b",
+      "row_id": "TTF-06"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.destructive_reconstruction_return",
+      "kind": "theorem",
+      "line": 51,
+      "classification": "b",
+      "row_id": "TTF-06"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.IdentityUnderdetermined",
+      "kind": "def",
+      "line": 81,
+      "classification": "b",
+      "row_id": "TTF-07"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.branching_identity_underdetermined",
+      "kind": "theorem",
+      "line": 88,
+      "classification": "b",
+      "row_id": "TTF-07"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.compatible_invariant_excludes_both",
+      "kind": "theorem",
+      "line": 96,
+      "classification": "b",
+      "row_id": "TTF-07"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.actual_branch_identity_return",
+      "kind": "theorem",
+      "line": 106,
+      "classification": "b",
+      "row_id": "TTF-07"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.original_identity_schema_rejected",
+      "kind": "theorem",
+      "line": 126,
+      "classification": "b",
+      "row_id": "TTF-07"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.actual_package_ablation_control",
+      "kind": "theorem",
+      "line": 132,
+      "classification": "b",
+      "row_id": "TTF-08"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.actual_package_insufficiency_return",
+      "kind": "theorem",
+      "line": 144,
+      "classification": "b",
+      "row_id": "TTF-08"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.StructuralAdjudication.no_actual_ancestry_package_implication",
+      "kind": "theorem",
+      "line": 154,
+      "classification": "b",
+      "row_id": "TTF-08"
+    }
+  ]
+}

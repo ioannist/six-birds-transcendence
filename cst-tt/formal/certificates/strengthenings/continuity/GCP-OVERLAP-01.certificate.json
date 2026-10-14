@@ -1,0 +1,89 @@
+{
+  "audit": {
+    "contains_direct_successor": false,
+    "endpoint_distinct": true,
+    "every_leg_valid": true,
+    "exact_carrier_frontiers": true,
+    "exact_ownership_frontiers": true,
+    "exact_signature_frontiers": true,
+    "failed_obligations": [],
+    "generalized_path_valid": true,
+    "leg_audits": [
+      {
+        "entry_signature": {
+          "maintenance_owner": 17,
+          "maintenance_state": "leg-S-T-source-maint",
+          "order_rank": 0,
+          "predictive_rank": 0,
+          "progress_rank": 0,
+          "record_value": 0,
+          "route_residue": [
+            "route-root"
+          ],
+          "tick_index": 0
+        },
+        "evidence_valid": true,
+        "exit_signature": {
+          "maintenance_owner": 101,
+          "maintenance_state": "leg-S-T-target-maint",
+          "order_rank": 2,
+          "predictive_rank": 2,
+          "progress_rank": 2,
+          "record_value": 3,
+          "route_residue": [
+            "route-root",
+            "leg-S-T-mixed",
+            "leg-S-T-target"
+          ],
+          "tick_index": 2
+        },
+        "failed_obligations": [],
+        "hash_valid": true,
+        "kind": "overlap",
+        "leg_id": "strict-overlap",
+        "model_ref": "models/corridors/COR-POS-01.model.json",
+        "source_code": 17,
+        "target_code": 101,
+        "temporally_realized": true
+      }
+    ],
+    "leg_hashes_valid": true,
+    "mode_sequence": [
+      "overlap"
+    ],
+    "no_temporal_gap": true,
+    "nonempty": true,
+    "path_id": "GCP-OVERLAP-01",
+    "primary_fiach_eligible": true,
+    "source_code": 17,
+    "strict_overlap_only": true,
+    "target_code": 101
+  },
+  "certificate_id": "GCP-OVERLAP-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-07A",
+    "function": "audit_generalized_continuity_path",
+    "module": "cst_tt.strengthenings",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "generalized structural lineage path only; strict FIACH requires all-overlap evidence",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "model_ref": "models/strengthenings/continuity/GCP-OVERLAP-01.model.json",
+  "model_sha256": "d5cc1b59e22a6226bd4d3f699dc37f60ee81b57670a6dcdb111e24622b6a86cc",
+  "result_status": "checked-finite-generalized-temporal-continuity-path",
+  "schema_version": "CST-TT-07A",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.StrengtheningTheory.overlapEmbedsGeneralized",
+      "CSTTT.StrengtheningTheory.directEmbedsGeneralized",
+      "CSTTT.StrengtheningTheory.generalizedPathComposition"
+    ],
+    "theorem_ids": [
+      "TTD-02",
+      "TTS-01"
+    ]
+  }
+}

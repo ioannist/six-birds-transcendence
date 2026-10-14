@@ -1,0 +1,3 @@
+item_id,role,model_ref,certificate_ref,status,principal_result,claim_ceiling
+UNB-POS-01,positive-total-invariant-policy,models/strengthenings/unbounded/UNB-POS-01.model.json,formal/certificates/strengthenings/unbounded/UNB-POS-01.certificate.json,checked-model-relative-unbounded-run-schema,total target-owned invariant policy defines a run for every infinite disturbance stream,model-relative unbounded controlled invariance only
+UNB-NEG-FAMILY-01,arbitrary-finite-prefix-counterfamily,formal/certificates/search/ARBITRARILY_LONG_FINITE_PREFIX_FAMILY.json,formal/certificates/search/ARBITRARILY_LONG_FINITE_PREFIX_FAMILY.json,checked-bounded-family,every horizon 0..12 has a prefix-success/fail-next countdown,bounded exact counterfamily plus generic proof source

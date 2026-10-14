@@ -1,0 +1,209 @@
+\section{The finite models}
+\label{app:models}
+
+We describe each model in words. Appendix~\ref{app:index} names the Lean
+definitions, and the artifact contains the full data. Every computed value
+below, such as a state count, a mass, a distance or a refinement trajectory,
+is read from the result snapshot and pinned to a Lean theorem that states it.
+The other small numbers, such as the numbers of stages, copies, bits and
+programs, describe how a model is specified, and the Lean definitions fix
+them.
+
+\subsection{The two-copy deadline model}
+\label{app:twocopy}
+
+The base is the deadline system of \citet{TsiokosForcing2026}: a walker on a
+wheel of positions with a hidden two-valued phase, a deadline, and a viability
+kernel on which a predictive self-coordinate is forced. We take
+two copies, tagged source and target. With the lethal states, the tagged
+state space has \snapPosZeroFourTaggedAmbientStates{} states, of which
+\snapPosZeroFourTaggedLethalStates{} are lethal. The handoff adds a position
+along the episode, a token budget with a recharge owned by each tag, and a
+register recording the route.
+
+We run the episode through four stages: source live, two overlap stages in which
+both copies are live, and target live. Two checked routes lead from distinct
+source histories to the target.
+
+The conditions hold as follows.
+\begin{itemize}
+\item \emph{Objecthood}, condition (1), is the deadline system's staged closure
+kernel. At perturbation size \snapPosZeroFourCOneEpsilon{}, the perturbed
+two-step kernel has a unique fixed point that keeps
+\snapPosZeroFourCOneRecurrentMass{} of its mass on the specified four-state
+core. Its total-variation distance from the uniform distribution on the core
+is \snapPosZeroFourCOneTotalVariation{}.
+\item \emph{Strict refinement} and the \emph{predictive self-coordinate},
+conditions (2) and (3), are the deadline system's own, computed on each copy.
+The refinement trajectory is \snapPosZeroFourCThreeTrajectory{}.
+\item \emph{Viability}, condition (8), is the greatest funded kernel. It is
+nonempty with recharge and empty without.
+\item Conditions (4) to (7) are simplified. Non-exposure is replaced by a
+single collision between two states that agree on the current channels and
+differ in their predictive state. Action credit is replaced by a declared
+three-cycle credit rule. Temporal closure is replaced by a declared order on
+events, with a record and a tick added for the purpose. Binding is replaced by
+a declared coupling between two assemblages.
+\end{itemize}
+
+The staged map carries all \snapPosZeroFourStagedClauseCount{} conditions from
+source to target. A rational-register extension of this model carries the
+robustness result of Proposition~\ref{prop:box}.
+
+\subsection{The chain model}
+\label{app:chain}
+
+The chain model has a finite factor of \snapGSevenNativeFactorStates{} states,
+three bits for phase, visibility and a hidden bit, together with unbounded
+counters, ticks and histories. Its refinement trajectory is
+\snapGSevenCThreeTrajectory{}.
+\begin{itemize}
+\item \emph{The chain.} An episode passes through the systems
+\snapGSevenStrictChainSystemIds{} by two handoffs.
+\item \emph{The fork.} A symmetric fork hands off from the first system to
+two targets, \snapGSevenForkSystemIds{} with the source listed first, and both
+branches receive identical inputs.
+\end{itemize}
+Conditions (1), (2), (3) and (8) are computed from the model's own dynamics:
+a nonuniform fixed point, a computed split, a recursive refinement, and a
+greatest viable set that empties when recharge is cut. Conditions (4) to (7) are
+simplified, as above. Disturbances form a unit class.
+
+\subsection{The fusion model}
+\label{app:fusion}
+
+The fusion model has \snapFullNativeZeroTwoPhysicalStates{} physical states and
+two installed programs, together with addresses, tokens of one unit each, and
+accounts. Its viability factor, the physical state together with the charge,
+has \snapFullNativeZeroTwoCEightFactorStates{} states. The operational core
+kept under renewable supply has \snapFullNativeZeroTwoOperationalCoreStates{}
+states. The refinement trajectory is \snapFullNativeZeroTwoCThreeTrajectory{}.
+
+Its execution histories grow without bound, and we never enumerate them. All eight conditions are computed
+from one installed execution, with the choices stated in
+Section~\ref{sec:ancestry}. A guarded fusion has
+\snapFullNativeZeroTwoFusionOutcomeCount{} settlement outcomes. We specified the model, and fixed its readings, before evaluating it.
+
+\subsection{Small controls}
+\label{app:controls}
+
+For several countermodels we use small dedicated systems:
+\begin{itemize}
+\item a source-only and a target-only stage, for the detached copy
+\item two reversible three-state route maps that do not commute, for holonomy
+without an arrow;
+\item a two-phase clock loop, for the absence of a canonical present
+\item a singleton clock, for a tick without progress
+\item pairs of defect vectors, for scalar summaries
+\item a relabelled two-branch fork, for the symmetric fork
+\item a countdown of length $h+2$ for each horizon $h$, for finite success
+\item a domain of three one-event routes, for the licences
+\item controls separating direct succession from overlap and from data
+reachability.
+\end{itemize}
+
+\subsection{The checks, expanded}
+\label{app:checks}
+
+The definitions in Sections~\ref{sec:checks} and~\ref{sec:continuation}
+summarize the formal gates, and here we expand them component by component.
+The named Lean predicates, listed in Appendix~\ref{app:index}, are
+authoritative. This list explains them and does not replace them.
+
+\paragraph{The strict handoff gate.}
+We say that a handoff passes when all of the following hold.
+\begin{enumerate}
+\item Source and target are distinct, and there are at least three stages.
+\item The entry stage's support is exactly the source and the exit stage's
+support is exactly the target, with matching owners.
+\item Every stage is realized, has nonempty support, has its owner in its
+support, and has a nonempty maintenance state.
+\item Some stage contains both systems.
+\item Event identifiers are unique, and events have valid stages and owners.
+\item Every dependency points forward in stage.
+\item There is one readout update per adjacent pair of stages. Each update
+changes the predictive field by its specified nonnegative increment, and
+increases order, tick, progress and records by strictly positive amounts. It appends a nonempty extension to the
+route memory, keeps a nonempty maintenance state, and keeps the owner in the
+support.
+\item An intervention check holds: either additive nonredundancy of the
+projections, or failure of the episode once mixed support is removed. An
+audit check also holds.
+\item The route status is route-indexed.
+\end{enumerate}
+A chain of handoffs passes when each handoff passes, each pair of consecutive
+handoffs agrees exactly at the join (the same intermediate system and the same
+boundary stage, including its whole frontier, route memory and owner), and the
+first source differs from the last target.
+
+\paragraph{The continuation gate.}
+We say that a handoff model with a source assignment passes the gate in its
+realization-preserving version when all of the following hold.
+\begin{enumerate}
+\item \emph{Raw laws.} The recipe for the viability condition equals the fixed
+rule, and the resource runtime's presence and requirement instructions agree
+with the nominal recipe.
+\item \emph{Protocol.} The withdrawal metadata decodes, and a finite check of
+the decoded rows, policy, ticks, account record, routes and writers passes.
+\item \emph{Readiness.} The acquisition and resource inputs are ready, and
+any missing consumed input is rejected, not defaulted.
+\item \emph{Domain.} The required domains are nonempty, and the disturbances,
+actions, outcomes, factors and resources are each enumerated completely by
+finite lists.
+\item \emph{Source.} The source assignment satisfies the eight conditions on
+the source.
+\item \emph{Coherence.} The owner map is injective. The system and schema
+checks pass. The temporal condition's rule is the temporal decoder. The
+presentation is coherent, and so is the target's execution.
+\item \emph{Realization.} For the mapped pieces, the cover, scope, totality,
+reference and value-preservation checks pass, and every source cell is
+covered. Every condition accepts its mapped piece on the target, and the
+mapped pieces agree on every edge of the cover.
+\item \emph{Lineage.} The complete lineage check passes, together with the
+typed endpoint check. For every route the computed legs form a strict chain.
+The seed, factor transport, record transport and retained route readouts pass.
+The execution frontiers of both systems satisfy the semantic readout,
+including sufficiency of the predictive code for every finite sequence of
+actions within each system. The translation commutes with initial states,
+transition weights, successors and observations on the whole reached set of
+source states. Both frames share the runtime schema, and the execution links
+pass.
+\item \emph{Autonomy.} A game invariant certificate exists in the sense of
+Lemma~\ref{lem:strategy}, with these instantiations:
+\begin{itemize}
+\item the entries are the registers reached by one step after a genuine
+arrival;
+\item the withdrawal removes all six declared roles, and keeps removed and
+retained resources disjoint;
+\item the realization predicate is realization together with membership in the
+declared region and acceptance of the run's assignment;
+\item the resource conditions require target ownership, retention and a
+positive balance of every required resource, with the source absent and a
+writer present;
+\item legal moves are owned by the target, use only retained resources, and are
+affordable;
+\item the transition law requires resource closure, exact balance updates, and
+strict advance of order, ticks, progress and records.
+\end{itemize}
+Responses are listed in a sparse format. At every generated play and for
+every disturbance, every listed weight of the selected response is positive.
+Unselected actions are not constrained.
+\item \emph{Receiver and scope.} The receiver's content and intervention laws
+hold, the endpoint is active, the route status is route-indexed, and
+recognition is recorded as not addressed.
+\end{enumerate}
+The operational version is identical, except that the realization predicate in
+the autonomy check is replaced by membership in the declared part of the state
+space.
+
+\paragraph{The finite autonomy certificate of Section~\ref{sec:autonomy}.}
+We state this certificate for a finite controlled system. Its fields record the
+withdrawals, and record that the boundary and the disturbance class were fixed
+before evaluation. It also requires the following:
+\begin{itemize}
+\item the endpoint lies in the region;
+\item realization holds in the region;
+\item maintenance resources are retained and owned by the target;
+\item for every state in the region and every disturbance, some
+action owned by the target leads to a state in the region without stalling and within budget.
+\end{itemize}

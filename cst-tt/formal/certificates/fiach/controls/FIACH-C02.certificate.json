@@ -1,0 +1,78 @@
+{
+  "audit": {
+    "aggregate_valid": false,
+    "autonomy_lane": false,
+    "autonomy_package_contract_linked": false,
+    "autonomy_valid": false,
+    "certificate_id": "FIACH-C02",
+    "component_hashes_valid": true,
+    "component_statuses": {
+      "A": false,
+      "S-L": true,
+      "S-R": false,
+      "S-T": true
+    },
+    "corridor_autonomy_handoff_linked": true,
+    "corridor_package_temporal_frontier_linked": false,
+    "corridor_valid": true,
+    "failed_obligations": [
+      "FIACH-O04-target-package",
+      "FIACH-O06-post-withdrawal-autonomy",
+      "FIACH-O09-target-endpoint-linking",
+      "FIACH-O10-staged-model-linking",
+      "FIACH-O11-corridor-package-temporal-frontier",
+      "FIACH-O13-autonomy-package-contract"
+    ],
+    "ontology_absent": true,
+    "recognition_separate": true,
+    "route_status_linked": true,
+    "source_endpoints_linked": true,
+    "source_package_valid": true,
+    "source_target_distinct": true,
+    "staged_models_linked": false,
+    "staged_preservation_valid": true,
+    "structural_lineage_lane": true,
+    "structural_realization_lane": false,
+    "structural_transport_lane": true,
+    "target_endpoints_linked": false,
+    "target_package_valid": false
+  },
+  "checker": {
+    "checked_at_phase": "CST-TT-05",
+    "function": "audit_temporal_fiach",
+    "module": "cst_tt.fiach",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "lane-conjunction and independence boundary only",
+  "component_refs": {
+    "autonomy": "formal/certificates/autonomy/controls/AUT-C01.certificate.json",
+    "corridor": "formal/certificates/corridors/COR-POS-01.certificate.json",
+    "source_package": "formal/certificates/packages/PKG-POS-03-FIACH-SOURCE.certificate.json",
+    "staged_assembly": "formal/certificates/packages/STG-POS-02-FIACH.certificate.json",
+    "target_package": "formal/certificates/packages/controls/PC-01.certificate.json"
+  },
+  "component_sha256": {
+    "autonomy": "00f293aeabcd515e41a964da56c90471a134d1dc860eefdecb9ec33eb081d113",
+    "corridor": "176fc24d37ab09ee8cf36cad8c26dfcb5b9f179f073cf236caf37b05a3bba66c",
+    "source_package": "47b0210a9dfcd667f3400906a2b4e2232770e1d2522fe8f1f6d3eb98d08de7bb",
+    "staged_assembly": "2952d9a4e097048cb4bb6c05b60604728dfa7ec672206cde505c1d5ac48e336b",
+    "target_package": "6274ee7068f0226aea94d70594d293f6386fa08da62a39bb87427740aa59f0a1"
+  },
+  "control_id": "FIACH-C02",
+  "expected_lane_statuses": {
+    "A": false,
+    "S-L": true,
+    "S-R": false
+  },
+  "model_ref": "models/fiach/controls/FIACH-C02.model.json",
+  "model_sha256": "4f64de9499fd3ea9fa7999112821d2fab61310f1118a3ea92981d5001886b838",
+  "observed_lane_statuses": {
+    "A": false,
+    "S-L": true,
+    "S-R": false,
+    "S-T": true
+  },
+  "result_status": "checked-fiach-lane-independence-control",
+  "schema_version": "CST-TT-05",
+  "title": "lineage only"
+}

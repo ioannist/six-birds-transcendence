@@ -1,0 +1,94 @@
+{
+  "audit": {
+    "aggregate_valid": true,
+    "autonomy_lane": true,
+    "autonomy_package_contract_linked": true,
+    "autonomy_valid": true,
+    "certificate_id": "FIACH-POS-01",
+    "component_hashes_valid": true,
+    "component_statuses": {
+      "A": true,
+      "S-L": true,
+      "S-R": true,
+      "S-T": true
+    },
+    "corridor_autonomy_handoff_linked": true,
+    "corridor_package_temporal_frontier_linked": true,
+    "corridor_valid": true,
+    "failed_obligations": [],
+    "ontology_absent": true,
+    "recognition_separate": true,
+    "route_status_linked": true,
+    "source_endpoints_linked": true,
+    "source_package_valid": true,
+    "source_target_distinct": true,
+    "staged_models_linked": true,
+    "staged_preservation_valid": true,
+    "structural_lineage_lane": true,
+    "structural_realization_lane": true,
+    "structural_transport_lane": true,
+    "target_endpoints_linked": true,
+    "target_package_valid": true
+  },
+  "certificate_id": "FIACH-POS-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-05",
+    "function": "audit_temporal_fiach",
+    "module": "cst_tt.fiach",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "structural precursor only; no consciousness, phenomenal continuity, survival, or identity conclusion",
+  "component_refs": {
+    "autonomy": "formal/certificates/autonomy/AUT-POS-01.certificate.json",
+    "corridor": "formal/certificates/corridors/COR-POS-01.certificate.json",
+    "source_package": "formal/certificates/packages/PKG-POS-03-FIACH-SOURCE.certificate.json",
+    "staged_assembly": "formal/certificates/packages/STG-POS-02-FIACH.certificate.json",
+    "target_package": "formal/certificates/packages/PKG-POS-04-FIACH-TARGET.certificate.json"
+  },
+  "component_sha256": {
+    "autonomy": "832cfe9757321173fd685fa00fa627e25f4f794870a353301717428697b22a7b",
+    "corridor": "176fc24d37ab09ee8cf36cad8c26dfcb5b9f179f073cf236caf37b05a3bba66c",
+    "source_package": "47b0210a9dfcd667f3400906a2b4e2232770e1d2522fe8f1f6d3eb98d08de7bb",
+    "staged_assembly": "2952d9a4e097048cb4bb6c05b60604728dfa7ec672206cde505c1d5ac48e336b",
+    "target_package": "eb02e10280c1b0ed2725aa6e76205b404aa96e94f3109fcc1f2fa65a12f041f4"
+  },
+  "lane_results": {
+    "A": true,
+    "S-L": true,
+    "S-R": true,
+    "S-T": true
+  },
+  "recognition_status": "not-addressed",
+  "result_status": "checked-finite-temporal-fiach-certificate",
+  "route_status": "route-indexed",
+  "schema_version": "CST-TT-05",
+  "source": {
+    "code": 17,
+    "label": "source-substrate"
+  },
+  "target": {
+    "code": 101,
+    "label": "target-substrate"
+  },
+  "theorem_evidence": {
+    "component_replay": {
+      "autonomy": true,
+      "corridor": true,
+      "source_package": true,
+      "staged_assembly": true,
+      "target_package": true
+    },
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.TargetTheory.temporalFIACHCertificateSoundness",
+      "CSTTT.TargetTheory.temporalFIACHEndpointsLinked",
+      "CSTTT.TargetTheory.threeLaneAggregateExact"
+    ],
+    "theorem_ids": [
+      "TTH-02",
+      "TTH-04",
+      "TTH-05",
+      "TTH-06"
+    ]
+  }
+}

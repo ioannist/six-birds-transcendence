@@ -1,0 +1,3 @@
+completion_id,mode,output_route_status,valid,certificate_ref,claim_ceiling
+ROUTE-COMP-INDEXED-01,route-indexed,route-indexed,true,formal/certificates/route_completion/ROUTE-COMP-INDEXED-01.certificate.json,route-indexed structural handoff only
+ROUTE-COMP-FLAT-01,flat-under-normalization,flat,true,formal/certificates/route_completion/ROUTE-COMP-FLAT-01.certificate.json,route-independent endpoint only under separately certified confluence

@@ -1,0 +1,43 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm05_stableTickWithoutProgress",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-05",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-05",
+  "finite_model_ref": "models/countermodels/CM-05.model.json",
+  "finite_model_sha256": "b5057478644385b09480a90be8a1074e022f49273d16a531e8044f321599b3e2",
+  "minimality_status": "certified",
+  "model_family": "stalled-clock",
+  "name": "Stable tick phase without genuine progress",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "Tick viability and phase stability do not imply temporal progress.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "all transition tables on <=2 states and <=2 phases",
+    "candidates_explored": 10,
+    "lower_bound_argument": "A one-state, one-phase self-loop is the smallest stable system and already lacks progress.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 4,
+    "same_size_candidates_explored": 1,
+    "same_size_qualifying_candidates": 1,
+    "size_measure": "(state_count, phase_count)",
+    "smaller_candidates_explored": 0,
+    "witness_size_vector": [
+      1,
+      1
+    ]
+  },
+  "target_no_go_id": "TTN-07",
+  "toy_model_ref": "TTM-14"
+}

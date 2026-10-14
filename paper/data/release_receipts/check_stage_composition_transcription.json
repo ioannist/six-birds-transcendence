@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_stage_composition_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_stage_composition_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_stage_composition_transcription.log",
+  "log_sha256": "10b4f1e5846f7142a8f23e198ad2cfb673c8f546970fe18fc735c3496c6053d5",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:51+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted multiplier drift\nCAUGHT planted changed instruction drift\nCAUGHT planted intermediate scope drift\nPASS typed primitive-map witness: raw parameters/cover and actual sequential outputs; all-partial absence equations kernel-checked\nScope: primitive algebra only; no full Temporal-FIACH composition or two-hop model claim"
+}

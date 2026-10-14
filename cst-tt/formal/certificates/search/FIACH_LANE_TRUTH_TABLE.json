@@ -1,0 +1,57 @@
+{
+  "conjunction_exact": true,
+  "negative_row_count": 7,
+  "positive_row_count": 1,
+  "row_count": 8,
+  "rows": [
+    {
+      "A": false,
+      "S-L": false,
+      "S-R": false,
+      "aggregate": false
+    },
+    {
+      "A": true,
+      "S-L": false,
+      "S-R": false,
+      "aggregate": false
+    },
+    {
+      "A": false,
+      "S-L": true,
+      "S-R": false,
+      "aggregate": false
+    },
+    {
+      "A": true,
+      "S-L": true,
+      "S-R": false,
+      "aggregate": false
+    },
+    {
+      "A": false,
+      "S-L": false,
+      "S-R": true,
+      "aggregate": false
+    },
+    {
+      "A": true,
+      "S-L": false,
+      "S-R": true,
+      "aggregate": false
+    },
+    {
+      "A": false,
+      "S-L": true,
+      "S-R": true,
+      "aggregate": false
+    },
+    {
+      "A": true,
+      "S-L": true,
+      "S-R": true,
+      "aggregate": true
+    }
+  ],
+  "schema_version": "CST-TT-05"
+}

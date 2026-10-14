@@ -1,0 +1,25 @@
+{
+  "closure_rule_ids": [
+    "closure-rule-placeholder"
+  ],
+  "no_ex_nihilo_rule_id": "no-ex-nihilo-placeholder",
+  "nodes": [
+    "source-node-placeholder",
+    "record-node-placeholder",
+    "target-node-placeholder"
+  ],
+  "schema_version": "CST-TT-00",
+  "seed_edges": [
+    {
+      "kind": "source-to-record",
+      "source": "source-node-placeholder",
+      "target": "record-node-placeholder"
+    },
+    {
+      "kind": "record-to-target",
+      "source": "record-node-placeholder",
+      "target": "target-node-placeholder"
+    }
+  ],
+  "status": "not-evaluated"
+}

@@ -1,0 +1,3412 @@
+{
+  "schema": "csttt-g14-guarded-fusion-declaration-v1",
+  "declared_before_new_fixture_evaluation": true,
+  "source_head": "193793733a699ed154c22e5839967f7be8a2c018",
+  "source_sha256": {
+    "lean/CSTTT/Objecthood/T1Audit.lean": "71073960877131a5d9b3f882efa156b0b4013163144a629a36f12cfa8dff8d93",
+    "lean/CSTTT/POS04/Data.lean": "aa930743032c16594a24399cb74f5facc4693ece1c32cfa82db6fafa0cd7d148",
+    "lean/CSTTT/POS04/C2C3.lean": "95e0d0c566274b56e70a3f085ad64bd9991acf1107110d8ca49d47609bb603f3",
+    "lean/CSTTT/POS04/GenericTransport.lean": "95ec239c6b72e4a079233c1ef95af29a9742417589b6933297c4bc2a79f20797",
+    "lean/CSTTT/Transport/RawBridge.lean": "3a47319c0ff1544f74bd2a67a4ae00f9b6575b373f102a8a0cbf73477fccc357",
+    "lean/CSTTT/Fallback/OperationalTrace.lean": "17cf88eee392d2decd5baf5ad7be12044b84c92ec1ee84489093df2341e67347",
+    "lean/CSTTT/Fallback/OperationalSeed.lean": "b03eb412785b65d67db6a758a82c32da3162febe5a2a9b7bcc884f94f0a3a5e2",
+    "lean/CSTTT/Fallback/NativeDescendant.lean": "d3e641c7a2494d88d5a2b2b2e88da9700a58bd046563402e0723d5c1a70135e6",
+    "lean/CSTTT/Fallback/CachedSeed.lean": "15ab6eb5e48e662ed1950decfb7bb9c90eb5008fe0f3ec40ecafdca2c8f49628"
+  },
+  "bridge": "CSTTT.POS04.pos04RawBridge .positive",
+  "state_order": [
+    "p0w0",
+    "p0w1",
+    "p1w0",
+    "p1w1",
+    "p2w1",
+    "p3w0",
+    "p3w1",
+    "p4w0",
+    "p4w1",
+    "p5w0"
+  ],
+  "query_addresses": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "ancestry_queries": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      7
+    ]
+  ],
+  "token_unit": "unique primitive token identifier, initial event-owner allocation",
+  "joint_program_decoding": "finite listed parent-pair rows; unlisted pairs have empty support, never an input-default program",
+  "cases": [
+    {
+      "case_id": "positive_p0w0",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p1w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "positive_p0w1",
+      "raw_source": "p0w1",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w1",
+            "p0w1",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p1w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "positive_p1w0",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p2w1"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p1w0",
+            "p1w0",
+            [
+              [
+                "p2w1",
+                4
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          1,
+          1,
+          "p2w1"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p2w1",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "positive_p1w1",
+      "raw_source": "p1w1",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p5w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p1w1",
+            "p1w1",
+            [
+              [
+                "p5w0",
+                4
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          2,
+          2,
+          "p5w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p5w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "positive_p2w1",
+      "raw_source": "p2w1",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p2w1",
+            "p2w1",
+            [
+              [
+                "p1w0",
+                3
+              ],
+              [
+                "p1w1",
+                1
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p1w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "positive_p3w0",
+      "raw_source": "p3w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p3w0",
+            "p3w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p1w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "positive_p3w1",
+      "raw_source": "p3w1",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p3w1",
+            "p3w1",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p1w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "positive_p4w0",
+      "raw_source": "p4w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p4w0",
+            "p4w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p1w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "positive_p4w1",
+      "raw_source": "p4w1",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p4w1",
+            "p4w1",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p1w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "positive_p5w0",
+      "raw_source": "p5w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p5w0",
+            "p5w0",
+            [
+              [
+                "p1w0",
+                1
+              ],
+              [
+                "p1w1",
+                3
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p1w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "missing_joint_program",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": null,
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": null
+      }
+    },
+    {
+      "case_id": "missing_token_allocation",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": null,
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": null
+      }
+    },
+    {
+      "case_id": "missing_source",
+      "raw_source": null,
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": false,
+        "prefix_source_seed_at2": null,
+        "first_fusion_present": null
+      }
+    },
+    {
+      "case_id": "missing_decoder",
+      "raw_source": "p0w0",
+      "decoder": null,
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": false,
+        "prefix_source_seed_at2": null,
+        "first_fusion_present": null
+      }
+    },
+    {
+      "case_id": "stale_record",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          3
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": false,
+        "prefix_source_seed_at2": null,
+        "first_fusion_present": null
+      }
+    },
+    {
+      "case_id": "joint_zero_requested_outcome",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w1",
+                4
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "joint_empty_selected_row",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            []
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "joint_zero_scale",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 0,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "joint_wrong_normalization",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 5,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "joint_zero_entry",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ],
+              [
+                "p5w0",
+                0
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "unsupported_left_action",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          99,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "unsupported_right_action",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          99,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "duplicate_token_different_owners",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          100,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "missing_left_credit",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "missing_right_credit",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "unhoused_source_extra_token",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ],
+        [
+          102,
+          0
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "wrong_kind_record_extra_token",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ],
+        [
+          102,
+          1
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "occupied_twin_output",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          6,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "same_parent_twice",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          3,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "missing_typed_parent",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": false
+      }
+    },
+    {
+      "case_id": "duplicate_native_outputs",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          3
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": false,
+        "native_prefix_present": false,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": null
+      }
+    },
+    {
+      "case_id": "wrong_decoder_but_supported_joint",
+      "raw_source": "p0w0",
+      "decoder": {
+        "constant": "p1w1"
+      },
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p5w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p1w1",
+            "p1w1",
+            [
+              [
+                "p5w0",
+                4
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          2,
+          2,
+          "p5w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": false,
+        "first_fusion_present": true,
+        "ancestry_0_at2": false,
+        "ancestry_0_at3": false,
+        "ancestry_0_at4": false,
+        "ancestry_0_at5": false,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p5w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "reversed_parent_order",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ]
+      ],
+      "fusion_commands": [
+        [
+          4,
+          3,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p1w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "unrelated_twin_credit",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ],
+        [
+          102,
+          6
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": "p1w0",
+        "target5_active": true,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            5
+          ],
+          [
+            101,
+            5
+          ],
+          [
+            102,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "two_fusions_with_twin_parent",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ],
+          [
+            "p1w0",
+            "p1w0",
+            [
+              [
+                "p2w1",
+                4
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          101,
+          4
+        ],
+        [
+          102,
+          6
+        ]
+      ],
+      "fusion_commands": [
+        [
+          3,
+          4,
+          5,
+          0,
+          0,
+          "p1w0"
+        ],
+        [
+          5,
+          6,
+          7,
+          1,
+          1,
+          "p2w1"
+        ]
+      ],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": true,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": true,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": true,
+        "target5_payload": "p1w0",
+        "target5_active": false,
+        "parent3_active": false,
+        "parent4_active": false,
+        "token_allocation": [
+          [
+            100,
+            7
+          ],
+          [
+            101,
+            7
+          ],
+          [
+            102,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "case_id": "empty_fusion_duplicate_ledger",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "initial_source": 0,
+      "max_age": 3,
+      "prefix_commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          6,
+          "p1w0"
+        ]
+      ],
+      "native_commands": [
+        [
+          "fission",
+          2,
+          3,
+          4
+        ]
+      ],
+      "joint_program": {
+        "scale": 4,
+        "rows": [
+          [
+            "p0w0",
+            "p0w0",
+            [
+              [
+                "p1w0",
+                2
+              ],
+              [
+                "p1w1",
+                2
+              ]
+            ]
+          ]
+        ]
+      },
+      "initial_token_allocation": [
+        [
+          100,
+          3
+        ],
+        [
+          100,
+          4
+        ]
+      ],
+      "fusion_commands": [],
+      "frozen_prediction": {
+        "execution_present": true,
+        "native_prefix_present": true,
+        "prefix_source_seed_at2": true,
+        "first_fusion_present": null,
+        "ancestry_0_at2": true,
+        "ancestry_0_at3": true,
+        "ancestry_0_at4": true,
+        "ancestry_0_at5": false,
+        "ancestry_0_at6": false,
+        "ancestry_0_at7": false,
+        "target5_payload": null,
+        "target5_active": false,
+        "parent3_active": true,
+        "parent4_active": true,
+        "token_allocation": [
+          [
+            100,
+            3
+          ],
+          [
+            100,
+            4
+          ]
+        ]
+      }
+    }
+  ],
+  "claim_boundary": [
+    "This is a declared normalized common-outcome event fusion kernel, not a derivation of full historical C7 gluing or of equality of joint/marginal probability distributions.",
+    "Token housing and transfer are primitive exclusive event resources; ambient native debit/recharge ownership and full physical C5 credit are separate obligations.",
+    "Every predicted observation must be evaluated after this declaration is committed; predictions must not be tuned after failures.",
+    "Native prefix is the actual supported-row/copied-event interpreter; all sourcechecked snapshots, journals, time/dormancy/erasure semantics are unchanged.",
+    "Ancestry must be the actual computed predictive Seed plus accepted native/fusion ledger closure, not final-graph reachability alone.",
+    "Wrong decoder may preserve actual structural execution and native/joint support while every scientific source ancestry query remains false.",
+    "An independent twin used as a fusion parent stays without incoming ancestry; only the fresh output may inherit the other already-ancestral predecessor.",
+    "Empty fusion stream does not validate its initial token ledger; no full package/autonomy or token invariant certificate is inferred from mere availability.",
+    "All full Python/Lean execution, partial native prefix, guard and actual final store/token/readout observations will be compared, not only expected booleans."
+  ]
+}

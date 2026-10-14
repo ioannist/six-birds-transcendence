@@ -1,0 +1,99 @@
+{
+  "every_horizon_has_countermodel": true,
+  "maximum_horizon": 12,
+  "models_constructed": 13,
+  "rows": [
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 0,
+      "initial_budget": 1
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 1,
+      "initial_budget": 2
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 2,
+      "initial_budget": 3
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 3,
+      "initial_budget": 4
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 4,
+      "initial_budget": 5
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 5,
+      "initial_budget": 6
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 6,
+      "initial_budget": 7
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 7,
+      "initial_budget": 8
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 8,
+      "initial_budget": 9
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 9,
+      "initial_budget": 10
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 10,
+      "initial_budget": 11
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 11,
+      "initial_budget": 12
+    },
+    {
+      "all_declared_prefix_steps_live": true,
+      "fails_at_next_step": true,
+      "failure_budget": 0,
+      "horizon": 12,
+      "initial_budget": 13
+    }
+  ],
+  "search_id": "ARBITRARILY_LONG_FINITE_PREFIX_FAMILY"
+}

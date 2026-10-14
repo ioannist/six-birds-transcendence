@@ -1,0 +1,5031 @@
+{
+  "category_counts": {
+    "baseline": {
+      "PASS": 5
+    },
+    "circularity": {
+      "PASS": 1
+    },
+    "claim-ceiling": {
+      "PASS": 55
+    },
+    "documentation": {
+      "PASS": 36
+    },
+    "kill-policy": {
+      "PASS": 14
+    },
+    "lean-static": {
+      "PASS": 176
+    },
+    "no-results": {
+      "PASS": 75
+    },
+    "provenance": {
+      "PASS": 141
+    },
+    "python": {
+      "PASS": 15
+    },
+    "registry": {
+      "PASS": 247
+    },
+    "reproducibility": {
+      "PASS": 4
+    },
+    "schema": {
+      "PASS": 32
+    },
+    "toolchain": {
+      "PASS": 8,
+      "SKIP": 1
+    },
+    "typing": {
+      "PASS": 19
+    }
+  },
+  "counts": {
+    "PASS": 828,
+    "SKIP": 1
+  },
+  "date": "2026-08-10",
+  "lean_compile": "SKIP: lean/lake unavailable",
+  "phase": "CST-TT-00",
+  "results": [
+    {
+      "category": "baseline",
+      "check_id": "BASE-001",
+      "detail": "repository is a Git worktree",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-002",
+      "detail": "CST-EXP-06 tag resolves to frozen base",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-003",
+      "detail": "frozen base is an ancestor of current HEAD",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-004",
+      "detail": "repository has no whitespace errors",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-005",
+      "detail": "working tree is clean",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-001",
+      "detail": "imported-source checksum ledger exists",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-002",
+      "detail": "checksum ledger contains 17 imported surfaces (found 17)",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-001",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/EXECUTION_PLAN.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-001",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/EXECUTION_PLAN.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-002",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/FIACH_BASELINE_SPECIFICATION.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-002",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/FIACH_BASELINE_SPECIFICATION.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-003",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/IAPS_BASELINE_SPECIFICATION.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-003",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/IAPS_BASELINE_SPECIFICATION.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-004",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/TEMPORAL_AUDIT_ORIGINAL_SHA256SUMS.txt",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-004",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/TEMPORAL_AUDIT_ORIGINAL_SHA256SUMS.txt",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-005",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/TEMPORAL_AUDIT_README.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-005",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/TEMPORAL_AUDIT_README.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-006",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/TEMPORAL_SOURCE_MAP.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-006",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/TEMPORAL_SOURCE_MAP.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-007",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/TEMPORAL_TRANSCENDENCE_AUDIT.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-007",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/TEMPORAL_TRANSCENDENCE_AUDIT.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-008",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_An_Audited_Closure_Architecture_for_Consciousness_Exact_Finite_Models_Structural_Theorems_and_Conditional_Realization.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-008",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_An_Audited_Closure_Architecture_for_Consciousness_Exact_Finite_Models_Structural_Theorems_and_Conditional_Realization.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-009",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Glass_Is_an_Unclosed_Layer_Kovacs_Memory_as_Predictive_Quotient_Residue.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-009",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Glass_Is_an_Unclosed_Layer_Kovacs_Memory_as_Predictive_Quotient_Residue.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-010",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Holonomy_with_Memory_in_Six_Birds_Theory_Predictive_Quotients_Witnesses_and_Fixed_Support_Route_Transport.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-010",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Holonomy_with_Memory_in_Six_Birds_Theory_Predictive_Quotients_Witnesses_and_Fixed_Support_Route_Transport.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-011",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-011",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-012",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Foundations_VI_A_Catalog_of_Dynamical_Structural_Laws.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-012",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Foundations_VI_A_Catalog_of_Dynamical_Structural_Laws.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-013",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-013",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-014",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Flatten_a_Stone_with_Six_Birds_Critical_Pairs_Holonomy_and_Confluence_in_Rewriting_Systems.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-014",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Flatten_a_Stone_with_Six_Birds_Critical_Pairs_Holonomy_and_Confluence_in_Rewriting_Systems.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-015",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Lay_a_Stone_with_Six_Birds_Finite_State_Semantics_for_Packaging_Directionality_and_Coarse_Graining.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-015",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Lay_a_Stone_with_Six_Birds_Finite_State_Semantics_for_Packaging_Directionality_and_Coarse_Graining.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-016",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-016",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-FILE-017",
+      "detail": "imported surface exists: inputs/source_archives/CST_temporal_transcendence_audit.zip",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-HASH-017",
+      "detail": "imported surface hash matches: inputs/source_archives/CST_temporal_transcendence_audit.zip",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-003",
+      "detail": "nine time/holonomy/consciousness source manuscripts imported (found 9)",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-TOPIC-01",
+      "detail": "source set includes Time_as_a_Theory_Artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-TOPIC-02",
+      "detail": "source set includes Holonomy_with_Memory",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-TOPIC-03",
+      "detail": "source set includes Protocol_Trap",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-TOPIC-04",
+      "detail": "source set includes Critical_Pairs_Holonomy",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "SRC-TOPIC-05",
+      "detail": "source set includes Consciousness",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-001",
+      "detail": "Lean toolchain is pinned to v4.28.0",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-01",
+      "detail": "pyproject pins >=3.13,<3.14",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-02",
+      "detail": "pyproject pins pytest==9.0.2",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-03",
+      "detail": "pyproject pins jsonschema==4.26.0",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-04",
+      "detail": "pyproject pins setuptools==82.0.1",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-006",
+      "detail": "running Python is 3.13 (found 3.13.5)",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-LEAN-BUILD",
+      "detail": "lean/lake unavailable in execution container; external build remains required",
+      "status": "SKIP"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-001",
+      "detail": "toolchain status records pinned Lean version",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-002",
+      "detail": "toolchain status does not misreport a Lean build",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-001",
+      "detail": "fifteen Lean modules exist below CSTTT (found 15)",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-002",
+      "detail": "Lean library root exists",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-001",
+      "detail": "root imports CSTTT.Autonomy.System",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-001",
+      "detail": "module uses CSTTT namespace: CSTTT/Autonomy/System",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-001",
+      "detail": "module closes namespace: CSTTT/Autonomy/System",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-001",
+      "detail": "delimiter counts balance: CSTTT/Autonomy/System",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-002",
+      "detail": "root imports CSTTT.Core.Carrier",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-002",
+      "detail": "module uses CSTTT namespace: CSTTT/Core/Carrier",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-002",
+      "detail": "module closes namespace: CSTTT/Core/Carrier",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-002",
+      "detail": "delimiter counts balance: CSTTT/Core/Carrier",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-003",
+      "detail": "root imports CSTTT.Core.Episode",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-003",
+      "detail": "module uses CSTTT namespace: CSTTT/Core/Episode",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-003",
+      "detail": "module closes namespace: CSTTT/Core/Episode",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-003",
+      "detail": "delimiter counts balance: CSTTT/Core/Episode",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-004",
+      "detail": "root imports CSTTT.Core.Finite",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-004",
+      "detail": "module uses CSTTT namespace: CSTTT/Core/Finite",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-004",
+      "detail": "module closes namespace: CSTTT/Core/Finite",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-004",
+      "detail": "delimiter counts balance: CSTTT/Core/Finite",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-005",
+      "detail": "root imports CSTTT.Corridor.DirectSuccessor",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-005",
+      "detail": "module uses CSTTT namespace: CSTTT/Corridor/DirectSuccessor",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-005",
+      "detail": "module closes namespace: CSTTT/Corridor/DirectSuccessor",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-005",
+      "detail": "delimiter counts balance: CSTTT/Corridor/DirectSuccessor",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-006",
+      "detail": "root imports CSTTT.Corridor.TemporalCorridor",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-006",
+      "detail": "module uses CSTTT namespace: CSTTT/Corridor/TemporalCorridor",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-006",
+      "detail": "module closes namespace: CSTTT/Corridor/TemporalCorridor",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-006",
+      "detail": "delimiter counts balance: CSTTT/Corridor/TemporalCorridor",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-007",
+      "detail": "root imports CSTTT.Fallback.Ancestry",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-007",
+      "detail": "module uses CSTTT namespace: CSTTT/Fallback/Ancestry",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-007",
+      "detail": "module closes namespace: CSTTT/Fallback/Ancestry",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-007",
+      "detail": "delimiter counts balance: CSTTT/Fallback/Ancestry",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-008",
+      "detail": "root imports CSTTT.Package.Clauses",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-008",
+      "detail": "module uses CSTTT namespace: CSTTT/Package/Clauses",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-008",
+      "detail": "module closes namespace: CSTTT/Package/Clauses",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-008",
+      "detail": "delimiter counts balance: CSTTT/Package/Clauses",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-009",
+      "detail": "root imports CSTTT.Package.Gluing",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-009",
+      "detail": "module uses CSTTT namespace: CSTTT/Package/Gluing",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-009",
+      "detail": "module closes namespace: CSTTT/Package/Gluing",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-009",
+      "detail": "delimiter counts balance: CSTTT/Package/Gluing",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-010",
+      "detail": "root imports CSTTT.Prospects.Statements",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-010",
+      "detail": "module uses CSTTT namespace: CSTTT/Prospects/Statements",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-010",
+      "detail": "module closes namespace: CSTTT/Prospects/Statements",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-010",
+      "detail": "delimiter counts balance: CSTTT/Prospects/Statements",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-011",
+      "detail": "root imports CSTTT.Targets.TemporalFIACH",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-011",
+      "detail": "module uses CSTTT namespace: CSTTT/Targets/TemporalFIACH",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-011",
+      "detail": "module closes namespace: CSTTT/Targets/TemporalFIACH",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-011",
+      "detail": "delimiter counts balance: CSTTT/Targets/TemporalFIACH",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-012",
+      "detail": "root imports CSTTT.Temporal.Clock",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-012",
+      "detail": "module uses CSTTT namespace: CSTTT/Temporal/Clock",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-012",
+      "detail": "module closes namespace: CSTTT/Temporal/Clock",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-012",
+      "detail": "delimiter counts balance: CSTTT/Temporal/Clock",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-013",
+      "detail": "root imports CSTTT.Temporal.Closure",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-013",
+      "detail": "module uses CSTTT namespace: CSTTT/Temporal/Closure",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-013",
+      "detail": "module closes namespace: CSTTT/Temporal/Closure",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-013",
+      "detail": "delimiter counts balance: CSTTT/Temporal/Closure",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-014",
+      "detail": "root imports CSTTT.Temporal.Signature",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-014",
+      "detail": "module uses CSTTT namespace: CSTTT/Temporal/Signature",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-014",
+      "detail": "module closes namespace: CSTTT/Temporal/Signature",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-014",
+      "detail": "delimiter counts balance: CSTTT/Temporal/Signature",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-015",
+      "detail": "root imports CSTTT.Transport.TemporalBridge",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NAMESPACE-015",
+      "detail": "module uses CSTTT namespace: CSTTT/Transport/TemporalBridge",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-END-015",
+      "detail": "module closes namespace: CSTTT/Transport/TemporalBridge",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-BALANCE-015",
+      "detail": "delimiter counts balance: CSTTT/Transport/TemporalBridge",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-003",
+      "detail": "Lean scaffold contains no sorry/admit/axiom/unsafe placeholder",
+      "status": "PASS"
+    },
+    {
+      "category": "circularity",
+      "check_id": "LEAN-004",
+      "detail": "primitive circularity scan has no findings (found 0)",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-001",
+      "detail": "registered definition module exists: D-001",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-001",
+      "detail": "registered definition appears in source: D-001",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-002",
+      "detail": "registered definition module exists: D-002",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-002",
+      "detail": "registered definition appears in source: D-002",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-003",
+      "detail": "registered definition module exists: D-003",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-003",
+      "detail": "registered definition appears in source: D-003",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-004",
+      "detail": "registered definition module exists: D-004",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-004",
+      "detail": "registered definition appears in source: D-004",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-005",
+      "detail": "registered definition module exists: D-005",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-005",
+      "detail": "registered definition appears in source: D-005",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-006",
+      "detail": "registered definition module exists: D-006",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-006",
+      "detail": "registered definition appears in source: D-006",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-007",
+      "detail": "registered definition module exists: D-007",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-007",
+      "detail": "registered definition appears in source: D-007",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-008",
+      "detail": "registered definition module exists: D-008",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-008",
+      "detail": "registered definition appears in source: D-008",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-009",
+      "detail": "registered definition module exists: D-009",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-009",
+      "detail": "registered definition appears in source: D-009",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-010",
+      "detail": "registered definition module exists: D-010",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-010",
+      "detail": "registered definition appears in source: D-010",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-011",
+      "detail": "registered definition module exists: D-011",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-011",
+      "detail": "registered definition appears in source: D-011",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-012",
+      "detail": "registered definition module exists: D-012",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-012",
+      "detail": "registered definition appears in source: D-012",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-013",
+      "detail": "registered definition module exists: D-013",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-013",
+      "detail": "registered definition appears in source: D-013",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-014",
+      "detail": "registered definition module exists: D-014",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-014",
+      "detail": "registered definition appears in source: D-014",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-015",
+      "detail": "registered definition module exists: D-015",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-015",
+      "detail": "registered definition appears in source: D-015",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-016",
+      "detail": "registered definition module exists: D-016",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-016",
+      "detail": "registered definition appears in source: D-016",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-017",
+      "detail": "registered definition module exists: D-017",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-017",
+      "detail": "registered definition appears in source: D-017",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-018",
+      "detail": "registered definition module exists: D-018",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-018",
+      "detail": "registered definition appears in source: D-018",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-019",
+      "detail": "registered definition module exists: D-019",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-019",
+      "detail": "registered definition appears in source: D-019",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-020",
+      "detail": "registered definition module exists: D-020",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-020",
+      "detail": "registered definition appears in source: D-020",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-021",
+      "detail": "registered definition module exists: D-021",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-021",
+      "detail": "registered definition appears in source: D-021",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-022",
+      "detail": "registered definition module exists: D-022",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-022",
+      "detail": "registered definition appears in source: D-022",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-023",
+      "detail": "registered definition module exists: D-023",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-023",
+      "detail": "registered definition appears in source: D-023",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-024",
+      "detail": "registered definition module exists: D-024",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-024",
+      "detail": "registered definition appears in source: D-024",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-025",
+      "detail": "registered definition module exists: D-025",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-025",
+      "detail": "registered definition appears in source: D-025",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-026",
+      "detail": "registered definition module exists: D-026",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-026",
+      "detail": "registered definition appears in source: D-026",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-027",
+      "detail": "registered definition module exists: D-027",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-027",
+      "detail": "registered definition appears in source: D-027",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-028",
+      "detail": "registered definition module exists: D-028",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-028",
+      "detail": "registered definition appears in source: D-028",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-029",
+      "detail": "registered definition module exists: D-029",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-029",
+      "detail": "registered definition appears in source: D-029",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-030",
+      "detail": "registered definition module exists: D-030",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-030",
+      "detail": "registered definition appears in source: D-030",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-031",
+      "detail": "registered definition module exists: D-031",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-031",
+      "detail": "registered definition appears in source: D-031",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-032",
+      "detail": "registered definition module exists: D-032",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-032",
+      "detail": "registered definition appears in source: D-032",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-033",
+      "detail": "registered definition module exists: D-033",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-033",
+      "detail": "registered definition appears in source: D-033",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-034",
+      "detail": "registered definition module exists: D-034",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-034",
+      "detail": "registered definition appears in source: D-034",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-035",
+      "detail": "registered definition module exists: D-035",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-035",
+      "detail": "registered definition appears in source: D-035",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-036",
+      "detail": "registered definition module exists: D-036",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-036",
+      "detail": "registered definition appears in source: D-036",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-037",
+      "detail": "registered definition module exists: D-037",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-037",
+      "detail": "registered definition appears in source: D-037",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-038",
+      "detail": "registered definition module exists: D-038",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-038",
+      "detail": "registered definition appears in source: D-038",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-FILE-039",
+      "detail": "registered definition module exists: D-039",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DEF-NAME-039",
+      "detail": "registered definition appears in source: D-039",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-001",
+      "detail": "registered statement interface exists: TTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-002",
+      "detail": "registered statement interface exists: TTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-003",
+      "detail": "registered statement interface exists: TTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-004",
+      "detail": "registered statement interface exists: TTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-005",
+      "detail": "registered statement interface exists: TTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-006",
+      "detail": "registered statement interface exists: TTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-007",
+      "detail": "registered statement interface exists: TTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-008",
+      "detail": "registered statement interface exists: TTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-009",
+      "detail": "registered statement interface exists: TTH-09",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-010",
+      "detail": "registered statement interface exists: TTH-10",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-011",
+      "detail": "registered statement interface exists: TTN-01",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-012",
+      "detail": "registered statement interface exists: TTN-02",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-013",
+      "detail": "registered statement interface exists: TTN-03",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-014",
+      "detail": "registered statement interface exists: TTN-04",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-015",
+      "detail": "registered statement interface exists: TTN-05",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-016",
+      "detail": "registered statement interface exists: TTN-06",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-017",
+      "detail": "registered statement interface exists: TTN-07",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-018",
+      "detail": "registered statement interface exists: TTN-08",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-019",
+      "detail": "registered statement interface exists: TTN-09",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-020",
+      "detail": "registered statement interface exists: TTN-10",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-021",
+      "detail": "registered statement interface exists: TTN-11",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-022",
+      "detail": "registered statement interface exists: TTN-12",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-023",
+      "detail": "registered statement interface exists: TTN-13",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-024",
+      "detail": "registered statement interface exists: TTN-14",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-025",
+      "detail": "registered statement interface exists: TTD-01",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-026",
+      "detail": "registered statement interface exists: TTD-02",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-027",
+      "detail": "registered statement interface exists: TTD-03",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-028",
+      "detail": "registered statement interface exists: TTF-01",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-029",
+      "detail": "registered statement interface exists: TTF-02",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-030",
+      "detail": "registered statement interface exists: TTF-03",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-031",
+      "detail": "registered statement interface exists: TTF-04",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-032",
+      "detail": "registered statement interface exists: TTF-05",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-033",
+      "detail": "registered statement interface exists: TTF-06",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-034",
+      "detail": "registered statement interface exists: TTF-07",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-STMT-035",
+      "detail": "registered statement interface exists: TTF-08",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-001",
+      "detail": "CSTTT/Temporal/Clock.lean does not reverse-import CSTTT.Corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-002",
+      "detail": "CSTTT/Temporal/Clock.lean does not reverse-import CSTTT.Targets",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-003",
+      "detail": "CSTTT/Temporal/Closure.lean does not reverse-import CSTTT.Corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-004",
+      "detail": "CSTTT/Temporal/Closure.lean does not reverse-import CSTTT.Targets",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-005",
+      "detail": "CSTTT/Temporal/Signature.lean does not reverse-import CSTTT.Corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-006",
+      "detail": "CSTTT/Temporal/Signature.lean does not reverse-import CSTTT.Targets",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-007",
+      "detail": "CSTTT/Package/Clauses.lean does not reverse-import CSTTT.Corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-008",
+      "detail": "CSTTT/Package/Clauses.lean does not reverse-import CSTTT.Autonomy",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-009",
+      "detail": "CSTTT/Package/Clauses.lean does not reverse-import CSTTT.Targets",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-010",
+      "detail": "CSTTT/Package/Gluing.lean does not reverse-import CSTTT.Corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-011",
+      "detail": "CSTTT/Package/Gluing.lean does not reverse-import CSTTT.Autonomy",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-012",
+      "detail": "CSTTT/Package/Gluing.lean does not reverse-import CSTTT.Targets",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-013",
+      "detail": "CSTTT/Transport/TemporalBridge.lean does not reverse-import CSTTT.Corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-014",
+      "detail": "CSTTT/Transport/TemporalBridge.lean does not reverse-import CSTTT.Targets",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-015",
+      "detail": "CSTTT/Corridor/DirectSuccessor.lean does not reverse-import CSTTT.Targets",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-016",
+      "detail": "CSTTT/Corridor/TemporalCorridor.lean does not reverse-import CSTTT.Targets",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-017",
+      "detail": "CSTTT/Autonomy/System.lean does not reverse-import CSTTT.Corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "LEAN-LAYER-018",
+      "detail": "CSTTT/Autonomy/System.lean does not reverse-import CSTTT.Targets",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-001",
+      "detail": "Python scaffold has at least twelve modules (found 13)",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-001",
+      "detail": "Python source compiles: src/cst_tt/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-002",
+      "detail": "Python source compiles: src/cst_tt/ancestry.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-003",
+      "detail": "Python source compiles: src/cst_tt/autonomy.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-004",
+      "detail": "Python source compiles: src/cst_tt/circularity.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-005",
+      "detail": "Python source compiles: src/cst_tt/contracts.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-006",
+      "detail": "Python source compiles: src/cst_tt/corridor.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-007",
+      "detail": "Python source compiles: src/cst_tt/hashing.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-008",
+      "detail": "Python source compiles: src/cst_tt/package.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-009",
+      "detail": "Python source compiles: src/cst_tt/predicates.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-010",
+      "detail": "Python source compiles: src/cst_tt/registry.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-011",
+      "detail": "Python source compiles: src/cst_tt/targets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-012",
+      "detail": "Python source compiles: src/cst_tt/temporal.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-013",
+      "detail": "Python source compiles: src/cst_tt/types.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-TESTS",
+      "detail": "pytest suite passes",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-FILE-01",
+      "detail": "registry exists: CLAIM_LANE_REGISTRY.csv",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-COUNT-01",
+      "detail": "CLAIM_LANE_REGISTRY.csv has frozen row count 7 (found 7)",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-FILE-02",
+      "detail": "registry exists: DEFINITION_REGISTRY.csv",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-COUNT-02",
+      "detail": "DEFINITION_REGISTRY.csv has frozen row count 39 (found 39)",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-FILE-03",
+      "detail": "registry exists: THEOREM_REGISTRY.csv",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-COUNT-03",
+      "detail": "THEOREM_REGISTRY.csv has frozen row count 35 (found 35)",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-FILE-04",
+      "detail": "registry exists: TEMPORAL_AMENDMENT_MAP.csv",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-COUNT-04",
+      "detail": "TEMPORAL_AMENDMENT_MAP.csv has frozen row count 20 (found 20)",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-FILE-05",
+      "detail": "registry exists: TOY_MODEL_REGISTRY.csv",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-COUNT-05",
+      "detail": "TOY_MODEL_REGISTRY.csv has frozen row count 21 (found 21)",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-FILE-06",
+      "detail": "registry exists: CERTIFICATE_SCHEMA_REGISTRY.csv",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-COUNT-06",
+      "detail": "CERTIFICATE_SCHEMA_REGISTRY.csv has frozen row count 8 (found 8)",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-FILE-07",
+      "detail": "registry exists: ASSUMPTION_LEDGER.csv",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-COUNT-07",
+      "detail": "ASSUMPTION_LEDGER.csv has frozen row count 32 (found 32)",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-FILE-08",
+      "detail": "registry exists: KILL_CRITERIA.csv",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-COUNT-08",
+      "detail": "KILL_CRITERIA.csv has frozen row count 14 (found 14)",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-FILE-09",
+      "detail": "registry exists: DEPENDENCY_EDGES.csv",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-COUNT-09",
+      "detail": "DEPENDENCY_EDGES.csv has frozen row count 28 (found 28)",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-UNIQUE",
+      "detail": "theorem identifiers are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-STMT-UNIQUE",
+      "detail": "every theorem/no-go row has its own Lean proposition interface",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-UNIQUE",
+      "detail": "toy identifiers are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-001",
+      "detail": "theorem ID well formed: TTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-001",
+      "detail": "theorem remains open scaffold: TTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-001",
+      "detail": "theorem dependencies resolve: TTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-001",
+      "detail": "theorem toy links resolve: TTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-001",
+      "detail": "theorem has explicit claim ceiling: TTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-001",
+      "detail": "legacy provenance identifiers are well formed: TTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-002",
+      "detail": "theorem ID well formed: TTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-002",
+      "detail": "theorem remains open scaffold: TTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-002",
+      "detail": "theorem dependencies resolve: TTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-002",
+      "detail": "theorem toy links resolve: TTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-002",
+      "detail": "theorem has explicit claim ceiling: TTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-002",
+      "detail": "legacy provenance identifiers are well formed: TTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-003",
+      "detail": "theorem ID well formed: TTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-003",
+      "detail": "theorem remains open scaffold: TTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-003",
+      "detail": "theorem dependencies resolve: TTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-003",
+      "detail": "theorem toy links resolve: TTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-003",
+      "detail": "theorem has explicit claim ceiling: TTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-003",
+      "detail": "legacy provenance identifiers are well formed: TTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-004",
+      "detail": "theorem ID well formed: TTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-004",
+      "detail": "theorem remains open scaffold: TTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-004",
+      "detail": "theorem dependencies resolve: TTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-004",
+      "detail": "theorem toy links resolve: TTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-004",
+      "detail": "theorem has explicit claim ceiling: TTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-004",
+      "detail": "legacy provenance identifiers are well formed: TTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-005",
+      "detail": "theorem ID well formed: TTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-005",
+      "detail": "theorem remains open scaffold: TTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-005",
+      "detail": "theorem dependencies resolve: TTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-005",
+      "detail": "theorem toy links resolve: TTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-005",
+      "detail": "theorem has explicit claim ceiling: TTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-005",
+      "detail": "legacy provenance identifiers are well formed: TTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-006",
+      "detail": "theorem ID well formed: TTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-006",
+      "detail": "theorem remains open scaffold: TTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-006",
+      "detail": "theorem dependencies resolve: TTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-006",
+      "detail": "theorem toy links resolve: TTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-006",
+      "detail": "theorem has explicit claim ceiling: TTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-006",
+      "detail": "legacy provenance identifiers are well formed: TTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-007",
+      "detail": "theorem ID well formed: TTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-007",
+      "detail": "theorem remains open scaffold: TTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-007",
+      "detail": "theorem dependencies resolve: TTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-007",
+      "detail": "theorem toy links resolve: TTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-007",
+      "detail": "theorem has explicit claim ceiling: TTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-007",
+      "detail": "legacy provenance identifiers are well formed: TTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-008",
+      "detail": "theorem ID well formed: TTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-008",
+      "detail": "theorem remains open scaffold: TTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-008",
+      "detail": "theorem dependencies resolve: TTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-008",
+      "detail": "theorem toy links resolve: TTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-008",
+      "detail": "theorem has explicit claim ceiling: TTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-008",
+      "detail": "legacy provenance identifiers are well formed: TTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-009",
+      "detail": "theorem ID well formed: TTH-09",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-009",
+      "detail": "theorem remains open scaffold: TTH-09",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-009",
+      "detail": "theorem dependencies resolve: TTH-09",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-009",
+      "detail": "theorem toy links resolve: TTH-09",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-009",
+      "detail": "theorem has explicit claim ceiling: TTH-09",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-009",
+      "detail": "legacy provenance identifiers are well formed: TTH-09",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-010",
+      "detail": "theorem ID well formed: TTH-10",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-010",
+      "detail": "theorem remains open scaffold: TTH-10",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-010",
+      "detail": "theorem dependencies resolve: TTH-10",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-010",
+      "detail": "theorem toy links resolve: TTH-10",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-010",
+      "detail": "theorem has explicit claim ceiling: TTH-10",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-010",
+      "detail": "legacy provenance identifiers are well formed: TTH-10",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-011",
+      "detail": "theorem ID well formed: TTN-01",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-011",
+      "detail": "theorem remains open scaffold: TTN-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-011",
+      "detail": "theorem dependencies resolve: TTN-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-011",
+      "detail": "theorem toy links resolve: TTN-01",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-011",
+      "detail": "theorem has explicit claim ceiling: TTN-01",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-011",
+      "detail": "legacy provenance identifiers are well formed: TTN-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-012",
+      "detail": "theorem ID well formed: TTN-02",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-012",
+      "detail": "theorem remains open scaffold: TTN-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-012",
+      "detail": "theorem dependencies resolve: TTN-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-012",
+      "detail": "theorem toy links resolve: TTN-02",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-012",
+      "detail": "theorem has explicit claim ceiling: TTN-02",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-012",
+      "detail": "legacy provenance identifiers are well formed: TTN-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-013",
+      "detail": "theorem ID well formed: TTN-03",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-013",
+      "detail": "theorem remains open scaffold: TTN-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-013",
+      "detail": "theorem dependencies resolve: TTN-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-013",
+      "detail": "theorem toy links resolve: TTN-03",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-013",
+      "detail": "theorem has explicit claim ceiling: TTN-03",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-013",
+      "detail": "legacy provenance identifiers are well formed: TTN-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-014",
+      "detail": "theorem ID well formed: TTN-04",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-014",
+      "detail": "theorem remains open scaffold: TTN-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-014",
+      "detail": "theorem dependencies resolve: TTN-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-014",
+      "detail": "theorem toy links resolve: TTN-04",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-014",
+      "detail": "theorem has explicit claim ceiling: TTN-04",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-014",
+      "detail": "legacy provenance identifiers are well formed: TTN-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-015",
+      "detail": "theorem ID well formed: TTN-05",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-015",
+      "detail": "theorem remains open scaffold: TTN-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-015",
+      "detail": "theorem dependencies resolve: TTN-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-015",
+      "detail": "theorem toy links resolve: TTN-05",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-015",
+      "detail": "theorem has explicit claim ceiling: TTN-05",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-015",
+      "detail": "legacy provenance identifiers are well formed: TTN-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-016",
+      "detail": "theorem ID well formed: TTN-06",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-016",
+      "detail": "theorem remains open scaffold: TTN-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-016",
+      "detail": "theorem dependencies resolve: TTN-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-016",
+      "detail": "theorem toy links resolve: TTN-06",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-016",
+      "detail": "theorem has explicit claim ceiling: TTN-06",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-016",
+      "detail": "legacy provenance identifiers are well formed: TTN-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-017",
+      "detail": "theorem ID well formed: TTN-07",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-017",
+      "detail": "theorem remains open scaffold: TTN-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-017",
+      "detail": "theorem dependencies resolve: TTN-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-017",
+      "detail": "theorem toy links resolve: TTN-07",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-017",
+      "detail": "theorem has explicit claim ceiling: TTN-07",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-017",
+      "detail": "legacy provenance identifiers are well formed: TTN-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-018",
+      "detail": "theorem ID well formed: TTN-08",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-018",
+      "detail": "theorem remains open scaffold: TTN-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-018",
+      "detail": "theorem dependencies resolve: TTN-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-018",
+      "detail": "theorem toy links resolve: TTN-08",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-018",
+      "detail": "theorem has explicit claim ceiling: TTN-08",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-018",
+      "detail": "legacy provenance identifiers are well formed: TTN-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-019",
+      "detail": "theorem ID well formed: TTN-09",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-019",
+      "detail": "theorem remains open scaffold: TTN-09",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-019",
+      "detail": "theorem dependencies resolve: TTN-09",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-019",
+      "detail": "theorem toy links resolve: TTN-09",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-019",
+      "detail": "theorem has explicit claim ceiling: TTN-09",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-019",
+      "detail": "legacy provenance identifiers are well formed: TTN-09",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-020",
+      "detail": "theorem ID well formed: TTN-10",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-020",
+      "detail": "theorem remains open scaffold: TTN-10",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-020",
+      "detail": "theorem dependencies resolve: TTN-10",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-020",
+      "detail": "theorem toy links resolve: TTN-10",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-020",
+      "detail": "theorem has explicit claim ceiling: TTN-10",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-020",
+      "detail": "legacy provenance identifiers are well formed: TTN-10",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-021",
+      "detail": "theorem ID well formed: TTN-11",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-021",
+      "detail": "theorem remains open scaffold: TTN-11",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-021",
+      "detail": "theorem dependencies resolve: TTN-11",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-021",
+      "detail": "theorem toy links resolve: TTN-11",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-021",
+      "detail": "theorem has explicit claim ceiling: TTN-11",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-021",
+      "detail": "legacy provenance identifiers are well formed: TTN-11",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-022",
+      "detail": "theorem ID well formed: TTN-12",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-022",
+      "detail": "theorem remains open scaffold: TTN-12",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-022",
+      "detail": "theorem dependencies resolve: TTN-12",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-022",
+      "detail": "theorem toy links resolve: TTN-12",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-022",
+      "detail": "theorem has explicit claim ceiling: TTN-12",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-022",
+      "detail": "legacy provenance identifiers are well formed: TTN-12",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-023",
+      "detail": "theorem ID well formed: TTN-13",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-023",
+      "detail": "theorem remains open scaffold: TTN-13",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-023",
+      "detail": "theorem dependencies resolve: TTN-13",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-023",
+      "detail": "theorem toy links resolve: TTN-13",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-023",
+      "detail": "theorem has explicit claim ceiling: TTN-13",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-023",
+      "detail": "legacy provenance identifiers are well formed: TTN-13",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-024",
+      "detail": "theorem ID well formed: TTN-14",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-024",
+      "detail": "theorem remains open scaffold: TTN-14",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-024",
+      "detail": "theorem dependencies resolve: TTN-14",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-024",
+      "detail": "theorem toy links resolve: TTN-14",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-024",
+      "detail": "theorem has explicit claim ceiling: TTN-14",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-024",
+      "detail": "legacy provenance identifiers are well formed: TTN-14",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-025",
+      "detail": "theorem ID well formed: TTD-01",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-025",
+      "detail": "theorem remains open scaffold: TTD-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-025",
+      "detail": "theorem dependencies resolve: TTD-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-025",
+      "detail": "theorem toy links resolve: TTD-01",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-025",
+      "detail": "theorem has explicit claim ceiling: TTD-01",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-025",
+      "detail": "legacy provenance identifiers are well formed: TTD-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-026",
+      "detail": "theorem ID well formed: TTD-02",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-026",
+      "detail": "theorem remains open scaffold: TTD-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-026",
+      "detail": "theorem dependencies resolve: TTD-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-026",
+      "detail": "theorem toy links resolve: TTD-02",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-026",
+      "detail": "theorem has explicit claim ceiling: TTD-02",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-026",
+      "detail": "legacy provenance identifiers are well formed: TTD-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-027",
+      "detail": "theorem ID well formed: TTD-03",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-027",
+      "detail": "theorem remains open scaffold: TTD-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-027",
+      "detail": "theorem dependencies resolve: TTD-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-027",
+      "detail": "theorem toy links resolve: TTD-03",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-027",
+      "detail": "theorem has explicit claim ceiling: TTD-03",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-027",
+      "detail": "legacy provenance identifiers are well formed: TTD-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-028",
+      "detail": "theorem ID well formed: TTF-01",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-028",
+      "detail": "theorem remains open scaffold: TTF-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-028",
+      "detail": "theorem dependencies resolve: TTF-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-028",
+      "detail": "theorem toy links resolve: TTF-01",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-028",
+      "detail": "theorem has explicit claim ceiling: TTF-01",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-028",
+      "detail": "legacy provenance identifiers are well formed: TTF-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-029",
+      "detail": "theorem ID well formed: TTF-02",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-029",
+      "detail": "theorem remains open scaffold: TTF-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-029",
+      "detail": "theorem dependencies resolve: TTF-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-029",
+      "detail": "theorem toy links resolve: TTF-02",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-029",
+      "detail": "theorem has explicit claim ceiling: TTF-02",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-029",
+      "detail": "legacy provenance identifiers are well formed: TTF-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-030",
+      "detail": "theorem ID well formed: TTF-03",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-030",
+      "detail": "theorem remains open scaffold: TTF-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-030",
+      "detail": "theorem dependencies resolve: TTF-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-030",
+      "detail": "theorem toy links resolve: TTF-03",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-030",
+      "detail": "theorem has explicit claim ceiling: TTF-03",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-030",
+      "detail": "legacy provenance identifiers are well formed: TTF-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-031",
+      "detail": "theorem ID well formed: TTF-04",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-031",
+      "detail": "theorem remains open scaffold: TTF-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-031",
+      "detail": "theorem dependencies resolve: TTF-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-031",
+      "detail": "theorem toy links resolve: TTF-04",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-031",
+      "detail": "theorem has explicit claim ceiling: TTF-04",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-031",
+      "detail": "legacy provenance identifiers are well formed: TTF-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-032",
+      "detail": "theorem ID well formed: TTF-05",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-032",
+      "detail": "theorem remains open scaffold: TTF-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-032",
+      "detail": "theorem dependencies resolve: TTF-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-032",
+      "detail": "theorem toy links resolve: TTF-05",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-032",
+      "detail": "theorem has explicit claim ceiling: TTF-05",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-032",
+      "detail": "legacy provenance identifiers are well formed: TTF-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-033",
+      "detail": "theorem ID well formed: TTF-06",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-033",
+      "detail": "theorem remains open scaffold: TTF-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-033",
+      "detail": "theorem dependencies resolve: TTF-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-033",
+      "detail": "theorem toy links resolve: TTF-06",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-033",
+      "detail": "theorem has explicit claim ceiling: TTF-06",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-033",
+      "detail": "legacy provenance identifiers are well formed: TTF-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-034",
+      "detail": "theorem ID well formed: TTF-07",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-034",
+      "detail": "theorem remains open scaffold: TTF-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-034",
+      "detail": "theorem dependencies resolve: TTF-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-034",
+      "detail": "theorem toy links resolve: TTF-07",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-034",
+      "detail": "theorem has explicit claim ceiling: TTF-07",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-034",
+      "detail": "legacy provenance identifiers are well formed: TTF-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-ID-035",
+      "detail": "theorem ID well formed: TTF-08",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TH-STATUS-035",
+      "detail": "theorem remains open scaffold: TTF-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-DEPS-035",
+      "detail": "theorem dependencies resolve: TTF-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TH-TOYS-035",
+      "detail": "theorem toy links resolve: TTF-08",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-TH-CEILING-035",
+      "detail": "theorem has explicit claim ceiling: TTF-08",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-TH-LEGACY-035",
+      "detail": "legacy provenance identifiers are well formed: TTF-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-001",
+      "detail": "toy ID well formed: TTM-01",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-001",
+      "detail": "toy remains unimplemented: TTM-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-001",
+      "detail": "toy theorem links resolve: TTM-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-002",
+      "detail": "toy ID well formed: TTM-02",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-002",
+      "detail": "toy remains unimplemented: TTM-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-002",
+      "detail": "toy theorem links resolve: TTM-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-003",
+      "detail": "toy ID well formed: TTM-03",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-003",
+      "detail": "toy remains unimplemented: TTM-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-003",
+      "detail": "toy theorem links resolve: TTM-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-004",
+      "detail": "toy ID well formed: TTM-04",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-004",
+      "detail": "toy remains unimplemented: TTM-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-004",
+      "detail": "toy theorem links resolve: TTM-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-005",
+      "detail": "toy ID well formed: TTM-05",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-005",
+      "detail": "toy remains unimplemented: TTM-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-005",
+      "detail": "toy theorem links resolve: TTM-05",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-006",
+      "detail": "toy ID well formed: TTM-06",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-006",
+      "detail": "toy remains unimplemented: TTM-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-006",
+      "detail": "toy theorem links resolve: TTM-06",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-007",
+      "detail": "toy ID well formed: TTM-07",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-007",
+      "detail": "toy remains unimplemented: TTM-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-007",
+      "detail": "toy theorem links resolve: TTM-07",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-008",
+      "detail": "toy ID well formed: TTM-08",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-008",
+      "detail": "toy remains unimplemented: TTM-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-008",
+      "detail": "toy theorem links resolve: TTM-08",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-009",
+      "detail": "toy ID well formed: TTM-09",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-009",
+      "detail": "toy remains unimplemented: TTM-09",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-009",
+      "detail": "toy theorem links resolve: TTM-09",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-010",
+      "detail": "toy ID well formed: TTM-10",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-010",
+      "detail": "toy remains unimplemented: TTM-10",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-010",
+      "detail": "toy theorem links resolve: TTM-10",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-011",
+      "detail": "toy ID well formed: TTM-11",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-011",
+      "detail": "toy remains unimplemented: TTM-11",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-011",
+      "detail": "toy theorem links resolve: TTM-11",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-012",
+      "detail": "toy ID well formed: TTM-12",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-012",
+      "detail": "toy remains unimplemented: TTM-12",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-012",
+      "detail": "toy theorem links resolve: TTM-12",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-013",
+      "detail": "toy ID well formed: TTM-13",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-013",
+      "detail": "toy remains unimplemented: TTM-13",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-013",
+      "detail": "toy theorem links resolve: TTM-13",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-014",
+      "detail": "toy ID well formed: TTM-14",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-014",
+      "detail": "toy remains unimplemented: TTM-14",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-014",
+      "detail": "toy theorem links resolve: TTM-14",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-015",
+      "detail": "toy ID well formed: TTM-15",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-015",
+      "detail": "toy remains unimplemented: TTM-15",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-015",
+      "detail": "toy theorem links resolve: TTM-15",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-016",
+      "detail": "toy ID well formed: TTM-16",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-016",
+      "detail": "toy remains unimplemented: TTM-16",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-016",
+      "detail": "toy theorem links resolve: TTM-16",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-017",
+      "detail": "toy ID well formed: TTM-17",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-017",
+      "detail": "toy remains unimplemented: TTM-17",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-017",
+      "detail": "toy theorem links resolve: TTM-17",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-018",
+      "detail": "toy ID well formed: TFM-01",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-018",
+      "detail": "toy remains unimplemented: TFM-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-018",
+      "detail": "toy theorem links resolve: TFM-01",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-019",
+      "detail": "toy ID well formed: TFM-02",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-019",
+      "detail": "toy remains unimplemented: TFM-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-019",
+      "detail": "toy theorem links resolve: TFM-02",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-020",
+      "detail": "toy ID well formed: TFM-03",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-020",
+      "detail": "toy remains unimplemented: TFM-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-020",
+      "detail": "toy theorem links resolve: TFM-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-ID-021",
+      "detail": "toy ID well formed: TFM-04",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-TOY-STATUS-021",
+      "detail": "toy remains unimplemented: TFM-04",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-TOY-LINK-021",
+      "detail": "toy theorem links resolve: TFM-04",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-UNIQUE",
+      "detail": "legacy theorem identifiers occur once in the amendment map",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-COMPLETE",
+      "detail": "all twelve PTH and eight FTH provenance identifiers are mapped",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-SOURCE",
+      "detail": "the frozen CST-EXP-06 theorem family supplies the same twenty legacy IDs",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-001",
+      "detail": "temporal amendment targets resolve: PTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-001",
+      "detail": "temporal amendment row is frozen: PTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-001",
+      "detail": "temporal amendment is explicit: PTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-002",
+      "detail": "temporal amendment targets resolve: PTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-002",
+      "detail": "temporal amendment row is frozen: PTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-002",
+      "detail": "temporal amendment is explicit: PTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-003",
+      "detail": "temporal amendment targets resolve: PTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-003",
+      "detail": "temporal amendment row is frozen: PTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-003",
+      "detail": "temporal amendment is explicit: PTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-004",
+      "detail": "temporal amendment targets resolve: PTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-004",
+      "detail": "temporal amendment row is frozen: PTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-004",
+      "detail": "temporal amendment is explicit: PTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-005",
+      "detail": "temporal amendment targets resolve: PTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-005",
+      "detail": "temporal amendment row is frozen: PTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-005",
+      "detail": "temporal amendment is explicit: PTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-006",
+      "detail": "temporal amendment targets resolve: PTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-006",
+      "detail": "temporal amendment row is frozen: PTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-006",
+      "detail": "temporal amendment is explicit: PTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-007",
+      "detail": "temporal amendment targets resolve: PTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-007",
+      "detail": "temporal amendment row is frozen: PTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-007",
+      "detail": "temporal amendment is explicit: PTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-008",
+      "detail": "temporal amendment targets resolve: PTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-008",
+      "detail": "temporal amendment row is frozen: PTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-008",
+      "detail": "temporal amendment is explicit: PTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-009",
+      "detail": "temporal amendment targets resolve: PTH-09",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-009",
+      "detail": "temporal amendment row is frozen: PTH-09",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-009",
+      "detail": "temporal amendment is explicit: PTH-09",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-010",
+      "detail": "temporal amendment targets resolve: PTH-10",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-010",
+      "detail": "temporal amendment row is frozen: PTH-10",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-010",
+      "detail": "temporal amendment is explicit: PTH-10",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-011",
+      "detail": "temporal amendment targets resolve: PTH-11",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-011",
+      "detail": "temporal amendment row is frozen: PTH-11",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-011",
+      "detail": "temporal amendment is explicit: PTH-11",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-012",
+      "detail": "temporal amendment targets resolve: PTH-12",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-012",
+      "detail": "temporal amendment row is frozen: PTH-12",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-012",
+      "detail": "temporal amendment is explicit: PTH-12",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-013",
+      "detail": "temporal amendment targets resolve: FTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-013",
+      "detail": "temporal amendment row is frozen: FTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-013",
+      "detail": "temporal amendment is explicit: FTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-014",
+      "detail": "temporal amendment targets resolve: FTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-014",
+      "detail": "temporal amendment row is frozen: FTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-014",
+      "detail": "temporal amendment is explicit: FTH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-015",
+      "detail": "temporal amendment targets resolve: FTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-015",
+      "detail": "temporal amendment row is frozen: FTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-015",
+      "detail": "temporal amendment is explicit: FTH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-016",
+      "detail": "temporal amendment targets resolve: FTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-016",
+      "detail": "temporal amendment row is frozen: FTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-016",
+      "detail": "temporal amendment is explicit: FTH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-017",
+      "detail": "temporal amendment targets resolve: FTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-017",
+      "detail": "temporal amendment row is frozen: FTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-017",
+      "detail": "temporal amendment is explicit: FTH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-018",
+      "detail": "temporal amendment targets resolve: FTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-018",
+      "detail": "temporal amendment row is frozen: FTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-018",
+      "detail": "temporal amendment is explicit: FTH-06",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-019",
+      "detail": "temporal amendment targets resolve: FTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-019",
+      "detail": "temporal amendment row is frozen: FTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-019",
+      "detail": "temporal amendment is explicit: FTH-07",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TARGET-020",
+      "detail": "temporal amendment targets resolve: FTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-STATUS-020",
+      "detail": "temporal amendment row is frozen: FTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-TEXT-020",
+      "detail": "temporal amendment is explicit: FTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "REG-AMEND-CROSSWALK",
+      "detail": "the theorem registry and amendment map encode the same legacy crosswalk",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-LANES",
+      "detail": "all seven claim lanes are frozen",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-LANE-INHERIT-01",
+      "detail": "claim lane does not inherit: S-T",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-LANE-INHERIT-02",
+      "detail": "claim lane does not inherit: S-R",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-LANE-INHERIT-03",
+      "detail": "claim lane does not inherit: S-L",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-LANE-INHERIT-04",
+      "detail": "claim lane does not inherit: A",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-LANE-INHERIT-05",
+      "detail": "claim lane does not inherit: R",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-LANE-INHERIT-06",
+      "detail": "claim lane does not inherit: O",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-LANE-INHERIT-07",
+      "detail": "claim lane does not inherit: M",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-UNIQUE",
+      "detail": "definition identifiers are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-001",
+      "detail": "definition dependencies resolve: D-001",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-001",
+      "detail": "definition status frozen: D-001",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-002",
+      "detail": "definition dependencies resolve: D-002",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-002",
+      "detail": "definition status frozen: D-002",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-003",
+      "detail": "definition dependencies resolve: D-003",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-003",
+      "detail": "definition status frozen: D-003",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-004",
+      "detail": "definition dependencies resolve: D-004",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-004",
+      "detail": "definition status frozen: D-004",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-005",
+      "detail": "definition dependencies resolve: D-005",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-005",
+      "detail": "definition status frozen: D-005",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-006",
+      "detail": "definition dependencies resolve: D-006",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-006",
+      "detail": "definition status frozen: D-006",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-007",
+      "detail": "definition dependencies resolve: D-007",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-007",
+      "detail": "definition status frozen: D-007",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-008",
+      "detail": "definition dependencies resolve: D-008",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-008",
+      "detail": "definition status frozen: D-008",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-009",
+      "detail": "definition dependencies resolve: D-009",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-009",
+      "detail": "definition status frozen: D-009",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-010",
+      "detail": "definition dependencies resolve: D-010",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-010",
+      "detail": "definition status frozen: D-010",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-011",
+      "detail": "definition dependencies resolve: D-011",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-011",
+      "detail": "definition status frozen: D-011",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-012",
+      "detail": "definition dependencies resolve: D-012",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-012",
+      "detail": "definition status frozen: D-012",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-013",
+      "detail": "definition dependencies resolve: D-013",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-013",
+      "detail": "definition status frozen: D-013",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-014",
+      "detail": "definition dependencies resolve: D-014",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-014",
+      "detail": "definition status frozen: D-014",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-015",
+      "detail": "definition dependencies resolve: D-015",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-015",
+      "detail": "definition status frozen: D-015",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-016",
+      "detail": "definition dependencies resolve: D-016",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-016",
+      "detail": "definition status frozen: D-016",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-017",
+      "detail": "definition dependencies resolve: D-017",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-017",
+      "detail": "definition status frozen: D-017",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-018",
+      "detail": "definition dependencies resolve: D-018",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-018",
+      "detail": "definition status frozen: D-018",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-019",
+      "detail": "definition dependencies resolve: D-019",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-019",
+      "detail": "definition status frozen: D-019",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-020",
+      "detail": "definition dependencies resolve: D-020",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-020",
+      "detail": "definition status frozen: D-020",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-021",
+      "detail": "definition dependencies resolve: D-021",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-021",
+      "detail": "definition status frozen: D-021",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-022",
+      "detail": "definition dependencies resolve: D-022",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-022",
+      "detail": "definition status frozen: D-022",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-023",
+      "detail": "definition dependencies resolve: D-023",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-023",
+      "detail": "definition status frozen: D-023",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-024",
+      "detail": "definition dependencies resolve: D-024",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-024",
+      "detail": "definition status frozen: D-024",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-025",
+      "detail": "definition dependencies resolve: D-025",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-025",
+      "detail": "definition status frozen: D-025",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-026",
+      "detail": "definition dependencies resolve: D-026",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-026",
+      "detail": "definition status frozen: D-026",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-027",
+      "detail": "definition dependencies resolve: D-027",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-027",
+      "detail": "definition status frozen: D-027",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-028",
+      "detail": "definition dependencies resolve: D-028",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-028",
+      "detail": "definition status frozen: D-028",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-029",
+      "detail": "definition dependencies resolve: D-029",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-029",
+      "detail": "definition status frozen: D-029",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-030",
+      "detail": "definition dependencies resolve: D-030",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-030",
+      "detail": "definition status frozen: D-030",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-031",
+      "detail": "definition dependencies resolve: D-031",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-031",
+      "detail": "definition status frozen: D-031",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-032",
+      "detail": "definition dependencies resolve: D-032",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-032",
+      "detail": "definition status frozen: D-032",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-033",
+      "detail": "definition dependencies resolve: D-033",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-033",
+      "detail": "definition status frozen: D-033",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-034",
+      "detail": "definition dependencies resolve: D-034",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-034",
+      "detail": "definition status frozen: D-034",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-035",
+      "detail": "definition dependencies resolve: D-035",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-035",
+      "detail": "definition status frozen: D-035",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-036",
+      "detail": "definition dependencies resolve: D-036",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-036",
+      "detail": "definition status frozen: D-036",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-037",
+      "detail": "definition dependencies resolve: D-037",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-037",
+      "detail": "definition status frozen: D-037",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-038",
+      "detail": "definition dependencies resolve: D-038",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-038",
+      "detail": "definition status frozen: D-038",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-DEPS-039",
+      "detail": "definition dependencies resolve: D-039",
+      "status": "PASS"
+    },
+    {
+      "category": "registry",
+      "check_id": "REG-DEF-STATUS-039",
+      "detail": "definition status frozen: D-039",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-ASSUME-01",
+      "detail": "separately priced assumption present: H-FELT-TIME",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-ASSUME-02",
+      "detail": "separately priced assumption present: H-CONT-TIME",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-ASSUME-03",
+      "detail": "separately priced assumption present: A1",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-ASSUME-04",
+      "detail": "separately priced assumption present: A2-P",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-ASSUME-05",
+      "detail": "separately priced assumption present: H-CERT-SOUND",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-ASSUME-06",
+      "detail": "separately priced assumption present: H-RECOGNITION",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-ASSUME-07",
+      "detail": "separately priced assumption present: H-PERSONAL-IDENTITY",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-ASSUME-TIME-1",
+      "detail": "H-FELT-TIME is interpretive",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-ASSUME-TIME-2",
+      "detail": "H-CONT-TIME is interpretive",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-001",
+      "detail": "kill criterion armed: K-FIACH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-002",
+      "detail": "kill criterion armed: K-FIACH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-003",
+      "detail": "kill criterion armed: K-FIACH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-004",
+      "detail": "kill criterion armed: K-FIACH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-005",
+      "detail": "kill criterion armed: K-FIACH-05",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-006",
+      "detail": "kill criterion armed: K-PKG-01",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-007",
+      "detail": "kill criterion armed: K-PKG-02",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-008",
+      "detail": "kill criterion armed: K-AUTO-01",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-009",
+      "detail": "kill criterion armed: K-AUTO-02",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-010",
+      "detail": "kill criterion armed: K-DIRECT-01",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-011",
+      "detail": "kill criterion armed: K-IAPS-01",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-012",
+      "detail": "kill criterion armed: K-IAPS-02",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-013",
+      "detail": "kill criterion armed: K-IAPS-03",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-policy",
+      "check_id": "REG-KILL-014",
+      "detail": "kill criterion armed: K-ONTO-01",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REG-PROJECT-1",
+      "detail": "project registry records zero landed scientific results",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "REG-PROJECT-2",
+      "detail": "project claim ceiling is structural precursor only",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-FILE-01",
+      "detail": "schema exists: CS-01",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-EXAMPLE-01",
+      "detail": "scaffold example exists: CS-01",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-VALID-01",
+      "detail": "JSON Schema is Draft 2020-12 valid: CS-01",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-DATA-01",
+      "detail": "scaffold example validates: CS-01",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "SCHEMA-NO-CERT-01",
+      "detail": "example makes no landed claim: CS-01",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-FILE-02",
+      "detail": "schema exists: CS-02",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-EXAMPLE-02",
+      "detail": "scaffold example exists: CS-02",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-VALID-02",
+      "detail": "JSON Schema is Draft 2020-12 valid: CS-02",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-DATA-02",
+      "detail": "scaffold example validates: CS-02",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "SCHEMA-NO-CERT-02",
+      "detail": "example makes no landed claim: CS-02",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-FILE-03",
+      "detail": "schema exists: CS-03",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-EXAMPLE-03",
+      "detail": "scaffold example exists: CS-03",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-VALID-03",
+      "detail": "JSON Schema is Draft 2020-12 valid: CS-03",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-DATA-03",
+      "detail": "scaffold example validates: CS-03",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "SCHEMA-NO-CERT-03",
+      "detail": "example makes no landed claim: CS-03",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-FILE-04",
+      "detail": "schema exists: CS-04",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-EXAMPLE-04",
+      "detail": "scaffold example exists: CS-04",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-VALID-04",
+      "detail": "JSON Schema is Draft 2020-12 valid: CS-04",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-DATA-04",
+      "detail": "scaffold example validates: CS-04",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "SCHEMA-NO-CERT-04",
+      "detail": "example makes no landed claim: CS-04",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-FILE-05",
+      "detail": "schema exists: CS-05",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-EXAMPLE-05",
+      "detail": "scaffold example exists: CS-05",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-VALID-05",
+      "detail": "JSON Schema is Draft 2020-12 valid: CS-05",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-DATA-05",
+      "detail": "scaffold example validates: CS-05",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "SCHEMA-NO-CERT-05",
+      "detail": "example makes no landed claim: CS-05",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-FILE-06",
+      "detail": "schema exists: CS-06",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-EXAMPLE-06",
+      "detail": "scaffold example exists: CS-06",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-VALID-06",
+      "detail": "JSON Schema is Draft 2020-12 valid: CS-06",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-DATA-06",
+      "detail": "scaffold example validates: CS-06",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "SCHEMA-NO-CERT-06",
+      "detail": "example makes no landed claim: CS-06",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-FILE-07",
+      "detail": "schema exists: CS-07",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-EXAMPLE-07",
+      "detail": "scaffold example exists: CS-07",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-VALID-07",
+      "detail": "JSON Schema is Draft 2020-12 valid: CS-07",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-DATA-07",
+      "detail": "scaffold example validates: CS-07",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "SCHEMA-NO-CERT-07",
+      "detail": "example makes no landed claim: CS-07",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-FILE-08",
+      "detail": "schema exists: CS-08",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-EXAMPLE-08",
+      "detail": "scaffold example exists: CS-08",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-VALID-08",
+      "detail": "JSON Schema is Draft 2020-12 valid: CS-08",
+      "status": "PASS"
+    },
+    {
+      "category": "schema",
+      "check_id": "SCHEMA-DATA-08",
+      "detail": "scaffold example validates: CS-08",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "SCHEMA-NO-CERT-08",
+      "detail": "example makes no landed claim: CS-08",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "SCHEMA-AGG-1",
+      "detail": "aggregate certificate has structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "SCHEMA-AGG-2",
+      "detail": "aggregate scaffold does not prefill route status",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "SCHEMA-AUTO-1",
+      "detail": "autonomy scaffold does not preclaim withdrawal success",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-01",
+      "detail": "documentation exists: TARGET_FREEZE.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-002",
+      "detail": "TARGET_FREEZE.md contains required boundary: TemporalFIACH_e",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-003",
+      "detail": "TARGET_FREEZE.md contains required boundary: TemporalSignature",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-004",
+      "detail": "TARGET_FREEZE.md contains required boundary: DirectSuccessorCertificate",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-005",
+      "detail": "TARGET_FREEZE.md contains required boundary: H-FELT-TIME",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-006",
+      "detail": "TARGET_FREEZE.md contains required boundary: H-CONT-TIME",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-07",
+      "detail": "documentation exists: FORMALIZATION_CONTRACT.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-008",
+      "detail": "FORMALIZATION_CONTRACT.md contains required boundary: Python is intended to enumerate",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-009",
+      "detail": "FORMALIZATION_CONTRACT.md contains required boundary: Python enumeration is never a proof oracle",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-010",
+      "detail": "FORMALIZATION_CONTRACT.md contains required boundary: Temporal",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-011",
+      "detail": "FORMALIZATION_CONTRACT.md contains required boundary: Corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-012",
+      "detail": "FORMALIZATION_CONTRACT.md contains required boundary: Targets",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-13",
+      "detail": "documentation exists: THEOREM_AND_TOY_REGISTRY.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-014",
+      "detail": "THEOREM_AND_TOY_REGISTRY.md contains required boundary: open-scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-015",
+      "detail": "THEOREM_AND_TOY_REGISTRY.md contains required boundary: specified-not-implemented",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-16",
+      "detail": "documentation exists: TEMPORAL_AMENDMENT_MAP.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-017",
+      "detail": "TEMPORAL_AMENDMENT_MAP.md contains required boundary: PTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-018",
+      "detail": "TEMPORAL_AMENDMENT_MAP.md contains required boundary: PTH-12",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-019",
+      "detail": "TEMPORAL_AMENDMENT_MAP.md contains required boundary: FTH-01",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-020",
+      "detail": "TEMPORAL_AMENDMENT_MAP.md contains required boundary: FTH-08",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-021",
+      "detail": "TEMPORAL_AMENDMENT_MAP.md contains required boundary: split",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-22",
+      "detail": "documentation exists: ASSUMPTION_AND_CLAIM_CEILING.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-023",
+      "detail": "ASSUMPTION_AND_CLAIM_CEILING.md contains required boundary: H-FELT-TIME",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-024",
+      "detail": "ASSUMPTION_AND_CLAIM_CEILING.md contains required boundary: H-CONT-TIME",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-025",
+      "detail": "ASSUMPTION_AND_CLAIM_CEILING.md contains required boundary: H-PERSONAL-IDENTITY",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-26",
+      "detail": "documentation exists: CIRCULARITY_AND_TYPING_POLICY.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-027",
+      "detail": "CIRCULARITY_AND_TYPING_POLICY.md contains required boundary: Holonomy is not an endogenous arrow",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-028",
+      "detail": "CIRCULARITY_AND_TYPING_POLICY.md contains required boundary: Direct successor is not silently identified",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-29",
+      "detail": "documentation exists: PHASE_BOUNDARY.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-030",
+      "detail": "PHASE_BOUNDARY.md contains required boundary: no proved scientific theorem",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-031",
+      "detail": "PHASE_BOUNDARY.md contains required boundary: no positive Temporal-FIACH or IAPS witness",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-32",
+      "detail": "documentation exists: RESTORE_AND_BUILD.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-033",
+      "detail": "RESTORE_AND_BUILD.md contains required boundary: lake build",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-034",
+      "detail": "RESTORE_AND_BUILD.md contains required boundary: validate_tt00.py",
+      "status": "PASS"
+    },
+    {
+      "category": "typing",
+      "check_id": "DOC-TARGET-1",
+      "detail": "target freeze presents signature before corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "DOC-TARGET-2",
+      "detail": "target freeze states identity nonclaims",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-ROOT-RESTORE-1",
+      "detail": "root restore-and-verify instructions exist",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-ROOT-RESTORE-2",
+      "detail": "root restore instructions name the phase tag and external Lean build",
+      "status": "PASS"
+    },
+    {
+      "category": "reproducibility",
+      "check_id": "REPRO-001",
+      "detail": "fixed reproducibility policy exists",
+      "status": "PASS"
+    },
+    {
+      "category": "reproducibility",
+      "check_id": "REPRO-002",
+      "detail": "canonical enumeration seed is zero",
+      "status": "PASS"
+    },
+    {
+      "category": "reproducibility",
+      "check_id": "REPRO-003",
+      "detail": "Python hash seed is frozen to zero",
+      "status": "PASS"
+    },
+    {
+      "category": "reproducibility",
+      "check_id": "REPRO-004",
+      "detail": "randomized search is disabled in phase zero",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "REPRO-005",
+      "detail": "reproducibility policy records no generated scientific result",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "NORES-DIR-01",
+      "detail": "no landed-result directory exists: results",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "NORES-DIR-02",
+      "detail": "no landed-result directory exists: certificates/landed",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "NORES-DIR-03",
+      "detail": "no landed-result directory exists: toys/generated",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "NORES-LEAN",
+      "detail": "Lean compilation is not misreported",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "NORES-TOKEN-01",
+      "detail": "no landed-result token appears in registries: proved-scientific",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "NORES-TOKEN-02",
+      "detail": "no landed-result token appears in registries: checked-finite-countermodel,",
+      "status": "PASS"
+    },
+    {
+      "category": "no-results",
+      "check_id": "NORES-TOKEN-03",
+      "detail": "no landed-result token appears in registries: positive-witness-landed",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

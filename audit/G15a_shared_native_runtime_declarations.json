@@ -1,0 +1,3624 @@
+{
+  "schema": "csttt-reviewed-native-runtime-port-v1",
+  "original_source_sha256": "61b2c51aa6ef4565d30535fd13cf582a4f73ef8c521730e4a38060dc70f5ec8e",
+  "declarations": [
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeObservedFutureRulesPrototype.mass",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/FutureMass.lean",
+      "line": 9,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 9
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeObservedFutureRulesPrototype.weighted_fold_constant",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/FutureMass.lean",
+      "line": 17,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 17
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeObservedFutureRulesPrototype.foldr_no_emissions",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/FutureMass.lean",
+      "line": 24,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 24
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeObservedFutureRulesPrototype.constant_observation_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/FutureMass.lean",
+      "line": 30,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 30
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeObservedFutureRulesPrototype.constant_observation_all_initial",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/FutureMass.lean",
+      "line": 50,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 50
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.Kernel",
+      "kind": "abbrev",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 8,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 64
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.kernelStates",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 9,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 65
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.embed",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 10,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 66
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.outside",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 11,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 67
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.code",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 12,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 68
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.diagonalWeight",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 14,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 70
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.rows",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 16,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 72
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.input",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 22,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 78
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.selected_rows",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 26,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 82
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.exitBlock",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 30,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 86
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.destination",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 31,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 87
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.profile",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 32,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 88
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.kernel_mem",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 37,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 93
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.rows_positive_normalized",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 40,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 96
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.first_equation",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 46,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 102
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.step_equation",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 50,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 106
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.second_equation",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 54,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 110
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.profile_trajectory",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 58,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 114
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.profile_stable_forever",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 65,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 121
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.code_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 73,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 129
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.exitMass",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 79,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 135
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.probe_exit_mass",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 85,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 141
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.full_exit_future_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 90,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 146
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.stable_partition_full_exit_future",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 102,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 158
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.old_prediction_constant",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 109,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 165
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.old_linked_terminal_rejected",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 115,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 171
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.branchObserve",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 124,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 180
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.jointObserve",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 126,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 182
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.outputMass",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 129,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 185
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.outside_branch_future_equal",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 137,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 193
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.branch_all_future_equal",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 151,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 207
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.actual_joint_strict",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 190,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 246
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.branchwiseEquivalent",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 195,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 251
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.jointEquivalent",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 199,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 255
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.binding_split",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 203,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 259
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.current",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 215,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 271
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.current_input_equation",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 221,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 277
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.actual_current_constant",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 229,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 285
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.all_joint_decoders_constant",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 233,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 289
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.actual_maintenance_connector",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 238,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 294
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.P",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 249,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 305
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.classes",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 252,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 308
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.fiber",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 253,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 309
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.C",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 255,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 311
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.U",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 256,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 312
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.CU",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 258,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 314
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.computed_CU_identity",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 261,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 317
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.epsilon",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 267,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 323
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.perturbed",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 268,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 324
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.closure",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 270,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 326
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.operationsZero",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 274,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 330
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.operationsZeroSquared",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 291,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 347
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.operationsPerturbed",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 308,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 364
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.operationsPerturbedSquared",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 325,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 381
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.operations",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 342,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 398
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.candidate",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 345,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 401
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.expected",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 347,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 403
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.verifiedMatrix",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 352,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 408
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.closure_equation",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 355,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 411
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.all_four_verifiers_pass",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 364,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 420
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.candidate_equation",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 370,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 426
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.all_four_probability_fixed_unique",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 378,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 434
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.all_four_nonuniform",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 386,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 442
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.forward",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 396,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 452
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.reverse",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 398,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 454
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.actual_cycle_directionality",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 400,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 456
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.viabilitySchema",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 407,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 463
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.viabilityData",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 411,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 467
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.viability_domain",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 414,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 470
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.kernel_viable",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 418,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 474
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.greatest_kernel_contains",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 423,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 479
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.actual_viability",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 427,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 483
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.unfunded",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 438,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 494
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.unfunded_greatest_empty",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 440,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 496
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flatRows",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 446,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 502
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flatten",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 449,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 505
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_rows_positive_normalized",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 452,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 508
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_outside_future_equal",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 458,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 514
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_joint_all_future_equal",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 473,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 529
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_joint_no_strict_pair",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 490,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 546
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_cycle_collapses",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 495,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 551
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.outside_flat_mass_matches",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 498,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 554
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_branch_preserves_all_future",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 513,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 569
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.expose",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 551,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 607
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.exposed_current_nonconstant",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 552,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 608
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.CurrentPrivacy",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 557,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 613
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.privacyBit",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 558,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 614
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.bindingBit",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 561,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 617
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.directionBit",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 564,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 620
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.actual_privacy_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 568,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 624
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.actual_binding_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 571,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 627
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_actual_binding_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 575,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 631
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.actual_direction_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 578,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 634
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_actual_direction_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 581,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 637
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.exposed_actual_privacy_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 585,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 641
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.selected",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 591,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 647
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.readout",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 593,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 649
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.readout_some_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 596,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 652
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.readout_none_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 601,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 657
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.same_native_row_return",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 608,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 664
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.stationaryTV",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 623,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 679
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.perturbation_TV_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 627,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 683
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.idempotenceDefect",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 632,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 688
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.expectedDefect",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 637,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 693
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.all_four_idempotence_defects",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 641,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 697
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.maintained_core_retention",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 646,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 702
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.selected_copied_source",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 651,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 707
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.copied_source_readout_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 656,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 712
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.assignment",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 661,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 717
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flatAssignment",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 662,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 718
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.exposedAssignment",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 664,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 720
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.concrete_positive_readouts",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 667,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 723
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.concrete_flat_readouts",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 675,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 731
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.concrete_exposed_readouts",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 683,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 739
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.factorCurrent",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 690,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 746
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.factor_current_constant",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 694,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 750
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.output_mass_native_rule",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 699,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 755
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.full_public_history_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 711,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 767
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.full_public_history_all_initial",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 723,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 779
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.pairedObserve",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 737,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 793
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.paired_observe_inside",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 740,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 796
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.paired_observe_outside",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 743,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 799
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.pairedEquivalent",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 745,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 801
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.actual_paired_strict",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 749,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 805
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.paired_binding_split",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 754,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 810
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_paired_all_future_equal",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 763,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 819
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_paired_no_strict_pair",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 780,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 836
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.pairedBindingBit",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 785,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 841
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.actual_paired_binding_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 789,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 845
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.flat_actual_paired_binding_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 794,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 850
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.paired_readout_true_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 798,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 854
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.paired_readout_false_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 808,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 864
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.concrete_paired_readouts",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 818,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 874
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.CoupledNativeKernelPrototype.same_native_paired_return",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "line": 827,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 883
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.Carrier",
+      "kind": "structure",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 11,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 907
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.initial",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 19,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 915
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.funded",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 22,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 918
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.advance",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 25,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 921
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.liftedRows",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 33,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 929
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.supported",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 37,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 933
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.step",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 40,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 936
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.step_some_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 43,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 939
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.wrong_owner_step_rejected",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 56,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 952
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.underbudget_step_rejected",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 60,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 956
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.unsupported_step_rejected",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 65,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 961
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.actual_funded",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 77,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 973
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.advance_factor",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 81,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 977
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.advance_owner",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 83,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 979
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.advance_record",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 85,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 981
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.actual_advance_counter",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 87,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 983
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.actual_advance_budget",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 89,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 985
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.actual_lifted_rows",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 93,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 989
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.actual_lifted_total",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 99,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 995
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.actual_lifted_projection",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 105,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1001
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.maintenanceStep",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 113,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1009
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.maintain",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 117,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1013
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.nativeNext",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 123,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1019
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.nativeFirstWeight",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 124,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1020
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.native_head",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 126,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1022
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.native_first_supported",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 130,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1026
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.actual_maintenance_step",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 134,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1030
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.after",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 145,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1041
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.after_owner",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 149,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1045
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.after_budget",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 155,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1051
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.after_counter",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 161,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1057
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.after_record_length",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 167,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1063
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.actual_maintain_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 173,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1069
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.native_next_inside",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 182,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1078
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.after_inside",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 185,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1081
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.unbounded_funded_carrier",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 191,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1087
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.liftedMass",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 202,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1098
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.lifted_future_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 206,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1102
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.ownArrow",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 226,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1122
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.ClockClosed",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 229,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1125
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.actual_clock_closed",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 238,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1134
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.flat_own_arrow_false",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 247,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1143
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.flat_clock_false",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 252,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1148
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.zeroTicks",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 255,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1151
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.zero_tick_clock_false",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 258,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1154
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.clockBit",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 264,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1160
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.actual_clock_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 268,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1164
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.flat_clock_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 271,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1167
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.zero_tick_clock_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 274,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1170
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.clock_readout_true_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 278,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1174
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.clock_readout_false_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 285,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1181
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.concrete_clock_readouts",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 292,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1188
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.after_add",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 300,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1196
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.after_succ",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 306,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1202
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.coherent_unbounded_run",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 312,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1208
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.distinct_carrier_ticks",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 325,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1221
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.flat_head",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 333,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1229
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.flat_first_supported",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 337,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1233
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.flat_advance_same",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 341,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1237
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.flat_maintenance_step",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 344,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1240
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.flat_maintain_same",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 359,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1255
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.ticks_do_not_supply_own_arrow",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 369,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1265
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.unfunded_maintenance_step",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 378,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1274
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.unfunded_advance_budget",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 393,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1289
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.unfunded_zero_budget_step",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 397,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1293
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.unfunded_two_steps_reject",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 407,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1303
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.unfunded_clock_false",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 416,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1312
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.unfunded_clock_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 422,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1318
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.absentRows",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 426,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1322
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.absent_maintenance_rejected",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 429,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1325
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.absent_one_step_rejected",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 432,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1328
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.absent_clock_false",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 435,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1331
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.absent_clock_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 441,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1337
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.publicTuple",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 446,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1342
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.publicHistory",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 449,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1345
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.public_history_length",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 453,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1349
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.next_public_tuple",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 459,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1355
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.lifted_public_history_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 466,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1362
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.lifted_public_history_equal",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 497,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1393
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.lifted_branch_all_future",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 508,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1404
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.lifted_paired_strict",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 516,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1412
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.same_native_carrier_return",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 525,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1421
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.every_accepted_native_step",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 539,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1435
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.every_safe_native_outcome_inside",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 549,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1445
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.zero_advance_counter",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 554,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1450
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.zero_maintenance_step",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 557,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1453
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.zero_advance_budget",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 572,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1468
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.funded_movement_without_tick",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 576,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1472
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.zero_tick_not_funded_clock",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 592,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1488
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.zeroTickAssignment",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 599,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1495
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.concrete_zero_tick_readouts",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 602,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1498
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.native_public_history_all_ticks",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 609,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1505
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.native_public_all_carrier_states",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 617,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1513
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.public_clock_exposure_separates_ticks",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 627,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1523
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.Maintained",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 641,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1537
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.initial_maintained",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 644,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1540
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.every_maintenance_edge_preserves_carrier",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 647,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1543
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.maintained_carrier_has_actual_successor",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 662,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1558
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_funded",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 679,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1575
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_preserved",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 684,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1580
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_lifted_rows",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 689,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1585
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_lifted_total",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 695,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1591
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_lifted_projection",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 701,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1597
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_maintenance_step",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 708,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1604
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_after",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 719,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1615
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_maintain_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 727,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1623
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_coherent_run",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 737,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1633
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_future_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 751,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1647
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_native_public_history",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 771,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1667
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_native_public_all",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 779,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1675
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.budgetHistory",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 787,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1683
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_next_public_tuple",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 791,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1687
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_public_history_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 798,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1694
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_public_history_equal",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 830,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1726
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.PositiveMaintained",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 841,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1737
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.all_positive_maintenance_edges",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 844,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1740
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.every_funded_native_step",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 860,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1756
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeCarrierClockPrototype.positive_budget_unbounded_return",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "line": 870,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1766
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.Credit",
+      "kind": "inductive",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 9,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1783
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.classify",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 14,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1788
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.dual_asymmetry_rejected",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 18,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1792
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.nativeCredit",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 24,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1798
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.native_missing_issuer",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 29,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1803
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.native_credit_self_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 32,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1806
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.native_credit_other_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 42,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1816
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.native_credit_neutral_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 53,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1827
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.native_credit_none_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 61,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1835
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.actual_native_self_credit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 69,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1843
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.actual_native_other_credit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 73,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1847
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.flat_native_neutral_credit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 78,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1852
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.Tri",
+      "kind": "inductive",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 82,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1856
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.triStates",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 85,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1859
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.LiftState",
+      "kind": "abbrev",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 86,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1860
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.liftStates",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 87,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1861
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.phaseKernel",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 91,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1865
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.clockChannel",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 100,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1874
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.contentChannel",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 101,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1875
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.liftP",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 103,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1877
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.phase_kernel_symmetric",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 106,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1880
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.clock_channel_symmetric",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 110,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1884
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.content_channel_symmetric",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 113,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1887
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.lifted_decomposition",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 121,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1895
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.lifted_symmetric",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 124,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1898
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.bias",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 128,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1902
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.actual_bias",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 129,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1903
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.source_lift_normalized",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 132,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1906
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.source_lift_nonnegative",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 135,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1909
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.native_lift_normalized",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 139,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1913
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.native_lift_nonnegative",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 143,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1917
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.edgeProduct",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 151,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1925
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.reversedEdges",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 154,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1928
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.edge_product_append",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 157,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1931
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.edge_product_reverse",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 163,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1937
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.symmetric_all_path_products",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 169,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1943
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.internalized_all_path_products",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 180,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1954
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.internalizedCredit",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 189,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1963
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.internalized_credit_neutral_all_paths",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 194,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1968
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.liftedCycle",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 199,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1973
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.source_lift_cycle_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 201,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1975
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.native_lift_cycle_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 206,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1980
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.scheduledP",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 211,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1985
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.scheduleCycle",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 213,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1987
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.scheduledCredit",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 216,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1990
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.source_scheduled_cycle_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 220,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1994
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.native_scheduled_cycle_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 224,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 1998
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.AuthoredClock",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 230,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2004
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authoredClockBit",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 232,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2006
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_clock_actual",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 236,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2010
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_clock_issuer_control",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 239,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2013
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_clock_missing_control",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 248,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2022
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_clock_actual_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 252,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2026
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_clock_other_bit",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 256,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2030
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authoredReadout",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 262,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2036
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_readout_true_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 266,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2040
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_readout_false_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 276,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2050
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_readout_none_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 286,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2060
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_copied_source_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 291,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2065
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.native_authored_audit_panel",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 299,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2073
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_positive_budget_return",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 307,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2081
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_other_readout_control",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 320,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2094
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.authored_missing_readout_control",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "line": 326,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2100
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.Coordinate",
+      "kind": "structure",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 9,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2111
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinate",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 16,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2118
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.representative",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 18,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2120
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinateAdvance",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 20,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2122
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinateFunded",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 22,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2124
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinateRows",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 23,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2125
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinate_representative",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 28,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2130
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinate_advance_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 30,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2132
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinate_funded_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 33,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2135
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinate_rows_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 36,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2138
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinate_mass_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 46,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2148
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinate_equality_future",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 60,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2162
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.coordinate_eq_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 67,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2169
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.probeCoordinate",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 72,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2174
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.actual_probe_row",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 74,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2176
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.actual_coordinate_probe_row",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 79,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2181
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.actual_probe_mass",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 85,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2187
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.probe_coordinate_injective",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 95,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2197
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.selfLens",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 116,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2218
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.firstProfile",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 117,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2219
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.first_profile_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 120,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2222
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.fullFutureEquivalent",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 135,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2237
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.full_runtime_future_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 140,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2242
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.predictive_profile_full_future",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 156,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2258
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.secondProfile",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 165,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2267
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.recursive_profile_stable",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 172,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2274
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.ProfileTree",
+      "kind": "inductive",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 186,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2288
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.treeProfile",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 191,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2293
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.treeProbeRows",
+      "kind": "def",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 199,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2301
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.tree_profile_probe_rows",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 203,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2305
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.tree_coordinate_dependence",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 207,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2309
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.tree_terminal_exact",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 217,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2319
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.runtime_profile_stable_forever",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 233,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2335
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.stored_record_quotient",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 242,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2344
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeRuntimeCoordinatePrototype.different_clock_is_predictively_different",
+      "kind": "theorem",
+      "row_id": "TTF-05",
+      "public_path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "line": 249,
+      "statement_class": "b",
+      "port_class": "a",
+      "original_line": 2351
+    }
+  ],
+  "ports": [
+    {
+      "path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/FutureMass.lean",
+      "source": "NativeRuntimeCoordinateCandidate.lean",
+      "original_start_line": 1,
+      "original_end_line": 58,
+      "public_prefix_lines": 0,
+      "original_body_sha256": "895d65fcb2dbc954f9292cf0282af825ae440471b8a5c48d58180c6004b52dc9",
+      "public_sha256": "0beae653f5c24d82a40cd7080a268eac6e96a38d73e7957b5ffd3d89af7e2c92",
+      "body_byte_exact": false,
+      "body_equal_modulo_disclosed_whitespace": true,
+      "formatting_class": "a",
+      "formatting_change": "Remove only surplus blank EOF lines; namespace contents and declaration lines unchanged.",
+      "public_body_sha256": "0beae653f5c24d82a40cd7080a268eac6e96a38d73e7957b5ffd3d89af7e2c92"
+    },
+    {
+      "path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CoupledKernel.lean",
+      "source": "NativeRuntimeCoordinateCandidate.lean",
+      "original_start_line": 59,
+      "original_end_line": 898,
+      "public_prefix_lines": 2,
+      "original_body_sha256": "62904c78f4559ef3cf3631d00de46e8fac1e78ca4bdd4255924a6d020fccb03c",
+      "public_sha256": "298c86da6ecdf3c7439295b9f87ac453adf0fbe0cc0264e922ffd86e48fd10ef",
+      "body_byte_exact": false,
+      "body_equal_modulo_disclosed_whitespace": true,
+      "formatting_class": "a",
+      "formatting_change": "Remove only surplus blank EOF lines; namespace contents and declaration lines unchanged.",
+      "public_body_sha256": "94d7242dbf80e65c71927fb3344f5b847790d53668bf8a4e7f0f9e61631d03e7"
+    },
+    {
+      "path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/CarrierClock.lean",
+      "source": "NativeRuntimeCoordinateCandidate.lean",
+      "original_start_line": 899,
+      "original_end_line": 1776,
+      "public_prefix_lines": 2,
+      "original_body_sha256": "78118fd79ef0fbaeb93114a71bdde6e9932fd0f09080e11f340dc033b65c4ab7",
+      "public_sha256": "d11c6b838008dec6a11e0277970cb4ae92b395a2b50de0b17c0627dccbbbdc78",
+      "body_byte_exact": false,
+      "body_equal_modulo_disclosed_whitespace": true,
+      "formatting_class": "a",
+      "formatting_change": "Remove only surplus blank EOF lines; namespace contents and declaration lines unchanged.",
+      "public_body_sha256": "48d69e38930c1833604e51efb67f024652cbb9e49d11a2e1a27670d6e8949876"
+    },
+    {
+      "path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/GeneratorCredit.lean",
+      "source": "NativeRuntimeCoordinateCandidate.lean",
+      "original_start_line": 1777,
+      "original_end_line": 2104,
+      "public_prefix_lines": 2,
+      "original_body_sha256": "21d49445cc92d618e351830616bd460fc935362a2453a7850fc42666a645b281",
+      "public_sha256": "2f7d9ae3bdee7c9fcd9529bef561f78c967ca1bed65f57a403fc2c44b01469e9",
+      "body_byte_exact": false,
+      "body_equal_modulo_disclosed_whitespace": true,
+      "formatting_class": "a",
+      "formatting_change": "Remove only surplus blank EOF lines; namespace contents and declaration lines unchanged.",
+      "public_body_sha256": "a20e4ec87240b05c82e14ec35db191c4855131968b964ea9505c20006362d5ed"
+    },
+    {
+      "path": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/RuntimeCoordinate.lean",
+      "source": "NativeRuntimeCoordinateCandidate.lean",
+      "original_start_line": 2105,
+      "original_end_line": 2360,
+      "public_prefix_lines": 2,
+      "original_body_sha256": "bf9ccdaa766e0b63bd72f1bbca58bad2b464e86dc46746f40f4afc6e0e691697",
+      "public_sha256": "82c9dbf0e59360288bdea956c59ddbb0e41628b012e958d07c05373c842b8822",
+      "body_byte_exact": true
+    }
+  ]
+}

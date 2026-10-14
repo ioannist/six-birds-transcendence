@@ -1,0 +1,73 @@
+{
+  "audit": {
+    "aggregate_valid": false,
+    "autonomy_lane": true,
+    "autonomy_package_contract_linked": true,
+    "autonomy_valid": true,
+    "certificate_id": "FIACH-C05",
+    "component_hashes_valid": true,
+    "component_statuses": {
+      "A": true,
+      "S-L": false,
+      "S-R": true,
+      "S-T": true
+    },
+    "corridor_autonomy_handoff_linked": true,
+    "corridor_package_temporal_frontier_linked": true,
+    "corridor_valid": false,
+    "failed_obligations": [
+      "FIACH-O05-strict-temporal-lineage"
+    ],
+    "ontology_absent": true,
+    "recognition_separate": true,
+    "route_status_linked": true,
+    "source_endpoints_linked": true,
+    "source_package_valid": true,
+    "source_target_distinct": true,
+    "staged_models_linked": true,
+    "staged_preservation_valid": true,
+    "structural_lineage_lane": false,
+    "structural_realization_lane": true,
+    "structural_transport_lane": true,
+    "target_endpoints_linked": true,
+    "target_package_valid": true
+  },
+  "checker": {
+    "checked_at_phase": "CST-TT-05",
+    "function": "audit_temporal_fiach",
+    "module": "cst_tt.fiach",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "lane-conjunction and independence boundary only",
+  "component_refs": {
+    "autonomy": "formal/certificates/autonomy/AUT-POS-01.certificate.json",
+    "corridor": "formal/certificates/corridors/controls/COR-C01.certificate.json",
+    "source_package": "formal/certificates/packages/PKG-POS-03-FIACH-SOURCE.certificate.json",
+    "staged_assembly": "formal/certificates/packages/STG-POS-02-FIACH.certificate.json",
+    "target_package": "formal/certificates/packages/PKG-POS-04-FIACH-TARGET.certificate.json"
+  },
+  "component_sha256": {
+    "autonomy": "832cfe9757321173fd685fa00fa627e25f4f794870a353301717428697b22a7b",
+    "corridor": "b785a73293f2a660809b17aa327ad3aaaf93f233352f60ff2ea4294fcb401aa0",
+    "source_package": "47b0210a9dfcd667f3400906a2b4e2232770e1d2522fe8f1f6d3eb98d08de7bb",
+    "staged_assembly": "2952d9a4e097048cb4bb6c05b60604728dfa7ec672206cde505c1d5ac48e336b",
+    "target_package": "eb02e10280c1b0ed2725aa6e76205b404aa96e94f3109fcc1f2fa65a12f041f4"
+  },
+  "control_id": "FIACH-C05",
+  "expected_lane_statuses": {
+    "A": true,
+    "S-L": false,
+    "S-R": true
+  },
+  "model_ref": "models/fiach/controls/FIACH-C05.model.json",
+  "model_sha256": "1f2605b2a9622ecb7b2c3a846dee96d22b31b90493a7183813f348581a53d60e",
+  "observed_lane_statuses": {
+    "A": true,
+    "S-L": false,
+    "S-R": true,
+    "S-T": true
+  },
+  "result_status": "checked-fiach-lane-independence-control",
+  "schema_version": "CST-TT-05",
+  "title": "package plus autonomy"
+}

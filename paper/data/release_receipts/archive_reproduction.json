@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "paper/tools/check_archive_reproduction.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "archive_reproduction",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W24-archive-refresh/archive-console.log",
+  "log_sha256": "2ddb4cec9c943ab71fd71748f619285c2c1604d208acdd02173cc5641678506c",
+  "metrics": {},
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-14T13:22:49+00:00",
+  "status": "pass",
+  "summary": "{\"id\": \"package\", \"command\": [\"python3\", \"paper/prewriting/validate_package.py\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-jo79ofwk/logs/package.log\", \"log_sha256\": \"c9c698f276f14109c8e9a1deeb157bfd0a00b457fa6c3ff7cfd75a5f935337ec\"}\n{\"id\": \"snapshot\", \"command\": [\"python3\", \"paper/tools/export_results.py\", \"--check\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-jo79ofwk/logs/snapshot.log\", \"log_sha256\": \"5fe084344c0e4d06c5eaf2933bc96c310aee8e2dbcdac6c88eb055e7028c0c3c\"}\nRUN paper_tests: python3 -m pytest -q paper/tests (cwd .)\n{\"id\": \"paper_tests\", \"command\": [\"python3\", \"-m\", \"pytest\", \"-q\", \"paper/tests\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-jo79ofwk/logs/paper_tests.log\", \"log_sha256\": \"7fbe84fe23e7f5a60cb11ebe880ee3a6a5a7f8942f566ffb317de462c00a8553\"}\n{\"archive_reproduction\": \"pass\", \"report\": \"/tmp/W19b-archive-jo79ofwk/report.json\"}"
+}

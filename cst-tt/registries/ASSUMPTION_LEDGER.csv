@@ -1,0 +1,35 @@
+assumption_id,name,tier,statement,used_by,nonclaim,status
+AS-01,FINITE-EXACT,structural,"All theorem-core carriers, alphabets, episodes, and certificate data are finite and exact.",all,No statement about unbounded physical systems.,frozen
+AS-02,H-DISTINCT,structural,Source and target carrier identities are fixed and distinct before evaluation.,FIACH;IAPS,Does not say the target is another person.,frozen
+AS-03,H-SOURCE-PKG,structural,The source package premise is independently supplied.,FIACH;IAPS,Does not establish source consciousness.,frozen
+AS-04,H-PREDICTIVE-SUFF,structural,The predictive-now vocabulary is sufficient for the declared finite continuation probes.,transport,Probe-relative only.,frozen
+AS-05,H-ORDER,structural,A carrier-local successor/order relation is declared.,temporal closure,Order alone is not time or consciousness.,frozen
+AS-06,H-TICK,structural,A viable repeatable tick carrier is declared.,temporal closure,Tick stability alone is insufficient.,frozen
+AS-07,H-PROGRESS,structural,The tick carrier admits genuine progress.,temporal closure,No phenomenal conclusion.,frozen
+AS-08,H-ARROW,structural,An endogenous auditable record/arrow relation is declared.,temporal closure,Holonomy is not substituted for this premise.,frozen
+AS-09,H-MAINTENANCE,structural,Temporal maintenance resources and ownership are declared.,temporal closure;autonomy,Model-relative ownership only.,frozen
+AS-10,H-BRIDGE-ADM,structural,Cross-carrier component maps satisfy the declared admissibility interface.,transport,Not supplied by A2-P.,frozen
+AS-11,H-REP-INDEP,structural,Transport is independent of arbitrary representatives at the declared quotient.,transport,Quotient-relative only.,frozen
+AS-12,H-ROUTE-MEMORY,structural,Predictively relevant route residue is retained when route systems are nonflat.,transport;corridor,Can be discharged by AS-13.,frozen
+AS-13,H-FLATNESS,optional-structural,Critical pairs join and translation holonomy vanishes for the declared route class.,route-independent strengthening,Not assumed by default.,frozen
+AS-14,H-CLOCK-REL,structural,Source-local and target-local order/tick coordinates have an explicit typed relation.,transport;corridor,No canonical global now is presumed.,frozen
+AS-15,H-GLOBAL-GLUE,structural,Local clause witnesses satisfy a declared acyclic/running-intersection gluing premise.,package,Cannot be inferred from local validity alone.,frozen
+AS-16,H-HARD-GATES,structural,Nonnegotiable clause and viability gates are separately declared.,package;autonomy,Not replaceable by a scalar average.,frozen
+AS-17,H-PACKAGE-OWNERSHIP,structural,Essential final package resources lie inside the target boundary.,package,Does not imply autonomy.,frozen
+AS-18,H-NONREDUNDANCY,structural,Source and target contributions are tested by predeclared counterfactual interventions.,strict corridor,Must not mention the final verdict.,frozen
+AS-19,H-NO-GAP,structural,Every strict-corridor stage realizes the temporal package.,strict corridor,Direct-successor is separately typed.,frozen
+AS-20,H-WITHDRAWAL,structural,"The source, bridge, controller, decoder, scheduler, and undeclared repair are named and removed.",autonomy,Environment retained by the model remains explicit.,frozen
+AS-21,H-DISTURBANCE,structural,A finite admissible disturbance class is fixed before evaluation.,autonomy,Autonomy is relative to this class.,frozen
+AS-22,H-INVARIANT,structural,A target-owned controlled invariant region is supplied or computed.,autonomy,Finite model only.,frozen
+AS-23,H-DIRECT-PROVENANCE,optional-structural,The last source event operationally generates the first target event with typed temporal preservation.,direct successor,Does not imply strict overlap.,frozen
+AS-24,H-ANCESTRY-SEED,fallback-structural,Fallback seed edges are operational and contain no successor-equivalent vocabulary.,IAPS,Only after documented FIACH kill.,frozen
+AS-25,H-NO-EX-NIHILO,fallback-structural,Fallback closure cannot admit disconnected twins solely by similarity.,IAPS,Does not select one branch.,frozen
+AS-26,H-FELT-TIME,interpretive,The felt aspect requires autonomous layer-realized temporal closure.,ontology/recognition,Explicit hypothesis; not an SBT theorem.,frozen
+AS-27,H-CONT-TIME,interpretive,Uninterrupted felt continuity requires episode-indexed continuation of realized temporal closure.,ontology/recognition,Structural antecedent can be studied; felt conclusion remains assumed.,frozen
+AS-28,A1,ontological,The consciousness paper's objecthood/realization postulate is accepted.,ontology,No structural theorem proves it.,frozen
+AS-29,A2-P,ontological,Substrate indifference is accepted in the intended philosophical sense.,ontology,"Does not create transport, lineage, or recognition data.",frozen
+AS-30,H-CERT-SOUND,recognition/ontology,The finite structural certificate is sound for the intended consciousness-relevant property.,recognition;ontology,Open bridge.,frozen
+AS-31,H-RECOGNITION,empirical,Measurements correctly identify the structural predicates in a real system.,recognition,Not part of theorem/toy core.,frozen
+AS-32,H-PERSONAL-IDENTITY,ontological,The selected structural relation is sufficient for personal identity or survival.,ontology,Not assumed in any structural result.,frozen
+AS-33,H-BOUNDED-PERTURBATION-BOX,structural,Every robustness perturbation lies inside the declared exact componentwise box and leaves every hard gate unchanged.,TTS-03,Not an empirical noise distribution or open-ended stability theorem.,frozen-CST-TT-07A
+AS-34,H-TOTAL-INVARIANT-POLICY,model-structural,The finite autonomy model exposes one target-owned admissible response at every invariant state and disturbance.,TTS-04,Does not establish indefinite physical resource availability outside the model.,frozen-CST-TT-07A

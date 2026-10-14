@@ -1,0 +1,22 @@
+{
+  "advanced_theorem_surfaces": 5,
+  "base_tag": "CST-TT-02-v1",
+  "checked_arrow_certificates": 1,
+  "checked_controls": 28,
+  "checked_memory_certificates": 2,
+  "checked_route_certificates": 2,
+  "checked_temporal_transport_certificates": 2,
+  "claim_ceiling": "structural transport and route discipline only",
+  "confluence_candidates_examined": 354,
+  "date": "2026-08-10",
+  "fallback_unlocked": false,
+  "global_now_candidate_functions_examined": 4,
+  "memory_or_flatness_assignments_examined": 64,
+  "next_phase": "CST-TT-04",
+  "phase": "CST-TT-03",
+  "positive_handoff_witnesses": 0,
+  "project": "CST-TT",
+  "schema_version": "1.0",
+  "status": "science-layer-complete-pending-freeze",
+  "transport_shape_pairs_examined": 12
+}

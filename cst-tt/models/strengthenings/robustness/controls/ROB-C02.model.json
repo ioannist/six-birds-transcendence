@@ -1,0 +1,18 @@
+{
+  "base_model_ref": "models/strengthenings/robustness/ROB-POS-01.model.json",
+  "base_model_sha256": "dd4947c7ccd53208e849bf734d98c8a508bfa934f9770988c740a69c68ca8de6",
+  "deltas": {
+    "record-step": -5
+  },
+  "description": "record margin leaves box and loses strict advance",
+  "hard_gates": {
+    "distinct-carriers": true,
+    "integrated-package": true,
+    "post-withdrawal-autonomy": true,
+    "route-discipline": true,
+    "strict-lineage-mode": true,
+    "target-ownership": true
+  },
+  "model_id": "ROB-C02",
+  "schema_version": "CST-TT-07A-robustness-control-v1"
+}

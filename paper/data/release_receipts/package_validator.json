@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "paper/prewriting/validate_package.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "package_validator",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W24-archive-refresh/package_validator.log",
+  "log_sha256": "c9c698f276f14109c8e9a1deeb157bfd0a00b457fa6c3ff7cfd75a5f935337ec",
+  "metrics": {},
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-14T13:22:49+00:00",
+  "status": "pass",
+  "summary": "PASS: {\"claims\": 56, \"core_citations\": 60, \"corpus_citations\": 9, \"covered_registry_rows\": 39, \"errors\": 0, \"main_claims\": 38, \"nonclaims\": 85, \"placed_main_claims\": 38, \"registry_rows\": 39, \"snapshot_references\": 14, \"taxonomy\": 56}"
+}

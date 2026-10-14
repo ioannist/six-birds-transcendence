@@ -1,0 +1,9 @@
+$pdf_mode = 1;
+$out_dir = 'build';
+$aux_dir = 'build';
+$pdflatex = 'pdflatex -interaction=nonstopmode -halt-on-error -file-line-error %O %S';
+$bibtex_use = 2;
+# Run from paper/ so the authored prewriting/ bibliography paths resolve.
+$bibtex = 'cd .. && bibtex build/%S';
+# main.tex skips the bibliography on zero citations; no fabricated .bbl file.
+$success_cmd = 'latexpand %S -o %Y/%R_flat.tex';

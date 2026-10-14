@@ -1,0 +1,2719 @@
+{
+  "ambiguities": [
+    "C1: reconstruct canonical P from each tag raw action rows, compute M=(position, per-action safe/lethal support law), derive C and U from those M fibers, then use exact Pε²CU. Published T1 labels and values are comparison targets, never results.",
+    "C3: action profiles aggregate exact probabilities over current partition blocks and distinguish each out-of-K exit; the stable partition is compared on all 100 ordered K pairs.",
+    "C6: compare equal-q states at the same unfolded event count, tick phase, route, owner and maintenance context. Check action-indexed exact distributions, tick increments and successor classes to a finite stochastic bisimulation fixed point; uniform unit progress/record increments and per-route writer availability propagate counter equality for all words. No bounded horizon is used.",
+    "C7: reassembly is an indexed per-assemblage relation, allowing distinct assemblages to have equal coupling. JointPairing is a distribution over paired raw history records, with complete ordered branch records as K_bw.",
+    "C7 operational use: the declaration gives no separate display-selection algorithm. The receiver display is the exact rational jointPairing distribution of each assemblage, read at a realized mixed pre-exit event under the declared receiver activation gate. Distinct displays and unchanged post-exit P are gated; display differentiation follows the declared coupling nearly automatically.",
+    "Gate-sensitivity probes test group sensitivity, not exhaustive isolation of every obligation. The C1 fixed_law identity-matrix probe tests the general uniqueness solver directly. For the declared epsilon=1/16 stochastic family, positivity itself forces uniqueness, so no well-formed raw P mutation isolates loss of uniqueness; the full C1 predicate is separately tested with a changed raw action row.",
+    "C8: greatest viable subset uses existence of a funded feasible action with all positive-support successors retained. Canonical P is checked separately and unchanged in the funded regime.",
+    "Corridor: removal interventions delete one side of mixed support under the declared Boolean conjunction. This is synthetic intervention semantics and gives no independent causal corroboration.",
+    "Receiver content: only p,w are transferred; both M classes are recomputed from raw action supports. Content sensitivity is close to automatic after tag isomorphism. The fixed-activation preloaded-copy control is the substantive discriminator within this toy.",
+    "Route memory: compare dereferenced (source-state history,event sequence) tuples. Execute each positive-support successor of the funded canonical target row and retain the tuple in the resulting target state by the predeclared register rule, then read its first phase. Persistence is rule-driven and near-automatic; it does not independently establish holonomy.",
+    "Bridge order/progress/record: the pointwise tag map has no independently declared target history table. Occurrence order and unit progress follow from source path indices and the same tagged raw action law; record preservation additionally checks per-route writer availability and funded-step register retention.",
+    "Autonomy: remove source presence in a model copy and rerun the identical target C8 predicate. C8 reads only target resources, so source independence is structural once source absence is verified.",
+    "TTH-06 package means the declared surrogate C1–C8 assignment contract. Full HIDD C4 non-exposure already fails; no full P05 C-package or T17-I is inferred."
+  ],
+  "clean_ablation_count": 8,
+  "counts": {
+    "CONFIRMED": 26,
+    "CONFIRMED-CONFOUNDED": 8,
+    "CONFIRMED-NARROW": 1,
+    "FAILED": 1,
+    "INVALID-CONTROL": 0,
+    "UNDETERMINED": 0
+  },
+  "coverage": [
+    {
+      "check": "T1 provenance hashes",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 32
+    },
+    {
+      "check": "Tagged canonical P and M from raw actions",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 143
+    },
+    {
+      "check": "C1 C/U, E₂ε, fixed law, retention, TV, defects",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 159
+    },
+    {
+      "check": "C1 uniqueness for all normalized fixed laws",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 72
+    },
+    {
+      "check": "C1 agreement with Lean theorems and axioms",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 991
+    },
+    {
+      "check": "C2 split and pinned witness",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 191
+    },
+    {
+      "check": "C3 recursive action/exit profile and terminal M",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 205
+    },
+    {
+      "check": "C4 full current family and hidden connector",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 248
+    },
+    {
+      "check": "C5 forward/reverse products, credit and anchors",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 282
+    },
+    {
+      "check": "C6 full interface and all-word fixed point",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 298
+    },
+    {
+      "check": "C6 funded order/tick/record and owner",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 359
+    },
+    {
+      "check": "C7 per-assemblage reassembly and strict refinement",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 399
+    },
+    {
+      "check": "C7 receiver pre-exit jointPairing display",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 432
+    },
+    {
+      "check": "C7 staged joint relation preservation",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 457
+    },
+    {
+      "check": "C8 priced ledger, gfp and canonical P",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 468
+    },
+    {
+      "check": "T1 histories, strict edge and bridge laws",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 560
+    },
+    {
+      "check": "Source-absent activation",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 511
+    },
+    {
+      "check": "Raw-coordinate receiver and content counterfactuals",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 540
+    },
+    {
+      "check": "Mixed corridor, no gap and support interventions",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 611
+    },
+    {
+      "check": "Funded target step and persistent route readout",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 639
+    },
+    {
+      "check": "Typed corridor/receiver endpoint link",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 683
+    },
+    {
+      "check": "160 state-indexed package coordinates",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 744
+    },
+    {
+      "check": "Eight staged maps and raw clause equations",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 706
+    },
+    {
+      "check": "Source-removed target-only C8 autonomy",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 817
+    },
+    {
+      "check": "TTH-06 surrogate assembly",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 831
+    },
+    {
+      "check": "References, distributions, reassembly and events",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 774
+    },
+    {
+      "check": "Unchanged JSON-Pointer intervention semantics",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 871
+    },
+    {
+      "check": "Positive prediction coverage and gates",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 898
+    },
+    {
+      "check": "Mutation targets and outcome categories",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 964
+    },
+    {
+      "check": "Exact prediction-list and mutation coverage",
+      "file": "scripts/evaluate_fiach_pos04.py",
+      "line": 956
+    }
+  ],
+  "declaration_sha256": "6ac0f66201a7d9215bfb4c83d059b418eef7f0733da843454bf037d83113b582",
+  "gate_sensitivity": [
+    {
+      "check": "T1 provenance hashes",
+      "perturbation": "corrupt pinned P span hash",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Tagged canonical P and M from raw actions",
+      "perturbation": "change target canonical action row",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C1 C/U, E₂ε, fixed law, retention, TV, defects",
+      "perturbation": "change target canonical action row",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C1 uniqueness for all normalized fixed laws",
+      "perturbation": "replace raw published P by identity matrix",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C1 agreement with Lean theorems and axioms",
+      "perturbation": "change target canonical action row",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C2 split and pinned witness",
+      "perturbation": "make public readout state-identifying",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C3 recursive action/exit profile and terminal M",
+      "perturbation": "make initial public partition discrete",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C4 full current family and hidden connector",
+      "perturbation": "add canonical M public reader",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C5 forward/reverse products, credit and anchors",
+      "perturbation": "externalize native target protocol",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C6 full interface and all-word fixed point",
+      "perturbation": "change merged member tick response",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C6 funded order/tick/record and owner",
+      "perturbation": "unset first event strict_step",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C7 per-assemblage reassembly and strict refinement",
+      "perturbation": "equalize both raw couplings",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C7 receiver pre-exit jointPairing display",
+      "perturbation": "remove source presence",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C7 staged joint relation preservation",
+      "perturbation": "change target coupling and reassembly",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C8 priced ledger, gfp and canonical P",
+      "perturbation": "remove target recharge",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "T1 histories, strict edge and bridge laws",
+      "perturbation": "override one representative endpoint",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Source-absent activation",
+      "perturbation": "remove source input from positive receiver",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Raw-coordinate receiver and content counterfactuals",
+      "perturbation": "replace content by preloaded copy",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Mixed corridor, no gap and support interventions",
+      "perturbation": "unrealize mix_1",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Funded target step and persistent route readout",
+      "perturbation": "delete target register write",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Typed corridor/receiver endpoint link",
+      "perturbation": "override representative target endpoint",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "160 state-indexed package coordinates",
+      "perturbation": "delete one target clause coordinate",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Eight staged maps and raw clause equations",
+      "perturbation": "alter one target C5 raw protocol",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Source-removed target-only C8 autonomy",
+      "perturbation": "keep source available after withdrawal",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "TTH-06 surrogate assembly",
+      "perturbation": "remove source input",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "References, distributions, reassembly and events",
+      "perturbation": "give an event an unknown source stage",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Unchanged JSON-Pointer intervention semantics",
+      "perturbation": "replace a nonexistent raw path",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Positive prediction coverage and gates",
+      "perturbation": "remove source input",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Mutation targets and outcome categories",
+      "perturbation": "undo source half of uncoupled control",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "Exact prediction-list and mutation coverage",
+      "perturbation": "delete one declared intervention",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C7 realized mixed event",
+      "perturbation": "unrealize mix_1 and mix_2",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C7 funded receiver activation",
+      "perturbation": "remove receiver funding",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C6 realized path",
+      "perturbation": "unrealize mix_1",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C6 realized order",
+      "perturbation": "reorder realized stage list",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C6 route context availability",
+      "perturbation": "delete route_b writer",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C5 anchor history availability",
+      "perturbation": "make h_rep_a a non-support path",
+      "result": "CAUGHT"
+    },
+    {
+      "check": "C7 branch history availability",
+      "perturbation": "make h_split a non-support path",
+      "result": "CAUGHT"
+    }
+  ],
+  "lean_c1_crosscheck": {
+    "TV": "3/80",
+    "agreement": true,
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "core_mass": "77/80",
+    "defect_epsilon_0": "1/8",
+    "defect_epsilon_1_16": "78795/524288",
+    "pi": [
+      "1/160",
+      "1/160",
+      "38/155",
+      "38/155",
+      "1171/4960",
+      "1/160",
+      "1/160",
+      "1/160",
+      "1/160",
+      "1171/4960"
+    ],
+    "theorems": [
+      "CSTTT.Objecthood.T1Audit.pi_described",
+      "CSTTT.Objecthood.T1Audit.pi_probability",
+      "CSTTT.Objecthood.T1Audit.pi_fixed",
+      "CSTTT.Objecthood.T1Audit.pi_unique",
+      "CSTTT.Objecthood.T1Audit.pi_nonuniform",
+      "CSTTT.Objecthood.T1Audit.pi_core_mass",
+      "CSTTT.Objecthood.T1Audit.pi_core_retention",
+      "CSTTT.Objecthood.T1Audit.pi_tv_from_core_uniform",
+      "CSTTT.Objecthood.T1Audit.e2eps_defect",
+      "CSTTT.Objecthood.T1Audit.e2zero_defect"
+    ]
+  },
+  "method": "exact Fraction matrices; rational Gaussian elimination; finite stochastic partition fixed points; greatest viable fixed points; same predicate code for mutations",
+  "model_id": "FIACH-POS-04",
+  "mutation_predictions": {
+    "NEG-ACTIVATION-SOURCE-ABSENT": {
+      "computed": {
+        "activated": false,
+        "activation_fields": {
+          "mixed_event_required": true,
+          "source_present": false,
+          "target_receiver_funded": true
+        }
+      },
+      "outcome": "CONFIRMED-CONFOUNDED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [
+            "C7"
+          ],
+          "target": [
+            "C7"
+          ]
+        },
+        "lane_pass_changes": [
+          "content",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-AUTONOMY-WITHDRAW": {
+      "computed": {
+        "autonomy": {
+          "pass": false,
+          "source_unavailable": true,
+          "target_C8_after_withdrawal": false,
+          "target_funded_P_unchanged": true,
+          "target_greatest_viable": []
+        },
+        "source_present": false
+      },
+      "outcome": "CONFIRMED-CONFOUNDED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [
+            "C7"
+          ],
+          "target": [
+            "C7",
+            "C8"
+          ]
+        },
+        "lane_pass_changes": [
+          "staged",
+          "bridge",
+          "content",
+          "route",
+          "autonomy",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-BRIDGE-REP": {
+      "computed": {
+        "same_target_M": false,
+        "target_raw": [
+          "p1w0",
+          "p1w1"
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": []
+        },
+        "lane_pass_changes": [
+          "bridge",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C1-TABLE": {
+      "computed": {
+        "C1_target": false,
+        "P_matches_T1": false
+      },
+      "outcome": "CONFIRMED-CONFOUNDED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": [
+            "C1",
+            "C7",
+            "C8"
+          ]
+        },
+        "lane_pass_changes": [
+          "staged",
+          "bridge",
+          "autonomy",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C2-SPLIT": {
+      "computed": {
+        "source_splits": 0,
+        "target_splits": 0
+      },
+      "outcome": "CONFIRMED-CONFOUNDED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [
+            "C2",
+            "C3",
+            "C4"
+          ],
+          "target": [
+            "C2",
+            "C3",
+            "C4"
+          ]
+        },
+        "lane_pass_changes": [
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C3-PROFILE": {
+      "computed": {
+        "C3_target": true,
+        "terminal_equals_M": true,
+        "trajectory": [
+          6,
+          7,
+          7
+        ]
+      },
+      "outcome": "FAILED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": [
+            "C1",
+            "C4",
+            "C5",
+            "C7",
+            "C8"
+          ]
+        },
+        "lane_pass_changes": [
+          "staged",
+          "bridge",
+          "autonomy",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": false
+    },
+    "NEG-C4-EXPOSE": {
+      "computed": {
+        "full_HIDD_exposure": true,
+        "target_collision": false
+      },
+      "outcome": "CONFIRMED-NARROW",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [
+            "C4"
+          ],
+          "target": [
+            "C4"
+          ]
+        },
+        "lane_pass_changes": [
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C5-EXTERNAL": {
+      "computed": {
+        "target_credits": {
+          "clockwise": "other",
+          "internalized": "none",
+          "null": "none",
+          "scheduled": "other"
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": [
+            "C5"
+          ]
+        },
+        "lane_pass_changes": [
+          "staged",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C5-INTERNALIZED": {
+      "computed": {
+        "scheduled_housing": "target",
+        "target_credits": {
+          "clockwise": "self",
+          "internalized": "none",
+          "null": "none",
+          "scheduled": "other"
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": []
+        },
+        "lane_pass_changes": [
+          "staged",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C6-FUTURE": {
+      "computed": {
+        "counterexample": [
+          "p0w0",
+          "p0w1"
+        ],
+        "stable_classes": 8,
+        "target_C6": false
+      },
+      "outcome": "CONFIRMED-CONFOUNDED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": [
+            "C6",
+            "C6 trace"
+          ]
+        },
+        "lane_pass_changes": [
+          "staged",
+          "bridge",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C6-RECORD": {
+      "computed": {
+        "route": [
+          0,
+          null
+        ],
+        "target_record_writers": false
+      },
+      "outcome": "CONFIRMED-CONFOUNDED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": [
+            "C6 trace"
+          ]
+        },
+        "lane_pass_changes": [
+          "staged",
+          "bridge",
+          "route",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C7-AGGREGATE": {
+      "computed": {
+        "source_strict": false,
+        "target_strict": false
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [
+            "C7"
+          ],
+          "target": [
+            "C7"
+          ]
+        },
+        "lane_pass_changes": [
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C7-TRANSPORT": {
+      "computed": {
+        "target_local_wellformed": true,
+        "target_strict": false,
+        "transport": {
+          "assemblages_compared": 2,
+          "pass": false,
+          "raw_couplings_equal": false
+        }
+      },
+      "outcome": "CONFIRMED-CONFOUNDED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": [
+            "C7"
+          ]
+        },
+        "lane_pass_changes": [
+          "staged",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C7-UNCOUPLED": {
+      "computed": {
+        "source": {
+          "branch_histories_admissible": true,
+          "comparison_domain_size": 2,
+          "joint_observables": [
+            "jointPairing"
+          ],
+          "joint_outputs": {
+            "crossed": [
+              [
+                [
+                  "h_rep_a",
+                  "h_class_b"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_split"
+                ],
+                "1/2"
+              ]
+            ],
+            "diagonal": [
+              [
+                [
+                  "h_rep_a",
+                  "h_class_b"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_split"
+                ],
+                "1/2"
+              ]
+            ]
+          },
+          "operational_use": {
+            "display_by_assemblage": {
+              "crossed": [
+                [
+                  [
+                    "h_rep_a",
+                    "h_class_b"
+                  ],
+                  "1/2"
+                ],
+                [
+                  [
+                    "h_rep_b",
+                    "h_split"
+                  ],
+                  "1/2"
+                ]
+              ],
+              "diagonal": [
+                [
+                  [
+                    "h_rep_a",
+                    "h_class_b"
+                  ],
+                  "1/2"
+                ],
+                [
+                  [
+                    "h_rep_b",
+                    "h_split"
+                  ],
+                  "1/2"
+                ]
+              ]
+            },
+            "distinct_displays": false,
+            "pass": false,
+            "post_exit_P_unchanged": true,
+            "pre_exit_mixed_events": [
+              "mix_1",
+              "mix_2"
+            ],
+            "receiver_active": true,
+            "receiver_read": "jointPairing"
+          },
+          "pass": false,
+          "recombination_difference": false,
+          "strict_refinement": false,
+          "well_formed": true
+        },
+        "target": {
+          "branch_histories_admissible": true,
+          "comparison_domain_size": 2,
+          "joint_observables": [
+            "jointPairing"
+          ],
+          "joint_outputs": {
+            "crossed": [
+              [
+                [
+                  "h_rep_a",
+                  "h_class_b"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_split"
+                ],
+                "1/2"
+              ]
+            ],
+            "diagonal": [
+              [
+                [
+                  "h_rep_a",
+                  "h_class_b"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_split"
+                ],
+                "1/2"
+              ]
+            ]
+          },
+          "operational_use": {
+            "display_by_assemblage": {
+              "crossed": [
+                [
+                  [
+                    "h_rep_a",
+                    "h_class_b"
+                  ],
+                  "1/2"
+                ],
+                [
+                  [
+                    "h_rep_b",
+                    "h_split"
+                  ],
+                  "1/2"
+                ]
+              ],
+              "diagonal": [
+                [
+                  [
+                    "h_rep_a",
+                    "h_class_b"
+                  ],
+                  "1/2"
+                ],
+                [
+                  [
+                    "h_rep_b",
+                    "h_split"
+                  ],
+                  "1/2"
+                ]
+              ]
+            },
+            "distinct_displays": false,
+            "pass": false,
+            "post_exit_P_unchanged": true,
+            "pre_exit_mixed_events": [
+              "mix_1",
+              "mix_2"
+            ],
+            "receiver_active": true,
+            "receiver_read": "jointPairing"
+          },
+          "pass": false,
+          "recombination_difference": false,
+          "strict_refinement": false,
+          "well_formed": true
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [
+            "C7"
+          ],
+          "target": [
+            "C7"
+          ]
+        },
+        "lane_pass_changes": [
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-C8-UNDERFUND": {
+      "computed": {
+        "resource_available": false,
+        "target_viable_size": 0
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": [
+            "C8"
+          ]
+        },
+        "lane_pass_changes": [
+          "staged",
+          "bridge",
+          "route",
+          "autonomy",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-CORRIDOR-DETACHED": {
+      "computed": {
+        "event_references": true,
+        "mixed_leg_count": 1,
+        "no_gap": true,
+        "nonredundant_interventions": true,
+        "pass": false,
+        "paths_composable": true,
+        "realized_stages": [
+          "source_live",
+          "mix_1",
+          "mix_2",
+          "target_exit"
+        ],
+        "strict_steps": true
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": []
+        },
+        "lane_pass_changes": [
+          "corridor",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-CORRIDOR-GAP": {
+      "computed": {
+        "event_references": true,
+        "mixed_leg_count": 2,
+        "no_gap": false,
+        "nonredundant_interventions": true,
+        "pass": false,
+        "paths_composable": true,
+        "realized_stages": [
+          "source_live",
+          "mix_2",
+          "target_exit"
+        ],
+        "strict_steps": true
+      },
+      "outcome": "CONFIRMED-CONFOUNDED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [
+            "C6 trace",
+            "C7"
+          ],
+          "target": [
+            "C6 trace",
+            "C7"
+          ]
+        },
+        "lane_pass_changes": [
+          "corridor",
+          "content",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-PRELOADED-COPY": {
+      "computed": {
+        "activated": true,
+        "activation_unchanged": true,
+        "content": {
+          "cases": [
+            {
+              "activated": true,
+              "history": "h_rep_a",
+              "source_M": [
+                1,
+                [
+                  [
+                    "stay",
+                    []
+                  ],
+                  [
+                    "cw",
+                    [
+                      "safe"
+                    ]
+                  ],
+                  [
+                    "ccw",
+                    [
+                      "lethal"
+                    ]
+                  ]
+                ]
+              ],
+              "source_raw": "p1w0",
+              "target_M": [
+                1,
+                [
+                  [
+                    "stay",
+                    []
+                  ],
+                  [
+                    "cw",
+                    [
+                      "safe"
+                    ]
+                  ],
+                  [
+                    "ccw",
+                    [
+                      "lethal"
+                    ]
+                  ]
+                ]
+              ],
+              "target_raw": "p1w0"
+            },
+            {
+              "activated": true,
+              "history": "h_class_b",
+              "source_M": [
+                1,
+                [
+                  [
+                    "stay",
+                    []
+                  ],
+                  [
+                    "cw",
+                    [
+                      "lethal"
+                    ]
+                  ],
+                  [
+                    "ccw",
+                    [
+                      "safe"
+                    ]
+                  ]
+                ]
+              ],
+              "source_raw": "p1w1",
+              "target_M": [
+                1,
+                [
+                  [
+                    "stay",
+                    []
+                  ],
+                  [
+                    "cw",
+                    [
+                      "safe"
+                    ]
+                  ],
+                  [
+                    "ccw",
+                    [
+                      "lethal"
+                    ]
+                  ]
+                ]
+              ],
+              "target_raw": "p1w0"
+            }
+          ],
+          "distinct_source_M": true,
+          "distinct_target_M": false,
+          "pass": false,
+          "same_activation_fields": true,
+          "same_latent_target": true,
+          "tag_map_agreement": false
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": []
+        },
+        "lane_pass_changes": [
+          "bridge",
+          "content",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    },
+    "NEG-ROUTE-MEMORY": {
+      "computed": {
+        "future_outputs": [
+          null,
+          null
+        ],
+        "route_status": "unlicensed"
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "declared control outcome",
+      "side_effects": {
+        "clause_pass_changes": {
+          "source": [],
+          "target": []
+        },
+        "lane_pass_changes": [
+          "bridge",
+          "route",
+          "typed_endpoint_link",
+          "handoff"
+        ]
+      },
+      "target_prediction_occurred": true
+    }
+  },
+  "mutation_wellformedness": {
+    "NEG-ACTIVATION-SOURCE-ABSENT": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-AUTONOMY-WITHDRAW": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-BRIDGE-REP": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C1-TABLE": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C2-SPLIT": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C3-PROFILE": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C4-EXPOSE": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C5-EXTERNAL": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C5-INTERNALIZED": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C6-FUTURE": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C6-RECORD": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C7-AGGREGATE": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C7-TRANSPORT": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C7-UNCOUPLED": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-C8-UNDERFUND": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-CORRIDOR-DETACHED": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-CORRIDOR-GAP": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-PRELOADED-COPY": {
+      "issues": [],
+      "pass": true
+    },
+    "NEG-ROUTE-MEMORY": {
+      "issues": [],
+      "pass": true
+    }
+  },
+  "per_tag_clause_details": {
+    "source": {
+      "C1": {
+        "C_matches_T1": true,
+        "P_matches_T1": true,
+        "P_rows_stochastic": true,
+        "TV": "3/80",
+        "U_matches_T1": true,
+        "core_mass": "77/80",
+        "defect_epsilon_0": "1/8",
+        "defect_epsilon_1_16": "78795/524288",
+        "fixed_rank": 10,
+        "nonuniform": true,
+        "pass": true,
+        "pi": [
+          "1/160",
+          "1/160",
+          "38/155",
+          "38/155",
+          "1171/4960",
+          "1/160",
+          "1/160",
+          "1/160",
+          "1/160",
+          "1171/4960"
+        ],
+        "realized_M_classes": 7,
+        "unique": true
+      },
+      "C2": {
+        "declared_witness": true,
+        "first_split": [
+          "p1w0",
+          "p1w1"
+        ],
+        "pass": true,
+        "split_count": 2
+      },
+      "C3": {
+        "ordered_pair_checks": 100,
+        "pass": true,
+        "terminal_classes": 7,
+        "terminal_equals_M": true,
+        "trajectory": [
+          6,
+          7,
+          7
+        ]
+      },
+      "C4": {
+        "collision": true,
+        "connector": true,
+        "full_HIDD_exposure": true,
+        "full_HIDD_nonexposure": false,
+        "pass": true
+      },
+      "C5": {
+        "credits": {
+          "clockwise": "self",
+          "internalized": "none",
+          "null": "none",
+          "scheduled": "other"
+        },
+        "history_anchors_valid": true,
+        "owner_consistency": true,
+        "pass": true,
+        "products": {
+          "clockwise": {
+            "other": [
+              0,
+              0
+            ],
+            "self": [
+              1,
+              0
+            ]
+          },
+          "internalized": {
+            "other": [
+              1,
+              1
+            ],
+            "self": [
+              1,
+              1
+            ]
+          },
+          "null": {
+            "other": [
+              0,
+              0
+            ],
+            "self": [
+              0,
+              0
+            ]
+          },
+          "scheduled": {
+            "other": [
+              1,
+              0
+            ],
+            "self": [
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "C6": {
+        "alphabet_complete": true,
+        "contexts": [
+          {
+            "future_sufficient": true,
+            "maintenance": "funded",
+            "route": "route_a",
+            "stable_classes": 7
+          },
+          {
+            "future_sufficient": true,
+            "maintenance": "underfunded",
+            "route": "route_a",
+            "stable_classes": 7
+          },
+          {
+            "future_sufficient": true,
+            "maintenance": "funded",
+            "route": "route_b",
+            "stable_classes": 7
+          },
+          {
+            "future_sufficient": true,
+            "maintenance": "underfunded",
+            "route": "route_b",
+            "stable_classes": 7
+          }
+        ],
+        "counterexample": null,
+        "future_sufficient": true,
+        "interface_complete": true,
+        "merged_pair": [
+          "p0w0",
+          "p0w1"
+        ],
+        "pass": true,
+        "q_classes": 7,
+        "rounds": 1,
+        "route_contexts": true,
+        "stable_classes": 7,
+        "strictly_coarser": true
+      },
+      "C6 trace": {
+        "owner": true,
+        "pass": true,
+        "realized_paths": true,
+        "realized_stage_sequence": true,
+        "record_writers": true,
+        "strict_event_order": true,
+        "unit_tick": true
+      },
+      "C7": {
+        "branch_histories_admissible": true,
+        "comparison_domain_size": 2,
+        "joint_observables": [
+          "jointPairing"
+        ],
+        "joint_outputs": {
+          "crossed": [
+            [
+              [
+                "h_rep_a",
+                "h_split"
+              ],
+              "1/2"
+            ],
+            [
+              [
+                "h_rep_b",
+                "h_class_b"
+              ],
+              "1/2"
+            ]
+          ],
+          "diagonal": [
+            [
+              [
+                "h_rep_a",
+                "h_class_b"
+              ],
+              "1/2"
+            ],
+            [
+              [
+                "h_rep_b",
+                "h_split"
+              ],
+              "1/2"
+            ]
+          ]
+        },
+        "operational_use": {
+          "display_by_assemblage": {
+            "crossed": [
+              [
+                [
+                  "h_rep_a",
+                  "h_split"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_class_b"
+                ],
+                "1/2"
+              ]
+            ],
+            "diagonal": [
+              [
+                [
+                  "h_rep_a",
+                  "h_class_b"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_split"
+                ],
+                "1/2"
+              ]
+            ]
+          },
+          "distinct_displays": true,
+          "pass": true,
+          "post_exit_P_unchanged": true,
+          "pre_exit_mixed_events": [
+            "mix_1",
+            "mix_2"
+          ],
+          "receiver_active": true,
+          "receiver_read": "jointPairing"
+        },
+        "pass": true,
+        "recombination_difference": true,
+        "strict_refinement": true,
+        "well_formed": true
+      },
+      "C8": {
+        "available": true,
+        "funded_P_unchanged": true,
+        "greatest_viable": [
+          "p0w0",
+          "p0w1",
+          "p1w0",
+          "p1w1",
+          "p2w1",
+          "p3w0",
+          "p3w1",
+          "p4w0",
+          "p4w1",
+          "p5w0"
+        ],
+        "iterations": 1,
+        "ledger_equation": true,
+        "ledger_next_budget": 1,
+        "pass": true,
+        "size": 10
+      }
+    },
+    "target": {
+      "C1": {
+        "C_matches_T1": true,
+        "P_matches_T1": true,
+        "P_rows_stochastic": true,
+        "TV": "3/80",
+        "U_matches_T1": true,
+        "core_mass": "77/80",
+        "defect_epsilon_0": "1/8",
+        "defect_epsilon_1_16": "78795/524288",
+        "fixed_rank": 10,
+        "nonuniform": true,
+        "pass": true,
+        "pi": [
+          "1/160",
+          "1/160",
+          "38/155",
+          "38/155",
+          "1171/4960",
+          "1/160",
+          "1/160",
+          "1/160",
+          "1/160",
+          "1171/4960"
+        ],
+        "realized_M_classes": 7,
+        "unique": true
+      },
+      "C2": {
+        "declared_witness": true,
+        "first_split": [
+          "p1w0",
+          "p1w1"
+        ],
+        "pass": true,
+        "split_count": 2
+      },
+      "C3": {
+        "ordered_pair_checks": 100,
+        "pass": true,
+        "terminal_classes": 7,
+        "terminal_equals_M": true,
+        "trajectory": [
+          6,
+          7,
+          7
+        ]
+      },
+      "C4": {
+        "collision": true,
+        "connector": true,
+        "full_HIDD_exposure": true,
+        "full_HIDD_nonexposure": false,
+        "pass": true
+      },
+      "C5": {
+        "credits": {
+          "clockwise": "self",
+          "internalized": "none",
+          "null": "none",
+          "scheduled": "other"
+        },
+        "history_anchors_valid": true,
+        "owner_consistency": true,
+        "pass": true,
+        "products": {
+          "clockwise": {
+            "other": [
+              0,
+              0
+            ],
+            "self": [
+              1,
+              0
+            ]
+          },
+          "internalized": {
+            "other": [
+              1,
+              1
+            ],
+            "self": [
+              1,
+              1
+            ]
+          },
+          "null": {
+            "other": [
+              0,
+              0
+            ],
+            "self": [
+              0,
+              0
+            ]
+          },
+          "scheduled": {
+            "other": [
+              1,
+              0
+            ],
+            "self": [
+              0,
+              0
+            ]
+          }
+        }
+      },
+      "C6": {
+        "alphabet_complete": true,
+        "contexts": [
+          {
+            "future_sufficient": true,
+            "maintenance": "funded",
+            "route": "route_a",
+            "stable_classes": 7
+          },
+          {
+            "future_sufficient": true,
+            "maintenance": "underfunded",
+            "route": "route_a",
+            "stable_classes": 7
+          },
+          {
+            "future_sufficient": true,
+            "maintenance": "funded",
+            "route": "route_b",
+            "stable_classes": 7
+          },
+          {
+            "future_sufficient": true,
+            "maintenance": "underfunded",
+            "route": "route_b",
+            "stable_classes": 7
+          }
+        ],
+        "counterexample": null,
+        "future_sufficient": true,
+        "interface_complete": true,
+        "merged_pair": [
+          "p0w0",
+          "p0w1"
+        ],
+        "pass": true,
+        "q_classes": 7,
+        "rounds": 1,
+        "route_contexts": true,
+        "stable_classes": 7,
+        "strictly_coarser": true
+      },
+      "C6 trace": {
+        "owner": true,
+        "pass": true,
+        "realized_paths": true,
+        "realized_stage_sequence": true,
+        "record_writers": true,
+        "strict_event_order": true,
+        "unit_tick": true
+      },
+      "C7": {
+        "branch_histories_admissible": true,
+        "comparison_domain_size": 2,
+        "joint_observables": [
+          "jointPairing"
+        ],
+        "joint_outputs": {
+          "crossed": [
+            [
+              [
+                "h_rep_a",
+                "h_split"
+              ],
+              "1/2"
+            ],
+            [
+              [
+                "h_rep_b",
+                "h_class_b"
+              ],
+              "1/2"
+            ]
+          ],
+          "diagonal": [
+            [
+              [
+                "h_rep_a",
+                "h_class_b"
+              ],
+              "1/2"
+            ],
+            [
+              [
+                "h_rep_b",
+                "h_split"
+              ],
+              "1/2"
+            ]
+          ]
+        },
+        "operational_use": {
+          "display_by_assemblage": {
+            "crossed": [
+              [
+                [
+                  "h_rep_a",
+                  "h_split"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_class_b"
+                ],
+                "1/2"
+              ]
+            ],
+            "diagonal": [
+              [
+                [
+                  "h_rep_a",
+                  "h_class_b"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_split"
+                ],
+                "1/2"
+              ]
+            ]
+          },
+          "distinct_displays": true,
+          "pass": true,
+          "post_exit_P_unchanged": true,
+          "pre_exit_mixed_events": [
+            "mix_1",
+            "mix_2"
+          ],
+          "receiver_active": true,
+          "receiver_read": "jointPairing"
+        },
+        "pass": true,
+        "recombination_difference": true,
+        "strict_refinement": true,
+        "well_formed": true
+      },
+      "C8": {
+        "available": true,
+        "funded_P_unchanged": true,
+        "greatest_viable": [
+          "p0w0",
+          "p0w1",
+          "p1w0",
+          "p1w1",
+          "p2w1",
+          "p3w0",
+          "p3w1",
+          "p4w0",
+          "p4w1",
+          "p5w0"
+        ],
+        "iterations": 1,
+        "ledger_equation": true,
+        "ledger_next_budget": 1,
+        "pass": true,
+        "size": 10
+      }
+    }
+  },
+  "positive_predictions": {
+    "Bridge and representative independence": {
+      "computed": {
+        "all_frontier_M_mapped": true,
+        "different_pasts": true,
+        "frontier_size": 4,
+        "histories_supported": true,
+        "order_laws": true,
+        "owner_translation": true,
+        "pass": true,
+        "progress_laws": true,
+        "record_laws": true,
+        "representative_target_raw": [
+          "p1w0",
+          "p1w0"
+        ],
+        "route_laws": true,
+        "same_source_M": true,
+        "same_target_M": true,
+        "strict_edge": true,
+        "tick_laws": true,
+        "transition_laws": true
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "C1 exact T1 audit": {
+      "computed": {
+        "source": {
+          "P_matches_T1": true,
+          "P_rows_stochastic": true,
+          "TV": "3/80",
+          "core_mass": "77/80",
+          "defect_epsilon_0": "1/8",
+          "defect_epsilon_1_16": "78795/524288",
+          "fixed_rank": 10,
+          "nonuniform": true,
+          "pi": [
+            "1/160",
+            "1/160",
+            "38/155",
+            "38/155",
+            "1171/4960",
+            "1/160",
+            "1/160",
+            "1/160",
+            "1/160",
+            "1171/4960"
+          ],
+          "unique": true
+        },
+        "target": {
+          "P_matches_T1": true,
+          "P_rows_stochastic": true,
+          "TV": "3/80",
+          "core_mass": "77/80",
+          "defect_epsilon_0": "1/8",
+          "defect_epsilon_1_16": "78795/524288",
+          "fixed_rank": 10,
+          "nonuniform": true,
+          "pi": [
+            "1/160",
+            "1/160",
+            "38/155",
+            "38/155",
+            "1171/4960",
+            "1/160",
+            "1/160",
+            "1/160",
+            "1/160",
+            "1171/4960"
+          ],
+          "unique": true
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "C2 strict promotion": {
+      "computed": {
+        "source": {
+          "declared_witness": true,
+          "first_split": [
+            "p1w0",
+            "p1w1"
+          ],
+          "split_count": 2
+        },
+        "target": {
+          "declared_witness": true,
+          "first_split": [
+            "p1w0",
+            "p1w1"
+          ],
+          "split_count": 2
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "C3 recursive profile": {
+      "computed": {
+        "source": {
+          "ordered_pair_checks": 100,
+          "terminal_classes": 7,
+          "terminal_equals_M": true,
+          "trajectory": [
+            6,
+            7,
+            7
+          ]
+        },
+        "target": {
+          "ordered_pair_checks": 100,
+          "terminal_classes": 7,
+          "terminal_equals_M": true,
+          "trajectory": [
+            6,
+            7,
+            7
+          ]
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "C4 narrow collision/connector": {
+      "computed": {
+        "source": {
+          "collision": true,
+          "connector": true,
+          "full_HIDD_exposure": true,
+          "full_HIDD_nonexposure": false
+        },
+        "target": {
+          "collision": true,
+          "connector": true,
+          "full_HIDD_exposure": true,
+          "full_HIDD_nonexposure": false
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "C5 protocol-credit surrogate": {
+      "computed": {
+        "source": {
+          "credits": {
+            "clockwise": "self",
+            "internalized": "none",
+            "null": "none",
+            "scheduled": "other"
+          },
+          "owner_consistency": true,
+          "products": {
+            "clockwise": {
+              "other": [
+                0,
+                0
+              ],
+              "self": [
+                1,
+                0
+              ]
+            },
+            "internalized": {
+              "other": [
+                1,
+                1
+              ],
+              "self": [
+                1,
+                1
+              ]
+            },
+            "null": {
+              "other": [
+                0,
+                0
+              ],
+              "self": [
+                0,
+                0
+              ]
+            },
+            "scheduled": {
+              "other": [
+                1,
+                0
+              ],
+              "self": [
+                0,
+                0
+              ]
+            }
+          }
+        },
+        "target": {
+          "credits": {
+            "clockwise": "self",
+            "internalized": "none",
+            "null": "none",
+            "scheduled": "other"
+          },
+          "owner_consistency": true,
+          "products": {
+            "clockwise": {
+              "other": [
+                0,
+                0
+              ],
+              "self": [
+                1,
+                0
+              ]
+            },
+            "internalized": {
+              "other": [
+                1,
+                1
+              ],
+              "self": [
+                1,
+                1
+              ]
+            },
+            "null": {
+              "other": [
+                0,
+                0
+              ],
+              "self": [
+                0,
+                0
+              ]
+            },
+            "scheduled": {
+              "other": [
+                1,
+                0
+              ],
+              "self": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "C6 all-word future sufficiency": {
+      "computed": {
+        "source": {
+          "counterexample": null,
+          "future_sufficient": true,
+          "merged_pair": [
+            "p0w0",
+            "p0w1"
+          ],
+          "q_classes": 7,
+          "rounds": 1,
+          "stable_classes": 7,
+          "strictly_coarser": true
+        },
+        "target": {
+          "counterexample": null,
+          "future_sufficient": true,
+          "merged_pair": [
+            "p0w0",
+            "p0w1"
+          ],
+          "q_classes": 7,
+          "rounds": 1,
+          "stable_classes": 7,
+          "strictly_coarser": true
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "C6 funded event order/tick/record": {
+      "computed": {
+        "source": {
+          "owner": true,
+          "realized_paths": true,
+          "realized_stage_sequence": true,
+          "record_writers": true,
+          "strict_event_order": true,
+          "unit_tick": true
+        },
+        "target": {
+          "owner": true,
+          "realized_paths": true,
+          "realized_stage_sequence": true,
+          "record_writers": true,
+          "strict_event_order": true,
+          "unit_tick": true
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "C7 joint refinement and transport": {
+      "computed": {
+        "source": {
+          "comparison_domain_size": 2,
+          "joint_outputs": {
+            "crossed": [
+              [
+                [
+                  "h_rep_a",
+                  "h_split"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_class_b"
+                ],
+                "1/2"
+              ]
+            ],
+            "diagonal": [
+              [
+                [
+                  "h_rep_a",
+                  "h_class_b"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_split"
+                ],
+                "1/2"
+              ]
+            ]
+          },
+          "operational_use": {
+            "display_by_assemblage": {
+              "crossed": [
+                [
+                  [
+                    "h_rep_a",
+                    "h_split"
+                  ],
+                  "1/2"
+                ],
+                [
+                  [
+                    "h_rep_b",
+                    "h_class_b"
+                  ],
+                  "1/2"
+                ]
+              ],
+              "diagonal": [
+                [
+                  [
+                    "h_rep_a",
+                    "h_class_b"
+                  ],
+                  "1/2"
+                ],
+                [
+                  [
+                    "h_rep_b",
+                    "h_split"
+                  ],
+                  "1/2"
+                ]
+              ]
+            },
+            "distinct_displays": true,
+            "pass": true,
+            "post_exit_P_unchanged": true,
+            "pre_exit_mixed_events": [
+              "mix_1",
+              "mix_2"
+            ],
+            "receiver_active": true,
+            "receiver_read": "jointPairing"
+          },
+          "strict_refinement": true,
+          "well_formed": true
+        },
+        "target": {
+          "comparison_domain_size": 2,
+          "joint_outputs": {
+            "crossed": [
+              [
+                [
+                  "h_rep_a",
+                  "h_split"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_class_b"
+                ],
+                "1/2"
+              ]
+            ],
+            "diagonal": [
+              [
+                [
+                  "h_rep_a",
+                  "h_class_b"
+                ],
+                "1/2"
+              ],
+              [
+                [
+                  "h_rep_b",
+                  "h_split"
+                ],
+                "1/2"
+              ]
+            ]
+          },
+          "operational_use": {
+            "display_by_assemblage": {
+              "crossed": [
+                [
+                  [
+                    "h_rep_a",
+                    "h_split"
+                  ],
+                  "1/2"
+                ],
+                [
+                  [
+                    "h_rep_b",
+                    "h_class_b"
+                  ],
+                  "1/2"
+                ]
+              ],
+              "diagonal": [
+                [
+                  [
+                    "h_rep_a",
+                    "h_class_b"
+                  ],
+                  "1/2"
+                ],
+                [
+                  [
+                    "h_rep_b",
+                    "h_split"
+                  ],
+                  "1/2"
+                ]
+              ]
+            },
+            "distinct_displays": true,
+            "pass": true,
+            "post_exit_P_unchanged": true,
+            "pre_exit_mixed_events": [
+              "mix_1",
+              "mix_2"
+            ],
+            "receiver_active": true,
+            "receiver_read": "jointPairing"
+          },
+          "strict_refinement": true,
+          "well_formed": true
+        },
+        "transport": {
+          "assemblages_compared": 2,
+          "pass": true,
+          "raw_couplings_equal": true
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "C8 funded/underfunded gfp": {
+      "computed": {
+        "source": {
+          "available": true,
+          "funded_P_unchanged": true,
+          "greatest_viable": [
+            "p0w0",
+            "p0w1",
+            "p1w0",
+            "p1w1",
+            "p2w1",
+            "p3w0",
+            "p3w1",
+            "p4w0",
+            "p4w1",
+            "p5w0"
+          ],
+          "iterations": 1,
+          "size": 10
+        },
+        "target": {
+          "available": true,
+          "funded_P_unchanged": true,
+          "greatest_viable": [
+            "p0w0",
+            "p0w1",
+            "p1w0",
+            "p1w1",
+            "p2w1",
+            "p3w0",
+            "p3w1",
+            "p4w0",
+            "p4w1",
+            "p5w0"
+          ],
+          "iterations": 1,
+          "size": 10
+        },
+        "underfunded_target_size": 0
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "Content-sensitive transfer": {
+      "computed": {
+        "cases": [
+          {
+            "activated": true,
+            "history": "h_rep_a",
+            "source_M": [
+              1,
+              [
+                [
+                  "stay",
+                  []
+                ],
+                [
+                  "cw",
+                  [
+                    "safe"
+                  ]
+                ],
+                [
+                  "ccw",
+                  [
+                    "lethal"
+                  ]
+                ]
+              ]
+            ],
+            "source_raw": "p1w0",
+            "target_M": [
+              1,
+              [
+                [
+                  "stay",
+                  []
+                ],
+                [
+                  "cw",
+                  [
+                    "safe"
+                  ]
+                ],
+                [
+                  "ccw",
+                  [
+                    "lethal"
+                  ]
+                ]
+              ]
+            ],
+            "target_raw": "p1w0"
+          },
+          {
+            "activated": true,
+            "history": "h_class_b",
+            "source_M": [
+              1,
+              [
+                [
+                  "stay",
+                  []
+                ],
+                [
+                  "cw",
+                  [
+                    "lethal"
+                  ]
+                ],
+                [
+                  "ccw",
+                  [
+                    "safe"
+                  ]
+                ]
+              ]
+            ],
+            "source_raw": "p1w1",
+            "target_M": [
+              1,
+              [
+                [
+                  "stay",
+                  []
+                ],
+                [
+                  "cw",
+                  [
+                    "lethal"
+                  ]
+                ],
+                [
+                  "ccw",
+                  [
+                    "safe"
+                  ]
+                ]
+              ]
+            ],
+            "target_raw": "p1w1"
+          }
+        ],
+        "distinct_source_M": true,
+        "distinct_target_M": true,
+        "pass": true,
+        "same_activation_fields": true,
+        "same_latent_target": true,
+        "tag_map_agreement": true
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "Corridor": {
+      "computed": {
+        "event_references": true,
+        "mixed_leg_count": 2,
+        "no_gap": true,
+        "nonredundant_interventions": true,
+        "pass": true,
+        "paths_composable": true,
+        "realized_stages": [
+          "source_live",
+          "mix_1",
+          "mix_2",
+          "target_exit"
+        ],
+        "strict_steps": true
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "Route memory/status": {
+      "computed": {
+        "admissible": true,
+        "checked_raw_routes": [
+          [
+            [
+              "p1w0",
+              "p2w1",
+              "p1w0"
+            ],
+            [
+              "mix_1",
+              "mix_2",
+              "exit"
+            ]
+          ],
+          [
+            [
+              "p1w1",
+              "p5w0",
+              "p1w0"
+            ],
+            [
+              "mix_1",
+              "mix_2",
+              "exit"
+            ]
+          ]
+        ],
+        "comparison_domain_size": 2,
+        "computed_status": "routeIndexed",
+        "distinct_raw_routes": true,
+        "flat_certificate": false,
+        "funded_target_steps": [
+          {
+            "action": "cw",
+            "endpoint": "p1w0",
+            "readout": 0,
+            "register_persistent": true,
+            "resulting_states": [
+              {
+                "budget": 1,
+                "factor": "p2w1",
+                "mass": "1/1",
+                "register": [
+                  [
+                    "p1w0",
+                    "p2w1",
+                    "p1w0"
+                  ],
+                  [
+                    "mix_1",
+                    "mix_2",
+                    "exit"
+                  ]
+                ]
+              }
+            ]
+          },
+          {
+            "action": "cw",
+            "endpoint": "p1w0",
+            "readout": 1,
+            "register_persistent": true,
+            "resulting_states": [
+              {
+                "budget": 1,
+                "factor": "p2w1",
+                "mass": "1/1",
+                "register": [
+                  [
+                    "p1w1",
+                    "p5w0",
+                    "p1w0"
+                  ],
+                  [
+                    "mix_1",
+                    "mix_2",
+                    "exit"
+                  ]
+                ]
+              }
+            ]
+          }
+        ],
+        "future_outputs": [
+          0,
+          1
+        ],
+        "pass": true,
+        "register_rule": "copy_raw_route_tuple",
+        "retained": true
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "Source-absent activation": {
+      "computed": {
+        "positive_activates": true,
+        "source_absent_activates": false
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "T1 transcription and tagged isomorphism": {
+      "computed": {
+        "provenance": {
+          "lean_module": true,
+          "pass": true,
+          "tables": {
+            "C": true,
+            "C1_parameters": true,
+            "C1_perturbation": true,
+            "C3_profile_refinement": true,
+            "P": true,
+            "U": true,
+            "action_support_and_weights": true,
+            "ambient_Z": true,
+            "canonical_policy": true,
+            "kernel_and_core": true,
+            "public_and_continuation": true,
+            "published_P_rows": true,
+            "published_fixed_weights": true
+          }
+        },
+        "source": {
+          "C_matches_T1": true,
+          "P_matches_T1": true,
+          "U_matches_T1": true
+        },
+        "tag_isomorphism": true,
+        "target": {
+          "C_matches_T1": true,
+          "P_matches_T1": true,
+          "U_matches_T1": true
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "TTH-06 surrogate assembly": {
+      "computed": {
+        "autonomy": true,
+        "bridge": true,
+        "content": true,
+        "corridor": true,
+        "distinct_carriers": true,
+        "package_coordinates": {
+          "complete": true,
+          "count": 160,
+          "expected_count": 160,
+          "pass": true,
+          "staged_map_valid": true
+        },
+        "pass": true,
+        "recognition_status": "notAddressed",
+        "route": true,
+        "source_package": true,
+        "staged": true,
+        "target_package": true,
+        "typed_endpoint_link": {
+          "links": [
+            {
+              "exit_event": "exit",
+              "pass": true,
+              "route": "route_a",
+              "source_terminal": "p1w0",
+              "target_terminal": "p1w0"
+            },
+            {
+              "exit_event": "exit",
+              "pass": true,
+              "route": "route_b",
+              "source_terminal": "p1w0",
+              "target_terminal": "p1w0"
+            }
+          ],
+          "pass": true,
+          "target_exit_stage": "target_exit",
+          "target_owned": true
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    },
+    "Target-only autonomy": {
+      "computed": {
+        "pass": true,
+        "source_unavailable": true,
+        "target_C8_after_withdrawal": true,
+        "target_funded_P_unchanged": true,
+        "target_greatest_viable": [
+          "p0w0",
+          "p0w1",
+          "p1w0",
+          "p1w1",
+          "p2w1",
+          "p3w0",
+          "p3w1",
+          "p4w0",
+          "p4w1",
+          "p5w0"
+        ],
+        "target_recharge": true,
+        "underfunded_target_size": 0
+      },
+      "outcome": "CONFIRMED",
+      "predicted": "PASS"
+    }
+  },
+  "positive_wellformed": {
+    "issues": [],
+    "pass": true
+  },
+  "regressions": {
+    "POS-02_JSON": "byte-identical to audit/M0b_results.json",
+    "POS-03_JSON": "byte-identical to audit/M1b_results.json"
+  },
+  "staged": {
+    "C1_raw": true,
+    "C2_C3_raw": true,
+    "C4_current": true,
+    "C5_credit": true,
+    "C5_raw": true,
+    "C6_record": true,
+    "C6_tick": true,
+    "C7_relation": true,
+    "C8_resource": true,
+    "clause_pass_equal": {
+      "C1": true,
+      "C2": true,
+      "C3": true,
+      "C4": true,
+      "C5": true,
+      "C6": true,
+      "C6 trace": true,
+      "C7": true,
+      "C8": true
+    },
+    "pass": true,
+    "staged_coordinate_map": true
+  },
+  "underfunded_target": {
+    "available": false,
+    "greatest_viable": [],
+    "size": 0
+  }
+}

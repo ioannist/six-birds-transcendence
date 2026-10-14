@@ -1,0 +1,67 @@
+{
+  "audit": {
+    "base_autonomy_valid": true,
+    "certificate_id": "UNB-POS-01",
+    "every_action_target_owned": true,
+    "every_record_strictly_advances": true,
+    "every_step_budget_solvent": true,
+    "every_step_progresses": true,
+    "every_successor_inside": true,
+    "failed_obligations": [],
+    "finite_state_space": true,
+    "infinite_run_schema_valid": true,
+    "invariant_nonempty": true,
+    "lasso_witnesses": [
+      {
+        "cycle_state_ids": [
+          "T-SAFE-0",
+          "T-WARNING-1"
+        ],
+        "disturbance_id": "hit",
+        "prefix_state_ids": []
+      },
+      {
+        "cycle_state_ids": [
+          "T-SAFE-0",
+          "T-SAFE-1"
+        ],
+        "disturbance_id": "nominal",
+        "prefix_state_ids": []
+      }
+    ],
+    "model_relative_claim_only": true,
+    "package_invariant": true,
+    "physical_liveness_not_claimed": true,
+    "policy_deterministic": true,
+    "policy_total": true,
+    "unbounded_model_invariance_valid": true
+  },
+  "autonomy_model_ref": "models/autonomy/AUT-POS-01.model.json",
+  "autonomy_model_sha256": "5236175f0c284a31ff608f2d233d8db3605e0f9cc28137428cb601ea7e29c1e7",
+  "certificate_id": "UNB-POS-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-07A",
+    "function": "audit_unbounded_invariant",
+    "module": "cst_tt.unbounded",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "model-relative unbounded controlled invariance only",
+  "claim_lanes": [
+    "A"
+  ],
+  "model_ref": "models/strengthenings/unbounded/UNB-POS-01.model.json",
+  "model_sha256": "23eb129fb9901ad049b2332a3dd5a55b70aca89e66a73f5ab6585b125365ecf1",
+  "result_status": "proof-source-and-executable-model-relative-unbounded-invariant",
+  "schema_version": "CST-TT-07A",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.AutonomyTheory.modelRelativeUnboundedControlledInvariant",
+      "CSTTT.AutonomyTheory.arbitrarilyLongFinitePrefixStillInsufficient"
+    ],
+    "theorem_ids": [
+      "TTS-04",
+      "TTN-12"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": "CST-TT-05",
+  "certificate_id": "FIACH-POS-01",
+  "source": {
+    "code": 17,
+    "label": "source-substrate"
+  },
+  "target": {
+    "code": 101,
+    "label": "target-substrate"
+  },
+  "component_refs": {
+    "source_package": "source.json",
+    "staged_assembly": "staged.json",
+    "target_package": "target.json",
+    "corridor": "corridor.json",
+    "autonomy": "autonomy.json"
+  },
+  "component_sha256": {
+    "source_package": "0000000000000000000000000000000000000000000000000000000000000000",
+    "staged_assembly": "0000000000000000000000000000000000000000000000000000000000000000",
+    "target_package": "0000000000000000000000000000000000000000000000000000000000000000",
+    "corridor": "0000000000000000000000000000000000000000000000000000000000000000",
+    "autonomy": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "route_status": "route-indexed",
+  "recognition_status": "not-addressed",
+  "lane_results": {
+    "S-T": true,
+    "S-R": true,
+    "S-L": true,
+    "A": true
+  },
+  "result_status": "scaffold-only",
+  "claim_ceiling": "structural precursor only; no consciousness, phenomenal continuity, survival, or identity conclusion",
+  "theorem_evidence": {},
+  "audit": {
+    "aggregate_valid": true,
+    "failed_obligations": [],
+    "component_statuses": {
+      "S-T": true,
+      "S-R": true,
+      "S-L": true,
+      "A": true
+    }
+  },
+  "checker": {
+    "module": "cst_tt.fiach",
+    "function": "audit_temporal_fiach",
+    "python_version": "placeholder",
+    "checked_at_phase": "CST-TT-05"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$id": "https://six-birds.example/cst-tt/temporal_fission_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "audit": {},
+    "branch_certificate_refs": {},
+    "branch_certificate_sha256": {},
+    "certificate_id": {},
+    "relation": {},
+    "target_swap": {}
+  },
+  "required": [
+    "certificate_id",
+    "branch_certificate_refs",
+    "branch_certificate_sha256",
+    "relation",
+    "target_swap",
+    "audit"
+  ],
+  "title": "Temporal Fission Certificate",
+  "type": "object"
+}

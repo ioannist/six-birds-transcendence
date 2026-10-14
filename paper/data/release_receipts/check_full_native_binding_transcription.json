@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_full_native_binding_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_full_native_binding_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_full_native_binding_transcription.log",
+  "log_sha256": "ea15883fd8efc77a307b02e39e6f944d1ac524aca4cf8197ee507799b3909ce1",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:11+00:00",
+  "status": "pass",
+  "summary": "PASS: six actually supported source/target split executions, installed flattening control, complete rooted contexts\nPASS: caught planted drift: prepend initial observation\nPASS: caught planted drift: retain native correlations after flattening\nPASS: caught planted drift: inherit source hardware owner\nPASS: caught planted drift: discard consumed snapshot receipt"
+}

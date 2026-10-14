@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_supported_acquisition_sequence_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_supported_acquisition_sequence_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_supported_acquisition_sequence_transcription.log",
+  "log_sha256": "67080a5e78cdd0e8f3e2dd9146e6086eebda6c3c0df410a55d6eb7f1a81ea463",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:54+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted selected history drift\nCAUGHT planted positive support weight drift\nCAUGHT planted staged primitive selector drift\nPASS actual supported acquisition instructions, computed 0->2->3->4 sequence, exact staged readout adapter and direct initializer/weight/missing/normalized-alternative controls; five planted drifts caught\nScope: supported selected histories and chosen outcomes; complete Temporal-FIACH, runtime seed/clock/funded-route/final autonomy composition remain"
+}

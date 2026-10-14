@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "paper/tools/style_lint.py",
+    "--strict"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "style_lint",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W23-round3/style_lint.log",
+  "log_sha256": "7affb4685f97559ea918249a392e2af7ce11ab02562bf9eefe5e00d77546a9c6",
+  "metrics": {},
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-14T12:19:46+00:00",
+  "status": "pass",
+  "summary": "sec_12_conclusion | 338 | 11.83 | 0.00 | 0.00 | 2.96 | 15.36 | 0 | \ntab_grades:caption:1 | 46 | 0.00 | 0.00 | 0.00 | 0.00 | 11.50 | 0 | \ntab_grades | 0 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0 | \nTOTAL | 14557 | 13.95 | 0.00 | 1.58 | 4.19 | 15.93 | 0 | \nExempt files: 2"
+}

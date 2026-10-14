@@ -1,0 +1,115 @@
+\section{Related work}
+\label{sec:related}
+
+\paragraph{Personal identity and its thought experiments.}
+The question whether a copy, a teleported replica or a gradually replaced
+system is the same subject has a long literature
+\citep{Williams1970, Parfit1971, Perry1972, Lewis1976, Nozick1981, Parfit1984}.
+\citet{Olson2023SEP} surveys the fission problem and the two standard replies.
+The reduplication argument, that a relation which could hold between one
+earlier and two later persons cannot by itself make them identical, goes back
+to \citet{Williams1957}.
+On multiple occupancy, two persons share their stages before the division
+\citep{Lewis1976}. On non-branching criteria, a person survives only if no
+equally good competitor exists. Parfit discusses criteria of this kind, and
+Nozick's closest-continuer theory is a distinct proposal under which a tie
+leaves no continuer \citep{Nozick1981}. We do not take a position among these
+views. Our structural results sit beside them: under fission the continuation
+relation has two values, and no rule respecting the symmetry selects one
+(Section~\ref{sec:branching}). Perry's notion of a branch, a maximal set of
+mutually related stages \citep{Perry1972}, invites comparison with our strict
+lineage. The two differ: our chains are checked sequences of handoffs with no
+maximality requirement. \citet{Gustafsson2019} asks what form a non-branching
+clause should take when persistence rests on a continuity relation that can
+hold from one to many, and treats fusion as well as fission. Our relation
+holds between finite systems, is checked by a proof assistant, and is not
+analysed as identity.
+
+\paragraph{Uploading and gradual replacement.}
+\citet{Chalmers2010Singularity} separates the question of organization from
+the question of identity, and distinguishes gradual, destructive and
+reconstructive uploading. \citet{Chalmers1995Qualia} uses gradual replacement
+to argue for organizational invariance of experience.
+\citet{Cerullo2015} argues informally that uploading can yield two
+continuers with no reason to favour either, under a criterion of branching
+identity. \citet{Bauer2017} argues against branching identity.
+\citet{CorabiSchneider2012} ask whether an upload is at least a continuation of
+the original, in terms of its spatiotemporal and causal connection to it. In
+reply, \citet{Chalmers2012Reply} notes, with the example of a university that
+moved, that a moved thing may for a time exist at both places or at neither.
+He also notes that a gradually uploaded system stays connected to the
+original throughout. \citet{Weber2025Selective} argues that gradual replacement
+and scan-and-copy differ metaphysically, in the immanent causation they
+involve. Our three questions formalize
+questions of this kind on finite systems, and we too keep identity out of
+them. We do not claim that gradual versus instant uploading corresponds to our
+distinction between overlap and direct succession. Our classes require
+operational checks that timing alone does not supply. And nothing here bears
+on whether an upload is conscious.
+
+\paragraph{Temporal experience.}
+Overlap models of the stream of consciousness, in which successive specious
+presents \citep[ch.~XV]{James1890} share content, are the phenomenological
+counterpart of our live-overlap handoffs \citep{Dainton2000, Dainton2023SEP}.
+\citet{DaintonBayne2005} propose that phenomenal continuity, rather than
+psychological continuity, is the guide to personal persistence, and
+\citet{Dainton2008} develops that view and treats fission and fusion within
+it. Our overlaps are shared system
+state, not co-consciousness, and we adopt no model of experienced duration. We
+also take no side between views on which experience inherits the temporal
+structure of its objects \citep{Phillips2014} and views on which it need not
+\citep{Lee2014}. Within integrated information theory,
+\citet{ComolattiGrassoTononi2025} account for experienced time by moments that
+overlap in a directed way, and take the present to be a cause--effect
+structure specified by a system in its current state. Our predictive present
+is a different object, a field of the temporal signature carried across a
+transfer. We establish no bridge between the two and draw no conclusion about
+their account.
+
+\paragraph{Mathematical consciousness science.}
+Our setting is that of mathematical models of consciousness, where a model's
+objects and their well-definedness conditions are stated explicitly
+\citep{Kleiner2020MathematicalModels}. In that framework experience is
+defined at an instant, and what counts as an instant is left to the model
+\citep[Definition~2]{Kleiner2020MathematicalModels}. Our checks concern a
+different object: how a temporal signature, read off each state, is carried
+and maintained over handoff episodes and future sequences of actions. Integrated information theory
+requires a unique maximal substrate. When the maximal candidates tie and all
+of them overlap, its stated rule picks the next-best unique system
+\citep{AlbantakisEtAl2023IIT4}. That the theory's maximizations need not have
+unique results was already noted in its formalization
+\citep[Section~12.2]{KleinerTull2021}. This is a
+case from the field's own literature of a theory facing a uniqueness
+requirement over tied candidates. It is a different move from selecting among
+the tied ones, and our results do not show that the rule needs to break any
+symmetry. Substrate questions also appear as formal no-go arguments
+\citep{KleinerLudwig2024Neurons}. Those concern which systems are conscious,
+whereas ours concern which systems count as structural continuers, so the two
+neither support nor contradict each other.
+
+\paragraph{Mathematical precursors.}
+The ingredients are standard, and we credit them where they are used:
+\begin{itemize}
+\item gluing over covers with running intersection (acyclic database schemes,
+\citealp[Theorem~3.4]{BeeriEtAl1983}; see also \citealp{Vorobev1962} and
+\citealp{Abramsky2013}). Global sections and their obstruction are treated in
+\citet{AbramskyBrandenburger2011}, whose obstructions concern distributions. Our
+cyclic obstruction is instead a failure of running intersection.
+\item confluence and normal forms \citep{Newman1942, BaaderNipkow1998}.
+\item bisimulation as behavioural equivalence \citep{Park1981, Milner1989},
+and its probabilistic form \citep{LarsenSkou1991}.
+\item lumpability of Markov chains \citep{KemenySnell1976}.
+\item controlled invariance and viability \citep{Blanchini1999, Aubin1991},
+and traps in infinite games \citep{Mazala2002}.
+\item safety and liveness properties \citep{AlpernSchneider1985}.
+\item limits of finite-step reachability \citep{Bertsekas1972}.
+\item holonomy \citep{Nakahara2003}.
+\item predictive equivalence \citep{ShaliziCrutchfield2001} and predictive
+representations of state \citep{LittmanSuttonSingh2002}.
+\end{itemize}
+We claim no priority for any of these ideas, separately or together.
+
+\paragraph{The Six Birds framework.}
+The questions and the design of the models come from a broader programme, the
+Six Birds framework, which we describe in Appendix~\ref{app:sixbirds} together
+with the sources the design drew on. None of our results depends on it.

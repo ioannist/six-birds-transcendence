@@ -1,0 +1,2 @@
+boundary_id,left_source,right_source,target,lineages_valid,target_package_valid,action_credit_conflict,recombination_failure,certificate_ref,claim_ceiling
+FUSION-BOUNDARY-01,301,302,303,true,false,true,true,formal/certificates/fusion/FUSION-BOUNDARY-01.certificate.json,finite separation of branchwise lineage merger from integrated target package

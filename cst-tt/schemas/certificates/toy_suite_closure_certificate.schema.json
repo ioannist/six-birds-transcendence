@@ -1,0 +1,17 @@
+{
+  "$id": "https://six-birds.example/cst-tt/toy_suite_closure_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "audit": {},
+    "certificate_id": {},
+    "entries": {}
+  },
+  "required": [
+    "certificate_id",
+    "entries",
+    "audit"
+  ],
+  "title": "Toy Suite Closure Certificate",
+  "type": "object"
+}

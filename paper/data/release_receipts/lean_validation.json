@@ -1,0 +1,16 @@
+{
+  "command": [
+    "scripts/validate_lean.sh"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "lean_validation",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/lean_validation.log",
+  "log_sha256": "77d41eb81a035fe0d93476ca4f3b04a57886c49c394dbce360ba66bcd51d825a",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:36:11+00:00",
+  "status": "pass",
+  "summary": "  heuristic lead vacuity ignored input lean/CSTTT/Transport/RouteLicenseGuards.lean:34: def flatRanks := { positive with rank := fun _ => 0 }\n  heuristic lead vacuity ignored input lean/CSTTT/Transport/RouteLicenseModels.lean:20: def necessity : RawSystem (Fin 3) (Fin 3) (Fin 1) (Fin 2) Bool :=\nOVERALL  pass\nJSON: /home/repos/six-birds-transcendence/lean/.validate-logs/run-20261013T113359-998050Z/report.json\nTEXT: /home/repos/six-birds-transcendence/lean/.validate-logs/run-20261013T113359-998050Z/report.txt"
+}

@@ -1,0 +1,1028 @@
+{
+  "schema": "csttt-raw-direct-control-declaration-v1",
+  "openingHead": "28e1749",
+  "phase": "G5/G8a declaration only",
+  "evaluationStatus": "not evaluated",
+  "classification": "b",
+  "sources": {
+    "DS-POS-01": {
+      "path": "cst-tt/models/direct_successor/DS-POS-01.model.json",
+      "sha256": "a3b5856d010b1fff44715225a44367e1417ef7021c038b7b5cc280f846d337f8",
+      "releasePayloadSha256": "ec40f3181f1f1f2518d7814fb6e31d806f226be67273cbc6074bb4c2117c83a7"
+    },
+    "DS-POS-02A": {
+      "path": "cst-tt/models/direct_successor/DS-POS-02A.model.json",
+      "sha256": "177157f54c427f90b70b6dd24d7686124fc5b646ee275ab0988f781cb13c1069",
+      "releasePayloadSha256": "aa2a8aef2127df2e450a370ef3b288d192a16ce5c1844c8dbab0aa5c133b95aa"
+    },
+    "DS-POS-02B": {
+      "path": "cst-tt/models/direct_successor/DS-POS-02B.model.json",
+      "sha256": "22f2e0e8f6cddf1d70137bfefbca8a9a54360c3b0b11d140dd54b3ea8364273b",
+      "releasePayloadSha256": "186f6a544de529b4d4d1f3b12d09c99a30bdb9ec73484df7f896e61537ca0e48"
+    }
+  },
+  "primitives": {
+    "DS-POS-01": {
+      "sourceCarrier": 17,
+      "targetCarrier": 101,
+      "sourceAudit": "ds-source-final",
+      "targetAudit": "ds-target-first",
+      "laterAudit": "",
+      "stages": [
+        {
+          "support": [
+            17
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          }
+        },
+        {
+          "support": [
+            101
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "ds-source-final",
+          "owner": 17,
+          "stage": 0
+        },
+        {
+          "id": "ds-target-first",
+          "owner": 101,
+          "stage": 1
+        }
+      ],
+      "dependencies": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal"
+        }
+      ],
+      "updates": [
+        {
+          "predictiveAdvance": 1,
+          "orderAdvance": 1,
+          "tickAdvance": 1,
+          "progressAdvance": 1,
+          "recordAdvance": 2,
+          "appendResidue": [
+            "ds-edge-S-T-edge"
+          ],
+          "nextMaintenance": "ds-edge-S-T-target-maint",
+          "nextOwner": 101
+        }
+      ],
+      "sourceInput": {
+        "stage": 0,
+        "payload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "token": {
+          "id": 0,
+          "used": false
+        },
+        "present": true,
+        "provenance": "live"
+      },
+      "dataGraph": []
+    },
+    "DS-POS-02A": {
+      "sourceCarrier": 17,
+      "targetCarrier": 55,
+      "sourceAudit": "ds-chain-source",
+      "targetAudit": "ds-middle-boundary",
+      "laterAudit": "",
+      "stages": [
+        {
+          "support": [
+            17
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-M-source-maint",
+            "owner": 17
+          }
+        },
+        {
+          "support": [
+            55
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-M-edge"
+            ],
+            "maintenance": "ds-edge-S-M-target-maint",
+            "owner": 55
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "ds-chain-source",
+          "owner": 17,
+          "stage": 0
+        },
+        {
+          "id": "ds-middle-boundary",
+          "owner": 55,
+          "stage": 1
+        }
+      ],
+      "dependencies": [
+        {
+          "parent": "ds-chain-source",
+          "child": "ds-middle-boundary",
+          "kind": "liveTemporal"
+        }
+      ],
+      "updates": [
+        {
+          "predictiveAdvance": 1,
+          "orderAdvance": 1,
+          "tickAdvance": 1,
+          "progressAdvance": 1,
+          "recordAdvance": 2,
+          "appendResidue": [
+            "ds-edge-S-M-edge"
+          ],
+          "nextMaintenance": "ds-edge-S-M-target-maint",
+          "nextOwner": 55
+        }
+      ],
+      "sourceInput": {
+        "stage": 0,
+        "payload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-M-source-maint",
+          "owner": 17
+        },
+        "token": {
+          "id": 1,
+          "used": false
+        },
+        "present": true,
+        "provenance": "live"
+      },
+      "dataGraph": []
+    },
+    "DS-POS-02B": {
+      "sourceCarrier": 55,
+      "targetCarrier": 101,
+      "sourceAudit": "ds-middle-boundary",
+      "targetAudit": "ds-chain-target",
+      "laterAudit": "",
+      "stages": [
+        {
+          "support": [
+            55
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-M-edge"
+            ],
+            "maintenance": "ds-edge-S-M-target-maint",
+            "owner": 55
+          }
+        },
+        {
+          "support": [
+            101
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 2,
+            "order": 2,
+            "tick": 2,
+            "progress": 2,
+            "record": 4,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-M-edge",
+              "ds-edge-M-T-edge"
+            ],
+            "maintenance": "ds-edge-M-T-target-maint",
+            "owner": 101
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "ds-middle-boundary",
+          "owner": 55,
+          "stage": 0
+        },
+        {
+          "id": "ds-chain-target",
+          "owner": 101,
+          "stage": 1
+        }
+      ],
+      "dependencies": [
+        {
+          "parent": "ds-middle-boundary",
+          "child": "ds-chain-target",
+          "kind": "liveTemporal"
+        }
+      ],
+      "updates": [
+        {
+          "predictiveAdvance": 1,
+          "orderAdvance": 1,
+          "tickAdvance": 1,
+          "progressAdvance": 1,
+          "recordAdvance": 2,
+          "appendResidue": [
+            "ds-edge-M-T-edge"
+          ],
+          "nextMaintenance": "ds-edge-M-T-target-maint",
+          "nextOwner": 101
+        }
+      ],
+      "sourceInput": {
+        "stage": 0,
+        "payload": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-M-edge"
+          ],
+          "maintenance": "ds-edge-S-M-target-maint",
+          "owner": 55
+        },
+        "token": {
+          "id": 2,
+          "used": false
+        },
+        "present": true,
+        "provenance": "live"
+      },
+      "dataGraph": []
+    },
+    "GAP": {
+      "sourceCarrier": 17,
+      "targetCarrier": 101,
+      "sourceAudit": "ds-source-final",
+      "targetAudit": "ds-target-first",
+      "laterAudit": "",
+      "stages": [
+        {
+          "support": [
+            17
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          }
+        },
+        {
+          "support": [
+            17
+          ],
+          "realized": false,
+          "frontier": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          }
+        },
+        {
+          "support": [
+            101
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "ds-source-final",
+          "owner": 17,
+          "stage": 0
+        },
+        {
+          "id": "ds-target-first",
+          "owner": 101,
+          "stage": 2
+        }
+      ],
+      "dependencies": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal"
+        }
+      ],
+      "updates": [
+        {
+          "predictiveAdvance": 1,
+          "orderAdvance": 1,
+          "tickAdvance": 1,
+          "progressAdvance": 1,
+          "recordAdvance": 2,
+          "appendResidue": [
+            "ds-edge-S-T-edge"
+          ],
+          "nextMaintenance": "ds-edge-S-T-target-maint",
+          "nextOwner": 101
+        },
+        {
+          "predictiveAdvance": 1,
+          "orderAdvance": 1,
+          "tickAdvance": 1,
+          "progressAdvance": 1,
+          "recordAdvance": 2,
+          "appendResidue": [
+            "ds-edge-S-T-edge"
+          ],
+          "nextMaintenance": "ds-edge-S-T-target-maint",
+          "nextOwner": 101
+        }
+      ],
+      "sourceInput": {
+        "stage": 0,
+        "payload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "token": {
+          "id": 0,
+          "used": false
+        },
+        "present": true,
+        "provenance": "live"
+      },
+      "dataGraph": []
+    },
+    "ALTERNATIVE": {
+      "sourceCarrier": 17,
+      "targetCarrier": 101,
+      "sourceAudit": "ds-source-final",
+      "targetAudit": "ds-target-first",
+      "laterAudit": "",
+      "stages": [
+        {
+          "support": [
+            17
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          }
+        },
+        {
+          "support": [
+            101
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "ds-source-final",
+          "owner": 17,
+          "stage": 0
+        },
+        {
+          "id": "ds-target-first",
+          "owner": 101,
+          "stage": 1
+        },
+        {
+          "id": "ds-alternative-source",
+          "owner": 17,
+          "stage": 0
+        }
+      ],
+      "dependencies": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal"
+        },
+        {
+          "parent": "ds-alternative-source",
+          "child": "ds-target-first",
+          "kind": "liveTemporal"
+        }
+      ],
+      "updates": [
+        {
+          "predictiveAdvance": 1,
+          "orderAdvance": 1,
+          "tickAdvance": 1,
+          "progressAdvance": 1,
+          "recordAdvance": 2,
+          "appendResidue": [
+            "ds-edge-S-T-edge"
+          ],
+          "nextMaintenance": "ds-edge-S-T-target-maint",
+          "nextOwner": 101
+        }
+      ],
+      "sourceInput": {
+        "stage": 0,
+        "payload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "token": {
+          "id": 0,
+          "used": false
+        },
+        "present": true,
+        "provenance": "live"
+      },
+      "dataGraph": [],
+      "extraInputs": {
+        "ds-alternative-source": {
+          "stage": 0,
+          "payload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "token": {
+            "id": 0,
+            "used": false
+          },
+          "present": true,
+          "provenance": "live"
+        }
+      }
+    },
+    "STORE": {
+      "sourceCarrier": 17,
+      "targetCarrier": 101,
+      "sourceAudit": "ds-source-final",
+      "targetAudit": "ds-target-first",
+      "laterAudit": "",
+      "stages": [
+        {
+          "support": [
+            17
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          }
+        },
+        {
+          "support": [
+            303
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          }
+        },
+        {
+          "support": [
+            101
+          ],
+          "realized": true,
+          "frontier": {
+            "predictive": 2,
+            "order": 2,
+            "tick": 2,
+            "progress": 2,
+            "record": 4,
+            "residue": [
+              "direct-root",
+              "store-edge",
+              "stored-return"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "ds-source-final",
+          "owner": 17,
+          "stage": 0
+        },
+        {
+          "id": "ds-store",
+          "owner": 303,
+          "stage": 1
+        },
+        {
+          "id": "ds-target-first",
+          "owner": 101,
+          "stage": 2
+        }
+      ],
+      "dependencies": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-store",
+          "kind": "storage"
+        },
+        {
+          "parent": "ds-store",
+          "child": "ds-target-first",
+          "kind": "storage"
+        }
+      ],
+      "updates": [
+        {
+          "predictiveAdvance": 1,
+          "orderAdvance": 1,
+          "tickAdvance": 1,
+          "progressAdvance": 1,
+          "recordAdvance": 2,
+          "appendResidue": [
+            "store-edge"
+          ],
+          "nextMaintenance": "stored",
+          "nextOwner": 303
+        },
+        {
+          "predictiveAdvance": 1,
+          "orderAdvance": 1,
+          "tickAdvance": 1,
+          "progressAdvance": 1,
+          "recordAdvance": 2,
+          "appendResidue": [
+            "stored-return"
+          ],
+          "nextMaintenance": "ds-edge-S-T-target-maint",
+          "nextOwner": 101
+        }
+      ],
+      "sourceInput": {
+        "stage": 0,
+        "payload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "token": {
+          "id": 0,
+          "used": false
+        },
+        "present": true,
+        "provenance": "live"
+      },
+      "dataGraph": [],
+      "extraInputs": {
+        "ds-store": {
+          "stage": 1,
+          "payload": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "token": {
+            "id": 3,
+            "used": false
+          },
+          "present": true,
+          "provenance": "store"
+        }
+      }
+    }
+  },
+  "controls": {
+    "directOnly": {
+      "base": "DS-POS-01",
+      "patches": []
+    },
+    "dataOnly": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "dependencies",
+          "value": []
+        },
+        {
+          "path": "dataGraph",
+          "value": [
+            {
+              "parent": "ds-source-final",
+              "child": "ds-target-first",
+              "payload": {
+                "predictive": 0,
+                "order": 0,
+                "tick": 0,
+                "progress": 0,
+                "record": 0,
+                "residue": [
+                  "direct-root"
+                ],
+                "maintenance": "ds-edge-S-T-source-maint",
+                "owner": 17
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "directWithData": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "dataGraph",
+          "value": [
+            {
+              "parent": "ds-source-final",
+              "child": "ds-target-first",
+              "payload": {
+                "predictive": 0,
+                "order": 0,
+                "tick": 0,
+                "progress": 0,
+                "record": 0,
+                "residue": [
+                  "direct-root"
+                ],
+                "maintenance": "ds-edge-S-T-source-maint",
+                "owner": 17
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "detached": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "sourceInput.provenance",
+          "value": "detached"
+        },
+        {
+          "path": "dependencies.0.kind",
+          "value": "copy"
+        }
+      ]
+    },
+    "archive": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "sourceInput.provenance",
+          "value": "archive"
+        },
+        {
+          "path": "dependencies.0.kind",
+          "value": "replay"
+        }
+      ]
+    },
+    "missingSource": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "sourceInput",
+          "value": null
+        }
+      ]
+    },
+    "missingPayload": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "sourceInput.payload",
+          "value": null
+        }
+      ]
+    },
+    "missingToken": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "sourceInput.token",
+          "value": null
+        }
+      ]
+    },
+    "usedToken": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "sourceInput.token.used",
+          "value": true
+        }
+      ]
+    },
+    "sourceAbsent": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "sourceInput.present",
+          "value": false
+        }
+      ]
+    },
+    "payloadDrift": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "sourceInput.payload.predictive",
+          "value": 9
+        }
+      ]
+    },
+    "duplicateEvent": {
+      "base": "DS-POS-01",
+      "patches": [
+        {
+          "path": "events",
+          "value": [
+            {
+              "id": "ds-source-final",
+              "owner": 17,
+              "stage": 0
+            },
+            {
+              "id": "ds-target-first",
+              "owner": 101,
+              "stage": 1
+            },
+            {
+              "id": "ds-source-final",
+              "owner": 17,
+              "stage": 0
+            }
+          ]
+        }
+      ]
+    },
+    "gap": {
+      "base": "GAP",
+      "patches": []
+    },
+    "alternativeParent": {
+      "base": "ALTERNATIVE",
+      "patches": []
+    },
+    "storage": {
+      "base": "STORE",
+      "patches": []
+    }
+  },
+  "nativeControls": {
+    "overlapOnly": {
+      "episode": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.canonicalLeg",
+      "cell": true,
+      "factor": [
+        false,
+        false,
+        false
+      ],
+      "seed": [
+        "native-past"
+      ],
+      "inputRule": "eventAt selected id; get actual stage; source input is full stage frontier, event local stage, token id=stage, used=false, present=stage.realized, provenance=live; missing event/stage rejects",
+      "dependencyKind": "all liveTemporal",
+      "dataGraph": []
+    },
+    "mixedDirect": {
+      "sourceCarrier": 55,
+      "targetCarrier": 101,
+      "sourceFrontier": "whole exit of the preceding overlapOnly actual episode",
+      "sourceEvent": "native-direct-source",
+      "targetEvent": "native-direct-target",
+      "sourceStage": 0,
+      "targetStage": 1,
+      "sourceSupport": [
+        55
+      ],
+      "targetSupport": [
+        101
+      ],
+      "realized": [
+        true,
+        true
+      ],
+      "receiver": {
+        "predictiveAdvance": 0,
+        "orderAdvance": 1,
+        "tickAdvance": 1,
+        "progressAdvance": 1,
+        "recordAdvance": 1,
+        "appendResidue": [
+          "native-direct"
+        ],
+        "nextMaintenance": "funded",
+        "nextOwner": 101
+      },
+      "targetObservation": "all old scalar counters plus declared increments; old residue plus native-direct; funded; owner101",
+      "sourceInput": "whole sourceFrontier; stage0; token id=4 used=false; present=true; provenance=live",
+      "dependencyKind": "liveTemporal",
+      "dataGraph": []
+    }
+  },
+  "extension": {
+    "sourceInputMeaning": "pre-step whole source frontier. The explicit receiver instruction generates the source-published/target-received whole successor frontier; released DS output payloads are observation provenance, not primitive necessity verdicts.",
+    "discardedReleaseVerdicts": [
+      "counterfactually_necessary",
+      "single_use_temporal_token",
+      "storage_mediator",
+      "replayable_archive",
+      "alternative_temporal_parent"
+    ],
+    "structuralBinding": "directReadout compares complete typed source payload and computed complete received frontier. Therefore every hash function agrees on generated and observed received payload; no checksum injectivity assumption.",
+    "releaseHashScope": "Existing SHA256 strings are source provenance for the seven-field released payload serialization. New kernel readout uses stronger full-frontier equality; no new SHA implementation or collision-resistance theorem is asserted.",
+    "assignment": "Only declared source and extra input cells are present; other event IDs return none. Native adapter rejects absent event/stage.",
+    "episodeUnusedOverlapFields": "interventionMode additive; base/sourceContribution/targetContribution zero; laterAudit empty for direct-only two-event episodes. No strict overlap certificate is supplied.",
+    "singleUse": "fire consumes token identity in every input cell before the next generator step, including aliases.",
+    "chain": "DS-POS-02A/B local episode stage numbers stay0/1; full frontier tick/record/residue/ownership match at shared55 boundary. Typed concatenation never creates an atomic17->101 edge."
+  },
+  "plannedChecks": [
+    "all partial decoder/readout iff",
+    "actual source deletion with receiver fixed",
+    "global token alias consumption",
+    "direct-only and overlap-only on the same ControlModel domain",
+    "positive full-source-payload data path and no generated event",
+    "direct-with-data concrete kernel counterexample to literal exclusion",
+    "actual detached/archive/store/gap/alternative/missing/reuse/payload/duplicate readout negatives",
+    "two-direct and overlap/direct exact whole-frontier typed paths",
+    "no invented atomic endpoint edge"
+  ],
+  "nonclaims": [
+    "no evaluation or control verdict in this packet",
+    "no TTD promotion yet",
+    "no strict Temporal-FIACH broadening",
+    "no package/autonomy/recognition/personhood conclusion"
+  ]
+}

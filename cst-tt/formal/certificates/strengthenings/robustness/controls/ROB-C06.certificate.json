@@ -1,0 +1,24 @@
+{
+  "audit": {
+    "accepted": false,
+    "dimension_results": {
+      "order-step": true,
+      "predictive-step": true,
+      "progress-step": true,
+      "record-step": true,
+      "tick-step": true
+    },
+    "hard_gates_exact_and_true": false,
+    "within_declared_box": true
+  },
+  "certificate_id": "ROB-C06",
+  "claim_ceiling": "declared robustness-box boundary only",
+  "claim_lanes": [
+    "M"
+  ],
+  "description": "autonomy hard gate fails",
+  "model_ref": "models/strengthenings/robustness/controls/ROB-C06.model.json",
+  "model_sha256": "b5dab8b3eb094d3c14bfd04622dc4c211165f7a9ea29e235ebe18a3fbad1f0c5",
+  "result_status": "checked-finite-robustness-boundary-control",
+  "schema_version": "CST-TT-07A"
+}

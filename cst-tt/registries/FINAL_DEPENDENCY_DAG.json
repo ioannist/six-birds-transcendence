@@ -1,0 +1,2959 @@
+{
+  "acyclic": true,
+  "edge_count": 288,
+  "edges": [
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTD-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTD-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTD-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTF-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTF-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTF-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTF-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTF-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTF-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTF-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTF-08"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTH-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTH-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTH-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTH-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTH-08"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTH-09"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTH-10"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-08"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-09"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-10"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-11"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-12"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-13"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTN-14"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTS-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTS-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTS-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-01",
+      "target": "TTS-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-02",
+      "target": "TTD-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-02",
+      "target": "TTD-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-02",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-02",
+      "target": "TTH-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-02",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-02",
+      "target": "TTN-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-02",
+      "target": "TTN-13"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-03",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-04",
+      "target": "TTF-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-04",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-04",
+      "target": "TTN-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-05",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-06",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-06",
+      "target": "TTN-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-07",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-07",
+      "target": "TTN-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-08",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-08",
+      "target": "TTH-10"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-08",
+      "target": "TTN-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-09",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-09",
+      "target": "TTH-09"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-09",
+      "target": "TTN-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-09",
+      "target": "TTN-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-09",
+      "target": "TTN-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-10",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-10",
+      "target": "TTH-09"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-10",
+      "target": "TTN-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-11",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-12",
+      "target": "TTH-09"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-12",
+      "target": "TTN-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-14",
+      "target": "TTF-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-14",
+      "target": "TTH-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-14",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-14",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-15",
+      "target": "TTF-08"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-15",
+      "target": "TTH-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-15",
+      "target": "TTH-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-15",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-15",
+      "target": "TTN-08"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-15",
+      "target": "TTN-14"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-16",
+      "target": "TTH-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-16",
+      "target": "TTH-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-16",
+      "target": "TTN-10"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-16",
+      "target": "TTN-14"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-16",
+      "target": "TTS-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-16",
+      "target": "TTS-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-17",
+      "target": "TTH-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-17",
+      "target": "TTH-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-18",
+      "target": "TTD-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-18",
+      "target": "TTH-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-18",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-18",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-18",
+      "target": "TTH-08"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-18",
+      "target": "TTN-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-18",
+      "target": "TTS-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-19",
+      "target": "TTD-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-19",
+      "target": "TTH-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-19",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-19",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-19",
+      "target": "TTH-08"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-19",
+      "target": "TTN-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-19",
+      "target": "TTN-09"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-19",
+      "target": "TTS-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-20",
+      "target": "TTF-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-20",
+      "target": "TTH-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-20",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-20",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-20",
+      "target": "TTN-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-20",
+      "target": "TTN-12"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-20",
+      "target": "TTS-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-21",
+      "target": "TTH-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-21",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-21",
+      "target": "TTN-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-21",
+      "target": "TTN-12"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-21",
+      "target": "TTS-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-22",
+      "target": "TTH-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-22",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-22",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-22",
+      "target": "TTN-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-22",
+      "target": "TTN-12"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-22",
+      "target": "TTS-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-23",
+      "target": "TTD-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-23",
+      "target": "TTD-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-23",
+      "target": "TTD-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-23",
+      "target": "TTS-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-24",
+      "target": "TTF-01"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-24",
+      "target": "TTF-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-24",
+      "target": "TTF-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-24",
+      "target": "TTF-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-24",
+      "target": "TTF-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-24",
+      "target": "TTF-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-24",
+      "target": "TTF-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-24",
+      "target": "TTF-08"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-25",
+      "target": "TTF-02"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-25",
+      "target": "TTF-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-25",
+      "target": "TTF-04"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-25",
+      "target": "TTF-05"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-25",
+      "target": "TTF-06"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-25",
+      "target": "TTF-07"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-25",
+      "target": "TTF-08"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-33",
+      "target": "TTS-03"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-34",
+      "target": "TTN-12"
+    },
+    {
+      "edge_type": "assumption",
+      "reason": "explicit purchased assumption",
+      "source": "AS-34",
+      "target": "TTS-04"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "operational episode enters corridor data",
+      "source": "D-007",
+      "target": "D-027"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "temporal alphabet types the signature",
+      "source": "D-008",
+      "target": "D-010"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "signature is evaluated by closure semantics",
+      "source": "D-010",
+      "target": "D-011"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "frozen signature precedes corridor data",
+      "source": "D-010",
+      "target": "D-027"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "closure witness instantiates closure semantics",
+      "source": "D-011",
+      "target": "D-012"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "C6 temporal substance enters package certificate",
+      "source": "D-012",
+      "target": "D-020"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "clock translation enters bridge",
+      "source": "D-013",
+      "target": "D-022"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "clock translation types temporal-signature agreement",
+      "source": "D-013",
+      "target": "D-047"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "independent clauses enter package certificate",
+      "source": "D-016",
+      "target": "D-020"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "gluing premise enters package certificate",
+      "source": "D-019",
+      "target": "D-020"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "package certificate enters aggregate",
+      "source": "D-020",
+      "target": "D-035"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "bridge enters transport certificate",
+      "source": "D-022",
+      "target": "D-023"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "transport enters direct-successor certificate",
+      "source": "D-023",
+      "target": "D-029"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "counterfactual audit enters corridor certificate",
+      "source": "D-026",
+      "target": "D-028"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "strict corridor certificate enters aggregate",
+      "source": "D-028",
+      "target": "D-035"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "controlled system enters invariant certificate",
+      "source": "D-030",
+      "target": "D-032"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "withdrawal enters autonomy certificate",
+      "source": "D-031",
+      "target": "D-033"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "invariant enters autonomy certificate",
+      "source": "D-032",
+      "target": "D-033"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "autonomy certificate enters aggregate",
+      "source": "D-033",
+      "target": "D-035"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "operational seed enters fallback closure",
+      "source": "D-037",
+      "target": "D-038"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "fallback closure enters IAPS certificate",
+      "source": "D-038",
+      "target": "D-039"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "representative independence enters bundled transport evidence",
+      "source": "D-046",
+      "target": "D-048"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "component agreement enters bundled transport evidence",
+      "source": "D-047",
+      "target": "D-048"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "bundled temporal transport enters each atomic overlap leg",
+      "source": "D-048",
+      "target": "D-057"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "intervention projection supplies two-sided nonredundancy",
+      "source": "D-056",
+      "target": "D-058"
+    },
+    {
+      "edge_type": "definition-dependency",
+      "reason": "atomic overlap legs enter the carrier-chain summary",
+      "source": "D-058",
+      "target": "D-059"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-01",
+      "target": "TTF-01"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-01",
+      "target": "TTF-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-01",
+      "target": "TTF-05"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-01",
+      "target": "TTF-06"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-02",
+      "target": "TTF-01"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-02",
+      "target": "TTF-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-02",
+      "target": "TTF-03"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-02",
+      "target": "TTF-05"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-02",
+      "target": "TTF-06"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-03",
+      "target": "TTF-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-03",
+      "target": "TTF-04"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-03",
+      "target": "TTF-07"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-04",
+      "target": "TTF-04"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-04",
+      "target": "TTF-08"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TFM-04",
+      "target": "TTN-14"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTD-01",
+      "target": "TTD-02"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTD-01",
+      "target": "TTD-03"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTD-01",
+      "target": "TTS-01"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTD-02",
+      "target": "TTS-01"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTF-01",
+      "target": "TTF-02"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTF-02",
+      "target": "TTF-03"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTF-02",
+      "target": "TTF-04"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTF-02",
+      "target": "TTF-05"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTF-02",
+      "target": "TTF-06"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTF-02",
+      "target": "TTF-08"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTF-03",
+      "target": "TTF-06"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTF-04",
+      "target": "TTF-07"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-01",
+      "target": "TTH-02"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-02",
+      "target": "TTF-05"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-02",
+      "target": "TTH-05"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-02",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-03",
+      "target": "TTD-01"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-03",
+      "target": "TTF-01"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-03",
+      "target": "TTH-04"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-03",
+      "target": "TTH-10"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-04",
+      "target": "TTD-02"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-04",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-04",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-04",
+      "target": "TTH-08"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-04",
+      "target": "TTS-01"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-05",
+      "target": "TTF-05"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-05",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-05",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-05",
+      "target": "TTN-06"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-05",
+      "target": "TTS-04"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-06",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-06",
+      "target": "TTS-03"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTH-09",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-01",
+      "target": "TTD-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-01",
+      "target": "TTH-04"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-01",
+      "target": "TTH-05"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-01",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-01",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-01",
+      "target": "TTH-10"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-01",
+      "target": "TTS-01"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-02",
+      "target": "TTD-03"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-02",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-02",
+      "target": "TTN-01"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-03",
+      "target": "TTD-01"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-03",
+      "target": "TTD-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-03",
+      "target": "TTD-03"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-03",
+      "target": "TTS-01"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-04",
+      "target": "TTH-05"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-04",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-04",
+      "target": "TTN-06"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-05",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-05",
+      "target": "TTH-04"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-05",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-05",
+      "target": "TTH-09"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-05",
+      "target": "TTN-04"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-05",
+      "target": "TTN-05"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-06",
+      "target": "TTH-04"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-06",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-06",
+      "target": "TTH-09"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-07",
+      "target": "TTH-08"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-07",
+      "target": "TTN-11"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-07",
+      "target": "TTN-14"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-08",
+      "target": "TTN-09"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-09",
+      "target": "TTH-05"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-10",
+      "target": "TTH-05"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-10",
+      "target": "TTH-07"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-10",
+      "target": "TTN-12"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-11",
+      "target": "TTH-01"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-11",
+      "target": "TTH-06"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-11",
+      "target": "TTN-08"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-12",
+      "target": "TTN-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-13",
+      "target": "TTN-10"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-13",
+      "target": "TTS-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-14",
+      "target": "TTN-07"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-15",
+      "target": "TTN-13"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-16",
+      "target": "TTH-10"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-16",
+      "target": "TTN-03"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-17",
+      "target": "TTH-03"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-17",
+      "target": "TTN-04"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-18",
+      "target": "TTH-01"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-18",
+      "target": "TTH-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-19",
+      "target": "TTH-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-20",
+      "target": "TTD-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-20",
+      "target": "TTS-01"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-21",
+      "target": "TTS-02"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-21",
+      "target": "TTS-03"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-22",
+      "target": "TTS-03"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-23",
+      "target": "TTS-04"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-24",
+      "target": "TTN-12"
+    },
+    {
+      "edge_type": "toy-evidence",
+      "reason": "canonical finite witness or control",
+      "source": "TTM-24",
+      "target": "TTS-04"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-01",
+      "target": "TTD-03"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-01",
+      "target": "TTN-09"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-03",
+      "target": "TTH-10"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-03",
+      "target": "TTN-04"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-04",
+      "target": "TTH-04"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-04",
+      "target": "TTH-09"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-04",
+      "target": "TTN-05"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-05",
+      "target": "TTH-09"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-08",
+      "target": "TTF-08"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-10",
+      "target": "TTS-02"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-11",
+      "target": "TTF-07"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-11",
+      "target": "TTH-08"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-12",
+      "target": "TTS-04"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTN-14",
+      "target": "TTF-04"
+    },
+    {
+      "edge_type": "theorem-dependency",
+      "reason": "required theorem or boundary",
+      "source": "TTS-02",
+      "target": "TTS-03"
+    }
+  ],
+  "node_count": 174,
+  "nodes": [
+    {
+      "label": "FINITE-EXACT",
+      "node_id": "AS-01",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-DISTINCT",
+      "node_id": "AS-02",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-SOURCE-PKG",
+      "node_id": "AS-03",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-PREDICTIVE-SUFF",
+      "node_id": "AS-04",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-ORDER",
+      "node_id": "AS-05",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-TICK",
+      "node_id": "AS-06",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-PROGRESS",
+      "node_id": "AS-07",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-ARROW",
+      "node_id": "AS-08",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-MAINTENANCE",
+      "node_id": "AS-09",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-BRIDGE-ADM",
+      "node_id": "AS-10",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-REP-INDEP",
+      "node_id": "AS-11",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-ROUTE-MEMORY",
+      "node_id": "AS-12",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-FLATNESS",
+      "node_id": "AS-13",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-CLOCK-REL",
+      "node_id": "AS-14",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-GLOBAL-GLUE",
+      "node_id": "AS-15",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-HARD-GATES",
+      "node_id": "AS-16",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-PACKAGE-OWNERSHIP",
+      "node_id": "AS-17",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-NONREDUNDANCY",
+      "node_id": "AS-18",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-NO-GAP",
+      "node_id": "AS-19",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-WITHDRAWAL",
+      "node_id": "AS-20",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-DISTURBANCE",
+      "node_id": "AS-21",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-INVARIANT",
+      "node_id": "AS-22",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-DIRECT-PROVENANCE",
+      "node_id": "AS-23",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-ANCESTRY-SEED",
+      "node_id": "AS-24",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-NO-EX-NIHILO",
+      "node_id": "AS-25",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-FELT-TIME",
+      "node_id": "AS-26",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-CONT-TIME",
+      "node_id": "AS-27",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "A1",
+      "node_id": "AS-28",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "A2-P",
+      "node_id": "AS-29",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-CERT-SOUND",
+      "node_id": "AS-30",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-RECOGNITION",
+      "node_id": "AS-31",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-PERSONAL-IDENTITY",
+      "node_id": "AS-32",
+      "node_type": "assumption",
+      "status": "frozen"
+    },
+    {
+      "label": "H-BOUNDED-PERTURBATION-BOX",
+      "node_id": "AS-33",
+      "node_type": "assumption",
+      "status": "frozen-CST-TT-07A"
+    },
+    {
+      "label": "H-TOTAL-INVARIANT-POLICY",
+      "node_id": "AS-34",
+      "node_type": "assumption",
+      "status": "frozen-CST-TT-07A"
+    },
+    {
+      "label": "CarrierId",
+      "node_id": "D-001",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "Carrier",
+      "node_id": "D-002",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "CarrierPair",
+      "node_id": "D-003",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "Stage",
+      "node_id": "D-004",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "Event",
+      "node_id": "D-005",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "Dependency",
+      "node_id": "D-006",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "Episode",
+      "node_id": "D-007",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "TemporalAlphabet",
+      "node_id": "D-008",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "PredictiveNow",
+      "node_id": "D-009",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "TemporalSignature",
+      "node_id": "D-010",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "TemporalClosureSpec",
+      "node_id": "D-011",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "TemporalClosureWitness",
+      "node_id": "D-012",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "ClockTranslation",
+      "node_id": "D-013",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "RouteComparison",
+      "node_id": "D-014",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "ClauseId",
+      "node_id": "D-015",
+      "node_type": "definition",
+      "status": "landed-clause-interface"
+    },
+    {
+      "label": "ClauseSpec",
+      "node_id": "D-016",
+      "node_type": "definition",
+      "status": "landed-clause-interface"
+    },
+    {
+      "label": "ClauseWitness",
+      "node_id": "D-017",
+      "node_type": "definition",
+      "status": "landed-clause-interface"
+    },
+    {
+      "label": "ClauseBundle",
+      "node_id": "D-018",
+      "node_type": "definition",
+      "status": "landed-clause-interface"
+    },
+    {
+      "label": "JoinTree",
+      "node_id": "D-019",
+      "node_type": "definition",
+      "status": "retained-scaffold-superseded-by-D-041-to-D-045"
+    },
+    {
+      "label": "IntegratedPackageCertificate",
+      "node_id": "D-020",
+      "node_type": "definition",
+      "status": "retained-scaffold-superseded-by-D-041-to-D-045"
+    },
+    {
+      "label": "StagedClausePreservationEvidence",
+      "node_id": "D-021",
+      "node_type": "definition",
+      "status": "retained-scaffold-superseded-by-D-041-to-D-045"
+    },
+    {
+      "label": "TemporalBridge",
+      "node_id": "D-022",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "TemporalTransportCertificate",
+      "node_id": "D-023",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "RouteHolonomyAudit",
+      "node_id": "D-024",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "FlatnessCertificate",
+      "node_id": "D-025",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "CounterfactualAudit",
+      "node_id": "D-026",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "TemporalCorridorData",
+      "node_id": "D-027",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "TemporalCorridorCertificate",
+      "node_id": "D-028",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "DirectSuccessorCertificate",
+      "node_id": "D-029",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "ControlledSystem",
+      "node_id": "D-030",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "WithdrawalSpec",
+      "node_id": "D-031",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "ControlledInvariantCertificate",
+      "node_id": "D-032",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "AutonomyCertificate",
+      "node_id": "D-033",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "ClaimLane",
+      "node_id": "D-034",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "TemporalFIACHCertificate",
+      "node_id": "D-035",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "TemporalFIACH",
+      "node_id": "D-036",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "OperationalSeed",
+      "node_id": "D-037",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "AncestryClosure",
+      "node_id": "D-038",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "IAPSCertificate",
+      "node_id": "D-039",
+      "node_type": "definition",
+      "status": "frozen-scaffold"
+    },
+    {
+      "label": "ScopedReach",
+      "node_id": "D-040",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "RootedJoinTree",
+      "node_id": "D-041",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "IntegratedPackageWitness",
+      "node_id": "D-042",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "StagedHeterogeneousEvidence",
+      "node_id": "D-043",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "TemporalSubstance",
+      "node_id": "D-044",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "EightClauseIntegratedPackage",
+      "node_id": "D-045",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "RepresentativeIndependent",
+      "node_id": "D-046",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "TemporalSignatureAgreement",
+      "node_id": "D-047",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "FiniteTemporalTransportProof",
+      "node_id": "D-048",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "StrictlyMonotoneOn",
+      "node_id": "D-049",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "FutureSufficientEncoding",
+      "node_id": "D-050",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "FlatAt",
+      "node_id": "D-051",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "MemoryRepairs",
+      "node_id": "D-052",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "CanonicalGlobalNow",
+      "node_id": "D-053",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "NormalizationCertificate",
+      "node_id": "D-054",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "FiniteTemporalStage",
+      "node_id": "D-055",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "InterventionProjection",
+      "node_id": "D-056",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "AtomicTemporalCorridorData",
+      "node_id": "D-057",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "AtomicTemporalCorridorCertificate",
+      "node_id": "D-058",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "CorridorSummaryData",
+      "node_id": "D-059",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "FrontierCompatible",
+      "node_id": "D-060",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "AtomicDirectSuccessorData",
+      "node_id": "D-061",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "AtomicDirectSuccessorCertificate",
+      "node_id": "D-062",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "DetachedOperationalPattern",
+      "node_id": "D-063",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "DirectSuccessorPathData",
+      "node_id": "D-064",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "ExactAutonomyData",
+      "node_id": "D-065",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "ExactAutonomyCertificate",
+      "node_id": "D-066",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "ControlledRun",
+      "node_id": "D-067",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "ThreeLaneStatus",
+      "node_id": "D-068",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "TemporalFIACHCertificate",
+      "node_id": "D-069",
+      "node_type": "definition",
+      "status": "landed-proof-source-and-executable-semantics"
+    },
+    {
+      "label": "GeneralizedTemporalContinuity",
+      "node_id": "D-070",
+      "node_type": "definition",
+      "status": "landed-strengthening"
+    },
+    {
+      "label": "DefectVector",
+      "node_id": "D-071",
+      "node_type": "definition",
+      "status": "landed-strengthening"
+    },
+    {
+      "label": "TemporalMargin",
+      "node_id": "D-072",
+      "node_type": "definition",
+      "status": "landed-strengthening"
+    },
+    {
+      "label": "ExactAutonomyPolicy",
+      "node_id": "D-073",
+      "node_type": "definition",
+      "status": "landed-strengthening"
+    },
+    {
+      "label": "source-derived destructive successor",
+      "node_id": "TFM-01",
+      "node_type": "toy",
+      "status": "open"
+    },
+    {
+      "label": "independent structural twin",
+      "node_id": "TFM-02",
+      "node_type": "toy",
+      "status": "open"
+    },
+    {
+      "label": "source-derived symmetric duplication",
+      "node_id": "TFM-03",
+      "node_type": "toy",
+      "status": "open"
+    },
+    {
+      "label": "fusion with recombination conflict",
+      "node_id": "TFM-04",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Direct-successor temporal validity",
+      "node_id": "TTD-01",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Overlap/direct-successor relation",
+      "node_id": "TTD-02",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Direct-successor detached-copy exclusion",
+      "node_id": "TTD-03",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Predictive bridge descent",
+      "node_id": "TTF-01",
+      "node_type": "theorem",
+      "status": "open"
+    },
+    {
+      "label": "Least operational ancestry",
+      "node_id": "TTF-02",
+      "node_type": "theorem",
+      "status": "open"
+    },
+    {
+      "label": "Independent-twin exclusion",
+      "node_id": "TTF-03",
+      "node_type": "theorem",
+      "status": "open"
+    },
+    {
+      "label": "Fallback fission, fusion, and empty targets",
+      "node_id": "TTF-04",
+      "node_type": "theorem",
+      "status": "open"
+    },
+    {
+      "label": "Integrated Temporal-IAPS certificate",
+      "node_id": "TTF-05",
+      "node_type": "theorem",
+      "status": "open"
+    },
+    {
+      "label": "Destructive reconstruction versus independent twin",
+      "node_id": "TTF-06",
+      "node_type": "theorem",
+      "status": "open"
+    },
+    {
+      "label": "Ancestry supplies no unique numerical identity",
+      "node_id": "TTF-07",
+      "node_type": "theorem",
+      "status": "open"
+    },
+    {
+      "label": "Predictive ancestry is package-insufficient",
+      "node_id": "TTF-08",
+      "node_type": "theorem",
+      "status": "open"
+    },
+    {
+      "label": "Acyclic local-witness gluing",
+      "node_id": "TTH-01",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Staged heterogeneous package assembly",
+      "node_id": "TTH-02",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Bundled heterogeneous temporal transport",
+      "node_id": "TTH-03",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Strict temporal-corridor composition",
+      "node_id": "TTH-04",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Post-withdrawal finite-horizon invariance",
+      "node_id": "TTH-05",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Temporal-FIACH certificate soundness",
+      "node_id": "TTH-06",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Full temporal handoff composition",
+      "node_id": "TTH-07",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Relation-valued temporal fission",
+      "node_id": "TTH-08",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Route-independent endpoint under flatness",
+      "node_id": "TTH-09",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Monotone record descent transports an arrow",
+      "node_id": "TTH-10",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "live temporal handoff",
+      "node_id": "TTM-01",
+      "node_type": "toy",
+      "status": "checked exact finite witness"
+    },
+    {
+      "label": "detached exact temporal copy",
+      "node_id": "TTM-02",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "direct-successor temporal handoff",
+      "node_id": "TTM-03",
+      "node_type": "toy",
+      "status": "checked exact finite witness"
+    },
+    {
+      "label": "external scheduler or decoder shadow",
+      "node_id": "TTM-04",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "replacement-order holonomy",
+      "node_id": "TTM-05",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "confluent completion",
+      "node_id": "TTM-06",
+      "node_type": "toy",
+      "status": "checked exact finite witness"
+    },
+    {
+      "label": "temporal fission",
+      "node_id": "TTM-07",
+      "node_type": "toy",
+      "status": "checked exact finite witness"
+    },
+    {
+      "label": "gap and resume",
+      "node_id": "TTM-08",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "anti-stall target",
+      "node_id": "TTM-09",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "long-run budget failure",
+      "node_id": "TTM-10",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "local/global package obstruction",
+      "node_id": "TTM-11",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "public-shadow collision",
+      "node_id": "TTM-12",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "scalar hard-gate failure",
+      "node_id": "TTM-13",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "stable tick without progress",
+      "node_id": "TTM-14",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "same-carrier re-encoding",
+      "node_id": "TTM-15",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "holonomy without arrow",
+      "node_id": "TTM-16",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "current-equal predictive-route mismatch",
+      "node_id": "TTM-17",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "integrated target C-package",
+      "node_id": "TTM-18",
+      "node_type": "toy",
+      "status": "checked exact finite witness"
+    },
+    {
+      "label": "staged heterogeneous package assembly",
+      "node_id": "TTM-19",
+      "node_type": "toy",
+      "status": "checked exact finite witness"
+    },
+    {
+      "label": "mixed overlap/direct continuity path",
+      "node_id": "TTM-20",
+      "node_type": "toy",
+      "status": "checked exact finite witness"
+    },
+    {
+      "label": "exact vector defect profile",
+      "node_id": "TTM-21",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "hard-gate-preserving robustness box",
+      "node_id": "TTM-22",
+      "node_type": "toy",
+      "status": "checked exact finite witness"
+    },
+    {
+      "label": "total invariant autonomy policy",
+      "node_id": "TTM-23",
+      "node_type": "toy",
+      "status": "checked exact finite witness"
+    },
+    {
+      "label": "arbitrarily long finite-prefix countdown family",
+      "node_id": "TTM-24",
+      "node_type": "toy",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Detached-copy insufficiency",
+      "node_id": "TTN-01",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Public-shadow insufficiency",
+      "node_id": "TTN-02",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Holonomy is not an endogenous arrow",
+      "node_id": "TTN-03",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Memory-or-flatness boundary",
+      "node_id": "TTN-04",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "No canonical global now under translation holonomy",
+      "node_id": "TTN-05",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Essential external support defeats autonomy",
+      "node_id": "TTN-06",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Stable tick phase without progress",
+      "node_id": "TTN-07",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Local-global package obstruction",
+      "node_id": "TTN-08",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Temporal gap versus resumed stream",
+      "node_id": "TTN-09",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Scalar residual hides hard-gate failure",
+      "node_id": "TTN-10",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Exact symmetry supplies no invariant unique continuer",
+      "node_id": "TTN-11",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Finite success does not imply unbounded liveness",
+      "node_id": "TTN-12",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Same-carrier re-encoding is not cross-carrier transport",
+      "node_id": "TTN-13",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Branchwise preservation need not preserve recombination",
+      "node_id": "TTN-14",
+      "node_type": "theorem",
+      "status": "checked finite countermodel"
+    },
+    {
+      "label": "Generalized temporal-continuity path class",
+      "node_id": "TTS-01",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Exact vector-valued defect acceptance",
+      "node_id": "TTS-02",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Hard-gate-preserving bounded temporal robustness",
+      "node_id": "TTS-03",
+      "node_type": "theorem",
+      "status": "conditional"
+    },
+    {
+      "label": "Model-relative unbounded controlled invariant",
+      "node_id": "TTS-04",
+      "node_type": "theorem",
+      "status": "conditional"
+    }
+  ],
+  "phase": "CST-TT-08",
+  "schema_version": "1.0",
+  "topological_order": [
+    "AS-01",
+    "AS-02",
+    "AS-03",
+    "AS-04",
+    "AS-05",
+    "AS-06",
+    "AS-07",
+    "AS-08",
+    "AS-09",
+    "AS-10",
+    "AS-11",
+    "AS-12",
+    "AS-13",
+    "AS-14",
+    "AS-15",
+    "AS-16",
+    "AS-17",
+    "AS-18",
+    "AS-19",
+    "AS-20",
+    "AS-21",
+    "AS-22",
+    "AS-23",
+    "AS-24",
+    "AS-25",
+    "AS-26",
+    "AS-27",
+    "AS-28",
+    "AS-29",
+    "AS-30",
+    "AS-31",
+    "AS-32",
+    "AS-33",
+    "AS-34",
+    "D-001",
+    "D-002",
+    "D-003",
+    "D-004",
+    "D-005",
+    "D-006",
+    "D-007",
+    "D-008",
+    "D-009",
+    "D-013",
+    "D-014",
+    "D-015",
+    "D-016",
+    "D-017",
+    "D-018",
+    "D-019",
+    "D-021",
+    "D-024",
+    "D-025",
+    "D-026",
+    "D-030",
+    "D-031",
+    "D-034",
+    "D-036",
+    "D-037",
+    "D-040",
+    "D-041",
+    "D-042",
+    "D-043",
+    "D-044",
+    "D-045",
+    "D-046",
+    "D-049",
+    "D-050",
+    "D-051",
+    "D-052",
+    "D-053",
+    "D-054",
+    "D-055",
+    "D-056",
+    "D-060",
+    "D-061",
+    "D-062",
+    "D-063",
+    "D-064",
+    "D-065",
+    "D-066",
+    "D-067",
+    "D-068",
+    "D-069",
+    "D-070",
+    "D-071",
+    "D-072",
+    "D-073",
+    "TFM-01",
+    "TFM-02",
+    "TFM-03",
+    "TFM-04",
+    "TTM-01",
+    "TTM-02",
+    "TTM-03",
+    "TTM-04",
+    "TTM-05",
+    "TTM-06",
+    "TTM-07",
+    "TTM-08",
+    "TTM-09",
+    "TTM-10",
+    "TTM-11",
+    "TTM-12",
+    "TTM-13",
+    "TTM-14",
+    "TTM-15",
+    "TTM-16",
+    "TTM-17",
+    "TTM-18",
+    "TTM-19",
+    "TTM-20",
+    "TTM-21",
+    "TTM-22",
+    "TTM-23",
+    "TTM-24",
+    "D-010",
+    "D-022",
+    "D-047",
+    "D-028",
+    "D-032",
+    "D-038",
+    "D-058",
+    "TTN-01",
+    "TTN-11",
+    "TTN-14",
+    "TTN-08",
+    "TTN-02",
+    "TTN-10",
+    "TTN-07",
+    "TTN-13",
+    "TTN-03",
+    "TTH-03",
+    "TTH-01",
+    "TTN-12",
+    "D-011",
+    "D-027",
+    "D-023",
+    "D-048",
+    "D-033",
+    "D-039",
+    "D-059",
+    "TTN-09",
+    "TTS-02",
+    "TTN-04",
+    "TTD-01",
+    "TTF-01",
+    "TTH-10",
+    "TTH-02",
+    "D-012",
+    "D-029",
+    "D-057",
+    "TTH-04",
+    "TTN-05",
+    "TTD-03",
+    "TTF-02",
+    "TTH-05",
+    "D-020",
+    "TTD-02",
+    "TTH-08",
+    "TTH-09",
+    "TTF-03",
+    "TTF-04",
+    "TTF-08",
+    "TTF-05",
+    "TTH-06",
+    "TTN-06",
+    "TTS-04",
+    "D-035",
+    "TTS-01",
+    "TTF-06",
+    "TTF-07",
+    "TTH-07",
+    "TTS-03"
+  ]
+}

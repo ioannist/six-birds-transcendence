@@ -1,0 +1,20 @@
+{
+  "artifact_ref": "models/transport/controls/TR-C05.model.json",
+  "artifact_sha256": "85049a5cc442a1bff94ed8890b4eb32320ea48f95c37c9c316bc66c769aa4b6a",
+  "baseline_ref": "models/transport/TR-POS-01.model.json",
+  "checker": {
+    "function": "audit_temporal_transport",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5",
+    "valid_result": false
+  },
+  "claim_ceiling": "finite structural obligation boundary only",
+  "control_id": "TR-C05",
+  "control_kind": "transport",
+  "expected_primary_failure": "successor-preserved",
+  "observed_failures": [
+    "successor-preserved"
+  ],
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-03"
+}

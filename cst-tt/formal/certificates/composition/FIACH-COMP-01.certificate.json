@@ -1,0 +1,84 @@
+{
+  "audit": {
+    "all_upstream_support_withdrawn": true,
+    "certificate_id": "FIACH-COMP-01",
+    "component_hashes_valid": true,
+    "component_replays_valid": true,
+    "composite_component_selection_valid": true,
+    "composite_fiach_valid": true,
+    "composition_valid": true,
+    "corridor_composition_valid": true,
+    "failed_obligations": [],
+    "final_autonomy_target_system_inherited": true,
+    "left_autonomy_closes_shared_package": true,
+    "left_fiach_valid": true,
+    "ontology_absent": true,
+    "recognition_separate": true,
+    "right_fiach_valid": true,
+    "route_status": "route-indexed",
+    "route_status_composition_valid": true,
+    "shared_carrier_exact": true,
+    "shared_code": 55,
+    "shared_package_exact": true,
+    "shared_route_memory_exact": true,
+    "shared_temporal_frontier_exact": true,
+    "shared_temporal_ownership_exact": true,
+    "source_code": 17,
+    "staged_composition_valid": true,
+    "target_code": 101
+  },
+  "certificate_id": "FIACH-COMP-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_full_handoff_composition",
+    "module": "cst_tt.handoff_composition",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "exact finite structural handoff composition only",
+  "claim_lanes": [
+    "S-T",
+    "S-R",
+    "S-L",
+    "A"
+  ],
+  "component_refs": {
+    "composite_corridor_certificate": "formal/certificates/composition/corridors/COR-POS-03-FULL-COMPOSITE.certificate.json",
+    "composite_fiach": "formal/certificates/composition/fiach/FIACH-COMP-OUTER.certificate.json",
+    "corridor_composition": "formal/certificates/composition/COR-COMP-FULL-01.certificate.json",
+    "left_fiach": "formal/certificates/composition/fiach/FIACH-COMP-A.certificate.json",
+    "right_fiach": "formal/certificates/composition/fiach/FIACH-COMP-B.certificate.json",
+    "staged_composition": "formal/certificates/composition/STG-COMP-01.certificate.json"
+  },
+  "component_sha256": {
+    "composite_fiach": "0d50e31963f999e84652da8d8700ac29e34e771cd58e36cf7e35bafed5e8d543",
+    "corridor_composition": "656e1275a4c515bbbcc1f596fab9226956056a7b14fbf8cfb64a191eeac72f3c",
+    "left_fiach": "0b013955ea3e3f44f948a326e900e15ef67960fbbea67f382b4053386797b6c3",
+    "right_fiach": "680a771c7fe014eb6b44a12eaf9016578181549c980bd15e5780e0e9acf77581",
+    "staged_composition": "6363f1e7e54d310e679621466976276fc3b005f362bf6cad1c8798d97d9519fc"
+  },
+  "intermediate_carrier": {
+    "code": 55,
+    "label": "intermediate-substrate"
+  },
+  "model_ref": "models/composition/FIACH-COMP-01.model.json",
+  "model_sha256": "5fdfeddb562192c8693db83ddab13bd5d1d77d8712d8892d6f0dcce8784ebd43",
+  "nonclaims": [
+    "no consciousness or phenomenal-continuity conclusion",
+    "no unique identity or survival conclusion",
+    "no empirical recognition result"
+  ],
+  "result_status": "checked-finite-full-temporal-fiach-composition",
+  "schema_version": "CST-TT-06",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.TargetTheory.fullTemporalHandoffComposition",
+      "CSTTT.TargetTheory.composedHandoffPreservesIndependentLanes",
+      "CSTTT.TargetTheory.routeIndexedComponentPreventsAutomaticFlatness"
+    ],
+    "theorem_ids": [
+      "TTH-07"
+    ]
+  },
+  "title": "full two-hop Temporal-FIACH structural composition"
+}

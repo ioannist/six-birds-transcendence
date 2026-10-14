@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "scripts/selftest_evaluate_tth09_routes.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "selftest_evaluate_tth09_routes",
+  "kind": "selftest",
+  "log_path": "lean/.validate-logs/W19a/selftest_evaluate_tth09_routes.log",
+  "log_sha256": "2ad8ec6913dcde9c1d21a8e6fb303c6b54fd3708891f5fd996b87ce5035fb3a9",
+  "metrics": {
+    "failed": 0,
+    "passed": 34
+  },
+  "recorded_at": "2026-10-13T11:35:26+00:00",
+  "status": "pass",
+  "summary": "34/34 CAUGHT"
+}

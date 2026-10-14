@@ -1,0 +1,13 @@
+asset_id,asset_kind,status,model_ref,certificate_ref,claim_ceiling
+FIACH-COMP-01,full-handoff-composition,checked-positive,models/composition/FIACH-COMP-01.model.json,formal/certificates/composition/FIACH-COMP-01.certificate.json,exact finite structural handoff composition only
+FISSION-POS-01,relation-valued-fission,checked-positive,models/fission/FISSION-POS-01.model.json,formal/certificates/fission/FISSION-POS-01.certificate.json,relation-valued finite temporal fission; no unique continuer or numerical identity conclusion
+FUSION-BOUNDARY-01,fusion-recombination-boundary,checked-countermodel,models/fusion/FUSION-BOUNDARY-01.model.json,formal/certificates/fusion/FUSION-BOUNDARY-01.certificate.json,finite separation of branchwise lineage merger from integrated target package
+ROUTE-COMP-INDEXED-01,route-completion,checked-positive,,formal/certificates/route_completion/ROUTE-COMP-INDEXED-01.certificate.json,route-indexed structural handoff only
+ROUTE-COMP-FLAT-01,route-completion,checked-positive,,formal/certificates/route_completion/ROUTE-COMP-FLAT-01.certificate.json,route-independent endpoint under confluence only
+TOY-SUITE-PRIMARY-01,toy-suite-closure,checked-13-of-13,models/toy_suite/TOY-SUITE-PRIMARY-01.model.json,formal/certificates/toy_suite/TOY-SUITE-PRIMARY-01.certificate.json,closure of the frozen thirteen-model exact finite primary/common toy suite
+FIS-C01,fission-control,checked-negative,models/fission/controls/FIS-C01.model.json,formal/certificates/fission/controls/FIS-C01.certificate.json,finite fission-interface boundary only
+FIS-C02,fission-control,checked-negative,models/fission/controls/FIS-C02.model.json,formal/certificates/fission/controls/FIS-C02.certificate.json,finite fission-interface boundary only
+FIS-C03,fission-control,checked-negative,models/fission/controls/FIS-C03.model.json,formal/certificates/fission/controls/FIS-C03.certificate.json,finite fission-interface boundary only
+FIS-C04,fission-control,checked-negative,models/fission/controls/FIS-C04.model.json,formal/certificates/fission/controls/FIS-C04.certificate.json,finite fission-interface boundary only
+FIS-C05,fission-control,checked-negative,models/fission/controls/FIS-C05.model.json,formal/certificates/fission/controls/FIS-C05.certificate.json,finite fission-interface boundary only
+FIS-C06,fission-control,checked-negative,models/fission/controls/FIS-C06.model.json,formal/certificates/fission/controls/FIS-C06.certificate.json,finite fission-interface boundary only

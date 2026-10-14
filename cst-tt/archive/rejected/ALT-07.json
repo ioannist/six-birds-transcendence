@@ -1,0 +1,9 @@
+{
+  "name": "Route memory can be erased without flatness",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "TTN-04;TTN-05;TTH-09",
+  "reason": "Memory erasure is licensed only by explicit confluence or normalization and zero translation holonomy.",
+  "rejected_id": "ALT-07",
+  "replacement": "retain route residue or prove flatness",
+  "status": "killed"
+}

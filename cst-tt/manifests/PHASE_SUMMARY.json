@@ -1,0 +1,26 @@
+{
+  "base_commit": "7ba9167d39e6751706a7ad7152911c61f77af6af",
+  "base_tag": "CST-TT-07A-v1",
+  "certificate_and_search_index_count": 233,
+  "date": "2026-08-10",
+  "dependency_dag": {
+    "acyclic": true,
+    "edges": 288,
+    "nodes": 174
+  },
+  "direct_successor": "retained as separately named strengthening",
+  "fallback": "Temporal-IAPS remains open and unauthorized",
+  "final_branch_outcome": "preferred: Temporal-FIACH plus mandatory no-go kernel",
+  "lean_compile_status": "not-run-toolchain-unavailable",
+  "model_index_count": 203,
+  "next_phase": "none-science-program-closed",
+  "phase": "CST-TT-08",
+  "project": "CST-TT",
+  "schema_version": "1.0",
+  "theorem_status_counts": {
+    "checked finite countermodel": 12,
+    "conditional": 19,
+    "open": 8
+  },
+  "toy_contract_count": 28
+}

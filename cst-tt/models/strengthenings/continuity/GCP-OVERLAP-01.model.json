@@ -1,0 +1,17 @@
+{
+  "claim_ceiling": "generalized structural temporal-lineage path only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "legs": [
+    {
+      "kind": "overlap",
+      "leg_id": "strict-overlap",
+      "model_ref": "models/corridors/COR-POS-01.model.json",
+      "model_sha256": "9f04dc39f5f635ce55995602ca8581fc036bd35a9e9d281bf9e6c7e9a517dfdf"
+    }
+  ],
+  "path_id": "GCP-OVERLAP-01",
+  "primary_fiach_definition_change": "none",
+  "schema_version": "CST-TT-07A-generalized-path-v1"
+}

@@ -1,0 +1,130 @@
+{
+  "audit": {
+    "contains_direct_successor": true,
+    "endpoint_distinct": true,
+    "every_leg_valid": true,
+    "exact_carrier_frontiers": true,
+    "exact_ownership_frontiers": true,
+    "exact_signature_frontiers": true,
+    "failed_obligations": [],
+    "generalized_path_valid": true,
+    "leg_audits": [
+      {
+        "entry_signature": {
+          "maintenance_owner": 17,
+          "maintenance_state": "leg-S-M-source-maint",
+          "order_rank": 0,
+          "predictive_rank": 0,
+          "progress_rank": 0,
+          "record_value": 0,
+          "route_residue": [
+            "route-root"
+          ],
+          "tick_index": 0
+        },
+        "evidence_valid": true,
+        "exit_signature": {
+          "maintenance_owner": 55,
+          "maintenance_state": "leg-S-M-target-maint",
+          "order_rank": 2,
+          "predictive_rank": 2,
+          "progress_rank": 2,
+          "record_value": 3,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target"
+          ],
+          "tick_index": 2
+        },
+        "failed_obligations": [],
+        "hash_valid": true,
+        "kind": "overlap",
+        "leg_id": "overlap-S-M",
+        "model_ref": "models/corridors/COR-POS-02A.model.json",
+        "source_code": 17,
+        "target_code": 55,
+        "temporally_realized": true
+      },
+      {
+        "entry_signature": {
+          "maintenance_owner": 55,
+          "maintenance_state": "leg-S-M-target-maint",
+          "order_rank": 2,
+          "predictive_rank": 2,
+          "progress_rank": 2,
+          "record_value": 3,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target"
+          ],
+          "tick_index": 2
+        },
+        "evidence_valid": true,
+        "exit_signature": {
+          "maintenance_owner": 101,
+          "maintenance_state": "mixed-mode-direct-target-maint",
+          "order_rank": 3,
+          "predictive_rank": 3,
+          "progress_rank": 3,
+          "record_value": 5,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target",
+            "mixed-mode-direct-M-T"
+          ],
+          "tick_index": 3
+        },
+        "failed_obligations": [],
+        "hash_valid": true,
+        "kind": "direct",
+        "leg_id": "direct-M-T",
+        "model_ref": "models/strengthenings/direct/DS-POS-03-MIXED-MODE.model.json",
+        "source_code": 55,
+        "target_code": 101,
+        "temporally_realized": true
+      }
+    ],
+    "leg_hashes_valid": true,
+    "mode_sequence": [
+      "overlap",
+      "direct"
+    ],
+    "no_temporal_gap": true,
+    "nonempty": true,
+    "path_id": "GCP-MIXED-01",
+    "primary_fiach_eligible": false,
+    "source_code": 17,
+    "strict_overlap_only": false,
+    "target_code": 101
+  },
+  "certificate_id": "GCP-MIXED-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-07A",
+    "function": "audit_generalized_continuity_path",
+    "module": "cst_tt.strengthenings",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "generalized structural lineage path only; strict FIACH requires all-overlap evidence",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "model_ref": "models/strengthenings/continuity/GCP-MIXED-01.model.json",
+  "model_sha256": "574de9123186614eae4730b70ec8d99c376e358f7ffa09a39cbc6a06edaafbe5",
+  "result_status": "checked-finite-generalized-temporal-continuity-path",
+  "schema_version": "CST-TT-07A",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.StrengtheningTheory.overlapEmbedsGeneralized",
+      "CSTTT.StrengtheningTheory.directEmbedsGeneralized",
+      "CSTTT.StrengtheningTheory.generalizedPathComposition"
+    ],
+    "theorem_ids": [
+      "TTD-02",
+      "TTS-01"
+    ]
+  }
+}

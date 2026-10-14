@@ -1,0 +1,1684 @@
+{
+  "current_attempt": {
+    "archive_root": "/tmp/W19b-archive-jo79ofwk/source",
+    "branch": "build/paper",
+    "command": [
+      "python3",
+      "paper/tools/check_archive_reproduction.py"
+    ],
+    "commands": [
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/lean_build.log",
+        "command": [
+          "lake",
+          "build",
+          "CSTTT"
+        ],
+        "cwd": "lean",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "lean_build",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/lean_build.log",
+        "log_sha256": "b3d9b4312b58e8eb4a4aed7a84c5b27363bc1960d52aab97a3a892bf1e602208",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/import_map.log",
+        "command": [
+          "python3",
+          "paper/tools/build_import_map.py",
+          "--check"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "import_map",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/import_map.log",
+        "log_sha256": "fb9c4b9af11b0b28fcf2273c1859683f317a4e2770478f1b83e00ae7e0c32eb5",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/live_mode_absent_siblings.log",
+        "command": [
+          "python3",
+          "paper/tools/build_import_map.py",
+          "--live",
+          "--check"
+        ],
+        "cwd": ".",
+        "exit_code": 1,
+        "expected_exit": 1,
+        "id": "live_mode_absent_siblings",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/live_mode_absent_siblings.log",
+        "log_sha256": "6f912e837a8be77f6d9b7518fd44719e545a70280f769b0b0d2bdd93f418316e",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/evidence_map.log",
+        "command": [
+          "python3",
+          "paper/tools/build_evidence_map.py",
+          "--check"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "evidence_map",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/evidence_map.log",
+        "log_sha256": "0993f86dd2d83029b4413391a8d1c280fa67c29bc9125e01673b3d3684cac989",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/snapshot.log",
+        "command": [
+          "python3",
+          "paper/tools/export_results.py",
+          "--check"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "snapshot",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/snapshot.log",
+        "log_sha256": "5fe084344c0e4d06c5eaf2933bc96c310aee8e2dbcdac6c88eb055e7028c0c3c",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/correspondence.log",
+        "command": [
+          "python3",
+          "paper/tools/build_correspondence.py",
+          "--check"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "correspondence",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/correspondence.log",
+        "log_sha256": "35539874788aaae6e8c6bb3a786ac85a0ad36904beeae9f8fd0f8dc679fb1c66",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/index.log",
+        "command": [
+          "python3",
+          "paper/tools/render_index.py",
+          "--check"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "index",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/index.log",
+        "log_sha256": "6e5cd52e6886f0d5c647077227fc7c868eb475808764bff73fa04c74ee16cfd7",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/figure_data.log",
+        "command": [
+          "python3",
+          "paper/tools/render_figure_data.py",
+          "--check"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "figure_data",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/figure_data.log",
+        "log_sha256": "d9b498636b62efb9552db967d07a151b178d538836ed96bd9cca162600ebf2e0",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/release_counts.log",
+        "command": [
+          "python3",
+          "paper/tools/build_release_counts.py",
+          "--check"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "release_counts",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/release_counts.log",
+        "log_sha256": "e442b72a5e4045cb750a6c782af6f18b7ceadd1028672ad9efc328c19b5039e2",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/style.log",
+        "command": [
+          "python3",
+          "paper/tools/style_lint.py",
+          "--strict"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "style",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/style.log",
+        "log_sha256": "7affb4685f97559ea918249a392e2af7ce11ab02562bf9eefe5e00d77546a9c6",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/manuscript.log",
+        "command": [
+          "python3",
+          "paper/tools/check_manuscript.py"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "manuscript",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/manuscript.log",
+        "log_sha256": "cc383554a84d57a6365fdec716b00e4d9935bb22941a60033143f0a43eb3a2cd",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/package.log",
+        "command": [
+          "python3",
+          "paper/prewriting/validate_package.py"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "package",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/package.log",
+        "log_sha256": "c9c698f276f14109c8e9a1deeb157bfd0a00b457fa6c3ff7cfd75a5f935337ec",
+        "status": "pass"
+      },
+      {
+        "captured_log_path": "lean/.validate-logs/W24-archive-refresh/paper_tests.log",
+        "command": [
+          "python3",
+          "-m",
+          "pytest",
+          "-q",
+          "paper/tests"
+        ],
+        "cwd": ".",
+        "exit_code": 0,
+        "expected_exit": 0,
+        "id": "paper_tests",
+        "log_path": "/tmp/W19b-archive-jo79ofwk/logs/paper_tests.log",
+        "log_sha256": "7fbe84fe23e7f5a60cb11ebe880ee3a6a5a7f8942f566ffb317de462c00a8553",
+        "status": "pass"
+      }
+    ],
+    "commit": "9ca431c032f1292a8355d5a22fdd440061e4c60c",
+    "commit_tree_verification": {
+      "method": "Git blob SHA1 comparison for every tracked file, plus regeneration of the exported snapshot SHA256.",
+      "mismatches": 0,
+      "snapshot_sha256": "a2c5221fb732d453e5e4612486f7bbc537beb54e25b021cb69a3da06d4ec5a5b",
+      "tracked_files": 2679
+    },
+    "console_log": {
+      "captured_path": "lean/.validate-logs/W24-archive-refresh/archive-console.log",
+      "original_path": "/tmp/claude-1000/-home-repos-six-birds-transcendence/2ee0ab75-dccd-4782-9696-3ebf0bce4a74/scratchpad/archive_repro_w24.log",
+      "sha256": "2ddb4cec9c943ab71fd71748f619285c2c1604d208acdd02173cc5641678506c"
+    },
+    "environment": {
+      "PYTHONHASHSEED": "0",
+      "SIXBIRDS_SIBLING_ROOT": "/tmp/W19b-archive-jo79ofwk/absent-siblings"
+    },
+    "exit_code": 0,
+    "exit_code_source": "Owner-reported exit 0; console reports pass and every step matches its expected exit.",
+    "isolation": {
+      "configured_sibling_root": "/tmp/W19b-archive-jo79ofwk/absent-siblings",
+      "configured_sibling_root_present": false,
+      "evidence": "Console header, filesystem checks, and expected live-mode rejection in the step log.",
+      "git_directory_present": false
+    },
+    "lean_cache": {
+      "provenance": "none",
+      "reused": false
+    },
+    "legacy_cst_tt": {
+      "existing_failure_receipt": "paper/data/release_receipts/cst_tt.json",
+      "metrics": {
+        "failed": 6,
+        "passed": 130
+      },
+      "same_six_failures": true,
+      "source": "Owner-reported git archive export of 9ca431c032f1292a8355d5a22fdd440061e4c60c",
+      "verification_scope": "Owner-reported; no separate log supplied. Existing failed receipt is retained, not replaced."
+    },
+    "paper_tests": {
+      "log_path": "/tmp/W19b-archive-jo79ofwk/logs/paper_tests.log",
+      "log_sha256": "7fbe84fe23e7f5a60cb11ebe880ee3a6a5a7f8942f566ffb317de462c00a8553",
+      "metrics": {
+        "passed": 205
+      },
+      "summary": "205 passed in 205.06s (0:03:25)"
+    },
+    "recorded_at": "2026-10-14T13:21:28+00:00",
+    "release_counts_check": {
+      "check": true,
+      "full_logs_verified": 0,
+      "recorded_commands": 55,
+      "recorded_verification_status": "fail",
+      "static_counts_verified": true,
+      "summary_only_ids": [
+        "archive_reproduction",
+        "check_corridor_transcription",
+        "check_full_native_02_autonomy_transcription",
+        "check_full_native_02_fusion_transcription",
+        "check_full_native_binding_transcription",
+        "check_full_native_countermodels_transcription",
+        "check_full_native_credit_transcription",
+        "check_full_native_execution_transcription",
+        "check_full_native_iaps_transcription",
+        "check_full_native_objecthood_transcription",
+        "check_full_native_package_transcription",
+        "check_full_native_snapshot_transcription",
+        "check_full_native_transcription",
+        "check_full_native_viability_transcription",
+        "check_global_package_composition_transcription",
+        "check_internalized_receipts_transcription",
+        "check_joint_temporal_transcription",
+        "check_native_fission_transcription",
+        "check_native_publication_composition_transcription",
+        "check_pos04_transcription",
+        "check_raw_corridor_sequence_transcription",
+        "check_raw_direct_bridge",
+        "check_receiver_sequence_transcription",
+        "check_register_bridge_composition_transcription",
+        "check_stage_composition_transcription",
+        "check_staged_assignment_span_transcription",
+        "check_supported_acquisition_sequence_transcription",
+        "check_t1_transcription",
+        "check_tth06_transcription",
+        "check_tth09_transcription",
+        "corpus_doi_live",
+        "correspondence",
+        "cst_tt",
+        "cst_tt_initial_setup",
+        "evidence_map",
+        "figure_data",
+        "import_map",
+        "import_map_live",
+        "index",
+        "lean_build",
+        "lean_clean",
+        "lean_validation",
+        "manuscript_build",
+        "manuscript_build_final",
+        "manuscript_check",
+        "manuscript_clean",
+        "package_validator",
+        "paper",
+        "pdf_readout",
+        "result_snapshot",
+        "selftest_evaluate_fiach_pos04",
+        "selftest_evaluate_tth06_lanes",
+        "selftest_evaluate_tth09_routes",
+        "selftest_validate_lean",
+        "style_lint"
+      ],
+      "summary_only_receipts": 55
+    },
+    "report_path": "/tmp/W19b-archive-jo79ofwk/report.json",
+    "report_sha256": "6523975d89b79e9fd2a17271764ce93ffc93431e05663bfe4412253a2ad6e1fd",
+    "snapshot": {
+      "definition": "Tracked working-tree files plus nonignored additions; symlinks preserved; no .git or ignored build artifacts.",
+      "files": 2679,
+      "sha256": "a2c5221fb732d453e5e4612486f7bbc537beb54e25b021cb69a3da06d4ec5a5b"
+    },
+    "status": "pass"
+  },
+  "definition": "Current archive reproduction evidence is the owner-run W24 cold export of the recorded commit. All step log hashes and exported committed file contents were verified without rerunning the archive check. W19, W20 and W22 attempts are dated history, not current evidence.",
+  "history": [
+    {
+      "evidence": {
+        "definition": "Commit-equivalent working-tree exports without Git or resolvable configured sibling paths. The initial cold Lean build passed; a trailing-blank-line summary fallback error was then fixed. The final export reuses only that isolated build after byte-for-byte Lean-input checks.",
+        "final_attempt": {
+          "archive_root": "/tmp/W19b-archive-6gusior9/source",
+          "commands": [
+            {
+              "command": [
+                "lake",
+                "build",
+                "CSTTT"
+              ],
+              "cwd": "lean",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "lean_build",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/lean_build.log",
+              "log_sha256": "be54ea5e3034d5332153112f0c53318b9a2c40c053cc1e4a574fd453030638ab",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/build_import_map.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "import_map",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/import_map.log",
+              "log_sha256": "fb9c4b9af11b0b28fcf2273c1859683f317a4e2770478f1b83e00ae7e0c32eb5",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/build_import_map.py",
+                "--live",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 1,
+              "expected_exit": 1,
+              "id": "live_mode_absent_siblings",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/live_mode_absent_siblings.log",
+              "log_sha256": "ea9da86913036b17b1fb49f81d65511bf5b6913e352f3ad2b6208aa615e8db3c",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/build_evidence_map.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "evidence_map",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/evidence_map.log",
+              "log_sha256": "0993f86dd2d83029b4413391a8d1c280fa67c29bc9125e01673b3d3684cac989",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/export_results.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "snapshot",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/snapshot.log",
+              "log_sha256": "5fe084344c0e4d06c5eaf2933bc96c310aee8e2dbcdac6c88eb055e7028c0c3c",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/build_correspondence.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "correspondence",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/correspondence.log",
+              "log_sha256": "35539874788aaae6e8c6bb3a786ac85a0ad36904beeae9f8fd0f8dc679fb1c66",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/render_index.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "index",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/index.log",
+              "log_sha256": "6e5cd52e6886f0d5c647077227fc7c868eb475808764bff73fa04c74ee16cfd7",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/render_figure_data.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "figure_data",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/figure_data.log",
+              "log_sha256": "d9b498636b62efb9552db967d07a151b178d538836ed96bd9cca162600ebf2e0",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/build_release_counts.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "release_counts",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/release_counts.log",
+              "log_sha256": "491e16ad7df029606821a01c42790c241f3f90159cc11994f579f5d58857371d",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/style_lint.py",
+                "--strict"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "style",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/style.log",
+              "log_sha256": "bbafde9237130b5591747b8146241c408fb109afbe0ed1b526817ae824a1dbdb",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/check_manuscript.py"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "manuscript",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/manuscript.log",
+              "log_sha256": "9a62d4608b9edb6b854a6a81080824ba25641328623c62e56cc71020666b14b3",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/prewriting/validate_package.py"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "package",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/package.log",
+              "log_sha256": "bc71815ccac713d147e937982d79228590af514dfdcfbfe587648ef3d51a2474",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "-m",
+                "pytest",
+                "-q",
+                "paper/tests"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "paper_tests",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs-final/paper_tests.log",
+              "log_sha256": "9aed6a63873bd2eafc031ac7416881be02063ffb4618c8babe60a6c96fb677a7",
+              "status": "pass"
+            }
+          ],
+          "environment": {
+            "PYTHONHASHSEED": "0",
+            "SIXBIRDS_SIBLING_ROOT": "/tmp/W19b-archive-6gusior9/absent-siblings"
+          },
+          "lean_cache": {
+            "provenance": "prior cold build of byte-identical archived Lean inputs",
+            "reused": true
+          },
+          "recorded_at": "2026-10-13T13:45:06+00:00",
+          "snapshot": {
+            "definition": "Tracked working-tree files plus nonignored additions; symlinks preserved; no .git or ignored build artifacts.",
+            "files": 2701,
+            "sha256": "8e7b65a0d9064ee868d6a7b6c70548d6812bf0c3472d13980f6cc2cc3e61142d"
+          },
+          "status": "pass"
+        },
+        "final_receipts_check": {
+          "command": [
+            "python3",
+            "paper/tools/build_release_counts.py",
+            "--check"
+          ],
+          "cwd": "/tmp/W19b-archive-6gusior9/source",
+          "exit_code": 0,
+          "log_sha256": "491e16ad7df029606821a01c42790c241f3f90159cc11994f579f5d58857371d",
+          "output": {
+            "check": true,
+            "full_logs_verified": 0,
+            "recorded_commands": 54,
+            "recorded_verification_status": "fail",
+            "static_counts_verified": true,
+            "summary_only_ids": [
+              "archive_reproduction",
+              "check_corridor_transcription",
+              "check_full_native_02_autonomy_transcription",
+              "check_full_native_02_fusion_transcription",
+              "check_full_native_binding_transcription",
+              "check_full_native_countermodels_transcription",
+              "check_full_native_credit_transcription",
+              "check_full_native_execution_transcription",
+              "check_full_native_iaps_transcription",
+              "check_full_native_objecthood_transcription",
+              "check_full_native_package_transcription",
+              "check_full_native_snapshot_transcription",
+              "check_full_native_transcription",
+              "check_full_native_viability_transcription",
+              "check_global_package_composition_transcription",
+              "check_internalized_receipts_transcription",
+              "check_joint_temporal_transcription",
+              "check_native_fission_transcription",
+              "check_native_publication_composition_transcription",
+              "check_pos04_transcription",
+              "check_raw_corridor_sequence_transcription",
+              "check_raw_direct_bridge",
+              "check_receiver_sequence_transcription",
+              "check_register_bridge_composition_transcription",
+              "check_stage_composition_transcription",
+              "check_staged_assignment_span_transcription",
+              "check_supported_acquisition_sequence_transcription",
+              "check_t1_transcription",
+              "check_tth06_transcription",
+              "check_tth09_transcription",
+              "corpus_doi_live",
+              "correspondence",
+              "cst_tt",
+              "cst_tt_initial_setup",
+              "evidence_map",
+              "figure_data",
+              "import_map",
+              "import_map_live",
+              "index",
+              "lean_build",
+              "lean_clean",
+              "lean_validation",
+              "manuscript_build",
+              "manuscript_build_final",
+              "manuscript_check",
+              "manuscript_clean",
+              "package_validator",
+              "paper",
+              "result_snapshot",
+              "selftest_evaluate_fiach_pos04",
+              "selftest_evaluate_tth06_lanes",
+              "selftest_evaluate_tth09_routes",
+              "selftest_validate_lean",
+              "style_lint"
+            ],
+            "summary_only_receipts": 54
+          }
+        },
+        "initial_attempt": {
+          "archive_root": "/tmp/W19b-archive-6gusior9/source",
+          "commands": [
+            {
+              "command": [
+                "lake",
+                "build",
+                "CSTTT"
+              ],
+              "cwd": "lean",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "lean_build",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/lean_build.log",
+              "log_sha256": "c3c14c08a0f2b3ca52a995a41340eff5a390f755e84d46c91e268e89e84df0de",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/build_import_map.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "import_map",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/import_map.log",
+              "log_sha256": "fb9c4b9af11b0b28fcf2273c1859683f317a4e2770478f1b83e00ae7e0c32eb5",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/build_import_map.py",
+                "--live",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 1,
+              "expected_exit": 1,
+              "id": "live_mode_absent_siblings",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/live_mode_absent_siblings.log",
+              "log_sha256": "ea9da86913036b17b1fb49f81d65511bf5b6913e352f3ad2b6208aa615e8db3c",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/build_evidence_map.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "evidence_map",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/evidence_map.log",
+              "log_sha256": "0993f86dd2d83029b4413391a8d1c280fa67c29bc9125e01673b3d3684cac989",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/export_results.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "snapshot",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/snapshot.log",
+              "log_sha256": "5fe084344c0e4d06c5eaf2933bc96c310aee8e2dbcdac6c88eb055e7028c0c3c",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/build_correspondence.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "correspondence",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/correspondence.log",
+              "log_sha256": "35539874788aaae6e8c6bb3a786ac85a0ad36904beeae9f8fd0f8dc679fb1c66",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/render_index.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "index",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/index.log",
+              "log_sha256": "6e5cd52e6886f0d5c647077227fc7c868eb475808764bff73fa04c74ee16cfd7",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/render_figure_data.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "figure_data",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/figure_data.log",
+              "log_sha256": "d9b498636b62efb9552db967d07a151b178d538836ed96bd9cca162600ebf2e0",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/build_release_counts.py",
+                "--check"
+              ],
+              "cwd": ".",
+              "exit_code": 1,
+              "expected_exit": 0,
+              "id": "release_counts",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/release_counts.log",
+              "log_sha256": "089af69e2e77582f630f82ae0dbf0d4e0549d7ed2543f4bbf50a60b535295b4d",
+              "status": "fail"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/style_lint.py",
+                "--strict"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "style",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/style.log",
+              "log_sha256": "bbafde9237130b5591747b8146241c408fb109afbe0ed1b526817ae824a1dbdb",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/tools/check_manuscript.py"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "manuscript",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/manuscript.log",
+              "log_sha256": "9a62d4608b9edb6b854a6a81080824ba25641328623c62e56cc71020666b14b3",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "paper/prewriting/validate_package.py"
+              ],
+              "cwd": ".",
+              "exit_code": 0,
+              "expected_exit": 0,
+              "id": "package",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/package.log",
+              "log_sha256": "bc71815ccac713d147e937982d79228590af514dfdcfbfe587648ef3d51a2474",
+              "status": "pass"
+            },
+            {
+              "command": [
+                "python3",
+                "-m",
+                "pytest",
+                "-q",
+                "paper/tests"
+              ],
+              "cwd": ".",
+              "exit_code": 1,
+              "expected_exit": 0,
+              "id": "paper_tests",
+              "log_path": "/tmp/W19b-archive-6gusior9/logs/paper_tests.log",
+              "log_sha256": "5ec29c32e58a0f7dfee751df850332c334c4997f15c2aebd3435cbeab6236d74",
+              "status": "fail"
+            }
+          ],
+          "environment": {
+            "PYTHONHASHSEED": "0",
+            "SIXBIRDS_SIBLING_ROOT": "/tmp/W19b-archive-6gusior9/absent-siblings"
+          },
+          "recorded_at": "2026-10-13T13:37:40+00:00",
+          "snapshot": {
+            "definition": "Tracked working-tree files plus nonignored additions; symlinks preserved; no .git or ignored build artifacts.",
+            "files": 2699,
+            "sha256": "198fd05891d200cde87108341c3e543f7c6cf36df405b2f708d1fd8c0cb22630"
+          },
+          "status": "fail"
+        },
+        "lean_source_verification": {
+          "byte_identical": true,
+          "files": 803,
+          "tree_sha256": "bf96e3410eb0a4264a3cbb1fd71f796e2f936cc1bd5d4b02d1a7492c5fe5389e"
+        }
+      },
+      "phase": "W19",
+      "receipt": {
+        "command": [
+          "python3",
+          "paper/tools/check_archive_reproduction.py",
+          "--reuse-archive",
+          "/tmp/W19b-archive-6gusior9/source"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "archive_reproduction",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19b/archive-reproduction-final.log",
+        "log_sha256": "00a8aff13ff777cc9bf46286110c1ac9808e8051d195d528c9434777d9472a19",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-13T13:45:06+00:00",
+        "status": "pass",
+        "summary": "{\"id\": \"package\", \"command\": [\"python3\", \"paper/prewriting/validate_package.py\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-6gusior9/logs-final/package.log\", \"log_sha256\": \"bc71815ccac713d147e937982d79228590af514dfdcfbfe587648ef3d51a2474\"}\n{\"id\": \"snapshot\", \"command\": [\"python3\", \"paper/tools/export_results.py\", \"--check\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-6gusior9/logs-final/snapshot.log\", \"log_sha256\": \"5fe084344c0e4d06c5eaf2933bc96c310aee8e2dbcdac6c88eb055e7028c0c3c\"}\nRUN paper_tests: python3 -m pytest -q paper/tests (cwd .)\n{\"id\": \"paper_tests\", \"command\": [\"python3\", \"-m\", \"pytest\", \"-q\", \"paper/tests\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-6gusior9/logs-final/paper_tests.log\", \"log_sha256\": \"9aed6a63873bd2eafc031ac7416881be02063ffb4618c8babe60a6c96fb677a7\"}\n{\"archive_reproduction\": \"pass\", \"report\": \"/tmp/W19b-archive-6gusior9/report.json\"}"
+      },
+      "recorded_at": "2026-10-13T13:45:06+00:00"
+    },
+    {
+      "console_log": {
+        "path": "/tmp/claude-1000/-home-repos-six-birds-transcendence/2ee0ab75-dccd-4782-9696-3ebf0bce4a74/scratchpad/archive_repro_orphan.log",
+        "sha256": "97ac2cbd88c752ab3e38183944c5220e06e5a1500ee1957d1bec3c872b873e70"
+      },
+      "evidence": {
+        "archive_root": "/tmp/W19b-archive-js9koy5n/source",
+        "commands": [
+          {
+            "command": [
+              "lake",
+              "build",
+              "CSTTT"
+            ],
+            "cwd": "lean",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "lean_build",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/lean_build.log",
+            "log_sha256": "24cee1c7bcf515f33507e9cf2b7e85f767e70b1cef9965162c917d009f2b882c",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/build_import_map.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "import_map",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/import_map.log",
+            "log_sha256": "fb9c4b9af11b0b28fcf2273c1859683f317a4e2770478f1b83e00ae7e0c32eb5",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/build_import_map.py",
+              "--live",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 1,
+            "expected_exit": 1,
+            "id": "live_mode_absent_siblings",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/live_mode_absent_siblings.log",
+            "log_sha256": "233e98f9b038648e03a00d9856cdeca62b2f28f3ff4ea8abb04b3aaa65bb4f80",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/build_evidence_map.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "evidence_map",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/evidence_map.log",
+            "log_sha256": "0993f86dd2d83029b4413391a8d1c280fa67c29bc9125e01673b3d3684cac989",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/export_results.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "snapshot",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/snapshot.log",
+            "log_sha256": "5fe084344c0e4d06c5eaf2933bc96c310aee8e2dbcdac6c88eb055e7028c0c3c",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/build_correspondence.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "correspondence",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/correspondence.log",
+            "log_sha256": "35539874788aaae6e8c6bb3a786ac85a0ad36904beeae9f8fd0f8dc679fb1c66",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/render_index.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "index",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/index.log",
+            "log_sha256": "6e5cd52e6886f0d5c647077227fc7c868eb475808764bff73fa04c74ee16cfd7",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/render_figure_data.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "figure_data",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/figure_data.log",
+            "log_sha256": "d9b498636b62efb9552db967d07a151b178d538836ed96bd9cca162600ebf2e0",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/build_release_counts.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "release_counts",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/release_counts.log",
+            "log_sha256": "491e16ad7df029606821a01c42790c241f3f90159cc11994f579f5d58857371d",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/style_lint.py",
+              "--strict"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "style",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/style.log",
+            "log_sha256": "bbafde9237130b5591747b8146241c408fb109afbe0ed1b526817ae824a1dbdb",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/check_manuscript.py"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "manuscript",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/manuscript.log",
+            "log_sha256": "9a62d4608b9edb6b854a6a81080824ba25641328623c62e56cc71020666b14b3",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/prewriting/validate_package.py"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "package",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/package.log",
+            "log_sha256": "bc71815ccac713d147e937982d79228590af514dfdcfbfe587648ef3d51a2474",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "-m",
+              "pytest",
+              "-q",
+              "paper/tests"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "paper_tests",
+            "log_path": "/tmp/W19b-archive-js9koy5n/logs/paper_tests.log",
+            "log_sha256": "8d563ab1bd1e5c7fee2a254a65b3293f85310544b695b245638989cf6d0fbdb5",
+            "status": "pass"
+          }
+        ],
+        "environment": {
+          "PYTHONHASHSEED": "0",
+          "SIXBIRDS_SIBLING_ROOT": "/tmp/W19b-archive-js9koy5n/absent-siblings"
+        },
+        "lean_cache": {
+          "provenance": "none",
+          "reused": false
+        },
+        "recorded_at": "2026-10-14T08:13:57+00:00",
+        "snapshot": {
+          "definition": "Tracked working-tree files plus nonignored additions; symlinks preserved; no .git or ignored build artifacts.",
+          "files": 2673,
+          "sha256": "e133c6cba5a7b6202d168ccb04d1091ec34a7b6345776adc0d262911686a3b5d"
+        },
+        "status": "pass"
+      },
+      "phase": "W20_before_figure_change",
+      "recorded_at": "2026-10-14T08:13:57+00:00",
+      "report_path": "/tmp/W19b-archive-js9koy5n/report.json",
+      "report_sha256": "02bfd487a7e99dc44f092914cf5213b96114415818382198585ec3ad6fe96ec0",
+      "scope": "Owner-reported earlier pruned-index export, before the figure change; historical evidence only."
+    },
+    {
+      "definition": "Current archive reproduction evidence is the owner-run W20 cold export of the recorded commit. All step log hashes and exported committed file contents were verified without rerunning the archive check. W19 attempts and the earlier W20 pruned-index pass are dated history, not current evidence.",
+      "evidence": {
+        "archive_root": "/tmp/W19b-archive-froe_fiy/source",
+        "branch": "build/paper",
+        "command": [
+          "python3",
+          "paper/tools/check_archive_reproduction.py"
+        ],
+        "commands": [
+          {
+            "command": [
+              "lake",
+              "build",
+              "CSTTT"
+            ],
+            "cwd": "lean",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "lean_build",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/lean_build.log",
+            "log_sha256": "7945fd2ac6b40a585a3e9da6b7602b8ee293c688b131ea1f6a79cdb16dc927a7",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/build_import_map.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "import_map",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/import_map.log",
+            "log_sha256": "fb9c4b9af11b0b28fcf2273c1859683f317a4e2770478f1b83e00ae7e0c32eb5",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/build_import_map.py",
+              "--live",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 1,
+            "expected_exit": 1,
+            "id": "live_mode_absent_siblings",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/live_mode_absent_siblings.log",
+            "log_sha256": "d088a8ec03513f5ccec5a5a1c199f35ae10c34570c1a5810d92eb6b896893d4f",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/build_evidence_map.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "evidence_map",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/evidence_map.log",
+            "log_sha256": "0993f86dd2d83029b4413391a8d1c280fa67c29bc9125e01673b3d3684cac989",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/export_results.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "snapshot",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/snapshot.log",
+            "log_sha256": "5fe084344c0e4d06c5eaf2933bc96c310aee8e2dbcdac6c88eb055e7028c0c3c",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/build_correspondence.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "correspondence",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/correspondence.log",
+            "log_sha256": "35539874788aaae6e8c6bb3a786ac85a0ad36904beeae9f8fd0f8dc679fb1c66",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/render_index.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "index",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/index.log",
+            "log_sha256": "6e5cd52e6886f0d5c647077227fc7c868eb475808764bff73fa04c74ee16cfd7",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/render_figure_data.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "figure_data",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/figure_data.log",
+            "log_sha256": "d9b498636b62efb9552db967d07a151b178d538836ed96bd9cca162600ebf2e0",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/build_release_counts.py",
+              "--check"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "release_counts",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/release_counts.log",
+            "log_sha256": "e442b72a5e4045cb750a6c782af6f18b7ceadd1028672ad9efc328c19b5039e2",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/style_lint.py",
+              "--strict"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "style",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/style.log",
+            "log_sha256": "7e94f9be2fce6d2ec06d97c7d714c6cb41b479e42c15be8bdd4850d74a445198",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/tools/check_manuscript.py"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "manuscript",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/manuscript.log",
+            "log_sha256": "21452cef63d7f969ed93111c01c6874f78a108b4c823eb583e5c885e5bc3c3bf",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "paper/prewriting/validate_package.py"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "package",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/package.log",
+            "log_sha256": "797be97612891973accb2698267a7b66befff9d8e2db1e64c8c9b08c725f718d",
+            "status": "pass"
+          },
+          {
+            "command": [
+              "python3",
+              "-m",
+              "pytest",
+              "-q",
+              "paper/tests"
+            ],
+            "cwd": ".",
+            "exit_code": 0,
+            "expected_exit": 0,
+            "id": "paper_tests",
+            "log_path": "/tmp/W19b-archive-froe_fiy/logs/paper_tests.log",
+            "log_sha256": "067fbbe55b3af7f17511ba90c6debab26cb9b71bc2b1112c988186d0d807d8bb",
+            "status": "pass"
+          }
+        ],
+        "commit": "35ae5ffecddd85d9fa92db1adb32fa08d4f83dad",
+        "commit_tree_verification": {
+          "method": "Git blob SHA1 comparison for every tracked file, plus regeneration of the exported snapshot SHA256.",
+          "mismatches": 0,
+          "snapshot_sha256": "44e452b78185221468fd3f4f2f5f475a74ff1af2abb4e1ef331612c8c68db517",
+          "tracked_files": 2675
+        },
+        "console_log": {
+          "captured_path": "lean/.validate-logs/W20-archive-refresh/archive-console.log",
+          "original_path": "/tmp/claude-1000/-home-repos-six-birds-transcendence/2ee0ab75-dccd-4782-9696-3ebf0bce4a74/scratchpad/archive_repro_w20.log",
+          "sha256": "d23bced9054e0d29a878da957b8210b9ba8335d5019c130c577def884988b3b7"
+        },
+        "environment": {
+          "PYTHONHASHSEED": "0",
+          "SIXBIRDS_SIBLING_ROOT": "/tmp/W19b-archive-froe_fiy/absent-siblings"
+        },
+        "exit_code": 0,
+        "exit_code_source": "Owner-reported exit 0; console reports pass and every step matches its expected exit.",
+        "isolation": {
+          "configured_sibling_root": "/tmp/W19b-archive-froe_fiy/absent-siblings",
+          "configured_sibling_root_present": false,
+          "evidence": "Console header, filesystem checks, and expected live-mode rejection in the step log.",
+          "git_directory_present": false
+        },
+        "lean_cache": {
+          "provenance": "none",
+          "reused": false
+        },
+        "paper_tests": {
+          "log_path": "/tmp/W19b-archive-froe_fiy/logs/paper_tests.log",
+          "log_sha256": "067fbbe55b3af7f17511ba90c6debab26cb9b71bc2b1112c988186d0d807d8bb",
+          "metrics": {
+            "passed": 204
+          },
+          "summary": "204 passed in 202.58s (0:03:22)"
+        },
+        "recorded_at": "2026-10-14T09:33:11+00:00",
+        "release_counts_check": {
+          "check": true,
+          "full_logs_verified": 0,
+          "recorded_commands": 55,
+          "recorded_verification_status": "fail",
+          "static_counts_verified": true,
+          "summary_only_ids": [
+            "archive_reproduction",
+            "check_corridor_transcription",
+            "check_full_native_02_autonomy_transcription",
+            "check_full_native_02_fusion_transcription",
+            "check_full_native_binding_transcription",
+            "check_full_native_countermodels_transcription",
+            "check_full_native_credit_transcription",
+            "check_full_native_execution_transcription",
+            "check_full_native_iaps_transcription",
+            "check_full_native_objecthood_transcription",
+            "check_full_native_package_transcription",
+            "check_full_native_snapshot_transcription",
+            "check_full_native_transcription",
+            "check_full_native_viability_transcription",
+            "check_global_package_composition_transcription",
+            "check_internalized_receipts_transcription",
+            "check_joint_temporal_transcription",
+            "check_native_fission_transcription",
+            "check_native_publication_composition_transcription",
+            "check_pos04_transcription",
+            "check_raw_corridor_sequence_transcription",
+            "check_raw_direct_bridge",
+            "check_receiver_sequence_transcription",
+            "check_register_bridge_composition_transcription",
+            "check_stage_composition_transcription",
+            "check_staged_assignment_span_transcription",
+            "check_supported_acquisition_sequence_transcription",
+            "check_t1_transcription",
+            "check_tth06_transcription",
+            "check_tth09_transcription",
+            "corpus_doi_live",
+            "correspondence",
+            "cst_tt",
+            "cst_tt_initial_setup",
+            "evidence_map",
+            "figure_data",
+            "import_map",
+            "import_map_live",
+            "index",
+            "lean_build",
+            "lean_clean",
+            "lean_validation",
+            "manuscript_build",
+            "manuscript_build_final",
+            "manuscript_check",
+            "manuscript_clean",
+            "package_validator",
+            "paper",
+            "pdf_readout",
+            "result_snapshot",
+            "selftest_evaluate_fiach_pos04",
+            "selftest_evaluate_tth06_lanes",
+            "selftest_evaluate_tth09_routes",
+            "selftest_validate_lean",
+            "style_lint"
+          ],
+          "summary_only_receipts": 55
+        },
+        "report_path": "/tmp/W19b-archive-froe_fiy/report.json",
+        "report_sha256": "fc6428ba122b044dd3fc1f7ff48bc84237308ae17e78d49d1f4dca3532219cda",
+        "snapshot": {
+          "definition": "Tracked working-tree files plus nonignored additions; symlinks preserved; no .git or ignored build artifacts.",
+          "files": 2675,
+          "sha256": "44e452b78185221468fd3f4f2f5f475a74ff1af2abb4e1ef331612c8c68db517"
+        },
+        "status": "pass"
+      },
+      "phase": "W20",
+      "receipt": {
+        "command": [
+          "python3",
+          "paper/tools/check_archive_reproduction.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "archive_reproduction",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W20-archive-refresh/archive-console.log",
+        "log_sha256": "d23bced9054e0d29a878da957b8210b9ba8335d5019c130c577def884988b3b7",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T09:36:34+00:00",
+        "status": "pass",
+        "summary": "{\"id\": \"package\", \"command\": [\"python3\", \"paper/prewriting/validate_package.py\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-froe_fiy/logs/package.log\", \"log_sha256\": \"797be97612891973accb2698267a7b66befff9d8e2db1e64c8c9b08c725f718d\"}\n{\"id\": \"snapshot\", \"command\": [\"python3\", \"paper/tools/export_results.py\", \"--check\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-froe_fiy/logs/snapshot.log\", \"log_sha256\": \"5fe084344c0e4d06c5eaf2933bc96c310aee8e2dbcdac6c88eb055e7028c0c3c\"}\nRUN paper_tests: python3 -m pytest -q paper/tests (cwd .)\n{\"id\": \"paper_tests\", \"command\": [\"python3\", \"-m\", \"pytest\", \"-q\", \"paper/tests\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-froe_fiy/logs/paper_tests.log\", \"log_sha256\": \"067fbbe55b3af7f17511ba90c6debab26cb9b71bc2b1112c988186d0d807d8bb\"}\n{\"archive_reproduction\": \"pass\", \"report\": \"/tmp/W19b-archive-froe_fiy/report.json\"}"
+      },
+      "recorded_at": "2026-10-14T09:33:11+00:00"
+    },
+    {
+      "archive_root": "/tmp/W19b-archive-kyh7p5uh/source",
+      "branch": "build/paper",
+      "command": [
+        "python3",
+        "paper/tools/check_archive_reproduction.py"
+      ],
+      "commands": [
+        {
+          "command": [
+            "lake",
+            "build",
+            "CSTTT"
+          ],
+          "cwd": "lean",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "lean_build",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/lean_build.log",
+          "log_sha256": "08b4b7438b691ed03cb92b8a23889ec47f06737699d5b62accbfc881dff82100",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/tools/build_import_map.py",
+            "--check"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "import_map",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/import_map.log",
+          "log_sha256": "fb9c4b9af11b0b28fcf2273c1859683f317a4e2770478f1b83e00ae7e0c32eb5",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/tools/build_import_map.py",
+            "--live",
+            "--check"
+          ],
+          "cwd": ".",
+          "exit_code": 1,
+          "expected_exit": 1,
+          "id": "live_mode_absent_siblings",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/live_mode_absent_siblings.log",
+          "log_sha256": "ea61e43c3d40043ee9221e854210551eeacd70b126db78a5152f6f2a7214f031",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/tools/build_evidence_map.py",
+            "--check"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "evidence_map",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/evidence_map.log",
+          "log_sha256": "0993f86dd2d83029b4413391a8d1c280fa67c29bc9125e01673b3d3684cac989",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/tools/export_results.py",
+            "--check"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "snapshot",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/snapshot.log",
+          "log_sha256": "5fe084344c0e4d06c5eaf2933bc96c310aee8e2dbcdac6c88eb055e7028c0c3c",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/tools/build_correspondence.py",
+            "--check"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "correspondence",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/correspondence.log",
+          "log_sha256": "35539874788aaae6e8c6bb3a786ac85a0ad36904beeae9f8fd0f8dc679fb1c66",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/tools/render_index.py",
+            "--check"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "index",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/index.log",
+          "log_sha256": "6e5cd52e6886f0d5c647077227fc7c868eb475808764bff73fa04c74ee16cfd7",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/tools/render_figure_data.py",
+            "--check"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "figure_data",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/figure_data.log",
+          "log_sha256": "d9b498636b62efb9552db967d07a151b178d538836ed96bd9cca162600ebf2e0",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/tools/build_release_counts.py",
+            "--check"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "release_counts",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/release_counts.log",
+          "log_sha256": "e442b72a5e4045cb750a6c782af6f18b7ceadd1028672ad9efc328c19b5039e2",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/tools/style_lint.py",
+            "--strict"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "style",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/style.log",
+          "log_sha256": "d73d61d0fcbaba2a6b14b6d31dde80c9725fa7cdbe55dcb4367b68e641535a3e",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/tools/check_manuscript.py"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "manuscript",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/manuscript.log",
+          "log_sha256": "42b2797c7e05a80706b199c8d7aa9b77cb0ede06c1d8f2a4152e2c9f8398eca6",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "paper/prewriting/validate_package.py"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "package",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/package.log",
+          "log_sha256": "c9c698f276f14109c8e9a1deeb157bfd0a00b457fa6c3ff7cfd75a5f935337ec",
+          "status": "pass"
+        },
+        {
+          "command": [
+            "python3",
+            "-m",
+            "pytest",
+            "-q",
+            "paper/tests"
+          ],
+          "cwd": ".",
+          "exit_code": 0,
+          "expected_exit": 0,
+          "id": "paper_tests",
+          "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/paper_tests.log",
+          "log_sha256": "b6577e014c77fb6ab4069224f8125e962c415ba2af1f002deab562a3cfdacc03",
+          "status": "pass"
+        }
+      ],
+      "commit": "1d7a6377d892c387a3a7adc9f83a2368dedc7e37",
+      "commit_tree_verification": {
+        "method": "Git blob SHA1 comparison for every tracked file, plus regeneration of the exported snapshot SHA256.",
+        "mismatches": 0,
+        "snapshot_sha256": "d16cbb290d1241cf8289df8d0669f0bd01836863a8eab82be95c99481c2d9590",
+        "tracked_files": 2675
+      },
+      "console_log": {
+        "captured_path": "lean/.validate-logs/W22-archive-refresh/archive-console.log",
+        "original_path": "/tmp/claude-1000/-home-repos-six-birds-transcendence/2ee0ab75-dccd-4782-9696-3ebf0bce4a74/scratchpad/archive_repro_w22.log",
+        "sha256": "1ea844634a147095e1aa93ee3c4e610906c7012e1683611ed2b8c1ec95ab4f3c"
+      },
+      "environment": {
+        "PYTHONHASHSEED": "0",
+        "SIXBIRDS_SIBLING_ROOT": "/tmp/W19b-archive-kyh7p5uh/absent-siblings"
+      },
+      "exit_code": 0,
+      "exit_code_source": "Owner-reported exit 0; console reports pass and every step matches its expected exit.",
+      "isolation": {
+        "configured_sibling_root": "/tmp/W19b-archive-kyh7p5uh/absent-siblings",
+        "configured_sibling_root_present": false,
+        "evidence": "Console header, filesystem checks, and expected live-mode rejection in the step log.",
+        "git_directory_present": false
+      },
+      "lean_cache": {
+        "provenance": "none",
+        "reused": false
+      },
+      "paper_tests": {
+        "log_path": "/tmp/W19b-archive-kyh7p5uh/logs/paper_tests.log",
+        "log_sha256": "b6577e014c77fb6ab4069224f8125e962c415ba2af1f002deab562a3cfdacc03",
+        "metrics": {
+          "passed": 205
+        },
+        "summary": "205 passed in 221.50s (0:03:41)"
+      },
+      "recorded_at": "2026-10-14T11:35:52+00:00",
+      "release_counts_check": {
+        "check": true,
+        "full_logs_verified": 0,
+        "recorded_commands": 55,
+        "recorded_verification_status": "fail",
+        "static_counts_verified": true,
+        "summary_only_ids": [
+          "archive_reproduction",
+          "check_corridor_transcription",
+          "check_full_native_02_autonomy_transcription",
+          "check_full_native_02_fusion_transcription",
+          "check_full_native_binding_transcription",
+          "check_full_native_countermodels_transcription",
+          "check_full_native_credit_transcription",
+          "check_full_native_execution_transcription",
+          "check_full_native_iaps_transcription",
+          "check_full_native_objecthood_transcription",
+          "check_full_native_package_transcription",
+          "check_full_native_snapshot_transcription",
+          "check_full_native_transcription",
+          "check_full_native_viability_transcription",
+          "check_global_package_composition_transcription",
+          "check_internalized_receipts_transcription",
+          "check_joint_temporal_transcription",
+          "check_native_fission_transcription",
+          "check_native_publication_composition_transcription",
+          "check_pos04_transcription",
+          "check_raw_corridor_sequence_transcription",
+          "check_raw_direct_bridge",
+          "check_receiver_sequence_transcription",
+          "check_register_bridge_composition_transcription",
+          "check_stage_composition_transcription",
+          "check_staged_assignment_span_transcription",
+          "check_supported_acquisition_sequence_transcription",
+          "check_t1_transcription",
+          "check_tth06_transcription",
+          "check_tth09_transcription",
+          "corpus_doi_live",
+          "correspondence",
+          "cst_tt",
+          "cst_tt_initial_setup",
+          "evidence_map",
+          "figure_data",
+          "import_map",
+          "import_map_live",
+          "index",
+          "lean_build",
+          "lean_clean",
+          "lean_validation",
+          "manuscript_build",
+          "manuscript_build_final",
+          "manuscript_check",
+          "manuscript_clean",
+          "package_validator",
+          "paper",
+          "pdf_readout",
+          "result_snapshot",
+          "selftest_evaluate_fiach_pos04",
+          "selftest_evaluate_tth06_lanes",
+          "selftest_evaluate_tth09_routes",
+          "selftest_validate_lean",
+          "style_lint"
+        ],
+        "summary_only_receipts": 55
+      },
+      "report_path": "/tmp/W19b-archive-kyh7p5uh/report.json",
+      "report_sha256": "0d468dfeb94a4330b3b2dd3ddea9cb99379266a86619dd8038df0922bffe9b89",
+      "snapshot": {
+        "definition": "Tracked working-tree files plus nonignored additions; symlinks preserved; no .git or ignored build artifacts.",
+        "files": 2675,
+        "sha256": "d16cbb290d1241cf8289df8d0669f0bd01836863a8eab82be95c99481c2d9590"
+      },
+      "status": "pass"
+    }
+  ]
+}

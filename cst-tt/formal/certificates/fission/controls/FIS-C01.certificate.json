@@ -1,0 +1,37 @@
+{
+  "audit": {
+    "branch_component_replays_valid": true,
+    "certificate_id": "FIS-C01",
+    "common_source_exact": true,
+    "component_hashes_valid": false,
+    "failed_obligations": [
+      "FIS-O01-component-hashes"
+    ],
+    "invariant_singleton_selector_absent": true,
+    "left_branch_valid": true,
+    "left_target_code": 201,
+    "relation_contains_both_branches": true,
+    "relation_valued_fission_valid": false,
+    "right_branch_valid": true,
+    "right_target_code": 202,
+    "source_code": 17,
+    "source_package_exact": true,
+    "source_temporal_frontier_exact": true,
+    "swap_fixed_point_free": true,
+    "swap_involutive": true,
+    "target_shapes_symmetric": true,
+    "targets_distinct": true,
+    "uniqueness_claim_absent": true,
+    "validity_preserved_by_swap": true
+  },
+  "claim_ceiling": "finite fission-interface boundary only",
+  "control_id": "FIS-C01",
+  "expected_primary_failure": "FIS-O01-component-hashes",
+  "model_ref": "models/fission/controls/FIS-C01.model.json",
+  "model_sha256": "d13581f6ee605c92ea64ebf9ee1171d1cb6a770b5c82f2e0769d2a378f0fa9ea",
+  "observed_failures": [
+    "FIS-O01-component-hashes"
+  ],
+  "result_status": "checked-fission-obligation-countermodel",
+  "schema_version": "CST-TT-06"
+}

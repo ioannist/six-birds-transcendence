@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_native_publication_composition_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_native_publication_composition_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_native_publication_composition_transcription.log",
+  "log_sha256": "501e446cb3dad9273a2cf46f1409f4ac8a4aafcbdce8318ae29058deb7de2f28",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:40+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted runtime source presence drift\nCAUGHT planted event log drift\nCAUGHT planted stored path drift\nCAUGHT planted controller drift\nPASS all8 raw repaired episodes, physical/memory/owner/presence seams, actual corridor checks and source/event cuts; full readout/certificate kernel probes; seven planted drifts"
+}

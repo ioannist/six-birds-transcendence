@@ -1,0 +1,15 @@
+{
+  "deterministic": true,
+  "python_hash_seed": 0,
+  "result": {
+    "candidate_pairs_examined": 16,
+    "carrier_chain_composition_failures": 0,
+    "carrier_chain_rule_composes_all_compatible_pairs": true,
+    "endpoint_mixedness_is_not_composition_stable": true,
+    "frontier_compatible_pairs": 16,
+    "old_endpoint_mixed_rule_failures": 16
+  },
+  "schema_version": "CST-TT-04",
+  "search_id": "CORRIDOR_COMPOSITION_SEARCH",
+  "usage_boundary": "bounded finite stress evidence; not a proof oracle"
+}

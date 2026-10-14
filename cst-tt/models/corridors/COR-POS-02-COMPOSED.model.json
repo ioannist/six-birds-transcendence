@@ -1,0 +1,424 @@
+{
+  "carrier_chain": [
+    {
+      "code": 17,
+      "label": "source-substrate"
+    },
+    {
+      "code": 55,
+      "label": "intermediate-substrate"
+    },
+    {
+      "code": 101,
+      "label": "target-substrate"
+    }
+  ],
+  "claim_ceiling": "exact finite structural temporal lineage criterion only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "composition_provenance": {
+    "frontier_signature_sha256": "c93b846467e9a76654f15e1d7d1b209f49e6b2c63c3d732e0091d9fb5c699183",
+    "frontier_stage": 2,
+    "left_model_id": "COR-POS-02A",
+    "right_model_id": "COR-POS-02B"
+  },
+  "episode": {
+    "dependencies": [
+      {
+        "child_event_id": "leg-S-M-source-mixed",
+        "dependency_kind": "temporal-step",
+        "parent_event_id": "s-chain-entry"
+      },
+      {
+        "child_event_id": "leg-S-M-target-mixed",
+        "dependency_kind": "temporal-step",
+        "parent_event_id": "s-chain-entry"
+      },
+      {
+        "child_event_id": "m-boundary",
+        "dependency_kind": "mixed-update",
+        "parent_event_id": "leg-S-M-source-mixed"
+      },
+      {
+        "child_event_id": "m-boundary",
+        "dependency_kind": "mixed-update",
+        "parent_event_id": "leg-S-M-target-mixed"
+      },
+      {
+        "child_event_id": "leg-M-T-source-mixed",
+        "dependency_kind": "temporal-step",
+        "parent_event_id": "m-boundary"
+      },
+      {
+        "child_event_id": "leg-M-T-target-mixed",
+        "dependency_kind": "temporal-step",
+        "parent_event_id": "m-boundary"
+      },
+      {
+        "child_event_id": "t-chain-exit",
+        "dependency_kind": "mixed-update",
+        "parent_event_id": "leg-M-T-source-mixed"
+      },
+      {
+        "child_event_id": "t-chain-exit",
+        "dependency_kind": "mixed-update",
+        "parent_event_id": "leg-M-T-target-mixed"
+      }
+    ],
+    "events": [
+      {
+        "event_id": "leg-M-T-source-mixed",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 55,
+          "label": "intermediate-substrate"
+        },
+        "stage": 3
+      },
+      {
+        "event_id": "leg-M-T-target-mixed",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "stage": 3
+      },
+      {
+        "event_id": "leg-S-M-source-mixed",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 17,
+          "label": "source-substrate"
+        },
+        "stage": 1
+      },
+      {
+        "event_id": "leg-S-M-target-mixed",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 55,
+          "label": "intermediate-substrate"
+        },
+        "stage": 1
+      },
+      {
+        "event_id": "m-boundary",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 55,
+          "label": "intermediate-substrate"
+        },
+        "stage": 2
+      },
+      {
+        "event_id": "s-chain-entry",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 17,
+          "label": "source-substrate"
+        },
+        "stage": 0
+      },
+      {
+        "event_id": "t-chain-exit",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "stage": 4
+      }
+    ],
+    "stages": [
+      {
+        "active_support": [
+          {
+            "code": 17,
+            "label": "source-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 17,
+          "maintenance_state": "leg-S-M-source-maint",
+          "order_rank": 0,
+          "predictive_rank": 0,
+          "progress_rank": 0,
+          "record_value": 0,
+          "route_residue": [
+            "route-root"
+          ],
+          "tick_index": 0
+        },
+        "stage": 0,
+        "temporal_realized": true
+      },
+      {
+        "active_support": [
+          {
+            "code": 17,
+            "label": "source-substrate"
+          },
+          {
+            "code": 55,
+            "label": "intermediate-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 17,
+          "maintenance_state": "leg-S-M-mixed-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 1,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed"
+          ],
+          "tick_index": 1
+        },
+        "stage": 1,
+        "temporal_realized": true
+      },
+      {
+        "active_support": [
+          {
+            "code": 55,
+            "label": "intermediate-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 55,
+          "maintenance_state": "leg-S-M-target-maint",
+          "order_rank": 2,
+          "predictive_rank": 2,
+          "progress_rank": 2,
+          "record_value": 3,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target"
+          ],
+          "tick_index": 2
+        },
+        "stage": 2,
+        "temporal_realized": true
+      },
+      {
+        "active_support": [
+          {
+            "code": 55,
+            "label": "intermediate-substrate"
+          },
+          {
+            "code": 101,
+            "label": "target-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 55,
+          "maintenance_state": "leg-M-T-mixed-maint",
+          "order_rank": 3,
+          "predictive_rank": 3,
+          "progress_rank": 3,
+          "record_value": 4,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target",
+            "leg-M-T-mixed"
+          ],
+          "tick_index": 3
+        },
+        "stage": 3,
+        "temporal_realized": true
+      },
+      {
+        "active_support": [
+          {
+            "code": 101,
+            "label": "target-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 101,
+          "maintenance_state": "leg-M-T-target-maint",
+          "order_rank": 4,
+          "predictive_rank": 4,
+          "progress_rank": 4,
+          "record_value": 6,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target",
+            "leg-M-T-mixed",
+            "leg-M-T-target"
+          ],
+          "tick_index": 4
+        },
+        "stage": 4,
+        "temporal_realized": true
+      }
+    ]
+  },
+  "kind": "strict-carrier-chain-temporal-corridor",
+  "legs": [
+    {
+      "audit_event_ids": {
+        "later_event": "m-boundary",
+        "source_mixed_event": "leg-S-M-source-mixed",
+        "target_mixed_event": "leg-S-M-target-mixed"
+      },
+      "audit_later_stage": 2,
+      "counterfactual": {
+        "base_projection": [
+          0,
+          0,
+          0
+        ],
+        "full_projection": [
+          2,
+          2,
+          3
+        ],
+        "projection_fields": [
+          "predictive_rank",
+          "tick_index",
+          "record_value"
+        ],
+        "source_contribution": [
+          1,
+          0,
+          1
+        ],
+        "source_removed_projection": [
+          1,
+          2,
+          2
+        ],
+        "target_contribution": [
+          1,
+          2,
+          2
+        ],
+        "target_removed_projection": [
+          1,
+          0,
+          1
+        ]
+      },
+      "end_stage": 2,
+      "leg_id": "leg-S-M",
+      "mixed_stage": 1,
+      "route_status": "route-indexed",
+      "source_carrier": {
+        "code": 17,
+        "label": "source-substrate"
+      },
+      "start_stage": 0,
+      "takeover_stage": 2,
+      "target_carrier": {
+        "code": 55,
+        "label": "intermediate-substrate"
+      },
+      "transport_evidence": {
+        "components": [
+          "predictive-now",
+          "order",
+          "tick-phase",
+          "progress",
+          "arrow-record",
+          "route-memory",
+          "maintenance"
+        ],
+        "evidence_id": "leg-S-M-bundled-transport",
+        "ownership_interface_valid": true,
+        "representative_independent": true,
+        "route_status": "route-indexed"
+      }
+    },
+    {
+      "audit_event_ids": {
+        "later_event": "t-chain-exit",
+        "source_mixed_event": "leg-M-T-source-mixed",
+        "target_mixed_event": "leg-M-T-target-mixed"
+      },
+      "audit_later_stage": 4,
+      "counterfactual": {
+        "base_projection": [
+          2,
+          2,
+          3
+        ],
+        "full_projection": [
+          4,
+          4,
+          6
+        ],
+        "projection_fields": [
+          "predictive_rank",
+          "tick_index",
+          "record_value"
+        ],
+        "source_contribution": [
+          1,
+          0,
+          1
+        ],
+        "source_removed_projection": [
+          3,
+          4,
+          5
+        ],
+        "target_contribution": [
+          1,
+          2,
+          2
+        ],
+        "target_removed_projection": [
+          3,
+          2,
+          4
+        ]
+      },
+      "end_stage": 4,
+      "leg_id": "leg-M-T",
+      "mixed_stage": 3,
+      "route_status": "route-indexed",
+      "source_carrier": {
+        "code": 55,
+        "label": "intermediate-substrate"
+      },
+      "start_stage": 2,
+      "takeover_stage": 4,
+      "target_carrier": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "transport_evidence": {
+        "components": [
+          "predictive-now",
+          "order",
+          "tick-phase",
+          "progress",
+          "arrow-record",
+          "route-memory",
+          "maintenance"
+        ],
+        "evidence_id": "leg-M-T-bundled-transport",
+        "ownership_interface_valid": true,
+        "representative_independent": true,
+        "route_status": "route-indexed"
+      }
+    }
+  ],
+  "model_id": "COR-POS-02-COMPOSED",
+  "nonclaims": [
+    "no target-package verdict",
+    "no post-withdrawal autonomy verdict",
+    "no phenomenal or personal-status conclusion"
+  ],
+  "schema_version": "CST-TT-04-model-v1",
+  "title": "two-leg strict carrier-chain temporal corridor"
+}

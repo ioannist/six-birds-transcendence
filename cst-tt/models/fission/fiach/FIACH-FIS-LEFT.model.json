@@ -1,0 +1,29 @@
+{
+  "certificate_id": "FIACH-FIS-LEFT",
+  "claim_ceiling": "one relation-valued structural fission branch only",
+  "component_refs": {
+    "autonomy": "formal/certificates/fission/autonomy/AUT-FIS-LEFT.certificate.json",
+    "corridor": "formal/certificates/fission/corridors/COR-FIS-LEFT.certificate.json",
+    "source_package": "formal/certificates/fission/packages/PKG-FIS-SOURCE.certificate.json",
+    "staged_assembly": "formal/certificates/fission/staged/STG-FIS-LEFT.certificate.json",
+    "target_package": "formal/certificates/fission/packages/PKG-FIS-LEFT.certificate.json"
+  },
+  "component_sha256": {
+    "autonomy": "8ed616635694470c33dcea929d93d5ddc30acd0361896892addd6aca698627ca",
+    "corridor": "096b2bfc9925f6d9f9aa262e28275cd3b7f74274acb3418d9ae93e3a9feebadc",
+    "source_package": "c3b2ffd7a46637c27b4a4f341e7453f750308d2ffbdce4a6059081dd237d2d31",
+    "staged_assembly": "05064b819c74ca208919cd63726089563b0e618ae6be831b9c9691cb82a8e84a",
+    "target_package": "24fb0d887e8cb691327b82acf0d8f3cf5334f2d8d8e98fec37cba401601f1b98"
+  },
+  "recognition_status": "not-addressed",
+  "route_status": "route-indexed",
+  "schema_version": "CST-TT-06",
+  "source": {
+    "code": 17,
+    "label": "source-substrate"
+  },
+  "target": {
+    "code": 201,
+    "label": "left-branch-substrate"
+  }
+}

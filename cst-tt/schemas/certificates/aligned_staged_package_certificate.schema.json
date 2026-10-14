@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-birds.local/cst-tt/schemas/aligned_staged_package_certificate.schema.json",
+  "title": "CST-TT-05 handoff-aligned staged package certificate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "certificate_id",
+    "assembly_ref",
+    "assembly_sha256",
+    "source_model_ref",
+    "source_model_sha256",
+    "target_model_ref",
+    "target_model_sha256",
+    "result_status",
+    "claim_lanes",
+    "claim_ceiling",
+    "handoff_alignment",
+    "theorem_evidence",
+    "audit",
+    "checker"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "CST-TT-05"
+    },
+    "certificate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assembly_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assembly_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_model_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_model_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "target_model_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "target_model_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "result_status": {
+      "enum": [
+        "scaffold-only",
+        "checked-finite-handoff-aligned-staged-package-certificate"
+      ]
+    },
+    "claim_lanes": {
+      "const": [
+        "S-T",
+        "S-R"
+      ]
+    },
+    "claim_ceiling": {
+      "const": "finite typed clause preservation and endpoint-aligned target assembly only"
+    },
+    "handoff_alignment": {
+      "type": "object"
+    },
+    "theorem_evidence": {
+      "type": "object"
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "staged_assembly_valid",
+        "failed_obligations"
+      ]
+    },
+    "checker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "module",
+        "function",
+        "python_version",
+        "checked_at_phase"
+      ],
+      "properties": {
+        "module": {
+          "const": "cst_tt.package_gluing"
+        },
+        "function": {
+          "const": "audit_staged_assembly"
+        },
+        "python_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checked_at_phase": {
+          "const": "CST-TT-05"
+        }
+      }
+    }
+  }
+}

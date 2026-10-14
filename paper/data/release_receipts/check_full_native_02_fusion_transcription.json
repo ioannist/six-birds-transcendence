@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_full_native_02_fusion_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_full_native_02_fusion_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_full_native_02_fusion_transcription.log",
+  "log_sha256": "b26186ab8a61568f1a7da5f6fa72b546fdf5169bd133df76c80665e7c621f483",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:09+00:00",
+  "status": "pass",
+  "summary": "G31a transcription passed: 128 ROM/action rows, 8 complete worlds, all 8 fusion + 8 refusion outputs,\n2 unchanged-world empty diagnostics, 8 initially stored absent steps, 13 rejection controls; 48 frozen source pins match.\nAll 8 outputs complete the frozen own 7-step warmup; all 64 subsequent stronger-fork fusion worlds match."
+}

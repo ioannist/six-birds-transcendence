@@ -1,0 +1,3697 @@
+{
+  "model_id": "FIACH-POS-04",
+  "schema_version": "M3a-declaration-1",
+  "phase": "pre_registration_no_evaluation",
+  "claim_ceiling": "exact T1 C1/C2/C3 on two tagged ten-state factors; conditional finite handoff of a surrogate integrated package if new checks succeed; no full P05 C-package or T17-I",
+  "provenance": {
+    "sibling_commit": "c121a4679338705dd329474c5408ee26b238107c",
+    "imported_tables": {
+      "ambient_Z": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          23,
+          51
+        ],
+        "sha256_lines": "b3645dafdd53858c1e69eff06dc406ddf1f9322132469348759a95c4f3d457e3",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "kernel_and_core": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          43,
+          69
+        ],
+        "sha256_lines": "6f69c59f03a014908fa09cf93888164bf36e520415d53199d688834fe481c443",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "public_and_continuation": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          73,
+          178
+        ],
+        "sha256_lines": "b12f06f18813f5eb9d6475a3ec75139db09e1aca3571ac5879079df13a611c77",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "action_support_and_weights": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          101,
+          161
+        ],
+        "sha256_lines": "7f320375c1ff02e54110f48478968e8587a140e5c0f79c8c7b0648d428046242",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "canonical_policy": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          920,
+          938
+        ],
+        "sha256_lines": "4421609280daa08b34a256021cc847b81f5bd03452a1764b82a7608994f2691a",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "P": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          604,
+          622
+        ],
+        "sha256_lines": "885a861c7197584f521d3b659e9e711dfcbe7890ecc98a41190b5ff592f7ed76",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "C": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          625,
+          641
+        ],
+        "sha256_lines": "a843b1627234417c15654da197b0a7eed6474fde73d58db406230687fd54fb14",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "U": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          642,
+          659
+        ],
+        "sha256_lines": "e305f99c05abab6ffc7fa795d8830c7029a9c6e33ba6d81f822e2abecb891b8d",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "C1_perturbation": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          662,
+          710
+        ],
+        "sha256_lines": "cd2de05237eb9877f53f8fce9e8d0739b15c647ced2d7fcd516f4abdb7a144bd",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "published_fixed_weights": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          848,
+          872
+        ],
+        "sha256_lines": "ac64dedfaae5a3ee5bc1f774b1aa83caebe69f1a38742c9ebcd56b5531bc1450",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "C3_profile_refinement": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          1289,
+          1326
+        ],
+        "sha256_lines": "1653176e4767b349930c94496eeab66c9d7751499eb4abf1b39319a117cbc2a3",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "C1_parameters": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          568,
+          570
+        ],
+        "sha256_lines": "9d424924eb3cd8032769792d33e50f1d1d097937dd4598b053e9db3cd7c7de0d",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      },
+      "published_P_rows": {
+        "source": "../six-birds-consciousness/lab/sixbirds_consciousness/labs/t1_l1_self_wheel.py",
+        "lines": [
+          895,
+          907
+        ],
+        "sha256_lines": "054c4319042938b3be40cdc8bfa7878403fd0ec96fa65e1b5126c5f2e5e5fa01",
+        "sha256_file": "1529b0f01cd015b62c0871501f8507d63e869e59b40ca957afcfac7257450785"
+      }
+    },
+    "lean_module": "lean/CSTTT/Objecthood/T1Audit.lean",
+    "lean_module_sha256": "71073960877131a5d9b3f882efa156b0b4013163144a629a36f12cfa8dff8d93"
+  },
+  "t1_import": {
+    "ambient_states": [
+      "p0w0",
+      "p0w1",
+      "p1w0",
+      "p1w1",
+      "p2w0",
+      "p2w1",
+      "p3w0",
+      "p3w1",
+      "p4w0",
+      "p4w1",
+      "p5w0",
+      "p5w1"
+    ],
+    "kernel_order": [
+      "p0w0",
+      "p0w1",
+      "p1w0",
+      "p1w1",
+      "p2w1",
+      "p3w0",
+      "p3w1",
+      "p4w0",
+      "p4w1",
+      "p5w0"
+    ],
+    "core": [
+      "p1w0",
+      "p1w1",
+      "p2w1",
+      "p5w0"
+    ],
+    "actions": [
+      "stay",
+      "cw",
+      "ccw"
+    ],
+    "hazards": [
+      2,
+      5
+    ],
+    "slip_hold": "1/4",
+    "slip_advance": "3/4",
+    "canonical_policy": [
+      "stay",
+      "stay",
+      "cw",
+      "ccw",
+      "stay",
+      "stay",
+      "stay",
+      "stay",
+      "stay",
+      "stay"
+    ],
+    "P": [
+      [
+        "0/1",
+        "0/1",
+        "1/2",
+        "1/2",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "1/2",
+        "1/2",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "1/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "1/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "3/4",
+        "1/4",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "1/2",
+        "1/2",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "1/2",
+        "1/2",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "1/2",
+        "1/2",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "1/2",
+        "1/2",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "1/4",
+        "3/4",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ]
+    ],
+    "M_class_labels": [
+      "(0, (('stay', ('safe', 'safe')), ('cw', ('safe', 'safe')), ('ccw', ('safe', 'safe'))))",
+      "(0, (('stay', ('safe', 'safe')), ('cw', ('safe', 'safe')), ('ccw', ('safe', 'safe'))))",
+      "(1, (('stay', ()), ('cw', ('safe',)), ('ccw', ('lethal',))))",
+      "(1, (('stay', ()), ('cw', ('lethal',)), ('ccw', ('safe',))))",
+      "(2, (('stay', ('safe', 'safe')), ('cw', ('lethal',)), ('ccw', ('lethal',))))",
+      "(3, (('stay', ('safe', 'safe')), ('cw', ('safe', 'safe')), ('ccw', ('safe', 'safe'))))",
+      "(3, (('stay', ('safe', 'safe')), ('cw', ('safe', 'safe')), ('ccw', ('safe', 'safe'))))",
+      "(4, (('stay', ('safe', 'safe')), ('cw', ('safe', 'safe')), ('ccw', ('safe', 'safe'))))",
+      "(4, (('stay', ('safe', 'safe')), ('cw', ('safe', 'safe')), ('ccw', ('safe', 'safe'))))",
+      "(5, (('stay', ('safe', 'safe')), ('cw', ('lethal',)), ('ccw', ('lethal',))))"
+    ],
+    "C": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "U": [
+      [
+        "1/2",
+        "1/2",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "0/1",
+        "1/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "1/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "1/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "1/2",
+        "1/2",
+        "0/1",
+        "0/1",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "1/2",
+        "1/2",
+        "0/1"
+      ],
+      [
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "0/1",
+        "1/1"
+      ]
+    ],
+    "C1": {
+      "tau": 2,
+      "epsilon": "1/16",
+      "retention_threshold": "3/4",
+      "published_pi": [
+        "1/160",
+        "1/160",
+        "38/155",
+        "38/155",
+        "1171/4960",
+        "1/160",
+        "1/160",
+        "1/160",
+        "1/160",
+        "1171/4960"
+      ],
+      "published_core_mass": "77/80",
+      "published_tv": "3/80",
+      "published_defect": "78795/524288"
+    },
+    "C3_published_trajectory": [
+      6,
+      7,
+      7
+    ],
+    "public_f": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      3,
+      3,
+      4,
+      4,
+      5
+    ],
+    "all_action_distributions": {
+      "p0w0": {
+        "stay": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "cw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "ccw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        }
+      },
+      "p0w1": {
+        "stay": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "cw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "ccw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        }
+      },
+      "p1w0": {
+        "stay": {},
+        "cw": {
+          "p2w1": "1/1"
+        },
+        "ccw": {
+          "p5w1": "1/1"
+        }
+      },
+      "p1w1": {
+        "stay": {},
+        "cw": {
+          "p2w0": "1/1"
+        },
+        "ccw": {
+          "p5w0": "1/1"
+        }
+      },
+      "p2w1": {
+        "stay": {
+          "p1w0": "3/4",
+          "p1w1": "1/4"
+        },
+        "cw": {
+          "p2w0": "1/1"
+        },
+        "ccw": {
+          "p2w0": "1/1"
+        }
+      },
+      "p3w0": {
+        "stay": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "cw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "ccw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        }
+      },
+      "p3w1": {
+        "stay": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "cw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "ccw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        }
+      },
+      "p4w0": {
+        "stay": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "cw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "ccw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        }
+      },
+      "p4w1": {
+        "stay": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "cw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        },
+        "ccw": {
+          "p1w0": "1/2",
+          "p1w1": "1/2"
+        }
+      },
+      "p5w0": {
+        "stay": {
+          "p1w1": "3/4",
+          "p1w0": "1/4"
+        },
+        "cw": {
+          "p5w1": "1/1"
+        },
+        "ccw": {
+          "p5w1": "1/1"
+        }
+      }
+    }
+  },
+  "carrier": {
+    "tags": [
+      "source",
+      "target"
+    ],
+    "tag_rule": "tag × exact T1 kernel; same rows, disjoint tags",
+    "active_factor_states_per_tag": 10,
+    "ambient_states_per_tag": 12,
+    "full_temporal_carrier": "T1 factor plus typed event/path, budget and route-register context; C1 audit is explicitly only on exact T1 factor",
+    "tag_map": "(source,z) ↦ (target,z)"
+  },
+  "new_field_rules": {
+    "source_histories": "finite positive-support paths of canonical T1 P, horizon two, with listed starts; retain full past as history data",
+    "target_histories": "apply tag map pointwise to source histories; target past provenance remains visible only internally",
+    "public_channels": "current public position f and deadline/action availability on K; expanded control additionally reads M",
+    "future_interface": "PredictiveNow=M, event/path order, tick parity, cumulative progress, endogenous record counter, route residue, maintenance state and owner",
+    "c6_code": "q=(M,unfolded event count,current tick parity,current route register,current maintenance state,owner) from raw fields; no full T1 state identity or past label; progress and record counters are derived from event count in the funded regime",
+    "event_order": "index along realized path, not a strictly increasing state-valued order on recurrent K",
+    "tick_progress_record": "one successful funded atomic transition contributes one tick, one progress unit, one target-owned record entry; derived from realized event count",
+    "ledger_price": "one indivisible maintenance token is consumed per canonical action; target recharge supplies one token per action when funded; initial budget is one token",
+    "funded_transition": "if token and target recharge are available, execute exactly the imported canonical P row and restore one token; otherwise no feasible action",
+    "receiver_activation": "source_present AND target_receiver_funded AND mixed_event_realized",
+    "receiver_content": "receiver operation reads the last raw WheelState (p,w) of source history, transfers p through the typed position map and w through the typed phase map, then constructs target-tagged WheelState(p,w); M is computed afterward from target T1 f and L, never consulted by the operation",
+    "route_register": "checked route is (dereferenced raw source history state sequence, raw corridor event sequence); at exit copy that tuple to target-owned register, retain it after funded actions; neither route id nor verdict is register content",
+    "c7_joint_pairing": "finite pairing distribution from declared coupling edges of two actual history branches; no assertion that T1 P itself forces the edges",
+    "recognition": "notAddressed because recognition is outside the structural handoff claim",
+    "c5_protocol_graph": "carry POS-03 three-vertex cycle protocol form onto named T1 histories as an independent probe; do not identify its edges with T1 P transitions",
+    "c7_assemblages": "on each tag keep two distinct assemblages and complete ordered branch records; each has its own raw coupling; reassembly consistency is checked per assemblage (not an inverse function of coupling alone), so two assemblages may carry identical couplings and equal jointPairing distributions",
+    "route_future_readout": "after one funded target step read the phase of the first raw source state retained in the target-owned route tuple; if register absent the output is none; P marginal unchanged",
+    "local_assignments": "for every (tag,state,clause) in tags × exact K × {C1,…,C8}, create coordinate tag:state:clause referencing that clause primitive; this is typed raw assignment, never a stored truth value",
+    "staged_clause_map": "apply tag swap to each local coordinate and the listed primitive reference; require raw equations on T1 factor, channel, protocol, trace, coupling and ledger separately",
+    "latent_receiver": "choose the first state in the published T1 K order as the latent factor state; one-token initial budget and funded receiver follow the one-token action rule",
+    "corridor_support": "by event kind: each mix event has both source and target support; exit has target only; strict_step iff listed stage ordinal increases by one; atomic means one listed event per step",
+    "route_path_names": "route_a and route_b are external references to first and second representative histories only; checked route equality compares their dereferenced raw history+event tuples, not these labels",
+    "c5_edge_rule": "on protocol vertices u,v,w, genuine self and scheduled other each have the three forward cycle edges in their channel; internalized has forward and reverse edges in both channels; null has none, copied in form from POS-03",
+    "positive_raw_inputs": "per-tag action distributions are copies of published T1 all-action table; public channel rule is position; each funded state-action tick increment is one; each route has a target-owned record writer; source and target recharge resources are present; receiver activation and content rules are separate raw fields",
+    "mutation_override_semantics": "each mutation changes only the JSON Pointer fields in its changes list using replace/add/remove; replace and remove require an existing path, add /- appends to an existing array; all unchanged fields retain their positive raw value",
+    "counterfactual_M_computation": "for each tag and raw WheelState z=(p,w), compute f(z)=p; for every T1 action read that tag raw action-distribution support, label each destination safe/lethal by published T1 hazard rule, and form continuation law L(z); M(z)=(f(z),L(z)); never read t1_import.M_class_labels or any stored counterfactual class as the counterfactual result"
+  },
+  "new_data": {
+    "histories": {
+      "h_rep_a": [
+        "p1w0",
+        "p2w1",
+        "p1w0"
+      ],
+      "h_rep_b": [
+        "p1w1",
+        "p5w0",
+        "p1w0"
+      ],
+      "h_class_b": [
+        "p1w1",
+        "p5w0",
+        "p1w1"
+      ],
+      "h_split": [
+        "p1w0",
+        "p2w1",
+        "p1w1"
+      ]
+    },
+    "bridge_frontier": [
+      "h_rep_a",
+      "h_rep_b",
+      "h_class_b",
+      "h_split"
+    ],
+    "strict_source_edge": [
+      "p1w0",
+      "p2w1"
+    ],
+    "same_class_pair": [
+      "h_rep_a",
+      "h_rep_b"
+    ],
+    "different_class_pair": [
+      "h_rep_a",
+      "h_class_b"
+    ],
+    "source_to_target_state_map": "tag swap preserving T1 state label",
+    "source_to_target_history_map": "pointwise tag swap; preserve terminal M and path order",
+    "corridor": {
+      "stages": [
+        "source_live",
+        "mix_1",
+        "mix_2",
+        "target_exit"
+      ],
+      "events": [
+        {
+          "id": "mix_1",
+          "from": "source_live",
+          "to": "mix_1",
+          "source_support": true,
+          "target_support": true,
+          "atomic": true,
+          "strict_step": true
+        },
+        {
+          "id": "mix_2",
+          "from": "mix_1",
+          "to": "mix_2",
+          "source_support": true,
+          "target_support": true,
+          "atomic": true,
+          "strict_step": true
+        },
+        {
+          "id": "exit",
+          "from": "mix_2",
+          "to": "target_exit",
+          "source_support": false,
+          "target_support": true,
+          "atomic": true,
+          "strict_step": true
+        }
+      ],
+      "paths": [
+        {
+          "id": "route_a",
+          "source_history": "h_rep_a",
+          "events": [
+            "mix_1",
+            "mix_2",
+            "exit"
+          ]
+        },
+        {
+          "id": "route_b",
+          "source_history": "h_rep_b",
+          "events": [
+            "mix_1",
+            "mix_2",
+            "exit"
+          ]
+        }
+      ],
+      "content_counterfactuals": [
+        {
+          "source_history": "h_rep_a"
+        },
+        {
+          "source_history": "h_class_b"
+        }
+      ],
+      "interventions": [
+        "remove_source_support",
+        "remove_target_support"
+      ],
+      "future_route_readout": {
+        "rule": "phase of first source WheelState in retained raw route tuple after one funded target step",
+        "owner": "target"
+      },
+      "route_domain_rule": "dereference source_history to raw state sequence and concatenate the raw event sequence; compare these tuples, not route id",
+      "realized_stages": [
+        "source_live",
+        "mix_1",
+        "mix_2",
+        "target_exit"
+      ]
+    },
+    "maintenance": {
+      "owner_by_tag": {
+        "source": "source",
+        "target": "target"
+      },
+      "action_cost_tokens": 1,
+      "recharge_tokens_per_action": 1,
+      "initial_budget_tokens": 1,
+      "target_resource": "target_recharge",
+      "source_available_after_withdrawal": false,
+      "canonical_transition_table": "raw_inputs.by_tag.{tag}.action_distributions at canonical policy; compare with t1_import.P in funded regime"
+    },
+    "c4": {
+      "current_channels": [
+        "public_position",
+        "deadline_action_availability"
+      ],
+      "candidate_connector_history": [
+        "p1w0",
+        "p2w1",
+        "p1w1"
+      ],
+      "candidate_hidden_pair": [
+        "p1w0",
+        "p1w1"
+      ],
+      "expanded_channel": "canonical_M",
+      "grade": "surrogate_due_to_nonconstant_public_position_factoring_through_M"
+    },
+    "c5": {
+      "vertices": [
+        "u",
+        "v",
+        "w"
+      ],
+      "history_anchor": {
+        "u": "h_rep_a",
+        "v": "h_split",
+        "w": "h_class_b"
+      },
+      "protocols": [
+        {
+          "tag": "source",
+          "id": "clockwise",
+          "owner": "source",
+          "housing": "source",
+          "channel": "self",
+          "kind": "native-policy",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "self"
+            }
+          ]
+        },
+        {
+          "tag": "source",
+          "id": "scheduled",
+          "owner": "external",
+          "housing": "external",
+          "channel": "other",
+          "kind": "external-schedule",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "other"
+            }
+          ]
+        },
+        {
+          "tag": "source",
+          "id": "internalized",
+          "owner": "external",
+          "housing": "source",
+          "channel": "self-and-other-balanced",
+          "kind": "internalized-schedule",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "self"
+            },
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "u",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "u",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "u",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "u",
+              "to": "w",
+              "channel": "other"
+            }
+          ]
+        },
+        {
+          "tag": "source",
+          "id": "null",
+          "owner": null,
+          "housing": null,
+          "channel": "none",
+          "kind": "no-generator",
+          "edges": []
+        },
+        {
+          "tag": "target",
+          "id": "clockwise",
+          "owner": "target",
+          "housing": "target",
+          "channel": "self",
+          "kind": "native-policy",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "self"
+            }
+          ]
+        },
+        {
+          "tag": "target",
+          "id": "scheduled",
+          "owner": "external",
+          "housing": "external",
+          "channel": "other",
+          "kind": "external-schedule",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "other"
+            }
+          ]
+        },
+        {
+          "tag": "target",
+          "id": "internalized",
+          "owner": "external",
+          "housing": "target",
+          "channel": "self-and-other-balanced",
+          "kind": "internalized-schedule",
+          "edges": [
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "self"
+            },
+            {
+              "from": "u",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "w",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "u",
+              "channel": "other"
+            },
+            {
+              "from": "v",
+              "to": "u",
+              "channel": "self"
+            },
+            {
+              "from": "w",
+              "to": "v",
+              "channel": "self"
+            },
+            {
+              "from": "u",
+              "to": "w",
+              "channel": "self"
+            },
+            {
+              "from": "v",
+              "to": "u",
+              "channel": "other"
+            },
+            {
+              "from": "w",
+              "to": "v",
+              "channel": "other"
+            },
+            {
+              "from": "u",
+              "to": "w",
+              "channel": "other"
+            }
+          ]
+        },
+        {
+          "tag": "target",
+          "id": "null",
+          "owner": null,
+          "housing": null,
+          "channel": "none",
+          "kind": "no-generator",
+          "edges": []
+        }
+      ],
+      "credit_rule": "per channel compare forward and reverse cycle multiplicity products; exactly self asymmetric => self, exactly other => other, neither => none, both => ambiguous; owner must agree, internalized judged by products",
+      "grade": "surrogate; graph is a protocol probe, not the T1 P support"
+    },
+    "c6": {
+      "future_alphabet": [
+        "canonical_action_stay",
+        "canonical_action_cw",
+        "canonical_action_ccw"
+      ],
+      "candidate_merged_pair": [
+        "p0w0",
+        "p0w1"
+      ],
+      "route_record_owner": "target",
+      "grade": "surrogate",
+      "future_interface": [
+        "PredictiveNow",
+        "event_order",
+        "tick_phase",
+        "cumulative_progress",
+        "endogenous_record_count",
+        "route_residue",
+        "maintenance_state",
+        "owner"
+      ]
+    },
+    "c7": {
+      "staged_map": "tag each history and preserve coupling edges",
+      "grade": "surrogate",
+      "ambient_coupling_rule": "all four slot functions from {0,1} to {0,1}; admissible maps are the two bijections",
+      "operational_use": "during pre-exit mixed event, receiver reads exact jointPairing distribution to choose a branch-pair display; post-exit P remains unchanged; this is an independent surrogate interface",
+      "by_tag": {
+        "source": {
+          "assemblages": [
+            {
+              "id": "diagonal",
+              "left": [
+                "h_rep_a",
+                "h_rep_b"
+              ],
+              "right": [
+                "h_class_b",
+                "h_split"
+              ],
+              "coupling": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ]
+            },
+            {
+              "id": "crossed",
+              "left": [
+                "h_rep_a",
+                "h_rep_b"
+              ],
+              "right": [
+                "h_class_b",
+                "h_split"
+              ],
+              "coupling": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          ],
+          "joint_observables": [
+            "jointPairing"
+          ],
+          "reassembly": [
+            {
+              "coupling": "diagonal",
+              "assemblage": "diagonal"
+            },
+            {
+              "coupling": "crossed",
+              "assemblage": "crossed"
+            }
+          ],
+          "branches": {
+            "left": [
+              "h_rep_a",
+              "h_rep_b"
+            ],
+            "right": [
+              "h_class_b",
+              "h_split"
+            ]
+          },
+          "admissible_couplings": {
+            "diagonal": [
+              0,
+              1
+            ],
+            "crossed": [
+              1,
+              0
+            ]
+          }
+        },
+        "target": {
+          "assemblages": [
+            {
+              "id": "diagonal",
+              "left": [
+                "h_rep_a",
+                "h_rep_b"
+              ],
+              "right": [
+                "h_class_b",
+                "h_split"
+              ],
+              "coupling": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  1
+                ]
+              ]
+            },
+            {
+              "id": "crossed",
+              "left": [
+                "h_rep_a",
+                "h_rep_b"
+              ],
+              "right": [
+                "h_class_b",
+                "h_split"
+              ],
+              "coupling": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          ],
+          "joint_observables": [
+            "jointPairing"
+          ],
+          "reassembly": [
+            {
+              "coupling": "diagonal",
+              "assemblage": "diagonal"
+            },
+            {
+              "coupling": "crossed",
+              "assemblage": "crossed"
+            }
+          ],
+          "branches": {
+            "left": [
+              "h_rep_a",
+              "h_rep_b"
+            ],
+            "right": [
+              "h_class_b",
+              "h_split"
+            ]
+          },
+          "admissible_couplings": {
+            "diagonal": [
+              0,
+              1
+            ],
+            "crossed": [
+              1,
+              0
+            ]
+          }
+        }
+      },
+      "reassembly_rule": "indexed per-assemblage relation: each row names its assemblage and coupling; row coupling must equal that assemblage raw coupling; injectivity across assemblages is not required"
+    },
+    "recognition_status": "notAddressed",
+    "local_assignments": [
+      {
+        "tag": "source",
+        "state": "p0w0",
+        "clause": "C1",
+        "coordinate": "source:p0w0:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w0",
+        "clause": "C2",
+        "coordinate": "source:p0w0:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w0",
+        "clause": "C3",
+        "coordinate": "source:p0w0:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w0",
+        "clause": "C4",
+        "coordinate": "source:p0w0:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w0",
+        "clause": "C5",
+        "coordinate": "source:p0w0:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w0",
+        "clause": "C6",
+        "coordinate": "source:p0w0:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w0",
+        "clause": "C7",
+        "coordinate": "source:p0w0:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/source/assemblages"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w0",
+        "clause": "C8",
+        "coordinate": "source:p0w0:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w1",
+        "clause": "C1",
+        "coordinate": "source:p0w1:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w1",
+        "clause": "C2",
+        "coordinate": "source:p0w1:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w1",
+        "clause": "C3",
+        "coordinate": "source:p0w1:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w1",
+        "clause": "C4",
+        "coordinate": "source:p0w1:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w1",
+        "clause": "C5",
+        "coordinate": "source:p0w1:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w1",
+        "clause": "C6",
+        "coordinate": "source:p0w1:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w1",
+        "clause": "C7",
+        "coordinate": "source:p0w1:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/source/assemblages"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p0w1",
+        "clause": "C8",
+        "coordinate": "source:p0w1:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w0",
+        "clause": "C1",
+        "coordinate": "source:p1w0:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w0",
+        "clause": "C2",
+        "coordinate": "source:p1w0:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w0",
+        "clause": "C3",
+        "coordinate": "source:p1w0:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w0",
+        "clause": "C4",
+        "coordinate": "source:p1w0:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w0",
+        "clause": "C5",
+        "coordinate": "source:p1w0:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w0",
+        "clause": "C6",
+        "coordinate": "source:p1w0:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w0",
+        "clause": "C7",
+        "coordinate": "source:p1w0:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/source/assemblages"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w0",
+        "clause": "C8",
+        "coordinate": "source:p1w0:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w1",
+        "clause": "C1",
+        "coordinate": "source:p1w1:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w1",
+        "clause": "C2",
+        "coordinate": "source:p1w1:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w1",
+        "clause": "C3",
+        "coordinate": "source:p1w1:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w1",
+        "clause": "C4",
+        "coordinate": "source:p1w1:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w1",
+        "clause": "C5",
+        "coordinate": "source:p1w1:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w1",
+        "clause": "C6",
+        "coordinate": "source:p1w1:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w1",
+        "clause": "C7",
+        "coordinate": "source:p1w1:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/source/assemblages"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p1w1",
+        "clause": "C8",
+        "coordinate": "source:p1w1:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p2w1",
+        "clause": "C1",
+        "coordinate": "source:p2w1:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p2w1",
+        "clause": "C2",
+        "coordinate": "source:p2w1:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p2w1",
+        "clause": "C3",
+        "coordinate": "source:p2w1:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p2w1",
+        "clause": "C4",
+        "coordinate": "source:p2w1:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p2w1",
+        "clause": "C5",
+        "coordinate": "source:p2w1:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p2w1",
+        "clause": "C6",
+        "coordinate": "source:p2w1:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p2w1",
+        "clause": "C7",
+        "coordinate": "source:p2w1:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/source/assemblages"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p2w1",
+        "clause": "C8",
+        "coordinate": "source:p2w1:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w0",
+        "clause": "C1",
+        "coordinate": "source:p3w0:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w0",
+        "clause": "C2",
+        "coordinate": "source:p3w0:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w0",
+        "clause": "C3",
+        "coordinate": "source:p3w0:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w0",
+        "clause": "C4",
+        "coordinate": "source:p3w0:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w0",
+        "clause": "C5",
+        "coordinate": "source:p3w0:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w0",
+        "clause": "C6",
+        "coordinate": "source:p3w0:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w0",
+        "clause": "C7",
+        "coordinate": "source:p3w0:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/source/assemblages"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w0",
+        "clause": "C8",
+        "coordinate": "source:p3w0:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w1",
+        "clause": "C1",
+        "coordinate": "source:p3w1:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w1",
+        "clause": "C2",
+        "coordinate": "source:p3w1:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w1",
+        "clause": "C3",
+        "coordinate": "source:p3w1:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w1",
+        "clause": "C4",
+        "coordinate": "source:p3w1:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w1",
+        "clause": "C5",
+        "coordinate": "source:p3w1:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w1",
+        "clause": "C6",
+        "coordinate": "source:p3w1:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w1",
+        "clause": "C7",
+        "coordinate": "source:p3w1:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/source/assemblages"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p3w1",
+        "clause": "C8",
+        "coordinate": "source:p3w1:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w0",
+        "clause": "C1",
+        "coordinate": "source:p4w0:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w0",
+        "clause": "C2",
+        "coordinate": "source:p4w0:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w0",
+        "clause": "C3",
+        "coordinate": "source:p4w0:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w0",
+        "clause": "C4",
+        "coordinate": "source:p4w0:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w0",
+        "clause": "C5",
+        "coordinate": "source:p4w0:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w0",
+        "clause": "C6",
+        "coordinate": "source:p4w0:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w0",
+        "clause": "C7",
+        "coordinate": "source:p4w0:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/source/assemblages"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w0",
+        "clause": "C8",
+        "coordinate": "source:p4w0:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w1",
+        "clause": "C1",
+        "coordinate": "source:p4w1:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w1",
+        "clause": "C2",
+        "coordinate": "source:p4w1:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w1",
+        "clause": "C3",
+        "coordinate": "source:p4w1:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w1",
+        "clause": "C4",
+        "coordinate": "source:p4w1:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w1",
+        "clause": "C5",
+        "coordinate": "source:p4w1:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w1",
+        "clause": "C6",
+        "coordinate": "source:p4w1:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w1",
+        "clause": "C7",
+        "coordinate": "source:p4w1:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/source/assemblages"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p4w1",
+        "clause": "C8",
+        "coordinate": "source:p4w1:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p5w0",
+        "clause": "C1",
+        "coordinate": "source:p5w0:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p5w0",
+        "clause": "C2",
+        "coordinate": "source:p5w0:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p5w0",
+        "clause": "C3",
+        "coordinate": "source:p5w0:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p5w0",
+        "clause": "C4",
+        "coordinate": "source:p5w0:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p5w0",
+        "clause": "C5",
+        "coordinate": "source:p5w0:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p5w0",
+        "clause": "C6",
+        "coordinate": "source:p5w0:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p5w0",
+        "clause": "C7",
+        "coordinate": "source:p5w0:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/source/assemblages"
+        ]
+      },
+      {
+        "tag": "source",
+        "state": "p5w0",
+        "clause": "C8",
+        "coordinate": "source:p5w0:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/source/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w0",
+        "clause": "C1",
+        "coordinate": "target:p0w0:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w0",
+        "clause": "C2",
+        "coordinate": "target:p0w0:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w0",
+        "clause": "C3",
+        "coordinate": "target:p0w0:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w0",
+        "clause": "C4",
+        "coordinate": "target:p0w0:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w0",
+        "clause": "C5",
+        "coordinate": "target:p0w0:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w0",
+        "clause": "C6",
+        "coordinate": "target:p0w0:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w0",
+        "clause": "C7",
+        "coordinate": "target:p0w0:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/target/assemblages"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w0",
+        "clause": "C8",
+        "coordinate": "target:p0w0:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w1",
+        "clause": "C1",
+        "coordinate": "target:p0w1:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w1",
+        "clause": "C2",
+        "coordinate": "target:p0w1:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w1",
+        "clause": "C3",
+        "coordinate": "target:p0w1:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w1",
+        "clause": "C4",
+        "coordinate": "target:p0w1:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w1",
+        "clause": "C5",
+        "coordinate": "target:p0w1:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w1",
+        "clause": "C6",
+        "coordinate": "target:p0w1:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w1",
+        "clause": "C7",
+        "coordinate": "target:p0w1:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/target/assemblages"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p0w1",
+        "clause": "C8",
+        "coordinate": "target:p0w1:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w0",
+        "clause": "C1",
+        "coordinate": "target:p1w0:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w0",
+        "clause": "C2",
+        "coordinate": "target:p1w0:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w0",
+        "clause": "C3",
+        "coordinate": "target:p1w0:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w0",
+        "clause": "C4",
+        "coordinate": "target:p1w0:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w0",
+        "clause": "C5",
+        "coordinate": "target:p1w0:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w0",
+        "clause": "C6",
+        "coordinate": "target:p1w0:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w0",
+        "clause": "C7",
+        "coordinate": "target:p1w0:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/target/assemblages"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w0",
+        "clause": "C8",
+        "coordinate": "target:p1w0:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w1",
+        "clause": "C1",
+        "coordinate": "target:p1w1:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w1",
+        "clause": "C2",
+        "coordinate": "target:p1w1:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w1",
+        "clause": "C3",
+        "coordinate": "target:p1w1:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w1",
+        "clause": "C4",
+        "coordinate": "target:p1w1:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w1",
+        "clause": "C5",
+        "coordinate": "target:p1w1:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w1",
+        "clause": "C6",
+        "coordinate": "target:p1w1:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w1",
+        "clause": "C7",
+        "coordinate": "target:p1w1:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/target/assemblages"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p1w1",
+        "clause": "C8",
+        "coordinate": "target:p1w1:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p2w1",
+        "clause": "C1",
+        "coordinate": "target:p2w1:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p2w1",
+        "clause": "C2",
+        "coordinate": "target:p2w1:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p2w1",
+        "clause": "C3",
+        "coordinate": "target:p2w1:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p2w1",
+        "clause": "C4",
+        "coordinate": "target:p2w1:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p2w1",
+        "clause": "C5",
+        "coordinate": "target:p2w1:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p2w1",
+        "clause": "C6",
+        "coordinate": "target:p2w1:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p2w1",
+        "clause": "C7",
+        "coordinate": "target:p2w1:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/target/assemblages"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p2w1",
+        "clause": "C8",
+        "coordinate": "target:p2w1:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w0",
+        "clause": "C1",
+        "coordinate": "target:p3w0:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w0",
+        "clause": "C2",
+        "coordinate": "target:p3w0:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w0",
+        "clause": "C3",
+        "coordinate": "target:p3w0:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w0",
+        "clause": "C4",
+        "coordinate": "target:p3w0:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w0",
+        "clause": "C5",
+        "coordinate": "target:p3w0:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w0",
+        "clause": "C6",
+        "coordinate": "target:p3w0:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w0",
+        "clause": "C7",
+        "coordinate": "target:p3w0:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/target/assemblages"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w0",
+        "clause": "C8",
+        "coordinate": "target:p3w0:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w1",
+        "clause": "C1",
+        "coordinate": "target:p3w1:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w1",
+        "clause": "C2",
+        "coordinate": "target:p3w1:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w1",
+        "clause": "C3",
+        "coordinate": "target:p3w1:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w1",
+        "clause": "C4",
+        "coordinate": "target:p3w1:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w1",
+        "clause": "C5",
+        "coordinate": "target:p3w1:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w1",
+        "clause": "C6",
+        "coordinate": "target:p3w1:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w1",
+        "clause": "C7",
+        "coordinate": "target:p3w1:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/target/assemblages"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p3w1",
+        "clause": "C8",
+        "coordinate": "target:p3w1:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w0",
+        "clause": "C1",
+        "coordinate": "target:p4w0:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w0",
+        "clause": "C2",
+        "coordinate": "target:p4w0:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w0",
+        "clause": "C3",
+        "coordinate": "target:p4w0:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w0",
+        "clause": "C4",
+        "coordinate": "target:p4w0:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w0",
+        "clause": "C5",
+        "coordinate": "target:p4w0:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w0",
+        "clause": "C6",
+        "coordinate": "target:p4w0:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w0",
+        "clause": "C7",
+        "coordinate": "target:p4w0:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/target/assemblages"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w0",
+        "clause": "C8",
+        "coordinate": "target:p4w0:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w1",
+        "clause": "C1",
+        "coordinate": "target:p4w1:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w1",
+        "clause": "C2",
+        "coordinate": "target:p4w1:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w1",
+        "clause": "C3",
+        "coordinate": "target:p4w1:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w1",
+        "clause": "C4",
+        "coordinate": "target:p4w1:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w1",
+        "clause": "C5",
+        "coordinate": "target:p4w1:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w1",
+        "clause": "C6",
+        "coordinate": "target:p4w1:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w1",
+        "clause": "C7",
+        "coordinate": "target:p4w1:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/target/assemblages"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p4w1",
+        "clause": "C8",
+        "coordinate": "target:p4w1:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/resources",
+          "/new_data/maintenance"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p5w0",
+        "clause": "C1",
+        "coordinate": "target:p5w0:C1",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/P",
+          "/t1_import/C",
+          "/t1_import/U"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p5w0",
+        "clause": "C2",
+        "coordinate": "target:p5w0:C2",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p5w0",
+        "clause": "C3",
+        "coordinate": "target:p5w0:C3",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/action_distributions",
+          "/t1_import/M_class_labels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p5w0",
+        "clause": "C4",
+        "coordinate": "target:p5w0:C4",
+        "primitive_refs": [
+          "/new_data/c4/current_channels"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p5w0",
+        "clause": "C5",
+        "coordinate": "target:p5w0:C5",
+        "primitive_refs": [
+          "/new_data/c5/protocols"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p5w0",
+        "clause": "C6",
+        "coordinate": "target:p5w0:C6",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/tick_increment",
+          "/new_data/c6/future_interface"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p5w0",
+        "clause": "C7",
+        "coordinate": "target:p5w0:C7",
+        "primitive_refs": [
+          "/new_data/c7/by_tag/target/assemblages"
+        ]
+      },
+      {
+        "tag": "target",
+        "state": "p5w0",
+        "clause": "C8",
+        "coordinate": "target:p5w0:C8",
+        "primitive_refs": [
+          "/new_data/raw_inputs/by_tag/target/resources",
+          "/new_data/maintenance"
+        ]
+      }
+    ],
+    "staged_clause_map": [
+      {
+        "clause": "C1",
+        "source_ref": "source:*:C1",
+        "target_ref": "target:*:C1",
+        "map_rule": "tag swap with fixed state label; validate raw primitive equations"
+      },
+      {
+        "clause": "C2",
+        "source_ref": "source:*:C2",
+        "target_ref": "target:*:C2",
+        "map_rule": "tag swap with fixed state label; validate raw primitive equations"
+      },
+      {
+        "clause": "C3",
+        "source_ref": "source:*:C3",
+        "target_ref": "target:*:C3",
+        "map_rule": "tag swap with fixed state label; validate raw primitive equations"
+      },
+      {
+        "clause": "C4",
+        "source_ref": "source:*:C4",
+        "target_ref": "target:*:C4",
+        "map_rule": "tag swap with fixed state label; validate raw primitive equations"
+      },
+      {
+        "clause": "C5",
+        "source_ref": "source:*:C5",
+        "target_ref": "target:*:C5",
+        "map_rule": "tag swap with fixed state label; validate raw primitive equations"
+      },
+      {
+        "clause": "C6",
+        "source_ref": "source:*:C6",
+        "target_ref": "target:*:C6",
+        "map_rule": "tag swap with fixed state label; validate raw primitive equations"
+      },
+      {
+        "clause": "C7",
+        "source_ref": "source:*:C7",
+        "target_ref": "target:*:C7",
+        "map_rule": "tag swap with fixed state label; validate raw primitive equations"
+      },
+      {
+        "clause": "C8",
+        "source_ref": "source:*:C8",
+        "target_ref": "target:*:C8",
+        "map_rule": "tag swap with fixed state label; validate raw primitive equations"
+      }
+    ],
+    "receiver": {
+      "latent_target": {
+        "factor_state": "p0w0",
+        "funded_receiver": true,
+        "protocol": "raw-coordinate receiver",
+        "initial_budget_tokens": 1
+      },
+      "activation": {
+        "source_present": true,
+        "target_receiver_funded": true,
+        "mixed_event_required": true
+      },
+      "content": {
+        "position_rule": "copy_source_terminal_p",
+        "phase_rule": "copy_source_terminal_w",
+        "history_overrides": {}
+      },
+      "route_register_write": {
+        "rule": "copy_raw_route_tuple"
+      },
+      "target_state_constructor": "WheelState(p,w) with target tag; M computed only after construction"
+    },
+    "raw_inputs": {
+      "by_tag": {
+        "source": {
+          "action_distributions": {
+            "p0w0": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p0w1": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p1w0": {
+              "stay": {},
+              "cw": {
+                "p2w1": "1/1"
+              },
+              "ccw": {
+                "p5w1": "1/1"
+              }
+            },
+            "p1w1": {
+              "stay": {},
+              "cw": {
+                "p2w0": "1/1"
+              },
+              "ccw": {
+                "p5w0": "1/1"
+              }
+            },
+            "p2w1": {
+              "stay": {
+                "p1w0": "3/4",
+                "p1w1": "1/4"
+              },
+              "cw": {
+                "p2w0": "1/1"
+              },
+              "ccw": {
+                "p2w0": "1/1"
+              }
+            },
+            "p3w0": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p3w1": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p4w0": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p4w1": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p5w0": {
+              "stay": {
+                "p1w1": "3/4",
+                "p1w0": "1/4"
+              },
+              "cw": {
+                "p5w1": "1/1"
+              },
+              "ccw": {
+                "p5w1": "1/1"
+              }
+            }
+          },
+          "public_channel_rule": "position",
+          "tick_increment": {
+            "p0w0": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p0w1": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p1w0": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p1w1": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p2w1": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p3w0": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p3w1": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p4w0": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p4w1": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p5w0": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            }
+          },
+          "record_writer_available": {
+            "route_a": true,
+            "route_b": true
+          },
+          "resources": {
+            "recharge_available_after_withdrawal": true
+          }
+        },
+        "target": {
+          "action_distributions": {
+            "p0w0": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p0w1": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p1w0": {
+              "stay": {},
+              "cw": {
+                "p2w1": "1/1"
+              },
+              "ccw": {
+                "p5w1": "1/1"
+              }
+            },
+            "p1w1": {
+              "stay": {},
+              "cw": {
+                "p2w0": "1/1"
+              },
+              "ccw": {
+                "p5w0": "1/1"
+              }
+            },
+            "p2w1": {
+              "stay": {
+                "p1w0": "3/4",
+                "p1w1": "1/4"
+              },
+              "cw": {
+                "p2w0": "1/1"
+              },
+              "ccw": {
+                "p2w0": "1/1"
+              }
+            },
+            "p3w0": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p3w1": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p4w0": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p4w1": {
+              "stay": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "cw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              },
+              "ccw": {
+                "p1w0": "1/2",
+                "p1w1": "1/2"
+              }
+            },
+            "p5w0": {
+              "stay": {
+                "p1w1": "3/4",
+                "p1w0": "1/4"
+              },
+              "cw": {
+                "p5w1": "1/1"
+              },
+              "ccw": {
+                "p5w1": "1/1"
+              }
+            }
+          },
+          "public_channel_rule": "position",
+          "tick_increment": {
+            "p0w0": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p0w1": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p1w0": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p1w1": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p2w1": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p3w0": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p3w1": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p4w0": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p4w1": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            },
+            "p5w0": {
+              "stay": 1,
+              "cw": 1,
+              "ccw": 1
+            }
+          },
+          "record_writer_available": {
+            "route_a": true,
+            "route_b": true
+          },
+          "resources": {
+            "recharge_available_after_withdrawal": true
+          }
+        }
+      }
+    }
+  },
+  "predicate_contracts": {
+    "C1": "exact imported T1 factor P, C, U, E2eps and Lean theorem result on both tags",
+    "C2": "D_fact(f,M) nonempty with pinned p1 split on each tag",
+    "C3": "public profile refinement 6→7→7, terminal equality M on each tag",
+    "C4": "surrogate same-current different-M connector and expanded-channel collision loss; full HIDD non-exposure separately checked and expected obstructed",
+    "C5": "surrogate generator attribution self/other/none from declared provenance; no T5 lift",
+    "C6": "surrogate funded event/path arrow with full-signature all-word q sufficiency and strict coarseness",
+    "C7": "surrogate R_rec strictly refines branchwise history quotient by jointPairing and transports through tag map",
+    "C8": "computed greatest funded viable subset of exact K using ledger rule; underfunding recomputed",
+    "bridge": "derive both terminal M classes from raw source/receiver states; raw map preserves support/order/tick/progress/record/owner/route on covered histories",
+    "corridor": "mixed support, strict steps, no gap, source/target intervention dependence",
+    "handoff": "compute receiver raw target state from terminal p,w; then check activation failure, representative independence, content sensitivity, route memory, withdrawal viability, source package, staged clauses, distinct tags, recognition notAddressed",
+    "content_sensitivity": "with fixed latent receiver and unchanged activation, compute each source terminal M from raw state/action support; apply receiver raw p,w operation to obtain target WheelState; compute target M afresh from target raw state/action support; compare both target classes and checked tag-map images"
+  },
+  "mutations": [
+    {
+      "id": "NEG-C1-TABLE",
+      "operation": "replace one funded target P row by an altered raw transition distribution",
+      "isolates": "exact T1 C1 row identity",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/raw_inputs/by_tag/target/action_distributions/p2w1/stay",
+          "value": {
+            "p1w0": "1/2",
+            "p1w1": "1/2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NEG-C2-SPLIT",
+      "operation": "replace lower public channel by the full phase-labelled state on both tags",
+      "isolates": "C2 nonfactorization",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/raw_inputs/by_tag/source/public_channel_rule",
+          "value": "state_label"
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/raw_inputs/by_tag/target/public_channel_rule",
+          "value": "state_label"
+        }
+      ]
+    },
+    {
+      "id": "NEG-C3-PROFILE",
+      "operation": "replace one raw target action support row",
+      "isolates": "C3 terminal M agreement",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/raw_inputs/by_tag/target/action_distributions/p1w0/cw",
+          "value": {
+            "p5w0": "1/1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "NEG-C4-EXPOSE",
+      "operation": "adjoin an M-reader to the fixed declared public channel family",
+      "isolates": "channel-relative collision only",
+      "changes": [
+        {
+          "op": "add",
+          "path": "/new_data/c4/current_channels/-",
+          "value": "canonical_M"
+        }
+      ]
+    },
+    {
+      "id": "NEG-C5-EXTERNAL",
+      "operation": "route the generator source of the clockwise protocol to external ownership",
+      "isolates": "surrogate self credit",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/c5/protocols/4/owner",
+          "value": "external"
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/c5/protocols/4/channel",
+          "value": "other"
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/c5/protocols/4/edges/0/channel",
+          "value": "other"
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/c5/protocols/4/edges/1/channel",
+          "value": "other"
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/c5/protocols/4/edges/2/channel",
+          "value": "other"
+        }
+      ]
+    },
+    {
+      "id": "NEG-C5-INTERNALIZED",
+      "operation": "make the scheduled control internally housed without changing its external command provenance",
+      "isolates": "housing versus credit",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/c5/protocols/5/housing",
+          "value": "target"
+        }
+      ]
+    },
+    {
+      "id": "NEG-C6-FUTURE",
+      "operation": "change one raw tick increment for one member of a proposed q fiber",
+      "isolates": "all-word future sufficiency",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/raw_inputs/by_tag/target/tick_increment/p0w1/stay",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "id": "NEG-C6-RECORD",
+      "operation": "disable the target-owned record writer after one exit path",
+      "isolates": "endogenous record arrow",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/raw_inputs/by_tag/target/record_writer_available/route_b",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "NEG-C7-AGGREGATE",
+      "operation": "remove joint pairing from the admissible observable family, preserving branch records",
+      "isolates": "surrogate recombination distinction",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/c7/by_tag/source/joint_observables",
+          "value": []
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/c7/by_tag/target/joint_observables",
+          "value": []
+        }
+      ]
+    },
+    {
+      "id": "NEG-C7-UNCOUPLED",
+      "operation": "on both tags make the two still-distinct assemblages carry the same diagonal coupling and locally matching indexed reassembly rows; preserve branch records and jointPairing interface",
+      "isolates": "joint-observable distinction on a nonempty two-assemblage comparison domain; local consistency checked separately",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/c7/by_tag/source/assemblages/1/coupling",
+          "value": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/c7/by_tag/source/reassembly/1/coupling",
+          "value": "diagonal"
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/c7/by_tag/target/assemblages/1/coupling",
+          "value": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/c7/by_tag/target/reassembly/1/coupling",
+          "value": "diagonal"
+        }
+      ]
+    },
+    {
+      "id": "NEG-C7-TRANSPORT",
+      "operation": "change only the target crossed assemblage coupling and its indexed reassembly row, leaving source and staged map fixed",
+      "isolates": "relation transport; local well-formedness checked separately",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/c7/by_tag/target/assemblages/1/coupling",
+          "value": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/c7/by_tag/target/reassembly/1/coupling",
+          "value": "diagonal"
+        }
+      ]
+    },
+    {
+      "id": "NEG-C8-UNDERFUND",
+      "operation": "remove target-owned recharge resource after withdrawal",
+      "isolates": "funded viability",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/raw_inputs/by_tag/target/resources/recharge_available_after_withdrawal",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "NEG-CORRIDOR-DETACHED",
+      "operation": "remove source support from the first mixed atomic event",
+      "isolates": "mixed-support continuity",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/corridor/events/0/source_support",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "NEG-CORRIDOR-GAP",
+      "operation": "remove mix_1 from realized stage coverage while leaving the raw stage graph and event references intact",
+      "isolates": "no-gap strict corridor",
+      "changes": [
+        {
+          "op": "remove",
+          "path": "/new_data/corridor/realized_stages/1"
+        }
+      ]
+    },
+    {
+      "id": "NEG-ACTIVATION-SOURCE-ABSENT",
+      "operation": "withhold source input at the fixed receiver",
+      "isolates": "source-dependent activation",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/receiver/activation/source_present",
+          "value": false
+        }
+      ]
+    },
+    {
+      "id": "NEG-PRELOADED-COPY",
+      "operation": "keep the positive activation gate unchanged; replace only receiver content coordinates by fixed raw target p1w0",
+      "isolates": "content sensitivity despite activation",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/receiver/content/position_rule",
+          "value": "constant_1"
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/receiver/content/phase_rule",
+          "value": "constant_0"
+        }
+      ]
+    },
+    {
+      "id": "NEG-BRIDGE-REP",
+      "operation": "override only h_rep_b receiver output with raw target state p1w1, testing same-class representative independence without a stored M class",
+      "isolates": "same-class representative independence",
+      "changes": [
+        {
+          "op": "add",
+          "path": "/new_data/receiver/content/history_overrides/h_rep_b",
+          "value": {
+            "p": 1,
+            "w": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "NEG-ROUTE-MEMORY",
+      "operation": "replace raw route-tuple writing by constant none at exit for both paths",
+      "isolates": "endpoint route provenance",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/receiver/route_register_write/rule",
+          "value": "constant_none"
+        }
+      ]
+    },
+    {
+      "id": "NEG-AUTONOMY-WITHDRAW",
+      "operation": "remove target recharge together with all source support after exit",
+      "isolates": "target-only viability",
+      "changes": [
+        {
+          "op": "replace",
+          "path": "/new_data/receiver/activation/source_present",
+          "value": false
+        },
+        {
+          "op": "replace",
+          "path": "/new_data/raw_inputs/by_tag/target/resources/recharge_available_after_withdrawal",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

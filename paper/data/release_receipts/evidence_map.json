@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "paper/tools/build_evidence_map.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "evidence_map",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W22-evidence-map.log",
+  "log_sha256": "0993f86dd2d83029b4413391a8d1c280fa67c29bc9125e01673b3d3684cac989",
+  "metrics": {},
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-14T10:29:26+00:00",
+  "status": "pass",
+  "summary": "{\"axiom_sets\": [[], [\"Classical.choice\"], [\"Classical.choice\", \"Quot.sound\", \"propext\"], [\"Quot.sound\", \"propext\"], [\"propext\"]], \"mapped_claims\": 41, \"resolved_names\": 82, \"unresolved_names\": [], \"untrusted_axioms\": []}"
+}

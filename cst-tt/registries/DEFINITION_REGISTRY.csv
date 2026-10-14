@@ -1,0 +1,74 @@
+definition_id,name,module,purpose,claim_lanes,dependencies,status
+D-001,CarrierId,CSTTT/Core/Carrier.lean,pre-verdict carrier individuation,M,,frozen-scaffold
+D-002,Carrier,CSTTT/Core/Carrier.lean,separately typed finite state carrier,M,D-001,frozen-scaffold
+D-003,CarrierPair,CSTTT/Core/Carrier.lean,source/target pair with prior distinctness,M,D-002,frozen-scaffold
+D-004,Stage,CSTTT/Core/Episode.lean,finite ordered handoff stage,M,,frozen-scaffold
+D-005,Event,CSTTT/Core/Episode.lean,carrier-owned staged event,M,D-001;D-004,frozen-scaffold
+D-006,Dependency,CSTTT/Core/Episode.lean,strictly forward operational dependency,M,D-005,frozen-scaffold
+D-007,Episode,CSTTT/Core/Episode.lean,operational graph and active support; no lineage field,M,D-003;D-006,frozen-scaffold
+D-008,TemporalAlphabet,CSTTT/Temporal/Signature.lean,"finite alphabets for predictive now, order, tick, progress, record, route, maintenance",S-T,D-002,frozen-scaffold
+D-009,PredictiveNow,CSTTT/Temporal/Signature.lean,predictive class plus route residue and future-sufficiency obligation,S-T,D-008,frozen-scaffold
+D-010,TemporalSignature,CSTTT/Temporal/Signature.lean,frozen transported temporal object,S-T,D-009,frozen-scaffold
+D-011,TemporalClosureSpec,CSTTT/Temporal/Closure.lean,"carrier-local order, tick, progress, record, and maintenance semantics",S-R,D-002;D-010,frozen-scaffold
+D-012,TemporalClosureWitness,CSTTT/Temporal/Closure.lean,state-level temporal realization evidence,S-R,D-011,frozen-scaffold
+D-013,ClockTranslation,CSTTT/Temporal/Clock.lean,separately typed source/target temporal vocabulary maps,S-T,D-008,frozen-scaffold
+D-014,RouteComparison,CSTTT/Temporal/Clock.lean,"current, predictive, route, and translation comparison",S-T,D-013,frozen-scaffold
+D-015,ClauseId,CSTTT/Package/Clauses.lean,eight C-shaped structural proxy indices,S-R,,landed-clause-interface
+D-016,ClauseSpec,CSTTT/Package/Clauses.lean,"independent clause scope, acceptance relation, gate, and resources",S-R,D-015,landed-clause-interface
+D-017,ClauseWitness,CSTTT/Package/Clauses.lean,one local clause assignment and gate evidence,S-R,D-016,landed-clause-interface
+D-018,ClauseBundle,CSTTT/Package/Clauses.lean,exactly eight independent witness slots,S-R,D-017,landed-clause-interface
+D-019,JoinTree,CSTTT/Package/Gluing.lean,running-intersection and acyclicity premises,S-R,D-015,retained-scaffold-superseded-by-D-041-to-D-045
+D-020,IntegratedPackageCertificate,CSTTT/Package/Gluing.lean,"global package, hard gates, C6 substance, and target ownership",S-R,D-012;D-018;D-019,retained-scaffold-superseded-by-D-041-to-D-045
+D-021,StagedClausePreservationEvidence,CSTTT/Package/Gluing.lean,stagewise typed clause preservation independent of lineage,S-T;S-R,D-016,retained-scaffold-superseded-by-D-041-to-D-045
+D-022,TemporalBridge,CSTTT/Transport/TemporalBridge.lean,componentwise heterogeneous temporal bridge without lineage verdict,S-T,D-013,frozen-scaffold
+D-023,TemporalTransportCertificate,CSTTT/Transport/TemporalBridge.lean,source/target temporal witnesses plus bundled bridge,S-T,D-012;D-022,frozen-scaffold
+D-024,RouteHolonomyAudit,CSTTT/Transport/TemporalBridge.lean,two-route endpoint/current/predictive/residue audit,S-T,D-014,frozen-scaffold
+D-025,FlatnessCertificate,CSTTT/Transport/TemporalBridge.lean,"critical-pair joining, trivial residue, and zero translation holonomy",S-T,D-024,frozen-scaffold
+D-026,CounterfactualAudit,CSTTT/Corridor/TemporalCorridor.lean,source and target nonredundancy at a mixed stage,S-L,D-007;D-010,frozen-scaffold
+D-027,TemporalCorridorData,CSTTT/Corridor/TemporalCorridor.lean,"episode-local realization, transport, frontier, and route data",S-L,D-007;D-026,frozen-scaffold
+D-028,TemporalCorridorCertificate,CSTTT/Corridor/TemporalCorridor.lean,strict overlap/no-gap/mixed/nonredundant corridor,S-L,D-027,frozen-scaffold
+D-029,DirectSuccessorCertificate,CSTTT/Corridor/DirectSuccessor.lean,"provisional event-to-event class, separately named from overlap",S-L,D-006;D-023,frozen-scaffold
+D-030,ControlledSystem,CSTTT/Autonomy/System.lean,"target dynamics, disturbances, actions, package predicate, and ownership",A,D-002,frozen-scaffold
+D-031,WithdrawalSpec,CSTTT/Autonomy/System.lean,named removed and retained dependencies,A,D-001,frozen-scaffold
+D-032,ControlledInvariantCertificate,CSTTT/Autonomy/System.lean,target-owned one-step invariant response certificate,A,D-030,frozen-scaffold
+D-033,AutonomyCertificate,CSTTT/Autonomy/System.lean,"withdrawal, invariant, anti-stall, budget, and ownership",A,D-031;D-032,frozen-scaffold
+D-034,ClaimLane,CSTTT/Targets/TemporalFIACH.lean,seven non-inheriting claim lanes,M,,frozen-scaffold
+D-035,TemporalFIACHCertificate,CSTTT/Targets/TemporalFIACH.lean,"aggregate of separately validated package, corridor, and autonomy certificates",S-R;S-L;A,D-020;D-028;D-033,frozen-scaffold
+D-036,TemporalFIACH,CSTTT/Targets/TemporalFIACH.lean,certificate-existence relation; not identity,S-L,D-035,frozen-scaffold
+D-037,OperationalSeed,CSTTT/Fallback/Ancestry.lean,fallback provenance edges without successor vocabulary,S-L,D-006,frozen-scaffold
+D-038,AncestryClosure,CSTTT/Fallback/Ancestry.lean,monotone no-ex-nihilo closure interface,S-L,D-037,frozen-scaffold
+D-039,IAPSCertificate,CSTTT/Fallback/Ancestry.lean,fallback ancestry plus independent package and autonomy,S-R;S-L;A,D-020;D-033;D-038,frozen-scaffold
+D-040,ScopedReach,CSTTT/Package/FiniteGluing.lean,coordinate-preserving path through local scopes,S-R,D-019,landed-proof-source-and-executable-semantics
+D-041,RootedJoinTree,CSTTT/Package/FiniteGluing.lean,parent/rank/running-intersection package cover,S-R,D-040,landed-proof-source-and-executable-semantics
+D-042,IntegratedPackageWitness,CSTTT/Package/FiniteGluing.lean,global assignment restricting to accepted gated locals,S-R,D-041,landed-proof-source-and-executable-semantics
+D-043,StagedHeterogeneousEvidence,CSTTT/Package/FiniteGluing.lean,typed source-target local maps independent of lineage,S-T;S-R,D-041,landed-proof-source-and-executable-semantics
+D-044,TemporalSubstance,CSTTT/Package/TemporalPackage.lean,future-sufficient order/tick/progress/arrow/route/ownership C6 evidence,S-R,D-012,landed-proof-source-and-executable-semantics
+D-045,EightClauseIntegratedPackage,CSTTT/Package/TemporalPackage.lean,exact C1-C8 structural witness plus independent substantive C6,S-R,D-015;D-042;D-044,landed-proof-source-and-executable-semantics
+D-046,RepresentativeIndependent,CSTTT/Transport/FiniteTemporalTransport.lean,source-equivalent reachable representatives induce one target predictive value,S-T,D-013;D-022,landed-proof-source-and-executable-semantics
+D-047,TemporalSignatureAgreement,CSTTT/Transport/FiniteTemporalTransport.lean,exact agreement of seven temporal components plus target owner,S-T,D-046,landed-proof-source-and-executable-semantics
+D-048,FiniteTemporalTransportProof,CSTTT/Transport/FiniteTemporalTransport.lean,independent evidence for every bundled temporal-transport obligation,S-T,D-047,landed-proof-source-and-executable-semantics
+D-049,StrictlyMonotoneOn,CSTTT/Transport/RecordArrow.lean,record map preserves every declared strict source-record step,S-T,D-012,landed-proof-source-and-executable-semantics
+D-050,FutureSufficientEncoding,CSTTT/Transport/RouteDiscipline.lean,equal encodings force equal future signatures on the declared route class,S-T,D-024,landed-proof-source-and-executable-semantics
+D-051,FlatAt,CSTTT/Transport/RouteDiscipline.lean,current equality fixes the future signature,S-T,D-050,landed-proof-source-and-executable-semantics
+D-052,MemoryRepairs,CSTTT/Transport/RouteDiscipline.lean,route residue separates current-equal future-distinct routes,S-T,D-050,landed-proof-source-and-executable-semantics
+D-053,CanonicalGlobalNow,CSTTT/Transport/RouteDiscipline.lean,route-local now factors through boundary data alone,S-T,D-024,landed-proof-source-and-executable-semantics
+D-054,NormalizationCertificate,CSTTT/Transport/RouteDiscipline.lean,endpoints factor through one boundary-indexed normal form,S-T,D-024;D-025,landed-proof-source-and-executable-semantics
+D-055,FiniteTemporalStage,CSTTT/Corridor/FiniteTemporalCorridor.lean,finite support and realized temporal signature at one episode stage,S-L,D-007;D-010,landed-proof-source-and-executable-semantics
+D-056,InterventionProjection,CSTTT/Corridor/FiniteTemporalCorridor.lean,full and one-carrier-removed later temporal projections,S-L,D-055,landed-proof-source-and-executable-semantics
+D-057,AtomicTemporalCorridorData,CSTTT/Corridor/FiniteTemporalCorridor.lean,"one overlap leg with no-gap, transport, event, takeover, and intervention fields",S-L,D-048;D-055;D-056,landed-proof-source-and-executable-semantics
+D-058,AtomicTemporalCorridorCertificate,CSTTT/Corridor/FiniteTemporalCorridor.lean,proof fields for a strict overlap leg,S-L,D-057,landed-proof-source-and-executable-semantics
+D-059,CorridorSummaryData,CSTTT/Corridor/Composition.lean,composition-stable summary of a nonempty overlap-leg chain,S-L,D-058,landed-proof-source-and-executable-semantics
+D-060,FrontierCompatible,CSTTT/Corridor/Composition.lean,exact shared-carrier and temporal-signature frontier agreement,S-L,D-059,landed-proof-source-and-executable-semantics
+D-061,AtomicDirectSuccessorData,CSTTT/Corridor/FiniteDirectSuccessor.lean,"immediate event edge with complete payload, necessity, progress, route, and ownership fields",S-L,D-006;D-048,landed-proof-source-and-executable-semantics
+D-062,AtomicDirectSuccessorCertificate,CSTTT/Corridor/FiniteDirectSuccessor.lean,proof fields for the separately named immediate event class,S-L,D-061,landed-proof-source-and-executable-semantics
+D-063,DetachedOperationalPattern,CSTTT/Corridor/FiniteDirectSuccessor.lean,"storage, replay, nonnecessity, or nonadjacency boundary",S-L,D-061,landed-proof-source-and-executable-semantics
+D-064,DirectSuccessorPathData,CSTTT/Corridor/FiniteDirectSuccessor.lean,composition-stable path of immediate temporal edges,S-L,D-062,landed-proof-source-and-executable-semantics
+D-065,ExactAutonomyData,CSTTT/Autonomy/FiniteAutonomy.lean,"finite withdrawal boundary, disturbance class, response, progress, and budget data",A,D-026;D-046;D-047,landed-proof-source-and-executable-semantics
+D-066,ExactAutonomyCertificate,CSTTT/Autonomy/FiniteAutonomy.lean,proof fields for model-relative post-withdrawal controlled invariance,A,D-065,landed-proof-source-and-executable-semantics
+D-067,ControlledRun,CSTTT/Autonomy/FiniteAutonomy.lean,finite run under a target-owned disturbance-response policy,A,D-066,landed-proof-source-and-executable-semantics
+D-068,ThreeLaneStatus,CSTTT/Targets/FiniteTemporalFIACH.lean,"independent S-R, S-L, and A lane status",S-R;S-L;A,D-044;D-059;D-066,landed-proof-source-and-executable-semantics
+D-069,TemporalFIACHCertificate,CSTTT/Targets/FiniteTemporalFIACH.lean,"hash-bound aggregate of independently proved package, lineage, and autonomy obligations",S-T;S-R;S-L;A,D-045;D-059;D-066;D-068,landed-proof-source-and-executable-semantics
+D-070,GeneralizedTemporalContinuity,CSTTT/Strengthening/ContinuityClass.lean,sum of strict-overlap and direct-successor structural evidence,S-L,D-058;D-061,landed-strengthening
+D-071,DefectVector,CSTTT/Robustness/DefectVector.lean,componentwise exact defects with hard gates,M,,landed-strengthening
+D-072,TemporalMargin,CSTTT/Robustness/TemporalMargins.lean,exact bounded perturbation margin,M;S-T;S-R;S-L;A,D-071,landed-strengthening
+D-073,ExactAutonomyPolicy,CSTTT/Autonomy/UnboundedInvariant.lean,total target-owned policy on an invariant,A,D-065;D-066,landed-strengthening

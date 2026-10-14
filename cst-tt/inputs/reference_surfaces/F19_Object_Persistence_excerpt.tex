@@ -1,0 +1,208 @@
+\subsection{Object Persistence}\label{sec:status-records-coherence:object-persistence}
+
+\begin{theorem}[Object Persistence]\label{thm:F19}
+Let \(H_i,H_j\) be carriers with access quotients
+\(q_i:H_i\to Q_i\) and \(q_j:H_j\to Q_j\), and let
+\(\gamma:H_i\to H_j\) be a declared transport.  Assume \(q_i\) and
+\(q_j\) are surjective.  Let
+\(\operatorname{viable}:Q_j\to\mathrm{Prop}\) be a viability
+predicate, \(C:H_i\times H_j\to\mathrm{Prop}\) a relation predicate,
+and let
+\[
+  \bar\gamma:Q_i\to Q_j,\qquad
+  \bar\eta:Q_j\to Q_k,\qquad
+  \operatorname{compBar}:Q_i\to Q_k
+\]
+be arbitrary holonomy data (no compatibility between
+\(\operatorname{compBar}\) and \(\bar\eta\circ\bar\gamma\) is
+assumed).  Then
+\begin{align*}
+  &\operatorname{Persists}(q_i,\gamma,q_j)
+    \iff
+    \operatorname{PersistenceObstructionEmpty}(q_i,\gamma,q_j),\\
+  &\operatorname{SplitObstructionEmpty}(q_i,\gamma,q_j)
+    \iff
+    \operatorname{Persists}(q_i,\gamma,q_j),\\
+  &\operatorname{ViablePersistence}(\gamma,q_j,\operatorname{viable})
+    \iff
+    \operatorname{DissolutionObstructionEmpty}
+      (\gamma,q_j,\operatorname{viable}),\\
+  &\operatorname{RelationValuedPersistence}(q_i,q_j,C)
+    \iff
+    \operatorname{RelationPersistenceObstructionEmpty}(q_i,q_j,C),\\
+  &\operatorname{IdentityHolonomyCoherent}
+      (\bar\gamma,\bar\eta,\operatorname{compBar})\\
+  &\qquad{}\iff
+    \operatorname{IdentityHolonomyDefectEmpty}
+      (\bar\gamma,\bar\eta,\operatorname{compBar}),
+\end{align*}
+together with the comparison-status partition
+\[
+  \operatorname{ExactlyOnePersistenceComparisonStatus}
+    (q_i,\gamma,q_j),
+\]
+and the retention and carrying conditions
+\begin{align*}
+  &\operatorname{RetainsOldIdentity}
+      \bigl(q_i,\operatorname{persistenceExtension}(q_i,\gamma,q_j)\bigr),\\
+  &\operatorname{CarriesLaterIdentity}
+      \bigl(\operatorname{persistenceExtension}(q_i,\gamma,q_j),
+        \gamma,q_j\bigr).
+\end{align*}
+\end{theorem}
+\footnote{\raggedright Verified in Lean as
+\texttt{StatusRecordsCoherence.ObjectPersistence.\allowbreak{}object\_persistence};
+see \Cref{app:formalization}.}
+\begin{proof}
+Assume the surjectivity of \(q_i\) and \(q_j\), the predicates
+\(\operatorname{viable}\) and \(C\), and the holonomy data
+\(\bar\gamma,\bar\eta,\operatorname{compBar}\).  We prove the eight
+conjuncts in turn.
+
+\emph{(1) Persists iff the persistence obstruction is empty.}
+The persistence obstruction is
+\[
+  \Delta_{\mathrm{pers}}(q_i,\gamma,q_j)
+  =
+  \{(h,h')\in H_i\times H_i:
+      q_i(h)=q_i(h')\ \text{and}\
+      q_j(\gamma h)\ne q_j(\gamma h')\}.
+\]
+Its emptiness is exactly the quotient-descent condition for
+\(q_j\circ\gamma:H_i\to Q_j\) through \(q_i\).  Since \(q_i\) is
+surjective, this is equivalent to the existence of a descended map
+\(\bar\gamma:Q_i\to Q_j\) satisfying
+\[
+  \bar\gamma\circ q_i=q_j\circ\gamma,
+\]
+which is \(\operatorname{Persists}(q_i,\gamma,q_j)\).
+
+\emph{(2) Split-obstruction empty iff persists.}
+The split obstruction is the same pair set written in the comparison
+vocabulary:
+\[
+  \Delta_{\mathrm{split}}(q_i,\gamma,q_j)
+  =
+  \Delta_{\mathrm{pers}}(q_i,\gamma,q_j).
+\]
+Thus \(\Delta_{\mathrm{split}}=\emptyset\) iff the persistence
+obstruction is empty, and by (1) this is equivalent to persistence.
+
+\emph{(3) Exactly-one persistence comparison status.}
+The comparison statuses are decided by two split-pair defects on the
+declared continuation \(\gamma\): the persistence/split obstruction
+\(\Delta_{\mathrm{split}}\) of case~(1), and the merge obstruction
+\[
+  \Delta_{\mathrm{merge}}(q_i,\gamma,q_j)
+  =
+  \{(h,h')\in H_i\times H_i:
+      q_j(\gamma h)=q_j(\gamma h')\ \text{and}\ q_i(h)\ne q_i(h')\}.
+\]
+The four statuses partition the configurations by the joint
+\(\Delta_{\mathrm{split}}\)\textendash{}\(\Delta_{\mathrm{merge}}\)
+emptiness pattern:
+\[
+\begin{array}{c|c|c}
+\text{status} & \Delta_{\mathrm{split}}=\emptyset
+  & \Delta_{\mathrm{merge}}=\emptyset\\
+\hline
+\text{exact endurance} & \text{yes} & \text{yes}\\
+\text{persistent with merge} & \text{yes} & \text{no}\\
+\text{identity branching} & \text{no} & \text{yes}\\
+\text{identity rewrite} & \text{no} & \text{no}
+\end{array}
+\]
+Every configuration of the two Boolean defect tests falls into
+exactly one row.  Existence is by case enumeration; exclusivity is by
+definitional disjointness of the four status predicates.  The
+dissolution and relation-valued obstructions of cases~(4) and~(5) are
+separate typed gates and do not enter this partition.
+
+\emph{(4) Viable persistence iff the dissolution obstruction is
+empty.}
+The dissolution obstruction is
+\[
+  \Delta_{\mathrm{diss}}(\gamma,q_j,\operatorname{viable})
+  =
+  \{h\in H_i:
+      \neg\,\operatorname{viable}(q_j(\gamma h))\}.
+\]
+Viable persistence says that every transported \(q_j\)-class lies in
+the viable region:
+\[
+  \forall h\in H_i,\quad
+  \operatorname{viable}(q_j(\gamma h)).
+\]
+This is precisely \(\Delta_{\mathrm{diss}}=\emptyset\).
+
+\emph{(5) Relation-valued persistence iff its obstruction is empty.}
+The relation-persistence obstruction is
+\[
+  \Delta_C(q_i,q_j,C)
+  =
+  \{(h,h')\in H_i\times H_i:
+    q_i(h)=q_i(h')\ \text{and}\
+    C(h,\gamma h)\not\iff C(h,\gamma h')\}.
+\]
+Emptiness of \(\Delta_C\) says that the truth of the relation is
+independent of the chosen representative of a \(q_i\)-class.  Hence
+\(C\) descends to a well-defined relation on
+\(Q_i\times Q_j\), which is exactly relation-valued persistence.
+
+\emph{(6) Identity holonomy coherent iff the holonomy defect is
+empty.}
+The holonomy defect is
+\[
+  \Delta_{\mathrm{hol}}(\bar\gamma,\bar\eta,\operatorname{compBar})
+  =
+  \{a\in Q_i:
+      \operatorname{compBar}(a)\ne\bar\eta(\bar\gamma(a))\}.
+\]
+Thus \(\Delta_{\mathrm{hol}}=\emptyset\) iff
+\[
+  \forall a\in Q_i,\quad
+  \operatorname{compBar}(a)=\bar\eta(\bar\gamma(a)),
+\]
+which is the pointwise form of
+\(\operatorname{compBar}=\bar\eta\circ\bar\gamma\), i.e. identity
+holonomy coherence.
+
+\emph{(7) The persistence extension retains the old identity.}
+Define the persistence extension as the joint quotient
+\[
+  \operatorname{persistenceExtension}(q_i,\gamma,q_j)
+  :=
+  \langle q_i,q_j\circ\gamma\rangle:H_i\to Q_i\times Q_j.
+\]
+Projection to the first coordinate recovers the old identity:
+\[
+  \operatorname{pr}_{Q_i}\circ
+  \langle q_i,q_j\circ\gamma\rangle=q_i.
+\]
+Therefore the persistence extension retains \(q_i\).
+
+\emph{(8) The persistence extension carries the later identity.}
+Projection to the second coordinate recovers the transported later
+identity:
+\[
+  \operatorname{pr}_{Q_j}\circ
+  \langle q_i,q_j\circ\gamma\rangle=q_j\circ\gamma.
+\]
+Thus the same extension carries \(q_j\) along the declared transport
+\(\gamma\).
+\end{proof}
+
+The theorem does not classify persistent objects or say which
+transports should be declared.
+
+\subsection*{Layer instantiations}\label{layer-inst:F19}
+
+\begin{description}
+\item[\emph{Mendelian inheritance (genetics).}]
+Through meiotic segregation and fertilisation, parental allele
+identity at a locus survives into the offspring's diploid
+genotype.  The F19 reading: allele identity persists when no
+mutation or non-disjunction breaks the descent; mutation and
+non-disjunction events are the persistence obstruction
+\citep{Mendel1866VersuchePflanzenHybriden}.
+

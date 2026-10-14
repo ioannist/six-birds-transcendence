@@ -1,0 +1,13 @@
+{
+  "candidates_examined": 945,
+  "minimum_observed_increments": {
+    "order-step": 2,
+    "predictive-step": 2,
+    "progress-step": 1,
+    "record-step": 2,
+    "tick-step": 2
+  },
+  "search_id": "BOUNDED_TEMPORAL_MARGIN_EXHAUSTION",
+  "violation_examples": [],
+  "violations": 0
+}

@@ -1,0 +1,20 @@
+{
+  "branchwise_payload_preserved": true,
+  "certificate_id": "FUSION-BOUNDARY-01",
+  "claim_ceiling": "finite separation of branchwise lineage merger from integrated target package",
+  "claim_lanes": [
+    "S-L",
+    "S-R"
+  ],
+  "component_refs": {
+    "left_corridor": "formal/certificates/fusion/corridors/COR-FUS-LEFT.certificate.json",
+    "right_corridor": "formal/certificates/fusion/corridors/COR-FUS-RIGHT.certificate.json",
+    "target_package": "formal/certificates/fusion/packages/PKG-FUS-NEG-01.certificate.json"
+  },
+  "component_sha256": {
+    "left_corridor": "8d8a5570312e12f7d222005d1bad4009e288fa56610a7498fcf616eb91b14c03",
+    "right_corridor": "5e8d6204b87c87dd5dc6f14d5aaf45e44b1a0507edbbc95cb5de7689a5e462e4",
+    "target_package": "5c470f03835935d2f069890210e0ebbf3debeeabe157037b54937b9c2db5b92a"
+  },
+  "schema_version": "CST-TT-06"
+}

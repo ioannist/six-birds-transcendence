@@ -1,0 +1,158 @@
+{
+  "claim_ceiling": "exact finite structural event-successor criterion only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "episode": {
+    "dependencies": [
+      {
+        "alternative_temporal_parent": false,
+        "child_event_id": "ds-target-first",
+        "counterfactually_necessary": true,
+        "dependency_id": "ds-edge-S-T",
+        "dependency_kind": "archival-copy",
+        "parent_event_id": "ds-source-final",
+        "payload": {
+          "maintenance_state": "ds-edge-S-T-target-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 2,
+          "route_residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "tick_index": 1
+        },
+        "payload_sha256": "ec40f3181f1f1f2518d7814fb6e31d806f226be67273cbc6074bb4c2117c83a7",
+        "replayable_archive": true,
+        "single_use_temporal_token": true,
+        "storage_mediator": true
+      }
+    ],
+    "events": [
+      {
+        "event_id": "ds-source-final",
+        "event_kind": "temporal-update",
+        "output_payload": {
+          "maintenance_state": "ds-edge-S-T-target-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 2,
+          "route_residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "tick_index": 1
+        },
+        "owner": {
+          "code": 17,
+          "label": "source-substrate"
+        },
+        "stage": 0
+      },
+      {
+        "event_id": "ds-target-first",
+        "event_kind": "temporal-update",
+        "input_payload": {
+          "maintenance_state": "ds-edge-S-T-target-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 2,
+          "route_residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "tick_index": 1
+        },
+        "output_payload": {
+          "maintenance_state": "ds-edge-S-T-target-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 2,
+          "route_residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "tick_index": 1
+        },
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "stage": 1
+      }
+    ],
+    "stages": [
+      {
+        "active_support": [
+          {
+            "code": 17,
+            "label": "source-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 17,
+          "maintenance_state": "ds-edge-S-T-source-maint",
+          "order_rank": 0,
+          "predictive_rank": 0,
+          "progress_rank": 0,
+          "record_value": 0,
+          "route_residue": [
+            "direct-root"
+          ],
+          "tick_index": 0
+        },
+        "stage": 0,
+        "temporal_realized": true
+      },
+      {
+        "active_support": [
+          {
+            "code": 101,
+            "label": "target-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 101,
+          "maintenance_state": "ds-edge-S-T-target-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 2,
+          "route_residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "tick_index": 1
+        },
+        "stage": 1,
+        "temporal_realized": true
+      }
+    ]
+  },
+  "first_target_event_id": "ds-target-first",
+  "kind": "direct-successor-control",
+  "last_source_event_id": "ds-source-final",
+  "model_id": "DS-C08",
+  "nonclaims": [
+    "not a strict overlap corridor",
+    "no target-package or autonomy verdict",
+    "no phenomenal or personal-status conclusion"
+  ],
+  "operational_dependency_id": "ds-edge-S-T",
+  "route_status": "route-indexed",
+  "schema_version": "CST-TT-04-model-v1",
+  "source_carrier": {
+    "code": 17,
+    "label": "source-substrate"
+  },
+  "target_carrier": {
+    "code": 101,
+    "label": "target-substrate"
+  },
+  "title": "archival data edge"
+}

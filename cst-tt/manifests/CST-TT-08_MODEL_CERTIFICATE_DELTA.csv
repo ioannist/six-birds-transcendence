@@ -1,0 +1,7 @@
+asset_id,asset_kind,count,status,principal_result
+FINAL-THEOREM-STATUS,normative-status-table,39,frozen,"{'conditional': 19, 'checked finite countermodel': 12, 'open': 8}"
+FINAL-TOY-CATALOG,toy-contract-catalog,28,frozen,"complete primary, negative, strengthening, and fallback catalog"
+FINAL-MODEL-INDEX,model-index,203,frozen,all model JSON surfaces hash-indexed
+FINAL-EVIDENCE-INDEX,certificate-and-search-index,233,frozen,all certificate and bounded-search JSON surfaces hash-indexed
+FINAL-DAG,dependency-dag,174,frozen,174 nodes / 288 edges / acyclic
+SCIENCE-HANDOFF,paper-facing-handoff,1,frozen,self-contained science handoff; no manuscript prose

@@ -1,0 +1,15 @@
+{
+  "audit": {},
+  "certificate_id": "control-placeholder",
+  "checker": {},
+  "control_family": "strict-corridor",
+  "control_passed": false,
+  "expected_failed_obligation": "placeholder",
+  "model_ref": "model-placeholder",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "observed_failed_obligations": [
+    "placeholder"
+  ],
+  "result_status": "scaffold-only",
+  "schema_version": "CST-TT-04"
+}

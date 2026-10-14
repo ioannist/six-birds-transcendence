@@ -1,0 +1,21 @@
+{
+  "artifact_ref": "models/packages/controls/PC-10.model.json",
+  "artifact_sha256": "448e33f5d1727835a0803bac740c4438039421dc0013fb49c0e9bfe2eed6db32",
+  "checker": {
+    "function": "audit_package",
+    "integrated_package_valid": false,
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite package-obligation boundary only",
+  "control_id": "PC-10",
+  "control_kind": "package",
+  "expected_primary_failure": "PKG-O06-edge-overlap-compatibility",
+  "observed_failures": [
+    "PKG-O06-edge-overlap-compatibility",
+    "PKG-O07-global-gluing-and-restriction"
+  ],
+  "positive_baseline_ref": "models/packages/PKG-POS-01-TARGET.model.json",
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-02"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "TTH07-NATIVE-PACKAGE-SUPPLEMENT",
+  "grade": "raw C5/C7 supplementary primitives for same native availability input, surrogate grades retained",
+  "frozen_before_evaluation": "2026-10-09 continuation, before PackagePrimitives/CreditCells/JointCells Lean evaluation",
+  "native_input": "TTH07-NATIVE-AVAILABILITY-REPAIR; no changes to Input or publish",
+  "cells": "Sum Bool Bool: native current/source Input pair; supplementary current/source raw record pair",
+  "supplementary_record": ["existing C1 primitive recipe", "C5 protocol edge lists and ownership/housing instructions", "C7 raw joint tables"],
+  "publication": "Native actual memoryPublish; supplementary new current=old current and source=old current; both arms swap Bool owner. No derived profile, credit, distribution or verdict stored.",
+  "c5": {
+    "vertices": [0,1,2],
+    "cycle": [0,1,2],
+    "protocols": ["selfCycle","externalCycle","null"],
+    "edges": {
+      "selfCycle": [[0,1,false],[1,2,false],[2,0,false]],
+      "externalCycle": [[0,1,true],[1,2,true],[2,0,true]],
+      "null": []
+    },
+    "channels": {"self": false, "other": true},
+    "owner_instruction": {"selfCycle": "local", "externalCycle": "external", "null": "external"},
+    "housing_instruction": "same declared instructions as owner",
+    "instruction_interpretation": {"local": "inl actual native resource.owner", "external": "inr Unit"},
+    "anchors": [[false,false,false],[false,false,true],[false,true,false]],
+    "native_reads": "actual rows, safe policy and primitive histories from selected actual Input",
+    "expected_credit": {"selfCycle":"self","externalCycle":"other","null":"none"}
+  },
+  "c7": {
+    "assemblages": [false,true],
+    "left_and_right_labels": [false,true],
+    "left_and_right_history_ids": {"false":[false,false,false],"true":[false,false,true]},
+    "coupling": {"false":[[false,false],[true,true]],"true":[[false,true],[true,false]]},
+    "raw_reassembly": "assemblage Bool itself; schema reassembles with the independently declared literal coupling lists",
+    "observables": ["Unit joint"],
+    "native_reads": "actual safe rows/policy/histories/publishedP; events, realized stages and Receiver from same selected native Input",
+    "event_support": "sourceSupport=(id=false AND actual receiver.sourcePresent); targetSupport=actual receiver.targetFunded; primitive atomic flags and stage endpoints retained",
+    "exit_id": true,
+    "coupling_size": 2
+  },
+  "controls": ["delete self-cycle edge list and refute actual self credit/acceptance", "change local-owner instruction to external and refute actual owner readout", "erase joint observable and refute actual receiver display separation", "erase source-present receiver input and refute actual joint active/display readout"],
+  "unclaimed": ["full T5/HIDD/recombination upgrades", "package-qualified nominal autonomy", "full physical episode/receiver lineage", "TTH07 promotion"]
+}

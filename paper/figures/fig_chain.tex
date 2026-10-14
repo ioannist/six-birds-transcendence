@@ -1,0 +1,20 @@
+% F4: distinct system IDs and refinement are selectors of pinned snapshot lists.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small,
+ system/.style={draw,rounded corners=2pt,fill=black!3,minimum width=3cm,minimum height=.95cm,align=center},
+ flow/.style={-{Stealth[length=2mm]},semithick}]
+\node[system] (source) at (1.7,2.3) {Source system\\\snapGSevenStrictChainSystemIdsItemZero};
+\node[system] (middle) at (7.1,2.3) {Intermediate system\\\snapGSevenStrictChainSystemIdsItemOne};
+\node[system] (target) at (12.5,2.3) {Final target system\\\snapGSevenStrictChainSystemIdsItemTwo};
+\draw[flow] (source)--node[above,align=center] {live\\handoff} (middle);
+\draw[flow,densely dashed] (middle)--node[above,align=center] {live\\handoff} (target);
+\node[draw,densely dotted,align=center,text width=3cm,minimum height=.9cm] (first) at (4.4,.25)
+ {Source withdrawn;\\intermediate continues};
+\node[draw,densely dotted,align=center,text width=3cm,minimum height=.9cm] (second) at (9.8,.25)
+ {Intermediate withdrawn;\\target continues};
+\draw[flow,densely dotted] (4.4,2.3)--(first);
+\draw[flow,densely dotted] (9.8,2.3)--(second);
+\node[draw,rounded corners=2pt,align=center,text width=12.7cm] at (7.1,-1.3)
+ {Predictive refinement: \snapGSevenCThreeTrajectoryItemZero{} $\longrightarrow$
+ \snapGSevenCThreeTrajectoryItemOne{} $\longrightarrow$ \snapGSevenCThreeTrajectoryItemTwo{}
+ \quad (stabilized)\\Non-exposure, action credit, temporal closure and binding are simplified};
+\end{tikzpicture}

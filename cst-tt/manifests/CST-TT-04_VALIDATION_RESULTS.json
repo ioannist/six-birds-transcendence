@@ -1,0 +1,4603 @@
+{
+  "failed": 0,
+  "generated_date": "2026-08-10",
+  "passed": 762,
+  "phase": "CST-TT-04",
+  "project": "CST-TT",
+  "results": [
+    {
+      "category": "baseline",
+      "check_id": "BASE-001",
+      "detail": "repository is a Git worktree",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-002",
+      "detail": "CST-TT-03-v1 resolves to frozen base",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-003",
+      "detail": "frozen base is an ancestor of current HEAD",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-004",
+      "detail": "repository has no whitespace errors",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-005",
+      "detail": "working tree is clean",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-006",
+      "detail": "phase tag not required before freeze",
+      "status": "SKIP"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-001",
+      "detail": "Lean toolchain remains pinned",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-01",
+      "detail": "pyproject contains >=3.13,<3.14",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-02",
+      "detail": "pyproject contains pytest==9.0.2",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-03",
+      "detail": "pyproject contains jsonschema==4.26.0",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-04",
+      "detail": "pyproject contains setuptools==82.0.1",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PY",
+      "detail": "Python 3.13 is running (3.13.5)",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-01",
+      "detail": "toolchain status phase='CST-TT-04'",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-02",
+      "detail": "toolchain status lean_toolchain='leanprover/lean4:v4.28.0'",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-03",
+      "detail": "toolchain status lean_compile_status='pending-toolchain'",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-04",
+      "detail": "toolchain status python_certificate_status='checked'",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-LEAN-BUILD",
+      "detail": "lean/lake unavailable; no compilation pass claimed",
+      "status": "SKIP"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-001",
+      "detail": "at least fifty Python files are present (95)",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-001",
+      "detail": "scripts/build_exp01_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-002",
+      "detail": "scripts/build_exp02_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-003",
+      "detail": "scripts/build_exp03_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-004",
+      "detail": "scripts/build_exp04_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-005",
+      "detail": "scripts/build_exp05_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-006",
+      "detail": "scripts/build_exp06_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-007",
+      "detail": "scripts/build_tt00_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-008",
+      "detail": "scripts/build_tt01_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-009",
+      "detail": "scripts/build_tt02_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-010",
+      "detail": "scripts/build_tt03_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-011",
+      "detail": "scripts/build_tt04_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-012",
+      "detail": "scripts/enrich_exp01_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-013",
+      "detail": "scripts/exp02_supplemental.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-014",
+      "detail": "scripts/exp03_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-015",
+      "detail": "scripts/exp04_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-016",
+      "detail": "scripts/exp05_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-017",
+      "detail": "scripts/exp06_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-018",
+      "detail": "scripts/extract_corpus.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-019",
+      "detail": "scripts/finalize_exp02_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-020",
+      "detail": "scripts/finalize_exp03_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-021",
+      "detail": "scripts/finalize_exp04_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-022",
+      "detail": "scripts/finalize_exp05_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-023",
+      "detail": "scripts/finalize_exp06_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-024",
+      "detail": "scripts/finalize_tt00_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-025",
+      "detail": "scripts/finalize_tt01_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-026",
+      "detail": "scripts/finalize_tt02_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-027",
+      "detail": "scripts/finalize_tt03_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-028",
+      "detail": "scripts/finalize_tt04_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-029",
+      "detail": "scripts/tt00_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-030",
+      "detail": "scripts/tt02_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-031",
+      "detail": "scripts/tt03_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-032",
+      "detail": "scripts/tt04_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-033",
+      "detail": "scripts/validate_exp01.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-034",
+      "detail": "scripts/validate_exp02.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-035",
+      "detail": "scripts/validate_exp03.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-036",
+      "detail": "scripts/validate_exp04.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-037",
+      "detail": "scripts/validate_exp05.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-038",
+      "detail": "scripts/validate_exp06.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-039",
+      "detail": "scripts/validate_tt00.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-040",
+      "detail": "scripts/validate_tt01.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-041",
+      "detail": "scripts/validate_tt02.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-042",
+      "detail": "scripts/validate_tt03.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-043",
+      "detail": "scripts/validate_tt04.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-044",
+      "detail": "scripts/verify_exp03_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-045",
+      "detail": "scripts/verify_exp04_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-046",
+      "detail": "scripts/verify_exp05_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-047",
+      "detail": "scripts/verify_exp06_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-048",
+      "detail": "scripts/verify_tt00_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-049",
+      "detail": "scripts/verify_tt01_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-050",
+      "detail": "scripts/verify_tt02_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-051",
+      "detail": "scripts/verify_tt03_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-052",
+      "detail": "scripts/verify_tt04_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-053",
+      "detail": "src/cst_tt/__init__.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-054",
+      "detail": "src/cst_tt/ancestry.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-055",
+      "detail": "src/cst_tt/autonomy.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-056",
+      "detail": "src/cst_tt/bridge_composition_checker.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-057",
+      "detail": "src/cst_tt/circularity.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-058",
+      "detail": "src/cst_tt/contracts.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-059",
+      "detail": "src/cst_tt/corridor.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-060",
+      "detail": "src/cst_tt/corridor_and_branch_checker.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-061",
+      "detail": "src/cst_tt/countermodels.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-062",
+      "detail": "src/cst_tt/hashing.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-063",
+      "detail": "src/cst_tt/package.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-064",
+      "detail": "src/cst_tt/package_auditor.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-065",
+      "detail": "src/cst_tt/package_gluing.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-066",
+      "detail": "src/cst_tt/predicates.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-067",
+      "detail": "src/cst_tt/registry.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-068",
+      "detail": "src/cst_tt/targets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-069",
+      "detail": "src/cst_tt/temporal.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-070",
+      "detail": "src/cst_tt/transport.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-071",
+      "detail": "src/cst_tt/transport_auditor.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-072",
+      "detail": "src/cst_tt/types.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-073",
+      "detail": "tests/test_circularity_and_lean_surface.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-074",
+      "detail": "tests/test_corridor_certificates.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-075",
+      "detail": "tests/test_corridor_composition.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-076",
+      "detail": "tests/test_corridor_searches.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-077",
+      "detail": "tests/test_countermodel_certificates.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-078",
+      "detail": "tests/test_countermodel_enumeration.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-079",
+      "detail": "tests/test_direct_successor.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-080",
+      "detail": "tests/test_generated_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-081",
+      "detail": "tests/test_package_certificates.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-082",
+      "detail": "tests/test_package_gluing.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-083",
+      "detail": "tests/test_phase01_boundaries.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-084",
+      "detail": "tests/test_provenance_and_boundaries.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-085",
+      "detail": "tests/test_python_types.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-086",
+      "detail": "tests/test_registries.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-087",
+      "detail": "tests/test_registry_schema.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-088",
+      "detail": "tests/test_reproducibility_policy.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-089",
+      "detail": "tests/test_route_memory_arrow.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-090",
+      "detail": "tests/test_scaffold_boundaries.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-091",
+      "detail": "tests/test_schema_examples.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-092",
+      "detail": "tests/test_temporal_transport_certificates.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-093",
+      "detail": "tests/test_transport_controls_and_search.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-094",
+      "detail": "tests/test_tt03_formal_surfaces.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-095",
+      "detail": "tests/test_tt04_formal_surfaces.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-TESTS",
+      "detail": "full pytest suite passes",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-001",
+      "detail": "four frozen top-level inputs remain hash-bound",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-INPUT-01",
+      "detail": "input checksum row 1 verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-INPUT-02",
+      "detail": "input checksum row 2 verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-INPUT-03",
+      "detail": "input checksum row 3 verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-INPUT-04",
+      "detail": "input checksum row 4 verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-COUNT",
+      "detail": "nine temporal SBT source manuscripts are retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-01",
+      "detail": "Tsiokos_2026_An_Audited_Closure_Architecture_for_Consciousness_Exact_Finite_Models_Structural_Theorems_and_Conditional_Realization.tex is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-02",
+      "detail": "Tsiokos_2026_Glass_Is_an_Unclosed_Layer_Kovacs_Memory_as_Predictive_Quotient_Residue.tex is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-03",
+      "detail": "Tsiokos_2026_Holonomy_with_Memory_in_Six_Birds_Theory_Predictive_Quotients_Witnesses_and_Fixed_Support_Route_Transport.tex is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-04",
+      "detail": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-05",
+      "detail": "Tsiokos_2026_Six_Birds_Foundations_VI_A_Catalog_of_Dynamical_Structural_Laws.tex is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-06",
+      "detail": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-07",
+      "detail": "Tsiokos_2026_To_Flatten_a_Stone_with_Six_Birds_Critical_Pairs_Holonomy_and_Confluence_in_Rewriting_Systems.tex is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-08",
+      "detail": "Tsiokos_2026_To_Lay_a_Stone_with_Six_Birds_Finite_State_Semantics_for_Packaging_Directionality_and_Coarse_Graining.tex is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-09",
+      "detail": "Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TAG-01",
+      "detail": "CST-TT-00-v1 resolves to its frozen commit",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TAG-02",
+      "detail": "CST-TT-01-v1 resolves to its frozen commit",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TAG-03",
+      "detail": "CST-TT-02-v1 resolves to its frozen commit",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TAG-04",
+      "detail": "CST-TT-03-v1 resolves to its frozen commit",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-COUNT-01",
+      "detail": "COUNTERMODEL_REGISTRY.csv retains 15 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-COUNT-02",
+      "detail": "PACKAGE_WITNESS_REGISTRY.csv retains 2 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-COUNT-03",
+      "detail": "PACKAGE_CONTROL_REGISTRY.csv retains 18 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-COUNT-04",
+      "detail": "TEMPORAL_TRANSPORT_WITNESS_REGISTRY.csv retains 2 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-COUNT-05",
+      "detail": "ROUTE_DISCIPLINE_REGISTRY.csv retains 2 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-COUNT-06",
+      "detail": "MEMORY_REPAIR_REGISTRY.csv retains 2 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-COUNT-07",
+      "detail": "RECORD_ARROW_REGISTRY.csv retains 1 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-COUNT-08",
+      "detail": "TRANSPORT_CONTROL_REGISTRY.csv retains 28 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-01-model_ref",
+      "detail": "CM-01 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-01-certificate_ref",
+      "detail": "CM-01 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-02-model_ref",
+      "detail": "CM-02 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-02-certificate_ref",
+      "detail": "CM-02 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-03-model_ref",
+      "detail": "CM-03 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-03-certificate_ref",
+      "detail": "CM-03 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-04-model_ref",
+      "detail": "CM-04 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-04-certificate_ref",
+      "detail": "CM-04 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-05-model_ref",
+      "detail": "CM-05 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-05-certificate_ref",
+      "detail": "CM-05 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-06-model_ref",
+      "detail": "CM-06 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-06-certificate_ref",
+      "detail": "CM-06 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-07-model_ref",
+      "detail": "CM-07 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-07-certificate_ref",
+      "detail": "CM-07 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-08-model_ref",
+      "detail": "CM-08 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-08-certificate_ref",
+      "detail": "CM-08 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-09-model_ref",
+      "detail": "CM-09 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-09-certificate_ref",
+      "detail": "CM-09 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-10-model_ref",
+      "detail": "CM-10 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-10-certificate_ref",
+      "detail": "CM-10 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-11-model_ref",
+      "detail": "CM-11 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-11-certificate_ref",
+      "detail": "CM-11 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-12-model_ref",
+      "detail": "CM-12 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-12-certificate_ref",
+      "detail": "CM-12 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-13-model_ref",
+      "detail": "CM-13 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-13-certificate_ref",
+      "detail": "CM-13 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-14-model_ref",
+      "detail": "CM-14 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-14-certificate_ref",
+      "detail": "CM-14 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-15-model_ref",
+      "detail": "CM-15 model_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-15-certificate_ref",
+      "detail": "CM-15 certificate_ref exists",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-PKG-01-HASH",
+      "detail": "PKG-POS-01-TARGET model hash verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-PKG-02-HASH",
+      "detail": "PKG-POS-02-SOURCE model hash verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-COUNT",
+      "detail": "twenty certificate schemas are present",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "EXAMPLE-COUNT",
+      "detail": "twenty scaffold examples are present",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-01",
+      "detail": "ancestry_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-01-EXISTS",
+      "detail": "ancestry_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-01-VALID",
+      "detail": "ancestry_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-01-NONCLAIM",
+      "detail": "ancestry_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-02",
+      "detail": "autonomy_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-02-EXISTS",
+      "detail": "autonomy_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-02-VALID",
+      "detail": "autonomy_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-02-NONCLAIM",
+      "detail": "autonomy_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-03",
+      "detail": "corridor_composition_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-03-EXISTS",
+      "detail": "corridor_composition_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-03-VALID",
+      "detail": "corridor_composition_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-03-NONCLAIM",
+      "detail": "corridor_composition_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-04",
+      "detail": "corridor_control_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-04-EXISTS",
+      "detail": "corridor_control_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-04-VALID",
+      "detail": "corridor_control_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-04-NONCLAIM",
+      "detail": "corridor_control_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-05",
+      "detail": "countermodel_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-05-EXISTS",
+      "detail": "countermodel_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-05-VALID",
+      "detail": "countermodel_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-05-NONCLAIM",
+      "detail": "countermodel_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-06",
+      "detail": "direct_successor.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-06-EXISTS",
+      "detail": "direct_successor has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-06-VALID",
+      "detail": "direct_successor.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-06-NONCLAIM",
+      "detail": "direct_successor.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-07",
+      "detail": "direct_successor_landed.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-07-EXISTS",
+      "detail": "direct_successor_landed has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-07-VALID",
+      "detail": "direct_successor_landed.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-07-NONCLAIM",
+      "detail": "direct_successor_landed.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-08",
+      "detail": "direct_successor_path_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-08-EXISTS",
+      "detail": "direct_successor_path_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-08-VALID",
+      "detail": "direct_successor_path_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-08-NONCLAIM",
+      "detail": "direct_successor_path_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-09",
+      "detail": "memory_repair_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-09-EXISTS",
+      "detail": "memory_repair_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-09-VALID",
+      "detail": "memory_repair_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-09-NONCLAIM",
+      "detail": "memory_repair_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-10",
+      "detail": "package_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-10-EXISTS",
+      "detail": "package_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-10-VALID",
+      "detail": "package_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-10-NONCLAIM",
+      "detail": "package_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-11",
+      "detail": "package_control_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-11-EXISTS",
+      "detail": "package_control_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-11-VALID",
+      "detail": "package_control_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-11-NONCLAIM",
+      "detail": "package_control_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-12",
+      "detail": "record_arrow_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-12-EXISTS",
+      "detail": "record_arrow_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-12-VALID",
+      "detail": "record_arrow_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-12-NONCLAIM",
+      "detail": "record_arrow_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-13",
+      "detail": "route_discipline_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-13-EXISTS",
+      "detail": "route_discipline_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-13-VALID",
+      "detail": "route_discipline_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-13-NONCLAIM",
+      "detail": "route_discipline_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-14",
+      "detail": "staged_package_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-14-EXISTS",
+      "detail": "staged_package_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-14-VALID",
+      "detail": "staged_package_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-14-NONCLAIM",
+      "detail": "staged_package_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-15",
+      "detail": "strict_temporal_corridor_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-15-EXISTS",
+      "detail": "strict_temporal_corridor_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-15-VALID",
+      "detail": "strict_temporal_corridor_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-15-NONCLAIM",
+      "detail": "strict_temporal_corridor_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-16",
+      "detail": "temporal_corridor.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-16-EXISTS",
+      "detail": "temporal_corridor has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-16-VALID",
+      "detail": "temporal_corridor.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-16-NONCLAIM",
+      "detail": "temporal_corridor.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-17",
+      "detail": "temporal_fiach_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-17-EXISTS",
+      "detail": "temporal_fiach_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-17-VALID",
+      "detail": "temporal_fiach_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-17-NONCLAIM",
+      "detail": "temporal_fiach_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-18",
+      "detail": "temporal_signature.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-18-EXISTS",
+      "detail": "temporal_signature has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-18-VALID",
+      "detail": "temporal_signature.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-18-NONCLAIM",
+      "detail": "temporal_signature.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-19",
+      "detail": "temporal_transport_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-19-EXISTS",
+      "detail": "temporal_transport_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-19-VALID",
+      "detail": "temporal_transport_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-19-NONCLAIM",
+      "detail": "temporal_transport_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-VALID-20",
+      "detail": "transport_control_certificate.schema.json is a valid Draft 2020-12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-20-EXISTS",
+      "detail": "transport_control_certificate has one scaffold example",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-20-VALID",
+      "detail": "transport_control_certificate.scaffold.json validates",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-EXAMPLE-20-NONCLAIM",
+      "detail": "transport_control_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-COUNT",
+      "detail": "four strict corridor witnesses are registered",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-UNIQUE",
+      "detail": "corridor IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-MODEL",
+      "detail": "COR-POS-01 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-CERT",
+      "detail": "COR-POS-01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-01",
+      "detail": "COR-POS-01 hash-row",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-02",
+      "detail": "COR-POS-01 hash-cert",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-03",
+      "detail": "COR-POS-01 valid",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-04",
+      "detail": "COR-POS-01 no-failures",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-05",
+      "detail": "COR-POS-01 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-06",
+      "detail": "COR-POS-01 lane",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-07",
+      "detail": "COR-POS-01 status",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-08",
+      "detail": "COR-POS-01 chain",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-09",
+      "detail": "COR-POS-01 mixed",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-10",
+      "detail": "COR-POS-01 route",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-SCHEMA",
+      "detail": "COR-POS-01 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-STAGE-00-REAL",
+      "detail": "COR-POS-01 stage 0 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-STAGE-00-SUPPORT",
+      "detail": "COR-POS-01 stage 0 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-STAGE-01-REAL",
+      "detail": "COR-POS-01 stage 1 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-STAGE-01-SUPPORT",
+      "detail": "COR-POS-01 stage 1 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-STAGE-02-REAL",
+      "detail": "COR-POS-01 stage 2 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-01-STAGE-02-SUPPORT",
+      "detail": "COR-POS-01 stage 2 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-MODEL",
+      "detail": "COR-POS-02A model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-CERT",
+      "detail": "COR-POS-02A certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-01",
+      "detail": "COR-POS-02A hash-row",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-02",
+      "detail": "COR-POS-02A hash-cert",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-03",
+      "detail": "COR-POS-02A valid",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-04",
+      "detail": "COR-POS-02A no-failures",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-05",
+      "detail": "COR-POS-02A replay",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-06",
+      "detail": "COR-POS-02A lane",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-07",
+      "detail": "COR-POS-02A status",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-08",
+      "detail": "COR-POS-02A chain",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-09",
+      "detail": "COR-POS-02A mixed",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-10",
+      "detail": "COR-POS-02A route",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-SCHEMA",
+      "detail": "COR-POS-02A certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-STAGE-00-REAL",
+      "detail": "COR-POS-02A stage 0 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-STAGE-00-SUPPORT",
+      "detail": "COR-POS-02A stage 0 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-STAGE-01-REAL",
+      "detail": "COR-POS-02A stage 1 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-STAGE-01-SUPPORT",
+      "detail": "COR-POS-02A stage 1 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-STAGE-02-REAL",
+      "detail": "COR-POS-02A stage 2 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-02-STAGE-02-SUPPORT",
+      "detail": "COR-POS-02A stage 2 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-MODEL",
+      "detail": "COR-POS-02B model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-CERT",
+      "detail": "COR-POS-02B certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-01",
+      "detail": "COR-POS-02B hash-row",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-02",
+      "detail": "COR-POS-02B hash-cert",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-03",
+      "detail": "COR-POS-02B valid",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-04",
+      "detail": "COR-POS-02B no-failures",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-05",
+      "detail": "COR-POS-02B replay",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-06",
+      "detail": "COR-POS-02B lane",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-07",
+      "detail": "COR-POS-02B status",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-08",
+      "detail": "COR-POS-02B chain",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-09",
+      "detail": "COR-POS-02B mixed",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-10",
+      "detail": "COR-POS-02B route",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-SCHEMA",
+      "detail": "COR-POS-02B certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-STAGE-00-REAL",
+      "detail": "COR-POS-02B stage 0 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-STAGE-00-SUPPORT",
+      "detail": "COR-POS-02B stage 0 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-STAGE-01-REAL",
+      "detail": "COR-POS-02B stage 1 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-STAGE-01-SUPPORT",
+      "detail": "COR-POS-02B stage 1 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-STAGE-02-REAL",
+      "detail": "COR-POS-02B stage 2 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-03-STAGE-02-SUPPORT",
+      "detail": "COR-POS-02B stage 2 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-MODEL",
+      "detail": "COR-POS-02-COMPOSED model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-CERT",
+      "detail": "COR-POS-02-COMPOSED certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-01",
+      "detail": "COR-POS-02-COMPOSED hash-row",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-02",
+      "detail": "COR-POS-02-COMPOSED hash-cert",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-03",
+      "detail": "COR-POS-02-COMPOSED valid",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-04",
+      "detail": "COR-POS-02-COMPOSED no-failures",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-05",
+      "detail": "COR-POS-02-COMPOSED replay",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-06",
+      "detail": "COR-POS-02-COMPOSED lane",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-07",
+      "detail": "COR-POS-02-COMPOSED status",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-08",
+      "detail": "COR-POS-02-COMPOSED chain",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-09",
+      "detail": "COR-POS-02-COMPOSED mixed",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-10",
+      "detail": "COR-POS-02-COMPOSED route",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-SCHEMA",
+      "detail": "COR-POS-02-COMPOSED certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-STAGE-00-REAL",
+      "detail": "COR-POS-02-COMPOSED stage 0 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-STAGE-00-SUPPORT",
+      "detail": "COR-POS-02-COMPOSED stage 0 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-STAGE-01-REAL",
+      "detail": "COR-POS-02-COMPOSED stage 1 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-STAGE-01-SUPPORT",
+      "detail": "COR-POS-02-COMPOSED stage 1 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-STAGE-02-REAL",
+      "detail": "COR-POS-02-COMPOSED stage 2 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-STAGE-02-SUPPORT",
+      "detail": "COR-POS-02-COMPOSED stage 2 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-STAGE-03-REAL",
+      "detail": "COR-POS-02-COMPOSED stage 3 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-STAGE-03-SUPPORT",
+      "detail": "COR-POS-02-COMPOSED stage 3 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-STAGE-04-REAL",
+      "detail": "COR-POS-02-COMPOSED stage 4 realizes time",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-04-STAGE-04-SUPPORT",
+      "detail": "COR-POS-02-COMPOSED stage 4 has support",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-COMPOSED-NO-ENDPOINT-MIX",
+      "detail": "two-leg corridor has no ultimate source/target mixed stage",
+      "status": "PASS"
+    },
+    {
+      "category": "corridor",
+      "check_id": "COR-COMPOSED-VALID",
+      "detail": "two-leg carrier-chain corridor remains valid",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-COUNT",
+      "detail": "one composition certificate is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-01",
+      "detail": "frontier-compatible",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-02",
+      "detail": "rebuild-exact",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-03",
+      "detail": "composition-valid",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-04",
+      "detail": "chain-rule",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-05",
+      "detail": "old-rule-fails",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-06",
+      "detail": "leg-additive",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-07",
+      "detail": "boundary-once",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-08",
+      "detail": "registry-valid",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-09",
+      "detail": "registry-old-false",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-10",
+      "detail": "registry-chain-true",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-CERT-REPLAY",
+      "detail": "composition certificate audit replays",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-CERT-SCHEMA",
+      "detail": "composition certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-HASH-left",
+      "detail": "composition left hash verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-HASH-right",
+      "detail": "composition right hash verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "composition",
+      "check_id": "COMP-HASH-composite",
+      "detail": "composition composite hash verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-COUNT",
+      "detail": "three atomic direct successor witnesses are registered",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-UNIQUE",
+      "detail": "direct successor IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-01-01",
+      "detail": "DS-POS-01 hash-row",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-01-02",
+      "detail": "DS-POS-01 hash-cert",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-01-03",
+      "detail": "DS-POS-01 valid",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-01-04",
+      "detail": "DS-POS-01 not-detached",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-01-05",
+      "detail": "DS-POS-01 no-failures",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-01-06",
+      "detail": "DS-POS-01 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-01-07",
+      "detail": "DS-POS-01 status",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-01-08",
+      "detail": "DS-POS-01 lane",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-01-SCHEMA",
+      "detail": "DS-POS-01 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-02-01",
+      "detail": "DS-POS-02A hash-row",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-02-02",
+      "detail": "DS-POS-02A hash-cert",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-02-03",
+      "detail": "DS-POS-02A valid",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-02-04",
+      "detail": "DS-POS-02A not-detached",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-02-05",
+      "detail": "DS-POS-02A no-failures",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-02-06",
+      "detail": "DS-POS-02A replay",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-02-07",
+      "detail": "DS-POS-02A status",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-02-08",
+      "detail": "DS-POS-02A lane",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-02-SCHEMA",
+      "detail": "DS-POS-02A certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-03-01",
+      "detail": "DS-POS-02B hash-row",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-03-02",
+      "detail": "DS-POS-02B hash-cert",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-03-03",
+      "detail": "DS-POS-02B valid",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-03-04",
+      "detail": "DS-POS-02B not-detached",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-03-05",
+      "detail": "DS-POS-02B no-failures",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-03-06",
+      "detail": "DS-POS-02B replay",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-03-07",
+      "detail": "DS-POS-02B status",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-03-08",
+      "detail": "DS-POS-02B lane",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-03-SCHEMA",
+      "detail": "DS-POS-02B certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-PATH-COUNT",
+      "detail": "one direct-successor path is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-PATH-01",
+      "detail": "path-valid",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-PATH-02",
+      "detail": "no-atomic-endpoint",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-PATH-03",
+      "detail": "replay",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-PATH-04",
+      "detail": "registry-path",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-PATH-05",
+      "detail": "registry-no-edge",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-PATH-06",
+      "detail": "hashes",
+      "status": "PASS"
+    },
+    {
+      "category": "direct",
+      "check_id": "DS-PATH-SCHEMA",
+      "detail": "direct path certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-COUNT",
+      "detail": "twenty-five corridor/composition controls are registered",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-COUNT",
+      "detail": "sixteen direct-successor controls are registered",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-01-01",
+      "detail": "COR-C01 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-01-02",
+      "detail": "COR-C01 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-01-03",
+      "detail": "COR-C01 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-01-04",
+      "detail": "COR-C01 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-01-05",
+      "detail": "COR-C01 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-01-SCHEMA",
+      "detail": "COR-C01 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-02-01",
+      "detail": "COR-C02 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-02-02",
+      "detail": "COR-C02 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-02-03",
+      "detail": "COR-C02 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-02-04",
+      "detail": "COR-C02 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-02-05",
+      "detail": "COR-C02 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-02-SCHEMA",
+      "detail": "COR-C02 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-03-01",
+      "detail": "COR-C03 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-03-02",
+      "detail": "COR-C03 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-03-03",
+      "detail": "COR-C03 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-03-04",
+      "detail": "COR-C03 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-03-05",
+      "detail": "COR-C03 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-03-SCHEMA",
+      "detail": "COR-C03 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-04-01",
+      "detail": "COR-C04 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-04-02",
+      "detail": "COR-C04 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-04-03",
+      "detail": "COR-C04 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-04-04",
+      "detail": "COR-C04 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-04-05",
+      "detail": "COR-C04 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-04-SCHEMA",
+      "detail": "COR-C04 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-05-01",
+      "detail": "COR-C05 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-05-02",
+      "detail": "COR-C05 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-05-03",
+      "detail": "COR-C05 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-05-04",
+      "detail": "COR-C05 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-05-05",
+      "detail": "COR-C05 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-05-SCHEMA",
+      "detail": "COR-C05 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-06-01",
+      "detail": "COR-C06 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-06-02",
+      "detail": "COR-C06 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-06-03",
+      "detail": "COR-C06 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-06-04",
+      "detail": "COR-C06 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-06-05",
+      "detail": "COR-C06 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-06-SCHEMA",
+      "detail": "COR-C06 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-07-01",
+      "detail": "COR-C07 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-07-02",
+      "detail": "COR-C07 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-07-03",
+      "detail": "COR-C07 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-07-04",
+      "detail": "COR-C07 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-07-05",
+      "detail": "COR-C07 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-07-SCHEMA",
+      "detail": "COR-C07 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-08-01",
+      "detail": "COR-C08 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-08-02",
+      "detail": "COR-C08 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-08-03",
+      "detail": "COR-C08 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-08-04",
+      "detail": "COR-C08 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-08-05",
+      "detail": "COR-C08 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-08-SCHEMA",
+      "detail": "COR-C08 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-09-01",
+      "detail": "COR-C09 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-09-02",
+      "detail": "COR-C09 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-09-03",
+      "detail": "COR-C09 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-09-04",
+      "detail": "COR-C09 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-09-05",
+      "detail": "COR-C09 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-09-SCHEMA",
+      "detail": "COR-C09 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-10-01",
+      "detail": "COR-C10 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-10-02",
+      "detail": "COR-C10 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-10-03",
+      "detail": "COR-C10 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-10-04",
+      "detail": "COR-C10 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-10-05",
+      "detail": "COR-C10 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-10-SCHEMA",
+      "detail": "COR-C10 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-11-01",
+      "detail": "COR-C11 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-11-02",
+      "detail": "COR-C11 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-11-03",
+      "detail": "COR-C11 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-11-04",
+      "detail": "COR-C11 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-11-05",
+      "detail": "COR-C11 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-11-SCHEMA",
+      "detail": "COR-C11 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-12-01",
+      "detail": "COR-C12 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-12-02",
+      "detail": "COR-C12 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-12-03",
+      "detail": "COR-C12 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-12-04",
+      "detail": "COR-C12 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-12-05",
+      "detail": "COR-C12 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-12-SCHEMA",
+      "detail": "COR-C12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-13-01",
+      "detail": "COR-C13 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-13-02",
+      "detail": "COR-C13 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-13-03",
+      "detail": "COR-C13 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-13-04",
+      "detail": "COR-C13 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-13-05",
+      "detail": "COR-C13 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-13-SCHEMA",
+      "detail": "COR-C13 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-14-01",
+      "detail": "COR-C14 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-14-02",
+      "detail": "COR-C14 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-14-03",
+      "detail": "COR-C14 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-14-04",
+      "detail": "COR-C14 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-14-05",
+      "detail": "COR-C14 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-14-SCHEMA",
+      "detail": "COR-C14 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-15-01",
+      "detail": "COR-C15 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-15-02",
+      "detail": "COR-C15 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-15-03",
+      "detail": "COR-C15 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-15-04",
+      "detail": "COR-C15 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-15-05",
+      "detail": "COR-C15 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-15-SCHEMA",
+      "detail": "COR-C15 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-16-01",
+      "detail": "COR-C16 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-16-02",
+      "detail": "COR-C16 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-16-03",
+      "detail": "COR-C16 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-16-04",
+      "detail": "COR-C16 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-16-05",
+      "detail": "COR-C16 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-16-SCHEMA",
+      "detail": "COR-C16 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-17-01",
+      "detail": "COR-C17 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-17-02",
+      "detail": "COR-C17 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-17-03",
+      "detail": "COR-C17 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-17-04",
+      "detail": "COR-C17 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-17-05",
+      "detail": "COR-C17 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-17-SCHEMA",
+      "detail": "COR-C17 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-18-01",
+      "detail": "COR-C18 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-18-02",
+      "detail": "COR-C18 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-18-03",
+      "detail": "COR-C18 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-18-04",
+      "detail": "COR-C18 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-18-05",
+      "detail": "COR-C18 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-18-SCHEMA",
+      "detail": "COR-C18 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-19-01",
+      "detail": "COR-C19 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-19-02",
+      "detail": "COR-C19 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-19-03",
+      "detail": "COR-C19 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-19-04",
+      "detail": "COR-C19 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-19-05",
+      "detail": "COR-C19 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-19-SCHEMA",
+      "detail": "COR-C19 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-20-01",
+      "detail": "COR-C20 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-20-02",
+      "detail": "COR-C20 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-20-03",
+      "detail": "COR-C20 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-20-04",
+      "detail": "COR-C20 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-20-05",
+      "detail": "COR-C20 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-20-SCHEMA",
+      "detail": "COR-C20 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-21-01",
+      "detail": "COR-C21 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-21-02",
+      "detail": "COR-C21 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-21-03",
+      "detail": "COR-C21 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-21-04",
+      "detail": "COR-C21 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-21-05",
+      "detail": "COR-C21 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-21-SCHEMA",
+      "detail": "COR-C21 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-22-01",
+      "detail": "COR-C22 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-22-02",
+      "detail": "COR-C22 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-22-03",
+      "detail": "COR-C22 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-22-04",
+      "detail": "COR-C22 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-22-05",
+      "detail": "COR-C22 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-22-SCHEMA",
+      "detail": "COR-C22 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-23-01",
+      "detail": "COMP-C01 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-23-02",
+      "detail": "COMP-C01 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-23-03",
+      "detail": "COMP-C01 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-23-04",
+      "detail": "COMP-C01 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-23-05",
+      "detail": "COMP-C01 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-23-SCHEMA",
+      "detail": "COMP-C01 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-24-01",
+      "detail": "COMP-C02 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-24-02",
+      "detail": "COMP-C02 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-24-03",
+      "detail": "COMP-C02 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-24-04",
+      "detail": "COMP-C02 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-24-05",
+      "detail": "COMP-C02 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-24-SCHEMA",
+      "detail": "COMP-C02 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-25-01",
+      "detail": "COMP-C03 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-25-02",
+      "detail": "COMP-C03 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-25-03",
+      "detail": "COMP-C03 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-25-04",
+      "detail": "COMP-C03 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-25-05",
+      "detail": "COMP-C03 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COR-25-SCHEMA",
+      "detail": "COMP-C03 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-01-01",
+      "detail": "DS-C01 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-01-02",
+      "detail": "DS-C01 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-01-03",
+      "detail": "DS-C01 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-01-04",
+      "detail": "DS-C01 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-01-05",
+      "detail": "DS-C01 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-01-SCHEMA",
+      "detail": "DS-C01 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-02-01",
+      "detail": "DS-C02 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-02-02",
+      "detail": "DS-C02 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-02-03",
+      "detail": "DS-C02 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-02-04",
+      "detail": "DS-C02 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-02-05",
+      "detail": "DS-C02 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-02-SCHEMA",
+      "detail": "DS-C02 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-03-01",
+      "detail": "DS-C03 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-03-02",
+      "detail": "DS-C03 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-03-03",
+      "detail": "DS-C03 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-03-04",
+      "detail": "DS-C03 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-03-05",
+      "detail": "DS-C03 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-03-SCHEMA",
+      "detail": "DS-C03 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-04-01",
+      "detail": "DS-C04 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-04-02",
+      "detail": "DS-C04 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-04-03",
+      "detail": "DS-C04 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-04-04",
+      "detail": "DS-C04 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-04-05",
+      "detail": "DS-C04 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-04-SCHEMA",
+      "detail": "DS-C04 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-05-01",
+      "detail": "DS-C05 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-05-02",
+      "detail": "DS-C05 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-05-03",
+      "detail": "DS-C05 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-05-04",
+      "detail": "DS-C05 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-05-05",
+      "detail": "DS-C05 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-05-SCHEMA",
+      "detail": "DS-C05 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-06-01",
+      "detail": "DS-C06 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-06-02",
+      "detail": "DS-C06 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-06-03",
+      "detail": "DS-C06 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-06-04",
+      "detail": "DS-C06 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-06-05",
+      "detail": "DS-C06 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-06-SCHEMA",
+      "detail": "DS-C06 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-07-01",
+      "detail": "DS-C07 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-07-02",
+      "detail": "DS-C07 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-07-03",
+      "detail": "DS-C07 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-07-04",
+      "detail": "DS-C07 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-07-05",
+      "detail": "DS-C07 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-07-SCHEMA",
+      "detail": "DS-C07 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-08-01",
+      "detail": "DS-C08 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-08-02",
+      "detail": "DS-C08 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-08-03",
+      "detail": "DS-C08 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-08-04",
+      "detail": "DS-C08 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-08-05",
+      "detail": "DS-C08 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-08-SCHEMA",
+      "detail": "DS-C08 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-09-01",
+      "detail": "DS-C09 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-09-02",
+      "detail": "DS-C09 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-09-03",
+      "detail": "DS-C09 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-09-04",
+      "detail": "DS-C09 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-09-05",
+      "detail": "DS-C09 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-09-SCHEMA",
+      "detail": "DS-C09 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-10-01",
+      "detail": "DS-C10 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-10-02",
+      "detail": "DS-C10 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-10-03",
+      "detail": "DS-C10 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-10-04",
+      "detail": "DS-C10 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-10-05",
+      "detail": "DS-C10 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-10-SCHEMA",
+      "detail": "DS-C10 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-11-01",
+      "detail": "DS-C11 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-11-02",
+      "detail": "DS-C11 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-11-03",
+      "detail": "DS-C11 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-11-04",
+      "detail": "DS-C11 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-11-05",
+      "detail": "DS-C11 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-11-SCHEMA",
+      "detail": "DS-C11 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-12-01",
+      "detail": "DS-C12 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-12-02",
+      "detail": "DS-C12 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-12-03",
+      "detail": "DS-C12 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-12-04",
+      "detail": "DS-C12 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-12-05",
+      "detail": "DS-C12 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-12-SCHEMA",
+      "detail": "DS-C12 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-13-01",
+      "detail": "DS-C13 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-13-02",
+      "detail": "DS-C13 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-13-03",
+      "detail": "DS-C13 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-13-04",
+      "detail": "DS-C13 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-13-05",
+      "detail": "DS-C13 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-13-SCHEMA",
+      "detail": "DS-C13 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-14-01",
+      "detail": "DS-C14 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-14-02",
+      "detail": "DS-C14 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-14-03",
+      "detail": "DS-C14 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-14-04",
+      "detail": "DS-C14 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-14-05",
+      "detail": "DS-C14 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-14-SCHEMA",
+      "detail": "DS-C14 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-15-01",
+      "detail": "DS-C15 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-15-02",
+      "detail": "DS-C15 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-15-03",
+      "detail": "DS-C15 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-15-04",
+      "detail": "DS-C15 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-15-05",
+      "detail": "DS-C15 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-15-SCHEMA",
+      "detail": "DS-C15 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-16-01",
+      "detail": "DS-C16 invalid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-16-02",
+      "detail": "DS-C16 expected-failed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-16-03",
+      "detail": "DS-C16 control-passed",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-16-04",
+      "detail": "DS-C16 hash",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-16-05",
+      "detail": "DS-C16 replay",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-DS-16-SCHEMA",
+      "detail": "DS-C16 schema",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-COUNT",
+      "detail": "five bounded search registries are present",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-01-EXISTS",
+      "detail": "CORRIDOR_SUPPORT_SEARCH certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-01-REPLAY",
+      "detail": "CORRIDOR_SUPPORT_SEARCH replays exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-01-COUNT",
+      "detail": "CORRIDOR_SUPPORT_SEARCH count matches registry",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-02-EXISTS",
+      "detail": "NONREDUNDANCY_TRUTH_TABLE_SEARCH certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-02-REPLAY",
+      "detail": "NONREDUNDANCY_TRUTH_TABLE_SEARCH replays exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-02-COUNT",
+      "detail": "NONREDUNDANCY_TRUTH_TABLE_SEARCH count matches registry",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-03-EXISTS",
+      "detail": "CORRIDOR_COMPOSITION_SEARCH certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-03-REPLAY",
+      "detail": "CORRIDOR_COMPOSITION_SEARCH replays exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-03-COUNT",
+      "detail": "CORRIDOR_COMPOSITION_SEARCH count matches registry",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-04-EXISTS",
+      "detail": "DIRECT_SUCCESSOR_SEARCH certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-04-REPLAY",
+      "detail": "DIRECT_SUCCESSOR_SEARCH replays exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-04-COUNT",
+      "detail": "DIRECT_SUCCESSOR_SEARCH count matches registry",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-05-EXISTS",
+      "detail": "DIRECT_PATH_COMPOSITION_SEARCH certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-05-REPLAY",
+      "detail": "DIRECT_PATH_COMPOSITION_SEARCH replays exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-05-COUNT",
+      "detail": "DIRECT_PATH_COMPOSITION_SEARCH count matches registry",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-DETACHED",
+      "detail": "bounded corridor family admits no detached pass",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-GAP",
+      "detail": "bounded corridor family admits no gapped pass",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-CHAIN-COMP",
+      "detail": "carrier-chain rule composes across the bounded family",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-OLD-RULE",
+      "detail": "old endpoint-mixedness rule fails every bounded compatible pair",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-DIRECT-DETACHED",
+      "detail": "direct criterion excludes detached shapes",
+      "status": "PASS"
+    },
+    {
+      "category": "search",
+      "check_id": "SEARCH-DIRECT-DATA",
+      "detail": "direct criterion excludes arbitrary data edges",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-COUNT",
+      "detail": "theorem registry retains 35 contracts",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-UNIQUE",
+      "detail": "theorem IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-STATUS",
+      "detail": "theorem status distribution matches phase freeze",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-01",
+      "detail": "TTH-04 status is proof-source-and-executable-certificate-landed",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-02",
+      "detail": "TTN-01 status is proof-source-and-checked-finite-countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-03",
+      "detail": "TTN-09 status is proof-source-and-checked-finite-countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-04",
+      "detail": "TTD-01 status is proof-source-and-executable-certificate-landed",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-05",
+      "detail": "TTD-02 status is finite-discriminator-evidence-landed-theorem-open",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-06",
+      "detail": "TTD-03 status is proof-source-and-executable-certificate-landed",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-07",
+      "detail": "TTH-05 status is open-scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-08",
+      "detail": "TTH-06 status is open-scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-01",
+      "detail": "TTH-01 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-02",
+      "detail": "TTH-02 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-03",
+      "detail": "TTH-03 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-04",
+      "detail": "TTH-04 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-05",
+      "detail": "TTH-05 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-06",
+      "detail": "TTH-06 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-07",
+      "detail": "TTH-07 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-08",
+      "detail": "TTH-08 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-09",
+      "detail": "TTH-09 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-10",
+      "detail": "TTH-10 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-11",
+      "detail": "TTN-01 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-12",
+      "detail": "TTN-02 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-13",
+      "detail": "TTN-03 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-14",
+      "detail": "TTN-04 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-15",
+      "detail": "TTN-05 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-16",
+      "detail": "TTN-06 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-17",
+      "detail": "TTN-07 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-18",
+      "detail": "TTN-08 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-19",
+      "detail": "TTN-09 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-20",
+      "detail": "TTN-10 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-21",
+      "detail": "TTN-11 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-22",
+      "detail": "TTN-12 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-23",
+      "detail": "TTN-13 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-24",
+      "detail": "TTN-14 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-25",
+      "detail": "TTD-01 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-26",
+      "detail": "TTD-02 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-27",
+      "detail": "TTD-03 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-28",
+      "detail": "TTF-01 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-29",
+      "detail": "TTF-02 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-30",
+      "detail": "TTF-03 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-31",
+      "detail": "TTF-04 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-32",
+      "detail": "TTF-05 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-33",
+      "detail": "TTF-06 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-34",
+      "detail": "TTF-07 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-SCHEMA-35",
+      "detail": "TTF-08 matches theorem schema",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-TOY-COUNT",
+      "detail": "toy registry retains 23 models",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-TOY-UNIQUE",
+      "detail": "toy IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-COUNT",
+      "detail": "definition registry contains 64 typed entries",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-UNIQUE",
+      "detail": "definition IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-01",
+      "detail": "definition FiniteTemporalStage is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-02",
+      "detail": "definition InterventionProjection is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-03",
+      "detail": "definition AtomicTemporalCorridorData is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-04",
+      "detail": "definition CorridorSummaryData is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-05",
+      "detail": "definition FrontierCompatible is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-06",
+      "detail": "definition AtomicDirectSuccessorData is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-07",
+      "detail": "definition DetachedOperationalPattern is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-08",
+      "detail": "definition DirectSuccessorPathData is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-COUNT",
+      "detail": "kill register retains eighteen criteria",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-01",
+      "detail": "K-FIACH-02 is closed not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-02",
+      "detail": "K-FIACH-03 is closed not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-03",
+      "detail": "K-FIACH-04 is closed not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-04",
+      "detail": "K-DIRECT-01 is closed not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-FALLBACK-LOCK",
+      "detail": "Temporal-IAPS remains locked",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-01-EXISTS",
+      "detail": "FiniteTemporalCorridor.lean exists",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-01-IMPORT",
+      "detail": "CSTTT.Corridor.FiniteTemporalCorridor is imported",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-01-PLACEHOLDER",
+      "detail": "FiniteTemporalCorridor.lean has no forbidden placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-01-DELIM",
+      "detail": "FiniteTemporalCorridor.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-02-EXISTS",
+      "detail": "Composition.lean exists",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-02-IMPORT",
+      "detail": "CSTTT.Corridor.Composition is imported",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-02-PLACEHOLDER",
+      "detail": "Composition.lean has no forbidden placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-02-DELIM",
+      "detail": "Composition.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-03-EXISTS",
+      "detail": "FiniteDirectSuccessor.lean exists",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-03-IMPORT",
+      "detail": "CSTTT.Corridor.FiniteDirectSuccessor is imported",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-03-PLACEHOLDER",
+      "detail": "FiniteDirectSuccessor.lean has no forbidden placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-03-DELIM",
+      "detail": "FiniteDirectSuccessor.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-DECL-01",
+      "detail": "Lean declaration atomicTemporalCorridorCertificateSound is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-DECL-02",
+      "detail": "Lean declaration noMixedStageExcludesAtomicCorridor is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-DECL-03",
+      "detail": "Lean declaration realizedGapExcludesAtomicCorridor is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-DECL-04",
+      "detail": "Lean declaration strictTemporalCorridorComposition is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-DECL-05",
+      "detail": "Lean declaration directSuccessorValidity is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-DECL-06",
+      "detail": "Lean declaration directSuccessorDetachedCopyExclusion is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-DECL-07",
+      "detail": "Lean declaration directSuccessorPathComposition is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean",
+      "check_id": "LEAN-CIRCULARITY",
+      "detail": "primitive circularity scan is empty (0 findings)",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-01",
+      "detail": "phase boundary contains composition-stable strict carrier-chain temporal corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-02",
+      "detail": "phase boundary contains post-withdrawal autonomy",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-03",
+      "detail": "phase boundary contains positive Temporal-FIACH",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-04",
+      "detail": "phase boundary contains Temporal-IAPS",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-05",
+      "detail": "phase boundary contains phenomenal, personal-survival, or numerical-identity conclusions",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-06",
+      "detail": "phase boundary contains CST-TT-05",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "DECISION-01",
+      "detail": "decision gate contains K-FIACH-02",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "DECISION-02",
+      "detail": "decision gate contains K-FIACH-03",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "DECISION-03",
+      "detail": "decision gate contains K-FIACH-04",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "DECISION-04",
+      "detail": "decision gate contains K-DIRECT-01",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "DECISION-05",
+      "detail": "decision gate contains Temporal-FIACH remains primary",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "DECISION-06",
+      "detail": "decision gate contains Temporal-IAPS remains locked",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMPLETE-NO-HANDOFF",
+      "detail": "completion report does not overclaim integrated handoff",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMPLETE-NO-LEAN",
+      "detail": "completion report does not overclaim Lean compilation",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMPARE-COUNT",
+      "detail": "nine comparison cases distinguish the two lineage classes",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-CMP-01",
+      "detail": "atomic overlap is not silently classified as direct",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-CMP-03",
+      "detail": "atomic direct successor is not silently classified as overlap",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-CMP-05",
+      "detail": "detached exact copy fails both lineage classes",
+      "status": "PASS"
+    },
+    {
+      "category": "manifest",
+      "check_id": "MANIFEST-EXISTS",
+      "detail": "manifest not required before final freeze",
+      "status": "SKIP"
+    }
+  ],
+  "schema_version": "1.0",
+  "skipped": 3,
+  "status": "PASS",
+  "total": 765
+}

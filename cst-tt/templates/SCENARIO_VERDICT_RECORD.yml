@@ -1,0 +1,33 @@
+
+schema_version: CST-EXP-02-v1
+record_type: scenario_verdict
+rule: >-
+  One record is required for every candidate-scenario pair. Each applicable lane
+  receives one taxonomy label; underdetermined/not-applicable labels require a basis.
+fields:
+  candidate_id: required
+  scenario_id: required; one of S01..S35
+  candidate_version: required
+  transported_object_id: required_or_not_applicable
+  bridge_id: required_or_not_applicable
+  lineage_criterion_id: required_or_not_applicable
+  st_outcome_id: required; OT-ST-*
+  sr_outcome_id: required; OT-SR-*
+  sl_outcome_id: required; OT-SL-*
+  autonomy_outcome_id: required; OT-A-*
+  recognition_outcome_id: required; OT-R-*
+  underdetermination_basis: required_when_any_lane_underdetermined
+  criterion_sensitive_scenario_fields: required
+  assumptions_spent: required; may_be_none
+  evidence_or_argument: required
+  route_sensitivity: required
+  approximation_scope: required
+  blocked_inferences: required
+  nonclaims: required
+  status: required; draft|audited|rejected
+prohibited_shortcuts:
+  - derive lineage from operational graph edge
+  - derive realization from transport
+  - derive autonomy from scheduled bridge end
+  - derive ontology from any scenario label
+  - omit a scenario because it is inconvenient

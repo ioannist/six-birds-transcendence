@@ -1,0 +1,161 @@
+{
+  "rows": [
+    {
+      "endpoint_signature": "package-autonomous",
+      "public_signature": "stable-report",
+      "structural_signature": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "toy_id": "TTM-01"
+    },
+    {
+      "endpoint_signature": "package-autonomous",
+      "public_signature": "stable-report",
+      "structural_signature": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "toy_id": "TTM-02"
+    },
+    {
+      "endpoint_signature": "temporal-successor",
+      "public_signature": "stable-report",
+      "structural_signature": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "toy_id": "TTM-03"
+    },
+    {
+      "endpoint_signature": "runtime-progress",
+      "public_signature": "stable-report",
+      "structural_signature": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toy_id": "TTM-04"
+    },
+    {
+      "endpoint_signature": "route-endpoint",
+      "public_signature": "same-boundary",
+      "structural_signature": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toy_id": "TTM-05"
+    },
+    {
+      "endpoint_signature": "route-endpoint",
+      "public_signature": "same-boundary",
+      "structural_signature": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "toy_id": "TTM-06"
+    },
+    {
+      "endpoint_signature": "two-valid-targets",
+      "public_signature": "symmetric-report",
+      "structural_signature": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "toy_id": "TTM-07"
+    },
+    {
+      "endpoint_signature": "temporal-successor",
+      "public_signature": "stable-report",
+      "structural_signature": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "toy_id": "TTM-08"
+    },
+    {
+      "endpoint_signature": "stable-state",
+      "public_signature": "stable-report",
+      "structural_signature": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toy_id": "TTM-09"
+    },
+    {
+      "endpoint_signature": "finite-prefix",
+      "public_signature": "stable-report",
+      "structural_signature": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toy_id": "TTM-10"
+    },
+    {
+      "endpoint_signature": "package-candidate",
+      "public_signature": "all-local-pass",
+      "structural_signature": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toy_id": "TTM-11"
+    },
+    {
+      "endpoint_signature": "public-match",
+      "public_signature": "stable-report",
+      "structural_signature": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toy_id": "TTM-12"
+    },
+    {
+      "endpoint_signature": "near-match",
+      "public_signature": "small-residual",
+      "structural_signature": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "toy_id": "TTM-13"
+    }
+  ],
+  "schema_version": "CST-TT-06"
+}

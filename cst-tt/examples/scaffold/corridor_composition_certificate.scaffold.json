@@ -1,0 +1,13 @@
+{
+  "schema_version": "CST-TT-04",
+  "certificate_id": "composition-placeholder",
+  "left_model_ref": "left-placeholder",
+  "right_model_ref": "right-placeholder",
+  "composite_model_ref": "composite-placeholder",
+  "source_hashes": {"left": "0000000000000000000000000000000000000000000000000000000000000000", "right": "0000000000000000000000000000000000000000000000000000000000000000", "composite": "0000000000000000000000000000000000000000000000000000000000000000"},
+  "result_status": "not-evaluated",
+  "claim_lanes": ["S-L"],
+  "claim_ceiling": "structural temporal-lineage criterion only",
+  "audit": {"composition_valid": false, "old_endpoint_mixed_rule_satisfied": false, "chain_rule_satisfied": false, "failed_obligations": ["not-evaluated"]},
+  "checker": {}
+}

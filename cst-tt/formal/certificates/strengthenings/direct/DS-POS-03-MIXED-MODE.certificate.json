@@ -1,0 +1,58 @@
+{
+  "audit": {
+    "all_stages_temporally_realized": true,
+    "detached_operational_pattern": false,
+    "direct_dependency_declared": true,
+    "direct_successor_valid": true,
+    "distinct_carriers": true,
+    "edge_counterfactually_necessary": true,
+    "edge_kind_valid": true,
+    "failed_obligations": [],
+    "forbidden_verdict_fields_absent": true,
+    "no_alternative_temporal_parent": true,
+    "no_storage_mediator": true,
+    "not_replayable_archive": true,
+    "order_step_valid": true,
+    "ownership_interface_valid": true,
+    "payload_components_complete": true,
+    "payload_hashes_match": true,
+    "predictive_step_valid": true,
+    "progress_step_valid": true,
+    "route_discipline_valid": true,
+    "single_use_temporal_token": true,
+    "source_and_target_support_valid": true,
+    "source_event_is_last": true,
+    "stage_adjacency": true,
+    "stages_well_formed": true,
+    "strict_record_step_valid": true,
+    "target_event_is_first": true,
+    "tick_step_valid": true
+  },
+  "certificate_id": "DS-POS-03-MIXED-MODE",
+  "checker": {
+    "checked_at_phase": "CST-TT-07A",
+    "function": "audit_direct_successor",
+    "module": "cst_tt.corridor",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "separately named finite direct-successor evidence only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "model_ref": "models/strengthenings/direct/DS-POS-03-MIXED-MODE.model.json",
+  "model_sha256": "35cb174ad5c16de7bdf011a538f1b3ea4462b78869b4ee5cc7f44355b4513255",
+  "result_status": "checked-finite-direct-successor-aligned-to-overlap-frontier",
+  "schema_version": "CST-TT-07A",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.DirectSuccessorTheory.directSuccessorValidity",
+      "CSTTT.StrengtheningTheory.directEmbedsGeneralized"
+    ],
+    "theorem_ids": [
+      "TTD-01",
+      "TTD-02",
+      "TTS-01"
+    ]
+  }
+}

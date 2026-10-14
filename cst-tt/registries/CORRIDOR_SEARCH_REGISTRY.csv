@@ -1,0 +1,6 @@
+search_id,candidates_examined,principal_result,certificate_ref,usage_boundary
+CORRIDOR_SUPPORT_SEARCH,12384,zero detached passes; zero gapped passes; nonuniversal,formal/certificates/search/CORRIDOR_SUPPORT_SEARCH.json,bounded support-pattern family
+NONREDUNDANCY_TRUTH_TABLE_SEARCH,16,four jointly nonredundant Boolean update tables,formal/certificates/search/NONREDUNDANCY_TRUTH_TABLE_SEARCH.json,two-input Boolean intervention family
+CORRIDOR_COMPOSITION_SEARCH,16,carrier-chain composition succeeds; endpoint-mixedness fails,formal/certificates/search/CORRIDOR_COMPOSITION_SEARCH.json,declared two-leg summary family
+DIRECT_SUCCESSOR_SEARCH,2048,one strict shape; zero detached or arbitrary-data passes,formal/certificates/search/DIRECT_SUCCESSOR_SEARCH.json,eleven-field Boolean operational family
+DIRECT_PATH_COMPOSITION_SEARCH,27,all compatible paths compose without creating an atomic endpoint edge,formal/certificates/search/DIRECT_PATH_COMPOSITION_SEARCH.json,three-tick bounded path family

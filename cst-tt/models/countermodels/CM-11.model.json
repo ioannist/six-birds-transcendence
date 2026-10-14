@@ -1,0 +1,42 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-L",
+    "O"
+  ],
+  "conclusion_failure_checks": {
+    "no_symmetry_invariant_unique_selector": true
+  },
+  "countermodel_id": "CM-11",
+  "derived_facts": {
+    "relation_valued_branch_count": 2
+  },
+  "family": "symmetric-fork",
+  "model": {
+    "fixed_points": [],
+    "invariant_singleton_selector_exists": false,
+    "swap": [
+      1,
+      0
+    ],
+    "swap_is_involution": true,
+    "symmetric_valid_fork": true,
+    "target_count": 2,
+    "valid_targets": [
+      0,
+      1
+    ]
+  },
+  "name": "Exact symmetric fork without an invariant unique selector",
+  "premise_checks": {
+    "exact_fixed_point_free_symmetry": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "A fixed-point-free target-swap symmetry supports relation-valued branches but no invariant singleton choice.",
+  "size_measure": "(target_count)",
+  "size_vector": [
+    2
+  ],
+  "target_no_go_id": "TTN-11",
+  "toy_model_ref": "TTM-07"
+}

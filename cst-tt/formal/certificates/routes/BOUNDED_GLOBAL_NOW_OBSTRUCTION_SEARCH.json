@@ -1,0 +1,9 @@
+{
+  "candidate_global_functions_examined": 4,
+  "claim_ceiling": "bounded corroboration of the generic proof source only",
+  "obstructed_instances": 2,
+  "schema_version": "CST-TT-03",
+  "search_family": "two-route-one-boundary-global-now-factorization",
+  "status": "PASS",
+  "violations": []
+}

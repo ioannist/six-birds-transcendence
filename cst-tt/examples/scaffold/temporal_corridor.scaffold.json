@@ -1,0 +1,61 @@
+{
+  "active_support": [
+    {
+      "carriers": [
+        {
+          "code": 0,
+          "label": "source-carrier"
+        }
+      ],
+      "stage": 0
+    },
+    {
+      "carriers": [
+        {
+          "code": 0,
+          "label": "source-carrier"
+        },
+        {
+          "code": 1,
+          "label": "target-carrier"
+        }
+      ],
+      "stage": 1
+    },
+    {
+      "carriers": [
+        {
+          "code": 1,
+          "label": "target-carrier"
+        }
+      ],
+      "stage": 2
+    }
+  ],
+  "final_stage": 2,
+  "later_audit_stage": 2,
+  "mixed_stage": 1,
+  "route_status": "unresolved",
+  "schema_version": "CST-TT-00",
+  "source": {
+    "code": 0,
+    "label": "source-carrier"
+  },
+  "source_removal_effect": "not-evaluated",
+  "takeover_stage": 2,
+  "target": {
+    "code": 1,
+    "label": "target-carrier"
+  },
+  "target_removal_effect": "not-evaluated",
+  "temporal_status_by_stage": [
+    "not-evaluated",
+    "not-evaluated",
+    "not-evaluated"
+  ],
+  "transport_status_by_stage": [
+    "not-evaluated",
+    "not-evaluated",
+    "not-evaluated"
+  ]
+}

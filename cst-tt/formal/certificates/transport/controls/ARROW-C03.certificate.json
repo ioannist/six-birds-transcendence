@@ -1,0 +1,23 @@
+{
+  "artifact_ref": "models/transport/controls/ARROW-C03.model.json",
+  "artifact_sha256": "4b8e66703b03d268a43175cb78d65e8f0b13dbacbd5b2e8781b23f3faf21ae56",
+  "baseline_ref": "models/arrow/ARROW-POS-01.model.json",
+  "checker": {
+    "function": "audit_record_arrow",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5",
+    "valid_result": false
+  },
+  "claim_ceiling": "finite structural obligation boundary only",
+  "control_id": "ARROW-C03",
+  "control_kind": "record-arrow",
+  "expected_primary_failure": "map-total",
+  "observed_failures": [
+    "map-total",
+    "nonstrict-monotone",
+    "strict-progress-preserved",
+    "target-has-strict-arrow"
+  ],
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-03"
+}

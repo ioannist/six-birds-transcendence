@@ -1,0 +1,34 @@
+{
+  "schema_version": "CST-TT-02",
+  "certificate_id": "staged-package-scaffold",
+  "assembly_ref": "not-instantiated",
+  "assembly_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "source_model_ref": "not-instantiated",
+  "source_model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "target_model_ref": "not-instantiated",
+  "target_model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "scaffold-only",
+  "claim_lanes": ["S-T", "S-R"],
+  "claim_ceiling": "finite typed clause preservation and target assembly only",
+  "theorem_evidence": {},
+  "audit": {
+    "source_package_valid": false,
+    "target_package_valid": false,
+    "carriers_distinct": false,
+    "exactly_eight_clause_maps": false,
+    "maps_separately_typed": false,
+    "coordinate_maps_total": false,
+    "value_maps_sound": false,
+    "hard_gates_never_averaged": false,
+    "target_global_assembled": false,
+    "forbidden_verdict_fields_absent": true,
+    "staged_assembly_valid": false,
+    "failed_obligations": []
+  },
+  "checker": {
+    "module": "cst_tt.package_gluing",
+    "function": "audit_staged_assembly",
+    "python_version": "not-run",
+    "checked_at_phase": "CST-TT-02"
+  }
+}

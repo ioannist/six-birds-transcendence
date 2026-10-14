@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_register_bridge_composition_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_register_bridge_composition_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_register_bridge_composition_transcription.log",
+  "log_sha256": "9aab7dbfeeb967178c961110ee2aced0fde4ea45c8981cf79525f63536740ce0",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:50+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted second instruction drift\nCAUGHT planted positive cell drift\nCAUGHT planted unused-register cut drift\nPASS typed raw substitution: actual consumed/unused/eager/changed readouts; all-partial equation and shared-frame bridge positive kernel-checked\nScope: immutable shared assignment and exact middle raw frame; identity continuation is not a new physical hop"
+}

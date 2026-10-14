@@ -1,0 +1,56 @@
+{
+  "audit": {
+    "all_stages_temporally_realized": true,
+    "detached_operational_pattern": false,
+    "direct_dependency_declared": true,
+    "direct_successor_valid": false,
+    "distinct_carriers": false,
+    "edge_counterfactually_necessary": true,
+    "edge_kind_valid": true,
+    "failed_obligations": [
+      "distinct-carriers",
+      "target-event-is-first",
+      "source-and-target-support-valid",
+      "ownership-interface-valid"
+    ],
+    "forbidden_verdict_fields_absent": true,
+    "no_alternative_temporal_parent": true,
+    "no_storage_mediator": true,
+    "not_replayable_archive": true,
+    "order_step_valid": true,
+    "ownership_interface_valid": false,
+    "payload_components_complete": true,
+    "payload_hashes_match": true,
+    "predictive_step_valid": true,
+    "progress_step_valid": true,
+    "route_discipline_valid": true,
+    "single_use_temporal_token": true,
+    "source_and_target_support_valid": false,
+    "source_event_is_last": true,
+    "stage_adjacency": true,
+    "stages_well_formed": true,
+    "strict_record_step_valid": true,
+    "target_event_is_first": false,
+    "tick_step_valid": true
+  },
+  "certificate_id": "DS-C14",
+  "checker": {
+    "checked_at_phase": "CST-TT-04",
+    "function": "audit_direct_successor",
+    "module": "cst_tt.corridor",
+    "python_version": "3.13.5"
+  },
+  "control_family": "direct-successor",
+  "control_passed": true,
+  "expected_failed_obligation": "distinct-carriers",
+  "model_ref": "models/direct_successor/controls/DS-C14.model.json",
+  "model_sha256": "18e1dfb2df59b2bf923e08dfdceb283cea2fcc3c6cf7610869222f47e3942a47",
+  "observed_failed_obligations": [
+    "distinct-carriers",
+    "target-event-is-first",
+    "source-and-target-support-valid",
+    "ownership-interface-valid"
+  ],
+  "result_status": "checked-finite-negative-control",
+  "schema_version": "CST-TT-04"
+}

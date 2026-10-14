@@ -1,0 +1,457 @@
+{
+  "base_commit": "1884214d1bae82442f37fc9e6b013e222da89b1b",
+  "base_resolved": "1884214d1bae82442f37fc9e6b013e222da89b1b",
+  "base_tag": "CST-TT-04-v1",
+  "builder_returncode": 0,
+  "byte_identical_surface_count": 88,
+  "generated_surface_count": 88,
+  "mismatches": [],
+  "phase": "CST-TT-05",
+  "project": "CST-TT",
+  "pytest_returncode": 0,
+  "schema_version": "1.0",
+  "status": "PASS",
+  "surfaces": [
+    {
+      "path": "CHANGELOG.md",
+      "reproduced": true,
+      "sha256": "10a8db11acfaaf972df7928068b4309725f7f7153fad23a559a871990aef2861"
+    },
+    {
+      "path": "README.md",
+      "reproduced": true,
+      "sha256": "a5f7dafb7d86895a4b822ba8c780e412223816a59efb948f407aaf638066ccb2"
+    },
+    {
+      "path": "RESTORE_AND_VERIFY.md",
+      "reproduced": true,
+      "sha256": "6b574e7cd6879a6963b6998758318fdbae9a21f2abc5c250ab36793c2a3f6938"
+    },
+    {
+      "path": "STATE.md",
+      "reproduced": true,
+      "sha256": "91fd7b8dcd7d64049656228609156ca03bdeb8f17619c563f51cbc8fec7c9aaf"
+    },
+    {
+      "path": "STATUS.md",
+      "reproduced": true,
+      "sha256": "6e6f4773510233e8949a63c8f0421f581f9e4c50116ba4e1c762c795f2d07ba7"
+    },
+    {
+      "path": "changelog/CST-TT-05.md",
+      "reproduced": true,
+      "sha256": "20e473196e140955c27fe04ecf3f3eb4f9a2032f0b3c050c64a3ad8d12233f87"
+    },
+    {
+      "path": "config/REPRODUCIBILITY.json",
+      "reproduced": true,
+      "sha256": "e5fc8df4f82b67fa6f9d07ce8a5025c6fb09cab047133b40d678f95c38455c96"
+    },
+    {
+      "path": "docs/AUTONOMY_CONTROL_SUITE.md",
+      "reproduced": true,
+      "sha256": "293de4c8ba2ec1344635b5bd49d9f2350d0b3dd5ff4bf2317fd0ad80b3ae110b"
+    },
+    {
+      "path": "docs/CST-TT-05_DECISION_GATE.md",
+      "reproduced": true,
+      "sha256": "ab39842a6dba1cd3cdf2f8cfb30a68995db4354fda6f6c6bf2e78be8fec150b3"
+    },
+    {
+      "path": "docs/FINITE_HORIZON_LIVENESS_BOUNDARY.md",
+      "reproduced": true,
+      "sha256": "e288e4c319571150f8a129e5396c6f46076bfce4d094dfdcf7002fcc5250d280"
+    },
+    {
+      "path": "docs/HANDOFF_ALIGNED_PACKAGE.md",
+      "reproduced": true,
+      "sha256": "0a4506f531d3ca7d6a4ec79e143f78927d6a53ff39f75879969d6dc94efac843"
+    },
+    {
+      "path": "docs/INTEGRATED_TEMPORAL_FIACH_THEOREM.md",
+      "reproduced": true,
+      "sha256": "7b850f83094493398479da6bfdee8c7612e5298246ecc3214746d27909584c61"
+    },
+    {
+      "path": "docs/LANE_INDEPENDENCE_AUDIT.md",
+      "reproduced": true,
+      "sha256": "182e17ded84008797236ccb35b85f9b53701c0a6cd947a2b48288fa208acd01e"
+    },
+    {
+      "path": "docs/PHASE_BOUNDARY.md",
+      "reproduced": true,
+      "sha256": "906baf141fe9d6994abc521cdcc3f82ccfa43dd91e310e9be210c73b9c1b9612"
+    },
+    {
+      "path": "docs/POST_WITHDRAWAL_AUTONOMY.md",
+      "reproduced": true,
+      "sha256": "747cd781a9daa6f3aa6d42643ac85a8273c17e9b87ccf52c8bcd6bb16d9d42be"
+    },
+    {
+      "path": "docs/RESTORE_AND_BUILD.md",
+      "reproduced": true,
+      "sha256": "6b574e7cd6879a6963b6998758318fdbae9a21f2abc5c250ab36793c2a3f6938"
+    },
+    {
+      "path": "docs/THEOREM_AND_TOY_REGISTRY.md",
+      "reproduced": true,
+      "sha256": "409ce7cb04b44a7441d54f805ed4c302e4a95002ebe2f940225d1110f1dae945"
+    },
+    {
+      "path": "formal/README.md",
+      "reproduced": true,
+      "sha256": "a33080f7d6cd40f2ca17aaa5c67743bf454de00a0842c51b8978e0c26c979704"
+    },
+    {
+      "path": "formal/TOOLCHAIN_STATUS.json",
+      "reproduced": true,
+      "sha256": "5b98fb72a802ad02383ed0a9b9b9479fa498932682213e102d624852db5004cd"
+    },
+    {
+      "path": "formal/certificates/autonomy/AUT-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "832cfe9757321173fd685fa00fa627e25f4f794870a353301717428697b22a7b"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C01.certificate.json",
+      "reproduced": true,
+      "sha256": "00f293aeabcd515e41a964da56c90471a134d1dc860eefdecb9ec33eb081d113"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C02.certificate.json",
+      "reproduced": true,
+      "sha256": "c53d6efab629fadc58f9c6ed56287d320eb3b68e69612bdfd2abe63ccca0a042"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C03.certificate.json",
+      "reproduced": true,
+      "sha256": "c248862ffa6007fd4329608b1fe12ad79fa386060aa572d8ca5004bd3353eb11"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C04.certificate.json",
+      "reproduced": true,
+      "sha256": "96e1b643091d5aacfa2f02bcd2acc2edbd3b32c1952450e27b983a7dfcced38d"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C05.certificate.json",
+      "reproduced": true,
+      "sha256": "7b19449d12affa7b803da87f048ad8e12a66c7e1b05df213906123f3c0641fb8"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C06.certificate.json",
+      "reproduced": true,
+      "sha256": "c4b4da5ea6de3db92344db9149d5a2bb7f28956f4aace640fbaa856d8483b978"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C07.certificate.json",
+      "reproduced": true,
+      "sha256": "aed1030b806178d349f3f6a2f5be8c49829ab21a6ba09aaa6c0a6f09027944bd"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C08.certificate.json",
+      "reproduced": true,
+      "sha256": "334c359e8f5eb9f764e16a37804f40eb767cf95d736a51b5b0894cb08900d792"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C09.certificate.json",
+      "reproduced": true,
+      "sha256": "ef49b8f8f8dfa0759e6e61a0040015de650e655c3c0d7f9f66fb360920d9929e"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C10.certificate.json",
+      "reproduced": true,
+      "sha256": "166c2cb828e06af0661c0c344d7302e32bb5b8fb6543cbcfa4f8fd6e6acbe72f"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C11.certificate.json",
+      "reproduced": true,
+      "sha256": "365381e14be1b85a83fb750cf05a1b2e625f456278904766458b8c5e6708f891"
+    },
+    {
+      "path": "formal/certificates/autonomy/controls/AUT-C12.certificate.json",
+      "reproduced": true,
+      "sha256": "9ae568df4302a0174c307ce5f5a5ed3c0dde8562583612a0498fed358eb11636"
+    },
+    {
+      "path": "formal/certificates/fiach/FIACH-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "81407d9cc0c30a534cd9a39b5e1756ca0fbb3cb53243a10ffe1f2be5c1fd7c06"
+    },
+    {
+      "path": "formal/certificates/fiach/controls/FIACH-C01.certificate.json",
+      "reproduced": true,
+      "sha256": "81fe00c8330c89b0806dc127e469b8939947d238aa82dbd346ac331e476b8e14"
+    },
+    {
+      "path": "formal/certificates/fiach/controls/FIACH-C02.certificate.json",
+      "reproduced": true,
+      "sha256": "051e2854b2aace979fa69b0a44a2338b2acf55feeec0a734799c3bde86464c83"
+    },
+    {
+      "path": "formal/certificates/fiach/controls/FIACH-C03.certificate.json",
+      "reproduced": true,
+      "sha256": "c43010bca5dd220ba3a52d7f781a4e27e6629d893835c241559ab1c1eec7ee47"
+    },
+    {
+      "path": "formal/certificates/fiach/controls/FIACH-C04.certificate.json",
+      "reproduced": true,
+      "sha256": "c27d78f3999763b89257588cb2bfd7312f452a6206cffa252c53ac5fcbd6efa4"
+    },
+    {
+      "path": "formal/certificates/fiach/controls/FIACH-C05.certificate.json",
+      "reproduced": true,
+      "sha256": "de6f881a768fd7f7508af85e8bc30002d1c9323b5059c972af2ec8a8b5d83bdb"
+    },
+    {
+      "path": "formal/certificates/fiach/controls/FIACH-C06.certificate.json",
+      "reproduced": true,
+      "sha256": "edf2135eae365efb3744a219eed5d42d1d62f7e71326ac34a85088b8f84c2acf"
+    },
+    {
+      "path": "formal/certificates/packages/PKG-POS-03-FIACH-SOURCE.certificate.json",
+      "reproduced": true,
+      "sha256": "47b0210a9dfcd667f3400906a2b4e2232770e1d2522fe8f1f6d3eb98d08de7bb"
+    },
+    {
+      "path": "formal/certificates/packages/PKG-POS-04-FIACH-TARGET.certificate.json",
+      "reproduced": true,
+      "sha256": "eb02e10280c1b0ed2725aa6e76205b404aa96e94f3109fcc1f2fa65a12f041f4"
+    },
+    {
+      "path": "formal/certificates/packages/STG-POS-02-FIACH.certificate.json",
+      "reproduced": true,
+      "sha256": "2952d9a4e097048cb4bb6c05b60604728dfa7ec672206cde505c1d5ac48e336b"
+    },
+    {
+      "path": "formal/certificates/search/AUTONOMY_FINITE_HORIZON_EXHAUSTION.json",
+      "reproduced": true,
+      "sha256": "bf581d719461951c1e98d752b19afced544d11143e98c49130b15f0b57a449fe"
+    },
+    {
+      "path": "formal/certificates/search/AUTONOMY_INVARIANT_EXHAUSTION.json",
+      "reproduced": true,
+      "sha256": "c40e1665cd68bfb826a235e2d080117e61ce9c57b385f7a85cb6e4b4f6c8f974"
+    },
+    {
+      "path": "formal/certificates/search/FIACH_LANE_TRUTH_TABLE.json",
+      "reproduced": true,
+      "sha256": "78a3af54da7540bd1c44f3105f3c57d2cac7793deb117d73b0bb0fd6a52d8362"
+    },
+    {
+      "path": "manifests/COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "cb409c747931b40a787ce1501175354d51cd59085ebb9c442158f164f27ca285"
+    },
+    {
+      "path": "manifests/CST-TT-05_COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "cb409c747931b40a787ce1501175354d51cd59085ebb9c442158f164f27ca285"
+    },
+    {
+      "path": "manifests/CST-TT-05_MODEL_CERTIFICATE_DELTA.csv",
+      "reproduced": true,
+      "sha256": "a6f965957543db34d536b0b453ff941efceefb48bf5d1fdd844abc92b48a7479"
+    },
+    {
+      "path": "manifests/CST-TT-05_PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "dded6c0a764b19e480da92da011fe01f03b17ce85ae14d3500a0660f955663af"
+    },
+    {
+      "path": "manifests/CST-TT-05_THEOREM_STATUS_DELTA.csv",
+      "reproduced": true,
+      "sha256": "a35ccf75fdea40200f3f869e75ba82702093e815aedcd369f1be9acd5d5171c3"
+    },
+    {
+      "path": "manifests/PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "dded6c0a764b19e480da92da011fe01f03b17ce85ae14d3500a0660f955663af"
+    },
+    {
+      "path": "models/autonomy/AUT-POS-01.model.json",
+      "reproduced": true,
+      "sha256": "5236175f0c284a31ff608f2d233d8db3605e0f9cc28137428cb601ea7e29c1e7"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C01.model.json",
+      "reproduced": true,
+      "sha256": "31f18a502ce76c12a5f6f7e17ccad612902561bf2e85fac0e1d1d39affda6055"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C02.model.json",
+      "reproduced": true,
+      "sha256": "eebbb13836b6dc8826baf9f79bb27437c3ddba7fb98ff83b67318e57b8c2ce9c"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C03.model.json",
+      "reproduced": true,
+      "sha256": "0cf759e33eec0971337e7839da34d6e5cc1686c4ab3fce52890c1ddad78eb906"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C04.model.json",
+      "reproduced": true,
+      "sha256": "183bd87a4458e7292a280fa50b653b0cfcd5c5176040276316a7124b82b4bb25"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C05.model.json",
+      "reproduced": true,
+      "sha256": "b49471723fb80f168a61b7c7cefe777b57576b2711b1afb3ba116a292c003285"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C06.model.json",
+      "reproduced": true,
+      "sha256": "2984c978f24f218e4abbdc149d37578b4ac32fbc348d7b51afb7be306b1ae68f"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C07.model.json",
+      "reproduced": true,
+      "sha256": "e7b82a98e92feaa98c9bf452a31dc25fb292ecfe3fdf4ad26798c13f99331789"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C08.model.json",
+      "reproduced": true,
+      "sha256": "026363021c2edc2355c52f64772a225805755164c13460379a0dd50a429cfe20"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C09.model.json",
+      "reproduced": true,
+      "sha256": "48646ef5fbb92ea33b98b24fa61e15abb1b7e691a2d38556398d6dd0a0f0cd41"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C10.model.json",
+      "reproduced": true,
+      "sha256": "d2daf42c9ff45e2262f9b64db7220a675f0e2d995700dc0d95a543bc7cc45e14"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C11.model.json",
+      "reproduced": true,
+      "sha256": "aac83e105581ec361ccaaf1c3367f01f90220ed61ac61f934797f1f105550876"
+    },
+    {
+      "path": "models/autonomy/controls/AUT-C12.model.json",
+      "reproduced": true,
+      "sha256": "1da005f10ffcfc6518ce7ede1c0ded09e79556497729b5df61b1bd6716e95028"
+    },
+    {
+      "path": "models/fiach/FIACH-POS-01.model.json",
+      "reproduced": true,
+      "sha256": "a3bdfddd5e8d454439cd7fbed8e89f87b90552f114c03d15b10f0a3fe540673d"
+    },
+    {
+      "path": "models/fiach/controls/FIACH-C01.model.json",
+      "reproduced": true,
+      "sha256": "0beb663a27427f0fb9fc97e43b0f454375bff32859b7db0efbece48e40c1c9aa"
+    },
+    {
+      "path": "models/fiach/controls/FIACH-C02.model.json",
+      "reproduced": true,
+      "sha256": "4f64de9499fd3ea9fa7999112821d2fab61310f1118a3ea92981d5001886b838"
+    },
+    {
+      "path": "models/fiach/controls/FIACH-C03.model.json",
+      "reproduced": true,
+      "sha256": "0b394b156522916b705717b8f53511058fb6a3219dae06e2eadeea0b1b5a7e7f"
+    },
+    {
+      "path": "models/fiach/controls/FIACH-C04.model.json",
+      "reproduced": true,
+      "sha256": "91f44368e8774bc7246a4a0b5c35ad1772587b86544149523ab0fdab89f95131"
+    },
+    {
+      "path": "models/fiach/controls/FIACH-C05.model.json",
+      "reproduced": true,
+      "sha256": "1f2605b2a9622ecb7b2c3a846dee96d22b31b90493a7183813f348581a53d60e"
+    },
+    {
+      "path": "models/fiach/controls/FIACH-C06.model.json",
+      "reproduced": true,
+      "sha256": "94be2eba073a8a097a65466819ee05d135d186aeb63dc23b75c0af765fce88be"
+    },
+    {
+      "path": "models/packages/PKG-POS-03-FIACH-SOURCE.model.json",
+      "reproduced": true,
+      "sha256": "056e565af9eb151095013dd1d32607aec3a75bd16b85ce613de35a3f035ff949"
+    },
+    {
+      "path": "models/packages/PKG-POS-04-FIACH-TARGET.model.json",
+      "reproduced": true,
+      "sha256": "ca23bf7c1e4b8f62fad351cdc3466f4fd6c194565bc5963c325174239d2a3ce6"
+    },
+    {
+      "path": "models/packages/STG-POS-02-FIACH.assembly.json",
+      "reproduced": true,
+      "sha256": "21b33cb2a6a2d3b75979c248a2fa2093693e3a4af3f2f1b06ab263c541ec88ea"
+    },
+    {
+      "path": "registries/AUTONOMY_CONTROL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "ee0df5e5f1bed61de40ad1832f1a3bc0c52995a338798f64c029fa7cf5acd697"
+    },
+    {
+      "path": "registries/AUTONOMY_SEARCH_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "406fa8a56fe8eee02bbb4c1c7796034c2aeff151be94927ba0b8323c817bd8ad"
+    },
+    {
+      "path": "registries/AUTONOMY_WITNESS_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "d307259db22fb25d6e6a4e79c569d5b08b880aa72747885fe1e50ab3689387e7"
+    },
+    {
+      "path": "registries/CERTIFICATE_SCHEMA_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "340f3c17b7509502ff049c4adc838ec6581036af24a809459241356f235380c5"
+    },
+    {
+      "path": "registries/DEFINITION_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "8e862e1cbd491e5153c4700bc651589f264b5853291c9dfb34cd55c520238b0d"
+    },
+    {
+      "path": "registries/DEPENDENCY_EDGES.csv",
+      "reproduced": true,
+      "sha256": "0b320681e54d7cd78bf1e6882cd0c01e0f9f62e1b17b1cf6a4db43b055f2aaa3"
+    },
+    {
+      "path": "registries/FIACH_LANE_CONTROL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "b888cdbb11d4cc4c43113a6142d2100f3e147feae4ca44afc07280535ab487d0"
+    },
+    {
+      "path": "registries/FIACH_WITNESS_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "0e5e8d444a224511fd3abcd0d3f5358e3d886cb4f94b368f7b24542046996a78"
+    },
+    {
+      "path": "registries/HANDOFF_ALIGNED_PACKAGE_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "ade960bc719c6b295d4382789c035feaa5836bac16eaf50923190e2352232e8d"
+    },
+    {
+      "path": "registries/KILL_CRITERIA.csv",
+      "reproduced": true,
+      "sha256": "8fe39a63aac5fb19dd73332edc3a4d9e2e33c9bb24b134e2b3965f8ea6baf9f5"
+    },
+    {
+      "path": "registries/PACKAGE_WITNESS_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "05eec749da62beb73918c486a3efb63da1e9443e1af8371a3a3f20438a162044"
+    },
+    {
+      "path": "registries/PROJECT_REGISTRY.json",
+      "reproduced": true,
+      "sha256": "0ac88157df2c3e3684d2b2442e2afc46c17ee511f87eb3c439ce4ab3cda40639"
+    },
+    {
+      "path": "registries/THEOREM_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "2bc65aa92487fc4522ea7bd72742bf778a714b9c8cd130d00ef2970932fe1672"
+    },
+    {
+      "path": "registries/TOY_MODEL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "965c4c85e85cf357f1b683bdd06bd922627962404f338f369daf4e0738ac0b46"
+    }
+  ],
+  "validator_returncode": 0
+}

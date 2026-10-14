@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "scripts/selftest_evaluate_fiach_pos04.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "selftest_evaluate_fiach_pos04",
+  "kind": "selftest",
+  "log_path": "lean/.validate-logs/W19a/selftest_evaluate_fiach_pos04.log",
+  "log_sha256": "acc6e330ec9c9138dd1b1a032963c2efa2dfa5b2f5d56a17275b7e1338ad4c1e",
+  "metrics": {
+    "failed": 0,
+    "passed": 37
+  },
+  "recorded_at": "2026-10-13T11:35:19+00:00",
+  "status": "pass",
+  "summary": "| T1 provenance hashes | corrupt pinned P span hash | CAUGHT |\n| Tagged canonical P and M from raw actions | change target canonical action row | CAUGHT |\n| C1 C/U, E\u2082\u03b5, fixed law, retention, TV, defects | change target canonical action row | CAUGHT |\n| C1 uniqueness for all normalized fixed laws | replace raw published P by identity matrix | CAUGHT |\n| C1 agreement with Lean theorems and axioms | change target canonical action row | CAUGHT |\n| C2 split and pinned witness | make public readout state-identifying | CAUGHT |\n| C3 recursive action/exit profile and terminal M | make initial public partition discrete | CAUGHT |\n| C4 full current family and hidden connector | add canonical M public reader | CAUGHT |\n| C5 forward/reverse products, credit and anchors | externalize native target protocol | CAUGHT |\n| C6 full interface and all-word fixed point | change merged member tick response | CAUGHT |\n| C6 funded order/tick/record and owner | unset first event strict_step | CAUGHT |\n| C7 per-assemblage reassembly and strict refinement | equalize both raw couplings | CAUGHT |\n| C7 receiver pre-exit jointPairing display | remove source presence | CAUGHT |\n| C7 staged joint relation preservation | change target coupling and reassembly | CAUGHT |\n| C8 priced ledger, gfp and canonical P | remove target recharge | CAUGHT |\n| T1 histories, strict edge and bridge laws | override one representative endpoint | CAUGHT |\n| Source-absent activation | remove source input from positive receiver | CAUGHT |\n| Raw-coordinate receiver and content counterfactuals | replace content by preloaded copy | CAUGHT |\n| Mixed corridor, no gap and support interventions | unrealize mix_1 | CAUGHT |\n| Funded target step and persistent route readout | delete target register write | CAUGHT |\n| Typed corridor/receiver endpoint link | override representative target endpoint | CAUGHT |\n| 160 state-indexed package coordinates | delete one target clause coordinate | CAUGHT |\n| Eight staged maps and raw clause equations | alter one target C5 raw protocol | CAUGHT |\n| Source-removed target-only C8 autonomy | keep source available after withdrawal | CAUGHT |\n| TTH-06 surrogate assembly | remove source input | CAUGHT |\n| References, distributions, reassembly and events | give an event an unknown source stage | CAUGHT |\n| Unchanged JSON-Pointer intervention semantics | replace a nonexistent raw path | CAUGHT |\n| Positive prediction coverage and gates | remove source input | CAUGHT |\n| Mutation targets and outcome categories | undo source half of uncoupled control | CAUGHT |\n| Exact prediction-list and mutation coverage | delete one declared intervention | CAUGHT |\n| C7 realized mixed event | unrealize mix_1 and mix_2 | CAUGHT |\n| C7 funded receiver activation | remove receiver funding | CAUGHT |\n| C6 realized path | unrealize mix_1 | CAUGHT |\n| C6 realized order | reorder realized stage list | CAUGHT |\n| C6 route context availability | delete route_b writer | CAUGHT |\n| C5 anchor history availability | make h_rep_a a non-support path | CAUGHT |\n| C7 branch history availability | make h_split a non-support path | CAUGHT |\n"
+}

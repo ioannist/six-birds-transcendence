@@ -1,0 +1,180 @@
+{
+  "audit": {
+    "certificate_id": "TOY-SUITE-PRIMARY-01",
+    "claim_ceilings_present": true,
+    "every_evidence_contract_passes": true,
+    "every_toy_crosslinked_to_theorem": true,
+    "evidence_files_exist": true,
+    "evidence_hashes_valid": true,
+    "exact_required_coverage": true,
+    "failed_obligations": [],
+    "passing_toy_count": 13,
+    "positive_negative_boundary_roles_present": true,
+    "reproduction_commands_present": true,
+    "toy_count": 13,
+    "toy_suite_closed": true,
+    "unique_toy_ids": true
+  },
+  "certificate_id": "TOY-SUITE-PRIMARY-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_toy_suite",
+    "module": "cst_tt.toy_suite",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "closure of the frozen thirteen-model exact finite primary/common toy suite",
+  "entries": [
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/composition/fiach/FIACH-COMP-OUTER.certificate.json",
+      "evidence_sha256": "0d50e31963f999e84652da8d8700ac29e34e771cd58e36cf7e35bafed5e8d543",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "positive",
+      "theorem_ids": [
+        "TTH-06",
+        "TTH-07"
+      ],
+      "toy_id": "TTM-01"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/countermodels/CM-02.certificate.json",
+      "evidence_sha256": "4cc8e5ad20c7d35784a3e89261dc9b4bca7166ba86efcb779665f6e41f01616a",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "negative",
+      "theorem_ids": [
+        "TTN-01"
+      ],
+      "toy_id": "TTM-02"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/direct_successor/DS-POS-01.certificate.json",
+      "evidence_sha256": "f478b6575e7ba6d94716de5e59e0d8f754910f0bc112c072571add5a0a4d3c3f",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "positive",
+      "theorem_ids": [
+        "TTD-01",
+        "TTD-03"
+      ],
+      "toy_id": "TTM-03"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/countermodels/CM-04.certificate.json",
+      "evidence_sha256": "e2720e7c59ad88909bd85a070dfcb8a79476246080e945476013bf4dbf5857ca",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "negative",
+      "theorem_ids": [
+        "TTN-06"
+      ],
+      "toy_id": "TTM-04"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/routes/ROUTE-NEG-01.certificate.json",
+      "evidence_sha256": "6cbb19e079a1ddcd1794b7c66a2daf800f4371f9a6cbcfc75859f2410102f8e2",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "boundary",
+      "theorem_ids": [
+        "TTN-04",
+        "TTN-05"
+      ],
+      "toy_id": "TTM-05"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/routes/ROUTE-POS-01.certificate.json",
+      "evidence_sha256": "1be327aea45b5b5ae95e1a746707294852df2e4a08a871989d8af439ceb399be",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "positive",
+      "theorem_ids": [
+        "TTH-09"
+      ],
+      "toy_id": "TTM-06"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/fission/FISSION-POS-01.certificate.json",
+      "evidence_sha256": "d6f9368e6d928a8b08009455dbde1f5d7590a024531e4e62ab3a3e76f99458e8",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "boundary",
+      "theorem_ids": [
+        "TTH-08",
+        "TTN-11"
+      ],
+      "toy_id": "TTM-07"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/countermodels/CM-12.certificate.json",
+      "evidence_sha256": "7333204d4bbd5fbc6046f080b053286313c1ecc87c39f3beb9d1d132a09bc190",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "negative",
+      "theorem_ids": [
+        "TTN-09"
+      ],
+      "toy_id": "TTM-08"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/autonomy/controls/AUT-C05.certificate.json",
+      "evidence_sha256": "7b19449d12affa7b803da87f048ad8e12a66c7e1b05df213906123f3c0641fb8",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "negative",
+      "theorem_ids": [
+        "TTH-05",
+        "TTN-07"
+      ],
+      "toy_id": "TTM-09"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/countermodels/CM-13.certificate.json",
+      "evidence_sha256": "954eebf67fbef8b4ac93ef888bbb107473c8521c854badab9db79a74dadb68fd",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "boundary",
+      "theorem_ids": [
+        "TTN-12"
+      ],
+      "toy_id": "TTM-10"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/countermodels/CM-08.certificate.json",
+      "evidence_sha256": "30c691e5f563d02419bf92c826854393ab39d898d58b1e5fe05bece035eaae6d",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "negative",
+      "theorem_ids": [
+        "TTN-08"
+      ],
+      "toy_id": "TTM-11"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/countermodels/CM-09.certificate.json",
+      "evidence_sha256": "7f79f38e8d1676f76a6b6e120eea26ac8c5b58ca325cebf28322926f9a679ed4",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "negative",
+      "theorem_ids": [
+        "TTN-02"
+      ],
+      "toy_id": "TTM-12"
+    },
+    {
+      "claim_ceiling": "exact finite structural toy only; no empirical or phenomenal conclusion",
+      "evidence_ref": "formal/certificates/countermodels/CM-10.certificate.json",
+      "evidence_sha256": "8f560bde4c284a12e3e87e393729cd9d1cda50783359281a0be490c37655412f",
+      "reproduction_command": "PYTHONPATH=src:scripts python3 scripts/build_tt06_assets.py",
+      "role": "negative",
+      "theorem_ids": [
+        "TTN-10"
+      ],
+      "toy_id": "TTM-13"
+    }
+  ],
+  "model_ref": "models/toy_suite/TOY-SUITE-PRIMARY-01.model.json",
+  "model_sha256": "27899da26055d8de13ce772cc52a1cd389de008dad02c0348864e8fce146ae0d",
+  "result_status": "checked-finite-primary-toy-suite-closure",
+  "schema_version": "CST-TT-06"
+}

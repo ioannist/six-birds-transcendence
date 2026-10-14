@@ -1,0 +1,14 @@
+% F5: schematic of the fixed boundary and the mod-two translation action.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small,
+ state/.style={draw,rounded corners=2pt,fill=black!3,minimum width=3.5cm,minimum height=.85cm,align=center},
+ route/.style={-{Stealth[length=2mm]},semithick}]
+\node[state] (boundary) at (7,3.3) {Shared boundary};
+\node[state] (early) at (2.6,.75) {Present at the initial phase};
+\node[state] (late) at (11.4,.75) {Present at the translated phase};
+\draw[route] (boundary.west) to[out=180,in=90] node[left,align=center,fill=white,inner sep=2pt] {identity\\route} (early.north);
+\draw[route,densely dashed] (boundary.east) to[out=0,in=90] node[right,align=center,fill=white,inner sep=2pt] {loop\\route} (late.north);
+\draw[route] (early.east) to[bend left=20] node[above] {clock translation} (late.west);
+\draw[route] (late.west) to[bend left=20] node[below] {clock translation} (early.east);
+\node[align=center] at (7,-.5) {Equal boundary, different local presents\\Nonzero holonomy; no boundary-only choice of present};
+\node[font=\footnotesize] at (7,-1.25) {Schematic of the clock control};
+\end{tikzpicture}

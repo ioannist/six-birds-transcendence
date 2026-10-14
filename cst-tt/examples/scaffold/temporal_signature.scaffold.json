@@ -1,0 +1,20 @@
+{
+  "arrow_record": "A?",
+  "carrier": {
+    "code": 1,
+    "label": "target-carrier"
+  },
+  "endogenous_arrow_status": "not-evaluated",
+  "future_sufficiency_status": "not-evaluated",
+  "genuine_progress_status": "not-evaluated",
+  "maintenance_ownership_status": "not-evaluated",
+  "maintenance_state": "M?",
+  "order_state": "O?",
+  "predictive_class": "P?",
+  "progress_state": "G?",
+  "route_residue": "R?",
+  "schema_version": "CST-TT-00",
+  "state_id": "target-state-placeholder",
+  "tick_phase": "T?",
+  "tick_viability_status": "not-evaluated"
+}

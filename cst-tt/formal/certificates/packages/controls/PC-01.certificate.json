@@ -1,0 +1,23 @@
+{
+  "artifact_ref": "models/packages/controls/PC-01.model.json",
+  "artifact_sha256": "21f7eaf02a34eb86ce91f79e69c1a9ff5b596df292d574f9a260b0a452c267ac",
+  "checker": {
+    "function": "audit_package",
+    "integrated_package_valid": false,
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite package-obligation boundary only",
+  "control_id": "PC-01",
+  "control_kind": "package",
+  "expected_primary_failure": "PKG-O01-exact-C1-C8-coverage",
+  "observed_failures": [
+    "PKG-O01-exact-C1-C8-coverage",
+    "PKG-O02-local-scope-and-clause-acceptance",
+    "PKG-O03-nonnegotiable-hard-gates",
+    "PKG-O07-global-gluing-and-restriction"
+  ],
+  "positive_baseline_ref": "models/packages/PKG-POS-01-TARGET.model.json",
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-02"
+}

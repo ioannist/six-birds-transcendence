@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "import hashlib,json,re,subprocess; from pathlib import Path; paths=('paper/build/main.pdf','paper/main.pdf'); hashes={p:hashlib.md5(Path(p).read_bytes()).hexdigest() for p in paths}; pages=int(re.search(r'^Pages:\\s+(\\d+)',subprocess.check_output(['pdfinfo',paths[1]],text=True),re.M)[1]); print(json.dumps({'pages':pages,'md5':hashes},sort_keys=True)); assert len(set(hashes.values()))==1"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "pdf_readout",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W23-round3/pdf-readout.log",
+  "log_sha256": "7396154c76bf53b8811e314618fb693cdd2bc597e287a3c3b9cb45539801b061",
+  "metrics": {},
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-14T12:23:35+00:00",
+  "status": "pass",
+  "summary": "{\"md5\": {\"paper/build/main.pdf\": \"d6af1003563f5f66657614c44eabc751\", \"paper/main.pdf\": \"d6af1003563f5f66657614c44eabc751\"}, \"pages\": 44}"
+}

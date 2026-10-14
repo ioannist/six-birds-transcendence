@@ -1,0 +1,9 @@
+{
+  "algorithm_bruteforce_mismatch_count": 0,
+  "all_candidates_verified": true,
+  "candidate_count": 4096,
+  "claim_ceiling": "exact corroboration only within the declared two-state finite family",
+  "endpoint_autonomous_count": 76,
+  "family": "two-state-two-disturbance-successor-owner-progress",
+  "schema_version": "CST-TT-05"
+}

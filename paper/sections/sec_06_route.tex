@@ -1,0 +1,104 @@
+\section{Which route? Memory, holonomy and the present}
+\label{sec:route}
+
+A transfer can reach the same target state by different routes. We ask what
+the target must remember about the route, and whether there is a present that
+does not depend on it. The answers are simple, and we give them because a
+criterion that ignores the route can fail in exactly these ways.
+
+\paragraph{The current state need not be enough.}
+Two histories can end in the same current state and still differ in what they
+predict. Then no rule that reads only the current state can predict both
+correctly. The observation is elementary.
+
+\begin{proposition}[Current state is not always sufficient]
+% claim: TTN-04
+\label{prop:collision}
+If two routes have the same current code and different futures, then no
+function of the current code returns both futures. On the two-copy model there
+are two such histories: the same current state, with different futures once
+funding is taken into account.
+\end{proposition}
+
+What repairs the failure? If the pair of current code and route memory is
+enough to predict the future, then either the current code alone is already
+enough, or the route memory separates every pair of histories that share a
+current code and differ in their futures. So when two histories collide in this way, a target needs information beyond
+its current code, and route memory is one way to supply it. In a given domain,
+a licence of the kind below shows that it is not needed.
+
+\paragraph{When route memory may be dropped.}
+Such an argument can take one of three standard forms
+\citep{Newman1942, BaaderNipkow1998}. In each, the declared rewrites of routes
+preserve the boundary and the executed actions; without that, a shared normal
+form says nothing about endpoints. In summary:
+\begin{itemize}
+\item \emph{Normalization}: rewrites lower a rank, and every route reaches one
+shared normal form.
+\item \emph{Confluence}: any two routes can be rewritten to a common one.
+\item \emph{Flatness}: each event acts by an invertible forward clock. Critical
+pairs exist, cover all routes and are completed by valid completion rows.
+Routes are connected under completion moves, and rewrites reach a shared normal
+form. The completion rows satisfy their action equations, and the clock's
+holonomy around each completion row is the identity.
+\end{itemize}
+The complete hypotheses are those of the Lean sufficiency theorems indexed in
+Appendix~\ref{app:index}.
+
+\begin{theorem}[Licences for dropping route memory]
+% claim: TTH-09
+\label{thm:licences}
+Let a finite system of routes come with a comparison domain: routes with the
+same boundary, admissible and closed under the declared rewrites. If the domain
+carries a normalization, confluence or flatness licence, then any two routes in
+the domain reach the same endpoint.
+\end{theorem}
+
+Each licence is sufficient, and we prove nothing more. In particular, a licence
+is not necessary. On a fixed domain of three one-event routes, two routes have
+equal endpoints and no licence holds. So equal endpoints alone do not show that
+the route system is flat. The flatness licence we use is the stronger adopted
+form: completion ranks and a shared unique normal form, not boundary equality
+alone.
+
+\paragraph{Holonomy is not an arrow.}
+Path dependence around a loop, holonomy in the broad sense
+\citep{Nakahara2003}, can look like a direction in time. It is not one.
+
+\begin{proposition}[Holonomy without an arrow]
+% claim: TTN-03
+\label{prop:holonomy}
+There is a finite route system with two reversible route maps that do not
+commute, and whose record update has no strict step. It has nontrivial holonomy
+and no endogenous arrow.
+\end{proposition}
+
+\paragraph{No present fixed by the boundary.}
+Finally, suppose routes share a boundary, and we ask for a ``present'' that
+depends only on that boundary. Holonomy can rule this out.
+
+\begin{proposition}[No canonical present]
+% claim: TTN-05
+\label{prop:now}
+There is a two-phase clock with a translation that moves the designated
+present, phase zero, for which the local present along the identity route and
+along the loop cannot be written as a function of the shared boundary.
+\end{proposition}
+
+\begin{figure}[tbp]
+\centering
+\input{figures/fig_clock}
+\caption{The clock control behind Proposition~\ref{prop:now}. Two routes share a boundary, but the loop translates the clock's phase, so the local presents differ and no present is fixed by the boundary alone.}
+\label{fig:clock}
+\end{figure}
+
+The argument is one line: the two routes share the boundary, but their
+presents differ. We do not claim more, and in particular nothing about routes
+with genuinely different boundaries or about time as experienced. The lesson for
+continuation is modest but definite. A target that inherits its present from a
+transfer inherits it relative to a route. Keeping route memory is one way to
+handle this. A normalization, confluence or flatness licence is a sufficient
+reason to drop it, and it is not the only possible reason. A holonomy that
+moves the designated present rules out a present fixed by the boundary alone.
+A nontrivial transformation that leaves the designated present in place does
+not.

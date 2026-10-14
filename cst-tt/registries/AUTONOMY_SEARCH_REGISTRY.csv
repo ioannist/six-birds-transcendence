@@ -1,0 +1,3 @@
+search_id,candidates_examined,successful_candidates,mismatches,certificate_ref,claim_ceiling
+AUTONOMY-INVARIANT-EXHAUSTION,4096,76,0,formal/certificates/search/AUTONOMY_INVARIANT_EXHAUSTION.json,exact corroboration only within the declared two-state finite family
+AUTONOMY-FINITE-HORIZON-EXHAUSTION,127,127,0,formal/certificates/search/AUTONOMY_FINITE_HORIZON_EXHAUSTION.json,finite words through the declared horizon only

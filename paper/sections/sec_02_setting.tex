@@ -1,0 +1,127 @@
+\section{Setting, and how to read our claims}
+\label{sec:setting}
+
+\subsection{Finite systems with unbounded histories}
+
+Every system we study has a finite physical state space, and finite sets of
+actions, disturbances and outcomes. Runs, histories and event registers may be
+unbounded, and so may the observations that report them. The temporal fields
+include counters of order, progress and records, which grow without bound. Where they are,
+our results about them are proved by invariants and induction, not by listing
+cases. When a result concerns moving structure from one system to another,
+the source and the target are distinct systems, fixed before anything is
+evaluated. Re-encoding a single system does not count, and we show in
+Section~\ref{sec:copy} why the distinction matters.
+
+\subsection{The eight conditions}
+
+We take the conditions from the closure architecture of
+\citet{TsiokosArchitecture2026} and recall them only briefly. A system meets the
+architecture when it satisfies the following eight conditions jointly, on one
+system, with data tying them together:
+\begin{enumerate}
+\item \emph{objecthood}: staged closure kernels have robust fixed points
+\item \emph{strict refinement}: some finer description is not recoverable from
+the public one
+\item a \emph{predictive self-coordinate}: refining the public description by
+the system's own dynamics stabilizes at a predictive quotient
+\item \emph{non-exposure}: the predictive state is not exposed at the given
+public channels
+\item \emph{action credit}: directionality is credited to self, other or none,
+by where it is generated
+\item \emph{temporal closure}: a funded order, tick and arrow carried by the
+system's own record
+\item \emph{binding}: joint content over branches strictly refines the
+branch-by-branch description
+\item \emph{viability}: a nonempty viability kernel under maintenance, which
+underfunding empties.
+\end{enumerate}
+
+Each of our models meets these conditions at a recorded grade.
+\begin{itemize}
+\item A condition holds at \emph{design grade} when it is computed in the form
+the architecture specifies, at an interface fixed in advance.
+\item It holds in \emph{simplified form} when a declared stand-in replaces it.
+\end{itemize}
+On the two models that carry our strict continuation results, conditions (4)
+to (7) hold only in simplified form:
+\begin{itemize}
+\item non-exposure is replaced by a single collision between two states that
+look the same and predict differently
+\item action credit by a declared credit rule
+\item temporal closure by a declared order on events with a record and tick
+added for the purpose
+\item binding by a declared coupling.
+\end{itemize}
+The first replacement shows why these forms are weaker. A single collision
+shows that the public channels cannot recover the whole predictive state.
+Full non-exposure asks for more: that no public channel reveals any feature of
+the predictive state that varies. On the two-copy model it fails, because the
+public position is itself such a feature. The collision survives that
+exposure, and full non-exposure does not.
+
+On the third model, all eight conditions, as adopted at interfaces fixed in
+advance, are computed jointly from a single execution, with stated choices for
+conditions (1), (4), (5) and (6) (Section~\ref{sec:ancestry}). That is not a
+certificate for the full architecture, whose complete panel of checks we do not
+verify. Table~\ref{tab:grades} gives the details. We use the shorter phrase ``the target realizes the conditions'' only
+with the grade stated nearby.
+
+Realization in our sense is a check on the target's own states and
+transitions. It resembles the functionalist sense in which a physical system
+realizes a functional organization when its components and their dependencies
+reflect those of the specification \citep{Chalmers1995Qualia}. The observation
+that one organization can be realized by different systems goes back to
+\citet{Putnam1967}. Whether passing the check is being conscious is not part
+of the check.
+
+\input{tables/tab_grades}
+
+\subsection{The temporal signature}
+
+What a continuation must carry across, beyond the conditions themselves, is a
+temporal organization. We fix it in advance as eight fields:
+\begin{itemize}
+\item the predictive present
+\item an order on events
+\item a tick phase
+\item genuine progress
+\item an arrow given by the growth of the system's own records
+\item memory of the route by which the present was reached
+\item a maintenance state
+\item an owner.
+\end{itemize}
+We call these together the \emph{temporal signature}. It is fixed before, and
+independently of, any judgement about lineage. The arrow in this list is an
+ordering by record growth. It is not a thermodynamic arrow of time, and none
+of our results concerns one.
+
+\subsection{How to read our claims}
+
+Our claims are of four kinds, and a result of one kind never supplies a claim
+of another.
+\begin{itemize}
+\item \emph{Structural results}, theorems and their finite instances, are
+proved in Lean.
+\item \emph{Finite countermodels} refute a stated shortcut on an explicit
+finite system, also checked in Lean. A countermodel refutes the claim it
+represents on its stated boundary. It does not refute every way of
+formulating the shortcut.
+\item \emph{Interpretive hypotheses} link structure to experience, for example
+that felt continuity requires the continuation of realized temporal closure.
+We state them, mark them, and never use them as premises.
+\item \emph{Ontological postulates}, such as the architecture's realization
+postulate and Substrate Indifference, are premises the reader may grant or
+decline. No result here uses them or supports them.
+\end{itemize}
+
+Words like transfer, upload, survival and same person appear only when we
+describe others' thought experiments or say what our results do not show.
+They never appear in the conclusion of a result.
+
+Every theorem and countermodel is a declaration in the Lean development
+that accompanies our results, built against Lean's core library with the standard
+axioms only. Appendix~\ref{app:index} maps each result to its declarations.
+The kernel checks the Lean statements. That those statements say what our
+prose says is a separate matter. We checked it in a separate review, statement
+by statement, described under Data and code availability.

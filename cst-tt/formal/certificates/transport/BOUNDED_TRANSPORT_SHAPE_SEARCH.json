@@ -1,0 +1,29 @@
+{
+  "feasible_pairs": [
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "minimal_pair": [
+    3,
+    2
+  ],
+  "minimality_scope": "declared finite shape family only",
+  "pairs_examined": 12,
+  "schema_version": "CST-TT-03",
+  "search_family": "transport-shape-representative-independence-plus-progress",
+  "status": "PASS"
+}

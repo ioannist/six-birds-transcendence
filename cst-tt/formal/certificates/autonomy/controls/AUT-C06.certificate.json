@@ -1,0 +1,108 @@
+{
+  "audit": {
+    "action_table_well_formed": true,
+    "anti_stall_on_invariant": false,
+    "autonomy_valid": false,
+    "boundary_fixed_before_evaluation": true,
+    "budget_solvent_on_invariant": false,
+    "collapse_trace": [
+      {
+        "action_id": "spend-B2",
+        "disturbance_id": "nominal",
+        "failure": null,
+        "state_id": "B2",
+        "successor_state_id": "B1"
+      },
+      {
+        "action_id": null,
+        "disturbance_id": "nominal",
+        "failure": "successor-state-not-package-valid-and-resource-closed",
+        "state_id": "B1",
+        "successor_state_id": null
+      }
+    ],
+    "collapse_trace_length": 2,
+    "computed_invariant_state_ids": [],
+    "declared_invariant_matches_computed": true,
+    "declared_invariant_state_ids": [],
+    "disturbance_class_fixed_before_evaluation": true,
+    "disturbance_table_well_formed": true,
+    "endpoint_inside": false,
+    "errors": [],
+    "failed_obligations": [
+      "AUT-O08-endpoint-in-computed-controlled-invariant",
+      "AUT-O10-package-and-resource-closure",
+      "AUT-O11-target-owned-total-response-law",
+      "AUT-O12-anti-stall-progress-and-arrow",
+      "AUT-O13-budget-solvency",
+      "AUT-O14-finite-horizon-survival"
+    ],
+    "finite_horizon": 1,
+    "finite_horizon_survives": false,
+    "finite_words_checked": 0,
+    "forbidden_verdict_fields_absent": true,
+    "mandatory_removed_roles_present": true,
+    "model_id": "AUT-C06",
+    "package_contract_hash_bound": true,
+    "package_inside": false,
+    "removal_rounds": {
+      "B0": 0,
+      "B1": 1,
+      "B2": 2
+    },
+    "removed_retained_disjoint": true,
+    "resource_closed_on_invariant": false,
+    "response_policy": [],
+    "response_total_on_invariant": false,
+    "retained_resources_target_owned": true,
+    "source_target_distinct": true,
+    "state_table_well_formed": true,
+    "target_owned_responses": false,
+    "transition_table_well_formed": true,
+    "withdrawal_complete": true,
+    "withdrawal_shape_valid": true
+  },
+  "checker": {
+    "checked_at_phase": "CST-TT-05",
+    "function": "audit_autonomy",
+    "module": "cst_tt.withdrawal_autonomy_checker",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite post-withdrawal autonomy boundary only",
+  "claim_lanes": [
+    "M",
+    "A"
+  ],
+  "collapse_trace": [
+    {
+      "action_id": "spend-B2",
+      "disturbance_id": "nominal",
+      "failure": null,
+      "state_id": "B2",
+      "successor_state_id": "B1"
+    },
+    {
+      "action_id": null,
+      "disturbance_id": "nominal",
+      "failure": "successor-state-not-package-valid-and-resource-closed",
+      "state_id": "B1",
+      "successor_state_id": null
+    }
+  ],
+  "control_id": "AUT-C06",
+  "expected_primary_failure": "AUT-O08-endpoint-in-computed-controlled-invariant",
+  "model_ref": "models/autonomy/controls/AUT-C06.model.json",
+  "model_sha256": "2984c978f24f218e4abbdc149d37578b4ac32fbc348d7b51afb7be306b1ae68f",
+  "observed_failures": [
+    "AUT-O08-endpoint-in-computed-controlled-invariant",
+    "AUT-O10-package-and-resource-closure",
+    "AUT-O11-target-owned-total-response-law",
+    "AUT-O12-anti-stall-progress-and-arrow",
+    "AUT-O13-budget-solvency",
+    "AUT-O14-finite-horizon-survival"
+  ],
+  "positive_baseline_ref": "models/autonomy/AUT-POS-01.model.json",
+  "result_status": "checked-autonomy-obligation-countermodel",
+  "schema_version": "CST-TT-05",
+  "title": "finite prefix followed by target-budget insolvency"
+}

@@ -1,0 +1,17 @@
+{
+  "action": "created new-version draft",
+  "concept_record_id": "20713186",
+  "dashboard_url": "https://zenodo.org/uploads/23087000",
+  "doi": "10.5281/zenodo.23087000",
+  "doi_reservation": {
+    "client": "datacite",
+    "identifier": "10.5281/zenodo.23087000",
+    "provider": "datacite",
+    "verified_via": "rdm_pid_table"
+  },
+  "draft_id": 23087000,
+  "recorded_at": "2026-10-01T16:35:46+00:00",
+  "source_doi": "10.5281/zenodo.20713187",
+  "source_record_id": 20713187,
+  "source_title": "Six Birds Foundations IV: A Catalog of Layer-Agnostic Structural Laws"
+}

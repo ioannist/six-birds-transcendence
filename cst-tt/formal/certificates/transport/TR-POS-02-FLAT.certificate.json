@@ -1,0 +1,57 @@
+{
+  "audit": {
+    "alphabets_distinct": true,
+    "carriers_distinct": true,
+    "component_maps_complete": true,
+    "component_maps_total_on_reachable": true,
+    "failed_obligations": [],
+    "forbidden_verdict_fields_absent": true,
+    "maintenance_translated": true,
+    "mapped_signature_agreement": true,
+    "ownership_interface_valid": true,
+    "predictive_representative_independence": true,
+    "route_discipline_satisfied": true,
+    "route_residue_retention_noncollapsing": true,
+    "route_status": "flat",
+    "source_states_well_formed": true,
+    "source_temporal_witness_valid": true,
+    "state_map_targets_declared": true,
+    "state_map_total_on_reachable": true,
+    "strict_record_arrow_preserved": true,
+    "successor_preserved": true,
+    "target_states_well_formed": true,
+    "target_temporal_witness_valid": true,
+    "tick_progress_preserved": true,
+    "transport_valid": true
+  },
+  "certificate_id": "TR-POS-02-FLAT",
+  "checker": {
+    "checked_at_phase": "CST-TT-03",
+    "function": "audit_temporal_transport",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite structural temporal transport only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_ref": "models/transport/TR-POS-02-FLAT.model.json",
+  "model_sha256": "aec74931db6869a54309b03d22f07c5d77bbfc0521966e78f7ba69eb3a205025",
+  "result_status": "checked-finite-temporal-transport-certificate",
+  "route_status": "flat",
+  "schema_version": "CST-TT-03",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.TransportTheory.bundledHeterogeneousTemporalTransport",
+      "CSTTT.RecordTheory.monotoneRecordDescentTransportsArrow",
+      "CSTTT.RouteTheory.noCurrentOnlyPredictor",
+      "CSTTT.RouteTheory.routeIndependentEndpointUnderNormalization"
+    ],
+    "theorem_ids": [
+      "TTH-03",
+      "TTH-10",
+      "TTH-09"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+% W14: source_reconciliation.md section 4 and ledger condition_grades.
+\begin{table}[tbp]
+\centering
+\caption{The grade at which each of the eight conditions holds on each model. ``Computed'' means computed from the model's own dynamics. ``Simplified'' means a declared stand-in, described in Section~\ref{sec:setting}. ``Adopted interface'' means computed jointly from one execution at interfaces fixed in advance, with the noted choices.}
+\label{tab:grades}
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}Xlll@{}}
+\toprule
+Condition & Two-copy model & Chain model & Fusion model \\
+\midrule
+(1) Objecthood & computed & computed & adopted interface\textsuperscript{a} \\
+(2) Strict refinement & computed & computed & adopted interface \\
+(3) Predictive self-coordinate & computed & computed & adopted interface \\
+(4) Non-exposure & simplified & simplified & adopted interface\textsuperscript{b} \\
+(5) Action credit & simplified & simplified & adopted interface\textsuperscript{c} \\
+(6) Temporal closure & simplified & simplified & adopted interface\textsuperscript{c} \\
+(7) Binding & simplified & simplified & adopted interface \\
+(8) Viability & computed & computed & adopted interface \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+\begin{minipage}{\textwidth}
+\footnotesize
+\textsuperscript{a} Physical stationarity excludes growing histories; the period-two
+two-step counterexample is retained.
+\textsuperscript{b} Current observations on maintained support, not all future observations.
+\textsuperscript{c} Completed local-cycle evidence with continuously authenticated
+current residency and mandatory current-generator, ownership and control links.
+\end{minipage}
+\end{table}

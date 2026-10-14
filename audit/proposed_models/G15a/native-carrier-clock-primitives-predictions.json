@@ -1,0 +1,40 @@
+{
+  "frozen_at_utc": "2026-10-10T17:54:23.795543+00:00",
+  "baseline_sha256": "fc0ce4216fde2f310543cf17c0596fd68f22500542f238ed262339fb761daef1",
+  "class": "b",
+  "target_gain": "C6 operational in-carrier funded clock and actual own-native arrow; retain full future laws and exact all-partial readouts",
+  "primitive_carrier": {
+    "carrier": "Owner",
+    "factor": "existing Factor",
+    "counter": "Nat",
+    "budget": "Nat",
+    "record": "List Factor"
+  },
+  "raw_inputs": "unchanged Input, actual temporal rows/policy/ticks/resource/ledger; no supplied stream, transition law, clock verdict or arrow",
+  "lifted_rows": "Reject wrong carrier or budget below native cost. Otherwise map every actual weighted native edge to carrier state with factor=edge outcome, counter+=raw tick, budget-=raw cost then recharge iff actually available, record append outcome. No default for missing row.",
+  "step": "Reject wrong carrier/underbudget/zero or unsupported raw outcome; otherwise apply same in-carrier updater.",
+  "maintenance_engine": "At each step read actual native policy row head option, verify with step, and recurse. Missing head rejects.",
+  "clock_readout": "Positive native ticks and funding, own native cycle arrow credited to actual housed owner, plus successful strict progression for every n from every funded owned carrier state. Classical mathematical decision only.",
+  "public_interface": "native declared tuple plus current counter and budget; comparison at equal carrier/counter/budget with arbitrary hidden factor and record, observed after each actual action",
+  "controls": [
+    "flat native rows preserve engine funded ticking but directly refute own native arrow/clock bit",
+    "ticks=0 preserve supported funded moves but fail strict clock/readout",
+    "recharge-off permits one cost-1 step from budget1 then second step rejects",
+    "wrong owner rejects actual step",
+    "empty native rows reject maintenance without defaults",
+    "all partial current/copied-source true false missing exact"
+  ],
+  "predictions": [
+    "actual engine produces a funded carrier state for every Nat n without supplied outcome stream",
+    "counter advances exactly n, budget remains1, record length increases n",
+    "lifted emitted laws projecting Factor equal native emitted laws for every finite action word and observation list",
+    "public counter/budget history has identical law across hidden Factor at equal starting counter and budget",
+    "flat current clock false while copied original source true"
+  ],
+  "nonclaims": [
+    "not full C5 scheduled/internalized generator lift",
+    "not full eight-clause package or source/target IAPS",
+    "not TTN02/14 restoration",
+    "not stochastic adaptive or efficient classifier theorem"
+  ]
+}

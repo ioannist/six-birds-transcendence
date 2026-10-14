@@ -1,0 +1,9 @@
+{
+  "name": "Branchwise preservation implies integrated fusion",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "TTN-14",
+  "reason": "Branch marginals do not determine joint recombination or coherent action credit.",
+  "rejected_id": "ALT-08",
+  "replacement": "independent recombination and package gates",
+  "status": "killed"
+}

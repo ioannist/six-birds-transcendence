@@ -1,0 +1,136 @@
+{
+  "$id": "https://six-birds.local/cst-tt/schemas/memory_repair_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "audit": {
+      "additionalProperties": false,
+      "properties": {
+        "current_collision_present": {
+          "type": "boolean"
+        },
+        "current_only_predictor_exists": {
+          "type": "boolean"
+        },
+        "current_only_predictor_impossible": {
+          "type": "boolean"
+        },
+        "failed_obligations": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array",
+          "uniqueItems": true
+        },
+        "flat_alternative": {
+          "type": "boolean"
+        },
+        "memory_or_flatness_satisfied": {
+          "type": "boolean"
+        },
+        "memory_repair_valid": {
+          "type": "boolean"
+        },
+        "predictive_divergence_present": {
+          "type": "boolean"
+        },
+        "predictor_functions_examined": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "refined_predictor_correct": {
+          "type": "boolean"
+        },
+        "refined_predictor_total": {
+          "type": "boolean"
+        },
+        "route_memory_separates_collision": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "current_collision_present",
+        "predictive_divergence_present",
+        "current_only_predictor_exists",
+        "current_only_predictor_impossible",
+        "route_memory_separates_collision",
+        "refined_predictor_total",
+        "refined_predictor_correct",
+        "flat_alternative",
+        "memory_or_flatness_satisfied",
+        "memory_repair_valid",
+        "predictor_functions_examined",
+        "failed_obligations"
+      ],
+      "type": "object"
+    },
+    "certificate_id": {
+      "type": "string"
+    },
+    "checker": {
+      "additionalProperties": false,
+      "properties": {
+        "function": {
+          "const": "audit_memory_repair"
+        },
+        "module": {
+          "const": "cst_tt.transport"
+        },
+        "python_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "module",
+        "function",
+        "python_version"
+      ],
+      "type": "object"
+    },
+    "claim_ceiling": {
+      "type": "string"
+    },
+    "claim_lanes": {
+      "const": [
+        "S-T"
+      ]
+    },
+    "model_ref": {
+      "type": "string"
+    },
+    "model_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "result_status": {
+      "enum": [
+        "checked-finite-memory-repair-certificate",
+        "checked-finite-flat-predictive-control",
+        "scaffold-only"
+      ]
+    },
+    "schema_version": {
+      "const": "CST-TT-03"
+    },
+    "theorem_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "certificate_id",
+    "model_ref",
+    "model_sha256",
+    "result_status",
+    "claim_lanes",
+    "claim_ceiling",
+    "theorem_ids",
+    "audit",
+    "checker"
+  ],
+  "title": "Predictive route-memory repair certificate",
+  "type": "object"
+}

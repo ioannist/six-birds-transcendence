@@ -1,0 +1,9 @@
+{
+  "name": "Carrier polymorphism proves substrate indifference",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "AS-29;AS-30",
+  "reason": "A2-P and empirical or certificate-soundness bridges remain separate assumptions.",
+  "rejected_id": "ALT-12",
+  "replacement": "explicitly price A2-P and recognition",
+  "status": "killed"
+}

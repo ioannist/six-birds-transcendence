@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_full_native_snapshot_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_full_native_snapshot_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_full_native_snapshot_transcription.log",
+  "log_sha256": "7a6c08b6343ed157e1d615ddefcfc63ce19fa4cb3d670ce7c77978ec4f061390",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:26+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted phase copy drift\nCAUGHT planted program copy drift\nCAUGHT planted public lens copy drift\nCAUGHT planted token alias drift\nCAUGHT planted source reactivation drift"
+}

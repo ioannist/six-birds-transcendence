@@ -1,0 +1,11 @@
+obligation_id,name,claim_lanes,positive_witness,negative_controls,status
+STG-O01,source package valid,S-T;S-R,STG-POS-01,,landed-positive
+STG-O02,target package valid,S-T;S-R,STG-POS-01,,landed-positive
+STG-O03,distinct carrier types,S-T;S-R,STG-POS-01,,landed-positive
+STG-O04,exactly eight clause maps,S-T;S-R,STG-POS-01,,landed-positive
+STG-O05,separately typed vocabularies,S-T;S-R,STG-POS-01,,landed-positive
+STG-O06,total coordinate maps,S-T;S-R,STG-POS-01,,landed-positive
+STG-O07,value translation soundness,S-T;S-R,STG-POS-01,SC-01,landed-positive-and-negative-control
+STG-O08,hard gates never averaged,S-T;S-R,STG-POS-01,,landed-positive
+STG-O09,target global assembly,S-T;S-R,STG-POS-01,,landed-positive
+STG-O10,no lineage or autonomy verdict fields,S-T;S-R,STG-POS-01,,landed-positive

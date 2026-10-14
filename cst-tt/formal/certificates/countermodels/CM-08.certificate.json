@@ -1,0 +1,44 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm08_localGlobalObstruction",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-08",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-08",
+  "finite_model_ref": "models/countermodels/CM-08.model.json",
+  "finite_model_sha256": "de02c276e3fa645ae2ef89e7d9709a8b4cb7b7a1083cfbcea5136f72860b67b5",
+  "minimality_status": "certified",
+  "model_family": "local-global-gluing-obstruction",
+  "name": "Local clause success without a global package witness",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "Individually accepted local witnesses can disagree on a shared coordinate.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "1..3 clauses, 1..2 coordinates, 1..2 values, all shared-coordinate assignments",
+    "candidates_explored": 34,
+    "lower_bound_argument": "One clause always glues; two clauses and two values are the first possible overlap disagreement.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 16,
+    "same_size_candidates_explored": 4,
+    "same_size_qualifying_candidates": 2,
+    "size_measure": "(clause_count, coordinate_count, value_count)",
+    "smaller_candidates_explored": 7,
+    "witness_size_vector": [
+      2,
+      1,
+      2
+    ]
+  },
+  "target_no_go_id": "TTN-08",
+  "toy_model_ref": "TTM-11"
+}

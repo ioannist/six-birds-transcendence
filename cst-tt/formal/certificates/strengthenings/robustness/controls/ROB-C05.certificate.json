@@ -1,0 +1,24 @@
+{
+  "audit": {
+    "accepted": false,
+    "dimension_results": {
+      "order-step": true,
+      "predictive-step": true,
+      "progress-step": true,
+      "record-step": true,
+      "tick-step": true
+    },
+    "hard_gates_exact_and_true": false,
+    "within_declared_box": true
+  },
+  "certificate_id": "ROB-C05",
+  "claim_ceiling": "declared robustness-box boundary only",
+  "claim_lanes": [
+    "M"
+  ],
+  "description": "package hard gate fails",
+  "model_ref": "models/strengthenings/robustness/controls/ROB-C05.model.json",
+  "model_sha256": "9dba838ac13886db7582b7a44dea5ab1c3edf84546c36f2eb91027ae7ff24b91",
+  "result_status": "checked-finite-robustness-boundary-control",
+  "schema_version": "CST-TT-07A"
+}

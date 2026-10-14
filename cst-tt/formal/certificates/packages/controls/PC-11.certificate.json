@@ -1,0 +1,21 @@
+{
+  "artifact_ref": "models/packages/controls/PC-11.model.json",
+  "artifact_sha256": "0be4aa6bce7d777fe59399ad58c7ace93f81f6555c1dff0ce5ac49badb9e365e",
+  "checker": {
+    "function": "audit_package",
+    "integrated_package_valid": false,
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite package-obligation boundary only",
+  "control_id": "PC-11",
+  "control_kind": "package",
+  "expected_primary_failure": "PKG-O04-rooted-join-tree-shape",
+  "observed_failures": [
+    "PKG-O04-rooted-join-tree-shape",
+    "PKG-O05-running-intersection"
+  ],
+  "positive_baseline_ref": "models/packages/PKG-POS-01-TARGET.model.json",
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-02"
+}

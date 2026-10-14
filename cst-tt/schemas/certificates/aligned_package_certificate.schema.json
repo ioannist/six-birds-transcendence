@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-birds.local/cst-tt/schemas/aligned_package_certificate.schema.json",
+  "title": "CST-TT-05 handoff-aligned integrated package certificate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "certificate_id",
+    "model_ref",
+    "model_sha256",
+    "result_status",
+    "claim_lanes",
+    "claim_ceiling",
+    "handoff_alignment",
+    "theorem_evidence",
+    "audit",
+    "checker"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "CST-TT-05"
+    },
+    "certificate_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "result_status": {
+      "enum": [
+        "scaffold-only",
+        "checked-finite-handoff-aligned-package-certificate"
+      ]
+    },
+    "claim_lanes": {
+      "const": [
+        "S-R"
+      ]
+    },
+    "claim_ceiling": {
+      "const": "finite structural target realization aligned to one declared handoff frontier"
+    },
+    "handoff_alignment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "corridor_model_ref",
+        "corridor_stage",
+        "alignment_fields"
+      ],
+      "properties": {
+        "corridor_model_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "corridor_stage": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "alignment_fields": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "theorem_evidence": {
+      "type": "object"
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "integrated_package_valid",
+        "failed_obligations",
+        "derived_global_assignment"
+      ]
+    },
+    "checker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "module",
+        "function",
+        "python_version",
+        "checked_at_phase"
+      ],
+      "properties": {
+        "module": {
+          "const": "cst_tt.package_gluing"
+        },
+        "function": {
+          "const": "audit_package"
+        },
+        "python_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checked_at_phase": {
+          "const": "CST-TT-05"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "CST-TT-04",
+  "certificate_id": "direct-placeholder",
+  "model_ref": "model-placeholder",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "not-evaluated",
+  "claim_lanes": ["S-L"],
+  "claim_ceiling": "structural event-successor criterion only",
+  "theorem_evidence": {},
+  "audit": {"direct_successor_valid": false, "detached_operational_pattern": true, "failed_obligations": ["not-evaluated"]},
+  "checker": {}
+}

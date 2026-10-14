@@ -1,0 +1,45 @@
+\section*{Data and code availability}
+\label{sec:availability}
+
+No empirical data were collected, fitted or used in this work. The Lean
+development, the finite models, the result snapshot and the scripts that check
+them are in a public repository,
+\url{https://github.com/ioannist/six-birds-transcendence}. The preprint's
+archival DOI is \href{https://doi.org/\paperdoi}{doi:\paperdoi}.
+
+The development builds with Lean 4.28.0 (\relLeanToolchain) using its core
+library only. It has \relCstttModules{} modules and records
+\relUniqueInventoryDeclarations{} distinct declarations in its inventory. It
+proves \relProvedRows{} of the \relRegistryRows{} results it states and checks
+the other \relCheckedCountermodels{} as finite countermodels, and
+\relOpenRows{} are left open. The \relHeadlineDeclarations{} declarations we
+cite depend only on the standard axioms \relHeadlineAxioms{}. Our
+development imports no part of the vendored Six Birds library. That library
+contains a non-standard axiom on which none of our declarations depends. The
+finite models are specified in \relModelSpecs{} model files.
+
+In the verification recorded on 2026-10-13 and 2026-10-14, a clean build ran \relLeanBuildJobs{} Lean
+build jobs and succeeded, and the validator found no placeholder and no
+untrusted axiom. All transcription checks between model files and Lean passed,
+as did the validator's \relSelftestValidateLeanTestsPassed{} self-tests and
+\relPaperTestsPassed{} paper tests. The repository also keeps the test suite of
+an earlier Python scaffold that the Lean development superseded. There,
+\relCstTtTestsPassed{} tests pass and \relCstTtTestsFailed{} fail, as they
+already did when the Lean development was completed. Five of the failing
+tests scan the superseded scaffold, and one tests that a historical file
+builder is idempotent. No result here depends on the scaffold.
+
+Every computed value in our figures and tables is read from the snapshot and
+pinned to a Lean theorem that states it. The stage and callout numbers in the
+schematic Figure~\ref{fig:three} are labels, not values. The kernel checks the Lean statements. That
+those statements say what our prose says is not a kernel fact. We checked it in
+a separate review, which set each formal statement in this paper beside the
+printed Lean statement of every declaration it cites, together with that
+declaration's axioms. The review used AI assistance, as disclosed below.
+
+\paragraph{Disclosures.}
+This preprint has not been peer reviewed. The repository's review records
+document an internal review loop driven by the author. The Lean
+formalization, the repository tooling, the preparation of the manuscript and
+the statement-by-statement review used AI assistance. The author is responsible
+for all claims.

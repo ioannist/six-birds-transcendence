@@ -1,0 +1,11 @@
+{
+  "schema_version": "CST-TT-04",
+  "certificate_id": "direct-path-placeholder",
+  "atomic_model_refs": ["model-placeholder"],
+  "atomic_model_hashes": ["0000000000000000000000000000000000000000000000000000000000000000"],
+  "result_status": "not-evaluated",
+  "claim_lanes": ["S-L"],
+  "claim_ceiling": "structural event-successor path only",
+  "audit": {"path_valid": false, "atomic_endpoint_edge_present": false, "failed_obligations": ["not-evaluated"]},
+  "checker": {}
+}

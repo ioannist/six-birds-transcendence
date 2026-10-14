@@ -1,0 +1,21 @@
+{
+  "grade": "typed register substitution and shared-frame immutable-assignment bridge component",
+  "cell_type": "Bool",
+  "cell_values": "Nat",
+  "source_register_type": "Unit",
+  "source_register_value": 5,
+  "middle_register_type": "Bool",
+  "middle_values": {"false": "Nat", "true": "Bool"},
+  "target_register_type": "Unit",
+  "first": {"false": "source unit + cell false", "true": "cell true > 0"},
+  "second": {"unit": "middle false * multiplier", "multiplier": 2},
+  "positive_assignment": {"false": 3, "true": 1},
+  "controls": {
+    "missing_consumed": {"false": null, "true": 1},
+    "missing_unused": {"false": 3, "true": null},
+    "eager": "choose literal true, register false, bool-to-nat register true",
+    "changed_cell": {"false": 4, "true": 1}
+  },
+  "bridge_fixture": "existing POS04ExecutionBridge followed by identity of POS04ReceiverFrontier",
+  "scope": "identity continuation checks inhabited bridge composition; no physical new hop or staged-cell bridge claim"
+}

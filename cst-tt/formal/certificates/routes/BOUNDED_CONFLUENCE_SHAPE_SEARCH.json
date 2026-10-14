@@ -1,0 +1,16 @@
+{
+  "candidates_examined": 354,
+  "canonical_witness": {
+    "join": 3,
+    "left": 1,
+    "node_count": 4,
+    "right": 2,
+    "start": 0
+  },
+  "minimal_node_count": 4,
+  "minimality_scope": "distinct start/branches/join with numeric acyclic rank only",
+  "schema_version": "CST-TT-03",
+  "search_family": "acyclic-two-branch-confluent-diamond",
+  "status": "PASS",
+  "witness_count_at_first_size": 2
+}

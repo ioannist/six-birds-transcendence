@@ -1,0 +1,1095 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[numbers]{natbib}
+\usepackage{doi}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{titling}
+
+\usepackage{longtable}
+
+
+
+\newcommand{\claimref}[2]{[#1]}
+
+\newcommand{\sbtcite}[1]{\cite{#1}}
+
+\newcommand{\nonclaim}[1]{\par\noindent\textit{Nonclaim:} #1\par}
+ 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algorithm}
+
+\urlstyle{same}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=period
+}
+\captionsetup[table]{skip=6pt,position=top}
+\captionsetup[figure]{skip=6pt}
+\captionsetup[algorithm]{skip=6pt,position=top}
+\crefname{algorithm}{algorithm}{algorithms}
+\Crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{theorem}{theorem}{theorems}
+\Crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{lemma}{lemmas}
+\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{proposition}{proposition}{propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{corollary}{corollary}{corollaries}
+\Crefname{corollary}{Corollary}{Corollaries}
+\crefname{definition}{definition}{definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{remark}{remark}{remarks}
+\Crefname{remark}{Remark}{Remarks}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=4pt}
+\setlength{\droptitle}{-3.2em}
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vspace{0.5em}}
+\preauthor{\begin{center}\normalsize}
+\postauthor{\par\end{center}\vspace{-0.4em}}
+\predate{\begin{center}\small}
+\postdate{\par\end{center}\vspace{0.6em}}
+\setlength{\emergencystretch}{2em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\interfootnotelinepenalty=10000
+\allowdisplaybreaks[2]
+\fancypagestyle{firstpage}{\fancyhf{}
+  \fancyfoot[C]{\scriptsize Automorph Inc., Wilmington, DE, USA \quad \texttt{ioannis@automorph.io} \quad \textcopyright\ 2026 \quad CC-BY 4.0}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\title{Glass Is an Unclosed Layer:\\
+  Kovacs Memory as Predictive-Quotient Residue}
+\author{Ioannis Tsiokos\,\orcidlink{0009-0009-7659-5964}}
+\date{\today}
+\hypersetup{
+  pdftitle={Glass Is an Unclosed Layer: Kovacs Memory as Predictive-Quotient Residue},
+  pdfauthor={Ioannis Tsiokos},
+  hidelinks
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+
+\begin{abstract}
+We instantiate a certificate-based closure calculus (Six Birds Theory) on an exact-finite class of
+kinetically constrained glass models, where kernels, stationary measures, witnesses, and zero
+controls are exact ratios of integers and the remaining certificate evidence is deterministic
+float64, labeled as such in each artifact. On the declared scope: the thermodynamic lens has a positive closure deficit exceeding its own
+constrained-equilibrium baseline by a certified margin of $3/2$ (achieved $\approx 1.64$) --- and
+that baseline is provably nonzero, since closure is a lumpability property, not an equilibrium
+property (GT1). The Kovacs protocol yields an exact split-pair witness: two preparation histories
+current-equal and future-different (GT2). All $512$ predicates definable from the declared energy
+lens agree on a witness pair that a memory readout separates, constructively foreclosing the
+static-order-parameter search on that declared class (GT3). A kill-test panel correctly executes
+five constructed artifact regimes (GT4). Resolving the witness pair costs exactly one declared
+memory scalar --- fictive temperature is a lawful memory coordinate, and the buyback ledger
+demonstrates the mechanism without proving general single-scalar insufficiency (GT5). The
+predictive-structure layer receives a shell-local strict-promotion certificate via
+non-factorization, with the fuller completion-dynamics route explicitly not invoked (GT6).
+Aging readouts frozen on the East model and transferred out-of-sample under a pre-registered
+no-fitting protocol scored 8 passes and 14 one-sided failures, with the trap family structurally
+unobservable for a reason we prove: the declared trap weight family's stationary distribution is
+exactly temperature-invariant (GT7). A vendored Lean core machine-checks the abstract
+witness/refinement theorems; attempting to encode the numeric witness produced a machine-checked
+impossibility theorem locating that core's expressiveness boundary. Every claim is hash-pinned to
+its artifacts, and the full nonclaims ledger is printed unabridged.
+\end{abstract}
+
+\medskip
+\noindent\textbf{Keywords.} TODO; TODO; TODO.
+
+\section{Introduction}
+\label{sec:intro}
+
+
+\subsection{The problem, and the question behind it}
+
+Anderson called the nature of glass and the glass transition the deepest unsolved problem in
+solid-state theory \cite{anderson-1995}. One face of that problem is sixty years old and
+unusually concrete: no static order parameter for glass has ever been found. A glass and a liquid
+can agree in density, energy, and every routinely monitored one-time observable, yet behave
+differently; six decades of proposals for the missing static quantity have not produced one
+\cite{berthier-biroli-2011}. A second face is equally concrete and sits in the laboratory record
+since 1963: Kovacs's crossover experiment \cite{kovacs-1963}. Equilibrate a polymer glass hot,
+quench it, age it, then jump the temperature up and watch its volume relax: at some moment the
+volume \emph{equals} its new equilibrium value --- and does not stay there, overshooting through a
+non-monotone hump before returning. At the crossing moment the system is indistinguishable from
+equilibrium in the monitored observable and distinguishable from it in its future. The standard
+partial fix, the Tool--Narayanaswamy--Moynihan fictive temperature
+\cite{tool-1946,narayanaswamy-1971,moynihan-1976}, adds one memory scalar; the Kovacs literature's
+verdict on single-parameter descriptions is that richer protocols defeat them.
+
+This paper treats both faces as one formal question: \emph{does the declared panel of one-time
+observables close?} That is --- does there exist an autonomous law in that vocabulary that loses
+nothing --- and if not, what certifies the failure, what is the minimal state that repairs it, and
+what does the repair cost?
+
+\subsection{What this paper does}
+
+We answer on an exact-finite audited class: kinetically constrained models
+\cite{ritort-sollich-2003,garrahan-sollich-toninelli-2011} --- the East model
+\cite{jackle-eisinger-1991} as substrate, Fredrickson--Andersen \cite{fredrickson-andersen-1984}
+and a trap family \cite{bouchaud-1992,monthus-bouchaud-1996} as transfer targets --- at system
+sizes where the kernels, witnesses, and controls are exact ratios of integers. The formal vocabulary (closure
+deficits, packaging maps, predictive quotients, witnesses, promotion gates) is the Six Birds
+Theory corpus \sbtcite{sbt-primer,sbt-foundations-i,sbt-foundations-ii,sbt-foundations-iii,sbt-foundations-iv,sbt-paper-a,sbt-paper-b,sbt-paper-c}; this paper instantiates it rather than
+extending it, and every claim names its corpus anchor.
+
+The results, each at its exact declared scope (\S\ref{sec:gt1}--\S\ref{sec:gt7}): the
+thermodynamic lens has a positive closure deficit on the audited glassy scope, exceeding even its
+own constrained-equilibrium baseline by a certified margin --- and, a correction to our own design
+expectations, that baseline is provably nonzero, because closure is a lumpability property, not an
+equilibrium property (GT1). The Kovacs protocol yields an exact split-pair witness:
+current-equal, future-different (GT2). All $512$ predicates definable from the declared lens
+agree on a witness pair that a memory readout separates --- the order-parameter search is
+foreclosed \emph{on that declared class}, constructively (GT3). The memory candidate survives a
+kill-test panel that correctly executes five constructed artifact regimes (GT4). The witness pair
+costs exactly one declared scalar to resolve --- fictive temperature is a lawful memory coordinate,
+and the shipped certificate demonstrates the buyback mechanism without proving general
+single-scalar insufficiency (GT5). The predictive-structure layer receives a shell-local
+strict-promotion certificate via non-factorization, with the stronger completion-dynamics route
+explicitly not invoked (GT6). And the aging readouts were frozen, transferred out-of-sample under
+a no-fitting protocol, and mechanically scored: 8 of 22 scored predictions passed, 14 failed
+one-sidedly, and the trap family proved structurally out of the protocol's reach for a reason we
+prove (GT7).
+
+\subsection{How to read the claims}
+
+Four contributions, in the order we would defend them. First, the \textbf{discipline}: an
+end-to-end instantiation of a certificate methodology on a real physics target --- machine-readable
+claim envelopes, declared finite quantifier domains, content-hash freezing, controls, and honest
+negatives filed as first-class results, including the places where the discipline forced our own
+claims to shrink. Second, the \textbf{result complex} itself: seven claims, four bridges, six
+honest negatives, each hash-pinned to its artifacts (the bracketed labels throughout are
+machine-checked citations into the claims ledger). Third, the \textbf{freeze-and-transfer
+protocol with its actual scoreboard} --- the failures are results, with a clean one-sided pattern
+and a proven structural explanation for the unobserved column. Fourth, the \textbf{Lean-checked
+core plus a scope-boundary finding}: the attempt to encode the numeric witness in the vendored
+formal core produced a machine-checked impossibility theorem instead, locating exactly which
+certificates can live in that core and why.
+
+What this paper is not: it proves nothing about all glasses, the continuum, or the ideal-glass
+transition; it makes no irreversibility claims; and its field-facing shadow --- ``no static order
+parameter'' --- is licensed only over the declared class it is proved on. The full nonclaims
+ledger is printed, unabridged, in \S\ref{sec:discussion}.
+ \section{Formal Architecture and Methods}
+\label{sec:methods}
+
+
+\subsection{The SBT objects this paper instantiates}
+
+This paper is an instantiation, not a foundations paper: every formal object below is defined in
+the Six Birds Theory (SBT) corpus \sbtcite{sbt-primer,sbt-foundations-i,sbt-foundations-ii,sbt-foundations-iii,sbt-foundations-iv,sbt-paper-a,sbt-paper-b,sbt-paper-c}, and we cite rather
+than re-derive. Five objects carry all seven results.
+
+\paragraph{The lens and its packaging map.} A \emph{finite theory package}
+(F-I~\sbtcite{sbt-foundations-i}, Def.~1) fixes a finite state space $Z$ (here: micro
+configurations of a kinetically constrained model, with the protocol phase lifted into the state),
+a declared observable map $f$ --- the \emph{thermodynamic lens} $\Pi_{\mathrm{std}}$, in this build
+the energy readout $L_{\mathrm{energy}}$ and its declared panel --- and a \emph{packaging endomap}
+$E_{\tau,f}(\mu) = U_f(Q_f(\mu P^{\tau}))$: evolve $\tau$ steps under the model kernel, push to the
+lens, re-lift via declared prototypes. The \emph{idempotence defect} $\delta_{\tau,f}$ (F-I
+Def.~9) measures how far packaging is from a fixed point; aging is its persistent positivity.
+
+\paragraph{Closure deficit.} For a lens $\Pi$ over a finite Markov law, the closure deficit
+\[
+  \mathrm{CD}_{\tau}(\Pi) \;=\; I\!\left(X_t;\, Y_{t+\tau} \,\middle|\, Y_t\right)
+\]
+(conditional mutual information between the micro state now and the lens value $\tau$ steps ahead,
+given the lens value now; F-III~\sbtcite{sbt-foundations-iii} T8; \sbtcite{sbt-paper-b} Def.~3.1)
+is zero iff the lens is $\tau$-lumpable: iff an autonomous law in lens vocabulary loses nothing.
+$\mathrm{CD}_{\tau}>0$ is therefore an exact lower bound on what \emph{any} autonomous
+thermodynamic-vocabulary law of the system must discard. Two structural facts matter for reading
+our GT1 result: $\mathrm{CD}_{\tau}=0$ is a lumpability property of the (kernel, lens) pair, not
+an equilibrium property; and it is protocol-relative in the aging regime, where the law is
+time-inhomogeneous (the protocol-relative extension is this project's GB2 demo).
+
+\paragraph{Quotients and witnesses.} Over a declared finite catalog of preparation histories and
+continuation protocols, the \emph{current quotient} $Q$ identifies histories with equal current
+lens signatures, and the \emph{predictive quotient} $M$ identifies histories with equal future
+signatures over the declared catalog (\sbtcite{sbt-paper-a}, Defs.~2.2--2.3). The comparison map
+$\pi: M \to Q$ always exists; a \emph{predictive witness} (split pair) is a pair of histories with
+$h \equiv^{0} h'$ but $h \not\equiv^{+} h'$ --- current-equal, future-different
+(\sbtcite{sbt-paper-a}, Def.~2.4). Witnesses exist iff $\pi$ is strictly refining
+(\sbtcite{sbt-paper-a}, Thm.~3.5; machine-checked as
+\texttt{strictRefinement\_iff\_nonempty\_predictiveWitness}, \S\ref{sec:lean}).
+
+\paragraph{Claim grades and nonclaims.} Every result carries exactly one F-II grade
+(\sbtcite{sbt-foundations-ii}, \S9.3): \emph{theorem-grade (audited class)} --- proved or audited
+unconditionally within the covered finite scope, at the artifact's declared evidence type (exact
+rational or deterministic float64); \emph{certificate-grade (shell-local)} --- the [C]
+standard \sbtcite{sbt-paper-c}, valid on the frozen shell with no broader-class transfer;
+\emph{run-only readout}; \emph{recognition-grade}; or \emph{control}. Every artifact carries a
+machine-readable envelope (\texttt{claim\_id}, \texttt{claim\_grade}, \texttt{quantifier\_domain},
+\texttt{nonclaims}) validated against a schema in the reproducibility package. Nonclaims are not
+boilerplate: the full nonclaims ledger is printed in \S\ref{sec:discussion}, and several are
+load-bearing (e.g.\ GT6's verdict basis, \S\ref{sec:gt6}).
+
+\subsection{Exact arithmetic and the freeze discipline}
+
+Exact rational arithmetic (Python \texttt{fractions.Fraction}) carries the kernels, stationary
+measures, witness gaps, the GT3 predicate sweep, the trap-invariance lemma, the GT1
+idempotence-defect ratio ($289/121$), and the lumpable zero control (whose CD is exactly $0$
+because exact lumpability is verified symbolically). Not everything theorem-graded is rational,
+and each artifact says which it is: GT1's CD grid is deterministic float64 evidence
+(\texttt{evidence\_type: float64\_deterministic} in the artifact itself), and its declared margin
+$3/2$ is checked in float64 --- the claim's grade rests on the audited-class quantification plus
+the artifact's declared evidence type, not on a pretended exactness. Float64 also appears in
+explicitly labeled diagnostics (spectral gaps, windowed CD diagnostics, GT7 Monte Carlo spot
+checks, the GT6 pressure closure). Controls accompany every certificate, including the
+constructed negative controls of the triage panel (\S\ref{sec:gt3-gt4}).
+
+Pre-registration (GT7, \S\ref{sec:gt7}) and the paper's own evidence base are frozen by sha256
+content hashes over canonical JSON --- each freeze artifact carries a \texttt{content\_hash} and a
+\texttt{freeze\_note}, and every cross-artifact citation pins the target's hash. Regenerating any
+artifact invalidates, detectably, every citation of it; a repository-wide test suite enforces all
+such bindings, and the paper's own claim citations (the bracketed row labels throughout, e.g.\
+[GT1]) are pinned the same way: each carries a hidden artifact hash checked against the claims
+ledger and the current artifact bytes at build time. The project deliberately does not use
+version-control history as its freeze mechanism; the content hashes are the proof object.
+
+\subsection{What the reader should check}
+
+The claims ledger (\texttt{paper/claims\_ledger.json}) is the paper's load-bearing skeleton: one
+row per claim with final wording, grade, quantifier domain, anchors into the SBT corpus, artifact
+hashes, and nonclaims. Every results section below is a transcription of its ledger rows; any
+discrepancy between prose and ledger is a bug in the prose.
+ \section{Models and Pipeline}
+\label{sec:models}
+
+
+\subsection{Model families}
+
+Four model families populate the audited class; all are finite-state discrete-time Markov chains
+with exactly rational kernel entries. Temperature never enters as a free real parameter: we
+declare a finite rational grid in the Boltzmann activation variable
+$\epsilon \in \{1/10, 1/5, 3/10, 2/5, 1/2, 3/5, 7/10\}$, where $\epsilon$ plays the role of
+$e^{-\beta}$ and the nominal temperature $T = -1/\ln\epsilon$ is a bridge annotation only. The
+up-spin equilibrium concentration $c = \epsilon/(1+\epsilon)$ is exactly rational. Protocol
+schedules are finite words over this grid, and the schedule phase is lifted into the state so the
+chain stays autonomous (the clock-audit discipline of F-I \sbtcite{sbt-foundations-i}).
+
+\paragraph{East model (primary substrate).} $N$ binary spins with a frozen up-spin wall at site
+$0$; spin $i$ may flip only if its left neighbor is up ($C_i(n) = n_{i-1}$)
+\cite{jackle-eisinger-1991}. One step of the random-scan heat-bath kernel $K_\epsilon$: pick a
+site uniformly; if unconstrained, resample it from the Bernoulli($c$) marginal. Because the
+constraint does not involve the flipping spin itself, $K_\epsilon$ is reversible w.r.t.\ the
+product measure $\pi_\epsilon(n) \propto \epsilon^{E(n)}$ with $E(n) = \sum_i n_i$ --- verified
+programmatically as exact Fraction identities for every $\epsilon$ on the grid. Note for what
+follows: $K_\epsilon$ and $K_{\epsilon'}$ are reversible w.r.t.\ \emph{different} measures, which
+is exactly the hypothesis failure of the published protocol-trap theorem that the GB1 demo
+(\S\ref{sec:gt3-gt4}) addresses.
+
+\paragraph{Fredrickson--Andersen (FA-1f).} Identical structure with the symmetric constraint
+$C_i(n) = \max(n_{i-1}, n_{i+1})$ \cite{fredrickson-andersen-1984}. FA is the transfer target for
+GT7: nothing about FA is used in fitting or freezing; it is run only after predictions are
+committed (\S\ref{sec:gt7}).
+
+\paragraph{Unconstrained control.} The same heat-bath chain with $C_i \equiv 1$. This model is
+structurally lumpable w.r.t.\ the energy lens, so its closure deficit is exactly $0$ as a rational
+number --- the zero control for GT1 (\S\ref{sec:gt1}).
+
+\paragraph{Bouchaud-type trap model (second transfer target).} $M$ traps with declared rational
+escape weights $w_k$; from trap $k$, jump to a uniformly random trap with probability proportional
+to $w_k$, else stay \cite{bouchaud-1992,monthus-bouchaud-1996}. Temperature dependence is a
+declared finite family of rational weight vectors per grid $\epsilon$ (exponentiating weights
+would break rationality); the physical Arrhenius relation is an \texttt{Ann\_Bridge} annotation.
+The stationary measure is $\pi_k \propto 1/w_k$, verified exactly.
+
+\subsection{A proven limitation of the declared trap family}
+
+\claimref{FINDING.trap\_epsilon\_invariance}{671a28b4a4a9d812a1a6cb6e0083fc23ac01360c6ef5f6327b99de6560c153c2}
+The declared trap weight family multiplies every trap's base weight by a common per-$\epsilon$
+scalar. Since $\pi_k \propto 1/w_k$ depends only on weight \emph{ratios}, that scalar cancels
+exactly: the trap stationary distribution is $\epsilon$-invariant (proved in exact Fraction
+arithmetic; regression-tested). The declared temperature action therefore governs relaxation
+\emph{rate} only, never the relaxation \emph{target}. This is known in substance in the trap-model
+literature
+\cite{bouchaud-1992,monthus-bouchaud-1996,diezemann-heuer-2011,bertin-bouchaud-drouffe-godreche-2003}:
+the standard convention is a per-trap Arrhenius factor $w_k(T) \propto e^{-E_k/T}$, under which
+different traps rescale by different temperature-dependent factors and the equilibrium genuinely
+shifts --- exactly the mechanism used to produce Kovacs memory in trap models
+\cite{diezemann-heuer-2011,bertin-bouchaud-drouffe-godreche-2003}. Our multiplicative-scalar
+choice was made deliberately to keep every computation exactly rational; the invariance is its
+elementary, proven consequence. It is filed here as a design caveat because it has a concrete
+downstream cost, paid honestly in \S\ref{sec:gt7}: a Kovacs protocol cannot start the trap family
+below its post-jump equilibrium, so the trap column of the transfer scoreboard is structurally
+unobservable.
+
+\nonclaim{Not a novelty claim: the cancellation is standard trap-model structure once stated; the
+  contribution is stating, proving, and paying for it within the declared family. It says nothing
+  about trap dynamics or aging trajectories; only the stationary distribution is
+  $\epsilon$-invariant.}
+
+\subsection{Pipeline}
+
+The exact-finite pipeline ports paper [A]'s package spec \sbtcite{sbt-paper-a} to thermal
+semantics: rational history distributions over a declared preparation catalog, rational
+row-stochastic continuation kernels for each protocol word, and two-time observables as
+future-signature entries. Phase-1 parity with the [A] benchmark family (the six-regime control
+suite re-instantiated with thermal semantics) is filed as a control artifact and consumed by GT4
+(\S\ref{sec:gt3-gt4}). Spectral gaps of $K_\epsilon$ (float64 diagnostics, never certificate
+content) calibrate the $\tau$-windows and aging times used throughout
+(Fig.~\ref{fig:spectral-gaps}).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{figures/out/fig_spectral_gaps.pdf}
+  \caption{East-model spectral gaps across the declared $(N,\epsilon)$ grid (float64 diagnostic
+    used only for window calibration).}
+  \label{fig:spectral-gaps}
+\end{figure}
+ \section{GT1: Non-Closure of the Thermodynamic Lens}
+\label{sec:gt1}
+
+
+\subsection{Claim}
+
+\claimref{GT1}{a0cea276116f05fcbb10844c527aac69d2027c70210a19db4753364d6c54d44e}
+On the declared scope --- East model, $N=8$, lens $L_{\mathrm{energy}}$, $\tau$ ladder
+$[1,2,4,8]$, quench cell $\epsilon: 7/10 \to 1/10$ with waiting time $t_w = 20$ --- the closure
+deficit $\mathrm{CD}_\tau$ of the aging protocol exceeds the constrained-East
+stationary-equilibrium baseline at every declared cell by at least the declared margin $3/2$
+(achieved minimum ratio $\approx 1.6392$), and the audited idempotence-defect table exceeds its
+declared margin $2$ (achieved ratio $289/121$). Filed in F-II channel-status vocabulary: the P5
+channel of the standard thermodynamic packaging is not \texttt{active\_projection} as a closed
+packaging on this declared glassy scope. Grade: theorem (audited class); evidence type as
+declared in the artifact: deterministic float64 for the CD grid and its margin, exact rational
+for the idempotence-defect ratio and the lumpability controls. Anchors: F-III T8, F-I
+D-IC-01/D-IC-02/T-CL-01, \sbtcite{sbt-paper-b} Def.~3.1.
+
+\begin{longtable}{rrrr}
+\caption{GT1 closure deficit vs. constrained-equilibrium baseline (East N=8, L\_energy)}\label{tab:gt1-margins} \\
+\toprule
+$\tau$ & $CD_\tau$ (glassy) & $CD_\tau$ (equilibrium) & ratio \\
+\midrule
+\endfirsthead
+\toprule
+$\tau$ & $CD_\tau$ (glassy) & $CD_\tau$ (equilibrium) & ratio \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+1 & 0.033650 & 0.018875 & 1.7828 \\
+2 & 0.063730 & 0.036068 & 1.7669 \\
+4 & 0.113110 & 0.065575 & 1.7249 \\
+8 & 0.177212 & 0.108112 & 1.6392 \\
+\textbf{margin} & -- & -- & declared 3/2, achieved 1.6392 \\
+\bottomrule
+\end{longtable}
+ 
+\subsection{The control structure, including a corrected expectation}
+
+The controls deserve emphasis because one of them corrected our own design document. The intended
+design called for constrained-East equilibrium as a zero-CD control. That expectation is
+\emph{false}, and provably so: $\mathrm{CD}_\tau = 0$ iff the (kernel, lens) pair is
+$\tau$-lumpable --- a structural property, not an equilibrium property --- and East's kinetic
+constraint depends on \emph{where} excitations sit, not merely how many there are, so East is
+non-lumpable w.r.t.\ $L_{\mathrm{energy}}$ even at stationarity. The shipped certificate
+therefore uses two controls with different jobs (Fig.~\ref{fig:gt1-ladder}): the structurally
+lumpable \emph{unconstrained} model sits at exact rational $\mathrm{CD} = 0$ (float residuals at
+$10^{-17}$, exact lumpability verified symbolically), while constrained-East equilibrium is an
+honest \emph{nonzero baseline} --- the certificate's content is that aging exceeds even that
+baseline by the declared margin. Equilibrium is not used as a zero control anywhere.
+
+\claimref{GB2}{847f389464f9196f2315c05e3cef842efa94f201aad26f19b5dc4071e043f081}
+The protocol-relative CD machinery underlying this table is the GB2 demo: finite protocol-CD
+computations (East vs.\ unconstrained, $N=4$, declared $\epsilon$ grid) with exactness reserved
+for the lumpability check and float64 windowed diagnostics labeled as such. GB2 is
+recognition-grade --- a demo, not a GT certificate --- and the GT1 artifact carries a passing GB2
+stationary-consistency gate (the protocol-relative CD reproduces stationary CD in the equilibrium
+limit, residual exactly $0$).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{figures/out/fig_gt1_cd_ladder.pdf}
+  \caption{GT1 closure deficit vs.\ $\tau$: aging protocol, constrained-equilibrium baseline
+    (nonzero by non-lumpability), and the unconstrained lumpable control at exact zero.}
+  \label{fig:gt1-ladder}
+\end{figure}
+
+\subsection{Scope and open control}
+
+The certificate quantifies over exactly its declared cell: East, $N=8$, $L_{\mathrm{energy}}$,
+the declared $\tau$ ladder and quench window. FA replication, the $L_{\mathrm{panel}}$ lens, and
+$N=10$ are undone extensions, listed as such in the artifact envelope.
+
+\claimref{NEG.gt1\_b\_parity\_control\_open}{a0cea276116f05fcbb10844c527aac69d2027c70210a19db4753364d6c54d44e}
+One intended control is open: the paper-[B] example-chain benchmark-parity check was not ported,
+and the GT1 artifact files it as an explicitly skipped control with its reason
+(machine-readable \texttt{status: skipped}). The certificate's margins are internal to its own
+declared scope and do not route through [B]'s example chains; no [B]-parity is claimed until the
+control is actually run.
+ \section{GT2 and GT5: The Kovacs Witness and the Buyback Curve}
+\label{sec:gt2-gt5}
+
+
+\subsection{The Kovacs protocol on the audited class}
+
+The Kovacs protocol \cite{kovacs-1963} --- equilibrate hot, quench cold, age for $t_w$, up-jump to
+an intermediate temperature, watch a one-time observable relax --- was located on the East
+substrate by an exact Phase-0 search (a pre-certificate control, filed as such): at $N=10$,
+$\epsilon: 7/10 \to 1/10 \to 2/5$ with $t_w = 40$, the energy trace crosses its target-equilibrium
+value at $t_K = 1$ and overshoots through a hump peaking at $t_{\mathrm{peak}} = 35$
+(Fig.~\ref{fig:kovacs-hump}), all in exact rational arithmetic. At $t_K$ the system equals
+equilibrium in the monitored observable; its subsequent non-monotone excursion is the classic
+signature that the current value does not determine the future.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{figures/out/fig_gt2_kovacs_hump.pdf}
+  \caption{Kovacs hump on East $N=10$ (exact-rational trace, floats only for plotting): the energy
+    crosses equilibrium at $t_K$ and overshoots before returning.}
+  \label{fig:kovacs-hump}
+\end{figure}
+
+\subsection{GT2: the witness certificate}
+
+\claimref{GT2}{321f9bffdbf1368ec764a8fcde97d569dd9f4292ee5a98a0b6f30ac9483ce7bf}
+On the declared scope (East, $N=10$, \texttt{kovacs\_moment} lens, declared $\epsilon$ grid and
+continuation catalog), one exact-rational split pair of preparation histories is exhibited: the
+two histories agree on the current lens value and their futures differ, with an exact max-abs
+future gap that is a strictly positive rational number (a $\sim$190-digit numerator over a
+$\sim$190-digit denominator; exactness, not magnitude, is the point). By \sbtcite{sbt-paper-a}
+Thm.~3.5, witness existence is equivalent to the comparison map $\pi: M \to Q$ being strictly
+refining. Grade: theorem (audited class).
+
+The F-II routing rule is observed strictly: the ``different future'' files as \textbf{P4
+staged-dependence} on the p1-witness template --- it is \emph{not} a P3 route mismatch and
+\emph{not} a directionality or irreversibility claim. No P6\_drive audit was performed, so no
+arrow-of-time statement of any kind is made on GT2's behalf.
+
+\claimref{NEG.gt2\_loop\_certificate\_not\_built}{321f9bffdbf1368ec764a8fcde97d569dd9f4292ee5a98a0b6f30ac9483ce7bf}
+The proposal also called for a loop-asymmetry companion certificate (the thermal loop acting
+trivially on $Q$, nontrivially on $M$). It was not built: the split-pair witness stands alone, and
+--- as \S\ref{sec:lean} makes precise --- the vendored formal core cannot even express a
+non-vacuous loop-asymmetry instance, so a computational loop certificate would first need new
+formal footing. Disclosed here and in the gap register; nothing downstream depends on it.
+
+\subsection{GT5: what it costs to buy the distinction back}
+
+\claimref{GT5}{746b44e6c2f7f92364137a202f7306b6afc9e99c413fb4dd3a40d47bfd6f94c8}
+On the declared scope (East, $N=10$, \texttt{kovacs\_moment} interface, the declared two-history
+class), $\mathrm{MaxFiber} = 2$ meets the nontriviality threshold: the current lens collapses the
+witness pair into one class ($|Q| = 1$ on the pair) while the predictive quotient keeps two
+($|M| = 2$). The buyback curve (Fig.~\ref{fig:buyback}) is published as a lift ledger per F-II
+\texttt{prop:forgetting-lifts}: each added memory coordinate is a recorded, selected, non-unique
+lift. At budget $0$ the pair is unresolved; at budget $1$, \emph{each} of the three declared
+scalar coordinates ($T_f$, $D$, $n_1$) already resolves it exactly (loss $0/1$), so the shipped
+witness saturates at $\texttt{saturation\_budget} = 1$.
+
+The field translation is deliberately modest. TNM's fictive temperature
+\cite{tool-1946,narayanaswamy-1971,moynihan-1976} is, in this vocabulary, a lawful candidate
+memory coordinate --- a declared lift, a step toward $M$. For \emph{this} minimal two-history
+witness, one scalar suffices; the certificate demonstrates the buyback \emph{mechanism} and its
+ledger discipline. It is not a claim that one fictive-temperature-like scalar is insufficient in
+general: a field-facing insufficiency claim would require a richer multi-instance construction not
+built here.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{figures/out/fig_gt5_buyback.pdf}
+  \caption{GT5 buyback curve: lift schemas tried and resolved per added-coordinate budget; the
+    shipped two-history witness saturates at budget 1.}
+  \label{fig:buyback}
+\end{figure}
+ \section{GT3 and GT4: Foreclosure and Regime Triage}
+\label{sec:gt3-gt4}
+
+
+\subsection{GT3: the order-parameter search, foreclosed on its declared class}
+
+\claimref{GT3}{25e78910189098978f58f5e083cd3553f42fd9eb2b94cc7818d0ed80f0f661a7}
+On the declared scope (East, $N=8$, $\epsilon = 1/2$), the definability bound of F-III T14 makes
+the static-order-parameter search space finite and countable: a fixed lens with image size $9$
+defines exactly $2^9 = 512$ predicates. The sweep checks all $512$: every one of them agrees on
+the exhibited witness pair, while a distinguishing $n_1$-based readout separates it (exact gap
+$169/1536$ on the separating continuation). The witness pair is a standalone
+$W_{\mathrm{reflection}}$ pair constructed for this sweep --- deliberately \emph{not} chained to
+the GT2 certificate, so the two results fail independently. This is a constructive foreclosure:
+the distinguishing readout is exhibited and proven absent from $\mathrm{Def}(L_{\mathrm{energy}})$,
+not inferred from generic counting. Grade: theorem (audited class).
+
+\begin{longtable}{lp{9cm}}
+\caption{GT3 foreclosure sweep summary (East N=8, $\epsilon=1/2$)}\label{tab:gt3-foreclosure} \\
+\toprule
+field & value \\
+\midrule
+\endfirsthead
+\toprule
+field & value \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+N & 8 \\
+epsilon & 1/2 \\
+lens & L\_energy \\
+total predicates & 512 \\
+agreeing predicates & 512 \\
+lens image size & 9 \\
+all agree & True \\
+separating event & n\_1 \\
+witness provenance & standalone W\_reflection witness constructed for this sweep; not chained to the GT2.kovacs\_moment certificate (a separate witness family per design/specs/04\_gt2\_witnesses.md §4). \\
+T-FOR-02 statement & the distinguishing readout (n\_1-based) is not in Def(l\_energy); constructive witness exhibited, not generic counting \\
+\bottomrule
+\end{longtable}
+ 
+The field-facing sentence --- ``there is no static order parameter for glass'' --- is licensed
+here \emph{only} as the declared-class shadow of this theorem (F-II item E2), with the class, the
+catalog, and the suppressed content named in the same breath: no predicate definable from the
+declared energy lens on the declared class separates what memory separates. Overreading it to
+other instruments, other lens classes, or the continuum is inadmissible, and this paper does not
+do so. What the theorem does license, via F-IV F12 (No-Free-Distinction), is a reframing of the
+search itself: any readout that \emph{does} separate glasses must carry declared memory --- it is
+a step toward the predictive quotient, not a static order parameter.
+
+\subsection{GT4: the kill-test panel}
+
+\claimref{GT4}{160ed9c4bb65a8189f012fba1fb7e4a55fc17e323050437206c341c077b53619}
+Over the declared $9$-member thermal benchmark family, the deterministic triage classification
+identifies \texttt{kovacs\_wheel} --- the Kovacs memory candidate --- as the sole
+\texttt{coherent\_candidate}, while the five declared non-coherent regime controls
+(\texttt{artifact\_trap}, \texttt{dissipative}, \texttt{explicit\_latent}, \texttt{flat},
+\texttt{flattenable}) are correctly killed or cleared, with protocol-trap discipline applied: raw
+and cleared classifications are both recorded, so the table shows each artifact being caught
+(e.g.\ the naive protocol trap classifies as \texttt{artifact\_trap} raw and \texttt{flat} once
+the schedule is honestly internalized). Grade: theorem (audited class), over the declared finite
+family only --- not a shell-general theorem.
+
+\begin{longtable}{lll}
+\caption{GT4 regime triage over the declared benchmark family}\label{tab:gt4-regime-triage} \\
+\toprule
+regime & raw classification & cleared classification \\
+\midrule
+\endfirsthead
+\toprule
+regime & raw classification & cleared classification \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+coherent candidate & kovacs\_wheel & -- \\
+artifact\_trap & protocol\_trap\_naive & protocol\_trap\_honest \\
+dissipative & dissipative\_memory@mid & dissipative\_memory@end \\
+explicit\_latent & latent\_memory\_base & latent\_memory\_refined \\
+flat & flat\_control & (pure control, no repair) \\
+flattenable & flattenable\_raw & flattenable\_completed \\
+\bottomrule
+\end{longtable}
+ 
+\subsection{GB1: the protocol-trap caveat, honestly carried}
+
+\claimref{GB1}{4173705a52c358bc74b51815929cb2a28c8f680b3421dafdb7633e97b051fa8e}
+The published protocol-trap theorem (F-I T-AOT-02) requires all phase kernels reversible w.r.t.\ a
+\emph{common} stationary measure; Kovacs kernels $K_\epsilon$ are reversible w.r.t.\ different
+Gibbs measures per $\epsilon$, so the theorem does not apply as published. GB1 --- the
+temperature-protocol version, in the style of the protocol-trap microarticle
+\sbtcite{sbt-protocol-trap} --- ships as a recognition-grade math demo: a pseudo-EPR identity
+plus a finite exact numerical check, with the closed general theorem filed as an explicitly open
+obligation in the artifact payload. GT4's triage therefore carries the GB1 caveat as a standing
+theorem-wrapper limitation: the triage computation itself is deterministic and exact, but the
+protocol-trap \emph{discipline} it applies rests partly on a demo, not a closed theorem. This is
+F-II conditional reporting working as designed.
+ \section{GT6: Strict-Extension Certificate for the Audited Shell}
+\label{sec:gt6}
+
+
+\subsection{Claim and verdict basis}
+
+\claimref{GT6}{6453d0e36a5f43e0a3e7ed9f69f53e00a3c6cef7aa1ddea4019522d5670cab97}
+For the audited East glass shell ($N=8$, declared $\epsilon$ grid and protocol windows), the
+promotion filing of F-III \S10 --- bridge record, gate table, knockout panel, nonclaim register,
+checker --- is complete, and the gate-table verdict is \texttt{strict}: the predictive-structure
+layer strictly extends the current-observable layer on this shell. Grade: certificate
+(shell-local, the [C] standard \sbtcite{sbt-paper-c}): valid on the frozen shell, with no
+broader-class transfer claimed.
+
+Because an earlier draft of this project's own design documents overstated this result, the basis
+of the verdict is quoted verbatim from the audit artifact rather than paraphrased:
+
+\begin{quote}
+``verdict: strict is established via F-III T19/T20 (non-factorization from GT2/GT3 witnesses).
+Paper [C]'s thm:strict-extension (the fuller completion-dynamics route requiring material
+P4$\leftarrow$P5 forcing) is NOT invoked: H4\_forcing.material\_forcing\_count = 0 for this shell,
+filed as an honest negative sub-result, not as a satisfied hypothesis.''
+\end{quote}
+
+That is: the strictness verdict rests on the \emph{non-factorization} route --- GT2's witness and
+GT3's foreclosure force the promotion gate --- and not on paper [C]'s completion-dynamics theorem,
+whose material-forcing hypothesis this shell simply does not satisfy.
+
+\claimref{NEG.material\_forcing\_absent}{f5f9558e0ffa786ac8a28254e555d398eff572d2936aea89a889ea160cb7bed2}
+The forcing check itself is a result: $\texttt{material\_forcing\_count} = 0$ on the audited
+shell. Absence of material forcing here is not evidence about other shells or protocols; it marks
+the exact boundary of which [C] machinery this instantiation exercises.
+
+\subsection{Gate table and knockout panel}
+
+\begin{longtable}{lllp{6.5cm}}
+\caption{GT6 gate table (audited glass shell)}\label{tab:gt6-gate-table} \\
+\toprule
+gate & required & status & evidence \\
+\midrule
+\endfirsthead
+\toprule
+gate & required & status & evidence \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+G\_suff & True & pass & audit.json filing assembled \\
+G\_desc & False & not\_required & glass bridge claims strict object-map enrichment, not closed macro dynamics \\
+G\_stab & True & pass & P3-04 saturated strata under E\_{tau,f} \\
+G\_ctrl & True & pass & P3-01 knockout panel controls \\
+G\_nosmuggle & True & pass & six no-smuggling violation kinds checked \\
+G\_vis & True & pass & visible citations and nonclaims filed \\
+G\_audit & True & pass & checker validates hashes and verdict \\
+G\_strict & True & strict\_pass & GT2/GT3 constructive split witnesses \\
+G\_locglob & False & not\_required & shell-bound single bridge only; no stacked or glued promotions claimed \\
+\bottomrule
+\end{longtable}
+ 
+The knockout panel makes each primitive's causal activity checkable, in two distinct modes that
+the artifact's own nonclaim keeps separate. For P1--P3 the knockouts are \emph{numeric}: disabling
+the primitive (identity run kernels; the unconstrained-lumpable replacement; constant-$\epsilon$
+replacement) degrades a declared numeric diagnostic past its declared threshold. For P4--P6 the
+knockouts are \emph{capability-loss} rows: removing the primitive makes the relevant downstream
+diagnostic unavailable or undefined rather than numerically degraded --- there is no numeric
+threshold to cross, and none is claimed.
+
+\begin{longtable}{lllp{6.5cm}}
+\caption{GT6 knockout panel}\label{tab:gt6-knockouts} \\
+\toprule
+primitive & kind & degraded & threshold \\
+\midrule
+\endfirsthead
+\toprule
+primitive & kind & degraded & threshold \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+P1 & numeric & True & identity trace variation must be exactly 0 \\
+P2 & numeric & True & unconstrained control must be exactly lumpable under L\_energy \\
+P3 & numeric & True & constant-epsilon replacement must fail the hump detector \\
+P4 & capability\_loss & True & -- \\
+P5 & capability\_loss & True & -- \\
+P6 & capability\_loss & True & -- \\
+\bottomrule
+\end{longtable}
+ 
+Supporting diagnostics are filed at their true, lower grades: the Fekete pressure-closure table is
+a float64 diagnostic (not an exact-rational certificate; sparse $N=10$ rows skipped by declared
+threshold and reported as such), and the spectral-gap table (\S\ref{sec:models}) calibrates the
+shell windows only. H5 (the macro-admissibility obstruction) cites the GT1 theorem-grade
+certificate by content hash --- the [C] text itself glosses this obligation as failure of
+admissible aggregation or lumpability at the macro level, which is precisely what GT1 certifies.
+
+\subsection{What strictness does not mean}
+
+The artifact's nonclaim register (printed in full in \S\ref{sec:discussion}) is part of the
+result. In particular: strictness is shell-local (no shell-general strict-bridge theorem, no
+broader-class transfer); strictness does not imply autonomous macro closure, nor drive (no
+P6\_drive audit was performed); the pressure gap is neither a KL closure deficit nor the
+strictness witness; the promotion is a single bridge $T_0 \to T_1$ --- F-III has no
+stacking-composition theorem, and none is used.
+ \section{GT7: Aging Constants Are Run-Only --- Freeze, Transfer, and the Scoreboard}
+\label{sec:gt7}
+
+
+\subsection{The protocol}
+
+\claimref{GT7}{4905b013624462549b9a4cdb18f51d0220f70be29976be461e5a8681978dcab8}
+GT7's claim is a discipline plus its unedited outcome. The freeze-and-transfer protocol ran in
+five stages, each frozen by sha256 content hash before the next began:
+
+\begin{itemize}
+  \item \textbf{F1 --- readouts freeze.} Six declared readouts (Kovacs $t_K$, $t_{\mathrm{peak}}$,
+    hump height, memory-dimension profile, deficit-decay slope, cross-validation checks) frozen in
+    a registry with content hash and freeze note.
+  \item \textbf{F2 --- East reference.} The reference surface on East: 56 exact hump-surface cells
+    at $N=10$, an $N=16$ Monte Carlo spot check, deficit decay (Fig.~\ref{fig:deficit-decay}), and
+    memory-dimension profiles. Run-only readouts; no functional form fitted anywhere.
+  \item \textbf{F3 --- pre-registration.} 338 predictions committed before any target-family run:
+    42 interval predictions, 2 order-relation predictions, and 294 cells explicitly declared
+    \texttt{no\_prediction}. The predictions registry pins the frozen readouts hash, the East
+    reference hash, and the hash of the scoring script itself.
+  \item \textbf{F4 --- target runs.} FA and trap families run blind against the committed
+    predictions.
+  \item \textbf{F5 --- mechanical scoring.} The frozen scorer (hash-pinned at F3, verified
+    unchanged) compares predictions to observations with no post-hoc widening or
+    reinterpretation.
+\end{itemize}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.7\linewidth]{figures/out/fig_gt7_deficit_decay.pdf}
+  \caption{East-reference closure-deficit decay across the declared $\tau$ ladder (run-only
+    float64 readout; part of the frozen F2 reference).}
+  \label{fig:deficit-decay}
+\end{figure}
+
+\subsection{The scoreboard, unedited}
+
+\claimref{NEG.gt7\_transfer\_failures}{37ac2b8f4bcb55cf1f2cf9f0518850a84039c3e51177d3000d0244b5ed6cc96e}
+Of the 44 committed predictions, 22 were scored against observed target cells: \textbf{8 passed
+and 14 failed}; the other 22 targeted cells that produced no observation. All 338 verdicts are
+filed unedited (Fig.~\ref{fig:scoreboard}). The failure pattern is itself a filed, tested fact:
+
+\begin{itemize}
+  \item All 14 failures are FA-family interval predictions (5 $t_K$, 4 $t_{\mathrm{peak}}$,
+    5 hump-height), and every one is \emph{one-sided high}: the observed FA value exceeds the
+    predicted upper bound. FA humps are systematically later and larger than the East-anchored
+    intervals allowed.
+  \item Failures cluster at the deeper mid-quench: 12 of 14 failing cells have
+    $\epsilon_{\mathrm{mid}} = 2/5$, where every scored cell failed. At
+    $\epsilon_{\mathrm{mid}} = 1/2$, 7 of 9 scored interval cells passed (plus the passing
+    order-relation prediction), and the two misses there are borderline (hump height $0.2033$
+    vs.\ bound $0.2008$; $t_K$ of $5$ vs.\ $[1,3]$).
+  \item All 22 unobserved cells are trap-family: the trap target's exact hump search returned
+    \texttt{found = false} in all 56 surface cells, with the uniform miss reason ``does not start
+    below equilibrium.'' This is the dynamical corollary of the $\epsilon$-invariance lemma of
+    \S\ref{sec:models}: an $\epsilon$-jump gives the declared trap family no below-equilibrium
+    starting condition, so the Kovacs protocol cannot produce a hump there at all.
+\end{itemize}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\linewidth]{figures/out/fig_gt7_transfer_scoreboard.pdf}
+  \caption{Left: verdict counts over all 338 cells. Right: the 22 scored FA interval cells ---
+    bar = committed interval, $\times$ = observed value; every failure is above its interval.}
+  \label{fig:scoreboard}
+\end{figure}
+
+\subsection{Reading the failures}
+
+The failures are first-class results of the pre-registration protocol: it is designed to be
+falsifiable, and it was. Three honest readings are compatible with the data, and the protocol
+forbids adjudicating among them post hoc: (a) East-to-FA transfer of run-only constants degrades
+with quench depth, in the direction of FA responding slower and larger; (b) the declared
+interval-scaling rule, not the readouts themselves, is what failed; (c) the trap column is not a
+partial failure but a structural mismatch of the protocol to the declared trap family, predicted
+in hindsight by the $\epsilon$-invariance lemma. Under any reading, the run-only thesis stands as
+filed: the readouts are readouts of runs --- frozen, transferred, and scored, not fitted --- and
+by GT3 they are non-definable from the current lens on the declared class. Score counts are not a
+fitted scaling law, and no post-hoc reinterpretation of failed intervals is permitted or
+performed.
+ \section{GB9: The Lean-Checked Core and the Scope-Boundary Finding}
+\label{sec:lean}
+
+
+\subsection{What is machine-checked}
+
+\claimref{GB9}{014c387c154a27d21d86e0454c25fea4ddc7ac8ecd3e7d3ea116d6f068a296c1}
+The vendored \texttt{HolonomyMemory} core (paper [A]'s Lean development
+\sbtcite{sbt-paper-a}) plus this project's \texttt{GlassWitness} extension compile sorry-free on
+the pinned toolchain (\texttt{leanprover/lean4:4.29.0}), with per-theorem axiom audits. Per the
+F-II fidelity legend, every row of the canonical 17-row fidelity table
+(Table~\ref{tab:lean-fidelity-full}) carries its true label: 11 rows \emph{verified} (including
+the three GENERIC collapse theorems below and [A]'s witness/strict-refinement equivalence), 3
+\emph{narrowed/parametric} (core structure fields), 1 \emph{typed mirror} (the glass instance), 1
+\emph{schema projection}, and 1 \emph{computational evidence only} (the real Kovacs numeric
+witness, which is deliberately not encoded --- see below). No schema or trivial declaration is
+described as a verified proof anywhere in this paper, and CD computations are deterministic
+computational evidence, not Lean theorems.
+
+\begin{longtable}{lp{6cm}}
+\caption{GB9 Lean fidelity table (all rows, printed in full per the Phase 5 gate; rows with no Lean encoding are labeled by the claim they document instead of a Lean identifier)}\label{tab:lean-fidelity-full} \\
+\toprule
+Lean name / documented claim & fidelity \\
+\midrule
+\endfirsthead
+\toprule
+Lean name / documented claim & fidelity \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+futurePredictiveEquiv\_implies\_currentEventEquiv & verified \\
+predictiveToCurrent\_commutes\_with\_transport & verified \\
+predictiveQuotient\_futureSufficient & verified \\
+futureSufficient\_stateEq\_implies\_futurePredictiveEquiv & verified \\
+futureSufficient\_factorsThroughPredictiveQuotient\_onReachable & verified \\
+futureSufficient\_factorization\_unique\_onReachable & verified \\
+strictRefinement\_iff\_nonempty\_predictiveWitness & verified \\
+loopAsymmetry\_exhibits\_movedPredictive\_fixedCurrent & verified \\
+current\_implies\_future\_GENERIC & verified \\
+predictiveWitness\_impossible\_GENERIC & verified \\
+strictRefinement\_impossible\_GENERIC & verified \\
+push\_id & narrowed / parametric \\
+observe\_push & narrowed / parametric \\
+push\_compose & narrowed / parametric \\
+glassInstance & typed mirror \\
+glassPredictiveQuotient\_futureSufficient & schema (projection) \\
+Real Kovacs exact-rational numeric split-pair witness & computational evidence only \\
+\bottomrule
+\end{longtable}
+ 
+\subsection{The collapse finding}
+
+\claimref{FINDING.lean\_collapse}{c70185334829fe8ad9f879a2288e90efe3d24700b8eeb5593f2de05341b62a51}
+Attempting to instantiate the numeric Kovacs witness in the core produced a theorem instead. For
+\emph{every} instance of \texttt{RouteTransportCore}, the \texttt{observe\_push} coherence field,
+combined with \texttt{CurrentEventEquiv}'s universal quantification over events, forces current
+equivalence to imply future-predictive equivalence
+(\texttt{current\_implies\_future\_GENERIC}); consequently non-vacuous \texttt{PredictiveWitness},
+\texttt{StrictRefinement}, and \texttt{LoopAsymmetry} instances cannot be constructed in this core
+at all (\texttt{predictiveWitness\_impossible\_GENERIC} and its strict-refinement companion;
+machine-checked, sorry-free). The mechanism:
+the core's naturality axiom lets every future event be pulled back to a current event, so
+agreement on all current events silently includes agreement on all pulled-back futures.
+
+This is a genuine scope-boundary result about the formal core's expressiveness --- strictly
+stronger than paper [A]'s own declared boundary --- and it is structurally an instance of a known
+pattern rather than an isolated fact: it has the proof shape of Markov-chain strong lumpability
+\cite{kemeny-snell-1960,buchholz-1994} (a local one-step coherence condition propagating an
+equivalence to all future times), and the collapse is exactly biextensional collapse in the
+Chu-space sense \cite{barr-1979,pratt-1999,parente-2024}, with \texttt{pullEvent} playing the Chu
+transform's naturality condition. The instructive contrast is computational mechanics'
+causal-state framework \cite{shalizi-crutchfield-2001}, where current agreement generally does
+\emph{not} imply future agreement: the collapse here is forced by this core's axiom, not a
+generic feature of prediction.
+
+\subsection{The consequence, stated as understanding rather than apology}
+
+\claimref{NEG.lean\_instance\_structural}{014c387c154a27d21d86e0454c25fea4ddc7ac8ecd3e7d3ea116d6f068a296c1}
+The finding explains exactly which certificates can live in Lean and which cannot. The abstract
+theorems --- witness iff strict refinement, factorization-through-$M$ and its uniqueness on the
+reachable image --- are verified generically and apply to any instantiation. But a non-vacuous
+\emph{numeric} witness instance is unbuildable in this core, so \texttt{glassInstance} is filed as
+what it is: a typed, index-based structural mirror, with the real Kovacs split pair remaining
+exact-rational computational evidence in its own artifact (\S\ref{sec:gt2-gt5}). The Python
+certificates avoid the collapse because they quantify over a finite \emph{declared} future
+catalog rather than all pullback-closed events. A formal core admitting numeric glass witnesses
+would need weaker coherence axioms --- future formalization work, now with a machine-checked
+specification of exactly what must change.
+ \section{GB10: Empirical Bridge Records}
+\label{sec:bridges}
+
+
+\claimref{GB10}{8015ce419a3a00e8a1b81217d0796ef53a6467db81cb774d0fa9711694087ab8}
+Three empirical bridge records connect the formal complex to laboratory phenomena, each filed with
+the complete five-field schema of F-II \texttt{prop:empirical-bridge} and validated by the bridge
+checker: (i) \textbf{Kovacs PVAc volume recovery} \cite{kovacs-1963} --- dilatometric
+specific-volume measurement under the temperature-jump/age/second-jump protocol, with the level
+map tying the measured hump to the GT2 witness artifact by content hash; (ii)
+\textbf{spin-glass memory and rejuvenation}; (iii) \textbf{colloidal-glass aging}. Each record
+carries: substrate and observable; instrument with a per-instrument visibility record (what the
+apparatus sees, what it suppresses --- e.g.\ dilatometry sees one-time specific volume and hump
+shape while suppressing chain-conformation microstate); a level map with formal-artifact hashes; a
+threshold--witness relation stating when a measured signature \emph{counts} as a lab-grade
+witness; and suppressed-structure nonclaims.
+
+The bridges are the paper's only channel to the laboratory, and they are deliberately one-way:
+measured Kovacs signatures are \emph{lab-grade} witnesses via the bridge, full stop. The
+target-statement shadow --- the measured insufficiency of single-$T_f$ descriptions is the lab
+shadow of $\mathrm{MaxFiber} \geq 2$ --- inherits GT5's scope box (\S\ref{sec:gt2-gt5}): on the
+shipped witness one scalar suffices, so the lab shadow licensed today is existence of predictive
+surplus, not single-scalar insufficiency. A lab replication targeting these records would need:
+the declared protocol grid as an instrument-realizable schedule; a declared one-time observable
+panel; and a matched-pair preparation (two histories tuned to equal current panels) --- at which
+point a measured divergence of futures files as a lab-grade split pair through record (i)'s
+threshold--witness relation.
+
+\nonclaim{No empirical-realization claim anywhere: lab data is never presented as a realization of
+  the formal description. Visibility records are per instrument, with no cross-instrument merge
+  into an instrument-free statement (F-II has no cross-instrument comparison theorem, and none is
+  used).}
+ \section{Discussion}
+\label{sec:discussion}
+
+
+\subsection{What is established, at which grade}
+
+Theorem-grade, each on its exactly declared finite class: non-closure of the thermodynamic lens
+with a certified margin over the equilibrium baseline (GT1); the Kovacs split-pair witness (GT2);
+foreclosure of all $512$ lens-definable predicates on the declared class (GT3); the regime-triage
+panel with five controls correctly killed (GT4); $\mathrm{MaxFiber}=2$ with a saturating buyback
+ledger (GT5); and, from the formalization effort itself, the collapse theorem for
+\texttt{RouteTransportCore} (machine-checked). Certificate-grade, shell-local: the GT6 strict
+promotion via non-factorization. Run-only: the GT7 protocol and its 8/14/294/22 scoreboard.
+Recognition-grade: the GB1/GB2 demos, the Lean fidelity filing, and the three empirical bridges.
+Nothing in this paper is graded higher than its artifact.
+
+\subsection{What is open}
+
+Seven gaps are disclosed, each with a register entry stating what closing it would take
+(\texttt{paper/gap\_register.md}); none is load-bearing for any claim above, because every claim's
+wording already excludes it.
+
+\claimref{NEG.gb5\_repair\_sweep\_not\_built}{3f3c56405847a079f48bae350b3b35e901a5731470bcb4a092bd7f682f075559}
+The largest is GB5: no exhaustive frozen-repair-class sweep exists, so no repair-impossibility
+certificate of any grade is claimed --- ``no admissible repair exists'' is never asserted, and GT5's
+buyback saturation is explicitly not a substitute. The others: the GT2 loop certificate (unbuilt,
+and now known to need new formal footing); GT1's [B]-parity control (skipped, filed); GT1's breadth
+(one declared (model, $N$, lens) cell --- the F-II discipline of declared classes working as
+designed, not a hidden weakness, but honestly a single cell); the GT7 failure interpretation
+(three readings left open by design); material forcing (absent on this shell, so [C]'s fuller
+route is unexercised); and the numeric-witness Lean encoding (proved impossible in this core).
+Natural next experiments follow directly: a second pre-registered prediction round with
+re-derived intervals; an Arrhenius-form trap family (non-multiplicative depth dependence) so the
+Kovacs protocol is non-degenerate there; the FA/$L_{\mathrm{panel}}$/$N{=}10$ GT1 extensions; and
+a weakened formal core admitting numeric witnesses.
+
+One ceiling is declared rather than open, per F-II's recognition-open caveat: if glass aging
+carries a finite conservation or balance law over the declared records that supplies none of the
+six witness types, the six-role decomposition underlying this paper's filings is conditional on
+the recognition hypothesis that no such feature exists. No such candidate was identified on the
+audited class; any future one files at recognition grade, separately.
+
+\subsection{Anti-reductionism, stated plainly}
+
+This paper's certificates live at a layer boundary --- current-observable layer versus predictive
+layer --- and the discipline that produced them cuts both ways. A green certificate suite never
+proves emergence: GT3's foreclosure is the gate working (the declared lens class provably cannot
+express the distinction that memory carries), not a metaphysical discovery about glass, and not a
+reduction in either direction across the boundary. Symmetrically, nothing here licenses reading
+the predictive layer's strictness (GT6) as autonomy, drive, or an arrow of time: no P6\_drive
+audit was performed, and CD $> 0$ is neither novelty nor irreversibility on its own. The paper
+makes no claim about the existence or non-existence of the thermodynamic ideal-glass transition
+and no continuum-limit claims; every quantifier in every claim ranges over a declared finite
+class, and the empirical legs are bridge claims only.
+
+\subsection{Full nonclaims ledger}
+
+Per the project's own publication gate, the complete nonclaims ledger --- every nonclaim of every
+claim row, unabridged --- is printed here rather than summarized.
+
+\begin{longtable}{lp{9cm}}
+\caption{Full nonclaims ledger (printed in full per the Phase 5 gate)}\label{tab:nonclaims-full} \\
+\toprule
+claim & nonclaim \\
+\midrule
+\endfirsthead
+\toprule
+claim & nonclaim \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+GT1 & GT1 certificate is scoped to East N=8 and L\_energy only; FA and L\_panel are undone extensions. \\
+GT1 & The tau ladder is the declared finite ladder [1, 2, 4, 8], not the full combinatorial grid. \\
+GT1 & Constrained East equilibrium under L\_energy is a nonzero stationary CD baseline; only the unconstrained lumpable control is exact-zero. \\
+GT1 & [B] benchmark-parity control is filed as skipped in this artifact because the paper-specific example chains were not ported in this remediation packet. \\
+GT2 & filed as P4 staged dependence, not a directionality or irreversibility claim \\
+GT2 & Phase-0 Kovacs search output is a pre-certificate diagnostic, not a GT witness certificate. \\
+GT2 & The selected result freezes a later config but does not by itself prove a theorem-grade claim. \\
+GT3 & finite N=8 East foreclosure over Def(l\_energy), not a continuum or all-lens claim \\
+GT4 & GT4 triage is over the declared finite benchmark family, not a shell-general theorem. \\
+GT4 & The artifact promotes the Phase-1 benchmark-suite data; it does not change the underlying classification logic. \\
+GT4 & GB1 protocol-trap caveat remains a theorem-wrapper limitation; this table files the deterministic triage computation. \\
+GT4 & Phase 1 benchmark parity is a control suite, not a standalone GT4 triage certificate. \\
+GT4 & Dedicated GT4 regime-table promotion, if present, is filed in a separate artifact. \\
+GT5 & buyback saturation or nonsaturation is not a GB5 repair-impossibility certificate; GB5 requires a separate exhaustive repair-class sweep \\
+GT5 & the shipped Kovacs buyback curve is a minimal two-history witness with saturation\_budget=1; it demonstrates buyback mechanics, not general single-scalar or TNM insufficiency \\
+GT6 & GT6 is scoped to the audited glass shell, not to all East or glassy regimes. \\
+GT6 & No shell-general strict-bridge theorem is claimed. \\
+GT6 & No broader external-class theorem is claimed beyond the frozen finite class. \\
+GT6 & Strictness does not imply autonomous macro closure. \\
+GT6 & Strictness does not imply drive; P6\_drive requires the separate GB1 audit discipline. \\
+GT6 & The pressure gap is not a KL closure deficit unless an explicit bridge is supplied. \\
+GT6 & The pressure gap is not the strictness witness; GT2/GT3 provide the strictness witnesses. \\
+GT6 & The gap functional is a conditional disintegration on strata, not stratumwise root separation. \\
+GT6 & This is a model realization, not a universal strict-extension theory. \\
+GT6 & T1 is a packaged completion layer, not repeated application of one fixed idempotent completion. \\
+GT6 & Single bridge only; no stacked or glued promotions are claimed. \\
+GT6 & strict-extension inputs are shell-local and do not claim continuum or all-protocol closure \\
+GT6 & H5 and non-factorization are cited from prior artifacts, not recomputed here \\
+GT6 & Knockout rows are shell-local diagnostics, not shell-general strict-extension proofs. \\
+GT6 & P4-P6 rows are capability-loss degradations, not numeric re-simulation degradations. \\
+GT6 & Pressure closure is a float64 Fekete diagnostic, not an exact-rational certificate. \\
+GT6 & N=10 dense pressure rows may be skipped by declared threshold and are reported as such. \\
+GT6 & Spectral gaps are float64 diagnostics and not theorem-graded exact-rational certificates. \\
+GT6 & Mixing-time bounds are used for shell-window calibration only. \\
+GT7 & run-only readouts, not a fitted scaling law \\
+GT7 & East reference only; no transfer claim without a scored FA/trap target run and a pre-registered prediction. \\
+GT7 & FA target run only; scoring is deferred to the frozen transfer scorer. \\
+GT7 & memdim\_profile and deficit\_decay transfer are out of scope for this target artifact. \\
+GT7 & Trap target run only; scoring is deferred to the frozen transfer scorer. \\
+GT7 & Trap uses a declared depth observable, not East/FA spin-count energy. \\
+GT7 & transfer scoring is mechanical comparison against pre-registered predictions \\
+GT7 & score counts are not a fitted scaling law \\
+GB1 & GB1 demo records a pseudo-EPR identity and finite numerical check, not a closed general theorem. \\
+GB1 & The open obligation remains filed in the payload and is not discharged by this artifact. \\
+GB2 & GB2 demo records finite protocol-CD computations, not a GT claim certificate. \\
+GB2 & Windowed and marginalized CD values are float64 diagnostics; exactness is reserved for the lumpability check. \\
+GB9 & The real Kovacs numeric split-pair witness is not encoded in Lean. \\
+GB9 & No non-vacuous PredictiveWitness, StrictRefinement, or LoopAsymmetry instance is claimed. \\
+GB9 & The GlassWitness instance is structural and index-based, not a real numeric package export. \\
+GB10 & No empirical-realization claim anywhere; bridges are admissibility filings only. \\
+GB10 & Visibility records are per instrument; no cross-instrument merge into an instrument-free statement. \\
+FINDING.trap\_epsilon\_invariance & Not a novelty claim: the multiplicative-scalar cancellation is standard trap-model structure once stated; the contribution is stating and testing it for the declared family. \\
+FINDING.trap\_epsilon\_invariance & Says nothing about trap dynamics or aging trajectories; only the stationary distribution is epsilon-invariant. \\
+FINDING.lean\_collapse & Not a claim that Kovacs memory is unformalizable; only that THIS core's coherence axioms foreclose non-vacuous witness instances. \\
+FINDING.lean\_collapse & Does not weaken the exact-rational computational witnesses; it explains why they are filed as computational evidence rather than Lean theorems. \\
+NEG.material\_forcing\_absent & Absence of material forcing in this shell is not evidence about other shells or protocols. \\
+NEG.gt7\_transfer\_failures & Failure counts are not evidence against the run-only thesis; they are the run-only thesis operating as designed. No post-hoc reinterpretation of failed intervals is permitted. \\
+NEG.gb5\_repair\_sweep\_not\_built & 'No admissible repair exists' is never asserted at any grade. \\
+NEG.gt2\_loop\_certificate\_not\_built & No loop-asymmetry or P3 route-mismatch claim is made anywhere on GT2's behalf. \\
+NEG.gt1\_b\_parity\_control\_open & No [B]-parity is claimed for GT1 until the control is actually run. \\
+NEG.lean\_instance\_structural & The Lean track certifies the abstract core's theorems, not glass numerics. \\
+\bottomrule
+\end{longtable}
+  \section{Conclusion}
+\label{sec:conclusion}
+
+
+On the audited exact-finite class built here, glass is a layer that fails to close, and the
+failure is now carried by certificates rather than intuitions: a closure deficit exceeding its
+equilibrium baseline by a certified margin; an exact Kovacs split pair; a constructive foreclosure
+of every predicate the declared lens can define; a kill-test panel that executes its own
+artifacts; a priced buyback of the lost distinction; a shell-local strict-promotion verdict
+resting on exactly the theorems it needs and no more; and a pre-registered transfer scoreboard
+filed with its failures intact. Around the results sits the part we consider most transferable:
+a claims ledger tying every results claim to hash-pinned artifact evidence --- the bindings
+machine-checked at build time, the wording fidelity human-audited and independently reviewed ---
+and a nonclaims ledger printed in full.
+
+The field kept asking ``what is the order parameter of glass?'' On the class where we can afford
+certificates, the certified answer is that the question quantifies over the wrong layer --- the
+current-observable layer cannot express the distinction that memory carries, and the Kovacs
+effect has been the witness pair sitting in the literature since 1963. Whether that answer
+survives at larger sizes, richer lens classes, and ultimately in the laboratory is exactly what
+the disclosed gap register and the bridge records are built to test next.
+ 
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

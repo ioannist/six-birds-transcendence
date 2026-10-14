@@ -1,0 +1,37 @@
+digraph CST_EXP_04 {
+  rankdir=LR;
+  graph [label="CST-EXP-04 survivor architecture (unranked)", labelloc=t];
+  node [shape=box];
+  "SF-01" [shape=oval,label="SF-01\nIntegrated Autonomous Handoff"];
+  "TS-02" -> "SF-01" [label="core"];
+  "TS-04" -> "SF-01" [label="gate/module"];
+  "TS-06" -> "SF-01" [label="gate/module"];
+  "TS-07" -> "SF-01" [label="gate/module"];
+  "TS-08" -> "SF-01" [label="gate/module"];
+  "TS-09" -> "SF-01" [label="gate/module"];
+  "TS-05" -> "SF-01" [style=dashed,label="optional bridge"];
+  "SF-02" [shape=oval,label="SF-02\nCausal-Overlap Process Lineage"];
+  "TS-03" -> "SF-02" [label="core"];
+  "TS-04" -> "SF-02" [label="gate/module"];
+  "TS-07" -> "SF-02" [label="gate/module"];
+  "TS-08" -> "SF-02" [label="gate/module"];
+  "TS-05" -> "SF-02" [style=dashed,label="optional bridge"];
+  "SF-03" [shape=oval,label="SF-03\nRelation-Valued Predictive Ancestry"];
+  "TS-10" -> "SF-03" [label="core"];
+  "TS-01" -> "SF-03" [label="gate/module"];
+  "TS-07" -> "SF-03" [label="gate/module"];
+  "TS-09" -> "SF-03" [label="gate/module"];
+  "TS-05" -> "SF-03" [style=dashed,label="optional bridge"];
+  "TS-01" [label="TS-01\nPredictive-Quotient Bisimulation"];
+  "TS-02" [label="TS-02\nFull C-Package Staged Handoff"];
+  "TS-03" [label="TS-03\nCausal-Overlap Process Continuation"];
+  "TS-04" [label="TS-04\nViability–Repair Control Transport"];
+  "TS-05" [label="TS-05\nEncoded Logical-Package Migration"];
+  "TS-06" [label="TS-06\nClosure–Gluing Fixed-Point Span"];
+  "TS-07" [label="TS-07\nRecombination–Holonomy Continuation Functor"];
+  "TS-08" [label="TS-08\nReflexive Temporal–Credit Ledger Bridge"];
+  "TS-09" [label="TS-09\nResidual-Bounded Predictive Simulation Bundle"];
+  "TS-10" [label="TS-10\nHeterogeneous Predictive-Ancestry Relation"];
+  "SF-01" -> "SF-02" [style=dotted,label="may pair: realization + lineage"];
+  "SF-01" -> "SF-03" [style=dotted,label="may pair: realization + ancestry"];
+}

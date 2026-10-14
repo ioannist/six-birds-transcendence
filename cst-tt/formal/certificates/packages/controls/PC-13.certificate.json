@@ -1,0 +1,20 @@
+{
+  "artifact_ref": "models/packages/controls/PC-13.model.json",
+  "artifact_sha256": "e18b62975b4cc8fc6d402071f3d8a948b2ac96661f7164f311e0ba5f3accd6da",
+  "checker": {
+    "function": "audit_package",
+    "integrated_package_valid": false,
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite package-obligation boundary only",
+  "control_id": "PC-13",
+  "control_kind": "package",
+  "expected_primary_failure": "PKG-O07-global-gluing-and-restriction",
+  "observed_failures": [
+    "PKG-O07-global-gluing-and-restriction"
+  ],
+  "positive_baseline_ref": "models/packages/PKG-POS-01-TARGET.model.json",
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-02"
+}

@@ -1,0 +1,31 @@
+{
+  "audit": {
+    "failed_obligations": [
+      "frontier-signature-equal"
+    ],
+    "frontier_compatible": false,
+    "frontier_route_memory_equal": true,
+    "frontier_signature_equal": false,
+    "frontier_support_equal": true,
+    "left_valid": true,
+    "right_valid": true,
+    "shared_frontier_carrier": true
+  },
+  "certificate_id": "COMP-C01",
+  "checker": {
+    "checked_at_phase": "CST-TT-04",
+    "function": "frontier_compatible",
+    "module": "cst_tt.corridor",
+    "python_version": "3.13.5"
+  },
+  "control_family": "composition-interface",
+  "control_passed": true,
+  "expected_failed_obligation": "frontier-signature-equal",
+  "model_ref": "models/corridors/controls/COMP-C01.model.json",
+  "model_sha256": "8e797e3ca39f3adf1c437d1e3e9607620b542f6a3973ddf1a94dc8439abc5844",
+  "observed_failed_obligations": [
+    "frontier-signature-equal"
+  ],
+  "result_status": "checked-finite-negative-control",
+  "schema_version": "CST-TT-04"
+}

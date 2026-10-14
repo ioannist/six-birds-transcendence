@@ -1,0 +1,32 @@
+{
+  "algorithm": "exhaustive-relations-validity-sets-and-permutations",
+  "candidates_examined": 6564,
+  "claim_ceiling": "bounded symmetry and relation-valued fission result; no identity conclusion",
+  "invariant_singleton_selector_violations": 0,
+  "max_targets": 4,
+  "minimum_target_count": 2,
+  "per_target_count": [
+    {
+      "candidates": 4,
+      "qualified_symmetric_forks": 0,
+      "target_count": 1
+    },
+    {
+      "candidates": 32,
+      "qualified_symmetric_forks": 1,
+      "target_count": 2
+    },
+    {
+      "candidates": 384,
+      "qualified_symmetric_forks": 6,
+      "target_count": 3
+    },
+    {
+      "candidates": 6144,
+      "qualified_symmetric_forks": 51,
+      "target_count": 4
+    }
+  ],
+  "qualified_symmetric_forks": 58,
+  "schema_version": "CST-TT-06"
+}

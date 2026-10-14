@@ -1,0 +1,1097 @@
+{
+  "schema": "csttt-g13-operational-foundation-declaration-v1",
+  "declared_before_new_fixture_evaluation": true,
+  "source_head": "61c1a1be1ffd73a2da9d95207406b21236d6cc35",
+  "source_sha256": {
+    "lean/CSTTT/Objecthood/T1Audit.lean": "71073960877131a5d9b3f882efa156b0b4013163144a629a36f12cfa8dff8d93",
+    "lean/CSTTT/POS04/Data.lean": "aa930743032c16594a24399cb74f5facc4693ece1c32cfa82db6fafa0cd7d148",
+    "lean/CSTTT/POS04/C2C3.lean": "95e0d0c566274b56e70a3f085ad64bd9991acf1107110d8ca49d47609bb603f3",
+    "lean/CSTTT/POS04/GenericTransport.lean": "95ec239c6b72e4a079233c1ef95af29a9742417589b6933297c4bc2a79f20797",
+    "lean/CSTTT/Transport/RawBridge.lean": "3a47319c0ff1544f74bd2a67a4ae00f9b6575b373f102a8a0cbf73477fccc357",
+    "lean/CSTTT/Transport/FutureDynamics.lean": "d9d95d03d161c9ab485b260a5de26384548e15618038857c4a5da20eb89c8e9a"
+  },
+  "released_bridge": "CSTTT.POS04.pos04RawBridge .positive",
+  "state_order": [
+    "p0w0",
+    "p0w1",
+    "p1w0",
+    "p1w1",
+    "p2w1",
+    "p3w0",
+    "p3w1",
+    "p4w0",
+    "p4w1",
+    "p5w0"
+  ],
+  "identity_decoder_table": [
+    [
+      "p0w0",
+      "p0w0"
+    ],
+    [
+      "p0w1",
+      "p0w1"
+    ],
+    [
+      "p1w0",
+      "p1w0"
+    ],
+    [
+      "p1w1",
+      "p1w1"
+    ],
+    [
+      "p2w1",
+      "p2w1"
+    ],
+    [
+      "p3w0",
+      "p3w0"
+    ],
+    [
+      "p3w1",
+      "p3w1"
+    ],
+    [
+      "p4w0",
+      "p4w0"
+    ],
+    [
+      "p4w1",
+      "p4w1"
+    ],
+    [
+      "p5w0",
+      "p5w0"
+    ]
+  ],
+  "raw_fields_only": true,
+  "cases": [
+    {
+      "case_id": "canonical_p0w0",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p0w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p0w0",
+        "twin_payload": "p0w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      }
+    },
+    {
+      "case_id": "canonical_p0w1",
+      "raw_source": "p0w1",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p0w1"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p0w1",
+        "twin_payload": "p0w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      }
+    },
+    {
+      "case_id": "canonical_p1w0",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p1w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p1w0",
+        "twin_payload": "p1w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      }
+    },
+    {
+      "case_id": "canonical_p1w1",
+      "raw_source": "p1w1",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p1w1"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p1w1",
+        "twin_payload": "p1w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      }
+    },
+    {
+      "case_id": "canonical_p2w1",
+      "raw_source": "p2w1",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p2w1"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p2w1",
+        "twin_payload": "p2w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      }
+    },
+    {
+      "case_id": "canonical_p3w0",
+      "raw_source": "p3w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p3w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p3w0",
+        "twin_payload": "p3w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      }
+    },
+    {
+      "case_id": "canonical_p3w1",
+      "raw_source": "p3w1",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p3w1"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p3w1",
+        "twin_payload": "p3w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      }
+    },
+    {
+      "case_id": "canonical_p4w0",
+      "raw_source": "p4w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p4w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p4w0",
+        "twin_payload": "p4w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      }
+    },
+    {
+      "case_id": "canonical_p4w1",
+      "raw_source": "p4w1",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p4w1"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p4w1",
+        "twin_payload": "p4w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      }
+    },
+    {
+      "case_id": "canonical_p5w0",
+      "raw_source": "p5w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p5w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p5w0",
+        "twin_payload": "p5w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      }
+    },
+    {
+      "case_id": "missing_source",
+      "raw_source": null,
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p1w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": false
+      }
+    },
+    {
+      "case_id": "missing_decoder",
+      "raw_source": "p1w0",
+      "decoder": null,
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p1w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": false
+      }
+    },
+    {
+      "case_id": "stale_gap",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          3
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p1w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": false
+      }
+    },
+    {
+      "case_id": "inactive_snapshot",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "erase",
+          0
+        ],
+        [
+          "snapshot",
+          0,
+          1
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": false
+      }
+    },
+    {
+      "case_id": "record_slot_collision",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          0
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": false
+      }
+    },
+    {
+      "case_id": "target_slot_collision",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          0
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": false
+      }
+    },
+    {
+      "case_id": "twin_slot_collision",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          2,
+          "p1w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": false
+      }
+    },
+    {
+      "case_id": "missing_record",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": false
+      }
+    },
+    {
+      "case_id": "wrong_kind_record",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "activate",
+          0,
+          2
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": false
+      }
+    },
+    {
+      "case_id": "altered_record_payload",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p1w0"
+        ]
+      ],
+      "phase": "split_actual_prefix_intervention_suffix",
+      "record_intervention": {
+        "operator": "replaceRecord",
+        "record": 1,
+        "origin": 0,
+        "time": 1,
+        "payload": "p1w1",
+        "insert_before_command": 3
+      },
+      "frozen_prediction": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true
+      }
+    },
+    {
+      "case_id": "altered_predictively_equivalent_record",
+      "raw_source": "p0w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p0w0"
+        ]
+      ],
+      "phase": "split_actual_prefix_intervention_suffix",
+      "record_intervention": {
+        "operator": "replaceRecord",
+        "record": 1,
+        "origin": 0,
+        "time": 1,
+        "payload": "p0w1",
+        "insert_before_command": 3
+      },
+      "frozen_prediction": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true
+      }
+    },
+    {
+      "case_id": "future_dated_record",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p1w0"
+        ]
+      ],
+      "phase": "split_actual_prefix_intervention_suffix",
+      "record_intervention": {
+        "operator": "replaceRecord",
+        "record": 1,
+        "origin": 0,
+        "time": 99,
+        "payload": "p1w0",
+        "insert_before_command": 3
+      },
+      "frozen_prediction": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true
+      }
+    },
+    {
+      "case_id": "rejuvenated_stale_record",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          3
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p1w0"
+        ]
+      ],
+      "phase": "split_actual_prefix_intervention_suffix",
+      "record_intervention": {
+        "operator": "replaceRecord",
+        "record": 1,
+        "origin": 0,
+        "time": 5,
+        "payload": "p1w0",
+        "insert_before_command": 3
+      },
+      "frozen_prediction": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true
+      }
+    },
+    {
+      "case_id": "independent_only_without_decoder",
+      "raw_source": "p1w0",
+      "decoder": null,
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p1w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "twin_payload": "p1w0",
+        "twin_path": false
+      }
+    },
+    {
+      "case_id": "wrong_predictive_decoder",
+      "raw_source": "p1w0",
+      "decoder": {
+        "constant": "p0w0"
+      },
+      "max_age": 3,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "independent",
+          3,
+          "p0w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "target_payload": "p0w0",
+        "twin_payload": "p0w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": false
+      }
+    },
+    {
+      "case_id": "two_source_derived_targets",
+      "raw_source": "p1w0",
+      "decoder": "identity",
+      "max_age": 4,
+      "initial_source": 0,
+      "commands": [
+        [
+          "snapshot",
+          0,
+          1
+        ],
+        [
+          "erase",
+          0
+        ],
+        [
+          "gap",
+          2
+        ],
+        [
+          "activate",
+          1,
+          2
+        ],
+        [
+          "activate",
+          1,
+          4
+        ],
+        [
+          "independent",
+          3,
+          "p1w0"
+        ]
+      ],
+      "phase": "whole",
+      "record_intervention": null,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "derived_targets": [
+          2,
+          4
+        ],
+        "derived_paths": [
+          true,
+          true
+        ],
+        "twin_path": false
+      }
+    }
+  ],
+  "claim_boundary": [
+    "primitive equality of separately provided twin is source-event graph relative, not independence from all shared information",
+    "historical source payload and generated immutable snapshot journal are retained after active-token erasure",
+    "record interventions never alter generated journal or emitted edges",
+    "single trusted execution supplies pair queries; split intervention cases directly evaluate checked activation and do not claim the current RawInputs executes adversarial commands",
+    "finite predictive probes are inherited numerator/word/enumeration language; all-query exactness needs raw laws, both coverages and source bisimulation",
+    "no new finite fixture, full C-package/autonomy instance, fusion guard or final IAPS has been evaluated by this declaration",
+    "all frozen predictions must be checked without tuning; any failure must remain reported and be adjudicated",
+    "Gamma generic enabled guards are not yet the scientific transition/fission/fusion guards"
+  ]
+}

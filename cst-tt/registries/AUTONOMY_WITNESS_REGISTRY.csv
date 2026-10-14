@@ -1,0 +1,2 @@
+autonomy_id,target_carrier,state_count,disturbance_count,action_count,invariant_size,finite_horizon,finite_words_checked,model_ref,certificate_ref,result_status,claim_lanes,claim_ceiling
+AUT-POS-01,101,4,2,8,4,6,127,models/autonomy/AUT-POS-01.model.json,formal/certificates/autonomy/AUT-POS-01.certificate.json,checked-finite-post-withdrawal-autonomy,A,model-relative target autonomy for every disturbance word up to the declared finite horizon

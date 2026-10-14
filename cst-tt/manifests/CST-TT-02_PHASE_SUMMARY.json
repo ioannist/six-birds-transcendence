@@ -1,0 +1,20 @@
+{
+  "bounded_gluing_candidates": 1025416,
+  "bounded_gluing_premise_cases": 18972,
+  "bounded_gluing_violations": 0,
+  "checked_integrated_package_witnesses": 2,
+  "checked_package_and_staged_controls": 18,
+  "checked_staged_package_assemblies": 1,
+  "fallback_unlocked": false,
+  "generated_date": "2026-08-10",
+  "generic_theorem_proof_sources_landed": 2,
+  "generic_theorems_lean_compiled": 0,
+  "next_phase": "CST-TT-03",
+  "package_kill_criteria_triggered": 0,
+  "package_obligations": 10,
+  "phase": "CST-TT-02",
+  "positive_handoff_witnesses": 0,
+  "project": "CST-TT",
+  "schema_version": "1.0",
+  "staged_obligations": 10
+}

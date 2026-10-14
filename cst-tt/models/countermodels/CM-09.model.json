@@ -1,0 +1,51 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R",
+    "S-L",
+    "R"
+  ],
+  "conclusion_failure_checks": {
+    "hidden_structural_identifiability_fails": true
+  },
+  "countermodel_id": "CM-09",
+  "derived_facts": {
+    "witness_pair": [
+      0,
+      1
+    ]
+  },
+  "family": "public-shadow-collision",
+  "model": {
+    "hidden_structural_fact": [
+      0,
+      1
+    ],
+    "public_collision_hidden_mismatch": true,
+    "public_observation": [
+      0,
+      0
+    ],
+    "public_symbol_count": 1,
+    "state_count": 2,
+    "witness_pairs": [
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "name": "Public/report-perfect collision with hidden mismatch",
+  "premise_checks": {
+    "public_or_report_collision": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "The same finite public report can be emitted by states with different hidden structural facts.",
+  "size_measure": "(state_count, public_symbol_count)",
+  "size_vector": [
+    2,
+    1
+  ],
+  "target_no_go_id": "TTN-02",
+  "toy_model_ref": "TTM-12"
+}

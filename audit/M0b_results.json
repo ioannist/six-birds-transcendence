@@ -1,0 +1,1629 @@
+{
+  "ambiguities": [
+    "C1 CORE retention: use the unique stationary law of the epsilon-perturbed six-state Markov chain; compare its CORE mass with 3/4. The declaration does not specify a start distribution or an alternative retention statistic.",
+    "C1 defect: symmetric-difference cardinality is an integer (equivalently an exact rational denominator 1), with no pass threshold; missing transitions make the separate Markov audit ill-formed.",
+    "C3 continuation: compare the full finite-state output-equivalence fixed point, including present raw temporal values and action deltas, with computed q; no finite-word cutoff is used.",
+    "C7 local consistency: require each reassembly row's actual coupling edges to equal its named admissible coupling map. This is the natural inverse-law reading of decomposition/reassembly; the declaration does not spell out the equation.",
+    "C8 viability: require a safe response for every declared disturbance, as the spec says 'for each state and both disturbances'; this is a greatest fixed point, not a choice of one favorable action.",
+    "Route current projection: exit_stage comes from the common corridor exit event; health/public/phase come from the arrival state. No stored declared_route_status is consulted.",
+    "C6 tick phase: the declaration says every controller action toggles phase modulo two; the positive order_delta may be one or two and is not the tick increment. Check successor phase = current phase + 1 mod 2.",
+    "Bridge frontier reachability: seed with states produced by reachable declared prehistory edges as well as source package arrivals, then close under source dynamics. This includes the distinct right-arrival history A0b.",
+    "C4 declared continuation: test each one-step disturbance named in observation_interfaces.continuations and require an explicit differing output; the full future quotient alone is insufficient for this clause."
+  ],
+  "clean_ablation_count": 20,
+  "counts": {
+    "CONFIRMED": 32,
+    "CONFIRMED-CONFOUNDED": 1,
+    "CONFIRMED-NARROW": 2,
+    "FAILED": 4,
+    "INVALID-CONTROL": 1,
+    "UNDETERMINED": 0
+  },
+  "declaration_sha256": "27b4605224bd0040db97434c2570fa59716859d343736341c7d894b685bca97f",
+  "limitations": [
+    "NEG-C7-UNCOUPLED loses strict refinement but fails local reassembly/coupling consistency; its negative is invalid as a system control.",
+    "NEG-PKG-ENDPOINT and NEG-PKG-LATER detect deletion locally, but the baseline target package already fails C1; neither shows loss of a valid package.",
+    "NEG-C7-PRESERVATION fails both joint-observable transport and local reassembly/coupling consistency."
+  ],
+  "method": "exact Fraction arithmetic; finite-state partition fixed points; powerset closure; greatest viable fixed point",
+  "model_id": "FIACH-POS-02",
+  "mutation_predictions": {
+    "NEG-BRIDGE-EDGE": {
+      "computed": {
+        "pass": false,
+        "problems": [
+          {
+            "required_declared_strict_edge_missing": [
+              "S-A0a",
+              "S-A1safe",
+              "nominal"
+            ]
+          }
+        ],
+        "raw_map_noninjective": false,
+        "reachable_count": 6,
+        "representative_pairs": [
+          [
+            "S-A0a",
+            "S-A0b"
+          ],
+          [
+            "S-A0b",
+            "S-A0a"
+          ]
+        ],
+        "strict_edges": [
+          [
+            "S-A0b",
+            "S-A1safe"
+          ],
+          [
+            "S-A0a",
+            "S-A1warning"
+          ],
+          [
+            "S-A0b",
+            "S-A1warning"
+          ],
+          [
+            "S-B0",
+            "S-B1safe"
+          ]
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-BRIDGE-REP": {
+      "computed": {
+        "pass": false,
+        "problems": [
+          {
+            "successor_not_preserved": {
+              "disturbance": "nominal",
+              "from": "S-A0b",
+              "to": "S-A1safe"
+            }
+          },
+          {
+            "successor_not_preserved": {
+              "disturbance": "hit",
+              "from": "S-A0b",
+              "to": "S-A1warning"
+            }
+          },
+          {
+            "history_image_map": [
+              "S-A0b",
+              "T-A0b",
+              "T-B0"
+            ]
+          },
+          {
+            "route": [
+              "S-A0b",
+              "T-B0"
+            ]
+          },
+          {
+            "representatives": [
+              "S-A0a",
+              "S-A0b"
+            ]
+          },
+          {
+            "representatives": [
+              "S-A0b",
+              "S-A0a"
+            ]
+          }
+        ],
+        "raw_map_noninjective": true,
+        "reachable_count": 6,
+        "representative_pairs": [
+          [
+            "S-A0a",
+            "S-A0b"
+          ],
+          [
+            "S-A0b",
+            "S-A0a"
+          ]
+        ],
+        "strict_edges": [
+          [
+            "S-A0a",
+            "S-A1safe"
+          ],
+          [
+            "S-A0b",
+            "S-A1safe"
+          ],
+          [
+            "S-A0a",
+            "S-A1warning"
+          ],
+          [
+            "S-A0b",
+            "S-A1warning"
+          ],
+          [
+            "S-B0",
+            "S-B1safe"
+          ]
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C1-CLOSURE": {
+      "computed": {
+        "closure_changed": true,
+        "markov_well_formed": false,
+        "missing_rows": [
+          [
+            "T-A0a",
+            "nominal"
+          ]
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": false,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C2-SPLIT": {
+      "computed": {
+        "declared_split": [
+          "T-A0a",
+          "T-B0"
+        ],
+        "declared_split_is_witness": false,
+        "defect_count": 0,
+        "pass": false,
+        "witness": null
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C3-PROFILE": {
+      "computed": {
+        "continuation_bad": [
+          [
+            "T-A0a",
+            "T-A0b"
+          ],
+          [
+            "T-A0b",
+            "T-A0a"
+          ]
+        ],
+        "mismatch": [
+          [
+            "T-A0a",
+            "T-A0b"
+          ],
+          [
+            "T-A0b",
+            "T-A0a"
+          ]
+        ],
+        "pass": false,
+        "q_class_count": 5,
+        "rounds": 2,
+        "terminal_class_count": 6
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C4-EXPOSE": {
+      "computed": {
+        "channel_values": 5,
+        "continuation": null,
+        "pass": false,
+        "witness": null
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C5-INTERNALIZED": {
+      "computed": {
+        "computed_credit": "ambiguous",
+        "expected_change": "ambiguous",
+        "products": {
+          "other": [
+            1,
+            0
+          ],
+          "self": [
+            1,
+            0
+          ]
+        },
+        "protocol": "T-internalized"
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C5-SCHEDULE": {
+      "computed": {
+        "computed_credit": "other",
+        "expected_change": "other",
+        "products": {
+          "other": [
+            1,
+            0
+          ],
+          "self": [
+            0,
+            0
+          ]
+        },
+        "protocol": "T-genuine"
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C6-ARROW": {
+      "computed": {
+        "violations": [
+          [
+            "T-A0a",
+            "hit",
+            "arrow owner"
+          ]
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C6-CODE": {
+      "computed": {
+        "future_counterexample": [
+          "T-A0a",
+          "T-B0"
+        ],
+        "partition_rounds": 2
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C6-HEALTH": {
+      "computed": {
+        "future_counterexample": [
+          "T-A1safe",
+          "T-A1warning"
+        ],
+        "partition_rounds": 1
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C6-ORDER": {
+      "computed": {
+        "violations": [
+          [
+            "T-A0a",
+            "nominal",
+            "nonpositive delta"
+          ],
+          [
+            "T-A0a",
+            "nominal",
+            "unfolded order"
+          ]
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C6-SUCCESSOR": {
+      "computed": {
+        "violations": [
+          [
+            "T-B1safe",
+            "hit",
+            "missing response"
+          ]
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": false,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C6-TICK": {
+      "computed": {
+        "violations": [
+          [
+            "T-A0a",
+            "nominal",
+            "tick phase"
+          ]
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C7-NO-JOINT-OBSERVABLE": {
+      "computed": {
+        "local": {
+          "branchwise_class_count": 1,
+          "coupling_proper_subset": true,
+          "distributions": {
+            "T-bound-crossed": {
+              "blue|circle": "1/2",
+              "red|square": "1/2"
+            },
+            "T-bound-diagonal": {
+              "blue|square": "1/2",
+              "red|circle": "1/2"
+            }
+          },
+          "pass": false,
+          "recombination_class_count": 1,
+          "strict_refinement": false,
+          "well_formed": true,
+          "well_formed_issues": [],
+          "witness": null
+        },
+        "transport": {
+          "distribution_failures": [],
+          "pass": true,
+          "quotient_failures": [],
+          "well_formed_issues": []
+        }
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-C7-PRESERVATION": {
+      "computed": {
+        "local_issues": [
+          "T-bound-crossed: reassembly coupling crossed disagrees with raw edges ((0, 0), (1, 1))"
+        ],
+        "local_well_formed": false,
+        "transport_failures": [
+          {
+            "source": "S-bound-crossed",
+            "source_mapped": "((('blue', 'circle'), Fraction(1, 2)), (('red', 'square'), Fraction(1, 2)))",
+            "target": "T-bound-crossed",
+            "target_distribution": "((('blue', 'square'), Fraction(1, 2)), (('red', 'circle'), Fraction(1, 2)))"
+          }
+        ]
+      },
+      "outcome": "CONFIRMED-CONFOUNDED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": false,
+        "target_C7_issues": [
+          "T-bound-crossed: reassembly coupling crossed disagrees with raw edges ((0, 0), (1, 1))"
+        ]
+      }
+    },
+    "NEG-C7-UNCOUPLED": {
+      "computed": {
+        "local": {
+          "branchwise_class_count": 1,
+          "coupling_proper_subset": true,
+          "distributions": {
+            "T-bound-crossed": {
+              "blue|square": "1/2",
+              "red|circle": "1/2"
+            },
+            "T-bound-diagonal": {
+              "blue|square": "1/2",
+              "red|circle": "1/2"
+            }
+          },
+          "pass": false,
+          "recombination_class_count": 1,
+          "strict_refinement": false,
+          "well_formed": false,
+          "well_formed_issues": [
+            "T-bound-crossed: reassembly coupling crossed disagrees with raw edges ((0, 0), (1, 1))"
+          ],
+          "witness": null
+        },
+        "transport": {
+          "distribution_failures": [],
+          "pass": true,
+          "quotient_failures": [],
+          "well_formed_issues": []
+        }
+      },
+      "outcome": "INVALID-CONTROL",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": false,
+        "target_C7_issues": [
+          "T-bound-crossed: reassembly coupling crossed disagrees with raw edges ((0, 0), (1, 1))"
+        ]
+      }
+    },
+    "NEG-C8-UNDERFUND": {
+      "computed": {
+        "kernel_size": 6,
+        "maximal_viable_size": 0,
+        "maximal_viable_states": [],
+        "pass": false,
+        "violations": [
+          [
+            "T-A0a",
+            "nominal",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-A0a",
+            "hit",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-A0b",
+            "nominal",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-A0b",
+            "hit",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-A1safe",
+            "nominal",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-A1safe",
+            "hit",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-A1warning",
+            "nominal",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-A1warning",
+            "hit",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-B0",
+            "nominal",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-B0",
+            "hit",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-B1safe",
+            "nominal",
+            "ledger 0 != 2"
+          ],
+          [
+            "T-B1safe",
+            "hit",
+            "ledger 0 != 2"
+          ]
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-CORRIDOR-DETACHED": {
+      "computed": {
+        "mixed_stages": [],
+        "pass": false,
+        "problems": [
+          "unrealized stage or gap",
+          "no mixed-support stage",
+          "atomic leg stage missing",
+          "source mixed intervention absent",
+          "target mixed intervention absent",
+          "redundant mixed intervention"
+        ],
+        "projection": [
+          0,
+          0,
+          0
+        ],
+        "without_source": [
+          0,
+          0,
+          0
+        ],
+        "without_target": [
+          0,
+          0,
+          0
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-CORRIDOR-GAP": {
+      "computed": {
+        "mixed_stages": [
+          1
+        ],
+        "pass": false,
+        "problems": [
+          "unrealized stage or gap"
+        ],
+        "projection": [
+          2,
+          2,
+          2
+        ],
+        "without_source": [
+          1,
+          1,
+          1
+        ],
+        "without_target": [
+          1,
+          1,
+          1
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-PKG-ENDPOINT": {
+      "computed": {
+        "baseline_package_pass": false,
+        "local_assignment_issues": [
+          "C1 local assignment",
+          "C1 global predicate"
+        ],
+        "state": "T-A0a"
+      },
+      "outcome": "CONFIRMED-NARROW",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-PKG-LATER": {
+      "computed": {
+        "baseline_package_pass": false,
+        "local_assignment_issues": [
+          "C1 local assignment",
+          "C1 global predicate"
+        ],
+        "state": "T-A1safe"
+      },
+      "outcome": "CONFIRMED-NARROW",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-ROUTE-ERASE": {
+      "computed": {
+        "computed_status": "unresolved",
+        "flatness_certificate_available": false,
+        "pass": false,
+        "path_problems": [
+          {
+            "endpoint_residue": "rB"
+          }
+        ],
+        "witness": null
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    },
+    "NEG-TTH06-LINK": {
+      "computed": {
+        "endpoint_link": false
+      },
+      "outcome": "CONFIRMED",
+      "well_formedness": {
+        "target_C1_Markov": true,
+        "target_C7": true,
+        "target_C7_issues": []
+      }
+    }
+  },
+  "positive_predictions": {
+    "C1": {
+      "computed": {
+        "closure": {
+          "all": {
+            "defect_by_subset": {
+              "EMPTY": "0",
+              "T-A0a": "0",
+              "T-A0a,T-A0b": "0",
+              "T-A0a,T-A0b,T-A1safe": "0",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning": "0",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning,T-B0": "0",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning,T-B1safe": "0",
+              "T-A0a,T-A0b,T-A1safe,T-B0": "0",
+              "T-A0a,T-A0b,T-A1safe,T-B0,T-B1safe": "0",
+              "T-A0a,T-A0b,T-A1safe,T-B1safe": "0",
+              "T-A0a,T-A0b,T-A1warning": "0",
+              "T-A0a,T-A0b,T-A1warning,T-B0": "0",
+              "T-A0a,T-A0b,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0a,T-A0b,T-A1warning,T-B1safe": "0",
+              "T-A0a,T-A0b,T-B0": "0",
+              "T-A0a,T-A0b,T-B0,T-B1safe": "0",
+              "T-A0a,T-A0b,T-B1safe": "0",
+              "T-A0a,T-A1safe": "0",
+              "T-A0a,T-A1safe,T-A1warning": "0",
+              "T-A0a,T-A1safe,T-A1warning,T-B0": "0",
+              "T-A0a,T-A1safe,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0a,T-A1safe,T-A1warning,T-B1safe": "0",
+              "T-A0a,T-A1safe,T-B0": "0",
+              "T-A0a,T-A1safe,T-B0,T-B1safe": "0",
+              "T-A0a,T-A1safe,T-B1safe": "0",
+              "T-A0a,T-A1warning": "0",
+              "T-A0a,T-A1warning,T-B0": "0",
+              "T-A0a,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0a,T-A1warning,T-B1safe": "0",
+              "T-A0a,T-B0": "0",
+              "T-A0a,T-B0,T-B1safe": "0",
+              "T-A0a,T-B1safe": "0",
+              "T-A0b": "1",
+              "T-A0b,T-A1safe": "0",
+              "T-A0b,T-A1safe,T-A1warning": "0",
+              "T-A0b,T-A1safe,T-A1warning,T-B0": "0",
+              "T-A0b,T-A1safe,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0b,T-A1safe,T-A1warning,T-B1safe": "0",
+              "T-A0b,T-A1safe,T-B0": "0",
+              "T-A0b,T-A1safe,T-B0,T-B1safe": "0",
+              "T-A0b,T-A1safe,T-B1safe": "0",
+              "T-A0b,T-A1warning": "0",
+              "T-A0b,T-A1warning,T-B0": "0",
+              "T-A0b,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0b,T-A1warning,T-B1safe": "0",
+              "T-A0b,T-B0": "1",
+              "T-A0b,T-B0,T-B1safe": "1",
+              "T-A0b,T-B1safe": "1",
+              "T-A1safe": "1",
+              "T-A1safe,T-A1warning": "0",
+              "T-A1safe,T-A1warning,T-B0": "0",
+              "T-A1safe,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A1safe,T-A1warning,T-B1safe": "0",
+              "T-A1safe,T-B0": "1",
+              "T-A1safe,T-B0,T-B1safe": "1",
+              "T-A1safe,T-B1safe": "1",
+              "T-A1warning": "1",
+              "T-A1warning,T-B0": "1",
+              "T-A1warning,T-B0,T-B1safe": "1",
+              "T-A1warning,T-B1safe": "1",
+              "T-B0": "0",
+              "T-B0,T-B1safe": "0",
+              "T-B1safe": "0"
+            },
+            "extensive": true,
+            "fixed_set_members": [
+              "EMPTY",
+              "T-A0a,T-A1safe,T-A1warning",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning",
+              "T-B0,T-B1safe",
+              "T-A0a,T-A1safe,T-A1warning,T-B0,T-B1safe",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning,T-B0,T-B1safe"
+            ],
+            "fixed_sets": 6,
+            "idempotent": true,
+            "max_defect": 1,
+            "monotone": true,
+            "sum_defect": "12"
+          },
+          "nominal": {
+            "defect_by_subset": {
+              "EMPTY": "0",
+              "T-A0a": "0",
+              "T-A0a,T-A0b": "0",
+              "T-A0a,T-A0b,T-A1safe": "0",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning": "0",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning,T-B0": "0",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning,T-B1safe": "0",
+              "T-A0a,T-A0b,T-A1safe,T-B0": "0",
+              "T-A0a,T-A0b,T-A1safe,T-B0,T-B1safe": "0",
+              "T-A0a,T-A0b,T-A1safe,T-B1safe": "0",
+              "T-A0a,T-A0b,T-A1warning": "0",
+              "T-A0a,T-A0b,T-A1warning,T-B0": "0",
+              "T-A0a,T-A0b,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0a,T-A0b,T-A1warning,T-B1safe": "0",
+              "T-A0a,T-A0b,T-B0": "0",
+              "T-A0a,T-A0b,T-B0,T-B1safe": "0",
+              "T-A0a,T-A0b,T-B1safe": "0",
+              "T-A0a,T-A1safe": "0",
+              "T-A0a,T-A1safe,T-A1warning": "0",
+              "T-A0a,T-A1safe,T-A1warning,T-B0": "0",
+              "T-A0a,T-A1safe,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0a,T-A1safe,T-A1warning,T-B1safe": "0",
+              "T-A0a,T-A1safe,T-B0": "0",
+              "T-A0a,T-A1safe,T-B0,T-B1safe": "0",
+              "T-A0a,T-A1safe,T-B1safe": "0",
+              "T-A0a,T-A1warning": "0",
+              "T-A0a,T-A1warning,T-B0": "0",
+              "T-A0a,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0a,T-A1warning,T-B1safe": "0",
+              "T-A0a,T-B0": "0",
+              "T-A0a,T-B0,T-B1safe": "0",
+              "T-A0a,T-B1safe": "0",
+              "T-A0b": "1",
+              "T-A0b,T-A1safe": "0",
+              "T-A0b,T-A1safe,T-A1warning": "0",
+              "T-A0b,T-A1safe,T-A1warning,T-B0": "0",
+              "T-A0b,T-A1safe,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0b,T-A1safe,T-A1warning,T-B1safe": "0",
+              "T-A0b,T-A1safe,T-B0": "0",
+              "T-A0b,T-A1safe,T-B0,T-B1safe": "0",
+              "T-A0b,T-A1safe,T-B1safe": "0",
+              "T-A0b,T-A1warning": "0",
+              "T-A0b,T-A1warning,T-B0": "0",
+              "T-A0b,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A0b,T-A1warning,T-B1safe": "0",
+              "T-A0b,T-B0": "1",
+              "T-A0b,T-B0,T-B1safe": "1",
+              "T-A0b,T-B1safe": "1",
+              "T-A1safe": "0",
+              "T-A1safe,T-A1warning": "0",
+              "T-A1safe,T-A1warning,T-B0": "0",
+              "T-A1safe,T-A1warning,T-B0,T-B1safe": "0",
+              "T-A1safe,T-A1warning,T-B1safe": "0",
+              "T-A1safe,T-B0": "0",
+              "T-A1safe,T-B0,T-B1safe": "0",
+              "T-A1safe,T-B1safe": "0",
+              "T-A1warning": "1",
+              "T-A1warning,T-B0": "1",
+              "T-A1warning,T-B0,T-B1safe": "1",
+              "T-A1warning,T-B1safe": "1",
+              "T-B0": "0",
+              "T-B0,T-B1safe": "0",
+              "T-B1safe": "0"
+            },
+            "extensive": true,
+            "fixed_set_members": [
+              "EMPTY",
+              "T-A0a,T-A1safe",
+              "T-A0a,T-A0b,T-A1safe",
+              "T-A0a,T-A1safe,T-A1warning",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning",
+              "T-B0,T-B1safe",
+              "T-A0a,T-A1safe,T-B0,T-B1safe",
+              "T-A0a,T-A0b,T-A1safe,T-B0,T-B1safe",
+              "T-A0a,T-A1safe,T-A1warning,T-B0,T-B1safe",
+              "T-A0a,T-A0b,T-A1safe,T-A1warning,T-B0,T-B1safe"
+            ],
+            "fixed_sets": 10,
+            "idempotent": true,
+            "max_defect": 1,
+            "monotone": true,
+            "sum_defect": "8"
+          }
+        },
+        "core_mass": "2/3",
+        "pass": false,
+        "retained": false,
+        "stationary": {
+          "T-A0a": "31/96",
+          "T-A0b": "1/96",
+          "T-A1safe": "1/6",
+          "T-A1warning": "1/6",
+          "T-B0": "1/6",
+          "T-B1safe": "1/6"
+        },
+        "threshold": "3/4",
+        "well_formed": true
+      },
+      "outcome": "FAILED"
+    },
+    "C2": {
+      "computed": {
+        "declared_split": [
+          "T-A0a",
+          "T-B0"
+        ],
+        "declared_split_is_witness": true,
+        "defect_count": 18,
+        "pass": true,
+        "witness": [
+          "T-A0a",
+          "T-A1safe"
+        ]
+      },
+      "outcome": "CONFIRMED"
+    },
+    "C3": {
+      "computed": {
+        "continuation_bad": [],
+        "mismatch": [],
+        "pass": true,
+        "q_class_count": 5,
+        "rounds": 2,
+        "terminal_class_count": 5
+      },
+      "outcome": "CONFIRMED"
+    },
+    "C4": {
+      "computed": {
+        "channel_values": 2,
+        "continuation": "nominal",
+        "pass": true,
+        "witness": [
+          "T-A0a",
+          "T-A1safe"
+        ]
+      },
+      "outcome": "CONFIRMED"
+    },
+    "C5": {
+      "computed": {
+        "credits": [
+          "self",
+          "other",
+          "none",
+          "none"
+        ],
+        "owner_consistent": true,
+        "pass": true,
+        "protocols": {
+          "T-genuine": {
+            "credit": "self",
+            "generator_owner": 101,
+            "products": {
+              "other": [
+                0,
+                0
+              ],
+              "self": [
+                1,
+                0
+              ]
+            }
+          },
+          "T-internalized": {
+            "credit": "none",
+            "generator_owner": 101,
+            "products": {
+              "other": [
+                1,
+                1
+              ],
+              "self": [
+                1,
+                1
+              ]
+            }
+          },
+          "T-null": {
+            "credit": "none",
+            "generator_owner": null,
+            "products": {
+              "other": [
+                0,
+                0
+              ],
+              "self": [
+                0,
+                0
+              ]
+            }
+          },
+          "T-scheduled": {
+            "credit": "other",
+            "generator_owner": 901,
+            "products": {
+              "other": [
+                1,
+                0
+              ],
+              "self": [
+                0,
+                0
+              ]
+            }
+          }
+        }
+      },
+      "outcome": "CONFIRMED"
+    },
+    "C6": {
+      "computed": {
+        "arrow_endogenous": true,
+        "distinct_action_deltas": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "distinct_outcome_count": 5,
+        "future_counterexample": null,
+        "future_sufficient": true,
+        "heterogeneous_dynamics": true,
+        "nonduplicate_past_pair": [
+          "T-A0a",
+          "T-A0b"
+        ],
+        "order_stable": true,
+        "partition_rounds": 1,
+        "pass": true,
+        "same_code_pairs": [
+          [
+            "T-A0a",
+            "T-A0b"
+          ],
+          [
+            "T-A0b",
+            "T-A0a"
+          ]
+        ],
+        "successor_total_on_viable": true,
+        "tick_viable": true,
+        "violations": []
+      },
+      "outcome": "CONFIRMED"
+    },
+    "C7": {
+      "computed": {
+        "branchwise_class_count": 1,
+        "coupling_proper_subset": true,
+        "distributions": {
+          "T-bound-crossed": {
+            "blue|circle": "1/2",
+            "red|square": "1/2"
+          },
+          "T-bound-diagonal": {
+            "blue|square": "1/2",
+            "red|circle": "1/2"
+          }
+        },
+        "pass": true,
+        "recombination_class_count": 2,
+        "strict_refinement": true,
+        "well_formed": true,
+        "well_formed_issues": [],
+        "witness": [
+          "T-bound-diagonal",
+          "T-bound-crossed"
+        ]
+      },
+      "outcome": "CONFIRMED"
+    },
+    "C8": {
+      "computed": {
+        "kernel_size": 6,
+        "maximal_viable_size": 6,
+        "maximal_viable_states": [
+          "T-A0a",
+          "T-A0b",
+          "T-A1safe",
+          "T-A1warning",
+          "T-B0",
+          "T-B1safe"
+        ],
+        "pass": true,
+        "violations": []
+      },
+      "outcome": "CONFIRMED"
+    },
+    "Corridor": {
+      "computed": {
+        "mixed_stages": [
+          1
+        ],
+        "pass": true,
+        "problems": [],
+        "projection": [
+          2,
+          2,
+          2
+        ],
+        "without_source": [
+          1,
+          1,
+          1
+        ],
+        "without_target": [
+          1,
+          1,
+          1
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "predicted_boolean": true
+    },
+    "Route status": {
+      "computed": {
+        "computed_status": "route-indexed",
+        "flatness_certificate_available": false,
+        "pass": true,
+        "path_problems": [],
+        "witness": {
+          "arrival_states": [
+            "T-A0a",
+            "T-B0"
+          ],
+          "future_health": [
+            "warning",
+            "safe"
+          ],
+          "routes": [
+            "rA",
+            "rB"
+          ]
+        }
+      },
+      "outcome": "CONFIRMED",
+      "predicted_boolean": true
+    },
+    "T17-I": {
+      "computed": {
+        "pass": false,
+        "reason": "full P05 promotion gates and certificate soundness not declared"
+      },
+      "outcome": "CONFIRMED",
+      "predicted_boolean": false
+    },
+    "TTH-02 package at arrivals": {
+      "computed": {
+        "assignment_issues": {
+          "T-A0a": [
+            "C1 global predicate"
+          ],
+          "T-B0": [
+            "C1 global predicate"
+          ]
+        },
+        "pass": false
+      },
+      "outcome": "FAILED",
+      "predicted_boolean": true
+    },
+    "TTH-03 bridge": {
+      "computed": {
+        "pass": true,
+        "problems": [],
+        "raw_map_noninjective": false,
+        "reachable_count": 6,
+        "representative_pairs": [
+          [
+            "S-A0a",
+            "S-A0b"
+          ],
+          [
+            "S-A0b",
+            "S-A0a"
+          ]
+        ],
+        "strict_edges": [
+          [
+            "S-A0a",
+            "S-A1safe"
+          ],
+          [
+            "S-A0b",
+            "S-A1safe"
+          ],
+          [
+            "S-A0a",
+            "S-A1warning"
+          ],
+          [
+            "S-A0b",
+            "S-A1warning"
+          ],
+          [
+            "S-B0",
+            "S-B1safe"
+          ]
+        ]
+      },
+      "outcome": "CONFIRMED",
+      "predicted_boolean": true
+    },
+    "TTH-04 composition": {
+      "computed": {
+        "leg_count": 1,
+        "pass": false
+      },
+      "outcome": "CONFIRMED",
+      "predicted_boolean": false
+    },
+    "TTH-05 preservation": {
+      "computed": {
+        "assignment_issues": {
+          "T-A0a": [
+            "C1 global predicate"
+          ],
+          "T-A0b": [
+            "C1 global predicate"
+          ],
+          "T-A1safe": [
+            "C1 global predicate"
+          ],
+          "T-A1warning": [
+            "C1 global predicate"
+          ],
+          "T-B0": [
+            "C1 global predicate"
+          ],
+          "T-B1safe": [
+            "C1 global predicate"
+          ]
+        },
+        "pass": false
+      },
+      "outcome": "FAILED",
+      "predicted_boolean": true
+    },
+    "TTH-06": {
+      "computed": {
+        "endpoint_link": true,
+        "pass": false,
+        "recognition_value": "notAddressed",
+        "source_package_issues": {
+          "S-A0a": [
+            "C1 global predicate"
+          ],
+          "S-B0": [
+            "C1 global predicate"
+          ]
+        },
+        "staged_map": {
+          "c7_transport": {
+            "distribution_failures": [],
+            "pass": true,
+            "quotient_failures": [],
+            "well_formed_issues": []
+          },
+          "coordinate_failures": [],
+          "pass": true
+        }
+      },
+      "outcome": "FAILED",
+      "predicted_boolean": true
+    }
+  },
+  "source_clause_checks": {
+    "C1": {
+      "closure": {
+        "all": {
+          "defect_by_subset": {
+            "EMPTY": "0",
+            "S-A0a": "0",
+            "S-A0a,S-A0b": "0",
+            "S-A0a,S-A0b,S-A1safe": "0",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning": "0",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning,S-B0": "0",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning,S-B1safe": "0",
+            "S-A0a,S-A0b,S-A1safe,S-B0": "0",
+            "S-A0a,S-A0b,S-A1safe,S-B0,S-B1safe": "0",
+            "S-A0a,S-A0b,S-A1safe,S-B1safe": "0",
+            "S-A0a,S-A0b,S-A1warning": "0",
+            "S-A0a,S-A0b,S-A1warning,S-B0": "0",
+            "S-A0a,S-A0b,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0a,S-A0b,S-A1warning,S-B1safe": "0",
+            "S-A0a,S-A0b,S-B0": "0",
+            "S-A0a,S-A0b,S-B0,S-B1safe": "0",
+            "S-A0a,S-A0b,S-B1safe": "0",
+            "S-A0a,S-A1safe": "0",
+            "S-A0a,S-A1safe,S-A1warning": "0",
+            "S-A0a,S-A1safe,S-A1warning,S-B0": "0",
+            "S-A0a,S-A1safe,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0a,S-A1safe,S-A1warning,S-B1safe": "0",
+            "S-A0a,S-A1safe,S-B0": "0",
+            "S-A0a,S-A1safe,S-B0,S-B1safe": "0",
+            "S-A0a,S-A1safe,S-B1safe": "0",
+            "S-A0a,S-A1warning": "0",
+            "S-A0a,S-A1warning,S-B0": "0",
+            "S-A0a,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0a,S-A1warning,S-B1safe": "0",
+            "S-A0a,S-B0": "0",
+            "S-A0a,S-B0,S-B1safe": "0",
+            "S-A0a,S-B1safe": "0",
+            "S-A0b": "1",
+            "S-A0b,S-A1safe": "0",
+            "S-A0b,S-A1safe,S-A1warning": "0",
+            "S-A0b,S-A1safe,S-A1warning,S-B0": "0",
+            "S-A0b,S-A1safe,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0b,S-A1safe,S-A1warning,S-B1safe": "0",
+            "S-A0b,S-A1safe,S-B0": "0",
+            "S-A0b,S-A1safe,S-B0,S-B1safe": "0",
+            "S-A0b,S-A1safe,S-B1safe": "0",
+            "S-A0b,S-A1warning": "0",
+            "S-A0b,S-A1warning,S-B0": "0",
+            "S-A0b,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0b,S-A1warning,S-B1safe": "0",
+            "S-A0b,S-B0": "1",
+            "S-A0b,S-B0,S-B1safe": "1",
+            "S-A0b,S-B1safe": "1",
+            "S-A1safe": "1",
+            "S-A1safe,S-A1warning": "0",
+            "S-A1safe,S-A1warning,S-B0": "0",
+            "S-A1safe,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A1safe,S-A1warning,S-B1safe": "0",
+            "S-A1safe,S-B0": "1",
+            "S-A1safe,S-B0,S-B1safe": "1",
+            "S-A1safe,S-B1safe": "1",
+            "S-A1warning": "1",
+            "S-A1warning,S-B0": "1",
+            "S-A1warning,S-B0,S-B1safe": "1",
+            "S-A1warning,S-B1safe": "1",
+            "S-B0": "0",
+            "S-B0,S-B1safe": "0",
+            "S-B1safe": "0"
+          },
+          "extensive": true,
+          "fixed_set_members": [
+            "EMPTY",
+            "S-A0a,S-A1safe,S-A1warning",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning",
+            "S-B0,S-B1safe",
+            "S-A0a,S-A1safe,S-A1warning,S-B0,S-B1safe",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning,S-B0,S-B1safe"
+          ],
+          "fixed_sets": 6,
+          "idempotent": true,
+          "max_defect": 1,
+          "monotone": true,
+          "sum_defect": "12"
+        },
+        "nominal": {
+          "defect_by_subset": {
+            "EMPTY": "0",
+            "S-A0a": "0",
+            "S-A0a,S-A0b": "0",
+            "S-A0a,S-A0b,S-A1safe": "0",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning": "0",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning,S-B0": "0",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning,S-B1safe": "0",
+            "S-A0a,S-A0b,S-A1safe,S-B0": "0",
+            "S-A0a,S-A0b,S-A1safe,S-B0,S-B1safe": "0",
+            "S-A0a,S-A0b,S-A1safe,S-B1safe": "0",
+            "S-A0a,S-A0b,S-A1warning": "0",
+            "S-A0a,S-A0b,S-A1warning,S-B0": "0",
+            "S-A0a,S-A0b,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0a,S-A0b,S-A1warning,S-B1safe": "0",
+            "S-A0a,S-A0b,S-B0": "0",
+            "S-A0a,S-A0b,S-B0,S-B1safe": "0",
+            "S-A0a,S-A0b,S-B1safe": "0",
+            "S-A0a,S-A1safe": "0",
+            "S-A0a,S-A1safe,S-A1warning": "0",
+            "S-A0a,S-A1safe,S-A1warning,S-B0": "0",
+            "S-A0a,S-A1safe,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0a,S-A1safe,S-A1warning,S-B1safe": "0",
+            "S-A0a,S-A1safe,S-B0": "0",
+            "S-A0a,S-A1safe,S-B0,S-B1safe": "0",
+            "S-A0a,S-A1safe,S-B1safe": "0",
+            "S-A0a,S-A1warning": "0",
+            "S-A0a,S-A1warning,S-B0": "0",
+            "S-A0a,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0a,S-A1warning,S-B1safe": "0",
+            "S-A0a,S-B0": "0",
+            "S-A0a,S-B0,S-B1safe": "0",
+            "S-A0a,S-B1safe": "0",
+            "S-A0b": "1",
+            "S-A0b,S-A1safe": "0",
+            "S-A0b,S-A1safe,S-A1warning": "0",
+            "S-A0b,S-A1safe,S-A1warning,S-B0": "0",
+            "S-A0b,S-A1safe,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0b,S-A1safe,S-A1warning,S-B1safe": "0",
+            "S-A0b,S-A1safe,S-B0": "0",
+            "S-A0b,S-A1safe,S-B0,S-B1safe": "0",
+            "S-A0b,S-A1safe,S-B1safe": "0",
+            "S-A0b,S-A1warning": "0",
+            "S-A0b,S-A1warning,S-B0": "0",
+            "S-A0b,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A0b,S-A1warning,S-B1safe": "0",
+            "S-A0b,S-B0": "1",
+            "S-A0b,S-B0,S-B1safe": "1",
+            "S-A0b,S-B1safe": "1",
+            "S-A1safe": "0",
+            "S-A1safe,S-A1warning": "0",
+            "S-A1safe,S-A1warning,S-B0": "0",
+            "S-A1safe,S-A1warning,S-B0,S-B1safe": "0",
+            "S-A1safe,S-A1warning,S-B1safe": "0",
+            "S-A1safe,S-B0": "0",
+            "S-A1safe,S-B0,S-B1safe": "0",
+            "S-A1safe,S-B1safe": "0",
+            "S-A1warning": "1",
+            "S-A1warning,S-B0": "1",
+            "S-A1warning,S-B0,S-B1safe": "1",
+            "S-A1warning,S-B1safe": "1",
+            "S-B0": "0",
+            "S-B0,S-B1safe": "0",
+            "S-B1safe": "0"
+          },
+          "extensive": true,
+          "fixed_set_members": [
+            "EMPTY",
+            "S-A0a,S-A1safe",
+            "S-A0a,S-A0b,S-A1safe",
+            "S-A0a,S-A1safe,S-A1warning",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning",
+            "S-B0,S-B1safe",
+            "S-A0a,S-A1safe,S-B0,S-B1safe",
+            "S-A0a,S-A0b,S-A1safe,S-B0,S-B1safe",
+            "S-A0a,S-A1safe,S-A1warning,S-B0,S-B1safe",
+            "S-A0a,S-A0b,S-A1safe,S-A1warning,S-B0,S-B1safe"
+          ],
+          "fixed_sets": 10,
+          "idempotent": true,
+          "max_defect": 1,
+          "monotone": true,
+          "sum_defect": "8"
+        }
+      },
+      "core_mass": "2/3",
+      "pass": false,
+      "retained": false,
+      "stationary": {
+        "S-A0a": "31/96",
+        "S-A0b": "1/96",
+        "S-A1safe": "1/6",
+        "S-A1warning": "1/6",
+        "S-B0": "1/6",
+        "S-B1safe": "1/6"
+      },
+      "threshold": "3/4",
+      "well_formed": true
+    },
+    "C2": {
+      "declared_split": [
+        "S-A0a",
+        "S-B0"
+      ],
+      "declared_split_is_witness": true,
+      "defect_count": 18,
+      "pass": true,
+      "witness": [
+        "S-A0a",
+        "S-A1safe"
+      ]
+    },
+    "C3": {
+      "continuation_bad": [],
+      "mismatch": [],
+      "pass": true,
+      "q_class_count": 5,
+      "rounds": 2,
+      "terminal_class_count": 5
+    },
+    "C4": {
+      "channel_values": 2,
+      "continuation": "nominal",
+      "pass": true,
+      "witness": [
+        "S-A0a",
+        "S-A1safe"
+      ]
+    },
+    "C5": {
+      "credits": [
+        "self",
+        "other",
+        "none",
+        "none"
+      ],
+      "owner_consistent": true,
+      "pass": true,
+      "protocols": {
+        "S-genuine": {
+          "credit": "self",
+          "generator_owner": 17,
+          "products": {
+            "other": [
+              0,
+              0
+            ],
+            "self": [
+              1,
+              0
+            ]
+          }
+        },
+        "S-internalized": {
+          "credit": "none",
+          "generator_owner": 17,
+          "products": {
+            "other": [
+              1,
+              1
+            ],
+            "self": [
+              1,
+              1
+            ]
+          }
+        },
+        "S-null": {
+          "credit": "none",
+          "generator_owner": null,
+          "products": {
+            "other": [
+              0,
+              0
+            ],
+            "self": [
+              0,
+              0
+            ]
+          }
+        },
+        "S-scheduled": {
+          "credit": "other",
+          "generator_owner": 901,
+          "products": {
+            "other": [
+              1,
+              0
+            ],
+            "self": [
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "C6": {
+      "arrow_endogenous": true,
+      "distinct_action_deltas": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "distinct_outcome_count": 5,
+      "future_counterexample": null,
+      "future_sufficient": true,
+      "heterogeneous_dynamics": true,
+      "nonduplicate_past_pair": [
+        "S-A0a",
+        "S-A0b"
+      ],
+      "order_stable": true,
+      "partition_rounds": 1,
+      "pass": true,
+      "same_code_pairs": [
+        [
+          "S-A0a",
+          "S-A0b"
+        ],
+        [
+          "S-A0b",
+          "S-A0a"
+        ]
+      ],
+      "successor_total_on_viable": true,
+      "tick_viable": true,
+      "violations": []
+    },
+    "C7": {
+      "branchwise_class_count": 1,
+      "coupling_proper_subset": true,
+      "distributions": {
+        "S-bound-crossed": {
+          "blue|circle": "1/2",
+          "red|square": "1/2"
+        },
+        "S-bound-diagonal": {
+          "blue|square": "1/2",
+          "red|circle": "1/2"
+        }
+      },
+      "pass": true,
+      "recombination_class_count": 2,
+      "strict_refinement": true,
+      "well_formed": true,
+      "well_formed_issues": [],
+      "witness": [
+        "S-bound-diagonal",
+        "S-bound-crossed"
+      ]
+    },
+    "C8": {
+      "kernel_size": 6,
+      "maximal_viable_size": 6,
+      "maximal_viable_states": [
+        "S-A0a",
+        "S-A0b",
+        "S-A1safe",
+        "S-A1warning",
+        "S-B0",
+        "S-B1safe"
+      ],
+      "pass": true,
+      "violations": []
+    }
+  }
+}

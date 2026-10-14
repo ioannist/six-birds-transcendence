@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_full_native_credit_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_full_native_credit_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_full_native_credit_transcription.log",
+  "log_sha256": "363dca2c47aa9d96ec235ce718b311769b6276e9338bdfd4e64dff5af8153fdc",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:15+00:00",
+  "status": "pass",
+  "summary": "PASS: caught planted drift: housing credited as issuer\nPASS: caught planted drift: mixed issuer accepted\nPASS: caught planted drift: source issuer inherited by target\nPASS: caught planted drift: copied receipt replaced by fresh default\nPASS: caught planted drift: absence erases initial stored charge"
+}

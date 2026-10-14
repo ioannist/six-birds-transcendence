@@ -1,0 +1,26 @@
+{
+  "claim_ceiling": "finite flat predictive control only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_id": "MEM-FLAT-01",
+  "observations": [
+    {
+      "current": "C0",
+      "predictive": "PZ",
+      "route": "left",
+      "route_residue": "R-normal"
+    },
+    {
+      "current": "C0",
+      "predictive": "PZ",
+      "route": "right",
+      "route_residue": "R-normal"
+    }
+  ],
+  "refined_predictor": {
+    "C0|R-normal": "PZ"
+  },
+  "schema_version": "CST-TT-03",
+  "title": "flat predictive completion removes the need for route memory"
+}

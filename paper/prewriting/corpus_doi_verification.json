@@ -1,0 +1,85 @@
+{
+  "method": "HTTPS GET doi.org (302, redirects disabled) and Zenodo records API (200; published status, record id, title and date)",
+  "records": [
+    {
+      "api_http_status": 200,
+      "api_record_id": 23120470,
+      "api_status": "published",
+      "api_url": "https://zenodo.org/api/records/23120470",
+      "doi": "10.5281/zenodo.23120470",
+      "doi_http_status": 302,
+      "paper_id": "P07",
+      "publication_date": "2026-10-03",
+      "title": "Auditing Emergence in Quantum Error Correction: A Falsifiable Instantiation of Six Birds Theory"
+    },
+    {
+      "api_http_status": 200,
+      "api_record_id": 23120494,
+      "api_status": "published",
+      "api_url": "https://zenodo.org/api/records/23120494",
+      "doi": "10.5281/zenodo.23120494",
+      "doi_http_status": 302,
+      "paper_id": "P14",
+      "publication_date": "2026-10-03",
+      "title": "Holonomy with Memory in Six Birds Theory: Predictive Quotients, Witnesses, and Fixed-Support Route Transport"
+    },
+    {
+      "api_http_status": 200,
+      "api_record_id": 23087000,
+      "api_status": "published",
+      "api_url": "https://zenodo.org/api/records/23087000",
+      "doi": "10.5281/zenodo.23087000",
+      "doi_http_status": 302,
+      "paper_id": "P30",
+      "publication_date": "2026-10-01",
+      "title": "Six Birds Foundations IV: A Catalog of Layer-Agnostic Structural Laws"
+    },
+    {
+      "api_http_status": 200,
+      "api_record_id": 23120462,
+      "api_status": "published",
+      "api_url": "https://zenodo.org/api/records/23120462",
+      "doi": "10.5281/zenodo.23120462",
+      "doi_http_status": 302,
+      "paper_id": "P35",
+      "publication_date": "2026-10-03",
+      "title": "Six Birds Protocol Trap: Holonomy Without Entropy Production"
+    },
+    {
+      "api_http_status": 200,
+      "api_record_id": 23088991,
+      "api_status": "published",
+      "api_url": "https://zenodo.org/api/records/23088991",
+      "doi": "10.5281/zenodo.23088991",
+      "doi_http_status": 302,
+      "paper_id": "P50",
+      "publication_date": "2026-10-01",
+      "title": "To Flatten a Stone with Six Birds: Critical Pairs, Holonomy, and Confluence in Rewriting Systems"
+    },
+    {
+      "api_http_status": 200,
+      "api_record_id": 23120497,
+      "api_status": "published",
+      "api_url": "https://zenodo.org/api/records/23120497",
+      "doi": "10.5281/zenodo.23120497",
+      "doi_http_status": 302,
+      "paper_id": "P53",
+      "publication_date": "2026-10-03",
+      "title": "To Notch a Stone with Six Birds: Time as a Theory Artifact of Order, Measure, and Arrow"
+    },
+    {
+      "api_http_status": 200,
+      "api_record_id": 23184176,
+      "api_status": "published",
+      "api_url": "https://zenodo.org/api/records/23184176",
+      "doi": "10.5281/zenodo.23184176",
+      "doi_http_status": 302,
+      "paper_id": "P57",
+      "publication_date": "2026-10-06",
+      "title": "To Throw a Stone with Six Birds: On Agents and Agenthood"
+    }
+  ],
+  "schema_version": "1.0",
+  "verification_date": "2026-10-13",
+  "verified_by": "agent_live"
+}

@@ -1,0 +1,57 @@
+\section{Repairs, and a supplementary result}
+\label{app:proofs}
+
+\subsection{Statements we repaired}
+
+While formalizing, we found several statements in our own earlier formulations
+to be false. We replaced each with a true statement and give both here, so that
+no reader mistakes the original for a result.
+\begin{itemize}
+\item \emph{Licences for dropping route memory.} The original said that routes
+with the same boundary have equal endpoints \emph{only if} a normalization,
+confluence or flatness licence holds. That is false: on a domain of three
+routes, two have equal endpoints and no licence holds. We prove only
+sufficiency (Theorem~\ref{thm:licences}).
+\item \emph{Direct succession and data.} The original said that direct
+succession excludes every data path. That is false: a genuine direct successor
+can coexist with an independent data path. We prove the four exclusions and the
+insufficiency of data reachability (Proposition~\ref{prop:direct-exclusions}).
+\item \emph{Robustness.} The original said that every perturbation within the
+model's margin preserves every advance and every required condition. That is
+false. A correction by a quarter is not an integer difference. A receiver
+that outputs a constant keeps every number positive but fails the checks. We
+prove robustness in a rational extension, for one event and one box
+(Proposition~\ref{prop:box}).
+\item \emph{Unbounded maintenance.} The original said that a policy on a
+finite invariant set yields an infinite run in a finite full state. That is
+impossible, since no infinite run that strictly progresses fits a finite full
+state. We prove it on a finite factor with unbounded registers
+(Theorem~\ref{thm:unbounded}).
+\item \emph{Reconstruction versus twin.} The original compared ancestry from
+one target to another and is refuted for every prefix. We use the rooted form
+(Proposition~\ref{prop:reconstruction}).
+\item \emph{Identity.} The original made a claim about every identity
+relation, and the relation that identifies everything refutes it. We prove
+underdetermination for a stated class of identity relations
+(Theorem~\ref{thm:identity}).
+\end{itemize}
+
+\subsection{Conditioning does not factor}
+
+A natural shortcut for the joint behaviour of two branches is to condition on
+a shared event and multiply the conditioned marginals. That is wrong in
+general, and the fusion model's predecessor gives an exact case.
+
+\begin{proposition}[Conditioning does not factor]
+% claim: JOINT-COND
+\label{prop:conditioning}
+On the predecessor of the fusion model, a shared event has two outcomes, of
+weights \snapGTwoSixConditioningEventWeights{} (ratio
+\snapGTwoSixConditioningRelativeWeights{}). Conditioned on the event, and with the empty action word, the joint initial
+observation associated with the lower-weight outcome has probability
+\snapGTwoSixConditionedJointMass{}. Its two components are the corresponding
+initial observations of the two branches. Each has conditioned probability
+\snapGTwoSixConditionedLeftMass{}, and their product is
+\snapGTwoSixProductOfConditionedMarginals{}. The correct joint
+law is a weighted sum of products of the branch laws over fixed worlds.
+\end{proposition}

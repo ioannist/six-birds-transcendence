@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-birds.local/cst-tt/schemas/fiach_lane_control_certificate.schema.json",
+  "title": "CST-TT-05 one/two-lane Temporal-FIACH control",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "control_id",
+    "title",
+    "model_ref",
+    "model_sha256",
+    "expected_lane_statuses",
+    "observed_lane_statuses",
+    "component_refs",
+    "component_sha256",
+    "result_status",
+    "claim_ceiling",
+    "audit",
+    "checker"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "CST-TT-05"
+    },
+    "control_id": {
+      "pattern": "^FIACH-C0[1-6]$",
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_ref": {
+      "type": "string"
+    },
+    "model_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "expected_lane_statuses": {
+      "type": "object"
+    },
+    "observed_lane_statuses": {
+      "type": "object"
+    },
+    "component_refs": {
+      "type": "object"
+    },
+    "component_sha256": {
+      "type": "object"
+    },
+    "result_status": {
+      "enum": [
+        "scaffold-only",
+        "checked-fiach-lane-independence-control"
+      ]
+    },
+    "claim_ceiling": {
+      "const": "lane-conjunction and independence boundary only"
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "aggregate_valid",
+        "failed_obligations"
+      ],
+      "properties": {
+        "aggregate_valid": {
+          "const": false
+        }
+      }
+    },
+    "checker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "module",
+        "function",
+        "python_version",
+        "checked_at_phase"
+      ],
+      "properties": {
+        "module": {
+          "const": "cst_tt.fiach"
+        },
+        "function": {
+          "const": "audit_temporal_fiach"
+        },
+        "python_version": {
+          "type": "string"
+        },
+        "checked_at_phase": {
+          "const": "CST-TT-05"
+        }
+      }
+    }
+  }
+}

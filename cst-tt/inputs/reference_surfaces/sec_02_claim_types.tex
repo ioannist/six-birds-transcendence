@@ -1,0 +1,192 @@
+\section{Claim types and the minimal formal setting}
+\label{sec:claims}
+% ============================================================================
+
+This section fixes the two pieces of infrastructure that everything else
+depends on: a typing discipline for claims, and the small stock of standard
+finite mathematics in which all results are stated.
+
+\subsection{Four claim lanes}
+\label{sec:lanes}
+
+Every scientific sentence in this paper belongs to exactly one lane.
+
+\begin{description}
+\item[Tier S (structural).] Mathematical content about declared finite
+objects. Tier~S subdivides by \emph{claim form}: a \emph{theorem-grade exact
+result} is proved or exhaustively computed on its declared carrier; a
+\emph{schema} is a definition or conditional statement whose hypotheses are
+displayed and not discharged; a \emph{pointer} re-scopes an existing result to
+a new reading without new mathematics; a \emph{composition} combines landed
+results under a declared convention. Tier~S claims are established relative to
+their carriers and interfaces, and to nothing else.
+\item[Tier R (recognition).] A proposed mapping between a structural object
+and a familiar mental or phenomenal category, for example reading a
+constraint's dual price as felt valence. Recognition bridges are hypotheses.
+They are \emph{proposed}, \emph{named}, and \emph{retractable}; they are never
+derivations, and a counterexample to a bridge retracts the bridge, not the
+mathematics under it.
+\item[Tier O (ontological).] A claim about what satisfaction of the structure
+would be. All Tier~O content in this paper is conditional on named postulates
+(Section~\ref{sec:t17}); the paper contains no unconditional Tier~O sentence.
+\item[OPEN.] A target that is stated, motivated, and not achieved. Open
+targets are recorded in the artifact with explicit markers rather than
+implied by silence.
+\end{description}
+
+Table~\ref{tbl:grades} summarizes the lanes, their evidential support, and the
+inference each lane blocks. Figure~\ref{fig:lanes} shows the same discipline as
+a flow constraint: computational and literature inputs enter only their proper
+lanes, and no arrow runs from computation or literature directly to
+realization.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{p{0.1\linewidth}p{0.2\linewidth}p{0.22\linewidth}p{0.18\linewidth}p{0.2\linewidth}}
+\toprule
+Grade & Object & Evidential support & Licensed wording & Blocked inference \\
+\midrule
+\gradeS{} theorem/ exact & declared finite carrier and result & proof, or exhaustive exact enumeration with tests; selected Lean kernels & ``proves on the declared carrier,'' ``computes exactly,'' ``exhaustively enumerates'' & generalization beyond the carrier; any empirical or phenomenal conclusion \\
+\gradeS{} schema & conditional statement with displayed hypotheses & definition-level checking; conditional proofs & ``establishes under assumptions,'' ``gives a conditional schema'' & unconditional use; silent discharge of hypotheses \\
+\gradeR{} & proposed structure-to-phenomenon mapping & argued fit of profile; no derivation & ``proposes,'' ``recognizes,'' ``interprets, conditional on'' & treating the mapping as derived or measured \\
+\gradeO{} & conditional ontological implication & named postulates plus a mechanized conditional theorem & ``implies after assuming,'' ``is conditional on,'' ``purchases'' & detaching the conclusion from its premises \\
+\gradeOpen{} & stated, unachieved target & explicit negative markers in the artifact & ``remains open,'' ``is not exhibited'' & ``follows in principle,'' ``is nearly proved'' \\
+\bottomrule
+\end{tabular}
+\caption{\textbf{Tbl-1: claim-grade legend.} Each grade names its object, its
+support, its licensed verbs, and the inference it blocks. Scope/price: the
+legend is a reporting discipline for this paper, not a proposed norm for the
+field.}
+\label{tbl:grades}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\fbox{\parbox{0.92\linewidth}{\small\emph{[Figure F1: claim and evidence
+lanes; rendered per the artifact figure plan.]} Four horizontal lanes:
+structural result, recognition bridge, ontological implication, open
+obligation. Python enumeration and Lean declarations feed only the structural
+lane; philosophical postulates feed only the ontological lane; literature
+feeds comparison, never evidence. No arrow connects computation or literature
+directly to realization.}}
+\caption{\textbf{F1: claim and evidence lanes.} Takeaway: every sentence has
+one lane, and evidence types cannot cross lanes. Scope restriction: the
+diagram is schematic; the sentence-level assignment lives in the artifact's
+claim ledger.}
+\label{fig:lanes}
+\end{figure}
+
+\subsection{The minimal formal setting}
+\label{sec:setting}
+
+All objects are finite. Probabilities and costs are exact rationals; no
+floating-point value appears in any result.
+
+\begin{definition}[Carrier, actions, lens]
+A \emph{carrier} is a finite set $X$ of states. A \emph{transition/action
+family} over $X$ is a finite set $A$ of actions with, for each $a\in A$,
+either a map $F_a : X \to X$ or a row-stochastic kernel $P_a$ on $X$; whether
+dynamics are deterministic or stochastic is declared per construction. A
+\emph{lens} (observation map) is a map $q : X \to Y$ onto a finite value set;
+its fibers form the \emph{observational partition} $\Pi_q$ of $X$. A
+\emph{policy for $q$} is a feedback rule that selects actions measurably with
+respect to $\Pi_q$ (more generally, with respect to the history of $q$-values).
+\end{definition}
+
+\begin{definition}[Quotient, refinement, factorization defect]
+A partition $\Pi'$ \emph{refines} $\Pi$ when every block of $\Pi'$ is contained
+in a block of $\Pi$. Given two lenses $\pi_0, \pi_1$ on the same carrier, the
+\emph{factorization defect} is
+\[
+\Dfact(\pi_0,\pi_1) \;=\; \{(s,s') : \pi_0(s)=\pi_0(s') \text{ and }
+\pi_1(s)\neq\pi_1(s')\},
+\]
+the set of \emph{split pairs}: pairs identified by the coarse description and
+separated by the fine one. $\pi_1$ factors through $\pi_0$ (there is $\varphi$
+with $\pi_1=\varphi\circ\pi_0$) if and only if $\Dfact(\pi_0,\pi_1)=\emptyset$.
+A nonempty defect is the exact, checkable meaning of ``the fine content is not
+recoverable from the coarse description'' used throughout this paper.
+\end{definition}
+
+\begin{definition}[Predictive and observational equivalence]
+Fix a carrier with declared dynamics and a lens $q$. Two states (or histories)
+are \emph{observationally equivalent} when all admissible current observables
+agree on them; the induced quotient is the \emph{current public quotient} $Q$.
+They are \emph{predictively equivalent} when they agree on the full family of
+admissible \emph{future} behavior (continuation laws, or distributions over
+future observable trajectories under all admissible continuations); the induced
+quotient is the \emph{predictive quotient} $M$. Predictive equivalence refines
+observational equivalence, giving a canonical comparison map $\pi : M \to Q$.
+The gap between them, same $Q$-class with different $M$-class, is a
+factorization defect and is the recurring engine of this paper.
+\end{definition}
+
+Predictive quotients are standard mathematics: they are the finite controlled
+analog of causal-state equivalence in computational mechanics
+\citep{CrutchfieldYoung1989, ShaliziCrutchfield2001}, and we import the
+construction, not the stationary-process theorems (the distinction matters in
+Section~\ref{sec:t1}).
+
+\begin{definition}[Closure operator and audit]
+A \emph{closure operator} on a finite structured set is an extensive, monotone,
+idempotent endomap; its fixed points are the descriptions the structure
+recognizes as complete. When a closure-like operator $E$ is only approximately
+idempotent, its \emph{idempotence defect} $\delta(E)=\tfrac12\max_z
+\lVert E^2(z,\cdot)-E(z,\cdot)\rVert_1$ is computed exactly and reported rather
+than assumed small. An \emph{audit} is a declared, executable check on a
+construction, such as a defect computation, a control run, or an exhaustive
+comparison, whose outcome is recorded with the result. A \emph{gate} is a named audit
+whose passage is required before a claim may be graded; the gate vocabulary
+used here (sufficiency, descent, stability, control-of-content, no-smuggling,
+visibility, audit, strictness) is imported from the interaction calculus of
+the companion corpus (Appendix~\ref{app:imports}) and is used as a reporting
+format, not re-proved.
+\end{definition}
+
+\begin{definition}[Viability kernel]
+Fix a carrier $X$, a safety predicate, feasible action sets, and declared
+successor supports. The \emph{viability kernel} $\Kviab$ is the greatest fixed
+point of the controlled-invariance operator
+\[
+V(K) = \{\, s \in K : s \text{ safe and } \exists a \in A_{\mathrm{feas}}(s)
+\text{ with } \mathrm{Post}(s,a) \subseteq K \,\},
+\]
+computed by descending iteration; this is the standard discrete-time viability
+kernel \citep{AnayaEtAl2009Viability, AubinBayenSaintPierre2011}. For a lens
+$\ell$, we write $\Kviab(\ell)$ for the best kernel achievable by
+$\ell$-measurable policies. A nonempty kernel means controlled persistence in
+the model, nothing more.
+\end{definition}
+
+\subsubsection*{The trust chain}
+
+Every result travels the same four-step chain, and the paper reports which
+steps each result completed. (1)~A \emph{mathematical statement} on a declared
+carrier, with grade and nonclaims, in the theorem catalog. (2)~A \emph{Python
+enumeration}: exact rational computation of every quantity, with declared
+controls, under test. (3)~A \emph{Lean declaration}: a named kernel per law,
+whose scope boundary (what is proved versus what is pinned as certified
+constants matching the Python computation) is part of the result.
+(4)~An \emph{interpretation}, which is where lanes R and O begin and where the
+ledger's blocked-inference column applies. Prose never outranks an executable
+artifact: the theorem catalog controls statements, the current Python
+computations control values, the Lean sources control what is machine-checked.
+
+\subsection{Six Birds vocabulary, second}
+\label{sec:sixbirds}
+
+The companion corpus organizes the same mathematics under a six-role grammar
+(threshold, budget, route, staging, packaging, and audit; P1--P6) with a typed
+calculus of promotion between description layers: a \emph{promotion bridge}
+carries content from a lower to a higher layer; \emph{strict} promotion means
+the higher description does not factor through the lower one
+($\Dfact\neq\emptyset$); \emph{no-smuggling} and \emph{no-overreading} rules
+police what may be used and claimed across layers; and \emph{same-level
+self-audit} is provably never accepted, while level-shifted, partial audit
+is. This paper uses those results as imported theorems with exact citations
+(Appendix~\ref{app:imports}); the six roles never organize sections, are never
+renamed as neurocognitive faculties, and impose no requirement that every role
+be active in every carrier. Analogy with a sibling result is never treated as
+theorem transport.
+
+% ============================================================================

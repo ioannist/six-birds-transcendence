@@ -1,0 +1,293 @@
+{
+  "schema": "CSTTT-route-license-declaration-v1",
+  "model_id": "TTH09-ROUTES",
+  "stage": "declaration-only; evaluation forbidden until committed",
+  "authority": {
+    "contract": "audit/G0_generic_contracts.md",
+    "lines": "192\u2013214",
+    "next_steps": "G3b independent evaluation, then G3c Lean bridge"
+  },
+  "shared_domains": {
+    "states": [
+      0,
+      1
+    ],
+    "clock_group": {
+      "name": "Z/2Z",
+      "elements": [
+        0,
+        1
+      ],
+      "operation": "addition modulo 2",
+      "identity": 0,
+      "inverse": "each element is its own inverse"
+    },
+    "actions": {
+      "identity": {
+        "0": 0,
+        "1": 1
+      },
+      "toggle": {
+        "0": 1,
+        "1": 0
+      }
+    },
+    "initial_state_rule": "use the initial_state of the declared boundary; no endpoint field"
+  },
+  "models": [
+    {
+      "model_id": "TTH09-NECESSITY-01",
+      "vertices": [
+        "entry",
+        "exit"
+      ],
+      "boundaries": [
+        {
+          "id": "b",
+          "entry": "entry",
+          "exit": "exit",
+          "initial_state": 0
+        }
+      ],
+      "events": [
+        {
+          "id": "e0",
+          "entry": "entry",
+          "exit": "exit",
+          "action": "identity",
+          "clock_increment": 0,
+          "available": true
+        },
+        {
+          "id": "e1",
+          "entry": "entry",
+          "exit": "exit",
+          "action": "identity",
+          "clock_increment": 0,
+          "available": true
+        },
+        {
+          "id": "e2",
+          "entry": "entry",
+          "exit": "exit",
+          "action": "toggle",
+          "clock_increment": 1,
+          "available": true
+        }
+      ],
+      "routes": [
+        {
+          "id": "r0",
+          "boundary": "b",
+          "events": [
+            "e0"
+          ]
+        },
+        {
+          "id": "r1",
+          "boundary": "b",
+          "events": [
+            "e1"
+          ]
+        },
+        {
+          "id": "r2",
+          "boundary": "b",
+          "events": [
+            "e2"
+          ]
+        }
+      ],
+      "comparison_domains": [
+        {
+          "id": "D",
+          "boundary": "b",
+          "routes": [
+            "r0",
+            "r1",
+            "r2"
+          ]
+        }
+      ],
+      "raw_rewrites": [],
+      "rewrite_ranks": {
+        "r0": 0,
+        "r1": 0,
+        "r2": 0
+      },
+      "critical_pairs": [
+        [
+          "r0",
+          "r1"
+        ],
+        [
+          "r0",
+          "r2"
+        ],
+        [
+          "r1",
+          "r2"
+        ]
+      ],
+      "completions": [],
+      "design_rule": "Three distinct supported one-event paths share one boundary; the first two use identity and the third toggle. Empty raw rewrite graph and no completion are deliberate controls, not missing references."
+    },
+    {
+      "model_id": "TTH09-LICENSE-01",
+      "vertices": [
+        "entry",
+        "exit0",
+        "exit1"
+      ],
+      "boundaries": [
+        {
+          "id": "b0",
+          "entry": "entry",
+          "exit": "exit0",
+          "initial_state": 0
+        },
+        {
+          "id": "b1",
+          "entry": "entry",
+          "exit": "exit1",
+          "initial_state": 0
+        }
+      ],
+      "events": [
+        {
+          "id": "e_a0",
+          "entry": "entry",
+          "exit": "exit0",
+          "action": "identity",
+          "clock_increment": 0,
+          "available": true
+        },
+        {
+          "id": "e_n0",
+          "entry": "entry",
+          "exit": "exit0",
+          "action": "identity",
+          "clock_increment": 0,
+          "available": true
+        },
+        {
+          "id": "e_a1",
+          "entry": "entry",
+          "exit": "exit1",
+          "action": "toggle",
+          "clock_increment": 1,
+          "available": true
+        },
+        {
+          "id": "e_n1",
+          "entry": "entry",
+          "exit": "exit1",
+          "action": "toggle",
+          "clock_increment": 1,
+          "available": true
+        }
+      ],
+      "routes": [
+        {
+          "id": "a0",
+          "boundary": "b0",
+          "events": [
+            "e_a0"
+          ]
+        },
+        {
+          "id": "n0",
+          "boundary": "b0",
+          "events": [
+            "e_n0"
+          ]
+        },
+        {
+          "id": "a1",
+          "boundary": "b1",
+          "events": [
+            "e_a1"
+          ]
+        },
+        {
+          "id": "n1",
+          "boundary": "b1",
+          "events": [
+            "e_n1"
+          ]
+        }
+      ],
+      "comparison_domains": [
+        {
+          "id": "D0",
+          "boundary": "b0",
+          "routes": [
+            "a0",
+            "n0"
+          ]
+        },
+        {
+          "id": "D1",
+          "boundary": "b1",
+          "routes": [
+            "a1",
+            "n1"
+          ]
+        }
+      ],
+      "raw_rewrites": [
+        [
+          "a0",
+          "n0"
+        ],
+        [
+          "a1",
+          "n1"
+        ]
+      ],
+      "rewrite_ranks": {
+        "a0": 1,
+        "n0": 0,
+        "a1": 1,
+        "n1": 0
+      },
+      "critical_pairs": [
+        [
+          "a0",
+          "n0"
+        ],
+        [
+          "a1",
+          "n1"
+        ]
+      ],
+      "completions": [
+        {
+          "left": "a0",
+          "right": "n0",
+          "join": "n0",
+          "left_rewrite_path": [
+            "a0",
+            "n0"
+          ],
+          "right_rewrite_path": [
+            "n0"
+          ]
+        },
+        {
+          "left": "a1",
+          "right": "n1",
+          "join": "n1",
+          "left_rewrite_path": [
+            "a1",
+            "n1"
+          ],
+          "right_rewrite_path": [
+            "n1"
+          ]
+        }
+      ],
+      "design_rule": "For each of two boundaries declare two different one-event realizations of the same raw bit action, and one directed alias-to-normal rewrite. Boundary b0 uses identity, b1 uses toggle. This rule fixes tables before endpoint execution. No endpoint or license verdict is stored."
+    }
+  ]
+}

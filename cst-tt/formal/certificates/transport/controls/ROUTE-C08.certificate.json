@@ -1,0 +1,23 @@
+{
+  "artifact_ref": "models/transport/controls/ROUTE-C08.model.json",
+  "artifact_sha256": "5e8e25084b022456f76b00b61253a15e8013779dc05a4af53b88b5c3d816fa7d",
+  "baseline_ref": "models/routes/ROUTE-POS-01.model.json",
+  "checker": {
+    "function": "audit_route_discipline",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5",
+    "valid_result": false
+  },
+  "claim_ceiling": "finite structural obligation boundary only",
+  "control_id": "ROUTE-C08",
+  "control_kind": "route",
+  "expected_primary_failure": "memory-or-flatness-satisfied",
+  "observed_failures": [
+    "every-declared-critical-pair-joins",
+    "clock-translation-holonomy-zero",
+    "temporal-endpoints-route-independent",
+    "memory-or-flatness-satisfied"
+  ],
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-03"
+}

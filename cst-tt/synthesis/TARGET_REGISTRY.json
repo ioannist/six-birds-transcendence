@@ -1,0 +1,61 @@
+{
+  "fallback": {
+    "claim_lanes": [
+      "S-R",
+      "S-L",
+      "A"
+    ],
+    "code": "IAPS",
+    "core_nonclaim": "Structural successorship is relation-valued and is not numerical identity or proof of conscious survival.",
+    "id": "FT-02",
+    "mandatory_components": [
+      "TS-01",
+      "TS-02",
+      "TS-04",
+      "TS-06",
+      "TS-07",
+      "TS-09",
+      "TS-10"
+    ],
+    "source_families": [
+      "SF-01",
+      "SF-03"
+    ],
+    "status": "frozen_fallback",
+    "title": "Integrated Autonomous Predictive Successorship"
+  },
+  "generated_date": "2026-08-10",
+  "mandatory_companion": {
+    "id": "FT-NG",
+    "status": "mandatory_companion_and_terminal_fallback",
+    "title": "Shared finite no-go and underdetermination kernel"
+  },
+  "phase": "CST-EXP-06",
+  "primary": {
+    "claim_lanes": [
+      "S-R",
+      "S-L",
+      "A"
+    ],
+    "code": "FIACH",
+    "core_nonclaim": "No consciousness, personal survival, numerical identity, empirical recognition, certificate soundness, A1, or A2-P conclusion follows.",
+    "id": "FT-01",
+    "mandatory_components": [
+      "TS-02",
+      "TS-03",
+      "TS-04",
+      "TS-06",
+      "TS-07",
+      "TS-08",
+      "TS-09"
+    ],
+    "source_families": [
+      "SF-01",
+      "SF-02"
+    ],
+    "status": "frozen_for_later_implementation",
+    "title": "Finite Integrated Autonomous Causal Handoff"
+  },
+  "project": "CST-EXP",
+  "schema_version": "1.0"
+}

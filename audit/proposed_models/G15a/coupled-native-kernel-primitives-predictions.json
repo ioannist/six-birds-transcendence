@@ -1,0 +1,107 @@
+{
+  "frozen_at": "2026-10-10T17:13:53.178510+00:00",
+  "scope": "Strong shared-native-row construction for full-exit C3, declared-current C4, native cycle directionality and full-word C7. Not yet the full eight-clause source/target package or restoration adjudication.",
+  "carrier": "Existing Factor = Bool x Bool x Bool. Kernel embed(u,v)=(false,u,v). Outside=(true,u,v), with four distinct exit identities.",
+  "kernel_order": [
+    [
+      false,
+      false
+    ],
+    [
+      false,
+      true
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      true
+    ]
+  ],
+  "actions": {
+    "false": "maintenance",
+    "true": "exit probe"
+  },
+  "scale": 8,
+  "inside_maintenance_weights": [
+    [
+      1,
+      3,
+      3,
+      1
+    ],
+    [
+      3,
+      1,
+      1,
+      3
+    ],
+    [
+      3,
+      1,
+      1,
+      3
+    ],
+    [
+      2,
+      2,
+      2,
+      2
+    ]
+  ],
+  "inside_probe": "single corresponding outside state of weight 8",
+  "outside_rows": "absorbing same outside state with weight 8 for each action",
+  "native_fields": {
+    "positions": "constant 0",
+    "hazards": "outside flag",
+    "safe_policy": "constant false",
+    "histories": "[source, first supported maintenance outcome]",
+    "resource_owner": "actual owner argument",
+    "recharge": true,
+    "ledger": "existing canonical funded ledger, with budget scale adapted only if required by existing semantics"
+  },
+  "current_channels": [
+    "constant position",
+    "per-action nonempty availability"
+  ],
+  "branch_observations": "After each action, first or second inside bit; every outside exit emits false to both branches. Full words in both actions are allowed, initial state is not separately exposed.",
+  "joint_observations": "Paired branch emissions on the same native outcome, retaining pairing at every step.",
+  "profile": "public seed 0; internal blocks 0..3 and distinct outside blocks 4..7. Exact native weighted refinement, no supplied quotient or future law.",
+  "C1_staging": [
+    1,
+    2
+  ],
+  "perturbation": {
+    "type": "uniform mixing",
+    "epsilon": "1/16"
+  },
+  "cycle_vertices": [
+    [
+      false,
+      false
+    ],
+    [
+      false,
+      true
+    ],
+    [
+      true,
+      true
+    ]
+  ],
+  "predictions": [
+    "Every native row is positive and sums to eight.",
+    "Exact refinement from the constant public seed reaches four classes after one step and is stable forever.",
+    "The stable kernel partition equals equality of all-word native exit-identity masses.",
+    "Both individual branch full-word output laws are equal for all initial kernel states; the joint one-step maintenance law distinguishes a selected pair.",
+    "All joint current-channel tuples are constant on maintained kernel support, with no nonconstant decoder, while native maintenance gives positive supported connectors.",
+    "The maintenance matrix has a unique nonuniform probability fixed point; uniform perturbation retains nonuniformity.",
+    "A cycle computed from the SAME native maintenance rows has unequal forward and reverse products.",
+    "Flattening correlation to uniform maintenance rows preserves branchwise future laws but collapses joint refinement and native cycle directionality.",
+    "Adding an exit-predictive current channel exposes the determining state and directly breaks privacy.",
+    "Actual optional readouts reject missing owners and have exact all-partial Some true/false/None characterizations."
+  ],
+  "provenance": "No stationary distribution, quotient, credit verdict, joint coupling table or final acceptance bit is primitive. Any Gaussian operations are a derived checked certificate, never a revised native model."
+}

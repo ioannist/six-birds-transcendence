@@ -1,0 +1,421 @@
+{
+  "schema": "csttt-G15b-declarations-v1",
+  "module": "lean/CSTTT/Targets/GenericHandoff/NativeComposition/PairedPredictiveQuotient.lean",
+  "source_sha256": "08780b6731103797c9f56e2946f8936ed06edec79acedf06f7776f06306fc97f",
+  "declaration_count": 59,
+  "declarations": [
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.outside_paired_future_equal",
+      "kind": "theorem",
+      "line": 11,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.safe_rows_equal",
+      "kind": "theorem",
+      "line": 25,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.equal_weight_paired_future",
+      "kind": "theorem",
+      "line": 30,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.safe_zero_mass",
+      "kind": "theorem",
+      "line": 48,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.full_paired_future_exact",
+      "kind": "theorem",
+      "line": 52,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.successorClass",
+      "kind": "def",
+      "line": 62,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.blocks",
+      "kind": "def",
+      "line": 64,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.emittedBlockMass",
+      "kind": "def",
+      "line": 66,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.signature",
+      "kind": "def",
+      "line": 70,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.step",
+      "kind": "def",
+      "line": 73,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.iterate",
+      "kind": "def",
+      "line": 75,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.classes",
+      "kind": "def",
+      "line": 78,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.count",
+      "kind": "def",
+      "line": 79,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.expectedClass",
+      "kind": "def",
+      "line": 82,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.first_equation",
+      "kind": "theorem",
+      "line": 84,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.step_equation",
+      "kind": "theorem",
+      "line": 87,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.second_equation",
+      "kind": "theorem",
+      "line": 90,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.stable_forever",
+      "kind": "theorem",
+      "line": 93,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.profile_trajectory",
+      "kind": "theorem",
+      "line": 100,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.expected_class_exact",
+      "kind": "theorem",
+      "line": 105,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.stable_partition_full_paired_future",
+      "kind": "theorem",
+      "line": 109,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.actual_merge_and_exit_separation",
+      "kind": "theorem",
+      "line": 112,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.legacy_prediction_does_not_match",
+      "kind": "theorem",
+      "line": 119,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.classLabels",
+      "kind": "def",
+      "line": 128,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.fiber",
+      "kind": "def",
+      "line": 129,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.C",
+      "kind": "def",
+      "line": 131,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.U",
+      "kind": "def",
+      "line": 132,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.CU",
+      "kind": "def",
+      "line": 134,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.fiber_contains_self",
+      "kind": "theorem",
+      "line": 136,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.class_label_has_positive_fiber",
+      "kind": "theorem",
+      "line": 139,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.labels_equation",
+      "kind": "theorem",
+      "line": 144,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.middle_fiber",
+      "kind": "theorem",
+      "line": 146,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.projection_averages_middle",
+      "kind": "theorem",
+      "line": 148,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.projection_not_identity",
+      "kind": "theorem",
+      "line": 153,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.projection_idempotent",
+      "kind": "theorem",
+      "line": 158,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.projection_probability_rows",
+      "kind": "theorem",
+      "line": 165,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.perturbed_projection_retains_matrix",
+      "kind": "theorem",
+      "line": 176,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.closure",
+      "kind": "def",
+      "line": 185,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.candidate",
+      "kind": "def",
+      "line": 188,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.closure_equation",
+      "kind": "theorem",
+      "line": 190,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.all_four_verifiers_pass",
+      "kind": "theorem",
+      "line": 198,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.candidate_equation",
+      "kind": "theorem",
+      "line": 203,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.all_four_probability_fixed_unique",
+      "kind": "theorem",
+      "line": 210,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.all_four_nonuniform",
+      "kind": "theorem",
+      "line": 216,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.flat_step_constant",
+      "kind": "theorem",
+      "line": 224,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.flat_iterate_constant",
+      "kind": "theorem",
+      "line": 227,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.flat_classes_constant",
+      "kind": "theorem",
+      "line": 231,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.flat_full_future_exact",
+      "kind": "theorem",
+      "line": 233,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.PredictiveRefinement",
+      "kind": "def",
+      "line": 239,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.quotientBit",
+      "kind": "def",
+      "line": 241,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.actual_predictive_refinement",
+      "kind": "theorem",
+      "line": 244,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.flat_predictive_refinement_rejected",
+      "kind": "theorem",
+      "line": 246,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.actual_quotient_bit",
+      "kind": "theorem",
+      "line": 251,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.flat_quotient_bit",
+      "kind": "theorem",
+      "line": 254,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.quotient_readout_true_exact",
+      "kind": "theorem",
+      "line": 257,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.quotient_readout_false_exact",
+      "kind": "theorem",
+      "line": 263,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.quotient_readout_none_exact",
+      "kind": "theorem",
+      "line": 269,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.concrete_quotient_readouts",
+      "kind": "theorem",
+      "line": 271,
+      "classification": "b",
+      "row_id": "TTF-05"
+    },
+    {
+      "name": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativePairedQuotientPrototype.same_native_quotient_return",
+      "kind": "theorem",
+      "line": 281,
+      "classification": "b",
+      "row_id": "TTF-05"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "carrier_chain": [
+    {
+      "code": 17,
+      "label": "source-substrate"
+    },
+    {
+      "code": 101,
+      "label": "target-substrate"
+    }
+  ],
+  "claim_ceiling": "exact finite structural temporal lineage criterion only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "episode": {
+    "dependencies": [
+      {
+        "child_event_id": "leg-S-T-source-mixed",
+        "dependency_kind": "temporal-step",
+        "parent_event_id": "s-entry"
+      },
+      {
+        "child_event_id": "leg-S-T-target-mixed",
+        "dependency_kind": "temporal-step",
+        "parent_event_id": "s-entry"
+      },
+      {
+        "child_event_id": "t-exit",
+        "dependency_kind": "mixed-update",
+        "parent_event_id": "leg-S-T-source-mixed"
+      },
+      {
+        "child_event_id": "t-exit",
+        "dependency_kind": "mixed-update",
+        "parent_event_id": "leg-S-T-target-mixed"
+      }
+    ],
+    "events": [
+      {
+        "event_id": "s-entry",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 17,
+          "label": "source-substrate"
+        },
+        "stage": 0
+      },
+      {
+        "event_id": "leg-S-T-source-mixed",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 17,
+          "label": "source-substrate"
+        },
+        "stage": 1
+      },
+      {
+        "event_id": "leg-S-T-target-mixed",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "stage": 1
+      },
+      {
+        "event_id": "t-exit",
+        "event_kind": "temporal-update",
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "stage": 2
+      }
+    ],
+    "stages": [
+      {
+        "active_support": [
+          {
+            "code": 17,
+            "label": "source-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 17,
+          "maintenance_state": "leg-S-T-source-maint",
+          "order_rank": 0,
+          "predictive_rank": 0,
+          "progress_rank": 0,
+          "record_value": 0,
+          "route_residue": [
+            "route-root"
+          ],
+          "tick_index": 0
+        },
+        "stage": 0,
+        "temporal_realized": true
+      },
+      {
+        "active_support": [
+          {
+            "code": 17,
+            "label": "source-substrate"
+          },
+          {
+            "code": 101,
+            "label": "target-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 17,
+          "maintenance_state": "leg-S-T-mixed-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 1,
+          "route_residue": [
+            "route-root",
+            "leg-S-T-mixed"
+          ],
+          "tick_index": 1
+        },
+        "stage": 1,
+        "temporal_realized": true
+      },
+      {
+        "active_support": [
+          {
+            "code": 101,
+            "label": "target-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 101,
+          "maintenance_state": "leg-S-T-target-maint",
+          "order_rank": 2,
+          "predictive_rank": 2,
+          "progress_rank": 2,
+          "record_value": 3,
+          "route_residue": [
+            "route-root",
+            "leg-S-T-mixed",
+            "leg-S-T-target"
+          ],
+          "tick_index": 1
+        },
+        "stage": 2,
+        "temporal_realized": true
+      }
+    ]
+  },
+  "kind": "corridor-control",
+  "legs": [
+    {
+      "audit_event_ids": {
+        "later_event": "t-exit",
+        "source_mixed_event": "leg-S-T-source-mixed",
+        "target_mixed_event": "leg-S-T-target-mixed"
+      },
+      "audit_later_stage": 2,
+      "counterfactual": {
+        "base_projection": [
+          0,
+          0,
+          0
+        ],
+        "full_projection": [
+          2,
+          2,
+          3
+        ],
+        "projection_fields": [
+          "predictive_rank",
+          "tick_index",
+          "record_value"
+        ],
+        "source_contribution": [
+          1,
+          0,
+          1
+        ],
+        "source_removed_projection": [
+          1,
+          2,
+          2
+        ],
+        "target_contribution": [
+          1,
+          2,
+          2
+        ],
+        "target_removed_projection": [
+          1,
+          0,
+          1
+        ]
+      },
+      "end_stage": 2,
+      "leg_id": "leg-S-T",
+      "mixed_stage": 1,
+      "route_status": "route-indexed",
+      "source_carrier": {
+        "code": 17,
+        "label": "source-substrate"
+      },
+      "start_stage": 0,
+      "takeover_stage": 2,
+      "target_carrier": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "transport_evidence": {
+        "components": [
+          "predictive-now",
+          "order",
+          "tick-phase",
+          "progress",
+          "arrow-record",
+          "route-memory",
+          "maintenance"
+        ],
+        "evidence_id": "leg-S-T-bundled-transport",
+        "ownership_interface_valid": true,
+        "representative_independent": true,
+        "route_status": "route-indexed"
+      }
+    }
+  ],
+  "model_id": "COR-C13",
+  "nonclaims": [
+    "no target-package verdict",
+    "no post-withdrawal autonomy verdict",
+    "no phenomenal or personal-status conclusion"
+  ],
+  "schema_version": "CST-TT-04-model-v1",
+  "title": "tick stalls at terminal stage"
+}

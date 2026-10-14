@@ -1,0 +1,36 @@
+schema_id,file,name,claim_lanes,scaffold_example,status
+CS-01,temporal_signature.schema.json,Temporal signature,S-T;S-R,examples/scaffold/temporal_signature.scaffold.json,frozen-scaffold
+CS-02,package_certificate.schema.json,Integrated package landed certificate,S-R,examples/scaffold/package_certificate.scaffold.json,landed-checked-package-certificates
+CS-03,temporal_corridor.schema.json,Strict overlap temporal corridor,S-L,examples/scaffold/temporal_corridor.scaffold.json,frozen-scaffold
+CS-04,direct_successor.schema.json,Direct successor,S-L,examples/scaffold/direct_successor.scaffold.json,frozen-scaffold
+CS-05,autonomy_certificate.schema.json,Post-withdrawal autonomy,A,examples/scaffold/autonomy_certificate.scaffold.json,frozen-scaffold
+CS-06,temporal_fiach_certificate.schema.json,Temporal-FIACH aggregate,S-R;S-L;A,examples/scaffold/temporal_fiach_certificate.scaffold.json,frozen-scaffold
+CS-07,ancestry_certificate.schema.json,Fallback ancestry interface,S-L,examples/scaffold/ancestry_certificate.scaffold.json,frozen-scaffold
+CS-08,countermodel_certificate.schema.json,Finite countermodel,M,examples/scaffold/countermodel_certificate.scaffold.json,landed-checked-countermodels
+CS-09,staged_package_certificate.schema.json,Staged heterogeneous package assembly,S-T;S-R,examples/scaffold/staged_package_certificate.scaffold.json,landed-checked-staged-certificate
+CS-10,package_control_certificate.schema.json,One-obligation-removed package control,M;S-R,examples/scaffold/package_control_certificate.scaffold.json,landed-checked-control-certificates
+CS-11,temporal_transport_certificate.schema.json,Bundled temporal transport,S-T,examples/scaffold/temporal_transport_certificate.scaffold.json,landed-checked-transport-certificates
+CS-12,route_discipline_certificate.schema.json,Route holonomy and confluence,S-T,examples/scaffold/route_discipline_certificate.scaffold.json,landed-checked-route-certificates
+CS-13,memory_repair_certificate.schema.json,Predictive route-memory repair,S-T,examples/scaffold/memory_repair_certificate.scaffold.json,landed-checked-memory-certificates
+CS-14,record_arrow_certificate.schema.json,Record-arrow transport,S-T,examples/scaffold/record_arrow_certificate.scaffold.json,landed-checked-arrow-certificates
+CS-15,transport_control_certificate.schema.json,Transport and route controls,M;S-T,examples/scaffold/transport_control_certificate.scaffold.json,landed-checked-transport-controls
+CS-16,strict_temporal_corridor_certificate.schema.json,Strict carrier-chain temporal corridor,S-L,examples/scaffold/strict_temporal_corridor_certificate.scaffold.json,landed-checked-corridor-certificates
+CS-17,corridor_composition_certificate.schema.json,Temporal corridor composition,S-L,examples/scaffold/corridor_composition_certificate.scaffold.json,landed-checked-composition-certificate
+CS-18,direct_successor_landed.schema.json,Atomic direct temporal successor,S-L,examples/scaffold/direct_successor_landed.scaffold.json,landed-checked-direct-certificates
+CS-19,direct_successor_path_certificate.schema.json,Direct temporal successor path,S-L,examples/scaffold/direct_successor_path_certificate.scaffold.json,landed-checked-direct-path-certificate
+CS-20,corridor_control_certificate.schema.json,Corridor and direct negative controls,M;S-L,examples/scaffold/corridor_control_certificate.scaffold.json,landed-checked-corridor-controls
+CS-21,aligned_package_certificate.schema.json,Handoff-aligned integrated package,S-R,examples/scaffold/aligned_package_certificate.scaffold.json,landed-checked-fiach-package-certificates
+CS-22,aligned_staged_package_certificate.schema.json,Handoff-aligned staged package assembly,S-T;S-R,examples/scaffold/aligned_staged_package_certificate.scaffold.json,landed-checked-fiach-package-certificates
+CS-23,post_withdrawal_autonomy_certificate.schema.json,Post-withdrawal autonomy,A,examples/scaffold/post_withdrawal_autonomy_certificate.scaffold.json,landed-checked-autonomy-certificate
+CS-24,autonomy_control_certificate.schema.json,Autonomy negative control,M;A,examples/scaffold/autonomy_control_certificate.scaffold.json,landed-checked-autonomy-controls
+CS-25,temporal_fiach_landed_certificate.schema.json,Integrated Temporal-FIACH,S-T;S-R;S-L;A,examples/scaffold/temporal_fiach_landed_certificate.scaffold.json,landed-checked-fiach-certificate
+CS-26,fiach_lane_control_certificate.schema.json,Temporal-FIACH lane control,M;S-R;S-L;A,examples/scaffold/fiach_lane_control_certificate.scaffold.json,landed-checked-lane-controls
+CS-27,full_handoff_composition_certificate.schema.json,Full Temporal-FIACH composition,S-T;S-R;S-L;A,examples/scaffold/full_handoff_composition_certificate.scaffold.json,landed-checked-composition-certificate
+CS-28,temporal_fission_certificate.schema.json,Relation-valued temporal fission,S-L;S-R;A,examples/scaffold/temporal_fission_certificate.scaffold.json,landed-checked-fission-certificate
+CS-29,fusion_boundary_certificate.schema.json,Fusion/recombination boundary,S-L;S-R,examples/scaffold/fusion_boundary_certificate.scaffold.json,landed-checked-boundary-certificate
+CS-30,route_completion_certificate.schema.json,Route completion,S-T;S-L,examples/scaffold/route_completion_certificate.scaffold.json,landed-checked-route-completion-certificates
+CS-31,toy_suite_closure_certificate.schema.json,Primary toy-suite closure,M,examples/scaffold/toy_suite_closure_certificate.scaffold.json,landed-checked-toy-suite-certificate
+CS-32,generalized_continuity_certificate.schema.json,Generalized temporal continuity,S-L,examples/scaffold/generalized_continuity_certificate.scaffold.json,landed-checked-strengthening-certificate
+CS-33,defect_profile_certificate.schema.json,Exact vector defect profile,M;S-T;S-R;S-L;A,examples/scaffold/defect_profile_certificate.scaffold.json,landed-checked-strengthening-certificate
+CS-34,temporal_robustness_certificate.schema.json,Bounded temporal robustness,S-T;S-R;S-L;A,examples/scaffold/temporal_robustness_certificate.scaffold.json,landed-checked-strengthening-certificate
+CS-35,unbounded_invariant_certificate.schema.json,Model-relative unbounded invariant,A,examples/scaffold/unbounded_invariant_certificate.scaffold.json,landed-checked-strengthening-certificate

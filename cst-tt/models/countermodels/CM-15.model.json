@@ -1,0 +1,74 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R",
+    "S-L"
+  ],
+  "conclusion_failure_checks": {
+    "joint_recombination_differs": true
+  },
+  "countermodel_id": "CM-15",
+  "derived_facts": {
+    "source_joint_support_size": 2,
+    "target_joint_support_size": 2
+  },
+  "family": "recombination-marginal-collision",
+  "model": {
+    "alphabet_size": 2,
+    "every_branch_marginal_preserved": true,
+    "joint_recombination_preserved": false,
+    "source_marginals": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "source_relation": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "target_marginals": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "target_relation": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "name": "Branchwise preservation without recombination preservation",
+  "premise_checks": {
+    "both_branch_marginals_preserved": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "Two joint relations can have identical branch marginals while differing in their recombination structure.",
+  "size_measure": "(alphabet_size, maximum_joint_support_size)",
+  "size_vector": [
+    2,
+    2
+  ],
+  "target_no_go_id": "TTN-14",
+  "toy_model_ref": "TFM-04"
+}

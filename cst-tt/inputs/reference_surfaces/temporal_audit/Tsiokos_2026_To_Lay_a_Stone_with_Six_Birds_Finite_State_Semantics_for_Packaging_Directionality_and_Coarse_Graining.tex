@@ -1,0 +1,1160 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  citecolor=green!50!black,
+  urlcolor=blue!80!black,
+  bookmarksnumbered=true,
+  pdfauthor={Ioannis Tsiokos},
+  pdftitle={To Lay a Stone with Six Birds: Finite-State Semantics for Packaging, Directionality, and Coarse-Graining}
+}
+\usepackage[nameinlink]{cleveref}
+\usepackage{natbib}
+\usepackage{orcidlink}
+
+\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}
+\DeclareUnicodeCharacter{2192}{\ensuremath{\to}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\TV}{\mathrm{TV}}
+\newcommand{\KL}{\mathrm{KL}}
+\newcommand{\SigmaT}{\Sigma_T}
+ \newcommand{\MetricsGenerated}{2026-02-09 18:08:42}
+\newcommand{\MetricsTagFilter}{smoke}
+\newcommand{\PTSigmaStrob}{0.173783}
+\newcommand{\PTSigmaLift}{0}
+\newcommand{\PTSigmaProj}{\ensuremath{6.93335\times 10^{-33}}}
+\newcommand{\PTAccMax}{0.965464}
+\newcommand{\PDChosenT}{4}
+\newcommand{\PDChosenAlpha}{0.3}
+\newcommand{\PDSigmaLiftDrive}{2.10934}
+\newcommand{\PDSigmaProjDrive}{0.00638045}
+\newcommand{\PDSigmaLiftNull}{0}
+\newcommand{\PDSigmaProjNull}{\ensuremath{1.00148\times 10^{-32}}}
+\newcommand{\PDSigmaPhaseDrive}{7.03112}
+\newcommand{\PDAccPhaseDriveMax}{6.59167}
+\newcommand{\HISigmaMicro}{10.5467}
+\newcommand{\HISigmaMacro}{0}
+\newcommand{\HIGapMicroMacro}{10.5467}
+\newcommand{\HIAccMax}{8.7889}
+\newcommand{\PRTauMax}{20}
+\newcommand{\PREps}{0.1}
+\newcommand{\PRWitnessGTCount}{5}
+\newcommand{\PRWitnessLTCount}{15}
+\newcommand{\PRWitnessGTFirst}{1}
+\newcommand{\PRWitnessLTFirst}{6}
+\newcommand{\PRStableCoarseLast}{2}
+\newcommand{\PRStableFineLast}{1}
+\newcommand{\RMTauTuple}{\ensuremath{[6,3,3]}}
+\newcommand{\RMProtoScheme}{\texttt{f0\_rep03\_vs\_rep25\_f1\_uniform}}
+\expandafter\newcommand\csname RMMismatchRowL1\endcsname{2}
+\newcommand{\RMMismatchTV}{1}
+\expandafter\newcommand\csname RMUniformMismatchRowL1\endcsname{\ensuremath{5.02202\times 10^{-16}}}
+\newcommand{\RMUniformMismatchTV}{\ensuremath{2.51101\times 10^{-16}}}
+\newcommand{\RMSlackBound}{2}
+\expandafter\newcommand\csname RMGain02\endcsname{1}
+\expandafter\newcommand\csname RMGain01\endcsname{1}
+\expandafter\newcommand\csname RMGain12\endcsname{1}
+\newcommand{\RMRMNorm}{2}
+\newcommand{\RMGain}[2]{\csname RMGain#1#2\endcsname}
+\newcommand{\RMMismatchRowL}[1]{\csname RMMismatchRowL#1\endcsname}
+\newcommand{\RMUniformMismatchRowL}[1]{\csname RMUniformMismatchRowL#1\endcsname}
+ 
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedbottom
+
+\title{To Lay a Stone with Six Birds: Finite-State Semantics for Packaging, Directionality, and Coarse-Graining}
+\author{Ioannis Tsiokos\,\orcidlink{0009-0009-7659-5964}}
+\date{15 February 2026}
+
+\newcommand{\printaffiliation}{\begin{center}\small \end{center}}
+
+\fancypagestyle{firstpage}{\fancyhf{}
+  \fancyfoot[C]{\scriptsize Automorph Inc., Wilmington, DE, USA \quad \texttt{ioannis@automorph.io} \quad DOI: TBD \quad \textcopyright\ 2026 \quad CC-BY 4.0 \quad Preprint --- not peer reviewed.}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+\printaffiliation
+
+\begin{abstract}
+Work on multi-scale organization and audit-based directionality lacks a minimal-substrate theorem: key primitives are often realized only by smuggling in external schedules, ad hoc audits, or declared quotients, making results hard to verify and compare across substrates.
+We introduce a no-smuggling minimal-substrate semantics for SPT, operationalize it via matched-control audit tests on finite stochastic machines, and demonstrate separations between protocol artifacts, intrinsic drive, and route-dependent packaging defects.
+Operationally, we define a canonical machine class $\mathcal S_{\min}$ of autonomous finite stochastic dynamics with phase-in-state, deterministic lenses, induced packaging endomaps $E_{\tau,f}$, and intrinsic audits (path-reversal KL asymmetry $\Sigma_T$ and ACC affinities), and we implement exact computations together with a reproducible witness suite and a Lean-checked idempotent/closure backbone for packaging equivalence and saturation \citep{demoura2021lean4,mathlib2020}.
+Under calibrated controls, stroboscopic protocols can exhibit $\Sigma_T>0$ while their autonomous lifts yield $\Sigma_T\approx 0$ (protocol trap), whereas turning on internal phase drive produces a clean null-vs-driven separation with $\Sigma_T(Z)>0$ and a detectable projected macro arrow; moreover deterministic coarse-graining never increases $\Sigma_T$ and can erase it entirely, and packaging along refinement routes exhibits a prototype-driven holonomy defect that is large at moderate timescales while a uniform baseline is near zero and satisfies a gain-plus-mismatch bound.
+These results supply a machine semantics and separation witnesses for a minimal substrate theorem, reducing false positives and turning SPT from a language into a compilation target up to packaging equivalence.
+We are explicit that we do not establish a universal physical substrate or continuum limit: our conclusions are semantic and rest on exact finite-state audits and controlled constructions rather than empirical natural-system data.
+\end{abstract}
+
+\paragraph{Contributions.}
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item A no-smuggling semantics for realizing SPT primitives as internal structure, rather than external schedules, audits, or declared quotients.
+  \item A canonical minimal machine substrate in which all six primitives are realizable via autonomy (phase-in-state), lenses, packaging idempotents, and intrinsic directionality audits.
+  \item A representation/compilation perspective: substrates in the admissible class simulate each other up to packaging equivalence by passage through the canonical machine model.
+  \item A reproducible witness suite that separates artifacts from genuine arrows (protocol trap vs.\ driven protocols), and quantifies refinement effects and route mismatch defects.
+  \item A Lean-checked algebraic backbone for packaging (idempotents, packaging equivalence) and lens saturation (closure operator).
+\end{itemize}
+
+\noindent\textbf{keywords:} emergence calculus; minimal substrate; coarse-graining; stochastic dynamics; irreversibility; idempotent packaging; holonomy defect
+ 
+\section{Introduction}
+\label{sec:introduction}
+
+SPT was introduced in \citet{sixbirds2026} as an emergence calculus organized around six primitives (P1--P6).
+The Six Birds thesis is that these primitives are not optional modeling choices: they are forced by composability, limited access, and refinement.
+This paper takes the next step and asks a core semantic question:
+
+\begin{quote}
+\emph{What is the weakest mathematical substrate on which all six primitives can be realized without smuggling them in?}
+\end{quote}
+
+The phrase \emph{without smuggling} is the key constraint.
+A general emergence calculus should not rely on external schedules, externally declared quotients, or ad hoc audit functionals that are not induced by the substrate itself.
+If SPT is to be more than a descriptive language, it needs a minimal \emph{machine semantics}: a canonical representation class and a sense in which any admissible realization can be compiled into it.
+
+\subsection{From an emergence language to a substrate machine}
+
+The Six Birds framework is intentionally substrate-agnostic: it identifies primitives that must appear whenever agents interact with dynamics through limited interfaces.
+That substrate-agnostic stance is a strength, but it creates a natural ambiguity:
+if the primitives are ``forced,'' then \emph{forced on what?}
+In other words, what is the minimal structure that supports all of the following \emph{internally}:
+(i) staged access via lenses, (ii) packaging as an endomap with stable fixed points, (iii) intrinsic audits of directionality and drive, and (iv) route-dependent composition defects (holonomy) when packaging is performed along different refinement routes?
+
+This paper answers by proposing a canonical minimal machine model: an autonomous finite stochastic dynamics on an explicit extended state, equipped with deterministic coarse-grainings (lenses), internal packaging endomorphisms, and intrinsic audits.
+The goal is not to privilege Markov chains as physics; rather, finite autonomous stochastic dynamics provide a compact normal form in which the SPT primitives can be made explicit and testable.
+Our representation goal is therefore semantic:
+\emph{give a minimal substrate class that can host P1--P6, and show which features are necessary.}
+
+\subsection{No-smuggling semantics}
+
+We make the ``no smuggling'' constraint operational by treating the primitives as \emph{realizability requirements}.
+A primitive is \emph{realized} only if it arises from internal structure on the substrate:
+endomaps, constraints, lenses, and induced audits.
+Conversely, we call a construction \emph{smuggled} if it requires external oracular input not represented in state or in the admitted structure.
+Three recurring smuggling modes motivate our minimality claims.
+
+\paragraph{External protocols masquerading as autonomy.}
+If a system is driven by an externally staged schedule (``apply $K_0$, then $K_1$, then $K_0$, \dots''), stroboscopic composition can generate apparent arrows of time that disappear once the schedule is encoded into state and the dynamics is made autonomous.
+This is the \emph{protocol trap} from \citet{sixbirds2026}.
+In our witness suite, a stroboscopic Markov closure on a microstate space $X$ exhibits $\Sigma_T>0$ (e.g.\ $\Sigma_T=\PTSigmaStrob$ under the experiment settings), yet the autonomous lifted system on $Z=X\times\Phi$ yields $\Sigma_T=\PTSigmaLift$, and the exact macro audit induced by the lifted chain yields $\Sigma_T=\PTSigmaProj$.
+The lesson is semantic: an admissible substrate must represent protocol state internally (phase-in-state) if it is to claim autonomy.
+
+\paragraph{External directionality audits.}
+Directionality is not a free label; it must be audited in a way that respects limited access.
+In particular, if $f:Z\to X$ is a deterministic coarse-graining, an admissible audit should not report \emph{more} arrow of time after information is discarded.
+This monotonicity is a no-false-positives constraint.
+We adopt the path-space KL asymmetry $\Sigma_T$ as a canonical audit \citep{kullback1951,cover2006} and empirically verify data processing: $\Sigma_T^{\mathrm{macro}}\le \Sigma_T^{\mathrm{micro}}$ across randomized test cases.
+The witness suite also shows that genuine micro irreversibility can be invisible at the macro level: for a biased 4-cycle we observe $\Sigma_T^{\mathrm{micro}}=\HISigmaMicro$ while a parity lens yields $\Sigma_T^{\mathrm{macro}}=\HISigmaMacro$.
+
+\paragraph{Externally declared quotients and objects.}
+Packaging is the mechanism by which stable objects emerge from dynamics and observation.
+In Six Birds, packaging appears as a concrete operator $E_{\tau,f}$ with defect measures; abstractly, packaging behaves like an idempotent endomap whose fixed points are the packaged objects.
+Declaring macro-objects by fiat is smuggling; admissible substrates must induce packaging equivalence internally (``two states are equivalent if they package to the same representative'') and support composition and refinement in that internal language.
+A small Lean development in this project mechanizes the idempotent and closure algebra (fixed points, packaging equivalence, and lens saturation as a closure operator) \citep{demoura2021lean4,mathlib2020}.
+
+\subsection{Drive restores genuine arrows}
+
+The protocol trap makes a negative point: some apparent arrows are artifacts of external scheduling.
+The complementary positive point is equally important for minimality:
+to obtain a genuine arrow in an autonomous substrate, one needs internal \emph{drive} (P6\textsubscript{drive} in the Six Birds taxonomy), detectable for example by a nonzero ACC affinity class \citep{schnakenberg1976,seifert2012}.
+Our driven-protocol witness makes this explicit.
+With a driven phase register $\Phi$ (nonreversible internal phase dynamics), the autonomous lifted system yields a strong arrow $\Sigma_T=\PDSigmaLiftDrive$, and the projected macro process becomes directionally biased as well ($\Sigma_T=\PDSigmaProjDrive$), whereas a reversible (null) phase control yields $\Sigma_T=\PDSigmaLiftNull$ and $\Sigma_T=\PDSigmaProjNull$.
+This sharp separation supports a minimality claim: autonomy plus protocols do not imply arrows; arrows require internal drive.
+
+\subsection{What this paper adds and how to read it}
+
+Relative to \citet{sixbirds2026}, this paper contributes a machine semantics and a minimal-substrate perspective.
+
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item We define a no-smuggling realizability criterion and propose a canonical minimal machine substrate in which P1--P6 are implemented as internal operators and constraints.
+  \item We state a representation/compilation perspective: admissible substrates simulate each other up to packaging equivalence by passage through the canonical machine model.
+  \item We state minimality results showing that removing specific structural features forces at least one primitive to fail or to re-enter as an external oracle.
+  \item We provide a reproducible witness suite (protocol trap, driven protocols, hidden irreversibility, refinement non-monotonicity, and route mismatch/holonomy).
+\end{itemize}
+
+The rest of the paper is organized as follows.
+\Cref{sec:background} summarizes the Six Birds foundation.
+\Cref{sec:definitions} introduces the no-smuggling realizability vocabulary (lenses, packaging equivalence, and audits).
+\Cref{sec:machine} presents the canonical minimal machine substrate and the internal realizations of P1--P6.
+\Cref{sec:theorems} states the main representation and minimality theorems.
+\Cref{sec:experiments} describes the witness suite, including route mismatch at moderate time scales (e.g.\ $\tau=\RMTauTuple$ under prototype scheme \RMProtoScheme) with mismatch norm $\RMMismatchRowL1$ versus a uniform baseline of $\RMUniformMismatchRowL1$, and an empirically verified gain-plus-mismatch bound with slack $\RMSlackBound$.
+\Cref{sec:discussion} distills these results into a user-facing audit workflow and a failure-mode checklist.
+Appendices collect reproducibility notes (\Cref{app:repro}) and the Lean algebraic backbone (\Cref{app:lean}).
+ \section{From Six Birds to a minimal substrate question}
+\label{sec:background}
+
+This paper is a direct extension of the Six Birds foundation \citep{sixbirds2026}.
+Six Birds introduced SPT as an emergence calculus organized around six primitives (P1--P6) and argued that these primitives are structurally forced by limited access and refinement.
+Here we summarize only the components we will reuse as modules: (i) the ``theory package'' interface (lens, completion, audit), (ii) canonical packaging operators and their defects, (iii) intrinsic audits of directionality with monotonicity under coarse-graining, and (iv) the autonomy discipline behind the protocol trap.
+We then state precisely what the present paper adds.
+
+\subsection{Six primitives and the separation of certificates}
+
+A central design choice in \citet{sixbirds2026} is to keep three certificate families logically independent:
+\emph{stability} (existence/robustness of packaged fixed points), \emph{novelty} (strict theory extension via non-definable predicates), and \emph{directionality} (auditable arrows of time or drive).
+This separation prevents category mistakes such as treating route dependence (holonomy) as a directionality certificate, or treating stability as evidence of novelty.
+The present paper keeps the same separation, but asks a new question: what minimal substrate must exist so that each certificate family can be realized internally and cannot be faked by external oracular additions?
+
+\subsection{Theory packages: lens, completion, and audit}
+
+Six Birds formalizes a ``theory at a scale'' as a package consisting of (i) a carrier of microdescriptions, (ii) a deterministic coarse-graining (lens) that defines what is expressible, (iii) a completion/packaging rule whose fixed points are the packaged objects at that scale, and (iv) an audit functional that is monotone under further coarse-graining.
+The lens is a deterministic map $f:Z\to X$ (finite sets in the base development), and it induces a notion of definability: a predicate $h:Z\to\{0,1\}$ is definable from $f$ iff it is constant on fibers of $f$.
+Novelty is then modeled as strict theory extension by adjoining a non-definable predicate, and a finite forcing lemma shows that non-definability is generic in the finite setting \citep{sixbirds2026}.
+
+Completion is intentionally treated abstractly as an endomap $E$ that is (exactly or approximately) idempotent, so that $\mathrm{Fix}(E)$ behaves like a set of packaged objects.
+This view does not require an ambient order.
+It is also compatible with order-theoretic closures when an order is present.
+In the present paper, this abstraction becomes one of the key semantic constraints: packaged objects must arise as fixed points of an internally constructed endomap, not from externally declared quotients.
+
+\subsection{Canonical empirical packaging via dynamics and a lens}
+
+Six Birds gives a concrete, reusable packaging construction from autonomous finite dynamics.
+Let $P$ be a time-homogeneous Markov kernel on a finite microstate set $Z$, let $f:Z\to X$ be a deterministic lens, and fix a timescale $\tau\ge 1$.
+Define the pushforward $Q_f:\Delta(Z)\to\Delta(X)$ by coarse-graining a distribution and a lift $U_f:\Delta(X)\to\Delta(Z)$ by selecting prototypes $u_x$ supported on each fiber $f^{-1}(x)$.
+The empirical packaging endomap is then
+\begin{equation}
+\label{eq:empirical-packaging}
+E_{\tau,f}(\mu)\;:=\;U_f\!\big(Q_f(\mu P^\tau)\big).
+\end{equation}
+This endomap ``evolve--forget--reinstantiate'' construction produces packaged representatives at scale $(f,\tau)$.
+Six Birds develops quantitative defect measures (e.g.\ total-variation idempotence defect and prototype stability scores) and emphasizes a key semantic warning: saturation diagnostics (small idempotence defect) do not by themselves certify multiple objects (a constant map is perfectly idempotent).
+The present paper reuses the construction \eqref{eq:empirical-packaging} as the canonical way to realize P5 internally in a minimal machine substrate.
+
+\subsection{Audits of directionality: KL arrow and ACC drive}
+
+Six Birds supplies two complementary intrinsic audits of directionality.
+
+\paragraph{Path-reversal asymmetry and data processing.}
+For a finite Markov chain with initial distribution $\rho$ and horizon $T$, Six Birds defines the path-space reversal asymmetry
+\[
+\Sigma_T(\rho) \;:=\; D_{\mathrm{KL}}\!\left(\mathbb P_{\rho,T}\,\middle\|\,\mathcal R_*\mathbb P_{\rho,T}\right),
+\]
+where $D_{\mathrm{KL}}$ denotes the Kullback--Leibler divergence \citep{kullback1951},
+and proves a data-processing inequality under deterministic coarse-graining: if $f:Z\to X$ is a lens, then the observed macro path law cannot have larger reversal asymmetry than the micro path law \citep{cover2006}.
+This monotonicity is a ``no false positives'' constraint: discarding information cannot create an arrow of time.
+Our present paper treats such monotonicity as part of the no-smuggling semantics for audits (P6): admissible directionality certificates must be induced by the substrate and must not be amplifiable by forgetting.
+This viewpoint is compatible with stochastic-thermodynamic interpretations of irreversibility \citep{seifert2012,lebowitzspohn1999}.
+
+\paragraph{ACC affinity classes (P6\textsubscript{drive}).}
+Under bidirected support (microreversibility on support), Six Birds defines an antisymmetric edge 1-form
+\[
+a_{ij} := \log\frac{P_{ij}}{P_{ji}},
+\]
+and the cycle integral (affinity) on an oriented cycle as the sum of $a_{ij}$ along the cycle.
+Nonzero cycle integrals are the obstruction to exactness and witness internal drive \citep{schnakenberg1976,kelly1979}.
+This is the P6\textsubscript{drive} specialization: a basis-independent nonzero affinity class indicates a sustained nonequilibrium drive that cannot be removed by reparameterization.
+The present paper uses this audit both as a semantic ingredient (a substrate feature that can realize genuine arrows) and as a minimality witness (what must be present to avoid protocol artifacts).
+
+\subsection{The protocol trap and autonomy discipline}
+
+A crucial point in \citet{sixbirds2026} is that protocols must be represented autonomously if the substrate claims to be autonomous.
+A stroboscopic description on $X$ (``apply $K_0$ then $K_1$ then ...'') is non-autonomous unless the protocol phase is included in state.
+Six Birds constructs an autonomous lifted system on $Z=X\times\Phi$ with time-homogeneous dynamics in which the phase $\Phi$ evolves internally.
+In the null (reversible) regime, apparent stroboscopic arrows on $X$ vanish when the dynamics is made autonomous on $Z$.
+This is the protocol trap: directionality inferred from externally scheduled composition is not an intrinsic substrate property.
+Our present paper elevates this to a no-smuggling axiom: if a substrate uses protocol staging, then the phase must live in state, and directionality must be audited on the autonomous system.
+
+\subsection{What this paper adds}
+
+Six Birds showed that the primitives are structurally forced by limited access and refinement and supplied canonical constructions for packaging and audits.
+The present paper asks and answers a semantic minimality question that Six Birds did not attempt:
+
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item We define a no-smuggling realizability criterion and propose a canonical minimal machine substrate (autonomous finite stochastic dynamics on an explicit extended state) in which P1--P6 are realized internally.
+  \item We state a representation/compilation viewpoint: admissible substrates simulate each other up to packaging equivalence by passage through the canonical machine model.
+  \item We state minimality results showing that removing specific substrate features forces at least one primitive to fail or to re-enter as an external oracle (smuggling).
+  \item We provide a reproducible witness suite that sharpens the protocol trap into a minimality test and shows that internal drive (P6\textsubscript{drive}) restores genuine arrows in autonomous protocols.
+\end{itemize}
+
+The next section (\Cref{sec:definitions}) upgrades these ideas into a no-smuggling vocabulary: substrates, realizations, lenses and refinement, packaging equivalence, and admissible audits.
+ \section{Definitions: substrates, realizations, and no-smuggling semantics}
+\label{sec:definitions}
+
+This section fixes notation and states the semantic discipline that will underlie our minimal substrate theorems.
+The guiding idea is realizability: a primitive is realized only if it arises from \emph{internal} structure on the substrate, not from external schedules or externally declared oracles.
+
+\subsection{Substrates and realizations}
+\label{sec:def-substrates}
+
+A \emph{substrate} is a mathematical object intended to host realizations of the SPT primitives.
+In this paper we keep the definition modular and intentionally weak.
+
+\begin{definition}[Substrate (informal)]
+\label{def:substrate}
+A substrate $\mathcal S$ consists of:
+(i) a state carrier $Z$ (finite in our canonical machine model),
+(ii) a composable dynamics primitive (autonomous in the canonical model),
+and (iii) an admissible family of deterministic observational maps (lenses) from $Z$ to coarser description spaces.
+Additional internal structure may be present (e.g.\ registers, ledgers, prototype selectors), but must be represented as part of state or as derived operators.
+\end{definition}
+
+We will often speak of a \emph{realization} of primitives P1--P6 on a substrate.
+
+\begin{definition}[Realization (informal)]
+\label{def:realization}
+A realization of a primitive on $\mathcal S$ is a specification of internal operators and constraints on $\mathcal S$ that instantiate the primitive without introducing external oracles.
+Concretely, realizations may be given by endomaps on distributions or predicates, deterministically induced coarse-grainings, internal audit functionals, and internal composition rules.
+\end{definition}
+
+The point of these informal definitions is not to fix a single foundational framework, but to isolate the no-smuggling criterion below.
+
+\subsection{No-smuggling semantics}
+\label{sec:def-nosmuggling}
+
+We distinguish between internal structure (admissible) and external oracular input (smuggling).
+
+\begin{definition}[No smuggling]
+\label{def:no-smuggling}
+A construction \emph{smuggles} a primitive if it requires information or structure not representable within the substrate state and its admitted operators.
+Equivalently, a primitive is realized \emph{without smuggling} if it is definable using only:
+(i) the substrate state carrier,
+(ii) the admitted compositional dynamics,
+(iii) deterministic lenses and their induced constructions,
+and (iv) internal endomaps/audits constructed from the above.
+External schedules, externally declared equivalence relations, and externally imposed audits that are not induced by the substrate are disallowed.
+\end{definition}
+
+\begin{remark}[Operational reading]
+A convenient way to read \Cref{def:no-smuggling} is syntactic: treat a substrate as presenting a signature of admissible constructors (state, dynamics, lenses, induced linear maps, endomaps, and audits), and treat ``without smuggling'' as definability in the term algebra generated by that signature.
+We do not develop a full syntactic metatheory here; the witness suite and the theorems in \Cref{sec:theorems} use only this disciplined notion of ``no external oracles.''
+\end{remark}
+
+We will use this notion operationally: a minimality theorem will exhibit a substrate feature whose removal forces a primitive to fail \emph{unless} it is smuggled back in.
+
+\subsection{Lenses, refinement, and definability}
+
+A \emph{lens} is a deterministic coarse-graining.
+
+\begin{definition}[Lens]
+\label{def:lens}
+A lens is a deterministic map $f:Z\to X$.
+We interpret $f$ as the observational interface: two microstates $z,z'\in Z$ are observationally indistinguishable at scale $f$ if $f(z)=f(z')$.
+\end{definition}
+
+The lens induces a natural notion of definability of predicates (``questions'') on $Z$.
+
+\begin{definition}[Definability from a lens]
+\label{def:definability}
+A predicate $h:Z\to\{0,1\}$ is \emph{definable from} a lens $f:Z\to X$ if $h$ is constant on fibers of $f$, i.e.\ if $f(z)=f(z')$ implies $h(z)=h(z')$.
+Equivalently, there exists $\tilde h:X\to\{0,1\}$ such that $h=\tilde h\circ f$.
+\end{definition}
+
+Refinement is defined by factorization.
+
+\begin{definition}[Refinement]
+\label{def:refinement}
+A lens $f_2:Z\to X_2$ \emph{refines} $f_1:Z\to X_1$ if there exists a deterministic map $g:X_2\to X_1$ such that $f_1=g\circ f_2$.
+We write $f_2 \succeq f_1$.
+\end{definition}
+
+Refinement is the semantic notion of ``more expressive observation''.
+In Six Birds, strict refinement supports novelty by adjoining a predicate non-definable at the coarser scale \citep{sixbirds2026}.
+
+\subsection{Packaging endomaps and packaging equivalence}
+\label{sec:def-packaging}
+
+Packaging is modeled abstractly as an endomap whose fixed points represent packaged objects.
+
+\begin{definition}[Packaging endomap]
+\label{def:packaging-endomap}
+A packaging endomap is a function $e:\alpha\to\alpha$ (for an appropriate carrier $\alpha$) that is exactly or approximately idempotent.
+Exact idempotence is the equation $e\circ e = e$.
+When $\alpha$ is a set of descriptions, $\mathrm{Fix}(e)=\{x\in\alpha: e(x)=x\}$ are the packaged objects.
+\end{definition}
+
+Packaging induces an internal equivalence relation, which we call \emph{packaging equivalence}.
+
+\begin{definition}[Packaging equivalence]
+\label{def:packeq}
+Given $e:\alpha\to\alpha$, define a relation $\sim_e$ on $\alpha$ by
+\[
+x\sim_e y \quad\Longleftrightarrow\quad e(x)=e(y).
+\]
+We call $\sim_e$ the packaging equivalence induced by $e$.
+\end{definition}
+
+The Lean development in this project proves that $\sim_e$ is an equivalence relation and that $x\sim_e e(x)$, capturing the idea that every state is equivalent to its package.
+
+\subsection{Packaging-respecting maps and ``up to packaging'' comparison}
+\label{sec:def-pack-morphisms}
+
+To make statements like ``simulate up to packaging equivalence'' precise without committing to a full categorical development, we use a minimal notion of structure preservation.
+
+\begin{definition}[Packaging presentation and packaging-respecting map]
+\label{def:pack-morphism}
+A \emph{packaging presentation} is a pair $(\alpha,e)$ consisting of a carrier $\alpha$ and an endomap $e:\alpha\to\alpha$.
+Given two presentations $(\alpha,e)$ and $(\beta,e')$, a map $h:\alpha\to\beta$ is \emph{packaging-respecting} if it commutes with packaging:
+\[
+h\circ e \;=\; e'\circ h.
+\]
+\end{definition}
+
+\begin{lemma}[Packaging-respecting maps preserve packaging equivalence]
+\label{lem:pack-morphism-preserves}
+If $h$ is packaging-respecting, then $x\sim_e y$ implies $h(x)\sim_{e'} h(y)$.
+\end{lemma}
+
+\begin{proof}
+If $e(x)=e(y)$, then applying $h$ and using $h\circ e = e'\circ h$ gives $e'(h(x))=e'(h(y))$.
+\end{proof}
+
+\begin{remark}[What is and is not claimed]
+A packaging-respecting map is the minimum structure needed for ``up to packaging equivalence'' reasoning.
+We do not claim that packaging equivalence classes are invariant under arbitrary changes of packaging structure (e.g.\ changing prototypes can change the endomap and therefore its equivalence relation); such dependence is part of what route mismatch diagnostics quantify.
+\end{remark}
+
+\subsection{Audits and monotonicity under coarse-graining}
+\label{sec:def-audits}
+
+Audits are functionals intended to certify directionality or drive.
+The no-smuggling discipline requires audits to be induced by the substrate and to respect limited access.
+
+\begin{definition}[Audit monotonicity]
+\label{def:audit-mono}
+Let $A$ be an audit functional that assigns a nonnegative number to a process observed at a given scale.
+We say $A$ is \emph{monotone under deterministic coarse-graining} if for any lens $f:Z\to X$, the audited value at the macro scale is no larger than at the micro scale:
+\[
+A\big(\text{process on }X\big)\;\le\;A\big(\text{process on }Z\big).
+\]
+\end{definition}
+
+A canonical instance is the path-reversal KL asymmetry $\Sigma_T$ from \citet{sixbirds2026}, which satisfies a data-processing inequality \citep{cover2006} under deterministic coarse-graining.
+In our minimal substrate program, such monotonicity is not merely a fact about KL; it is a semantic guardrail against false positives: forgetting information should not create directionality certificates.
+
+\subsection{Where these definitions are used}
+
+\Cref{sec:machine} introduces a canonical minimal machine substrate in which:
+lenses are explicit deterministic maps, packaging is realized by an internal operator $E_{\tau,f}$, and audits include $\Sigma_T$ and ACC affinity classes.
+\Cref{sec:theorems} then states representation and minimality theorems in this vocabulary.
+ \section{The canonical minimal machine substrate}
+\label{sec:machine}
+
+This section defines a concrete canonical substrate class that will serve as a minimal machine semantics for SPT.
+The purpose is semantic rather than ontological: finite autonomous stochastic dynamics provide a compact normal form in which lenses, internal packaging endomaps, and intrinsic audits can all be made explicit and checked.
+The construction is a direct operationalization of the Six Birds program \citep{sixbirds2026} under the no-smuggling discipline of \Cref{sec:definitions}.
+
+\subsection{Carrier and dynamics}
+
+Fix a finite state carrier $Z$.
+A canonical machine substrate is equipped with an autonomous time-homogeneous dynamics on $Z$, represented as a Markov kernel \citep{norris1997}
+\[
+P: Z\times Z \to [0,1],
+\qquad
+\sum_{z'\in Z} P(z,z') = 1 \;\;\text{for all }z\in Z.
+\]
+We use the convention that distributions are row vectors $\mu\in\Delta(Z)$ and evolve by right-multiplication:
+$\mu \mapsto \mu P$ and $\mu \mapsto \mu P^\tau$.
+Autonomy means that $P$ does not depend on an external time index.
+Any externally scheduled protocol must therefore be represented internally, typically by enlarging state (phase-in-state).
+
+\paragraph{Extended state (phase/ledger).}
+In many uses (including our witness suite), it is natural to factor the carrier as an explicit product
+\[
+Z \;\cong\; X \times \Phi \times L,
+\]
+where $X$ is a ``microstate'' register, $\Phi$ is a protocol/phase register, and $L$ is an optional ledger/register used to make internal bookkeeping explicit.
+This factorization is not an additional assumption---any finite $Z$ can encode such registers---but it makes the no-smuggling intent concrete:
+if a protocol stage matters, it must live in $\Phi$ (or in an equivalent internal component of $Z$).
+
+\subsection{Lenses and refinement as deterministic maps}
+
+A \emph{lens} is a deterministic coarse-graining $f:Z\to X$ in the sense of \Cref{def:lens}.
+A canonical machine substrate comes with an admissible family of such lenses, often organized into refinement chains
+\[
+f_2 \succeq f_1 \succeq f_0
+\quad\text{meaning}\quad
+f_0 = g_{01}\circ f_1,\;\; f_1 = g_{12}\circ f_2
+\]
+for some deterministic maps $g_{01},g_{12}$ (\Cref{def:refinement}).
+These chains represent staged access: at each stage one may observe only through the currently admitted lens.
+
+\subsection{Internal packaging as an endomap}
+
+Packaging is realized as an internal endomap on distributions induced by $(P,f,\tau)$ and a choice of prototypes.
+Fix a lens $f:Z\to X$ and a timescale $\tau\ge 1$.
+
+\paragraph{Pushforward (coarse-grain).}
+The lens induces a pushforward $Q_f:\Delta(Z)\to \Delta(X)$ by
+\[
+(Q_f(\mu))(x) \;=\; \sum_{z:\, f(z)=x} \mu(z).
+\]
+
+\paragraph{Lift (prototype reinjection).}
+To map macrodescriptions back to microdescriptions, we choose for each $x\in X$ a prototype distribution $u_x\in\Delta(Z)$ supported on the fiber $f^{-1}(x)$.
+This defines a linear lift $U_f:\Delta(X)\to \Delta(Z)$ by
+\[
+(U_f(\nu))(\,\cdot\,) \;=\; \sum_{x\in X} \nu(x)\,u_x(\,\cdot\,).
+\]
+A canonical default is the uniform distribution on each fiber, but other prototype choices encode different ``representatives'' of the same observational class.
+
+\begin{definition}[Empirical packaging endomap]
+\label{def:empirical-packaging}
+Given $(P,f,\tau)$ and prototypes $U_f$, define the empirical packaging endomap $E_{\tau,f}:\Delta(Z)\to\Delta(Z)$ by
+\begin{equation}
+\label{eq:E-tau-f}
+E_{\tau,f}(\mu)
+\;:=\;
+U_f\!\big(Q_f(\mu P^\tau)\big).
+\end{equation}
+Equivalently, in matrix form (with $Q$ the $Z\!\times\! X$ lens matrix and $U$ the $X\!\times\! Z$ prototype matrix),
+\[
+E_{\tau,f} \;=\; P^\tau Q U,
+\qquad
+\mu \mapsto \mu E_{\tau,f}.
+\]
+\end{definition}
+
+In the ideal regime, $E_{\tau,f}$ is idempotent and its fixed points are the packaged objects at scale $(f,\tau)$.
+In practice, idempotence may hold approximately, and Six Birds develops defect diagnostics (e.g.\ total-variation idempotence defect and prototype stability scores) to measure packaging quality \citep{sixbirds2026}.
+Our codebase implements these diagnostics as part of the canonical machine semantics.
+
+\paragraph{Packaging equivalence.}
+Any endomap $e$ induces packaging equivalence $x\sim_e y \iff e(x)=e(y)$ (\Cref{def:packeq}).
+In the canonical machine model, packaging equivalence is an internal relation on the chosen carrier (e.g.\ on distributions, or on microdescriptions) and is used as the notion of ``simulation up to packaging'' in our representation claims.
+
+\paragraph{Route mismatch (holonomy defect).}
+When lenses form a chain, packaging may be performed along different routes.
+For example, with $f_2\succeq f_1\succeq f_0$, one can package directly at $f_0$ or package via $f_1$ and then $f_0$.
+The canonical machine substrate supports an internal mismatch diagnostic using any induced operator norm:
+\[
+\mathrm{RM}
+\;:=\;
+\left\| \mathrm{Pack}_{0\leftarrow 2} - \mathrm{Pack}_{1\leftarrow 2}\circ \mathrm{Pack}_{0\leftarrow 1} \right\|.
+\]
+Our witness suite includes prototype-driven cases where route mismatch is large at moderate timescales, while the uniform-prototype baseline has near-zero mismatch.
+This separation is important semantically: holonomy defects need not be confused with directionality.
+
+\subsection{Intrinsic audits: KL arrow and ACC drive}
+
+A canonical machine substrate provides intrinsic audits of directionality and drive that are induced by $(\rho,P)$ and are monotone under deterministic coarse-graining (\Cref{def:audit-mono}).
+
+\paragraph{Path-reversal asymmetry.}
+Given an initial distribution $\rho\in\Delta(Z)$ and horizon $T$, the path-space KL asymmetry
+\[
+\Sigma_T(\rho)
+\;:=\;
+D_{\mathrm{KL}}\!\left(\mathbb P_{\rho,T}\,\middle\|\,\mathcal R_*\mathbb P_{\rho,T}\right)
+\]
+is the canonical ``arrow'' audit from \citet{sixbirds2026}; see also \citep{kullback1951,cover2006,seifert2012}.
+\begin{proposition}[Markov-chain expansion and finiteness of $\Sigma_T$]
+\label{prop:sigma-expansion}
+Let $P$ be a time-homogeneous Markov kernel on a finite set $Z$, let $\rho\in\Delta(Z)$, and let $(Z_0,\dots,Z_T)\sim\mathbb P_{\rho,T}$.
+If $P_{Z_{t+1}Z_t}>0$ whenever $(Z_t,Z_{t+1})$ occurs with positive probability (in particular, if $P$ has bidirected support), then
+\begin{equation}
+\label{eq:sigma-expansion}
+\Sigma_T(\rho)
+=
+\mathbb E\!\left[\log \frac{\rho(Z_0)}{\rho(Z_T)}\right]
++
+\sum_{t=0}^{T-1}\mathbb E\!\left[\log \frac{P_{Z_t Z_{t+1}}}{P_{Z_{t+1} Z_t}}\right].
+\end{equation}
+If the event $\{P_{Z_{t+1}Z_t}=0\}$ occurs with positive probability for some $t$, then $\Sigma_T(\rho)=+\infty$.
+\end{proposition}
+
+\begin{remark}[Reversibility and interpretation guardrail]
+If $\rho=\pi$ is stationary and $P$ satisfies detailed balance with respect to $\pi$, then $\Sigma_T(\pi)=0$ for all $T$.
+In nonequilibrium steady state, $\Sigma_T(\pi)$ typically grows linearly in $T$ and is closely related (up to conventions) to trajectory-level entropy production in stochastic thermodynamics \citep{seifert2012,lebowitzspohn1999}.
+In this paper, however, $\Sigma_T$ is used only as an information-theoretic directionality audit; we do not assume local detailed balance or a physical reservoir interpretation.
+\end{remark}
+
+\paragraph{Exact macro path law for a deterministic lens.}
+Let $f:Z\to X$ be a deterministic lens.
+Write $E_x$ for the diagonal selector matrix with $(E_x)_{zz}=1_{\{f(z)=x\}}$ and let $\mathbf 1$ be the all-ones column vector.
+For any macro sequence $x_{0:T}=(x_0,\dots,x_T)\in X^{T+1}$, the induced macro path probability is
+\begin{equation}
+\label{eq:macro-path-prob}
+\mathbb P^{f}_{\rho,T}(x_{0:T})
+=
+\rho E_{x_0} P E_{x_1}\cdots P E_{x_T}\mathbf 1.
+\end{equation}
+Equation \eqref{eq:macro-path-prob} is the standard forward recursion for a hidden Markov model with deterministic emissions; we use it to compute $\Sigma_T^{\mathrm{macro}}$ exactly in the finite witness suite \citep{rabiner1989}.
+Replacing the induced macro path law by a one-step Markov closure (e.g.\ compressing a multi-phase protocol into a single kernel on $X$) can introduce spurious arrows; this is precisely the protocol trap.
+Given a lens $f:Z\to X$, we can also evaluate the macro-level asymmetry $\Sigma_T^{\mathrm{macro}}$ on the pushed-forward path law; data processing implies $\Sigma_T^{\mathrm{macro}}\le \Sigma_T^{\mathrm{micro}}$.
+Our implementation computes both quantities exactly for finite chains, and uses this monotonicity as a semantic guardrail against false positives.
+
+\paragraph{ACC affinities (drive).}
+Under bidirected support (i.e.\ $P_{ij}>0$ and $P_{ji}>0$ on each support edge), define the antisymmetric 1-form
+$a_{ij}=\log(P_{ij}/P_{ji})$ and its cycle integrals (affinities) on a fundamental cycle basis \citep{kolmogorov1936}.
+Nonzero cycle integrals witness a non-exact affinity class and therefore an internal nonequilibrium drive (P6\textsubscript{drive}) \citep{schnakenberg1976}.
+This audit distinguishes genuine driven arrows from protocol artifacts: autonomy plus staging does not imply arrows; arrows require internal drive \citep{kelly1979}.
+
+\subsection{Where P1--P6 live inside the canonical machine}
+
+The canonical machine substrate is designed so that the Six Birds primitives are realized as internal structure rather than external oracles.
+At a high level:
+
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item \textbf{P1 (dynamics/composition):} realized by autonomous state evolution on $Z$ via the time-homogeneous kernel $P$ and composition by multiplication ($P^\tau$, concatenation of stages by kernel products).
+  \item \textbf{P2 (limited access / interface):} realized by deterministic lenses $f:Z\to X$ and the induced definability constraints (predicates constant on fibers).
+  \item \textbf{P3 (protocols / staged interaction):} realized by explicit internal protocol state (phase-in-state) as a component of $Z$ (e.g.\ $\Phi$) so that staged protocols become autonomous dynamics on $Z$.
+  \item \textbf{P4 (staging/timescale):} realized by the explicit timescale parameter $\tau$ and refinement chains of lenses that control which descriptions are admitted at which stage.
+  \item \textbf{P5 (packaging/objects):} realized by the internal packaging endomap $E_{\tau,f}$ and its fixed-point/defect calculus (idempotence defect, retention error, prototype stability).
+  \item \textbf{P6 (audits of directionality/drive):} realized by intrinsic audits induced by the autonomous dynamics (path-reversal KL asymmetry $\Sigma_T$ and ACC affinity classes), with monotonicity under coarse-graining as a semantic constraint.
+\end{itemize}
+
+This mapping is intentionally minimal: we do not assume an ambient geometry, an order structure, or a continuum limit.
+Instead, the machine semantics makes explicit the minimal operators that will appear in the main theorems (\Cref{sec:theorems}) and that are exercised by the witness suite (\Cref{sec:experiments}).
+
+\subsection{A schematic view}
+
+\begin{figure}[t]
+  \centering
+  \fbox{\begin{minipage}{0.92\linewidth}
+  \small
+  \vspace{0.5em}
+  \centering
+  \textbf{Canonical machine substrate (schematic).}
+
+  \vspace{0.5em}
+  \[
+  \Delta(Z)
+  \xrightarrow{\;\mu\mapsto \mu P^\tau\;}
+  \Delta(Z)
+  \xrightarrow{\;Q_f\;}
+  \Delta(X)
+  \xrightarrow{\;U_f\;}
+  \Delta(Z)
+  \]
+  \[
+  \text{packaging endomap: } E_{\tau,f} = P^\tau Q_f U_f,
+  \quad
+  \text{packaging equivalence: } x\sim_e y \Leftrightarrow e(x)=e(y).
+  \]
+  \[
+  \text{audits: } \Sigma_T(\rho)\;\text{ and ACC affinities } \textstyle\int a.
+  \quad
+  \text{phase-in-state: } Z\cong X\times\Phi\times L.
+  \]
+  \vspace{0.3em}
+  \end{minipage}}
+  \caption{Schematic of the canonical minimal machine substrate. The diagram is structural: all operators are internal and induced by $(Z,P)$ plus deterministic lenses and prototype choices.}
+  \label{fig:canonical-machine}
+\end{figure}
+
+\noindent
+\Cref{fig:canonical-machine} summarizes the components and data flow defined in this section.
+ \section{Main theorems: the minimal substrate package}
+\label{sec:theorems}
+
+We now state the main claims of the paper as a ``minimal substrate theorem package.''
+The theorems are stated at a semantic level: they identify a canonical class of machine substrates that realize P1--P6 internally, give a normal-form/compilation viewpoint, and show that specific structural features are necessary to avoid smuggling.
+Proofs are given as constructive sketches, with separation witnesses instantiated by the reproducible experiment suite (\Cref{sec:experiments}) and algebraic lemmas mechanized in Lean (\Cref{app:lean}).
+
+\subsection{The canonical minimal substrate class}
+
+\begin{definition}[Canonical minimal machine class $\mathcal S_{\min}$]
+\label{def:smin}
+A substrate belongs to $\mathcal S_{\min}$ if it consists of:
+(i) a finite carrier $Z$,
+(ii) an autonomous time-homogeneous Markov kernel $P$ on $Z$,
+(iii) an admissible family of deterministic lenses $f:Z\to X$ closed under composition (refinement chains),
+(iv) a family of internal packaging endomaps $E_{\tau,f}$ induced by $(P,f,\tau)$ and prototype choices (\Cref{def:empirical-packaging}),
+and (v) intrinsic audits of directionality/drive induced by $(\rho,P)$ (e.g.\ $\Sigma_T$ and ACC affinities) that are monotone under deterministic coarse-graining (\Cref{def:audit-mono}).
+\end{definition}
+
+The class $\mathcal S_{\min}$ is intentionally small: it assumes neither geometry nor an ambient order, and it requires that protocols be represented autonomously (phase-in-state) whenever staged interaction is used (\Cref{sec:machine}).
+
+\begin{remark}[Minimality-by-separation]
+The term ``minimal'' in $\mathcal S_{\min}$ is used in a feature-minimal sense: it is a small list of structural ingredients sufficient to realize P1--P6 under the no-smuggling discipline.
+We do not claim that $\mathcal S_{\min}$ is an initial object or a unique smallest class under inclusion; our lower bounds are separation statements (\Cref{thm:minimality}) rather than lattice-theoretic minimality.
+\end{remark}
+
+\subsection{Realizability on the canonical machine}
+
+\begin{theorem}[Realizability of P1--P6 on $\mathcal S_{\min}$]
+\label{thm:realizability}
+Every substrate in $\mathcal S_{\min}$ admits realizations of primitives P1--P6 without smuggling.
+More concretely, for any $(Z,P)$ with lenses and induced packaging operators as in \Cref{def:smin}, there exist internal operators/constraints that instantiate:
+dynamics/composition (P1), limited access via lenses (P2), autonomous protocols via phase-in-state (P3),
+staging via timescales and refinement chains (P4), packaging via $E_{\tau,f}$ and its fixed-point/defect calculus (P5),
+and intrinsic audits of arrow/drive via $\Sigma_T$ and ACC affinities with monotonicity under coarse-graining (P6).
+\end{theorem}
+
+\begin{proof}[Sketch]
+P1 is realized by autonomous evolution $\mu\mapsto \mu P^\tau$ and composition by kernel multiplication.
+P2 is realized by deterministic lenses and the induced definability constraint (predicates constant on fibers).
+P3 is realized by enforcing autonomy: any staged protocol is encoded by enlarging state (introducing a phase register $\Phi$ so that the dynamics becomes time-homogeneous on $Z\cong X\times\Phi\times L$).
+P4 is realized by the explicit timescale parameter $\tau$ and lens refinement chains.
+P5 is realized by the internal endomap $E_{\tau,f}$ (\Cref{def:empirical-packaging}), with packaged objects represented as (approximate) fixed points and quality quantified by defect measures.
+P6 is realized by intrinsic audits induced by $(\rho,P)$: $\Sigma_T$ is computed on path space and respects data processing under deterministic coarse-graining, while ACC affinities witness internal drive via nonzero cycle integrals.
+All of these constructions are internal to the substrate data, hence no smuggling is required.
+\end{proof}
+
+\subsection{Normal form and compilation up to packaging}
+
+Realizability alone does not turn a language into a machine: we also want a notion of normal form and mutual simulation.
+The appropriate equivalence notion is \emph{packaging equivalence} induced by idempotent(-like) endomaps (\Cref{def:packeq}).
+The Lean appendix mechanizes the corresponding algebra: idempotent splitting (fixed points, inclusion/retraction), packaging equivalence as an equivalence relation, and lens saturation as a closure operator (\Cref{app:lean}).
+
+\begin{theorem}[Compilation to $\mathcal S_{\min}$ up to packaging equivalence]
+\label{thm:normal-form}
+Let $\mathcal S$ be a substrate that realizes P1--P6 without smuggling in the sense of \Cref{def:no-smuggling}.
+Assume further that the realized operators are finitary (state and registers can be encoded in a finite carrier) and autonomous once all protocol state is represented.
+Then there exists a substrate $\mathcal M\in\mathcal S_{\min}$ and an encoding of $\mathcal S$ into $\mathcal M$ such that:
+\begin{enumerate}[leftmargin=*, itemsep=0.25em]
+  \item the lens/refinement structure of $\mathcal S$ is simulated by deterministic lenses on $\mathcal M$,
+  \item packaging in $\mathcal S$ is simulated by internal packaging endomaps on $\mathcal M$ up to packaging equivalence, and
+  \item admissible audits in $\mathcal S$ are represented by intrinsic audits on $\mathcal M$ (in particular, directionality audits respect monotonicity under coarse-graining).
+\end{enumerate}
+Moreover, if two compilations choose the same canonical prototype-selection scheme for each lens (e.g.\ uniform-on-fiber) and the same auditing conventions, then they are mutually simulable up to packaging equivalence via packaging-respecting maps in the sense of \Cref{def:pack-morphism}.
+\end{theorem}
+
+\begin{proof}[Sketch]
+The compilation is constructive: represent all externally referenced ``context'' as explicit internal registers.
+Protocols become autonomous by adding a phase register (phase-in-state).
+Any deterministic observation interface becomes a lens $f:Z\to X$.
+Packaging is represented as an internal endomap on an appropriate carrier (e.g.\ distributions or descriptions); packaging equivalence then provides the quotient notion used for comparison.
+Finally, audits are required by no-smuggling semantics to be induced by the substrate and monotone under coarse-graining; in the canonical machine, $\Sigma_T$ and ACC affinities provide canonical such induced audits.
+Mutual simulation up to packaging equivalence is mediated by packaging-respecting maps (\Cref{def:pack-morphism}), which make precise what it means to compare two presentations ``up to packaging.''
+We treat prototype choice as part of the packaging structure rather than as a gauge that leaves equivalence classes invariant; indeed the witness suite (\Cref{sec:experiments}) shows prototype-driven route mismatch effects.
+\end{proof}
+
+\subsection{Minimality: no-smuggling lower bounds}
+
+We now state minimality claims as \emph{separations}: if certain structural features are removed, then at least one primitive cannot be realized without reintroducing the missing feature as an external oracle.
+Each item is witnessed by a small finite construction in the reproducible suite (\Cref{sec:experiments}).
+
+\begin{theorem}[No-smuggling separations]
+\label{thm:minimality}
+The following substrate features are necessary (up to equivalent internal encodings) to realize the corresponding primitives without smuggling:
+\begin{enumerate}[leftmargin=*, itemsep=0.35em]
+  \item \textbf{Autonomy requires phase-in-state (P3).}
+  If a substrate permits staged protocols but does not represent protocol state internally, then stroboscopic composition can produce apparent arrows of time that vanish once the dynamics is made autonomous by lifting state.
+  Therefore, any autonomous semantics for protocols must encode phase-in-state (or an equivalent internal mechanism).
+  \item \textbf{Genuine arrows require internal drive (P6\textsubscript{drive}).}
+  Autonomy plus staging does not imply directionality.
+  In an autonomous lifted model with reversible internal phase dynamics, protocol-induced arrows can disappear ($\Sigma_T\approx 0$).
+  To obtain a genuine arrow in an autonomous substrate, one needs internal drive detectable by a nonzero affinity class (ACC cycle integrals).
+  \item \textbf{Audits must be monotone under coarse-graining (P6).}
+  There exist processes with real micro irreversibility but macro observations whose path law is reversal-invariant ($\Sigma_T^{\mathrm{macro}}=0$).
+  Any audit that reports increased directionality after coarse-graining violates limited-access semantics and is therefore smuggled.
+  \item \textbf{Packaging must be an internal (approximate) idempotent endomap (P5).}
+  Without an internal endomap $e$ (or closure operator) that induces packaging equivalence $x\sim_e y\iff e(x)=e(y)$, there is no internal notion of ``same packaged object'' and no internal fixed-point criterion for stability.
+  Declaring macrostates by fiat is smuggling.
+  \item \textbf{Route mismatch is distinct from directionality (P3 vs.\ P6).}
+  Packaging along different refinement routes can yield a measurable holonomy defect (route mismatch), even when directionality audits obey data processing.
+  Therefore, route mismatch must be treated as its own certificate family and cannot be conflated with an arrow audit.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}[Sketch]
+Each item is witnessed by a finite explicit construction.
+(1) is the protocol trap: a stroboscopic kernel on $X$ yields $\Sigma_T>0$ while an autonomous lift on $Z=X\times\Phi$ yields $\Sigma_T\approx 0$; the discrepancy disappears once phase is represented in state.
+(2) is shown by driven protocols: adding a nonreversible internal phase dynamics (nonzero ACC affinity) restores $\Sigma_T>0$ in the autonomous lifted system and can make the arrow visible under projection, while a reversible (null) phase yields $\Sigma_T\approx 0$.
+(3) is shown by hidden irreversibility: a biased cycle has $\Sigma_T^{\mathrm{micro}}>0$ while a coarse lens yields $\Sigma_T^{\mathrm{macro}}=0$, hence any ``macro-only'' arrow certificate must be smuggled.
+(4) follows from the algebra of idempotents and closure operators: packaging equivalence is induced by an endomap, and the existence of packaged objects is expressed as fixed points; this algebra is mechanized in Lean (\Cref{app:lean}).
+(5) is shown by prototype-driven route mismatch at moderate timescales together with an empirically verified gain-plus-mismatch bound; large mismatch does not imply directionality and must be accounted for separately.
+\end{proof}
+
+\begin{remark}[Status and scope]
+The theorems above isolate the semantic content needed to turn SPT into a machine semantics.
+They are stated at a level that cleanly separates: (i) algebraic infrastructure (idempotents/closure), (ii) audit infrastructure (monotone directionality/drive certificates), and (iii) autonomy discipline (phase-in-state for protocols).
+The witness suite provides concrete finite constructions and quantitative diagnostics that support the separation claims, while the Lean appendix checks the reusable algebraic lemmas.
+\end{remark}
+ \section{Experimental witness suite (separation exhibits)}
+\label{sec:experiments}
+
+This section collects a small witness suite of finite constructions that support the separation claims in \Cref{thm:minimality}.
+These are not ``fit-to-data'' experiments.
+They are executable counterexample-style exhibits: each construction isolates a semantic feature (autonomy discipline, audit monotonicity, internal drive, refinement/stability tradeoffs, and route mismatch) and demonstrates a sharp effect.
+
+All reported numbers are frozen into the build via auto-generated macros (see \Cref{app:repro} for reproducibility notes).
+Unless stated otherwise, $\Sigma_T$ is evaluated from a matched stationary initial distribution for the audited kernel (so nonzero values reflect steady-state directional asymmetry rather than transient boundary terms).
+Figures under \texttt{paper/figures/} are committed artifacts produced by deterministic scripts.
+
+\subsection{Protocol trap: stroboscopic arrows vanish under autonomy}
+
+The protocol trap (from \citep{sixbirds2026}) illustrates a no-smuggling constraint on autonomy.
+A stroboscopic protocol on a microstate space $X$ can exhibit an apparent arrow of time when it is compressed into a one-step \emph{Markov closure} (a single composed kernel) that forgets the protocol phase.
+However, if the protocol stage is not represented in state, the construction is non-autonomous; enforcing autonomy by lifting to $Z=X\times\Phi$ can remove the apparent arrow.
+
+In our witness, the one-step Markov closure on $X$ yields a positive path-reversal asymmetry $\Sigma_T=\PTSigmaStrob$, while the correctly autonomous lifted kernel on $Z=X\times\Phi$ yields $\Sigma_T=\PTSigmaLift$; moreover the exact macro audit induced by the lifted chain yields $\Sigma_T=\PTSigmaProj$, consistent with audit monotonicity on the induced path law.
+The semantic implication is direct: an ``autonomous'' substrate that relies on external scheduling is smuggling protocol state.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.78\linewidth]{figures/protocol_trap_sigmas.png}
+  \caption{Protocol trap witness (Markov closure vs.\ autonomous audit): a stroboscopic description on $X$ exhibits $\Sigma_T=\PTSigmaStrob$, while the autonomous lifted dynamics on $Z=X\times\Phi$ yields $\Sigma_T=\PTSigmaLift$ and its projection yields $\Sigma_T=\PTSigmaProj$.}
+  \label{fig:protocol-trap-sigmas}
+\end{figure}
+
+\subsection{Driven protocols: internal drive restores genuine arrows}
+
+The protocol trap makes a negative point (some arrows are artifacts of external schedules).
+A minimal substrate story also needs the complementary positive point: in an autonomous substrate, genuine arrows require internal drive (P6\textsubscript{drive}), detectable for example by nonzero ACC affinity.
+
+Our driven-protocol witness uses an explicit phase register $\Phi$ with nonreversible internal dynamics.
+For the chosen parameters ($T=\PDChosenT$ and mixing weight $\alpha=\PDChosenAlpha$ in the experiment), the autonomous lifted system exhibits a strong arrow $\Sigma_T=\PDSigmaLiftDrive$, and the projection to $X$ becomes directionally biased as well ($\Sigma_T=\PDSigmaProjDrive$).
+By contrast, a reversible (null) phase control yields $\Sigma_T=\PDSigmaLiftNull$ on the lift and $\Sigma_T=\PDSigmaProjNull$ under projection.
+The internal drive is certified by the phase-only audit values, including an ACC affinity magnitude $\PDAccPhaseDriveMax$.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.78\linewidth]{figures/protocol_drive_sigmas.png}
+  \caption{Driven protocol witness: with internal phase drive (nonreversible $\Phi$ dynamics), the autonomous lift exhibits $\Sigma_T=\PDSigmaLiftDrive$ and the projection exhibits $\Sigma_T=\PDSigmaProjDrive$. Under a reversible (null) phase, the corresponding values are $\Sigma_T=\PDSigmaLiftNull$ and $\Sigma_T=\PDSigmaProjNull$.}
+  \label{fig:protocol-drive-sigmas}
+\end{figure}
+
+\subsection{Hidden irreversibility under coarse-graining (DPI witness)}
+
+Audit monotonicity under deterministic coarse-graining (\Cref{def:audit-mono}) is a no-false-positives guardrail.
+There exist processes with real micro irreversibility whose macro observation has a reversal-invariant path law.
+Such cases witness that ``macro-only'' directionality certificates cannot be required to be complete, only sound.
+
+In our hidden-irreversibility witness, the micro chain has a large reversal asymmetry $\Sigma_T^{\mathrm{micro}}=\HISigmaMicro$ while a parity lens yields $\Sigma_T^{\mathrm{macro}}=\HISigmaMacro$.
+This is consistent with data processing: forgetting information cannot increase $\Sigma_T$, and it may erase it entirely.
+Related stochastic-thermodynamic discussions of coarse-graining and hidden contributions to dissipation appear in \citep{esposito2012coarse,puglisi2010}.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.62\linewidth]{figures/hidden_irreversibility_sigmas.png}
+  \caption{Hidden irreversibility witness: a micro process has $\Sigma_T^{\mathrm{micro}}=\HISigmaMicro$ but a coarse observation yields $\Sigma_T^{\mathrm{macro}}=\HISigmaMacro$. This exemplifies audit monotonicity and the possibility of undetectable micro irreversibility at the macro scale.}
+  \label{fig:hidden-irreversibility}
+\end{figure}
+
+\subsection{Refinement can help or hurt: packaging stability vs.\ timescale}
+
+Six Birds emphasizes that packaging depends on both the observational lens and the timescale $\tau$ \citep{sixbirds2026}.
+Our refinement witness makes the point operational: refining a lens can \emph{increase} or \emph{decrease} the number of stable packaged objects depending on $\tau$.
+
+In the witness construction, we compare a coarse lens (two basins) to a refined lens (splitting one basin) across $\tau\in\{1,\dots,\PRTauMax\}$ with stability threshold $\varepsilon=\PREps$.
+We observe both directions: refinement yields more stable prototypes for some $\tau$ (e.g.\ the first such $\tau$ is $\PRWitnessGTFirst$, with $\PRWitnessGTCount$ total instances), and fewer stable prototypes for other $\tau$ (first at $\PRWitnessLTFirst$, with $\PRWitnessLTCount$ total instances).
+At the end of the sweep, the stable counts are coarse $\PRStableCoarseLast$ versus refined $\PRStableFineLast$ under this threshold.
+This non-monotonicity is exactly why staging (P4) cannot be collapsed into ``more refinement is always better.''
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.88\linewidth]{figures/packaging_refinement_stable_counts.png}
+  \caption{Refinement witness: stable prototype counts as a function of timescale $\tau$ for a coarse lens versus a refined lens (same underlying dynamics). Refinement can help or hurt depending on $\tau$.}
+  \label{fig:refinement-stable-counts}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.88\linewidth]{figures/packaging_refinement_defects.png}
+  \caption{Refinement witness: idempotence defect diagnostic versus timescale $\tau$ for the same two lenses as \Cref{fig:refinement-stable-counts}.}
+  \label{fig:refinement-defects}
+\end{figure}
+
+\subsection{Route mismatch (holonomy defect) and the gain-plus-mismatch bound}
+
+When lenses form a refinement chain, packaging can be performed along different routes.
+A canonical route mismatch (holonomy defect) compares direct packaging to packaging via an intermediate scale, using an induced operator norm (here, max row-$\ell_1$).
+Importantly, route mismatch is a \emph{separate certificate family} from directionality: it can be large even when directionality audits obey data processing.
+
+Our prototype-driven route mismatch witness uses a moderate timescale tuple $\tau=\RMTauTuple$ and a prototype scheme \RMProtoScheme.
+The mismatch norm is $\RMMismatchRowL1$, while a uniform-prototype baseline at the same $\tau$ has near-zero mismatch $\RMUniformMismatchRowL1$.
+Thus the holonomy defect is not merely a long-timescale artifact; it can arise from representative choice (prototype selection) even at moderate staging.
+
+\begin{figure}[!htb]
+  \centering
+  \includegraphics[width=0.72\linewidth]{figures/route_mismatch_bar.png}
+  \caption{Route mismatch witness: prototype-driven holonomy defect at $\tau=\RMTauTuple$ under scheme \RMProtoScheme. The mismatch is $\RMMismatchRowL1$ versus a uniform baseline $\RMUniformMismatchRowL1$.}
+  \label{fig:route-mismatch}
+\end{figure}
+
+Finally, we empirically verify an Appendix-E style inequality relating gains, mismatch, and direct packaging.
+Let $\|\cdot\|$ denote the induced max row-$\ell_1$ norm.
+Define gains $\mathrm{Gain}_{j\leftarrow k}:=\|\mathrm{Pack}_{j\leftarrow k}\|$ and route mismatch $\mathrm{RM}:=\|\mathrm{Pack}_{0\leftarrow 2}-\mathrm{Pack}_{1\leftarrow 2}\circ \mathrm{Pack}_{0\leftarrow 1}\|$.
+Our run satisfies
+\[
+\mathrm{Gain}_{0\leftarrow 2}
+\;\le\;
+\mathrm{Gain}_{0\leftarrow 1}\,\mathrm{Gain}_{1\leftarrow 2} + \mathrm{RM},
+\]
+with $\mathrm{Gain}_{0\leftarrow 2}=\RMGain02$, $\mathrm{Gain}_{0\leftarrow 1}=\RMGain01$, $\mathrm{Gain}_{1\leftarrow 2}=\RMGain12$, $\mathrm{RM}=\RMRMNorm$, and slack $\RMSlackBound$ (i.e.\ the right-hand side minus the left-hand side).
+This bound makes the route mismatch diagnostic quantitative and compositional.
+ \section{Discussion: practical workflow and failure-mode safeguards}
+\label{sec:discussion}
+
+The main technical content of this paper is semantic: a canonical minimal machine substrate $\mathcal S_{\min}$ and separation-style minimality claims (\Cref{thm:minimality}).
+For readers coming from complex systems and representation learning, the practical value is a disciplined workflow for avoiding false positives when diagnosing multi-scale organization and directionality.
+
+\subsection{A practical audit workflow (user-facing)}
+
+Given a candidate substrate/model (simulator, learned dynamics, or a hand-built mechanism), the following workflow implements the paper's ``no smuggling'' discipline:
+
+\begin{enumerate}[leftmargin=*, itemsep=0.35em]
+  \item \textbf{Make autonomy explicit.} If the model uses staged protocols or time-varying rules, encode protocol state internally (phase-in-state) so that the resulting dynamics is autonomous on an extended carrier $Z$ (\Cref{sec:machine}).
+  \item \textbf{Choose lenses that represent actual access.} Specify deterministic coarse-grainings $f:Z\to X$ that match what an observer/agent can actually read out; avoid conflating ``what the simulator knows'' with what is observable (\Cref{def:lens}).
+  \item \textbf{Package at explicit timescales.} For each $(f,\tau)$, construct packaging endomaps $E_{\tau,f}$ and compute defect/stability diagnostics; compare coarse vs refined lenses across $\tau$ rather than assuming refinement is monotone beneficial (\Cref{def:empirical-packaging}, \Cref{fig:refinement-stable-counts}).
+  \item \textbf{Audit directionality with controls.} Evaluate $\Sigma_T$ (and, when appropriate, ACC affinities) in matched controls:
+    (i) reversible/null controls to calibrate ``artifact'' levels,
+    (ii) driven regimes to test for genuine internal drive,
+    and (iii) micro vs macro audits to respect coarse-graining monotonicity (\Cref{fig:protocol-trap-sigmas}, \Cref{fig:protocol-drive-sigmas}, \Cref{fig:hidden-irreversibility}).
+  \item \textbf{Treat route mismatch separately.} If packaging is performed along refinement routes, quantify route mismatch as its own defect certificate; do not treat it as an arrow-of-time audit (\Cref{fig:route-mismatch}).
+\end{enumerate}
+
+\subsection{Threat model: common failure modes and what the exhibits test}
+
+The witness suite is best read as a ``failure mode catalogue''.
+The point is not that these are rare; it is that these are easy traps in multi-scale analysis if one does not enforce the semantic discipline.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}p{0.25\linewidth}p{0.33\linewidth}p{0.34\linewidth}@{}}
+\toprule
+\textbf{Certificate} & \textbf{Diagnostic / operator} & \textbf{Failure mode + witness} \\
+\midrule
+Directionality / arrow (P6) &
+$\Sigma_T$ on induced path laws (micro and macro) &
+Markov closure / external scheduling can create spurious arrows; enforcing autonomy (phase-in-state) removes them (protocol trap; \Cref{fig:protocol-trap-sigmas}). \\
+\addlinespace
+Drive (P6\textsubscript{drive}) &
+ACC affinity (cycle integrals / exactness obstruction) &
+Autonomy plus protocols does not imply arrows; internal nonreversible drive cleanly separates from null controls (driven protocol; \Cref{fig:protocol-drive-sigmas}). \\
+\addlinespace
+Limited-access soundness (P2/P6) &
+Audit monotonicity under lenses &
+Coarse-graining can hide real micro irreversibility; macro audits can be zero even when micro is positive (hidden irreversibility; \Cref{fig:hidden-irreversibility}). \\
+\addlinespace
+Packaging / objects (P5) &
+$E_{\tau,f}$; idempotence defect and stability scores &
+Refinement can help or hurt depending on timescale; stability is not monotone in expressivity (refinement witness; \Cref{fig:refinement-stable-counts}). \\
+\addlinespace
+Route mismatch (holonomy) &
+$\|\mathrm{Pack}_{0\leftarrow 2}-\mathrm{Pack}_{1\leftarrow 2}\circ \mathrm{Pack}_{0\leftarrow 1}\|$ &
+Representative/prototype choices can induce large route mismatch at moderate timescales even when uniform baselines are near zero (route mismatch; \Cref{fig:route-mismatch}). \\
+\bottomrule
+\end{tabular}
+\caption{Failure-mode checklist: what each certificate is meant to detect, and what can go wrong without matched controls or semantic discipline.}
+\label{tab:failure-modes}
+\end{table}
+
+\subsection{Scope and limits}
+
+We emphasize two scope points.
+First, the ``minimal substrate'' claims are semantic and separation-based: they identify a small set of internal operators sufficient to realize P1--P6 without smuggling, and show that removing specific features forces primitive failure or external oracles (\Cref{thm:minimality}).
+Second, the witness suite is intentionally finite and controlled; it is not intended as evidence that any particular natural system implements $\mathcal S_{\min}$, nor as a claim that Markovian models are fundamental.
+Rather, finite autonomous stochastic machines serve as a compact normal form in which the primitives and their failure modes can be made explicit, computed exactly, and compared reproducibly.
+
+\paragraph{On novelty (P1/P2/P4).}
+Six Birds develops novelty as strict theory extension via non-definable predicates \citep{sixbirds2026}.
+This paper does not add a new novelty exhibit; instead it focuses on the semantic substrate conditions that allow novelty, packaging, and directionality to coexist without smuggling.
+Adding novelty-focused witness suites is a natural next step once the minimal machine semantics is fixed.
+ \appendix
+\section{Implementation and reproducibility notes}
+\label{app:repro}
+\sloppy
+
+This appendix summarizes how the witness suite is produced and how the paper freezes numbers and figures for reproducible builds.
+The goal is not to prescribe a single environment, but to make it clear what to run and where the relevant artifacts live in the repository.
+
+\subsection{Repository layout (relevant paths)}
+
+The main implementation lives in the Python package under \path{spt/}:
+
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item \path{spt/core/markov.py}: Markov utilities and exact computation of path-reversal asymmetry $\Sigma_T$ on micro path space.
+  \item \path{spt/core/lens.py}: deterministic lenses, exact macro path probabilities, and exact macro $\Sigma_T$; includes DPI checks in tests.
+  \item \path{spt/core/packaging.py}: empirical packaging operators $E_{\tau,f}$, idempotence defect, retention error, and prototype stability scores.
+  \item \path{spt/core/acc.py}: ACC-style antisymmetric 1-form, cycle basis integrals (affinities), and exactness residual diagnostics.
+\end{itemize}
+
+Reproducible experiments live under \path{experiments/} and write per-run artifacts:
+
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item \path{experiments/run_all.py}: shared experiment runner.
+  \item \path{spt/utils/io.py}: run directory creation and JSON artifact writing:
+  \texttt{config.json}, \texttt{metrics.json}, and \texttt{README.md}.
+  \item \path{experiments/summarize_results.py}: produces
+  \path{docs/experiments/index.md} and
+  \path{docs/experiments/metrics_summary.json}
+  by scanning \path{results/}.
+\end{itemize}
+
+The paper sources live under \path{paper/} and include two important tooling scripts:
+
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item \path{paper/tools/extract_metrics.py}: reads
+  \path{docs/experiments/metrics_summary.json}
+  and writes \path{paper/generated/metrics.tex}
+  (LaTeX macros for frozen numbers).
+  \item \path{paper/tools/make_figures.py}: reads \path{docs/experiments/metrics_summary.json} and writes committed figure PNGs under \path{paper/figures/}.
+\end{itemize}
+
+\subsection{Running the witness suite}
+
+All experiments write to \path{results/} by default, using timestamped run directories:
+\begin{center}
+\path{results/<experiment>/<tag>/<timestamp>/}
+\end{center}
+Each run directory contains:
+\texttt{config.json} (inputs), \texttt{metrics.json} (outputs),
+and a short \texttt{README.md} note.
+
+A typical end-to-end run (from the repository root) is:
+
+\begin{verbatim}
+python experiments/run_all.py --tag smoke --outdir results
+python experiments/summarize_results.py --results_dir results \
+  --index_path docs/experiments/index.md --tag smoke
+\end{verbatim}
+
+The summary step produces two committed artifacts under \texttt{docs/experiments/}:
+(i) a human-readable index (\texttt{index.md}) and
+(ii) a machine-readable latest-run snapshot (\texttt{metrics\_summary.json}).
+The paper build does not depend on \path{results/} being committed; it depends only on these frozen summaries and committed figure files.
+
+\subsection{Freezing numbers into LaTeX macros}
+
+To keep the PDF stable and self-contained, the paper freezes numerical values into LaTeX macros.
+The workflow is:
+
+\begin{verbatim}
+python paper/tools/extract_metrics.py \
+  --input docs/experiments/metrics_summary.json \
+  --output paper/generated/metrics.tex
+\end{verbatim}
+
+The generated file \path{paper/generated/metrics.tex} defines macros such as
+\verb|\PTSigmaStrob|, \verb|\PDSigmaLiftDrive|, \verb|\HISigmaMicro|,
+and route-mismatch terms used in \Cref{sec:experiments}.
+The macros are treated as part of the paper source; thus a snapshot of the repository contains all numbers needed to build the PDF.
+
+\subsection{Freezing figures}
+
+Figures used in the paper are committed under \path{paper/figures/}.
+They can be regenerated deterministically (from \path{docs/experiments/metrics_summary.json}) using:
+
+\begin{verbatim}
+python paper/tools/make_figures.py
+\end{verbatim}
+
+The refinement plots are copied from the most recent available run directory if present; otherwise the script can run the refinement experiment into a temporary \path{paper/_runs/} directory (which is gitignored) and then copy the resulting PNGs into \path{paper/figures/}.
+
+\subsection{Building the PDF}
+
+The paper is built from \path{paper/} using \texttt{latexmk}:
+
+\begin{verbatim}
+cd paper
+latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+\end{verbatim}
+
+The build inputs are therefore: LaTeX sources, \path{paper/generated/metrics.tex}, and the committed PNG figures.
+\fussy
+ \section{Lean formalization: a minimal algebraic backbone}
+\label{app:lean}
+
+This project includes a small Lean4 development that mechanizes the algebraic infrastructure used repeatedly in the no-smuggling semantics \citep{demoura2021lean4,mathlib2020}.
+The Lean code does \emph{not} attempt to formalize stochastic processes, KL divergence, or the probabilistic directionality audits.
+Instead, it targets the reusable core algebra behind packaging and lens-induced saturation: idempotent endomaps, induced equivalence relations, and closure operators.
+
+The Lean project lives under \path{lean/} (mathlib-based) and builds with:
+\begin{verbatim}
+cd lean && lake build
+\end{verbatim}
+
+\subsection{Idempotent splitting (packaging as an idempotent endomap)}
+
+Packaging in the paper is modeled abstractly by an (exact or approximate) idempotent endomap $e$ (\Cref{def:packaging-endomap}).
+In Lean, we formalize the exact algebra that motivates packaging equivalence and fixed-point objects.
+
+File: \path{lean/SPT/Idempotent.lean}.
+
+Key constructions:
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item \texttt{Idempotent (e : α → α)}: the predicate $e\circ e = e$.
+  \item \texttt{Fix e}: the subtype of fixed points $\{x \mid e(x)=x\}$.
+  \item inclusion \texttt{i : Fix e → α} and retraction \texttt{r : α → Fix e} (given idempotence).
+\end{itemize}
+
+Key lemmas (identifiers in Lean):
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item \texttt{SPT.r\_comp\_i}: \,$r \circ i = \mathrm{id}$ on fixed points.
+  \item \texttt{SPT.i\_comp\_r}: \,$i \circ r = e$ on the carrier.
+\end{itemize}
+
+These lemmas support the paper’s repeated use of ``objects as fixed points'' and ``comparison up to packaging'': if packaging is an internal idempotent(-like) map, then fixed points are canonical representatives and every state retracts to its packaged form.
+
+\subsection{Packaging equivalence}
+
+The paper uses packaging equivalence $\sim_e$ induced by an endomap $e$ (\Cref{def:packeq}) as the right notion of ``simulation up to packaging.''
+In Lean, we define the relation and prove it is an equivalence relation.
+
+File: \path{lean/SPT/PackagingEquiv.lean}.
+
+Definition:
+\[
+\texttt{PackEq e x y} \;\;:\!\iff\;\; e(x)=e(y).
+\]
+
+Key lemmas (identifiers in Lean):
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item \texttt{SPT.packEq\_refl}, \texttt{SPT.packEq\_symm}, \texttt{SPT.packEq\_trans}.
+  \item \texttt{SPT.packEq\_to\_package}: given idempotence, $x$ is equivalent to its packaged form $e(x)$.
+  \item \texttt{SPT.packEq\_iff\_packEq\_apply}: stability of packaging equivalence under applying $e$ (useful for normal-form reasoning).
+\end{itemize}
+
+These lemmas provide a minimal formal target for the ``up to packaging equivalence'' language used in \Cref{thm:normal-form}.
+
+\subsection{Lens chains via equivalence relations and saturation as closure}
+
+In the paper, a deterministic lens $f:Z\to X$ induces an observational equivalence relation on $Z$ (same fiber) and therefore a saturation operation on predicates/sets.
+In Lean, we model a lens abstractly as a \texttt{Setoid α} and define saturation as an existential closure along the relation.
+
+File: \path{lean/SPT/LensChain.lean}.
+
+Definition (Lean):
+\[
+\texttt{sat r S (x)} \;:\!\iff\; \exists y,\; S(y) \wedge r(x,y),
+\]
+where \texttt{r : Setoid α} and \texttt{S : Set α}.
+
+Key lemmas (identifiers in Lean):
+\begin{itemize}[leftmargin=*, itemsep=0.25em]
+  \item \texttt{SPT.sat\_mono}: monotonicity of saturation.
+  \item \texttt{SPT.sat\_idempotent} and \texttt{SPT.sat\_idempotent\_fn}: idempotence (saturation is a closure operator component).
+  \item \texttt{SPT.sat\_extensive}: extensiveness $S \subseteq \mathrm{sat}_r(S)$.
+  \item \texttt{SPT.Refines} and \texttt{SPT.sat\_refines}: refinement implies saturation inclusion (``finer relation saturates less'').
+\end{itemize}
+
+Together, \texttt{sat\_mono}, \texttt{sat\_idempotent}, and \texttt{sat\_extensive} show that saturation is a closure operator on predicates.
+This is the abstract version of ``quotient saturation packaging'' used in the meta-primitive story: a lens induces a closure/saturation on what can be expressed and stabilized at that scale.
+
+\subsection{Scope}
+
+This Lean development is intentionally minimal.
+It is not a mechanization of the probabilistic audits or the Markov-chain calculations.
+Its role is to provide a stable, machine-checked algebraic substrate for:
+(i) packaging as an idempotent(-like) endomap with fixed-point objects,
+(ii) packaging equivalence as the right comparison notion, and
+(iii) lens-induced saturation as a closure operator compatible with refinement chains.
+ 
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

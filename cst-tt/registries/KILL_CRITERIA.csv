@@ -1,0 +1,21 @@
+kill_id,target,trigger,action,decision_phase,status
+K-FIACH-01,FIACH,"Primitive temporal, package, corridor, or autonomy definitions contain verdict-equivalent vocabulary.",kill and redesign definitions,CST-TT-00 onward,armed
+K-FIACH-02,FIACH,No noncircular mixed-source/target nonredundancy predicate survives bounded counterexample search.,authorize CST-TT-07B after documentation,CST-TT-04,not-triggered-CST-TT-04
+K-FIACH-03,FIACH,Strict temporal corridors fail composition under every scientifically acceptable frontier rule.,authorize CST-TT-07B after documentation,CST-TT-04,not-triggered-CST-TT-04
+K-FIACH-04,FIACH,A detached endpoint-equivalent copy satisfies the strict corridor under the frozen definitions.,kill the corridor definition,CST-TT-01/CST-TT-04,not-triggered-CST-TT-04
+K-FIACH-05,FIACH,"No exact finite positive witness satisfies independent package, corridor, and autonomy gates.",downgrade to no-go or fallback,CST-TT-05,not-triggered-CST-TT-05
+K-PKG-01,package,"Clause satisfaction or C6 is defined by successful handoff, ancestry, or final verdict.",kill and redesign package layer,CST-TT-02,not-triggered-CST-TT-02
+K-PKG-02,package,Local witnesses cannot be glued without adding post hoc target-specific clauses.,retain local/global no-go only,CST-TT-02,not-triggered-CST-TT-02
+K-AUTO-01,autonomy,Target maintenance requires a resource declared removed at withdrawal.,autonomy fails,CST-TT-05,not-triggered-positive-and-confirmed-by-negative-controls-CST-TT-05
+K-AUTO-02,autonomy,The only invariant region is stalled or violates a hard gate.,autonomy fails,CST-TT-05,not-triggered-positive-and-confirmed-by-anti-stall-control-CST-TT-05
+K-DIRECT-01,direct-successor,Operational provenance reduces to endpoint equality or arbitrary data reachability.,reject direct-successor strengthening,CST-TT-04/CST-TT-07A,not-triggered-CST-TT-07A
+K-IAPS-01,IAPS,Fallback seed contains ancestry/successor-equivalent vocabulary or every data edge qualifies.,kill fallback construction,CST-TT-07B,armed
+K-IAPS-02,IAPS,A disconnected independent twin enters the least relation.,kill fallback construction,CST-TT-07B,armed
+K-IAPS-03,IAPS,Repeated closure universalizes ancestry or admits stale/adversarial records without typed guards.,kill fallback construction,CST-TT-07B,armed
+K-ONTO-01,all,"A structural result is reported as consciousness, felt continuity, survival, or numerical identity without explicit extra assumptions.",block release and correct claim,all phases,armed
+K-TRANS-01,temporal transport,"Transport validity requires lineage, continuation, identity, or final-verdict vocabulary.",kill and redesign transport layer,CST-TT-03,not-triggered-CST-TT-03
+K-TRANS-02,temporal transport,Predictive-equivalent source representatives induce different target predictive values.,reject the bridge or refine the source quotient,CST-TT-03,not-triggered-CST-TT-03
+K-ROUTE-01,route independence,"A route-independent endpoint is certified despite an unjoined critical pair, retained residue, or nonzero clock holonomy.",kill the flatness certificate,CST-TT-03,not-triggered-CST-TT-03
+K-ARROW-01,record arrow,A constant or order-collapsing map is accepted as preserving strict temporal progress.,strengthen to strict-on-realized-steps,CST-TT-03,not-triggered-CST-TT-03
+K-ROBUST-01,bounded robustness,A scalar score or numerical margin is allowed to override a failed hard gate.,reject robustness strengthening,CST-TT-07A,not-triggered-CST-TT-07A
+K-LIVE-01,unbounded model invariance,The unbounded claim is inferred from one finite prefix without a total invariant policy.,retain TTN-12 boundary only,CST-TT-07A,not-triggered-CST-TT-07A

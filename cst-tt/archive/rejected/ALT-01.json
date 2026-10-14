@@ -1,0 +1,9 @@
+{
+  "name": "Endpoint equality as continuity",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "CM-01;CM-02",
+  "reason": "Equal endpoints and even autonomous reconstruction do not supply strict temporal lineage.",
+  "rejected_id": "ALT-01",
+  "replacement": "episode-indexed strict temporal corridor",
+  "status": "killed"
+}

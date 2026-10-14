@@ -1,0 +1,102 @@
+{
+  "id": "TTH07-NATIVE-PUBLICATION-COMPOSITION",
+  "grade": "shared raw structural composition; exact assembly accepted FAITHFUL at disclosed structural/surrogate grade; final packet independently accepted",
+  "primitive_source": "TTH07-NATIVE-AVAILABILITY-REPAIR plus TTH07-NATIVE-PACKAGE-SUPPLEMENT",
+  "declaration_phase": "transcription of existing frozen primitives, not a new before-evaluation freeze",
+  "factor_bits": 3,
+  "false_row": "self at weight1",
+  "true_row": "empty iff invisible; otherwise phase toggle at weight1",
+  "physical_times": [
+    [
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      2,
+      5,
+      5,
+      6
+    ]
+  ],
+  "physical_owners": [
+    [
+      17,
+      17,
+      55,
+      55
+    ],
+    [
+      55,
+      55,
+      101,
+      101
+    ]
+  ],
+  "history_copies": [
+    [
+      2,
+      2,
+      4,
+      4
+    ],
+    [
+      4,
+      4,
+      8,
+      8
+    ]
+  ],
+  "source_presence": [
+    [
+      true,
+      true,
+      false,
+      false
+    ],
+    [
+      true,
+      true,
+      false,
+      false
+    ]
+  ],
+  "modes": [
+    [
+      false,
+      false,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      false,
+      false
+    ]
+  ],
+  "stored_path": [
+    false,
+    true
+  ],
+  "executed_event_names": [
+    "first-source",
+    "first-exit",
+    "second-source",
+    "second-exit"
+  ],
+  "full_future_scope": "all finite words, all declared outcomes including zero, unbounded closure; complete eight-field traces",
+  "controller": "same constant false history strategy at middle and final",
+  "route_status": "routeIndexed for both legs; no flatness/nonflatness inference",
+  "disclosures": [
+    "historical mixedsupport",
+    "C4-C7 surrogates",
+    "Unit disturbances",
+    "six removed roles alias false",
+    "receiver history/route selectors ignored",
+    "corridor absolute ticks and event log beside full future modulo tick phase and doubled incoming past",
+    "C7 coupling independently declared",
+    "C5 housing checked by raw transport, not by clause acceptance"
+  ]
+}

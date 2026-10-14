@@ -1,0 +1,5 @@
+theorem_id,prior_status,current_status,evidence,claim_ceiling
+TTH-01,open-scaffold,proof-source-and-executable-certificate-landed,FiniteGluing.lean;PKG-POS-01-TARGET;PKG-POS-02-SOURCE;bounded exhaustion,structural package only
+TTH-02,open-scaffold,proof-source-and-executable-certificate-landed,FiniteGluing.lean;STG-POS-01;SC-01,typed clause preservation and target assembly only
+TTN-08,checked-finite-countermodel,checked-finite-countermodel-retained,CM-08;PC-10;PC-11;PC-12;PC-13,global package boundary
+TTN-14,checked-finite-countermodel,checked-finite-countermodel-retained,CM-15;PC-08,recombination boundary

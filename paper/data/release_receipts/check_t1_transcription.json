@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_t1_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_t1_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_t1_transcription.log",
+  "log_sha256": "126553cca21d19d62a7dc3cae09808e6b8a0f192aef2e3b04bf6249521b506a2",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:35:01+00:00",
+  "status": "pass",
+  "summary": "T1 transcription PASS: 10 kernel states, 4 CORE states, 10 policies, 100 P entries, 100 CU entries, 100 Peps entries, and 10 fixed masses"
+}

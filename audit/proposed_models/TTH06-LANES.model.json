@@ -1,0 +1,302 @@
+{
+  "model_id": "TTH06-LANES",
+  "schema_version": "TTH06-lane-controls-v2-F-and-O",
+  "phase": "pre-registered declaration only; no outcomes computed",
+  "base_model": {
+    "model_id": "FIACH-POS-04",
+    "path": "audit/proposed_models/FIACH-POS-04.model.json",
+    "declaration_commit": "8ba44df",
+    "reference_head": "47dc6e2a61b879b949ba29873e2c32b0bb62f963",
+    "sha256": "6ac0f66201a7d9215bfb4c83d059b418eef7f0733da843454bf037d83113b582"
+  },
+  "provenance": [
+    {
+      "path": "audit/proposed_models/FIACH-POS-04.model.json",
+      "sha256": "6ac0f66201a7d9215bfb4c83d059b418eef7f0733da843454bf037d83113b582"
+    },
+    {
+      "path": "lean/CSTTT/POS04/Assigned/Substrate.lean",
+      "sha256": "b9f2e0c0626f72801f35623d8044cd30e727ed4e9bf21fa428c38c3764fff196"
+    },
+    {
+      "path": "lean/CSTTT/POS04/Assigned/PackageAssembly.lean",
+      "sha256": "f29bdf290eec614984d9cc128a2af5b1589786f5e02a6652cb2b070a725f9f2c"
+    },
+    {
+      "path": "lean/CSTTT/POS04/Assigned/PackageInstance.lean",
+      "sha256": "17ef80057b72f723eac5114b34a63c5bf857355e276f2c09f0898d9b7bbe4f24"
+    },
+    {
+      "path": "lean/CSTTT/POS04/Assigned/C8.lean",
+      "sha256": "bed6a6624d1b8856aa05add803a4dc80f8639594cb507c638a4185fefb0abe6f"
+    },
+    {
+      "path": "lean/CSTTT/POS04/Assigned/C8Adapters.lean",
+      "sha256": "eacb5f182be6452e12baf751731585d455e5a926a3267e449c6eed20ff307434"
+    },
+    {
+      "path": "lean/CSTTT/POS04/AtomicCorridor.lean",
+      "sha256": "58f4077af9b757e8063e9b7f9780623c7f61cdcd07dd05cfc1845d244a6ecb9b"
+    },
+    {
+      "path": "lean/CSTTT/Transport/FrozenSnapshotBridge.lean",
+      "sha256": "dd8f2338242bb98de5a6c4f3354294b1efd0f30df9549e811208fd544b947b28"
+    },
+    {
+      "path": "audit/G0_generic_contracts.md",
+      "sha256": "108e37eff11a8e9c20b366906bdbc305ee1486fe51540ca9f24fe8d49268d04d"
+    },
+    {
+      "path": "cst-tt/docs/POST_WITHDRAWAL_AUTONOMY.md",
+      "sha256": "747cd781a9daa6f3aa6d42643ac85a8273c17e9b87ccf52c8bcd6bb16d9d42be"
+    },
+    {
+      "path": "lean/CSTTT/Autonomy/FiniteAutonomy.lean",
+      "sha256": "5babd62ff4206c53e75b17f763f08303476b1660278c860efbd4f7d63056b0de"
+    },
+    {
+      "path": "lean/CSTTT/Autonomy/System.lean",
+      "sha256": "1617533a4a4bf2e94de1fd812098240021288a1281f0ba8a77316b78536c53d1"
+    }
+  ],
+  "claim_ceiling": "F primary: full preservation of the declared graded package (C4\u2013C7 surrogates), with total target-owned nominal-environment responses and proof-structural lane evidence; AF implies P. O supplementary: narrower operational C8 viability (N3) with predicted logical lane independence. Neither claims P05/T17-I or physical continuation.",
+  "raw_interface": {
+    "assignment": {
+      "namespace": "CSTTT.POS04.Assigned.Cell",
+      "baseline": "canonical from the referenced POS-04 primitives",
+      "storage": "one immutable typed primitive cell per canonical identity; 160 coordinates are views",
+      "absence": "None, never canonical fallback for acceptance gates"
+    },
+    "stage_map": {
+      "rule": "canonicalStage: swapCell plus translatedValue, independently of clause index"
+    },
+    "cover": {
+      "rule": "arrivalCover target; root c1 covers primitiveCells; other clauses use clauseScope target",
+      "adjacency": "parent relation of arrivalCover; no separately supplied edges"
+    },
+    "corridor": {
+      "rule": "assignment-indexed adaptation of POS04.AtomicCorridor; one carrier change, source/target event expansion and successive-stage dependencies",
+      "source_audit": "mix_2-source",
+      "target_audit": "mix_2-target",
+      "later_audit": "exit-target",
+      "source": "source tag",
+      "target": "target tag",
+      "comparison_domain": "both declared raw history/event route tuples"
+    },
+    "post_exit_retention": {
+      "resource": "target_recharge",
+      "retained_resources": [
+        "target_recharge"
+      ],
+      "effective_phase": "after_withdrawal",
+      "source_present_after_withdrawal": false,
+      "derivation": "resource is copied verbatim from base /new_data/maintenance/target_resource; baseline retained_resources includes it iff base /new_data/raw_inputs/by_tag/target/resources/recharge_available_after_withdrawal is true; no arrival primitive changes"
+    },
+    "audit_phase_order": [
+      "arrival_and_completed_corridor",
+      "funded_route_retention_probe",
+      "withdrawal",
+      "post_withdrawal_controlled_responses"
+    ],
+    "disturbance_interface": {
+      "new_modeling": true,
+      "type": "LaneDisturbance",
+      "domain": [
+        "nominal"
+      ],
+      "rule": "Minimal nonempty exogenous maintenance-request domain; nominal leaves assigned action probabilities, hazards and resource supply unchanged. POS-04 supplies actions but no disturbance table.",
+      "effect": {
+        "nominal": "identity on assigned rows, hazards, resources and ledger"
+      },
+      "limitation": "Singleton nominal environment only; no adversarial/nontrivial disturbance robustness."
+    },
+    "response_semantics": {
+      "action_domain": [
+        "stay",
+        "cw",
+        "ccw"
+      ],
+      "action_owner_rule": "Target-owned onboard controller; encode the assigned target resource owner as the action owner, and check target equality.",
+      "quantifiers": "For every invariant factor state, every declared raw route-register context, and every declared disturbance, there exists a target-owned action such that every positive-probability successor lies inside the invariant.",
+      "row_rule": "Assigned target actionRow at denominator 4, nonempty, sum of numerators 4; nominal effect is identity; out-of-K or nonpositive entries reject.",
+      "resource_rule": "Required target_recharge retained and target-owned; no withdrawn dependency may supply the response.",
+      "budget_rule": "Prior unit budget minus assigned action cost plus effective recharge; effective recharge is assigned recharge iff target_recharge is available after retention, else zero; require conserved and strictly positive budget.",
+      "run_update_rule": "Use assignment-defined C6 updater: counter/progress +1; ticks + assigned ticks for the actual state/action; record +1 only with funded availability and target writer for the retained route context; raw tuple register and target owner persist. Check positive unit advances and all closure-wide readout laws.",
+      "required_extra_cells": [
+        "ticks(target)",
+        "writers",
+        "histories",
+        "routeTable"
+      ],
+      "probabilistic_safety": "all supported successors, not one lucky outcome",
+      "factor_run_separation": "Finite K factor; unbounded run counters and ledger lift; no strict increasing finite-state rank."
+    },
+    "withdrawal_rule": {
+      "removed_roles": [
+        "source",
+        "migration_bridge",
+        "migration_controller",
+        "external_decoder",
+        "external_scheduler",
+        "undeclared_repair_support"
+      ],
+      "rule": "After the fixed withdrawal phase, none of these roles is available or used by a response. Keep only target-owned internal policy/writers and explicitly retained named target resources.",
+      "new_modeling": "Explicit raw role-removal interface, derived from the withdrawal intervention in POST_WITHDRAWAL_AUTONOMY.md:3; not stored certificate proofs."
+    },
+    "autonomy_entry_rule": "For each raw route, execute the actual phase-2 funded target row from its computed receiver output; collect every supported successor with its resulting register/counters. Every resulting withdrawal entry must be inside the computed invariant; do not reset to the earlier receiver factor."
+  },
+  "fixed_predicates": {
+    "package": "Shared P, G6 spec \u00a72: mapped/glued ARRIVAL target assignment and all assigned C1\u2013C8 checks plus map/totality/gluing equations.",
+    "lineage": "Shared L, G6 spec \u00a73: assignment-indexed G4 atomic corridor plus G1c raw bridge/signature/endpoint laws.",
+    "autonomy_full": "AF, G6 spec \u00a74F: package-filtered greatest invariant with packageInside and target-owned probability-one-safe responses for EVERY declared disturbance and every invariant state/context, resource closure and run laws.",
+    "autonomy_operational": "AO, G6 spec \u00a74O: C8 greatest8 invariant and the same nominal disturbance/response/resource/run rules, WITHOUT P or C1\u2013C7 packageInside; N3 supplementary."
+  },
+  "controls": [
+    {
+      "id": "G6-PACKAGE-ONLY",
+      "assignment_edits": [
+        {
+          "op": "remove_cell",
+          "cell": {
+            "constructor": "publishedC"
+          },
+          "semantics": "Assigned.put assignment .publishedC none"
+        }
+      ],
+      "json_edits": [],
+      "mutation_rule": "Delete the shared C1-required published C cell. The raw action tables and all other cells remain identical; this also makes source C1 incomplete, disclosed as an intra-package side effect.",
+      "expected_lanes_by_version": {
+        "F": {
+          "package": false,
+          "lineage": true,
+          "autonomy_full": false
+        },
+        "O": {
+          "package": false,
+          "lineage": true,
+          "autonomy_operational": true
+        }
+      },
+      "interpretation_by_version": {
+        "F": "Expected P/AF joint rejection; consequence of AF implies P, NOT isolation or confounding.",
+        "O": "Isolated failure only if the other two O lanes pass."
+      }
+    },
+    {
+      "id": "G6-LINEAGE-ONLY",
+      "assignment_edits": [],
+      "json_edits": [
+        {
+          "op": "replace",
+          "path": "/base/new_data/corridor/events/1/source_support",
+          "value": false,
+          "precondition": {
+            "id": "mix_2",
+            "source_support": true
+          }
+        }
+      ],
+      "mutation_rule": "Change only mix_2 source support. The canonical importer yields the single changed .eventTable cell; do not separately patch any decoder or verdict. mix_1, realization, strict steps, histories, receiver and resources remain fixed.",
+      "expected_lanes_by_version": {
+        "F": {
+          "package": true,
+          "lineage": false,
+          "autonomy_full": true
+        },
+        "O": {
+          "package": true,
+          "lineage": false,
+          "autonomy_operational": true
+        }
+      },
+      "interpretation_by_version": {
+        "F": "Isolated failure only if the other two F lanes pass.",
+        "O": "Isolated failure only if the other two O lanes pass."
+      }
+    },
+    {
+      "id": "G6-WITHDRAWAL-ONLY",
+      "assignment_edits": [],
+      "json_edits": [
+        {
+          "op": "replace",
+          "path": "/raw_interface/post_exit_retention/retained_resources",
+          "value": []
+        }
+      ],
+      "mutation_rule": "At the declared withdrawal boundary, retain no target_recharge resource. Change no assignment, arrival ledger, action row, receiver, route audit, stage or bridge field.",
+      "expected_lanes_by_version": {
+        "F": {
+          "package": true,
+          "lineage": true,
+          "autonomy_full": false
+        },
+        "O": {
+          "package": true,
+          "lineage": true,
+          "autonomy_operational": false
+        }
+      },
+      "interpretation_by_version": {
+        "F": "Isolated failure only if the other two F lanes pass.",
+        "O": "Isolated failure only if the other two O lanes pass."
+      }
+    }
+  ],
+  "predictions_location": "audit/G6_predictions.md",
+  "interpretation_rule": "Report F and O separately with unchanged shared P/L. F package/AF joint rejection is an expected dependence consequence, excluded from clean isolation counts; F requires two isolated controls. O requires three. Invalid controls, failed baselines and unexpected extra lane failures retain qualified statuses; no tuning after evaluation.",
+  "versions": {
+    "F": {
+      "role": "primary TTH-06",
+      "autonomy_predicate": "AF",
+      "none_inferred_reading": "proof-structural; derive P, L, and AF evidence separately",
+      "predicted_implication": "forall m, AF(m) implies P(m)",
+      "package_state_rule": "PackageAt(m,x) = P(m) and AssignedPackagePass(BW(m),target) and StateViewsResolve(BW(m),x) and RunReadoutLawsAt(m,x); BW changes only target resource availability after retention; receiver/events remain historical acquisition data, not current external availability.",
+      "invariant_rule": "Greatest fixed point in K of package-valid states with safe total nominal responses; fixed point recomputed for every control.",
+      "required_controls": [
+        "lineage-only isolation",
+        "autonomy-only isolation",
+        "package failure forces AF failure (dependence consequence, not isolation)"
+      ]
+    },
+    "O": {
+      "role": "supplementary narrower operational N3",
+      "autonomy_predicate": "AO",
+      "none_inferred_reading": "logical independence predicted from three isolated controls",
+      "invariant_rule": "greatest8 withdrawn assigned C8 inputs; every declared disturbance response explicitly checked; no packageInside",
+      "required_controls": [
+        "package-only isolation",
+        "lineage-only isolation",
+        "withdrawal-only isolation"
+      ]
+    }
+  },
+  "declaration_change_log": [
+    "Owner CR1: primary full AF and supplementary operational AO both fixed before evaluation; raw edits and phase ordering unchanged.",
+    "New singleton nominal exogenous disturbance, distinct from existing three control actions, with explicit all-state/all-disturbance probability-one-safe response semantics.",
+    "Explicit withdrawal-role removal, target response ownership, packageInside and withdrawn per-state package views, package-filtered greatest invariant, and AF implies P.",
+    "Derive withdrawal entry from supported phase-2 target-step results rather than resetting to prior receiver factor; clarifies phase ordering.",
+    "No model verdicts evaluated; no POS-04, Lean or registry changes."
+  ],
+  "baseline_expected_lanes_by_version": {
+    "F": {
+      "package": true,
+      "lineage": true,
+      "autonomy_full": true
+    },
+    "O": {
+      "package": true,
+      "lineage": true,
+      "autonomy_operational": true
+    }
+  },
+  "theorem_predictions": [
+    {
+      "id": "AF-IMPLIES-P",
+      "statement": "forall m, AF(m) implies P(m)",
+      "expected": true,
+      "version": "F",
+      "meaning": "Endpoint inside plus packageInside; disclosed logical dependence, NOT an isolation control."
+    }
+  ]
+}

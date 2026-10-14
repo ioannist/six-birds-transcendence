@@ -1,0 +1,31 @@
+{
+  "schema_version": "CST-TT-05",
+  "control_id": "AUT-C01",
+  "title": "example autonomy control",
+  "model_ref": "models/example.json",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "positive_baseline_ref": "models/positive.json",
+  "expected_primary_failure": "AUT-O01-example",
+  "observed_failures": [
+    "AUT-O01-example"
+  ],
+  "result_status": "scaffold-only",
+  "claim_lanes": [
+    "M",
+    "A"
+  ],
+  "claim_ceiling": "finite post-withdrawal autonomy boundary only",
+  "collapse_trace": [],
+  "audit": {
+    "autonomy_valid": false,
+    "failed_obligations": [
+      "AUT-O01-example"
+    ]
+  },
+  "checker": {
+    "module": "cst_tt.withdrawal_autonomy_checker",
+    "function": "audit_autonomy",
+    "python_version": "3.13",
+    "checked_at_phase": "CST-TT-05"
+  }
+}

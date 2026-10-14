@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_tth09_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_tth09_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_tth09_transcription.log",
+  "log_sha256": "ae6ab0f60a93dc0db1a2a611ea787a83c1a50478cd573031c6a2f2e6e2052240",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:35:16+00:00",
+  "status": "pass",
+  "summary": "Coverage: action tables on both bits; vertex counts; all route event paths/boundary references; event entry/exit/availability/action IDs/action outputs/clock increments/forward and inverse clock outputs; boundary entry/exit/initial bits; rewrites; ranks; critical pairs; every completion field/path; every domain.\nJSON IDs are source-order labels; metadata/prose are not semantic inputs.\nCAUGHT planted JSON drift: event availability\nCAUGHT planted JSON drift: raw route path\nCAUGHT planted JSON drift: clock increment"
+}

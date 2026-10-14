@@ -1,0 +1,41 @@
+node_id,label,kind
+N01,Declared carrier/support,primitive
+N02,Lens / public record,primitive
+N03,History / reachable image,primitive
+N04,Current quotient Q,quotient
+N05,Predictive quotient M,quotient
+N06,Future sufficiency / factorization,law
+N07,Route continuation,bridge
+N08,Predictive transport,bridge
+N09,Holonomy / route residue,obstruction
+N10,Marking / erasure,operation
+N11,Recombination quotient,quotient
+N12,Relation-valued persistence,lineage
+N13,Strict promotion,realization
+N14,Carrier exactification,realization
+N15,Accepted strict tests,recognition
+N16,Carrier-event record,recognition
+N17,Global event package,realization
+N18,Local/global obstruction,obstruction
+N19,AOR completion/reflection,realization
+N20,Viability kernel,autonomy
+N21,Currency / maintenance ledger,autonomy
+N22,Endogenous repair,autonomy
+N23,Temporal closure / local clock,autonomy
+N24,Protocol trap,obstruction
+N25,Hiddenness / non-exposure,recognition
+N26,No-overreading,obstruction
+N27,Confluence / flatness,law
+N28,Adequacy residual,metric
+N29,Closure deficit,metric
+N30,No-smuggling finite semantics,method
+N31,Full C1–C8 package,target-contract
+N32,Simplified certificate,certificate
+N33,Certificate soundness H1,assumption
+N34,ClosureComplete,predicate
+N35,A1 Ontic Closure Completeness,assumption
+N36,Realized,ontology
+N37,A2 Substrate Indifference,assumption
+N38,Cross-carrier invariance H-XCI,missing-theorem
+N39,Recognition bridge,missing-empirical
+N40,Post-handoff autonomy,target-property

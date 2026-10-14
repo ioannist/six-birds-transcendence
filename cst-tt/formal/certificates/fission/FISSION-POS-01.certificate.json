@@ -1,0 +1,88 @@
+{
+  "audit": {
+    "branch_component_replays_valid": true,
+    "certificate_id": "FISSION-POS-01",
+    "common_source_exact": true,
+    "component_hashes_valid": true,
+    "failed_obligations": [],
+    "invariant_singleton_selector_absent": true,
+    "left_branch_valid": true,
+    "left_target_code": 201,
+    "relation_contains_both_branches": true,
+    "relation_valued_fission_valid": true,
+    "right_branch_valid": true,
+    "right_target_code": 202,
+    "source_code": 17,
+    "source_package_exact": true,
+    "source_temporal_frontier_exact": true,
+    "swap_fixed_point_free": true,
+    "swap_involutive": true,
+    "target_shapes_symmetric": true,
+    "targets_distinct": true,
+    "uniqueness_claim_absent": true,
+    "validity_preserved_by_swap": true
+  },
+  "branch_certificate_refs": {
+    "left": "formal/certificates/fission/fiach/FIACH-FIS-LEFT.certificate.json",
+    "right": "formal/certificates/fission/fiach/FIACH-FIS-RIGHT.certificate.json"
+  },
+  "branch_certificate_sha256": {
+    "left": "dd0e1a68b4e0010c33e561cd9cc3700a553030c5695a43e38e2dc8443160d63f",
+    "right": "7600a3659ead24cd84b776222d0b6dcb967736db098d4358dfc3499c6a4e8fd3"
+  },
+  "certificate_id": "FISSION-POS-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_temporal_fission",
+    "module": "cst_tt.branching",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "relation-valued finite temporal fission; no unique continuer or numerical identity conclusion",
+  "claim_lanes": [
+    "S-L",
+    "S-R",
+    "A"
+  ],
+  "model_ref": "models/fission/FISSION-POS-01.model.json",
+  "model_sha256": "b35aedc972cb648af1782fe6a4a13355ed857c0ef4d28f67c2d2dfd5ac9a2c69",
+  "relation": [
+    {
+      "source": {
+        "code": 17,
+        "label": "source-substrate"
+      },
+      "target": {
+        "code": 201,
+        "label": "left-branch-substrate"
+      }
+    },
+    {
+      "source": {
+        "code": 17,
+        "label": "source-substrate"
+      },
+      "target": {
+        "code": 202,
+        "label": "right-branch-substrate"
+      }
+    }
+  ],
+  "result_status": "checked-finite-relation-valued-temporal-fission",
+  "schema_version": "CST-TT-06",
+  "target_swap": {
+    "201": 202,
+    "202": 201
+  },
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.CorridorTheory.relationValuedTemporalFission",
+      "CSTTT.CorridorTheory.targetSwapPreservesFissionValidity",
+      "CSTTT.CorridorTheory.targetSwapSymmetryNonselection"
+    ],
+    "theorem_ids": [
+      "TTH-08",
+      "TTN-11"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-T",
+    "S-R"
+  ],
+  "conclusion_failure_checks": {
+    "endogenous_arrow_absent": true
+  },
+  "countermodel_id": "CM-03",
+  "derived_facts": {
+    "first_disagreement_state": 0,
+    "record_is_constant": true
+  },
+  "family": "reversible-permutation-holonomy",
+  "model": {
+    "endogenous_arrow": false,
+    "nonzero_holonomy": true,
+    "record_update": "constant",
+    "route_a": [
+      0,
+      2,
+      1
+    ],
+    "route_b": [
+      1,
+      0,
+      2
+    ],
+    "routes_reversible": true,
+    "state_count": 3,
+    "witness_states": [
+      0,
+      1,
+      2
+    ]
+  },
+  "name": "Holonomy without endogenous arrow",
+  "premise_checks": {
+    "nonzero_route_holonomy": true,
+    "route_updates_reversible": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "Noncommuting reversible route updates do not supply an endogenous record arrow.",
+  "size_measure": "(state_count)",
+  "size_vector": [
+    3
+  ],
+  "target_no_go_id": "TTN-03",
+  "toy_model_ref": "TTM-16"
+}

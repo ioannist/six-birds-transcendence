@@ -1,0 +1,17 @@
+{
+  "action": "created new-version draft",
+  "concept_record_id": "22335922",
+  "dashboard_url": "https://zenodo.org/uploads/23120494",
+  "doi": "10.5281/zenodo.23120494",
+  "doi_reservation": {
+    "client": "datacite",
+    "identifier": "10.5281/zenodo.23120494",
+    "provider": "datacite",
+    "verified_via": "rdm_pid_table"
+  },
+  "draft_id": 23120494,
+  "recorded_at": "2026-10-03T11:55:24+00:00",
+  "source_doi": "10.5281/zenodo.22335923",
+  "source_record_id": 22335923,
+  "source_title": "Holonomy with Memory in Six Birds Theory: Predictive Quotients, Witnesses, and Fixed-Support Route Transport"
+}

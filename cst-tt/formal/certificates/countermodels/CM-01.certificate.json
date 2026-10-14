@@ -1,0 +1,43 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm01_endpointSnapshotEqualityWithoutLineage",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-01",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-01",
+  "finite_model_ref": "models/countermodels/CM-01.model.json",
+  "finite_model_sha256": "a4461531bfd6289678b4e6ad33c0573bf48a9d1905305743f7db3fb0f7d14966",
+  "minimality_status": "certified",
+  "model_family": "endpoint-projection",
+  "name": "Endpoint snapshot equality without temporal lineage",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "Endpoint/signature equality is insufficient for the strict episode relation.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "carrier_count<=2; all three Boolean endpoint/link flags",
+    "candidates_explored": 16,
+    "lower_bound_argument": "One carrier cannot instantiate a distinct source/target pair; two carriers suffice.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 1,
+    "same_size_candidates_explored": 4,
+    "same_size_qualifying_candidates": 1,
+    "size_measure": "(carrier_count, operational_link_count)",
+    "smaller_candidates_explored": 8,
+    "witness_size_vector": [
+      2,
+      0
+    ]
+  },
+  "target_no_go_id": "TTN-01",
+  "toy_model_ref": "TTM-02"
+}

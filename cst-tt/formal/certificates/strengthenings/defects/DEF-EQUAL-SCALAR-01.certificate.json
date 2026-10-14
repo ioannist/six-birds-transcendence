@@ -1,0 +1,648 @@
+{
+  "accepted_audit": {
+    "accepted": true,
+    "component_audits": [
+      {
+        "component_accepts": true,
+        "component_id": "H01-distinct-carriers",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H02-C1-objecthood",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H03-C2-strict-promotion",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H04-C3-reflexive-coordinate",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H05-C4-nonexposure",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H06-C5-action-credit",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H07-C6-temporal-closure",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H08-C7-binding",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H09-C8-viability",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H10-route-discipline",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H11-strict-lineage",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H12-post-withdrawal-autonomy",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "S01-predictive-margin",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "soft",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "S02-order-margin",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "soft",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "S03-tick-margin",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "soft",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "S04-progress-margin",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "soft",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "S05-record-margin",
+        "defect": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "gate_kind": "soft",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "within_tolerance": true
+      }
+    ],
+    "component_ids_unique": true,
+    "component_rows_well_formed": true,
+    "every_component_within_tolerance": true,
+    "every_hard_gate_exact": true,
+    "expected_components_exact": true,
+    "failed_hard_gates": [],
+    "failed_obligations": [],
+    "failed_soft_components": [],
+    "profile_id": "DEF-EQUAL-SCALAR-ACCEPTED",
+    "scalar_summary": {
+      "denominator": 17,
+      "numerator": 1
+    },
+    "scalar_summary_diagnostic_only": true
+  },
+  "accepted_model_ref": "models/strengthenings/defects/DEF-EQUAL-SCALAR-ACCEPTED.model.json",
+  "accepted_model_sha256": "0c0f0e6aed1b8364459e59b2c096b0680a6ae5e40f620942ac34b9b4f65b8837",
+  "certificate_id": "DEF-EQUAL-SCALAR-01",
+  "claim_ceiling": "scalar-summary nonidentifiability for the declared exact finite profile",
+  "claim_lanes": [
+    "M",
+    "S-R",
+    "S-L",
+    "A"
+  ],
+  "rejected_audit": {
+    "accepted": false,
+    "component_audits": [
+      {
+        "component_accepts": false,
+        "component_id": "H01-distinct-carriers",
+        "defect": {
+          "denominator": 1,
+          "numerator": 1
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": false,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": false
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H02-C1-objecthood",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H03-C2-strict-promotion",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H04-C3-reflexive-coordinate",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H05-C4-nonexposure",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H06-C5-action-credit",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H07-C6-temporal-closure",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H08-C7-binding",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H09-C8-viability",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H10-route-discipline",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H11-strict-lineage",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "H12-post-withdrawal-autonomy",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "hard",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "S01-predictive-margin",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "soft",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "S02-order-margin",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "soft",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "S03-tick-margin",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "soft",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "S04-progress-margin",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "soft",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "within_tolerance": true
+      },
+      {
+        "component_accepts": true,
+        "component_id": "S05-record-margin",
+        "defect": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "gate_kind": "soft",
+        "hard_gate_exact": true,
+        "nonnegative": true,
+        "rational_valid": true,
+        "tolerance": {
+          "denominator": 2,
+          "numerator": 1
+        },
+        "within_tolerance": true
+      }
+    ],
+    "component_ids_unique": true,
+    "component_rows_well_formed": true,
+    "every_component_within_tolerance": false,
+    "every_hard_gate_exact": false,
+    "expected_components_exact": true,
+    "failed_hard_gates": [
+      "H01-distinct-carriers"
+    ],
+    "failed_obligations": [
+      "every-hard-gate-exact",
+      "every-component-within-tolerance"
+    ],
+    "failed_soft_components": [],
+    "profile_id": "DEF-EQUAL-SCALAR-REJECTED",
+    "scalar_summary": {
+      "denominator": 17,
+      "numerator": 1
+    },
+    "scalar_summary_diagnostic_only": true
+  },
+  "rejected_model_ref": "models/strengthenings/defects/DEF-EQUAL-SCALAR-REJECTED.model.json",
+  "rejected_model_sha256": "95b56feeae2310bbd78bf3bb2b2c90ccbff279c667e2030cfc6e4c9670e93aa8",
+  "result_status": "checked-finite-equal-scalar-opposite-vector-verdict",
+  "same_scalar_summary": true,
+  "schema_version": "CST-TT-07A",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.DefectTheory.scalarSummaryDoesNotDetermineAcceptance"
+    ],
+    "theorem_ids": [
+      "TTS-02",
+      "TTN-10"
+    ]
+  }
+}

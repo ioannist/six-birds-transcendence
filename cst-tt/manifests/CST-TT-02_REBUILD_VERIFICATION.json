@@ -1,0 +1,385 @@
+{
+  "base_tag": "CST-TT-01-v1",
+  "builder_returncode": 0,
+  "byte_identical_surface_count": 74,
+  "generated_surface_count": 74,
+  "mismatches": [],
+  "phase": "CST-TT-02",
+  "project": "CST-TT",
+  "pytest_returncode": 0,
+  "schema_version": "1.0",
+  "status": "PASS",
+  "surfaces": [
+    {
+      "path": "CHANGELOG.md",
+      "reproduced": true,
+      "sha256": "61e8173134264ef824910c4c20b8ecc1c322ca04dbf6863aabfab7f329e4ddaf"
+    },
+    {
+      "path": "README.md",
+      "reproduced": true,
+      "sha256": "fae9c04d9a5d418c4202722ba2704c1ea26639465bd08461a9c4b4a3af699ad7"
+    },
+    {
+      "path": "RESTORE_AND_VERIFY.md",
+      "reproduced": true,
+      "sha256": "bc00a616c86849564f37b0e67a1fd8d7a3a96b67af06fffce87f2c9e0c3f8241"
+    },
+    {
+      "path": "STATE.md",
+      "reproduced": true,
+      "sha256": "2c0dc15ed70f9416cc8264c636f17eba9f79aab56dd6dda8c5213cce84da3ae2"
+    },
+    {
+      "path": "STATUS.md",
+      "reproduced": true,
+      "sha256": "bee0c35e1c22935aa3185965644ab57f430e8d52c8bbb7f37dce00a0abe92e16"
+    },
+    {
+      "path": "changelog/CST-TT-02.md",
+      "reproduced": true,
+      "sha256": "31c274bfbc7f4fe2d14595f1c9112d07e0e8cb3121ec2c358a3f6bf2b0aa4b64"
+    },
+    {
+      "path": "config/REPRODUCIBILITY.json",
+      "reproduced": true,
+      "sha256": "7a8c1955c138096e291e491972a1a3609041537b66f3e2463862dbb05340da47"
+    },
+    {
+      "path": "docs/ACYCLIC_GLUING_THEOREM.md",
+      "reproduced": true,
+      "sha256": "9f0d0191d492e3069beb29cf645f0aca34127585cd124311ee93e06216eab80b"
+    },
+    {
+      "path": "docs/C6_TEMPORAL_SUBSTANCE.md",
+      "reproduced": true,
+      "sha256": "fd55190243bcffd1fbc788e5e4eb083ff63639dc38d7a3375e5e6df1d3c8e542"
+    },
+    {
+      "path": "docs/INTEGRATED_PACKAGE_SEMANTICS.md",
+      "reproduced": true,
+      "sha256": "6b7010a2e440115e0b1cfb872c1125cb0d0342249160e2cac1008a8e8efb55f5"
+    },
+    {
+      "path": "docs/PACKAGE_CONTROL_SUITE.md",
+      "reproduced": true,
+      "sha256": "d00ebe858d61e303358857fcd39ea73ea1cb44d30c3866e35146de6095f71d05"
+    },
+    {
+      "path": "docs/PHASE_BOUNDARY.md",
+      "reproduced": true,
+      "sha256": "9438b68c583ed6abb6320a77aec00a53fc8dfe66d3b0da410ddb91a5453b6b01"
+    },
+    {
+      "path": "docs/STAGED_PACKAGE_ASSEMBLY.md",
+      "reproduced": true,
+      "sha256": "0531b2134aae5f91f7b648e0c116964d8520b4832482fd277ec9db966dc85bd9"
+    },
+    {
+      "path": "docs/THEOREM_AND_TOY_REGISTRY.md",
+      "reproduced": true,
+      "sha256": "ad71bad92af1b3f160f695d751c2bba229c2a463502d37fc6de7e3c6c10f81ba"
+    },
+    {
+      "path": "formal/README.md",
+      "reproduced": true,
+      "sha256": "0065aafadb15de9d5fed9035dc87bf277b1bbfdeef779a25bb168374856c8b1c"
+    },
+    {
+      "path": "formal/TOOLCHAIN_STATUS.json",
+      "reproduced": true,
+      "sha256": "70614b3b6493cf28aa49eb2b47cda24a6ae89336274f3c61a7bbfd7c18ab45b6"
+    },
+    {
+      "path": "formal/certificates/packages/BOUNDED_GLUING_EXHAUSTION.json",
+      "reproduced": true,
+      "sha256": "c0b7a04f42d57a456cd12e7a1c1edfc7abe33f400fc971968f47c93e223e1af0"
+    },
+    {
+      "path": "formal/certificates/packages/PKG-POS-01-TARGET.certificate.json",
+      "reproduced": true,
+      "sha256": "436d46881b023decddc51edcc3e00b73a2bf2e20727aad85fbb9b023e3cc519d"
+    },
+    {
+      "path": "formal/certificates/packages/PKG-POS-02-SOURCE.certificate.json",
+      "reproduced": true,
+      "sha256": "64d841ac9215e2de96833302e56dfeb0b3be38e2c38e17892cd528d05be3c83c"
+    },
+    {
+      "path": "formal/certificates/packages/STG-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "ec72e8bfa588087f71b20ac31adf7f79094a91f775ffad677014d3a7d24b74b7"
+    },
+    {
+      "path": "manifests/CST-TT-02_COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "e4228213841ec4cc9e8b17dcec883ae692d5ce0edb0827d26f2f8422cf3b8463"
+    },
+    {
+      "path": "manifests/CST-TT-02_MODEL_CERTIFICATE_DELTA.csv",
+      "reproduced": true,
+      "sha256": "b306d4698c519c45fc53f786adfcf4042e768bed478f05a4036dacf5ed33170e"
+    },
+    {
+      "path": "manifests/CST-TT-02_PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "b3650b71796ad000b51d9a2b3f6a2d4f20e4a43848103b01cd7df53f14374d7c"
+    },
+    {
+      "path": "manifests/CST-TT-02_THEOREM_STATUS_DELTA.csv",
+      "reproduced": true,
+      "sha256": "e1611192c26d6a7d236bb2e63582f39937dd26d6db95a0026854e4b0eb062e9a"
+    },
+    {
+      "path": "manifests/PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "b3650b71796ad000b51d9a2b3f6a2d4f20e4a43848103b01cd7df53f14374d7c"
+    },
+    {
+      "path": "models/packages/PKG-POS-01-TARGET.model.json",
+      "reproduced": true,
+      "sha256": "e61ef5ed5c31a8c1d13973295083f82e9c7e67072d2d432e8a0e28ccdba46f87"
+    },
+    {
+      "path": "models/packages/PKG-POS-02-SOURCE.model.json",
+      "reproduced": true,
+      "sha256": "f5a580354591dc4e0c11539000c9d9fe61235c9f7e748c6e19ddbde89683b9a6"
+    },
+    {
+      "path": "models/packages/STG-POS-01.assembly.json",
+      "reproduced": true,
+      "sha256": "88cd6e785dff7726e537bfdd70a050f167ea8ded9ff2048f0789dd2534c0f0e5"
+    },
+    {
+      "path": "registries/CERTIFICATE_SCHEMA_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "c937a4fe2a087ef9e87c992d1b6f6b2cea88c2e36b771eda3b91d842c94c0a53"
+    },
+    {
+      "path": "registries/DEFINITION_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "32ae41117788a6d50c558d874e24269db4788ae00a425c090fea9b6e59e11ea4"
+    },
+    {
+      "path": "registries/KILL_CRITERIA.csv",
+      "reproduced": true,
+      "sha256": "a33127d514c906d2ba3963cb3768f1ec216b817384e3caee226af2ec9fc61e94"
+    },
+    {
+      "path": "registries/PACKAGE_CONTROL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "ae73edcd7f95f38c5577eb2a0d9de920e915dffaee1138a2ef08a23428658774"
+    },
+    {
+      "path": "registries/PACKAGE_OBLIGATION_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "d2743d5267b4be84e46c0b0e0d6736f8390131950e89e50d4a687485a15b3a11"
+    },
+    {
+      "path": "registries/PACKAGE_WITNESS_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "ab8a2476dcccd172475468823b07984dd8cde810f7ff93d1701e48071703b144"
+    },
+    {
+      "path": "registries/PROJECT_REGISTRY.json",
+      "reproduced": true,
+      "sha256": "6def329150d5388e451e7e7eb4f5f24dd44c1c19352108fbfc45513120c86710"
+    },
+    {
+      "path": "registries/STAGED_ASSEMBLY_OBLIGATION_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "0f22505af25ee4b8bb2a3ad95dc1cb6a10092e53a883d61068757abed883d08c"
+    },
+    {
+      "path": "registries/THEOREM_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "cbb854cd068b129e9d29c549cce2f686314933a8825616cc7e0fcaf798423b5a"
+    },
+    {
+      "path": "registries/TOY_MODEL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "6be60baca031e01d2c3c5a2708c4b17695f746f6ae332d5f38f1b809a9804a7f"
+    },
+    {
+      "path": "models/packages/controls/PC-01.model.json",
+      "reproduced": true,
+      "sha256": "21f7eaf02a34eb86ce91f79e69c1a9ff5b596df292d574f9a260b0a452c267ac"
+    },
+    {
+      "path": "models/packages/controls/PC-02.model.json",
+      "reproduced": true,
+      "sha256": "3f740d30276a4fd578bfd39f9b39ff3f152ddfb903ec6330a6c546f797591170"
+    },
+    {
+      "path": "models/packages/controls/PC-03.model.json",
+      "reproduced": true,
+      "sha256": "3baee7a55abea76f0ca9db52abb3db07e264547424b62eb18b1b50b7a9cfbf7c"
+    },
+    {
+      "path": "models/packages/controls/PC-04.model.json",
+      "reproduced": true,
+      "sha256": "2430a349330e5d93b300b9e72d5b5254605edd2c5d966125983064e530c47cd2"
+    },
+    {
+      "path": "models/packages/controls/PC-05.model.json",
+      "reproduced": true,
+      "sha256": "5e7772d4758d8c9ca1b68b5b25301d49238dd7ff190ce68fb7f72fcc8df845c2"
+    },
+    {
+      "path": "models/packages/controls/PC-06.model.json",
+      "reproduced": true,
+      "sha256": "9a185edc388bd13be543fcb1e1ec40c6d47ede4d56f229b6b5c183ca1d527538"
+    },
+    {
+      "path": "models/packages/controls/PC-07.model.json",
+      "reproduced": true,
+      "sha256": "3e8e3c020062cb130a7a1bab9f67c1a1f5311169f8361298e3b18389aea20bab"
+    },
+    {
+      "path": "models/packages/controls/PC-08.model.json",
+      "reproduced": true,
+      "sha256": "9969c0d08ad7ef86f850447c6c8dd41aa78eb643ea3ba67a0bb04b93b07f51c1"
+    },
+    {
+      "path": "models/packages/controls/PC-09.model.json",
+      "reproduced": true,
+      "sha256": "51ec16fe8766c2493188eadfcfbe78214b38a448b8ede36e142cd6bf3cb15dd5"
+    },
+    {
+      "path": "models/packages/controls/PC-10.model.json",
+      "reproduced": true,
+      "sha256": "448e33f5d1727835a0803bac740c4438039421dc0013fb49c0e9bfe2eed6db32"
+    },
+    {
+      "path": "models/packages/controls/PC-11.model.json",
+      "reproduced": true,
+      "sha256": "0be4aa6bce7d777fe59399ad58c7ace93f81f6555c1dff0ce5ac49badb9e365e"
+    },
+    {
+      "path": "models/packages/controls/PC-12.model.json",
+      "reproduced": true,
+      "sha256": "8803c33e7e4d40a3694f8d06c6644734c40a12365fae8e7f133e5999407c3164"
+    },
+    {
+      "path": "models/packages/controls/PC-13.model.json",
+      "reproduced": true,
+      "sha256": "e18b62975b4cc8fc6d402071f3d8a948b2ac96661f7164f311e0ba5f3accd6da"
+    },
+    {
+      "path": "models/packages/controls/PC-14.model.json",
+      "reproduced": true,
+      "sha256": "8f50e5beb3c562ff498602d1b5f2eb313d3ac556d140d5437a4df1aa20f1b72e"
+    },
+    {
+      "path": "models/packages/controls/PC-15.model.json",
+      "reproduced": true,
+      "sha256": "f78c80fa6584885582599ee049ed05d703968d210d1ccbdb0eed96e34de45ace"
+    },
+    {
+      "path": "models/packages/controls/PC-16.model.json",
+      "reproduced": true,
+      "sha256": "e2ba866e0b493d3d34331fa0b4980ba0f746a45bf5a5a38b729681b8958efac8"
+    },
+    {
+      "path": "models/packages/controls/PC-17.model.json",
+      "reproduced": true,
+      "sha256": "a17732ff57a1a509fa45d27229acf953a971e80254cfd2ab18bb427183ae4bc5"
+    },
+    {
+      "path": "models/packages/controls/SC-01.assembly.json",
+      "reproduced": true,
+      "sha256": "50399ae635c13b231670e9eaaf74d3625621f62f2452939cdacdd768ce2a7e30"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-01.certificate.json",
+      "reproduced": true,
+      "sha256": "6274ee7068f0226aea94d70594d293f6386fa08da62a39bb87427740aa59f0a1"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-02.certificate.json",
+      "reproduced": true,
+      "sha256": "b43bc5813e3b1fb28db3e4afc49d0716590d1eb9c0326dc37e146f32b0a37c9b"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-03.certificate.json",
+      "reproduced": true,
+      "sha256": "bc5bd8ab15a3f41f5553c7b1b31e21b66007b13a5efab07baea819c456f586f3"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-04.certificate.json",
+      "reproduced": true,
+      "sha256": "f6e27066ca004e761b7441f3474841ea38ed440a91e7bb94483fc5b4e3992535"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-05.certificate.json",
+      "reproduced": true,
+      "sha256": "b973648d2e5538bdbbaffc511388443728710b0829cd2045f1af7173c2753af8"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-06.certificate.json",
+      "reproduced": true,
+      "sha256": "289695362516820d71c31fe6323646b8087cf9724d48c1fe3ef9907cbd77bbf6"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-07.certificate.json",
+      "reproduced": true,
+      "sha256": "0b31ce4d8f241170e67fc59e14c8423c1fe1a5ffbee000c9e7da8b4c63458485"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-08.certificate.json",
+      "reproduced": true,
+      "sha256": "6eed3d33be11051cf24c482fe28d2202adfb718f8c42cedd5f991fd4d174ba86"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-09.certificate.json",
+      "reproduced": true,
+      "sha256": "f126c81b3407b651959961d77aca1a22093ace5d7537823ca8de051034e0c4e5"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-10.certificate.json",
+      "reproduced": true,
+      "sha256": "afbe5ba0587448772b64418833e2e6d43b94fab95bb98453b3d44f09005eb94b"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-11.certificate.json",
+      "reproduced": true,
+      "sha256": "c16be9957c48bb8f845b91a70e87a074e92bc73eb46e72582a222d98a3c33638"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-12.certificate.json",
+      "reproduced": true,
+      "sha256": "8366aa43403f664524cf764ae6ef148757410a23c512fb98e8f9a41f3f4adb65"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-13.certificate.json",
+      "reproduced": true,
+      "sha256": "b97925c0eaf312b7a4d967d450406d1ccfb1969ea04dcdb1a5b9e5546512e89b"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-14.certificate.json",
+      "reproduced": true,
+      "sha256": "706874dbba5e7fb28070453563ebe173f38154276c15a6eb7b9b023fc36b0655"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-15.certificate.json",
+      "reproduced": true,
+      "sha256": "a3b42ab3d31f6a0e48d755cb8132f8b789684688892e5668862e9ddf3810c105"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-16.certificate.json",
+      "reproduced": true,
+      "sha256": "1e5436dad6634d2484204589e150b8dd53b9b9045ff41e183a61f8634ae22393"
+    },
+    {
+      "path": "formal/certificates/packages/controls/PC-17.certificate.json",
+      "reproduced": true,
+      "sha256": "5015f128aad8b3696e202f579e18be075d7d89bc91fca380595c046bbe6f1c8a"
+    },
+    {
+      "path": "formal/certificates/packages/controls/SC-01.certificate.json",
+      "reproduced": true,
+      "sha256": "76144c9629151e88c70f4876754dcf72efa53cbc845e58bb75bede8bf7717073"
+    }
+  ],
+  "validator_returncode": 0
+}

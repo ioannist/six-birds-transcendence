@@ -1,0 +1,86 @@
+# Repository dialect that must not appear in this paper's prose (abstract, body, captions).
+# Exempt: the result-to-Lean appendix and sections marked "% style-lint: six-birds-section".
+# One Python regular expression per line; text after " # " is the suggested replacement.
+# Premise and step labels in the style of the exemplars ((A1), (P1), (C), H1) are allowed.
+#
+# Inherited from ../six-birds-consciousness/paper/prewriting/style_denylist.txt (commit 41de532).
+\bT1?\d[a-e]?(?:-[A-Z]\w*)?\b      # name the companion paper's result and cite it
+\bC[1-8]\b                        # name the condition ("the viability condition")
+\bD[1-4]\b                        # name the derived structure
+\bTier[~ ]?(?:S|R|O)\b            # state the claim-reading convention once; otherwise plain words
+\bC-package\b                     # the closure architecture / the eight conditions
+\bdeclared carriers?\b            # the system
+\bcarriers?\b                     # system(s); state space
+\blanded\b                        # proved / computed / established
+\bnonclaims?\b                    # say what is not shown, once
+\bpackets?\b                      # never in prose
+\bverdicts?\b                     # result / outcome
+\bregistry\b                      # never in prose
+\bexact finite stud(?:y|ies)\b    # exact computation / exhaustive enumeration
+\baudit contract\b                # specification
+\bCORE\b                          # define once or avoid
+\\grade(?:S|R|O|Open)\b           # no lane markers in prose or theorems
+\btheory packages?\b              # move to the Six Birds section, or say it in plain words
+\bgate panels?\b                  # move to the Six Birds section
+\bpromotion gates?\b              # move to the Six Birds section
+\b(?:strict )?promot(?:ion|ed|es)\b   # "a finer description not recoverable from the coarser one"
+\bclosure[- ]deficits?\b          # move to the Six Birds section
+\bno-overreading\b                # "a report licenses only what descends to it"
+\bsix[- ]roles?\b                 # move to the Six Birds section
+\bdefinability algebra\b          # "the predicates the description can define"
+\b(?:HOLMEM|THROW|PTRAP|NOTCH|SPEND|WMEW|NOGO|REFLEX|HIDD|MER|QSB|CAST|PLOT)\b   # corpus paper acronyms: Six Birds section only
+#
+# Added for this repository (CST-TT dialect).
+# The linter must strip all math before matching: $...$, \(...\), \[...\], $$...$$ and math
+# environments (equation, align, gather, multline and their starred forms). Prose inside \text{...}
+# within math is kept and scanned. So symbols such as $G2$ or $N$ are not scanned. Patterns below are written to spare ordinary mathematical and software English.
+\bTT[HNFDSM]-\d+\b                # name the result; labels live in the result-to-Lean appendix
+\bCST-(?:TT|EXP)(?:-\d+\w*)?\b     # never in prose
+\b(?:Temporal-)?FIACH\b           # the strict continuation result, by its name (also catches FIACH-COMP-A etc.)
+\b(?:Temporal-)?IAPS\b            # the ancestry-based result, by its own name
+\bFULL-NATIVE(?:-\d+)?\b          # "the finite handoff model" (plain description)
+\b(?:COR-)?POS-?\d+\w*\b          # describe the model or obstruction in words
+\b(?:AS|CM|TTM)-\d+\b             # assumption/countermodel codes: appendix only
+\bPKG-[A-Z0-9][A-Z0-9-]*\b         # package/obligation codes (PKG-01, PKG-O01, PKG-FIS-LEFT): appendix only
+\bG(?:[1-9]|[1-3]\d)[a-d]?\b       # campaign packet numbers (G2c, G31b): never in prose (math is stripped first)
+\bN(?:[1-9]|10)\b                  # repair codes (N8, N9, N10): describe the repair in words
+\bROM\b                           # describe the projection in words
+\bAccept0\d\b                     # "the acceptance condition" in words
+\bSBT\b                           # Six Birds section only
+\bA2-P\b                          # Substrate Indifference, named in words
+\bH-(?:FELT|CONT)-TIME\b          # name the interpretive hypothesis in words
+\b(?:integrated |target |source |whole |C1.C8.shaped )?packages?\b(?<!Python packages)(?<!Python package)(?<!software packages)(?<!software package)(?<!LaTeX packages)(?<!LaTeX package)(?<! R packages)(?<! R package)   # say which conditions hold and at what grade (style guide, Section 2)
+\bcorridors?\b                    # a chain of handoffs; an overlap chain
+\btoys?\b                         # a small example; the model
+\bhard[- ]gates?\b                # a required condition
+\bclaim ceilings?\b               # never in prose
+\bceiling_0\d\b                   # never in prose
+\bsurrogate grades?\b             # say in words which conditions hold in simplified form
+\bclaim lanes?\b                  # state the claim-reading convention once
+\blanes? (?:S|R|O|A|M)\b           # state the claim-reading convention once
+\bS-[TRL]\b                        # claim-lane codes: never in prose
+\breceipts?\b                     # never in prose
+\bledgers?\b                      # never in prose
+\b\w+-native\b                    # "the target's own"
+\b(?:target|source|branch|self)-owned\b   # "maintained by the target itself"; say who maintains what
+\b[a-z]+(?:[A-Z][a-z0-9]*)+\b        # code identifiers and enum names in prose (routeIndexed, notAddressed): describe in words
+\broute residue\b                 # route memory
+\btranscend\w*\b                  # "continuation"; the project name belongs in the Six Birds section
+#
+# Linter fixtures (W8 must turn these into tests). Each line: FIXTURE-<PASS|FAIL> <text>.
+# FIXTURE-PASS The bound uses integer ceilings and floors.
+# FIXTURE-PASS The checks run with standard Python packages installed.
+# FIXTURE-PASS The figure draws the two branches in separate lanes.
+# FIXTURE-PASS We write $G_2$ for the second group and $N$ for the horizon.
+# FIXTURE-PASS We write $G2$ and \(G2\) for the group, and $N9$ for the bound.
+# FIXTURE-PASS The analysis used standard R packages.
+# FIXTURE-FAIL The state is $x \text{ in the G31b model}$.
+# FIXTURE-FAIL The resource is source-owned.
+# FIXTURE-FAIL The route status is routeIndexed and recognition is notAddressed.
+# FIXTURE-PASS The target system meets conditions (1)-(3) as stated.
+# FIXTURE-FAIL The G31b model proves it.
+# FIXTURE-FAIL Codes PKG-01, PKG-O01 and PKG-FIS-LEFT are listed.
+# FIXTURE-FAIL The integrated package is realized.
+# FIXTURE-FAIL This is the N9 repair.
+# FIXTURE-FAIL The claim ceiling is structural.
+# FIXTURE-FAIL Temporal-IAPS holds on FULL-NATIVE-02.

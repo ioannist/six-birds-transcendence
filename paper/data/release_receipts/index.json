@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "paper/tools/render_index.py",
+    "--check"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "index",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W22-round2/index.log",
+  "log_sha256": "6e5cd52e6886f0d5c647077227fc7c868eb475808764bff73fa04c74ee16cfd7",
+  "metrics": {},
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-14T10:57:30+00:00",
+  "status": "pass",
+  "summary": "PASS: result-to-Lean index matches its inputs"
+}

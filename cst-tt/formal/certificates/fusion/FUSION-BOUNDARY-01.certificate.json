@@ -1,0 +1,55 @@
+{
+  "audit": {
+    "action_credit_conflict_witnessed": true,
+    "branchwise_payload_preserved": true,
+    "certificate_id": "FUSION-BOUNDARY-01",
+    "common_target": true,
+    "component_hashes_valid": true,
+    "distinct_sources": true,
+    "failed_obligations": [],
+    "fusion_boundary_valid": true,
+    "integrated_target_package_fails": true,
+    "left_lineage_valid": true,
+    "merger_does_not_imply_package": true,
+    "recombination_failure_witnessed": true,
+    "right_lineage_valid": true,
+    "target_package_audited": true
+  },
+  "branchwise_payload_preserved": true,
+  "certificate_id": "FUSION-BOUNDARY-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_fusion_boundary",
+    "module": "cst_tt.branching",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite separation of branchwise lineage merger from integrated target package",
+  "claim_lanes": [
+    "S-L",
+    "S-R"
+  ],
+  "component_refs": {
+    "left_corridor": "formal/certificates/fusion/corridors/COR-FUS-LEFT.certificate.json",
+    "right_corridor": "formal/certificates/fusion/corridors/COR-FUS-RIGHT.certificate.json",
+    "target_package": "formal/certificates/fusion/packages/PKG-FUS-NEG-01.certificate.json"
+  },
+  "component_sha256": {
+    "left_corridor": "8d8a5570312e12f7d222005d1bad4009e288fa56610a7498fcf616eb91b14c03",
+    "right_corridor": "5e8d6204b87c87dd5dc6f14d5aaf45e44b1a0507edbbc95cb5de7689a5e462e4",
+    "target_package": "5c470f03835935d2f069890210e0ebbf3debeeabe157037b54937b9c2db5b92a"
+  },
+  "model_ref": "models/fusion/FUSION-BOUNDARY-01.model.json",
+  "model_sha256": "b9a468e04e2068a9b0b8d4c45c0e11b0b24cee5e45b77ad59cd8072ab9c8658a",
+  "result_status": "checked-finite-fusion-recombination-boundary",
+  "schema_version": "CST-TT-06",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.PackageTheory.fusionLineageDoesNotImplyIntegratedPackage",
+      "CSTTT.PackageTheory.fusionBranchwiseDoesNotRepairRecombination"
+    ],
+    "theorem_ids": [
+      "TTN-14"
+    ]
+  }
+}

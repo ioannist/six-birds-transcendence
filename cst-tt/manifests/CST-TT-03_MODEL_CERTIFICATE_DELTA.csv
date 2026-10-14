@@ -1,0 +1,40 @@
+artifact_id,artifact_kind,model_ref,certificate_ref,result_status,claim_ceiling
+TR-POS-01,positive-transport,models/transport/TR-POS-01.model.json,formal/certificates/transport/TR-POS-01.certificate.json,checked-finite-temporal-transport-certificate,finite structural temporal transport only
+TR-POS-02-FLAT,positive-transport,models/transport/TR-POS-02-FLAT.model.json,formal/certificates/transport/TR-POS-02-FLAT.certificate.json,checked-finite-temporal-transport-certificate,finite structural temporal transport only
+ROUTE-POS-01,route,models/routes/ROUTE-POS-01.model.json,formal/certificates/routes/ROUTE-POS-01.certificate.json,checked-finite-certificate,finite route independence under declared confluence only
+ROUTE-NEG-01,route,models/routes/ROUTE-NEG-01.model.json,formal/certificates/routes/ROUTE-NEG-01.certificate.json,checked-finite-certificate,finite route-indexed obstruction only
+MEM-POS-01,memory-or-flatness,models/memory/MEM-POS-01.model.json,formal/certificates/memory/MEM-POS-01.certificate.json,checked-finite-certificate,finite structural result only
+MEM-FLAT-01,memory-or-flatness,models/memory/MEM-FLAT-01.model.json,formal/certificates/memory/MEM-FLAT-01.certificate.json,checked-finite-certificate,finite structural result only
+ARROW-POS-01,record-arrow,models/arrow/ARROW-POS-01.model.json,formal/certificates/arrow/ARROW-POS-01.certificate.json,checked-finite-certificate,finite structural result only
+TR-C01,transport-control,models/transport/controls/TR-C01.model.json,formal/certificates/transport/controls/TR-C01.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C02,transport-control,models/transport/controls/TR-C02.model.json,formal/certificates/transport/controls/TR-C02.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C03,transport-control,models/transport/controls/TR-C03.model.json,formal/certificates/transport/controls/TR-C03.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C04,transport-control,models/transport/controls/TR-C04.model.json,formal/certificates/transport/controls/TR-C04.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C05,transport-control,models/transport/controls/TR-C05.model.json,formal/certificates/transport/controls/TR-C05.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C06,transport-control,models/transport/controls/TR-C06.model.json,formal/certificates/transport/controls/TR-C06.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C07,transport-control,models/transport/controls/TR-C07.model.json,formal/certificates/transport/controls/TR-C07.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C08,transport-control,models/transport/controls/TR-C08.model.json,formal/certificates/transport/controls/TR-C08.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C09,transport-control,models/transport/controls/TR-C09.model.json,formal/certificates/transport/controls/TR-C09.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C10,transport-control,models/transport/controls/TR-C10.model.json,formal/certificates/transport/controls/TR-C10.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C11,transport-control,models/transport/controls/TR-C11.model.json,formal/certificates/transport/controls/TR-C11.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C12,transport-control,models/transport/controls/TR-C12.model.json,formal/certificates/transport/controls/TR-C12.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C13,transport-control,models/transport/controls/TR-C13.model.json,formal/certificates/transport/controls/TR-C13.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C14,transport-control,models/transport/controls/TR-C14.model.json,formal/certificates/transport/controls/TR-C14.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+TR-C15,transport-control,models/transport/controls/TR-C15.model.json,formal/certificates/transport/controls/TR-C15.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ROUTE-C01,route-control,models/transport/controls/ROUTE-C01.model.json,formal/certificates/transport/controls/ROUTE-C01.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ROUTE-C02,route-control,models/transport/controls/ROUTE-C02.model.json,formal/certificates/transport/controls/ROUTE-C02.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ROUTE-C03,route-control,models/transport/controls/ROUTE-C03.model.json,formal/certificates/transport/controls/ROUTE-C03.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ROUTE-C04,route-control,models/transport/controls/ROUTE-C04.model.json,formal/certificates/transport/controls/ROUTE-C04.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ROUTE-C05,route-control,models/transport/controls/ROUTE-C05.model.json,formal/certificates/transport/controls/ROUTE-C05.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ROUTE-C06,route-control,models/transport/controls/ROUTE-C06.model.json,formal/certificates/transport/controls/ROUTE-C06.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ROUTE-C07,route-control,models/transport/controls/ROUTE-C07.model.json,formal/certificates/transport/controls/ROUTE-C07.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ROUTE-C08,route-control,models/transport/controls/ROUTE-C08.model.json,formal/certificates/transport/controls/ROUTE-C08.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+MEM-C01,memory-control,models/transport/controls/MEM-C01.model.json,formal/certificates/transport/controls/MEM-C01.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ARROW-C01,record-arrow-control,models/transport/controls/ARROW-C01.model.json,formal/certificates/transport/controls/ARROW-C01.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ARROW-C02,record-arrow-control,models/transport/controls/ARROW-C02.model.json,formal/certificates/transport/controls/ARROW-C02.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ARROW-C03,record-arrow-control,models/transport/controls/ARROW-C03.model.json,formal/certificates/transport/controls/ARROW-C03.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+ARROW-C04,record-arrow-control,models/transport/controls/ARROW-C04.model.json,formal/certificates/transport/controls/ARROW-C04.certificate.json,checked-obligation-countermodel,finite structural obligation boundary only
+SEARCH-TRANSPORT-SHAPE,bounded-search,,formal/certificates/transport/BOUNDED_TRANSPORT_SHAPE_SEARCH.json,PASS,declared finite shape family only
+SEARCH-CONFLUENCE-SHAPE,bounded-search,,formal/certificates/routes/BOUNDED_CONFLUENCE_SHAPE_SEARCH.json,PASS,distinct start/branches/join with numeric acyclic rank only
+EXHAUST-MEMORY-OR-FLATNESS,bounded-exhaustion,,formal/certificates/memory/BOUNDED_MEMORY_OR_FLATNESS_EXHAUSTION.json,PASS,bounded corroboration of the generic proof source only
+EXHAUST-GLOBAL-NOW,bounded-exhaustion,,formal/certificates/routes/BOUNDED_GLOBAL_NOW_OBSTRUCTION_SEARCH.json,PASS,bounded corroboration of the generic proof source only

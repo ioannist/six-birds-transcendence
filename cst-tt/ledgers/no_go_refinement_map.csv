@@ -1,0 +1,32 @@
+theorem_id,theorem_title,prior_no_go_id,refinement_role,status,phase
+TH-02,Composition of typed predictive bridges,NG-12,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-03,Route independence from trivial cycle-basis holonomy,NG-06,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-04,Acyclic local-witness gluing for an integrated package,NG-08,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-05,Staged heterogeneous package preservation,NG-03,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-05,Staged heterogeneous package preservation,NG-08,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-06,Post-withdrawal invariant autonomy,NG-05,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-06,Post-withdrawal invariant autonomy,NG-18,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-07,Composition of finite causal-overlap corridors,NG-09,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-07,Composition of finite causal-overlap corridors,NG-10,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-08,Causal fission yields relation-valued continuation,NG-02,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-08,Causal fission yields relation-valued continuation,NG-16,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-10,"Fission, fusion, and empty targets under ancestry closure",NG-16,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-10,"Fission, fusion, and empty targets under ancestry closure",NG-17,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-11,Independent-twin exclusion under no-ex-nihilo ancestry,NG-09,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-12,Typed residual stability away from hard-gate boundaries,NG-07,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-13,Public-shadow nonidentifiability,NG-01,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-13,Public-shadow nonidentifiability,NG-13,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-14,Symmetric-duplication unique-selection impossibility,NG-02,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-14,Symmetric-duplication unique-selection impossibility,NG-16,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-15,Predictive quotient insufficiency for an independent package clause,NG-03,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-16,Branchwise preservation does not imply recombination preservation,NG-04,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-17,Permanent decoder support is not target autonomy,NG-05,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-17,Permanent decoder support is not target autonomy,NG-18,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-18,Nontrivial holonomy defeats route-independent transport,NG-06,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-19,A small scalar residual can hide a catastrophic local defect,NG-07,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-20,Local certificates need not admit a global package,NG-08,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-20,Local certificates need not admit a global package,NG-14,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-21,Temporal-gap underdetermination without dormancy semantics,NG-10,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-22,Endpoint equality does not establish causal-overlap lineage,NG-09,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-23,Bridge-composition noncongruence under omitted route memory,NG-12,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05
+TH-24,Fusion conflict for exclusive action-credit ledgers,NG-17,exact finite theorem prospectus or boundary refinement,not_proved,CST-EXP-05

@@ -1,0 +1,68 @@
+{
+  "audit": {
+    "all_stages_temporally_realized": true,
+    "atomic_leg_count": 1,
+    "boundary_signatures_compatible": true,
+    "carrier_chain_valid": true,
+    "distinct_endpoints": true,
+    "ends_target_only": true,
+    "event_graph_well_formed": true,
+    "every_adjacent_stage_operationally_linked": true,
+    "every_atomic_leg_valid": false,
+    "failed_obligations": [
+      "local-temporal-steps-valid",
+      "every-atomic-leg-valid",
+      "target-nonredundant"
+    ],
+    "forbidden_verdict_fields_absent": true,
+    "frontier_cover_valid": true,
+    "leg_audits": [
+      {
+        "atomic_leg_valid": false,
+        "audit_later_stage": 2,
+        "end_stage": 2,
+        "failed_obligations": [
+          "target-nonredundant"
+        ],
+        "leg_id": "leg-S-T",
+        "mixed_stage": 1,
+        "route_status": "route-indexed",
+        "source_carrier": 17,
+        "source_nonredundant": true,
+        "start_stage": 0,
+        "takeover_stage": 2,
+        "target_carrier": 101,
+        "target_nonredundant": false
+      }
+    ],
+    "leg_count_matches_chain": true,
+    "local_temporal_steps_valid": false,
+    "mixed_stage_count": 1,
+    "route_discipline_valid": true,
+    "route_status": "route-indexed",
+    "stage_indices_contiguous": true,
+    "stages_well_formed": true,
+    "starts_source_only": true,
+    "strict_corridor_valid": false,
+    "support_nonempty_and_unique": true
+  },
+  "certificate_id": "COR-C04",
+  "checker": {
+    "checked_at_phase": "CST-TT-04",
+    "function": "audit_strict_corridor",
+    "module": "cst_tt.corridor",
+    "python_version": "3.13.5"
+  },
+  "control_family": "strict-corridor",
+  "control_passed": true,
+  "expected_failed_obligation": "target-nonredundant",
+  "model_ref": "models/corridors/controls/COR-C04.model.json",
+  "model_sha256": "c126d432d5b744ccf9f54c0a9504301290986c7e800e3b734d0826fa6e0eae4c",
+  "observed_failed_obligations": [
+    "local-temporal-steps-valid",
+    "every-atomic-leg-valid",
+    "target-nonredundant"
+  ],
+  "result_status": "checked-finite-negative-control",
+  "schema_version": "CST-TT-04"
+}

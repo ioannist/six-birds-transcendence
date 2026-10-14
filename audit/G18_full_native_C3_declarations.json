@@ -1,0 +1,509 @@
+{
+  "schema": "csttt-G18-declarations-v1",
+  "source_sha256": {
+    "lean/CSTTT/FullNative/FullInterface.lean": "42e73e476ed478bd5a9a8e73bb331e8e26cec256b5d24239fed21142246d7de1",
+    "lean/CSTTT/FullNative/PhysicalFuture.lean": "fd9ee58a203363ed5bbfebf7428a96e75450bc12e3c83b5d782dc0b9cb5183ac",
+    "lean/CSTTT/FullNative/PhysicalProfile.lean": "f09087f816b0b34bdcef8ffdc0f7cbcfcbda557146f7733f26c046ed570d54d2",
+    "lean/CSTTT/FullNative/Primitives.lean": "290cb283f496c6af7603c1dd679854cad272d8628b5b8d988171e625acc59eef",
+    "lean/CSTTT/FullNative/WeightedFuture.lean": "786ed4f50c2171c5d539182ceb560862ab3690bc913af1066d962af81bb0e8a6"
+  },
+  "declaration_count": 62,
+  "declarations": [
+    {
+      "name": "CSTTT.FullNative.FullInterface.Context",
+      "kind": "structure",
+      "line": 14,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.Run",
+      "kind": "structure",
+      "line": 22,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.advanceContext",
+      "kind": "def",
+      "line": 27,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.advance",
+      "kind": "def",
+      "line": 30,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.rows",
+      "kind": "def",
+      "line": 32,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.observe",
+      "kind": "def",
+      "line": 39,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.code",
+      "kind": "def",
+      "line": 44,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.project",
+      "kind": "def",
+      "line": 45,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.representative",
+      "kind": "def",
+      "line": 46,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.projected_rows",
+      "kind": "theorem",
+      "line": 49,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.observation_projection",
+      "kind": "theorem",
+      "line": 61,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.code_projection_exact",
+      "kind": "theorem",
+      "line": 67,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.all_words",
+      "kind": "theorem",
+      "line": 70,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.matched_full_future_exact",
+      "kind": "theorem",
+      "line": 78,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.supported_update",
+      "kind": "theorem",
+      "line": 96,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.disabled_rows",
+      "kind": "theorem",
+      "line": 109,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.rootState",
+      "kind": "def",
+      "line": 112,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.replicaLeft",
+      "kind": "def",
+      "line": 113,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.replicaRight",
+      "kind": "def",
+      "line": 114,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.FullInterface.reachable_replica_fiber",
+      "kind": "theorem",
+      "line": 120,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/FullInterface.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Shape",
+      "kind": "structure",
+      "line": 7,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.eraseReplica",
+      "kind": "def",
+      "line": 14,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.representative",
+      "kind": "def",
+      "line": 15,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.erase_representative",
+      "kind": "theorem",
+      "line": 17,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.projected_rows",
+      "kind": "theorem",
+      "line": 20,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.public_projection",
+      "kind": "theorem",
+      "line": 25,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.classes_shape_exact",
+      "kind": "theorem",
+      "line": 28,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.public_all_words",
+      "kind": "theorem",
+      "line": 39,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.probe",
+      "kind": "def",
+      "line": 51,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.probe_row",
+      "kind": "theorem",
+      "line": 53,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.probe_law",
+      "kind": "theorem",
+      "line": 57,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.current_probe_shape_exact",
+      "kind": "theorem",
+      "line": 65,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.full_public_future_exact",
+      "kind": "theorem",
+      "line": 76,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.state_mem",
+      "kind": "theorem",
+      "line": 9,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalProfile.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.state_domain",
+      "kind": "theorem",
+      "line": 14,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalProfile.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.rows_positive_normalized",
+      "kind": "theorem",
+      "line": 16,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalProfile.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.supported_phase",
+      "kind": "theorem",
+      "line": 23,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalProfile.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.classFormula",
+      "kind": "def",
+      "line": 34,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalProfile.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.first_profile_equation",
+      "kind": "theorem",
+      "line": 37,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalProfile.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.step_profile_equation",
+      "kind": "theorem",
+      "line": 43,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalProfile.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.stable_profile_forever",
+      "kind": "theorem",
+      "line": 49,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalProfile.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.profile_trajectory",
+      "kind": "theorem",
+      "line": 57,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalProfile.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.State",
+      "kind": "structure",
+      "line": 12,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.bits",
+      "kind": "def",
+      "line": 20,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.kernels",
+      "kind": "def",
+      "line": 21,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.states",
+      "kind": "def",
+      "line": 22,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.bit",
+      "kind": "def",
+      "line": 25,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.kernelCode",
+      "kind": "def",
+      "line": 26,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.publicLens",
+      "kind": "def",
+      "line": 27,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.diagonal",
+      "kind": "def",
+      "line": 30,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.weight",
+      "kind": "def",
+      "line": 32,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.rows",
+      "kind": "def",
+      "line": 35,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Model",
+      "kind": "structure",
+      "line": 40,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.model",
+      "kind": "def",
+      "line": 44,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.flatten",
+      "kind": "def",
+      "line": 45,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.rationalRows",
+      "kind": "def",
+      "line": 50,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.profile",
+      "kind": "def",
+      "line": 57,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.classes",
+      "kind": "def",
+      "line": 61,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/Primitives.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.WeightedFuture.law",
+      "kind": "def",
+      "line": 9,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/WeightedFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.WeightedFuture.projectedRows",
+      "kind": "def",
+      "line": 18,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/WeightedFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.WeightedFuture.projected_law",
+      "kind": "theorem",
+      "line": 24,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/WeightedFuture.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.WeightedFuture.equal_projection_all_words",
+      "kind": "theorem",
+      "line": 46,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/WeightedFuture.lean"
+    }
+  ]
+}

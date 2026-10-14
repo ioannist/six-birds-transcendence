@@ -1,0 +1,10 @@
+{
+  "final_status_policy": "no theorem is promoted to proved without successful kernel compilation",
+  "lake_executable_detected_at_build": false,
+  "lean_compile_status": "not-run-toolchain-unavailable",
+  "lean_executable_detected_at_build": false,
+  "lean_toolchain": "leanprover/lean4:v4.28.0",
+  "phase": "CST-TT-08",
+  "python_certificate_status": "checked",
+  "python_version": "3.13.5"
+}

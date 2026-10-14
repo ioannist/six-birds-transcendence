@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_receiver_sequence_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_receiver_sequence_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_receiver_sequence_transcription.log",
+  "log_sha256": "8ebbb82659c47e55bddf0065a50a9481a37c73ac42eeb89f0b5d28cd44c31da9",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:48+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted owner drift\nCAUGHT planted route drift\nCAUGHT planted constant control drift\nPASS raw delivery instructions/source pair and kernel actual receiver content, collision and source-erasure controls\nScope: immediate common-coordinate receiver operation; physical middle interface, supported acquisition and full two-hop Temporal-FIACH remain open"
+}

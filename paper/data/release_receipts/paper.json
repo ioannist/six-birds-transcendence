@@ -1,0 +1,24 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "pytest",
+    "-q",
+    "paper/tests"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "paper",
+  "kind": "pytest",
+  "log_path": "lean/.validate-logs/W24-archive-refresh/paper.log",
+  "log_sha256": "5d55edbd8ea0cc4dd0a1eb1a83c43dd56e08faf597f6f74301649be78e225ac3",
+  "metrics": {
+    "passed": 205
+  },
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-14T13:26:15+00:00",
+  "status": "pass",
+  "summary": "205 passed in 204.91s (0:03:24)"
+}

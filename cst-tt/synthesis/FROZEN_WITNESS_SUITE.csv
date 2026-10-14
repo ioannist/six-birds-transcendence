@@ -1,0 +1,13 @@
+witness_id,target_scope,role,title,source_models,exact_purpose,status
+PW-01,primary,positive,Live integrated handoff,MF-02 × MF-07 × MF-10,Four-stage source/mixed/target support sequence; eight finite package proxies; target-owned invariant region after withdrawal.,specified_not_implemented
+PW-02,primary,negative,Detached exact copy,MF-03 with MF-07 target,Same endpoint package and autonomy but no mixed/no-gap corridor; S-L fails under FT-01.,specified_not_implemented
+PW-03,primary,negative,Decoder shadow,MF-07 shadow,Supported public/package fields match before withdrawal; target collapses after decoder/scheduler/repair removal.,specified_not_implemented
+PW-04,primary,negative,Local-global obstruction,MF-06/MF-07,Every local clause check passes while parity/gluing prevents one global package.,specified_not_implemented
+PW-05,primary,branch,Symmetric live fission,MF-04 with duplicated valid corridor suffix,Both branches satisfy corridor/package/autonomy; target-swap symmetry blocks unique selection.,specified_not_implemented
+PW-06,primary,route,Replacement-order holonomy,MF-08,Two locally valid routes agree publicly but differ on retained route memory; composition needs flatness/confluence.,specified_not_implemented
+FW-01,fallback,positive,Source-derived destructive successor,MF-03 + MF-07 target,"Operational source-record-target path, predictive bridge, target package, and autonomy; no live overlap required.",specified_not_implemented
+FW-02,fallback,negative,Independent structural twin,MF-03 twin/MF-05,Isomorphic target with no source-reachable provenance path is excluded by no-ex-nihilo ancestry.,specified_not_implemented
+FW-03,fallback,branch,Symmetric duplication,MF-04,Both source-derived copies enter Anc; no invariant singleton selector.,specified_not_implemented
+FW-04,fallback,fusion,Fusion with recombination conflict,MF-06,Many-to-one ancestry may exist while integrated target package fails the conflict/gluing guard.,specified_not_implemented
+CW-01,common,negative,Public-shadow collision,MF-01/MF-05,"Same public/report input, different hidden predictive/package fact.",specified_not_implemented
+CW-02,common,negative,Scalar residual false positive,MF-09,Small aggregate score hides a viability hard-gate failure.,specified_not_implemented

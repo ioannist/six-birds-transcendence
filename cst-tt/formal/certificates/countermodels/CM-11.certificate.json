@@ -1,0 +1,43 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm11_symmetryNoUniqueSelector",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-11",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-L",
+    "O"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-11",
+  "finite_model_ref": "models/countermodels/CM-11.model.json",
+  "finite_model_sha256": "dfb96699a8bc01711c189d40215e89408af25a7112ba1e90e7ee28afef7a2c8a",
+  "minimality_status": "certified",
+  "model_family": "symmetric-fork",
+  "name": "Exact symmetric fork without an invariant unique selector",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "A fixed-point-free target-swap symmetry supports relation-valued branches but no invariant singleton choice.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "all permutations on 1..4 targets",
+    "candidates_explored": 33,
+    "lower_bound_argument": "A fixed-point-free symmetry needs at least two targets; the two-cycle is minimal.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 4,
+    "same_size_candidates_explored": 2,
+    "same_size_qualifying_candidates": 1,
+    "size_measure": "(target_count)",
+    "smaller_candidates_explored": 1,
+    "witness_size_vector": [
+      2
+    ]
+  },
+  "target_no_go_id": "TTN-11",
+  "toy_model_ref": "TTM-07"
+}

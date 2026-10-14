@@ -1,0 +1,514 @@
+{
+  "schema": "csttt-G19-declarations-v1",
+  "source_sha256": {
+    "lean/CSTTT/FullNative/AccountExecution.lean": "ea60deede7156a52d6d29edb24cca246031c846941e68335cba9f3f9cee9b9a7",
+    "lean/CSTTT/FullNative/PhysicalExecution.lean": "cb0a1dd5123f60320ccdd1ab8f25d3b946720de1a6839cf4075fd5c2cb24c9b2"
+  },
+  "declaration_count": 63,
+  "declarations": [
+    {
+      "name": "CSTTT.FullNative.AccountExecution.Owner",
+      "kind": "abbrev",
+      "line": 5,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.Token",
+      "kind": "abbrev",
+      "line": 6,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.Actor",
+      "kind": "inductive",
+      "line": 8,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.Accounts",
+      "kind": "structure",
+      "line": 13,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.Supply",
+      "kind": "abbrev",
+      "line": 18,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.renewable",
+      "kind": "def",
+      "line": 19,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.absentSupply",
+      "kind": "def",
+      "line": 20,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.put",
+      "kind": "def",
+      "line": 21,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.enabled",
+      "kind": "def",
+      "line": 24,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.debit",
+      "kind": "def",
+      "line": 27,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.transact",
+      "kind": "def",
+      "line": 30,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.initial",
+      "kind": "def",
+      "line": 35,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.allocateSiblings",
+      "kind": "def",
+      "line": 39,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.canonical",
+      "kind": "def",
+      "line": 47,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.initial_allocation",
+      "kind": "theorem",
+      "line": 50,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.charge_after",
+      "kind": "theorem",
+      "line": 66,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.other_charge",
+      "kind": "theorem",
+      "line": 70,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.cursor_after",
+      "kind": "theorem",
+      "line": 74,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.missing_energy_depletes",
+      "kind": "theorem",
+      "line": 78,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.renewable_charge",
+      "kind": "theorem",
+      "line": 82,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.port_consumption",
+      "kind": "theorem",
+      "line": 86,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.allocation_unchanged",
+      "kind": "theorem",
+      "line": 91,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.transaction_independence",
+      "kind": "theorem",
+      "line": 94,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.debit_empty",
+      "kind": "theorem",
+      "line": 99,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.other_cursor",
+      "kind": "theorem",
+      "line": 102,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.independent_transactions",
+      "kind": "theorem",
+      "line": 106,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.siblings_simultaneously_enabled",
+      "kind": "theorem",
+      "line": 117,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.sibling_ports_independent",
+      "kind": "theorem",
+      "line": 123,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.allocation_exclusive",
+      "kind": "theorem",
+      "line": 135,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.duplicate_owner_rejected",
+      "kind": "theorem",
+      "line": 141,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.AccountExecution.depleted_reserve_rejected",
+      "kind": "theorem",
+      "line": 149,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/AccountExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.Receipt",
+      "kind": "structure",
+      "line": 11,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.Local",
+      "kind": "structure",
+      "line": 22,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.Execution",
+      "kind": "structure",
+      "line": 31,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.issued",
+      "kind": "def",
+      "line": 35,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.advance",
+      "kind": "def",
+      "line": 40,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.rawRows",
+      "kind": "def",
+      "line": 46,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.normalizedRows",
+      "kind": "def",
+      "line": 53,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.frame",
+      "kind": "def",
+      "line": 56,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.source",
+      "kind": "def",
+      "line": 60,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.sector",
+      "kind": "def",
+      "line": 63,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.source_sector",
+      "kind": "theorem",
+      "line": 68,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.enabled_sector",
+      "kind": "theorem",
+      "line": 70,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.sector_preserved",
+      "kind": "theorem",
+      "line": 74,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.frame_advance",
+      "kind": "theorem",
+      "line": 78,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.sector_rows",
+      "kind": "theorem",
+      "line": 83,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.sector_projection",
+      "kind": "theorem",
+      "line": 89,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.no_program",
+      "kind": "theorem",
+      "line": 98,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.no_charge",
+      "kind": "theorem",
+      "line": 102,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.no_owner",
+      "kind": "theorem",
+      "line": 106,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.receipt_consumption",
+      "kind": "theorem",
+      "line": 111,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.energy_absence_stops_next",
+      "kind": "theorem",
+      "line": 124,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.actual_full_law",
+      "kind": "theorem",
+      "line": 129,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.Reachable",
+      "kind": "inductive",
+      "line": 152,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.reachable_sector",
+      "kind": "theorem",
+      "line": 157,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.enabled_row_mass",
+      "kind": "theorem",
+      "line": 167,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.reachable_receipts_local",
+      "kind": "theorem",
+      "line": 172,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.reachable_head_ends_current",
+      "kind": "theorem",
+      "line": 189,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.single_packet_consumed",
+      "kind": "theorem",
+      "line": 203,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.replicaLeft",
+      "kind": "def",
+      "line": 210,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.replicaRight",
+      "kind": "def",
+      "line": 211,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.actual_reachable_fiber",
+      "kind": "theorem",
+      "line": 213,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.PhysicalExecution.actual_reachable_fiber_full_future",
+      "kind": "theorem",
+      "line": 236,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/PhysicalExecution.lean"
+    }
+  ]
+}

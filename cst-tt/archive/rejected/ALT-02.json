@@ -1,0 +1,9 @@
+{
+  "name": "Ultimate source and target must share one mixed stage",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "docs/CORRIDOR_COMPOSITION_THEOREM.md",
+  "reason": "The rule is not stable under legitimate S-to-M-to-T composition.",
+  "rejected_id": "ALT-02",
+  "replacement": "chain of audited atomic overlap legs",
+  "status": "killed"
+}

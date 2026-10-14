@@ -1,0 +1,213 @@
+{
+  "bridge": {
+    "component_maps": {
+      "arrow_record": {
+        "3": "30",
+        "4": "40"
+      },
+      "maintenance_state": {
+        "MS0": "MT0",
+        "MS1": "MT1"
+      },
+      "order_state": {
+        "O0": "TO0",
+        "O1": "TO1"
+      },
+      "predictive_class": {
+        "P0": "Q0",
+        "P1": "Q1"
+      },
+      "progress_state": {
+        "G0": "TG0",
+        "G1": "TG1"
+      },
+      "route_residue": {
+        "RS0": "RT0",
+        "RS1": "RT1"
+      },
+      "tick_phase": {
+        "K0": "TK0",
+        "K1": "TK1"
+      }
+    },
+    "flatness_certificate_ref": "",
+    "ownership_interface_valid": true,
+    "representative_scope": "declared reachable image only",
+    "route_residue_retained": true,
+    "route_status": "route-indexed",
+    "source_predictive_equivalence_classes": [
+      [
+        "s0",
+        "s0-rep"
+      ],
+      [
+        "s1"
+      ]
+    ],
+    "source_reachable_states": [
+      "s0",
+      "s0-rep",
+      "s1"
+    ],
+    "state_map": {
+      "s0": "t0",
+      "s0-rep": "t0",
+      "s1": "t1"
+    }
+  },
+  "claim_ceiling": "finite structural temporal transport only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "expected_primary_failure": "carriers-distinct",
+  "model_id": "TR-C01",
+  "nonclaims": [
+    "no temporal lineage verdict",
+    "no autonomy verdict",
+    "no consciousness or phenomenal claim",
+    "no personal-identity or survival claim"
+  ],
+  "schema_version": "CST-TT-03",
+  "source": {
+    "alphabet_id": "temporal-alphabet-S",
+    "carrier": {
+      "code": 17,
+      "label": "source-substrate"
+    },
+    "record_strict_edges": [
+      [
+        "3",
+        "4"
+      ]
+    ],
+    "states": [
+      {
+        "arrow_record": "3",
+        "maintenance_state": "MS0",
+        "order_state": "O0",
+        "owner": 17,
+        "predictive_class": "P0",
+        "progress_state": "G0",
+        "route_residue": "RS0",
+        "state_id": "s0",
+        "tick_phase": "K0"
+      },
+      {
+        "arrow_record": "3",
+        "maintenance_state": "MS0",
+        "order_state": "O0",
+        "owner": 17,
+        "predictive_class": "P0",
+        "progress_state": "G0",
+        "route_residue": "RS0",
+        "state_id": "s0-rep",
+        "tick_phase": "K0"
+      },
+      {
+        "arrow_record": "4",
+        "maintenance_state": "MS1",
+        "order_state": "O1",
+        "owner": 17,
+        "predictive_class": "P1",
+        "progress_state": "G1",
+        "route_residue": "RS1",
+        "state_id": "s1",
+        "tick_phase": "K1"
+      }
+    ],
+    "successor_edges": [
+      [
+        "s0",
+        "s1"
+      ],
+      [
+        "s0-rep",
+        "s1"
+      ]
+    ],
+    "temporal_witness": {
+      "endogenous_arrow": true,
+      "future_sufficient": true,
+      "genuine_progress": true,
+      "maintenance_owned": true,
+      "no_external_scheduler": true,
+      "order_stable": true,
+      "record_advances": true,
+      "state_id": "s0",
+      "successor_available": true,
+      "tick_viable": true
+    },
+    "tick_progress_edges": [
+      [
+        "s0",
+        "s1"
+      ],
+      [
+        "s0-rep",
+        "s1"
+      ]
+    ]
+  },
+  "target": {
+    "alphabet_id": "temporal-alphabet-T",
+    "carrier": {
+      "code": 17,
+      "label": "target-substrate"
+    },
+    "record_strict_edges": [
+      [
+        "30",
+        "40"
+      ]
+    ],
+    "states": [
+      {
+        "arrow_record": "30",
+        "maintenance_state": "MT0",
+        "order_state": "TO0",
+        "owner": 101,
+        "predictive_class": "Q0",
+        "progress_state": "TG0",
+        "route_residue": "RT0",
+        "state_id": "t0",
+        "tick_phase": "TK0"
+      },
+      {
+        "arrow_record": "40",
+        "maintenance_state": "MT1",
+        "order_state": "TO1",
+        "owner": 101,
+        "predictive_class": "Q1",
+        "progress_state": "TG1",
+        "route_residue": "RT1",
+        "state_id": "t1",
+        "tick_phase": "TK1"
+      }
+    ],
+    "successor_edges": [
+      [
+        "t0",
+        "t1"
+      ]
+    ],
+    "temporal_witness": {
+      "endogenous_arrow": true,
+      "future_sufficient": true,
+      "genuine_progress": true,
+      "maintenance_owned": true,
+      "no_external_scheduler": true,
+      "order_stable": true,
+      "record_advances": true,
+      "state_id": "t0",
+      "successor_available": true,
+      "tick_viable": true
+    },
+    "tick_progress_edges": [
+      [
+        "t0",
+        "t1"
+      ]
+    ]
+  },
+  "title": "same carrier on both sides"
+}

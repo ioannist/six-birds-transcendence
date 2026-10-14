@@ -1,0 +1,48 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "A",
+    "S-R"
+  ],
+  "conclusion_failure_checks": {
+    "autonomy_fails": true,
+    "post_withdrawal_progress_fails": true
+  },
+  "countermodel_id": "CM-04",
+  "derived_facts": {
+    "collapse_mode": "global-stall-after-withdrawal"
+  },
+  "family": "external-support-shadow",
+  "model": {
+    "after_scheduler_withdrawal": [
+      0,
+      1
+    ],
+    "post_withdrawal_autonomous": false,
+    "post_withdrawal_progress": false,
+    "runtime_temporal_match": true,
+    "state_count": 2,
+    "support_is_essential": true,
+    "supported_progress_states": [
+      0,
+      1
+    ],
+    "with_external_scheduler": [
+      1,
+      0
+    ]
+  },
+  "name": "Externally scheduled temporal shadow",
+  "premise_checks": {
+    "external_support_is_essential": true,
+    "runtime_match_while_supported": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "Runtime temporal progress maintained by an essential scheduler collapses after withdrawal.",
+  "size_measure": "(state_count)",
+  "size_vector": [
+    2
+  ],
+  "target_no_go_id": "TTN-06",
+  "toy_model_ref": "TTM-04"
+}

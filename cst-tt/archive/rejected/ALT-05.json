@@ -1,0 +1,9 @@
+{
+  "name": "Scalar average defect decides acceptance",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "CM-10;TTS-02",
+  "reason": "Equal or small scalar summaries can hide a failed hard gate.",
+  "rejected_id": "ALT-05",
+  "replacement": "exact componentwise defect vector",
+  "status": "killed"
+}

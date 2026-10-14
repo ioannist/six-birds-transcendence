@@ -1,0 +1,9 @@
+{
+  "name": "Arbitrarily long finite success implies unbounded liveness",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "TTN-12;TTS-04",
+  "reason": "Every finite horizon has a fail-next countdown; a total invariant policy is separately required.",
+  "rejected_id": "ALT-09",
+  "replacement": "model-relative total invariant policy",
+  "status": "killed"
+}

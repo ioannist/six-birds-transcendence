@@ -1,0 +1,27 @@
+{
+  "frozen_at_utc": "2026-10-10T18:58:59.735485+00:00",
+  "classification": "b",
+  "target_gain": "full unbounded owned-runtime predictive quotient and stable dynamic profile, coupled to actual rows/counter/budget; remove fullruntimeC3 gap before whole package assembly",
+  "baseline320_sha256": "394d25b397ff47d99bfd60fbd720cab72bbe94d0a6a6b9e973ee0e004ddf3719",
+  "raw_primitives": "UNCHANGED native Input and Carrier; no supplied M, row law, profile, coordinate transition or future equality",
+  "coordinate": "derive Owner/Factor/counter/budget from actual Carrier, forget internal record only; representative derives same fields with empty inert record",
+  "descended_rows": "derive guard and transitions directly from native raw rows and coordinate carried updater; positive-weight/missing/wrong-owner/underbudget behavior inherited exactly",
+  "profile": "lower internal self-lens counter/budget (not public exposure tuple); refine by actual supported native probe outgoing row with labeled outside identity; signature computed from native weighted successor coordinate; terminal equivalence computed by this profile and recursive row comparison",
+  "support": "fixed owner, every positive-budget inside carrier, arbitrary unbounded counter and stored record; full raw descent valid for all Input/carriers/actions",
+  "future_family": "ALL Nat decoders of complete runtime coordinate, ALL finite Bool action words/ALL observation histories; probe true supplies full labeled exit identity and successor counter/budget",
+  "predictions": [
+    "descended row equation exact for ALL raw Input and carrier/action",
+    "coordinate mass equals actual lifted mass for every decoder/word/history, raw arbitrary input",
+    "on owned positive-budget inside realized support, actual one-probe profile equality iff coordinate equality",
+    "same profile iff all coordinate-observed finite future laws agree",
+    "profile stable under one recursive successor-row refinement; further refinement cannot split equal coordinates",
+    "forgetting arbitrary stored record is legitimate for declared law but not for a channel exposing entire record",
+    "Factor-only quotient is insufficient for exposed counter/budget; already-proved adjacenttick negative retained"
+  ],
+  "nonclaims": [
+    "internal self-lens/profile is not a newly exposed public channel",
+    "not full arbitrary-history record-observation quotient",
+    "not original finite full-state universe; counter/budget unbounded",
+    "full source-target/eight-clause coherence and campaign gates remain pending"
+  ]
+}

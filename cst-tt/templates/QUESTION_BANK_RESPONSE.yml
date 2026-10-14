@@ -1,0 +1,14 @@
+schema_version: '1.1'
+candidate_id: null
+allowed_answer_statuses:
+- answered
+- underdetermined_with_reason
+- not_applicable_with_reason
+- blocked_with_reason
+answers: {}
+review:
+  core_unanswered_ids: []
+  all_unanswered_ids: []
+  guard_failures: []
+  reviewer: null
+  date: null

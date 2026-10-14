@@ -1,0 +1,308 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  citecolor=blue!50!black,
+  urlcolor=blue!80!black,
+  bookmarksnumbered=true,
+  pdfauthor={Ioannis Tsiokos},
+  pdftitle={Six Birds Protocol Trap: Holonomy Without Entropy Production}
+}
+\usepackage{natbib}
+\setcitestyle{numbers,square,comma}
+\usepackage{orcidlink}
+
+\graphicspath{{figures/}}
+\IfFileExists{constants.tex}{\newcommand{\CommNorm}{0.1296}
+\newcommand{\EprKZero}{0}
+\newcommand{\EprKOne}{0}
+\newcommand{\EprStrobe}{0.0833178226788952}
+\newcommand{\EprLiftedUnbiased}{\ensuremath{5.551115123125783\times 10^{-18}}}
+\newcommand{\AlphaDefault}{0.5}
+\newcommand{\BetaDefault}{0.9}
+\newcommand{\EprLiftedBHalf}{0.2471877649503247}
+\newcommand{\EprLiftedBPointNine}{1.1924977865624082}
+\newcommand{\EprPhaseBHalf}{0.4943755299006495}
+\newcommand{\EprPhaseBPointNine}{2.3849955731248169}
+\newcommand{\SigmaTwoBHalf}{0.4943755299006497}
+\newcommand{\SigmaThreeBHalf}{0.7415632948509763}
+\newcommand{\RowSumMaxDev}{\ensuremath{2.220446049250313\times 10^{-16}}}
+\newcommand{\StationarityResidual}{0}
+ }{}
+
+\newcommand{\EprStrobeShort}{\ensuremath{\approx 0.083}}
+\newcommand{\EprLiftedUnbiasedShort}{\ensuremath{\,{<}\,10^{-17}}}
+\newcommand{\EprLiftedBHalfShort}{0.2472}
+\newcommand{\EprLiftedBPointNineShort}{1.1925}
+
+\newcommand{\EprStrobeRound}{\ensuremath{0.0833}}
+\newcommand{\EprLiftedUnbiasedRound}{\ensuremath{5.6\times 10^{-18}}}
+\newcommand{\RowSumMaxDevRound}{\ensuremath{2.2\times 10^{-16}}}
+
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedbottom
+
+\title{Six Birds Protocol Trap: Holonomy Without Entropy Production}
+\author{Ioannis Tsiokos\,\orcidlink{0009-0009-7659-5964}}
+\date{8 March 2026}
+
+\fancypagestyle{firstpage}{\fancyhf{}
+  \fancyfoot[C]{\scriptsize\begin{tabular}[t]{@{}c@{}}Automorph Inc., Wilmington, DE, USA \quad \texttt{ioannis@automorph.io} \quad DOI: 10.5281/zenodo.18906902\\[2pt]\textcopyright\ 2026 \quad CC-BY 4.0 \quad Preprint --- not peer reviewed.\end{tabular}}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+
+\begin{abstract}
+Protocol-driven dynamics often conflate \emph{route dependence} (noncommutativity/holonomy of update steps) with an \emph{arrow of time}, making time-asymmetry audits vulnerable to scheduling artifacts. We introduce an autonomous lifted-protocol formulation and a path-reversal audit decomposition, operationalize it via a fully explicit finite-state benchmark, and demonstrate a clean null-versus-driven separation between holonomy and directionality. Concretely, we define two reversible Markov kernels \(K_0,K_1\) on three states and compare (i) an \emph{externally scheduled} stroboscopic composition on \(X\) with (ii) an \emph{autonomous} time-homogeneous lift on \(Z=X\times\Phi\) driven by a clock. Under external scheduling, each step is reversible but the stroboscopic update has strictly positive entropy production \(\mathrm{EPR}\EprStrobeShort\), with a noncommutativity witness \(\|K_0K_1-K_1K_0\|_\infty=\CommNorm\). Under the autonomous lift with a reversible (unbiased) clock (null control), the lifted chain is reversible and the arrow audit collapses to \(\mathrm{EPR}\EprLiftedUnbiasedShort\) (equivalently, path-reversal asymmetry vanishes). Turning on clock bias (drive) yields a positive arrow and the measured \(\mathrm{EPR}_{\mathrm{lifted}}\) matches \(\alpha\,\mathrm{EPR}_{\mathrm{clock}}\) across a bias sweep (Figure~\ref{fig:epr_vs_bias}). This separation reduces false positives when interpreting protocol effects as directionality and provides a reproducible audit template for switching Markov models and algorithmic protocols. We do not claim a general characterization of all nonequilibrium protocols; the conclusions are for finite-state discrete-time kernels and the random-scan autonomous lift studied here.
+\end{abstract}
+
+\medskip
+\noindent\textsc{Keywords:} protocol holonomy; arrow of time; entropy production; Markov chains; autonomous lift; directionality audit; Six Birds framework
+ \section{Introduction}
+
+Protocol-driven dynamics are ubiquitous in applied mathematics and computation: a controller switches between modes, an algorithm alternates update operators, a sampler cycles through kernels, or an experimental procedure repeats a schedule. In such settings, two issues are often conflated:
+
+\begin{itemize}
+\item \emph{Route dependence / holonomy:} the effective action depends on the order in which protocol steps are applied (noncommutativity).
+\item \emph{An arrow of time:} the dynamics exhibits time-reversal asymmetry, quantifiable by path-reversal divergence or entropy production.
+\end{itemize}
+
+This microarticle isolates a sharp warning: \emph{route dependence is not an arrow-of-time certificate}. In fact, a positive arrow audit can be created by an \emph{external schedule} even when each individual protocol step is reversible, while an \emph{autonomous} time-homogeneous model can have nontrivial holonomy and yet \emph{zero} arrow audit.
+
+\paragraph{Contribution.}
+We provide a minimal, fully explicit counterexample and a one-parameter driven extension:
+\begin{itemize}
+\item We exhibit two reversible \(3\times 3\) kernels \(K_0,K_1\) that do not commute (a holonomy witness) and whose externally scheduled stroboscopic composition \(K_0K_1\) has strictly positive entropy production \(\mathrm{EPR}\EprStrobeShort\).
+\item We construct an autonomous lifted protocol model on \(Z=X\times\Phi\) with a clock variable \(\Phi\). When the clock is reversible, the lifted chain is reversible and the arrow audit vanishes at stationarity (numerically \(\mathrm{EPR}\EprLiftedUnbiasedShort\)), despite the noncommutativity of the conditional kernels.
+\item We bias the clock cycle to introduce genuine drive and show that the resulting arrow is entirely attributable to the clock: \(\mathrm{EPR}_{\mathrm{lifted}}=\alpha\,\mathrm{EPR}_{\mathrm{clock}}\), confirmed across a bias sweep.
+\end{itemize}
+
+\paragraph{Relationship to preprints.}
+The labels \emph{P3} (protocol holonomy) and \emph{P6} (path-reversal audit) follow the Six Birds preprint by the same author~\cite{tsiokos2026sixbirds}; the present note is self-contained and adds new computed audits and the driven-clock curve.
+
+\paragraph{Organization.}
+Section~\ref{sec:setup} introduces the audit used here. Section~\ref{sec:minimal} gives the minimal scheduled counterexample. Section~\ref{sec:trap} presents the autonomous lift and the protocol-trap conclusion. Section~\ref{sec:driven} derives and verifies the driven-clock arrow curve.
+ \section{Setup and audit}\label{sec:setup}
+
+Let \(X\) be a finite state space. A (row-stochastic) Markov kernel \(P\) on \(X\) assigns transition probabilities \(P(x,y)\ge 0\) with \(\sum_y P(x,y)=1\) for each \(x\in X\). A probability distribution \(\mu\) on \(X\) is \emph{stationary} for \(P\) if \(\mu=\mu P\), i.e.\ \(\mu(y)=\sum_x \mu(x)P(x,y)\). Throughout, \(\log\) denotes the natural logarithm.
+
+\paragraph{Reversibility.}
+The kernel \(P\) is \emph{reversible} with respect to a stationary distribution \(\mu\) if it satisfies detailed balance
+\begin{equation}\label{eq:db}
+\mu(x)P(x,y)=\mu(y)P(y,x)\qquad \text{for all }x,y\in X.
+\end{equation}
+Reversibility is equivalent to equality in distribution between a stationary trajectory and its time-reversal.
+
+\paragraph{Arrow-of-time audit.}
+A standard measure of time-reversal asymmetry for a stationary Markov chain is its entropy production rate (EPR),
+\begin{equation}\label{eq:epr}
+\mathrm{EPR}(P,\mu)
+:=\sum_{x,y\in X}\mu(x)P(x,y)\log\frac{\mu(x)P(x,y)}{\mu(y)P(y,x)},
+\end{equation}
+with the convention that if \(\mu(x)P(x,y)>0\) but \(\mu(y)P(y,x)=0\) then \(\mathrm{EPR}(P,\mu)=+\infty\). If \(P\) is reversible with respect to \(\mu\), then each term in~\eqref{eq:epr} is zero and hence \(\mathrm{EPR}(P,\mu)=0\).
+We use \(\mathrm{EPR}\) as an information-theoretic time-reversal asymmetry functional (a path-space KL rate); no physical local-detailed-balance or reservoir interpretation is assumed.
+
+A finite-horizon path-level audit is the Kullback--Leibler divergence~\cite{kullback1951ois} between the forward and reversed path measures. For \(T\ge 1\), define the stationary path measure
+\[
+\mathbb{P}_{\mu,T}(x_0,\dots,x_T)=\mu(x_0)\prod_{t=0}^{T-1}P(x_t,x_{t+1}),
+\]
+and let \(\mathcal{R}(x_0,\dots,x_T)=(x_T,\dots,x_0)\). Its pushforward satisfies
+\[
+(\mathcal{R}_*\mathbb{P}_{\mu,T})(x_0,\dots,x_T)
+=
+\mu(x_T)\prod_{t=0}^{T-1}P(x_{t+1},x_t).
+\]
+The path-reversal asymmetry is
+\begin{equation}\label{eq:sigmaT}
+\Sigma_T(\mu):=D_{\mathrm{KL}}\!\left(\mathbb{P}_{\mu,T}\,\middle\|\,\mathcal{R}_*\mathbb{P}_{\mu,T}\right).
+\end{equation}
+This quantity is always nonnegative and equals zero if and only if the stationary path distribution is time-reversal invariant.
+
+\paragraph{Link between \(\Sigma_T\) and EPR.}
+Expanding the KL divergence and using the factorization above gives, for \(\mathbb{P}_{\mu,T}\)-almost every path,
+\[
+\log\frac{\mathbb{P}_{\mu,T}}{\mathcal{R}_*\mathbb{P}_{\mu,T}}
+=
+\log\frac{\mu(x_0)}{\mu(x_T)}
++
+\sum_{t=0}^{T-1}\log\frac{P(x_t,x_{t+1})}{P(x_{t+1},x_t)}.
+\]
+Under stationarity, \(x_0\sim \mu\) and \(x_T\sim \mu\), so the boundary term has zero expectation. Taking expectation therefore yields
+\begin{equation}\label{eq:sigmaT_epr}
+\Sigma_T(\mu)=T\,\mathrm{EPR}(P,\mu).
+\end{equation}
+Thus, in the finite-state setting used here, zero EPR is equivalent to zero path-reversal asymmetry at every finite horizon; see, e.g., \cite{roldan2012kld,gaspard2004trde,seifert2012st}.
+ \section{A minimal scheduled counterexample}\label{sec:minimal}
+
+Let \(X=\{0,1,2\}\) and let \(\pi\) be the uniform distribution on \(X\).
+We define two Markov kernels \(K_0,K_1\) on \(X\) as follows:
+\[
+K_0=\frac{1}{300}\begin{pmatrix}
+172 & 118 & 10\\
+118 & 172 & 10\\
+10  & 10  & 280
+\end{pmatrix},
+\qquad
+K_1=\frac{1}{300}\begin{pmatrix}
+280 & 10  & 10\\
+10  & 172 & 118\\
+10  & 118 & 172
+\end{pmatrix}.
+\]
+ 
+Both matrices are symmetric, hence each satisfies detailed balance with respect to \(\pi\).
+Because each \(K_i\) is symmetric and row-stochastic, it is also column-stochastic (doubly stochastic), so \(\pi\) is stationary for \(K_0\), \(K_1\), and hence for the product \(P_{01}=K_0K_1\).
+In particular, their entropy production rates vanish:
+\[
+\mathrm{EPR}(K_0,\pi)=\EprKZero,\qquad
+\mathrm{EPR}(K_1,\pi)=\EprKOne.
+\]
+
+\paragraph{External scheduling creates an apparent arrow.}
+Now impose an external schedule that applies \(K_0\) and then \(K_1\) as a single stroboscopic update,
+\[
+P_{01}:=K_0K_1.
+\]
+Here \(P_{01}\) should be interpreted as a stroboscopic map induced by an externally imposed time-ordering of updates, rather than as evidence that an autonomous homogeneous chain on \(X\) ``generates'' irreversibility from reversible steps.
+Although each step is reversible, the composed update is not: a direct computation gives
+\[
+\mathrm{EPR}(P_{01},\pi)=\EprStrobeRound \;>\; 0.
+\]
+By~\eqref{eq:sigmaT_epr}, this implies strictly positive path-reversal asymmetry at every finite horizon:
+\(\Sigma_T(\pi)=T\times\EprStrobeRound\).
+
+\paragraph{Holonomy witness.}
+The ordered protocol steps do not commute. A quantitative witness is the entrywise commutator norm
+\[
+\|K_0K_1-K_1K_0\|_\infty=\CommNorm.
+\]
+This noncommutativity expresses route dependence (holonomy), but the previous paragraph shows that the
+positive arrow audit is produced by the \emph{externally imposed schedule}. In the next section we model the
+protocol autonomously by lifting to a time-homogeneous chain on \(Z=X\times\Phi\), where holonomy persists but the arrow audit can vanish.
+
+\paragraph{Remark (minimality).}
+At least three states are needed for this phenomenon: any \(2\times 2\) doubly stochastic kernel has the form \(\bigl(\begin{smallmatrix}a&1-a\\[2pt]1-a&a\end{smallmatrix}\bigr)\), and such kernels commute, so a two-kernel holonomy witness cannot occur on \(|X|=2\).
+ \section{Autonomous lift and protocol trap}\label{sec:trap}
+
+The positive arrow audit in Section~\ref{sec:minimal} arises from an \emph{external schedule} that applies \(K_0\) and \(K_1\) in a prescribed order. We now model the protocol \emph{autonomously} by enlarging the state space to include a clock variable.
+
+\paragraph{Autonomous lifted protocol model.}
+Let \(\Phi\) be a finite set of protocol phases (the clock) and define the lifted state space \(Z:=X\times\Phi\).
+Let \(S\) be a Markov kernel on \(\Phi\) and let \(\{K_\phi\}_{\phi\in\Phi}\) be Markov kernels on \(X\).
+For \(\alpha\in[0,1]\), define a time-homogeneous Markov kernel \(P\) on \(Z\) by random-scan coupling:
+\begin{equation}\label{eq:lifted_kernel}
+P\bigl((x,\phi),(x',\phi')\bigr)
+=
+\alpha\,\mathbf{1}_{x'=x}\,S(\phi,\phi')
++
+(1-\alpha)\,\mathbf{1}_{\phi'=\phi}\,K_\phi(x,x').
+\end{equation}
+That is, with probability \(\alpha\) the clock updates while \(x\) is held fixed; with probability \(1-\alpha\) the state \(x\) updates according to the current phase while \(\phi\) is held fixed.
+The random-scan coupling in \eqref{eq:lifted_kernel} is a convenient time-homogeneous autonomous lift (not the only possible lift); the key modeling point is that the protocol phase \(\Phi\) is treated as part of the state rather than as an external schedule.
+
+\paragraph{Protocol trap theorem.}
+Assume:
+(i) \(S\) is reversible with respect to a stationary distribution \(s\) on \(\Phi\); and
+(ii) each \(K_\phi\) is reversible with respect to a \emph{common} stationary distribution \(\pi\) on \(X\).
+Then the product measure \(\mu(x,\phi):=\pi(x)s(\phi)\) is stationary for \(P\), and \(P\) is reversible with respect to \(\mu\).
+Indeed, write \(P=\alpha P_{\mathrm{phase}}+(1-\alpha)P_{\mathrm{state}}\), where
+\(P_{\mathrm{phase}}((x,\phi),(x',\phi'))=\mathbf{1}_{x'=x}S(\phi,\phi')\) and
+\(P_{\mathrm{state}}((x,\phi),(x',\phi'))=\mathbf{1}_{\phi'=\phi}K_\phi(x,x')\).
+For \(\mu(x,\phi)=\pi(x)s(\phi)\), detailed balance for \(P_{\mathrm{phase}}\) reduces (on the support \(x=x'\)) to \(s(\phi)S(\phi,\phi')=s(\phi')S(\phi',\phi)\), and detailed balance for \(P_{\mathrm{state}}\) reduces (on the support \(\phi=\phi'\)) to \(\pi(x)K_\phi(x,x')=\pi(x')K_\phi(x',x)\). Since both components satisfy detailed balance with respect to \(\mu\), their convex combination \(P\) does as well.
+The assumption of a common stationary \(\pi\) is essential: if the conditional kernels had different equilibria, state updates could contribute nonzero entropy production even with a reversible clock.
+Consequently,
+\[
+\mathrm{EPR}(P,\mu)=0
+\qquad\text{and}\qquad
+\Sigma_T(\mu)=0\ \ \text{for all }T\ge 1.
+\]
+
+\paragraph{Concrete instantiation and computed verification.}
+In the experiments we take \(X=\{0,1,2\}\) and \(\Phi=\{0,1,2\}\), assign \((K_\phi)_{\phi\in\Phi}=(K_0,K_1,K_0)\), set \(\alpha=\AlphaDefault\), and use an unbiased three-cycle clock \(S\) with a self-loop (a reversible kernel on \(\Phi\) with uniform stationary distribution).
+The resulting lifted chain is reversible to numerical precision:
+\[
+\mathrm{EPR}(P,\mu)=\EprLiftedUnbiasedRound,
+\]
+with uniform marginals on both coordinates.
+The maximum deviation of row sums from \(1\) is \(\RowSumMaxDevRound\), and the stationarity residual \(\|\mu P-\mu\|_\infty\) is \(\StationarityResidual\).
+
+\paragraph{External schedule vs autonomous lift.}
+The stroboscopic composition \(K_0K_1\) on \(X\) is an effective update induced by imposing a schedule from outside the system; it need not inherit reversibility from its components. By contrast, the lifted model~\eqref{eq:lifted_kernel} is an autonomous time-homogeneous Markov chain on \(Z\), and when the clock is reversible and each conditional kernel is reversible with respect to a common \(\pi\), the arrow audit vanishes even though the underlying protocol holonomy (noncommutativity of \(K_0,K_1\)) remains.
+ \section{Driven clock: where the arrow comes from}\label{sec:driven}
+
+Section~\ref{sec:trap} shows that an autonomous lifted protocol can exhibit protocol holonomy (noncommuting conditional kernels) while having zero arrow audit, provided the clock is reversible. We now introduce a one-parameter nonreversible clock to produce nonzero time-reversal asymmetry (positive EPR) and to identify its source.
+
+\paragraph{Driven three-cycle clock.}
+Let \(\Phi=\{0,1,2\}\) and consider a clock kernel \(S\) with self-loop and biased nearest-neighbor moves:
+from \(\phi\), move forward to \(\phi+1\) with probability \(p=\beta(1+b)/2\), move backward to \(\phi-1\) with probability \(q=\beta(1-b)/2\), and stay put with probability \(1-\beta\), where \(\beta\in(0,1]\) and \(b\in[0,1)\).
+The stationary distribution is uniform, but for \(b>0\) the clock violates detailed balance and has positive entropy production.
+
+\paragraph{Decomposition lemma (clock audit).}
+Let \(P\) be the lifted kernel~\eqref{eq:lifted_kernel} on \(Z=X\times\Phi\), and suppose each \(K_\phi\) is reversible with respect to a common stationary \(\pi\) on \(X\) while \(S\) has stationary distribution \(s\) on \(\Phi\).
+Then the entropy production of the lifted chain decomposes as
+\[
+\mathrm{EPR}(P,\pi\times s)
+=
+\alpha\,\mathrm{EPR}(S,s)
++
+(1-\alpha)\sum_{\phi\in\Phi} s(\phi)\,\mathrm{EPR}(K_\phi,\pi).
+\]
+This follows by splitting the edge-sum in \eqref{eq:epr} into disjoint transitions that change only \(\phi\) (phase updates) versus only \(x\) (state updates), which do not overlap in~\eqref{eq:lifted_kernel}.
+In our construction \(\mathrm{EPR}(K_\phi,\pi)=0\) for all \(\phi\), so the arrow audit is entirely attributable to clock drive:
+\begin{equation}\label{eq:epr_clock_only}
+\mathrm{EPR}_{\mathrm{lifted}}=\alpha\,\mathrm{EPR}_{\mathrm{clock}}.
+\end{equation}
+This gives a precise sense in which protocol holonomy alone is not an arrow-of-time certificate: without clock drive (or external scheduling), the audit vanishes.
+
+\paragraph{Closed form.}
+For the biased three-cycle clock described above, with uniform stationary distribution \(s\), a direct calculation gives
+\[
+\mathrm{EPR}(S,s)=(p-q)\log\frac{p}{q}=\beta\,b\log\frac{1+b}{1-b},
+\]
+which is the standard ``current \(\times\) affinity'' form for a driven cycle~\cite{schnakenberg1976network}.
+Hence
+\begin{equation}\label{eq:epr_closed_form}
+\mathrm{EPR}_{\mathrm{lifted}}(b)=\alpha\,\beta\,b\log\frac{1+b}{1-b}.
+\end{equation}
+
+\begin{figure}[!t]
+  \centering
+  \includegraphics[width=0.9\linewidth]{epr_vs_bias.pdf}
+  \caption{Entropy production rate (EPR) of the autonomous lifted protocol chain on \(Z=X\times\Phi\) as a function of clock bias \(b\) (with fixed \((K_\phi)=(K_0,K_1,K_0)\), \(\alpha=\AlphaDefault\), \(\beta=\BetaDefault\)). At \(b=0\) the clock is reversible and the lifted chain is reversible, giving \(\mathrm{EPR}\EprLiftedUnbiasedShort\) despite noncommutativity of the conditional kernels. For \(b>0\), a nonzero arrow audit appears and the measured \(\mathrm{EPR}_{\mathrm{lifted}}(b)\) coincides with \(\alpha\,\mathrm{EPR}_{\mathrm{clock}}(b)\) (overlay), consistent with \eqref{eq:epr_clock_only}--\eqref{eq:epr_closed_form}. In the Six Birds terminology, this illustrates (in neutral audit terms) that P3 without P6 is not an arrow.}
+  \label{fig:epr_vs_bias}
+\end{figure}
+
+\paragraph{Verification and robustness.}
+We fix \(\alpha=\AlphaDefault\), \(\beta=\BetaDefault\), and \((K_\phi)_{\phi\in\Phi}=(K_0,K_1,K_0)\), and sweep \(b\in\{0,0.05,\dots,0.90\}\).
+Figure~\ref{fig:epr_vs_bias} plots the measured \(\mathrm{EPR}_{\mathrm{lifted}}(b)\) and overlays \(\alpha\,\mathrm{EPR}(S,s)\), which coincide to numerical precision.
+For example, at \(b=0.5\) we obtain \(\mathrm{EPR}_{\mathrm{lifted}}=\EprLiftedBHalfShort\), and at \(b=0.9\) we obtain \(\mathrm{EPR}_{\mathrm{lifted}}=\EprLiftedBPointNineShort\).
+Additional checks confirm the identity \(\Sigma_T/T=\mathrm{EPR}\) at small horizons and robustness across a grid of \((\alpha,\beta)\).
+ \section*{Reproducibility and availability}
+
+All source code is available at \url{https://github.com/ioannist/six-birds-protocol-trap}. All numerical values reported in this note and Figure~\ref{fig:epr_vs_bias} are generated from the accompanying repository outputs. From the repository root, running \texttt{make all} reproduces the baseline constants (commutator norm and EPR values), the autonomous protocol-trap check, the driven-clock sweep, the figure files, and the robustness checks. In particular, the curve in Figure~\ref{fig:epr_vs_bias} is generated from \texttt{data/epr\_vs\_bias.csv} and rendered by \texttt{experiments/plot\_epr\_vs\_bias.py}. The raw outputs are written to \texttt{data/} (JSON/CSV), figures to \texttt{figures/} and \texttt{paper/figures/}, and the experiment drivers are in \texttt{experiments/}. The manuscript uses auto-generated macros in \texttt{paper/constants.tex} to avoid manual transcription of numerical values.
+
+\section*{Competing interests}
+The author declares no competing interests.
+
+\section*{Relationship to preprints}
+The labels \emph{P3} (protocol holonomy) and \emph{P6} (path-reversal audit) follow the Six Birds preprint by the same author~\cite{tsiokos2026sixbirds}. The present microarticle is self-contained and focuses on a single minimal counterexample with new computed audits and the driven-clock curve in Figure~\ref{fig:epr_vs_bias}.
+ \bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

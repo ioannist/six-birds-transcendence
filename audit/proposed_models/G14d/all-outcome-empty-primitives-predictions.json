@@ -1,0 +1,18 @@
+{
+  "id": "EXISTING-POS04-TWO-SUPPORTED-BRANCHES-NO-COMMON-OUTCOME",
+  "frozen_at_utc": "2026-10-10T16:28:53.293756+00:00",
+  "primitives": "Unchanged existing POS04 pos04RawBridge positive and EmptyDecisionPrototype.Example.inputs, source0/record1/entry2/twin6. Native command list fission2->3,4 then supported advance3->5 action0 outcome p1w0, advance4->7 action0 outcome p1w1. Parents5,7 freshoutput8. Marginal actions1(cw),2(ccw). Credits [(100,5),(101,7)]. Actual normalized candidateProgram current pair p1w0,p1w1 returns [(p2w1,4)] scale4. All other rows empty. No readout/Seed/edges/accepted-success raw input.",
+  "predictions": {
+    "actual_native_three_commands_accepted": true,
+    "actual_branch_ancestry0to5and7": true,
+    "both_actual_marginals_normalized_positive": true,
+    "no_common_outcome_ALL_KState": true,
+    "EVERY_program_requested_outcome_compatible_false": true,
+    "structurally_valid_candidate_EVERY_requested_outcome_available_empty": true,
+    "actual_settlement_EVERY_KState_some_unchanged_false": true,
+    "fresh_target8_absent_ALL_outcome": true,
+    "actual_ancestry8_some_false_ALL_Nat_source_ALL_outcome": true,
+    "original_guarded_step_none_ALL_program_ALL_outcome": true
+  },
+  "grade": "Existing raw POS04/guardedfusion structural grade. Genuine no common outcome for the fixed checked pair of actions, not impossibility under changing actions and not full C7 joint-history gluing/physical credit. Independent from frozen original36; no model/prediction edits to that evaluation."
+}

@@ -1,0 +1,41 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R"
+  ],
+  "conclusion_failure_checks": {
+    "genuine_progress_absent": true
+  },
+  "countermodel_id": "CM-05",
+  "derived_facts": {
+    "stability_is_stasis": true
+  },
+  "family": "stalled-clock",
+  "model": {
+    "genuine_progress": false,
+    "phase": [
+      0
+    ],
+    "phase_count": 1,
+    "phase_stable": true,
+    "state_count": 1,
+    "tick_viable": true,
+    "transition": [
+      0
+    ]
+  },
+  "name": "Stable tick phase without genuine progress",
+  "premise_checks": {
+    "phase_stable": true,
+    "tick_viable": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "Tick viability and phase stability do not imply temporal progress.",
+  "size_measure": "(state_count, phase_count)",
+  "size_vector": [
+    1,
+    1
+  ],
+  "target_no_go_id": "TTN-07",
+  "toy_model_ref": "TTM-14"
+}

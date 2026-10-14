@@ -1,0 +1,14 @@
+toy_id,role,evidence_ref,evidence_sha256,theorem_ids,status
+TTM-01,positive,formal/certificates/composition/fiach/FIACH-COMP-OUTER.certificate.json,0d50e31963f999e84652da8d8700ac29e34e771cd58e36cf7e35bafed5e8d543,TTH-06;TTH-07,checked
+TTM-02,negative,formal/certificates/countermodels/CM-02.certificate.json,4cc8e5ad20c7d35784a3e89261dc9b4bca7166ba86efcb779665f6e41f01616a,TTN-01,checked
+TTM-03,positive,formal/certificates/direct_successor/DS-POS-01.certificate.json,f478b6575e7ba6d94716de5e59e0d8f754910f0bc112c072571add5a0a4d3c3f,TTD-01;TTD-03,checked
+TTM-04,negative,formal/certificates/countermodels/CM-04.certificate.json,e2720e7c59ad88909bd85a070dfcb8a79476246080e945476013bf4dbf5857ca,TTN-06,checked
+TTM-05,boundary,formal/certificates/routes/ROUTE-NEG-01.certificate.json,6cbb19e079a1ddcd1794b7c66a2daf800f4371f9a6cbcfc75859f2410102f8e2,TTN-04;TTN-05,checked
+TTM-06,positive,formal/certificates/routes/ROUTE-POS-01.certificate.json,1be327aea45b5b5ae95e1a746707294852df2e4a08a871989d8af439ceb399be,TTH-09,checked
+TTM-07,boundary,formal/certificates/fission/FISSION-POS-01.certificate.json,d6f9368e6d928a8b08009455dbde1f5d7590a024531e4e62ab3a3e76f99458e8,TTH-08;TTN-11,checked
+TTM-08,negative,formal/certificates/countermodels/CM-12.certificate.json,7333204d4bbd5fbc6046f080b053286313c1ecc87c39f3beb9d1d132a09bc190,TTN-09,checked
+TTM-09,negative,formal/certificates/autonomy/controls/AUT-C05.certificate.json,7b19449d12affa7b803da87f048ad8e12a66c7e1b05df213906123f3c0641fb8,TTH-05;TTN-07,checked
+TTM-10,boundary,formal/certificates/countermodels/CM-13.certificate.json,954eebf67fbef8b4ac93ef888bbb107473c8521c854badab9db79a74dadb68fd,TTN-12,checked
+TTM-11,negative,formal/certificates/countermodels/CM-08.certificate.json,30c691e5f563d02419bf92c826854393ab39d898d58b1e5fe05bece035eaae6d,TTN-08,checked
+TTM-12,negative,formal/certificates/countermodels/CM-09.certificate.json,7f79f38e8d1676f76a6b6e120eea26ac8c5b58ca325cebf28322926f9a679ed4,TTN-02,checked
+TTM-13,negative,formal/certificates/countermodels/CM-10.certificate.json,8f560bde4c284a12e3e87e393729cd9d1cda50783359281a0be490c37655412f,TTN-10,checked

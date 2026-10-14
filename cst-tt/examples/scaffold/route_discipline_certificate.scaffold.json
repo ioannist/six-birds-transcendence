@@ -1,0 +1,42 @@
+{
+  "audit": {
+    "all_expected_endpoints_match": false,
+    "all_routes_valid": false,
+    "clock_translation_holonomy_zero": false,
+    "current_endpoints_agree_by_boundary": false,
+    "direct_factored_agreement": false,
+    "every_boundary_pair_declared": false,
+    "every_declared_critical_pair_joins": false,
+    "executed_routes": [],
+    "failed_obligations": [
+      "not-evidence"
+    ],
+    "flatness_valid": false,
+    "forbidden_verdict_fields_absent": false,
+    "global_now_factorization_exists": false,
+    "memory_or_flatness_satisfied": false,
+    "nonzero_translation_holonomy_witnessed": false,
+    "route_audit_valid": false,
+    "route_residue_trivial": false,
+    "temporal_endpoints_route_independent": false,
+    "transitions_functional": false,
+    "unique_normal_form_per_boundary": false
+  },
+  "certificate_id": "SCAFFOLD",
+  "checker": {
+    "function": "audit_route_discipline",
+    "module": "cst_tt.transport",
+    "python_version": "scaffold"
+  },
+  "claim_ceiling": "scaffold only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_ref": "not-evidence",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "scaffold-only",
+  "schema_version": "CST-TT-03",
+  "theorem_ids": [
+    "TTH-09"
+  ]
+}

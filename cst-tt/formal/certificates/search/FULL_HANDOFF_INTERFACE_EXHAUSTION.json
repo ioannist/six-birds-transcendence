@@ -1,0 +1,54 @@
+{
+  "accepted_candidates": 1,
+  "algorithm": "exhaustive-Boolean-interface-and-route-status-table",
+  "all_single_failures_rejected": true,
+  "candidates_examined": 1024,
+  "claim_ceiling": "finite independence of the declared composition interface; not a physical completeness theorem",
+  "interface_obligations": [
+    "shared_carrier",
+    "shared_package",
+    "frontier_signature",
+    "route_memory",
+    "ownership",
+    "left_autonomy_contract",
+    "staged_composition",
+    "corridor_composition",
+    "final_autonomy",
+    "route_status"
+  ],
+  "route_status_rows": [
+    {
+      "expected_composite": "flat",
+      "left": "flat",
+      "right": "flat"
+    },
+    {
+      "expected_composite": "route-indexed",
+      "left": "flat",
+      "right": "route-indexed"
+    },
+    {
+      "expected_composite": "route-indexed",
+      "left": "route-indexed",
+      "right": "flat"
+    },
+    {
+      "expected_composite": "route-indexed",
+      "left": "route-indexed",
+      "right": "route-indexed"
+    }
+  ],
+  "schema_version": "CST-TT-06",
+  "single_failure_rejections": {
+    "corridor_composition": true,
+    "final_autonomy": true,
+    "frontier_signature": true,
+    "left_autonomy_contract": true,
+    "ownership": true,
+    "route_memory": true,
+    "route_status": true,
+    "shared_carrier": true,
+    "shared_package": true,
+    "staged_composition": true
+  }
+}

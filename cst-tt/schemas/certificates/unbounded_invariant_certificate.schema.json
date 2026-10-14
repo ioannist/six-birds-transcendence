@@ -1,0 +1,23 @@
+{
+  "$id": "https://six-birds.local/cst-tt/unbounded_invariant_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "audit": {},
+    "certificate_id": {},
+    "model_ref": {},
+    "model_sha256": {},
+    "result_status": {},
+    "schema_version": {}
+  },
+  "required": [
+    "schema_version",
+    "certificate_id",
+    "model_ref",
+    "model_sha256",
+    "result_status",
+    "audit"
+  ],
+  "title": "unbounded_invariant_certificate.schema.json",
+  "type": "object"
+}

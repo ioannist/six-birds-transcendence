@@ -1,0 +1,567 @@
+{
+  "base_commit": "3abf5b2406f754b43823b68987c7ea409e737fd0",
+  "base_resolved": "3abf5b2406f754b43823b68987c7ea409e737fd0",
+  "base_tag": "CST-TT-02-v1",
+  "builder_returncode": 0,
+  "byte_identical_surface_count": 110,
+  "generated_surface_count": 110,
+  "mismatches": [],
+  "phase": "CST-TT-03",
+  "project": "CST-TT",
+  "pytest_returncode": 0,
+  "schema_version": "1.0",
+  "status": "PASS",
+  "surfaces": [
+    {
+      "path": "CHANGELOG.md",
+      "reproduced": true,
+      "sha256": "bf87973e2fd04cb641f37391a9522435b310a89b8946f0e045c251defe1fd3df"
+    },
+    {
+      "path": "README.md",
+      "reproduced": true,
+      "sha256": "049f1a29e6cbb01f189a9eec70cb6c70a0ac53da1ea81a5a423a8f904d845244"
+    },
+    {
+      "path": "RESTORE_AND_VERIFY.md",
+      "reproduced": true,
+      "sha256": "14162f4c2f260a97ec52983a07480b7a69a7d9ef89d625d3f8a66033f4516118"
+    },
+    {
+      "path": "STATE.md",
+      "reproduced": true,
+      "sha256": "b8b60227eb9990fdb19f07c7fd1694d668dae38cf1299b2d2871081129b40330"
+    },
+    {
+      "path": "STATUS.md",
+      "reproduced": true,
+      "sha256": "d4f70a76ba33187f6b585e1c4cc5a680b0b44969f708ce17a23a4310f308a3a3"
+    },
+    {
+      "path": "changelog/CST-TT-03.md",
+      "reproduced": true,
+      "sha256": "0cb3b5538b2e61c0906f69a2f7b74ff1df55a065348d1cd9113c8c8ced55c5f1"
+    },
+    {
+      "path": "config/REPRODUCIBILITY.json",
+      "reproduced": true,
+      "sha256": "e2d11a058fc19c906e4df625a7ad39c4a5f09aeb18f9509514e0bed660b38825"
+    },
+    {
+      "path": "docs/HETEROGENEOUS_TEMPORAL_TRANSPORT.md",
+      "reproduced": true,
+      "sha256": "afe7bcff59c48c8d45d7d7fae48ae7daff91805f846dd151269a5058975c8774"
+    },
+    {
+      "path": "docs/MEMORY_OR_FLATNESS_THEOREM.md",
+      "reproduced": true,
+      "sha256": "8e83cb5704b85d5323e6d7fc27e8bf093802c7f4c78258c67b0d207d68d0cb19"
+    },
+    {
+      "path": "docs/PHASE_BOUNDARY.md",
+      "reproduced": true,
+      "sha256": "ec39662d6c7115516e99ef17ff32007b8b97cc488edc1268cb80a41d4ff5ca06"
+    },
+    {
+      "path": "docs/RECORD_ARROW_TRANSPORT.md",
+      "reproduced": true,
+      "sha256": "c1bd4a4f8c973ee141bb8e63ec02476372ac6c83d81aa45b092028a2a4e2d551"
+    },
+    {
+      "path": "docs/RESTORE_AND_BUILD.md",
+      "reproduced": true,
+      "sha256": "14162f4c2f260a97ec52983a07480b7a69a7d9ef89d625d3f8a66033f4516118"
+    },
+    {
+      "path": "docs/ROUTE_DISCIPLINE_AND_CONFLUENCE.md",
+      "reproduced": true,
+      "sha256": "dd0fa536c647680f5c8c00f325b0df9235e665439fda5859eaf548207e3373e8"
+    },
+    {
+      "path": "docs/THEOREM_AND_TOY_REGISTRY.md",
+      "reproduced": true,
+      "sha256": "dbdc8bf4aef96ab3fd4f78ba261346ed017fcd36310ca42663398d88222ac578"
+    },
+    {
+      "path": "docs/TRANSPORT_CONTROL_SUITE.md",
+      "reproduced": true,
+      "sha256": "2033ee8f3ed248e1e7e7304357e8c306252de3a7dd1ac995e9baa6160c65bd1d"
+    },
+    {
+      "path": "formal/README.md",
+      "reproduced": true,
+      "sha256": "2acfe9519d0595d5cca4c9e34dda4914a07440735d7e7d9864deeee967c68530"
+    },
+    {
+      "path": "formal/TOOLCHAIN_STATUS.json",
+      "reproduced": true,
+      "sha256": "454da11a34b994a23cc2fdd6de742f2eff5d5e8a4b0b7d830d4cb1ded02c341c"
+    },
+    {
+      "path": "formal/certificates/arrow/ARROW-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "7ad479d6a2d023c4cc5759269057fe8bdc24504b5ec0d799911793f43a46985c"
+    },
+    {
+      "path": "formal/certificates/memory/BOUNDED_MEMORY_OR_FLATNESS_EXHAUSTION.json",
+      "reproduced": true,
+      "sha256": "aa177a547e61df5d64d8d7de20a7a0015c22ee11e86934d89db2678184d823c5"
+    },
+    {
+      "path": "formal/certificates/memory/MEM-FLAT-01.certificate.json",
+      "reproduced": true,
+      "sha256": "e51a2b0e4ed86133dbda3bd08ca06274a520267be82729d8ce02f605694e4821"
+    },
+    {
+      "path": "formal/certificates/memory/MEM-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "331a4de2e4acae0783ad3e97a730eb7a27792060eecf5326b1f567af7eb4b764"
+    },
+    {
+      "path": "formal/certificates/routes/BOUNDED_CONFLUENCE_SHAPE_SEARCH.json",
+      "reproduced": true,
+      "sha256": "76c3d1ff9c37bbb981b7673cf9b70677accf48fd7ef433170735e4ed721d244d"
+    },
+    {
+      "path": "formal/certificates/routes/BOUNDED_GLOBAL_NOW_OBSTRUCTION_SEARCH.json",
+      "reproduced": true,
+      "sha256": "daee43f57d10c6b311b9b29a01b4c9799f94b9a65ad49bede2a738cb7ae67e60"
+    },
+    {
+      "path": "formal/certificates/routes/ROUTE-NEG-01.certificate.json",
+      "reproduced": true,
+      "sha256": "6cbb19e079a1ddcd1794b7c66a2daf800f4371f9a6cbcfc75859f2410102f8e2"
+    },
+    {
+      "path": "formal/certificates/routes/ROUTE-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "1be327aea45b5b5ae95e1a746707294852df2e4a08a871989d8af439ceb399be"
+    },
+    {
+      "path": "formal/certificates/transport/BOUNDED_TRANSPORT_SHAPE_SEARCH.json",
+      "reproduced": true,
+      "sha256": "72fb1294ce26303df89b72a54c815284263452906023ae983c75be21347c9783"
+    },
+    {
+      "path": "formal/certificates/transport/TR-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "e32615102f0b54d23b28c86e370d3a811220b108b1e33fb2bcb336825e97611b"
+    },
+    {
+      "path": "formal/certificates/transport/TR-POS-02-FLAT.certificate.json",
+      "reproduced": true,
+      "sha256": "2587d27fe3c7f4f704c78a5198bacf4827c959b4acca50ce90293d7aacbec5ad"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ARROW-C01.certificate.json",
+      "reproduced": true,
+      "sha256": "e1ffa5812700ec14f9739f60c406b7358a334b7f13149ebcf0b48c62b7a2e349"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ARROW-C02.certificate.json",
+      "reproduced": true,
+      "sha256": "46db0a2e1b33b6099ca35a9bb14ab0c9d414a6e6e34576de192a7813fa6f17ff"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ARROW-C03.certificate.json",
+      "reproduced": true,
+      "sha256": "42f1960902a2d27836f14117ec557e512f394e47ef7980b7a7fe13a9c135058e"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ARROW-C04.certificate.json",
+      "reproduced": true,
+      "sha256": "97ea863a1a9fdb9522409c5816d90ad5bf6610d4d78502e8524c359098beaab6"
+    },
+    {
+      "path": "formal/certificates/transport/controls/MEM-C01.certificate.json",
+      "reproduced": true,
+      "sha256": "4d350a8bcbdfd5acae1f497a70ecef8c79993e98ded6f56e8732844070a39125"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ROUTE-C01.certificate.json",
+      "reproduced": true,
+      "sha256": "f95bc2619b9374f1cfc28bdc7db05343229f483a41b22dadd73d9c0a6ec2a41b"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ROUTE-C02.certificate.json",
+      "reproduced": true,
+      "sha256": "2dcbdaa1aabdffee07eed92e757726f26708f6761e762fbbe5c3416e17d566cb"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ROUTE-C03.certificate.json",
+      "reproduced": true,
+      "sha256": "d0b7972eecb8958f6bfa744d09ebfa4703b0d6b565ab0b154889662571d5791c"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ROUTE-C04.certificate.json",
+      "reproduced": true,
+      "sha256": "094f5948aed0f1b4f503beddf6264948f3c61823c0e24e85a607346a4f3ebbd2"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ROUTE-C05.certificate.json",
+      "reproduced": true,
+      "sha256": "4c0061431a2cd706ff345c6f76cba8056b19bc962fe2ef7fcf6736400da876aa"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ROUTE-C06.certificate.json",
+      "reproduced": true,
+      "sha256": "7339d2299a4cb0928951d4e78eb6292ed6f3e77dae04fd0748c0c589bc575fc5"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ROUTE-C07.certificate.json",
+      "reproduced": true,
+      "sha256": "9816818f31b9fc41325e9b1c5f3f8e316efbc7fbae48aba94f306c9b7a630593"
+    },
+    {
+      "path": "formal/certificates/transport/controls/ROUTE-C08.certificate.json",
+      "reproduced": true,
+      "sha256": "b1231f6d80be27048a6eabaeba91f8e4f4e55d7ac0ba307a044a216fea561a2b"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C01.certificate.json",
+      "reproduced": true,
+      "sha256": "8140d8afdfaa4d83307c2e92f3e82272246a95a0ccc79836aded958faa6ca25e"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C02.certificate.json",
+      "reproduced": true,
+      "sha256": "ddd04cda3144c8945dfcffe6073d526b838519311129137b14cf4e9de0d8aaf5"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C03.certificate.json",
+      "reproduced": true,
+      "sha256": "6eeb1eaf8d5b924babb9d094f911bcca616cba45dc2fa23c6541788401c07b94"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C04.certificate.json",
+      "reproduced": true,
+      "sha256": "5c889b78cecb993e0e2150dfd461c73eefa56497e9b3f2abfbe0652af517464d"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C05.certificate.json",
+      "reproduced": true,
+      "sha256": "05bd3a171ac133dbf50ff2cd3be5bb7eca11f9fff355b7be5f93ac066da0f230"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C06.certificate.json",
+      "reproduced": true,
+      "sha256": "7a14887fa35a987b958f9e310fea915ac0e6774d69f33091ae8d1ea3148342d0"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C07.certificate.json",
+      "reproduced": true,
+      "sha256": "db864942aa8bb60fe91169a57046d871f993fd1a978b0d7855e3520558dda448"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C08.certificate.json",
+      "reproduced": true,
+      "sha256": "7221f5ccee9df654c1a7c44ac2448dfaec3f54f2f54e453a052ebe823cab2bbb"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C09.certificate.json",
+      "reproduced": true,
+      "sha256": "cf0547700245b694835226a4d39fd2533e5107510d54334601bceb9785db5033"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C10.certificate.json",
+      "reproduced": true,
+      "sha256": "3ba92e5c6a80af057b2a8e85c496b0ae74707da57ee4db8f1b21a1fc15347f0c"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C11.certificate.json",
+      "reproduced": true,
+      "sha256": "769a2ff0e35f791bc0ed7627d8121ddd0f64d038117249df089ecd3209558f8c"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C12.certificate.json",
+      "reproduced": true,
+      "sha256": "4f173a8ed52a77787010ab542b0d22b8ad309ccc8ce114e32218711cb48885d7"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C13.certificate.json",
+      "reproduced": true,
+      "sha256": "eb65a748355a851f6ad1a1fa0e24971187101855747ef97d8a53da3c04b72bb0"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C14.certificate.json",
+      "reproduced": true,
+      "sha256": "1d8d5f308932b1d4826ce569133492f22cb97a4e23f766b9e1349d4795d51792"
+    },
+    {
+      "path": "formal/certificates/transport/controls/TR-C15.certificate.json",
+      "reproduced": true,
+      "sha256": "51842eebce5f134d03a8354537c2e8c7a45bacf0584a58eadbb526147a57b66b"
+    },
+    {
+      "path": "manifests/COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "eb3577342dccaaa0006d560627620b1f18cb0db8d0e588e337bdd2d6762ff81c"
+    },
+    {
+      "path": "manifests/CST-TT-03_COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "eb3577342dccaaa0006d560627620b1f18cb0db8d0e588e337bdd2d6762ff81c"
+    },
+    {
+      "path": "manifests/CST-TT-03_MODEL_CERTIFICATE_DELTA.csv",
+      "reproduced": true,
+      "sha256": "713c8e2bd58c34af6c0055d620f0b8c6df2ab913ff86faaa7f7d98b026109cec"
+    },
+    {
+      "path": "manifests/CST-TT-03_PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "a25f64b407e683f2d971820377b9251051888747fa7a3e982e52ec54d55501ca"
+    },
+    {
+      "path": "manifests/CST-TT-03_THEOREM_STATUS_DELTA.csv",
+      "reproduced": true,
+      "sha256": "f50dfc774e342d683af0169fca990152747e7b9249cba14333b082e2db96d165"
+    },
+    {
+      "path": "manifests/PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "a25f64b407e683f2d971820377b9251051888747fa7a3e982e52ec54d55501ca"
+    },
+    {
+      "path": "models/arrow/ARROW-POS-01.model.json",
+      "reproduced": true,
+      "sha256": "043a83f4768551edb8475affffa59372f42bee30fd36505d231e9b3a8a7a1489"
+    },
+    {
+      "path": "models/memory/MEM-FLAT-01.model.json",
+      "reproduced": true,
+      "sha256": "328be24c70d9364d46498d40e02dabf8afbfee9c1c71d0d7c67ff9fa14aab52a"
+    },
+    {
+      "path": "models/memory/MEM-POS-01.model.json",
+      "reproduced": true,
+      "sha256": "789f2d5942e9fc93024c98fef4163a2d3acfdab8efdddf43264c01a7624b3467"
+    },
+    {
+      "path": "models/routes/ROUTE-NEG-01.model.json",
+      "reproduced": true,
+      "sha256": "017e8e18f3ad8edb551e3c760db9b8bb960a80634668748ec03bdff419484337"
+    },
+    {
+      "path": "models/routes/ROUTE-POS-01.model.json",
+      "reproduced": true,
+      "sha256": "ccb22ea4991b74a3d69b3309250f07995a44661d0781f879890d430c63ee6945"
+    },
+    {
+      "path": "models/transport/TR-POS-01.model.json",
+      "reproduced": true,
+      "sha256": "b1bf4bfeb35a34d46c2bafc2b14bc7e526f663bf8d79749e505e6a4529a532d6"
+    },
+    {
+      "path": "models/transport/TR-POS-02-FLAT.model.json",
+      "reproduced": true,
+      "sha256": "aec74931db6869a54309b03d22f07c5d77bbfc0521966e78f7ba69eb3a205025"
+    },
+    {
+      "path": "models/transport/controls/ARROW-C01.model.json",
+      "reproduced": true,
+      "sha256": "74d034ad8b4ab55d696ff2038b2a280633ea1796450d507079269d34ea6b2a46"
+    },
+    {
+      "path": "models/transport/controls/ARROW-C02.model.json",
+      "reproduced": true,
+      "sha256": "a5790a4c71323cc8fa98a5897ced98fad42036a30805c9843d1fbe288624ca5b"
+    },
+    {
+      "path": "models/transport/controls/ARROW-C03.model.json",
+      "reproduced": true,
+      "sha256": "4b8e66703b03d268a43175cb78d65e8f0b13dbacbd5b2e8781b23f3faf21ae56"
+    },
+    {
+      "path": "models/transport/controls/ARROW-C04.model.json",
+      "reproduced": true,
+      "sha256": "4f3b2d7cf5e6bfedfcd0b45cc2f0daf9bb51dc911dfcc623f42094c6803768a4"
+    },
+    {
+      "path": "models/transport/controls/MEM-C01.model.json",
+      "reproduced": true,
+      "sha256": "81706cb1bef22807c60b523a2426fbc081b75c0a8a39b139958b66a3946057af"
+    },
+    {
+      "path": "models/transport/controls/ROUTE-C01.model.json",
+      "reproduced": true,
+      "sha256": "f2b0d0bd9fd6c568f59abe8735cd9c034bf1d796f16fd0dbd811b5d3f537ead8"
+    },
+    {
+      "path": "models/transport/controls/ROUTE-C02.model.json",
+      "reproduced": true,
+      "sha256": "c530cdff54a606e64c086181740615787fa487911d755a9fd61b217e00f290a7"
+    },
+    {
+      "path": "models/transport/controls/ROUTE-C03.model.json",
+      "reproduced": true,
+      "sha256": "7468b2666cbd23e2311fc58daf0a23663dd781a4f40775c424160e36794cacf6"
+    },
+    {
+      "path": "models/transport/controls/ROUTE-C04.model.json",
+      "reproduced": true,
+      "sha256": "3e270ff99623601c2e82d5fc77f1b84fc2bf5b6509f7dff5ab61547ef8d11815"
+    },
+    {
+      "path": "models/transport/controls/ROUTE-C05.model.json",
+      "reproduced": true,
+      "sha256": "6f5f118339cbfc360ac4d3764e3c824597ec8618614f7abd5ffcc44aab1c6cd9"
+    },
+    {
+      "path": "models/transport/controls/ROUTE-C06.model.json",
+      "reproduced": true,
+      "sha256": "2ba5b0ee49ae0b214f3c109fc4f6bae9af738fa2f6075c651962afd31cda384a"
+    },
+    {
+      "path": "models/transport/controls/ROUTE-C07.model.json",
+      "reproduced": true,
+      "sha256": "f0163892f87dbcc321a35b0cbfd202f92672fabc6633b4b15d8cf8dd4bcf8454"
+    },
+    {
+      "path": "models/transport/controls/ROUTE-C08.model.json",
+      "reproduced": true,
+      "sha256": "5e8e25084b022456f76b00b61253a15e8013779dc05a4af53b88b5c3d816fa7d"
+    },
+    {
+      "path": "models/transport/controls/TR-C01.model.json",
+      "reproduced": true,
+      "sha256": "84c83fffed8f2e1751aa4ceddcb0421ae46bd1ad28b1dd6a83c725ffd1b44cb2"
+    },
+    {
+      "path": "models/transport/controls/TR-C02.model.json",
+      "reproduced": true,
+      "sha256": "173bc18e01a3af1491cc50808854fc057a9f3a6a9d0833f399353e753fada081"
+    },
+    {
+      "path": "models/transport/controls/TR-C03.model.json",
+      "reproduced": true,
+      "sha256": "53e296f3d769bb80e79b0b118bbe2b8ab9fd6104b173c5cb3559f0995390fde6"
+    },
+    {
+      "path": "models/transport/controls/TR-C04.model.json",
+      "reproduced": true,
+      "sha256": "3f9e56d0e5572c3045fa37dac48c26e964799bd762f440bb1ccc2ae1b27bd48c"
+    },
+    {
+      "path": "models/transport/controls/TR-C05.model.json",
+      "reproduced": true,
+      "sha256": "85049a5cc442a1bff94ed8890b4eb32320ea48f95c37c9c316bc66c769aa4b6a"
+    },
+    {
+      "path": "models/transport/controls/TR-C06.model.json",
+      "reproduced": true,
+      "sha256": "da5d4b308c359a8aa6e5b912980c637bd1a073a998903e752ac0fc45610b1b83"
+    },
+    {
+      "path": "models/transport/controls/TR-C07.model.json",
+      "reproduced": true,
+      "sha256": "3e772deb246193ef1ffef242e7211edea37d836c6afca74bbe3886ab55963b23"
+    },
+    {
+      "path": "models/transport/controls/TR-C08.model.json",
+      "reproduced": true,
+      "sha256": "d19b1e41a7e7891cdd232d41f5a3f43136c791dcf4f4cc79c636acfc40a77404"
+    },
+    {
+      "path": "models/transport/controls/TR-C09.model.json",
+      "reproduced": true,
+      "sha256": "bcc9bc45ea6c2a26543e9087ae0bcd87dd73f2c9fceee2f02db608be083686da"
+    },
+    {
+      "path": "models/transport/controls/TR-C10.model.json",
+      "reproduced": true,
+      "sha256": "4bb535c150b6d4897605428340f2cb32dd65d2d0f6841ec5ad76135d43c71e4c"
+    },
+    {
+      "path": "models/transport/controls/TR-C11.model.json",
+      "reproduced": true,
+      "sha256": "9ac009a3e364ca568e4dfe6d07d52db90fc3582933947b73b48b68c5198833a8"
+    },
+    {
+      "path": "models/transport/controls/TR-C12.model.json",
+      "reproduced": true,
+      "sha256": "4410f908ef3db371865ecba7235191766617a87f437802e1658a1bb7517dfe0d"
+    },
+    {
+      "path": "models/transport/controls/TR-C13.model.json",
+      "reproduced": true,
+      "sha256": "0a908bfcc853e6823ce028bc28f7bee5ec172d718b3b457a8109602db922b734"
+    },
+    {
+      "path": "models/transport/controls/TR-C14.model.json",
+      "reproduced": true,
+      "sha256": "ddf69ea0022c06ae19881fe659e50bb25f0559ebe59d899034335b6a33042bbe"
+    },
+    {
+      "path": "models/transport/controls/TR-C15.model.json",
+      "reproduced": true,
+      "sha256": "0276708ddb6fab9b31e582cd262937cd9b791a88f144b06b17fdd94ea71fc0f9"
+    },
+    {
+      "path": "registries/CERTIFICATE_SCHEMA_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "ee4412c2c640341bf63a08defa52efb6326080e131957374a1af995f405b4e16"
+    },
+    {
+      "path": "registries/DEFINITION_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "57d2ae51b82c977c6c3da19a7a9845be30951e9693a02a8d8719bd5047a42369"
+    },
+    {
+      "path": "registries/DEPENDENCY_EDGES.csv",
+      "reproduced": true,
+      "sha256": "f82d20732f5f22af41d7534ea0441c6a45374cefad582eedffffd5d33e610895"
+    },
+    {
+      "path": "registries/KILL_CRITERIA.csv",
+      "reproduced": true,
+      "sha256": "5b6f81df3c18cba8d3992dfebc5a00b398ec3a43965fcfa9d8e805ac442b00a3"
+    },
+    {
+      "path": "registries/MEMORY_REPAIR_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "49331d994744d26950dfc05cd75ddfd2bc0c72ccadfb68119ef804f50160dae6"
+    },
+    {
+      "path": "registries/PROJECT_REGISTRY.json",
+      "reproduced": true,
+      "sha256": "06ebbc40cbda13400bcb25b7197af56851cb1fc39a0375a344c55102b1d4c3e0"
+    },
+    {
+      "path": "registries/RECORD_ARROW_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "472b93f6fe19c6a423e10e150f8c0961a532fd6167f15919ab569b3c59bfe860"
+    },
+    {
+      "path": "registries/ROUTE_DISCIPLINE_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "1591d23a3938cc4c943a9b875b8e4396c4a27198906c13b8b1093f1df4002ccb"
+    },
+    {
+      "path": "registries/TEMPORAL_TRANSPORT_WITNESS_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "67736b65fde853f07965841f471621e80033ff7d098176f8d7b6b36161791379"
+    },
+    {
+      "path": "registries/THEOREM_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "df9af08bf0e2133f2d0e046c57f7556c1ca6e04e56006c596352739912ea7343"
+    },
+    {
+      "path": "registries/TOY_MODEL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "75cbe768f3ef1bbdba2eb59bb5f2c2044622fccfeb60b225751f5a647ffdfd38"
+    },
+    {
+      "path": "registries/TRANSPORT_CONTROL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "eb28fb0f7546eede699696b0caff2220ffbbf15e9d3f0d53e3ce730da2a78c8f"
+    },
+    {
+      "path": "src/cst_tt/__init__.py",
+      "reproduced": true,
+      "sha256": "5fd5e613a7111dcf2b40be6f1ba10d5b5db62e7a696c6aefb2cc0da2be292c79"
+    }
+  ],
+  "validator_returncode": 0
+}

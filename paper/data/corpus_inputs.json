@@ -1,0 +1,206 @@
+{
+  "definition": "Current-source metadata and SHA256 pins acquired with --live; source_path and origin_path are provenance, not archive dependencies. Full current papers are not bundled. Frozen cited sources remain under cst-tt/inputs/reference_surfaces.",
+  "manifest": {
+    "entries": [
+      {
+        "mode": "flatten",
+        "output": "/home/repos/six-birds-papers/Tsiokos_2026_To_Throw_a_Stone_with_Six_Birds_On_Agents_and_Agenthood.tex",
+        "repo": "six-birds-agent",
+        "source": "/home/repos/six-birds-agent/paper/agency.tex",
+        "title": "To Throw a Stone with Six Birds: On Agents and Agenthood",
+        "year": "2026"
+      },
+      {
+        "mode": "flatten",
+        "output": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex",
+        "repo": "six-birds-protocol-trap",
+        "source": "/home/repos/six-birds-protocol-trap/paper/main.tex",
+        "title": "Six Birds Protocol Trap: Holonomy Without Entropy Production",
+        "year": "2026"
+      },
+      {
+        "mode": "copy",
+        "output": "/home/repos/six-birds-papers/Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex",
+        "repo": "six-birds-time",
+        "source": "/home/repos/six-birds-time/docs/paper/to_notch_a_stone_with_six_birds_flattened.tex",
+        "title": "To Notch a Stone with Six Birds: Time as a Theory Artifact of Order, Measure, and Arrow",
+        "year": "2026"
+      }
+    ],
+    "origin_path": "/home/repos/six-birds-papers/manifest.json",
+    "sha256": "52a9633c312e7f40ed046f7cd47fb75a105c6bcf9b37f2ee8ead2f577d03bc6a"
+  },
+  "papers": {
+    "P05": {
+      "author_tex": "Ioannis Tsiokos\\,\\orcidlink{0009-0009-7659-5964}",
+      "doi": "10.5281/zenodo.23233137",
+      "doi_metadata": [
+        {
+          "bundled_path": "paper/data/corpus_metadata/P05/paper/submission/zenodo-release.json",
+          "origin_path": "/home/repos/six-birds-consciousness/paper/submission/zenodo-release.json",
+          "sha256": "d6a26aa209ee27e21361a89b6fae6b1a2bead985b0b9e0189e3664c3d003c8e6"
+        },
+        {
+          "bundled_path": "paper/data/corpus_metadata/P05/paper/submission/RESERVED_DOI.md",
+          "origin_path": "/home/repos/six-birds-consciousness/paper/submission/RESERVED_DOI.md",
+          "sha256": "abb401a9938935ac64c3c31e1b98dab29401fddb24110ad66ac4b6e683f1df3d"
+        }
+      ],
+      "doi_scope": "Reservation for the revised architecture successor in the source repository; not a DOI identity claim for this historical audited-architecture snapshot. Omitted from this snapshot BibTeX entry.",
+      "doi_status": "reserved",
+      "source_file": "Tsiokos_2026_An_Audited_Closure_Architecture_for_Consciousness_Exact_Finite_Models_Structural_Theorems_and_Conditional_Realization.tex",
+      "source_path": "/home/repos/six-birds-transcendence/cst-tt/inputs/reference_surfaces/temporal_audit/Tsiokos_2026_An_Audited_Closure_Architecture_for_Consciousness_Exact_Finite_Models_Structural_Theorems_and_Conditional_Realization.tex",
+      "source_repo_commit": "433dc4772683d6a817ef0258fa5e5ea044aee0ad",
+      "source_sha256": "20f9cf87ba04b65c16deca9c2c1ad027b67fdc9222a67105b77c974d38a50386",
+      "title_tex": "An Audited Closure Architecture for Consciousness:\\\\\nExact Finite Models, Structural Theorems, and Conditional Realization",
+      "year": "2026"
+    },
+    "P07": {
+      "author_tex": "Ioannis Tsiokos\\,\\orcidlink{0009-0009-7659-5964}",
+      "doi": "10.5281/zenodo.23120470",
+      "doi_metadata": [
+        {
+          "bundled_path": "paper/data/corpus_metadata/P07/paper/submission/zenodo-v2-release.json",
+          "origin_path": "/home/repos/six-birds-quantum-os/paper/submission/zenodo-v2-release.json",
+          "sha256": "c75a3f21713fda9c228a03c216435a38534198f224621d87515b00083e69070f"
+        }
+      ],
+      "doi_scope": "Current source-version DOI; status is as recorded in local release metadata.",
+      "doi_status": "reserved",
+      "source_file": "Tsiokos_2026_Auditing_Emergence_in_Quantum_Error_Correction_A_Falsifiable_Instantiation_of_Six_Birds_Theory.tex",
+      "source_path": "/home/repos/six-birds-papers/Tsiokos_2026_Auditing_Emergence_in_Quantum_Error_Correction_A_Falsifiable_Instantiation_of_Six_Birds_Theory.tex",
+      "source_repo_commit": "",
+      "source_sha256": "d82278c7aab9007e36025d219eb89b172c33d618555db1712ce6f1433a0e64fd",
+      "title_tex": "Auditing Emergence in Quantum Error Correction:\\\\\nA Falsifiable Instantiation of Six Birds Theory",
+      "year": "2026"
+    },
+    "P14": {
+      "author_tex": "Ioannis Tsiokos\\,\\orcidlink{0009-0009-7659-5964}",
+      "doi": "10.5281/zenodo.23120494",
+      "doi_metadata": [
+        {
+          "bundled_path": "paper/data/corpus_metadata/P14/paper/submission/zenodo-v2-release.json",
+          "origin_path": "/home/repos/six-birds-born-repos/six-birds-route-transport/paper/submission/zenodo-v2-release.json",
+          "sha256": "58de301ec7f26e25adbb24bbf5273fd3c63dfba16aa15ecca6dbbfcecf4d314e"
+        }
+      ],
+      "doi_scope": "Current source-version DOI; status is as recorded in local release metadata.",
+      "doi_status": "reserved",
+      "source_file": "Tsiokos_2026_Holonomy_with_Memory_in_Six_Birds_Theory_Predictive_Quotients_Witnesses_and_Fixed_Support_Route_Transport.tex",
+      "source_path": "/home/repos/six-birds-papers/Tsiokos_2026_Holonomy_with_Memory_in_Six_Birds_Theory_Predictive_Quotients_Witnesses_and_Fixed_Support_Route_Transport.tex",
+      "source_repo_commit": "df0e8a190b6eb4f7c70ad43cfef4c6970d440d06",
+      "source_sha256": "77a4d1e13357aa55cccf9e8e025dcaaf82e28c9a277b3f21b838b082df163dbb",
+      "title_tex": "Holonomy with Memory in Six Birds Theory: Predictive Quotients, Witnesses, and Fixed-Support Route Transport",
+      "year": "2026"
+    },
+    "P18": {
+      "author_tex": "Ioannis Tsiokos\\,\\orcidlink{0009-0009-7659-5964}",
+      "doi": "",
+      "doi_metadata": [],
+      "doi_scope": "No DOI/release record found for this corpus source in its verified repository or central manifest.",
+      "doi_status": "none",
+      "source_file": "Tsiokos_2026_Marking_Erasure_and_Recombination_on_Fixed_Support_Exact_Finite_Evidence_from_Six_Birds_Theory.tex",
+      "source_path": "/home/repos/six-birds-transcendence/cst-tt/inputs/reference_surfaces/additional_sbt/Tsiokos_2026_Marking_Erasure_and_Recombination_on_Fixed_Support_Exact_Finite_Evidence_from_Six_Birds_Theory.tex",
+      "source_repo_commit": "433dc4772683d6a817ef0258fa5e5ea044aee0ad",
+      "source_sha256": "57bf45d9f903def51739d464985c7497022cd4ca06f800f3a35433b80ff021ca",
+      "title_tex": "Marking, Erasure, and Recombination on Fixed Support: Exact Finite Evidence from Six Birds Theory",
+      "year": "2026"
+    },
+    "P30": {
+      "author_tex": "Ioannis Tsiokos\\,\\orcidlink{0009-0009-7659-5964}",
+      "doi": "10.5281/zenodo.23087000",
+      "doi_metadata": [
+        {
+          "bundled_path": "paper/data/corpus_metadata/P30/paper/foundations_iv/submission/zenodo-v3-release.json",
+          "origin_path": "/home/repos/six-birds-meta-math/paper/foundations_iv/submission/zenodo-v3-release.json",
+          "sha256": "ea37dbaccfeb50e94a19a1447ee34569db527c36e4de9a71b6aebd4cc39359a0"
+        }
+      ],
+      "doi_scope": "Current source-version DOI; status is as recorded in local release metadata.",
+      "doi_status": "reserved",
+      "source_file": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+      "source_path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+      "source_repo_commit": "ac90667fea977e4c9602da7e2a24760b25458246",
+      "source_sha256": "7ec3e11d5b7d6ce9993c561623cd260eeaffe745c469c6127fe7f7c616af0472",
+      "title_tex": "Six Birds Foundations IV:\\\\\nA Catalog of Layer-Agnostic Structural Laws",
+      "year": "2026"
+    },
+    "P35": {
+      "author_tex": "Ioannis Tsiokos\\,\\orcidlink{0009-0009-7659-5964}",
+      "doi": "10.5281/zenodo.23120462",
+      "doi_metadata": [
+        {
+          "bundled_path": "paper/data/corpus_metadata/P35/paper/submission/zenodo-v2-release.json",
+          "origin_path": "/home/repos/six-birds-protocol-trap/paper/submission/zenodo-v2-release.json",
+          "sha256": "0b425efe7e5363d16316e98489e932a9725725244f608f48dabbdb05eea0e140"
+        }
+      ],
+      "doi_scope": "Current source-version DOI; status is as recorded in local release metadata.",
+      "doi_status": "reserved",
+      "source_file": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex",
+      "source_path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex",
+      "source_repo_commit": "df0e8a190b6eb4f7c70ad43cfef4c6970d440d06",
+      "source_sha256": "6fb17e55fdd5da040186bb89a6bfac387c5d6dac8a37f6ef767902e2dc55f2e3",
+      "title_tex": "Six Birds Protocol Trap: Holonomy Without Entropy Production",
+      "year": "2026"
+    },
+    "P50": {
+      "author_tex": "Ioannis Tsiokos\\,\\orcidA{}",
+      "doi": "10.5281/zenodo.23088991",
+      "doi_metadata": [
+        {
+          "bundled_path": "paper/data/corpus_metadata/P50/paper/submission/zenodo-v2-release.json",
+          "origin_path": "/home/repos/six-birds-confluence/paper/submission/zenodo-v2-release.json",
+          "sha256": "4550e2f4af7d623e6f1c083efc53501ef460b2f2c4d49f8f264dd18372ecf9da"
+        }
+      ],
+      "doi_scope": "Current source-version DOI; status is as recorded in local release metadata.",
+      "doi_status": "reserved",
+      "source_file": "Tsiokos_2026_To_Flatten_a_Stone_with_Six_Birds_Critical_Pairs_Holonomy_and_Confluence_in_Rewriting_Systems.tex",
+      "source_path": "/home/repos/six-birds-papers/Tsiokos_2026_To_Flatten_a_Stone_with_Six_Birds_Critical_Pairs_Holonomy_and_Confluence_in_Rewriting_Systems.tex",
+      "source_repo_commit": "df0e8a190b6eb4f7c70ad43cfef4c6970d440d06",
+      "source_sha256": "80f93accb027a1f9afe0c33b5fcc5645fab8527ee3ead19b88eb7242ce4d09d3",
+      "title_tex": "To Flatten a Stone with Six Birds:\\\\[4pt]\nCritical Pairs, Holonomy, and Confluence\\\\\nin Rewriting Systems",
+      "year": "2026"
+    },
+    "P53": {
+      "author_tex": "Ioannis Tsiokos\\,\\orcidlink{0009-0009-7659-5964}",
+      "doi": "10.5281/zenodo.23120497",
+      "doi_metadata": [
+        {
+          "bundled_path": "paper/data/corpus_metadata/P53/docs/paper/submission/zenodo-v3-release.json",
+          "origin_path": "/home/repos/six-birds-time/docs/paper/submission/zenodo-v3-release.json",
+          "sha256": "57e2bfd78095db85e4a1d2ca6ff053f3e84fca9517df2358d9e4af026f92998c"
+        }
+      ],
+      "doi_scope": "Current source-version DOI; status is as recorded in local release metadata.",
+      "doi_status": "reserved",
+      "source_file": "Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex",
+      "source_path": "/home/repos/six-birds-papers/Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex",
+      "source_repo_commit": "df0e8a190b6eb4f7c70ad43cfef4c6970d440d06",
+      "source_sha256": "0453f1f5a9e86df5c08c8e22adbc6f0e3ccaf3c36a54ed57f1cd50046674b856",
+      "title_tex": "To Notch a Stone with Six Birds:\\\\Time as a Theory Artifact of Order, Measure, and Arrow",
+      "year": "2026"
+    },
+    "P57": {
+      "author_tex": "Ioannis Tsiokos\\,\\orcidlink{0009-0009-7659-5964}",
+      "doi": "10.5281/zenodo.23184176",
+      "doi_metadata": [
+        {
+          "bundled_path": "paper/data/corpus_metadata/P57/paper/submission/zenodo-v3-release.json",
+          "origin_path": "/home/repos/six-birds-agent/paper/submission/zenodo-v3-release.json",
+          "sha256": "c0a62c5237c814fa5c610dbd1a4dd4b39685493f835dedf57d77650df454b46c"
+        }
+      ],
+      "doi_scope": "Current source-version DOI; status is as recorded in local release metadata.",
+      "doi_status": "reserved",
+      "source_file": "Tsiokos_2026_To_Throw_a_Stone_with_Six_Birds_On_Agents_and_Agenthood.tex",
+      "source_path": "/home/repos/six-birds-papers/Tsiokos_2026_To_Throw_a_Stone_with_Six_Birds_On_Agents_and_Agenthood.tex",
+      "source_repo_commit": "df0e8a190b6eb4f7c70ad43cfef4c6970d440d06",
+      "source_sha256": "6cced0c1c872004b0cfcc33e20b5dacbd3f25471724b8bb0fc8384b861a71f72",
+      "title_tex": "To Throw a Stone with Six Birds: On Agents and Agenthood",
+      "year": "2026"
+    }
+  },
+  "schema_version": "1.0"
+}

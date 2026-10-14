@@ -1,0 +1,52 @@
+{
+  "algorithm": "deterministic-exhaustive-binary-running-intersection-check",
+  "candidates_examined": 1025416,
+  "claim_ceiling": "bounded corroboration of the generic proof source; not a replacement for Lean checking",
+  "configurations": [
+    {
+      "candidates": 64,
+      "configuration": "path-2",
+      "coordinates": 2,
+      "glued_cases": 36,
+      "nodes": 2,
+      "premise_cases": 36
+    },
+    {
+      "candidates": 676,
+      "configuration": "path-3",
+      "coordinates": 2,
+      "glued_cases": 144,
+      "nodes": 3,
+      "premise_cases": 144
+    },
+    {
+      "candidates": 676,
+      "configuration": "star-3",
+      "coordinates": 2,
+      "glued_cases": 144,
+      "nodes": 3,
+      "premise_cases": 144
+    },
+    {
+      "candidates": 512000,
+      "configuration": "path-4",
+      "coordinates": 3,
+      "glued_cases": 8000,
+      "nodes": 4,
+      "premise_cases": 8000
+    },
+    {
+      "candidates": 512000,
+      "configuration": "star-4",
+      "coordinates": 3,
+      "glued_cases": 10648,
+      "nodes": 4,
+      "premise_cases": 10648
+    }
+  ],
+  "glued_cases": 18972,
+  "premise_cases": 18972,
+  "schema_version": "1.0",
+  "status": "PASS",
+  "violations": []
+}

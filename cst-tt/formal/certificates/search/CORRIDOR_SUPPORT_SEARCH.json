@@ -1,0 +1,20 @@
+{
+  "deterministic": true,
+  "python_hash_seed": 0,
+  "result": {
+    "candidates_examined": 12384,
+    "definition_nonuniversal": true,
+    "detached_candidates_examined": 2688,
+    "detached_copy_excluded": true,
+    "detached_passes": 0,
+    "gapped_candidates_examined": 11448,
+    "gapped_passes": 0,
+    "max_stages": 4,
+    "smallest_positive_stage_count": 3,
+    "strict_passes": 6,
+    "temporal_gap_excluded": true
+  },
+  "schema_version": "CST-TT-04",
+  "search_id": "CORRIDOR_SUPPORT_SEARCH",
+  "usage_boundary": "bounded finite stress evidence; not a proof oracle"
+}

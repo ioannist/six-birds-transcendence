@@ -1,0 +1,72 @@
+{
+  "audit": {
+    "all_stages_temporally_realized": true,
+    "atomic_leg_count": 1,
+    "boundary_signatures_compatible": false,
+    "carrier_chain_valid": false,
+    "distinct_endpoints": false,
+    "ends_target_only": false,
+    "event_graph_well_formed": true,
+    "every_adjacent_stage_operationally_linked": true,
+    "every_atomic_leg_valid": true,
+    "failed_obligations": [
+      "distinct-endpoints",
+      "carrier-chain-valid",
+      "ends-target-only",
+      "leg-count-matches-chain",
+      "frontier-cover-valid",
+      "boundary-signatures-compatible"
+    ],
+    "forbidden_verdict_fields_absent": true,
+    "frontier_cover_valid": false,
+    "leg_audits": [
+      {
+        "atomic_leg_valid": true,
+        "audit_later_stage": 2,
+        "end_stage": 2,
+        "failed_obligations": [],
+        "leg_id": "leg-S-T",
+        "mixed_stage": 1,
+        "route_status": "route-indexed",
+        "source_carrier": 17,
+        "source_nonredundant": true,
+        "start_stage": 0,
+        "takeover_stage": 2,
+        "target_carrier": 101,
+        "target_nonredundant": true
+      }
+    ],
+    "leg_count_matches_chain": false,
+    "local_temporal_steps_valid": true,
+    "mixed_stage_count": 2,
+    "route_discipline_valid": true,
+    "route_status": "route-indexed",
+    "stage_indices_contiguous": true,
+    "stages_well_formed": true,
+    "starts_source_only": true,
+    "strict_corridor_valid": false,
+    "support_nonempty_and_unique": true
+  },
+  "certificate_id": "COR-C18",
+  "checker": {
+    "checked_at_phase": "CST-TT-04",
+    "function": "audit_strict_corridor",
+    "module": "cst_tt.corridor",
+    "python_version": "3.13.5"
+  },
+  "control_family": "strict-corridor",
+  "control_passed": true,
+  "expected_failed_obligation": "carrier-chain-valid",
+  "model_ref": "models/corridors/controls/COR-C18.model.json",
+  "model_sha256": "c60d7ccc6fccee1288080b1a7992ceca1233c74712ff91bab592615cbbb55fdd",
+  "observed_failed_obligations": [
+    "distinct-endpoints",
+    "carrier-chain-valid",
+    "ends-target-only",
+    "leg-count-matches-chain",
+    "frontier-cover-valid",
+    "boundary-signatures-compatible"
+  ],
+  "result_status": "checked-finite-negative-control",
+  "schema_version": "CST-TT-04"
+}

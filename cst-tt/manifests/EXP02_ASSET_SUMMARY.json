@@ -1,0 +1,24 @@
+{
+  "project": "CST-EXP",
+  "phase": "CST-EXP-02",
+  "generated_date": "2026-08-09",
+  "status": "assets_built_pending_freeze",
+  "target_selected": false,
+  "scenario_verdicts_selected": false,
+  "theorem_or_program_implemented": false,
+  "counts": {
+    "battery_scenarios": 35,
+    "governing_plan_scenarios": 20,
+    "supplemental_stress_controls": 15,
+    "protocol_axes": 10,
+    "axis_values": 44,
+    "outcome_labels": 27,
+    "discriminators": 10,
+    "scenario_discriminator_rows": 350,
+    "scenario_question_crosswalk_rows": 1278,
+    "scenario_asset_crosswalk_rows": 164,
+    "scenario_cards": 35,
+    "unfilled_verdict_rows": 35
+  },
+  "next_phase": "CST-EXP-03"
+}

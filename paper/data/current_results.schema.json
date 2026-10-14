@@ -1,0 +1,284 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:cst-tt-09:paper:result-snapshot:1",
+  "title": "CST-TT-09 exact Lean result snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifact",
+    "schema_version",
+    "lean_toolchain",
+    "claim_ledger_sha256",
+    "entries",
+    "candidate_findings",
+    "schemas"
+  ],
+  "properties": {
+    "artifact": {
+      "const": "CST-TT-09 paper result snapshot"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "lean_toolchain": {
+      "const": "leanprover/lean4:v4.28.0"
+    },
+    "claim_ledger_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "candidate_findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "computed_by",
+          "observed_value",
+          "reason",
+          "disposition"
+        ],
+        "properties": {
+          "key": {
+            "$ref": "#/$defs/key"
+          },
+          "computed_by": {
+            "$ref": "#/$defs/line"
+          },
+          "observed_value": {
+            "$ref": "#/$defs/exact_value"
+          },
+          "reason": {
+            "$ref": "#/$defs/line"
+          },
+          "disposition": {
+            "const": "not_exported_missing_numeric_pin"
+          }
+        }
+      }
+    },
+    "schemas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "key",
+          "claim_id",
+          "pinned_by",
+          "theorem_statement",
+          "axioms",
+          "disposition",
+          "description"
+        ],
+        "properties": {
+          "key": {
+            "$ref": "#/$defs/key"
+          },
+          "claim_id": {
+            "$ref": "#/$defs/line"
+          },
+          "pinned_by": {
+            "$ref": "#/$defs/fqn"
+          },
+          "theorem_statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "axioms": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "propext",
+                "Classical.choice",
+                "Quot.sound"
+              ]
+            }
+          },
+          "disposition": {
+            "const": "universal_horizon_schema_not_numeric"
+          },
+          "description": {
+            "$ref": "#/$defs/line"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "key": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "line": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[^\\r\\n]+$"
+    },
+    "fqn": {
+      "type": "string",
+      "pattern": "^CSTTT(?:\\.[A-Za-z_][A-Za-z_0-9']*)+$"
+    },
+    "exact_value": {
+      "type": "string",
+      "anyOf": [
+        {
+          "pattern": "^(?:0|[1-9][0-9]*)$"
+        },
+        {
+          "pattern": "^-?(?:0|[1-9][0-9]*)/[1-9][0-9]*$"
+        },
+        {
+          "pattern": "^\\[(?:\"-?(?:0|[1-9][0-9]*)(?:/[1-9][0-9]*)?\"(?:,\"-?(?:0|[1-9][0-9]*)(?:/[1-9][0-9]*)?\")*)?\\]$"
+        }
+      ]
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "key",
+        "value",
+        "claim_id",
+        "model",
+        "computed_by",
+        "pinned_by",
+        "description",
+        "value_type",
+        "extraction",
+        "pinning"
+      ],
+      "properties": {
+        "key": {
+          "$ref": "#/$defs/key"
+        },
+        "value": {
+          "$ref": "#/$defs/exact_value"
+        },
+        "claim_id": {
+          "$ref": "#/$defs/line"
+        },
+        "model": {
+          "$ref": "#/$defs/line"
+        },
+        "computed_by": {
+          "$ref": "#/$defs/line"
+        },
+        "pinned_by": {
+          "$ref": "#/$defs/fqn"
+        },
+        "description": {
+          "$ref": "#/$defs/line"
+        },
+        "value_type": {
+          "enum": [
+            "integer",
+            "rational",
+            "integer_list",
+            "rational_list"
+          ]
+        },
+        "extraction": {
+          "enum": [
+            "evaluated",
+            "pinned_only",
+            "evaluated_via_protocol"
+          ]
+        },
+        "pinning": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "axioms",
+            "bridge_theorems",
+            "theorem_statement",
+            "checked_statement",
+            "method"
+          ],
+          "properties": {
+            "bridge_theorems": {
+              "type": "object",
+              "additionalProperties": false,
+              "patternProperties": {
+                "^CSTTT(?:\\.[A-Za-z_][A-Za-z_0-9']*)+$": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "enum": [
+                      "propext",
+                      "Classical.choice",
+                      "Quot.sound"
+                    ]
+                  }
+                }
+              }
+            },
+            "axioms": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "propext",
+                  "Classical.choice",
+                  "Quot.sound"
+                ]
+              }
+            },
+            "theorem_statement": {
+              "type": "string",
+              "minLength": 1
+            },
+            "checked_statement": {
+              "type": "string",
+              "minLength": 1
+            },
+            "method": {
+              "enum": [
+                "kernel_checked_projection",
+                "definitional_statement_view"
+              ]
+            }
+          }
+        },
+        "evaluation_source_key": {
+          "$ref": "#/$defs/key"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "extraction": {
+                "const": "evaluated_via_protocol"
+              }
+            },
+            "required": [
+              "extraction"
+            ]
+          },
+          "then": {
+            "required": [
+              "evaluation_source_key"
+            ]
+          },
+          "else": {
+            "not": {
+              "required": [
+                "evaluation_source_key"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

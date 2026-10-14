@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-birds.local/cst-tt/schemas/corridor_composition_certificate.schema.json",
+  "title": "Strict temporal corridor composition certificate",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "CST-TT-04"},
+    "certificate_id": {"type": "string", "minLength": 1},
+    "left_model_ref": {"type": "string", "minLength": 1},
+    "right_model_ref": {"type": "string", "minLength": 1},
+    "composite_model_ref": {"type": "string", "minLength": 1},
+    "source_hashes": {"type": "object", "additionalProperties": {"type": "string", "pattern": "^[0-9a-f]{64}$"}},
+    "result_status": {"enum": ["not-evaluated", "checked-finite-corridor-composition"]},
+    "claim_lanes": {"type": "array", "items": {"const": "S-L"}, "minItems": 1, "maxItems": 1},
+    "claim_ceiling": {"type": "string", "minLength": 1},
+    "audit": {
+      "type": "object",
+      "required": ["composition_valid", "old_endpoint_mixed_rule_satisfied", "chain_rule_satisfied", "failed_obligations"],
+      "properties": {
+        "composition_valid": {"type": "boolean"},
+        "old_endpoint_mixed_rule_satisfied": {"type": "boolean"},
+        "chain_rule_satisfied": {"type": "boolean"},
+        "failed_obligations": {"type": "array", "items": {"type": "string"}}
+      },
+      "additionalProperties": true
+    },
+    "checker": {"type": "object", "additionalProperties": true}
+  },
+  "required": ["schema_version", "certificate_id", "left_model_ref", "right_model_ref", "composite_model_ref", "source_hashes", "result_status", "claim_lanes", "claim_ceiling", "audit", "checker"]
+}

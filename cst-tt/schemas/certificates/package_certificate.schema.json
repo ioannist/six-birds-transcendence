@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-birds.local/cst-tt/schemas/package_certificate.schema.json",
+  "title": "CST-TT-02 integrated package certificate",
+  "description": "Binds an exact finite target-package model to independent C1-C8, gluing, C6 temporal-substance, hard-gate, and ownership audits. It contains no lineage or autonomy verdict.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "certificate_id", "model_ref", "model_sha256", "result_status",
+    "claim_lanes", "claim_ceiling", "theorem_evidence", "audit", "checker"
+  ],
+  "properties": {
+    "schema_version": {"const": "CST-TT-02"},
+    "certificate_id": {"type": "string", "minLength": 1},
+    "model_ref": {"type": "string", "minLength": 1},
+    "model_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "result_status": {"enum": ["scaffold-only", "checked-finite-package-certificate"]},
+    "claim_lanes": {
+      "type": "array", "minItems": 1, "uniqueItems": true,
+      "items": {"enum": ["S-R"]}
+    },
+    "claim_ceiling": {"const": "finite structural target realization only"},
+    "theorem_evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["theorem_ids", "lean_declarations", "lean_compile_status", "bounded_exhaustion_ref"],
+      "properties": {
+        "theorem_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "lean_declarations": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "lean_compile_status": {"enum": ["pending-toolchain", "compiled"]},
+        "bounded_exhaustion_ref": {"type": "string", "minLength": 1}
+      }
+    },
+    "audit": {
+      "type": "object", "additionalProperties": true,
+      "required": [
+        "exact_clause_coverage", "unique_clause_slots", "every_scope_exact",
+        "every_clause_accepted", "every_hard_gate_passed", "join_tree",
+        "global_constructible", "supplied_global_matches", "global_restricts_to_every_local",
+        "temporal_substance", "target_owned", "forbidden_field_free",
+        "integrated_package_valid", "derived_global_assignment", "failed_obligations", "clause_audits"
+      ],
+      "properties": {
+        "exact_clause_coverage": {"type": "boolean"},
+        "unique_clause_slots": {"type": "boolean"},
+        "every_scope_exact": {"type": "boolean"},
+        "every_clause_accepted": {"type": "boolean"},
+        "every_hard_gate_passed": {"type": "boolean"},
+        "join_tree": {"type": "object"},
+        "global_constructible": {"type": "boolean"},
+        "supplied_global_matches": {"type": "boolean"},
+        "global_restricts_to_every_local": {"type": "boolean"},
+        "temporal_substance": {"type": "object"},
+        "target_owned": {"type": "boolean"},
+        "forbidden_field_free": {"type": "boolean"},
+        "integrated_package_valid": {"type": "boolean"},
+        "derived_global_assignment": {"type": "object"},
+        "failed_obligations": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "clause_audits": {"type": "array", "items": {"type": "object"}}
+      }
+    },
+    "checker": {
+      "type": "object", "additionalProperties": false,
+      "required": ["module", "function", "python_version", "checked_at_phase"],
+      "properties": {
+        "module": {"const": "cst_tt.package_gluing"},
+        "function": {"const": "audit_package"},
+        "python_version": {"type": "string", "minLength": 1},
+        "checked_at_phase": {"const": "CST-TT-02"}
+      }
+    }
+  }
+}

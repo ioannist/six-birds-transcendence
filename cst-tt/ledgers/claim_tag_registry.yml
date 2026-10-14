@@ -1,0 +1,57 @@
+schema_version: '1.0'
+project: CST-EXP
+canonical_prefix_policy: 'plain tags in prose; CST: prefix allowed in machine-readable records'
+tags:
+- tag: S-T
+  namespaced: CST:S-T
+  name: structural transport
+  object: typed cross-carrier preservation or transformation
+  blocked_defaults:
+  - target package
+  - lineage
+  - autonomy
+  - recognition
+  - ontology
+- tag: S-R
+  namespaced: CST:S-R
+  name: target realization structure
+  object: target clause/gate satisfaction
+  blocked_defaults:
+  - lineage
+  - recognition
+  - phenomenal realization
+- tag: S-L
+  namespaced: CST:S-L
+  name: lineage structure
+  object: source-target history/ancestry classification
+  blocked_defaults:
+  - uniqueness
+  - target package
+  - ontology
+- tag: A
+  namespaced: CST:A
+  name: post-handoff autonomy
+  object: maintenance after declared removal intervention
+  blocked_defaults:
+  - lineage
+  - consciousness
+  - environmental isolation
+- tag: R
+  namespaced: CST:R
+  name: recognition
+  object: defeasible structure-to-observation correspondence
+  blocked_defaults:
+  - derivation
+  - ontology
+- tag: O
+  namespaced: CST:O
+  name: ontological or phenomenal reading
+  object: conditional interpretation under named premises
+  blocked_defaults:
+  - unconditional detachment
+- tag: M
+  namespaced: CST:M
+  name: methodology or analogy
+  object: workflow rule, design pattern, warning, analogy
+  blocked_defaults:
+  - proof of any S/R/O claim

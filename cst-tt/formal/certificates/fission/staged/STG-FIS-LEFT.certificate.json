@@ -1,0 +1,51 @@
+{
+  "assembly_ref": "models/fission/staged/STG-FIS-LEFT.assembly.json",
+  "assembly_sha256": "6231f7bfd2bbf8d2a074c6ddac693dfa4a16158487cf8ef7908a68555b76937e",
+  "audit": {
+    "assembly_id": "STG-FIS-LEFT",
+    "carriers_distinct": true,
+    "coordinate_maps_total": true,
+    "errors": [],
+    "exactly_eight_clause_maps": true,
+    "failed_obligations": [],
+    "forbidden_verdict_fields_absent": true,
+    "hard_gates_never_averaged": true,
+    "maps_separately_typed": true,
+    "source_package_valid": true,
+    "staged_assembly_valid": true,
+    "target_global_assembled": true,
+    "target_package_valid": true,
+    "value_maps_sound": true
+  },
+  "certificate_id": "STG-FIS-LEFT",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_staged_assembly",
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite typed clause-map preservation and target assembly only",
+  "claim_lanes": [
+    "S-T",
+    "S-R"
+  ],
+  "handoff_alignment": {},
+  "result_status": "checked-finite-compositional-staged-package-certificate",
+  "schema_version": "CST-TT-06",
+  "source_model_ref": "models/fission/packages/PKG-FIS-SOURCE.model.json",
+  "source_model_sha256": "42de5d755220aff998bd4c01bc77d395ae78b15a3b736f5cd3b48363f670908e",
+  "target_model_ref": "models/fission/packages/PKG-FIS-LEFT.model.json",
+  "target_model_sha256": "eca8b37bf7ea5d159b7c6bc9a9369ae5eb9fd5e49352385e847e411feb4b0710",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.PackageTheory.stagedHeterogeneousPackageAssembly",
+      "CSTTT.TargetTheory.fullTemporalHandoffComposition"
+    ],
+    "theorem_ids": [
+      "TTH-01",
+      "TTH-02",
+      "TTH-07"
+    ]
+  }
+}

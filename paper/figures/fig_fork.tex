@@ -1,0 +1,16 @@
+% F6: the symmetry exchanges targets and applying it twice returns each target.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small,
+ system/.style={draw,rounded corners=2pt,fill=black!3,minimum width=3.1cm,minimum height=.95cm,align=center},
+ flow/.style={-{Stealth[length=2mm]},semithick}]
+\node[system] (source) at (1.8,1.2) {Source system\\\snapGSevenForkSystemIdsItemZero};
+\node[system] (left) at (8,3.1) {Target system\\\snapGSevenForkSystemIdsItemOne};
+\node[system] (right) at (8,-.7) {Target system\\\snapGSevenForkSystemIdsItemTwo};
+\draw[flow] (source.east) to[out=0,in=180] node[above,sloped] {handoff} (left.west);
+\draw[flow] (source.east) to[out=0,in=180] node[below,sloped] {handoff} (right.west);
+\draw[<->,densely dashed,line width=1pt] (left.east) to[out=0,in=0]
+ node[right,align=center] {swap\\involution} (right.east);
+\node[align=center,text width=3.5cm] at (13,3.1) {autonomous\\after withdrawal};
+\node[align=center,text width=3.5cm] at (13,-.7) {autonomous\\after withdrawal};
+\node[draw,densely dotted,align=center,text width=3.1cm] at (1.8,-.7) {Source and transfer\\aids withdrawn};
+\node[align=center] at (8,-1.9) {Swap twice: each target returns to itself\\No branch is structurally selected as the original};
+\end{tikzpicture}

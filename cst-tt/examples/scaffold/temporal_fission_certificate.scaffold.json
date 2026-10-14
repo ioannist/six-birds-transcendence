@@ -1,0 +1,9 @@
+{
+  "audit": {},
+  "branch_certificate_refs": {},
+  "branch_certificate_sha256": {},
+  "certificate_id": "SCF",
+  "relation": [],
+  "schema_version": "CST-TT-06",
+  "target_swap": {}
+}

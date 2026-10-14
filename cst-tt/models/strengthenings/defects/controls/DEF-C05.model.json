@@ -1,0 +1,245 @@
+{
+  "acceptance_rule": "componentwise-hard-gated",
+  "claim_ceiling": "exact finite defect and robustness audit only",
+  "claim_lanes": [
+    "M",
+    "S-T",
+    "S-R",
+    "S-L",
+    "A"
+  ],
+  "components": [
+    {
+      "component_id": "H01-distinct-carriers",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H02-C1-objecthood",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H03-C2-strict-promotion",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H04-C3-reflexive-coordinate",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H05-C4-nonexposure",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H06-C5-action-credit",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H07-C6-temporal-closure",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H08-C7-binding",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H09-C8-viability",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H10-route-discipline",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H11-strict-lineage",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "H12-post-withdrawal-autonomy",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "hard",
+      "tolerance": {
+        "denominator": 1,
+        "numerator": 0
+      }
+    },
+    {
+      "component_id": "S01-predictive-margin",
+      "defect": {
+        "denominator": 10,
+        "numerator": 1
+      },
+      "gate_kind": "soft",
+      "tolerance": {
+        "denominator": 2,
+        "numerator": 1
+      }
+    },
+    {
+      "component_id": "S02-order-margin",
+      "defect": {
+        "denominator": 5,
+        "numerator": 1
+      },
+      "gate_kind": "soft",
+      "tolerance": {
+        "denominator": 2,
+        "numerator": 1
+      }
+    },
+    {
+      "component_id": "S03-tick-margin",
+      "defect": {
+        "denominator": 4,
+        "numerator": 1
+      },
+      "gate_kind": "soft",
+      "tolerance": {
+        "denominator": 2,
+        "numerator": 1
+      }
+    },
+    {
+      "component_id": "S04-progress-margin",
+      "defect": {
+        "denominator": 1,
+        "numerator": 0
+      },
+      "gate_kind": "soft",
+      "tolerance": {
+        "denominator": 2,
+        "numerator": 1
+      }
+    },
+    {
+      "component_id": "S05-record-margin",
+      "defect": {
+        "denominator": 0,
+        "numerator": 1
+      },
+      "gate_kind": "soft",
+      "tolerance": {
+        "denominator": 2,
+        "numerator": 1
+      }
+    }
+  ],
+  "expected_components": [
+    "H01-distinct-carriers",
+    "H02-C1-objecthood",
+    "H03-C2-strict-promotion",
+    "H04-C3-reflexive-coordinate",
+    "H05-C4-nonexposure",
+    "H06-C5-action-credit",
+    "H07-C6-temporal-closure",
+    "H08-C7-binding",
+    "H09-C8-viability",
+    "H10-route-discipline",
+    "H11-strict-lineage",
+    "H12-post-withdrawal-autonomy",
+    "S01-predictive-margin",
+    "S02-order-margin",
+    "S03-tick-margin",
+    "S04-progress-margin",
+    "S05-record-margin"
+  ],
+  "nonclaims": [
+    "no scalar score licenses a failed hard gate",
+    "no empirical noise model",
+    "no consciousness conclusion"
+  ],
+  "profile_id": "DEF-C05",
+  "scalar_summary_role": "diagnostic-only",
+  "schema_version": "CST-TT-07A-defect-v1",
+  "title": "exact vector defect profile with nonnegotiable hard gates"
+}

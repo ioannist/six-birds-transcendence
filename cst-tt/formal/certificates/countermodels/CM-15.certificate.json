@@ -1,0 +1,44 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm15_branchwiseRecombinationFailure",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-15",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R",
+    "S-L"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-15",
+  "finite_model_ref": "models/countermodels/CM-15.model.json",
+  "finite_model_sha256": "8159b024710ce9559c4a6259c124794f445568f697fc66f11ebbc8bc2d2b232c",
+  "minimality_status": "certified",
+  "model_family": "recombination-marginal-collision",
+  "name": "Branchwise preservation without recombination preservation",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "Two joint relations can have identical branch marginals while differing in their recombination structure.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "all pairs of binary relations over alphabets of size 1..2",
+    "candidates_explored": 260,
+    "lower_bound_argument": "A one-symbol alphabet or singleton support is determined by its marginals; two binary support points are minimal.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 42,
+    "same_size_candidates_explored": 96,
+    "same_size_qualifying_candidates": 2,
+    "size_measure": "(alphabet_size, maximum_joint_support_size)",
+    "smaller_candidates_explored": 29,
+    "witness_size_vector": [
+      2,
+      2
+    ]
+  },
+  "target_no_go_id": "TTN-14",
+  "toy_model_ref": "TFM-04"
+}

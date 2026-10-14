@@ -1,0 +1,23 @@
+{
+  "claim_ceiling": "generalized structural temporal-lineage path only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "legs": [
+    {
+      "kind": "overlap",
+      "leg_id": "overlap-S-M",
+      "model_ref": "models/corridors/COR-POS-02A.model.json",
+      "model_sha256": "6a162e3005a78178e4790efe381ebd848b733b388f6c0207081b8cd221b96aa8"
+    },
+    {
+      "kind": "direct",
+      "leg_id": "direct-M-T",
+      "model_ref": "models/strengthenings/direct/DS-POS-03-MIXED-MODE.model.json",
+      "model_sha256": "35cb174ad5c16de7bdf011a538f1b3ea4462b78869b4ee5cc7f44355b4513255"
+    }
+  ],
+  "path_id": "GCP-MIXED-01",
+  "primary_fiach_definition_change": "none",
+  "schema_version": "CST-TT-07A-generalized-path-v1"
+}

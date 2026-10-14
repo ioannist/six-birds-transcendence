@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "paper/tools/export_results.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "result_snapshot",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W22/snapshot-regeneration.log",
+  "log_sha256": "66261b389ba59f1ef55bdd4bf3d929db79ccdeb3fa6efe91ea29c27dcdf00ef8",
+  "metrics": {},
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-14T10:35:54+00:00",
+  "status": "pass",
+  "summary": "{\"entries\": 42, \"pins\": 29, \"candidate_findings\": [], \"check\": false}"
+}

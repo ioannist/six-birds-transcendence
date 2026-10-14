@@ -1,0 +1,394 @@
+{
+  "schema": "csttt-G29-declarations-v1",
+  "source_sha256": {
+    "lean/CSTTT/FullNative/SharedAttribution.lean": "7303294f53a29c064b87e32b04e4a886cc64850df3319ada7e8692f37ea2084f",
+    "lean/CSTTT/FullNative/IAPSAdjudication.lean": "605b4fe2b20252811f6b00d8a1cf1b20526e18436a97daae79ae4081ff6647c7"
+  },
+  "declaration_count": 48,
+  "declarations": [
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.receiptNode",
+      "kind": "def",
+      "line": 15,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.retainedEdges",
+      "kind": "def",
+      "line": 19,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.edges",
+      "kind": "def",
+      "line": 33,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.ancestry",
+      "kind": "def",
+      "line": 35,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.emptyTarget",
+      "kind": "def",
+      "line": 36,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.actual_edges",
+      "kind": "theorem",
+      "line": 39,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.edge_provenance",
+      "kind": "theorem",
+      "line": 41,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.missing_source_edges",
+      "kind": "theorem",
+      "line": 50,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.missing_target_edges",
+      "kind": "theorem",
+      "line": 52,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.decoder_extensional",
+      "kind": "theorem",
+      "line": 54,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.source_to_both_targets",
+      "kind": "theorem",
+      "line": 60,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.ancestry_least",
+      "kind": "theorem",
+      "line": 64,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.ancestry_no_ex_nihilo",
+      "kind": "theorem",
+      "line": 69,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.path_first",
+      "kind": "theorem",
+      "line": 72,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.target_is_not_source",
+      "kind": "theorem",
+      "line": 78,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.no_incoming_source",
+      "kind": "theorem",
+      "line": 85,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.original_target_role_countertrace",
+      "kind": "theorem",
+      "line": 88,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.withdrawn_address_empty",
+      "kind": "theorem",
+      "line": 94,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.original_empty_arm",
+      "kind": "theorem",
+      "line": 99,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.occupied_target_not_empty",
+      "kind": "theorem",
+      "line": 103,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.actual_nonempty_request_rejected",
+      "kind": "theorem",
+      "line": 112,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.FusionRealized",
+      "kind": "def",
+      "line": 118,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.siblings_are_not_fusion",
+      "kind": "theorem",
+      "line": 121,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.all_joint_paths_have_no_merger",
+      "kind": "theorem",
+      "line": 127,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.SharedAttribution.no_fused_source_rows",
+      "kind": "theorem",
+      "line": 138,
+      "classification": "b",
+      "row_id": "TTF-04",
+      "module": "lean/CSTTT/FullNative/SharedAttribution.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.Cert",
+      "kind": "abbrev",
+      "line": 15,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.Valid",
+      "kind": "def",
+      "line": 16,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.PredictiveAncestry",
+      "kind": "def",
+      "line": 17,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.PackageRealized",
+      "kind": "def",
+      "line": 37,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.ResourceContinuation",
+      "kind": "def",
+      "line": 42,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.PackageAutonomous",
+      "kind": "def",
+      "line": 52,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.valid_each_request",
+      "kind": "theorem",
+      "line": 56,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.predictive_ancestry_from_raw",
+      "kind": "theorem",
+      "line": 59,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.resource_continuation_from_raw",
+      "kind": "theorem",
+      "line": 73,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.all_checkpoint_lanes_from_shared_raw",
+      "kind": "theorem",
+      "line": 81,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.checkpoint_resource_successor",
+      "kind": "theorem",
+      "line": 87,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.no_independent_package_lanes",
+      "kind": "theorem",
+      "line": 91,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.endpoint_receipt_ends",
+      "kind": "theorem",
+      "line": 94,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.last_kept",
+      "kind": "theorem",
+      "line": 100,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.target_step_credit_rejected",
+      "kind": "theorem",
+      "line": 106,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.target_step_c5_rejected",
+      "kind": "theorem",
+      "line": 131,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.every_native_successor_rejects_package",
+      "kind": "theorem",
+      "line": 138,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.original_package_autonomy_refuted",
+      "kind": "theorem",
+      "line": 157,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.no_faithful_original_invariant",
+      "kind": "theorem",
+      "line": 167,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.no_faithful_original_autonomy",
+      "kind": "theorem",
+      "line": 184,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.original_iaps_schema_refuted",
+      "kind": "theorem",
+      "line": 197,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.adjudicated_shared_raw_package",
+      "kind": "theorem",
+      "line": 206,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.IAPSAdjudication.actual_iaps_countertrace",
+      "kind": "theorem",
+      "line": 222,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/IAPSAdjudication.lean"
+    }
+  ]
+}

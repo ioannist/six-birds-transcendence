@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "paper/tools/check_manuscript.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "manuscript_check",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W24-archive-refresh/manuscript_check.log",
+  "log_sha256": "cc383554a84d57a6365fdec716b00e4d9935bb22941a60033143f0a43eb3a2cd",
+  "metrics": {},
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-14T13:22:49+00:00",
+  "status": "pass",
+  "summary": "{\"citation_keys\": 100, \"destinations\": \"mapping pending\", \"errors\": [], \"files\": 31, \"section_labels\": [\"sec:ancestry\", \"sec:autonomy\", \"sec:availability\", \"sec:branching\", \"sec:checks\", \"sec:conclusion\", \"sec:continuation\", \"sec:copy\", \"sec:intro\", \"sec:lineage\", \"sec:modes\", \"sec:objections\", \"sec:realization\", \"sec:related\", \"sec:route\", \"sec:setting\"], \"theorem_environments\": 41, \"tikz_nodes\": 103}"
+}

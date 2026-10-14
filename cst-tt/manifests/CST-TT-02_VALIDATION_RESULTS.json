@@ -1,0 +1,3414 @@
+{
+  "checks": 567,
+  "failed": 0,
+  "passed": 563,
+  "phase": "CST-TT-02",
+  "project": "CST-TT",
+  "results": [
+    {
+      "category": "baseline",
+      "check_id": "BASE-001",
+      "detail": "repository is a Git worktree",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-002",
+      "detail": "CST-TT-01 tag resolves to the frozen phase base",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-003",
+      "detail": "frozen CST-TT-01 base is an ancestor of current HEAD",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-004",
+      "detail": "repository has no whitespace errors",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-005",
+      "detail": "clean-tree check not requested for this pass",
+      "status": "SKIP"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-006",
+      "detail": "phase tag not required before freeze commit",
+      "status": "SKIP"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-001",
+      "detail": "Lean toolchain remains pinned to v4.28.0",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-01",
+      "detail": "pyproject contains >=3.13,<3.14",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-02",
+      "detail": "pyproject contains pytest==9.0.2",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-03",
+      "detail": "pyproject contains jsonschema==4.26.0",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-04",
+      "detail": "pyproject contains setuptools==82.0.1",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-05",
+      "detail": "pyproject contains version = \"0.1.0\"",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-007",
+      "detail": "running Python is 3.13 (found 3.13.5)",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-LEAN-BUILD",
+      "detail": "lean/lake unavailable; no compilation pass claimed",
+      "status": "SKIP"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-1",
+      "detail": "toolchain status names CST-TT-02",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-2",
+      "detail": "toolchain status records two generic package proof sources",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-3",
+      "detail": "toolchain status records two positive package certificates",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-4",
+      "detail": "toolchain status records one staged certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-5",
+      "detail": "toolchain status records eighteen controls",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-6",
+      "detail": "toolchain status does not overclaim compilation",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-7",
+      "detail": "toolchain status records the CST-TT-02 static Lean audit",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-001",
+      "detail": "at least twenty-five Python source files are present (58)",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-001",
+      "detail": "scripts/build_exp01_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-002",
+      "detail": "scripts/build_exp02_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-003",
+      "detail": "scripts/build_exp03_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-004",
+      "detail": "scripts/build_exp04_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-005",
+      "detail": "scripts/build_exp05_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-006",
+      "detail": "scripts/build_exp06_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-007",
+      "detail": "scripts/build_tt00_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-008",
+      "detail": "scripts/build_tt01_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-009",
+      "detail": "scripts/build_tt02_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-010",
+      "detail": "scripts/enrich_exp01_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-011",
+      "detail": "scripts/exp02_supplemental.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-012",
+      "detail": "scripts/exp03_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-013",
+      "detail": "scripts/exp04_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-014",
+      "detail": "scripts/exp05_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-015",
+      "detail": "scripts/exp06_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-016",
+      "detail": "scripts/extract_corpus.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-017",
+      "detail": "scripts/finalize_exp02_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-018",
+      "detail": "scripts/finalize_exp03_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-019",
+      "detail": "scripts/finalize_exp04_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-020",
+      "detail": "scripts/finalize_exp05_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-021",
+      "detail": "scripts/finalize_exp06_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-022",
+      "detail": "scripts/finalize_tt00_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-023",
+      "detail": "scripts/finalize_tt01_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-024",
+      "detail": "scripts/finalize_tt02_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-025",
+      "detail": "scripts/tt00_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-026",
+      "detail": "scripts/tt02_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-027",
+      "detail": "scripts/validate_exp01.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-028",
+      "detail": "scripts/validate_exp02.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-029",
+      "detail": "scripts/validate_exp03.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-030",
+      "detail": "scripts/validate_exp04.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-031",
+      "detail": "scripts/validate_exp05.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-032",
+      "detail": "scripts/validate_exp06.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-033",
+      "detail": "scripts/validate_tt00.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-034",
+      "detail": "scripts/validate_tt01.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-035",
+      "detail": "scripts/validate_tt02.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-036",
+      "detail": "scripts/verify_exp03_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-037",
+      "detail": "scripts/verify_exp04_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-038",
+      "detail": "scripts/verify_exp05_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-039",
+      "detail": "scripts/verify_exp06_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-040",
+      "detail": "scripts/verify_tt00_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-041",
+      "detail": "scripts/verify_tt01_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-042",
+      "detail": "scripts/verify_tt02_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-043",
+      "detail": "src/cst_tt/__init__.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-044",
+      "detail": "src/cst_tt/ancestry.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-045",
+      "detail": "src/cst_tt/autonomy.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-046",
+      "detail": "src/cst_tt/circularity.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-047",
+      "detail": "src/cst_tt/contracts.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-048",
+      "detail": "src/cst_tt/corridor.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-049",
+      "detail": "src/cst_tt/countermodels.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-050",
+      "detail": "src/cst_tt/hashing.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-051",
+      "detail": "src/cst_tt/package.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-052",
+      "detail": "src/cst_tt/package_auditor.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-053",
+      "detail": "src/cst_tt/package_gluing.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-054",
+      "detail": "src/cst_tt/predicates.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-055",
+      "detail": "src/cst_tt/registry.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-056",
+      "detail": "src/cst_tt/targets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-057",
+      "detail": "src/cst_tt/temporal.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-058",
+      "detail": "src/cst_tt/types.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-TESTS",
+      "detail": "full pytest suite passes",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-001",
+      "detail": "input checksum ledger retains the four frozen base inputs (4)",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-001",
+      "detail": "input checksum row 1 resolves and matches",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-002",
+      "detail": "input checksum row 2 resolves and matches",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-003",
+      "detail": "input checksum row 3 resolves and matches",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-004",
+      "detail": "input checksum row 4 resolves and matches",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TEMP-COUNT",
+      "detail": "nine temporal-audit source manuscripts are retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TEMP-01",
+      "detail": "Tsiokos_2026_An_Audited_Closure_Architecture_for_Consciousness_Exact_Finite_Models_Structural_Theorems_and_Conditional_Realization.tex is nonempty source provenance",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TEMP-02",
+      "detail": "Tsiokos_2026_Glass_Is_an_Unclosed_Layer_Kovacs_Memory_as_Predictive_Quotient_Residue.tex is nonempty source provenance",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TEMP-03",
+      "detail": "Tsiokos_2026_Holonomy_with_Memory_in_Six_Birds_Theory_Predictive_Quotients_Witnesses_and_Fixed_Support_Route_Transport.tex is nonempty source provenance",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TEMP-04",
+      "detail": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex is nonempty source provenance",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TEMP-05",
+      "detail": "Tsiokos_2026_Six_Birds_Foundations_VI_A_Catalog_of_Dynamical_Structural_Laws.tex is nonempty source provenance",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TEMP-06",
+      "detail": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex is nonempty source provenance",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TEMP-07",
+      "detail": "Tsiokos_2026_To_Flatten_a_Stone_with_Six_Birds_Critical_Pairs_Holonomy_and_Confluence_in_Rewriting_Systems.tex is nonempty source provenance",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TEMP-08",
+      "detail": "Tsiokos_2026_To_Lay_a_Stone_with_Six_Birds_Finite_State_Semantics_for_Packaging_Directionality_and_Coarse_Graining.tex is nonempty source provenance",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TEMP-09",
+      "detail": "Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex is nonempty source provenance",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-NORM-TEMPORAL_TRANSCE",
+      "detail": "inputs/normative/cst-tt-00/TEMPORAL_TRANSCENDENCE_AUDIT.md is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-NORM-EXECUTION_PLAN",
+      "detail": "inputs/normative/cst-tt-00/EXECUTION_PLAN.md is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-NORM-FIACH_BASELINE_S",
+      "detail": "inputs/normative/cst-tt-00/FIACH_BASELINE_SPECIFICATION.md is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-NORM-IAPS_BASELINE_SP",
+      "detail": "inputs/normative/cst-tt-00/IAPS_BASELINE_SPECIFICATION.md is retained",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-COUNT",
+      "detail": "exactly two positive package witnesses are registered",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-MODEL",
+      "detail": "PKG-POS-01-TARGET model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-CERT",
+      "detail": "PKG-POS-01-TARGET certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-01",
+      "detail": "PKG-POS-01-TARGET passes integrated",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-02",
+      "detail": "PKG-POS-01-TARGET passes coverage",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-03",
+      "detail": "PKG-POS-01-TARGET passes locals",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-04",
+      "detail": "PKG-POS-01-TARGET passes gates",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-05",
+      "detail": "PKG-POS-01-TARGET passes tree",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-06",
+      "detail": "PKG-POS-01-TARGET passes running",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-07",
+      "detail": "PKG-POS-01-TARGET passes edges",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-08",
+      "detail": "PKG-POS-01-TARGET passes global",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-09",
+      "detail": "PKG-POS-01-TARGET passes temporal",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-10",
+      "detail": "PKG-POS-01-TARGET passes ownership",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-11",
+      "detail": "PKG-POS-01-TARGET passes separation",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-12",
+      "detail": "PKG-POS-01-TARGET passes no-failures",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-13",
+      "detail": "PKG-POS-01-TARGET passes eight-clauses",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-14",
+      "detail": "PKG-POS-01-TARGET passes forty-four-coordinates",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-HASH",
+      "detail": "PKG-POS-01-TARGET model hash is bound in registry and certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-AUDIT",
+      "detail": "PKG-POS-01-TARGET stored audit equals independent recomputation",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-SCHEMA",
+      "detail": "PKG-POS-01-TARGET certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-01-LANE",
+      "detail": "PKG-POS-01-TARGET is typed only as S-R",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-MODEL",
+      "detail": "PKG-POS-02-SOURCE model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-CERT",
+      "detail": "PKG-POS-02-SOURCE certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-01",
+      "detail": "PKG-POS-02-SOURCE passes integrated",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-02",
+      "detail": "PKG-POS-02-SOURCE passes coverage",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-03",
+      "detail": "PKG-POS-02-SOURCE passes locals",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-04",
+      "detail": "PKG-POS-02-SOURCE passes gates",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-05",
+      "detail": "PKG-POS-02-SOURCE passes tree",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-06",
+      "detail": "PKG-POS-02-SOURCE passes running",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-07",
+      "detail": "PKG-POS-02-SOURCE passes edges",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-08",
+      "detail": "PKG-POS-02-SOURCE passes global",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-09",
+      "detail": "PKG-POS-02-SOURCE passes temporal",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-10",
+      "detail": "PKG-POS-02-SOURCE passes ownership",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-11",
+      "detail": "PKG-POS-02-SOURCE passes separation",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-12",
+      "detail": "PKG-POS-02-SOURCE passes no-failures",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-13",
+      "detail": "PKG-POS-02-SOURCE passes eight-clauses",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-14",
+      "detail": "PKG-POS-02-SOURCE passes forty-four-coordinates",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-HASH",
+      "detail": "PKG-POS-02-SOURCE model hash is bound in registry and certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-AUDIT",
+      "detail": "PKG-POS-02-SOURCE stored audit equals independent recomputation",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-SCHEMA",
+      "detail": "PKG-POS-02-SOURCE certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-02-LANE",
+      "detail": "PKG-POS-02-SOURCE is typed only as S-R",
+      "status": "PASS"
+    },
+    {
+      "category": "package",
+      "check_id": "PKG-DISTINCT",
+      "detail": "source and target package carrier codes are distinct",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-01",
+      "detail": "C6 satisfies future_sufficient",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-02",
+      "detail": "C6 satisfies order_stable",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-03",
+      "detail": "C6 satisfies successor_available",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-04",
+      "detail": "C6 satisfies viable_tick",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-05",
+      "detail": "C6 satisfies genuine_progress",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-06",
+      "detail": "C6 satisfies endogenous_arrow",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-07",
+      "detail": "C6 satisfies record_descends",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-08",
+      "detail": "C6 satisfies route_residue_retained",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-09",
+      "detail": "C6 satisfies no_external_scheduler",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-10",
+      "detail": "C6 satisfies temporal_owner_matches",
+      "status": "PASS"
+    },
+    {
+      "category": "temporal-C6",
+      "check_id": "C6-11",
+      "detail": "C6 satisfies maintenance_owner_matches",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-01",
+      "detail": "staged assembly satisfies source_package_valid",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-02",
+      "detail": "staged assembly satisfies target_package_valid",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-03",
+      "detail": "staged assembly satisfies carriers_distinct",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-04",
+      "detail": "staged assembly satisfies exactly_eight_clause_maps",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-05",
+      "detail": "staged assembly satisfies maps_separately_typed",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-06",
+      "detail": "staged assembly satisfies coordinate_maps_total",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-07",
+      "detail": "staged assembly satisfies value_maps_sound",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-08",
+      "detail": "staged assembly satisfies hard_gates_never_averaged",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-09",
+      "detail": "staged assembly satisfies target_global_assembled",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-10",
+      "detail": "staged assembly satisfies forbidden_verdict_fields_absent",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-11",
+      "detail": "staged assembly satisfies staged_assembly_valid",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-FAILURES",
+      "detail": "positive staged assembly has no failed obligations",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-AUDIT",
+      "detail": "stored staged audit equals independent recomputation",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-HASH-1",
+      "detail": "staged certificate binds assembly hash",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-HASH-2",
+      "detail": "staged certificate binds source model hash",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-HASH-3",
+      "detail": "staged certificate binds target model hash",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-SCHEMA",
+      "detail": "staged certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "staged-assembly",
+      "check_id": "STG-LANES",
+      "detail": "staged assembly is typed only as S-T and S-R",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COUNT",
+      "detail": "seventeen package controls and one staged control are registered",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-ART",
+      "detail": "PC-01 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-CERT",
+      "detail": "PC-01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-REJECT",
+      "detail": "PC-01 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-PRIMARY",
+      "detail": "PC-01 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-EXACT",
+      "detail": "PC-01 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-STORED",
+      "detail": "PC-01 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-HASH",
+      "detail": "PC-01 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-SCHEMA",
+      "detail": "PC-01 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-ART",
+      "detail": "PC-02 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-CERT",
+      "detail": "PC-02 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-REJECT",
+      "detail": "PC-02 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-PRIMARY",
+      "detail": "PC-02 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-EXACT",
+      "detail": "PC-02 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-STORED",
+      "detail": "PC-02 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-HASH",
+      "detail": "PC-02 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-SCHEMA",
+      "detail": "PC-02 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-ART",
+      "detail": "PC-03 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-CERT",
+      "detail": "PC-03 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-REJECT",
+      "detail": "PC-03 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-PRIMARY",
+      "detail": "PC-03 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-EXACT",
+      "detail": "PC-03 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-STORED",
+      "detail": "PC-03 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-HASH",
+      "detail": "PC-03 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-SCHEMA",
+      "detail": "PC-03 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-ART",
+      "detail": "PC-04 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-CERT",
+      "detail": "PC-04 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-REJECT",
+      "detail": "PC-04 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-PRIMARY",
+      "detail": "PC-04 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-EXACT",
+      "detail": "PC-04 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-STORED",
+      "detail": "PC-04 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-HASH",
+      "detail": "PC-04 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-SCHEMA",
+      "detail": "PC-04 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-ART",
+      "detail": "PC-05 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-CERT",
+      "detail": "PC-05 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-REJECT",
+      "detail": "PC-05 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-PRIMARY",
+      "detail": "PC-05 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-EXACT",
+      "detail": "PC-05 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-STORED",
+      "detail": "PC-05 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-HASH",
+      "detail": "PC-05 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-SCHEMA",
+      "detail": "PC-05 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-ART",
+      "detail": "PC-06 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-CERT",
+      "detail": "PC-06 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-REJECT",
+      "detail": "PC-06 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-PRIMARY",
+      "detail": "PC-06 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-EXACT",
+      "detail": "PC-06 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-STORED",
+      "detail": "PC-06 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-HASH",
+      "detail": "PC-06 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-SCHEMA",
+      "detail": "PC-06 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-ART",
+      "detail": "PC-07 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-CERT",
+      "detail": "PC-07 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-REJECT",
+      "detail": "PC-07 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-PRIMARY",
+      "detail": "PC-07 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-EXACT",
+      "detail": "PC-07 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-STORED",
+      "detail": "PC-07 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-HASH",
+      "detail": "PC-07 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-SCHEMA",
+      "detail": "PC-07 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-ART",
+      "detail": "PC-08 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-CERT",
+      "detail": "PC-08 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-REJECT",
+      "detail": "PC-08 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-PRIMARY",
+      "detail": "PC-08 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-EXACT",
+      "detail": "PC-08 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-STORED",
+      "detail": "PC-08 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-HASH",
+      "detail": "PC-08 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-SCHEMA",
+      "detail": "PC-08 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-ART",
+      "detail": "PC-09 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-CERT",
+      "detail": "PC-09 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-REJECT",
+      "detail": "PC-09 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-PRIMARY",
+      "detail": "PC-09 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-EXACT",
+      "detail": "PC-09 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-STORED",
+      "detail": "PC-09 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-HASH",
+      "detail": "PC-09 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-SCHEMA",
+      "detail": "PC-09 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-ART",
+      "detail": "PC-10 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-CERT",
+      "detail": "PC-10 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-REJECT",
+      "detail": "PC-10 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-PRIMARY",
+      "detail": "PC-10 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-EXACT",
+      "detail": "PC-10 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-STORED",
+      "detail": "PC-10 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-HASH",
+      "detail": "PC-10 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-SCHEMA",
+      "detail": "PC-10 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-ART",
+      "detail": "PC-11 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-CERT",
+      "detail": "PC-11 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-REJECT",
+      "detail": "PC-11 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-PRIMARY",
+      "detail": "PC-11 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-EXACT",
+      "detail": "PC-11 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-STORED",
+      "detail": "PC-11 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-HASH",
+      "detail": "PC-11 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-SCHEMA",
+      "detail": "PC-11 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-ART",
+      "detail": "PC-12 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-CERT",
+      "detail": "PC-12 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-REJECT",
+      "detail": "PC-12 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-PRIMARY",
+      "detail": "PC-12 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-EXACT",
+      "detail": "PC-12 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-STORED",
+      "detail": "PC-12 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-HASH",
+      "detail": "PC-12 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-SCHEMA",
+      "detail": "PC-12 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-ART",
+      "detail": "PC-13 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-CERT",
+      "detail": "PC-13 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-REJECT",
+      "detail": "PC-13 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-PRIMARY",
+      "detail": "PC-13 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-EXACT",
+      "detail": "PC-13 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-STORED",
+      "detail": "PC-13 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-HASH",
+      "detail": "PC-13 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-SCHEMA",
+      "detail": "PC-13 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-ART",
+      "detail": "PC-14 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-CERT",
+      "detail": "PC-14 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-REJECT",
+      "detail": "PC-14 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-PRIMARY",
+      "detail": "PC-14 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-EXACT",
+      "detail": "PC-14 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-STORED",
+      "detail": "PC-14 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-HASH",
+      "detail": "PC-14 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-SCHEMA",
+      "detail": "PC-14 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-ART",
+      "detail": "PC-15 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-CERT",
+      "detail": "PC-15 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-REJECT",
+      "detail": "PC-15 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-PRIMARY",
+      "detail": "PC-15 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-EXACT",
+      "detail": "PC-15 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-STORED",
+      "detail": "PC-15 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-HASH",
+      "detail": "PC-15 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-SCHEMA",
+      "detail": "PC-15 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-ART",
+      "detail": "PC-16 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-CERT",
+      "detail": "PC-16 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-REJECT",
+      "detail": "PC-16 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-PRIMARY",
+      "detail": "PC-16 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-EXACT",
+      "detail": "PC-16 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-STORED",
+      "detail": "PC-16 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-HASH",
+      "detail": "PC-16 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-SCHEMA",
+      "detail": "PC-16 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-ART",
+      "detail": "PC-17 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-CERT",
+      "detail": "PC-17 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-REJECT",
+      "detail": "PC-17 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-PRIMARY",
+      "detail": "PC-17 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-EXACT",
+      "detail": "PC-17 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-STORED",
+      "detail": "PC-17 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-HASH",
+      "detail": "PC-17 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-SCHEMA",
+      "detail": "PC-17 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-ART",
+      "detail": "SC-01 artifact exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-CERT",
+      "detail": "SC-01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-REJECT",
+      "detail": "SC-01 is rejected by its checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-PRIMARY",
+      "detail": "SC-01 exposes its registered primary failure",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-EXACT",
+      "detail": "SC-01 failure set equals registry",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-STORED",
+      "detail": "SC-01 certificate stores recomputed failures",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-HASH",
+      "detail": "SC-01 certificate binds exact artifact",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-SCHEMA",
+      "detail": "SC-01 certificate validates",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-001",
+      "detail": "stored exhaustion certificate equals independent rerun",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-002",
+      "detail": "1,025,416 bounded candidates were examined",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-003",
+      "detail": "18,972 cases satisfy running-intersection and edge-compatibility premises",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-004",
+      "detail": "every premise-satisfying case glued",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-005",
+      "detail": "bounded search found no violation",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-006",
+      "detail": "bounded checker reports PASS",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-007",
+      "detail": "five path/star configurations are covered",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-CFG-01",
+      "detail": "configuration path-2 has no gluing failure",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-CFG-02",
+      "detail": "configuration path-3 has no gluing failure",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-CFG-03",
+      "detail": "configuration star-3 has no gluing failure",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-CFG-04",
+      "detail": "configuration path-4 has no gluing failure",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-exhaustion",
+      "check_id": "EXH-CFG-05",
+      "detail": "configuration star-4 has no gluing failure",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-001",
+      "detail": "theorem registry retains 35 theorem/no-go surfaces",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-002",
+      "detail": "toy registry has 23 entries",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-003",
+      "detail": "definition registry has 45 entries",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-004",
+      "detail": "certificate schema registry has 10 entries",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-005",
+      "detail": "package obligation registry has 10 entries",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-006",
+      "detail": "staged obligation registry has 10 entries",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-UNIQUE-1",
+      "detail": "theorem_id values are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-UNIQUE-2",
+      "detail": "toy_id values are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-UNIQUE-3",
+      "detail": "definition_id values are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-UNIQUE-4",
+      "detail": "schema_id values are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-STATUS-1",
+      "detail": "theorem status distribution is frozen",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-TTH-01-STATUS",
+      "detail": "TTH-01 has the landed proof-source status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-TTH-01-LEAN",
+      "detail": "TTH-01 points to its package proof source",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-TTH-02-STATUS",
+      "detail": "TTH-02 has the landed proof-source status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-TTH-02-LEAN",
+      "detail": "TTH-02 points to its package proof source",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-LANES",
+      "detail": "all package obligations are S-R only",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-LANES",
+      "detail": "all staged obligations are exactly S-T and S-R",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-OB-01",
+      "detail": "package obligation 1 is ordered and has positive witnesses",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-NEG-01",
+      "detail": "package obligation 1 has at least one exact negative control",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-OB-02",
+      "detail": "package obligation 2 is ordered and has positive witnesses",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-NEG-02",
+      "detail": "package obligation 2 has at least one exact negative control",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-OB-03",
+      "detail": "package obligation 3 is ordered and has positive witnesses",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-NEG-03",
+      "detail": "package obligation 3 has at least one exact negative control",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-OB-04",
+      "detail": "package obligation 4 is ordered and has positive witnesses",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-NEG-04",
+      "detail": "package obligation 4 has at least one exact negative control",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-OB-05",
+      "detail": "package obligation 5 is ordered and has positive witnesses",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-NEG-05",
+      "detail": "package obligation 5 has at least one exact negative control",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-OB-06",
+      "detail": "package obligation 6 is ordered and has positive witnesses",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-NEG-06",
+      "detail": "package obligation 6 has at least one exact negative control",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-OB-07",
+      "detail": "package obligation 7 is ordered and has positive witnesses",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-NEG-07",
+      "detail": "package obligation 7 has at least one exact negative control",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-OB-08",
+      "detail": "package obligation 8 is ordered and has positive witnesses",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-NEG-08",
+      "detail": "package obligation 8 has at least one exact negative control",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-OB-09",
+      "detail": "package obligation 9 is ordered and has positive witnesses",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-NEG-09",
+      "detail": "package obligation 9 has at least one exact negative control",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-OB-10",
+      "detail": "package obligation 10 is ordered and has positive witnesses",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PKG-NEG-10",
+      "detail": "package obligation 10 has at least one exact negative control",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-OB-01",
+      "detail": "staged obligation 1 is ordered and has the positive assembly",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-OB-02",
+      "detail": "staged obligation 2 is ordered and has the positive assembly",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-OB-03",
+      "detail": "staged obligation 3 is ordered and has the positive assembly",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-OB-04",
+      "detail": "staged obligation 4 is ordered and has the positive assembly",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-OB-05",
+      "detail": "staged obligation 5 is ordered and has the positive assembly",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-OB-06",
+      "detail": "staged obligation 6 is ordered and has the positive assembly",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-OB-07",
+      "detail": "staged obligation 7 is ordered and has the positive assembly",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-OB-08",
+      "detail": "staged obligation 8 is ordered and has the positive assembly",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-OB-09",
+      "detail": "staged obligation 9 is ordered and has the positive assembly",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-STG-OB-10",
+      "detail": "staged obligation 10 is ordered and has the positive assembly",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-01",
+      "detail": "project registry freezes phase='CST-TT-02'",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-02",
+      "detail": "project registry freezes phase_base_tag='CST-TT-01-v1'",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-03",
+      "detail": "project registry freezes phase_base_commit='488db50b20d6d9c67493de3e9fd758e6e9e205ce'",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-04",
+      "detail": "project registry freezes generic_theorem_proof_sources_landed=2",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-05",
+      "detail": "project registry freezes generic_theorems_lean_compiled=0",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-06",
+      "detail": "project registry freezes checked_finite_package_witnesses=2",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-07",
+      "detail": "project registry freezes checked_staged_package_assemblies=1",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-08",
+      "detail": "project registry freezes checked_package_obligation_controls=18",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-09",
+      "detail": "project registry freezes bounded_gluing_candidates=1025416",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-10",
+      "detail": "project registry freezes bounded_gluing_premise_cases=18972",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-11",
+      "detail": "project registry freezes positive_handoff_witnesses=0",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-12",
+      "detail": "project registry freezes fallback_unlocked=False",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJ-13",
+      "detail": "project registry freezes next_phase='CST-TT-03'",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-SUMMARY",
+      "detail": "phase summary retains primary route and locks fallback",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-K-PKG-01",
+      "detail": "K-PKG-01 is not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-K-PKG-02",
+      "detail": "K-PKG-02 is not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-01-FILE",
+      "detail": "schema CS-01 exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-01-EXAMPLE",
+      "detail": "schema CS-01 example exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-01-VALID",
+      "detail": "schema CS-01 accepts its scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-02-FILE",
+      "detail": "schema CS-02 exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-02-EXAMPLE",
+      "detail": "schema CS-02 example exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-02-VALID",
+      "detail": "schema CS-02 accepts its scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-03-FILE",
+      "detail": "schema CS-03 exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-03-EXAMPLE",
+      "detail": "schema CS-03 example exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-03-VALID",
+      "detail": "schema CS-03 accepts its scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-04-FILE",
+      "detail": "schema CS-04 exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-04-EXAMPLE",
+      "detail": "schema CS-04 example exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-04-VALID",
+      "detail": "schema CS-04 accepts its scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-05-FILE",
+      "detail": "schema CS-05 exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-05-EXAMPLE",
+      "detail": "schema CS-05 example exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-05-VALID",
+      "detail": "schema CS-05 accepts its scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-06-FILE",
+      "detail": "schema CS-06 exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-06-EXAMPLE",
+      "detail": "schema CS-06 example exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-06-VALID",
+      "detail": "schema CS-06 accepts its scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-07-FILE",
+      "detail": "schema CS-07 exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-07-EXAMPLE",
+      "detail": "schema CS-07 example exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-07-VALID",
+      "detail": "schema CS-07 accepts its scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-08-FILE",
+      "detail": "schema CS-08 exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-08-EXAMPLE",
+      "detail": "schema CS-08 example exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-08-VALID",
+      "detail": "schema CS-08 accepts its scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-09-FILE",
+      "detail": "schema CS-09 exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-09-EXAMPLE",
+      "detail": "schema CS-09 example exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-09-VALID",
+      "detail": "schema CS-09 accepts its scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-10-FILE",
+      "detail": "schema CS-10 exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-10-EXAMPLE",
+      "detail": "schema CS-10 example exists",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-10-VALID",
+      "detail": "schema CS-10 accepts its scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-01",
+      "detail": "theorem row TTH-01 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-02",
+      "detail": "theorem row TTH-02 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-03",
+      "detail": "theorem row TTH-03 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-04",
+      "detail": "theorem row TTH-04 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-05",
+      "detail": "theorem row TTH-05 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-06",
+      "detail": "theorem row TTH-06 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-07",
+      "detail": "theorem row TTH-07 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-08",
+      "detail": "theorem row TTH-08 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-09",
+      "detail": "theorem row TTH-09 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-10",
+      "detail": "theorem row TTH-10 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-11",
+      "detail": "theorem row TTN-01 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-12",
+      "detail": "theorem row TTN-02 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-13",
+      "detail": "theorem row TTN-03 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-14",
+      "detail": "theorem row TTN-04 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-15",
+      "detail": "theorem row TTN-05 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-16",
+      "detail": "theorem row TTN-06 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-17",
+      "detail": "theorem row TTN-07 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-18",
+      "detail": "theorem row TTN-08 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-19",
+      "detail": "theorem row TTN-09 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-20",
+      "detail": "theorem row TTN-10 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-21",
+      "detail": "theorem row TTN-11 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-22",
+      "detail": "theorem row TTN-12 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-23",
+      "detail": "theorem row TTN-13 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-24",
+      "detail": "theorem row TTN-14 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-25",
+      "detail": "theorem row TTD-01 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-26",
+      "detail": "theorem row TTD-02 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-27",
+      "detail": "theorem row TTD-03 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-28",
+      "detail": "theorem row TTF-01 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-29",
+      "detail": "theorem row TTF-02 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-30",
+      "detail": "theorem row TTF-03 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-31",
+      "detail": "theorem row TTF-04 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-32",
+      "detail": "theorem row TTF-05 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-33",
+      "detail": "theorem row TTF-06 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-34",
+      "detail": "theorem row TTF-07 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-THM-35",
+      "detail": "theorem row TTF-08 validates against registry schema",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-001",
+      "detail": "at least seventeen Lean modules are present (18)",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-001",
+      "detail": "CSTTT/Autonomy/System.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-001",
+      "detail": "CSTTT/Autonomy/System.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-002",
+      "detail": "CSTTT/Core/Carrier.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-002",
+      "detail": "CSTTT/Core/Carrier.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-003",
+      "detail": "CSTTT/Core/Episode.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-003",
+      "detail": "CSTTT/Core/Episode.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-004",
+      "detail": "CSTTT/Core/Finite.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-004",
+      "detail": "CSTTT/Core/Finite.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-005",
+      "detail": "CSTTT/Corridor/DirectSuccessor.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-005",
+      "detail": "CSTTT/Corridor/DirectSuccessor.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-006",
+      "detail": "CSTTT/Corridor/TemporalCorridor.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-006",
+      "detail": "CSTTT/Corridor/TemporalCorridor.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-007",
+      "detail": "CSTTT/Countermodels/Kernel.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-007",
+      "detail": "CSTTT/Countermodels/Kernel.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-008",
+      "detail": "CSTTT/Fallback/Ancestry.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-008",
+      "detail": "CSTTT/Fallback/Ancestry.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-009",
+      "detail": "CSTTT/Package/Clauses.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-009",
+      "detail": "CSTTT/Package/Clauses.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-010",
+      "detail": "CSTTT/Package/FiniteGluing.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-010",
+      "detail": "CSTTT/Package/FiniteGluing.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-011",
+      "detail": "CSTTT/Package/Gluing.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-011",
+      "detail": "CSTTT/Package/Gluing.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-012",
+      "detail": "CSTTT/Package/TemporalPackage.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-012",
+      "detail": "CSTTT/Package/TemporalPackage.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-013",
+      "detail": "CSTTT/Prospects/Statements.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-013",
+      "detail": "CSTTT/Prospects/Statements.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-014",
+      "detail": "CSTTT/Targets/TemporalFIACH.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-014",
+      "detail": "CSTTT/Targets/TemporalFIACH.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-015",
+      "detail": "CSTTT/Temporal/Clock.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-015",
+      "detail": "CSTTT/Temporal/Clock.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-016",
+      "detail": "CSTTT/Temporal/Closure.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-016",
+      "detail": "CSTTT/Temporal/Closure.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-017",
+      "detail": "CSTTT/Temporal/Signature.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-017",
+      "detail": "CSTTT/Temporal/Signature.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-018",
+      "detail": "CSTTT/Transport/TemporalBridge.lean has no proof placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-018",
+      "detail": "CSTTT/Transport/TemporalBridge.lean has balanced simple delimiters",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CIRCULARITY",
+      "detail": "primitive Lean tree passes forbidden-verdict vocabulary scan",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-GLUE-01",
+      "detail": "finite gluing source contains ScopedReach",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-GLUE-02",
+      "detail": "finite gluing source contains RootedJoinTree",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-GLUE-03",
+      "detail": "finite gluing source contains localEqualityAlongScopedReach",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-GLUE-04",
+      "detail": "finite gluing source contains gluedAssignment",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-GLUE-05",
+      "detail": "finite gluing source contains gluedAssignmentAgrees",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-GLUE-06",
+      "detail": "finite gluing source contains IntegratedPackageWitness",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-GLUE-07",
+      "detail": "finite gluing source contains acyclicLocalWitnessGluing",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-GLUE-08",
+      "detail": "finite gluing source contains StagedHeterogeneousEvidence",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-GLUE-09",
+      "detail": "finite gluing source contains stagedHeterogeneousPackageAssembly",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-TEMP-01",
+      "detail": "temporal package source contains TemporalSubstance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-TEMP-02",
+      "detail": "temporal package source contains EightClauseIntegratedPackage",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-1",
+      "detail": "root module imports finite gluing",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-2",
+      "detail": "root module imports temporal package",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-LAYER-01",
+      "detail": "Clauses.lean does not import later corridor/autonomy/target layers",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-LAYER-02",
+      "detail": "FiniteGluing.lean does not import later corridor/autonomy/target layers",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-LAYER-03",
+      "detail": "Gluing.lean does not import later corridor/autonomy/target layers",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-LAYER-04",
+      "detail": "TemporalPackage.lean does not import later corridor/autonomy/target layers",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-00-EXISTS",
+      "detail": "docs/INTEGRATED_PACKAGE_SEMANTICS.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-00-01",
+      "detail": "docs/INTEGRATED_PACKAGE_SEMANTICS.md contains required phrase: finite structural target realization",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-00-02",
+      "detail": "docs/INTEGRATED_PACKAGE_SEMANTICS.md contains required phrase: eight separately audited clause slots",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-00-03",
+      "detail": "docs/INTEGRATED_PACKAGE_SEMANTICS.md contains required phrase: running intersection",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-00-04",
+      "detail": "docs/INTEGRATED_PACKAGE_SEMANTICS.md contains required phrase: None of these assets is a handoff or lineage witness",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-01-EXISTS",
+      "detail": "docs/ACYCLIC_GLUING_THEOREM.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-01-01",
+      "detail": "docs/ACYCLIC_GLUING_THEOREM.md contains required phrase: acyclicLocalWitnessGluing",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-01-02",
+      "detail": "docs/ACYCLIC_GLUING_THEOREM.md contains required phrase: running-intersection",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-01-03",
+      "detail": "docs/ACYCLIC_GLUING_THEOREM.md contains required phrase: Python is not a proof oracle",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-01-04",
+      "detail": "docs/ACYCLIC_GLUING_THEOREM.md contains required phrase: 1,025,416",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-02-EXISTS",
+      "detail": "docs/C6_TEMPORAL_SUBSTANCE.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-02-01",
+      "detail": "docs/C6_TEMPORAL_SUBSTANCE.md contains required phrase: future sufficiency",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-02-02",
+      "detail": "docs/C6_TEMPORAL_SUBSTANCE.md contains required phrase: genuine progress",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-02-03",
+      "detail": "docs/C6_TEMPORAL_SUBSTANCE.md contains required phrase: endogenous arrow",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-02-04",
+      "detail": "docs/C6_TEMPORAL_SUBSTANCE.md contains required phrase: external scheduler",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-02-05",
+      "detail": "docs/C6_TEMPORAL_SUBSTANCE.md contains required phrase: does not entail any other C-clause",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-03-EXISTS",
+      "detail": "docs/STAGED_PACKAGE_ASSEMBLY.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-03-01",
+      "detail": "docs/STAGED_PACKAGE_ASSEMBLY.md contains required phrase: distinct carrier vocabularies",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-03-02",
+      "detail": "docs/STAGED_PACKAGE_ASSEMBLY.md contains required phrase: eight typed clause maps",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-03-03",
+      "detail": "docs/STAGED_PACKAGE_ASSEMBLY.md contains required phrase: does not establish temporal lineage",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-04-EXISTS",
+      "detail": "docs/PACKAGE_CONTROL_SUITE.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-04-01",
+      "detail": "docs/PACKAGE_CONTROL_SUITE.md contains required phrase: PC-01",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-04-02",
+      "detail": "docs/PACKAGE_CONTROL_SUITE.md contains required phrase: PC-17",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-04-03",
+      "detail": "docs/PACKAGE_CONTROL_SUITE.md contains required phrase: SC-01",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-04-04",
+      "detail": "docs/PACKAGE_CONTROL_SUITE.md contains required phrase: Every package obligation PKG-O01 through PKG-O10",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-05-EXISTS",
+      "detail": "docs/PHASE_BOUNDARY.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-05-01",
+      "detail": "docs/PHASE_BOUNDARY.md contains required phrase: exact finite C1-C8 package semantics",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-05-02",
+      "detail": "docs/PHASE_BOUNDARY.md contains required phrase: substantive C6 temporal closure",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-05-03",
+      "detail": "docs/PHASE_BOUNDARY.md contains required phrase: strict temporal lineage",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-05-04",
+      "detail": "docs/PHASE_BOUNDARY.md contains required phrase: withdrawal autonomy",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-05-05",
+      "detail": "docs/PHASE_BOUNDARY.md contains required phrase: positive Temporal-FIACH or Temporal-IAPS witness",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-05-06",
+      "detail": "docs/PHASE_BOUNDARY.md contains required phrase: CST-TT-03",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-NO-HANDOFF",
+      "detail": "phase explicitly declines a positive handoff witness",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMP-1",
+      "detail": "completion report contains boundary phrase: No positive Temporal-FIACH witness",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMP-2",
+      "detail": "completion report contains boundary phrase: No theorem is represented as Lean-compiled",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMP-3",
+      "detail": "completion report contains boundary phrase: Temporal-IAPS fallback remains locked",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMP-4",
+      "detail": "completion report contains boundary phrase: CST-TT-03",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--lineage",
+      "detail": "PKG-POS-01-TARGET.model.json omits verdict field \"lineage\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--ancestry",
+      "detail": "PKG-POS-01-TARGET.model.json omits verdict field \"ancestry\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--temporal_corridor",
+      "detail": "PKG-POS-01-TARGET.model.json omits verdict field \"temporal_corridor\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--autonomy",
+      "detail": "PKG-POS-01-TARGET.model.json omits verdict field \"autonomy\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--withdrawal",
+      "detail": "PKG-POS-01-TARGET.model.json omits verdict field \"withdrawal\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--fiach",
+      "detail": "PKG-POS-01-TARGET.model.json omits verdict field \"fiach\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--consciousness",
+      "detail": "PKG-POS-01-TARGET.model.json omits verdict field \"consciousness\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--survival",
+      "detail": "PKG-POS-01-TARGET.model.json omits verdict field \"survival\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--identity",
+      "detail": "PKG-POS-01-TARGET.model.json omits verdict field \"identity\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--lineage",
+      "detail": "PKG-POS-02-SOURCE.model.json omits verdict field \"lineage\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--ancestry",
+      "detail": "PKG-POS-02-SOURCE.model.json omits verdict field \"ancestry\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--temporal_corridor",
+      "detail": "PKG-POS-02-SOURCE.model.json omits verdict field \"temporal_corridor\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--autonomy",
+      "detail": "PKG-POS-02-SOURCE.model.json omits verdict field \"autonomy\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--withdrawal",
+      "detail": "PKG-POS-02-SOURCE.model.json omits verdict field \"withdrawal\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--fiach",
+      "detail": "PKG-POS-02-SOURCE.model.json omits verdict field \"fiach\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--consciousness",
+      "detail": "PKG-POS-02-SOURCE.model.json omits verdict field \"consciousness\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--survival",
+      "detail": "PKG-POS-02-SOURCE.model.json omits verdict field \"survival\"",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PKG-POS--identity",
+      "detail": "PKG-POS-02-SOURCE.model.json omits verdict field \"identity\"",
+      "status": "PASS"
+    },
+    {
+      "category": "manifest",
+      "check_id": "MAN-001",
+      "detail": "phase manifest not required before finalization",
+      "status": "SKIP"
+    }
+  ],
+  "schema_version": "1.0",
+  "skipped": 4,
+  "status": "PASS"
+}

@@ -1,0 +1,107 @@
+\section{A copy that is not a continuation}
+\label{sec:copy}
+
+We begin with a worked example. It makes the three questions concrete and
+shows why endpoint similarity cannot answer them.
+
+\paragraph{Two copies of a deadline system.}
+The companion forcing paper studies a small finite system: a walker on a wheel
+with a hidden phase and a deadline \citep{TsiokosForcing2026}. Its viable
+states form a kernel on which a predictive self-coordinate is forced. We take
+two copies of that system and tag them \emph{source} and \emph{target}. The
+two tagged copies, together with the deadline system's lethal states, give a
+finite state space of \snapPosZeroFourTaggedAmbientStates{} states, of which
+\snapPosZeroFourTaggedLethalStates{} are lethal. To this we add the apparatus
+of a handoff: a position along the episode, a budget of tokens, and a register
+recording which route the episode took.
+
+A handoff runs through four stages. In the first, only the source is live. In
+the second and third, both systems are live: the source still acts, the target
+already acts, and each step is supported on both. In the fourth, the source
+has been withdrawn and the target continues alone. We call the middle stages
+the \emph{overlap}. The target's copy of the deadline system is present from
+the start, but it is latent. It becomes active only at an overlap event, with
+the source present and a funded receiver. At that event the receiver reads the
+position and phase at the end of the source's history and writes them into
+the target. The
+source is withdrawn only afterwards. This transfer rule is part of the model's
+design. It does not show the target's organization being built step by step,
+and it is not independent evidence about how a transfer would have to work.
+
+On this model, conditions (1), (2), (3) and (8) of the architecture hold on
+each copy in substantive form, computed from the deadline system's own
+dynamics. Conditions (4) to (7) hold in the simplified form described in
+Section~\ref{sec:setting}. Everything we say about this model is relative to
+that grade.
+
+\paragraph{The handoff passes.}
+On this model a single handoff, from the source copy to the target copy, passes
+all three checks: the target realizes the conditions at the stated grade, the
+episode is a strict live-overlap lineage, and after the source and the
+transfer aids are withdrawn the target keeps itself going. This is an instance
+of the continuation theorem of Section~\ref{sec:continuation}, with one
+difference between how lineage and autonomy draw on the source that we state
+there. We now vary the picture in four ways. Each variation keeps something that
+looks like success. Two fail the lineage check, one fails a typing
+requirement, and one shows that public observations lose information.
+
+\paragraph{The detached copy.}
+Suppose the target's state has the same predictive readout as the
+source's final state, and the target satisfies the conditions and maintains
+itself, but at no stage are source and target live together: one stage has
+only the source, the next only the target. We prove that each of these can
+hold together with the last (Proposition~\ref{prop:detached}). The endpoint
+readouts agree, the target realizes the conditions at the stated grade, and
+it is autonomous. Yet no overlap ever carried the source's running
+organization into it, and no strict handoff certificate exists for this
+sequence of stages. The proposition is not deep. The lineage check requires a
+stage with both systems live, and the point of the example is that the other
+two checks, and agreement at the endpoint, can all hold without one. Whatever one wants to say about such a copy, it is
+not a continuation in the sense of our lineage check, and nothing at its
+endpoints reveals this. Theories that analyse persistence by psychological
+continuity already treat the cause of a match as a parameter. Parfit's
+versions of the psychological criterion differ exactly over which causes count
+\citep[\S 78]{Parfit1984}. Continuity theorists also disagree over whether
+copying mental contents supplies the right kind of causal dependence
+(\citealp[\S 4]{Olson2023SEP}; compare \citealp{ShoemakerSwinburne1984} and
+\citealp{Unger1990}). Our lineage check is not a criterion of persistence. Like
+those debates, it looks at the route rather than at the endpoints.
+
+\paragraph{The gap.}
+Suppose instead that the episode has the right endpoints, but the stream stops
+for a while and then resumes. We prove that on the two-copy model, removing one
+overlap stage from the realized episode leaves the source and target stages in
+place, leaves the two routes' endpoints in agreement, and keeps equal predictive
+readouts at the endpoint, while the no-gap condition of the lineage check
+fails
+(Proposition~\ref{prop:gap}). In words, it is a resumed stream rather than a
+continuation without a gap. A stage is missing from the realized episode, so
+the no-gap check fails. We do not claim that anything is actively transferred
+across the gap.
+
+\paragraph{The re-encoding.}
+Suppose the ``target'' is the source system itself, with its states relabelled
+by a nontrivial permutation. Such a re-encoding does not meet the requirement
+that source and target be distinct systems, so it is not transport between
+systems, however different the relabelled description looks
+(Remark~\ref{rem:reencoding}). The point is one of typing, not a theorem.
+
+\paragraph{The public shadow.}
+Finally, suppose we judge the target only by what it shows through its public
+channel. We prove that two target states can agree on every observation
+through that fixed channel while their predictive states differ
+(Proposition~\ref{prop:shadow}). Public observations through this interface
+do not determine the predictive state. Whatever a realization check needs to
+know about the predictive state, it cannot read it off this interface. This is
+a statement about the fixed public interface of this finite model. It is not a claim that no observation could ever reveal the
+predictive state.
+
+\paragraph{What the example shows.}
+Each variation keeps something that a criterion based on endpoints or public
+behaviour would count as success. The detached copy and the gap each fail the
+lineage check. The re-encoding fails a typing requirement before any check
+applies. The public shadow fails no check: it shows that public observations
+lose information about the predictive state, which the checks use. That is why we state realization, lineage and autonomy as separate predicates,
+and why the certificate in Section~\ref{sec:continuation} checks them
+separately. The lower rows of Figure~\ref{fig:three} draw the detached copy and
+the gap beside the passing handoff.

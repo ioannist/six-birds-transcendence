@@ -1,0 +1,20 @@
+{
+  "artifact_ref": "models/transport/controls/ROUTE-C06.model.json",
+  "artifact_sha256": "2ba5b0ee49ae0b214f3c109fc4f6bae9af738fa2f6075c651962afd31cda384a",
+  "baseline_ref": "models/routes/ROUTE-POS-01.model.json",
+  "checker": {
+    "function": "audit_route_discipline",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5",
+    "valid_result": false
+  },
+  "claim_ceiling": "finite structural obligation boundary only",
+  "control_id": "ROUTE-C06",
+  "control_kind": "route",
+  "expected_primary_failure": "direct-factored-agreement",
+  "observed_failures": [
+    "direct-factored-agreement"
+  ],
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-03"
+}

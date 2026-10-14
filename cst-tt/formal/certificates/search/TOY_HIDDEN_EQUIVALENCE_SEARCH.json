@@ -1,0 +1,76 @@
+{
+  "algorithm": "pairwise-public-signature-collision-search",
+  "claim_ceiling": "finite feature-level discriminator audit; no empirical identifiability conclusion",
+  "collision_count": 3,
+  "hidden_equivalence_collisions": [
+    {
+      "left": "TTM-01",
+      "left_structural_signature": [
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "right": "TTM-02",
+      "right_structural_signature": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "shared_public_signature": [
+        "stable-report",
+        "package-autonomous"
+      ]
+    },
+    {
+      "left": "TTM-03",
+      "left_structural_signature": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "right": "TTM-08",
+      "right_structural_signature": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "shared_public_signature": [
+        "stable-report",
+        "temporal-successor"
+      ]
+    },
+    {
+      "left": "TTM-05",
+      "left_structural_signature": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": "TTM-06",
+      "right_structural_signature": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "shared_public_signature": [
+        "same-boundary",
+        "route-endpoint"
+      ]
+    }
+  ],
+  "pairs_examined": 78,
+  "schema_version": "CST-TT-06",
+  "toy_count": 13
+}

@@ -1,0 +1,1870 @@
+{
+  "schema": "csttt-raw-direct-control-evaluation-v1",
+  "declarationCommit": "534ca5f23e020106de4de1f167e6841a8cdc32ab",
+  "declarationSha256": "7400bfdddf2546c16f93ae494d21339c6674f9ee524aed7627fa6c957fd44cb2",
+  "classification": "b",
+  "controlsEvaluatedWithoutPrimitiveTuning": true,
+  "plantedTranscriptionDriftsCaught": 14,
+  "scope": "Finite raw control computation only; generic laws remain separately kernel proved. No TTD promotion.",
+  "cases": {
+    "DS-POS-01": {
+      "projection": true,
+      "direct": true,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "ds-source-final",
+        "child": "ds-target-first",
+        "kind": "liveTemporal",
+        "sourcePayload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "frontier": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "maintenance": "ds-edge-S-T-target-maint",
+          "owner": 101
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 0,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "DS-POS-02A": {
+      "projection": true,
+      "direct": true,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-chain-source",
+          "child": "ds-middle-boundary",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-M-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-M-edge"
+            ],
+            "maintenance": "ds-edge-S-M-target-maint",
+            "owner": 55
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 1,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "ds-chain-source",
+        "child": "ds-middle-boundary",
+        "kind": "liveTemporal",
+        "sourcePayload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-M-source-maint",
+          "owner": 17
+        },
+        "frontier": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-M-edge"
+          ],
+          "maintenance": "ds-edge-S-M-target-maint",
+          "owner": 55
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 1,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "DS-POS-02B": {
+      "projection": true,
+      "direct": true,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-middle-boundary",
+          "child": "ds-chain-target",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-M-edge"
+            ],
+            "maintenance": "ds-edge-S-M-target-maint",
+            "owner": 55
+          },
+          "frontier": {
+            "predictive": 2,
+            "order": 2,
+            "tick": 2,
+            "progress": 2,
+            "record": 4,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-M-edge",
+              "ds-edge-M-T-edge"
+            ],
+            "maintenance": "ds-edge-M-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 2,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "ds-middle-boundary",
+        "child": "ds-chain-target",
+        "kind": "liveTemporal",
+        "sourcePayload": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-M-edge"
+          ],
+          "maintenance": "ds-edge-S-M-target-maint",
+          "owner": 55
+        },
+        "frontier": {
+          "predictive": 2,
+          "order": 2,
+          "tick": 2,
+          "progress": 2,
+          "record": 4,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-M-edge",
+            "ds-edge-M-T-edge"
+          ],
+          "maintenance": "ds-edge-M-T-target-maint",
+          "owner": 101
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 2,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "GAP": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "ds-source-final",
+        "child": "ds-target-first",
+        "kind": "liveTemporal",
+        "sourcePayload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "frontier": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "maintenance": "ds-edge-S-T-target-maint",
+          "owner": 101
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 0,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": true,
+      "consumedIdentityGenerated": []
+    },
+    "ALTERNATIVE": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        },
+        {
+          "parent": "ds-alternative-source",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [
+        {
+          "parent": "ds-alternative-source",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "fire": null,
+      "repeatedGenerated": null,
+      "repeatedDirect": null,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "STORE": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-store",
+          "child": "ds-target-first",
+          "kind": "storage",
+          "sourcePayload": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "frontier": {
+            "predictive": 2,
+            "order": 2,
+            "tick": 2,
+            "progress": 2,
+            "record": 4,
+            "residue": [
+              "direct-root",
+              "store-edge",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "stage": 2,
+          "consumedToken": {
+            "id": 3,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [
+        {
+          "parent": "ds-store",
+          "child": "ds-target-first",
+          "kind": "storage",
+          "sourcePayload": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "frontier": {
+            "predictive": 2,
+            "order": 2,
+            "tick": 2,
+            "progress": 2,
+            "record": 4,
+            "residue": [
+              "direct-root",
+              "store-edge",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "stage": 2,
+          "consumedToken": {
+            "id": 3,
+            "used": true
+          }
+        }
+      ],
+      "fire": {
+        "parent": "ds-store",
+        "child": "ds-target-first",
+        "kind": "storage",
+        "sourcePayload": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "store-edge"
+          ],
+          "maintenance": "stored",
+          "owner": 303
+        },
+        "frontier": {
+          "predictive": 2,
+          "order": 2,
+          "tick": 2,
+          "progress": 2,
+          "record": 4,
+          "residue": [
+            "direct-root",
+            "store-edge",
+            "store-edge"
+          ],
+          "maintenance": "stored",
+          "owner": 303
+        },
+        "stage": 2,
+        "consumedToken": {
+          "id": 3,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": true
+      },
+      "temporalGap": true,
+      "consumedIdentityGenerated": [
+        {
+          "parent": "ds-store",
+          "child": "ds-target-first",
+          "kind": "storage",
+          "sourcePayload": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "frontier": {
+            "predictive": 2,
+            "order": 2,
+            "tick": 2,
+            "progress": 2,
+            "record": 4,
+            "residue": [
+              "direct-root",
+              "store-edge",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "stage": 2,
+          "consumedToken": {
+            "id": 3,
+            "used": true
+          }
+        }
+      ]
+    },
+    "directOnly": {
+      "projection": true,
+      "direct": true,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "ds-source-final",
+        "child": "ds-target-first",
+        "kind": "liveTemporal",
+        "sourcePayload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "frontier": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "maintenance": "ds-edge-S-T-target-maint",
+          "owner": 101
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 0,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "dataOnly": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": true,
+      "generated": [],
+      "removedGenerated": [],
+      "fire": null,
+      "repeatedGenerated": null,
+      "repeatedDirect": null,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "directWithData": {
+      "projection": true,
+      "direct": true,
+      "overlap": false,
+      "dataReachable": true,
+      "generated": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "ds-source-final",
+        "child": "ds-target-first",
+        "kind": "liveTemporal",
+        "sourcePayload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "frontier": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "maintenance": "ds-edge-S-T-target-maint",
+          "owner": 101
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 0,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "detached": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "copy",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "ds-source-final",
+        "child": "ds-target-first",
+        "kind": "copy",
+        "sourcePayload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "frontier": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "maintenance": "ds-edge-S-T-target-maint",
+          "owner": 101
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 0,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": true,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "archive": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "replay",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "ds-source-final",
+        "child": "ds-target-first",
+        "kind": "replay",
+        "sourcePayload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "frontier": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "maintenance": "ds-edge-S-T-target-maint",
+          "owner": 101
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 0,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": true,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "missingSource": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [],
+      "removedGenerated": [],
+      "fire": null,
+      "repeatedGenerated": null,
+      "repeatedDirect": null,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": null
+    },
+    "missingPayload": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [],
+      "removedGenerated": [],
+      "fire": null,
+      "repeatedGenerated": null,
+      "repeatedDirect": null,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "missingToken": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [],
+      "removedGenerated": [],
+      "fire": null,
+      "repeatedGenerated": null,
+      "repeatedDirect": null,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": null
+    },
+    "usedToken": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [],
+      "removedGenerated": [],
+      "fire": null,
+      "repeatedGenerated": null,
+      "repeatedDirect": null,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "sourceAbsent": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [],
+      "removedGenerated": [],
+      "fire": null,
+      "repeatedGenerated": null,
+      "repeatedDirect": null,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "payloadDrift": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 9,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 10,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "ds-source-final",
+        "child": "ds-target-first",
+        "kind": "liveTemporal",
+        "sourcePayload": {
+          "predictive": 9,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "frontier": {
+          "predictive": 10,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "maintenance": "ds-edge-S-T-target-maint",
+          "owner": 101
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 0,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "duplicateEvent": {
+      "projection": false,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": null,
+      "removedGenerated": null,
+      "fire": null,
+      "repeatedGenerated": null,
+      "repeatedDirect": null,
+      "patterns": null,
+      "temporalGap": null,
+      "consumedIdentityGenerated": null
+    },
+    "gap": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "ds-source-final",
+        "child": "ds-target-first",
+        "kind": "liveTemporal",
+        "sourcePayload": {
+          "predictive": 0,
+          "order": 0,
+          "tick": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "direct-root"
+          ],
+          "maintenance": "ds-edge-S-T-source-maint",
+          "owner": 17
+        },
+        "frontier": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "ds-edge-S-T-edge"
+          ],
+          "maintenance": "ds-edge-S-T-target-maint",
+          "owner": 101
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 0,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": true,
+      "consumedIdentityGenerated": []
+    },
+    "alternativeParent": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-source-final",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        },
+        {
+          "parent": "ds-alternative-source",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [
+        {
+          "parent": "ds-alternative-source",
+          "child": "ds-target-first",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "predictive": 0,
+            "order": 0,
+            "tick": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "direct-root"
+            ],
+            "maintenance": "ds-edge-S-T-source-maint",
+            "owner": 17
+          },
+          "frontier": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "ds-edge-S-T-edge"
+            ],
+            "maintenance": "ds-edge-S-T-target-maint",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "fire": null,
+      "repeatedGenerated": null,
+      "repeatedDirect": null,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    },
+    "storage": {
+      "projection": true,
+      "direct": false,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "ds-store",
+          "child": "ds-target-first",
+          "kind": "storage",
+          "sourcePayload": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "frontier": {
+            "predictive": 2,
+            "order": 2,
+            "tick": 2,
+            "progress": 2,
+            "record": 4,
+            "residue": [
+              "direct-root",
+              "store-edge",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "stage": 2,
+          "consumedToken": {
+            "id": 3,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [
+        {
+          "parent": "ds-store",
+          "child": "ds-target-first",
+          "kind": "storage",
+          "sourcePayload": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "frontier": {
+            "predictive": 2,
+            "order": 2,
+            "tick": 2,
+            "progress": 2,
+            "record": 4,
+            "residue": [
+              "direct-root",
+              "store-edge",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "stage": 2,
+          "consumedToken": {
+            "id": 3,
+            "used": true
+          }
+        }
+      ],
+      "fire": {
+        "parent": "ds-store",
+        "child": "ds-target-first",
+        "kind": "storage",
+        "sourcePayload": {
+          "predictive": 1,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 2,
+          "residue": [
+            "direct-root",
+            "store-edge"
+          ],
+          "maintenance": "stored",
+          "owner": 303
+        },
+        "frontier": {
+          "predictive": 2,
+          "order": 2,
+          "tick": 2,
+          "progress": 2,
+          "record": 4,
+          "residue": [
+            "direct-root",
+            "store-edge",
+            "store-edge"
+          ],
+          "maintenance": "stored",
+          "owner": 303
+        },
+        "stage": 2,
+        "consumedToken": {
+          "id": 3,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": true
+      },
+      "temporalGap": true,
+      "consumedIdentityGenerated": [
+        {
+          "parent": "ds-store",
+          "child": "ds-target-first",
+          "kind": "storage",
+          "sourcePayload": {
+            "predictive": 1,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 2,
+            "residue": [
+              "direct-root",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "frontier": {
+            "predictive": 2,
+            "order": 2,
+            "tick": 2,
+            "progress": 2,
+            "record": 4,
+            "residue": [
+              "direct-root",
+              "store-edge",
+              "store-edge"
+            ],
+            "maintenance": "stored",
+            "owner": 303
+          },
+          "stage": 2,
+          "consumedToken": {
+            "id": 3,
+            "used": true
+          }
+        }
+      ]
+    },
+    "overlapOnly": {
+      "projection": true,
+      "direct": false,
+      "overlap": true,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "entry",
+          "child": "first-source-target",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "maintenance": "funded",
+            "order": 0,
+            "owner": 17,
+            "predictive": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "native-past"
+            ],
+            "tick": 0
+          },
+          "frontier": {
+            "predictive": 0,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 1,
+            "residue": [
+              "native-past",
+              "first-exit"
+            ],
+            "maintenance": "funded",
+            "owner": 55
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [
+        {
+          "parent": "entry",
+          "child": "first-source-target",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "maintenance": "funded",
+            "order": 0,
+            "owner": 17,
+            "predictive": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "native-past"
+            ],
+            "tick": 0
+          },
+          "frontier": {
+            "predictive": 0,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 1,
+            "residue": [
+              "native-past",
+              "first-exit"
+            ],
+            "maintenance": "funded",
+            "owner": 55
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ],
+      "fire": {
+        "parent": "entry",
+        "child": "first-source-target",
+        "kind": "liveTemporal",
+        "sourcePayload": {
+          "maintenance": "funded",
+          "order": 0,
+          "owner": 17,
+          "predictive": 0,
+          "progress": 0,
+          "record": 0,
+          "residue": [
+            "native-past"
+          ],
+          "tick": 0
+        },
+        "frontier": {
+          "predictive": 0,
+          "order": 1,
+          "tick": 1,
+          "progress": 1,
+          "record": 1,
+          "residue": [
+            "native-past",
+            "first-exit"
+          ],
+          "maintenance": "funded",
+          "owner": 55
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 0,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": true,
+      "consumedIdentityGenerated": [
+        {
+          "parent": "entry",
+          "child": "first-source-target",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "maintenance": "funded",
+            "order": 0,
+            "owner": 17,
+            "predictive": 0,
+            "progress": 0,
+            "record": 0,
+            "residue": [
+              "native-past"
+            ],
+            "tick": 0
+          },
+          "frontier": {
+            "predictive": 0,
+            "order": 1,
+            "tick": 1,
+            "progress": 1,
+            "record": 1,
+            "residue": [
+              "native-past",
+              "first-exit"
+            ],
+            "maintenance": "funded",
+            "owner": 55
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 0,
+            "used": true
+          }
+        }
+      ]
+    },
+    "mixedDirect": {
+      "projection": true,
+      "direct": true,
+      "overlap": false,
+      "dataReachable": false,
+      "generated": [
+        {
+          "parent": "native-direct-source",
+          "child": "native-direct-target",
+          "kind": "liveTemporal",
+          "sourcePayload": {
+            "maintenance": "funded",
+            "order": 2,
+            "owner": 55,
+            "predictive": 0,
+            "progress": 2,
+            "record": 2,
+            "residue": [
+              "native-past",
+              "first-source",
+              "first-exit"
+            ],
+            "tick": 2
+          },
+          "frontier": {
+            "predictive": 0,
+            "order": 3,
+            "tick": 3,
+            "progress": 3,
+            "record": 3,
+            "residue": [
+              "native-past",
+              "first-source",
+              "first-exit",
+              "native-direct"
+            ],
+            "maintenance": "funded",
+            "owner": 101
+          },
+          "stage": 1,
+          "consumedToken": {
+            "id": 4,
+            "used": true
+          }
+        }
+      ],
+      "removedGenerated": [],
+      "fire": {
+        "parent": "native-direct-source",
+        "child": "native-direct-target",
+        "kind": "liveTemporal",
+        "sourcePayload": {
+          "maintenance": "funded",
+          "order": 2,
+          "owner": 55,
+          "predictive": 0,
+          "progress": 2,
+          "record": 2,
+          "residue": [
+            "native-past",
+            "first-source",
+            "first-exit"
+          ],
+          "tick": 2
+        },
+        "frontier": {
+          "predictive": 0,
+          "order": 3,
+          "tick": 3,
+          "progress": 3,
+          "record": 3,
+          "residue": [
+            "native-past",
+            "first-source",
+            "first-exit",
+            "native-direct"
+          ],
+          "maintenance": "funded",
+          "owner": 101
+        },
+        "stage": 1,
+        "consumedToken": {
+          "id": 4,
+          "used": true
+        }
+      },
+      "repeatedGenerated": [],
+      "repeatedDirect": false,
+      "patterns": {
+        "detached": false,
+        "archive": false,
+        "storage": false
+      },
+      "temporalGap": false,
+      "consumedIdentityGenerated": []
+    }
+  },
+  "paths": {
+    "twoDirect": true,
+    "mixed": true,
+    "twoDirectAtomicEndpointEdgePresent": false,
+    "mixedAtomicEndpointEdgePresent": false
+  },
+  "review": "See audit/G8b_raw_direct_evaluation.md for independent review.",
+  "nonclaims": [
+    "No Lean target bridge in this evaluation packet",
+    "No full TTD promotion"
+  ]
+}

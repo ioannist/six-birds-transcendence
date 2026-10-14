@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-birds.local/cst-tt/schemas/autonomy_control_certificate.schema.json",
+  "title": "CST-TT-05 autonomy negative-control certificate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "control_id",
+    "title",
+    "model_ref",
+    "model_sha256",
+    "positive_baseline_ref",
+    "expected_primary_failure",
+    "observed_failures",
+    "result_status",
+    "claim_lanes",
+    "claim_ceiling",
+    "collapse_trace",
+    "audit",
+    "checker"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "CST-TT-05"
+    },
+    "control_id": {
+      "pattern": "^AUT-C[0-9]{2}$",
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "model_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "positive_baseline_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expected_primary_failure": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observed_failures": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "result_status": {
+      "enum": [
+        "scaffold-only",
+        "checked-autonomy-obligation-countermodel"
+      ]
+    },
+    "claim_lanes": {
+      "const": [
+        "M",
+        "A"
+      ]
+    },
+    "claim_ceiling": {
+      "const": "finite post-withdrawal autonomy boundary only"
+    },
+    "collapse_trace": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "autonomy_valid",
+        "failed_obligations"
+      ],
+      "properties": {
+        "autonomy_valid": {
+          "const": false
+        }
+      }
+    },
+    "checker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "module",
+        "function",
+        "python_version",
+        "checked_at_phase"
+      ],
+      "properties": {
+        "module": {
+          "const": "cst_tt.withdrawal_autonomy_checker"
+        },
+        "function": {
+          "const": "audit_autonomy"
+        },
+        "python_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "checked_at_phase": {
+          "const": "CST-TT-05"
+        }
+      }
+    }
+  }
+}

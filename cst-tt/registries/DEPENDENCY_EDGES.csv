@@ -1,0 +1,55 @@
+source,target,reason,status
+D-007,D-027,operational episode enters corridor data,frozen
+D-008,D-010,temporal alphabet types the signature,frozen
+D-010,D-011,signature is evaluated by closure semantics,frozen
+D-010,D-027,frozen signature precedes corridor data,frozen
+D-011,D-012,closure witness instantiates closure semantics,frozen
+D-012,D-020,C6 temporal substance enters package certificate,frozen
+D-013,D-022,clock translation enters bridge,frozen
+D-013,D-047,clock translation types temporal-signature agreement,landed-CST-TT-03
+D-016,D-020,independent clauses enter package certificate,frozen
+D-019,D-020,gluing premise enters package certificate,frozen
+D-020,D-035,package certificate enters aggregate,frozen
+D-022,D-023,bridge enters transport certificate,frozen
+D-023,D-029,transport enters direct-successor certificate,frozen
+D-026,D-028,counterfactual audit enters corridor certificate,frozen
+D-028,D-035,strict corridor certificate enters aggregate,frozen
+D-030,D-032,controlled system enters invariant certificate,frozen
+D-031,D-033,withdrawal enters autonomy certificate,frozen
+D-032,D-033,invariant enters autonomy certificate,frozen
+D-033,D-035,autonomy certificate enters aggregate,frozen
+D-037,D-038,operational seed enters fallback closure,frozen
+D-038,D-039,fallback closure enters IAPS certificate,frozen
+D-046,D-048,representative independence enters bundled transport evidence,landed-CST-TT-03
+D-047,D-048,component agreement enters bundled transport evidence,landed-CST-TT-03
+D-048,D-057,bundled temporal transport enters each atomic overlap leg,landed-CST-TT-04
+D-049,TTH-10,strict record monotonicity yields arrow transport,landed-CST-TT-03
+D-050,TTN-04,future sufficiency supports memory-or-flatness,landed-CST-TT-03
+D-053,TTN-05,global-now factorization is obstructed by same-boundary disagreement,landed-CST-TT-03
+D-054,TTH-09,normal-form factorization purchases route independence,landed-CST-TT-03
+D-056,D-058,intervention projection supplies two-sided nonredundancy,landed-CST-TT-04
+D-058,D-059,atomic overlap legs enter the carrier-chain summary,landed-CST-TT-04
+D-060,TTH-04,exact frontier compatibility purchases composition,landed-CST-TT-04
+D-062,TTD-01,immediate event certificate supplies direct-successor validity,landed-CST-TT-04
+D-063,TTD-03,detached operational pattern is excluded by direct certificate fields,landed-CST-TT-04
+D-064,TTD-01,event-edge paths compose without creating a new atomic edge,landed-CST-TT-04
+TTF-02,TTF-05,fallback ancestry enters integrated fallback,frozen
+TTH-01,TTH-02,gluing precedes package assembly,frozen
+TTH-02,TTH-05,autonomy invariant is indexed to an independently landed target package,landed-CST-TT-05
+TTH-02,TTH-06,aligned staged package and target realization enter the aggregate as S-T and S-R,landed-CST-TT-05
+TTH-02,TTH-06,package theorem enters aggregate theorem,frozen
+TTH-03,TTH-04,structural temporal transport precedes temporal corridor work,frozen
+TTH-03,TTH-04,transport precedes corridor composition,frozen
+TTH-04,TTH-06,corridor theorem enters aggregate theorem,frozen
+TTH-04,TTH-06,strict carrier-chain corridor enters the aggregate as the S-L lane,landed-CST-TT-05
+TTH-05,TTH-06,autonomy theorem enters aggregate theorem,frozen
+TTH-05,TTH-06,post-withdrawal autonomy enters the aggregate certificate as an independent lane,landed-CST-TT-05
+TTH-06,TTH-07,aggregate theorem precedes full composition,frozen
+TTN-04,TTH-09,flatness is the memory-free route-independence branch,landed-CST-TT-03
+TTN-04,TTH-09,memory/flatness boundary precedes route-independent strengthening,frozen
+TTN-06,TTH-05,external-support shadow is a mandatory autonomy boundary,landed-CST-TT-05
+TTD-01,TTS-01,direct evidence embeds into generalized path class,landed-CST-TT-07A
+TTH-04,TTS-01,strict overlap evidence embeds into generalized path class,landed-CST-TT-07A
+TTN-10,TTS-02,scalar residual counterexample motivates exact vector semantics,landed-CST-TT-07A
+TTS-02,TTS-03,robustness retains hard-gated componentwise acceptance,landed-CST-TT-07A
+TTH-05,TTS-04,total invariant policy strengthens finite-horizon autonomy inside the model,landed-CST-TT-07A

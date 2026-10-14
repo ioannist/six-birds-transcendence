@@ -1,0 +1,44 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm10_scalarResidualHardGateFailure",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-10",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R",
+    "A"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-10",
+  "finite_model_ref": "models/countermodels/CM-10.model.json",
+  "finite_model_sha256": "b79b4babc0a8110590164a7e7d5251889121975a4e5166a85f6920dc67b1d774",
+  "minimality_status": "certified",
+  "model_family": "scalar-residual",
+  "name": "Small scalar residual hiding a failed hard gate",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "A mean binary defect at or below one tenth can coexist with a nonnegotiable failed gate.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "all binary defect vectors of length 1..10",
+    "candidates_explored": 2046,
+    "lower_bound_argument": "At a fixed one-tenth threshold, one failed binary gate needs at least ten components: 1/n <= 1/10 first holds at n=10.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 10,
+    "same_size_candidates_explored": 10,
+    "same_size_qualifying_candidates": 10,
+    "size_measure": "(component_count, failed_gate_count)",
+    "smaller_candidates_explored": 1023,
+    "witness_size_vector": [
+      10,
+      1
+    ]
+  },
+  "target_no_go_id": "TTN-10",
+  "toy_model_ref": "TTM-13"
+}

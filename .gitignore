@@ -1,0 +1,97 @@
+/lean/.lake/
+/lean/.validate-logs/
+__pycache__/
+*.pyc
+.pytest_cache/
+/prework/*.zip
+
+/review_requests/*.zip
+
+# ---- Not part of the public release (single-commit orphan push) ----
+# The aim is not to hide that AI agents did much of this work (the paper and
+# paper/prewriting/ai_assistance_ledger.md disclose it); it is to leave out
+# credentials, agent state and private working files that a reader does not need.
+
+# Credentials and keys
+.aws/
+.ssh/
+.gnupg/
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+id_rsa*
+id_ed25519*
+.netrc
+.pypirc
+.npmrc
+*credentials*
+*.secret
+*.secrets
+*_token
+*.token
+
+# AI agent tooling, skills, prompts, memories, session state and chats
+.codex/
+.claude/
+.agents/
+.cursor/
+.continue/
+.windsurf/
+.aider*
+.copilot/
+.gemini/
+CLAUDE.md
+CLAUDE.local.md
+AGENTS.md
+GEMINI.md
+*.chat.md
+*.transcript.*
+*.jsonl
+
+# Local logs, scratch space and build outputs
+*.log
+/tmp/
+/scratch/
+/scratchpad/
+/paper/build/
+
+# Review requests sent to reviewers, and their bundles
+/review_requests/
+
+# Notes addressed to other repositories
+UPDATE_NOTE_*.md
+
+# Release state and drafting templates
+/paper/submission/
+/paper/notes/
+
+# Planning files for the writing process (no tool reads them; the ledgers,
+# validator inputs, provenance records and the AI-assistance ledger stay public)
+/paper/prewriting/README.md
+/paper/prewriting/paper_plan.md
+/paper/prewriting/open_issues.md
+/paper/prewriting/research_brief.md
+/paper/prewriting/audience_style_study.md
+/paper/prewriting/related_work.md
+/paper/prewriting/submission_checklist.md
+
+# Incident notes from the Lean campaign (they point into local agent chat attachments)
+/audit/CAMPAIGN_RECOVERY_*.md
+
+# Earlier exploration bundle that preceded this repository
+/prework/
+
+# Copies of another repository's private planning files among the design references
+/cst-tt/inputs/reference_surfaces/open_issues.md
+/cst-tt/inputs/reference_surfaces/notation_and_terminology.md
+
+# Whole-repository and whole-corpus archives used only by the early exploration
+# validators (a snapshot of another repository and a 60-paper corpus dump).
+# The temporal audit input bundle stays public: the provenance checksums anchor
+# on it, and every file in it is already public in extracted form.
+/cst-tt/inputs/source_archives/six-birds-consciousness_v41.zip
+/cst-tt/inputs/source_archives/six_birds_papers_tex.zip

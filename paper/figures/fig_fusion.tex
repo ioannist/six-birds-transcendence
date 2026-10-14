@@ -1,0 +1,37 @@
+% F7: sequential checkpoints, not coexisting realization certificates.
+\begin{tikzpicture}[x=1cm,y=1cm,font=\footnotesize,
+ process/.style={draw,rounded corners=2pt,fill=black!3,align=center,minimum height=.8cm,text width=2.3cm},
+ check/.style={draw,line width=.9pt,fill=black!6,align=center,minimum height=.8cm,text width=2.6cm},
+ flow/.style={-{Stealth[length=2mm]},semithick}]
+\node[check] (source) at (1.5,0) {Source's earlier\\realization checkpoint};
+\node[process] (split) at (5,0) {Fission};
+\draw[flow] (source)--(split);
+\node[draw,densely dotted,align=center,text width=3.5cm] (withdraw) at (10,0)
+ {Source withdrawn; children own\\their programs and resources};
+\draw[flow,densely dotted] (split)--(withdraw);
+\node[process] (left) at (3,-1.9) {Left child};
+\node[process] (right) at (3,-3.5) {Right child};
+\draw[flow] (split.south)--(5,-.8)-|(left.north);
+\draw[flow] (5,-.8)--(.8,-.8)|-(right.west);
+\node[process,text width=2.9cm] (leftlearn) at (6.8,-1.9) {After withdrawal:\\own local\\acquisition};
+\node[process,text width=2.9cm] (rightlearn) at (6.8,-3.5) {After withdrawal:\\own local\\acquisition};
+\node[check] (leftcheck) at (10.7,-1.9) {Left child's\\realization checkpoint};
+\node[check] (rightcheck) at (10.7,-3.5) {Right child's\\realization checkpoint};
+\draw[flow] (left)--(leftlearn)--(leftcheck);
+\draw[flow] (right)--(rightlearn)--(rightcheck);
+\node[process,text width=1.9cm] (fusion) at (13.7,-2.7) {Guarded\\fusion};
+\draw[flow] (leftcheck.east) to[out=0,in=90] (fusion.north);
+\draw[flow] (rightcheck.east) to[out=0,in=-90] (fusion.south);
+\node[process] (output) at (11.7,-5.25) {Fresh output;\\parents retired};
+\draw[flow] (fusion.east)--(15,-2.7)|-(output.east);
+\node[process] (learn) at (7.2,-5.25) {Output's own\\local acquisition};
+\node[check,text width=3.2cm] (admit) at (2.7,-5.25) {Output's realization\\and autonomy\\checkpoint};
+\draw[flow] (output)--(learn)--(admit);
+\node[align=center] at (7.5,-6.2) {Heavy borders mark conditions checked at different times};
+\node[draw,densely dashed,rounded corners=2pt,align=left,text width=14.2cm,inner sep=6pt] at (7.5,-7.75)
+ {Fusion settlements: \snapFullNativeZeroTwoFusionOutcomeCount{} outcomes\\
+ Probabilities: \snapFullNativeZeroTwoFusionSettlementProbabilities\\
+ Opposed-action control: empty outcome with probability \snapFullNativeZeroTwoEmptyProbability\\
+ Physical states: \snapFullNativeZeroTwoPhysicalStates\quad
+ Physical-and-charge factor states: \snapFullNativeZeroTwoCEightFactorStates};
+\end{tikzpicture}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "paper/tools/build_correspondence.py",
+    "--check"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "correspondence",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W22-round2/correspondence.log",
+  "log_sha256": "35539874788aaae6e8c6bb3a786ac85a0ad36904beeae9f8fd0f8dc679fb1c66",
+  "metrics": {},
+  "metrics_note": "",
+  "metrics_status": "valid",
+  "recorded_at": "2026-10-14T10:58:11+00:00",
+  "status": "pass",
+  "summary": "{\"entries\": 48, \"formal_entries\": 42, \"prose_claims\": 6, \"declarations\": 82, \"failed_checks\": [], \"check\": true}"
+}

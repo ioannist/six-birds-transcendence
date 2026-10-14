@@ -1,0 +1,26 @@
+{
+  "frozen_at_utc": "2026-10-10T15:38:58.311559+00:00",
+  "primitive_parent_sha256": "29bd6b408e6ff7f747dbdd9d869ff073d3e07e28d519d7833b660fc2f004c915",
+  "changes_to_native_primitives": null,
+  "kernel": "same four-state Kernel injected outside=false",
+  "viability": {
+    "rows": "same actual nativeInput restricted to Kernel",
+    "actions": [
+      false,
+      true
+    ],
+    "destination": "same kernel destination, outside exits None",
+    "policy": false,
+    "scale": 1,
+    "resource": "same nativeInput resource owner and rechargeAvailable",
+    "ledger": "same nativeInput ledger1/1/1",
+    "canonicalP": "derived safe toggle singleton weight1"
+  },
+  "predictions": {
+    "greatest_contains_every_kernel_state": true,
+    "actual_accept": true,
+    "recharge_off_greatest_empty": true,
+    "unbounded_safe_future_never_exits": true
+  },
+  "scope": "finite OperationalViability kernel and actual native safe trajectories; not full resource interpreter or full C6/C8 integrated physical package"
+}

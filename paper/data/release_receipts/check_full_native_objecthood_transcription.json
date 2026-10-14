@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_full_native_objecthood_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_full_native_objecthood_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_full_native_objecthood_transcription.log",
+  "log_sha256": "9bf70ca43b122b5a2b44a79fdb032bbd6265011b927d1419acebeb77e97cde38",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:21+00:00",
+  "status": "pass",
+  "summary": "PASS full32 C1: derived prototypes/classes/C/U/CU, all4 closure and squared matrices, stationary laws, retention/TV/defects, phase counterexample\nCAUGHT planted clock phase drift\nCAUGHT planted perturb-before-power drift\nCAUGHT planted stationary mass drift"
+}

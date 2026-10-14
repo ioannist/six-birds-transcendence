@@ -1,0 +1,24 @@
+{
+  "audit": {
+    "accepted": false,
+    "dimension_results": {
+      "order-step": true,
+      "predictive-step": true,
+      "progress-step": true,
+      "record-step": false,
+      "tick-step": true
+    },
+    "hard_gates_exact_and_true": true,
+    "within_declared_box": false
+  },
+  "certificate_id": "ROB-C02",
+  "claim_ceiling": "declared robustness-box boundary only",
+  "claim_lanes": [
+    "M"
+  ],
+  "description": "record margin leaves box and loses strict advance",
+  "model_ref": "models/strengthenings/robustness/controls/ROB-C02.model.json",
+  "model_sha256": "64d7aa5453ed4f51388e11ba18de8dde44106d248e67e95dbbbfdf3fdbffcf7e",
+  "result_status": "checked-finite-robustness-boundary-control",
+  "schema_version": "CST-TT-07A"
+}

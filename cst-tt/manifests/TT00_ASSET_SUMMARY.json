@@ -1,0 +1,28 @@
+{
+  "assumptions": 32,
+  "certificate_schemas": 8,
+  "claim_lanes": 7,
+  "definitions": 39,
+  "dependency_edges": 28,
+  "kill_criteria": 14,
+  "legacy_theorem_prospects_mapped": 20,
+  "theorem_kinds": {
+    "boundary": 5,
+    "constructive": 10,
+    "definition-boundary": 1,
+    "fallback": 4,
+    "no-go": 15
+  },
+  "theorem_phases": {
+    "CST-TT-01": 11,
+    "CST-TT-02": 2,
+    "CST-TT-03": 5,
+    "CST-TT-04": 3,
+    "CST-TT-05": 3,
+    "CST-TT-06": 2,
+    "CST-TT-07A": 1,
+    "CST-TT-07B": 8
+  },
+  "theorem_prospects": 35,
+  "toy_model_contracts": 21
+}

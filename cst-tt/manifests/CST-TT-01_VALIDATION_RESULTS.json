@@ -1,0 +1,3096 @@
+{
+  "checks": 514,
+  "failed": 0,
+  "passed": 511,
+  "phase": "CST-TT-01",
+  "project": "CST-TT",
+  "results": [
+    {
+      "category": "baseline",
+      "check_id": "BASE-001",
+      "detail": "repository is a Git worktree",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-002",
+      "detail": "CST-TT-00 tag resolves to frozen base",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-003",
+      "detail": "frozen CST-TT-00 base is an ancestor of current HEAD",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-004",
+      "detail": "repository has no whitespace errors",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-005",
+      "detail": "clean-tree check not requested for this pass",
+      "status": "SKIP"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-006",
+      "detail": "phase tag not required before freeze commit",
+      "status": "SKIP"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-001",
+      "detail": "Lean toolchain remains pinned to v4.28.0",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-01",
+      "detail": "pyproject contains >=3.13,<3.14",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-02",
+      "detail": "pyproject contains pytest==9.0.2",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-03",
+      "detail": "pyproject contains jsonschema==4.26.0",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-04",
+      "detail": "pyproject contains setuptools==82.0.1",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-05",
+      "detail": "pyproject contains version = \"0.1.0\"",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-007",
+      "detail": "running Python is 3.13 (found 3.13.5)",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-LEAN-BUILD",
+      "detail": "lean/lake unavailable; no compilation pass claimed",
+      "status": "SKIP"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-1",
+      "detail": "toolchain status names CST-TT-01",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-2",
+      "detail": "toolchain status records fifteen proof surfaces",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-3",
+      "detail": "toolchain status does not overclaim compilation",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-4",
+      "detail": "toolchain status records the static Lean audit",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-001",
+      "detail": "Python source/script bank present (51 files)",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-001",
+      "detail": "Python compiles: scripts/build_exp01_assets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-002",
+      "detail": "Python compiles: scripts/build_exp02_assets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-003",
+      "detail": "Python compiles: scripts/build_exp03_assets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-004",
+      "detail": "Python compiles: scripts/build_exp04_assets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-005",
+      "detail": "Python compiles: scripts/build_exp05_assets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-006",
+      "detail": "Python compiles: scripts/build_exp06_assets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-007",
+      "detail": "Python compiles: scripts/build_tt00_assets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-008",
+      "detail": "Python compiles: scripts/build_tt01_assets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-009",
+      "detail": "Python compiles: scripts/enrich_exp01_assets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-010",
+      "detail": "Python compiles: scripts/exp02_supplemental.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-011",
+      "detail": "Python compiles: scripts/exp03_data.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-012",
+      "detail": "Python compiles: scripts/exp04_data.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-013",
+      "detail": "Python compiles: scripts/exp05_data.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-014",
+      "detail": "Python compiles: scripts/exp06_data.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-015",
+      "detail": "Python compiles: scripts/extract_corpus.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-016",
+      "detail": "Python compiles: scripts/finalize_exp02_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-017",
+      "detail": "Python compiles: scripts/finalize_exp03_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-018",
+      "detail": "Python compiles: scripts/finalize_exp04_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-019",
+      "detail": "Python compiles: scripts/finalize_exp05_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-020",
+      "detail": "Python compiles: scripts/finalize_exp06_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-021",
+      "detail": "Python compiles: scripts/finalize_tt00_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-022",
+      "detail": "Python compiles: scripts/finalize_tt01_manifest.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-023",
+      "detail": "Python compiles: scripts/tt00_data.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-024",
+      "detail": "Python compiles: scripts/validate_exp01.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-025",
+      "detail": "Python compiles: scripts/validate_exp02.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-026",
+      "detail": "Python compiles: scripts/validate_exp03.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-027",
+      "detail": "Python compiles: scripts/validate_exp04.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-028",
+      "detail": "Python compiles: scripts/validate_exp05.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-029",
+      "detail": "Python compiles: scripts/validate_exp06.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-030",
+      "detail": "Python compiles: scripts/validate_tt00.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-031",
+      "detail": "Python compiles: scripts/validate_tt01.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-032",
+      "detail": "Python compiles: scripts/verify_exp03_rebuild.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-033",
+      "detail": "Python compiles: scripts/verify_exp04_rebuild.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-034",
+      "detail": "Python compiles: scripts/verify_exp05_rebuild.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-035",
+      "detail": "Python compiles: scripts/verify_exp06_rebuild.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-036",
+      "detail": "Python compiles: scripts/verify_tt00_rebuild.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-037",
+      "detail": "Python compiles: scripts/verify_tt01_rebuild.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-038",
+      "detail": "Python compiles: src/cst_tt/__init__.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-039",
+      "detail": "Python compiles: src/cst_tt/ancestry.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-040",
+      "detail": "Python compiles: src/cst_tt/autonomy.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-041",
+      "detail": "Python compiles: src/cst_tt/circularity.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-042",
+      "detail": "Python compiles: src/cst_tt/contracts.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-043",
+      "detail": "Python compiles: src/cst_tt/corridor.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-044",
+      "detail": "Python compiles: src/cst_tt/countermodels.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-045",
+      "detail": "Python compiles: src/cst_tt/hashing.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-046",
+      "detail": "Python compiles: src/cst_tt/package.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-047",
+      "detail": "Python compiles: src/cst_tt/predicates.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-048",
+      "detail": "Python compiles: src/cst_tt/registry.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-049",
+      "detail": "Python compiles: src/cst_tt/targets.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-050",
+      "detail": "Python compiles: src/cst_tt/temporal.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-051",
+      "detail": "Python compiles: src/cst_tt/types.py",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-TESTS",
+      "detail": "pytest suite passes",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-001",
+      "detail": "frozen temporal-audit source checksum ledger exists",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-002",
+      "detail": "seventeen frozen imported surfaces listed (found 17)",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-001",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/EXECUTION_PLAN.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-001",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/EXECUTION_PLAN.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-002",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/FIACH_BASELINE_SPECIFICATION.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-002",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/FIACH_BASELINE_SPECIFICATION.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-003",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/IAPS_BASELINE_SPECIFICATION.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-003",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/IAPS_BASELINE_SPECIFICATION.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-004",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/TEMPORAL_AUDIT_ORIGINAL_SHA256SUMS.txt",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-004",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/TEMPORAL_AUDIT_ORIGINAL_SHA256SUMS.txt",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-005",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/TEMPORAL_AUDIT_README.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-005",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/TEMPORAL_AUDIT_README.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-006",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/TEMPORAL_SOURCE_MAP.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-006",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/TEMPORAL_SOURCE_MAP.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-007",
+      "detail": "imported surface exists: inputs/normative/cst-tt-00/TEMPORAL_TRANSCENDENCE_AUDIT.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-007",
+      "detail": "imported surface hash matches: inputs/normative/cst-tt-00/TEMPORAL_TRANSCENDENCE_AUDIT.md",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-008",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_An_Audited_Closure_Architecture_for_Consciousness_Exact_Finite_Models_Structural_Theorems_and_Conditional_Realization.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-008",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_An_Audited_Closure_Architecture_for_Consciousness_Exact_Finite_Models_Structural_Theorems_and_Conditional_Realization.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-009",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Glass_Is_an_Unclosed_Layer_Kovacs_Memory_as_Predictive_Quotient_Residue.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-009",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Glass_Is_an_Unclosed_Layer_Kovacs_Memory_as_Predictive_Quotient_Residue.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-010",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Holonomy_with_Memory_in_Six_Birds_Theory_Predictive_Quotients_Witnesses_and_Fixed_Support_Route_Transport.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-010",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Holonomy_with_Memory_in_Six_Birds_Theory_Predictive_Quotients_Witnesses_and_Fixed_Support_Route_Transport.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-011",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-011",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-012",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Foundations_VI_A_Catalog_of_Dynamical_Structural_Laws.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-012",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Foundations_VI_A_Catalog_of_Dynamical_Structural_Laws.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-013",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-013",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-014",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Flatten_a_Stone_with_Six_Birds_Critical_Pairs_Holonomy_and_Confluence_in_Rewriting_Systems.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-014",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Flatten_a_Stone_with_Six_Birds_Critical_Pairs_Holonomy_and_Confluence_in_Rewriting_Systems.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-015",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Lay_a_Stone_with_Six_Birds_Finite_State_Semantics_for_Packaging_Directionality_and_Coarse_Graining.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-015",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Lay_a_Stone_with_Six_Birds_Finite_State_Semantics_for_Packaging_Directionality_and_Coarse_Graining.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-016",
+      "detail": "imported surface exists: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-016",
+      "detail": "imported surface hash matches: inputs/reference_surfaces/temporal_audit/Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-FILE-017",
+      "detail": "imported surface exists: inputs/source_archives/CST_temporal_transcendence_audit.zip",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-HASH-017",
+      "detail": "imported surface hash matches: inputs/source_archives/CST_temporal_transcendence_audit.zip",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-COUNT",
+      "detail": "fifteen countermodel families enumerate (found 15)",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-CANDIDATES",
+      "detail": "total bounded candidates explored is 3,657",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-IDS",
+      "detail": "countermodel identifiers are complete and ordered",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-01-QUAL",
+      "detail": "CM-01 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-01-MIN",
+      "detail": "CM-01 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-01-RECHECK",
+      "detail": "CM-01 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-01-SMALLER",
+      "detail": "CM-01 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-01-SAME",
+      "detail": "CM-01 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-02-QUAL",
+      "detail": "CM-02 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-02-MIN",
+      "detail": "CM-02 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-02-RECHECK",
+      "detail": "CM-02 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-02-SMALLER",
+      "detail": "CM-02 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-02-SAME",
+      "detail": "CM-02 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-03-QUAL",
+      "detail": "CM-03 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-03-MIN",
+      "detail": "CM-03 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-03-RECHECK",
+      "detail": "CM-03 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-03-SMALLER",
+      "detail": "CM-03 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-03-SAME",
+      "detail": "CM-03 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-04-QUAL",
+      "detail": "CM-04 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-04-MIN",
+      "detail": "CM-04 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-04-RECHECK",
+      "detail": "CM-04 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-04-SMALLER",
+      "detail": "CM-04 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-04-SAME",
+      "detail": "CM-04 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-05-QUAL",
+      "detail": "CM-05 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-05-MIN",
+      "detail": "CM-05 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-05-RECHECK",
+      "detail": "CM-05 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-05-SMALLER",
+      "detail": "CM-05 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-05-SAME",
+      "detail": "CM-05 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-06-QUAL",
+      "detail": "CM-06 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-06-MIN",
+      "detail": "CM-06 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-06-RECHECK",
+      "detail": "CM-06 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-06-SMALLER",
+      "detail": "CM-06 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-06-SAME",
+      "detail": "CM-06 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-07-QUAL",
+      "detail": "CM-07 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-07-MIN",
+      "detail": "CM-07 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-07-RECHECK",
+      "detail": "CM-07 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-07-SMALLER",
+      "detail": "CM-07 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-07-SAME",
+      "detail": "CM-07 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-08-QUAL",
+      "detail": "CM-08 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-08-MIN",
+      "detail": "CM-08 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-08-RECHECK",
+      "detail": "CM-08 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-08-SMALLER",
+      "detail": "CM-08 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-08-SAME",
+      "detail": "CM-08 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-09-QUAL",
+      "detail": "CM-09 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-09-MIN",
+      "detail": "CM-09 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-09-RECHECK",
+      "detail": "CM-09 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-09-SMALLER",
+      "detail": "CM-09 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-09-SAME",
+      "detail": "CM-09 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-10-QUAL",
+      "detail": "CM-10 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-10-MIN",
+      "detail": "CM-10 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-10-RECHECK",
+      "detail": "CM-10 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-10-SMALLER",
+      "detail": "CM-10 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-10-SAME",
+      "detail": "CM-10 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-11-QUAL",
+      "detail": "CM-11 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-11-MIN",
+      "detail": "CM-11 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-11-RECHECK",
+      "detail": "CM-11 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-11-SMALLER",
+      "detail": "CM-11 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-11-SAME",
+      "detail": "CM-11 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-12-QUAL",
+      "detail": "CM-12 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-12-MIN",
+      "detail": "CM-12 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-12-RECHECK",
+      "detail": "CM-12 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-12-SMALLER",
+      "detail": "CM-12 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-12-SAME",
+      "detail": "CM-12 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-13-QUAL",
+      "detail": "CM-13 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-13-MIN",
+      "detail": "CM-13 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-13-RECHECK",
+      "detail": "CM-13 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-13-SMALLER",
+      "detail": "CM-13 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-13-SAME",
+      "detail": "CM-13 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-14-QUAL",
+      "detail": "CM-14 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-14-MIN",
+      "detail": "CM-14 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-14-RECHECK",
+      "detail": "CM-14 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-14-SMALLER",
+      "detail": "CM-14 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-14-SAME",
+      "detail": "CM-14 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-15-QUAL",
+      "detail": "CM-15 satisfies every declared premise and failed-conclusion check",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-15-MIN",
+      "detail": "CM-15 carries bounded relative-minimality result",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-15-RECHECK",
+      "detail": "CM-15 independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-15-SMALLER",
+      "detail": "CM-15 reports smaller candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "countermodels",
+      "check_id": "CM-15-SAME",
+      "detail": "CM-15 has a canonical qualifying witness at minimal size",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-criteria",
+      "check_id": "KILL-FIACH-04-1",
+      "detail": "detached exact copy passes endpoint package/autonomy premises",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-criteria",
+      "check_id": "KILL-FIACH-04-2",
+      "detail": "detached exact copy fails strict overlap corridor",
+      "status": "PASS"
+    },
+    {
+      "category": "kill-criteria",
+      "check_id": "KILL-FIACH-04-3",
+      "detail": "detached copy is excluded for the intended mixed-stage reason",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-SCHEMA",
+      "detail": "countermodel certificate schema is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-REG-COUNT",
+      "detail": "countermodel registry has fifteen rows (found 15)",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-REG-UNIQUE",
+      "detail": "countermodel IDs are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-01",
+      "detail": "CM-01 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-01",
+      "detail": "CM-01 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-01",
+      "detail": "CM-01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-01",
+      "detail": "CM-01 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-01",
+      "detail": "CM-01 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-01",
+      "detail": "CM-01 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-01",
+      "detail": "CM-01 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-01",
+      "detail": "CM-01 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-01",
+      "detail": "CM-01 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-02",
+      "detail": "CM-02 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-02",
+      "detail": "CM-02 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-02",
+      "detail": "CM-02 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-02",
+      "detail": "CM-02 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-02",
+      "detail": "CM-02 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-02",
+      "detail": "CM-02 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-02",
+      "detail": "CM-02 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-02",
+      "detail": "CM-02 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-02",
+      "detail": "CM-02 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-03",
+      "detail": "CM-03 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-03",
+      "detail": "CM-03 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-03",
+      "detail": "CM-03 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-03",
+      "detail": "CM-03 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-03",
+      "detail": "CM-03 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-03",
+      "detail": "CM-03 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-03",
+      "detail": "CM-03 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-03",
+      "detail": "CM-03 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-03",
+      "detail": "CM-03 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-04",
+      "detail": "CM-04 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-04",
+      "detail": "CM-04 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-04",
+      "detail": "CM-04 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-04",
+      "detail": "CM-04 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-04",
+      "detail": "CM-04 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-04",
+      "detail": "CM-04 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-04",
+      "detail": "CM-04 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-04",
+      "detail": "CM-04 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-04",
+      "detail": "CM-04 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-05",
+      "detail": "CM-05 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-05",
+      "detail": "CM-05 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-05",
+      "detail": "CM-05 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-05",
+      "detail": "CM-05 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-05",
+      "detail": "CM-05 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-05",
+      "detail": "CM-05 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-05",
+      "detail": "CM-05 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-05",
+      "detail": "CM-05 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-05",
+      "detail": "CM-05 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-06",
+      "detail": "CM-06 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-06",
+      "detail": "CM-06 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-06",
+      "detail": "CM-06 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-06",
+      "detail": "CM-06 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-06",
+      "detail": "CM-06 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-06",
+      "detail": "CM-06 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-06",
+      "detail": "CM-06 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-06",
+      "detail": "CM-06 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-06",
+      "detail": "CM-06 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-07",
+      "detail": "CM-07 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-07",
+      "detail": "CM-07 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-07",
+      "detail": "CM-07 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-07",
+      "detail": "CM-07 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-07",
+      "detail": "CM-07 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-07",
+      "detail": "CM-07 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-07",
+      "detail": "CM-07 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-07",
+      "detail": "CM-07 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-07",
+      "detail": "CM-07 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-08",
+      "detail": "CM-08 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-08",
+      "detail": "CM-08 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-08",
+      "detail": "CM-08 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-08",
+      "detail": "CM-08 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-08",
+      "detail": "CM-08 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-08",
+      "detail": "CM-08 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-08",
+      "detail": "CM-08 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-08",
+      "detail": "CM-08 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-08",
+      "detail": "CM-08 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-09",
+      "detail": "CM-09 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-09",
+      "detail": "CM-09 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-09",
+      "detail": "CM-09 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-09",
+      "detail": "CM-09 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-09",
+      "detail": "CM-09 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-09",
+      "detail": "CM-09 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-09",
+      "detail": "CM-09 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-09",
+      "detail": "CM-09 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-09",
+      "detail": "CM-09 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-10",
+      "detail": "CM-10 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-10",
+      "detail": "CM-10 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-10",
+      "detail": "CM-10 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-10",
+      "detail": "CM-10 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-10",
+      "detail": "CM-10 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-10",
+      "detail": "CM-10 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-10",
+      "detail": "CM-10 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-10",
+      "detail": "CM-10 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-10",
+      "detail": "CM-10 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-11",
+      "detail": "CM-11 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-11",
+      "detail": "CM-11 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-11",
+      "detail": "CM-11 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-11",
+      "detail": "CM-11 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-11",
+      "detail": "CM-11 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-11",
+      "detail": "CM-11 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-11",
+      "detail": "CM-11 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-11",
+      "detail": "CM-11 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-11",
+      "detail": "CM-11 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-12",
+      "detail": "CM-12 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-12",
+      "detail": "CM-12 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-12",
+      "detail": "CM-12 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-12",
+      "detail": "CM-12 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-12",
+      "detail": "CM-12 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-12",
+      "detail": "CM-12 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-12",
+      "detail": "CM-12 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-12",
+      "detail": "CM-12 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-12",
+      "detail": "CM-12 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-13",
+      "detail": "CM-13 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-13",
+      "detail": "CM-13 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-13",
+      "detail": "CM-13 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-13",
+      "detail": "CM-13 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-13",
+      "detail": "CM-13 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-13",
+      "detail": "CM-13 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-13",
+      "detail": "CM-13 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-13",
+      "detail": "CM-13 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-13",
+      "detail": "CM-13 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-14",
+      "detail": "CM-14 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-14",
+      "detail": "CM-14 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-14",
+      "detail": "CM-14 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-14",
+      "detail": "CM-14 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-14",
+      "detail": "CM-14 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-14",
+      "detail": "CM-14 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-14",
+      "detail": "CM-14 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-14",
+      "detail": "CM-14 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-14",
+      "detail": "CM-14 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-MODEL-15",
+      "detail": "CM-15 finite model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CARD-15",
+      "detail": "CM-15 human-readable model card exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-FILE-15",
+      "detail": "CM-15 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-VALID-15",
+      "detail": "CM-15 certificate validates against schema",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-HASH-15",
+      "detail": "CM-15 certificate binds exact model bytes",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-STATUS-15",
+      "detail": "CM-15 result status is checked finite countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-CEILING-15",
+      "detail": "CM-15 retains structural claim ceiling",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-LEAN-15",
+      "detail": "CM-15 Lean theorem source exists",
+      "status": "PASS"
+    },
+    {
+      "category": "certificates",
+      "check_id": "CERT-RECHECK-15",
+      "detail": "CM-15 stored model independently rechecks",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-COUNT",
+      "detail": "theorem registry retains 35 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-STATUS",
+      "detail": "theorem status split is 21 open / 14 checked ({'open-scaffold': 21, 'checked-finite-countermodel': 14})",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-01",
+      "detail": "TTH-01 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-02",
+      "detail": "TTH-02 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-03",
+      "detail": "TTH-03 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-04",
+      "detail": "TTH-04 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-05",
+      "detail": "TTH-05 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-06",
+      "detail": "TTH-06 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-07",
+      "detail": "TTH-07 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-08",
+      "detail": "TTH-08 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-09",
+      "detail": "TTH-09 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-10",
+      "detail": "TTH-10 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-11",
+      "detail": "TTN-01 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-12",
+      "detail": "TTN-02 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-13",
+      "detail": "TTN-03 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-14",
+      "detail": "TTN-04 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-15",
+      "detail": "TTN-05 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-16",
+      "detail": "TTN-06 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-17",
+      "detail": "TTN-07 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-18",
+      "detail": "TTN-08 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-19",
+      "detail": "TTN-09 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-20",
+      "detail": "TTN-10 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-21",
+      "detail": "TTN-11 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-22",
+      "detail": "TTN-12 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-23",
+      "detail": "TTN-13 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-24",
+      "detail": "TTN-14 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-25",
+      "detail": "TTD-01 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-26",
+      "detail": "TTD-02 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-27",
+      "detail": "TTD-03 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-28",
+      "detail": "TTF-01 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-29",
+      "detail": "TTF-02 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-30",
+      "detail": "TTF-03 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-31",
+      "detail": "TTF-04 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-32",
+      "detail": "TTF-05 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-33",
+      "detail": "TTF-06 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-34",
+      "detail": "TTF-07 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THEOREM-35",
+      "detail": "TTF-08 has correct phase-one status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-TOY-COUNT",
+      "detail": "toy registry retains 21 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-TOY-STATUS",
+      "detail": "toy status split is 14 checked negative / 7 unimplemented ({'specified-not-implemented': 7, 'checked-negative-instance': 14})",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJECT-01",
+      "detail": "project registry phase='CST-TT-01'",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJECT-02",
+      "detail": "project registry phase_base_tag='CST-TT-00-v1'",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJECT-03",
+      "detail": "project registry phase_base_commit='65b3ab0f94564cee1d16ffb4513045319aaaf6ef'",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJECT-04",
+      "detail": "project registry scientific_results_landed=15",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJECT-05",
+      "detail": "project registry checked_finite_countermodels=15",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJECT-06",
+      "detail": "project registry generic_theorems_proved=0",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJECT-07",
+      "detail": "project registry positive_handoff_witnesses=0",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-PROJECT-08",
+      "detail": "project registry negative_kernel_status='frozen'",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-COUNT",
+      "detail": "minimality ledger has fifteen rows",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-IDS",
+      "detail": "minimality ledger covers every countermodel",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-01",
+      "detail": "CM-01 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-01",
+      "detail": "CM-01 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-02",
+      "detail": "CM-02 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-02",
+      "detail": "CM-02 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-03",
+      "detail": "CM-03 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-03",
+      "detail": "CM-03 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-04",
+      "detail": "CM-04 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-04",
+      "detail": "CM-04 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-05",
+      "detail": "CM-05 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-05",
+      "detail": "CM-05 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-06",
+      "detail": "CM-06 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-06",
+      "detail": "CM-06 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-07",
+      "detail": "CM-07 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-07",
+      "detail": "CM-07 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-08",
+      "detail": "CM-08 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-08",
+      "detail": "CM-08 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-09",
+      "detail": "CM-09 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-09",
+      "detail": "CM-09 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-10",
+      "detail": "CM-10 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-10",
+      "detail": "CM-10 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-11",
+      "detail": "CM-11 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-11",
+      "detail": "CM-11 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-12",
+      "detail": "CM-12 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-12",
+      "detail": "CM-12 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-13",
+      "detail": "CM-13 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-13",
+      "detail": "CM-13 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-14",
+      "detail": "CM-14 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-14",
+      "detail": "CM-14 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-STATUS-15",
+      "detail": "CM-15 has bounded minimality status",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-MIN-SMALL-15",
+      "detail": "CM-15 has no smaller qualifying generated candidate",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL",
+      "detail": "all fourteen kill criteria remain armed",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-AMEND",
+      "detail": "all 20 frozen PTH/FTH prospects remain mapped",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-COUNT",
+      "detail": "sixteen Lean modules exist under CSTTT (found 16)",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-01",
+      "detail": "root imports CSTTT.Autonomy.System",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-01",
+      "detail": "CSTTT.Autonomy.System uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-01",
+      "detail": "CSTTT.Autonomy.System delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-02",
+      "detail": "root imports CSTTT.Core.Carrier",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-02",
+      "detail": "CSTTT.Core.Carrier uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-02",
+      "detail": "CSTTT.Core.Carrier delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-03",
+      "detail": "root imports CSTTT.Core.Episode",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-03",
+      "detail": "CSTTT.Core.Episode uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-03",
+      "detail": "CSTTT.Core.Episode delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-04",
+      "detail": "root imports CSTTT.Core.Finite",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-04",
+      "detail": "CSTTT.Core.Finite uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-04",
+      "detail": "CSTTT.Core.Finite delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-05",
+      "detail": "root imports CSTTT.Corridor.DirectSuccessor",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-05",
+      "detail": "CSTTT.Corridor.DirectSuccessor uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-05",
+      "detail": "CSTTT.Corridor.DirectSuccessor delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-06",
+      "detail": "root imports CSTTT.Corridor.TemporalCorridor",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-06",
+      "detail": "CSTTT.Corridor.TemporalCorridor uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-06",
+      "detail": "CSTTT.Corridor.TemporalCorridor delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-07",
+      "detail": "root imports CSTTT.Countermodels.Kernel",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-07",
+      "detail": "CSTTT.Countermodels.Kernel uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-07",
+      "detail": "CSTTT.Countermodels.Kernel delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-08",
+      "detail": "root imports CSTTT.Fallback.Ancestry",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-08",
+      "detail": "CSTTT.Fallback.Ancestry uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-08",
+      "detail": "CSTTT.Fallback.Ancestry delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-09",
+      "detail": "root imports CSTTT.Package.Clauses",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-09",
+      "detail": "CSTTT.Package.Clauses uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-09",
+      "detail": "CSTTT.Package.Clauses delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-10",
+      "detail": "root imports CSTTT.Package.Gluing",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-10",
+      "detail": "CSTTT.Package.Gluing uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-10",
+      "detail": "CSTTT.Package.Gluing delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-11",
+      "detail": "root imports CSTTT.Prospects.Statements",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-11",
+      "detail": "CSTTT.Prospects.Statements uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-11",
+      "detail": "CSTTT.Prospects.Statements delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-12",
+      "detail": "root imports CSTTT.Targets.TemporalFIACH",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-12",
+      "detail": "CSTTT.Targets.TemporalFIACH uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-12",
+      "detail": "CSTTT.Targets.TemporalFIACH delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-13",
+      "detail": "root imports CSTTT.Temporal.Clock",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-13",
+      "detail": "CSTTT.Temporal.Clock uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-13",
+      "detail": "CSTTT.Temporal.Clock delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-14",
+      "detail": "root imports CSTTT.Temporal.Closure",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-14",
+      "detail": "CSTTT.Temporal.Closure uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-14",
+      "detail": "CSTTT.Temporal.Closure delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-15",
+      "detail": "root imports CSTTT.Temporal.Signature",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-15",
+      "detail": "CSTTT.Temporal.Signature uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-15",
+      "detail": "CSTTT.Temporal.Signature delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-IMPORT-16",
+      "detail": "root imports CSTTT.Transport.TemporalBridge",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NS-16",
+      "detail": "CSTTT.Transport.TemporalBridge uses CSTTT namespace",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DELIM-16",
+      "detail": "CSTTT.Transport.TemporalBridge delimiter counts balance",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NO-HOLES",
+      "detail": "Lean sources contain no sorry/admit/axiom/unsafe placeholder",
+      "status": "PASS"
+    },
+    {
+      "category": "circularity",
+      "check_id": "LEAN-CIRC",
+      "detail": "primitive verdict-vocabulary scan has no findings (found 0)",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-KERNEL",
+      "detail": "explicit countermodel kernel source is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-01",
+      "detail": "kernel contains CM-01 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-02",
+      "detail": "kernel contains CM-02 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-03",
+      "detail": "kernel contains CM-03 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-04",
+      "detail": "kernel contains CM-04 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-05",
+      "detail": "kernel contains CM-05 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-06",
+      "detail": "kernel contains CM-06 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-07",
+      "detail": "kernel contains CM-07 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-08",
+      "detail": "kernel contains CM-08 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-09",
+      "detail": "kernel contains CM-09 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-10",
+      "detail": "kernel contains CM-10 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-11",
+      "detail": "kernel contains CM-11 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-12",
+      "detail": "kernel contains CM-12 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-13",
+      "detail": "kernel contains CM-13 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-14",
+      "detail": "kernel contains CM-14 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CM-15",
+      "detail": "kernel contains CM-15 theorem surface",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "LEAN-NONCLAIM-sameSubject",
+      "detail": "kernel excludes verdict primitive sameSubject",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "LEAN-NONCLAIM-personalIdentity",
+      "detail": "kernel excludes verdict primitive personalIdentity",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "LEAN-NONCLAIM-survivesAs",
+      "detail": "kernel excludes verdict primitive survivesAs",
+      "status": "PASS"
+    },
+    {
+      "category": "claim-ceiling",
+      "check_id": "LEAN-NONCLAIM-isConscious",
+      "detail": "kernel excludes verdict primitive isConscious",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-01",
+      "detail": "documentation exists: docs/NEGATIVE_KERNEL.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-01-1",
+      "detail": "docs/NEGATIVE_KERNEL.md contains required phrase: fifteen deterministic finite countermodels",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-01-2",
+      "detail": "docs/NEGATIVE_KERNEL.md contains required phrase: None establishes or refutes consciousness",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-02",
+      "detail": "documentation exists: docs/COUNTERMODEL_MINIMALITY.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-02-1",
+      "detail": "docs/COUNTERMODEL_MINIMALITY.md contains required phrase: Minimality is always relative",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-02-2",
+      "detail": "docs/COUNTERMODEL_MINIMALITY.md contains required phrase: No claim of absolute minimality",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-03",
+      "detail": "documentation exists: docs/PHASE_BOUNDARY.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-03-1",
+      "detail": "docs/PHASE_BOUNDARY.md contains required phrase: no positive Temporal-FIACH",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-03-2",
+      "detail": "docs/PHASE_BOUNDARY.md contains required phrase: CST-TT-02",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-04",
+      "detail": "documentation exists: README.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-04-1",
+      "detail": "README.md contains required phrase: CST-TT-01",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-04-2",
+      "detail": "README.md contains required phrase: no positive Temporal-FIACH witness",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-05",
+      "detail": "documentation exists: STATE.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-05-1",
+      "detail": "STATE.md contains required phrase: Checked finite countermodels: 15",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-05-2",
+      "detail": "STATE.md contains required phrase: Detached-copy kill criterion: not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-06",
+      "detail": "documentation exists: manifests/CST-TT-01_COMPLETION_REPORT.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-06-1",
+      "detail": "manifests/CST-TT-01_COMPLETION_REPORT.md contains required phrase: 3,657 deterministic finite candidates",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-06-2",
+      "detail": "manifests/CST-TT-01_COMPLETION_REPORT.md contains required phrase: Temporal-IAPS remains locked",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-FILE-07",
+      "detail": "documentation exists: RESTORE_AND_VERIFY.md",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-07-1",
+      "detail": "RESTORE_AND_VERIFY.md contains required phrase: CST-TT-01-v1",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CONTENT-07-2",
+      "detail": "RESTORE_AND_VERIFY.md contains required phrase: lake build",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-01",
+      "detail": "negative-kernel document contains CM-01 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-02",
+      "detail": "negative-kernel document contains CM-02 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-03",
+      "detail": "negative-kernel document contains CM-03 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-04",
+      "detail": "negative-kernel document contains CM-04 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-05",
+      "detail": "negative-kernel document contains CM-05 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-06",
+      "detail": "negative-kernel document contains CM-06 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-07",
+      "detail": "negative-kernel document contains CM-07 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-08",
+      "detail": "negative-kernel document contains CM-08 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-09",
+      "detail": "negative-kernel document contains CM-09 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-10",
+      "detail": "negative-kernel document contains CM-10 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-11",
+      "detail": "negative-kernel document contains CM-11 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-12",
+      "detail": "negative-kernel document contains CM-12 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-13",
+      "detail": "negative-kernel document contains CM-13 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-14",
+      "detail": "negative-kernel document contains CM-14 card",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "DOC-CM-15",
+      "detail": "negative-kernel document contains CM-15 card",
+      "status": "PASS"
+    }
+  ],
+  "schema_version": "1.0",
+  "skipped": 3,
+  "status": "PASS"
+}

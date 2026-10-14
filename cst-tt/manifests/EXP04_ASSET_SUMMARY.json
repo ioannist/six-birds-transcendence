@@ -1,0 +1,53 @@
+{
+  "boundary": "No theorem or no-go is proved; no toy program is implemented; no final target, consciousness conclusion, or personal-identity verdict is selected.",
+  "candidate_dispositions": {
+    "TS-01": "narrowed_to_component",
+    "TS-02": "survives_as_family_core",
+    "TS-03": "survives_as_family_core",
+    "TS-04": "narrowed_to_mandatory_gate",
+    "TS-05": "narrowed_to_bridge_mechanism",
+    "TS-06": "narrowed_to_mandatory_gate",
+    "TS-07": "narrowed_to_crosscutting_audit",
+    "TS-08": "narrowed_to_mandatory_gate",
+    "TS-09": "narrowed_to_approximation_layer",
+    "TS-10": "survives_as_family_core"
+  },
+  "counts": {
+    "assumption_exposure_records": 200,
+    "candidates": 10,
+    "external_crosswalk_rows": 103,
+    "external_sources": 26,
+    "hard_case_records": 180,
+    "hard_cases": 18,
+    "internal_lenses": 13,
+    "lens_records": 130,
+    "no_go_prospects": 18,
+    "red_team_positions": 7,
+    "scenario_records": 350,
+    "survivor_families": 3
+  },
+  "generated_date": "2026-08-10",
+  "phase": "CST-EXP-04",
+  "project": "CST-EXP",
+  "schema_version": "1.0",
+  "survivor_families": [
+    {
+      "core": "TS-02",
+      "id": "SF-01",
+      "mandatory_modules": "TS-04;TS-06;TS-07;TS-08;TS-09",
+      "title": "Integrated Autonomous Handoff"
+    },
+    {
+      "core": "TS-03",
+      "id": "SF-02",
+      "mandatory_modules": "TS-04;TS-07;TS-08",
+      "title": "Causal-Overlap Process Lineage"
+    },
+    {
+      "core": "TS-10",
+      "id": "SF-03",
+      "mandatory_modules": "TS-01;TS-07;TS-09",
+      "title": "Relation-Valued Predictive Ancestry"
+    }
+  ]
+}

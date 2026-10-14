@@ -1,0 +1,953 @@
+{
+  "artifact": "CST-TT-09 paper result snapshot",
+  "schema_version": "1.0.0",
+  "lean_toolchain": "leanprover/lean4:v4.28.0",
+  "claim_ledger_sha256": "5352ce543cd17979ccd24d89f3012c40e45c0b871b2b4b5436ea2e35cae68e01",
+  "entries": [
+    {
+      "key": "pos04_tagged_ambient_states",
+      "value": "24",
+      "claim_id": "TTH-06-INST",
+      "model": "POS-04 tagged ambient carrier",
+      "computed_by": "(CSTTT.POS04.tags.flatMap (fun tag => CSTTT.POS04.ambientStates.map (fun s => (tag,s)))).length",
+      "pinned_by": "CSTTT.PaperSupport.pos04_tagged_ambient_count",
+      "description": "Tagged ambient states, including exits outside the maintained kernel.",
+      "value_type": "integer",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [],
+        "bridge_theorems": {},
+        "theorem_statement": "(List.flatMap (fun tag => List.map (fun s => (tag, s)) CSTTT.POS04.ambientStates) CSTTT.POS04.tags).length = 24",
+        "checked_statement": "((CSTTT.POS04.tags.flatMap (fun tag => CSTTT.POS04.ambientStates.map (fun s => (tag,s)))).length) = 24",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "pos04_tagged_lethal_states",
+      "value": "4",
+      "claim_id": "TTH-06-INST",
+      "model": "POS-04 tagged ambient carrier",
+      "computed_by": "(CSTTT.POS04.tags.flatMap (fun tag => (CSTTT.POS04.ambientStates.filter CSTTT.POS04.isLethalHazard).map (fun s => (tag,s)))).length",
+      "pinned_by": "CSTTT.PaperSupport.pos04_tagged_lethal_count",
+      "description": "Tagged ambient states satisfying the actual lethal hazard predicate.",
+      "value_type": "integer",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "(List.flatMap\n      (fun tag => List.map (fun s => (tag, s)) (List.filter CSTTT.POS04.isLethalHazard CSTTT.POS04.ambientStates))\n      CSTTT.POS04.tags).length =\n  4",
+        "checked_statement": "((CSTTT.POS04.tags.flatMap (fun tag => (CSTTT.POS04.ambientStates.filter CSTTT.POS04.isLethalHazard).map (fun s => (tag,s)))).length) = 4",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "pos04_c1_epsilon",
+      "value": "1/16",
+      "claim_id": "TTH-06-INST",
+      "model": "POS-04 perturbed C1",
+      "computed_by": "CSTTT.POS04.c1Epsilon",
+      "pinned_by": "CSTTT.PaperSupport.pos04_c1_epsilon",
+      "description": "Frozen perturbation epsilon of the POS-04 C1 audit.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.POS04.c1Epsilon = 1 / 16",
+        "checked_statement": "(CSTTT.POS04.c1Epsilon) = (1/16:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g7_native_factor_states",
+      "value": "8",
+      "claim_id": "TTH-07",
+      "model": "G7 native eight-factor process",
+      "computed_by": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.factors.length",
+      "pinned_by": "CSTTT.PaperSupport.g7_native_factor_count",
+      "description": "States in the actual G7 native factor enumeration.",
+      "value_type": "integer",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.factors.length = 8",
+        "checked_statement": "(CSTTT.TargetTheory.GenericHandoff.NativeComposition.factors.length) = 8",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "full_native_02_physical_states",
+      "value": "32",
+      "claim_id": "TTF-05",
+      "model": "FULL-NATIVE-02 / canonical32 and flat32",
+      "computed_by": "CSTTT.FullNative.states.length",
+      "pinned_by": "CSTTT.FullNative.state_domain",
+      "description": "Physical states shared by the two installed ROMs.",
+      "value_type": "integer",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative.states.Nodup ∧ CSTTT.FullNative.states.length = 32",
+        "checked_statement": "(CSTTT.FullNative.states.length) = 32",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "full_native_02_c8_factor_states",
+      "value": "64",
+      "claim_id": "TTF-05",
+      "model": "FULL-NATIVE-02 physical/charge factor",
+      "computed_by": "CSTTT.FullNative.Viability.carrier.length",
+      "pinned_by": "CSTTT.FullNative.Viability.carrier_exact",
+      "description": "Physical state and stored-charge factor cardinality.",
+      "value_type": "integer",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative.Viability.carrier.Nodup ∧ CSTTT.FullNative.Viability.carrier.length = 64",
+        "checked_statement": "(CSTTT.FullNative.Viability.carrier.length) = 64",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "full_native_02_operational_core_states",
+      "value": "16",
+      "claim_id": "TTF-05",
+      "model": "FULL-NATIVE-02 renewable operational C8",
+      "computed_by": "(CSTTT.FullNative.Viability.carrier.filter CSTTT.FullNative02.Viability.core).length",
+      "pinned_by": "CSTTT.FullNative02.Viability.sixteen_inside_charged_states",
+      "description": "Inside charged factors in the operational core, including cold residents.",
+      "value_type": "integer",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [],
+        "bridge_theorems": {},
+        "theorem_statement": "(List.filter CSTTT.FullNative02.Viability.core CSTTT.FullNative.Viability.carrier).length = 16",
+        "checked_statement": "((CSTTT.FullNative.Viability.carrier.filter CSTTT.FullNative02.Viability.core).length) = 16",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "pos04_c3_trajectory",
+      "value": "[\"6\",\"7\",\"7\"]",
+      "claim_id": "TTH-06-INST",
+      "model": "POS-04 / source tag",
+      "computed_by": "[CSTTT.POS04.classCount (CSTTT.POS04.profile0 (CSTTT.POS04.positiveLowerRule .source)), CSTTT.POS04.classCount (w4PosStep .positive .source (CSTTT.POS04.profile0 (CSTTT.POS04.positiveLowerRule .source))), CSTTT.POS04.classCount (w4PosStep .positive .source (w4Memo CSTTT.Objecthood.T1Audit.kernel w4PosComplete (w4PosStep .positive .source (CSTTT.POS04.profile0 (CSTTT.POS04.positiveLowerRule .source)))))]",
+      "pinned_by": "CSTTT.POS04.c3_trajectory_each_tag",
+      "description": "Initial, first and second predictive class counts.",
+      "value_type": "integer_list",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "∀ (tag : CSTTT.POS04.Tag),\n  [CSTTT.POS04.classCount (CSTTT.POS04.profile0 (CSTTT.POS04.positiveLowerRule tag)),\n      CSTTT.POS04.classCount\n        (CSTTT.POS04.profile1 CSTTT.POS04.ProfileVariant.positive (CSTTT.POS04.positiveLowerRule tag) tag),\n      CSTTT.POS04.classCount\n        (CSTTT.POS04.profile2 CSTTT.POS04.ProfileVariant.positive (CSTTT.POS04.positiveLowerRule tag) tag)] =\n    [6, 7, 7]",
+        "checked_statement": "([CSTTT.POS04.classCount (CSTTT.POS04.profile0 (CSTTT.POS04.positiveLowerRule .source)), CSTTT.POS04.classCount (w4PosStep .positive .source (CSTTT.POS04.profile0 (CSTTT.POS04.positiveLowerRule .source))), CSTTT.POS04.classCount (w4PosStep .positive .source (w4Memo CSTTT.Objecthood.T1Audit.kernel w4PosComplete (w4PosStep .positive .source (CSTTT.POS04.profile0 (CSTTT.POS04.positiveLowerRule .source)))))]) = [6,7,7]",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g7_c3_trajectory",
+      "value": "[\"2\",\"4\",\"4\"]",
+      "claim_id": "TTH-07",
+      "model": "G7 native eight-factor process",
+      "computed_by": "[CSTTT.TargetTheory.GenericHandoff.ProfileRules.count CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile (CSTTT.TargetTheory.GenericHandoff.ProfileRules.seed CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile), CSTTT.TargetTheory.GenericHandoff.ProfileRules.count CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile (CSTTT.TargetTheory.GenericHandoff.ProfileRules.first CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile), CSTTT.TargetTheory.GenericHandoff.ProfileRules.count CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile (CSTTT.TargetTheory.GenericHandoff.ProfileRules.second CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile)]",
+      "pinned_by": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.recursive_profile",
+      "description": "Initial, first and second class counts of the G7 factor.",
+      "value_type": "integer_list",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "∀ (owner : CSTTT.TargetTheory.GenericHandoff.NativeComposition.Owner),\n  CSTTT.TargetTheory.GenericHandoff.ProfileRules.RecursiveProfile\n    (CSTTT.TargetTheory.GenericHandoff.TemporalFactorRules.profile\n      (CSTTT.TargetTheory.GenericHandoff.NativeComposition.factorSchema owner)\n      (CSTTT.TargetTheory.GenericHandoff.NativeComposition.factorData owner))",
+        "checked_statement": "([CSTTT.TargetTheory.GenericHandoff.ProfileRules.count CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile (CSTTT.TargetTheory.GenericHandoff.ProfileRules.seed CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile), CSTTT.TargetTheory.GenericHandoff.ProfileRules.count CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile (CSTTT.TargetTheory.GenericHandoff.ProfileRules.first CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile), CSTTT.TargetTheory.GenericHandoff.ProfileRules.count CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile (CSTTT.TargetTheory.GenericHandoff.ProfileRules.second CSTTT.TargetTheory.GenericHandoff.NativeComposition.profile)]) = [2,4,4]",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "full_native_02_c3_trajectory",
+      "value": "[\"9\",\"16\",\"16\"]",
+      "claim_id": "TTF-05",
+      "model": "FULL-NATIVE-02 / canonical32",
+      "computed_by": "[CSTTT.TargetTheory.GenericHandoff.ProfileRules.count (CSTTT.FullNative.profile CSTTT.FullNative.model) (CSTTT.TargetTheory.GenericHandoff.ProfileRules.seed (CSTTT.FullNative.profile CSTTT.FullNative.model)), CSTTT.TargetTheory.GenericHandoff.ProfileRules.count (CSTTT.FullNative.profile CSTTT.FullNative.model) CSTTT.FullNative.classFormula, CSTTT.TargetTheory.GenericHandoff.ProfileRules.count (CSTTT.FullNative.profile CSTTT.FullNative.model) (w4Step (CSTTT.FullNative.profile CSTTT.FullNative.model) CSTTT.FullNative.classFormula)]",
+      "pinned_by": "CSTTT.FullNative.profile_trajectory",
+      "description": "Canonical installed physical profile class counts.",
+      "value_type": "integer_list",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Quot.sound"
+        ],
+        "bridge_theorems": {
+          "CSTTT.FullNative.first_profile_equation": [
+            "Quot.sound"
+          ]
+        },
+        "theorem_statement": "CSTTT.TargetTheory.GenericHandoff.ProfileRules.count (CSTTT.FullNative.profile CSTTT.FullNative.model)\n      (CSTTT.TargetTheory.GenericHandoff.ProfileRules.seed (CSTTT.FullNative.profile CSTTT.FullNative.model)) =\n    9 ∧\n  CSTTT.TargetTheory.GenericHandoff.ProfileRules.count (CSTTT.FullNative.profile CSTTT.FullNative.model)\n        (CSTTT.FullNative.classes CSTTT.FullNative.model) =\n      16 ∧\n    CSTTT.TargetTheory.GenericHandoff.ProfileRules.count (CSTTT.FullNative.profile CSTTT.FullNative.model)\n        (CSTTT.TargetTheory.GenericHandoff.ProfileRules.second (CSTTT.FullNative.profile CSTTT.FullNative.model)) =\n      16",
+        "checked_statement": "([CSTTT.TargetTheory.GenericHandoff.ProfileRules.count (CSTTT.FullNative.profile CSTTT.FullNative.model) (CSTTT.TargetTheory.GenericHandoff.ProfileRules.seed (CSTTT.FullNative.profile CSTTT.FullNative.model)), CSTTT.TargetTheory.GenericHandoff.ProfileRules.count (CSTTT.FullNative.profile CSTTT.FullNative.model) CSTTT.FullNative.classFormula, CSTTT.TargetTheory.GenericHandoff.ProfileRules.count (CSTTT.FullNative.profile CSTTT.FullNative.model) (w4Step (CSTTT.FullNative.profile CSTTT.FullNative.model) CSTTT.FullNative.classFormula)]) = [9,16,16]",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g7_strict_chain_system_ids",
+      "value": "[\"17\",\"55\",\"101\"]",
+      "claim_id": "TTH-07",
+      "model": "G7 native strict chain",
+      "computed_by": "[(CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.left (false,false,false)).source, (CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.left (false,false,false)).target, (CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.right (false,false,false)).target]",
+      "pinned_by": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.carrier_chain",
+      "description": "Source, intermediate and final system identifiers.",
+      "value_type": "integer_list",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "∀ (h : CSTTT.TargetTheory.GenericHandoff.NativeComposition.Factor),\n  (CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.left h).source = 17 ∧\n    (CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.left h).target = 55 ∧\n      (CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.right h).source = 55 ∧\n        (CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.right h).target = 101",
+        "checked_statement": "([(CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.left (false,false,false)).source, (CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.left (false,false,false)).target, (CSTTT.TargetTheory.GenericHandoff.NativeComposition.PublicationCorridor.right (false,false,false)).target]) = [17,55,101]",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "pos04_c1_recurrent_mass",
+      "value": "77/80",
+      "claim_id": "TTH-06-INST",
+      "model": "POS-04 C1",
+      "computed_by": "CSTTT.POS04.taggedCoreMass .source",
+      "pinned_by": "CSTTT.POS04.c1_core_mass_each_tag",
+      "description": "Stationary mass on the recurrent states.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "∀ (tag : CSTTT.POS04.Tag), CSTTT.POS04.taggedCoreMass tag = 77 / 80",
+        "checked_statement": "(CSTTT.POS04.taggedCoreMass .source) = (77/80:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "pos04_c1_total_variation",
+      "value": "3/80",
+      "claim_id": "TTH-06-INST",
+      "model": "POS-04 C1",
+      "computed_by": "CSTTT.POS04.taggedTV .source",
+      "pinned_by": "CSTTT.POS04.c1_tv_each_tag",
+      "description": "Total variation from the declared recurrent uniform distribution.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "∀ (tag : CSTTT.POS04.Tag), CSTTT.POS04.taggedTV tag = 3 / 80",
+        "checked_statement": "(CSTTT.POS04.taggedTV .source) = (3/80:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "pos04_c1_idempotence_defect",
+      "value": "78795/524288",
+      "claim_id": "TTH-06-INST",
+      "model": "POS-04 perturbed C1",
+      "computed_by": "CSTTT.POS04.taggedDefect .source",
+      "pinned_by": "CSTTT.POS04.c1_defect_each_tag",
+      "description": "Exact defect of the declared perturbed two-step matrix.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "∀ (tag : CSTTT.POS04.Tag), CSTTT.POS04.taggedDefect tag = 78795 / 524288",
+        "checked_statement": "(CSTTT.POS04.taggedDefect .source) = (78795/524288:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "pos04_staged_clause_count",
+      "value": "8",
+      "claim_id": "TTH-06-INST",
+      "model": "POS-04 staged package map",
+      "computed_by": "CSTTT.POS04.stagedClauseMap.length",
+      "pinned_by": "CSTTT.POS04.staged_map_count",
+      "description": "Number of clause entries in the frozen staged map.",
+      "value_type": "integer",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.POS04.stagedClauseMap.length = 8",
+        "checked_statement": "(CSTTT.POS04.stagedClauseMap.length) = 8",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g28_canonical_joint_mass",
+      "value": "1/8",
+      "claim_id": "TTN-14",
+      "model": "FULL-NATIVE-01 G28 / canonicalExecution",
+      "computed_by": "CSTTT.FullNative.RecombinationBoundary.jointLaw CSTTT.FullNative.RecombinationBoundary.canonicalExecution [false] [0]",
+      "pinned_by": "CSTTT.FullNative.RecombinationBoundary.actual_joint_countertrace",
+      "description": "Joint observation mass after one actual maintenance action.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative.RecombinationBoundary.jointLaw CSTTT.FullNative.RecombinationBoundary.canonicalExecution [false] [0] =\n    1 / 8 ∧\n  CSTTT.FullNative.RecombinationBoundary.jointLaw CSTTT.FullNative.RecombinationBoundary.flatExecution [false] [0] =\n    1 / 4",
+        "checked_statement": "(CSTTT.FullNative.RecombinationBoundary.jointLaw CSTTT.FullNative.RecombinationBoundary.canonicalExecution [false] [0]) = (1/8:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g28_flat_joint_mass",
+      "value": "1/4",
+      "claim_id": "TTN-14",
+      "model": "FULL-NATIVE-01 G28 / flatExecution",
+      "computed_by": "CSTTT.FullNative.RecombinationBoundary.jointLaw CSTTT.FullNative.RecombinationBoundary.flatExecution [false] [0]",
+      "pinned_by": "CSTTT.FullNative.RecombinationBoundary.actual_joint_countertrace",
+      "description": "Joint observation mass after one actual maintenance action.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative.RecombinationBoundary.jointLaw CSTTT.FullNative.RecombinationBoundary.canonicalExecution [false] [0] =\n    1 / 8 ∧\n  CSTTT.FullNative.RecombinationBoundary.jointLaw CSTTT.FullNative.RecombinationBoundary.flatExecution [false] [0] =\n    1 / 4",
+        "checked_statement": "(CSTTT.FullNative.RecombinationBoundary.jointLaw CSTTT.FullNative.RecombinationBoundary.flatExecution [false] [0]) = (1/4:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g27_c7_left_joint_mass",
+      "value": "1/8",
+      "claim_id": "TTF-05",
+      "model": "FULL-NATIVE-01 G27 C7",
+      "computed_by": "CSTTT.FullNative.Binding.emittedLaw (CSTTT.FullNative.rationalRows CSTTT.FullNative.model) CSTTT.FullNative.Binding.joint (CSTTT.FullNative.Binding.splitState CSTTT.FullNative.PhysicalExecution.source.resident.current false) [false] [0]",
+      "pinned_by": "CSTTT.FullNative.Binding.split_joint_gap",
+      "description": "Next maintenance joint mass at the supported physical split.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "∀ (s : CSTTT.FullNative.State),\n  CSTTT.FullNative.Binding.emittedLaw (CSTTT.FullNative.rationalRows CSTTT.FullNative.model)\n        CSTTT.FullNative.Binding.joint (CSTTT.FullNative.Binding.splitState s false) [false] [0] =\n      1 / 8 ∧\n    CSTTT.FullNative.Binding.emittedLaw (CSTTT.FullNative.rationalRows CSTTT.FullNative.model)\n        CSTTT.FullNative.Binding.joint (CSTTT.FullNative.Binding.splitState s true) [false] [0] =\n      3 / 8",
+        "checked_statement": "(CSTTT.FullNative.Binding.emittedLaw (CSTTT.FullNative.rationalRows CSTTT.FullNative.model) CSTTT.FullNative.Binding.joint (CSTTT.FullNative.Binding.splitState CSTTT.FullNative.PhysicalExecution.source.resident.current false) [false] [0]) = (1/8:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g27_c7_right_joint_mass",
+      "value": "3/8",
+      "claim_id": "TTF-05",
+      "model": "FULL-NATIVE-01 G27 C7",
+      "computed_by": "CSTTT.FullNative.Binding.emittedLaw (CSTTT.FullNative.rationalRows CSTTT.FullNative.model) CSTTT.FullNative.Binding.joint (CSTTT.FullNative.Binding.splitState CSTTT.FullNative.PhysicalExecution.source.resident.current true) [false] [0]",
+      "pinned_by": "CSTTT.FullNative.Binding.split_joint_gap",
+      "description": "Next maintenance joint mass at the supported physical split.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "∀ (s : CSTTT.FullNative.State),\n  CSTTT.FullNative.Binding.emittedLaw (CSTTT.FullNative.rationalRows CSTTT.FullNative.model)\n        CSTTT.FullNative.Binding.joint (CSTTT.FullNative.Binding.splitState s false) [false] [0] =\n      1 / 8 ∧\n    CSTTT.FullNative.Binding.emittedLaw (CSTTT.FullNative.rationalRows CSTTT.FullNative.model)\n        CSTTT.FullNative.Binding.joint (CSTTT.FullNative.Binding.splitState s true) [false] [0] =\n      3 / 8",
+        "checked_statement": "(CSTTT.FullNative.Binding.emittedLaw (CSTTT.FullNative.rationalRows CSTTT.FullNative.model) CSTTT.FullNative.Binding.joint (CSTTT.FullNative.Binding.splitState CSTTT.FullNative.PhysicalExecution.source.resident.current true) [false] [0]) = (3/8:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g26_conditioning_event_weights",
+      "value": "[\"1/256\",\"9/256\"]",
+      "claim_id": "JOINT-COND",
+      "model": "FULL-NATIVE-01 G26 actual joint row",
+      "computed_by": "CSTTT.FullNative.JointClaims.eventRows.map Prod.snd",
+      "pinned_by": "CSTTT.FullNative.JointClaims.actual_conditioning_weights",
+      "description": "Unconditioned probabilities of the two retained correlated outcomes.",
+      "value_type": "rational_list",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "List.map Prod.snd CSTTT.FullNative.JointClaims.eventRows = [1 / 256, 9 / 256] ∧\n  CSTTT.FullNative.JointClaims.eventMass = 5 / 128",
+        "checked_statement": "(CSTTT.FullNative.JointClaims.eventRows.map Prod.snd) = [(1/256:Rat),(9/256:Rat)]",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g26_conditioning_event_mass",
+      "value": "5/128",
+      "claim_id": "JOINT-COND",
+      "model": "FULL-NATIVE-01 G26 actual joint row",
+      "computed_by": "CSTTT.FullNative.JointClaims.eventMass",
+      "pinned_by": "CSTTT.FullNative.JointClaims.actual_conditioning_weights",
+      "description": "Total unconditioned mass of the shared conditioning event.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "List.map Prod.snd CSTTT.FullNative.JointClaims.eventRows = [1 / 256, 9 / 256] ∧\n  CSTTT.FullNative.JointClaims.eventMass = 5 / 128",
+        "checked_statement": "(CSTTT.FullNative.JointClaims.eventMass) = (5/128:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g26_conditioning_relative_weights",
+      "value": "[\"1/1\",\"9/1\"]",
+      "claim_id": "JOINT-COND",
+      "model": "FULL-NATIVE-01 G26 actual joint row",
+      "computed_by": "(let ws := CSTTT.FullNative.JointClaims.eventRows.map Prod.snd; ws.map (fun q => q/(ws.head?.get (by dsimp only [ws]; rw [CSTTT.FullNative.JointClaims.actual_conditioning_weights.1]; rfl))))",
+      "pinned_by": "CSTTT.FullNative.JointClaims.actual_conditioning_weights",
+      "description": "Correlated outcome weights relative to the first positive outcome.",
+      "value_type": "rational_list",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "List.map Prod.snd CSTTT.FullNative.JointClaims.eventRows = [1 / 256, 9 / 256] ∧\n  CSTTT.FullNative.JointClaims.eventMass = 5 / 128",
+        "checked_statement": "((let ws := CSTTT.FullNative.JointClaims.eventRows.map Prod.snd; ws.map (fun q => q/(ws.head?.get (by dsimp only [ws]; rw [CSTTT.FullNative.JointClaims.actual_conditioning_weights.1]; rfl))))) = [(1/1:Rat),(9/1:Rat)]",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g26_conditioned_joint_mass",
+      "value": "1/10",
+      "claim_id": "JOINT-COND",
+      "model": "FULL-NATIVE-01 G26 shared-event conditioning",
+      "computed_by": "CSTTT.FullNative.JointClaims.conditionedJoint [] [CSTTT.FullNative.JointClaims.correlatedObservation false]",
+      "pinned_by": "CSTTT.FullNative.JointClaims.conditioning_factorization_countertrace",
+      "description": "Conditioned joint mass of the selected correlated observation.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative.JointClaims.conditionedJoint [] [CSTTT.FullNative.JointClaims.correlatedObservation false] =\n    some (1 / 10) ∧\n  CSTTT.FullNative.JointClaims.conditionedBranch false []\n        [(CSTTT.FullNative.JointClaims.correlatedObservation false).fst] =\n      some (1 / 10) ∧\n    CSTTT.FullNative.JointClaims.conditionedBranch true []\n          [(CSTTT.FullNative.JointClaims.correlatedObservation false).snd] =\n        some (1 / 10) ∧\n      1 / 10 ≠ 1 / 10 * (1 / 10)",
+        "checked_statement": "(CSTTT.FullNative.JointClaims.conditionedJoint [] [CSTTT.FullNative.JointClaims.correlatedObservation false]) = some (1/10:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g26_conditioned_left_mass",
+      "value": "1/10",
+      "claim_id": "JOINT-COND",
+      "model": "FULL-NATIVE-01 G26 shared-event conditioning",
+      "computed_by": "CSTTT.FullNative.JointClaims.conditionedBranch false [] [(CSTTT.FullNative.JointClaims.correlatedObservation false).1]",
+      "pinned_by": "CSTTT.FullNative.JointClaims.conditioning_factorization_countertrace",
+      "description": "Conditioned left marginal mass.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative.JointClaims.conditionedJoint [] [CSTTT.FullNative.JointClaims.correlatedObservation false] =\n    some (1 / 10) ∧\n  CSTTT.FullNative.JointClaims.conditionedBranch false []\n        [(CSTTT.FullNative.JointClaims.correlatedObservation false).fst] =\n      some (1 / 10) ∧\n    CSTTT.FullNative.JointClaims.conditionedBranch true []\n          [(CSTTT.FullNative.JointClaims.correlatedObservation false).snd] =\n        some (1 / 10) ∧\n      1 / 10 ≠ 1 / 10 * (1 / 10)",
+        "checked_statement": "(CSTTT.FullNative.JointClaims.conditionedBranch false [] [(CSTTT.FullNative.JointClaims.correlatedObservation false).1]) = some (1/10:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g26_conditioned_right_mass",
+      "value": "1/10",
+      "claim_id": "JOINT-COND",
+      "model": "FULL-NATIVE-01 G26 shared-event conditioning",
+      "computed_by": "CSTTT.FullNative.JointClaims.conditionedBranch true [] [(CSTTT.FullNative.JointClaims.correlatedObservation false).2]",
+      "pinned_by": "CSTTT.FullNative.JointClaims.conditioning_factorization_countertrace",
+      "description": "Conditioned right marginal mass.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative.JointClaims.conditionedJoint [] [CSTTT.FullNative.JointClaims.correlatedObservation false] =\n    some (1 / 10) ∧\n  CSTTT.FullNative.JointClaims.conditionedBranch false []\n        [(CSTTT.FullNative.JointClaims.correlatedObservation false).fst] =\n      some (1 / 10) ∧\n    CSTTT.FullNative.JointClaims.conditionedBranch true []\n          [(CSTTT.FullNative.JointClaims.correlatedObservation false).snd] =\n        some (1 / 10) ∧\n      1 / 10 ≠ 1 / 10 * (1 / 10)",
+        "checked_statement": "(CSTTT.FullNative.JointClaims.conditionedBranch true [] [(CSTTT.FullNative.JointClaims.correlatedObservation false).2]) = some (1/10:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g26_product_of_conditioned_marginals",
+      "value": "1/100",
+      "claim_id": "JOINT-COND",
+      "model": "FULL-NATIVE-01 G26 shared-event conditioning",
+      "computed_by": "(do let l ← CSTTT.FullNative.JointClaims.conditionedBranch false [] [(CSTTT.FullNative.JointClaims.correlatedObservation false).1]; let r ← CSTTT.FullNative.JointClaims.conditionedBranch true [] [(CSTTT.FullNative.JointClaims.correlatedObservation false).2]; pure (l*r))",
+      "pinned_by": "CSTTT.FullNative.JointClaims.conditioning_factorization_countertrace",
+      "description": "Product of the two separately conditioned marginal masses.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative.JointClaims.conditionedJoint [] [CSTTT.FullNative.JointClaims.correlatedObservation false] =\n    some (1 / 10) ∧\n  CSTTT.FullNative.JointClaims.conditionedBranch false []\n        [(CSTTT.FullNative.JointClaims.correlatedObservation false).fst] =\n      some (1 / 10) ∧\n    CSTTT.FullNative.JointClaims.conditionedBranch true []\n          [(CSTTT.FullNative.JointClaims.correlatedObservation false).snd] =\n        some (1 / 10) ∧\n      1 / 10 ≠ 1 / 10 * (1 / 10)",
+        "checked_statement": "((do let l ← CSTTT.FullNative.JointClaims.conditionedBranch false [] [(CSTTT.FullNative.JointClaims.correlatedObservation false).1]; let r ← CSTTT.FullNative.JointClaims.conditionedBranch true [] [(CSTTT.FullNative.JointClaims.correlatedObservation false).2]; pure (l*r))) = some (1/100:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g25_source_holonomy_mass",
+      "value": "1/324",
+      "claim_id": "TTF-05",
+      "model": "G25 nine-state reversible internalized control / source",
+      "computed_by": "CSTTT.FullNative.Internalized.protocolMass CSTTT.FullNative.AccountExecution.renewable (CSTTT.FullNative.Internalized.root .source 0) CSTTT.FullNative.Internalized.protocolAB (.c,.a)",
+      "pinned_by": "CSTTT.FullNative.Internalized.holonomy_readouts_exact",
+      "description": "Law-gated holonomy mass of the separate reversible control.",
+      "value_type": "rational",
+      "extraction": "evaluated_via_protocol",
+      "evaluation_source_key": "g25_source_protocol_mass",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {
+          "CSTTT.FullNative.Internalized.actual_protocol_holonomy": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "CSTTT.FullNative.Internalized.parameters_exact": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        "theorem_statement": "∀ (o : CSTTT.FullNative.AccountExecution.Owner),\n  CSTTT.FullNative.Internalized.holonomyReadout CSTTT.FullNative.Internalized.Flavor.source\n        (CSTTT.FullNative.Internalized.root CSTTT.FullNative.Internalized.Flavor.source o) =\n      some (1 / 324) ∧\n    CSTTT.FullNative.Internalized.holonomyReadout CSTTT.FullNative.Internalized.Flavor.native\n        (CSTTT.FullNative.Internalized.root CSTTT.FullNative.Internalized.Flavor.native o) =\n      some (1 / 1024)",
+        "checked_statement": "(CSTTT.FullNative.Internalized.holonomyReadout .source (CSTTT.FullNative.Internalized.root .source 0)) = some (1/324:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g25_source_protocol_mass",
+      "value": "1/324",
+      "claim_id": "TTF-05",
+      "model": "G25 nine-state reversible internalized control / source",
+      "computed_by": "CSTTT.FullNative.Internalized.protocolMass CSTTT.FullNative.AccountExecution.renewable (CSTTT.FullNative.Internalized.root .source 0) CSTTT.FullNative.Internalized.protocolAB (.c,.a)",
+      "pinned_by": "CSTTT.FullNative.Internalized.actual_protocol_holonomy",
+      "description": "Evaluated forward protocol mass underlying the law-gated readout.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {
+          "CSTTT.FullNative.Internalized.parameters_exact": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        "theorem_statement": "∀ (f : CSTTT.FullNative.Internalized.Flavor) (o : CSTTT.FullNative.AccountExecution.Owner),\n  CSTTT.FullNative.Internalized.protocolMass CSTTT.FullNative.AccountExecution.renewable\n        (CSTTT.FullNative.Internalized.root f o) CSTTT.FullNative.Internalized.protocolAB\n        (CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.Tri.c,\n          CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.Tri.a) =\n      CSTTT.FullNative.Internalized.parameter f ^ 2 / 144 ∧\n    CSTTT.FullNative.Internalized.protocolMass CSTTT.FullNative.AccountExecution.renewable\n        (CSTTT.FullNative.Internalized.root f o) CSTTT.FullNative.Internalized.protocolBA\n        (CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.Tri.c,\n          CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.Tri.a) =\n      0",
+        "checked_statement": "(CSTTT.FullNative.Internalized.protocolMass CSTTT.FullNative.AccountExecution.renewable (CSTTT.FullNative.Internalized.root .source 0) CSTTT.FullNative.Internalized.protocolAB (.c,.a)) = (1/324:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g25_native_holonomy_mass",
+      "value": "1/1024",
+      "claim_id": "TTF-05",
+      "model": "G25 nine-state reversible internalized control / native",
+      "computed_by": "CSTTT.FullNative.Internalized.protocolMass CSTTT.FullNative.AccountExecution.renewable (CSTTT.FullNative.Internalized.root .native 0) CSTTT.FullNative.Internalized.protocolAB (.c,.a)",
+      "pinned_by": "CSTTT.FullNative.Internalized.holonomy_readouts_exact",
+      "description": "Law-gated holonomy mass of the separate reversible control.",
+      "value_type": "rational",
+      "extraction": "evaluated_via_protocol",
+      "evaluation_source_key": "g25_native_protocol_mass",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {
+          "CSTTT.FullNative.Internalized.actual_protocol_holonomy": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "CSTTT.FullNative.Internalized.parameters_exact": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        "theorem_statement": "∀ (o : CSTTT.FullNative.AccountExecution.Owner),\n  CSTTT.FullNative.Internalized.holonomyReadout CSTTT.FullNative.Internalized.Flavor.source\n        (CSTTT.FullNative.Internalized.root CSTTT.FullNative.Internalized.Flavor.source o) =\n      some (1 / 324) ∧\n    CSTTT.FullNative.Internalized.holonomyReadout CSTTT.FullNative.Internalized.Flavor.native\n        (CSTTT.FullNative.Internalized.root CSTTT.FullNative.Internalized.Flavor.native o) =\n      some (1 / 1024)",
+        "checked_statement": "(CSTTT.FullNative.Internalized.holonomyReadout .native (CSTTT.FullNative.Internalized.root .native 0)) = some (1/1024:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g25_native_protocol_mass",
+      "value": "1/1024",
+      "claim_id": "TTF-05",
+      "model": "G25 nine-state reversible internalized control / native",
+      "computed_by": "CSTTT.FullNative.Internalized.protocolMass CSTTT.FullNative.AccountExecution.renewable (CSTTT.FullNative.Internalized.root .native 0) CSTTT.FullNative.Internalized.protocolAB (.c,.a)",
+      "pinned_by": "CSTTT.FullNative.Internalized.actual_protocol_holonomy",
+      "description": "Evaluated forward protocol mass underlying the law-gated readout.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {
+          "CSTTT.FullNative.Internalized.parameters_exact": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        "theorem_statement": "∀ (f : CSTTT.FullNative.Internalized.Flavor) (o : CSTTT.FullNative.AccountExecution.Owner),\n  CSTTT.FullNative.Internalized.protocolMass CSTTT.FullNative.AccountExecution.renewable\n        (CSTTT.FullNative.Internalized.root f o) CSTTT.FullNative.Internalized.protocolAB\n        (CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.Tri.c,\n          CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.Tri.a) =\n      CSTTT.FullNative.Internalized.parameter f ^ 2 / 144 ∧\n    CSTTT.FullNative.Internalized.protocolMass CSTTT.FullNative.AccountExecution.renewable\n        (CSTTT.FullNative.Internalized.root f o) CSTTT.FullNative.Internalized.protocolBA\n        (CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.Tri.c,\n          CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeGeneratorCreditPrototype.Tri.a) =\n      0",
+        "checked_statement": "(CSTTT.FullNative.Internalized.protocolMass CSTTT.FullNative.AccountExecution.renewable (CSTTT.FullNative.Internalized.root .native 0) CSTTT.FullNative.Internalized.protocolAB (.c,.a)) = (1/1024:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g25_source_bias",
+      "value": "2/3",
+      "claim_id": "TTF-05",
+      "model": "G25 nine-state reversible internalized control / source",
+      "computed_by": "CSTTT.FullNative.Internalized.parameter .source",
+      "pinned_by": "CSTTT.FullNative.Internalized.parameters_exact",
+      "description": "Bias of the separate reversible control.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative.Internalized.parameter CSTTT.FullNative.Internalized.Flavor.source = 2 / 3 ∧\n  CSTTT.FullNative.Internalized.parameter CSTTT.FullNative.Internalized.Flavor.native = 3 / 8",
+        "checked_statement": "(CSTTT.FullNative.Internalized.parameter .source) = (2/3:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g25_native_bias",
+      "value": "3/8",
+      "claim_id": "TTF-05",
+      "model": "G25 nine-state reversible internalized control / native",
+      "computed_by": "CSTTT.FullNative.Internalized.parameter .native",
+      "pinned_by": "CSTTT.FullNative.Internalized.parameters_exact",
+      "description": "Bias of the separate reversible control.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative.Internalized.parameter CSTTT.FullNative.Internalized.Flavor.source = 2 / 3 ∧\n  CSTTT.FullNative.Internalized.parameter CSTTT.FullNative.Internalized.Flavor.native = 3 / 8",
+        "checked_statement": "(CSTTT.FullNative.Internalized.parameter .native) = (3/8:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g23_source_forward_cycle_mass",
+      "value": "81/4194304",
+      "claim_id": "TTF-05",
+      "model": "FULL-NATIVE-01 G23 actual directional receipts",
+      "computed_by": "(CSTTT.FullNative.Credit.sourceCycleWorld.carriers 0).map (fun (p : CSTTT.FullNative.PhysicalExecution.Local) => CSTTT.FullNative.Credit.forwardReceipts CSTTT.FullNative.model p.receipts)",
+      "pinned_by": "CSTTT.FullNative.Credit.source_actual_cycle_products",
+      "description": "Actual source receipt cycle product.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "Option.map (fun p => CSTTT.FullNative.Credit.forwardReceipts CSTTT.FullNative.model p.receipts)\n      (CSTTT.FullNative.Credit.sourceCycleWorld.carriers 0) =\n    some (324 / 16 ^ 6) ∧\n  Option.map (fun p => CSTTT.FullNative.Credit.reverseReceipts CSTTT.FullNative.model p.receipts)\n      (CSTTT.FullNative.Credit.sourceCycleWorld.carriers 0) =\n    some (36 / 16 ^ 6)",
+        "checked_statement": "((CSTTT.FullNative.Credit.sourceCycleWorld.carriers 0).map (fun (p : CSTTT.FullNative.PhysicalExecution.Local) => CSTTT.FullNative.Credit.forwardReceipts CSTTT.FullNative.model p.receipts)) = some (81/4194304:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "g23_source_reverse_cycle_mass",
+      "value": "9/4194304",
+      "claim_id": "TTF-05",
+      "model": "FULL-NATIVE-01 G23 actual directional receipts",
+      "computed_by": "(CSTTT.FullNative.Credit.sourceCycleWorld.carriers 0).map (fun (p : CSTTT.FullNative.PhysicalExecution.Local) => CSTTT.FullNative.Credit.reverseReceipts CSTTT.FullNative.model p.receipts)",
+      "pinned_by": "CSTTT.FullNative.Credit.source_actual_cycle_products",
+      "description": "Actual source receipt cycle product.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "Option.map (fun p => CSTTT.FullNative.Credit.forwardReceipts CSTTT.FullNative.model p.receipts)\n      (CSTTT.FullNative.Credit.sourceCycleWorld.carriers 0) =\n    some (324 / 16 ^ 6) ∧\n  Option.map (fun p => CSTTT.FullNative.Credit.reverseReceipts CSTTT.FullNative.model p.receipts)\n      (CSTTT.FullNative.Credit.sourceCycleWorld.carriers 0) =\n    some (36 / 16 ^ 6)",
+        "checked_statement": "((CSTTT.FullNative.Credit.sourceCycleWorld.carriers 0).map (fun (p : CSTTT.FullNative.PhysicalExecution.Local) => CSTTT.FullNative.Credit.reverseReceipts CSTTT.FullNative.model p.receipts)) = some (9/4194304:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "full_native_02_fusion_outcome_count",
+      "value": "8",
+      "claim_id": "TTF-04",
+      "model": "FULL-NATIVE-02 owned canonical fusion",
+      "computed_by": "(CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld CSTTT.FullNative02.mainRequest).length",
+      "pinned_by": "CSTTT.FullNative02.main_positive_rows",
+      "description": "Number of actual positive settlements of the frozen main request.",
+      "value_type": "integer",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld\n    CSTTT.FullNative02.mainRequest =\n  List.map\n    (fun p =>\n      (CSTTT.FullNative02.settle CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld\n          CSTTT.FullNative02.mainRequest CSTTT.FullNative02.mainParents p\n          (CSTTT.FullNative02.pairProbability CSTTT.FullNative02.mainParents.rom\n            CSTTT.FullNative02.mainParents.left.current CSTTT.FullNative02.mainParents.right.current false false p),\n        CSTTT.FullNative02.pairProbability CSTTT.FullNative02.mainParents.rom\n          CSTTT.FullNative02.mainParents.left.current CSTTT.FullNative02.mainParents.right.current false false p))\n    (CSTTT.FullNative02.meeting CSTTT.FullNative02.mainParents.rom CSTTT.FullNative02.mainParents.left.current\n      CSTTT.FullNative02.mainParents.right.current false false)",
+        "checked_statement": "((CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld CSTTT.FullNative02.mainRequest).length) = 8",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "full_native_02_fusion_settlement_probabilities",
+      "value": "[\"1/40\",\"1/40\",\"9/40\",\"9/40\",\"9/40\",\"9/40\",\"1/40\",\"1/40\"]",
+      "claim_id": "TTF-04",
+      "model": "FULL-NATIVE-02 owned canonical fusion",
+      "computed_by": "(CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld CSTTT.FullNative02.mainRequest).map Prod.snd",
+      "pinned_by": "CSTTT.FullNative02.main_positive_rows",
+      "description": "Normalized settlement probabilities in actual execution row order.",
+      "value_type": "rational_list",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld\n    CSTTT.FullNative02.mainRequest =\n  List.map\n    (fun p =>\n      (CSTTT.FullNative02.settle CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld\n          CSTTT.FullNative02.mainRequest CSTTT.FullNative02.mainParents p\n          (CSTTT.FullNative02.pairProbability CSTTT.FullNative02.mainParents.rom\n            CSTTT.FullNative02.mainParents.left.current CSTTT.FullNative02.mainParents.right.current false false p),\n        CSTTT.FullNative02.pairProbability CSTTT.FullNative02.mainParents.rom\n          CSTTT.FullNative02.mainParents.left.current CSTTT.FullNative02.mainParents.right.current false false p))\n    (CSTTT.FullNative02.meeting CSTTT.FullNative02.mainParents.rom CSTTT.FullNative02.mainParents.left.current\n      CSTTT.FullNative02.mainParents.right.current false false)",
+        "checked_statement": "((CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld CSTTT.FullNative02.mainRequest).map Prod.snd) = [(1/40:Rat),(1/40:Rat),(9/40:Rat),(9/40:Rat),(9/40:Rat),(9/40:Rat),(1/40:Rat),(1/40:Rat)]",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "full_native_02_fusion_probability_sum",
+      "value": "1/1",
+      "claim_id": "TTF-04",
+      "model": "FULL-NATIVE-02 owned canonical fusion",
+      "computed_by": "((CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld CSTTT.FullNative02.mainRequest).map Prod.snd).sum",
+      "pinned_by": "CSTTT.FullNative02.main_positive_rows",
+      "description": "Total probability mass of the actual supported fusion row.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld\n    CSTTT.FullNative02.mainRequest =\n  List.map\n    (fun p =>\n      (CSTTT.FullNative02.settle CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld\n          CSTTT.FullNative02.mainRequest CSTTT.FullNative02.mainParents p\n          (CSTTT.FullNative02.pairProbability CSTTT.FullNative02.mainParents.rom\n            CSTTT.FullNative02.mainParents.left.current CSTTT.FullNative02.mainParents.right.current false false p),\n        CSTTT.FullNative02.pairProbability CSTTT.FullNative02.mainParents.rom\n          CSTTT.FullNative02.mainParents.left.current CSTTT.FullNative02.mainParents.right.current false false p))\n    (CSTTT.FullNative02.meeting CSTTT.FullNative02.mainParents.rom CSTTT.FullNative02.mainParents.left.current\n      CSTTT.FullNative02.mainParents.right.current false false)",
+        "checked_statement": "(((CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld CSTTT.FullNative02.mainRequest).map Prod.snd).sum) = (1/1:Rat)",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "full_native_02_empty_probability",
+      "value": "[\"1/1\"]",
+      "claim_id": "TTF-04",
+      "model": "FULL-NATIVE-02 opposed-action empty control",
+      "computed_by": "(CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld CSTTT.FullNative02.probeRequest).map Prod.snd",
+      "pinned_by": "CSTTT.FullNative02.probe_empty_control",
+      "description": "Probabilities of the supported empty settlements.",
+      "value_type": "rational_list",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "(CSTTT.FullNative02.parentView CSTTT.FullNative02.branchesWorld CSTTT.FullNative02.probeRequest).isSome = true ∧\n  List.map (fun e => (e.fst.kind, e.snd))\n      (CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld\n        CSTTT.FullNative02.probeRequest) =\n    [(CSTTT.FullNative02.OutcomeKind.empty (CSTTT.FullNative02.prospective CSTTT.FullNative02.probeRequest), 1)]",
+        "checked_statement": "((CSTTT.FullNative02.fusionRows CSTTT.FullNative02.renewable CSTTT.FullNative02.branchesWorld CSTTT.FullNative02.probeRequest).map Prod.snd) = [(1/1:Rat)]",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "full_native_02_absent_supply_first_outcomes",
+      "value": "8",
+      "claim_id": "TTF-05",
+      "model": "FULL-NATIVE-02 absent-supply control",
+      "computed_by": "CSTTT.FullNative02.absentFirst.length",
+      "pinned_by": "CSTTT.FullNative02.absent_first_preserved",
+      "description": "Supported outcomes of the initially stored-charge step without supply.",
+      "value_type": "integer",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.FullNative02.absentFirst.length = 8 ∧\n  ∀ (e : CSTTT.FullNative02.World × Nat),\n    e ∈ CSTTT.FullNative02.absentFirst →\n      e.fst.accounts.charge 0 = false ∧ CSTTT.FullNative02.nativeRows CSTTT.FullNative02.absent e.fst 0 false = []",
+        "checked_statement": "(CSTTT.FullNative02.absentFirst.length) = 8",
+        "method": "kernel_checked_projection"
+      }
+    },
+    {
+      "key": "tts03_half_box_radius",
+      "value": "1/2",
+      "claim_id": "TTS-03",
+      "model": "POS-04 rational-register extension",
+      "computed_by": "CSTTT.RobustnessTheory.POS04RationalMargin.radius .predictive",
+      "pinned_by": "CSTTT.RobustnessTheory.POS04RationalMargin.certified_margin",
+      "description": "Uniform radius of the certified five-coordinate closed box.",
+      "value_type": "rational",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.RobustnessTheory.ExactFiveMargins.PositiveCertifiedMargin CSTTT.RobustnessTheory.POS04RationalMargin.advances\n  CSTTT.RobustnessTheory.POS04RationalMargin.radius",
+        "checked_statement": "CSTTT.RobustnessTheory.ExactFiveMargins.PositiveCertifiedMargin CSTTT.RobustnessTheory.POS04RationalMargin.advances (fun _ => (1/2:Rat))",
+        "method": "definitional_statement_view"
+      }
+    },
+    {
+      "key": "tts03_component_advances",
+      "value": "[\"2/1\",\"1/1\",\"1/1\",\"1/1\",\"1/1\"]",
+      "claim_id": "TTS-03",
+      "model": "POS-04 rational-register extension",
+      "computed_by": "(([.predictive,.order,.tick,.progress,.record] : List CSTTT.RobustnessTheory.ExactFiveMargins.Coordinate).map CSTTT.RobustnessTheory.POS04RationalMargin.advances)",
+      "pinned_by": "CSTTT.RobustnessTheory.POS04RationalMargin.actual_advance",
+      "description": "Uncorrected advances in predictive, order, tick, progress and record order.",
+      "value_type": "rational_list",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "∀ (delta : CSTTT.RobustnessTheory.ExactFiveMargins.Vector),\n  CSTTT.RobustnessTheory.RawRationalMargin.eventAdvance CSTTT.RobustnessTheory.POS04RationalMargin.model\n      (CSTTT.RobustnessTheory.POS04RationalMargin.input delta) ⋯ CSTTT.POS04.RouteId.a\n      CSTTT.TargetTheory.ComputedFIACH.LaneDisturbance.nominal CSTTT.Objecthood.T1Audit.Action.cw\n      (CSTTT.POS04.Ambient.inK CSTTT.Objecthood.T1Audit.KState.p2w1) =\n    some fun i => CSTTT.RobustnessTheory.POS04RationalMargin.advances i + delta i",
+        "checked_statement": "CSTTT.RobustnessTheory.RawRationalMargin.eventAdvance CSTTT.RobustnessTheory.POS04RationalMargin.model (CSTTT.RobustnessTheory.POS04RationalMargin.input (fun _ => 0)) (CSTTT.RobustnessTheory.POS04RationalMargin.ready (fun _ => 0)) CSTTT.POS04.RouteId.a CSTTT.TargetTheory.ComputedFIACH.LaneDisturbance.nominal CSTTT.Objecthood.T1Audit.Action.cw (CSTTT.POS04.Ambient.inK CSTTT.Objecthood.T1Audit.KState.p2w1) = some (fun i => match i with | .predictive => (2/1:Rat) | .order => (1/1:Rat) | .tick => (1/1:Rat) | .progress => (1/1:Rat) | .record => (1/1:Rat) )",
+        "method": "definitional_statement_view"
+      }
+    },
+    {
+      "key": "g7_fork_system_ids",
+      "value": "[\"17\",\"201\",\"202\"]",
+      "claim_id": "TTH-08",
+      "model": "G7 native symmetric fork",
+      "computed_by": "[CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.source.code,CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.left.code,CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.right.code]",
+      "pinned_by": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.native_relation_valued_temporal_fission",
+      "description": "Shared source and both relation-valued continuation targets.",
+      "value_type": "integer_list",
+      "extraction": "evaluated",
+      "pinning": {
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "bridge_theorems": {},
+        "theorem_statement": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.related\n    CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.source\n    CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.left ∧\n  CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.related\n      CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.source\n      CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.right ∧\n    (∀ (target : CSTTT.CarrierId),\n        CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.valid target ↔\n          target = CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.left ∨\n            target = CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.right) ∧\n      (∀ (target : CSTTT.CarrierId),\n          CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.valid\n              (CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.swap target) ↔\n            CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.valid target) ∧\n        (∀ (target : CSTTT.CarrierId),\n            CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.swap\n                (CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.swap target) =\n              target) ∧\n          ¬CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.InvariantSingleton\n              CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.canonicalRaw",
+        "checked_statement": "CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.related\n    (⟨17⟩ : CSTTT.CarrierId)\n    (⟨201⟩ : CSTTT.CarrierId) ∧\n  CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.related\n      (⟨17⟩ : CSTTT.CarrierId)\n      (⟨202⟩ : CSTTT.CarrierId) ∧\n    (∀ (target : CSTTT.CarrierId),\n        CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.valid target ↔\n          target = (⟨201⟩ : CSTTT.CarrierId) ∨\n            target = (⟨202⟩ : CSTTT.CarrierId)) ∧\n      (∀ (target : CSTTT.CarrierId),\n          CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.valid\n              (CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.swap target) ↔\n            CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.valid target) ∧\n        (∀ (target : CSTTT.CarrierId),\n            CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.swap\n                (CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.fork.swap target) =\n              target) ∧\n          ¬CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.InvariantSingleton\n              CSTTT.TargetTheory.GenericHandoff.NativeComposition.NativeFission.canonicalRaw",
+        "method": "definitional_statement_view"
+      }
+    }
+  ],
+  "candidate_findings": [],
+  "schemas": [
+    {
+      "key": "ttn12_countdown_failure",
+      "claim_id": "TTN-12",
+      "pinned_by": "CSTTT.RealControls.ttn12_exists_for_every_horizon",
+      "theorem_statement": "∀ (h : Nat),\n  ∃ step,\n    (∀ (t : Nat), t ≤ h → CSTTT.RealControls.countdownLive h (CSTTT.RealControls.countdownAt h t)) ∧\n      (∀ (t : Nat), t ≤ h → step (CSTTT.RealControls.countdownAt h t) = CSTTT.RealControls.countdownAt h (t + 1)) ∧\n        ¬CSTTT.RealControls.countdownLive h (CSTTT.RealControls.countdownAt h (h + 1))",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "disposition": "universal_horizon_schema_not_numeric",
+      "description": "Failure at the successor of each finite horizon is a theorem schema; no finite horizon is selected."
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+schema_version: '1.1'
+project: CST-EXP
+phase: CST-EXP-00
+canonical_source: assumption_register.csv
+policy: Each assumption is named, lane-priced, independently rejectable, and does not inherit conclusions listed in does_not_license.
+assumptions:
+- assumption_id: D-CARRIER
+  class: definition_choice
+  statement: A declared rule individuates carrier tokens and medium classes independently of the desired continuation
+    verdict.
+  default_status: required_definition
+  may_license: well-typed source/target scope
+  does_not_license: cross-carrier transport; identity; consciousness
+  source_status: project-new
+- assumption_id: H-DISTINCT
+  class: structural_hypothesis
+  statement: Source and target satisfy the declared DistinctCarrier predicate at the claimed level.
+  default_status: open_per_candidate
+  may_license: cross-carrier scope
+  does_not_license: cross-medium scope unless medium classes differ; transport success
+  source_status: project-new
+- assumption_id: H-BRIDGE-ADM
+  class: structural_hypothesis
+  statement: The proposed bridge is admissible under named source, target, interface, and resource gates.
+  default_status: open_per_candidate
+  may_license: use of bridge in S-T or S-L claims
+  does_not_license: preservation; realization; lineage
+  source_status: project-new
+- assumption_id: H-XCI
+  class: structural_hypothesis_or_future_theorem
+  statement: A precise cross-carrier invariance or transport law holds for the declared object and bridge family.
+  default_status: not_inherited
+  may_license: S-T theorem schemas
+  does_not_license: A1; A2-P; target realization; identity
+  source_status: project-new; required replacement for vague A2 use
+- assumption_id: H-SOURCE-FULL
+  class: structural_hypothesis
+  statement: The source candidate satisfies the full C-package and coherence/gate conditions.
+  default_status: not_inherited; stipulable_in_toy
+  may_license: full-package source premise
+  does_not_license: actual consciousness; soundness; lineage
+  source_status: P05 full target; T17-I open
+- assumption_id: H-TARGET-FULL
+  class: structural_hypothesis_or_goal
+  statement: The target candidate satisfies the full C-package and coherence/gate conditions.
+  default_status: open
+  may_license: S-R full-package claim
+  does_not_license: source-target lineage; ontological realization
+  source_status: P05 full target
+- assumption_id: H-SOURCE-SIMP
+  class: structural_hypothesis
+  statement: The source satisfies the simplified certificate schema.
+  default_status: stipulable_or_checkable_on_toy
+  may_license: simplified source premise
+  does_not_license: full C-package; consciousness
+  source_status: P05 T17-S
+- assumption_id: H-TARGET-SIMP
+  class: structural_hypothesis_or_goal
+  statement: The target satisfies the simplified certificate schema.
+  default_status: open
+  may_license: simplified S-R claim
+  does_not_license: full C-package; consciousness
+  source_status: P05 T17-S
+- assumption_id: H-PRESERVE-O
+  class: structural_hypothesis_or_goal
+  statement: The bridge preserves or transforms declared object O under declared comparison rho.
+  default_status: open
+  may_license: object-specific S-T claim
+  does_not_license: other invariants; target package; lineage
+  source_status: project-new
+- assumption_id: H-GLOBAL-GLUE
+  class: structural_hypothesis_or_goal
+  statement: Local bridge/package data admit one globally coherent package or lineage object.
+  default_status: open
+  may_license: global S-R or S-L claim
+  does_not_license: automatic local-to-global inference
+  source_status: P17-inspired; project-new
+- assumption_id: H-ROUTE-FLAT
+  class: structural_hypothesis_or_goal
+  statement: Admissible routes induce the same result, or the declared holonomy defect vanishes.
+  default_status: open
+  may_license: route-independent S-T/S-L composition
+  does_not_license: existence of a route; identity
+  source_status: P14/P50-inspired
+- assumption_id: H-LINEAGE
+  class: criterion_choice
+  statement: A declared relation L is accepted as the structural lineage criterion for the candidate.
+  default_status: open_and_contestable
+  may_license: S-L classifications
+  does_not_license: personal identity; target realization; uniqueness
+  source_status: project-new using P05 T14/FIV F19 assets
+- assumption_id: H-LINEAGE-UNIQUE
+  class: structural_hypothesis_or_goal
+  statement: The declared data select exactly one target successor under L.
+  default_status: not_default
+  may_license: unique-successor S-L claim
+  does_not_license: consciousness; correctness of L
+  source_status: project-new
+- assumption_id: H-AUTONOMY
+  class: structural_hypothesis_or_goal
+  statement: After the declared withdrawal intervention, the target maintains the named package over horizon H using
+    retained target resources.
+  default_status: open
+  may_license: A claim
+  does_not_license: lineage; indefinite persistence; consciousness
+  source_status: project-new using P16/P32/P57 assets
+- assumption_id: H-APPROX
+  class: metric_choice
+  statement: A declared metric, tolerance, horizon, and error-composition rule adequately compare source and target objects.
+  default_status: open
+  may_license: approximate S-T/S-R claims
+  does_not_license: approximate hidden/predictive match from public match
+  source_status: project-new
+- assumption_id: H-CERT-SOUND
+  class: semantic_premise
+  statement: Satisfaction of the chosen certificate implies lawful audited closure for the relevant package.
+  default_status: unproved
+  may_license: conditional move from certificate to closure completeness
+  does_not_license: A1; A2-P; identity
+  source_status: P05 T17-O H1
+- assumption_id: H-RECOG
+  class: recognition_hypothesis
+  statement: A declared observable or instrument maps evidence to the structural predicate with characterized error.
+  default_status: unproved
+  may_license: Tier-R empirical attribution
+  does_not_license: structural theorem; ontology
+  source_status: P05 empirical obligations
+- assumption_id: A1
+  class: ontological_postulate
+  statement: 'Ontic Closure Completeness: lawful audited closure is sufficient for realization.'
+  default_status: optional_philosophical
+  may_license: conditional ontological realization after structural/soundness premises
+  does_not_license: certificate soundness; lineage; empirical truth
+  source_status: P05 T17-O
+- assumption_id: A2-P
+  class: ontological_postulate
+  statement: 'Substrate Indifference: the carrier label is not an extra closure law.'
+  default_status: optional_philosophical; no formal theorem
+  may_license: a carrier-indifferent ontological reading when separately applicable
+  does_not_license: H-XCI; bridge existence; preservation; identity
+  source_status: P05 A2
+- assumption_id: H-IDENTITY-O
+  class: ontological_or_metaphysical_premise
+  statement: The selected structural lineage relation is sufficient for personal identity or survival.
+  default_status: not_inherited
+  may_license: Tier-O personal-continuity reading
+  does_not_license: S-L theorem; target realization; A1/A2
+  source_status: project-new and explicitly optional

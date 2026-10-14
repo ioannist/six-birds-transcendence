@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_internalized_receipts_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_internalized_receipts_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_internalized_receipts_transcription.log",
+  "log_sha256": "cb5618edb8268e2c32af7798e97cac45a10242e7c16b1b64766ece99c7b6bb18",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:33+00:00",
+  "status": "pass",
+  "summary": "PASS: caught planted drift: clock issuer relabelled local\nPASS: caught planted drift: valid mixed channel provenance rejected as G23 mixed issuer\nPASS: caught planted drift: holonomy erased\nPASS: caught planted drift: absence disables both channels after only one debit\nPASS: caught planted drift: native bias replaced by source bias"
+}

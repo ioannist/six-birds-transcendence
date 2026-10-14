@@ -1,0 +1,38 @@
+{
+  "base_commit": "4a48d7ee212cde2404be06f01df0a28aa3ad12fc",
+  "base_tag": "CST-EXP-06-v1",
+  "boundary": "No theorem, proof, checked countermodel, positive witness, empirical recognition bridge, full Six Birds simulation, consciousness conclusion, survival conclusion, numerical-identity conclusion, A1 result, A2-P result, or certificate-soundness result is landed.",
+  "counts": {
+    "assumptions": 32,
+    "certificate_schemas": 8,
+    "claim_lanes": 7,
+    "definitions": 39,
+    "dependency_edges": 28,
+    "imported_hashed_surfaces": 17,
+    "imported_source_manuscripts": 9,
+    "kill_criteria": 14,
+    "lean_modules": 15,
+    "legacy_theorem_prospects_mapped": 20,
+    "theorem_prospects": 35,
+    "toy_model_contracts": 21,
+    "unique_lean_statement_interfaces": 35
+  },
+  "date": "2026-08-10",
+  "direct_successor": "provisional and separately named",
+  "fallback": "Temporal-IAPS locked pending a documented FIACH kill criterion",
+  "lean_compile": "not run: lean/lake/elan unavailable; external lake build required",
+  "mandatory_companion": "exact finite no-go and boundary kernel",
+  "next_phase": "CST-TT-01",
+  "phase": "CST-TT-00",
+  "primary": "Temporal-FIACH strict overlap",
+  "project": "CST-TT",
+  "schema_version": "1.0",
+  "status": "formal contract frozen; no scientific result landed",
+  "tag": "CST-TT-00-v1",
+  "validation": {
+    "final_clean_tree": "828 passed; 0 failed; 1 skipped",
+    "portable_rebuild": "21/21 deterministic surfaces reproduced byte-for-byte",
+    "python_tests": "35/35 passed",
+    "sole_skip": "Lean/Lake build unavailable in originating environment"
+  }
+}

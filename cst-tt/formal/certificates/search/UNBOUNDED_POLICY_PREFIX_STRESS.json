@@ -1,0 +1,6 @@
+{
+  "maximum_depth": 12,
+  "search_id": "UNBOUNDED_POLICY_PREFIX_STRESS",
+  "violations": 0,
+  "words_checked": 8191
+}

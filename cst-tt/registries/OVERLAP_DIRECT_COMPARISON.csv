@@ -1,0 +1,10 @@
+case_id,case_name,evidence_ref,strict_overlap_chain,atomic_direct_successor,direct_successor_path,classification
+CMP-01,atomic live overlap,models/corridors/COR-POS-01.model.json,pass,fail,fail,strict overlap only
+CMP-02,two-leg live overlap through intermediate carrier,models/corridors/COR-POS-02-COMPOSED.model.json,pass,fail,fail,composed strict overlap chain
+CMP-03,atomic direct event successor,models/direct_successor/DS-POS-01.model.json,fail,pass,pass,direct class only
+CMP-04,two-edge direct path,formal/certificates/direct_successor/DS-PATH-POS-01.certificate.json,fail,fail,pass,composed direct path; not one atomic edge
+CMP-05,detached exact temporal copy,models/countermodels/CM-02.model.json,fail,fail,fail,endpoint reconstruction only
+CMP-06,temporal gap and resumed stream,models/countermodels/CM-12.model.json,fail,fail,fail,resumed equivalent stream
+CMP-07,same-carrier re-encoding,models/countermodels/CM-14.model.json,fail,fail,fail,typing control
+CMP-08,mixed but source-redundant stage,models/corridors/controls/COR-C03.model.json,fail,fail,fail,mere coexistence without two-sided causal work
+CMP-09,arbitrary archival data edge,models/direct_successor/controls/DS-C15.model.json,fail,fail,fail,data reachability only

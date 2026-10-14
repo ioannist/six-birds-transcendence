@@ -1,0 +1,21 @@
+{
+  "$id": "https://six-birds.example/cst-tt/route_completion_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "audit": {},
+    "certificate_id": {},
+    "fiach_certificate_ref": {},
+    "mode": {},
+    "route_certificate_ref": {}
+  },
+  "required": [
+    "certificate_id",
+    "fiach_certificate_ref",
+    "route_certificate_ref",
+    "mode",
+    "audit"
+  ],
+  "title": "Route Completion Certificate",
+  "type": "object"
+}

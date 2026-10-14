@@ -1,0 +1,43 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm14_sameCarrierReencoding",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-14",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-14",
+  "finite_model_ref": "models/countermodels/CM-14.model.json",
+  "finite_model_sha256": "69c26db4e1fe6ee5e16ad22ce43561146bf4c271c57bf5fb0f6caea3b61dab35",
+  "minimality_status": "certified",
+  "model_family": "same-carrier-reencoding",
+  "name": "Same-carrier re-encoding control",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "A nonidentity representation map on one fixed carrier is not a distinct-carrier transport instance.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "one or two carriers; one to three representations; all representation permutations",
+    "candidates_explored": 18,
+    "lower_bound_argument": "A nonidentity re-encoding needs two representations, while the negative control fixes one carrier.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 6,
+    "same_size_candidates_explored": 2,
+    "same_size_qualifying_candidates": 1,
+    "size_measure": "(carrier_count, representation_count)",
+    "smaller_candidates_explored": 1,
+    "witness_size_vector": [
+      1,
+      2
+    ]
+  },
+  "target_no_go_id": "TTN-13",
+  "toy_model_ref": "TTM-15"
+}

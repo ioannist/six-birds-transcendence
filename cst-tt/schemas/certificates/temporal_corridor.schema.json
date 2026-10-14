@@ -1,0 +1,146 @@
+{
+  "$defs": {
+    "carrier": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "label": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "label"
+      ],
+      "type": "object"
+    },
+    "supportRow": {
+      "additionalProperties": false,
+      "properties": {
+        "carriers": {
+          "items": {
+            "$ref": "#/$defs/carrier"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "stage": {
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "stage",
+        "carriers"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://six-birds.local/cst-tt/schemas/temporal_corridor.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Requires explicit mixed-stage and counterfactual fields; no endpoint-only lineage field is admitted.",
+  "properties": {
+    "active_support": {
+      "items": {
+        "$ref": "#/$defs/supportRow"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "final_stage": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "later_audit_stage": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "mixed_stage": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "route_status": {
+      "enum": [
+        "flat",
+        "route-indexed",
+        "unresolved"
+      ],
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "CST-TT-00"
+    },
+    "source": {
+      "$ref": "#/$defs/carrier"
+    },
+    "source_removal_effect": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "takeover_stage": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "target": {
+      "$ref": "#/$defs/carrier"
+    },
+    "target_removal_effect": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "temporal_status_by_stage": {
+      "items": {
+        "enum": [
+          "not-evaluated",
+          "certified",
+          "failed"
+        ],
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "transport_status_by_stage": {
+      "items": {
+        "enum": [
+          "not-evaluated",
+          "certified",
+          "failed"
+        ],
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "source",
+    "target",
+    "final_stage",
+    "active_support",
+    "mixed_stage",
+    "later_audit_stage",
+    "takeover_stage",
+    "temporal_status_by_stage",
+    "transport_status_by_stage",
+    "source_removal_effect",
+    "target_removal_effect",
+    "route_status"
+  ],
+  "title": "Strict overlap temporal corridor scaffold",
+  "type": "object"
+}

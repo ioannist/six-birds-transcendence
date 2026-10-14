@@ -1,0 +1,21 @@
+id,term,may_depend_on,must_not_depend_on,status
+TD001,transport,typed object; source/target carriers; bridge; comparison/defect,continuation; consciousness; same subject,pass
+TD002,continuation,lineage criterion κ; route/history; source/target package instances,same continuing subject; transport success alone,pass
+TD003,lineage,declared directed relation; route/history; multiplicity/null policy,token identity; consciousness,pass
+TD004,target structural realization,target carrier; clause/gate specification; coherence audits,source lineage; phenomenal realization,pass
+TD005,phenomenal realization,structural antecedent; certificate soundness; named O premise,structural realization alone,pass
+TD006,autonomy,removal intervention; allowed environment; maintenance horizon/closure,existing on its own; lineage,pass
+TD007,distinct carrier,separate specs; renaming-invariant distinction; bridge-crossing fact,different labels; desired result,pass
+TD008,cross-substrate,implementation maps; independent substrate classifier; distinctness result,cross-carrier typing alone,pass
+TD009,exact preservation,named object; equality/isomorphism/commuting law; domain,exact copy; identity,pass
+TD010,approximate preservation,metric; threshold; domain; horizon; composition/stability,almost same person,pass
+TD011,bridge,typed source-target data; admissibility; dependencies,successful transfer; lineage,pass
+TD012,route independence,route family; endpoint relation; loop/confluence condition,existence of one route,pass
+TD013,certificate,declared checks; interfaces; clause/gate scope,soundness; consciousness,pass
+TD014,certificate soundness,certificate predicate; intended conclusion; proof/assumption,certificate satisfaction,pass
+TD015,duplicate,multiple target tokens; declared equivalence relation,unreal copy; unique successor,pass
+TD016,fission,one source; multiple κ-successors,one token in many places by definition,pass
+TD017,fusion,multiple κ-predecessors; one target; conflict rule,identity with each predecessor,pass
+TD018,dormant interval,absence of active realization; retained record/potential; recovery conditions,continuity or extinction by definition,pass
+TD019,repair,defect/admissibility failure; repair operation; before/after tracking,continuous preservation,pass
+TD020,transcendence,informal decomposition into S-T/S-R/S-L/A/R/O,primitive success predicate,pass

@@ -1,0 +1,29 @@
+{
+  "candidates_examined": 4,
+  "direct_embedding_violations": 0,
+  "overlap_embedding_violations": 0,
+  "rows": [
+    {
+      "direct": false,
+      "generalized": false,
+      "overlap": false
+    },
+    {
+      "direct": true,
+      "generalized": true,
+      "overlap": false
+    },
+    {
+      "direct": false,
+      "generalized": true,
+      "overlap": true
+    },
+    {
+      "direct": true,
+      "generalized": true,
+      "overlap": true
+    }
+  ],
+  "search_id": "OVERLAP_DIRECT_RELATION_TRUTH_TABLE",
+  "strict_broadening_witnesses": 1
+}

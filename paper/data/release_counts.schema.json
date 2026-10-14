@@ -1,0 +1,409 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "CSTTT-paper-release-counts-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "static": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "registry": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "rows": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "proved": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "checked_finite_countermodel": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "open": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "source": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "rows",
+            "proved",
+            "checked_finite_countermodel",
+            "open",
+            "source",
+            "sha256"
+          ]
+        },
+        "inventory": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "declaration_entries": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "unique_declarations": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "definition": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "declaration_entries",
+            "unique_declarations",
+            "definition",
+            "source",
+            "sha256"
+          ]
+        },
+        "modules": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "under_csttt_directory": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "including_root": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "definition": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "tree_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "under_csttt_directory",
+            "including_root",
+            "definition",
+            "source",
+            "tree_sha256"
+          ]
+        },
+        "headlines": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "distinct": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "axioms": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "Classical.choice",
+                  "Quot.sound",
+                  "propext"
+                ]
+              },
+              "uniqueItems": true
+            },
+            "source": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "distinct",
+            "axioms",
+            "source",
+            "sha256"
+          ]
+        },
+        "model_specs": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "uniqueItems": true
+            },
+            "sha256": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "definition": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "count",
+            "files",
+            "sha256",
+            "definition"
+          ]
+        },
+        "toolchain": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "string"
+            },
+            "source": {
+              "type": "string"
+            },
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "required": [
+            "value",
+            "source",
+            "sha256"
+          ]
+        }
+      },
+      "required": [
+        "registry",
+        "inventory",
+        "modules",
+        "headlines",
+        "model_specs",
+        "toolchain"
+      ]
+    },
+    "run_recorded": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "definition": {
+          "type": "string"
+        },
+        "lean_build_jobs": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "tests": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "passed": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "failed": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "skipped": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "xfailed": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "xpassed": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "deselected": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "errors": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "required": [
+              "passed"
+            ]
+          }
+        },
+        "commands": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9_]*$"
+              },
+              "kind": {
+                "enum": [
+                  "check",
+                  "pytest",
+                  "selftest",
+                  "lean_build",
+                  "diagnostic"
+                ]
+              },
+              "recorded_at": {
+                "type": "string"
+              },
+              "command": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "cwd": {
+                "type": "string"
+              },
+              "environment": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "exit_code": {
+                "type": "integer"
+              },
+              "status": {
+                "enum": [
+                  "pass",
+                  "fail"
+                ]
+              },
+              "log_path": {
+                "type": "string"
+              },
+              "log_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "metrics": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "passed": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "failed": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "skipped": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "xfailed": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "xpassed": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "deselected": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "jobs": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "errors": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": []
+              },
+              "summary": {
+                "type": "string"
+              },
+              "metrics_status": {
+                "enum": [
+                  "valid",
+                  "unavailable",
+                  "invalid"
+                ]
+              },
+              "metrics_note": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "recorded_at",
+              "command",
+              "cwd",
+              "environment",
+              "exit_code",
+              "status",
+              "log_path",
+              "log_sha256",
+              "metrics",
+              "summary"
+            ]
+          }
+        }
+      },
+      "required": [
+        "definition",
+        "lean_build_jobs",
+        "tests",
+        "commands"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "pass",
+        "fail"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "static",
+    "run_recorded",
+    "verification_status"
+  ]
+}

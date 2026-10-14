@@ -1,0 +1,17 @@
+{
+  "autonomy_model_ref": "models/autonomy/AUT-POS-01.model.json",
+  "autonomy_model_sha256": "5236175f0c284a31ff608f2d233d8db3605e0f9cc28137428cb601ea7e29c1e7",
+  "certificate_id": "UNB-POS-01",
+  "claim_ceiling": "model-relative unbounded controlled invariance only",
+  "claim_lanes": [
+    "A"
+  ],
+  "claim_scope": "unbounded run existence inside the exact finite controlled model",
+  "nonclaims": [
+    "no indefinite physical persistence outside the finite abstraction",
+    "no finite resource sufficiency beyond the declared regenerative model",
+    "no consciousness, felt continuity, survival, or identity conclusion"
+  ],
+  "physical_liveness_status": "not-established",
+  "schema_version": "CST-TT-07A-unbounded-v1"
+}

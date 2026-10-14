@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[authoryear,round]{natbib}
+\usepackage{doi}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{titling}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds,patterns}
+
+\input{includes/paper_macros.tex}
+\input{figures/generated/figdata.tex}
+\input{includes/release_counts.tex}
+\input{includes/release_metadata}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{remark}{Remark}
+\newtheorem{construction}{Construction}
+\newtheorem{postulate}{Postulate}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algorithm}
+
+\urlstyle{same}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=period
+}
+\captionsetup[table]{skip=6pt,position=top}
+\captionsetup[figure]{skip=6pt}
+\captionsetup[algorithm]{skip=6pt,position=top}
+\crefname{algorithm}{algorithm}{algorithms}
+\Crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{theorem}{theorem}{theorems}
+\Crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{lemma}{lemmas}
+\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{proposition}{proposition}{propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{corollary}{corollary}{corollaries}
+\Crefname{corollary}{Corollary}{Corollaries}
+\crefname{definition}{definition}{definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{remark}{remark}{remarks}
+\Crefname{remark}{Remark}{Remarks}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=4pt}
+\setlength{\droptitle}{-3.2em}
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vspace{0.5em}}
+\preauthor{\begin{center}\normalsize}
+\postauthor{\par\end{center}\vspace{-0.4em}}
+\predate{\begin{center}\small}
+\postdate{\par\end{center}\vspace{0.6em}}
+\setlength{\emergencystretch}{2em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\interfootnotelinepenalty=10000
+\allowdisplaybreaks[2]
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.6}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.75}
+\fancypagestyle{firstpage}{\fancyhf{}
+  \fancyfoot[C]{\parbox[b]{\textwidth}{\centering\scriptsize
+    Automorph Inc., Wilmington, DE, USA \quad \texttt{ioannis@automorph.io}\\
+    \ifpaperhasdoi DOI: \href{https://doi.org/\paperdoi}{\paperdoi} \quad \fi\textcopyright\ \manuscriptyear \quad CC-BY 4.0 \quad Preprint, not peer reviewed}}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\title{When a Copy Is Not a Continuation}
+\author{Ioannis Tsiokos\,\orcidlink{0009-0009-7659-5964}}
+\date{\manuscriptversion\quad \manuscriptdate}
+\hypersetup{
+  pdftitle={When a Copy Is Not a Continuation},
+  pdfauthor={Ioannis Tsiokos},
+  hidelinks
+}
+
+% Empty-citation guard: BibTeX requires a citation. Track current natbib
+% citations and prior-pass aux citations (including appendix-only citations).
+% With any citation, the ordinary plainnat bibliography below runs unchanged.
+\makeatletter
+\newif\ifpaperHasCitations
+\let\paperOriginalCitation\citation
+\def\citation#1{\global\paperHasCitationstrue\paperOriginalCitation{#1}}
+\let\paperOriginalSortCites\NAT@sort@cites
+\def\NAT@sort@cites#1{\global\paperHasCitationstrue\paperOriginalSortCites{#1}}
+\let\paperOriginalNocite\nocite
+\renewcommand{\nocite}[1]{\global\paperHasCitationstrue\paperOriginalNocite{#1}}
+\makeatother
+
+\begin{document}
+\maketitle
+\thispagestyle{firstpage}
+
+\input{sections/abstract.tex}
+
+\input{sections/sec_01_introduction}
+\input{sections/sec_02_setting}
+\input{sections/sec_03_copy}
+\input{sections/sec_04_checks}
+\input{sections/sec_05_continuation}
+\input{sections/sec_06_route}
+\input{sections/sec_07_branching}
+\input{sections/sec_08_ancestry}
+\input{sections/sec_09_modes}
+\input{sections/sec_10_objections}
+\input{sections/sec_11_related}
+\input{sections/sec_12_conclusion}
+\input{sections/availability}
+
+\appendix
+\input{appendices/app_a_sixbirds}
+\input{appendices/app_b_models}
+\input{appendices/app_c_index}
+\input{appendices/app_d_proofs}
+\input{appendices/app_e_reproducibility}
+
+\ifpaperHasCitations
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{prewriting/references_core,prewriting/references_sixbirds}
+\fi
+
+\end{document}

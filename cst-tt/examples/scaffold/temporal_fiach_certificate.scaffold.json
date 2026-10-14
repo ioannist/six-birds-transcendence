@@ -1,0 +1,19 @@
+{
+  "autonomy_certificate_ref": "autonomy_certificate.scaffold.json",
+  "claim_ceiling": "structural-precursor-only",
+  "corridor_certificate_ref": "temporal_corridor.scaffold.json",
+  "package_certificate_ref": "package_certificate.scaffold.json",
+  "recognition_status": "not-addressed",
+  "route_status": "unresolved",
+  "schema_version": "CST-TT-00",
+  "source": {
+    "code": 0,
+    "label": "source-carrier"
+  },
+  "source_package_status": "not-evaluated",
+  "staged_clause_preservation_status": "not-evaluated",
+  "target": {
+    "code": 1,
+    "label": "target-carrier"
+  }
+}

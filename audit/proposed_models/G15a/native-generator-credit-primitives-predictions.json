@@ -1,0 +1,31 @@
+{
+  "frozen_at_utc": "2026-10-10T18:26:45.476144+00:00",
+  "classification": "b",
+  "target_gain": "C5 declared generator-credit audit with authentic same-native-P route, reversible scheduled and exact two-component internalized controls; authored C6 bridge",
+  "baseline_sha256": "0c5d9eb06e7ea7dff69ad2d6c830dc4e7e6b8ef0a4edc232b76436cf38d4336d",
+  "source_archive_sha256": "84a1ace956f46e08288653e1f536ef943180f5a46b5d78e67dbe69e1e713e1e8",
+  "raw_primitives": {
+    "state": "Fin 3 \u00d7 Fin 3 for control carrier; unchanged native Factor and unbounded carried clock",
+    "native_transition": "all credited positive directionality derives existing actual Input.temporal.rows via P, forward and reverse",
+    "provenance": "Option Owner for native generator issuer; absent rejects; self means issuer=audited owner, other means issuer different",
+    "scheduled": "compose reversible lazy swaps (0,1) then (1,2), bias from existing P i (false,false) (false,true)",
+    "internalized": "P05 random-scan same two reversible phase kernels; conditional phases K0,K1,K0; clock each entry1/3; content weight1/2 and clock weight1/2",
+    "credit": "independently multiply each actual component along declared path and reversed path; route each according to declared issuer; reject simultaneous asymmetries",
+    "path": "raw finite list of directed edges, arbitrary length; symmetry theorem compares edge-reversed list in order, hence no directional cycle of any length"
+  },
+  "predictions": [
+    "native self credit from P cycle9/256 vs3/256",
+    "moving raw issuer to other retains all native transition/future/clock laws but flips native credit to other and authored clock false",
+    "absent issuer produces missing optional attribution/readout",
+    "native bias3/8, scheduled cycle0 vs81/4096, other not self",
+    "P05 bias2/3, scheduled0 vs16/81; lift canonical1/324 each",
+    "internalized actual9x9 P=C+D, both components symmetric, normalized nonnegative for actual native bias and P05 bias",
+    "each component and total have equal products on EVERY finite directed edge list vs edge reversal; internalized creditnone for all paths",
+    "exact true false missing semantics for EVERY partial assignment, current/copied source"
+  ],
+  "nonclaims": [
+    "provenance is declared raw generator ownership, not independent physical authorship inference",
+    "random-scan lift is faithful to P05 phase kernels and their native-derived bias, not the same stochastic process as scheduled composition",
+    "full eight-clause runtime coherence/source-target assembly and TTN02/14 remain pending"
+  ]
+}

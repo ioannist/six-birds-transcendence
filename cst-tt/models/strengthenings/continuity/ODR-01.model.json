@@ -1,0 +1,92 @@
+{
+  "certificate_id": "ODR-01",
+  "claim_ceiling": "structural lineage-class comparison only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "control_verdicts": {
+    "detached_copy": "neither",
+    "same_carrier": "neither",
+    "temporal_gap": "neither"
+  },
+  "direct_singleton_path": {
+    "claim_ceiling": "generalized structural temporal-lineage path only",
+    "claim_lanes": [
+      "S-L"
+    ],
+    "legs": [
+      {
+        "kind": "direct",
+        "leg_id": "direct-edge",
+        "model_ref": "models/direct_successor/DS-POS-01.model.json",
+        "model_sha256": "a3b5856d010b1fff44715225a44367e1417ef7021c038b7b5cc280f846d337f8"
+      }
+    ],
+    "path_id": "GCP-DIRECT-01",
+    "primary_fiach_definition_change": "none",
+    "schema_version": "CST-TT-07A-generalized-path-v1"
+  },
+  "fallback_status": "locked",
+  "mixed_mode_path": {
+    "claim_ceiling": "generalized structural temporal-lineage path only",
+    "claim_lanes": [
+      "S-L"
+    ],
+    "legs": [
+      {
+        "kind": "overlap",
+        "leg_id": "overlap-S-M",
+        "model_ref": "models/corridors/COR-POS-02A.model.json",
+        "model_sha256": "6a162e3005a78178e4790efe381ebd848b733b388f6c0207081b8cd221b96aa8"
+      },
+      {
+        "kind": "direct",
+        "leg_id": "direct-M-T",
+        "model_ref": "models/strengthenings/direct/DS-POS-03-MIXED-MODE.model.json",
+        "model_sha256": "35cb174ad5c16de7bdf011a538f1b3ea4462b78869b4ee5cc7f44355b4513255"
+      }
+    ],
+    "path_id": "GCP-MIXED-01",
+    "primary_fiach_definition_change": "none",
+    "schema_version": "CST-TT-07A-generalized-path-v1"
+  },
+  "model_refs": {
+    "detached_control": "models/countermodels/CM-02.model.json",
+    "direct_witness": "models/direct_successor/DS-POS-01.model.json",
+    "gap_control": "models/countermodels/CM-12.model.json",
+    "same_carrier_control": "models/countermodels/CM-14.model.json",
+    "strict_witness": "models/corridors/COR-POS-01.model.json"
+  },
+  "model_sha256": {
+    "detached_control": "76d699ec59f1df3afc653184d8677c9692cec1eabc276b90f5b50c990b8fc46f",
+    "direct_witness": "a3b5856d010b1fff44715225a44367e1417ef7021c038b7b5cc280f846d337f8",
+    "gap_control": "284816cdec01d83d82dff0b77a3cace5fcbd839bc99deedb2aaf4e59cd61ebe6",
+    "same_carrier_control": "69c26db4e1fe6ee5e16ad22ce43561146bf4c271c57bf5fb0f6caea3b61dab35",
+    "strict_witness": "9f04dc39f5f635ce55995602ca8581fc036bd35a9e9d281bf9e6c7e9a517dfdf"
+  },
+  "nonclaims": [
+    "the broader class is not substituted into Temporal-FIACH",
+    "direct succession is not personal identity",
+    "no phenomenal-continuity conclusion"
+  ],
+  "primary_definition_change": "none",
+  "schema_version": "CST-TT-07A-relation-v1",
+  "strict_singleton_path": {
+    "claim_ceiling": "generalized structural temporal-lineage path only",
+    "claim_lanes": [
+      "S-L"
+    ],
+    "legs": [
+      {
+        "kind": "overlap",
+        "leg_id": "strict-overlap",
+        "model_ref": "models/corridors/COR-POS-01.model.json",
+        "model_sha256": "9f04dc39f5f635ce55995602ca8581fc036bd35a9e9d281bf9e6c7e9a517dfdf"
+      }
+    ],
+    "path_id": "GCP-OVERLAP-01",
+    "primary_fiach_definition_change": "none",
+    "schema_version": "CST-TT-07A-generalized-path-v1"
+  },
+  "title": "exact overlap/direct incomparability and generalized embedding"
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "CST-TT-05",
+  "certificate_id": "example-staged",
+  "assembly_ref": "models/example-assembly.json",
+  "assembly_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "source_model_ref": "models/example-source.json",
+  "source_model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "target_model_ref": "models/example-target.json",
+  "target_model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "scaffold-only",
+  "claim_lanes": [
+    "S-T",
+    "S-R"
+  ],
+  "claim_ceiling": "finite typed clause preservation and endpoint-aligned target assembly only",
+  "handoff_alignment": {},
+  "theorem_evidence": {},
+  "audit": {
+    "staged_assembly_valid": true,
+    "failed_obligations": []
+  },
+  "checker": {
+    "module": "cst_tt.package_gluing",
+    "function": "audit_staged_assembly",
+    "python_version": "3.13",
+    "checked_at_phase": "CST-TT-05"
+  }
+}

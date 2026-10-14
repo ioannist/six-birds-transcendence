@@ -1,0 +1,9 @@
+{
+  "assignments_examined": 64,
+  "claim_ceiling": "bounded corroboration of the generic proof source only",
+  "premise_satisfying_assignments": 56,
+  "schema_version": "CST-TT-03",
+  "search_family": "two-route-binary-memory-or-flatness",
+  "status": "PASS",
+  "violations": []
+}

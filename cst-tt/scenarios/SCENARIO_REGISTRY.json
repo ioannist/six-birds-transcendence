@@ -1,0 +1,2828 @@
+{
+  "schema_version": "CST-EXP-02-v1",
+  "phase": "CST-EXP-02",
+  "generated_date": "2026-08-09",
+  "neutrality_rule": "Operational edges are not lineage edges; outcome vectors are unfilled.",
+  "axes": {
+    "carrier_relation": {
+      "question": "How are source and target supports related at the protocol level?",
+      "values": {
+        "same_support_reencoding": "One support is retained while representation, coordinates, or packaging changes.",
+        "partially_overlapping_support": "Source-side and target-side supports are separately typed but share components or jointly contribute during some interval.",
+        "disjoint_support": "Source-side and target-side supports have no shared support component at the declared comparison level."
+      },
+      "blocked": "Carrier relation does not determine transport, lineage, realization, or ontology."
+    },
+    "change_mode": {
+      "question": "What operational mechanism changes source-side support into target-side support?",
+      "values": {
+        "gradual_replacement": "Support responsibility changes in multiple ordered stages.",
+        "abrupt_translation": "A single or effectively unresolved stage maps a declared source record/package into target form.",
+        "checkpoint_restart": "A retained record is used to activate a target after pause, shutdown, or absence.",
+        "live_migration": "An active package is maintained while responsibility moves between concurrently operating supports.",
+        "destructive_scan": "Source support/package is disabled or made unavailable as part of acquisition/reconstruction.",
+        "nondestructive_copy": "A target is constructed while the source remains available for at least one stage.",
+        "distributed_extension": "A package is extended across multiple supports without requiring a unique transfer instant."
+      },
+      "blocked": "Mode names describe engineering order, not continuity verdicts."
+    },
+    "source_fate": {
+      "question": "What happens operationally to source-side package support?",
+      "values": {
+        "persists": "Source support remains active and available after target activation.",
+        "degrades": "Source contribution is progressively reduced or loses declared capability.",
+        "paused": "Source dynamics are intentionally suspended while a recoverable record/support remains.",
+        "erased_before_activation": "Source package/support is made unavailable before target activation.",
+        "erased_after_activation": "Source package/support remains for a period after target activation and is then made unavailable.",
+        "remains_coupled": "Source remains an active causal/resource component of the operating source-target assembly."
+      },
+      "blocked": "Source destruction, persistence, or coupling does not by itself decide lineage."
+    },
+    "target_timing": {
+      "question": "How is target activation temporally related to source activity?",
+      "values": {
+        "continuous_overlap": "Source and target have an interval of concurrent operation or contribution.",
+        "delayed_activation": "Target activates after acquisition/construction, without a stipulated extended dormant gap.",
+        "temporal_gap": "No active package is stipulated for a nonzero interval between source cessation/pause and target activation.",
+        "time_rescaled_activation": "Target operation is related by an explicit non-unit clock map or time reparameterization."
+      },
+      "blocked": "Temporal continuity or discontinuity does not define lineage by itself."
+    },
+    "branching": {
+      "question": "What is the cardinality/topology of operational package episodes?",
+      "values": {
+        "one_to_one": "One designated source episode is connected operationally to one designated target episode.",
+        "one_to_many": "One source episode produces or feeds multiple target/live continuation episodes.",
+        "many_to_one": "Multiple source/branch episodes contribute to one target episode.",
+        "many_to_many": "The protocol contains multiple source-side and target-side episodes or distributed pieces."
+      },
+      "blocked": "Operational branching is not a lineage graph until a criterion supplies lineage edges."
+    },
+    "bridge_dependence": {
+      "question": "What continuing bridge or protocol support is built into the scenario?",
+      "values": {
+        "permanent": "The source-target coupling/bridge remains part of the declared operating assembly.",
+        "temporary": "The protocol schedules the bridge to end, but target autonomy is not stipulated.",
+        "removable": "The setup exposes a well-defined withdrawal intervention; survival after withdrawal is left open.",
+        "externally_decoded": "The claimed target-facing structure/readout requires a continuing external decoder or source process."
+      },
+      "blocked": "A removable bridge is not thereby safely removable; a permanent bridge is not thereby illegitimate."
+    },
+    "fidelity": {
+      "question": "What kind of agreement is stipulated at the scenario's declared transfer granularity?",
+      "values": {
+        "exact": "Zero declared defect at the named granularity only.",
+        "lossy": "Some declared source information/structure is omitted or changed.",
+        "error_corrected": "A recovery/repair mechanism is part of the stipulated target construction.",
+        "residual_bounded": "A named nonzero defect is bounded, with threshold significance left open.",
+        "adaptive": "Agreement is maintained or approached through ongoing adjustment rather than one fixed copy map."
+      },
+      "blocked": "Exactness at one granularity does not imply exactness of the full package or lineage."
+    },
+    "reversibility": {
+      "question": "Does the protocol expose an inverse at the declared granularity?",
+      "values": {
+        "reversible": "A declared inverse route recovers the named object exactly within its admissible domain.",
+        "approximately_reversible": "A reverse route recovers the named object only up to a declared residual/equivalence.",
+        "irreversible": "No admissible inverse is stipulated for the named object."
+      },
+      "blocked": "Protocol reversibility does not entail token identity or zero route holonomy for unmeasured structures."
+    },
+    "route_multiplicity": {
+      "question": "How many admissible routes connect the declared operational endpoints?",
+      "values": {
+        "unique_route": "Only one route is admitted at the scenario's declared resolution.",
+        "multiple_equivalent_routes": "Several routes are stipulated to agree under a named endpoint comparison, with stronger equivalence left open.",
+        "holonomy_bearing_routes": "Closed or alternative routes can restore selected endpoint observables while changing another declared structure."
+      },
+      "blocked": "One successful route does not establish route independence; endpoint agreement does not erase route history."
+    },
+    "granularity": {
+      "question": "At what level is the scenario's stipulated fidelity/comparison made?",
+      "values": {
+        "microstate": "Carrier-level state/configuration information.",
+        "predictive_state": "Future-sufficient classes, transition structure, or continuation-relevant state.",
+        "package_state": "A multi-clause package record or maintained package-level structure.",
+        "event_package": "Globally packaged event/role/time/identity structure rather than pairwise local records.",
+        "certificate_only": "Only a declared certificate, report, or externally decoded signature is matched."
+      },
+      "blocked": "Agreement at a coarser granularity cannot be promoted to a finer one without a theorem."
+    }
+  },
+  "discriminators": [
+    {
+      "id": "D01",
+      "name": "predictive_fiber_continuity",
+      "label": "Continuity of predictive fibers",
+      "question": "Does the candidate relate source and target future-sufficient classes, rather than only current/public states?",
+      "assets": [
+        "A-PQ-01",
+        "A-PQ-02",
+        "A-RT-01"
+      ],
+      "questions": [
+        "Q-PRS-003",
+        "Q-RTE-004",
+        "Q-RTE-005",
+        "Q-OBS-007"
+      ],
+      "lanes": "S-T;S-L;R"
+    },
+    {
+      "id": "D02",
+      "name": "admissible_continuation_structure",
+      "label": "Preservation of admissible continuation structure",
+      "question": "Does the bridge preserve, simulate, or rebuild the admissible continuation law on histories/processes?",
+      "assets": [
+        "A-PQ-02",
+        "A-RT-01",
+        "A-CF-01"
+      ],
+      "questions": [
+        "Q-BRG-003",
+        "Q-PRS-001",
+        "Q-LIN-001",
+        "Q-LIN-010"
+      ],
+      "lanes": "S-T;S-L"
+    },
+    {
+      "id": "D03",
+      "name": "temporal_overlap_and_causal_coupling",
+      "label": "Temporal overlap and causal coupling",
+      "question": "Which causal/process dependence and clock relation connects source, bridge stages, and target?",
+      "assets": [
+        "A-TM-01",
+        "A-PT-01",
+        "A-EV-01"
+      ],
+      "questions": [
+        "Q-BRG-005",
+        "Q-TYP-008",
+        "Q-RTE-006",
+        "Q-LIN-008"
+      ],
+      "lanes": "S-T;S-L;A"
+    },
+    {
+      "id": "D04",
+      "name": "recombination_content",
+      "label": "Survival of recombination content",
+      "question": "Are joint/branchwise facts preserved or reconstructed, and can locally matching pieces glue globally?",
+      "assets": [
+        "A-RE-01",
+        "A-OP-01",
+        "A-LG-01"
+      ],
+      "questions": [
+        "Q-PRS-009",
+        "Q-LIN-006",
+        "Q-LIN-007",
+        "Q-PRS-005"
+      ],
+      "lanes": "S-R;S-L"
+    },
+    {
+      "id": "D05",
+      "name": "ledger_and_viability_continuity",
+      "label": "Ledger and viability continuity",
+      "question": "Do viability, resource, repair, and maintenance ledgers remain valid through and after handoff?",
+      "assets": [
+        "A-VI-01",
+        "A-CU-01",
+        "A-AG-01"
+      ],
+      "questions": [
+        "Q-PRS-010",
+        "Q-AUT-002",
+        "Q-AUT-003",
+        "Q-APP-005"
+      ],
+      "lanes": "S-R;A"
+    },
+    {
+      "id": "D06",
+      "name": "action_credit_history",
+      "label": "Source-target action-credit history",
+      "question": "How are provenance, action-credit, and source/target responsibility allocated across stages?",
+      "assets": [
+        "A-CT-01",
+        "A-OP-01",
+        "A-EV-01"
+      ],
+      "questions": [
+        "Q-PRS-007",
+        "Q-LIN-003",
+        "Q-BRG-005",
+        "Q-TYP-007"
+      ],
+      "lanes": "S-R;S-L;A"
+    },
+    {
+      "id": "D07",
+      "name": "route_holonomy",
+      "label": "Route holonomy",
+      "question": "Can alternative routes or closed loops change predictive, temporal, memory, or lineage data despite endpoint agreement?",
+      "assets": [
+        "A-HO-01",
+        "A-CF-01",
+        "A-TM-01"
+      ],
+      "questions": [
+        "Q-RTE-001",
+        "Q-RTE-002",
+        "Q-RTE-003",
+        "Q-BRG-008"
+      ],
+      "lanes": "S-T;S-L"
+    },
+    {
+      "id": "D08",
+      "name": "autonomous_closure_after_withdrawal",
+      "label": "Autonomous closure after bridge removal",
+      "question": "What remains when source, bridge, decoder, or staging support is removed, and what target-native dynamics maintain it?",
+      "assets": [
+        "A-AG-01",
+        "A-VI-01",
+        "A-PT-01",
+        "A-QEC-01"
+      ],
+      "questions": [
+        "Q-CORE-008",
+        "Q-AUT-001",
+        "Q-AUT-003",
+        "Q-AUT-004",
+        "Q-AUT-005"
+      ],
+      "lanes": "A;S-R"
+    },
+    {
+      "id": "D09",
+      "name": "exact_vs_approximate_defect",
+      "label": "Exact versus approximate defect",
+      "question": "Which defect is zero/bounded, how does it compose, and can small local defects trigger package or viability discontinuities?",
+      "assets": [
+        "A-AR-01",
+        "A-CD-01",
+        "A-QEC-01",
+        "A-VI-01"
+      ],
+      "questions": [
+        "Q-CORE-011",
+        "Q-APP-001",
+        "Q-APP-002",
+        "Q-APP-003",
+        "Q-APP-004",
+        "Q-APP-005",
+        "Q-APP-007"
+      ],
+      "lanes": "S-T;S-R;A"
+    },
+    {
+      "id": "D10",
+      "name": "lineage_cardinality_and_uniqueness",
+      "label": "Uniqueness or branching of continuation",
+      "question": "Does the criterion return zero, one, many, or fused successors, and what breaks symmetry or yields underdetermination?",
+      "assets": [
+        "A-OP-01",
+        "A-PQ-01",
+        "A-RE-01"
+      ],
+      "questions": [
+        "Q-CORE-007",
+        "Q-LIN-002",
+        "Q-LIN-004",
+        "Q-LIN-005",
+        "Q-LIN-006",
+        "Q-LIN-007",
+        "Q-LIN-008",
+        "Q-LIN-009"
+      ],
+      "lanes": "S-L"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "S01",
+      "number": 1,
+      "title": "Gradual component-by-component replacement",
+      "canonical_prompt": "Gradual neuron-by-neuron or component-by-component replacement.",
+      "purpose": "Isolate staged responsibility transfer, overlap, order effects, and the difference between local replacement success and a globally maintained package.",
+      "facts": [
+        "Source-side components are retired in a declared sequence while target-side components assume corresponding operational roles.",
+        "At least one interval contains contributions from both separately typed supports.",
+        "Each local replacement is stipulated to meet a declared local interface test; full-package preservation is not stipulated.",
+        "The source contribution decreases over stages, and a final source-withdrawal intervention is available."
+      ],
+      "episode_graph": "E_S^0 -> E_mix^1 -> ... -> E_mix^n -> E_T^n",
+      "carrier_relation": "partially_overlapping_support",
+      "change_mode": "gradual_replacement",
+      "source_fate": "degrades",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "adaptive",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "package_state",
+      "secondary_modes": "live_migration",
+      "cross_carrier_status": "genuine_cross_carrier_candidate",
+      "handoff_shape": "extended_interval",
+      "branch_graph": "operational 1->1 with mixed-support intermediate episodes",
+      "clock_relation": "shared route order; local clocks need not be identical",
+      "causal_structure": "continuous coupled process with moving support responsibility",
+      "fidelity_scope": "local role/interface tests plus an adaptive package-level trajectory; hidden/predictive equivalence remains open",
+      "autonomy_intervention": "remove every remaining source-side contribution and transfer controller after the final scheduled stage",
+      "instrument_constraints": "local tests may be public or privileged; global hidden/predictive state need not be observable",
+      "variants": [
+        "different replacement orders",
+        "brief versus long overlap per component",
+        "exact local tests versus residual-bounded local tests"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D03",
+        "D06",
+        "D07",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "Do all admissible replacement orders yield equivalent target package data?",
+        "Can every local handoff pass while no global package exists at an intermediate stage?",
+        "Which source-specific history is carried by mixed-support episodes rather than reconstructed at the end?",
+        "Does final source withdrawal expose protocol dependence that was hidden during overlap?"
+      ],
+      "blocked_inferences": [
+        "Graduality is not continuity by definition.",
+        "Overlap is not token identity.",
+        "Local test success is not global package preservation.",
+        "A smooth public trajectory is not predictive-fiber continuity."
+      ],
+      "asset_focus": [
+        "A-TM-01",
+        "A-CF-01",
+        "A-LG-01",
+        "A-AG-01",
+        "A-RT-01"
+      ],
+      "question_focus": [
+        "Q-TYP-007",
+        "Q-BRG-005",
+        "Q-RTE-003",
+        "Q-RTE-007",
+        "Q-AUT-001",
+        "Q-LIN-010"
+      ]
+    },
+    {
+      "id": "S02",
+      "number": 2,
+      "title": "Instantaneous destructive scan and reconstruction",
+      "canonical_prompt": "Instantaneous destructive scan and reconstruction.",
+      "purpose": "Separate exact record reconstruction from causal overlap, source persistence, and any assumed lineage effect of destruction.",
+      "facts": [
+        "A source record is acquired at one declared resolution and the source package/support is made unavailable before target activation.",
+        "A disjoint target is constructed from the retained record in one unresolved translation stage.",
+        "The target is stipulated exact at the declared microstate record, but continuation laws and full-package gates are candidate questions.",
+        "No source-target operating overlap is stipulated."
+      ],
+      "episode_graph": "E_S --scan/erase--> R --reconstruct--> E_T",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "destructive_scan",
+      "source_fate": "erased_before_activation",
+      "target_timing": "delayed_activation",
+      "branching": "one_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "exact",
+      "reversibility": "irreversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "microstate",
+      "secondary_modes": "abrupt_translation",
+      "cross_carrier_status": "genuine_cross_carrier_candidate",
+      "handoff_shape": "sharp_record_mediated",
+      "branch_graph": "operational 1->record->1",
+      "clock_relation": "source endpoint precedes target start; no shared now required",
+      "causal_structure": "record-mediated source-to-target dependence without live overlap",
+      "fidelity_scope": "exact retained scan record only; no automatic predictive, package, or lineage exactness",
+      "autonomy_intervention": "remove the scan record, reconstruction machinery, and source-side resources after activation",
+      "instrument_constraints": "complete scan-record access is stipulated; hidden dynamics not encoded in the record remain open",
+      "variants": [
+        "record includes transition law versus state only",
+        "zero versus small construction delay",
+        "source erased during versus immediately after scan"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D02",
+        "D03",
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "stress_questions": [
+        "Does exact microstate reconstruction induce a well-defined history/continuation bridge?",
+        "Which conclusion changes solely because the source is erased before activation?",
+        "Can a candidate distinguish reconstruction from continuation without smuggling token identity into the record?",
+        "What target-native maintenance remains after reconstruction equipment is removed?"
+      ],
+      "blocked_inferences": [
+        "Source destruction is not proof of target lineage.",
+        "Microstate equality under a record map is not cross-typed token equality.",
+        "A record is not a dormant subject by definition.",
+        "No overlap is not discontinuity under every criterion."
+      ],
+      "asset_focus": [
+        "A-PQ-01",
+        "A-PQ-02",
+        "A-OP-01",
+        "A-FS-01",
+        "A-AG-01"
+      ],
+      "question_focus": [
+        "Q-BRG-003",
+        "Q-RTE-006",
+        "Q-LIN-008",
+        "Q-LIN-011",
+        "Q-AUT-001",
+        "Q-ASM-004"
+      ]
+    },
+    {
+      "id": "S03",
+      "number": 3,
+      "title": "Nondestructive exact copy while source continues",
+      "canonical_prompt": "Nondestructive exact copy while the source continues.",
+      "purpose": "Expose the difference between exact structural duplication, source persistence, branch cardinality, and unique-continuation claims.",
+      "facts": [
+        "One disjoint target is activated while the source remains active.",
+        "Source and target are stipulated exact at the declared package-state comparison at the split instant.",
+        "After activation, source and target receive independently selectable continuations.",
+        "The copying bridge can be removed without changing the fact that both live episodes exist; post-removal maintenance remains to be tested."
+      ],
+      "episode_graph": "E_S^0 -> {E_S^+, E_T^+}",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "nondestructive_copy",
+      "source_fate": "persists",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_many",
+      "bridge_dependence": "removable",
+      "fidelity": "exact",
+      "reversibility": "irreversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "package_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "genuine_cross_carrier_candidate",
+      "handoff_shape": "copy_split_no_exclusive_handoff",
+      "branch_graph": "one pre-copy episode to two simultaneously live episodes",
+      "clock_relation": "split event plus independent post-split local times",
+      "causal_structure": "common causal ancestry followed by independent dynamics",
+      "fidelity_scope": "exact package-state relation at split; future equivalence after divergent inputs is not stipulated",
+      "autonomy_intervention": "remove copy machinery and any shared synchronization channel while keeping ordinary environments",
+      "instrument_constraints": "exact package access at split is stipulated; future hidden state may diverge under different continuations",
+      "variants": [
+        "identical versus different post-split environments",
+        "source/target labels swapped",
+        "copy bridge removed immediately versus later"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D03",
+        "D06",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "Can a criterion select one unique successor without an asymmetric fact?",
+        "Does source persistence alter lineage or only reveal branching that was already implicit?",
+        "Are both post-split episodes successors, or is lineage undefined/underdetermined?",
+        "What structures remain exact after independently controlled futures?"
+      ],
+      "blocked_inferences": [
+        "Exact duplication is not unique continuation.",
+        "A duplicate is not nonreal by definition.",
+        "Source persistence is not proof that only the source continues.",
+        "Common ancestry is not token identity."
+      ],
+      "asset_focus": [
+        "A-OP-01",
+        "A-PQ-01",
+        "A-RE-01",
+        "A-AG-01"
+      ],
+      "question_focus": [
+        "Q-LIN-004",
+        "Q-LIN-005",
+        "Q-LIN-002",
+        "Q-PRS-009",
+        "Q-AUT-006",
+        "Q-ASM-004"
+      ]
+    },
+    {
+      "id": "S04",
+      "number": 4,
+      "title": "Copy first, source deletion later",
+      "canonical_prompt": "Copy first, source deletion later.",
+      "purpose": "Test whether lineage classifications illegitimately change retroactively when a source is deleted after a period of coactivation.",
+      "facts": [
+        "A target is created while the source continues, and both operate for a declared overlap interval.",
+        "The target is exact at the declared package-state comparison at activation.",
+        "The source is erased only after source and target have accumulated distinguishable post-copy histories.",
+        "The target remains available for a withdrawal/autonomy test after deletion."
+      ],
+      "episode_graph": "E_S^0 -> {E_S^1, E_T^1}; E_S^1 -> erased; E_T^1 -> E_T^2",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "nondestructive_copy",
+      "source_fate": "erased_after_activation",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_many",
+      "bridge_dependence": "temporary",
+      "fidelity": "exact",
+      "reversibility": "irreversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "package_state",
+      "secondary_modes": "post_copy_deletion",
+      "cross_carrier_status": "genuine_cross_carrier_candidate",
+      "handoff_shape": "delayed_exclusive_handoff",
+      "branch_graph": "one-to-many split followed by removal of the source-side branch",
+      "clock_relation": "shared split marker; independent histories before deletion",
+      "causal_structure": "copy ancestry, independent coactivity, then exogenous source removal",
+      "fidelity_scope": "exact at copy instant only; histories differ before source deletion",
+      "autonomy_intervention": "source deletion is one intervention; separately remove any remaining copy/synchronization apparatus",
+      "instrument_constraints": "both branch histories are available in the thought experiment",
+      "variants": [
+        "immediate versus long-delayed source deletion",
+        "deletion chosen by source versus external operator",
+        "source branch damaged versus clean at deletion"
+      ],
+      "primary_discriminators": [
+        "D03",
+        "D06",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "Can deletion at time t change the lineage relation assigned at the earlier split?",
+        "Does the target acquire uniqueness only because a competing branch is removed?",
+        "Which branch-specific histories matter after deletion?",
+        "Is source deletion part of handoff, autonomy testing, lineage evidence, or all three separately?"
+      ],
+      "blocked_inferences": [
+        "Later deletion does not retroactively erase a prior branch.",
+        "Being the sole survivor is not unique lineage by definition.",
+        "Source erasure is not an ontological transfer event.",
+        "Target availability is not target autonomy."
+      ],
+      "asset_focus": [
+        "A-OP-01",
+        "A-TM-01",
+        "A-RE-01",
+        "A-AG-01"
+      ],
+      "question_focus": [
+        "Q-LIN-008",
+        "Q-LIN-004",
+        "Q-RTE-004",
+        "Q-AUT-001",
+        "Q-AUT-006"
+      ]
+    },
+    {
+      "id": "S05",
+      "number": 5,
+      "title": "Two simultaneous exact targets",
+      "canonical_prompt": "Two simultaneous exact targets.",
+      "purpose": "Create a maximally symmetric duplication case that tests unique-lineage rules and hidden tie-breakers.",
+      "facts": [
+        "Two disjoint target carriers are activated simultaneously from the same source-side record/process.",
+        "The two targets are stipulated isomorphic and exact at the declared package-state comparison at activation.",
+        "No target-distinguishing causal, temporal, spatial-priority, naming, or quality fact is admitted at the split.",
+        "The source is erased before joint activation to prevent source persistence from being the sole asymmetry."
+      ],
+      "episode_graph": "E_S -> erase; R -> {E_T1, E_T2} (symmetric)",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "destructive_scan",
+      "source_fate": "erased_before_activation",
+      "target_timing": "delayed_activation",
+      "branching": "one_to_many",
+      "bridge_dependence": "removable",
+      "fidelity": "exact",
+      "reversibility": "irreversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "package_state",
+      "secondary_modes": "symmetric_multi_target_reconstruction",
+      "cross_carrier_status": "genuine_cross_carrier_candidate",
+      "handoff_shape": "symmetric_branch_activation",
+      "branch_graph": "one source record to two symmetry-related targets",
+      "clock_relation": "joint activation under a symmetry-preserving clock relation",
+      "causal_structure": "equal common ancestry with no admitted asymmetry between target legs",
+      "fidelity_scope": "exact package-state match on both legs at activation",
+      "autonomy_intervention": "remove common reconstruction/synchronization support from both targets symmetrically",
+      "instrument_constraints": "complete declared structural access; target labels are treated as gauge-like names for symmetry testing",
+      "variants": [
+        "targets later diverge",
+        "one target later fails",
+        "a tiny asymmetry is introduced only after activation"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D06",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "What non-arbitrary fact could select exactly one target?",
+        "Does the candidate return two successors, no unique successor, or token-level underdetermination?",
+        "Would relabeling T1 and T2 change the verdict?",
+        "Can later divergence or failure determine an earlier lineage fact without retroactivity?"
+      ],
+      "blocked_inferences": [
+        "Numerical multiplicity is not nonrealization.",
+        "Symmetry cannot be broken by names alone.",
+        "Source deletion does not select one target.",
+        "Exact package equivalence does not resolve token identity."
+      ],
+      "asset_focus": [
+        "A-OP-01",
+        "A-PQ-01",
+        "A-RE-01"
+      ],
+      "question_focus": [
+        "Q-LIN-005",
+        "Q-LIN-002",
+        "Q-CTL-003",
+        "Q-ASM-004",
+        "Q-TYP-003"
+      ]
+    },
+    {
+      "id": "S06",
+      "number": 6,
+      "title": "Target activation after a temporal gap",
+      "canonical_prompt": "Target activation after a temporal gap.",
+      "purpose": "Separate a dormant record/restart protocol from uninterrupted activity and force explicit temporal-lineage semantics.",
+      "facts": [
+        "The source is paused or made unavailable after producing a retained checkpoint record.",
+        "A nonzero interval contains no stipulated active full package on source or target.",
+        "A disjoint target is later activated exactly from the checkpoint at the declared predictive-state granularity.",
+        "The record persists through the gap; whether anything else persists is not stipulated."
+      ],
+      "episode_graph": "E_S -> checkpoint R -> [gap: no active package stipulated] -> E_T",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "checkpoint_restart",
+      "source_fate": "paused",
+      "target_timing": "temporal_gap",
+      "branching": "one_to_one",
+      "bridge_dependence": "removable",
+      "fidelity": "exact",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "predictive_state",
+      "secondary_modes": "delayed_reconstruction",
+      "cross_carrier_status": "genuine_cross_carrier_candidate",
+      "handoff_shape": "record_mediated_with_dormant_interval",
+      "branch_graph": "one active episode, one inert record interval, one target episode",
+      "clock_relation": "partial order with a gap; no canonical phase alignment unless supplied",
+      "causal_structure": "record-mediated dependence across an inactive interval",
+      "fidelity_scope": "exact predictive checkpoint as defined by the scenario; temporal closure and full package are open",
+      "autonomy_intervention": "remove checkpoint store and restart controller after target activation",
+      "instrument_constraints": "checkpoint contents are available; no observation during the inactive gap can certify an active package",
+      "variants": [
+        "short versus arbitrarily long gap",
+        "source can versus cannot be resumed",
+        "checkpoint stores state only versus transition/ledger history"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D02",
+        "D03",
+        "D05",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "What object, if any, carries lineage through an interval with no active package?",
+        "Is the checkpoint a bridge record, a package component, or only a reconstruction resource?",
+        "Does gap duration matter if the structural record is unchanged?",
+        "Can temporal closure be re-established without being preserved continuously?"
+      ],
+      "blocked_inferences": [
+        "A stored record is not an active package by definition.",
+        "Temporal gap is not extinction under every lineage criterion.",
+        "Exact restart is not uninterrupted causal activity.",
+        "Dormancy and reconstruction require separate classification."
+      ],
+      "asset_focus": [
+        "A-TM-01",
+        "A-PQ-02",
+        "A-OP-01",
+        "A-VI-01"
+      ],
+      "question_focus": [
+        "Q-RTE-006",
+        "Q-LIN-011",
+        "Q-LIN-009",
+        "Q-PRS-008",
+        "Q-TYP-008"
+      ]
+    },
+    {
+      "id": "S07",
+      "number": 7,
+      "title": "Long-lived source-target overlap",
+      "canonical_prompt": "Transfer through a long-lived source-target overlap.",
+      "purpose": "Test process-level handoff, moving responsibility, source-target coupling, and whether overlap hides dependence rather than establishing autonomy.",
+      "facts": [
+        "Separately typed source and target supports operate jointly for a long interval.",
+        "Package functions are reassigned gradually, but both sides remain causally coupled through most of the route.",
+        "A target-dominant episode is reached before source-side support is finally removed.",
+        "The protocol adaptively corrects discrepancies during overlap."
+      ],
+      "episode_graph": "E_S -> E_joint^1 -> ... -> E_joint^m(target-dominant) -> E_T?",
+      "carrier_relation": "partially_overlapping_support",
+      "change_mode": "live_migration",
+      "source_fate": "remains_coupled",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "adaptive",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "package_state",
+      "secondary_modes": "gradual_replacement",
+      "cross_carrier_status": "genuine_cross_carrier_candidate",
+      "handoff_shape": "long_overlap_then_withdrawal",
+      "branch_graph": "one coupled operational trajectory with changing contribution weights",
+      "clock_relation": "coupled clocks during overlap; independent target clock after withdrawal",
+      "causal_structure": "continuous bidirectional or feedback coupling during overlap",
+      "fidelity_scope": "adaptive package-level agreement under coupled operation",
+      "autonomy_intervention": "remove all source-target coupling channels and source-side repair/control after target-dominant operation stabilizes",
+      "instrument_constraints": "joint operation can mask which side generates the observed package behavior",
+      "variants": [
+        "unidirectional versus bidirectional coupling",
+        "fast versus slow handoff",
+        "withdrawal before versus after target repair internalization"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D03",
+        "D05",
+        "D06",
+        "D08"
+      ],
+      "stress_questions": [
+        "Which package predicates are genuinely target-native before withdrawal?",
+        "Can contribution weights define handoff without defining identity?",
+        "Does long overlap provide evidence unavailable in an abrupt protocol, or merely more opportunity for external correction?",
+        "What fails first when coupling is removed?"
+      ],
+      "blocked_inferences": [
+        "Long overlap is not autonomy.",
+        "Continuous coupling is not one carrier unless explicitly retyped.",
+        "Target dominance is not exclusive realization.",
+        "Adaptive correction can be externally supplied."
+      ],
+      "asset_focus": [
+        "A-AG-01",
+        "A-PT-01",
+        "A-TM-01",
+        "A-CU-01",
+        "A-EV-01"
+      ],
+      "question_focus": [
+        "Q-BRG-006",
+        "Q-TYP-007",
+        "Q-AUT-001",
+        "Q-AUT-004",
+        "Q-BRG-005"
+      ]
+    },
+    {
+      "id": "S08",
+      "number": 8,
+      "title": "Distributed extension with no sharp handoff",
+      "canonical_prompt": "Distributed extension in which no sharp handoff exists.",
+      "purpose": "Challenge source-target narratives that require an exclusive transfer instant when a package remains jointly distributed.",
+      "facts": [
+        "A source package is extended onto additional target-side support while source-side support remains a permanent active component.",
+        "No stage is designated as the unique handoff or as a target-only episode.",
+        "The declared package is jointly organized across supports and may fail if either side is removed.",
+        "Operational responsibility changes, but the joint boundary remains the candidate package boundary."
+      ],
+      "episode_graph": "E_S -> E_joint -> E_joint' -> ... (no target-only node stipulated)",
+      "carrier_relation": "partially_overlapping_support",
+      "change_mode": "distributed_extension",
+      "source_fate": "remains_coupled",
+      "target_timing": "continuous_overlap",
+      "branching": "many_to_many",
+      "bridge_dependence": "permanent",
+      "fidelity": "adaptive",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "package_state",
+      "secondary_modes": "live_migration",
+      "cross_carrier_status": "boundary_cross_carrier_distributed",
+      "handoff_shape": "no_sharp_handoff",
+      "branch_graph": "one joint distributed package assembled from multiple support episodes",
+      "clock_relation": "partially synchronized distributed clocks",
+      "causal_structure": "permanent joint causal organization",
+      "fidelity_scope": "joint package behavior; no target-only package is stipulated",
+      "autonomy_intervention": "remove one support partition at a time and test whether the remaining assembly still satisfies the declared package",
+      "instrument_constraints": "observations of the joint assembly may not localize package predicates to either support",
+      "variants": [
+        "redundant versus nonredundant distribution",
+        "source contribution tends to zero without reaching zero",
+        "joint package with modular versus inseparable clauses"
+      ],
+      "primary_discriminators": [
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "Must a candidate force this case into source and target tokens, or may the joint package be the only valid object?",
+        "Is lineage applicable when no target-only episode exists?",
+        "Does permanent bridge dependence indicate failure, or simply define the distributed package boundary?",
+        "How are C-clause carriers typed when different clauses live on different supports?"
+      ],
+      "blocked_inferences": [
+        "No sharp handoff does not imply no structural change.",
+        "Permanent coupling is not automatically counterfeit.",
+        "Distributed realization does not specify one or many subjects.",
+        "A joint carrier cannot be assumed without declaring its support and interfaces."
+      ],
+      "asset_focus": [
+        "A-CT-01",
+        "A-LG-01",
+        "A-EV-01",
+        "A-AG-01",
+        "A-TM-01"
+      ],
+      "question_focus": [
+        "Q-TYP-007",
+        "Q-LIN-008",
+        "Q-AUT-001",
+        "Q-PRS-005",
+        "Q-BRG-002"
+      ]
+    },
+    {
+      "id": "S09",
+      "number": 9,
+      "title": "Fission followed by independent divergence",
+      "canonical_prompt": "Fission followed by independent divergence.",
+      "purpose": "Force relation-valued or branch-sensitive lineage semantics and expose the loss of a single future after a common split.",
+      "facts": [
+        "One source episode produces two target episodes exact at the declared package state at the split.",
+        "The source-side episode is then removed, and the two targets receive different admissible continuations.",
+        "Branch histories diverge in predictive state, action-credit ledger, and possibly viability outcomes.",
+        "No later fusion is stipulated."
+      ],
+      "episode_graph": "E_S -> {E_T1^0, E_T2^0} -> {E_T1^1, E_T2^1} (divergent)",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "nondestructive_copy",
+      "source_fate": "erased_after_activation",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_many",
+      "bridge_dependence": "temporary",
+      "fidelity": "exact",
+      "reversibility": "irreversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "package_state",
+      "secondary_modes": "fission",
+      "cross_carrier_status": "genuine_cross_carrier_candidate",
+      "handoff_shape": "branching_handoff",
+      "branch_graph": "1->2 with independent post-split histories",
+      "clock_relation": "common split coordinate followed by independent clocks",
+      "causal_structure": "shared prehistory, equal split ancestry, then causally separate branches",
+      "fidelity_scope": "exact at branch point; divergence is stipulated afterward",
+      "autonomy_intervention": "remove common bridge and source resources, then test branches independently",
+      "instrument_constraints": "both branch histories and target package records are available",
+      "variants": [
+        "symmetric versus asymmetric post-split environments",
+        "one branch later fails viability",
+        "branches retain versus erase common-prehistory markers"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D04",
+        "D05",
+        "D06",
+        "D10"
+      ],
+      "stress_questions": [
+        "Can one source have two legitimate successors without violating the candidate's ontology-free structural rules?",
+        "Which common-prehistory facts remain well-defined after divergent futures?",
+        "Does branch failure affect the status of the other branch?",
+        "Can action-credit be duplicated, divided, or only related by ancestry?"
+      ],
+      "blocked_inferences": [
+        "Fission does not force a function-valued lineage.",
+        "Divergence does not retroactively remove common ancestry.",
+        "One branch's failure does not select the other as uniquely original.",
+        "Shared prehistory is not shared token identity."
+      ],
+      "asset_focus": [
+        "A-OP-01",
+        "A-RE-01",
+        "A-PQ-01",
+        "A-CU-01"
+      ],
+      "question_focus": [
+        "Q-LIN-006",
+        "Q-PRS-009",
+        "Q-PRS-007",
+        "Q-LIN-002",
+        "Q-LIN-009"
+      ]
+    },
+    {
+      "id": "S10",
+      "number": 10,
+      "title": "Fission followed by later fusion",
+      "canonical_prompt": "Fission followed by later fusion.",
+      "purpose": "Probe whether branch histories and recombination content can be coherently merged, lost, or retained in a many-to-one target.",
+      "facts": [
+        "One source fissions into two exact-at-split branches that later acquire nonidentical histories.",
+        "A fusion bridge combines both branch records/processes into one target episode.",
+        "The target may match selected branchwise summaries while joint/recombination facts remain a separate question.",
+        "The two branch episodes are retired after fusion."
+      ],
+      "episode_graph": "E_S -> {E_B1, E_B2} -> E_F",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "abrupt_translation",
+      "source_fate": "erased_after_activation",
+      "target_timing": "continuous_overlap",
+      "branching": "many_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "adaptive",
+      "reversibility": "irreversible",
+      "route_multiplicity": "holonomy_bearing_routes",
+      "granularity": "event_package",
+      "secondary_modes": "fission;fusion;recombination",
+      "cross_carrier_status": "genuine_cross_carrier_candidate",
+      "handoff_shape": "branch_then_fusion",
+      "branch_graph": "1->2->1 with route-sensitive branch histories",
+      "clock_relation": "branch-local clocks require a fusion synchronization/ordering rule",
+      "causal_structure": "two causally independent branch histories jointly feed one fusion process",
+      "fidelity_scope": "adaptive event/package synthesis from two nonidentical branch histories",
+      "autonomy_intervention": "retire both branch sources and fusion controller, then test the fused target",
+      "instrument_constraints": "branchwise summaries may be observable while cross-branch recombination content may require privileged audit",
+      "variants": [
+        "compatible versus conflicting action-credit ledgers",
+        "fusion order B1-then-B2 versus B2-then-B1",
+        "lossless versus lossy branch-history merge"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D10"
+      ],
+      "stress_questions": [
+        "What source-specific facts can the fused target inherit when branch histories conflict?",
+        "Does fusion order create holonomy or different target package states?",
+        "Can pairwise branch-to-target matches exist without one globally coherent fusion package?",
+        "Does the lineage relation allow multiple predecessors without asserting token identity with all of them?"
+      ],
+      "blocked_inferences": [
+        "Fusion is not identity with every source branch.",
+        "Matching branchwise summaries is not preservation of recombination content.",
+        "A single final target does not make the route one-to-one.",
+        "Conflict resolution is a substantive rule, not a bookkeeping detail."
+      ],
+      "asset_focus": [
+        "A-RE-01",
+        "A-OP-01",
+        "A-LG-01",
+        "A-HO-01",
+        "A-CF-01"
+      ],
+      "question_focus": [
+        "Q-LIN-007",
+        "Q-PRS-009",
+        "Q-RTE-002",
+        "Q-PRS-007",
+        "Q-PRS-005"
+      ]
+    },
+    {
+      "id": "S11",
+      "number": 11,
+      "title": "Public-perfect copy with predictive mismatch",
+      "canonical_prompt": "Public/report-perfect copy with predictive mismatch.",
+      "purpose": "Serve as a counterfeit control demonstrating that current/report equivalence can leave future-sufficient structure different.",
+      "facts": [
+        "A disjoint target matches every declared current public/report observable of the source over the stipulated test set.",
+        "A privileged continuation test reveals different predictive classes or transition responses.",
+        "The source remains active so both systems can be probed under matched and divergent continuations.",
+        "The mismatch is a scenario input fact, not an outcome label or ontological judgment."
+      ],
+      "episode_graph": "E_S -> {E_S^+, E_T^+}; public(E_S^+)=public(E_T^+), predictive(E_S^+)!=predictive(E_T^+)",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "nondestructive_copy",
+      "source_fate": "persists",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_many",
+      "bridge_dependence": "removable",
+      "fidelity": "lossy",
+      "reversibility": "irreversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "predictive_state",
+      "secondary_modes": "counterfeit_public_matching",
+      "cross_carrier_status": "genuine_cross_carrier_negative_control",
+      "handoff_shape": "copy_without_predictive_transport",
+      "branch_graph": "source plus one public-matching target",
+      "clock_relation": "matched public test times plus privileged continuation probes",
+      "causal_structure": "copy process followed by independent counterfactual probing",
+      "fidelity_scope": "exact public/report equivalence; explicitly nonexact predictive state",
+      "autonomy_intervention": "remove source and bridge, then test whether target's own predictive dynamics produce the declared package",
+      "instrument_constraints": "public instruments cannot detect the stipulated mismatch; privileged predictive probes can",
+      "variants": [
+        "mismatch visible only after long horizon",
+        "mismatch under rare intervention",
+        "expanded public interface that does or does not dissolve hiddenness"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D02",
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "stress_questions": [
+        "Which candidate criteria incorrectly collapse public and predictive equivalence?",
+        "Can a recognition protocol detect the mismatch without complete-state access?",
+        "Does predictive mismatch defeat target package status, transport only, lineage only, or different lanes under different candidates?",
+        "How does interface expansion change the classification?"
+      ],
+      "blocked_inferences": [
+        "Public perfection is not predictive equivalence.",
+        "A hidden mismatch does not by itself decide all C-clauses.",
+        "Counterfeit is a named structural control, not a claim of phenomenal absence.",
+        "Behavioral indistinguishability under one test set is not global identity."
+      ],
+      "asset_focus": [
+        "A-PQ-01",
+        "A-HID-01",
+        "A-NO-01",
+        "A-EX-01",
+        "A-CD-01"
+      ],
+      "question_focus": [
+        "Q-PRS-003",
+        "Q-OBS-003",
+        "Q-OBS-006",
+        "Q-OBS-007",
+        "Q-RTE-005"
+      ]
+    },
+    {
+      "id": "S12",
+      "number": 12,
+      "title": "Predictive match with different binding or action-credit structure",
+      "canonical_prompt": "Predictive match with different binding or action-credit structure.",
+      "purpose": "Prevent predictive equivalence from being silently upgraded to full package equivalence or preserved mineness/provenance.",
+      "facts": [
+        "A disjoint target matches the source's declared predictive quotient and transition responses.",
+        "Privileged audit shows a different binding relation, action-credit ledger, or source-provenance structure.",
+        "The source remains active during comparison.",
+        "The mismatch concerns a named package clause or cross-clause relation, not an untyped essence."
+      ],
+      "episode_graph": "E_S -> {E_S^+, E_T^+}; predictive-match; binding/credit-mismatch",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "abrupt_translation",
+      "source_fate": "persists",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_many",
+      "bridge_dependence": "removable",
+      "fidelity": "lossy",
+      "reversibility": "irreversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "predictive_state",
+      "secondary_modes": "nondestructive_copy",
+      "cross_carrier_status": "genuine_cross_carrier_negative_control",
+      "handoff_shape": "predictive_match_with_package_mismatch",
+      "branch_graph": "source plus one predictive-matching target",
+      "clock_relation": "matched continuation indexing; ledger histories separately indexed",
+      "causal_structure": "copy/translation preserves declared predictive law but changes internal package organization",
+      "fidelity_scope": "exact predictive dynamics; explicitly nonexact binding or action-credit structure",
+      "autonomy_intervention": "remove source/bridge and test whether target maintains its own (possibly different) package organization",
+      "instrument_constraints": "predictive interface alone cannot detect the stipulated binding/credit mismatch",
+      "variants": [
+        "binding differs but credit matches",
+        "credit differs but binding matches",
+        "current and predictive interfaces both match while cross-clause glue fails"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D04",
+        "D06",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "Is predictive equivalence necessary, sufficient, or neither for the candidate's transported object?",
+        "Which package clauses must be preserved versus rebuilt?",
+        "Can a lineage criterion ignore provenance/action-credit without becoming insensitive to source history?",
+        "Does target-native autonomy compensate for a source-relative package mismatch?"
+      ],
+      "blocked_inferences": [
+        "Predictive equivalence is not full C-package equivalence.",
+        "Matching futures does not preserve action-credit by definition.",
+        "Different binding is not necessarily no target package; it may be a different package.",
+        "Target autonomy does not repair lineage automatically."
+      ],
+      "asset_focus": [
+        "A-PQ-01",
+        "A-CT-01",
+        "A-OP-01",
+        "A-EV-01",
+        "A-LG-01"
+      ],
+      "question_focus": [
+        "Q-PRS-004",
+        "Q-PRS-005",
+        "Q-PRS-007",
+        "Q-LIN-003",
+        "Q-ASM-005"
+      ]
+    },
+    {
+      "id": "S13",
+      "number": 13,
+      "title": "Target maintained only by an external decoder or source process",
+      "canonical_prompt": "Target maintained only by an external decoder or source process.",
+      "purpose": "Distinguish target-native realization and autonomy from an externally generated readout or continuously reconstructed shadow.",
+      "facts": [
+        "A disjoint target-facing interface produces the declared public/certificate outputs only while a continuing source process or external decoder runs.",
+        "Removing that decoder/source process causes the target-facing package predicate to fail or become undefined by construction.",
+        "The target carrier alone need not contain the predictive, repair, or audit structure used to generate the outputs.",
+        "The coupled assembly may still be a legitimate distributed object under a separately declared boundary."
+      ],
+      "episode_graph": "E_S + decoder D -> interface episode E_T^shadow; remove(D or E_S) -> no stipulated target package",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "distributed_extension",
+      "source_fate": "remains_coupled",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_one",
+      "bridge_dependence": "externally_decoded",
+      "fidelity": "lossy",
+      "reversibility": "reversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "certificate_only",
+      "secondary_modes": "external_readout",
+      "cross_carrier_status": "genuine_cross_carrier_autonomy_control",
+      "handoff_shape": "no_completed_handoff",
+      "branch_graph": "one source-driven output episode labeled target-facing",
+      "clock_relation": "decoder schedule mediates timing",
+      "causal_structure": "continuing source/decoder causally generates target outputs",
+      "fidelity_scope": "certificate/public output fidelity only; target-native structure explicitly left absent or unspecified",
+      "autonomy_intervention": "remove source process and decoder separately, then jointly; retain ordinary target environment",
+      "instrument_constraints": "public observation of the target-facing interface may not reveal where the determining state lives",
+      "variants": [
+        "decoder stateless versus stateful",
+        "decoder later internalized into target",
+        "source removed while decoder retains a finite model versus live source dependence"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D03",
+        "D05",
+        "D06",
+        "D08"
+      ],
+      "stress_questions": [
+        "Is the relevant package instantiated on the target, on the source-decoder-target assembly, or nowhere under the candidate?",
+        "Which withdrawal distinguishes readout from target-native maintenance?",
+        "Can decoder internalization convert a shadow into an autonomous target without deciding lineage?",
+        "Does the candidate's bridge definition explicitly expose all ongoing dependencies?"
+      ],
+      "blocked_inferences": [
+        "Correct output is not target-native realization.",
+        "Bridge dependence is not phenomenal nonrealization by definition.",
+        "A coupled assembly may require a different carrier boundary.",
+        "Removing a decoder tests autonomy, not source-target lineage."
+      ],
+      "asset_focus": [
+        "A-EX-01",
+        "A-AG-01",
+        "A-PT-01",
+        "A-QEC-01",
+        "A-NO-01"
+      ],
+      "question_focus": [
+        "Q-BRG-006",
+        "Q-AUT-001",
+        "Q-AUT-003",
+        "Q-AUT-004",
+        "Q-OBS-003"
+      ]
+    },
+    {
+      "id": "S14",
+      "number": 14,
+      "title": "Closed route restoring current observables but changing predictive state",
+      "canonical_prompt": "Route loop that restores every current observable while changing predictive state.",
+      "purpose": "Expose route holonomy and block endpoint-current equality from erasing memory or continuation-relevant route effects.",
+      "facts": [
+        "A route leaves a source carrier, passes through a disjoint target/intermediate carrier, and returns to the source-side carrier type.",
+        "Every declared current/public observable at the endpoint equals its initial value.",
+        "A privileged continuation test shows a changed predictive class, memory residue, or route-sensitive package coordinate.",
+        "The loop action is a stipulated scenario fact; its significance for transport or lineage is candidate-dependent."
+      ],
+      "episode_graph": "E_S^0 -> E_T -> E_S^1; public(E_S^1)=public(E_S^0), predictive(E_S^1)!=predictive(E_S^0)",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "live_migration",
+      "source_fate": "paused",
+      "target_timing": "delayed_activation",
+      "branching": "one_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "lossy",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "holonomy_bearing_routes",
+      "granularity": "predictive_state",
+      "secondary_modes": "round_trip",
+      "cross_carrier_status": "genuine_cross_carrier_route_control",
+      "handoff_shape": "out_and_back_loop",
+      "branch_graph": "one operational route with common start/end carrier type",
+      "clock_relation": "closed route with possible phase/memory offset",
+      "causal_structure": "sequential cross-carrier route returning to an endpoint-current-equivalent state",
+      "fidelity_scope": "exact current observables at loop closure; explicitly nonexact predictive state",
+      "autonomy_intervention": "remove intermediate bridge after return and test persistence of the route-induced residue",
+      "instrument_constraints": "current public instruments are blind to the stipulated holonomy; predictive probes reveal it",
+      "variants": [
+        "different loop orders",
+        "residue erased by repair versus persistent",
+        "same predictive class but changed action-credit ledger"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D02",
+        "D03",
+        "D07",
+        "D09"
+      ],
+      "stress_questions": [
+        "What equivalence relation, if any, makes the round trip an identity bridge?",
+        "Can route-sensitive memory coexist with a useful route-independent transport theorem on a coarser object?",
+        "Does a nonzero loop residue affect lineage, only transported state, or neither under a candidate?",
+        "Which critical-pair or flatness condition would exclude this scenario?"
+      ],
+      "blocked_inferences": [
+        "Restored current observables are not full restoration.",
+        "Approximate inverse is not route independence.",
+        "Holonomy is not automatically failure; it must be interpreted relative to the object.",
+        "A loop endpoint on the same carrier is not token identity by notation alone."
+      ],
+      "asset_focus": [
+        "A-HO-01",
+        "A-CF-01",
+        "A-PQ-01",
+        "A-TM-01"
+      ],
+      "question_focus": [
+        "Q-RTE-001",
+        "Q-RTE-002",
+        "Q-RTE-003",
+        "Q-RTE-005",
+        "Q-BRG-007"
+      ]
+    },
+    {
+      "id": "S15",
+      "number": 15,
+      "title": "Local pairwise matches without a global package",
+      "canonical_prompt": "Local pairwise matches that fail to glue into one global identity package.",
+      "purpose": "Test local-to-global obstruction: accepted pairwise bridge records need not form one coherent target event/package object.",
+      "facts": [
+        "Multiple source-side clauses/events are paired with multiple target-side clauses/events by locally accepted records.",
+        "Every pairwise test passes at its declared local scope.",
+        "The overlaps/cycle constraints are stipulated inconsistent, so no one global event/package satisfies all local records simultaneously.",
+        "The scenario does not stipulate whether a weaker partial target package exists."
+      ],
+      "episode_graph": "{local E_Si -> E_Tj records}; all local gates pass; global glue obstruction != 0",
+      "carrier_relation": "partially_overlapping_support",
+      "change_mode": "distributed_extension",
+      "source_fate": "remains_coupled",
+      "target_timing": "continuous_overlap",
+      "branching": "many_to_many",
+      "bridge_dependence": "temporary",
+      "fidelity": "lossy",
+      "reversibility": "irreversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "event_package",
+      "secondary_modes": "local_bridge_assembly",
+      "cross_carrier_status": "genuine_cross_carrier_global_glue_control",
+      "handoff_shape": "multiple_local_handoffs_no_global_completion",
+      "branch_graph": "many local source-target episode pairs with no global node",
+      "clock_relation": "locally compatible timestamps with globally inconsistent cycle/order data",
+      "causal_structure": "pairwise causal records without one coherent global causal package",
+      "fidelity_scope": "exact local records; globally inconsistent package",
+      "autonomy_intervention": "remove source/local coordinators and test whether any target-native global package remains",
+      "instrument_constraints": "local audits pass; only a global consistency audit reveals the obstruction",
+      "variants": [
+        "time-cycle obstruction",
+        "role/identity conflict",
+        "binding/recombination conflict",
+        "one additional global witness repairs the cover"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D03",
+        "D04",
+        "D06",
+        "D07",
+        "D08"
+      ],
+      "stress_questions": [
+        "What gluing condition turns accepted local bridge records into one target event package?",
+        "Can a candidate return partial target realization without pretending global coherence?",
+        "Does the obstruction live in transport, target package, lineage, or several separately typed lanes?",
+        "Can a route completion repair the obstruction without changing local records?"
+      ],
+      "blocked_inferences": [
+        "Pairwise acceptance is not global package existence.",
+        "A common label is not a glued identity object.",
+        "Local time compatibility is not a global clock.",
+        "A global failure does not erase valid local structures."
+      ],
+      "asset_focus": [
+        "A-LG-01",
+        "A-EV-01",
+        "A-CF-01",
+        "A-RE-01",
+        "A-AOR-01"
+      ],
+      "question_focus": [
+        "Q-PRS-005",
+        "Q-BRG-008",
+        "Q-RTE-003",
+        "Q-TYP-009",
+        "Q-AUT-001"
+      ]
+    },
+    {
+      "id": "S16",
+      "number": 16,
+      "title": "Residual-bounded transfer near a viability boundary",
+      "canonical_prompt": "Transfer near a viability boundary.",
+      "purpose": "Test whether small structural defects can cause discontinuous maintenance failure near a threshold and whether scalar fidelity conceals dangerous directions.",
+      "facts": [
+        "A disjoint target is constructed with a declared nonzero residual bound relative to a source package.",
+        "The source package lies near a declared viability/maintenance boundary.",
+        "Admissible perturbations within the same residual budget can place the target on either side of that boundary.",
+        "No stability theorem is stipulated."
+      ],
+      "episode_graph": "E_S --bridge with defect <= epsilon--> E_T near boundary d(K)=delta",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "abrupt_translation",
+      "source_fate": "degrades",
+      "target_timing": "delayed_activation",
+      "branching": "one_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "residual_bounded",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "package_state",
+      "secondary_modes": "approximate_transfer",
+      "cross_carrier_status": "genuine_cross_carrier_stability_control",
+      "handoff_shape": "approximate_sharp_handoff",
+      "branch_graph": "one source to one target with a defect set of possible endpoints",
+      "clock_relation": "ordered activation; horizon required for maintenance",
+      "causal_structure": "approximate bridge followed by target dynamics near a bifurcation/viability threshold",
+      "fidelity_scope": "bounded package residual with direction-dependent viability consequences",
+      "autonomy_intervention": "withdraw bridge and apply the declared disturbance class over the maintenance horizon",
+      "instrument_constraints": "a small global residual score may not identify the component that crosses the viability boundary",
+      "variants": [
+        "different residual norms",
+        "same epsilon with different error directions",
+        "positive versus zero viability margin",
+        "finite versus invariant-horizon autonomy"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D05",
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "stress_questions": [
+        "Which metric controls the viability-relevant package directions?",
+        "Can lineage classification be stable under perturbations away from but not near the boundary?",
+        "What defect-composition law applies across multiple substrate changes?",
+        "Does a small score hide a local catastrophic mismatch?"
+      ],
+      "blocked_inferences": [
+        "Small residual is not harmlessness.",
+        "Approximate preservation is not exact lineage.",
+        "A scalar fidelity score may hide threshold-crossing components.",
+        "Source viability margin does not automatically transport."
+      ],
+      "asset_focus": [
+        "A-AR-01",
+        "A-CD-01",
+        "A-VI-01",
+        "A-QEC-01"
+      ],
+      "question_focus": [
+        "Q-APP-001",
+        "Q-APP-003",
+        "Q-APP-005",
+        "Q-APP-007",
+        "Q-AUT-002"
+      ]
+    },
+    {
+      "id": "S17",
+      "number": 17,
+      "title": "Lossy transfer followed by endogenous repair",
+      "canonical_prompt": "Lossy transfer followed by endogenous repair.",
+      "purpose": "Separate preservation through the bridge from target-native recovery after a defect and ask what lineage does across a repair interval.",
+      "facts": [
+        "A disjoint target activates from a lossy record/bridge outside at least one desired package condition.",
+        "A target-internal recovery process subsequently returns the target to the declared package/viability region.",
+        "The source and transfer bridge are removed before or at the start of recovery.",
+        "Recovery uses retained target resources and dynamics rather than continuing source reconstruction."
+      ],
+      "episode_graph": "E_S -> E_T^defective --target-native repair--> E_T^recovered",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "checkpoint_restart",
+      "source_fate": "erased_before_activation",
+      "target_timing": "delayed_activation",
+      "branching": "one_to_one",
+      "bridge_dependence": "removable",
+      "fidelity": "error_corrected",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "package_state",
+      "secondary_modes": "lossy_translation;endogenous_repair",
+      "cross_carrier_status": "genuine_cross_carrier_repair_case",
+      "handoff_shape": "defective_activation_then_recovery",
+      "branch_graph": "one source to defective target to recovered target episode",
+      "clock_relation": "repair interval explicitly represented in target local time",
+      "causal_structure": "source-derived initialization followed by target-native recovery dynamics",
+      "fidelity_scope": "lossy at activation; package/viability restored under a declared recovery map",
+      "autonomy_intervention": "remove source, bridge, and external repair controller before recovery; retain target's encoded repair machinery and ordinary environment",
+      "instrument_constraints": "the defective intermediate and recovery trajectory are auditable",
+      "variants": [
+        "repair before versus after full package failure",
+        "unique versus multiple repaired attractors",
+        "repair preserves versus rewrites action-credit/history"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D04",
+        "D05",
+        "D06",
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "stress_questions": [
+        "Is lineage preserved through a period in which the target package predicate fails?",
+        "Which structures are repaired versus newly instantiated?",
+        "Does target-native recovery establish autonomy without establishing source-target continuity?",
+        "Can repair reduce structural defect while altering route memory or action-credit?"
+      ],
+      "blocked_inferences": [
+        "Repair is not proof that nothing was lost.",
+        "Recovered package satisfaction is not bridge preservation.",
+        "Endogenous repair supports autonomy but not lineage by default.",
+        "A defective intermediate may matter even if the endpoint is exact."
+      ],
+      "asset_focus": [
+        "A-QEC-01",
+        "A-VI-01",
+        "A-AG-01",
+        "A-AR-01",
+        "A-OP-01"
+      ],
+      "question_focus": [
+        "Q-APP-004",
+        "Q-AUT-004",
+        "Q-RTE-007",
+        "Q-LIN-011",
+        "Q-PRS-007"
+      ]
+    },
+    {
+      "id": "S18",
+      "number": 18,
+      "title": "Exact reversible round trip across carriers",
+      "canonical_prompt": "Reversible round trip across substrates.",
+      "purpose": "Provide a strong structural positive control for inverse bridges while keeping reversibility separate from lineage and ontology.",
+      "facts": [
+        "A source package is transported to a disjoint target and later returned through a declared inverse route.",
+        "The round trip restores every named package-state structure exactly within the admitted domain.",
+        "The source carrier is paused rather than destroyed while the target operates.",
+        "No nontrivial holonomy is stipulated for the named structure, but unmeasured structures remain outside scope."
+      ],
+      "episode_graph": "E_S^0 --B--> E_T --B^{-1}--> E_S^1 with named-structure equality",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "live_migration",
+      "source_fate": "paused",
+      "target_timing": "delayed_activation",
+      "branching": "one_to_one",
+      "bridge_dependence": "removable",
+      "fidelity": "exact",
+      "reversibility": "reversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "package_state",
+      "secondary_modes": "round_trip",
+      "cross_carrier_status": "genuine_cross_carrier_positive_control",
+      "handoff_shape": "out_and_back_with_declared_inverse",
+      "branch_graph": "one operational route and one declared inverse",
+      "clock_relation": "explicit time/phase translation with exact inverse on named structure",
+      "causal_structure": "causal migration to target, target operation, causal return",
+      "fidelity_scope": "exact preservation of a declared package-state family under B and B^{-1}",
+      "autonomy_intervention": "while target is active, remove the source-side execution and bridge after handoff; later re-enable only the declared reverse bridge for return",
+      "instrument_constraints": "complete access to the named transported structure is stipulated; ontology is not an instrument output",
+      "variants": [
+        "different exact routes with same endpoint",
+        "long versus short target residence",
+        "extra unmeasured memory coordinate to test scope honesty"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D03",
+        "D07",
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "stress_questions": [
+        "Does exact round-trip recovery imply forward target autonomy, or can the bridge carry the structure continuously?",
+        "What is the maximal named object for which the inverse law holds?",
+        "Can a lineage criterion remain route-sensitive even when structural transport is flat?",
+        "Which claim lanes receive a positive control and which remain open?"
+      ],
+      "blocked_inferences": [
+        "Reversibility is not token identity.",
+        "A structural positive control is not an ontological demonstration.",
+        "Exactness is scoped to named structures.",
+        "An inverse route does not prove target-native maintenance."
+      ],
+      "asset_focus": [
+        "A-RT-01",
+        "A-CF-01",
+        "A-HO-01",
+        "A-QEC-01",
+        "A-AG-01"
+      ],
+      "question_focus": [
+        "Q-BRG-007",
+        "Q-BRG-008",
+        "Q-RTE-003",
+        "Q-AUT-001",
+        "Q-ASM-005"
+      ]
+    },
+    {
+      "id": "S19",
+      "number": 19,
+      "title": "Target with a radically rescaled clock",
+      "canonical_prompt": "Target running at a radically rescaled clock rate.",
+      "purpose": "Force explicit clock translation and test whether continuity relies on a hidden canonical synchronized now.",
+      "facts": [
+        "A disjoint target implements the declared predictive/package dynamics under a non-unit, possibly nonlinear time reparameterization.",
+        "Source and target local clocks cannot be identified pointwise without a supplied clock relation.",
+        "The source is retired after target activation.",
+        "Order of admissible events may be preserved even when durations and phases differ radically."
+      ],
+      "episode_graph": "E_S(t_S) --B, theta--> E_T(t_T), with t_T=theta(t_S) or a partial-order relation",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "live_migration",
+      "source_fate": "erased_after_activation",
+      "target_timing": "time_rescaled_activation",
+      "branching": "one_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "adaptive",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "predictive_state",
+      "secondary_modes": "temporal_reparameterization",
+      "cross_carrier_status": "genuine_cross_carrier_temporal_case",
+      "handoff_shape": "clock_translated_handoff",
+      "branch_graph": "one source episode to one target episode under clock translation",
+      "clock_relation": "explicit non-unit map or order-preserving relation; no canonical simultaneity",
+      "causal_structure": "causal transport with mismatched local rates and possible phase reset",
+      "fidelity_scope": "predictive dynamics up to declared time reparameterization; temporal closure must be re-audited",
+      "autonomy_intervention": "remove synchronization/clock-translation service and test target-local temporal closure",
+      "instrument_constraints": "cross-carrier observations require a clock-comparison protocol that may itself introduce artifacts",
+      "variants": [
+        "constant speedup",
+        "nonlinear but monotone reparameterization",
+        "pauses/bursts preserving order",
+        "clock map with holonomy around a round trip"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D02",
+        "D03",
+        "D07",
+        "D08",
+        "D09"
+      ],
+      "stress_questions": [
+        "Which temporal structures require duration preservation versus only order/conjugacy?",
+        "Does removal of an external synchronizer break target temporal closure?",
+        "Can predictive equivalence be defined modulo time reparameterization without erasing causally relevant delays?",
+        "How are handoff and autonomy horizons translated between clocks?"
+      ],
+      "blocked_inferences": [
+        "Different clock rate is not different lineage by definition.",
+        "Equal event order is not equal temporal closure.",
+        "A synchronization protocol is not a canonical now.",
+        "Time rescaling exactness is scoped to a declared conjugacy."
+      ],
+      "asset_focus": [
+        "A-TM-01",
+        "A-RT-01",
+        "A-HO-01",
+        "A-PT-01"
+      ],
+      "question_focus": [
+        "Q-TYP-008",
+        "Q-PRS-008",
+        "Q-RTE-003",
+        "Q-AUT-002",
+        "Q-BRG-005"
+      ]
+    },
+    {
+      "id": "S20",
+      "number": 20,
+      "title": "Pure representation or gauge change on one carrier",
+      "canonical_prompt": "A pure representation/gauge change that should not count as movement to a new carrier.",
+      "purpose": "Provide the carrier-distinctness negative control and detect criteria that manufacture migration by relabeling one fixed support.",
+      "facts": [
+        "One support, dynamics, resource law, and implementation map are retained.",
+        "Only coordinates, labels, gauge, serialization, or presentation change through an exactly invertible translation.",
+        "No separately typed target implementation or support is introduced.",
+        "Every named package structure is preserved under the representation isomorphism."
+      ],
+      "episode_graph": "E_S --representation isomorphism--> E_S' (same carrier token/support)",
+      "carrier_relation": "same_support_reencoding",
+      "change_mode": "abrupt_translation",
+      "source_fate": "persists",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_one",
+      "bridge_dependence": "removable",
+      "fidelity": "exact",
+      "reversibility": "reversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "microstate",
+      "secondary_modes": "gauge_change",
+      "cross_carrier_status": "same_carrier_negative_control",
+      "handoff_shape": "no_carrier_handoff",
+      "branch_graph": "one carrier episode in two representations",
+      "clock_relation": "identical operational clock modulo notation",
+      "causal_structure": "same physical/formal process viewed through an invertible representation change",
+      "fidelity_scope": "exact representation isomorphism on all named structures",
+      "autonomy_intervention": "not a source-target autonomy test; removing the translator tests interface availability only",
+      "instrument_constraints": "all differences are stipulated representational; any criterion detecting a new carrier must identify an additional nonrepresentational fact",
+      "variants": [
+        "state renaming",
+        "gauge transformation",
+        "lossless serialization change",
+        "same hardware with different software display format"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D03",
+        "D07",
+        "D09",
+        "D10"
+      ],
+      "stress_questions": [
+        "Does the candidate pass the carrier-distinctness audit before applying a cross-carrier verdict?",
+        "Can it distinguish an isomorphism within one carrier from a bridge between carriers?",
+        "Which alleged substrate fact survives erasing labels and coordinate choices?",
+        "Does the candidate return not-applicable rather than claiming successful migration?"
+      ],
+      "blocked_inferences": [
+        "A new representation is not a new carrier by declaration alone.",
+        "Exact isomorphism is not evidence of substrate independence.",
+        "Same-carrier persistence is not cross-carrier transport.",
+        "The control does not deny that representation changes can be scientifically useful."
+      ],
+      "asset_focus": [
+        "A-FS-01",
+        "A-PR-01",
+        "A-ON-01"
+      ],
+      "question_focus": [
+        "Q-TYP-003",
+        "Q-TYP-004",
+        "Q-TYP-009",
+        "Q-CORE-002",
+        "Q-ASM-003"
+      ]
+    },
+    {
+      "id": "S21",
+      "number": 21,
+      "title": "Checkpoint/restart while the source is paused",
+      "canonical_prompt": "A recoverable source is paused, a checkpoint activates a target, and the source remains available for possible resumption.",
+      "purpose": "Separate temporary dynamical suspension from erasure, copying, and a genuinely empty interval with no recoverable source episode.",
+      "facts": [
+        "The active source dynamics are paused after a checkpoint is produced; the source support and checkpoint remain recoverable.",
+        "A disjoint target is activated from the checkpoint after a nonzero interval.",
+        "The source can in principle be resumed, but no simultaneous source/target execution is stipulated in the base case.",
+        "Checkpoint fidelity is exact only at the declared predictive-state interface."
+      ],
+      "episode_graph": "E_S(active) -> E_S(paused)+R -> E_T(active); optional E_S(resumed)",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "checkpoint_restart",
+      "source_fate": "paused",
+      "target_timing": "temporal_gap",
+      "branching": "one_to_many",
+      "bridge_dependence": "temporary",
+      "fidelity": "exact",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "predictive_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "genuine_cross_carrier_recoverable_source_case",
+      "handoff_shape": "checkpoint_mediated_pause",
+      "branch_graph": "one pre-pause episode with two possible future activations",
+      "clock_relation": "source local time is suspended; target starts under a declared restart map",
+      "causal_structure": "record-mediated activation with a recoverable but inactive source",
+      "fidelity_scope": "predictive-state checkpoint; package, memory residue, and viability resources require separate checks",
+      "autonomy_intervention": "remove checkpoint service and source recovery channel after target activation",
+      "instrument_constraints": "checkpoint contents are inspectable; unrecorded maintenance state may be hidden",
+      "variants": [
+        "resume source before target activation",
+        "resume source after target activation",
+        "checkpoint includes or omits repair state"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D02",
+        "D03",
+        "D05",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "Does a paused recoverable source create branching even before it is resumed?",
+        "Which facts distinguish a temporal gap from continued dormant support?",
+        "Can target autonomy be tested without destroying the checkpoint or source?",
+        "Does restart preserve the source clock, reset it, or require a noncanonical translation?"
+      ],
+      "blocked_inferences": [
+        "Paused is not erased.",
+        "Recoverability is not continued subjecthood.",
+        "Checkpoint exactness is not full-package exactness.",
+        "Possible resumption is not a preassigned lineage branch."
+      ],
+      "asset_focus": [
+        "A-PQ-01",
+        "A-PQ-02",
+        "A-TM-01",
+        "A-VI-01",
+        "A-AG-01"
+      ],
+      "question_focus": [
+        "Q-TYP-008",
+        "Q-BRG-003",
+        "Q-PRS-003",
+        "Q-LIN-004",
+        "Q-AUT-001",
+        "Q-OBS-006"
+      ]
+    },
+    {
+      "id": "S22",
+      "number": 22,
+      "title": "Live migration under concurrent source updates",
+      "canonical_prompt": "State is copied while the source continues changing, then a cutover reconciles in-flight updates.",
+      "purpose": "Expose consistency, cutover, and causal-order obligations hidden by static before/after copies.",
+      "facts": [
+        "The target receives an initial state while the source continues processing events.",
+        "A finite update log or reconciliation protocol transfers in-flight changes before cutover.",
+        "During migration, public outputs may be routed through either side according to a schedule.",
+        "After cutover the source is erased, and the reconciliation bridge is removable."
+      ],
+      "episode_graph": "E_S^0 -> (E_S live || E_T catch-up) -> reconcile -> E_T live",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "live_migration",
+      "source_fate": "erased_after_activation",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_one",
+      "bridge_dependence": "removable",
+      "fidelity": "adaptive",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "event_package",
+      "secondary_modes": "",
+      "cross_carrier_status": "genuine_cross_carrier_concurrent_update_case",
+      "handoff_shape": "logged_catchup_and_cutover",
+      "branch_graph": "one logical workstream with transient dual execution",
+      "clock_relation": "partially ordered event clocks plus a declared cutover barrier",
+      "causal_structure": "continuous causal coupling with update replay and conflict resolution",
+      "fidelity_scope": "event-package consistency under the declared log/order model; hidden package coordinates remain open",
+      "autonomy_intervention": "remove source, log shipper, cutover controller, and reconciliation service",
+      "instrument_constraints": "event log is visible; omitted internal events and scheduler choices may not be",
+      "variants": [
+        "stop-and-copy tail",
+        "optimistic reconciliation",
+        "duplicate event delivery",
+        "conflicting source/target updates"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D03",
+        "D04",
+        "D06",
+        "D07",
+        "D08"
+      ],
+      "stress_questions": [
+        "What consistency notion is needed for one event package rather than two public replicas?",
+        "Can two valid replay orders leave different predictive or action-credit residues?",
+        "Which episode receives credit for actions executed during dual operation?",
+        "Does successful cutover survive removal of reconciliation metadata?"
+      ],
+      "blocked_inferences": [
+        "A zero-downtime cutover is not lineage by definition.",
+        "Eventual public consistency is not global event-package identity.",
+        "A log is not necessarily complete history.",
+        "Reconciliation policy is not neutral if it discards branch information."
+      ],
+      "asset_focus": [
+        "A-EV-01",
+        "A-CF-01",
+        "A-HO-01",
+        "A-RE-01",
+        "A-AG-01"
+      ],
+      "question_focus": [
+        "Q-BRG-005",
+        "Q-RTE-003",
+        "Q-RTE-007",
+        "Q-LIN-010",
+        "Q-AUT-001",
+        "Q-PRS-006"
+      ]
+    },
+    {
+      "id": "S23",
+      "number": 23,
+      "title": "Many-source fusion into one target",
+      "canonical_prompt": "Two independently developed source episodes are combined into one target package.",
+      "purpose": "Provide a pure many-to-one case in which history conflict, recombination, and action-credit cannot be reduced to copying one source.",
+      "facts": [
+        "Two disjoint active sources have distinct predictive histories and partially incompatible ledgers.",
+        "A fusion protocol produces one target package on a third support.",
+        "The target is stipulated to answer a declared union of public queries from both sources.",
+        "Both sources are erased after target activation; full predictive and package coherence are not stipulated."
+      ],
+      "episode_graph": "{E_A,E_B} -> fuse -> E_T",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "abrupt_translation",
+      "source_fate": "erased_after_activation",
+      "target_timing": "delayed_activation",
+      "branching": "many_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "adaptive",
+      "reversibility": "irreversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "package_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "genuine_cross_carrier_fusion_case",
+      "handoff_shape": "many_source_fusion",
+      "branch_graph": "two source histories into one target episode",
+      "clock_relation": "two source clocks require a merge ordering and target clock initialization",
+      "causal_structure": "joint causal ancestry mediated by a conflict-resolution/fusion protocol",
+      "fidelity_scope": "declared public union plus selected package coordinates; conflict policy and lost distinctions remain explicit",
+      "autonomy_intervention": "remove both sources and the fusion/conflict-resolution service",
+      "instrument_constraints": "public union tests cannot reveal all mutually incompatible predictive or ledger commitments",
+      "variants": [
+        "compatible histories",
+        "conflicting autobiographical records",
+        "asymmetric priority rule",
+        "recombination-preserving tagged fusion"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D10"
+      ],
+      "stress_questions": [
+        "Is fusion continuation relation-valued from both sources or merely a new structural successor?",
+        "Which conflicts are resolved, retained as branches, or erased?",
+        "Can action credit and commitments from both histories be globally coherent?",
+        "Does fusion order produce holonomy or asymmetric lineage outputs?"
+      ],
+      "blocked_inferences": [
+        "Public union is not history union.",
+        "Many-to-one engineering topology is not fusion lineage by definition.",
+        "Conflict resolution can destroy information while preserving reports.",
+        "Equal source labels do not remove asymmetric causal histories."
+      ],
+      "asset_focus": [
+        "A-PQ-02",
+        "A-RE-01",
+        "A-EV-01",
+        "A-HO-01",
+        "A-OP-01"
+      ],
+      "question_focus": [
+        "Q-LIN-006",
+        "Q-LIN-007",
+        "Q-PRS-009",
+        "Q-RTE-003",
+        "Q-OBS-002",
+        "Q-ASM-004"
+      ]
+    },
+    {
+      "id": "S24",
+      "number": 24,
+      "title": "Many-to-many sharded reconfiguration",
+      "canonical_prompt": "A distributed source assembly is repartitioned into a differently sharded target assembly.",
+      "purpose": "Test whether a candidate handles carrier boundaries, distributed package unity, and non-bijective component remapping without inventing a privileged central token.",
+      "facts": [
+        "Multiple source shards jointly realize a declared package through explicit interfaces.",
+        "Responsibility is redistributed across multiple target shards with different boundaries and replication factors.",
+        "Some source and target shards overlap temporally, but no single shard contains the whole package.",
+        "After reconfiguration, all source-specific routing and coordination services are withdrawn."
+      ],
+      "episode_graph": "{S_1..S_m} -> repartition/replicate -> {T_1..T_n}",
+      "carrier_relation": "partially_overlapping_support",
+      "change_mode": "distributed_extension",
+      "source_fate": "degrades",
+      "target_timing": "continuous_overlap",
+      "branching": "many_to_many",
+      "bridge_dependence": "removable",
+      "fidelity": "error_corrected",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "event_package",
+      "secondary_modes": "",
+      "cross_carrier_status": "genuine_cross_carrier_distributed_case",
+      "handoff_shape": "sharded_repartition",
+      "branch_graph": "many source components to many target components with no privileged center",
+      "clock_relation": "distributed partial order with coordination epochs",
+      "causal_structure": "overlapping distributed migration with replicated and reassigned responsibilities",
+      "fidelity_scope": "global event/package invariants under sharding and recovery; shard-local equality is neither required nor sufficient",
+      "autonomy_intervention": "remove old routing tables, source coordinators, compatibility adapters, and legacy replicas",
+      "instrument_constraints": "shard-local probes may miss global binding, double counting, or split-brain states",
+      "variants": [
+        "replication before deletion",
+        "erasure-coded shards",
+        "network partition during cutover",
+        "different shard counts"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "What is the carrier token when no component is individually package-complete?",
+        "Do pairwise shard matches glue into one target package?",
+        "Can replication create hidden branch multiplicity or double action credit?",
+        "What remains after legacy coordination is withdrawn?"
+      ],
+      "blocked_inferences": [
+        "A shard is not automatically a subject token.",
+        "Pairwise consistency is not global binding.",
+        "Replication is not branch-valued lineage by itself.",
+        "Distributed persistence is not a central-object migration narrative."
+      ],
+      "asset_focus": [
+        "A-EV-01",
+        "A-LG-01",
+        "A-RE-01",
+        "A-QEC-01",
+        "A-AG-01"
+      ],
+      "question_focus": [
+        "Q-TYP-003",
+        "Q-TYP-007",
+        "Q-BRG-005",
+        "Q-PRS-010",
+        "Q-LIN-010",
+        "Q-AUT-001"
+      ]
+    },
+    {
+      "id": "S25",
+      "number": 25,
+      "title": "Adaptive error-corrected migration",
+      "canonical_prompt": "A logical package is maintained across changing noisy supports by repeated syndrome-like recovery.",
+      "purpose": "Use the strongest engineering analogy as a stress case while keeping code space, recovery law, package realization, and consciousness interpretation separate.",
+      "facts": [
+        "A declared logical package is encoded across source-side physical degrees of freedom.",
+        "Support membership changes gradually while recovery acts using measured defect signals.",
+        "Logical fidelity is residual-bounded under a declared error model and horizon.",
+        "At the endpoint the original support and migration controller can be removed, but target-native recovery must be separately tested."
+      ],
+      "episode_graph": "logical P on C_S -> repeated encode/recover/support-swap -> logical P' on C_T",
+      "carrier_relation": "partially_overlapping_support",
+      "change_mode": "gradual_replacement",
+      "source_fate": "erased_after_activation",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_one",
+      "bridge_dependence": "removable",
+      "fidelity": "error_corrected",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "package_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "genuine_cross_carrier_qec_analogue",
+      "handoff_shape": "recovery_assisted_support_sweep",
+      "branch_graph": "one logical package trajectory over changing redundant support",
+      "clock_relation": "recovery-cycle order plus target-local time after handoff",
+      "causal_structure": "continuous encoded evolution with active error detection and correction",
+      "fidelity_scope": "logical package under an explicit code, noise family, recovery map, defect metric, and time horizon",
+      "autonomy_intervention": "remove source quanta, migration decoder, and external recovery controller; retain only declared target-native resources",
+      "instrument_constraints": "syndromes certify code-relative defects, not certificate soundness or phenomenal properties",
+      "variants": [
+        "target-native versus external recovery",
+        "below versus above threshold",
+        "path-dependent logical residue",
+        "changing code family"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D04",
+        "D05",
+        "D07",
+        "D08",
+        "D09"
+      ],
+      "stress_questions": [
+        "What corresponds to the code space and recovery map for the full C-package?",
+        "Does logical fidelity compose across code changes and route alternatives?",
+        "Which recovery resources count as target-native?",
+        "Can a low logical defect coexist with failure of viability or action-credit history?"
+      ],
+      "blocked_inferences": [
+        "QEC is an analogy, not evidence of consciousness transfer.",
+        "Logical preservation is scoped to a code and error model.",
+        "External recovery is not target autonomy.",
+        "A threshold theorem would not prove personal identity."
+      ],
+      "asset_focus": [
+        "A-QEC-01",
+        "A-CT-01",
+        "A-CF-01",
+        "A-VI-01",
+        "A-AG-01"
+      ],
+      "question_focus": [
+        "Q-APP-001",
+        "Q-APP-003",
+        "Q-APP-004",
+        "Q-AUT-004",
+        "Q-ASM-005",
+        "Q-BRG-007"
+      ]
+    },
+    {
+      "id": "S26",
+      "number": 26,
+      "title": "Independently built package-equivalent target",
+      "canonical_prompt": "A target is built independently to be package-equivalent, with no causal bridge from the designated source token.",
+      "purpose": "Separate structural realization/equivalence from source-derived transport and lineage.",
+      "facts": [
+        "A source and a disjoint target are independently constructed from a common specification, not from one another.",
+        "They are stipulated package-equivalent under a declared isomorphism and receive matched initial environments.",
+        "There is no source-to-target causal or informational route beyond the common design specification.",
+        "Both operate autonomously from activation."
+      ],
+      "episode_graph": "Spec -> E_S; Spec -> E_T (no E_S -> E_T edge)",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "abrupt_translation",
+      "source_fate": "persists",
+      "target_timing": "delayed_activation",
+      "branching": "one_to_many",
+      "bridge_dependence": "removable",
+      "fidelity": "exact",
+      "reversibility": "reversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "package_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "independent_realization_negative_lineage_control",
+      "handoff_shape": "no_handoff_common_specification",
+      "branch_graph": "two independent realizations sharing only a design ancestor",
+      "clock_relation": "independent clocks with optional comparison map",
+      "causal_structure": "common-specification ancestry without source-token derivation",
+      "fidelity_scope": "package isomorphism at activation; historical/provenance coordinates are explicitly not source-derived",
+      "autonomy_intervention": "remove comparison/synchronization equipment; both systems continue under their own resources",
+      "instrument_constraints": "structural probes may establish isomorphism but cannot manufacture a missing source-token route",
+      "variants": [
+        "same builder versus independent builders",
+        "identical versus different activation times",
+        "shared training data versus only formal specification"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D03",
+        "D06",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "Can a candidate affirm target realization while denying or leaving source lineage open?",
+        "Which transported-object claim is not applicable because no source-derived bridge exists?",
+        "Does exact package equivalence erase provenance differences?",
+        "What distinguishes a structural twin from a continuation under the candidate criterion?"
+      ],
+      "blocked_inferences": [
+        "Structural equivalence is not transport.",
+        "Autonomous realization is not source lineage.",
+        "Common design is not common token history.",
+        "Absence of lineage does not imply absence of target realization."
+      ],
+      "asset_focus": [
+        "A-CT-01",
+        "A-FS-01",
+        "A-OP-01",
+        "A-AG-01",
+        "A-NO-01"
+      ],
+      "question_focus": [
+        "Q-FRM-004",
+        "Q-TYP-004",
+        "Q-LIN-001",
+        "Q-LIN-008",
+        "Q-AUT-001",
+        "Q-ASM-004"
+      ]
+    },
+    {
+      "id": "S27",
+      "number": 27,
+      "title": "Partial replacement around a persistent shared core",
+      "canonical_prompt": "Most support is replaced, but one causally central core remains continuously active across the whole process.",
+      "purpose": "Test whether criteria depend on amount of replaced material, a privileged persistent component, or package-level causal organization.",
+      "facts": [
+        "A declared core support token remains active throughout while all peripheral support is replaced.",
+        "The core alone is not stipulated to realize the full package.",
+        "Target-side peripherals progressively assume all noncore roles.",
+        "A counterfactual variant replaces the core last, permitting a direct comparison."
+      ],
+      "episode_graph": "Core + Periphery_S -> Core + Periphery_T; optional Core_S -> Core_T",
+      "carrier_relation": "partially_overlapping_support",
+      "change_mode": "gradual_replacement",
+      "source_fate": "degrades",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "adaptive",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "package_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "partial_carrier_change_persistent_core_control",
+      "handoff_shape": "persistent_core_with_peripheral_sweep",
+      "branch_graph": "one mixed-support package trajectory",
+      "clock_relation": "continuous process clock through core operation",
+      "causal_structure": "continuous causal organization with one invariant support component",
+      "fidelity_scope": "package-level role continuity; no assumption that the core bears identity or all hidden state",
+      "autonomy_intervention": "replace or disconnect the persistent core after peripheral migration",
+      "instrument_constraints": "core centrality and informational sufficiency are separately measurable and may diverge",
+      "variants": [
+        "tiny versus large core",
+        "core stores memory versus only clocking",
+        "replace core first versus last",
+        "core is causally central but informationally trivial"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D03",
+        "D05",
+        "D06",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "Would the candidate's verdict change solely because one component persists?",
+        "Is the core package-sufficient, causally necessary, or merely historically continuous?",
+        "Does replacing the core last create a sharp hidden handoff?",
+        "Can a package-level criterion avoid arbitrary material-percentage thresholds?"
+      ],
+      "blocked_inferences": [
+        "Persistent matter is not identity by definition.",
+        "A central component is not necessarily the package carrier.",
+        "Partial overlap does not settle cross-carrier typing.",
+        "Replacing everything except one token is not automatically same-carrier persistence."
+      ],
+      "asset_focus": [
+        "A-EX-01",
+        "A-OP-01",
+        "A-CF-01",
+        "A-AG-01",
+        "A-TM-01"
+      ],
+      "question_focus": [
+        "Q-TYP-003",
+        "Q-TYP-007",
+        "Q-BRG-005",
+        "Q-LIN-009",
+        "Q-AUT-001",
+        "Q-CTL-005"
+      ]
+    },
+    {
+      "id": "S28",
+      "number": 28,
+      "title": "Bridge removal followed by delayed target collapse",
+      "canonical_prompt": "A target appears stable after handoff but fails only after a long bridge-free interval.",
+      "purpose": "Force autonomy claims to state horizon, disturbance set, resource accounting, and delayed dependence rather than using instantaneous cutover success.",
+      "facts": [
+        "A target operates with a temporary source/bridge during acquisition and an initial stabilization period.",
+        "The bridge is removed at time w, after which all declared public tests pass for a finite interval.",
+        "At a later time the target leaves its viability/package region because a slowly depleted resource or unrefreshed structure was not target-native.",
+        "The delayed dependency is not visible to the ordinary short-horizon instruments."
+      ],
+      "episode_graph": "E_S+E_T+Bridge ->[withdraw w] E_T ->[delay] collapse/empty package",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "live_migration",
+      "source_fate": "erased_after_activation",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_one",
+      "bridge_dependence": "removable",
+      "fidelity": "residual_bounded",
+      "reversibility": "irreversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "package_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "autonomy_horizon_failure_control",
+      "handoff_shape": "apparently_successful_cutover_with_delayed_failure",
+      "branch_graph": "one target episode ending in package failure",
+      "clock_relation": "target-local post-withdrawal horizon is explicit",
+      "causal_structure": "latent dependence revealed only by long-term dynamics or perturbation",
+      "fidelity_scope": "short-horizon package/public agreement; long-horizon invariant-region maintenance fails",
+      "autonomy_intervention": "withdraw bridge at w and continue long enough to cover the slowest declared maintenance timescale",
+      "instrument_constraints": "short audits pass; long-horizon resource/viability monitoring reveals collapse",
+      "variants": [
+        "resource depletion",
+        "calendar/key expiry",
+        "unrefreshed model drift",
+        "failure only under perturbation"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D05",
+        "D08",
+        "D09"
+      ],
+      "stress_questions": [
+        "What horizon is sufficient for an autonomy claim?",
+        "Which resources and refresh laws were hidden in the bridge-supported phase?",
+        "Can residual-bounded structural transport still fail viability later?",
+        "How should underdetermination be recorded when observation ends before the relevant horizon?"
+      ],
+      "blocked_inferences": [
+        "Immediate post-cutover success is not autonomy.",
+        "Finite observation cannot establish indefinite maintenance without a theorem.",
+        "Delayed collapse does not retroactively erase all structural transport.",
+        "Public stability is not a viability invariant."
+      ],
+      "asset_focus": [
+        "A-AG-01",
+        "A-VI-01",
+        "A-PT-01",
+        "A-NO-01",
+        "A-QEC-01"
+      ],
+      "question_focus": [
+        "Q-AUT-001",
+        "Q-AUT-002",
+        "Q-AUT-003",
+        "Q-AUT-004",
+        "Q-APP-004",
+        "Q-OBS-006"
+      ]
+    },
+    {
+      "id": "S29",
+      "number": 29,
+      "title": "External scheduler masquerading as temporal closure",
+      "canonical_prompt": "Target behavior is correctly sequenced only while an external scheduler supplies phase and event order.",
+      "purpose": "Distinguish target-local temporal closure from externally staged public performance.",
+      "facts": [
+        "A disjoint target contains state variables sufficient for declared public responses but lacks a target-native scheduling/phase mechanism.",
+        "An external scheduler issues event-order and timing signals derived from the source or a protocol controller.",
+        "While scheduled, the target matches the declared public and predictive query set.",
+        "Removing the scheduler destroys temporal organization while leaving many static state variables intact."
+      ],
+      "episode_graph": "Scheduler(Source history) -> timed inputs -> E_T; withdrawal -> unordered/stalled E_T",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "abrupt_translation",
+      "source_fate": "remains_coupled",
+      "target_timing": "time_rescaled_activation",
+      "branching": "one_to_one",
+      "bridge_dependence": "externally_decoded",
+      "fidelity": "exact",
+      "reversibility": "irreversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "predictive_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "external_temporal_support_negative_autonomy_control",
+      "handoff_shape": "no_autonomous_temporal_handoff",
+      "branch_graph": "one target shadow driven by an external clocking process",
+      "clock_relation": "target order is supplied rather than generated by target-local closure",
+      "causal_structure": "external scheduler is a necessary causal component of the observed target trajectory",
+      "fidelity_scope": "exact scheduled input-output/predictive trace only; target-native temporal closure is absent by stipulation",
+      "autonomy_intervention": "remove scheduler, phase service, and source-derived timing signals while retaining target hardware and ordinary environment",
+      "instrument_constraints": "trace-level observations can hide where ordering is generated unless interventions are allowed",
+      "variants": [
+        "fixed prerecorded schedule",
+        "adaptive source-driven schedule",
+        "scheduler supplies phase only",
+        "scheduler supplies all transitions"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D03",
+        "D08",
+        "D10"
+      ],
+      "stress_questions": [
+        "Which temporal closure condition fails after scheduler withdrawal?",
+        "Can predictive matching under externally supplied inputs count as target realization?",
+        "What interventions distinguish a target process from a staged replay?",
+        "Does a time-rescaling map exist independently of the scheduler?"
+      ],
+      "blocked_inferences": [
+        "Correct ordering is not target-native temporal closure.",
+        "A replay trace is not a maintained process by itself.",
+        "External scheduling is not merely a coordinate choice.",
+        "Predictive responses under controlled probes do not prove autonomous continuation."
+      ],
+      "asset_focus": [
+        "A-TM-01",
+        "A-AG-01",
+        "A-HID-01",
+        "A-PT-01",
+        "A-NO-01"
+      ],
+      "question_focus": [
+        "Q-PRS-008",
+        "Q-AUT-001",
+        "Q-AUT-005",
+        "Q-OBS-003",
+        "Q-CTL-003",
+        "Q-TYP-008"
+      ]
+    },
+    {
+      "id": "S30",
+      "number": 30,
+      "title": "Certificate-only migration with package mismatch",
+      "canonical_prompt": "A target reproduces the source certificate and audit outputs while the underlying package differs.",
+      "purpose": "Prevent certificate copying, report matching, or verifier acceptance from standing in for realization or certificate soundness.",
+      "facts": [
+        "A source emits a finite structural certificate and associated public audit outputs.",
+        "A disjoint target stores/replays an exact copy of that certificate and passes the same certificate-level verifier.",
+        "The target's underlying dynamics are stipulated to lack at least one package clause required by the certificate's intended interpretation.",
+        "No certificate-soundness theorem is assumed."
+      ],
+      "episode_graph": "E_S -> certificate C -> E_T(C replay); underlying P_T differs",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "nondestructive_copy",
+      "source_fate": "persists",
+      "target_timing": "delayed_activation",
+      "branching": "one_to_many",
+      "bridge_dependence": "removable",
+      "fidelity": "exact",
+      "reversibility": "reversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "certificate_only",
+      "secondary_modes": "",
+      "cross_carrier_status": "certificate_shadow_negative_realization_control",
+      "handoff_shape": "certificate_replication_without_package_transport",
+      "branch_graph": "source plus certificate-bearing target",
+      "clock_relation": "certificate timestamps may be replayed without sharing source temporal closure",
+      "causal_structure": "information copy of audit artifact rather than stipulated package process",
+      "fidelity_scope": "exact certificate bytes/verifier outputs only",
+      "autonomy_intervention": "remove source and certificate-generation service; allow target to continue with only stored certificate",
+      "instrument_constraints": "certificate-only instruments cannot detect the stipulated package mismatch",
+      "variants": [
+        "forged certificate",
+        "honest but stale certificate",
+        "certificate generated by source each query",
+        "partial package implementation"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D04",
+        "D08",
+        "D09"
+      ],
+      "stress_questions": [
+        "What theorem would connect verifier acceptance to target package realization?",
+        "Which package clause fails despite exact certificate equality?",
+        "Can certificate transport be a valid S-T claim while S-R remains negative?",
+        "What recognition instruments can escape the certificate interface?"
+      ],
+      "blocked_inferences": [
+        "Certificate equality is not package equality.",
+        "Verifier acceptance is not certificate soundness.",
+        "An honest source certificate does not transfer its referent by copying.",
+        "Auditability is not ontology."
+      ],
+      "asset_focus": [
+        "A-CT-01",
+        "A-NO-01",
+        "A-HID-01",
+        "A-FS-01",
+        "A-PT-01"
+      ],
+      "question_focus": [
+        "Q-PRS-004",
+        "Q-OBS-001",
+        "Q-OBS-002",
+        "Q-ASM-006",
+        "Q-ASM-007",
+        "Q-CTL-003"
+      ]
+    },
+    {
+      "id": "S31",
+      "number": 31,
+      "title": "Event package assembled from locally admissible edges",
+      "canonical_prompt": "Every source-target pairwise relation is locally admissible, but their joint event package is not assumed to exist.",
+      "purpose": "Sharpen the difference between pairwise continuation evidence and a globally coherent cross-carrier episode.",
+      "facts": [
+        "A protocol records pairwise matches for identity, role, time, memory, and action relations across source and target interfaces.",
+        "Every pairwise record passes its local admissibility predicate.",
+        "No global event-package witness satisfying all compatibility conditions is stipulated.",
+        "The target can answer each local query separately."
+      ],
+      "episode_graph": "local edges e_i: S_i -> T_i; attempted joint package E_T=?",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "abrupt_translation",
+      "source_fate": "erased_after_activation",
+      "target_timing": "delayed_activation",
+      "branching": "one_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "exact",
+      "reversibility": "irreversible",
+      "route_multiplicity": "multiple_equivalent_routes",
+      "granularity": "event_package",
+      "secondary_modes": "",
+      "cross_carrier_status": "local_global_package_obstruction_case",
+      "handoff_shape": "pairwise_record_transfer_without_joint_witness",
+      "branch_graph": "one declared endpoint pair with many local relation channels",
+      "clock_relation": "locally compatible clock comparisons may lack one global temporal assignment",
+      "causal_structure": "local bridge family with possibly inconsistent overlaps",
+      "fidelity_scope": "exact local edge matches only; global gluing and recombination remain open",
+      "autonomy_intervention": "remove source/local-query oracle and require one target-native joint package",
+      "instrument_constraints": "one-query-at-a-time probes cannot expose joint incompatibility without recombination tests",
+      "variants": [
+        "one inconsistent triple overlap",
+        "nontrivial cocycle",
+        "representative-dependent glue",
+        "globally consistent positive control"
+      ],
+      "primary_discriminators": [
+        "D02",
+        "D04",
+        "D07",
+        "D08"
+      ],
+      "stress_questions": [
+        "What exact compatibility condition turns local bridges into one event package?",
+        "Can a candidate mistakenly infer lineage from separately accepted edges?",
+        "Which recombination query exposes the obstruction?",
+        "Does source withdrawal remove the oracle that kept local answers consistent?"
+      ],
+      "blocked_inferences": [
+        "All pairwise matches do not imply a global package.",
+        "Local admissibility is not compositional by default.",
+        "One-at-a-time report agreement can hide joint inconsistency.",
+        "A global witness cannot be assumed from notation."
+      ],
+      "asset_focus": [
+        "A-EV-01",
+        "A-LG-01",
+        "A-RE-01",
+        "A-CF-01",
+        "A-NO-01"
+      ],
+      "question_focus": [
+        "Q-PRS-006",
+        "Q-PRS-010",
+        "Q-RTE-002",
+        "Q-RTE-007",
+        "Q-LIN-010",
+        "Q-CTL-004"
+      ]
+    },
+    {
+      "id": "S32",
+      "number": 32,
+      "title": "Approximately reversible round trip with accumulated residual",
+      "canonical_prompt": "Source-to-target-to-source transport nearly recovers the start, but repeated cycles accumulate a structured defect.",
+      "purpose": "Separate one-cycle closeness from stable approximate transport, flatness, and long-horizon package viability.",
+      "facts": [
+        "A disjoint target is reached by an approximate bridge and returned by an approximate inverse.",
+        "One round trip stays within a declared defect bound.",
+        "Repeated cycles accumulate a directional residual in a named predictive or memory coordinate.",
+        "Public outputs remain within tolerance for more cycles than the hidden/package coordinate."
+      ],
+      "episode_graph": "E_S --B--> E_T --C--> E_S' ; repeat k times",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "abrupt_translation",
+      "source_fate": "paused",
+      "target_timing": "delayed_activation",
+      "branching": "one_to_one",
+      "bridge_dependence": "removable",
+      "fidelity": "residual_bounded",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "holonomy_bearing_routes",
+      "granularity": "predictive_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "approximate_composition_stress_case",
+      "handoff_shape": "repeatable_round_trip",
+      "branch_graph": "one episode path revisiting source-typed support",
+      "clock_relation": "cycle count plus local clocks; return need not reset temporal phase",
+      "causal_structure": "iterated approximate transport with systematic rather than iid residual",
+      "fidelity_scope": "named metric and one-cycle bound; composition law and package threshold are not assumed",
+      "autonomy_intervention": "remove correction/calibration bridge at the target and test target-local stability before return",
+      "instrument_constraints": "public tolerance can mask monotone hidden drift",
+      "variants": [
+        "contractive residual",
+        "linear accumulation",
+        "noncommuting route errors",
+        "threshold crossing after k cycles"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D05",
+        "D07",
+        "D08",
+        "D09"
+      ],
+      "stress_questions": [
+        "Does the candidate provide a composition theorem for defects?",
+        "Which metric is relevant to package and lineage claims?",
+        "Can small one-cycle error produce route holonomy or eventual viability failure?",
+        "What cycle count or invariant region defines an adequate test?"
+      ],
+      "blocked_inferences": [
+        "One-cycle closeness is not stable approximation.",
+        "Approximate inverse is not flat transport.",
+        "Public tolerance does not bound hidden drift.",
+        "A defect bound without a composition law is incomplete."
+      ],
+      "asset_focus": [
+        "A-RT-01",
+        "A-HO-01",
+        "A-CF-01",
+        "A-VI-01",
+        "A-QEC-01"
+      ],
+      "question_focus": [
+        "Q-APP-001",
+        "Q-APP-002",
+        "Q-APP-003",
+        "Q-APP-005",
+        "Q-RTE-003",
+        "Q-BRG-007"
+      ]
+    },
+    {
+      "id": "S33",
+      "number": 33,
+      "title": "Dormant backup activated after source erasure",
+      "canonical_prompt": "A target backup is created while the source lives, remains inert for a long interval, and activates only after source erasure.",
+      "purpose": "Distinguish creation time, activation time, causal provenance, temporal gap, and the possibility of a dormant but nonoperating target structure.",
+      "facts": [
+        "A disjoint target backup is written from the source and then kept dynamically inert.",
+        "The source continues and acquires new history not included in the backup.",
+        "The source is later erased; after another interval the old backup is activated.",
+        "The activated target exactly matches the source only at backup time and is otherwise historically stale."
+      ],
+      "episode_graph": "E_S(t0) -> dormant B_T; E_S(t1) erased; gap; B_T activates as E_T",
+      "carrier_relation": "disjoint_support",
+      "change_mode": "checkpoint_restart",
+      "source_fate": "erased_before_activation",
+      "target_timing": "temporal_gap",
+      "branching": "one_to_many",
+      "bridge_dependence": "temporary",
+      "fidelity": "lossy",
+      "reversibility": "irreversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "predictive_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "genuine_cross_carrier_stale_backup_case",
+      "handoff_shape": "early_copy_late_activation",
+      "branch_graph": "source continues beyond backup fork; dormant target later activates",
+      "clock_relation": "backup snapshot time, source terminal time, and target activation time are distinct",
+      "causal_structure": "source-derived dormant record with missing post-backup causal history",
+      "fidelity_scope": "exact at snapshot predictive state but lossy relative to the source terminal episode",
+      "autonomy_intervention": "remove restoration service and all source archives after activation",
+      "instrument_constraints": "target may report snapshot-consistent history while lacking later source events",
+      "variants": [
+        "short versus long staleness",
+        "periodic incremental updates",
+        "source knowingly authorizes backup",
+        "multiple dormant backups"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D03",
+        "D06",
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "stress_questions": [
+        "Which source time is the candidate's lineage endpoint?",
+        "Does a dormant record participate in lineage before activation?",
+        "How is missing post-backup action-credit history represented?",
+        "Does later source erasure alter the backup's earlier status?"
+      ],
+      "blocked_inferences": [
+        "A backup is not an active target episode by definition.",
+        "Later activation does not retroactively include missing history.",
+        "Source erasure does not update a stale record.",
+        "Snapshot fidelity is time-indexed."
+      ],
+      "asset_focus": [
+        "A-PQ-02",
+        "A-TM-01",
+        "A-OP-01",
+        "A-PT-01",
+        "A-AG-01"
+      ],
+      "question_focus": [
+        "Q-TYP-008",
+        "Q-LIN-003",
+        "Q-LIN-008",
+        "Q-PRS-009",
+        "Q-AUT-002",
+        "Q-OBS-007"
+      ]
+    },
+    {
+      "id": "S34",
+      "number": 34,
+      "title": "Overlap transfer that degrades the source",
+      "canonical_prompt": "Source-target coupling improves target fidelity while progressively damaging the source package.",
+      "purpose": "Test whether a candidate tracks asymmetric costs, source-side viability, and whether target success can coexist with source failure during overlap.",
+      "facts": [
+        "A temporary bridge couples source and target during transfer.",
+        "Each transfer stage improves a declared target fidelity measure but consumes or perturbs source resources.",
+        "The source crosses a viability/package boundary before final target handoff.",
+        "The target may or may not be autonomous after bridge withdrawal; that remains a separate test."
+      ],
+      "episode_graph": "E_S viable + E_T immature -> coupled transfer -> E_S fails; E_T candidate",
+      "carrier_relation": "partially_overlapping_support",
+      "change_mode": "live_migration",
+      "source_fate": "degrades",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_one",
+      "bridge_dependence": "temporary",
+      "fidelity": "adaptive",
+      "reversibility": "irreversible",
+      "route_multiplicity": "unique_route",
+      "granularity": "package_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "asymmetric_cost_cross_carrier_case",
+      "handoff_shape": "source_consuming_overlap",
+      "branch_graph": "one source-target coupled trajectory with source-side terminal failure",
+      "clock_relation": "shared transfer stages plus separate source/target viability times",
+      "causal_structure": "directed resource/information extraction with asymmetric disturbance",
+      "fidelity_scope": "target fidelity rises under a source-cost ledger; no conservation or identity interpretation is built in",
+      "autonomy_intervention": "withdraw bridge immediately after source failure and audit target maintenance",
+      "instrument_constraints": "target-facing success metrics can hide source-side degradation unless both ledgers are observed",
+      "variants": [
+        "reversible small perturbations",
+        "catastrophic source threshold",
+        "source repair during transfer",
+        "target fidelity saturates before source failure"
+      ],
+      "primary_discriminators": [
+        "D03",
+        "D05",
+        "D06",
+        "D08",
+        "D09"
+      ],
+      "stress_questions": [
+        "Does source failure have any formal effect on target lineage, or only on protocol ethics/cost?",
+        "Can target fidelity be purchased by erasing source predictive information?",
+        "Which ledger records the transfer's asymmetric resource use?",
+        "Does target maintenance continue without the damaged source?"
+      ],
+      "blocked_inferences": [
+        "Source damage is not evidence of target continuation.",
+        "A costly process is not necessarily more identity-preserving.",
+        "Target success does not imply source preservation.",
+        "Source terminal failure does not establish target autonomy."
+      ],
+      "asset_focus": [
+        "A-VI-01",
+        "A-AG-01",
+        "A-PQ-02",
+        "A-OP-01",
+        "A-PT-01"
+      ],
+      "question_focus": [
+        "Q-PRS-007",
+        "Q-LIN-008",
+        "Q-AUT-001",
+        "Q-AUT-004",
+        "Q-APP-004",
+        "Q-CTL-005"
+      ]
+    },
+    {
+      "id": "S35",
+      "number": 35,
+      "title": "Replacement-order critical pair",
+      "canonical_prompt": "Two locally admissible replacement orders reach publicly identical endpoints but differ in hidden/package residue.",
+      "purpose": "Provide a minimal confluence and path-independence test for gradual transfer protocols.",
+      "facts": [
+        "Two source components A and B can each be replaced by target components A' and B' using locally admissible steps.",
+        "Route r1 replaces A then B; route r2 replaces B then A.",
+        "Both routes yield the same declared public endpoint and carrier inventory.",
+        "A predictive, memory, action-credit, or binding residue differs unless an additional commutation/confluence condition holds."
+      ],
+      "episode_graph": "S --replace A--> X --replace B--> T; S --replace B--> Y --replace A--> T'",
+      "carrier_relation": "partially_overlapping_support",
+      "change_mode": "gradual_replacement",
+      "source_fate": "erased_after_activation",
+      "target_timing": "continuous_overlap",
+      "branching": "one_to_many",
+      "bridge_dependence": "removable",
+      "fidelity": "exact",
+      "reversibility": "approximately_reversible",
+      "route_multiplicity": "holonomy_bearing_routes",
+      "granularity": "package_state",
+      "secondary_modes": "",
+      "cross_carrier_status": "route_confluence_stress_case",
+      "handoff_shape": "critical_pair_of_local_replacements",
+      "branch_graph": "one source with two protocol routes to endpoint-equivalent targets",
+      "clock_relation": "two stage orders with comparable endpoints but different intermediate histories",
+      "causal_structure": "noncommuting local updates under a shared public endpoint comparison",
+      "fidelity_scope": "exact public endpoint and local step tests; global predictive/package equality is not stipulated",
+      "autonomy_intervention": "remove all source/bridge components after each route and compare target-native maintenance",
+      "instrument_constraints": "endpoint-only audits miss route residue; intermediate and recombination probes are required",
+      "variants": [
+        "commuting positive control",
+        "one-way critical pair",
+        "three-component braid",
+        "residual-bounded near-confluence"
+      ],
+      "primary_discriminators": [
+        "D01",
+        "D02",
+        "D04",
+        "D06",
+        "D07",
+        "D09",
+        "D10"
+      ],
+      "stress_questions": [
+        "What condition makes the replacement system confluent on the transported object?",
+        "Can route-dependent endpoints receive different lineage verdicts despite public equality?",
+        "Which hidden residue is operationally detectable by recombination or future continuation?",
+        "Does autonomy differ across the two routes?"
+      ],
+      "blocked_inferences": [
+        "Same endpoint inventory is not same transported object.",
+        "Local admissibility is not confluence.",
+        "Gradual replacement order is not automatically irrelevant.",
+        "A path-independent public shadow can conceal holonomy."
+      ],
+      "asset_focus": [
+        "A-CF-01",
+        "A-HO-01",
+        "A-RT-01",
+        "A-RE-01",
+        "A-LG-01"
+      ],
+      "question_focus": [
+        "Q-RTE-001",
+        "Q-RTE-002",
+        "Q-RTE-003",
+        "Q-RTE-007",
+        "Q-LIN-010",
+        "Q-CTL-004"
+      ]
+    }
+  ]
+}

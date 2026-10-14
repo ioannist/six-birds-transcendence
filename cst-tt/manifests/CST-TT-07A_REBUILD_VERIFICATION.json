@@ -1,0 +1,467 @@
+{
+  "base_commit": "6c8f510c67087a8db9dd1c4107008b3b7cfb0847",
+  "base_resolved": "6c8f510c67087a8db9dd1c4107008b3b7cfb0847",
+  "base_tag": "CST-TT-06-v1",
+  "builder_returncode": 0,
+  "byte_identical_surface_count": 90,
+  "generated_surface_count": 90,
+  "mismatches": [],
+  "phase": "CST-TT-07A",
+  "project": "CST-TT",
+  "pytest_returncode": 0,
+  "schema_version": "1.0",
+  "status": "PASS",
+  "surfaces": [
+    {
+      "path": "CHANGELOG.md",
+      "reproduced": true,
+      "sha256": "26353910c10a0f15ee25537dda2196f66e4aa133027c510a11f58d36968d1f12"
+    },
+    {
+      "path": "README.md",
+      "reproduced": true,
+      "sha256": "37500630b9d19ffe700c7908395443fe4266f2026b6ba21a361045832247d617"
+    },
+    {
+      "path": "RESTORE_AND_VERIFY.md",
+      "reproduced": true,
+      "sha256": "55e12049a751f04f0456292e44d870d060592b6fb8c92c690302d7b8548851ee"
+    },
+    {
+      "path": "STATE.md",
+      "reproduced": true,
+      "sha256": "aab025fd95e538383d865e7470445a0ad96ad4cfd3192bc054588427a0d82701"
+    },
+    {
+      "path": "STATUS.md",
+      "reproduced": true,
+      "sha256": "8567a2dcdfb7dd3ea8e33eca7ae6dd05a90c80f6dd3e17ca93b8edfc22a26e75"
+    },
+    {
+      "path": "changelog/CST-TT-07A.md",
+      "reproduced": true,
+      "sha256": "8723c8ee73f92c4cd56eef0a35c4485f57968d3b5e18200659fcca4b27a9240a"
+    },
+    {
+      "path": "docs/CST-TT-07A_BOUNDED_TEMPORAL_ROBUSTNESS.md",
+      "reproduced": true,
+      "sha256": "c79de390f14b6ae2255e65e02d527cf3cb6dc7e41d6c8c5c5736ccc4aad9698a"
+    },
+    {
+      "path": "docs/CST-TT-07A_DECISION_GATE.md",
+      "reproduced": true,
+      "sha256": "5663cb4d2e96bfc81d910ccd8adb30498e566dc0d9cc772b3696a130f9474f90"
+    },
+    {
+      "path": "docs/CST-TT-07A_DIRECT_SUCCESSOR_RELATION.md",
+      "reproduced": true,
+      "sha256": "d7229965e000aef4ce1b239f0c0a4b98a087a82988cfca90477fdfb0f66dc931"
+    },
+    {
+      "path": "docs/CST-TT-07A_EXACT_VECTOR_DEFECT_SEMANTICS.md",
+      "reproduced": true,
+      "sha256": "83fa60e446df37dd7f59d3282f4b169044f6b4b9dfd99d10f0f5f26f9e5c351e"
+    },
+    {
+      "path": "docs/CST-TT-07A_MODEL_RELATIVE_UNBOUNDED_INVARIANCE.md",
+      "reproduced": true,
+      "sha256": "916cdfb0d005f4b58b1052e702f710e81b0d470655fa89d5bc327dd51b829c05"
+    },
+    {
+      "path": "docs/CST-TT-07A_PRIMARY_STRENGTHENING_SYNTHESIS.md",
+      "reproduced": true,
+      "sha256": "db5cdc4d3c44164c9b4514f8433cd622aeca7faf532813d69458fbe816a4ab81"
+    },
+    {
+      "path": "docs/PHASE_BOUNDARY.md",
+      "reproduced": true,
+      "sha256": "da664b98363c2728ccddd0048160a7be41cc5eda218d6f35f51ffb2f23341bae"
+    },
+    {
+      "path": "docs/RESTORE_AND_BUILD.md",
+      "reproduced": true,
+      "sha256": "55e12049a751f04f0456292e44d870d060592b6fb8c92c690302d7b8548851ee"
+    },
+    {
+      "path": "examples/scaffold/defect_profile_certificate.scaffold.json",
+      "reproduced": true,
+      "sha256": "3d96550cd5493626f47e09c30c3f5abe8c5844f8fea974213f4713b7fe56c970"
+    },
+    {
+      "path": "examples/scaffold/generalized_continuity_certificate.scaffold.json",
+      "reproduced": true,
+      "sha256": "5c39728b74aec79415e4c9833c81a35c25c45386dc31ac00fceb37fade0b71a2"
+    },
+    {
+      "path": "examples/scaffold/temporal_robustness_certificate.scaffold.json",
+      "reproduced": true,
+      "sha256": "a5030b3da88bacd523ee8c053301e0c1d673031db56d6faf61aa604a00495976"
+    },
+    {
+      "path": "examples/scaffold/unbounded_invariant_certificate.scaffold.json",
+      "reproduced": true,
+      "sha256": "87bd192053c73951f7215ed81d26f35a32e72d0b7d95ebf7960a761fa25350e2"
+    },
+    {
+      "path": "formal/README.md",
+      "reproduced": true,
+      "sha256": "432c8728b468c4bd90e4f9f39fc70cbbfd1a53e6e0dd2b677baa433533fc3330"
+    },
+    {
+      "path": "formal/TOOLCHAIN_STATUS.json",
+      "reproduced": true,
+      "sha256": "5abe194300a1e3efd27fa8dd931aeaec8162b0047a18b18e4c5d94f2fa2f177e"
+    },
+    {
+      "path": "formal/certificates/search/ARBITRARILY_LONG_FINITE_PREFIX_FAMILY.json",
+      "reproduced": true,
+      "sha256": "48c86f1eb40b5cf52904b423d7adabfd5469ff7f3c77c9c367321470ec47843c"
+    },
+    {
+      "path": "formal/certificates/search/BOUNDED_TEMPORAL_MARGIN_EXHAUSTION.json",
+      "reproduced": true,
+      "sha256": "dd12c8efe277f60006877a72bbb69df42fb7f650e8a4075bad3582caf7f784cf"
+    },
+    {
+      "path": "formal/certificates/search/OVERLAP_DIRECT_RELATION_TRUTH_TABLE.json",
+      "reproduced": true,
+      "sha256": "5fcb72cb452402f4f5521ae14570229ea55a7d7d257bb3b5f373c0d956351ee1"
+    },
+    {
+      "path": "formal/certificates/search/UNBOUNDED_POLICY_PREFIX_STRESS.json",
+      "reproduced": true,
+      "sha256": "0586d6d477f0d3e6060d7403e1ebc216d935e54f77a2406f7bcd0ba1d7a263d6"
+    },
+    {
+      "path": "formal/certificates/search/VECTOR_DEFECT_DOWNWARD_CLOSURE.json",
+      "reproduced": true,
+      "sha256": "3bc6bfe3f97d679c79810af2d1a7546767b7f4a446dd0f57a446881212f80a75"
+    },
+    {
+      "path": "formal/certificates/search/VECTOR_DEFECT_EXHAUSTION.json",
+      "reproduced": true,
+      "sha256": "cc2b9c1421bea06965072e2c014639d190dcf50fd613be5f04b19319921a9157"
+    },
+    {
+      "path": "formal/certificates/strengthenings/continuity/GCP-DIRECT-01.certificate.json",
+      "reproduced": true,
+      "sha256": "d0845173912970ad662eba5c39366005c2881d7d00b29719fad6c2e9a014b995"
+    },
+    {
+      "path": "formal/certificates/strengthenings/continuity/GCP-MIXED-01.certificate.json",
+      "reproduced": true,
+      "sha256": "7ff5b79f28693ac8d9c6b9b54094064cdf893b4865b882d8853b02be73cf8fd1"
+    },
+    {
+      "path": "formal/certificates/strengthenings/continuity/GCP-OVERLAP-01.certificate.json",
+      "reproduced": true,
+      "sha256": "3b940d23ce6b54538a098db1ea134f1f7cb42cedc1fa06d3e2377e49548bdae8"
+    },
+    {
+      "path": "formal/certificates/strengthenings/continuity/ODR-01.certificate.json",
+      "reproduced": true,
+      "sha256": "452a4cca0548fe63fd95a4965b59afdbbdf6406029734f7643e4eeaf5ca5ce29"
+    },
+    {
+      "path": "formal/certificates/strengthenings/defects/DEF-EQUAL-SCALAR-01.certificate.json",
+      "reproduced": true,
+      "sha256": "5a1a0270be0c9e771b99e54935accdac0128c44ba55f00217fa95c843f9605b6"
+    },
+    {
+      "path": "formal/certificates/strengthenings/defects/DEF-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "449f72c53b618b1d7acbe81f069034b2610c212468700dadbecb5995dc08a471"
+    },
+    {
+      "path": "formal/certificates/strengthenings/defects/controls/DEF-C01.certificate.json",
+      "reproduced": true,
+      "sha256": "ed3cba38ecc254cc73ed0afcc83a9a0488f5621bf234ad5827f341db226d3de2"
+    },
+    {
+      "path": "formal/certificates/strengthenings/defects/controls/DEF-C02.certificate.json",
+      "reproduced": true,
+      "sha256": "440b384b5cc994228711d6fbf89bf0987a220685ec51c64b88635420f10db084"
+    },
+    {
+      "path": "formal/certificates/strengthenings/defects/controls/DEF-C03.certificate.json",
+      "reproduced": true,
+      "sha256": "eea3072d3a58e0c3314ba894f7064aa8d1f360013d684da33150601b8d3ab241"
+    },
+    {
+      "path": "formal/certificates/strengthenings/defects/controls/DEF-C04.certificate.json",
+      "reproduced": true,
+      "sha256": "f90f5495d717310ff54a2735807faa4a5eeb6cc8dfe32e41b430b3647a9518b6"
+    },
+    {
+      "path": "formal/certificates/strengthenings/defects/controls/DEF-C05.certificate.json",
+      "reproduced": true,
+      "sha256": "d660d23c2f3900f9ceaedb2d8a117f5fe90aa07cf92686ddf573c4ba02bf884f"
+    },
+    {
+      "path": "formal/certificates/strengthenings/defects/controls/DEF-C06.certificate.json",
+      "reproduced": true,
+      "sha256": "37a63a278f155b10602084d53657f346b749fb53068e3d39da2fee315e2ed97a"
+    },
+    {
+      "path": "formal/certificates/strengthenings/direct/DS-POS-03-MIXED-MODE.certificate.json",
+      "reproduced": true,
+      "sha256": "79298c8df858b4ca46977f126ce570e2b0c857c3dabcdadcd33f7c5ca5181064"
+    },
+    {
+      "path": "formal/certificates/strengthenings/robustness/ROB-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "b26a1ad2a66df6b0cec52c699b9ccccd691e000c3e50c394ef05e2e8d12addb3"
+    },
+    {
+      "path": "formal/certificates/strengthenings/robustness/controls/ROB-C01.certificate.json",
+      "reproduced": true,
+      "sha256": "5905fa042401621d7ea5e3a8a76095f704fc1539c9fd6169a110fe222e4b43cd"
+    },
+    {
+      "path": "formal/certificates/strengthenings/robustness/controls/ROB-C02.certificate.json",
+      "reproduced": true,
+      "sha256": "f2b46c2faad91c1a9982613227d63df83a1332a4d70d14b0fecc5a41abb26710"
+    },
+    {
+      "path": "formal/certificates/strengthenings/robustness/controls/ROB-C03.certificate.json",
+      "reproduced": true,
+      "sha256": "df0d06038848c0bd4a358cdbf789399ceae704511edfa6f62b88d386d7ff4caa"
+    },
+    {
+      "path": "formal/certificates/strengthenings/robustness/controls/ROB-C04.certificate.json",
+      "reproduced": true,
+      "sha256": "f7f433aa4d3d7390051d56956b166642b318c869d2a6933a609dffa677367a3b"
+    },
+    {
+      "path": "formal/certificates/strengthenings/robustness/controls/ROB-C05.certificate.json",
+      "reproduced": true,
+      "sha256": "e62fadf73abc3db4d88ecd538526fcc5395e38d73fc355069a79f5152b271a8a"
+    },
+    {
+      "path": "formal/certificates/strengthenings/robustness/controls/ROB-C06.certificate.json",
+      "reproduced": true,
+      "sha256": "ffb1adb1829343ca3cdcfc8656372366b974aecda6e00e216d472e1311221188"
+    },
+    {
+      "path": "formal/certificates/strengthenings/unbounded/UNB-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "4025111c53ac2a3959e9e7a3319dcc109763a8cc815d4c11fdcf2031318c73bd"
+    },
+    {
+      "path": "manifests/COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "f70e0d207eece64737b1ccf616ba8f0b1533370f65ba2055c6276b26ea79ba43"
+    },
+    {
+      "path": "manifests/CST-TT-07A_COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "f70e0d207eece64737b1ccf616ba8f0b1533370f65ba2055c6276b26ea79ba43"
+    },
+    {
+      "path": "manifests/CST-TT-07A_MODEL_CERTIFICATE_DELTA.csv",
+      "reproduced": true,
+      "sha256": "8b444c84a328f7d1e0e610a4e251810ac1d2190c8c7f1a1be88239e83c150bc5"
+    },
+    {
+      "path": "manifests/CST-TT-07A_PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "4f1050f01254d1d90f77d4dfa866508897757db76e2ef38d7d118f92944cba97"
+    },
+    {
+      "path": "manifests/CST-TT-07A_THEOREM_STATUS_DELTA.csv",
+      "reproduced": true,
+      "sha256": "b52a64568847048db0b0b3d259387653ffea52386fb5f30ef1cb78ed4f12ca9d"
+    },
+    {
+      "path": "manifests/PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "4f1050f01254d1d90f77d4dfa866508897757db76e2ef38d7d118f92944cba97"
+    },
+    {
+      "path": "models/strengthenings/continuity/GCP-DIRECT-01.model.json",
+      "reproduced": true,
+      "sha256": "97a73b065adb0352d759963273e5b0ba5d1a6188236fcace704ee2b84fece078"
+    },
+    {
+      "path": "models/strengthenings/continuity/GCP-MIXED-01.model.json",
+      "reproduced": true,
+      "sha256": "574de9123186614eae4730b70ec8d99c376e358f7ffa09a39cbc6a06edaafbe5"
+    },
+    {
+      "path": "models/strengthenings/continuity/GCP-OVERLAP-01.model.json",
+      "reproduced": true,
+      "sha256": "d5cc1b59e22a6226bd4d3f699dc37f60ee81b57670a6dcdb111e24622b6a86cc"
+    },
+    {
+      "path": "models/strengthenings/continuity/ODR-01.model.json",
+      "reproduced": true,
+      "sha256": "c005961bf75cc77964d020374af6a7f635362ee8d2e9474a9cc0ee361a9a1b2c"
+    },
+    {
+      "path": "models/strengthenings/defects/DEF-EQUAL-SCALAR-ACCEPTED.model.json",
+      "reproduced": true,
+      "sha256": "0c0f0e6aed1b8364459e59b2c096b0680a6ae5e40f620942ac34b9b4f65b8837"
+    },
+    {
+      "path": "models/strengthenings/defects/DEF-EQUAL-SCALAR-REJECTED.model.json",
+      "reproduced": true,
+      "sha256": "95b56feeae2310bbd78bf3bb2b2c90ccbff279c667e2030cfc6e4c9670e93aa8"
+    },
+    {
+      "path": "models/strengthenings/defects/DEF-POS-01.model.json",
+      "reproduced": true,
+      "sha256": "5ddd2973377758549eb0de7549b81ed8ac135e8e158c8e74af88e63dc5ac2eac"
+    },
+    {
+      "path": "models/strengthenings/defects/controls/DEF-C01.model.json",
+      "reproduced": true,
+      "sha256": "ad60210994e7d1b5a89585466f1ee7e71e0793d56f1e5ce710e9d728031cd60c"
+    },
+    {
+      "path": "models/strengthenings/defects/controls/DEF-C02.model.json",
+      "reproduced": true,
+      "sha256": "aa8d6cef542c8a443c93ebfa008475cb842f8929fb3fb931d8cb3d99a48dfbae"
+    },
+    {
+      "path": "models/strengthenings/defects/controls/DEF-C03.model.json",
+      "reproduced": true,
+      "sha256": "39039e3ebc09cf3bf74e8508c9fbe266197279b8aa9c56f9682ef096c9185ee5"
+    },
+    {
+      "path": "models/strengthenings/defects/controls/DEF-C04.model.json",
+      "reproduced": true,
+      "sha256": "f3006ae84989d2bf72759310030e40183bdcf04476a15e6e4b356afd8001feef"
+    },
+    {
+      "path": "models/strengthenings/defects/controls/DEF-C05.model.json",
+      "reproduced": true,
+      "sha256": "92447ee1e840c90433f2795d88f15cd1c0c9d73ea823cac145394ed17d25d6cf"
+    },
+    {
+      "path": "models/strengthenings/defects/controls/DEF-C06.model.json",
+      "reproduced": true,
+      "sha256": "6253625d2b535f60feaf8290499df20df394115525705bc4aa939711436fe0f6"
+    },
+    {
+      "path": "models/strengthenings/direct/DS-POS-03-MIXED-MODE.model.json",
+      "reproduced": true,
+      "sha256": "35cb174ad5c16de7bdf011a538f1b3ea4462b78869b4ee5cc7f44355b4513255"
+    },
+    {
+      "path": "models/strengthenings/robustness/ROB-POS-01.model.json",
+      "reproduced": true,
+      "sha256": "dd4947c7ccd53208e849bf734d98c8a508bfa934f9770988c740a69c68ca8de6"
+    },
+    {
+      "path": "models/strengthenings/robustness/controls/ROB-C01.model.json",
+      "reproduced": true,
+      "sha256": "9823ea0c7ad6710c1d7d49e2d48f0abd3e2eba779253e32bb8d98ea6421fa39e"
+    },
+    {
+      "path": "models/strengthenings/robustness/controls/ROB-C02.model.json",
+      "reproduced": true,
+      "sha256": "64d7aa5453ed4f51388e11ba18de8dde44106d248e67e95dbbbfdf3fdbffcf7e"
+    },
+    {
+      "path": "models/strengthenings/robustness/controls/ROB-C03.model.json",
+      "reproduced": true,
+      "sha256": "55d3cef6fbd9b455b7f51e3cce485369fe1d31be50993835fb01124e98e5244b"
+    },
+    {
+      "path": "models/strengthenings/robustness/controls/ROB-C04.model.json",
+      "reproduced": true,
+      "sha256": "94ed2b6a4d1b86d38c93d9bf9adf06a5802fec67c682e50d1ae48c71c54ab543"
+    },
+    {
+      "path": "models/strengthenings/robustness/controls/ROB-C05.model.json",
+      "reproduced": true,
+      "sha256": "9dba838ac13886db7582b7a44dea5ab1c3edf84546c36f2eb91027ae7ff24b91"
+    },
+    {
+      "path": "models/strengthenings/robustness/controls/ROB-C06.model.json",
+      "reproduced": true,
+      "sha256": "b5dab8b3eb094d3c14bfd04622dc4c211165f7a9ea29e235ebe18a3fbad1f0c5"
+    },
+    {
+      "path": "models/strengthenings/unbounded/UNB-POS-01.model.json",
+      "reproduced": true,
+      "sha256": "23eb129fb9901ad049b2332a3dd5a55b70aca89e66a73f5ab6585b125365ecf1"
+    },
+    {
+      "path": "registries/ASSUMPTION_LEDGER.csv",
+      "reproduced": true,
+      "sha256": "6b50207be337431938ca4efd86773f0d1803d5e7f395f40ba8ce5438f92770e7"
+    },
+    {
+      "path": "registries/CERTIFICATE_SCHEMA_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "761f8dbf91beda14fd984570be862b554228527812a50a0840ad0d5d19aca26e"
+    },
+    {
+      "path": "registries/DEFECT_PROFILE_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "e5bc9c1780a178c3c49246f3803436669480e2a5216ab7c911c932c3889ae5c1"
+    },
+    {
+      "path": "registries/DEFINITION_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "dd0f8dc2fc53ecd32f0501cedc509ebb0c19bb56f26f3cb47d1d84cd1f08210a"
+    },
+    {
+      "path": "registries/DEPENDENCY_EDGES.csv",
+      "reproduced": true,
+      "sha256": "59156b7183dd34c73ee8aeeed1c17f3e73d4bde70178c19c6facc0eddf8d3a9e"
+    },
+    {
+      "path": "registries/KILL_CRITERIA.csv",
+      "reproduced": true,
+      "sha256": "24d5363339b6a46772e5673bf9cd887319e9e1703641f3e371cdbe844e83d4a9"
+    },
+    {
+      "path": "registries/PROJECT_REGISTRY.json",
+      "reproduced": true,
+      "sha256": "fb9e4356383a3218cd53efd940c96f77fa1af32c6096f561882575d72e28c112"
+    },
+    {
+      "path": "registries/ROBUSTNESS_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "b219bd60e25614246b9033dc154f0018611ce8704eff000b37628ca573d8f4e0"
+    },
+    {
+      "path": "registries/THEOREM_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "390f692600eaf07e90595872cbcc9fed9e1bbcef3d5cc0cbaebce32be7a7e666"
+    },
+    {
+      "path": "registries/TOY_MODEL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "c8b04d8c9dd202d409b6dc17fe0bbe123aa8a2f7ab3eb8872d2e9f9e2d576c7a"
+    },
+    {
+      "path": "registries/UNBOUNDED_INVARIANT_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "aeec93a3b74921bd0f946925b86c16694b929fdaabe1fdc8d69360482dc171c9"
+    },
+    {
+      "path": "schemas/certificates/defect_profile_certificate.schema.json",
+      "reproduced": true,
+      "sha256": "0ac4f21f02a224221b3d152a0c95d0b7321fbb0d94ef47cf795b62e76372867e"
+    },
+    {
+      "path": "schemas/certificates/generalized_continuity_certificate.schema.json",
+      "reproduced": true,
+      "sha256": "c0c1850d95e9f1260f7b22746222c89be4e98e160d2c4fa78aed12a591072c3f"
+    },
+    {
+      "path": "schemas/certificates/temporal_robustness_certificate.schema.json",
+      "reproduced": true,
+      "sha256": "d2b6dbe6f9f5c5f9a4b4891ab378c1a5af70a065b0ed150637e4a8f39f04dbfe"
+    },
+    {
+      "path": "schemas/certificates/unbounded_invariant_certificate.schema.json",
+      "reproduced": true,
+      "sha256": "6aec1d4c08bba49abf5c579369e2e9c7ccf17b533f92a7af1a3d25a4773be819"
+    }
+  ],
+  "validator_returncode": 0
+}

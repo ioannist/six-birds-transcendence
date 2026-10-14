@@ -1,0 +1,139 @@
+{
+  "$defs": {
+    "carrier": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "label": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "label"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://six-birds.local/cst-tt/schemas/temporal_signature.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Defines the transported temporal object before any corridor or target relation.",
+  "properties": {
+    "arrow_record": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "carrier": {
+      "$ref": "#/$defs/carrier"
+    },
+    "endogenous_arrow_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "future_sufficiency_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "genuine_progress_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "maintenance_ownership_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "maintenance_state": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "order_state": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "predictive_class": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "progress_state": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "route_residue": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "schema_version": {
+      "const": "CST-TT-00"
+    },
+    "state_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "tick_phase": {
+      "type": [
+        "string",
+        "integer"
+      ]
+    },
+    "tick_viability_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "carrier",
+    "state_id",
+    "predictive_class",
+    "route_residue",
+    "order_state",
+    "tick_phase",
+    "progress_state",
+    "arrow_record",
+    "maintenance_state",
+    "future_sufficiency_status",
+    "tick_viability_status",
+    "genuine_progress_status",
+    "endogenous_arrow_status",
+    "maintenance_ownership_status"
+  ],
+  "title": "Temporal signature scaffold",
+  "type": "object"
+}

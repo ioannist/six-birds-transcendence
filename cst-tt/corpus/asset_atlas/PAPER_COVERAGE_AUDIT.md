@@ -1,0 +1,66 @@
+# Paper coverage audit
+
+Every one of the 60 corpus manuscripts has an explicit disposition. P46 is counted by metadata/exclusion only; P42/P60 are one versioned evidence line. The full non-quarantined lexical bank is retained even where only a small number of records are curated.
+
+| ID | Title | Role | Lexical statements retained | Curated records | Fixed-support flag | Version/exclusion |
+|---|---|---|---:|---:|---|---|
+| [P01](../paper_cards/P01.md) | A Six Birds' Eye View of Dark Energy: Closure, Route Mismatch, and Audits for Apparent Acceleration | peripheral diagnostic/control | 8 | 3 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P02](../paper_cards/P02.md) | A Six-Birds' Eye View of Quantum Theory: Operational Closure Semantics for Measurement, Contextuality, and Record Stability | primary dependency-order read, wave 5 | 4 | 4 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P03](../paper_cards/P03.md) | Accepted New-Layer Strict Tests on Fixed Support in Six Birds Theory | primary dependency-order read, wave 3 | 0 | 4 | yes | standalone-corpus-item |
+| [P04](../paper_cards/P04.md) | Adequacy Residuals and Blind-Spot Currency | primary dependency-order read, wave 3 | 23 | 9 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P05](../paper_cards/P05.md) | An Audited Closure Architecture for Consciousness: Exact Finite Models, Structural Theorems, and Conditional Realization | primary dependency-order read, wave 1 | 28 | 30 | mixed | standalone-corpus-item |
+| [P06](../paper_cards/P06.md) | Audited Operational Realisability: A Closure-Completion Reflection for Carriers with Audit Data | primary dependency-order read, wave 3 | 50 | 13 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P07](../paper_cards/P07.md) | Auditing Emergence in Quantum Error Correction: A Falsifiable Instantiation of Six Birds Theory | primary dependency-order read, wave 6 | 0 | 4 | physical support changes inside one QEC experiment class | standalone-corpus-item |
+| [P08](../paper_cards/P08.md) | Carrier Exactification after Promotion on Fixed Support in Six Birds Theory | primary dependency-order read, wave 3 | 5 | 5 | yes | standalone-corpus-item |
+| [P09](../paper_cards/P09.md) | Carrier-to-Event Admissibility on Fixed Support in Six Birds Theory | primary dependency-order read, wave 3 | 11 | 9 | yes | standalone-corpus-item |
+| [P10](../paper_cards/P10.md) | Emergence IS the Needle Killer | supporting-on-demand | 25 | 5 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P11](../paper_cards/P11.md) | Emergence of a Quadratic Probability Law in a Compressed Record Layer: Construction, Uniqueness, and Composition on a Minimal Stochastic Substrate | supporting-on-demand | 4 | 4 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P12](../paper_cards/P12.md) | Glass Is an Unclosed Layer: Kovacs Memory as Predictive-Quotient Residue | primary dependency-order read, wave 5 | 0 | 4 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P13](../paper_cards/P13.md) | Hiddenness as a Structural Law of Emergence | primary dependency-order read, wave 5 | 33 | 12 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P14](../paper_cards/P14.md) | Holonomy with Memory in Six Birds Theory: Predictive Quotients, Witnesses, and Fixed-Support Route Transport | primary dependency-order read, wave 2 | 10 | 10 | yes | standalone-corpus-item |
+| [P15](../paper_cards/P15.md) | Institutions Are Strict Extensions of the Game | supporting-on-demand | 17 | 5 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P16](../paper_cards/P16.md) | Internal Structure of a Surviving Promoted Package on Fixed Support in Six Birds Theory | primary dependency-order read, wave 3 | 31 | 12 | yes | standalone-corpus-item |
+| [P17](../paper_cards/P17.md) | Locally Boolean, Globally Obstructed: Event Packages and Admissible Global Packaging in Six Birds Theory | primary dependency-order read, wave 5 | 16 | 9 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P18](../paper_cards/P18.md) | Marking, Erasure, and Recombination on Fixed Support: Exact Finite Evidence from Six Birds Theory | primary dependency-order read, wave 2 | 5 | 5 | yes | standalone-corpus-item |
+| [P19](../paper_cards/P19.md) | Navier–Stokes as a Layer-Dissolving Membrane Theorem | peripheral diagnostic/control | 40 | 3 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P20](../paper_cards/P20.md) | One Meta-Theory, Three Clay-Problem Closures | peripheral diagnostic/control | 36 | 3 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P21](../paper_cards/P21.md) | P ≠ NP under Closure of the Saturated SAT Layer | explicit non-primary/excluded from working core | 46 | 3 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P22](../paper_cards/P22.md) | Persistence of SPT-Legality from Channelized Feasibility in a Multiscale Hilbert/Cell Model | primary dependency-order read, wave 4 | 24 | 9 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P23](../paper_cards/P23.md) | Promotion Criteria and Surviving Packages on Fixed Support in Six Birds Theory | primary dependency-order read, wave 3 | 16 | 12 | yes | standalone-corpus-item |
+| [P24](../paper_cards/P24.md) | Recombination Witnesses on Fixed Support: Control-Stable Anchors and a Formal Kernel in Six Birds Theory | primary dependency-order read, wave 2 | 6 | 6 | yes | standalone-corpus-item |
+| [P25](../paper_cards/P25.md) | Reflexive SBT and Anti-Localization | supporting-on-demand | 15 | 5 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P26](../paper_cards/P26.md) | Riemann Hypothesis via Self-Dual Trace Confinement: A Conditional Closure | explicit non-primary/excluded from working core | 22 | 3 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P27](../paper_cards/P27.md) | Self-Dual Trace Confinement: A Six Birds Structural Law for Formed Closures Under Involutive Self-Duality | peripheral diagnostic/control | 13 | 3 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P28](../paper_cards/P28.md) | Six Birds Foundations III: A Finite Audited Interaction Calculus for SBT | primary dependency-order read, wave 1 | 0 | 4 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P29](../paper_cards/P29.md) | Six Birds Foundations II: Admissibility, Meta-Theory, and the Exact-Six Program | primary dependency-order read, wave 1 | 75 | 12 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P30](../paper_cards/P30.md) | Six Birds Foundations IV: A Catalog of Layer-Agnostic Structural Laws | primary dependency-order read, wave 2 | 73 | 17 | mixed/schema | standalone-corpus-item |
+| [P31](../paper_cards/P31.md) | Six Birds Foundations VI: A Catalog of Dynamical Structural Laws | primary dependency-order read, wave 4 | 15 | 9 | mixed/schema | standalone-corpus-item |
+| [P32](../paper_cards/P32.md) | Six Birds Foundations V: Endogenous Closure — A Catalog of Structural Laws for Living, Cognitive, and Social Systems | primary dependency-order read, wave 4 | 66 | 12 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P33](../paper_cards/P33.md) | Six Birds: Foundations of Emergence Calculus | primary dependency-order read, wave 1 | 108 | 12 | mixed/schema | standalone-corpus-item |
+| [P34](../paper_cards/P34.md) | Six Birds: No-Go Theorems for Audited Emergence | primary dependency-order read, wave 5 | 44 | 9 | mixed/schema | standalone-corpus-item |
+| [P35](../paper_cards/P35.md) | Six Birds Protocol Trap: Holonomy Without Entropy Production | primary dependency-order read, wave 5 | 0 | 3 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P36](../paper_cards/P36.md) | Six Birds for Incompleteness: Fixed Packages, Package Change, and Conditional Arithmetic Lift | supporting-on-demand | 14 | 5 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P37](../paper_cards/P37.md) | Six Birds for Navier–Stokes: A Mechanized No-Zeno Scaffold | supporting-on-demand | 18 | 5 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P38](../paper_cards/P38.md) | Six Birds for Neutrino Mass: Lens-Swap Stability and Packaging Audits | peripheral diagnostic/control | 0 | 2 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P39](../paper_cards/P39.md) | Strict-Test-to-Event-Package Admissibility on Fixed Support in Six Birds Theory | primary dependency-order read, wave 3 | 0 | 4 | yes | standalone-corpus-item |
+| [P40](../paper_cards/P40.md) | Strict Theory Extension on a Lawful Continuous Cantor Shell | primary dependency-order read, wave 6 | 4 | 4 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P41](../paper_cards/P41.md) | The Cosmological Constant as a Contingent Modulus: A Six Birds Demarcation of Dark Energy | explicit non-primary/excluded from working core | 0 | 1 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P42](../paper_cards/P42.md) | Why Mathematics Even Works | version-reconciled normative SAU line | 173 | 14 | case-relative | normative-newer-revision |
+| [P43](../paper_cards/P43.md) | To Become a Stone with Six Birds: A Physics is A Theory | supporting-on-demand | 0 | 2 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P44](../paper_cards/P44.md) | To Cast a Stone with Six Birds: A Closure-Deficit Account of Randomness under Packaging and Budget | primary dependency-order read, wave 5 | 6 | 6 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P45](../paper_cards/P45.md) | To Chart a Stone with Six Birds: Emergence Phase Diagrams for Effective Theories in Control Space | primary dependency-order read, wave 6 | 4 | 4 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P46](../paper_cards/P46.md) | To Chat a Stone with Six Birds: Language Theory Models | quarantined metadata/exclusion card only | 0 | 1 | no explicit cross-carrier theorem | quarantined |
+| [P47](../paper_cards/P47.md) | To Classify a Stone with Six Birds: Primitive Activation and Observable Separation of Layer-Birth Classes | supporting-on-demand | 0 | 1 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P48](../paper_cards/P48.md) | To Count a Stone with Six Birds: A Mathematics is A Theory | supporting-on-demand | 13 | 5 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P49](../paper_cards/P49.md) | To Create a Stone with Six Birds: Emergent Geometric and Thermodynamic Regimes from a Minimal Stochastic Substrate | supporting-on-demand | 0 | 1 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P50](../paper_cards/P50.md) | To Flatten a Stone with Six Birds: Critical Pairs, Holonomy, and Confluence in Rewriting Systems | primary dependency-order read, wave 2 | 26 | 9 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P51](../paper_cards/P51.md) | To Kill Three Stones with Six Birds: A Common Grammar for the SM, QM, and GR | explicit non-primary/excluded from working core | 0 | 1 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P52](../paper_cards/P52.md) | To Lay a Stone with Six Birds: Finite-State Semantics for Packaging, Directionality, and Coarse-Graining | primary dependency-order read, wave 6 | 22 | 11 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P53](../paper_cards/P53.md) | To Notch a Stone with Six Birds: Time as a Theory Artifact of Order, Measure, and Arrow | primary dependency-order read, wave 2 | 0 | 5 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P54](../paper_cards/P54.md) | To Plot a Stone with Six Birds: Constructing and Auditing Emergent Geometry from Markov Dynamics | supporting-on-demand | 0 | 2 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P55](../paper_cards/P55.md) | To Set a Stone with Six Birds: The Free and Purchased Parts of ZFC | peripheral diagnostic/control | 52 | 3 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P56](../paper_cards/P56.md) | To Spend a Stone with Six Birds: Currency–Constraint Duality and Shadow Prices Across Closure Layers | primary dependency-order read, wave 4 | 0 | 5 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P57](../paper_cards/P57.md) | To Throw a Stone with Six Birds: On Agents and Agenthood | primary dependency-order read, wave 4 | 0 | 5 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P58](../paper_cards/P58.md) | To Worship a Stone with Six Birds: Reality as Closure | primary dependency-order read, wave 7 | 0 | 4 | not structural | standalone-corpus-item |
+| [P59](../paper_cards/P59.md) | To XOR a Stone with Six Birds: Closure Diagnostics for Emergent Bits, Gates, and Booleanity | primary dependency-order read, wave 6 | 1 | 1 | no explicit cross-carrier theorem | standalone-corpus-item |
+| [P60](../paper_cards/P60.md) | The Usefulness of Non-Descending Objects: A Six Birds Theory of Mathematical Applicability | superseded SAU revision; delta/provenance only | 157 | 5 | case-relative | superseded-older-revision-no-independent-weight |

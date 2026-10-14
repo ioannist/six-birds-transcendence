@@ -1,0 +1,15 @@
+theorem_id,prior_status,new_status,evidence_ids,proof_scope,phase
+TTN-01,open-scaffold,checked-finite-countermodel,CM-01;CM-02,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-02,open-scaffold,checked-finite-countermodel,CM-09,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-03,open-scaffold,checked-finite-countermodel,CM-03,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-04,open-scaffold,checked-finite-countermodel,CM-06,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-05,open-scaffold,checked-finite-countermodel,CM-07,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-06,open-scaffold,checked-finite-countermodel,CM-04,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-07,open-scaffold,checked-finite-countermodel,CM-05,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-08,open-scaffold,checked-finite-countermodel,CM-08,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-09,open-scaffold,checked-finite-countermodel,CM-12,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-10,open-scaffold,checked-finite-countermodel,CM-10,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-11,open-scaffold,checked-finite-countermodel,CM-11,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-12,open-scaffold,checked-finite-countermodel,CM-13,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-13,open-scaffold,checked-finite-countermodel,CM-14,explicit finite instance; generic strengthening remains separate,CST-TT-01
+TTN-14,open-scaffold,checked-finite-countermodel,CM-15,explicit finite instance; generic strengthening remains separate,CST-TT-01

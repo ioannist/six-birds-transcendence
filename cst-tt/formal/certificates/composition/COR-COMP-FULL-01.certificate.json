@@ -1,0 +1,37 @@
+{
+  "audit": {
+    "boundary_merged_once": true,
+    "chain_rule_satisfied": true,
+    "composite_valid": true,
+    "composition_valid": true,
+    "failed_obligations": [],
+    "frontier_compatible": true,
+    "frontier_route_memory_equal": true,
+    "frontier_signature_equal": true,
+    "frontier_support_equal": true,
+    "left_valid": true,
+    "leg_count_additive": true,
+    "old_endpoint_mixed_rule_satisfied": false,
+    "right_valid": true,
+    "shared_frontier_carrier": true
+  },
+  "certificate_id": "COR-COMP-FULL-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_corridor_composition",
+    "module": "cst_tt.corridor",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "strict carrier-chain lineage composition only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "composite_model_ref": "models/corridors/COR-POS-03-FULL-COMPOSITE.model.json",
+  "composite_model_sha256": "e4cd3049d819c37b9c32218e43159bc55b1c46fe871dca298aee11ec385e9945",
+  "left_model_ref": "models/corridors/COR-POS-02A.model.json",
+  "left_model_sha256": "6a162e3005a78178e4790efe381ebd848b733b388f6c0207081b8cd221b96aa8",
+  "result_status": "checked-finite-corridor-composition-interface",
+  "right_model_ref": "models/corridors/COR-POS-02B.model.json",
+  "right_model_sha256": "165c98510f8ea091b2e8149fa4f02f8e8c3be892337fb4619846712ff3977e4d",
+  "schema_version": "CST-TT-06"
+}

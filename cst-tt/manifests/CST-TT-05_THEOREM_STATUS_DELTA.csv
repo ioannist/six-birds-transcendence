@@ -1,0 +1,4 @@
+theorem_id,prior_status,new_status,evidence,next_action
+TTH-05,open-scaffold,proof-source-and-executable-certificate-landed,AUT-POS-01; 4096-case invariant exhaustion,compose autonomy across handoffs in CST-TT-06
+TTH-06,open-scaffold,proof-source-and-executable-certificate-landed,FIACH-POS-01; six lane controls,composition and branching in CST-TT-06
+TTN-06,checked-finite-countermodel,proof-source-and-checked-finite-countermodel,AUT-C01; removedEssentialResourceExcludesAutonomy,retain mandatory autonomy boundary

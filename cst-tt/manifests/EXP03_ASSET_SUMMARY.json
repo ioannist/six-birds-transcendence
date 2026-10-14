@@ -1,0 +1,30 @@
+{
+  "project": "CST-EXP",
+  "phase": "CST-EXP-03",
+  "generated_date": "2026-08-09",
+  "status": "built_pending_validation",
+  "target_selected": false,
+  "ranking_performed": false,
+  "theorem_or_program_implemented": false,
+  "counts": {
+    "candidate_schemas": 10,
+    "transported_objects": 15,
+    "invariants": 12,
+    "bridge_morphologies": 12,
+    "independent_brainstorms": 7,
+    "candidate_scenario_rows": 350,
+    "typed_scenario_lane_cells": 1750,
+    "candidate_question_rows": 1000,
+    "candidate_guard_rows": 600,
+    "new_primitives": 60,
+    "candidate_assumption_rows": 200,
+    "candidate_asset_links": 69,
+    "candidate_discriminator_rows": 100,
+    "pairwise_divergence_rows": 45,
+    "candidate_cards": 10,
+    "phase_03_decisions": 16,
+    "phase_03_rejected_defaults": 15,
+    "phase_03_unresolved_questions": 18
+  },
+  "next_phase": "CST-EXP-04"
+}

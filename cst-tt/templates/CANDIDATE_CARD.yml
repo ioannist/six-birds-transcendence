@@ -1,0 +1,51 @@
+schema_version: '1.1'
+candidate_id: null
+title: null
+status: exploratory
+one_sentence_core: null
+claim_records: []
+carrier_profile:
+  source_spec: null
+  target_spec: null
+  distinctness_audit: null
+  cross_substrate_claimed: false
+  implementation_classifier: null
+transported_object:
+  name: null
+  source_type: null
+  target_type: null
+  comparison_relation: null
+  exact_or_approximate: null
+bridge:
+  form: null
+  data: null
+  admissibility_gates: []
+  external_dependencies: []
+  composition_rule: null
+route:
+  stages: []
+  overlap_process: null
+  path_dependence_status: null
+  holonomy_or_confluence_test: null
+structural_claims:
+  S-T: []
+  S-R: []
+  S-L: []
+  A: []
+recognition_claims: []
+ontological_claims: []
+methodology_claims: []
+assumptions: []
+scenario_verdicts: {}
+question_bank_answers: {}
+anti_conflation_audit:
+  passed_ids: []
+  failed_ids: []
+  unresolved_ids: []
+controls_and_counterexamples: []
+possible_theorem_shapes: []
+possible_no_go_shapes: []
+possible_toy_discriminators: []
+kill_criteria: []
+nonclaims: []
+provenance: []

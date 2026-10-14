@@ -1,0 +1,16 @@
+{
+  "id": "POS04-ACTUAL-ASSIGNED-CYCLE-POSITION-SHIFT-1",
+  "frozen_at_utc": "2026-10-10T15:50:14.629828+00:00",
+  "primitives": "Use exact already-transcribed POS04.Assigned canonical raw cells. Eight typed Clause nodes c1-c8, scopes EXACT clauseScope target c. C6 raw Assignment replaces actual .positions function with publicPosition(s)+1; all other local raw assignments canonical. Local assignments actual decode each actual clauseScope. Cycle adjacency c1-c2-c3-c4-c5-c6-c7-c8-c1. No invented diagonal cell, ClauseSpec equality or predicate callback.",
+  "intervention": "actual .positions raw function +1 only in C6 local input; SAME raw action rows/ownership/resources/histories/ticks/P/M and every other cell",
+  "predictions": {
+    "c6_shifted_assignment_actual_C6Accept": true,
+    "every_actual_local_clauseAccept": true,
+    "every_actual_cycle_edge_agrees_on_shared_primitive_cells": true,
+    "no_global_Assignment_restricts_to_all_local_assignments": true,
+    "allscopes_are_actual_clauseScopes": true,
+    "original_POS04_canonical_package_still_positive": true
+  },
+  "negative_expected_cause": "C1 and C6 consume global .positions, but positions absent from c5 andc7, C6neighbors. Canonical .positions vs shifted differ at p0w0. Numeric shift preserves predictive partition/bisimulation/coarsercode equality for C6. Running intersection fails for actual positions dependency subset.",
+  "grade": "Actual assignment-sensitive POS04 C1-C8 acceptance at existing disclosed C4-C7 grades; no full physical grade upgrade inferred."
+}

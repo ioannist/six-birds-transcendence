@@ -1,0 +1,365 @@
+{
+  "schema": "csttt-reviewed-fallback-supplement-v1",
+  "declarations": [
+    {
+      "name": "CSTTT.FallbackTheory.IdentityUnderdeterminationPrototype.identityCode",
+      "kind": "def",
+      "row_id": "TTF-07",
+      "public_path": "lean/CSTTT/Fallback/IdentityUnderdetermination.lean",
+      "line": 11,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "318262beac658b71fe564e446642f3a9b17fce71d46268cde25416e6539a5f52"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.IdentityUnderdeterminationPrototype.NumericalIdentity",
+      "kind": "def",
+      "row_id": "TTF-07",
+      "public_path": "lean/CSTTT/Fallback/IdentityUnderdetermination.lean",
+      "line": 12,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "318262beac658b71fe564e446642f3a9b17fce71d46268cde25416e6539a5f52"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.IdentityUnderdeterminationPrototype.Compatible",
+      "kind": "def",
+      "row_id": "TTF-07",
+      "public_path": "lean/CSTTT/Fallback/IdentityUnderdetermination.lean",
+      "line": 14,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "318262beac658b71fe564e446642f3a9b17fce71d46268cde25416e6539a5f52"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.IdentityUnderdeterminationPrototype.numerical_equivalence",
+      "kind": "theorem",
+      "row_id": "TTF-07",
+      "public_path": "lean/CSTTT/Fallback/IdentityUnderdetermination.lean",
+      "line": 19,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "318262beac658b71fe564e446642f3a9b17fce71d46268cde25416e6539a5f52"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.IdentityUnderdeterminationPrototype.numerical_future_iff",
+      "kind": "theorem",
+      "row_id": "TTF-07",
+      "public_path": "lean/CSTTT/Fallback/IdentityUnderdetermination.lean",
+      "line": 21,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "318262beac658b71fe564e446642f3a9b17fce71d46268cde25416e6539a5f52"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.IdentityUnderdeterminationPrototype.numerical_compatible",
+      "kind": "theorem",
+      "row_id": "TTF-07",
+      "public_path": "lean/CSTTT/Fallback/IdentityUnderdetermination.lean",
+      "line": 24,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "318262beac658b71fe564e446642f3a9b17fce71d46268cde25416e6539a5f52"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.IdentityUnderdeterminationPrototype.two_identity_extensions",
+      "kind": "theorem",
+      "row_id": "TTF-07",
+      "public_path": "lean/CSTTT/Fallback/IdentityUnderdetermination.lean",
+      "line": 36,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "318262beac658b71fe564e446642f3a9b17fce71d46268cde25416e6539a5f52"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.IdentityUnderdeterminationPrototype.actual_arbitrary_length_identity_underdetermination",
+      "kind": "theorem",
+      "row_id": "TTF-07",
+      "public_path": "lean/CSTTT/Fallback/IdentityUnderdetermination.lean",
+      "line": 61,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "318262beac658b71fe564e446642f3a9b17fce71d46268cde25416e6539a5f52"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.native",
+      "kind": "def",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 12,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.forked",
+      "kind": "def",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 14,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.leftAdvanced",
+      "kind": "def",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 15,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.evolved",
+      "kind": "def",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 16,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.credits",
+      "kind": "def",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 17,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.before",
+      "kind": "def",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 18,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.receipts",
+      "kind": "def",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 19,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.proposed",
+      "kind": "def",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 23,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.command",
+      "kind": "def",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 25,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.native_left_step",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 27,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.native_right_step",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 32,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.actual_native_recorded",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 39,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.evolved_parent_reads",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 47,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.both_actual_marginals",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 53,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.no_common_native_outcome",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 60,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.every_program_incompatible",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 66,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.structural_available",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 74,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.every_outcome_empty_step",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 79,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.actual_every_outcome_settlement",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 85,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.actual_both_branch_ancestry",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 94,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.fresh_output_no_seed",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 110,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.fresh_output_no_ledger_path",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 117,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.actual_every_outcome_ancestry_false",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 122,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.every_program_guard_false",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 132,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.every_program_original_step_rejected",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 141,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.actual_native_executed",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 147,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.actual_all_partial_programs_reject",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 154,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    },
+    {
+      "name": "CSTTT.FallbackTheory.AllOutcomeEmptyPrototype.actual_all_outcome_empty_return",
+      "kind": "theorem",
+      "row_id": "TTF-04",
+      "public_path": "lean/CSTTT/Fallback/AllOutcomeEmpty.lean",
+      "line": 181,
+      "statement_class": "b",
+      "port_class": "a",
+      "source_sha": "f4ac697649db1fd6c7b782d3b39ff61d23ef1c3526e413cc56541a2caf5b0552"
+    }
+  ]
+}

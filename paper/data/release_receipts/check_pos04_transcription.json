@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_pos04_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_pos04_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_pos04_transcription.log",
+  "log_sha256": "3d1b03261aa0b8adacac0fe014125dcb900ad2ae9cffc8a17e42ae52742453d1",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:41+00:00",
+  "status": "pass",
+  "summary": "PASS all 160 local assignments\nPASS all local primitive references resolve in the frozen JSON\nPASS all 8 staged clause-map rows\nCOVERAGE: exact T1 K/CORE/ambient order, public f, canonical policy, P (100), separate C (70) and U (70), CU (100), hazards and 12 hazard-rule outputs, slip rates, C1 tau/epsilon/threshold/published values, all action rows, and raw M labels; both tagged P tables (100 each); all represented POS-04 histories, corridor including readout rule, receiver, ledger, C4-C7 coordinates, per-tag raw inputs, recognition status, 160 local assignments, 8 staged-map rows, and every local primitive reference. Prose rules, grades, mutations, and predicate contracts are outside this data-transcription check.\nPASS POS-04 Lean transcription: covered raw fields match the frozen JSON"
+}

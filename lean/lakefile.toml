@@ -1,0 +1,96 @@
+name = "SixBirdsTranscendence"
+version = "0.1.0"
+# A bare build validates every library exposed by this support package.
+defaultTargets = [
+  "ClosureLadder",
+  "SixBirds",
+  "SixBirdsIII",
+  "SixBirdsMetaMath",
+  "SixBirdsFoundationsV",
+  "SixBirdsFoundationsVI",
+  "FoundationsVII",
+  "HolonomyMemory",
+  "CSTTT",
+]
+
+# --- previous papers, vendored (Mathlib-free, no external lake deps) --------
+#
+# This package is a sized-to-purpose support subset, not a mirror of every
+# upstream repository. ClosureLadder vendors 5/20 modules (four are Mathlib-free
+# rewrites of Mathlib-based originals), and SixBirdsMetaMath vendors 30/119
+# namespace submodules.
+
+[[lean_lib]]
+name = "ClosureLadder"
+srcDir = "vendor/foundations/six-birds-theory/formal"
+
+[[lean_lib]]
+name = "SixBirds"
+srcDir = "vendor/foundations/six-birds-foundations-ii/lean/full"
+
+[[lean_lib]]
+name = "SixBirdsIII"
+srcDir = "vendor/foundations/six-birds-foundations-iii/lean/full"
+
+[[lean_lib]]
+name = "SixBirdsMetaMath"
+srcDir = "vendor/foundations/six-birds-meta-math/lean"
+# The pruned support subset has no root module: the upstream root imports six
+# aggregators that are not vendored. Build every submodule that is present.
+globs = ["SixBirdsMetaMath.+"]
+
+[[lean_lib]]
+name = "SixBirdsFoundationsV"
+srcDir = "vendor/foundations/six-birds-foundations-v/lean/full"
+
+[[lean_lib]]
+name = "SixBirdsFoundationsVI"
+srcDir = "vendor/foundations/six-birds-foundations-vi/lean/full"
+
+[[lean_lib]]
+name = "FoundationsVII"
+srcDir = "vendor/foundations/six-birds-foundations-vii/lean/full"
+# The bounded finite carriers are checked by kernel evaluation, which needs a
+# larger worker stack than the default. Elaboration resources only: no
+# assumption is added and no theorem statement changes.
+moreLeanArgs = ["-s", "1048576"]
+
+# support surface imported by Foundations V and VII
+#
+# Note: six-birds-cognition vendored the Xi/Main surface a second time, re-rooted
+# as `Xi.*` / `Main.*` but declaring the same `SixBirdsMetaMath.*` namespaces.
+# Keeping both copies makes V and VI un-co-importable (duplicate declarations),
+# so that tree was folded into `SixBirdsMetaMath` above and V's imports re-rooted
+# onto it. VII is also present above, with its one compiled `Xi.*` import
+# re-rooted onto `SixBirdsMetaMath.Xi.*` for the same reason. There is no separate
+# `Xi` / `Main` library here.
+#
+# The package inherits one non-standard axiom, `hiddenness_pending`, from
+# `SixBirdsMetaMath/FoundationsIV/Access/HiddennessNormalForm.lean`. It is
+# certificate-guarded, nothing outside that file depends on it, and none of the
+# 240 vendored modules contains `sorryAx`.
+#
+# `FoundationsVII.lean` reaches 112 of VII's 125 Lean modules. The 13 outside
+# its import closure are: five finite-model Runner modules; two prior-scaffold
+# modules (`FoundationsVII.PriorScaffold` and
+# `FoundationsVII.PriorFoundationsVComplete`); and six
+# `FoundationsVII.Trust.*` axiom-receipt modules. None of the 13 is reachable
+# from the root. Upstream also leaves the eight scaffold/trust modules uncompiled;
+# only omitting the source package's five runner `lean_exe` entries is a
+# package-side choice, because this vendor package exposes libraries rather
+# than paper-build executables. A green bare build therefore makes no claim about
+# elaboration of the 13, runner output, or execution/review of axiom receipts.
+
+[[lean_lib]]
+name = "HolonomyMemory"
+srcDir = "vendor/foundations/holonomy-memory"
+
+# --- this project ---------------------------------------------------------------
+#
+# CST-TT temporal-transcendence theorem sources, imported verbatim from the
+# CST-TT-08-v1 tag (prework/CST-TT-08_cst-temporal-transcendence_repo.zip).
+# cst-tt/CSTTT and cst-tt/CSTTT.lean are symlinks to these files so the CST-TT
+# Python validators keep their repo-relative paths.
+
+[[lean_lib]]
+name = "CSTTT"

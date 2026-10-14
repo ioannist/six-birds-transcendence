@@ -1,0 +1,43 @@
+{
+  "audit": {
+    "branch_component_replays_valid": true,
+    "certificate_id": "FIS-C04",
+    "common_source_exact": true,
+    "component_hashes_valid": true,
+    "failed_obligations": [
+      "FIS-O11-swap-involutive",
+      "FIS-O12-swap-fixed-point-free",
+      "FIS-O13-validity-preserved",
+      "FIS-O14-no-invariant-singleton"
+    ],
+    "invariant_singleton_selector_absent": false,
+    "left_branch_valid": true,
+    "left_target_code": 201,
+    "relation_contains_both_branches": true,
+    "relation_valued_fission_valid": false,
+    "right_branch_valid": true,
+    "right_target_code": 202,
+    "source_code": 17,
+    "source_package_exact": true,
+    "source_temporal_frontier_exact": true,
+    "swap_fixed_point_free": false,
+    "swap_involutive": false,
+    "target_shapes_symmetric": true,
+    "targets_distinct": true,
+    "uniqueness_claim_absent": true,
+    "validity_preserved_by_swap": false
+  },
+  "claim_ceiling": "finite fission-interface boundary only",
+  "control_id": "FIS-C04",
+  "expected_primary_failure": "FIS-O11-swap-involutive",
+  "model_ref": "models/fission/controls/FIS-C04.model.json",
+  "model_sha256": "5ec086ac53f6aad56398478a275cf810e55d257dcebf646e81357d25d0b219b6",
+  "observed_failures": [
+    "FIS-O11-swap-involutive",
+    "FIS-O12-swap-fixed-point-free",
+    "FIS-O13-validity-preserved",
+    "FIS-O14-no-invariant-singleton"
+  ],
+  "result_status": "checked-fission-obligation-countermodel",
+  "schema_version": "CST-TT-06"
+}

@@ -1,0 +1,13 @@
+id,name,signature,best_for,composition,admissibility,risk,candidates
+BR-01,Direct state map,b: X_S -> X_T,simple exact snapshots,ordinary function composition,must be cross-typed and invariant-respecting,state-only; can erase history and branching,atlas control
+BR-02,History relation,B subset Hist(X_S) x Hist(X_T),"lineage, gaps, fission, fusion",relational composition with witness retention,route and causal provenance constraints,too permissive without tests,TS-03;TS-10
+BR-03,Forward simulation,b x_S -> x_T and steps_S matched by steps_T,one-way predictive or controlled preservation,simulations compose under interface alignment,totality on reachable source states,target may have unmatched behavior,TS-04;TS-09
+BR-04,Bisimulation/conjugacy,R steps both directions,exact predictive dynamics,requires compatibility/totality,preserve admissible continuation alphabets,still endpoint/token neutral,TS-01
+BR-05,Span through common abstraction,X_S <- A -> X_T or X_S -> A <- X_T,"quotients, logical codes, closure algebras",pullback/pushout conditions,legs must preserve named structure,common abstraction is not causal handoff,TS-01;TS-05;TS-06
+BR-06,Cospan into common completion,X_S -> C <- X_T,gluing and joint distributed packages,pushout-like completion,descent and compatibility conditions,completion can add protocol structure,TS-06
+BR-07,Moving-boundary overlap process,"{X_r(t), support(t), coupling(t)}",gradual/live replacement,concatenation with boundary compatibility,continuous causal coupling and package-support audit,graduality can be smuggled as continuity,TS-03
+BR-08,Continuation functor,F: HistCat_S -> HistCat_T,"routes, branches, recombination, holonomy",functor composition,"preserve identities, composition, and selected limits/joins",category choice may encode verdicts,TS-07
+BR-09,Encode–recover migration channel,decode_T o recover o encode_S,logical-object persistence under noise,channel composition with error budget,declared code/noise/recovery family,external recovery can masquerade as autonomy,TS-05
+BR-10,Staged exactification/promotion/audit bridge,B = audit_T o promote o exactify o transfer,full package and strict gates,only when stage contracts align,all stage certificates and global glue pass,passing local gates may not yield one package,TS-02
+BR-11,Residual-bounded approximate bridge,B_epsilon with Delta(B)<=epsilon,noisy and approximate cases,"specified defect law, not assumed additivity","metric, thresholds, horizons, margins",threshold can be tuned to preferred labels,TS-09
+BR-12,Branch-valued bridge relation,B: Hist_S -> P(Hist_T),"copying, fission, fusion, empty target",Kleisli/relational composition with merge rules,symmetry-respecting and nonretroactive,may classify too many successors,TS-07;TS-10

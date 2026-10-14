@@ -1,0 +1,26 @@
+{
+  "base_commit": "6c8f510c67087a8db9dd1c4107008b3b7cfb0847",
+  "base_tag": "CST-TT-06-v1",
+  "date": "2026-08-10",
+  "defect_profiles": {
+    "controls": 6,
+    "equal_scalar_pairs": 1,
+    "positive": 1
+  },
+  "direct_relation": "exactly incomparable; both modes embed a separate generalized path class",
+  "fallback_unlocked": false,
+  "next_phase": "CST-TT-08",
+  "phase": "CST-TT-07A",
+  "primary": "Temporal-FIACH strict overlap remains unchanged",
+  "project": "CST-TT",
+  "robustness": {
+    "box_points": 945,
+    "controls": 6,
+    "violations": 0
+  },
+  "schema_version": "1.0",
+  "unbounded": {
+    "counterfamily_models": 13,
+    "prefix_words_checked": 8191
+  }
+}

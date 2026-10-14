@@ -1,0 +1,20 @@
+{
+  "artifact_ref": "models/transport/controls/TR-C12.model.json",
+  "artifact_sha256": "4410f908ef3db371865ecba7235191766617a87f437802e1658a1bb7517dfe0d",
+  "baseline_ref": "models/transport/TR-POS-01.model.json",
+  "checker": {
+    "function": "audit_temporal_transport",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5",
+    "valid_result": false
+  },
+  "claim_ceiling": "finite structural obligation boundary only",
+  "control_id": "TR-C12",
+  "control_kind": "transport",
+  "expected_primary_failure": "target-temporal-witness-valid",
+  "observed_failures": [
+    "target-temporal-witness-valid"
+  ],
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-03"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_full_native_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_full_native_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_full_native_transcription.log",
+  "log_sha256": "67ca3f9169bf11c391c951ee230a81fcbeb3bd26367dc29f088fdf1951152a82",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:28+00:00",
+  "status": "pass",
+  "summary": "PASS full native transcription: 32 states, 64 raw rows, public seed, first and second refinement\nCAUGHT planted maintenance weight drift\nCAUGHT planted normalization drift\nCAUGHT planted kernel enumeration drift\nCoverage: physical rows/refinement only; all-word laws and account/history lifts are Lean obligations."
+}

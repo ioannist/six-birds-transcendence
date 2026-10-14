@@ -1,0 +1,30 @@
+{
+  "audit": {
+    "arrow_transport_valid": true,
+    "failed_obligations": [],
+    "map_total": true,
+    "maps_examined_in_bounded_search": 125,
+    "nonstrict_monotone": true,
+    "source_has_strict_arrow": true,
+    "strict_progress_preserved": true,
+    "strictly_monotone_maps_in_bounded_search": 10,
+    "target_has_strict_arrow": true
+  },
+  "certificate_id": "ARROW-POS-01",
+  "checker": {
+    "function": "audit_record_arrow",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite structural arrow transport only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_ref": "models/arrow/ARROW-POS-01.model.json",
+  "model_sha256": "043a83f4768551edb8475affffa59372f42bee30fd36505d231e9b3a8a7a1489",
+  "result_status": "checked-finite-record-arrow-certificate",
+  "schema_version": "CST-TT-03",
+  "theorem_ids": [
+    "TTH-10"
+  ]
+}

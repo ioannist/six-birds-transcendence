@@ -1,0 +1,99 @@
+{
+  "$defs": {
+    "carrier": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "label": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "code",
+        "label"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://six-birds.local/cst-tt/schemas/temporal_fiach_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Aggregates separately validated S-R, S-L, and A certificates. It is not a consciousness, survival, or identity certificate.",
+  "properties": {
+    "autonomy_certificate_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "claim_ceiling": {
+      "const": "structural-precursor-only"
+    },
+    "corridor_certificate_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "package_certificate_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "recognition_status": {
+      "enum": [
+        "not-addressed",
+        "assumed-interface",
+        "externally-audited"
+      ],
+      "type": "string"
+    },
+    "route_status": {
+      "enum": [
+        "flat",
+        "route-indexed",
+        "unresolved"
+      ],
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "CST-TT-00"
+    },
+    "source": {
+      "$ref": "#/$defs/carrier"
+    },
+    "source_package_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "staged_clause_preservation_status": {
+      "enum": [
+        "not-evaluated",
+        "certified",
+        "failed"
+      ],
+      "type": "string"
+    },
+    "target": {
+      "$ref": "#/$defs/carrier"
+    }
+  },
+  "required": [
+    "schema_version",
+    "source",
+    "target",
+    "source_package_status",
+    "staged_clause_preservation_status",
+    "package_certificate_ref",
+    "corridor_certificate_ref",
+    "autonomy_certificate_ref",
+    "route_status",
+    "recognition_status",
+    "claim_ceiling"
+  ],
+  "title": "Temporal-FIACH aggregate scaffold",
+  "type": "object"
+}

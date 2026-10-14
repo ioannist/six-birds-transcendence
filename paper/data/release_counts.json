@@ -1,0 +1,1110 @@
+{
+  "run_recorded": {
+    "commands": [
+      {
+        "command": [
+          "python3",
+          "paper/tools/check_archive_reproduction.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "archive_reproduction",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W24-archive-refresh/archive-console.log",
+        "log_sha256": "2ddb4cec9c943ab71fd71748f619285c2c1604d208acdd02173cc5641678506c",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T13:22:49+00:00",
+        "status": "pass",
+        "summary": "{\"id\": \"package\", \"command\": [\"python3\", \"paper/prewriting/validate_package.py\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-jo79ofwk/logs/package.log\", \"log_sha256\": \"c9c698f276f14109c8e9a1deeb157bfd0a00b457fa6c3ff7cfd75a5f935337ec\"}\n{\"id\": \"snapshot\", \"command\": [\"python3\", \"paper/tools/export_results.py\", \"--check\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-jo79ofwk/logs/snapshot.log\", \"log_sha256\": \"5fe084344c0e4d06c5eaf2933bc96c310aee8e2dbcdac6c88eb055e7028c0c3c\"}\nRUN paper_tests: python3 -m pytest -q paper/tests (cwd .)\n{\"id\": \"paper_tests\", \"command\": [\"python3\", \"-m\", \"pytest\", \"-q\", \"paper/tests\"], \"cwd\": \".\", \"exit_code\": 0, \"expected_exit\": 0, \"status\": \"pass\", \"log_path\": \"/tmp/W19b-archive-jo79ofwk/logs/paper_tests.log\", \"log_sha256\": \"7fbe84fe23e7f5a60cb11ebe880ee3a6a5a7f8942f566ffb317de462c00a8553\"}\n{\"archive_reproduction\": \"pass\", \"report\": \"/tmp/W19b-archive-jo79ofwk/report.json\"}"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_corridor_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_corridor_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_corridor_transcription.log",
+        "log_sha256": "ce59e3b339c3b2de4d8e99f0eeff1399b65bf719701dbcdea38c54bd98500908",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:33:59+00:00",
+        "status": "pass",
+        "summary": "PASS: Lean-evaluated stages (all eight frontier fields, support, realization), events/owners/ordinals, dependencies, carrier chain, additive inputs and computed removal projections, audit references, derived updates; constructed COMPOSED stages/event graph/leg descriptors.\nNon-evidence: stored transport booleans and route-status labels; descriptive labels/metadata are not operative inputs.\nCOR-POS-02A sha256 6a162e3005a78178e4790efe381ebd848b733b388f6c0207081b8cd221b96aa8\nCOR-POS-02B sha256 165c98510f8ea091b2e8149fa4f02f8e8c3be892337fb4619846712ff3977e4d\nCOR-POS-02-COMPOSED sha256 4ca7c0047b05bc42c8acfa1b4f4f064b86ac125a49b46e9a6acd46835811fe88"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_02_autonomy_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_02_autonomy_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_02_autonomy_transcription.log",
+        "log_sha256": "50a984c5c5b6040650f644ff79a71f59eda127c3f6e0481fc3021b4d8640b5ae",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:07+00:00",
+        "status": "pass",
+        "summary": "G31b transcription passed: 11 credited endpoints; 88 maintenance, 11 probe and 88 absent successors;\nSelector permutation regression passed: both three-key acquisitions + all16 positive maintenance successors.\n9 interleaved foreign responses; 8 cold + 64 stronger-fork newborns; 256 ROM/supply/charge factors; frozen pins unchanged."
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_02_fusion_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_02_fusion_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_02_fusion_transcription.log",
+        "log_sha256": "b26186ab8a61568f1a7da5f6fa72b546fdf5169bd133df76c80665e7c621f483",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:09+00:00",
+        "status": "pass",
+        "summary": "G31a transcription passed: 128 ROM/action rows, 8 complete worlds, all 8 fusion + 8 refusion outputs,\n2 unchanged-world empty diagnostics, 8 initially stored absent steps, 13 rejection controls; 48 frozen source pins match.\nAll 8 outputs complete the frozen own 7-step warmup; all 64 subsequent stronger-fork fusion worlds match."
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_binding_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_binding_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_binding_transcription.log",
+        "log_sha256": "ea15883fd8efc77a307b02e39e6f944d1ac524aca4cf8197ee507799b3909ce1",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:11+00:00",
+        "status": "pass",
+        "summary": "PASS: six actually supported source/target split executions, installed flattening control, complete rooted contexts\nPASS: caught planted drift: prepend initial observation\nPASS: caught planted drift: retain native correlations after flattening\nPASS: caught planted drift: inherit source hardware owner\nPASS: caught planted drift: discard consumed snapshot receipt"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_countermodels_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_countermodels_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_countermodels_transcription.log",
+        "log_sha256": "ac4d91a8e2512be3e62048e9a59c015fcb801b780fc5d369bac68979abb84205",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:14+00:00",
+        "status": "pass",
+        "summary": "G28 transcription passed: target checkpoint/prefix, registered flat control, 115 ordered law queries,\n16 original cycle edges; CURRENT aliases but 2 full-decoder boundaries fail; C6 positions 1 versus 0."
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_credit_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_credit_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_credit_transcription.log",
+        "log_sha256": "363dca2c47aa9d96ec235ce718b311769b6276e9338bdfd4e64dff5af8153fdc",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:15+00:00",
+        "status": "pass",
+        "summary": "PASS: caught planted drift: housing credited as issuer\nPASS: caught planted drift: mixed issuer accepted\nPASS: caught planted drift: source issuer inherited by target\nPASS: caught planted drift: copied receipt replaced by fresh default\nPASS: caught planted drift: absence erases initial stored charge"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_execution_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_execution_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_execution_transcription.log",
+        "log_sha256": "0975486d90ab0de36dc183429da8b6ab2b2ebd14cb8c274664b403da556c621a",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:17+00:00",
+        "status": "pass",
+        "summary": "PASS execution transcription: 24 account/input contexts, 1536 action rows, 576 enabled edges\nCAUGHT planted recharge drift\nCAUGHT planted port consumption drift\nCAUGHT planted receipt source drift"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_iaps_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_iaps_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_iaps_transcription.log",
+        "log_sha256": "0652d27808a2a19a19bd3d3bd690c1452db6bafd76177318e0ed64e0460f17e1",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:19+00:00",
+        "status": "pass",
+        "summary": "G29 transcription passed: 3 endpoints, 4 decoded edges, 18 rejected successors,\n81 paired outcomes; withdrawn source remains absent, both parents retain distinct ownership; missing edges reject."
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_objecthood_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_objecthood_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_objecthood_transcription.log",
+        "log_sha256": "9bf70ca43b122b5a2b44a79fdb032bbd6265011b927d1419acebeb77e97cde38",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:21+00:00",
+        "status": "pass",
+        "summary": "PASS full32 C1: derived prototypes/classes/C/U/CU, all4 closure and squared matrices, stationary laws, retention/TV/defects, phase counterexample\nCAUGHT planted clock phase drift\nCAUGHT planted perturb-before-power drift\nCAUGHT planted stationary mass drift"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_package_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_package_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_package_transcription.log",
+        "log_sha256": "74a028519280f1e41ba0ba601521f4042d5fc87a4fa2547b66b7f877e0cd7012",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:24+00:00",
+        "status": "pass",
+        "summary": "G27 transcription passed: 3 actual endpoints, 27 native successors, 4 C1 closure cases,\n3 stored-charge stops, 3 logged return traces, 5 missing-input/address controls; old negatives retained."
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_snapshot_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_snapshot_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_snapshot_transcription.log",
+        "log_sha256": "7a6c08b6343ed157e1d615ddefcfc63ce19fa4cb3d670ce7c77978ec4f061390",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:26+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted phase copy drift\nCAUGHT planted program copy drift\nCAUGHT planted public lens copy drift\nCAUGHT planted token alias drift\nCAUGHT planted source reactivation drift"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_transcription.log",
+        "log_sha256": "67ca3f9169bf11c391c951ee230a81fcbeb3bd26367dc29f088fdf1951152a82",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:28+00:00",
+        "status": "pass",
+        "summary": "PASS full native transcription: 32 states, 64 raw rows, public seed, first and second refinement\nCAUGHT planted maintenance weight drift\nCAUGHT planted normalization drift\nCAUGHT planted kernel enumeration drift\nCoverage: physical rows/refinement only; all-word laws and account/history lifts are Lean obligations."
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_full_native_viability_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_full_native_viability_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_full_native_viability_transcription.log",
+        "log_sha256": "0e383c358b8ef65d921a6464db856bacb78081feea87393da0ce540c3d3ccee4",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:30+00:00",
+        "status": "pass",
+        "summary": "PASS: caught planted drift: absence erases first stored-charge step\nPASS: caught planted drift: absent supply renews charge\nPASS: caught planted drift: missing program admits predecessor\nPASS: caught planted drift: target root receipt20 replaced by default\nPASS: caught planted drift: phase erased from successor"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_global_package_composition_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_global_package_composition_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_global_package_composition_transcription.log",
+        "log_sha256": "bf4d9849f9155ada919de180473beccf09f513cf06f626b4d522dd1a220f466c",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:31+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted prefix scope drift\nCAUGHT planted selected arrow drift\nCAUGHT planted shadow scope drift\nPASS cover-selected raw composition: typed index/cover/arrow data, actual outputs, no fallback; all-partial POS04 target/package adapters and direct controls kernel-checked\nScope: closed structural package pipeline at existing POS04 clause grades; full Temporal-FIACH composition remains open"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_internalized_receipts_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_internalized_receipts_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_internalized_receipts_transcription.log",
+        "log_sha256": "cb5618edb8268e2c32af7798e97cac45a10242e7c16b1b64766ece99c7b6bb18",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:33+00:00",
+        "status": "pass",
+        "summary": "PASS: caught planted drift: clock issuer relabelled local\nPASS: caught planted drift: valid mixed channel provenance rejected as G23 mixed issuer\nPASS: caught planted drift: holonomy erased\nPASS: caught planted drift: absence disables both channels after only one debit\nPASS: caught planted drift: native bias replaced by source bias"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_joint_temporal_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_joint_temporal_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_joint_temporal_transcription.log",
+        "log_sha256": "785b57d674c7f73cded998830b87a60b7b39759700d8c179f6413eea5848d0f3",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:36+00:00",
+        "status": "pass",
+        "summary": "PASS: caught planted drift: elapsed source order erased\nPASS: caught planted drift: target local record supplied as inherited6\nPASS: caught planted drift: joint denominator16 instead of256\nPASS: caught planted drift: target ownership collapsed to source\nPASS: caught planted drift: conditioned marginals falsely multiplied"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_native_fission_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_native_fission_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_native_fission_transcription.log",
+        "log_sha256": "5cd52e3b3b439c3ae873fc618bd806fe9cb5029f259a813727e558e2372b9628",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:38+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted right target drift\nCAUGHT planted branch order drift\nCAUGHT planted branch coordinate drift\nCAUGHT planted recognition drift\nPASS all16 raw branch episodes, owner expressions, full past, corridor/support/event/update coordinates; full certificates and actual-readout control kernel probes; seven planted drifts"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_native_publication_composition_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_native_publication_composition_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_native_publication_composition_transcription.log",
+        "log_sha256": "501e446cb3dad9273a2cf46f1409f4ac8a4aafcbdce8318ae29058deb7de2f28",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:40+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted runtime source presence drift\nCAUGHT planted event log drift\nCAUGHT planted stored path drift\nCAUGHT planted controller drift\nPASS all8 raw repaired episodes, physical/memory/owner/presence seams, actual corridor checks and source/event cuts; full readout/certificate kernel probes; seven planted drifts"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_pos04_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_pos04_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_pos04_transcription.log",
+        "log_sha256": "3d1b03261aa0b8adacac0fe014125dcb900ad2ae9cffc8a17e42ae52742453d1",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:41+00:00",
+        "status": "pass",
+        "summary": "PASS all 160 local assignments\nPASS all local primitive references resolve in the frozen JSON\nPASS all 8 staged clause-map rows\nCOVERAGE: exact T1 K/CORE/ambient order, public f, canonical policy, P (100), separate C (70) and U (70), CU (100), hazards and 12 hazard-rule outputs, slip rates, C1 tau/epsilon/threshold/published values, all action rows, and raw M labels; both tagged P tables (100 each); all represented POS-04 histories, corridor including readout rule, receiver, ledger, C4-C7 coordinates, per-tag raw inputs, recognition status, 160 local assignments, 8 staged-map rows, and every local primitive reference. Prose rules, grades, mutations, and predicate contracts are outside this data-transcription check.\nPASS POS-04 Lean transcription: covered raw fields match the frozen JSON"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_raw_corridor_sequence_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_raw_corridor_sequence_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_raw_corridor_sequence_transcription.log",
+        "log_sha256": "c6c3ae2d8dc1f383fc9e42a9eaea32f016bddf1af0f430d43f537e6120a416c2",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:43+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted prior path residue drift\nCAUGHT planted staged context reuse drift\nCAUGHT planted predictive seed drift\nPASS actual heterogeneous raw corridor chain, full declared raw parameter observations, staged assignment seam, direct missing/clock/funding/loop/context-reuse controls; five planted drifts caught\nScope: corridor geometry and raw parent/adjacency construction; supported execution, runtime seed coherence, funded runtime lineage and full Temporal-FIACH remain"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_raw_direct_bridge.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_raw_direct_bridge",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_raw_direct_bridge.log",
+        "log_sha256": "f4cc0fdb3f7f01c0863c7b7321e103037e0d4f87185e68b3159cce205111cc89",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:47+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted whole data payload binding transcription drift\nCAUGHT planted missing data graph transcription drift\nPASS exact whole exported raw models and committed observations for23 cases\nPASS four actual boundary/endpoint-edge observations and14 planted drifts\nKernel witnesses, refutations and actual ModelPath values are checked by the Lean build."
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_receiver_sequence_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_receiver_sequence_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_receiver_sequence_transcription.log",
+        "log_sha256": "8ebbb82659c47e55bddf0065a50a9481a37c73ac42eeb89f0b5d28cd44c31da9",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:48+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted owner drift\nCAUGHT planted route drift\nCAUGHT planted constant control drift\nPASS raw delivery instructions/source pair and kernel actual receiver content, collision and source-erasure controls\nScope: immediate common-coordinate receiver operation; physical middle interface, supported acquisition and full two-hop Temporal-FIACH remain open"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_register_bridge_composition_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_register_bridge_composition_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_register_bridge_composition_transcription.log",
+        "log_sha256": "9aab7dbfeeb967178c961110ee2aced0fde4ea45c8981cf79525f63536740ce0",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:50+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted second instruction drift\nCAUGHT planted positive cell drift\nCAUGHT planted unused-register cut drift\nPASS typed raw substitution: actual consumed/unused/eager/changed readouts; all-partial equation and shared-frame bridge positive kernel-checked\nScope: immutable shared assignment and exact middle raw frame; identity continuation is not a new physical hop"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_stage_composition_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_stage_composition_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_stage_composition_transcription.log",
+        "log_sha256": "10b4f1e5846f7142a8f23e198ad2cfb673c8f546970fe18fc735c3496c6053d5",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:51+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted multiplier drift\nCAUGHT planted changed instruction drift\nCAUGHT planted intermediate scope drift\nPASS typed primitive-map witness: raw parameters/cover and actual sequential outputs; all-partial absence equations kernel-checked\nScope: primitive algebra only; no full Temporal-FIACH composition or two-hop model claim"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_staged_assignment_span_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_staged_assignment_span_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_staged_assignment_span_transcription.log",
+        "log_sha256": "a04bf771ff62a6e86d8ef6794c637e7a4506e9f75fe2214090ff29d68c8a405e",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:52+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted second instruction drift\nCAUGHT planted reused cell namespace drift\nCAUGHT planted partial instruction threshold drift\nPASS raw staged assignment span: actual distinct globals, namespace reads, partial rejection and native all-partial bridge/semantic adapters; four planted drifts caught\nScope: program/assignment transport; physical middle compatibility, supported next acquisition and full Temporal-FIACH composition remain"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_supported_acquisition_sequence_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_supported_acquisition_sequence_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_supported_acquisition_sequence_transcription.log",
+        "log_sha256": "67080a5e78cdd0e8f3e2dd9146e6086eebda6c3c0df410a55d6eb7f1a81ea463",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:34:54+00:00",
+        "status": "pass",
+        "summary": "CAUGHT planted selected history drift\nCAUGHT planted positive support weight drift\nCAUGHT planted staged primitive selector drift\nPASS actual supported acquisition instructions, computed 0->2->3->4 sequence, exact staged readout adapter and direct initializer/weight/missing/normalized-alternative controls; five planted drifts caught\nScope: supported selected histories and chosen outcomes; complete Temporal-FIACH, runtime seed/clock/funded-route/final autonomy composition remain"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_t1_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_t1_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_t1_transcription.log",
+        "log_sha256": "126553cca21d19d62a7dc3cae09808e6b8a0f192aef2e3b04bf6249521b506a2",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:35:01+00:00",
+        "status": "pass",
+        "summary": "T1 transcription PASS: 10 kernel states, 4 CORE states, 10 policies, 100 P entries, 100 CU entries, 100 Peps entries, and 10 fixed masses"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_tth06_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_tth06_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_tth06_transcription.log",
+        "log_sha256": "98fa9572a596ec528a05d54fc00fb9c5faaac98db56dbcf68aac49986eb70aff",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:35:15+00:00",
+        "status": "pass",
+        "summary": "ation\nPolymorphic scope: staged target/resource instructions and the target-execution span are publicly bound. The raw frame-to-presentation constructor and exact partial POS-04 presentation equations are checked; the owning raw-interface component boundary, generic F/O soundness and common-coordinate receiver square are checked. The generic nominal protocol and its exact arbitrary-partial AF/AO owning adapters are checked. Receiver/counterfactual coherence is incorporated into the owning final gate, whose exact all-partial POS04 adapters to the nominal gate are checked. The complete whole-gate correspondence is exact for every partial assignment, preserving the frozen source/staging/package/nominal autonomy checks with complete actual lineage. The weaker legacy whole-gate identification is kernel-refuted. Reversed raw histories pass both final gates with computed outputs 1/0. Independent ACCEPT / FAITHFUL adjudication is recorded in audit/G6d_final_correspondence.md; TTH-06 is proved at the explicitly disclosed structural grades and F/O interpretation, with the frozen row text unchanged.\nLegacy G6b vectors above certify their unchanged weaker lineage. Complete named lineage, its family vectors, and F/O soundness are separately kernel-proved in POS04CompleteLineage/POS04CompleteFIACH; they are not inferred from those legacy booleans.\nCoverage limit: finite observations are compared here; unbounded word laws, generic fixed-point greatest-ness, and TTH-05 soundness are theorems, not Python transcription results. Raw POS-04 cells remain covered by check_pos04_transcription.py."
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/check_tth09_transcription.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "check_tth09_transcription",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/check_tth09_transcription.log",
+        "log_sha256": "ae6ab0f60a93dc0db1a2a611ea787a83c1a50478cd573031c6a2f2e6e2052240",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:35:16+00:00",
+        "status": "pass",
+        "summary": "Coverage: action tables on both bits; vertex counts; all route event paths/boundary references; event entry/exit/availability/action IDs/action outputs/clock increments/forward and inverse clock outputs; boundary entry/exit/initial bits; rewrites; ranks; critical pairs; every completion field/path; every domain.\nJSON IDs are source-order labels; metadata/prose are not semantic inputs.\nCAUGHT planted JSON drift: event availability\nCAUGHT planted JSON drift: raw route path\nCAUGHT planted JSON drift: clock increment"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/tools/verify_corpus_dois.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "corpus_doi_live",
+        "kind": "diagnostic",
+        "log_path": "lean/.validate-logs/W19a/corpus-doi-live.log",
+        "log_sha256": "e441a7144ac56c7bb902a6f393f3dc68364848805fbaef88a9f41770e9636c4e",
+        "metrics": {},
+        "recorded_at": "2026-10-13T12:12:35+00:00",
+        "status": "pass",
+        "summary": "{\"status\": \"pass\", \"published_records\": 7}"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/tools/build_correspondence.py",
+          "--check"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "correspondence",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W22-round2/correspondence.log",
+        "log_sha256": "35539874788aaae6e8c6bb3a786ac85a0ad36904beeae9f8fd0f8dc679fb1c66",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T10:58:11+00:00",
+        "status": "pass",
+        "summary": "{\"entries\": 48, \"formal_entries\": 42, \"prose_claims\": 6, \"declarations\": 82, \"failed_checks\": [], \"check\": true}"
+      },
+      {
+        "command": [
+          "python3",
+          "-m",
+          "pytest",
+          "-o",
+          "addopts=",
+          "-q",
+          "-p",
+          "no:cacheprovider"
+        ],
+        "cwd": "cst-tt",
+        "environment": {
+          "PYTHONHASHSEED": "0",
+          "PYTHONPATH": "src:scripts"
+        },
+        "exit_code": 1,
+        "id": "cst_tt",
+        "kind": "pytest",
+        "log_path": "lean/.validate-logs/W19a/cst-tt-pytest-configured.log",
+        "log_sha256": "a0e701e24f488ccf2de334bd6600c4db0fc335aa164d1aca0dfd94b26fd03df8",
+        "metrics": {
+          "failed": 6,
+          "passed": 130
+        },
+        "recorded_at": "2026-10-13T11:37:34+00:00",
+        "status": "fail",
+        "summary": "6 failed, 130 passed in 4.61s\nFAILED tests/test_circularity_and_lean_surface.py::test_primitive_lean_tree_passes_verdict_vocabulary_scan\nFAILED tests/test_circularity_and_lean_surface.py::test_lean_scaffold_has_no_unproved_placeholder_commands\nFAILED tests/test_circularity_and_lean_surface.py::test_primitive_import_graph_does_not_reverse_layers\nFAILED tests/test_circularity_and_lean_surface.py::test_countermodel_kernel_has_all_certificate_declarations_and_no_verdict_primitives\nFAILED tests/test_countermodel_certificates.py::test_every_countermodel_certificate_validates_and_binds_exact_model\nFAILED tests/test_generated_assets.py::test_builder_is_idempotent_in_place - ..."
+      },
+      {
+        "command": [
+          "python3",
+          "-m",
+          "pytest",
+          "-q"
+        ],
+        "cwd": "cst-tt",
+        "environment": {},
+        "exit_code": 2,
+        "id": "cst_tt_initial_setup",
+        "kind": "diagnostic",
+        "log_path": "lean/.validate-logs/W19a/cst-tt-pytest.log",
+        "log_sha256": "4fc59bb7c9c0bba4f34d07c0ef9bd912f78975b95fb4919edce06587a40c5167",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:18:17+00:00",
+        "status": "fail",
+        "summary": "=========================== short test summary info ============================\nERROR tests/test_tt07a_defects.py\nERROR tests/test_tt07a_robustness.py\nERROR tests/test_tt07a_unbounded.py\n!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/tools/build_evidence_map.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "evidence_map",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W22-evidence-map.log",
+        "log_sha256": "0993f86dd2d83029b4413391a8d1c280fa67c29bc9125e01673b3d3684cac989",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T10:29:26+00:00",
+        "status": "pass",
+        "summary": "{\"axiom_sets\": [[], [\"Classical.choice\"], [\"Classical.choice\", \"Quot.sound\", \"propext\"], [\"Quot.sound\", \"propext\"], [\"propext\"]], \"mapped_claims\": 41, \"resolved_names\": 82, \"unresolved_names\": [], \"untrusted_axioms\": []}"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/tools/render_figure_data.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "figure_data",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W22/figure-data-regeneration.log",
+        "log_sha256": "03648d315502b8cef2c74478b02658af80607ae06d0d98cb27bfeda049552ab0",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T10:35:54+00:00",
+        "status": "pass",
+        "summary": "Wrote /home/repos/six-birds-transcendence/paper/figures/generated/figdata.tex"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/tools/build_import_map.py",
+          "--check"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "import_map",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19b/import_map.log",
+        "log_sha256": "fb9c4b9af11b0b28fcf2273c1859683f317a4e2770478f1b83e00ae7e0c32eb5",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-13T13:09:01+00:00",
+        "status": "pass",
+        "summary": "{\"doi_statuses\": {\"P05\": {\"doi\": \"10.5281/zenodo.23233137\", \"status\": \"reserved\"}, \"P07\": {\"doi\": \"10.5281/zenodo.23120470\", \"status\": \"published\"}, \"P14\": {\"doi\": \"10.5281/zenodo.23120494\", \"status\": \"published\"}, \"P18\": {\"doi\": \"\", \"status\": \"none\"}, \"P30\": {\"doi\": \"10.5281/zenodo.23087000\", \"status\": \"published\"}, \"P35\": {\"doi\": \"10.5281/zenodo.23120462\", \"status\": \"published\"}, \"P50\": {\"doi\": \"10.5281/zenodo.23088991\", \"status\": \"published\"}, \"P53\": {\"doi\": \"10.5281/zenodo.23120497\", \"status\": \"published\"}, \"P57\": {\"doi\": \"10.5281/zenodo.23184176\", \"status\": \"published\"}}, \"literal_anchor_check\": {\"no_literal_anchor (unlabelled; content compared in import_relocation.csv)\": 6, \"ok\": 13}, \"papers\": 9, \"rows\": 19}"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/tools/build_import_map.py",
+          "--live",
+          "--check"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "import_map_live",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19b/import-live.log",
+        "log_sha256": "fb9c4b9af11b0b28fcf2273c1859683f317a4e2770478f1b83e00ae7e0c32eb5",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-13T13:09:15+00:00",
+        "status": "pass",
+        "summary": "{\"doi_statuses\": {\"P05\": {\"doi\": \"10.5281/zenodo.23233137\", \"status\": \"reserved\"}, \"P07\": {\"doi\": \"10.5281/zenodo.23120470\", \"status\": \"published\"}, \"P14\": {\"doi\": \"10.5281/zenodo.23120494\", \"status\": \"published\"}, \"P18\": {\"doi\": \"\", \"status\": \"none\"}, \"P30\": {\"doi\": \"10.5281/zenodo.23087000\", \"status\": \"published\"}, \"P35\": {\"doi\": \"10.5281/zenodo.23120462\", \"status\": \"published\"}, \"P50\": {\"doi\": \"10.5281/zenodo.23088991\", \"status\": \"published\"}, \"P53\": {\"doi\": \"10.5281/zenodo.23120497\", \"status\": \"published\"}, \"P57\": {\"doi\": \"10.5281/zenodo.23184176\", \"status\": \"published\"}}, \"literal_anchor_check\": {\"no_literal_anchor (unlabelled; content compared in import_relocation.csv)\": 6, \"ok\": 13}, \"papers\": 9, \"rows\": 19}"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/tools/render_index.py",
+          "--check"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "index",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W22-round2/index.log",
+        "log_sha256": "6e5cd52e6886f0d5c647077227fc7c868eb475808764bff73fa04c74ee16cfd7",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T10:57:30+00:00",
+        "status": "pass",
+        "summary": "PASS: result-to-Lean index matches its inputs"
+      },
+      {
+        "command": [
+          "lake",
+          "build"
+        ],
+        "cwd": "lean",
+        "environment": {},
+        "exit_code": 0,
+        "id": "lean_build",
+        "kind": "lean_build",
+        "log_path": "lean/.validate-logs/W19a/lean-build.log",
+        "log_sha256": "0b8f3fa33c97639c5f37db472b7f7bbbf27a600fe9c3b440db388e4040fdd5bb",
+        "metrics": {
+          "jobs": 799
+        },
+        "recorded_at": "2026-10-13T11:33:58+00:00",
+        "status": "pass",
+        "summary": "Build completed successfully (799 jobs)."
+      },
+      {
+        "command": [
+          "lake",
+          "clean"
+        ],
+        "cwd": "lean",
+        "environment": {},
+        "exit_code": 0,
+        "id": "lean_clean",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/lean-clean.log",
+        "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:33:58+00:00",
+        "status": "pass",
+        "summary": ""
+      },
+      {
+        "command": [
+          "scripts/validate_lean.sh"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "lean_validation",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/lean_validation.log",
+        "log_sha256": "77d41eb81a035fe0d93476ca4f3b04a57886c49c394dbce360ba66bcd51d825a",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:36:11+00:00",
+        "status": "pass",
+        "summary": "  heuristic lead vacuity ignored input lean/CSTTT/Transport/RouteLicenseGuards.lean:34: def flatRanks := { positive with rank := fun _ => 0 }\n  heuristic lead vacuity ignored input lean/CSTTT/Transport/RouteLicenseModels.lean:20: def necessity : RawSystem (Fin 3) (Fin 3) (Fin 1) (Fin 2) Bool :=\nOVERALL  pass\nJSON: /home/repos/six-birds-transcendence/lean/.validate-logs/run-20261013T113359-998050Z/report.json\nTEXT: /home/repos/six-birds-transcendence/lean/.validate-logs/run-20261013T113359-998050Z/report.txt"
+      },
+      {
+        "command": [
+          "latexmk"
+        ],
+        "cwd": "paper",
+        "environment": {},
+        "exit_code": 0,
+        "id": "manuscript_build",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/manuscript-build-recorded.log",
+        "log_sha256": "e8f30721e50dac0decbb9e5ac9678679d80006f0a4ba159b1d02e09aa6a131c0",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:59:05+00:00",
+        "status": "pass",
+        "summary": "Latexmk: All targets (build/main.pdf) are up-to-date\n------------\nRunning 'latexpand \"main.tex\" -o \"build/\"/\"main\"_flat.tex'\n------------\n"
+      },
+      {
+        "command": [
+          "latexmk"
+        ],
+        "cwd": "paper",
+        "environment": {},
+        "exit_code": 0,
+        "id": "manuscript_build_final",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W23-round3/manuscript-build.log",
+        "log_sha256": "d62997f9a70878557c43646b7b6aed03f40fdde510369b7b7470dc83b7c263a7",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T12:19:48+00:00",
+        "status": "pass",
+        "summary": "Latexmk: All targets (build/main.pdf) are up-to-date\n------------\nRunning 'latexpand \"main.tex\" -o \"build/\"/\"main\"_flat.tex'\n------------\n"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/tools/check_manuscript.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "manuscript_check",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W24-archive-refresh/manuscript_check.log",
+        "log_sha256": "cc383554a84d57a6365fdec716b00e4d9935bb22941a60033143f0a43eb3a2cd",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T13:22:49+00:00",
+        "status": "pass",
+        "summary": "{\"citation_keys\": 100, \"destinations\": \"mapping pending\", \"errors\": [], \"files\": 31, \"section_labels\": [\"sec:ancestry\", \"sec:autonomy\", \"sec:availability\", \"sec:branching\", \"sec:checks\", \"sec:conclusion\", \"sec:continuation\", \"sec:copy\", \"sec:intro\", \"sec:lineage\", \"sec:modes\", \"sec:objections\", \"sec:realization\", \"sec:related\", \"sec:route\", \"sec:setting\"], \"theorem_environments\": 41, \"tikz_nodes\": 103}"
+      },
+      {
+        "command": [
+          "latexmk",
+          "-C"
+        ],
+        "cwd": "paper",
+        "environment": {},
+        "exit_code": 0,
+        "id": "manuscript_clean",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W19a/manuscript-clean.log",
+        "log_sha256": "a7f1bfc37e500a6c01479c278ac2b269d75bee7d2a9e482e94e5f995d1be6ec6",
+        "metrics": {},
+        "recorded_at": "2026-10-13T11:58:59+00:00",
+        "status": "pass",
+        "summary": "Rc files read (in order):\n  ./latexmkrc\nLatexmk: This is Latexmk, John Collins, 9 March 2026. Version 4.88.\nLatexmk: Doing full clean up for 'main.tex'\n"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/prewriting/validate_package.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "package_validator",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W24-archive-refresh/package_validator.log",
+        "log_sha256": "c9c698f276f14109c8e9a1deeb157bfd0a00b457fa6c3ff7cfd75a5f935337ec",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T13:22:49+00:00",
+        "status": "pass",
+        "summary": "PASS: {\"claims\": 56, \"core_citations\": 60, \"corpus_citations\": 9, \"covered_registry_rows\": 39, \"errors\": 0, \"main_claims\": 38, \"nonclaims\": 85, \"placed_main_claims\": 38, \"registry_rows\": 39, \"snapshot_references\": 14, \"taxonomy\": 56}"
+      },
+      {
+        "command": [
+          "python3",
+          "-m",
+          "pytest",
+          "-q",
+          "paper/tests"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "paper",
+        "kind": "pytest",
+        "log_path": "lean/.validate-logs/W24-archive-refresh/paper.log",
+        "log_sha256": "5d55edbd8ea0cc4dd0a1eb1a83c43dd56e08faf597f6f74301649be78e225ac3",
+        "metrics": {
+          "passed": 205
+        },
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T13:26:15+00:00",
+        "status": "pass",
+        "summary": "205 passed in 204.91s (0:03:24)"
+      },
+      {
+        "command": [
+          "python3",
+          "-c",
+          "import hashlib,json,re,subprocess; from pathlib import Path; paths=('paper/build/main.pdf','paper/main.pdf'); hashes={p:hashlib.md5(Path(p).read_bytes()).hexdigest() for p in paths}; pages=int(re.search(r'^Pages:\\s+(\\d+)',subprocess.check_output(['pdfinfo',paths[1]],text=True),re.M)[1]); print(json.dumps({'pages':pages,'md5':hashes},sort_keys=True)); assert len(set(hashes.values()))==1"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "pdf_readout",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W23-round3/pdf-readout.log",
+        "log_sha256": "7396154c76bf53b8811e314618fb693cdd2bc597e287a3c3b9cb45539801b061",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T12:23:35+00:00",
+        "status": "pass",
+        "summary": "{\"md5\": {\"paper/build/main.pdf\": \"d6af1003563f5f66657614c44eabc751\", \"paper/main.pdf\": \"d6af1003563f5f66657614c44eabc751\"}, \"pages\": 44}"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/tools/export_results.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "result_snapshot",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W22/snapshot-regeneration.log",
+        "log_sha256": "66261b389ba59f1ef55bdd4bf3d929db79ccdeb3fa6efe91ea29c27dcdf00ef8",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T10:35:54+00:00",
+        "status": "pass",
+        "summary": "{\"entries\": 42, \"pins\": 29, \"candidate_findings\": [], \"check\": false}"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/selftest_evaluate_fiach_pos04.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "selftest_evaluate_fiach_pos04",
+        "kind": "selftest",
+        "log_path": "lean/.validate-logs/W19a/selftest_evaluate_fiach_pos04.log",
+        "log_sha256": "acc6e330ec9c9138dd1b1a032963c2efa2dfa5b2f5d56a17275b7e1338ad4c1e",
+        "metrics": {
+          "failed": 0,
+          "passed": 37
+        },
+        "recorded_at": "2026-10-13T11:35:19+00:00",
+        "status": "pass",
+        "summary": "| T1 provenance hashes | corrupt pinned P span hash | CAUGHT |\n| Tagged canonical P and M from raw actions | change target canonical action row | CAUGHT |\n| C1 C/U, E\u2082\u03b5, fixed law, retention, TV, defects | change target canonical action row | CAUGHT |\n| C1 uniqueness for all normalized fixed laws | replace raw published P by identity matrix | CAUGHT |\n| C1 agreement with Lean theorems and axioms | change target canonical action row | CAUGHT |\n| C2 split and pinned witness | make public readout state-identifying | CAUGHT |\n| C3 recursive action/exit profile and terminal M | make initial public partition discrete | CAUGHT |\n| C4 full current family and hidden connector | add canonical M public reader | CAUGHT |\n| C5 forward/reverse products, credit and anchors | externalize native target protocol | CAUGHT |\n| C6 full interface and all-word fixed point | change merged member tick response | CAUGHT |\n| C6 funded order/tick/record and owner | unset first event strict_step | CAUGHT |\n| C7 per-assemblage reassembly and strict refinement | equalize both raw couplings | CAUGHT |\n| C7 receiver pre-exit jointPairing display | remove source presence | CAUGHT |\n| C7 staged joint relation preservation | change target coupling and reassembly | CAUGHT |\n| C8 priced ledger, gfp and canonical P | remove target recharge | CAUGHT |\n| T1 histories, strict edge and bridge laws | override one representative endpoint | CAUGHT |\n| Source-absent activation | remove source input from positive receiver | CAUGHT |\n| Raw-coordinate receiver and content counterfactuals | replace content by preloaded copy | CAUGHT |\n| Mixed corridor, no gap and support interventions | unrealize mix_1 | CAUGHT |\n| Funded target step and persistent route readout | delete target register write | CAUGHT |\n| Typed corridor/receiver endpoint link | override representative target endpoint | CAUGHT |\n| 160 state-indexed package coordinates | delete one target clause coordinate | CAUGHT |\n| Eight staged maps and raw clause equations | alter one target C5 raw protocol | CAUGHT |\n| Source-removed target-only C8 autonomy | keep source available after withdrawal | CAUGHT |\n| TTH-06 surrogate assembly | remove source input | CAUGHT |\n| References, distributions, reassembly and events | give an event an unknown source stage | CAUGHT |\n| Unchanged JSON-Pointer intervention semantics | replace a nonexistent raw path | CAUGHT |\n| Positive prediction coverage and gates | remove source input | CAUGHT |\n| Mutation targets and outcome categories | undo source half of uncoupled control | CAUGHT |\n| Exact prediction-list and mutation coverage | delete one declared intervention | CAUGHT |\n| C7 realized mixed event | unrealize mix_1 and mix_2 | CAUGHT |\n| C7 funded receiver activation | remove receiver funding | CAUGHT |\n| C6 realized path | unrealize mix_1 | CAUGHT |\n| C6 realized order | reorder realized stage list | CAUGHT |\n| C6 route context availability | delete route_b writer | CAUGHT |\n| C5 anchor history availability | make h_rep_a a non-support path | CAUGHT |\n| C7 branch history availability | make h_split a non-support path | CAUGHT |\n"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/selftest_evaluate_tth06_lanes.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "selftest_evaluate_tth06_lanes",
+        "kind": "selftest",
+        "log_path": "lean/.validate-logs/W19a/selftest_evaluate_tth06_lanes.log",
+        "log_sha256": "0f67e7d2ba9a048c30380cb890c937b733ba3a811de7b96b2669110262009c7d",
+        "metrics": {
+          "failed": 0,
+          "passed": 46
+        },
+        "recorded_at": "2026-10-13T11:35:26+00:00",
+        "status": "pass",
+        "summary": "Counts: {\"CAUGHT\": 46, \"ERROR\": 0, \"MISSED\": 0}"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/selftest_evaluate_tth09_routes.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "selftest_evaluate_tth09_routes",
+        "kind": "selftest",
+        "log_path": "lean/.validate-logs/W19a/selftest_evaluate_tth09_routes.log",
+        "log_sha256": "2ad8ec6913dcde9c1d21a8e6fb303c6b54fd3708891f5fd996b87ce5035fb3a9",
+        "metrics": {
+          "failed": 0,
+          "passed": 34
+        },
+        "recorded_at": "2026-10-13T11:35:26+00:00",
+        "status": "pass",
+        "summary": "34/34 CAUGHT"
+      },
+      {
+        "command": [
+          "python3",
+          "scripts/selftest_validate_lean.py"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "selftest_validate_lean",
+        "kind": "selftest",
+        "log_path": "lean/.validate-logs/W19a/selftest_validate_lean.log",
+        "log_sha256": "1dd49ac9ca86da894f7ae5b272365e3f27f3941384eed054e893d34b13685d4c",
+        "metrics": {
+          "passed": 17
+        },
+        "recorded_at": "2026-10-13T11:58:46+00:00",
+        "status": "pass",
+        "summary": "PASS sorry: lean/CSTTT/Core/Finite.lean:42: theorem PlantedSorry : True := by sorry\nPASS custom axiom: lean/CSTTT/Core/Finite.lean:42: axiom planted_custom_axiom : False\nPASS def True: lean/CSTTT/Core/Finite.lean:42: def PlantedConstant : Prop := True\nPASS constant function: PlantedConstFunA, PlantedConstFunB, PlantedConstFunC: high-confidence; ignored-input leads=0\nPASS missing registry name: unresolved declaration: CSTTT.PackageTheory.thisNameDoesNotExist\nPASS Prop definition as evidence: TTH-01 theorem=0 statement-only=1; row TTH-01 has statement-only definitions but no theorem-kind or constructive definition evidence\nPASS transitive untrusted axiom: #print axioms CSTTT.PlantedTransitive = ['CSTTT.planted_transitive_axiom']; untrusted axioms in CSTTT.PlantedTransitive: CSTTT.planted_transitive_axiom\nPASS exact_statement inventory drift: inventory_match=False; generated inventory disagrees with CST-TT-09_THEOREM_STATUS.csv\nPASS status_09 inventory drift: inventory_match=False; generated inventory disagrees with CST-TT-09_THEOREM_STATUS.csv\nPASS ceiling_09 inventory drift: inventory_match=False; generated inventory disagrees with CST-TT-09_THEOREM_STATUS.csv\nPASS sorry after inline comment: lean/CSTTT/Core/Finite.lean:42: /- inline -/ theorem PlantedInlineSorry : True := by sorry\nPASS mis-attributed probe block: #check, axioms, and kind named another declaration\nPASS incomplete probe block: missing end marker rejected\nPASS wrapped #print axioms: attributed and parsed across continuation lines\nPASS nested and inline comments: comment tokens removed, following sorry retained\nPASS direct markers: actual declaration, kind and trusted axiom attribution\nPASS direct markers at scale: all 12000 delimiters match without interpreter recursion"
+      },
+      {
+        "command": [
+          "python3",
+          "paper/tools/style_lint.py",
+          "--strict"
+        ],
+        "cwd": ".",
+        "environment": {},
+        "exit_code": 0,
+        "id": "style_lint",
+        "kind": "check",
+        "log_path": "lean/.validate-logs/W23-round3/style_lint.log",
+        "log_sha256": "7affb4685f97559ea918249a392e2af7ce11ab02562bf9eefe5e00d77546a9c6",
+        "metrics": {},
+        "metrics_note": "",
+        "metrics_status": "valid",
+        "recorded_at": "2026-10-14T12:19:46+00:00",
+        "status": "pass",
+        "summary": "sec_12_conclusion | 338 | 11.83 | 0.00 | 0.00 | 2.96 | 15.36 | 0 | \ntab_grades:caption:1 | 46 | 0.00 | 0.00 | 0.00 | 0.00 | 11.50 | 0 | \ntab_grades | 0 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0 | \nTOTAL | 14557 | 13.95 | 0.00 | 1.58 | 4.19 | 15.93 | 0 | \nExempt files: 2"
+      }
+    ],
+    "definition": "Dated actual command receipts; no commands are rerun by --check. Failures remain failures. Pass counts count completed tests/probes, not Lean theorems.",
+    "lean_build_jobs": 799,
+    "tests": {
+      "cst_tt": {
+        "failed": 6,
+        "passed": 130
+      },
+      "paper": {
+        "passed": 205
+      },
+      "selftest_evaluate_fiach_pos04": {
+        "failed": 0,
+        "passed": 37
+      },
+      "selftest_evaluate_tth06_lanes": {
+        "failed": 0,
+        "passed": 46
+      },
+      "selftest_evaluate_tth09_routes": {
+        "failed": 0,
+        "passed": 34
+      },
+      "selftest_validate_lean": {
+        "passed": 17
+      }
+    }
+  },
+  "schema_version": "1.0",
+  "static": {
+    "headlines": {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "distinct": 82,
+      "sha256": "a1a838fe144903b3b8333d8d5c823d9a4710fa4bf06558a966f26e9d635a75e8",
+      "source": "paper/prewriting/lean_declaration_map.csv"
+    },
+    "inventory": {
+      "declaration_entries": 4628,
+      "definition": "Sum of declarations arrays in all row_inventory.json rows; unique count deduplicates names.",
+      "sha256": "278ac09c3a63ae5d7e3a4bb3077e7c4483de9a4d7bb9222121a3344b274eb288",
+      "source": "lean/row_inventory.json",
+      "unique_declarations": 4586
+    },
+    "model_specs": {
+      "count": 15,
+      "definition": "Distinct audit/proposed_models/*.model.json files named by model_files in either evidence map. This counts specification files, not distinct raw worlds; finite physical factors may have unbounded histories.",
+      "files": [
+        "audit/proposed_models/G11-RAW-RATIONAL-MARGINS.model.json",
+        "audit/proposed_models/G12-RAW-NATIVE-RECHARGE.model.json",
+        "audit/proposed_models/G13-OPERATIONAL-FALLBACK.model.json",
+        "audit/proposed_models/G14-GUARDED-FUSION.model.json",
+        "audit/proposed_models/G17-full-native-package.model.json",
+        "audit/proposed_models/G30-full-native-02.model.json",
+        "audit/proposed_models/G5-RAW-DIRECT-CONTROLS.model.json",
+        "audit/proposed_models/TTH07-NATIVE-AVAILABILITY-REPAIR.model.json",
+        "audit/proposed_models/TTH07-NATIVE-OBJECTHOOD-PROBE.model.json",
+        "audit/proposed_models/TTH07-NATIVE-PACKAGE-SUPPLEMENT.model.json",
+        "audit/proposed_models/TTH07-NATIVE-PUBLICATION-COMPOSITION.model.json",
+        "audit/proposed_models/TTH07-NATIVE-RUNTIME-COMPOSITION.model.json",
+        "audit/proposed_models/TTH07-RAW-CORRIDOR-SEQUENCE.model.json",
+        "audit/proposed_models/TTH07-SUPPORTED-ACQUISITION-SEQUENCE.model.json",
+        "audit/proposed_models/TTH08-NATIVE-FISSION.model.json"
+      ],
+      "sha256": {
+        "audit/proposed_models/G11-RAW-RATIONAL-MARGINS.model.json": "343c1fea1a5d1920705bb09085464316e25224dfa4ee26e0df66b08c28b359db",
+        "audit/proposed_models/G12-RAW-NATIVE-RECHARGE.model.json": "d49b658f0880dd77fc3661c62740f9d745bfed28ece48a6b4aa2518f673121f9",
+        "audit/proposed_models/G13-OPERATIONAL-FALLBACK.model.json": "1a96b27d7c5b0100de047370ff80d048132e70da98a8a7e95f61299b09c26cad",
+        "audit/proposed_models/G14-GUARDED-FUSION.model.json": "567bfa06dc2e161e976522cdd9358fa4efa4cfef2133f51aa80f7d3ae7be4da4",
+        "audit/proposed_models/G17-full-native-package.model.json": "f90e957c8a44b43c17b8b34d77f146162ecb265376726997b2547ec38d2e349a",
+        "audit/proposed_models/G30-full-native-02.model.json": "8f62e993b19fdeb612681b652594afd83053b4b9dd2ba63467505c823cf25476",
+        "audit/proposed_models/G5-RAW-DIRECT-CONTROLS.model.json": "7400bfdddf2546c16f93ae494d21339c6674f9ee524aed7627fa6c957fd44cb2",
+        "audit/proposed_models/TTH07-NATIVE-AVAILABILITY-REPAIR.model.json": "f6fcfd9123a0c9b6c45863e4d45a8414f336659033c3392c38035fbe69ffbbd3",
+        "audit/proposed_models/TTH07-NATIVE-OBJECTHOOD-PROBE.model.json": "5c070c9e9e43ed321a7fcddf39a88ab817203ce3c1cd96728601c83f39442a54",
+        "audit/proposed_models/TTH07-NATIVE-PACKAGE-SUPPLEMENT.model.json": "0f4a978b8c6d956259f0aaee4adb348c86384e94ca4ebc9ac3d2e0fbb5b27f63",
+        "audit/proposed_models/TTH07-NATIVE-PUBLICATION-COMPOSITION.model.json": "67ef7f775ffe49e12bfbfbedcf7b89f83f85c137d166e2a2d6867cf0ef4d434f",
+        "audit/proposed_models/TTH07-NATIVE-RUNTIME-COMPOSITION.model.json": "fc018e7077b08584587529c698faf6964da0ca769ed4b27ac5b91ad4180d5b04",
+        "audit/proposed_models/TTH07-RAW-CORRIDOR-SEQUENCE.model.json": "4b00c7d8c7ecb4ea9b7e4b3f883b21a7fde35c535d75736564789bc166dbd95c",
+        "audit/proposed_models/TTH07-SUPPORTED-ACQUISITION-SEQUENCE.model.json": "ddba5360466b25d1bf487f946508cc3059528c0cf9c8c19d7331f8ef9b710e36",
+        "audit/proposed_models/TTH08-NATIVE-FISSION.model.json": "c9d7d698fef922f908eebed79229f70b4896934c66966ed1a174ea5cf012f084"
+      }
+    },
+    "modules": {
+      "definition": "*.lean source files recursively under lean/CSTTT; including_root also counts lean/CSTTT.lean.",
+      "including_root": 563,
+      "source": "lean/CSTTT/**/*.lean",
+      "tree_sha256": "f7d3604adc1905c66cb453a34a7c72e3264af6b839c968ce815d7b4222b5df25",
+      "under_csttt_directory": 562
+    },
+    "registry": {
+      "checked_finite_countermodel": 14,
+      "open": 0,
+      "proved": 25,
+      "rows": 39,
+      "sha256": "7b5ae0c98ce11f5bbab62834741b1336c41bc0d6267c523d157faa4e371dd89c",
+      "source": "cst-tt/registries/CST-TT-09_THEOREM_STATUS.csv"
+    },
+    "toolchain": {
+      "sha256": "db7bb24b756d745bbde83fe92718b51bd3625dae3701ba0f598d0eedcd3f3028",
+      "source": "lean/lean-toolchain",
+      "value": "leanprover/lean4:v4.28.0"
+    }
+  },
+  "verification_status": "fail"
+}

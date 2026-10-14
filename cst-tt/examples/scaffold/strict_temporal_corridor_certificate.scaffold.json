@@ -1,0 +1,12 @@
+{
+  "schema_version": "CST-TT-04",
+  "certificate_id": "corridor-placeholder",
+  "model_ref": "model-placeholder",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "not-evaluated",
+  "claim_lanes": ["S-L"],
+  "claim_ceiling": "structural temporal-lineage criterion only",
+  "theorem_evidence": {},
+  "audit": {"strict_corridor_valid": false, "failed_obligations": ["not-evaluated"], "atomic_leg_count": 0, "route_status": "unresolved"},
+  "checker": {}
+}

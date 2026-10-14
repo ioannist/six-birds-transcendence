@@ -1,0 +1,81 @@
+{
+  "claim_ceiling": "finite route-indexed obstruction only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "critical_pairs": [
+    {
+      "left_route": "left-order-route",
+      "normal_form": "p0",
+      "right_route": "right-order-route"
+    }
+  ],
+  "direct_factored_pairs": [],
+  "expected_primary_failure": "memory-or-flatness-satisfied",
+  "interpretation": {
+    "current_projection_agrees": true,
+    "global_now_claim_rejected": true,
+    "no_lineage_verdict": true,
+    "predictive_route_residue_retained": true
+  },
+  "model_id": "ROUTE-C08",
+  "routes": [
+    {
+      "actions": [
+        "left-order"
+      ],
+      "boundary": "same-declared-boundary",
+      "clock_translation": 0,
+      "expected_endpoint": "p0",
+      "route_id": "left-order-route",
+      "start_state": "x"
+    },
+    {
+      "actions": [
+        "right-order"
+      ],
+      "boundary": "same-declared-boundary",
+      "clock_translation": 1,
+      "expected_endpoint": "p1",
+      "route_id": "right-order-route",
+      "start_state": "x"
+    }
+  ],
+  "schema_version": "CST-TT-03",
+  "states": [
+    {
+      "current": "C-start",
+      "local_now": "N-start",
+      "predictive": "P-start",
+      "route_residue": "R-start",
+      "state_id": "x"
+    },
+    {
+      "current": "C-same",
+      "local_now": "N0",
+      "predictive": "P-left",
+      "route_residue": "R-left",
+      "state_id": "p0"
+    },
+    {
+      "current": "C-same",
+      "local_now": "N1",
+      "predictive": "P-right",
+      "route_residue": "R-left",
+      "state_id": "p1"
+    }
+  ],
+  "title": "predictive disagreement after route memory is erased",
+  "transitions": [
+    {
+      "action": "left-order",
+      "from": "x",
+      "to": "p0"
+    },
+    {
+      "action": "right-order",
+      "from": "x",
+      "to": "p1"
+    }
+  ]
+}

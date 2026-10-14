@@ -1,0 +1,41 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "conclusion_failure_checks": {
+    "global_time_potential_absent": true,
+    "route_independent_now_absent": true
+  },
+  "countermodel_id": "CM-07",
+  "derived_facts": {
+    "cycle_sum_modulus": 1
+  },
+  "family": "clock-translation-loop",
+  "model": {
+    "clock_modulus": 2,
+    "global_time_potential_exists": false,
+    "local_now_identity_route": 0,
+    "local_now_loop_route": 1,
+    "loop_source": 0,
+    "loop_target": 0,
+    "loop_translation": 1,
+    "node_count": 1,
+    "nonzero_translation_holonomy": true,
+    "same_boundary_routes": true
+  },
+  "name": "Nonzero clock-translation holonomy",
+  "premise_checks": {
+    "nonzero_translation_holonomy": true,
+    "same_route_boundary": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "A nonzero cycle translation obstructs one route-independent global now.",
+  "size_measure": "(node_count, clock_modulus)",
+  "size_vector": [
+    1,
+    2
+  ],
+  "target_no_go_id": "TTN-05",
+  "toy_model_ref": "TTM-05"
+}

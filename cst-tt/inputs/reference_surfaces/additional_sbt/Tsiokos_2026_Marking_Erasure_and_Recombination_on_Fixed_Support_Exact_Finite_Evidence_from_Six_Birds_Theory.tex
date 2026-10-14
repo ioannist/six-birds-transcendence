@@ -1,0 +1,619 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[numbers]{natbib}
+\usepackage{doi}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{titling}
+
+\newcommand{\BranchwiseQ}{K}
+\newcommand{\RecombinationQ}{R}
+\newcommand{\ForgetfulMap}{\eta}
+\newcommand{\BranchwiseEq}{\sim_{\mathrm{bw}}}
+\newcommand{\RecombinationEq}{\sim_{\mathrm{rec}}}
+\newcommand{\ObservableFamily}{\mathcal{O}}
+\newcommand{\Assemblage}{\mathcal{A}}
+ 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algorithm}
+
+\urlstyle{same}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=period
+}
+\captionsetup[table]{skip=6pt,position=top}
+\captionsetup[figure]{skip=6pt}
+\captionsetup[algorithm]{skip=6pt,position=top}
+\crefname{algorithm}{algorithm}{algorithms}
+\Crefname{algorithm}{Algorithm}{Algorithms}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=4pt}
+\setlength{\droptitle}{-3.2em}
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vspace{0.5em}}
+\preauthor{\begin{center}\normalsize}
+\postauthor{\par\end{center}\vspace{-0.4em}}
+\predate{\begin{center}\small}
+\postdate{\par\end{center}\vspace{0.6em}}
+\setlength{\emergencystretch}{2em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\interfootnotelinepenalty=10000
+\allowdisplaybreaks[2]
+\fancypagestyle{firstpage}{\fancyhf{}
+  \fancyfoot[C]{\scriptsize Automorph Inc., Wilmington, DE, USA \quad \texttt{ioannis@automorph.io} \quad \textcopyright\ 2026 \quad CC-BY 4.0}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\title{Marking, Erasure, and Recombination on Fixed Support: Exact Finite Evidence from Six Birds Theory}
+\author{Ioannis Tsiokos\,\orcidlink{0009-0009-7659-5964}}
+\date{April 2026}
+\hypersetup{
+  pdftitle={Marking, Erasure, and Recombination on Fixed Support: Exact Finite Evidence from Six Birds Theory},
+  pdfauthor={Ioannis Tsiokos},
+  hidelinks
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+
+\begin{abstract}
+We study recombination-sensitive branch structure on a fixed-support substrate in Six Birds Theory. Building on prior work on event packaging and predictive holonomy, we introduce branch assemblages and two quotient levels at an interface: a branchwise predictive quotient ($K_i$), which captures independent predictive treatment of the branches, and a recombination quotient ($R_i$), which captures admissible recombination observables on branch families. On this architecture we exhibit a benchmark suite separating classical mixture, hidden predictive memory without recombination sensitivity, route-marked suppression, erasure-conditioned recovery, cyclic-family generalization, dissipative washout, and artifact controls based on protocol internalization and flattening/completion. A supporting theorem layer proves the abstract factorized no-interference regime and its obstruction by strict refinement, and one promoted positive family is connected to a theorem-backed concrete witness in an aligned Lean model. We do not claim a general reconstruction of non-Hilbert interference or a formalization of the full benchmark runtime. The claim is narrower: these recombination phenomena arise on fixed support, can be audited exactly, and admit a partial formal backbone on the Six Birds substrate.
+\end{abstract}
+
+\medskip
+\noindent\textbf{Keywords:} Six Birds Theory; interference; quantum eraser; which-path marking; exact finite models; recombination quotients; formal verification.
+
+\section{Introduction}
+
+Interference-like behavior is operationally interesting when later admissible observations depend on how alternative routes are organized even after current records no longer distinguish those routes.
+
+Generalized treatments of interference beyond standard Hilbert-space language are already part of the literature, including Sorkin's generalized-measure hierarchy, operational and GPT analyses of higher-order interference, and related operational frameworks for phase and interference \cite{Sorkin1994QuantumMeasure,Barrett2007GPT,BarnumMuellerUdudec2014HigherOrder,LeeSelby2017HigherOrder,DakicPaterekBrukner2014DensityCubes,GarnerEtAl2013PhaseInterference,Plavala2023GPTIntro,ChiribellaDarianoPerinotti2011InformationalDerivation}. Experimental and conceptual discussions of complementarity, which-path marking, delayed choice, and quantum erasure are likewise standard in the foundations literature \cite{WoottersZurek1979Complementarity,GreenbergerYasin1988WaveParticle,Englert1996VisibilityWhichWay,ScullyDruhl1982QuantumEraser,JacquesEtAl2007WheelerDelayedChoice,KimEtAl2000DelayedChoiceEraser,WalbornEtAl2002DoubleSlitQuantumEraser,MaKoflerZeilinger2016DelayedChoice}. The contribution of the present paper is narrower: it identifies what a fixed-support Six Birds substrate realizes under exact finite control, and it partially stabilizes that empirical picture with a quotient-based theorem layer.
+
+Two earlier Six Birds results provide the substrate for this question. First, the fixed-support packaging layer established how admissible comparisons must be made on a common support object rather than across silently drifting contexts \cite{Tsiokos2026EventPackages}. Second, the predictive-holonomy layer showed that current-event classes and future-predictive classes can come apart on that fixed support, so hidden predictive memory can exist without changing the current record interface \cite{Tsiokos2026RouteTransport}.
+Those results, however, remain at the level of single-history predictive structure. They do not yet answer whether families of alternatives can carry recombination-sensitive structure that is invisible to independent predictive treatment of their members.
+
+This paper studies that question on the Six Birds substrate itself. We introduce branch assemblages and two associated quotient levels at a fixed interface: a branchwise predictive quotient $K_i$, which records what is available from independent predictive treatment of branch members, and a recombination quotient $R_i$, which records what remains distinguishable under admissible recombination observables on those branch families. On this substrate, quotient language organizes a reproducible family of exact finite phenomena that can be benchmarked, audited, and stress-tested.
+
+On fixed support we exhibit an exact finite benchmark suite separating a classical-mixture baseline; a memory-only control in which $M_i \neq Q_i$ but $R_i = K_i$; a route-marked suppression partner with high route readability and suppressed recovery; a paired erasure benchmark with low route readability, restored conditional structure, and strict recombination refinement; a cyclic relative-carrier family showing empirically, on bounded sweep and discovery surfaces, that the positive regime generalizes beyond a single hand-built pair; a dissipative control in which recombination sensitivity washes out under exact noise; and artifact controls based on protocol internalization and flattening/completion.
+
+The formal contribution is supporting. We prove an abstract no-interference regime in which global branchwise factorization collapses recombination structure to the branchwise quotient, and we prove the corresponding obstruction result that strict refinement rules out such factorization. We also connect one promoted positive family, the anchored case $n5\_d1\_w1of4\_3of4$, to a theorem-backed concrete witness in an aligned Lean model of that anchor. These results stabilize the interpretation of the benchmark suite; they are not a general reconstruction of non-Hilbert interference or a full formalization of the benchmark runtime.
+
+The claim boundary is explicit. The abstract factorization and obstruction results are theorem-backed, and the anchored promoted family has one theorem-backed concrete aligned-model witness. The broader benchmark suite is exact-finite and reproducible but remains empirical at the present theorem layer.
+
+The paper proceeds as follows. Section~2 recalls the fixed-support setting and defines branch assemblages, branchwise summaries, and recombination quotients. Section~3 describes the exact-finite computational framework and audit discipline. Sections~4 and~5 present the benchmark results, controls, bounded generalization, and robustness analyses. Section~6 states the theorem layer and the concrete aligned positive instance. Section~7 discusses scope, limitations, and relation to adjacent work, and Section~8 concludes.
+
+\section{Formal Setup}
+
+We work throughout on a fixed support object \(\Sigma\). All comparisons are made on that common support, so any claimed distinction must survive same-support auditing rather than arise from silent support drift \cite{Tsiokos2026EventPackages}.
+At an interface \(i\), let \(\mathcal H_i\) denote the set of admissible histories arriving at \(i\) on \(\Sigma\).
+
+Two quotient levels on single histories are inherited from the predictive-holonomy layer \cite{Tsiokos2026RouteTransport}.
+First, histories \(h,h' \in \mathcal H_i\) are \emph{current-equivalent}, written
+\[
+h \equiv_i^{\mathrm{cur}} h',
+\]
+when all admissible current-event readouts at \(i\) agree on \(h\) and \(h'\). Second, histories are \emph{predictively equivalent}, written
+\[
+h \equiv_i^{\mathrm{pred}} h',
+\]
+when all later admissible single-history tests agree on them. The associated quotients are
+\[
+Q_i := \mathcal H_i / {\equiv_i^{\mathrm{cur}}},
+\qquad
+M_i := \mathcal H_i / {\equiv_i^{\mathrm{pred}}}.
+\]
+The earlier Six Birds result is that \(M_i\) may strictly refine \(Q_i\): current records can hide predictive distinctions even on fixed support.
+
+To study recombination, we pass from single histories to finite branch families. A \emph{branch assemblage} at interface \(i\) is a finite weighted family
+\[
+B=\{(a,w_a,h_a)\}_{a\in A},
+\]
+where \(A\) is a finite label set, each \(h_a \in \mathcal H_i\), and all members share the same fixed support \(\Sigma\). In the exact-finite implementation, weights are positive rational values and observables are evaluated after normalization by the total branch weight. The branch labels \(a\) are organizational by default: they index alternatives but are not automatically current records.
+
+The branchwise state associated to \(B\) is obtained by forgetting branch labels and aggregating only predictive-class content. Let
+\[
+\kappa_i(B)
+\]
+denote the \emph{branchwise summary} of \(B\): the weighted multiset of predictive classes of its members, with weights aggregated by class. Equivalently, in the exact-finite pipeline \(\kappa_i(B)\) is represented canonically as a sorted tuple of total weights carried by each predictive class in \(M_i\). Two assemblages are \emph{branchwise equivalent}, written
+\[
+B \equiv_i^{\mathrm{bw}} B',
+\]
+when \(\kappa_i(B)=\kappa_i(B')\). The corresponding quotient is
+\[
+K_i := \mathcal B_i / {\equiv_i^{\mathrm{bw}}},
+\]
+where \(\mathcal B_i\) denotes the admissible branch assemblages at interface \(i\). Operationally, \(K_i\) is the strongest state obtainable by treating the branch members independently and retaining only their predictive classes and weights.
+
+Recombination observables act on branch assemblages themselves. Let \(\mathcal O_i\) denote the admissible recombination observables at interface \(i\). Each \(o \in \mathcal O_i\) assigns to an assemblage \(B \in \mathcal B_i\) an exact finite event distribution
+\[
+\mathrm{Obs}_i(o,B).
+\]
+Two assemblages are \emph{recombination-equivalent}, written
+\[
+B \equiv_i^{\mathrm{rec}} B',
+\]
+when
+\[
+\mathrm{Obs}_i(o,B)=\mathrm{Obs}_i(o,B')
+\qquad
+\text{for all } o \in \mathcal O_i.
+\]
+The recombination quotient is therefore
+\[
+R_i := \mathcal B_i / {\equiv_i^{\mathrm{rec}}}.
+\]
+
+The relation between \(K_i\) and \(R_i\) is central. When recombination equivalence refines branchwise equivalence, there is a canonical forgetful map
+\[
+\eta_i : R_i \to K_i.
+\]
+In the factorized regime studied later, \(R_i\) collapses to \(K_i\). In the positive regime of interest, \(R_i\) strictly refines \(K_i\), so \(\eta_i\) has nontrivial fibers. A pair of assemblages lying in one branchwise class but different recombination classes is the operational content of strict refinement.
+
+Figure~\ref{fig:quotient-architecture} summarizes the quotient architecture used throughout the paper.
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/fig_quotient_architecture.pdf}
+\caption{\textbf{Fixed-support quotient architecture used in the paper.} The inherited single-history quotients ($Q_i$) and ($M_i$) sit below the branch-family quotients ($K_i$) and ($R_i$). The forgetful map ($\eta_i : R_i \to K_i$) exists in the refinement setting. Empirically, classical mixture, memory-only structure, and marked suppression occupy the collapsed regime ($R_i = K_i$), whereas erased and cyclic positive cases occupy strict-refinement regimes ($R_i \neq K_i$).}
+\label{fig:quotient-architecture}
+\end{figure}
+ 
+Two diagnostics are used repeatedly in later sections. First, \emph{route readability} quantifies how well a designated route partition can be recovered from route-conditioned event distributions under equal route priors \cite{CoverThomas2006ElementsInformationTheory}. Second, for a designated screen or pattern family, \emph{visibility} is measured by total variation from the uniform distribution \cite{LevinPeresWilmer2009MarkovChainsMixingTimes}, both unconditionally and on conditioned subensembles; the \emph{visibility recovery gap} is the difference between maximal conditional visibility and unconditional visibility. These are diagnostics rather than state objects, and their exact finite implementation is described in the next section.
+
+The remainder of the paper asks when \(K_i\) and \(R_i\) coincide, when they separate, and how that separation behaves under readable route marking, erasure-conditioned recovery, bounded family generalization, dissipative washout, and artifact controls.
+
+\section{Experimental Framework and Audit Discipline}
+
+All reported benchmark, control, and search results are computed in exact finite models. Branch weights, observable outputs, quotient statistics, and derived diagnostics are represented by exact rational arithmetic in the core evaluation path; no stochastic sampling or floating-point approximation is used to generate case classifications or witness gaps. Here ``exact finite'' therefore means both that the admissible state and observable families are finite and that the principal numerical quantities are computed exactly rather than estimated.
+
+The computational pipeline is config-addressable and deterministic. A benchmark run is specified by a validated configuration that fixes the benchmark identity, interface, branch-family construction, observable family, and any associated diagnostic scenarios. The runner resolves those ingredients, evaluates the branchwise quotient \(K_i\), the recombination quotient \(R_i\), the forgetful map \(\eta_i\), and the configured diagnostics, then writes a standard artifact bundle under \texttt{results/}. Each committed run includes a raw result manifest, a resolved configuration, a reproducibility manifest recording the command and config hash, a derived diagnostics summary, a run note, and a ledger entry. Bounded sweeps and searches reuse the same discipline, producing per-case raw artifacts together with summary tables and compact verdict artifacts.
+
+A small set of exact diagnostics is used throughout. First, the recombination gap records the largest exact separation, within one branchwise class, between later admissible observable statistics. Second, \(\eta\)-fiber statistics summarize how many recombination classes sit over a single branchwise class, with \(\eta_{\max}\) denoting the maximal fiber size. Third, route readability and visibility recovery are computed as defined in Section~2.
+
+The audit layer is part of the evidence discipline. Same-support certification ensures that apparent differences are not caused by untracked support drift. A factorization hook records whether the tested observable family behaves like a branchwise-factorized family on the cases under consideration. Protocol/internalization controls expose false positives caused by leaving scheduler or protocol variables outside the declared support or current record. Flattening/completion controls test whether a promoted positive effect survives an admissible completion rather than disappearing once a missing coarse variable is added. These controls constrain which empirical cases can be treated as genuine branch-family structure rather than artifacts.
+
+Three families of derived evidence are used later in the paper. First, paired comparison artifacts record marked-versus-erased and artifact-versus-internalized controls directly rather than by informal inference. Second, bounded search and promotion artifacts summarize candidate regimes, classifications, and promoted exemplars on the cyclic relative-carrier family. Third, robustness records quantify how promoted candidates behave under small local perturbations of weights, carrier size, and shift parameters, together with explicit threshold profiles for stable, borderline, and demotion-level behavior.
+
+The codebase also includes an invariant cross-check against the inherited fixed-support and predictive-holonomy machinery. Ticketed parity fixtures from the earlier single-history layer are rerun through the current code, compared against their original expected outputs, and checked again through the curated recombination-side API and fresh runner reruns. This cross-check is not part of the scientific claim, but it ensures that the new branch-family layer does not silently drift the inherited machinery.
+
+\section{Empirical Evidence}
+
+This section presents the four primary benchmark families. Together they establish the null regime, separate hidden predictive memory from recombination sensitivity, and isolate the marked-versus-erased contrast that motivates the later generalization and control analyses.
+
+\subsection{Classical-mixture baseline}
+
+The classical-mixture baseline is the exact finite null regime. The tested branch family collapses to a single branchwise class and a single recombination class:
+\[
+|K_i| = 1, \qquad |R_i| = 1,
+\]
+with maximal \(\eta\)-fiber size
+\[
+\eta_{\max} = 1.
+\]
+The exact recombination gap is zero, and the factorization hook passes. In operational terms, later admissible observables add nothing beyond branchwise predictive content. When the observable family is branchwise-mixing only and no further recombination-sensitive structure is present, the two quotient levels coincide exactly.
+
+\subsection{Memory-only control}
+
+The memory-only control reproduces the earlier single-history separation between current and predictive structure while showing that this is not yet recombination sensitivity. On the inherited side, the control exhibits
+\[
+|Q_i| = 1, \qquad |M_i| = 2,
+\]
+so predictive structure strictly refines current-event structure at the relevant interface. On the branch-family side, the family is nontrivial,
+\[
+|K_i| = 3,
+\]
+but recombination adds nothing further:
+\[
+|R_i| = 3, \qquad \eta_{\max} = 1.
+\]
+The exact recombination gap is again zero and the factorization hook passes. This benchmark is the key separation control: hidden predictive memory can be present on fixed support without producing additional recombination-sensitive structure.
+
+\subsection{Route-marked suppression}
+
+The marked partner introduces an explicitly readable route marker and uses that marker to test whether recombination-sensitive structure survives route readability. In the marked benchmark, route readability is maximal: the route-readability score is \(1\) and the raw route-recovery success probability is \(1\). At the same time, the designated screen/pattern channel remains fully suppressed, with unconditional visibility \(0\), maximal conditional visibility \(0\), and visibility recovery gap \(0\).
+
+On the quotient side the branch-family computation remains nontrivial,
+\[
+|K_i| = 3,
+\]
+but no recombination refinement appears:
+\[
+|R_i| = 3, \qquad \eta_{\max} = 1.
+\]
+The exact recombination gap is zero and the factorization hook passes. Once route information is explicitly available at the record interface, the tested observable family behaves as a branchwise-factorized regime and no erasure-style recovery is present.
+
+\subsection{Erasure recovery}
+
+The erased partner is evaluated directly against the marked benchmark. Relative to the readable marked case, the route-readability score drops from \(1\) to \(0\), while the designated screen channel changes in a sharply structured way. Unconditional visibility remains flat at \(0\), but maximal conditional visibility rises to \(1/2\), so the visibility recovery gap is
+\[
+1/2.
+\]
+Operationally, the readable route channel disappears while conditional pattern structure reappears.
+
+This recovery is accompanied empirically by strict recombination refinement. On the erased benchmark,
+\[
+|K_i| = 1, \qquad |R_i| = 3, \qquad \eta_{\max} = 3.
+\]
+The exact recombination gap is \(1\), and the factorization hook fails. The paired marked-versus-erased comparison is the central empirical contrast of the paper: readable route marking suppresses the relevant structure, whereas erasure removes route readability, restores conditional structure, and reintroduces recombination-sensitive separation.
+This marked-versus-erased contrast should be read as a substrate-level operational analogue of the standard which-path and quantum-eraser literature rather than as an attempt to rederive that literature \cite{WoottersZurek1979Complementarity,GreenbergerYasin1988WaveParticle,Englert1996VisibilityWhichWay,ScullyDruhl1982QuantumEraser,KimEtAl2000DelayedChoiceEraser,WalbornEtAl2002DoubleSlitQuantumEraser}.
+
+The claim made here is empirical and exact finite. The benchmark pair is committed, reproducible, and cross-checked by the audit layer. Section~6 uses one aligned concrete model to support a theorem-backed positive instance; the benchmark result itself should be read here as empirical evidence on the Six Birds substrate.
+
+Figure~\ref{fig:marked-erased} summarizes the paired marked-versus-erased comparison.
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/fig_marked_erased.pdf}
+\caption{\textbf{Paired marked-versus-erased benchmark.} The marked partner has maximal route readability and no visibility recovery, while the erased partner has zero route readability, positive conditional recovery, and strict recombination refinement. Values are taken from the committed paired comparison artifact.}
+\label{fig:marked-erased}
+\end{figure}
+ 
+Table~\ref{tab:core-benchmarks} collects the key statistics for the four primary benchmark families.
+\begin{table}[t]
+\centering
+\small
+\caption{\textbf{Core benchmark summary.} The table separates the classical-mixture null regime, hidden predictive memory without recombination refinement, readable-route suppression, and erased recovery on fixed support.}
+\label{tab:core-benchmarks}
+\begin{tabular}{lccccccccc}
+\toprule
+Benchmark & $Q_i$ & $M_i$ & $K_i$ & $R_i$ & $\eta_{\max}$ & Gap & Readability & Vis.\ gap & Factorization \\
+\midrule
+        Classical mixture & 1 & 1 & 1 & 1 & 1 & 0 & 0 & 1/2 & passed \\
+        Memory only & 1 & 2 & 3 & 3 & 1 & 0 & 0 & 1/2 & passed \\
+        Marked suppression & 1 & 2 & 3 & 3 & 1 & 0 & 1 & 0 & passed \\
+        Erasure recovery & 1 & 1 & 1 & 3 & 3 & 1 & 0 & 1/2 & failed \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+\section{Generalization, Washout, and Controls}
+
+The four primary benchmarks establish the central empirical contrast. This section asks how far that contrast generalizes, whether it washes out under exact dissipative noise, and whether the strongest positive cases survive explicit artifact controls and local robustness screening. All claims in this section remain empirical.
+
+\subsection{Relative-cycle bounded generalization}
+
+The marked-versus-erased benchmark pair is not an isolated hand-built effect. On the bounded exact sweep over the cyclic relative-carrier family, with carrier sizes \(n \in \{2,3,4,5\}\), valid shift deltas \(\delta \in \{1,2\}\), and weight pairs \((1/2,1/2)\) and \((1/3,2/3)\), 13 of 14 tested cases satisfied the positive regime criteria used in that sweep: unreadable route channels, positive conditional recovery, and strict recombination refinement. Representative high-signal cases satisfy
+\[
+|K_i| = 1, \qquad |R_i| = 3, \qquad \eta_{\max} = 3,
+\]
+with route-readability score \(0\), unconditional visibility \(0\), positive conditional visibility, and positive recombination gap.
+
+A subsequent bounded discovery expansion over the same carrier and shift ranges, with an additional unequal-weight family \((1/4,3/4)\), preserved the same qualitative picture. On that 21-case grid, 20 cases were classified as coherent-branch candidates and one symmetric equal-weight case was left explicitly unclassified rather than forced into a positive label. The erased positive regime therefore generalizes empirically, on the committed bounded sweep and discovery surfaces, beyond a single benchmark pair and is favored by unequal weights and larger carrier size, although not every symmetric corner of the family behaves the same way.
+
+Figure~\ref{fig:relative-cycle-generalization} summarizes the bounded empirical generalization pattern over the cyclic family.
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_relative_cycle_generalization.pdf}
+\caption{\textbf{Bounded empirical generalization on the relative-cycle family.} Cells summarize the bounded exact discovery search over carrier size, shift delta, and weight family. Positive cases dominate the tested grid, while the symmetric equal-weight $(n=2,\delta=1)$ case remains explicitly unclassified.}
+\label{fig:relative-cycle-generalization}
+\end{figure}
+ 
+\subsection{Dissipative washout}
+
+To test whether recombination sensitivity is fragile or structural, we applied an exact dissipative schedule to the strongest promoted relative-cycle anchor, holding the branchwise substrate fixed while mixing the history-sensitive screen channel toward the uniform distribution. Across the exact noise schedule
+\[
+\lambda \in \left\{0,\tfrac16,\tfrac13,\tfrac12,\tfrac23,\tfrac56,1\right\},
+\]
+the recombination gap decreases monotonically
+\[
+\tfrac23,\ \tfrac59,\ \tfrac49,\ \tfrac13,\ \tfrac29,\ \tfrac19,\ 0,
+\]
+and the maximal conditional visibility decreases monotonically
+\[
+\tfrac35,\ \tfrac12,\ \tfrac25,\ \tfrac3{10},\ \tfrac15,\ \tfrac1{10},\ 0.
+\]
+At full noise,
+\[
+|K_i| = |R_i| = 1, \qquad \eta_{\max} = 1, \qquad \Delta_i^{\mathrm{rec}} = 0,
+\]
+so the anchored positive case collapses exactly to the branchwise level. The recombination-sensitive regime is not an artifact of bookkeeping, but it is also not immune to dissipative degradation.
+The control is intended as an exact finite washout analogue of the standard decoherence narrative rather than as a derivation of decoherence itself \cite{Zurek2003Decoherence,Schlosshauer2005Decoherence}.
+
+Figure~\ref{fig:dissipative-washout} shows the exact washout profile under the dissipative schedule.
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.88\linewidth]{figures/fig_dissipative_washout.pdf}
+\caption{\textbf{Dissipative washout on the anchored positive case (\texttt{n5\_d1\_w1of3\_2of3}).} Exact noise mixing drives both the recombination gap and the visibility recovery gap to zero, reaching exact collapse at \(\lambda = 1\).}
+\label{fig:dissipative-washout}
+\end{figure}
+ 
+\subsection{Artifact controls}
+
+The protocol-trap pair shows how an apparent positive result can be manufactured by leaving a scheduler variable outside the declared support. In the uninternalized case,
+\[
+|K_i| = 1, \qquad |R_i| = 3, \qquad \eta_{\max} = 3, \qquad \Delta_i^{\mathrm{rec}} = 1,
+\]
+and the protocol/internalization audit fails, so the case is classified as an artifact. After honest internalization of the scheduler bit, the paired partner becomes
+\[
+|K_i| = |R_i| = 3, \qquad \eta_{\max} = 1, \qquad \Delta_i^{\mathrm{rec}} = 0,
+\]
+with protocol audit passed and the case reclassified as memory-only. This control shows that apparent recombination sensitivity need not reflect genuine branch-family structure.
+
+A separate flattening/completion control was applied to the strongest promoted positive anchor. The completion partner retains the original screen-sensitive observable while adding a coarse completion channel designed to absorb a merely flattenable effect. In this case the positive regime survives unchanged:
+\[
+|K_i| = 1, \qquad |R_i| = 3, \qquad \eta_{\max} = 3, \qquad \Delta_i^{\mathrm{rec}} = \tfrac23,
+\]
+and the flattening/completion audit passes. Within the present control bundle, the promoted anchor is not removed by the tested admissible completion.
+
+\subsection{Promoted-candidate robustness}
+
+The bounded discovery run produced a deterministic shortlist of three promoted candidates,
+\[
+n5\_d1\_w1of4\_3of4,\qquad
+n5\_d2\_w1of4\_3of4,\qquad
+n4\_d1\_w1of4\_3of4.
+\]
+Each was stress-tested under a local exact perturbation neighborhood in carrier size, shift, and weight. Under the default robustness profile, all three candidates remain stable and none is flagged for demotion. The two \(n=5\) anchors survive all tested local perturbations even under the strict profile; the \(n=4\) anchor weakens under the strict profile while remaining stable under the default one. The robustness layer is stability screening rather than proof, but it narrows the candidate set to a small family of positive regimes that survive the present control bundle.
+
+Table~\ref{tab:robustness-shortlist} summarizes the promoted-candidate stability screen.
+\begin{table}[t]
+\centering
+\small
+\caption{\textbf{Promoted-candidate robustness summary.} Default-profile stability is shown for the three promoted cyclic candidates, with the ($n=4$) anchor softening under the strict profile.}
+\label{tab:robustness-shortlist}
+\begin{tabular}{lcccccc}
+\toprule
+Candidate & Default & Strict & Min gap & Min vis.\ gap & Min $\eta_{\max}$ & Status \\
+\midrule
+        \texttt{n5\_d1\_w1of4\_3of4} & 1 & 1 & 2/3 & 1/2 & 3 & stable \\
+        \texttt{n5\_d2\_w1of4\_3of4} & 1 & 1 & 2/3 & 1/2 & 3 & stable \\
+        \texttt{n4\_d1\_w1of4\_3of4} & 1 & 2/3 & 2/3 & 1/3 & 3 & stable \\
+\bottomrule
+\end{tabular}
+\end{table}
+ 
+Taken together, these results show that the erased positive regime is not confined to a single benchmark pair, that it washes out under exact dissipative noise, that obvious artifact explanations can be exposed by explicit controls, and that a small shortlist of promoted cases remains stable under local perturbation. These are empirical results on the Six Birds substrate. The next section turns from this bounded empirical picture to the formal theorem layer used to interpret it.
+
+\section{Formal Theorem Layer}
+
+The previous sections are empirical. This section records the supporting theorem layer established in the Lean development. Its role is interpretive: it identifies the abstract no-interference regime, proves that strict refinement obstructs that regime, and supplies one theorem-backed concrete positive instance for an aligned Lean model of the strongest promoted family. It is not a formalization of the full benchmark runtime. The supporting formal development is implemented in Lean \cite{deMouraEtAl2015Lean}. At the level of mathematical form, quotient descent, factorization through quotients, and state separation by observables are standard patterns; see, for example, \cite{MacLane1998Categories,Jacobson1985BasicAlgebraI,BuschGrabowskiLahti1995OperationalQuantumPhysics}. The contribution here is their use in the present fixed-support substrate and benchmark program.
+
+Two explicit assumption packages organize the abstract theorem layer. The first is a \emph{detectability} assumption: branchwise summaries are visible through a distinguished observable layer that separates them. The second is a \emph{global factorization} assumption: every admissible recombination observable factors through the branchwise summary. Under these assumptions, the Lean development proves the following backbone results.
+
+\begin{theorem}[Refinement under detectability]
+Suppose branchwise summaries at interface \(i\) are detectable by a distinguished family of admissible observables. If two assemblages are recombination-equivalent, then they are branchwise-equivalent. Consequently the forgetful map
+\[
+\eta_i : R_i \to K_i
+\]
+is well defined.
+\end{theorem}
+
+\begin{proposition}[Quotient-lift sufficiency]
+For each fixed admissible recombination observable, evaluation descends to the recombination quotient. More generally, any function on assemblages that respects recombination equivalence factors through \(R_i\).
+\end{proposition}
+
+\begin{theorem}[No-interference factorization regime]
+Suppose branchwise summaries are detectable and all admissible recombination observables factor through the branchwise summary. Then, for assemblages at interface \(i\),
+\[
+B \equiv_i^{\mathrm{bw}} B'
+\quad\Longleftrightarrow\quad
+B \equiv_i^{\mathrm{rec}} B',
+\]
+and hence the two quotient levels collapse:
+\[
+R_i \simeq K_i.
+\]
+\end{theorem}
+
+\begin{corollary}[Strict refinement obstructs factorization]
+If there exist assemblages \(B\) and \(B'\) at interface \(i\) such that
+\[
+B \equiv_i^{\mathrm{bw}} B'
+\quad\text{but}\quad
+B \not\equiv_i^{\mathrm{rec}} B',
+\]
+then no global branchwise factorization layer can hold. In particular, under detectability, failure of quotient collapse rules out the no-interference regime.
+\end{corollary}
+
+These are abstract structural results. They say how branchwise and recombination quotients behave under explicit assumptions, but by themselves they do not identify any particular benchmark family as positive. The Lean development therefore includes one additional concrete aligned model.
+
+\begin{theorem}[Aligned concrete positive instance]
+There is a concrete aligned finite model for the promoted family \(n5\_d1\_w1of4\_3of4\) with named assemblages \(B_L\) and \(B_R\) such that
+\[
+B_L \equiv^{\mathrm{bw}} B_R
+\quad\text{but}\quad
+B_L \not\equiv^{\mathrm{rec}} B_R.
+\]
+Equivalently, the aligned model admits a strict-refinement witness. By the preceding corollary, no global branchwise factorization layer can hold for that aligned model.
+\end{theorem}
+
+The theorem-backed scope is limited. The abstract results apply to the formal recombination package under explicit detectability and factorization assumptions. The concrete positive theorem applies to one aligned Lean model of the promoted family \(n5\_d1\_w1of4\_3of4\), fixed to the exact witness data recorded in the repository. The repository also contains an explicit observable bridge from concrete Python observables and scenarios into the Lean assumption interfaces, but that bridge is curated and interpretive rather than a mechanical extraction of the Python catalog into Lean. What is \emph{not} claimed is a full mechanization of the benchmark runtime, a theorem for the entire cyclic family, or a theorem covering the paired erasure benchmark in its full empirical implementation. Those broader results remain empirical here.
+
+\section{Discussion and Limitations}
+
+The paper establishes a substrate-level result. On a fixed-support Six Birds architecture, branchwise predictive structure and recombination-sensitive structure can be separated operationally, and that separation can be audited under exact finite controls. The benchmark suite shows that the same substrate supports a classical-mixture null regime, hidden predictive memory without additional recombination sensitivity, readable-route suppression, erased conditional recovery, bounded cyclic-family generalization, dissipative washout, and artifact controls based on protocol internalization and flattening/completion.
+
+The formal contribution is narrower. The Lean development proves an abstract refinement layer under detectability, a factorized no-interference regime in which the recombination quotient collapses to the branchwise quotient, and the corresponding obstruction result that strict refinement rules out global branchwise factorization. It also proves one theorem-backed concrete positive instance for an aligned Lean model of the promoted family \(n5\_d1\_w1of4\_3of4\). These results support the interpretation of the benchmark suite but do not replace it.
+
+What the paper does \emph{not} establish is equally important. It does not provide a reconstruction of quantum theory, and it does not claim to be the first general treatment of interference beyond Hilbert-space formalisms; generalized-measure and operational/GPT frameworks already provide broader settings for such questions \cite{Sorkin1994QuantumMeasure,Barrett2007GPT,BarnumMuellerUdudec2014HigherOrder,LeeSelby2017HigherOrder,DakicPaterekBrukner2014DensityCubes,GarnerEtAl2013PhaseInterference,Plavala2023GPTIntro,ChiribellaDarianoPerinotti2011InformationalDerivation}. Nor is the paper a contribution to the separate program of testing or characterizing higher-order interference in the Sorkin hierarchy and its operational extensions \cite{SinhaEtAl2010RulingOutMultiOrder,UdudecBarnumEmerson2011ThreeSlit,DakicPaterekBrukner2014DensityCubes,LeeSelby2017HigherOrder}. It does not prove the paired erasure benchmark in full runtime detail, the full cyclic-family generalization, or the dissipative control. Those results remain empirical exact-finite evidence. Likewise, route readability and visibility recovery remain concrete diagnostics in the computational layer rather than formal objects on the Lean side.
+
+The relation to the broader interference literature is specific. Existing generalized operational and non-Hilbert frameworks already show that interference-like structure can be discussed outside standard Hilbert-space language \cite{Sorkin1994QuantumMeasure,Barrett2007GPT,BarnumMuellerUdudec2014HigherOrder,LeeSelby2017HigherOrder,DakicPaterekBrukner2014DensityCubes,GarnerEtAl2013PhaseInterference,Plavala2023GPTIntro,ChiribellaDarianoPerinotti2011InformationalDerivation}. The contribution here is that a fixed-support Six Birds substrate supports a reproducible, exact finite, audited family of marking, erasure, and recombination phenomena, and that this empirical family can be organized by a quotient package and partially connected to theorem-backed structure. The quotient facts help characterize what the substrate is doing and what would count as collapse or obstruction in this setting.
+
+Several limitations remain explicit. First, the strongest positive theorem is proved only for an aligned concrete Lean model of one promoted family, not for the full Python benchmark runtime. Second, the cyclic-family generalization, dissipative washout, and control bundle are bounded empirical results rather than theorem-backed family-wide statements. Third, the observable bridge from Python to Lean remains interpretive and indexed rather than mechanically extracted. Fourth, route readability and visibility recovery are not yet formalized on the Lean side. Finally, the current robustness screen is local: useful for candidate selection, but not a substitute for an exhaustive stability theory.
+
+These limitations indicate the next steps. On the formal side, the remaining task is to connect additional concrete positive families to theorem-backed strict-refinement witnesses. On the empirical side, the natural next steps are to enlarge the bounded families, broaden the control surface, and test whether the present positive regimes remain stable under richer perturbations and more systematic completion schemes.
+
+\section{Conclusion}
+
+We introduced a branchwise and recombination quotient framework on fixed support and used it to study exact finite branch-family phenomena on a Six Birds substrate. Empirically, the substrate supports a benchmark arc running from classical mixture through memory-only structure, readable-route suppression, erased conditional recovery, bounded cyclic-family generalization, dissipative washout, artifact exposure, and robustness screening. Formally, the paper proves the abstract factorized no-interference regime, the obstruction of that regime by strict refinement, and one aligned concrete positive instance for an aligned Lean model of the promoted family \(n5\_d1\_w1of4\_3of4\). The result is not a general reconstruction of interference, but a controlled and partially formalized demonstration that these recombination phenomena arise on a fixed-support Six Birds architecture and can be separated from both ordinary predictive memory and obvious artifact explanations.
+
+\appendix
+\section{Formal Definitions and Theorem Statements}
+
+This appendix records the formal objects and theorem statements used in the main text. It is not a replacement for the Lean development and does not reproduce full proofs; it is included to keep the formal vocabulary explicit and scoped.
+
+\subsection{Branch assemblages and quotient levels}
+
+At a fixed interface \(i\), let \(\mathcal H_i\) denote the admissible histories on fixed support \(\Sigma\). The inherited single-history quotients are
+\[
+Q_i := \mathcal H_i / {\equiv_i^{\mathrm{cur}}},
+\qquad
+M_i := \mathcal H_i / {\equiv_i^{\mathrm{pred}}}.
+\]
+A branch assemblage is a finite weighted family
+\[
+B=\{(a,w_a,h_a)\}_{a\in A},
+\]
+with all members on the same fixed support. The branchwise summary \(\kappa_i(B)\) aggregates predictive-class content across the members of \(B\), and induces the branchwise quotient
+\[
+K_i := \mathcal B_i / {\equiv_i^{\mathrm{bw}}}.
+\]
+Admissible recombination observables act on branch assemblages and induce the recombination quotient
+\[
+R_i := \mathcal B_i / {\equiv_i^{\mathrm{rec}}}.
+\]
+When recombination equivalence refines branchwise equivalence, there is a canonical forgetful map
+\[
+\eta_i : R_i \to K_i.
+\]
+
+\subsection{Abstract theorem layer}
+
+The Lean development proves the following structural results under explicit assumptions.
+
+\begin{itemize}
+\item \textbf{Refinement under detectability.} If branchwise summaries are detectable through a distinguished observable layer, then recombination equivalence refines branchwise equivalence, so \(\eta_i\) is well defined.
+
+\item \textbf{Quotient-lift sufficiency.} Any observable evaluation that respects recombination equivalence descends to the recombination quotient. In particular, fixed admissible recombination observables factor through \(R_i\).
+
+\item \textbf{Factorized no-interference regime.} If all admissible recombination observables factor through the branchwise summary and branchwise summaries are detectable, then branchwise and recombination equivalence coincide and hence
+\[
+R_i \simeq K_i.
+\]
+
+\item \textbf{Obstruction by strict refinement.} If there is a strict-refinement witness
+\[
+B \equiv_i^{\mathrm{bw}} B'
+\quad\text{but}\quad
+B \not\equiv_i^{\mathrm{rec}} B',
+\]
+then a global branchwise factorization layer cannot hold.
+\end{itemize}
+
+\subsection{Concrete aligned positive instance}
+
+The Lean development also contains one concrete aligned positive instance tied to the promoted family \(n5\_d1\_w1of4\_3of4\). In that aligned finite model there exist named assemblages \(B_L\) and \(B_R\) such that
+\[
+B_L \equiv^{\mathrm{bw}} B_R
+\quad\text{but}\quad
+B_L \not\equiv^{\mathrm{rec}} B_R.
+\]
+This yields a theorem-backed strict-refinement witness and an accompanying non-factorization corollary for that aligned model. The theorem does not cover the full Python benchmark runtime.
+ \section{Lean Formalization Summary}
+
+The recombination formalization is organized under the \texttt{Recombination} namespace and is implemented in the Lean theorem prover \cite{deMouraEtAl2015Lean}, reusing the earlier \texttt{HolonomyMemory} transport core rather than redefining it. The current Lean development has three layers.
+
+\subsection{Definition layer}
+
+The definition layer introduces branch assemblages, branchwise and recombination equivalence relations, quotient objects for \(K_i\) and \(R_i\), and the refinement-dependent map \(\eta\). These objects are kept abstract where necessary: the observable result type is indexed by interface, and the quotient equivalence layer is packaged using a project-local \texttt{Recombination.Equiv}.
+
+\subsection{Abstract theorem backbone}
+
+The abstract theorem layer proves:
+\begin{itemize}
+\item refinement under a detectability assumption,
+\item quotient-lift / factor-through sufficiency for recombination-respecting maps,
+\item collapse of \(R_i\) to \(K_i\) under global branchwise factorization plus detectability,
+\item and obstruction of branchwise factorization by strict refinement.
+\end{itemize}
+These are structural results about the recombination package rather than proofs about the full runtime benchmark implementation.
+
+\subsection{Concrete aligned witness layer}
+
+A further layer fixes one aligned concrete witness model for the promoted family \(n5\_d1\_w1of4\_3of4\). In that model the Lean development proves branchwise equivalence of a named pair of assemblages, separation by a named decisive observable, and the existence of a strict-refinement witness together with a non-factorization corollary. This is a theorem-backed positive instance specific to the aligned model, not a theorem about the full Python benchmark runtime.
+
+The formal development is therefore partial. It proves the abstract null-regime and obstruction backbones and one concrete positive aligned instance, but it does not yet formalize route-readability and visibility diagnostics or the full benchmark runtime semantics.
+ \section{Computational Methods Details}
+
+All benchmark, sweep, and control results in the paper are produced in exact finite models with exact rational arithmetic on the main evaluation path. Branch weights, event probabilities, quotient statistics, and derived witness gaps are computed exactly rather than estimated by sampling.
+
+\subsection{Config-addressable execution}
+
+The repository uses a config-addressable runner. Benchmark runs fix a benchmark identity, interface, branch-family construction, observable family, and any associated diagnostic scenarios. Search, sweep, promotion, and robustness surfaces extend the same discipline with bounded parameter grids and deterministic promotion or stability rules. Each run or sweep writes a standard artifact bundle under \texttt{results/}, including raw outputs, derived summaries, notes, and reproducibility metadata.
+
+\subsection{Diagnostics and audits}
+
+The main diagnostics are:
+\begin{itemize}
+\item recombination gap,
+\item \(\eta\)-fiber statistics,
+\item route readability,
+\item unconditional visibility,
+\item maximal conditional visibility,
+\item visibility recovery gap.
+\end{itemize}
+The main audits are:
+\begin{itemize}
+\item same-support certification,
+\item factorization hooks,
+\item protocol/internalization controls,
+\item flattening/completion controls,
+\item bounded robustness screening,
+\item invariant cross-checks against the inherited single-history layer.
+\end{itemize}
+These diagnostics and audits constrain interpretation and expose artifacts.
+
+\subsection{Bounded search, promotion, and robustness}
+
+The cyclic relative-carrier family is explored on bounded exact grids. Promoted candidates are materialized as standard benchmark-run bundles, and local perturbation neighborhoods are used for robustness screening. The empirical generalization and robustness claims are therefore bounded: stronger than one-off examples, but not exhaustive searches.
+ \section{Artifact Map and Reproducibility Note}
+
+The paper is tied to a committed artifact surface rather than to ephemeral runtime output. The central benchmark and config identities are:
+
+\begin{itemize}
+\item classical-mixture baseline: \texttt{flat\_classical\_mixture\_baseline},
+\item memory-only control: \texttt{latent\_memory\_only\_control},
+\item route-marked suppression: \texttt{route\_marked\_suppression},
+\item erasure recovery: \texttt{route\_erasure\_recovery},
+\item promoted positive anchor: \texttt{n5\_d1\_w1of4\_3of4}.
+\end{itemize}
+
+The principal bounded family and control artifacts are:
+\begin{itemize}
+\item relative-cycle bounded generalization sweep,
+\item dissipative collapse sweep,
+\item bounded search and promoted shortlist,
+\item protocol/internalization comparison artifact,
+\item flattening/completion comparison artifact,
+\item promoted-candidate robustness summary,
+\item invariant cross-check artifact.
+\end{itemize}
+
+The internal findings and claim-control bundles in the repository index the precise config paths, run identifiers, summary artifacts, theorem-status entries, and open issues. These bundles are not part of the scientific claim, but they ensure that every theorem-backed, mixed, and empirical claim in the manuscript can be traced to committed evidence.
+
+The paper's results are linked to exact finite benchmark, search, control, and theorem artifacts whose identities are fixed in the repository and whose scopes are separated.
+ 
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

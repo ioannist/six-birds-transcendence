@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_full_native_package_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_full_native_package_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_full_native_package_transcription.log",
+  "log_sha256": "74a028519280f1e41ba0ba601521f4042d5fc87a4fa2547b66b7f877e0cd7012",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:24+00:00",
+  "status": "pass",
+  "summary": "G27 transcription passed: 3 actual endpoints, 27 native successors, 4 C1 closure cases,\n3 stored-charge stops, 3 logged return traces, 5 missing-input/address controls; old negatives retained."
+}

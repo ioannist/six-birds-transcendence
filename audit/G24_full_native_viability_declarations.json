@@ -1,0 +1,569 @@
+{
+  "schema": "csttt-G24-declarations-v1",
+  "source_sha256": {
+    "lean/CSTTT/FullNative/ViabilityFactor.lean": "7c32ecb67ebc45ac64a7f4f82012d14af7a1609a420b082de381233406791a1c"
+  },
+  "declaration_count": 70,
+  "declarations": [
+    {
+      "name": "CSTTT.FullNative.Viability.VState",
+      "kind": "abbrev",
+      "line": 11,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.environment",
+      "kind": "def",
+      "line": 13,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.quote",
+      "kind": "def",
+      "line": 15,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.Owned",
+      "kind": "def",
+      "line": 17,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.fundedRows",
+      "kind": "def",
+      "line": 20,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.carrier",
+      "kind": "def",
+      "line": 23,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.carrier_exact",
+      "kind": "theorem",
+      "line": 25,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.carrier_mem",
+      "kind": "theorem",
+      "line": 27,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.pre",
+      "kind": "def",
+      "line": 32,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.core",
+      "kind": "def",
+      "line": 37,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.pre_top",
+      "kind": "theorem",
+      "line": 39,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.renewable_pre_core",
+      "kind": "theorem",
+      "line": 45,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.absent_pre_core",
+      "kind": "theorem",
+      "line": 51,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.owned_projection",
+      "kind": "theorem",
+      "line": 57,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.pre_mono",
+      "kind": "theorem",
+      "line": 63,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.Controlled",
+      "kind": "def",
+      "line": 70,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.controlled_subset_core",
+      "kind": "theorem",
+      "line": 73,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.core_greatest",
+      "kind": "theorem",
+      "line": 78,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.underfund_greatest_empty",
+      "kind": "theorem",
+      "line": 83,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.actual_core_count",
+      "kind": "theorem",
+      "line": 92,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.actualPre",
+      "kind": "def",
+      "line": 94,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.actual_pre_projection",
+      "kind": "theorem",
+      "line": 99,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.source_owned_viable",
+      "kind": "theorem",
+      "line": 110,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.credited_targets_owned_viable",
+      "kind": "theorem",
+      "line": 113,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.missing_program_pre",
+      "kind": "theorem",
+      "line": 120,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.missing_account_pre",
+      "kind": "theorem",
+      "line": 124,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.wrong_owner_pre",
+      "kind": "theorem",
+      "line": 129,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.empty_charge_pre",
+      "kind": "theorem",
+      "line": 134,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.owned_rows_positive_normalized",
+      "kind": "theorem",
+      "line": 138,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.owned_advance",
+      "kind": "theorem",
+      "line": 152,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.owned_successor",
+      "kind": "theorem",
+      "line": 156,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.Path",
+      "kind": "inductive",
+      "line": 168,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.History",
+      "kind": "abbrev",
+      "line": 173,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.extend",
+      "kind": "def",
+      "line": 175,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_owned",
+      "kind": "theorem",
+      "line": 179,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.historyPre",
+      "kind": "def",
+      "line": 188,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.HistoryControlled",
+      "kind": "def",
+      "line": 193,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.historyCore",
+      "kind": "def",
+      "line": 196,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_pre_mono",
+      "kind": "theorem",
+      "line": 198,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_pre_projection",
+      "kind": "theorem",
+      "line": 204,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_controlled_subset_core",
+      "kind": "theorem",
+      "line": 217,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_core_invariant",
+      "kind": "theorem",
+      "line": 226,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_core_greatest",
+      "kind": "theorem",
+      "line": 231,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_core_fixed",
+      "kind": "theorem",
+      "line": 235,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_underfund_greatest_empty",
+      "kind": "theorem",
+      "line": 240,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.empty_history_invariant",
+      "kind": "theorem",
+      "line": 249,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_viable_iff",
+      "kind": "theorem",
+      "line": 254,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.historyImage",
+      "kind": "def",
+      "line": 274,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.factorPre",
+      "kind": "def",
+      "line": 277,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_pre_image",
+      "kind": "theorem",
+      "line": 281,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_invariant_image",
+      "kind": "theorem",
+      "line": 293,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.absent_successor_stops",
+      "kind": "theorem",
+      "line": 300,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_absent_first_step_and_stop",
+      "kind": "theorem",
+      "line": 315,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.initialFor",
+      "kind": "def",
+      "line": 329,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.initial_for_owned",
+      "kind": "theorem",
+      "line": 333,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.initial_for_quote",
+      "kind": "theorem",
+      "line": 335,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.initialHistory",
+      "kind": "def",
+      "line": 338,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_core_projection_exact",
+      "kind": "theorem",
+      "line": 341,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.greatest_viability_projection_exact",
+      "kind": "theorem",
+      "line": 350,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.history_underfund_projection_empty",
+      "kind": "theorem",
+      "line": 362,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.sourceHistory",
+      "kind": "def",
+      "line": 368,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.firstTargetHistory",
+      "kind": "def",
+      "line": 370,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.secondTargetHistory",
+      "kind": "def",
+      "line": 374,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.source_and_credited_target_history_viability",
+      "kind": "theorem",
+      "line": 378,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.historical_credited_target_viability",
+      "kind": "theorem",
+      "line": 384,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.origin",
+      "kind": "def",
+      "line": 392,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.reachable_source_history",
+      "kind": "theorem",
+      "line": 396,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.maintenance_support",
+      "kind": "theorem",
+      "line": 404,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.renewable_inside_source_reachable",
+      "kind": "theorem",
+      "line": 414,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    },
+    {
+      "name": "CSTTT.FullNative.Viability.source_rooted_greatest_projection_exact",
+      "kind": "theorem",
+      "line": 436,
+      "classification": "b",
+      "row_id": "TTF-05",
+      "module": "lean/CSTTT/FullNative/ViabilityFactor.lean"
+    }
+  ]
+}

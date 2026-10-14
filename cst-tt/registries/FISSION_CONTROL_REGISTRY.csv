@@ -1,0 +1,7 @@
+control_id,expected_primary_failure,observed_failures,model_ref,certificate_ref
+FIS-C01,FIS-O01-component-hashes,FIS-O01-component-hashes,models/fission/controls/FIS-C01.model.json,formal/certificates/fission/controls/FIS-C01.certificate.json
+FIS-C02,FIS-O07-targets-distinct,FIS-O01-component-hashes;FIS-O07-targets-distinct;FIS-O11-swap-involutive;FIS-O12-swap-fixed-point-free;FIS-O13-validity-preserved;FIS-O14-no-invariant-singleton,models/fission/controls/FIS-C02.model.json,formal/certificates/fission/controls/FIS-C02.certificate.json
+FIS-C03,FIS-O10-relation-contains-both,FIS-O10-relation-contains-both,models/fission/controls/FIS-C03.model.json,formal/certificates/fission/controls/FIS-C03.certificate.json
+FIS-C04,FIS-O11-swap-involutive,FIS-O11-swap-involutive;FIS-O12-swap-fixed-point-free;FIS-O13-validity-preserved;FIS-O14-no-invariant-singleton,models/fission/controls/FIS-C04.model.json,formal/certificates/fission/controls/FIS-C04.certificate.json
+FIS-C05,FIS-O12-swap-fixed-point-free,FIS-O12-swap-fixed-point-free;FIS-O14-no-invariant-singleton,models/fission/controls/FIS-C05.model.json,formal/certificates/fission/controls/FIS-C05.certificate.json
+FIS-C06,FIS-O15-uniqueness-claim-absent,FIS-O15-uniqueness-claim-absent,models/fission/controls/FIS-C06.model.json,formal/certificates/fission/controls/FIS-C06.certificate.json

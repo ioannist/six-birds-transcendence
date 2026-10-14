@@ -1,0 +1,8 @@
+lane_id,name,question,inherits_from,claim_ceiling
+S-T,structural transport,What separately typed temporal or package object is preserved across carriers?,none,structural
+S-R,structural realization,Does the target instantiate one coherent declared package?,none,structural
+S-L,structural lineage,Does the episode satisfy the frozen overlap or fallback ancestry relation?,none,structural relation
+A,post-withdrawal autonomy,Does the target maintain the package after named support is removed?,none,model-relative autonomy
+R,recognition,What observations license applying a structural predicate to a real system?,none,empirical bridge only
+O,ontology,"What follows only with A1, A2-P, certificate soundness, or identity premises?",none,separately assumed
+M,methodology,"What was checked, generated, enumerated, or compiled?",none,method only

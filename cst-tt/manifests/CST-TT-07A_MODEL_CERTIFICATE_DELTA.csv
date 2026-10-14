@@ -1,0 +1,6 @@
+asset_id,asset_kind,count,status,principal_result
+ODR-01,relation-certificate,1,landed,overlap/direct incomparable; generalized embedding
+GCP,generalized-continuity-path,3,landed,"overlap, direct, and mixed-mode paths"
+DEF,defect-profile-certificate,8,landed,"one positive, six controls, one equal-scalar pair"
+ROB,robustness-certificate,7,landed,one positive and six controls
+UNB,unbounded-invariant-certificate,1,landed,total invariant policy

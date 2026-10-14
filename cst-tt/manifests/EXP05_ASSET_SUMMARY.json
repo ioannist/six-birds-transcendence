@@ -1,0 +1,38 @@
+{
+  "boundary": "No theorem or no-go is proved; no toy program is implemented; no final target is selected; no consciousness, survival, numerical-identity, empirical-recognition, or A2 carrier-invariance conclusion is made.",
+  "counts": {
+    "constructive_or_boundary_prospects": 12,
+    "family_assumption_ladder_records": 24,
+    "finite_model_families": 10,
+    "formalization_surfaces": 96,
+    "landing_bundles": 4,
+    "model_family_discrimination_records": 30,
+    "model_theorem_program_crosswalk_rows": 124,
+    "no_go_or_underdetermination_prospects": 12,
+    "no_go_refinement_rows": 31,
+    "survivor_families": 3,
+    "theorem_prospectuses": 24,
+    "toy_program_contracts": 10
+  },
+  "family_exit_gates": [
+    {
+      "id": "SF-01",
+      "status": "reconnaissance_admissible_decomposed",
+      "unranked": true
+    },
+    {
+      "id": "SF-02",
+      "status": "reconnaissance_admissible_conservative",
+      "unranked": true
+    },
+    {
+      "id": "SF-03",
+      "status": "reconnaissance_admissible_relational",
+      "unranked": true
+    }
+  ],
+  "generated_date": "2026-08-10",
+  "phase": "CST-EXP-05",
+  "project": "CST-EXP",
+  "schema_version": "1.0"
+}

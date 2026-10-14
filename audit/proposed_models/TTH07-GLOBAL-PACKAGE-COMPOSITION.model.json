@@ -1,0 +1,56 @@
+{
+  "model_id": "TTH07-GLOBAL-PACKAGE-COMPOSITION",
+  "grade": "primitive cover-selector witness plus derived POS04 closed-package pipeline; not a full Temporal-FIACH two-hop model",
+  "primitive_source": "TTH07-STAGE-COMPOSITION.model.json",
+  "left_index_type": "Bool",
+  "right_index_type": "Unit",
+  "cell_type_each": "Unit",
+  "value_type_each": "Nat",
+  "prefix_indices": [
+    false,
+    true
+  ],
+  "prefix_scopes": {
+    "false": [],
+    "true": [
+      "unit"
+    ]
+  },
+  "prefix_arrows_present": {
+    "false": false,
+    "true": true
+  },
+  "prefix_adjacency": true,
+  "right_scope": [
+    "unit"
+  ],
+  "raw_parameters": "Reuse the declared increment, multiplier and positive source value from primitive_source",
+  "shadow_control": {
+    "false_scope": [
+      "unit"
+    ],
+    "other_fields": "same raw data; retain the absent selected false arrow and present later true arrow"
+  },
+  "missing_source_control": "source unit = none",
+  "POS04_pipeline": {
+    "left": "POS04DispatchedStage.raw",
+    "right": "POS04DispatchedStage.raw",
+    "selector": "same firstCover as constructed left global",
+    "source": "every partial POS04 assignment",
+    "cover_indices": [
+      "c1",
+      "c2",
+      "c3",
+      "c4",
+      "c5",
+      "c6",
+      "c7",
+      "c8"
+    ]
+  },
+  "POS04_controls": {
+    "same_clause_c2": "original scoped composer at c2/rows.target",
+    "missing_publishedC": "original source publishedC = none"
+  },
+  "declaration_order": "Raw cover, ordering, arrow presence and controls declared before evaluating the selector witness; POS04 tables and tag-translation recipes are existing frozen data"
+}

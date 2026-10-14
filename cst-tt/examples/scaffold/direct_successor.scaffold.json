@@ -1,0 +1,20 @@
+{
+  "first_target_event_id": "target-event-placeholder",
+  "last_source_event_id": "source-event-placeholder",
+  "operational_dependency_id": "dependency-placeholder",
+  "operational_provenance_status": "not-evaluated",
+  "ownership_interface_status": "not-evaluated",
+  "predictive_transport_status": "not-evaluated",
+  "record_descent_status": "not-evaluated",
+  "schema_version": "CST-TT-00",
+  "source": {
+    "code": 0,
+    "label": "source-carrier"
+  },
+  "target": {
+    "code": 1,
+    "label": "target-carrier"
+  },
+  "temporal_transport_ref": "transport-placeholder",
+  "tick_translation_status": "not-evaluated"
+}

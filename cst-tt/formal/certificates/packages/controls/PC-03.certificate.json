@@ -1,0 +1,20 @@
+{
+  "artifact_ref": "models/packages/controls/PC-03.model.json",
+  "artifact_sha256": "3baee7a55abea76f0ca9db52abb3db07e264547424b62eb18b1b50b7a9cfbf7c",
+  "checker": {
+    "function": "audit_package",
+    "integrated_package_valid": false,
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite package-obligation boundary only",
+  "control_id": "PC-03",
+  "control_kind": "package",
+  "expected_primary_failure": "PKG-O02-local-scope-and-clause-acceptance",
+  "observed_failures": [
+    "PKG-O02-local-scope-and-clause-acceptance"
+  ],
+  "positive_baseline_ref": "models/packages/PKG-POS-01-TARGET.model.json",
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-02"
+}

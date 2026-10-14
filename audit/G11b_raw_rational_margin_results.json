@@ -1,0 +1,1165 @@
+{
+  "schema": "csttt-g11b-raw-rational-margin-evaluation-v1",
+  "declaration_sha256": "343c1fea1a5d1920705bb09085464316e25224dfa4ee26e0df66b08c28b359db",
+  "declaration_commit": "828a9ce0a4682ce823651eb11e229f6948a2de25",
+  "classification": "b",
+  "cases": {
+    "constant_receiver_quarter": {
+      "advance": {
+        "order": "5/4",
+        "predictive": "9/4",
+        "progress": "5/4",
+        "record": "5/4",
+        "tick": "5/4"
+      },
+      "after": {
+        "order": "5/4",
+        "predictive": "13/4",
+        "progress": "5/4",
+        "record": "5/4",
+        "tick": "5/4"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p0w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "constant_receiver_zero": {
+      "advance": {
+        "order": "1/1",
+        "predictive": "2/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "1/1",
+        "predictive": "3/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p0w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "lower_boundary": {
+      "advance": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      },
+      "after": {
+        "order": "1/2",
+        "predictive": "5/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "minus_order": {
+      "advance": {
+        "order": "3/4",
+        "predictive": "2/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "3/4",
+        "predictive": "3/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "minus_predictive": {
+      "advance": {
+        "order": "1/1",
+        "predictive": "7/4",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "1/1",
+        "predictive": "11/4",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "minus_progress": {
+      "advance": {
+        "order": "1/1",
+        "predictive": "2/1",
+        "progress": "3/4",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "1/1",
+        "predictive": "3/1",
+        "progress": "3/4",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "minus_quarter": {
+      "advance": {
+        "order": "3/4",
+        "predictive": "7/4",
+        "progress": "3/4",
+        "record": "3/4",
+        "tick": "3/4"
+      },
+      "after": {
+        "order": "3/4",
+        "predictive": "11/4",
+        "progress": "3/4",
+        "record": "3/4",
+        "tick": "3/4"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "minus_record": {
+      "advance": {
+        "order": "1/1",
+        "predictive": "2/1",
+        "progress": "1/1",
+        "record": "3/4",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "1/1",
+        "predictive": "3/1",
+        "progress": "1/1",
+        "record": "3/4",
+        "tick": "1/1"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "minus_tick": {
+      "advance": {
+        "order": "1/1",
+        "predictive": "2/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "3/4"
+      },
+      "after": {
+        "order": "1/1",
+        "predictive": "3/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "3/4"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "missing_correction": {
+      "advance": null,
+      "after": {
+        "order": null,
+        "predictive": null,
+        "progress": null,
+        "record": null,
+        "tick": null
+      },
+      "all_five_positive": false,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": false,
+      "outcome_weight": "1/1",
+      "program_ready": false,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": false,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "missing_maintenance": {
+      "advance": null,
+      "after": {
+        "order": "5/4",
+        "predictive": "13/4",
+        "progress": "5/4",
+        "record": null,
+        "tick": "5/4"
+      },
+      "all_five_positive": false,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": false,
+      "event_ready": false,
+      "outcome_weight": null,
+      "program_ready": false,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": null,
+      "source_package_check": false,
+      "staging_check": false,
+      "supported": false,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": null,
+        "tick": "1/2"
+      }
+    },
+    "missing_positions": {
+      "advance": null,
+      "after": {
+        "order": "5/4",
+        "predictive": null,
+        "progress": "5/4",
+        "record": "5/4",
+        "tick": "5/4"
+      },
+      "all_five_positive": false,
+      "before": {
+        "order": "0/1",
+        "predictive": null,
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": false,
+      "event_ready": false,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": false,
+      "staging_check": false,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": null,
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "missing_rows_Tag_source": {
+      "advance": {
+        "order": "5/4",
+        "predictive": "9/4",
+        "progress": "5/4",
+        "record": "5/4",
+        "tick": "5/4"
+      },
+      "after": {
+        "order": "5/4",
+        "predictive": "13/4",
+        "progress": "5/4",
+        "record": "5/4",
+        "tick": "5/4"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": false,
+      "staging_check": false,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "missing_writers": {
+      "advance": null,
+      "after": {
+        "order": "5/4",
+        "predictive": "13/4",
+        "progress": "5/4",
+        "record": null,
+        "tick": "5/4"
+      },
+      "all_five_positive": false,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": null,
+        "tick": "0/1"
+      },
+      "certified_slack": false,
+      "event_ready": false,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": false,
+      "staging_check": false,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": null,
+        "tick": "1/2"
+      }
+    },
+    "outside_box_order_zero": {
+      "advance": {
+        "order": "0/1",
+        "predictive": "2/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "0/1",
+        "predictive": "3/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "all_five_positive": false,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": false,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "plus_order": {
+      "advance": {
+        "order": "5/4",
+        "predictive": "2/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "5/4",
+        "predictive": "3/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "plus_predictive": {
+      "advance": {
+        "order": "1/1",
+        "predictive": "9/4",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "1/1",
+        "predictive": "13/4",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "plus_progress": {
+      "advance": {
+        "order": "1/1",
+        "predictive": "2/1",
+        "progress": "5/4",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "1/1",
+        "predictive": "3/1",
+        "progress": "5/4",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "plus_record": {
+      "advance": {
+        "order": "1/1",
+        "predictive": "2/1",
+        "progress": "1/1",
+        "record": "5/4",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "1/1",
+        "predictive": "3/1",
+        "progress": "1/1",
+        "record": "5/4",
+        "tick": "1/1"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "plus_tick": {
+      "advance": {
+        "order": "1/1",
+        "predictive": "2/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "5/4"
+      },
+      "after": {
+        "order": "1/1",
+        "predictive": "3/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "5/4"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "quarter": {
+      "advance": {
+        "order": "5/4",
+        "predictive": "9/4",
+        "progress": "5/4",
+        "record": "5/4",
+        "tick": "5/4"
+      },
+      "after": {
+        "order": "5/4",
+        "predictive": "13/4",
+        "progress": "5/4",
+        "record": "5/4",
+        "tick": "5/4"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "upper_boundary": {
+      "advance": {
+        "order": "3/2",
+        "predictive": "5/2",
+        "progress": "3/2",
+        "record": "3/2",
+        "tick": "3/2"
+      },
+      "after": {
+        "order": "3/2",
+        "predictive": "7/2",
+        "progress": "3/2",
+        "record": "3/2",
+        "tick": "3/2"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "zero": {
+      "advance": {
+        "order": "1/1",
+        "predictive": "2/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "after": {
+        "order": "1/1",
+        "predictive": "3/1",
+        "progress": "1/1",
+        "record": "1/1",
+        "tick": "1/1"
+      },
+      "all_five_positive": true,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": true,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "1/2",
+        "predictive": "3/2",
+        "progress": "1/2",
+        "record": "1/2",
+        "tick": "1/2"
+      }
+    },
+    "zero_slack_lower_boundary": {
+      "advance": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "after": {
+        "order": "0/1",
+        "predictive": "2/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "all_five_positive": false,
+      "before": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      },
+      "certified_slack": false,
+      "event_ready": true,
+      "outcome_weight": "1/1",
+      "program_ready": true,
+      "receiver_factor_pair": [
+        "p0w0",
+        "p1w0"
+      ],
+      "row": [
+        [
+          "p2w1",
+          "1/1"
+        ]
+      ],
+      "source_package_check": true,
+      "staging_check": true,
+      "supported": true,
+      "within_box": true,
+      "worst_case_slack": {
+        "order": "0/1",
+        "predictive": "1/1",
+        "progress": "0/1",
+        "record": "0/1",
+        "tick": "0/1"
+      }
+    }
+  },
+  "whole_gate_scope": "No executable whole-gate verdict supplied. Source/staging checks and actual receiver factor collisions are evaluated; exact original F/O and receiver semantic witnesses/refutations require the following kernel bridge.",
+  "coverage": "Every frozen control, exact Fraction/Rat arithmetic, actual interpreted before/after optional reads, rows/support/duplicate aggregation, consumed-cell absence; no tuning or new physical robustness claim.",
+  "control_findings": [
+    {
+      "id": "missing_rows_Tag_source",
+      "declared_check": "actual_missing_consumed_expression_none",
+      "verdict": "REFUTED",
+      "reason": "The owning target is exchangeAssignment. Its source row is the original target row, which remains present. The full original source package and staging checks reject, but the actual extended numeric event remains ready and positive. No raw primitive or control is changed."
+    }
+  ]
+}

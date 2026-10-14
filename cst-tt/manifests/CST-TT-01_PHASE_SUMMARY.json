@@ -1,0 +1,18 @@
+{
+  "additional_frozen_branchwise_recombination_boundary": 1,
+  "checked_finite_countermodels": 15,
+  "countermodels": 15,
+  "detached_copy_strict_corridor_pass": false,
+  "fallback_unlocked": false,
+  "generated_date": "2026-08-10",
+  "generic_constructive_theorems_proved": 0,
+  "human_readable_model_cards": 15,
+  "minimality_ledger_rows": 15,
+  "next_phase": "CST-TT-02",
+  "phase": "CST-TT-01",
+  "positive_handoff_witnesses": 0,
+  "project": "CST-TT",
+  "required_execution_plan_boundaries": 14,
+  "schema_version": "1.0",
+  "total_candidates_explored": 3657
+}

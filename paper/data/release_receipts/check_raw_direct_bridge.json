@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_raw_direct_bridge.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_raw_direct_bridge",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_raw_direct_bridge.log",
+  "log_sha256": "f4cc0fdb3f7f01c0863c7b7321e103037e0d4f87185e68b3159cce205111cc89",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:47+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted whole data payload binding transcription drift\nCAUGHT planted missing data graph transcription drift\nPASS exact whole exported raw models and committed observations for23 cases\nPASS four actual boundary/endpoint-edge observations and14 planted drifts\nKernel witnesses, refutations and actual ModelPath values are checked by the Lean build."
+}

@@ -1,0 +1,7 @@
+# CST-TT-00 observed and pinned environment
+python==3.13.5
+setuptools==82.0.1
+pytest==9.0.2
+jsonschema==4.26.0
+networkx==3.6.1
+lean-toolchain==leanprover/lean4:v4.28.0

@@ -1,0 +1,122 @@
+{
+  "algorithm": "exhaustive-four-gate-route-completion-table",
+  "candidates_examined": 16,
+  "claim_ceiling": "finite gate logic for route normalization",
+  "licensed_flat_upgrades": 1,
+  "rows": [
+    {
+      "clock_holonomy_zero": false,
+      "critical_pairs_join": false,
+      "flat_upgrade_licensed": false,
+      "same_boundary": false,
+      "unique_normal_form": false
+    },
+    {
+      "clock_holonomy_zero": true,
+      "critical_pairs_join": false,
+      "flat_upgrade_licensed": false,
+      "same_boundary": false,
+      "unique_normal_form": false
+    },
+    {
+      "clock_holonomy_zero": false,
+      "critical_pairs_join": false,
+      "flat_upgrade_licensed": false,
+      "same_boundary": false,
+      "unique_normal_form": true
+    },
+    {
+      "clock_holonomy_zero": true,
+      "critical_pairs_join": false,
+      "flat_upgrade_licensed": false,
+      "same_boundary": false,
+      "unique_normal_form": true
+    },
+    {
+      "clock_holonomy_zero": false,
+      "critical_pairs_join": true,
+      "flat_upgrade_licensed": false,
+      "same_boundary": false,
+      "unique_normal_form": false
+    },
+    {
+      "clock_holonomy_zero": true,
+      "critical_pairs_join": true,
+      "flat_upgrade_licensed": false,
+      "same_boundary": false,
+      "unique_normal_form": false
+    },
+    {
+      "clock_holonomy_zero": false,
+      "critical_pairs_join": true,
+      "flat_upgrade_licensed": false,
+      "same_boundary": false,
+      "unique_normal_form": true
+    },
+    {
+      "clock_holonomy_zero": true,
+      "critical_pairs_join": true,
+      "flat_upgrade_licensed": false,
+      "same_boundary": false,
+      "unique_normal_form": true
+    },
+    {
+      "clock_holonomy_zero": false,
+      "critical_pairs_join": false,
+      "flat_upgrade_licensed": false,
+      "same_boundary": true,
+      "unique_normal_form": false
+    },
+    {
+      "clock_holonomy_zero": true,
+      "critical_pairs_join": false,
+      "flat_upgrade_licensed": false,
+      "same_boundary": true,
+      "unique_normal_form": false
+    },
+    {
+      "clock_holonomy_zero": false,
+      "critical_pairs_join": false,
+      "flat_upgrade_licensed": false,
+      "same_boundary": true,
+      "unique_normal_form": true
+    },
+    {
+      "clock_holonomy_zero": true,
+      "critical_pairs_join": false,
+      "flat_upgrade_licensed": false,
+      "same_boundary": true,
+      "unique_normal_form": true
+    },
+    {
+      "clock_holonomy_zero": false,
+      "critical_pairs_join": true,
+      "flat_upgrade_licensed": false,
+      "same_boundary": true,
+      "unique_normal_form": false
+    },
+    {
+      "clock_holonomy_zero": true,
+      "critical_pairs_join": true,
+      "flat_upgrade_licensed": false,
+      "same_boundary": true,
+      "unique_normal_form": false
+    },
+    {
+      "clock_holonomy_zero": false,
+      "critical_pairs_join": true,
+      "flat_upgrade_licensed": false,
+      "same_boundary": true,
+      "unique_normal_form": true
+    },
+    {
+      "clock_holonomy_zero": true,
+      "critical_pairs_join": true,
+      "flat_upgrade_licensed": true,
+      "same_boundary": true,
+      "unique_normal_form": true
+    }
+  ],
+  "schema_version": "CST-TT-06",
+  "unlicensed_memory_erasure_count": 0
+}

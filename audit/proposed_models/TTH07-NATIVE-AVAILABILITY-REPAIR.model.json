@@ -1,0 +1,28 @@
+{
+  "id": "TTH07-NATIVE-AVAILABILITY-REPAIR",
+  "grade": "primitive construction candidate; no full package or theorem-row promotion",
+  "frozen_before_evaluation": "2026-10-09 continuation, before AvailabilityFactor/ExposureRepair Lean evaluation",
+  "base": "TTH07-NATIVE-RUNTIME-COMPOSITION",
+  "factor": "Bool phase x Bool visible x Bool hidden",
+  "actions": [false, true],
+  "rows": {
+    "false": "singleton (incoming state, weight 1) for every state",
+    "true": "empty when visible=false; singleton (toggle phase, same visible and hidden, weight 1) when visible=true"
+  },
+  "positions": "bit phase",
+  "hazards": "visible",
+  "acquisition_policy": "false",
+  "objecthood_policy": "(actual position=0) AND actual hazard",
+  "c2_c3": {"split": [[false,false,false],[false,true,false]], "trajectory": [2,4,4], "classes": "2*bit phase+bit visible", "depth": 1},
+  "c4": {
+    "split": [[false,true,false],[true,true,false]],
+    "channels": ["availability"],
+    "connector_history": [[false,true,false],[true,true,false]],
+    "policy": "the same declared actual position/hazard objecthood policy"
+  },
+  "c1": "Existing ObjecthoodProbe primitive prototypes, reference P/C/U, numerical parameters and 35 row operations; E/pi/inverse/verdict are never stored. Kernel/operator preservation must be proved.",
+  "c6": "Existing primitive safe histories, routes, ticks, ledger, resources and hidden coarse pair; all row masses and bisimulation must be re-established for changed rows.",
+  "publication": "Existing actual Input publication, swapping owner and doubling incoming primitive histories; copied sources remain literal incoming inputs",
+  "controls": ["Original always-available rows with arbitrary split/channels/policy/history: actual C4 rejection", "Restore forbidden true row at every invisible state: actual repaired C4 exposed readout fails", "Break connector history: actual repaired connector fails"],
+  "unclaimed": ["full HIDD", "C5/C7/C8 package integration", "complete heterogeneous episode/nominal autonomy", "TTH07 promotion"]
+}

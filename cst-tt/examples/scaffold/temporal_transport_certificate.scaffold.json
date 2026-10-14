@@ -1,0 +1,54 @@
+{
+  "audit": {
+    "alphabets_distinct": false,
+    "carriers_distinct": false,
+    "component_maps_complete": false,
+    "component_maps_total_on_reachable": false,
+    "failed_obligations": [
+      "not-evidence"
+    ],
+    "forbidden_verdict_fields_absent": false,
+    "maintenance_translated": false,
+    "mapped_signature_agreement": false,
+    "ownership_interface_valid": false,
+    "predictive_representative_independence": false,
+    "route_discipline_satisfied": false,
+    "route_residue_retention_noncollapsing": false,
+    "route_status": "route-indexed",
+    "source_states_well_formed": false,
+    "source_temporal_witness_valid": false,
+    "state_map_targets_declared": false,
+    "state_map_total_on_reachable": false,
+    "strict_record_arrow_preserved": false,
+    "successor_preserved": false,
+    "target_states_well_formed": false,
+    "target_temporal_witness_valid": false,
+    "tick_progress_preserved": false,
+    "transport_valid": false
+  },
+  "certificate_id": "SCAFFOLD",
+  "checker": {
+    "checked_at_phase": "CST-TT-03",
+    "function": "audit_temporal_transport",
+    "module": "cst_tt.transport",
+    "python_version": "scaffold"
+  },
+  "claim_ceiling": "finite structural temporal transport only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_ref": "not-evidence",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "scaffold-only",
+  "route_status": "route-indexed",
+  "schema_version": "CST-TT-03",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.TransportTheory.bundledHeterogeneousTemporalTransport"
+    ],
+    "theorem_ids": [
+      "TTH-03"
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "audit": {
+    "approximation_does_not_override_hard_gates": true,
+    "bounded_box_size": 945,
+    "bounded_perturbations_checked": 945,
+    "bounded_violations": 0,
+    "dimensions_unique": true,
+    "every_hard_gate_frozen_true": true,
+    "every_margin_certified": true,
+    "failed_obligations": [],
+    "hard_gate_set_exact": true,
+    "margin_audits": [
+      {
+        "base_increment": 4,
+        "certified": true,
+        "dimension_id": "predictive-step",
+        "minimum_increment": 1,
+        "radius": 2,
+        "well_formed": true,
+        "worst_case_increment": 2
+      },
+      {
+        "base_increment": 3,
+        "certified": true,
+        "dimension_id": "order-step",
+        "minimum_increment": 1,
+        "radius": 1,
+        "well_formed": true,
+        "worst_case_increment": 2
+      },
+      {
+        "base_increment": 3,
+        "certified": true,
+        "dimension_id": "tick-step",
+        "minimum_increment": 1,
+        "radius": 1,
+        "well_formed": true,
+        "worst_case_increment": 2
+      },
+      {
+        "base_increment": 2,
+        "certified": true,
+        "dimension_id": "progress-step",
+        "minimum_increment": 1,
+        "radius": 1,
+        "well_formed": true,
+        "worst_case_increment": 1
+      },
+      {
+        "base_increment": 5,
+        "certified": true,
+        "dimension_id": "record-step",
+        "minimum_increment": 1,
+        "radius": 3,
+        "well_formed": true,
+        "worst_case_increment": 2
+      }
+    ],
+    "margins_well_formed": true,
+    "minimum_observed_increments": {
+      "order-step": 2,
+      "predictive-step": 2,
+      "progress-step": 1,
+      "record-step": 2,
+      "tick-step": 2
+    },
+    "model_id": "ROB-POS-01",
+    "robustness_valid": true
+  },
+  "certificate_id": "ROB-POS-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-07A",
+    "function": "audit_robustness",
+    "module": "cst_tt.robustness",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "bounded exact perturbation box inside the finite structural model",
+  "claim_lanes": [
+    "S-T",
+    "S-R",
+    "S-L",
+    "A"
+  ],
+  "model_ref": "models/strengthenings/robustness/ROB-POS-01.model.json",
+  "model_sha256": "dd4947c7ccd53208e849bf734d98c8a508bfa934f9770988c740a69c68ca8de6",
+  "result_status": "proof-source-and-executable-bounded-robustness-certificate",
+  "schema_version": "CST-TT-07A",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.RobustnessTheory.boundedPerturbationPreservesMargin",
+      "CSTTT.RobustnessTheory.failedHardGateCannotBeAveragedAway"
+    ],
+    "theorem_ids": [
+      "TTS-03",
+      "TTN-10"
+    ]
+  }
+}

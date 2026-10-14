@@ -1,0 +1,170 @@
+{
+  "claim_ceiling": "exact finite structural event-successor criterion only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "episode": {
+    "dependencies": [
+      {
+        "alternative_temporal_parent": false,
+        "child_event_id": "mixed-mode-target-first",
+        "counterfactually_necessary": true,
+        "dependency_id": "mixed-mode-direct-edge",
+        "dependency_kind": "live-temporal-handoff",
+        "parent_event_id": "mixed-mode-middle-final",
+        "payload": {
+          "maintenance_state": "mixed-mode-direct-target-maint",
+          "order_rank": 3,
+          "predictive_rank": 3,
+          "progress_rank": 3,
+          "record_value": 5,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target",
+            "mixed-mode-direct-M-T"
+          ],
+          "tick_index": 3
+        },
+        "payload_sha256": "3df99490c2ae2c41f7d42bb390c1060a12b974cff91d07ce937be8ccf8d521ad",
+        "replayable_archive": false,
+        "single_use_temporal_token": true,
+        "storage_mediator": false
+      }
+    ],
+    "events": [
+      {
+        "event_id": "mixed-mode-middle-final",
+        "event_kind": "temporal-update",
+        "output_payload": {
+          "maintenance_state": "mixed-mode-direct-target-maint",
+          "order_rank": 3,
+          "predictive_rank": 3,
+          "progress_rank": 3,
+          "record_value": 5,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target",
+            "mixed-mode-direct-M-T"
+          ],
+          "tick_index": 3
+        },
+        "owner": {
+          "code": 55,
+          "label": "intermediate-substrate"
+        },
+        "stage": 0
+      },
+      {
+        "event_id": "mixed-mode-target-first",
+        "event_kind": "temporal-update",
+        "input_payload": {
+          "maintenance_state": "mixed-mode-direct-target-maint",
+          "order_rank": 3,
+          "predictive_rank": 3,
+          "progress_rank": 3,
+          "record_value": 5,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target",
+            "mixed-mode-direct-M-T"
+          ],
+          "tick_index": 3
+        },
+        "output_payload": {
+          "maintenance_state": "mixed-mode-direct-target-maint",
+          "order_rank": 3,
+          "predictive_rank": 3,
+          "progress_rank": 3,
+          "record_value": 5,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target",
+            "mixed-mode-direct-M-T"
+          ],
+          "tick_index": 3
+        },
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "stage": 1
+      }
+    ],
+    "stages": [
+      {
+        "active_support": [
+          {
+            "code": 55,
+            "label": "intermediate-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 55,
+          "maintenance_state": "leg-S-M-target-maint",
+          "order_rank": 2,
+          "predictive_rank": 2,
+          "progress_rank": 2,
+          "record_value": 3,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target"
+          ],
+          "tick_index": 2
+        },
+        "stage": 0,
+        "temporal_realized": true
+      },
+      {
+        "active_support": [
+          {
+            "code": 101,
+            "label": "target-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 101,
+          "maintenance_state": "mixed-mode-direct-target-maint",
+          "order_rank": 3,
+          "predictive_rank": 3,
+          "progress_rank": 3,
+          "record_value": 5,
+          "route_residue": [
+            "route-root",
+            "leg-S-M-mixed",
+            "leg-S-M-target",
+            "mixed-mode-direct-M-T"
+          ],
+          "tick_index": 3
+        },
+        "stage": 1,
+        "temporal_realized": true
+      }
+    ]
+  },
+  "first_target_event_id": "mixed-mode-target-first",
+  "kind": "atomic-direct-temporal-successor",
+  "last_source_event_id": "mixed-mode-middle-final",
+  "model_id": "DS-POS-03-MIXED-MODE",
+  "nonclaims": [
+    "not a strict overlap leg",
+    "not by itself a Temporal-FIACH certificate",
+    "no phenomenal continuity or identity conclusion"
+  ],
+  "operational_dependency_id": "mixed-mode-direct-edge",
+  "route_status": "route-indexed",
+  "schema_version": "CST-TT-07A-model-v1",
+  "source_carrier": {
+    "code": 55,
+    "label": "intermediate-substrate"
+  },
+  "target_carrier": {
+    "code": 101,
+    "label": "target-substrate"
+  },
+  "title": "direct temporal successor aligned to an overlap frontier"
+}

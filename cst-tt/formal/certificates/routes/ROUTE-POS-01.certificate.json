@@ -1,0 +1,58 @@
+{
+  "audit": {
+    "all_expected_endpoints_match": true,
+    "all_routes_valid": true,
+    "clock_translation_holonomy_zero": true,
+    "current_endpoints_agree_by_boundary": true,
+    "direct_factored_agreement": true,
+    "every_boundary_pair_declared": true,
+    "every_declared_critical_pair_joins": true,
+    "executed_routes": [
+      {
+        "boundary": "x-to-complete",
+        "clock_translation": 2,
+        "endpoint_state": "z",
+        "route_id": "left-then-complete",
+        "start_state": "x",
+        "valid": true
+      },
+      {
+        "boundary": "x-to-complete",
+        "clock_translation": 2,
+        "endpoint_state": "z",
+        "route_id": "right-then-complete",
+        "start_state": "x",
+        "valid": true
+      }
+    ],
+    "failed_obligations": [],
+    "flatness_valid": true,
+    "forbidden_verdict_fields_absent": true,
+    "global_now_factorization_exists": true,
+    "memory_or_flatness_satisfied": true,
+    "nonzero_translation_holonomy_witnessed": false,
+    "route_audit_valid": true,
+    "route_residue_trivial": true,
+    "temporal_endpoints_route_independent": true,
+    "transitions_functional": true,
+    "unique_normal_form_per_boundary": true
+  },
+  "certificate_id": "ROUTE-POS-01",
+  "checker": {
+    "function": "audit_route_discipline",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite route independence under declared confluence only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_ref": "models/routes/ROUTE-POS-01.model.json",
+  "model_sha256": "ccb22ea4991b74a3d69b3309250f07995a44661d0781f879890d430c63ee6945",
+  "result_status": "checked-finite-flatness-certificate",
+  "schema_version": "CST-TT-03",
+  "theorem_ids": [
+    "TTH-09",
+    "TTN-04"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Symmetry selects one unique continuer",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "TTN-11;TTH-08",
+  "reason": "A fixed-point-free target swap preserves both valid branches and defeats an invariant singleton selector.",
+  "rejected_id": "ALT-06",
+  "replacement": "relation-valued continuation",
+  "status": "killed"
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "scripts/selftest_evaluate_tth06_lanes.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "selftest_evaluate_tth06_lanes",
+  "kind": "selftest",
+  "log_path": "lean/.validate-logs/W19a/selftest_evaluate_tth06_lanes.log",
+  "log_sha256": "0f67e7d2ba9a048c30380cb890c937b733ba3a811de7b96b2669110262009c7d",
+  "metrics": {
+    "failed": 0,
+    "passed": 46
+  },
+  "recorded_at": "2026-10-13T11:35:26+00:00",
+  "status": "pass",
+  "summary": "Counts: {\"CAUGHT\": 46, \"ERROR\": 0, \"MISSED\": 0}"
+}

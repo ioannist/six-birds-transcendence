@@ -1,0 +1,9 @@
+{
+  "name": "Temporal-IAPS replaces the surviving primary",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "TTF-01..TTF-08",
+  "reason": "Fallback remains typed but inactive because no FIACH kill criterion fired.",
+  "rejected_id": "ALT-11",
+  "replacement": "retain as conditional fallback only",
+  "status": "open"
+}

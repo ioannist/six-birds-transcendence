@@ -1,0 +1,13 @@
+{
+  "schema_version": "CST-TT-02",
+  "control_id": "package-control-scaffold",
+  "control_kind": "package",
+  "artifact_ref": "not-instantiated",
+  "artifact_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "expected_primary_failure": "not-instantiated",
+  "observed_failures": ["not-instantiated"],
+  "positive_baseline_ref": "not-instantiated",
+  "result_status": "scaffold-only",
+  "claim_ceiling": "finite package-obligation boundary only",
+  "checker": {}
+}

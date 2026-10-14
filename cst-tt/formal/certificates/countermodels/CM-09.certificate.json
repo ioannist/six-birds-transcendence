@@ -1,0 +1,45 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm09_publicShadowCollision",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-09",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R",
+    "S-L",
+    "R"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-09",
+  "finite_model_ref": "models/countermodels/CM-09.model.json",
+  "finite_model_sha256": "e1ee5cc4a0f682843e22cb1bd351bd755212202d79c1823b230239c61cd80c85",
+  "minimality_status": "certified",
+  "model_family": "public-shadow-collision",
+  "name": "Public/report-perfect collision with hidden mismatch",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "The same finite public report can be emitted by states with different hidden structural facts.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "all observation maps and hidden Boolean facts on <=3 states and <=2 public symbols",
+    "candidates_explored": 98,
+    "lower_bound_argument": "Two internal states are necessary for a collision with opposite hidden facts; one public symbol suffices.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 48,
+    "same_size_candidates_explored": 4,
+    "same_size_qualifying_candidates": 2,
+    "size_measure": "(state_count, public_symbol_count)",
+    "smaller_candidates_explored": 6,
+    "witness_size_vector": [
+      2,
+      1
+    ]
+  },
+  "target_no_go_id": "TTN-02",
+  "toy_model_ref": "TTM-12"
+}

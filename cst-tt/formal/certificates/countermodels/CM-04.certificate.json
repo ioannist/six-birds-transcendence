@@ -1,0 +1,43 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm04_externalSchedulerShadow",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-04",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "A",
+    "S-R"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-04",
+  "finite_model_ref": "models/countermodels/CM-04.model.json",
+  "finite_model_sha256": "b08e0f6059df7f38f4466b6ce85cc56c7317288f79f4f4fb96f2d3f212de1948",
+  "minimality_status": "certified",
+  "model_family": "external-support-shadow",
+  "name": "Externally scheduled temporal shadow",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "Runtime temporal progress maintained by an essential scheduler collapses after withdrawal.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "all deterministic supported/withdrawn transition tables on 1..3 states",
+    "candidates_explored": 746,
+    "lower_bound_argument": "One state cannot exhibit nontrivial progress; two states suffice for supported motion and withdrawn stasis.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 29,
+    "same_size_candidates_explored": 16,
+    "same_size_qualifying_candidates": 3,
+    "size_measure": "(state_count)",
+    "smaller_candidates_explored": 1,
+    "witness_size_vector": [
+      2
+    ]
+  },
+  "target_no_go_id": "TTN-06",
+  "toy_model_ref": "TTM-04"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Externally scheduled activity is target-owned time",
+  "phase": "CST-TT-08",
+  "preserved_evidence": "CM-04;AUT-C01",
+  "reason": "The apparent temporal process collapses when scheduler or decoder support is withdrawn.",
+  "rejected_id": "ALT-04",
+  "replacement": "target-owned temporal closure and withdrawal autonomy",
+  "status": "killed"
+}

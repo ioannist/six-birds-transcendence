@@ -1,0 +1,17 @@
+{
+  "claim_ceiling": "generalized structural temporal-lineage path only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "legs": [
+    {
+      "kind": "direct",
+      "leg_id": "direct-edge",
+      "model_ref": "models/direct_successor/DS-POS-01.model.json",
+      "model_sha256": "a3b5856d010b1fff44715225a44367e1417ef7021c038b7b5cc280f846d337f8"
+    }
+  ],
+  "path_id": "GCP-DIRECT-01",
+  "primary_fiach_definition_change": "none",
+  "schema_version": "CST-TT-07A-generalized-path-v1"
+}

@@ -1,0 +1,5220 @@
+{
+  "checks": 868,
+  "failed": 0,
+  "passed": 865,
+  "phase": "CST-TT-03",
+  "project": "CST-TT",
+  "results": [
+    {
+      "category": "baseline",
+      "check_id": "BASE-001",
+      "detail": "repository is a Git worktree",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-002",
+      "detail": "CST-TT-02 tag resolves to the frozen base",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-003",
+      "detail": "frozen CST-TT-02 base is an ancestor of current HEAD",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-004",
+      "detail": "repository has no whitespace errors",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-005",
+      "detail": "working tree is clean",
+      "status": "PASS"
+    },
+    {
+      "category": "baseline",
+      "check_id": "BASE-006",
+      "detail": "phase tag not required before freeze",
+      "status": "SKIP"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-001",
+      "detail": "Lean toolchain remains pinned to v4.28.0",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-01",
+      "detail": "pyproject contains >=3.13,<3.14",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-02",
+      "detail": "pyproject contains pytest==9.0.2",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-03",
+      "detail": "pyproject contains jsonschema==4.26.0",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PIN-04",
+      "detail": "pyproject contains setuptools==82.0.1",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-PY",
+      "detail": "running Python is 3.13 (found 3.13.5)",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-01",
+      "detail": "toolchain status phase='CST-TT-03'",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-02",
+      "detail": "toolchain status pinned_toolchain='leanprover/lean4:v4.28.0'",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-03",
+      "detail": "toolchain status registered_generic_proof_source_count=8",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-04",
+      "detail": "toolchain status new_registered_proof_source_count=6",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-05",
+      "detail": "toolchain status positive_transport_certificate_count=2",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-06",
+      "detail": "toolchain status route_certificate_count=2",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-07",
+      "detail": "toolchain status memory_certificate_count=2",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-08",
+      "detail": "toolchain status record_arrow_certificate_count=1",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-09",
+      "detail": "toolchain status control_certificate_count=28",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-10",
+      "detail": "toolchain status compile_claimed=False",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-STATUS-11",
+      "detail": "toolchain status static_lean_source_audit_status='passed-by-cst-tt-03-static-suite'",
+      "status": "PASS"
+    },
+    {
+      "category": "toolchain",
+      "check_id": "TOOL-LEAN-BUILD",
+      "detail": "lean/lake unavailable; no compilation pass claimed",
+      "status": "SKIP"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-001",
+      "detail": "at least thirty Python source files are present (65)",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-001",
+      "detail": "scripts/build_exp01_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-002",
+      "detail": "scripts/build_exp02_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-003",
+      "detail": "scripts/build_exp03_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-004",
+      "detail": "scripts/build_exp04_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-005",
+      "detail": "scripts/build_exp05_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-006",
+      "detail": "scripts/build_exp06_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-007",
+      "detail": "scripts/build_tt00_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-008",
+      "detail": "scripts/build_tt01_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-009",
+      "detail": "scripts/build_tt02_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-010",
+      "detail": "scripts/build_tt03_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-011",
+      "detail": "scripts/enrich_exp01_assets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-012",
+      "detail": "scripts/exp02_supplemental.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-013",
+      "detail": "scripts/exp03_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-014",
+      "detail": "scripts/exp04_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-015",
+      "detail": "scripts/exp05_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-016",
+      "detail": "scripts/exp06_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-017",
+      "detail": "scripts/extract_corpus.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-018",
+      "detail": "scripts/finalize_exp02_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-019",
+      "detail": "scripts/finalize_exp03_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-020",
+      "detail": "scripts/finalize_exp04_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-021",
+      "detail": "scripts/finalize_exp05_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-022",
+      "detail": "scripts/finalize_exp06_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-023",
+      "detail": "scripts/finalize_tt00_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-024",
+      "detail": "scripts/finalize_tt01_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-025",
+      "detail": "scripts/finalize_tt02_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-026",
+      "detail": "scripts/finalize_tt03_manifest.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-027",
+      "detail": "scripts/tt00_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-028",
+      "detail": "scripts/tt02_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-029",
+      "detail": "scripts/tt03_data.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-030",
+      "detail": "scripts/validate_exp01.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-031",
+      "detail": "scripts/validate_exp02.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-032",
+      "detail": "scripts/validate_exp03.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-033",
+      "detail": "scripts/validate_exp04.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-034",
+      "detail": "scripts/validate_exp05.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-035",
+      "detail": "scripts/validate_exp06.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-036",
+      "detail": "scripts/validate_tt00.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-037",
+      "detail": "scripts/validate_tt01.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-038",
+      "detail": "scripts/validate_tt02.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-039",
+      "detail": "scripts/validate_tt03.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-040",
+      "detail": "scripts/verify_exp03_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-041",
+      "detail": "scripts/verify_exp04_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-042",
+      "detail": "scripts/verify_exp05_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-043",
+      "detail": "scripts/verify_exp06_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-044",
+      "detail": "scripts/verify_tt00_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-045",
+      "detail": "scripts/verify_tt01_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-046",
+      "detail": "scripts/verify_tt02_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-047",
+      "detail": "scripts/verify_tt03_rebuild.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-048",
+      "detail": "src/cst_tt/__init__.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-049",
+      "detail": "src/cst_tt/ancestry.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-050",
+      "detail": "src/cst_tt/autonomy.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-051",
+      "detail": "src/cst_tt/circularity.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-052",
+      "detail": "src/cst_tt/contracts.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-053",
+      "detail": "src/cst_tt/corridor.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-054",
+      "detail": "src/cst_tt/countermodels.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-055",
+      "detail": "src/cst_tt/hashing.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-056",
+      "detail": "src/cst_tt/package.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-057",
+      "detail": "src/cst_tt/package_auditor.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-058",
+      "detail": "src/cst_tt/package_gluing.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-059",
+      "detail": "src/cst_tt/predicates.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-060",
+      "detail": "src/cst_tt/registry.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-061",
+      "detail": "src/cst_tt/targets.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-062",
+      "detail": "src/cst_tt/temporal.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-063",
+      "detail": "src/cst_tt/transport.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-064",
+      "detail": "src/cst_tt/transport_auditor.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-COMPILE-065",
+      "detail": "src/cst_tt/types.py compiles",
+      "status": "PASS"
+    },
+    {
+      "category": "python",
+      "check_id": "PY-TESTS",
+      "detail": "full pytest suite passes",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-001",
+      "detail": "four frozen top-level inputs remain hash-bound",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-INPUT-01",
+      "detail": "frozen input checksum row 1 verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-INPUT-02",
+      "detail": "frozen input checksum row 2 verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-INPUT-03",
+      "detail": "frozen input checksum row 3 verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-INPUT-04",
+      "detail": "frozen input checksum row 4 verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-COUNT",
+      "detail": "nine temporal SBT source manuscripts are retained",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-01",
+      "detail": "Tsiokos_2026_An_Audited_Closure_Architecture_for_Consciousness_Exact_Finite_Models_Structural_Theorems_and_Conditional_Realization.tex is retained and nonempty",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-02",
+      "detail": "Tsiokos_2026_Glass_Is_an_Unclosed_Layer_Kovacs_Memory_as_Predictive_Quotient_Residue.tex is retained and nonempty",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-03",
+      "detail": "Tsiokos_2026_Holonomy_with_Memory_in_Six_Birds_Theory_Predictive_Quotients_Witnesses_and_Fixed_Support_Route_Transport.tex is retained and nonempty",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-04",
+      "detail": "Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex is retained and nonempty",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-05",
+      "detail": "Tsiokos_2026_Six_Birds_Foundations_VI_A_Catalog_of_Dynamical_Structural_Laws.tex is retained and nonempty",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-06",
+      "detail": "Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex is retained and nonempty",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-07",
+      "detail": "Tsiokos_2026_To_Flatten_a_Stone_with_Six_Birds_Critical_Pairs_Holonomy_and_Confluence_in_Rewriting_Systems.tex is retained and nonempty",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-08",
+      "detail": "Tsiokos_2026_To_Lay_a_Stone_with_Six_Birds_Finite_State_Semantics_for_Packaging_Directionality_and_Coarse_Graining.tex is retained and nonempty",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-SOURCE-09",
+      "detail": "Tsiokos_2026_To_Notch_a_Stone_with_Six_Birds_Time_as_a_Theory_Artifact_of_Order_Measure_and_Arrow.tex is retained and nonempty",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TAG-01",
+      "detail": "CST-TT-00-v1 resolves to its frozen commit",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TAG-02",
+      "detail": "CST-TT-01-v1 resolves to its frozen commit",
+      "status": "PASS"
+    },
+    {
+      "category": "provenance",
+      "check_id": "PROV-TAG-03",
+      "detail": "CST-TT-02-v1 resolves to its frozen commit",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-COUNT",
+      "detail": "the fifteen-countermodel negative kernel remains intact",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-01-MODEL",
+      "detail": "CM-01 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-01-CERT",
+      "detail": "CM-01 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-02-MODEL",
+      "detail": "CM-02 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-02-CERT",
+      "detail": "CM-02 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-03-MODEL",
+      "detail": "CM-03 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-03-CERT",
+      "detail": "CM-03 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-04-MODEL",
+      "detail": "CM-04 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-04-CERT",
+      "detail": "CM-04 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-05-MODEL",
+      "detail": "CM-05 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-05-CERT",
+      "detail": "CM-05 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-06-MODEL",
+      "detail": "CM-06 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-06-CERT",
+      "detail": "CM-06 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-07-MODEL",
+      "detail": "CM-07 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-07-CERT",
+      "detail": "CM-07 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-08-MODEL",
+      "detail": "CM-08 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-08-CERT",
+      "detail": "CM-08 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-09-MODEL",
+      "detail": "CM-09 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-09-CERT",
+      "detail": "CM-09 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-10-MODEL",
+      "detail": "CM-10 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-10-CERT",
+      "detail": "CM-10 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-11-MODEL",
+      "detail": "CM-11 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-11-CERT",
+      "detail": "CM-11 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-12-MODEL",
+      "detail": "CM-12 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-12-CERT",
+      "detail": "CM-12 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-13-MODEL",
+      "detail": "CM-13 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-13-CERT",
+      "detail": "CM-13 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-14-MODEL",
+      "detail": "CM-14 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-14-CERT",
+      "detail": "CM-14 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-15-MODEL",
+      "detail": "CM-15 model remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-CM-15-CERT",
+      "detail": "CM-15 certificate remains present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-PKG-COUNT",
+      "detail": "two integrated package witnesses remain registered",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-PKG-01-HASH",
+      "detail": "PKG-POS-01-TARGET model hash verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-PKG-01-AUDIT",
+      "detail": "PKG-POS-01-TARGET package audit recomputes exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-PKG-02-HASH",
+      "detail": "PKG-POS-02-SOURCE model hash verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-PKG-02-AUDIT",
+      "detail": "PKG-POS-02-SOURCE package audit recomputes exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-STAGED-LINK",
+      "detail": "staged assembly and both typed endpoint packages remain present",
+      "status": "PASS"
+    },
+    {
+      "category": "inherited",
+      "check_id": "INHERIT-STAGED-AUDIT",
+      "detail": "staged heterogeneous package assembly recomputes exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-COUNT",
+      "detail": "exactly two route-discipline witnesses are registered",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-01-MODEL",
+      "detail": "ROUTE-POS-01 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-01-CERT",
+      "detail": "ROUTE-POS-01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-01-HASH",
+      "detail": "ROUTE-POS-01 model hash matches registry and certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-01-AUDIT",
+      "detail": "ROUTE-POS-01 audit recomputes exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-01-SCHEMA",
+      "detail": "ROUTE-POS-01 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-01-LANE",
+      "detail": "ROUTE-POS-01 remains S-T only",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-02-MODEL",
+      "detail": "ROUTE-NEG-01 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-02-CERT",
+      "detail": "ROUTE-NEG-01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-02-HASH",
+      "detail": "ROUTE-NEG-01 model hash matches registry and certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-02-AUDIT",
+      "detail": "ROUTE-NEG-01 audit recomputes exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-02-SCHEMA",
+      "detail": "ROUTE-NEG-01 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-02-LANE",
+      "detail": "ROUTE-NEG-01 remains S-T only",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-POS-FLAT",
+      "detail": "confluent completion has a valid flat endpoint certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-POS-NOHOL",
+      "detail": "confluent completion removes declared residue and translation holonomy",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-NEG-INDEXED",
+      "detail": "holonomy witness is well-formed but not flat",
+      "status": "PASS"
+    },
+    {
+      "category": "routes",
+      "check_id": "ROUTE-NEG-HOL",
+      "detail": "translation holonomy obstructs a boundary-indexed global now",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-COUNT",
+      "detail": "exactly two positive temporal-transport certificates are registered",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-01-MODEL",
+      "detail": "TR-POS-01 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-01-CERT",
+      "detail": "TR-POS-01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-01-HASH",
+      "detail": "TR-POS-01 model hash matches registry and certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-01-AUDIT",
+      "detail": "TR-POS-01 audit recomputes exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-01-VALID",
+      "detail": "TR-POS-01 satisfies every frozen transport obligation",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-01-CARRIERS",
+      "detail": "TR-POS-01 uses separately identified carriers",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-01-REP",
+      "detail": "TR-POS-01 descends on the declared source predictive quotient",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-01-ARROW",
+      "detail": "TR-POS-01 preserves progress and strict record descent",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-01-OWNER",
+      "detail": "TR-POS-01 translates maintenance and target ownership",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-01-SCHEMA",
+      "detail": "TR-POS-01 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-01-BOUND-01",
+      "detail": "TR-POS-01 omits verdict key same_subject",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-01-BOUND-02",
+      "detail": "TR-POS-01 omits verdict key same_person",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-01-BOUND-03",
+      "detail": "TR-POS-01 omits verdict key personal_identity",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-01-BOUND-04",
+      "detail": "TR-POS-01 omits verdict key survival",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-01-BOUND-05",
+      "detail": "TR-POS-01 omits verdict key consciousness",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-01-BOUND-06",
+      "detail": "TR-POS-01 omits verdict key temporal_fiach",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-01-BOUND-07",
+      "detail": "TR-POS-01 omits verdict key continuation_verdict",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-02-MODEL",
+      "detail": "TR-POS-02-FLAT model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-02-CERT",
+      "detail": "TR-POS-02-FLAT certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-02-HASH",
+      "detail": "TR-POS-02-FLAT model hash matches registry and certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-02-AUDIT",
+      "detail": "TR-POS-02-FLAT audit recomputes exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-02-VALID",
+      "detail": "TR-POS-02-FLAT satisfies every frozen transport obligation",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-02-CARRIERS",
+      "detail": "TR-POS-02-FLAT uses separately identified carriers",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-02-REP",
+      "detail": "TR-POS-02-FLAT descends on the declared source predictive quotient",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-02-ARROW",
+      "detail": "TR-POS-02-FLAT preserves progress and strict record descent",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-02-OWNER",
+      "detail": "TR-POS-02-FLAT translates maintenance and target ownership",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-02-SCHEMA",
+      "detail": "TR-POS-02-FLAT certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-02-BOUND-01",
+      "detail": "TR-POS-02-FLAT omits verdict key same_subject",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-02-BOUND-02",
+      "detail": "TR-POS-02-FLAT omits verdict key same_person",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-02-BOUND-03",
+      "detail": "TR-POS-02-FLAT omits verdict key personal_identity",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-02-BOUND-04",
+      "detail": "TR-POS-02-FLAT omits verdict key survival",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-02-BOUND-05",
+      "detail": "TR-POS-02-FLAT omits verdict key consciousness",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-02-BOUND-06",
+      "detail": "TR-POS-02-FLAT omits verdict key temporal_fiach",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "TRANS-02-BOUND-07",
+      "detail": "TR-POS-02-FLAT omits verdict key continuation_verdict",
+      "status": "PASS"
+    },
+    {
+      "category": "transport",
+      "check_id": "TRANS-FLAT-REF",
+      "detail": "flat transport binds the separately checked route certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-COUNT",
+      "detail": "route-memory and flat alternatives are both registered",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-01-HASH",
+      "detail": "MEM-POS-01 hash verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-01-AUDIT",
+      "detail": "MEM-POS-01 audit recomputes exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-01-VALID",
+      "detail": "MEM-POS-01 satisfies its declared memory-or-flatness branch",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-01-SCHEMA",
+      "detail": "MEM-POS-01 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-02-HASH",
+      "detail": "MEM-FLAT-01 hash verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-02-AUDIT",
+      "detail": "MEM-FLAT-01 audit recomputes exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-02-VALID",
+      "detail": "MEM-FLAT-01 satisfies its declared memory-or-flatness branch",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-02-SCHEMA",
+      "detail": "MEM-FLAT-01 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-POS-NOPRED",
+      "detail": "current equality does not determine the predictive future in the memory witness",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-POS-REPAIR",
+      "detail": "route residue repairs the predictive representation",
+      "status": "PASS"
+    },
+    {
+      "category": "memory",
+      "check_id": "MEM-FLAT-ALT",
+      "detail": "flatness supplies the memory-free alternative",
+      "status": "PASS"
+    },
+    {
+      "category": "arrow",
+      "check_id": "ARROW-COUNT",
+      "detail": "one positive record-arrow witness is registered",
+      "status": "PASS"
+    },
+    {
+      "category": "arrow",
+      "check_id": "ARROW-HASH",
+      "detail": "record-arrow model hash verifies",
+      "status": "PASS"
+    },
+    {
+      "category": "arrow",
+      "check_id": "ARROW-AUDIT",
+      "detail": "record-arrow audit recomputes exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "arrow",
+      "check_id": "ARROW-VALID",
+      "detail": "strict record descent is transported",
+      "status": "PASS"
+    },
+    {
+      "category": "arrow",
+      "check_id": "ARROW-SEARCH",
+      "detail": "bounded map search examined 125 maps and found 10 strict maps",
+      "status": "PASS"
+    },
+    {
+      "category": "arrow",
+      "check_id": "ARROW-SCHEMA",
+      "detail": "record-arrow certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-COUNT",
+      "detail": "exactly twenty-eight transport/route/memory/arrow controls are registered",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-FAMILIES",
+      "detail": "control-family counts are frozen ({'transport': 15, 'route': 8, 'memory': 1, 'record-arrow': 4})",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-MODEL",
+      "detail": "TR-C01 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-CERT",
+      "detail": "TR-C01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-HASH",
+      "detail": "TR-C01 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-INVALID",
+      "detail": "TR-C01 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-PRIMARY",
+      "detail": "TR-C01 exposes expected failure carriers-distinct",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-FAILURES",
+      "detail": "TR-C01 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-01-SCHEMA",
+      "detail": "TR-C01 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-MODEL",
+      "detail": "TR-C02 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-CERT",
+      "detail": "TR-C02 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-HASH",
+      "detail": "TR-C02 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-INVALID",
+      "detail": "TR-C02 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-PRIMARY",
+      "detail": "TR-C02 exposes expected failure component-maps-complete",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-FAILURES",
+      "detail": "TR-C02 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-02-SCHEMA",
+      "detail": "TR-C02 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-MODEL",
+      "detail": "TR-C03 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-CERT",
+      "detail": "TR-C03 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-HASH",
+      "detail": "TR-C03 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-INVALID",
+      "detail": "TR-C03 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-PRIMARY",
+      "detail": "TR-C03 exposes expected failure predictive-representative-independence",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-FAILURES",
+      "detail": "TR-C03 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-03-SCHEMA",
+      "detail": "TR-C03 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-MODEL",
+      "detail": "TR-C04 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-CERT",
+      "detail": "TR-C04 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-HASH",
+      "detail": "TR-C04 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-INVALID",
+      "detail": "TR-C04 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-PRIMARY",
+      "detail": "TR-C04 exposes expected failure mapped-signature-agreement",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-FAILURES",
+      "detail": "TR-C04 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-04-SCHEMA",
+      "detail": "TR-C04 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-MODEL",
+      "detail": "TR-C05 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-CERT",
+      "detail": "TR-C05 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-HASH",
+      "detail": "TR-C05 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-INVALID",
+      "detail": "TR-C05 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-PRIMARY",
+      "detail": "TR-C05 exposes expected failure successor-preserved",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-FAILURES",
+      "detail": "TR-C05 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-05-SCHEMA",
+      "detail": "TR-C05 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-MODEL",
+      "detail": "TR-C06 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-CERT",
+      "detail": "TR-C06 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-HASH",
+      "detail": "TR-C06 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-INVALID",
+      "detail": "TR-C06 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-PRIMARY",
+      "detail": "TR-C06 exposes expected failure tick-progress-preserved",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-FAILURES",
+      "detail": "TR-C06 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-06-SCHEMA",
+      "detail": "TR-C06 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-MODEL",
+      "detail": "TR-C07 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-CERT",
+      "detail": "TR-C07 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-HASH",
+      "detail": "TR-C07 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-INVALID",
+      "detail": "TR-C07 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-PRIMARY",
+      "detail": "TR-C07 exposes expected failure strict-record-arrow-preserved",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-FAILURES",
+      "detail": "TR-C07 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-07-SCHEMA",
+      "detail": "TR-C07 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-MODEL",
+      "detail": "TR-C08 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-CERT",
+      "detail": "TR-C08 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-HASH",
+      "detail": "TR-C08 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-INVALID",
+      "detail": "TR-C08 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-PRIMARY",
+      "detail": "TR-C08 exposes expected failure route-discipline-satisfied",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-FAILURES",
+      "detail": "TR-C08 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-08-SCHEMA",
+      "detail": "TR-C08 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-MODEL",
+      "detail": "TR-C09 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-CERT",
+      "detail": "TR-C09 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-HASH",
+      "detail": "TR-C09 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-INVALID",
+      "detail": "TR-C09 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-PRIMARY",
+      "detail": "TR-C09 exposes expected failure maintenance-translated",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-FAILURES",
+      "detail": "TR-C09 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-09-SCHEMA",
+      "detail": "TR-C09 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-MODEL",
+      "detail": "TR-C10 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-CERT",
+      "detail": "TR-C10 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-HASH",
+      "detail": "TR-C10 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-INVALID",
+      "detail": "TR-C10 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-PRIMARY",
+      "detail": "TR-C10 exposes expected failure ownership-interface-valid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-FAILURES",
+      "detail": "TR-C10 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-10-SCHEMA",
+      "detail": "TR-C10 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-MODEL",
+      "detail": "TR-C11 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-CERT",
+      "detail": "TR-C11 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-HASH",
+      "detail": "TR-C11 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-INVALID",
+      "detail": "TR-C11 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-PRIMARY",
+      "detail": "TR-C11 exposes expected failure forbidden-verdict-fields-absent",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-FAILURES",
+      "detail": "TR-C11 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-11-SCHEMA",
+      "detail": "TR-C11 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-MODEL",
+      "detail": "TR-C12 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-CERT",
+      "detail": "TR-C12 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-HASH",
+      "detail": "TR-C12 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-INVALID",
+      "detail": "TR-C12 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-PRIMARY",
+      "detail": "TR-C12 exposes expected failure target-temporal-witness-valid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-FAILURES",
+      "detail": "TR-C12 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-12-SCHEMA",
+      "detail": "TR-C12 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-MODEL",
+      "detail": "TR-C13 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-CERT",
+      "detail": "TR-C13 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-HASH",
+      "detail": "TR-C13 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-INVALID",
+      "detail": "TR-C13 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-PRIMARY",
+      "detail": "TR-C13 exposes expected failure alphabets-distinct",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-FAILURES",
+      "detail": "TR-C13 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-13-SCHEMA",
+      "detail": "TR-C13 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-MODEL",
+      "detail": "TR-C14 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-CERT",
+      "detail": "TR-C14 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-HASH",
+      "detail": "TR-C14 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-INVALID",
+      "detail": "TR-C14 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-PRIMARY",
+      "detail": "TR-C14 exposes expected failure route-discipline-satisfied",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-FAILURES",
+      "detail": "TR-C14 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-14-SCHEMA",
+      "detail": "TR-C14 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-MODEL",
+      "detail": "TR-C15 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-CERT",
+      "detail": "TR-C15 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-HASH",
+      "detail": "TR-C15 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-INVALID",
+      "detail": "TR-C15 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-PRIMARY",
+      "detail": "TR-C15 exposes expected failure route-residue-retention-noncollapsing",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-FAILURES",
+      "detail": "TR-C15 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-15-SCHEMA",
+      "detail": "TR-C15 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-MODEL",
+      "detail": "ROUTE-C01 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-CERT",
+      "detail": "ROUTE-C01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-HASH",
+      "detail": "ROUTE-C01 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-INVALID",
+      "detail": "ROUTE-C01 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-PRIMARY",
+      "detail": "ROUTE-C01 exposes expected failure every-declared-critical-pair-joins",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-FAILURES",
+      "detail": "ROUTE-C01 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-16-SCHEMA",
+      "detail": "ROUTE-C01 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-MODEL",
+      "detail": "ROUTE-C02 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-CERT",
+      "detail": "ROUTE-C02 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-HASH",
+      "detail": "ROUTE-C02 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-INVALID",
+      "detail": "ROUTE-C02 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-PRIMARY",
+      "detail": "ROUTE-C02 exposes expected failure route-residue-trivial",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-FAILURES",
+      "detail": "ROUTE-C02 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-17-SCHEMA",
+      "detail": "ROUTE-C02 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-MODEL",
+      "detail": "ROUTE-C03 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-CERT",
+      "detail": "ROUTE-C03 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-HASH",
+      "detail": "ROUTE-C03 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-INVALID",
+      "detail": "ROUTE-C03 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-PRIMARY",
+      "detail": "ROUTE-C03 exposes expected failure clock-translation-holonomy-zero",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-FAILURES",
+      "detail": "ROUTE-C03 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-18-SCHEMA",
+      "detail": "ROUTE-C03 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-19-MODEL",
+      "detail": "ROUTE-C04 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-19-CERT",
+      "detail": "ROUTE-C04 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-19-HASH",
+      "detail": "ROUTE-C04 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-19-INVALID",
+      "detail": "ROUTE-C04 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-19-PRIMARY",
+      "detail": "ROUTE-C04 exposes expected failure all-routes-valid",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-19-FAILURES",
+      "detail": "ROUTE-C04 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-19-SCHEMA",
+      "detail": "ROUTE-C04 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-20-MODEL",
+      "detail": "ROUTE-C05 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-20-CERT",
+      "detail": "ROUTE-C05 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-20-HASH",
+      "detail": "ROUTE-C05 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-20-INVALID",
+      "detail": "ROUTE-C05 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-20-PRIMARY",
+      "detail": "ROUTE-C05 exposes expected failure unique-normal-form-per-boundary",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-20-FAILURES",
+      "detail": "ROUTE-C05 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-20-SCHEMA",
+      "detail": "ROUTE-C05 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-21-MODEL",
+      "detail": "ROUTE-C06 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-21-CERT",
+      "detail": "ROUTE-C06 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-21-HASH",
+      "detail": "ROUTE-C06 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-21-INVALID",
+      "detail": "ROUTE-C06 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-21-PRIMARY",
+      "detail": "ROUTE-C06 exposes expected failure direct-factored-agreement",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-21-FAILURES",
+      "detail": "ROUTE-C06 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-21-SCHEMA",
+      "detail": "ROUTE-C06 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-22-MODEL",
+      "detail": "ROUTE-C07 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-22-CERT",
+      "detail": "ROUTE-C07 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-22-HASH",
+      "detail": "ROUTE-C07 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-22-INVALID",
+      "detail": "ROUTE-C07 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-22-PRIMARY",
+      "detail": "ROUTE-C07 exposes expected failure forbidden-verdict-fields-absent",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-22-FAILURES",
+      "detail": "ROUTE-C07 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-22-SCHEMA",
+      "detail": "ROUTE-C07 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-23-MODEL",
+      "detail": "ROUTE-C08 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-23-CERT",
+      "detail": "ROUTE-C08 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-23-HASH",
+      "detail": "ROUTE-C08 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-23-INVALID",
+      "detail": "ROUTE-C08 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-23-PRIMARY",
+      "detail": "ROUTE-C08 exposes expected failure memory-or-flatness-satisfied",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-23-FAILURES",
+      "detail": "ROUTE-C08 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-23-SCHEMA",
+      "detail": "ROUTE-C08 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-24-MODEL",
+      "detail": "MEM-C01 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-24-CERT",
+      "detail": "MEM-C01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-24-HASH",
+      "detail": "MEM-C01 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-24-INVALID",
+      "detail": "MEM-C01 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-24-PRIMARY",
+      "detail": "MEM-C01 exposes expected failure route-memory-separates-collision",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-24-FAILURES",
+      "detail": "MEM-C01 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-24-SCHEMA",
+      "detail": "MEM-C01 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-25-MODEL",
+      "detail": "ARROW-C01 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-25-CERT",
+      "detail": "ARROW-C01 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-25-HASH",
+      "detail": "ARROW-C01 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-25-INVALID",
+      "detail": "ARROW-C01 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-25-PRIMARY",
+      "detail": "ARROW-C01 exposes expected failure strict-progress-preserved",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-25-FAILURES",
+      "detail": "ARROW-C01 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-25-SCHEMA",
+      "detail": "ARROW-C01 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-26-MODEL",
+      "detail": "ARROW-C02 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-26-CERT",
+      "detail": "ARROW-C02 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-26-HASH",
+      "detail": "ARROW-C02 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-26-INVALID",
+      "detail": "ARROW-C02 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-26-PRIMARY",
+      "detail": "ARROW-C02 exposes expected failure nonstrict-monotone",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-26-FAILURES",
+      "detail": "ARROW-C02 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-26-SCHEMA",
+      "detail": "ARROW-C02 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-27-MODEL",
+      "detail": "ARROW-C03 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-27-CERT",
+      "detail": "ARROW-C03 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-27-HASH",
+      "detail": "ARROW-C03 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-27-INVALID",
+      "detail": "ARROW-C03 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-27-PRIMARY",
+      "detail": "ARROW-C03 exposes expected failure map-total",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-27-FAILURES",
+      "detail": "ARROW-C03 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-27-SCHEMA",
+      "detail": "ARROW-C03 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-28-MODEL",
+      "detail": "ARROW-C04 model exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-28-CERT",
+      "detail": "ARROW-C04 certificate exists",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-28-HASH",
+      "detail": "ARROW-C04 model hash matches certificate",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-28-INVALID",
+      "detail": "ARROW-C04 is rejected by its declared checker",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-28-PRIMARY",
+      "detail": "ARROW-C04 exposes expected failure source-has-strict-arrow",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-28-FAILURES",
+      "detail": "ARROW-C04 observed failures recompute exactly",
+      "status": "PASS"
+    },
+    {
+      "category": "controls",
+      "check_id": "CTRL-28-SCHEMA",
+      "detail": "ARROW-C04 certificate validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-TRANS-EXACT",
+      "detail": "BOUNDED_TRANSPORT_SHAPE_SEARCH.json reproduces byte-equivalent semantic content",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-TRANS-PASS",
+      "detail": "BOUNDED_TRANSPORT_SHAPE_SEARCH.json reports PASS",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-TRANS-COUNT",
+      "detail": "BOUNDED_TRANSPORT_SHAPE_SEARCH.json retains the declared bounded count 12",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-CONF-EXACT",
+      "detail": "BOUNDED_CONFLUENCE_SHAPE_SEARCH.json reproduces byte-equivalent semantic content",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-CONF-PASS",
+      "detail": "BOUNDED_CONFLUENCE_SHAPE_SEARCH.json reports PASS",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-CONF-COUNT",
+      "detail": "BOUNDED_CONFLUENCE_SHAPE_SEARCH.json retains the declared bounded count 354",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-MEM-EXACT",
+      "detail": "BOUNDED_MEMORY_OR_FLATNESS_EXHAUSTION.json reproduces byte-equivalent semantic content",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-MEM-PASS",
+      "detail": "BOUNDED_MEMORY_OR_FLATNESS_EXHAUSTION.json reports PASS",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-MEM-COUNT",
+      "detail": "BOUNDED_MEMORY_OR_FLATNESS_EXHAUSTION.json retains the declared bounded count 64",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-NOW-EXACT",
+      "detail": "BOUNDED_GLOBAL_NOW_OBSTRUCTION_SEARCH.json reproduces byte-equivalent semantic content",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-NOW-PASS",
+      "detail": "BOUNDED_GLOBAL_NOW_OBSTRUCTION_SEARCH.json reports PASS",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-NOW-COUNT",
+      "detail": "BOUNDED_GLOBAL_NOW_OBSTRUCTION_SEARCH.json retains the declared bounded count 4",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-TRANS-MIN",
+      "detail": "first feasible transport shape is source/target (3,2) in the declared family",
+      "status": "PASS"
+    },
+    {
+      "category": "bounded-search",
+      "check_id": "SEARCH-CONF-MIN",
+      "detail": "first acyclic two-branch confluence diamond has four nodes",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-COUNT",
+      "detail": "theorem_id registry has 35 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-UNIQUE",
+      "detail": "theorem_id values are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-TOY-COUNT",
+      "detail": "toy_id registry has 23 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-TOY-UNIQUE",
+      "detail": "toy_id values are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-COUNT",
+      "detail": "definition_id registry has 54 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-UNIQUE",
+      "detail": "definition_id values are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-SCHEMA-COUNT",
+      "detail": "schema_id registry has 15 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-SCHEMA-UNIQUE",
+      "detail": "schema_id values are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-COUNT",
+      "detail": "kill_id registry has 18 rows",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-UNIQUE",
+      "detail": "kill_id values are unique",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-STATUS",
+      "detail": "theorem status distribution matches CST-TT-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-ADV-01",
+      "detail": "TTH-03 is advanced in CST-TT-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-ADV-02",
+      "detail": "TTH-09 is advanced in CST-TT-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-ADV-03",
+      "detail": "TTH-10 is advanced in CST-TT-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-ADV-04",
+      "detail": "TTN-04 is advanced in CST-TT-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-ADV-05",
+      "detail": "TTN-05 is advanced in CST-TT-03",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-01-DEPS",
+      "detail": "TTH-01 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-01-TOYS",
+      "detail": "TTH-01 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-01-LEAN",
+      "detail": "TTH-01 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-02-DEPS",
+      "detail": "TTH-02 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-02-TOYS",
+      "detail": "TTH-02 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-02-LEAN",
+      "detail": "TTH-02 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-03-DEPS",
+      "detail": "TTH-03 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-03-TOYS",
+      "detail": "TTH-03 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-03-LEAN",
+      "detail": "TTH-03 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-04-DEPS",
+      "detail": "TTH-04 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-04-TOYS",
+      "detail": "TTH-04 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-04-LEAN",
+      "detail": "TTH-04 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-05-DEPS",
+      "detail": "TTH-05 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-05-TOYS",
+      "detail": "TTH-05 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-05-LEAN",
+      "detail": "TTH-05 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-06-DEPS",
+      "detail": "TTH-06 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-06-TOYS",
+      "detail": "TTH-06 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-06-LEAN",
+      "detail": "TTH-06 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-07-DEPS",
+      "detail": "TTH-07 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-07-TOYS",
+      "detail": "TTH-07 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-07-LEAN",
+      "detail": "TTH-07 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-08-DEPS",
+      "detail": "TTH-08 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-08-TOYS",
+      "detail": "TTH-08 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-08-LEAN",
+      "detail": "TTH-08 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-09-DEPS",
+      "detail": "TTH-09 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-09-TOYS",
+      "detail": "TTH-09 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-09-LEAN",
+      "detail": "TTH-09 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-10-DEPS",
+      "detail": "TTH-10 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-10-TOYS",
+      "detail": "TTH-10 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-10-LEAN",
+      "detail": "TTH-10 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-11-DEPS",
+      "detail": "TTN-01 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-11-TOYS",
+      "detail": "TTN-01 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-11-LEAN",
+      "detail": "TTN-01 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-12-DEPS",
+      "detail": "TTN-02 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-12-TOYS",
+      "detail": "TTN-02 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-12-LEAN",
+      "detail": "TTN-02 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-13-DEPS",
+      "detail": "TTN-03 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-13-TOYS",
+      "detail": "TTN-03 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-13-LEAN",
+      "detail": "TTN-03 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-14-DEPS",
+      "detail": "TTN-04 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-14-TOYS",
+      "detail": "TTN-04 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-14-LEAN",
+      "detail": "TTN-04 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-15-DEPS",
+      "detail": "TTN-05 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-15-TOYS",
+      "detail": "TTN-05 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-15-LEAN",
+      "detail": "TTN-05 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-16-DEPS",
+      "detail": "TTN-06 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-16-TOYS",
+      "detail": "TTN-06 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-16-LEAN",
+      "detail": "TTN-06 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-17-DEPS",
+      "detail": "TTN-07 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-17-TOYS",
+      "detail": "TTN-07 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-17-LEAN",
+      "detail": "TTN-07 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-18-DEPS",
+      "detail": "TTN-08 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-18-TOYS",
+      "detail": "TTN-08 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-18-LEAN",
+      "detail": "TTN-08 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-19-DEPS",
+      "detail": "TTN-09 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-19-TOYS",
+      "detail": "TTN-09 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-19-LEAN",
+      "detail": "TTN-09 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-20-DEPS",
+      "detail": "TTN-10 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-20-TOYS",
+      "detail": "TTN-10 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-20-LEAN",
+      "detail": "TTN-10 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-21-DEPS",
+      "detail": "TTN-11 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-21-TOYS",
+      "detail": "TTN-11 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-21-LEAN",
+      "detail": "TTN-11 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-22-DEPS",
+      "detail": "TTN-12 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-22-TOYS",
+      "detail": "TTN-12 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-22-LEAN",
+      "detail": "TTN-12 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-23-DEPS",
+      "detail": "TTN-13 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-23-TOYS",
+      "detail": "TTN-13 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-23-LEAN",
+      "detail": "TTN-13 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-24-DEPS",
+      "detail": "TTN-14 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-24-TOYS",
+      "detail": "TTN-14 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-24-LEAN",
+      "detail": "TTN-14 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-25-DEPS",
+      "detail": "TTD-01 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-25-TOYS",
+      "detail": "TTD-01 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-25-LEAN",
+      "detail": "TTD-01 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-26-DEPS",
+      "detail": "TTD-02 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-26-TOYS",
+      "detail": "TTD-02 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-26-LEAN",
+      "detail": "TTD-02 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-27-DEPS",
+      "detail": "TTD-03 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-27-TOYS",
+      "detail": "TTD-03 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-27-LEAN",
+      "detail": "TTD-03 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-28-DEPS",
+      "detail": "TTF-01 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-28-TOYS",
+      "detail": "TTF-01 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-28-LEAN",
+      "detail": "TTF-01 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-29-DEPS",
+      "detail": "TTF-02 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-29-TOYS",
+      "detail": "TTF-02 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-29-LEAN",
+      "detail": "TTF-02 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-30-DEPS",
+      "detail": "TTF-03 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-30-TOYS",
+      "detail": "TTF-03 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-30-LEAN",
+      "detail": "TTF-03 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-31-DEPS",
+      "detail": "TTF-04 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-31-TOYS",
+      "detail": "TTF-04 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-31-LEAN",
+      "detail": "TTF-04 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-32-DEPS",
+      "detail": "TTF-05 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-32-TOYS",
+      "detail": "TTF-05 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-32-LEAN",
+      "detail": "TTF-05 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-33-DEPS",
+      "detail": "TTF-06 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-33-TOYS",
+      "detail": "TTF-06 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-33-LEAN",
+      "detail": "TTF-06 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-34-DEPS",
+      "detail": "TTF-07 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-34-TOYS",
+      "detail": "TTF-07 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-34-LEAN",
+      "detail": "TTF-07 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-35-DEPS",
+      "detail": "TTF-08 theorem dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-35-TOYS",
+      "detail": "TTF-08 toy dependencies resolve",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-THM-35-LEAN",
+      "detail": "TTF-08 has one or more resolved Lean declarations",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-01-MODULE",
+      "detail": "D-001 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-01-NAME",
+      "detail": "D-001 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-02-MODULE",
+      "detail": "D-002 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-02-NAME",
+      "detail": "D-002 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-03-MODULE",
+      "detail": "D-003 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-03-NAME",
+      "detail": "D-003 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-04-MODULE",
+      "detail": "D-004 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-04-NAME",
+      "detail": "D-004 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-05-MODULE",
+      "detail": "D-005 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-05-NAME",
+      "detail": "D-005 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-06-MODULE",
+      "detail": "D-006 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-06-NAME",
+      "detail": "D-006 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-07-MODULE",
+      "detail": "D-007 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-07-NAME",
+      "detail": "D-007 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-08-MODULE",
+      "detail": "D-008 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-08-NAME",
+      "detail": "D-008 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-09-MODULE",
+      "detail": "D-009 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-09-NAME",
+      "detail": "D-009 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-10-MODULE",
+      "detail": "D-010 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-10-NAME",
+      "detail": "D-010 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-11-MODULE",
+      "detail": "D-011 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-11-NAME",
+      "detail": "D-011 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-12-MODULE",
+      "detail": "D-012 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-12-NAME",
+      "detail": "D-012 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-13-MODULE",
+      "detail": "D-013 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-13-NAME",
+      "detail": "D-013 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-14-MODULE",
+      "detail": "D-014 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-14-NAME",
+      "detail": "D-014 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-15-MODULE",
+      "detail": "D-015 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-15-NAME",
+      "detail": "D-015 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-16-MODULE",
+      "detail": "D-016 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-16-NAME",
+      "detail": "D-016 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-17-MODULE",
+      "detail": "D-017 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-17-NAME",
+      "detail": "D-017 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-18-MODULE",
+      "detail": "D-018 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-18-NAME",
+      "detail": "D-018 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-19-MODULE",
+      "detail": "D-019 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-19-NAME",
+      "detail": "D-019 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-20-MODULE",
+      "detail": "D-020 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-20-NAME",
+      "detail": "D-020 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-21-MODULE",
+      "detail": "D-021 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-21-NAME",
+      "detail": "D-021 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-22-MODULE",
+      "detail": "D-022 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-22-NAME",
+      "detail": "D-022 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-23-MODULE",
+      "detail": "D-023 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-23-NAME",
+      "detail": "D-023 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-24-MODULE",
+      "detail": "D-024 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-24-NAME",
+      "detail": "D-024 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-25-MODULE",
+      "detail": "D-025 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-25-NAME",
+      "detail": "D-025 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-26-MODULE",
+      "detail": "D-026 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-26-NAME",
+      "detail": "D-026 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-27-MODULE",
+      "detail": "D-027 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-27-NAME",
+      "detail": "D-027 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-28-MODULE",
+      "detail": "D-028 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-28-NAME",
+      "detail": "D-028 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-29-MODULE",
+      "detail": "D-029 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-29-NAME",
+      "detail": "D-029 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-30-MODULE",
+      "detail": "D-030 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-30-NAME",
+      "detail": "D-030 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-31-MODULE",
+      "detail": "D-031 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-31-NAME",
+      "detail": "D-031 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-32-MODULE",
+      "detail": "D-032 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-32-NAME",
+      "detail": "D-032 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-33-MODULE",
+      "detail": "D-033 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-33-NAME",
+      "detail": "D-033 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-34-MODULE",
+      "detail": "D-034 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-34-NAME",
+      "detail": "D-034 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-35-MODULE",
+      "detail": "D-035 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-35-NAME",
+      "detail": "D-035 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-36-MODULE",
+      "detail": "D-036 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-36-NAME",
+      "detail": "D-036 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-37-MODULE",
+      "detail": "D-037 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-37-NAME",
+      "detail": "D-037 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-38-MODULE",
+      "detail": "D-038 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-38-NAME",
+      "detail": "D-038 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-39-MODULE",
+      "detail": "D-039 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-39-NAME",
+      "detail": "D-039 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-40-MODULE",
+      "detail": "D-040 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-40-NAME",
+      "detail": "D-040 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-41-MODULE",
+      "detail": "D-041 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-41-NAME",
+      "detail": "D-041 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-42-MODULE",
+      "detail": "D-042 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-42-NAME",
+      "detail": "D-042 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-43-MODULE",
+      "detail": "D-043 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-43-NAME",
+      "detail": "D-043 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-44-MODULE",
+      "detail": "D-044 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-44-NAME",
+      "detail": "D-044 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-45-MODULE",
+      "detail": "D-045 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-45-NAME",
+      "detail": "D-045 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-46-MODULE",
+      "detail": "D-046 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-46-NAME",
+      "detail": "D-046 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-47-MODULE",
+      "detail": "D-047 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-47-NAME",
+      "detail": "D-047 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-48-MODULE",
+      "detail": "D-048 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-48-NAME",
+      "detail": "D-048 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-49-MODULE",
+      "detail": "D-049 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-49-NAME",
+      "detail": "D-049 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-50-MODULE",
+      "detail": "D-050 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-50-NAME",
+      "detail": "D-050 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-51-MODULE",
+      "detail": "D-051 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-51-NAME",
+      "detail": "D-051 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-52-MODULE",
+      "detail": "D-052 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-52-NAME",
+      "detail": "D-052 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-53-MODULE",
+      "detail": "D-053 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-53-NAME",
+      "detail": "D-053 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-54-MODULE",
+      "detail": "D-054 module resolves",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-DEF-54-NAME",
+      "detail": "D-054 name occurs in its module",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-01",
+      "detail": "K-ARROW-01 was tested and not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-02",
+      "detail": "K-PKG-01 was tested and not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-03",
+      "detail": "K-PKG-02 was tested and not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-04",
+      "detail": "K-ROUTE-01 was tested and not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-05",
+      "detail": "K-TRANS-01 was tested and not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-KILL-06",
+      "detail": "K-TRANS-02 was tested and not triggered",
+      "status": "PASS"
+    },
+    {
+      "category": "registries",
+      "check_id": "REG-FALLBACK",
+      "detail": "Temporal-IAPS fallback remains locked",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-COUNT",
+      "detail": "fifteen certificate schemas have fifteen scaffold examples",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-01-META",
+      "detail": "ancestry_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-01-EXAMPLE",
+      "detail": "ancestry_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-01-VALID",
+      "detail": "ancestry_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-01-NONCLAIM",
+      "detail": "ancestry_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-02-META",
+      "detail": "autonomy_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-02-EXAMPLE",
+      "detail": "autonomy_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-02-VALID",
+      "detail": "autonomy_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-02-NONCLAIM",
+      "detail": "autonomy_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-03-META",
+      "detail": "countermodel_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-03-EXAMPLE",
+      "detail": "countermodel_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-03-VALID",
+      "detail": "countermodel_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-03-NONCLAIM",
+      "detail": "countermodel_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-04-META",
+      "detail": "direct_successor.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-04-EXAMPLE",
+      "detail": "direct_successor.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-04-VALID",
+      "detail": "direct_successor.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-04-NONCLAIM",
+      "detail": "direct_successor.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-05-META",
+      "detail": "memory_repair_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-05-EXAMPLE",
+      "detail": "memory_repair_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-05-VALID",
+      "detail": "memory_repair_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-05-NONCLAIM",
+      "detail": "memory_repair_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-06-META",
+      "detail": "package_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-06-EXAMPLE",
+      "detail": "package_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-06-VALID",
+      "detail": "package_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-06-NONCLAIM",
+      "detail": "package_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-07-META",
+      "detail": "package_control_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-07-EXAMPLE",
+      "detail": "package_control_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-07-VALID",
+      "detail": "package_control_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-07-NONCLAIM",
+      "detail": "package_control_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-08-META",
+      "detail": "record_arrow_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-08-EXAMPLE",
+      "detail": "record_arrow_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-08-VALID",
+      "detail": "record_arrow_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-08-NONCLAIM",
+      "detail": "record_arrow_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-09-META",
+      "detail": "route_discipline_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-09-EXAMPLE",
+      "detail": "route_discipline_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-09-VALID",
+      "detail": "route_discipline_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-09-NONCLAIM",
+      "detail": "route_discipline_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-10-META",
+      "detail": "staged_package_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-10-EXAMPLE",
+      "detail": "staged_package_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-10-VALID",
+      "detail": "staged_package_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-10-NONCLAIM",
+      "detail": "staged_package_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-11-META",
+      "detail": "temporal_corridor.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-11-EXAMPLE",
+      "detail": "temporal_corridor.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-11-VALID",
+      "detail": "temporal_corridor.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-11-NONCLAIM",
+      "detail": "temporal_corridor.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-12-META",
+      "detail": "temporal_fiach_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-12-EXAMPLE",
+      "detail": "temporal_fiach_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-12-VALID",
+      "detail": "temporal_fiach_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-12-NONCLAIM",
+      "detail": "temporal_fiach_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-13-META",
+      "detail": "temporal_signature.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-13-EXAMPLE",
+      "detail": "temporal_signature.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-13-VALID",
+      "detail": "temporal_signature.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-13-NONCLAIM",
+      "detail": "temporal_signature.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-14-META",
+      "detail": "temporal_transport_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-14-EXAMPLE",
+      "detail": "temporal_transport_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-14-VALID",
+      "detail": "temporal_transport_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-14-NONCLAIM",
+      "detail": "temporal_transport_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-15-META",
+      "detail": "transport_control_certificate.schema.json is valid Draft 2020-12",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-15-EXAMPLE",
+      "detail": "transport_control_certificate.schema.json has one matching scaffold",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-15-VALID",
+      "detail": "transport_control_certificate.scaffold.json validates: no schema errors",
+      "status": "PASS"
+    },
+    {
+      "category": "schemas",
+      "check_id": "SCHEMA-15-NONCLAIM",
+      "detail": "transport_control_certificate.scaffold.json does not claim landed evidence",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-01-EXISTS",
+      "detail": "CSTTT/Transport/FiniteTemporalTransport.lean exists",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-02-EXISTS",
+      "detail": "CSTTT/Transport/RecordArrow.lean exists",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-03-EXISTS",
+      "detail": "CSTTT/Transport/RouteDiscipline.lean exists",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-04-EXISTS",
+      "detail": "CSTTT/Transport/FiniteExamples.lean exists",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-01",
+      "detail": "Lean declaration RepresentativeIndependent is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-02",
+      "detail": "Lean declaration TemporalSignatureAgreement is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-03",
+      "detail": "Lean declaration FiniteTemporalTransportProof is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-04",
+      "detail": "Lean declaration bundledHeterogeneousTemporalTransport is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-05",
+      "detail": "Lean declaration StrictlyMonotoneOn is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-06",
+      "detail": "Lean declaration monotoneRecordDescentTransportsArrow is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-07",
+      "detail": "Lean declaration transportRecordArrowStep is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-08",
+      "detail": "Lean declaration noCurrentOnlyPredictor is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-09",
+      "detail": "Lean declaration memoryOrFlatness is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-10",
+      "detail": "Lean declaration noCanonicalGlobalNowOfTranslationHolonomy is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-11",
+      "detail": "Lean declaration noGlobalNowFactorization is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-12",
+      "detail": "Lean declaration NormalizationCertificate is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-13",
+      "detail": "Lean declaration routeIndependentEndpointUnderNormalization is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-14",
+      "detail": "Lean declaration exactHeterogeneousSignatureAgreement is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-DECL-15",
+      "detail": "Lean declaration exampleConfluentEndpoints is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-001",
+      "detail": "CSTTT/Autonomy/System.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-002",
+      "detail": "CSTTT/Core/Carrier.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-003",
+      "detail": "CSTTT/Core/Episode.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-004",
+      "detail": "CSTTT/Core/Finite.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-005",
+      "detail": "CSTTT/Corridor/DirectSuccessor.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-006",
+      "detail": "CSTTT/Corridor/TemporalCorridor.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-007",
+      "detail": "CSTTT/Countermodels/Kernel.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-008",
+      "detail": "CSTTT/Fallback/Ancestry.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-009",
+      "detail": "CSTTT/Package/Clauses.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-010",
+      "detail": "CSTTT/Package/FiniteGluing.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-011",
+      "detail": "CSTTT/Package/Gluing.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-012",
+      "detail": "CSTTT/Package/TemporalPackage.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-013",
+      "detail": "CSTTT/Prospects/Statements.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-014",
+      "detail": "CSTTT/Targets/TemporalFIACH.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-015",
+      "detail": "CSTTT/Temporal/Clock.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-016",
+      "detail": "CSTTT/Temporal/Closure.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-017",
+      "detail": "CSTTT/Temporal/Signature.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-018",
+      "detail": "CSTTT/Transport/FiniteExamples.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-019",
+      "detail": "CSTTT/Transport/FiniteTemporalTransport.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-020",
+      "detail": "CSTTT/Transport/RecordArrow.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-021",
+      "detail": "CSTTT/Transport/RouteDiscipline.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-NOPLACE-022",
+      "detail": "CSTTT/Transport/TemporalBridge.lean contains no unproved placeholder command",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-CIRCULARITY",
+      "detail": "primitive Lean tree passes verdict-vocabulary circularity scan",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-LAYER-01",
+      "detail": "FiniteExamples.lean does not import later verdict layers",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-LAYER-02",
+      "detail": "FiniteTemporalTransport.lean does not import later verdict layers",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-LAYER-03",
+      "detail": "RecordArrow.lean does not import later verdict layers",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-LAYER-04",
+      "detail": "RouteDiscipline.lean does not import later verdict layers",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-LAYER-05",
+      "detail": "TemporalBridge.lean does not import later verdict layers",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-01",
+      "detail": "registered theorem declaration acyclicLocalWitnessGluing is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-02",
+      "detail": "registered theorem declaration stagedHeterogeneousPackageAssembly is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-03",
+      "detail": "registered theorem declaration bundledHeterogeneousTemporalTransport is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-04",
+      "detail": "registered theorem declaration TemporalCorridorComposition is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-05",
+      "detail": "registered theorem declaration PostWithdrawalFiniteHorizonInvariance is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-06",
+      "detail": "registered theorem declaration TemporalFIACHCertificateSoundness is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-07",
+      "detail": "registered theorem declaration FullHandoffComposition is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-08",
+      "detail": "registered theorem declaration RelationValuedTemporalFission is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-09",
+      "detail": "registered theorem declaration routeIndependentEndpointUnderNormalization is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-10",
+      "detail": "registered theorem declaration monotoneRecordDescentTransportsArrow is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-11",
+      "detail": "registered theorem declaration DetachedCopyCountermodel is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-12",
+      "detail": "registered theorem declaration PublicShadowCountermodel is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-13",
+      "detail": "registered theorem declaration HolonomyWithoutArrowCountermodel is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-14",
+      "detail": "registered theorem declaration noCurrentOnlyPredictor is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-15",
+      "detail": "registered theorem declaration memoryOrFlatness is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-16",
+      "detail": "registered theorem declaration noCanonicalGlobalNowOfTranslationHolonomy is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-17",
+      "detail": "registered theorem declaration ExternalSupportAutonomyFailure is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-18",
+      "detail": "registered theorem declaration StableTickWithoutProgress is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-19",
+      "detail": "registered theorem declaration LocalGlobalObstruction is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-20",
+      "detail": "registered theorem declaration GapResumeCountermodel is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-21",
+      "detail": "registered theorem declaration ScalarResidualHardGateFailure is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-22",
+      "detail": "registered theorem declaration SymmetryNoUniqueContinuer is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-23",
+      "detail": "registered theorem declaration FiniteTraceNotUnboundedLiveness is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-24",
+      "detail": "registered theorem declaration SameCarrierReencodingNotCrossCarrier is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-25",
+      "detail": "registered theorem declaration BranchwiseRecombinationFailure is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-26",
+      "detail": "registered theorem declaration DirectSuccessorValidity is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-27",
+      "detail": "registered theorem declaration OverlapDirectSuccessorRelation is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-28",
+      "detail": "registered theorem declaration DirectSuccessorDetachedCopyExclusion is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-29",
+      "detail": "registered theorem declaration PredictiveBridgeDescent is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-30",
+      "detail": "registered theorem declaration LeastOperationalAncestry is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-31",
+      "detail": "registered theorem declaration IndependentTwinExclusion is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-32",
+      "detail": "registered theorem declaration FallbackFissionFusionEmpty is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-33",
+      "detail": "registered theorem declaration IntegratedTemporalIAPS is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-34",
+      "detail": "registered theorem declaration DestructiveReconstructionTwinSeparation is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-35",
+      "detail": "registered theorem declaration AncestryNoUniqueIdentity is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-REG-36",
+      "detail": "registered theorem declaration PredictiveAncestryPackageInsufficient is present",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-ROOT-01",
+      "detail": "root Lean module imports CSTTT.Transport.FiniteTemporalTransport",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-ROOT-02",
+      "detail": "root Lean module imports CSTTT.Transport.RecordArrow",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-ROOT-03",
+      "detail": "root Lean module imports CSTTT.Transport.RouteDiscipline",
+      "status": "PASS"
+    },
+    {
+      "category": "lean-static",
+      "check_id": "LEAN-ROOT-04",
+      "detail": "root Lean module imports CSTTT.Transport.FiniteExamples",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-01",
+      "detail": "project registry phase='CST-TT-03'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-02",
+      "detail": "project registry phase_base_tag='CST-TT-02-v1'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-03",
+      "detail": "project registry phase_base_commit='3abf5b2406f754b43823b68987c7ea409e737fd0'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-04",
+      "detail": "project registry checked_finite_countermodels=15",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-05",
+      "detail": "project registry checked_finite_package_witnesses=2",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-06",
+      "detail": "project registry checked_staged_package_assemblies=1",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-07",
+      "detail": "project registry generic_theorem_proof_sources_landed=8",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-08",
+      "detail": "project registry checked_temporal_transport_certificates=2",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-09",
+      "detail": "project registry checked_route_certificates=2",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-10",
+      "detail": "project registry checked_memory_or_flatness_certificates=2",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-11",
+      "detail": "project registry checked_record_arrow_certificates=1",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-12",
+      "detail": "project registry checked_transport_and_route_controls=28",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-13",
+      "detail": "project registry generic_theorems_lean_compiled=0",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-14",
+      "detail": "project registry positive_handoff_witnesses=0",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-15",
+      "detail": "project registry fallback_unlocked=False",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PROJECT-16",
+      "detail": "project registry next_phase='CST-TT-04'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-01",
+      "detail": "phase boundary contains 'exact finite C1-C8 package semantics'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-02",
+      "detail": "phase boundary contains 'substantive C6 temporal closure'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-03",
+      "detail": "phase boundary contains 'componentwise heterogeneous transport'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-04",
+      "detail": "phase boundary contains 'representative-independent predictive bridges'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-05",
+      "detail": "phase boundary contains 'strict record-arrow transport'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-06",
+      "detail": "phase boundary contains 'memory-or-flatness'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-07",
+      "detail": "phase boundary contains 'no-global-now factorization theorem'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-08",
+      "detail": "phase boundary contains 'Not landed'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-09",
+      "detail": "phase boundary contains 'strict temporal lineage'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-10",
+      "detail": "phase boundary contains 'post-withdrawal autonomy'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-11",
+      "detail": "phase boundary contains 'positive Temporal-FIACH or Temporal-IAPS witness'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-PHASE-12",
+      "detail": "phase boundary contains 'CST-TT-04'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-01-EXISTS",
+      "detail": "docs/HETEROGENEOUS_TEMPORAL_TRANSPORT.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-01-01",
+      "detail": "docs/HETEROGENEOUS_TEMPORAL_TRANSPORT.md contains 'S-T'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-01-02",
+      "detail": "docs/HETEROGENEOUS_TEMPORAL_TRANSPORT.md contains 'no episode lineage'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-01-03",
+      "detail": "docs/HETEROGENEOUS_TEMPORAL_TRANSPORT.md contains 'representative'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-02-EXISTS",
+      "detail": "docs/MEMORY_OR_FLATNESS_THEOREM.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-02-01",
+      "detail": "docs/MEMORY_OR_FLATNESS_THEOREM.md contains 'same current representation'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-02-02",
+      "detail": "docs/MEMORY_OR_FLATNESS_THEOREM.md contains 'route residue'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-02-03",
+      "detail": "docs/MEMORY_OR_FLATNESS_THEOREM.md contains 'flat'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-03-EXISTS",
+      "detail": "docs/ROUTE_DISCIPLINE_AND_CONFLUENCE.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-03-01",
+      "detail": "docs/ROUTE_DISCIPLINE_AND_CONFLUENCE.md contains 'holonomy'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-03-02",
+      "detail": "docs/ROUTE_DISCIPLINE_AND_CONFLUENCE.md contains 'normal form'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-03-03",
+      "detail": "docs/ROUTE_DISCIPLINE_AND_CONFLUENCE.md contains 'boundary-level'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-04-EXISTS",
+      "detail": "docs/RECORD_ARROW_TRANSPORT.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-04-01",
+      "detail": "docs/RECORD_ARROW_TRANSPORT.md contains 'strict'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-04-02",
+      "detail": "docs/RECORD_ARROW_TRANSPORT.md contains 'constant map'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-04-03",
+      "detail": "docs/RECORD_ARROW_TRANSPORT.md contains 'arrow'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-05-EXISTS",
+      "detail": "docs/TRANSPORT_CONTROL_SUITE.md exists",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-05-01",
+      "detail": "docs/TRANSPORT_CONTROL_SUITE.md contains '28'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-05-02",
+      "detail": "docs/TRANSPORT_CONTROL_SUITE.md contains 'controls'",
+      "status": "PASS"
+    },
+    {
+      "category": "documentation",
+      "check_id": "BOUND-DOC-05-03",
+      "detail": "docs/TRANSPORT_CONTROL_SUITE.md contains 'hash-bound'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMP-01",
+      "detail": "completion report contains boundary phrase 'No positive temporal corridor'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMP-02",
+      "detail": "completion report contains boundary phrase 'No post-withdrawal autonomy'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMP-03",
+      "detail": "completion report contains boundary phrase 'Temporal-IAPS remains locked'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMP-04",
+      "detail": "completion report contains boundary phrase 'Lean compilation is not claimed'",
+      "status": "PASS"
+    },
+    {
+      "category": "boundaries",
+      "check_id": "BOUND-COMP-05",
+      "detail": "completion report contains boundary phrase 'CST-TT-04'",
+      "status": "PASS"
+    },
+    {
+      "category": "manifest",
+      "check_id": "MAN-001",
+      "detail": "phase manifest not required before finalization",
+      "status": "SKIP"
+    }
+  ],
+  "schema_version": "1.0",
+  "skipped": 3,
+  "status": "PASS"
+}

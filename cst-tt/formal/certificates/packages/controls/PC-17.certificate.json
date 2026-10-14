@@ -1,0 +1,20 @@
+{
+  "artifact_ref": "models/packages/controls/PC-17.model.json",
+  "artifact_sha256": "a17732ff57a1a509fa45d27229acf953a971e80254cfd2ab18bb427183ae4bc5",
+  "checker": {
+    "function": "audit_package",
+    "integrated_package_valid": false,
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite package-obligation boundary only",
+  "control_id": "PC-17",
+  "control_kind": "package",
+  "expected_primary_failure": "PKG-O10-verdict-field-separation",
+  "observed_failures": [
+    "PKG-O10-verdict-field-separation"
+  ],
+  "positive_baseline_ref": "models/packages/PKG-POS-01-TARGET.model.json",
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-02"
+}

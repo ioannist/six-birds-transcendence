@@ -1,0 +1,25 @@
+family_id,rung,rung_title,role,assumption_ids,phase
+SF-01,1,Unconditional structural mathematics,"Finite carriers, typed clause records, hypergraph gluing, ownership graphs, withdrawal, invariant sets, and exact counterexamples can be defined and proved without A1, A2-P, recognition, or identity premises.",D-CARRIER,CST-EXP-05
+SF-01,2,Target package preservation,"Requires a stipulated source package plus independently checked clause maps, target-local witnesses, hard gates, and H-GLOBAL-GLUE.  TH-05 is conditional on these structural premises.",H-SOURCE-FULL;H-PRESERVE-O;H-GLOBAL-GLUE;H-TARGET-FULL,CST-EXP-05
+SF-01,3,Lineage rather than similarity,"SF-01 supplies no lineage.  Add SF-02 or SF-03, or return S-L underdetermined.",H-LINEAGE,CST-EXP-05
+SF-01,4,Target autonomy,"Requires H-AUTONOMY cashed out by an explicit withdrawal set, target boundary, disturbance class, and invariant/horizon proof.",H-AUTONOMY,CST-EXP-05
+SF-01,5,Certificate soundness and recognition,H-CERT-SOUND is needed to interpret the structural certificate as closure-complete; H-RECOG is needed for empirical attribution.  Neither repairs a failed structural gate.,H-CERT-SOUND;H-RECOG,CST-EXP-05
+SF-01,6,A1,A1 can only conditionally map lawful audited closure to ontological realization after structural and soundness premises.  It does not add lineage.,A1,CST-EXP-05
+SF-01,7,A2 or narrower substitute,A2-P does not prove bridge existence.  A narrower theorem-specific substitute is H-XCI for the declared package object and bridge class.,A2-P;H-XCI,CST-EXP-05
+SF-01,8,Phenomenal/survival language,"Consciousness, survival, and numerical identity remain interpretive.  Personal identity additionally requires H-IDENTITY-O and a selected lineage family.",H-IDENTITY-O,CST-EXP-05
+SF-02,1,Unconditional structural mathematics,"Finite support sequences, event DAGs, mixed-step nonredundancy, corridor composition, branch relations, and endpoint countermodels are elementary structural mathematics.",D-CARRIER,CST-EXP-05
+SF-02,2,Target package preservation,Not supplied by SF-02.  Pair with SF-01 or stipulate a narrower process signature; neither follows from overlap alone.,H-TARGET-FULL;H-PRESERVE-O,CST-EXP-05
+SF-02,3,Lineage rather than similarity,Requires adopting the independently defined overlap-corridor relation H-LINEAGE.  The relation must be audited for circularity and rejects detached reconstruction by design.,H-LINEAGE,CST-EXP-05
+SF-02,4,Target autonomy,Requires a separate post-takeover withdrawal and invariant-set proof; continuous overlap during migration is not enough.,H-AUTONOMY,CST-EXP-05
+SF-02,5,Certificate soundness and recognition,Recognition of the event graph and causal nonredundancy needs H-RECOG; no certificate-soundness premise converts the corridor into consciousness.,H-RECOG;H-CERT-SOUND,CST-EXP-05
+SF-02,6,A1,"A1 may interpret an independently established target closure package, not the overlap relation itself.",A1,CST-EXP-05
+SF-02,7,A2 or narrower substitute,A2-P is unnecessary for the finite corridor theorem.  Any cross-carrier preservation content uses a narrow process-signature invariance hypothesis H-XCI.,A2-P;H-XCI,CST-EXP-05
+SF-02,8,Phenomenal/survival language,Calling corridor lineage personal survival requires H-IDENTITY-O.  The mathematics alone establishes only a conservative structural relation.,H-IDENTITY-O,CST-EXP-05
+SF-03,1,Unconditional structural mathematics,"Finite history/provenance graphs, predictive partitions, monotone relation closure, least fixed points, fission/fusion shapes, and symmetry no-gos are unconditional once definitions are fixed.",D-CARRIER,CST-EXP-05
+SF-03,2,Target package preservation,Not supplied by ancestry.  Pair with SF-01 or explicitly prove the retained package predicates.,H-TARGET-FULL;H-PRESERVE-O;H-GLOBAL-GLUE,CST-EXP-05
+SF-03,3,Lineage rather than similarity,Requires accepting the operational Seed and least closure as H-LINEAGE.  TH-11 is the mandatory independent-twin audit.,H-LINEAGE,CST-EXP-05
+SF-03,4,Target autonomy,Ancestry can hold for a decoder-dependent or collapsing target.  H-AUTONOMY remains separate.,H-AUTONOMY,CST-EXP-05
+SF-03,5,Certificate soundness and recognition,H-RECOG is needed to infer provenance/predictive facts empirically; H-CERT-SOUND is only relevant when paired with a target package.,H-RECOG;H-CERT-SOUND,CST-EXP-05
+SF-03,6,A1,A1 does not turn ancestry into realization.  It could apply only to a separately established closure-complete target.,A1,CST-EXP-05
+SF-03,7,A2 or narrower substitute,A2-P does not create predictive transport.  Use object-specific H-XCI and a declared bridge/provenance law instead.,A2-P;H-XCI,CST-EXP-05
+SF-03,8,Phenomenal/survival language,Relation-valued ancestry deliberately stops before unique numerical identity.  Any survival interpretation requires H-IDENTITY-O and must address fission.,H-IDENTITY-O,CST-EXP-05

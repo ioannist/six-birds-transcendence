@@ -1,0 +1,46 @@
+digraph NeutralTransferFrame {
+  graph [rankdir=LR, bgcolor="white", pad="0.2", nodesep="0.35", ranksep="0.65", fontname="Helvetica"];
+  node [shape=box, style="rounded", fontname="Helvetica", fontsize=10, margin="0.12,0.08"];
+  edge [fontname="Helvetica", fontsize=9];
+
+  subgraph cluster_inputs {
+    label="Stipulated protocol facts";
+    style="rounded,dashed";
+    source [label="Source episodes\nΣ_S, P_S, histories, local clock"];
+    bridge [label="Operational route G_op\ncopy / scan / overlap / repair / fusion"];
+    target [label="Target episodes\nΣ_T, P_T, histories, local clock"];
+    source -> bridge [label="typed causal / informational / resource edges"];
+    bridge -> target [label="typed operational edges"];
+  }
+
+  axes [label="10 protocol axes\n44 controlled values"];
+  facts [label="Scenario record\ninterfaces, fidelity/granularity,\nbranching, handoff, withdrawal"];
+  source -> facts [style=dotted];
+  bridge -> facts [style=dotted];
+  target -> facts [style=dotted];
+  axes -> facts;
+
+  criterion [label="Later candidate κ\ntransported object + bridge +\nlineage and autonomy criteria"];
+  facts -> criterion [label="input; no verdict prefilled"];
+
+  st [label="S-T\nstructural transport"];
+  sr [label="S-R\ntarget realization"];
+  sl [label="S-L\nlineage graph G_κ"];
+  au [label="A\npost-withdrawal autonomy"];
+  rec [label="R\nrecognition / instrument status"];
+  criterion -> st;
+  criterion -> sr;
+  criterion -> sl;
+  criterion -> au;
+  criterion -> rec;
+
+  ontology [label="O claims\nrequire separate assumptions", shape=box, style="rounded,dashed"];
+  st -> ontology [style=dashed, label="no default implication"];
+  sr -> ontology [style=dashed];
+  sl -> ontology [style=dashed];
+  au -> ontology [style=dashed];
+  rec -> ontology [style=dashed];
+
+  warning [label="Neutrality rule:\nG_op edges are never lineage edges by naming", shape=note];
+  bridge -> warning [style=dotted, arrowhead=none];
+}

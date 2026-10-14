@@ -1,0 +1,33 @@
+{
+  "boundary": "No theorem or no-go is proved; no Lean or toy implementation is present; no empirical, consciousness, survival, numerical-identity, certificate-soundness, A1, or A2-P conclusion is made.",
+  "counts": {
+    "fallback_theorem_targets": 8,
+    "finalist_architectures": 7,
+    "frozen_witnesses_controls": 12,
+    "hard_gates": 10,
+    "phase_decisions": 10,
+    "phase_rejected_defaults": 10,
+    "primary_theorem_targets": 12,
+    "retained_implementation_questions": 10,
+    "scorecard_records": 161,
+    "soft_criteria": 12,
+    "target_scenario_records": 70
+  },
+  "fallback_target": "FT-02",
+  "generated_date": "2026-08-10",
+  "phase": "CST-EXP-06",
+  "primary_target": "FT-01",
+  "project": "CST-EXP",
+  "schema_version": "1.0",
+  "soft_totals": {
+    "F-01": 81.1,
+    "F-02": 79.9,
+    "F-03": 78.6,
+    "FT-01": 84.5,
+    "FT-02": 83.6,
+    "FT-03": 80.5,
+    "FT-NG": 84.8
+  },
+  "state_version": "CST-EXP-06-v1",
+  "terminal_fallback": "FT-NG"
+}

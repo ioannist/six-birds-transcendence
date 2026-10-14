@@ -1,0 +1,645 @@
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{pdflscape}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[numbers]{natbib}
+\usepackage{doi}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{orcidlink}
+\usepackage{titling}
+
+
+
+\newcommand{\grade}[1]{\textsc{#1}}
+\newcommand{\gTheorem}{\grade{theorem-anchored}}
+\newcommand{\gExact}{\grade{exact-finite}}
+\newcommand{\gMeasured}{\grade{measured}}
+\newcommand{\gRegPos}{\grade{registered-positive}}
+\newcommand{\gRegNeg}{\grade{registered-negative}}
+\newcommand{\gInterp}{\grade{interpretation}}
+
+\newcommand{\figplaceholder}[1]{\fbox{\parbox{0.96\linewidth}{\small\textit{[Figure placeholder --- generate from the following spec]} #1}}}
+
+\newcommand{\Xires}{\Xi(D \mid L)}
+ 
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\floatname{algorithm}{Algorithm}
+
+\urlstyle{same}
+\captionsetup{
+  font=small,
+  labelfont=bf,
+  labelsep=period
+}
+\captionsetup[table]{skip=6pt,position=top}
+\captionsetup[figure]{skip=6pt}
+\captionsetup[algorithm]{skip=6pt,position=top}
+\crefname{algorithm}{algorithm}{algorithms}
+\Crefname{algorithm}{Algorithm}{Algorithms}
+\crefname{theorem}{theorem}{theorems}
+\Crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{lemma}{lemmas}
+\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{proposition}{proposition}{propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{corollary}{corollary}{corollaries}
+\Crefname{corollary}{Corollary}{Corollaries}
+\crefname{definition}{definition}{definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{remark}{remark}{remarks}
+\Crefname{remark}{Remark}{Remarks}
+\setlist[enumerate]{leftmargin=*, itemsep=2pt, topsep=4pt}
+\setlength{\droptitle}{-3.2em}
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vspace{0.5em}}
+\preauthor{\begin{center}\normalsize}
+\postauthor{\par\end{center}\vspace{-0.4em}}
+\predate{\begin{center}\small}
+\postdate{\par\end{center}\vspace{0.6em}}
+\setlength{\emergencystretch}{2em}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\interfootnotelinepenalty=10000
+\allowdisplaybreaks[2]
+\fancypagestyle{firstpage}{\fancyhf{}
+  \fancyfoot[C]{\scriptsize Automorph Inc., Wilmington, DE, USA \quad \texttt{ioannis@automorph.io} \quad \textcopyright\ 2026 \quad CC-BY 4.0}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\title{Auditing Emergence in Quantum Error Correction:\\
+A Falsifiable Instantiation of Six Birds Theory}
+\author{Ioannis Tsiokos\,\orcidlink{0009-0009-7659-5964}}
+\date{\today}
+\hypersetup{
+  pdftitle={Auditing Emergence in Quantum Error Correction: A Falsifiable Instantiation of Six Birds Theory},
+  pdfauthor={Ioannis Tsiokos},
+  hidelinks
+}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firstpage}
+
+\begin{abstract}
+Six Birds Theory (SBT) is a framework for reasoning about emergence whose central claim is methodological: its abstract primitives---packaging operators, adequacy residuals, existence certificates, predictive quotients, protocol traps, and priced budgets---are supposed to generate concrete, checkable, falsifiable structure in any domain that has a notion of packaging microscopic detail into a stable macroscopic object. We test that claim by instantiating the framework on quantum error correction (QEC), where the ``emergent object'' is a logical qubit, in an open, deterministic, exactly reproducible simulation prototype. Predictions were registered and frozen before each experiment ran. Of the original build's 25 registered predictions, 14 failed as frozen and are reported unaltered, each with a diagnostic reading; four of the six primitives produced positively evidenced audit objects, a fifth (pricing) was implemented exactly but failed every registered prediction, and a sixth (transport) was scoped out in advance. The paper's centerpiece is a self-correction arc: one registered failure---a deployable, syndrome-only drift witness---is diagnosed using the framework's own exact machinery, corrected, and re-registered, \emph{including a prediction that the corrected witness would still fail on the original test scenario, which held}. The corrected witness then generalizes to circuit-level noise and to a closed decoder-recalibration loop, where it beats a genuinely budget-matched blind schedule. None of the underlying QEC mechanisms is novel relative to existing detector-correlation calibration and adaptive decoder reweighting; the contribution is the audit-and-certificate framing, the demonstrated pre-registration discipline, and the framework-internal falsification-and-repair loop. All code, configurations, and results are open and regenerate byte-identically. \end{abstract}
+
+\medskip
+\noindent\textbf{Keywords.} TODO; TODO; TODO.
+
+\section{Introduction}
+\label{sec:intro}
+
+Frameworks for emergence have a credibility problem: they tend to redescribe. A theory that ``explains'' why a logical qubit is a robust object by renaming syndrome extraction as \emph{packaging} and decoding as \emph{lifting} has added vocabulary, not knowledge. Six Birds Theory (SBT)~\cite{sbt-f1,sbt-f3} is a framework in this genre, and its own foundational papers state the standard it must meet: the framework earns its keep only where it changes the \emph{audit layer}---only where its primitives compute something checkable that the domain's native toolkit was not already computing, and where those computations can fail. This paper is an adversarial test of that standard, carried out on quantum error correction.
+
+The test design is simple to state. We took six of SBT's core primitives---the packaging operator, the adequacy residual, the existence/closure certificate, the predictive quotient (memory witness), the protocol trap, and the shadow-price/budget audit---and asked what each one \emph{must} become when the domain is a small stabilizer code under stochastic Pauli noise. We then implemented the resulting objects for five of the six---transport was scoped out before the build began and never implemented---in an exact, deterministic simulation prototype, froze quantitative predictions about their behavior \emph{before} each experiment was implemented, and ran the experiments against those frozen bars. A failed prediction is a first-class result: it is reported with its frozen bar, its measured value, and a diagnostic reading, and it is never re-run with tuned parameters.
+
+Stating the outcome honestly requires a split, and we make it here rather than in a limitations section. Four of the six primitives produced positively evidenced, machine-checkable audit objects: the adequacy residual (a priced answer to ``do the scheduled checks cover the logical degrees of freedom?''), the existence certificate (a typed status for whether a stable logical layer exists at all), the predictive-quotient memory witness (an exact certificate that a decoder needs memory, and of how much predictive value the memory carries), and the protocol-trap control (which ran correctly and falsified our own ``this is a schedule artifact'' hypothesis). A fifth primitive, the pricing audit, was implemented exactly and its machinery works, but every one of its registered predictions failed at the frozen tolerances---we report it as a negative. A sixth, transport/functoriality, was explicitly deferred before the build began and was never implemented. Across the original build, 25 predictions were frozen and 14 of them failed as frozen. 
+
+Why publish a prototype with a 44\% headline failure rate? Because the failures are where the framework's value showed up. The paper's centerpiece (Section~\ref{sec:arc}) is what happened to one of them. A deployable, syndrome-only drift-detection witness registered negative: it never detected the frozen drift injection at all. Rather than tune it, we diagnosed it \emph{inside the framework}: exact computation---including a Walsh--Hadamard inversion that recovers the full syndrome distribution in closed form---located four independent causes, one of which is a structural fact about the frozen test scenario itself (it sits, by construction, nearly on a minimum-weight logical-failure path, which is close to the worst case for \emph{any} syndrome-only method). The corrected witness was then re-registered with new frozen predictions, including one \emph{predicting continued failure on the original scenario}. That predicted failure held, alongside a dramatic predicted success on an off-support scenario. The correction then generalized to circuit-level noise (clearing its registered bar at the thinnest margin the test grid resolves---we say so every time) and to a closed decoder-recalibration loop, where witness-triggered recalibration landed within $0.0014$ of an oracle ceiling and beat a blind schedule matched to the \emph{same per-seed recalibration budget} by $0.0185$. 
+
+To be equally plain about what this paper does \emph{not} claim: none of the individual QEC mechanisms is new. Detector-correlation calibration is standard experimental practice~\cite{google2023suppressing}, decoder reweighting under drift exists~\cite{dgr2023reweighting}, and sequential change detection is seventy years old~\cite{page1954continuous}. No hardware was involved, no asymptotic threshold statements are made, and the residual certificate is explicitly relative to a declared estimator class (Section~\ref{sec:instantiation}). The contribution is the test itself and its outcome: when SBT's primitives were forced into contact with a real technical domain under pre-registration discipline and adversarial internal and external review, they generated checkable structure, genuine falsifications, and a repair loop that operated within the framework rather than around it.
+
+The paper is organized so that a reader who has never heard of SBT can follow it. Section~\ref{sec:sbt} introduces the framework from scratch, in the concrete finite setting actually used. Section~\ref{sec:instantiation} maps each primitive to its QEC object and states the scope fences. Section~\ref{sec:methods} describes the evidence discipline: exactness, registered predictions, controls, and reproducibility. Sections~\ref{sec:results-certificates}--\ref{sec:arc} present results: the certificates on ground truth, the negative results as a taxonomy, and the diagnosis-and-repair arc. Sections~\ref{sec:related}--\ref{sec:discussion} place the work and state its limits, and Section~\ref{sec:repro} gives the exact environment and commands that regenerate every number byte-identically. Appendices carry the notation table, the complete prediction ledger, the controls ledger, the deviations log, and a formula summary.
+
+ \section{Six Birds Theory for readers who have never seen it}
+\label{sec:sbt}
+
+This section is self-contained. It introduces exactly the SBT machinery the prototype uses, in the finite, classical-probability setting where the prototype lives; the corpus develops the same objects in greater generality~\cite{sbt-f1,sbt-f3}. Readers fluent in QEC may find it useful to keep the intended dictionary in mind throughout: the ``carrier'' will be the error state of a code, the ``lens'' will be syndrome extraction and decoding, and the ``package'' will be the logical qubit.
+
+\subsection{The core picture: packaging}
+\label{sec:sbt-packaging}
+
+SBT starts from a deliberately spare setup. There is a \emph{carrier}: a set $Z$ of microscopic states, with some dynamics---here, a Markov kernel $P$ describing one time step. There is a \emph{lens}: a map $f$ from carrier states to a much smaller set of macroscopic labels. And there is a \emph{prototype} assignment: for each macroscopic label $x$, a canonical carrier distribution $u_x$ that the system treats as ``the representative state of $x$.''
+
+The central object built from these is the \emph{packaging operator}
+\begin{equation}
+E_{\tau,f}(\mu) \;=\; U_f\!\bigl(Q_f(\mu P^{\tau})\bigr),
+\label{eq:packaging}
+\end{equation}
+read right to left: evolve the carrier distribution $\mu$ for $\tau$ steps, push it through the lens ($Q_f$, marginalization onto macro labels), then lift each macro label back to its prototype ($U_f$)~\cite{sbt-f1}. In words: \emph{let the world run, look at it coarsely, and snap what you saw back to a canonical form}. Something deserves to be called an emergent object, on SBT's account, when this round trip is nearly idempotent---when packaging twice is almost the same as packaging once---and when the macro layer it stabilizes is nontrivial (more than one distinguishable state survives).
+
+The reader may already see the QEC cycle in Eq.~\eqref{eq:packaging}: noise acts ($P^\tau$), a syndrome is extracted and decoded ($Q_f$), and recovery restores a canonical coset representative ($U_f$). That is not an analogy we impose; it is the instantiation the framework forces once the carrier and lens are chosen (Section~\ref{sec:instantiation}). The point of the framework is what it tells you to \emph{compute} about this loop. Each of the six primitives below is an audit: a quantity, computable from the declared model, whose value certifies something specific about the package---or exhibits a specific way it fails.
+
+\subsection{Primitive 1: the existence certificate}
+\label{sec:sbt-existence}
+
+The first audit asks the bluntest question: \emph{is there a stable macro object here at all?} SBT answers with a small set of numbers~\cite{sbt-f1,sbt-f3,sbt-xor}:
+
+\begin{itemize}
+\item The \emph{idempotence defect} $\delta$: how far $E^2$ is from $E$, in total variation, maximized over initial point masses. Small $\delta$ means packaging is self-consistent.
+\item The \emph{retention error} $\varepsilon$: the probability that $\tau$ steps of dynamics carry a prototype out of its own macro cell. A theorem of the framework (T-IC-02 in~\cite{sbt-f1}) guarantees $\delta \le \varepsilon$; a computed violation would falsify the implementation or the theory.
+\item The \emph{closure deficit} $CD_\tau = I(X_t;\, Y_{t+\tau} \mid Y_t)$: the conditional mutual information between the hidden micro state now and the macro label later, given the macro label now. $CD_\tau = 0$ says the macro layer is dynamically closed---its own history is all you need to predict it (equivalently, the lens is lumpable)~\cite{sbt-f3,sbt-ng,sbt-cast}.
+\item The \emph{route mismatch} $RM_\tau$: whether evolving-then-packaging and packaging-then-evolving agree, computed fiber-by-fiber~\cite{sbt-xor}.
+\item A \emph{multiplicity} count: how many macro labels have stable prototypes. This guards against the degenerate ``certificate'' earned by collapsing everything to a single state---a decoder that maps every error to ``fine'' has perfect idempotence and no object.
+\end{itemize}
+
+These are assembled into a typed status---\texttt{certified}, \texttt{degrading}, \texttt{non\_closed}, or \texttt{trivialized}---by frozen thresholds. The taxonomy matters more than any single number: it separates ``the object exists'' from ``the object is dissolving,'' from ``the macro layer leaks information from a hidden coordinate,'' from ``you defined the object away.''
+
+\subsection{Primitive 2: the adequacy residual}
+\label{sec:sbt-xi}
+
+The second audit asks: \emph{do the observables you actually schedule cover the thing you care about?} Fix a family $L$ of \emph{native probes} (things you measure routinely) and a family $D$ of \emph{dissolving probes} (things whose value defines the object but which you cannot measure directly without destroying it). The \emph{adequacy residual} is the conditional covariance
+\begin{equation}
+\Xires \;=\; K_{DD} - K_{DL}\,K_{LL}^{+}\,K_{LD},
+\label{eq:xi}
+\end{equation}
+where the $K$ blocks are covariances among the probe observables and ${}^{+}$ is the pseudoinverse~\cite{sbt-xi}. $\Xires$ is exactly the error covariance of the best \emph{linear} estimator of $D$ from $L$: it is the part of the object's behavior that your scheduled measurements cannot see, priced in variance. Three consequences give the primitive its teeth:
+
+\begin{itemize}
+\item \emph{The blind-spot witness.} If $\Xires$ exceeds a declared budget $\Omega$, its top eigenvector $z$ \emph{names a direction}: the specific combination of dissolving observables most invisible to the current schedule~\cite{sbt-xi}.
+\item \emph{The chain rule.} Adding a candidate probe family $M$ discharges the residual by an exactly computable amount: $\Xi(D \mid L \cup M) = \Xires - \mathrm{discharge}(M \mid L, D)$. Marginal coverage value is therefore an exact, decomposable currency, which supports greedy probe selection with per-step guarantees~\cite{sbt-xi}.
+\item \emph{Saturation.} A duplicated probe has exactly zero discharge---a built-in null: any implementation in which redundancy appears to buy coverage is wrong~\cite{sbt-xi}.
+\end{itemize}
+
+One fence, stated once here and repeated where it matters: $\Xi = 0$ certifies coverage \emph{by the linear estimator class over the declared probe family}, and $\Xi \succ 0$ certifies a gap \emph{for that class}. It does not assert that no nonlinear decoder exists. The framework's own account of nonlinearity is the \emph{degree ladder}: enlarging the probe family with product features (degree-2, degree-3, \dots) and watching the residual contract through the same chain rule~\cite{sbt-xi,sbt-cast}.
+
+\subsection{Primitive 3: predictive quotients and the memory witness}
+\label{sec:sbt-quotients}
+
+The third audit asks: \emph{does acting well require remembering more than you can currently see?} Take a declared finite catalog of \emph{histories} (probability distributions over carrier states, encoding ``what might be true now given what was observed''). Two histories are \emph{currently equivalent} if every currently measurable event has the same probability under both; they are \emph{predictively equivalent} if every declared future observation, under every declared continuation of the dynamics, has the same probability. Partitioning the catalog both ways gives the \emph{current quotient} $Q$ and the \emph{predictive quotient} $M$~\cite{sbt-hol}.
+
+A \emph{memory witness} is a pair of histories that are currently equivalent but predictively distinct: the present looks identical, the futures differ. The witness count, the largest number of predictive classes hiding inside one current class (\emph{MaxFiber}), and the worst-case predictive gap $\Delta^{\max}$ (an exact rational number: the largest probability difference any memoryless agent must forfeit) together certify \emph{that} memory matters and \emph{how much}. Two constructive companions complete the audit: \emph{currentization} searches a declared candidate list for the smallest set of added observables that dissolves all witnesses (exposing what the hidden state is), and the \emph{minimal machine} is the automaton on predictive classes---the smallest state machine that acts optimally~\cite{sbt-hol,sbt-hid}.
+
+\subsection{Primitive 4: the protocol trap}
+\label{sec:sbt-trap}
+
+The fourth audit is a control on the third. Apparent memory can be an artifact of an external schedule: if an experimenter alternates conditions, ``memory of the phase'' can masquerade as memory intrinsic to the system. The protocol trap prescribes \emph{internalization}: rebuild the model with the schedule as an explicit, autonomously evolving state coordinate, and recompute the witnesses. If they vanish, the memory was a scheduling artifact (\texttt{artifact\_trap}); if they survive, it is genuine~\cite{sbt-pt,sbt-f1}. This is a falsification instrument aimed at the framework's own favorite conclusion---which is precisely why we implemented it (and, as Section~\ref{sec:results-memory} reports, it falsified \emph{our} expectation, in the honest direction).
+
+\subsection{Primitive 5: prices and slack}
+\label{sec:sbt-prices}
+
+The fifth audit treats coverage as an economy. With probes carrying costs and a budget $b$, define the value function $V(b)$ (the most residual that budget $b$ can discharge) and the \emph{shadow price} $\lambda(b) = V(b{+}1) - V(b)$~\cite{sbt-spend}. The audit's claims: $\lambda$ prices the marginal check; a \emph{slack point} $b^{*}$ (where $\lambda$ falls below tolerance) certifies over-provisioning; removing resources above $b^{*}$ should have no consequence; and optimizing against a \emph{proxy} cost vector (costs shuffled among candidates) should be visibly worse---a null that detects when the ``economics'' is decorative. In this prototype the pricing machinery is exact and runs correctly, and every one of its registered predictions failed at the frozen tolerances; Section~\ref{sec:results-pricing} reports this as a negative in full.
+
+\subsection{Primitive 6: transport (not tested here)}
+\label{sec:sbt-transport}
+
+The sixth primitive, transport/functoriality---certified bridges showing that a package deforms coherently across related carriers, with composable defect bounds~\cite{sbt-nk}---was explicitly deferred before this build began and was never implemented. It appears in this paper only in the instantiation map (Figure~\ref{fig:map}), greyed out, so that the reader is never under the impression that all six primitives were positively demonstrated.
+
+\subsection{The methodological spine}
+\label{sec:sbt-method}
+
+Two further SBT commitments shaped everything below, and they are methodological rather than mathematical. First, \emph{exact-finite evidence}: theorem-grade quantities are computed on declared finite models in exact rational arithmetic, so that a certificate is a computation, not an estimate~\cite{sbt-f3}. Second, the \emph{no-go/null-battery discipline}: every positive mechanism ships with the controls that would expose it as fake---saturation nulls, trivialization guards, proxy failures, protocol traps~\cite{sbt-ng}. The prototype implements both commitments literally, and Section~\ref{sec:methods} describes the resulting evidence rules.
+
+ \section{Instantiation on quantum error correction}
+\label{sec:instantiation}
+
+\subsection{The domain objects}
+\label{sec:domain}
+
+The prototype uses exactly three stabilizer codes and five noise models, all declared and frozen before implementation. The codes: the classical repetition code REP($d$) for $d \in \{3,5\}$ (bit-flip protection; checks $Z_iZ_{i+1}$), and the rotated surface code SURF($d$) for $d \in \{3,5\}$ ($d=3$: 9 data qubits, 8 checks; $d=5$ used only in scaling spot-checks). The noise models, all stochastic Pauli at code capacity except where stated: N1 (iid bit-flip $p$), N2 (iid depolarizing $p$), N3 (N2 plus an \emph{unmodeled} correlated $ZZ$ injection on one declared qubit pair with probability $q$---the drift model: the declared model believes N2), N4 (hidden two-state Markov mode switching the depolarizing rate between $p_0$ and $3p_0$; the mode is not observable), and N5 (a latching proxy for leakage: one designated qubit irreversibly becomes fully depolarizing at rate $r$ per round). Sections~\ref{sec:e8}--\ref{sec:e9} additionally use circuit-level noise: Stim-generated rotated-surface-code memory circuits~\cite{gidney2021stim} with per-location depolarizing and measurement-flip probabilities, decoded by minimum-weight perfect matching via PyMatching~\cite{higgott2022pymatching,higgott2025sparseblossom}. Code conventions follow the standard rotated-layout literature~\cite{fowler2012surfacecodes}.
+
+The computational substrate for everything exact is a \emph{moment engine} over $\pm1$ observables. A Pauli error and a check/logical observable are both vectors in $\mathbb{F}_2^{2n}$; the detection bit is the symplectic pairing $\langle a, e\rangle$, and the observable is $\sigma_a(e) = (-1)^{\langle a,e\rangle}$. For independent Pauli noise with rational parameters, every mean $\mathbb{E}[\sigma_a]$ is a closed-form product of per-qubit rational factors, and $\sigma_a \sigma_b = \sigma_{a \oplus b}$, so every covariance block in Eq.~\eqref{eq:xi} is exactly computable with no sampling. This one identity is also what later makes the diagnosis of Section~\ref{sec:diagnosis} possible: means of XOR-combinations of checks \emph{are} the Walsh--Hadamard coefficients of the full syndrome distribution, so the entire $2^{8}$-outcome syndrome pmf of SURF(3) is exactly recoverable from the moment engine.
+
+\subsection{The instantiation map}
+\label{sec:map}
+
+Table~\ref{tab:map} (rendered graphically in Figure~\ref{fig:map}) is the paper's frame: each SBT primitive, the QEC object it becomes, where it is tested, and---stated in the table itself, not in a footnote---the evidential outcome. Four primitives are positively evidenced, one is evidentially negative, one was deferred. 
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{p{3.6cm} p{4.6cm} p{2.2cm} p{3.4cm}}
+\toprule
+SBT primitive & QEC instantiation & Experiments & Evidential outcome \\
+\midrule
+Packaging operator $E = U_f \circ Q_f \circ P^\tau$ & the QEC cycle: noise $\to$ syndrome $\to$ recovery & all & substrate for every audit \\
+Existence certificate ($\delta, \varepsilon, CD_\tau, RM$, multiplicity) & typed logical-qubit objecthood status & E4 (+E1) & positive (\S\ref{sec:results-existence}) \\
+Adequacy residual $\Xires$, witness, chain rule & syndrome-coverage audit over native + degree-2 checks & E1, E2, E3, E7--E9 & positive (\S\ref{sec:results-coverage}, \S\ref{sec:arc}) \\
+Predictive quotient / memory witness ($Q, M, \Delta^{\max}$) & decoder-memory certificate, minimal decoder machine & E5 & positive (\S\ref{sec:results-memory}) \\
+Protocol trap / internalization & schedule-artifact vs.\ genuine-memory control & E5c & control ran; artifact hypothesis falsified (\S\ref{sec:results-memory}) \\
+Shadow price / slack ($V, \lambda, b^{*}$) & check-budget economics & E6 & machinery exact; all registered predictions negative (\S\ref{sec:results-pricing}) \\
+Transport / functoriality & certified deformation bridges & --- & deferred; never implemented \\
+\bottomrule
+\end{tabular}
+\caption{The instantiation map. The outcome column states the honest split up front: four primitives positively evidenced, pricing evidentially negative, transport deferred.} \label{tab:map}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\figplaceholder{F1 --- \textbf{The SBT-to-QEC instantiation map.} A two-column diagram. Left column, top to bottom, six labeled boxes in SBT's own vocabulary: ``Packaging operator $E = U \circ Q \circ P^\tau$'', ``Adequacy residual $\Xi(D|L)$'', ``Existence/closure certificate ($\delta$, $\varepsilon$, $CD_\tau$, $RM$)'', ``Predictive quotient / memory witness ($Q$, $M$, $\Delta^{\max}$)'', ``Protocol trap / schedule internalization'', ``Shadow price / slack point''. Right column, aligned horizontally to each left box, six QEC-object boxes: ``QEC cycle (noise $\to$ syndrome $\to$ recovery)'', ``Syndrome-coverage audit (native + degree-2 checks)'', ``Logical-qubit objecthood status (certified/degrading/non-closed/trivialized)'', ``Decoder-memory witness / minimal decoder machine'', ``Schedule-artifact vs.\ genuine-memory control'', ``Syndrome/check budget economics''. Arrows connect each left box to its right-column pair, labeled with the one defining equation or relation (e.g.\ $\Xi = K_{DD} - K_{DL}K_{LL}^{+}K_{LD}$). The shadow-price pair drawn with a dashed/muted arrow style (an ``evidence: negative'' tag) distinguishing it from the four solidly-demonstrated pairs, and the transport/functoriality primitive appearing as a greyed-out seventh row with a ``deferred, not implemented'' label---the figure's whole point is to make the four-positive/one-negative/one-deferred split visually obvious at a glance.}
+\caption{The SBT-to-QEC instantiation map (conceptual figure; spec above).}
+\label{fig:map}
+\end{figure}
+
+\subsection{Scope fences}
+\label{sec:fences}
+
+The following restrictions were frozen in the design documents before implementation and bind every claim in this paper. 
+
+\begin{enumerate}
+\item \emph{No quantum hardware.} All evidence is classical simulation of stochastic Pauli / classical Markov models, plus Stim circuit-level sampling.
+\item \emph{The residual is class-relative.} The prototype's $\Xi$ is the conditional covariance of logical $\pm1$ observables given scheduled-check $\pm1$ observables (optionally augmented with degree-2 products). $\Xi = 0$ certifies exact coverage by the linear estimator class over the declared feature family; $\Xi \succ 0$ certifies a coverage gap for that class and prices it. It does \emph{not} assert that no nonlinear decoder covers the gap. The degree ladder shows the residual contracting as feature degree grows, which is the framework's own account of what nonlinear decoding buys.
+\item \emph{No Born-rule, Bell, or coherent-dynamics claims.} Stochastic Pauli noise is a standard, declared restriction, and SBT's own quantum-theory paper works at exactly this packaging level~\cite{sbt-qm}.
+\item \emph{No asymptotic threshold claims.} Every result is finite-carrier.
+\item \emph{No fitted proxies as evidence.} Fitted or sampled quantities are diagnostic or \gMeasured; theorem-grade quantities are computed exactly on declared finite models.
+\end{enumerate}
+
+ \section{Methods: the evidence discipline}
+\label{sec:methods}
+
+The prototype's credibility rests on process, so we describe the process at the same level of care as the mathematics.
+
+\subsection{Registered predictions}
+\label{sec:methods-registration}
+
+Every experiment's quantitative predictions were written down, with numeric pass/fail bars, in frozen design documents \emph{before} the experiment was implemented. A prediction that fails is reported as \gRegNeg{} with its frozen bar and measured value; it is never deleted, softened, or re-run with tuned parameters (a changed re-run is a new experiment, labeled as such). The original build froze 25 predictions across six experiments (E1--E6); the follow-up investigation of Section~\ref{sec:arc} froze a further 7 (E7), 2 scored plus 1 descriptive (E8), and 2 scored plus 2 descriptive (E9). For the circuit-level experiments E8 and E9, where no closed-form moment engine exists, exact pre-derivation was replaced by a declared \emph{pilot-then-freeze} protocol: effect sizes were estimated on a pilot seed range disjoint from the scored seeds, numeric bars were frozen into the configuration before the scored run executed, and the pilot-to-freeze step was itself logged. 
+
+\subsection{Evidential grades}
+\label{sec:methods-grades}
+
+Every claim in this paper carries exactly one of six grades, fixed in the design documents before any experiment ran: \gTheorem{} (an instance of a cited SBT theorem verified computationally---the strongest grade the prototype can issue), \gExact{} (exact rational computation on a declared finite model), \gMeasured{} (seeded sampling with reported uncertainty), \gRegPos{} / \gRegNeg{} (a frozen prediction that passed / failed), and \gInterp{} (connective reading; carries no evidential weight). Sentences never blend grades; where a result and its reading must appear together, they are split.
+
+\subsection{Exactness, precisely scoped}
+\label{sec:methods-exact}
+
+The modules \emph{labeled} exact---the moment engine's exact branch, the residual/discharge/chain-rule construction, and the entire predictive-quotient engine---use rational arithmetic (\texttt{Fraction}) end to end, with no floating point on those code paths, and are gated by brute-force enumeration cross-checks in the test suite. This label must not be generalized: the blind-spot witness extracts eigenvectors in floating point from exactly computed matrices; the chain-rule identity's reported discrepancy is a float comparison of exact matrices; Markov stationary distributions use floating-point linear algebra; and the circuit-level modules of Sections~\ref{sec:e8}--\ref{sec:e9} are floating-point throughout, by declaration, because no closed-form model exists at circuit level. The repository's report carries the file-by-file float audit; this paper cites that audit rather than paraphrasing it more broadly. 
+
+\subsection{The null battery}
+\label{sec:methods-nulls}
+
+Nine standing controls (the framework's ``null battery''~\cite{sbt-ng}) were implemented alongside the positive mechanisms: the protocol trap (Section~\ref{sec:sbt-trap}); same-family saturation (duplicated checks must show exactly zero discharge); null-model calibration (false-positive rates of every witness under the declared model); proxy-cost failure; slack-regime checks; a no-silent-caps rule (any truncation of a candidate family is logged with exact counts); the trivialization guard (a decoder that collapses the logical layer must classify \texttt{trivialized}, not \texttt{certified}); same-support discipline (declared catalogs, no post-hoc edits); and a memory-only comparator (an agent given \emph{only} the memory coordinate, to separate memory value from syndrome value). The complete ledger with outcomes is Appendix~\ref{app:nulls}.
+
+\subsection{Determinism and reproduction}
+\label{sec:methods-repro}
+
+Every run is seeded and configured from committed JSON; identical inputs produce byte-identical result files (floats serialized at full precision, keys sorted). Each experiment directory carries its configuration, results, figures with their exact CSV data twins, an environment record, and a SHA-256 manifest of every file. A single command regenerates all nine experiments and verifies the manifests; it was run twice in a row with byte-identical results, and the current test suite passes 149 tests. Section~\ref{sec:repro} gives the exact environment and commands.
+
+\subsection{Deviations log}
+\label{sec:methods-deviations}
+
+Any divergence between the frozen designs and the running code was recorded, dated, and reasoned in a public deviations file---never silently absorbed. The final log has 8 entries (Appendix~\ref{app:deviations}), and we draw attention to their character now: several are self-caught correctness fixes made \emph{before} results were frozen (including two rounds of pilot-driven repair to the closed-loop witness policy of Section~\ref{sec:e9}), one is a post-close audit correction to a cross-check estimator, and one was added after an external adversarial review found the fix documented in prose but missing from the ledger. The deviations file is evidence for the process claim, not embarrassment to be minimized---which is why it is an appendix and not a footnote. 
+
+ \section{Results I: certificates on ground truth}
+\label{sec:results-certificates}
+
+This section reports the four audits on declared, exactly known models---the regime where the framework's claims are sharpest, because everything it certifies can be checked against ground truth. Experiments are labeled E1--E6 as in the repository. Positive and negative registered verdicts appear together; the negatives are then given their own treatment in Section~\ref{sec:negatives}.
+
+\subsection{Coverage: the residual computes the right object (E1, E3)}
+\label{sec:results-coverage}
+
+\paragraph{Theorem anchors.} The chain-rule identity $\Xi(D \mid L \cup M) = \Xires - \mathrm{discharge}(M \mid L, D)$ holds with identically zero discrepancy in exact rational arithmetic on the tested models, and $\delta \le \varepsilon$ holds on every model built (both \gTheorem; the anchoring tests are named in Section~\ref{sec:repro}). 
+
+\paragraph{Residuals and ablations.} Full-schedule residual traces (\gExact): $\operatorname{tr}\Xi = 0.0837$ for REP(3), $0.0740$ for REP(5), $0.1754$ for SURF(3). Dropping any single check strictly increases the residual, and REP(5)'s end-check drops differ from middle-check drops as registered (end mean $0.0593$ vs.\ middle mean $0.0204$; \gRegPos). Duplicated checks show exactly zero discharge in both the E1 and E3 forms (\gRegPos)---the saturation null holding exactly, as the theory requires. 
+
+\paragraph{The single cleanest result: the degree ladder attains the exact optimum.} For REP(3) under N1, extend the native checks to the complete degree-2 family (all pairwise XOR products). The residual trace contracts from $0.083680$ to $0.027575$, and the latter equals the \emph{enumerated optimal-decoder} mean squared error \emph{exactly}: both are the rational number $47291/1715000$, and the artifact records a difference of exactly $0.0$ (\gExact, and \gRegPos{} as registered). The reason this is exact rather than merely close: the complete degree-2 family generates every function of the syndrome for REP(3), so the linear-estimator floor over that family \emph{is} the true optimal-decoder MMSE. This is the paper's sharpest instance of ``the audit computes the right object'': a coverage certificate derived from SBT's chain-rule formalism lands, digit-for-digit as a fraction, on the quantity a QEC practitioner would compute by brute-force enumeration. We permit ourselves the word ``optimal'' for this result because it literally attains the enumerated optimum; everywhere else in this paper the word appears only inside the standard names of mathematical objects (the coverage-optimal map $A^{*}$, the enumerated optimal-decoder MMSE), never as a performance claim.
+
+\begin{figure}[htbp]
+\centering
+\figplaceholder{F4 --- \textbf{Degree-ladder contraction attains the exact optimal MMSE (REP(3), E3).} Data: \texttt{artifacts/e3\_default/bfb9ffc6/e3\_degree\_ladder.csv}, columns \texttt{rung, trace\_xi, mmse\_floor}. x-axis: rung (categorical: ``degree-1'', ``degree-2-complete''---only 2 points). y-axis: $\operatorname{tr}\Xi$. Plot \texttt{trace\_xi} as a bar or point per rung, and \texttt{mmse\_floor} as a horizontal reference line at $47291/1715000 \approx 0.027575$ (the exact enumerated-optimal-decoder MMSE). Caption must state the exact fraction and that rung 2 sits on the floor line (\texttt{rung2\_minus\_mmse} $= 0.0$, exact), and why: the full degree-2-complete family generates every function of the syndrome for REP(3), so its residual floor \emph{is} the true optimal-decoder MMSE, not just close to it.}
+\caption{Degree-ladder contraction to the exact enumerated optimum (placeholder; spec above).}
+\label{fig:ladder}
+\end{figure}
+
+\paragraph{Selection beats baselines at every budget.} On SURF(3), greedy chain-rule check selection contracts the residual from the no-check baseline $0.4345$ to the full-schedule $0.1754$, and at \emph{every} intermediate budget its residual is at or below every tested baseline (lexicographic order and 10 seeded random orders; \gRegPos). This is a registered comparison against the tested baselines, not a general optimality statement: only the first greedy step is optimal by construction. The greedy selector also stops before exhausting a duplicate-padded candidate list rather than spending budget on provably worthless checks (\gRegPos). 
+
+\begin{figure}[htbp]
+\centering
+\figplaceholder{F3 --- \textbf{Chain-rule selection beats baselines at every budget (SURF(3), E3).} Data: \texttt{artifacts/e3\_default/bfb9ffc6/e3\_coverage\_vs\_budget.csv}, columns \texttt{budget, greedy, lex, random\_mean, random\_min, random\_max}. x-axis: budget (integer 0--8, linear). y-axis: residual trace $\operatorname{tr}\Xi$ (linear, starting at the baseline $\approx 0.434$ and decreasing). Four series: \texttt{greedy} (solid, marker), \texttt{lex} (dashed), \texttt{random\_mean} (dotted, with a shaded band between \texttt{random\_min} and \texttt{random\_max} across the 10 seeded baselines). Caption must state plainly: greedy is at or below every baseline at every budget---a registered comparison against \emph{tested} baselines, not a general optimality proof for $b>1$ (only $b=1$ is optimal by construction; say so in the caption).}
+\caption{Coverage vs.\ budget under chain-rule selection (placeholder; spec above).}
+\label{fig:budget}
+\end{figure}
+
+\subsection{Existence: the certificate does classification work (E4)}
+\label{sec:results-existence}
+
+The typed existence certificate was computed on ground-truth Markov cycle models (\gExact{} for the REP rows). The baseline package---REP(3), N1 noise, the standard decoder---certifies: $\delta = 0.007144875$, $\varepsilon = 0.00725$ (the theorem bound $\delta \le \varepsilon$ visibly tight), multiplicity 2, status \texttt{certified}. The deliberately broken decoder (mapping everything to one logical state) is caught by the multiplicity guard: $\delta = 0$ \emph{exactly}---perfect idempotence---but multiplicity 1 and status \texttt{trivialized} (\gRegPos{} for the guard). This pair is the certificate idea in one contrast: a small idempotence defect alone would have certified the broken decoder; the typed certificate refuses. Sweeping the physical error rate flips the status from \texttt{certified} to \texttt{degrading} at $p = 1/5$ ($\delta$ rising monotonically $0.000298 \to 0.007145 \to 0.026432 \to 0.082368$ across $p \in \{1/100, 1/20, 1/10, 1/5\}$; \gExact). Table~\ref{tab:certificate} collects the classification.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{l r r r l}
+\toprule
+package & $\delta$ & $\varepsilon$ & multiplicity & status \\
+\midrule
+REP(3) + N1, standard decoder, $p = 1/20$ & 0.007144875 & 0.00725 & 2 & \texttt{certified} \\ same, deliberately broken decoder & 0 (exact) & 0 & 1 & \texttt{trivialized} \\ same, standard decoder, $p = 1/5$ & 0.082368 & --- & --- & \texttt{degrading} \\ \bottomrule
+\end{tabular}
+\caption{The existence certificate doing classification work on ground truth (\gExact). The broken decoder has \emph{perfect} idempotence---the multiplicity guard, not the defect, is what catches it. The remaining status, \texttt{non\_closed}, is thresholded on the closure deficit; its registered demonstration on the hidden-mode model was a \gRegNeg{} discussed in Appendix~\ref{app:predictions} (P4.2: the zero-deficit clause holds on the syndrome lens, not the frozen decoded lens).} \label{tab:certificate}
+\end{table}
+
+Two further certificate components behaved as designed on hidden-state models. The closure deficit correlates with an out-of-sample predictive gap across the model/horizon grid: Pearson $r = 0.936$ with the latching model N5 included (\gRegPos; the value itself \gMeasured). The same computation without N5 gives $r = -0.171$, which we report alongside; restricted to that narrow slice the registered correlation does not hold. And the route-mismatch diagnostic exhibits the intended leakage signature on N5---a decoder lens that remains channel-accurate ($0.75$) while $RM$ grows severalfold over horizon (peak ratio $7.28\times$ baseline)---though it saturates below the frozen $10\times$ bar, a \gRegNeg{} discussed in Section~\ref{sec:negatives}. 
+
+\subsection{Memory: exact witnesses, a genuine payoff, and a control that fired on us (E5)}
+\label{sec:results-memory}
+
+\paragraph{Witnesses separate the family exactly.} On the memoryless package (N1), the predictive-quotient audit finds \emph{zero} memory witnesses ($|Q| = |M| = 4$, $\Delta^{\max} = 0$; \gExact). On the hidden-mode package (N4) it finds 4 witnesses, MaxFiber 2, and an exact worst-case predictive gap $\Delta^{\max} = 112329952/1318359375 \approx 0.0852$; on the latching package (N5), 4 witnesses with $\Delta^{\max} = 539/1250 = 0.4312$ (\gExact). These are certificates in the strict sense: exact rational statements that a memoryless decoder forfeits a quantified amount of predictive accuracy on N4/N5 and nothing on N1.
+
+\paragraph{Currentization names the hidden coordinate.} Adding the mode bit as an observable dissolves the predictive surplus at candidate-set cardinality 1; no set of pure check bits does (\gRegPos). The audit does not merely detect hidden memory---it identifies \emph{which} added observable would expose it.
+
+\paragraph{The protocol trap fired against our hypothesis.} We built a two-phase alternating noise schedule as the intended ``schedule artifact,'' registering the prediction that internalizing the schedule (adding the phase as an autonomous state coordinate) would dissolve its witnesses, classifying it \texttt{artifact\_trap}. That prediction \emph{failed} as registered: internalization preserved all 4 witnesses and the package classifies \texttt{genuine\_memory\_after\_internalization} (\gRegNeg{} for our hypothesis; the classification itself \gExact). The reading (\gInterp): a deterministic $p_0$-vs-$3p_0$ alternation carries real predictive content---the current phase predicts next-round statistics---so the trap correctly declined to call it an artifact. We state this carefully because it is easy to misreport: the control mechanism worked, and what it falsified was \emph{our} registered ``this is an artifact'' hypothesis. This is a negative result for that hypothesis, not a demonstration of the trap catching an artifact. 
+
+\paragraph{Memory's measured value, under a proper scoring rule.} The frozen accuracy-based payoff comparison came back nil, for a reason the diagnosis identified exactly: under X-only noise at $p < 1/2$, mode-conditional MAP correction picks the same coset representative in every mode, so accuracy-scored decoders tie by construction. A post-registration study (separately labeled, leaving all frozen verdicts untouched) rescored predictors on next-round negative log-likelihood, where memory has room to show non-tautological value. Findings (\gMeasured): the exact Bayes filter captures a real share of the oracle ceiling---$0.00196$ of $0.01061$ nats/round at the frozen defaults, $0.03615$ of $0.05834$ at a declared louder operating point (about 18\% and 62\% of ceiling respectively; \gInterp); a \emph{declared 2-state} run-length machine already captures a positive share ($0.00015$ and $0.00429$ nats/round), rising with machine size $K$; and naive per-step rounding of the continuous belief coordinate is \emph{value-destroying} below a resolution threshold (e.g.\ $-0.0047$ at $K{=}2$, frozen defaults; $-0.0703$ at $K{=}2$, loud mode), crossing to positive as the grid refines, including a loud-mode $K{=}16$ positive ($+0.0301$) that contradicted our pre-stated all-negative expectation and is reported as such. The packaging-theoretic reading (\gInterp): summarizing \emph{observable history} (run length) is cheap and safe; quantizing an \emph{internal belief} has a resolution threshold below which it destroys value.
+
+\begin{figure}[htbp]
+\centering
+\figplaceholder{F5 --- \textbf{Decoder-memory payoff-v2 NLL ladder (REP(3)+N4, E5).} Data: \texttt{artifacts/e5\_default/941e4f34/e5\_payoff\_v2\_ladder.csv}, long format, columns \texttt{point, predictor, gap} (\texttt{point} $\in$ \{frozen\_defaults, loud\_mode\}; \texttt{predictor} $\in$ \{oracle, exact\_filter, run\_length\_K2/K4/K8/K16, rounding\_K2/K4/K8/K16\}). Two grouped-bar panels (one per point), x-axis: predictor (keep run-length and rounding visually separated, e.g.\ a vertical divider or color family split), y-axis: NLL gap in nats/round (can be negative for rounding predictors---do not clip the axis at zero). Caption must state: oracle is the ceiling (not deployable); exact filter is the realistic upper bound; run-length machines are positive and grow with K; rounding machines are mostly negative except the loud-mode K=16 anomaly ($+0.0301$, keep visible, do not trim the axis to hide it)---a real, honestly-reported measured result, not an error bar.}
+\caption{Memory value under a proper scoring rule (placeholder; spec above).}
+\label{fig:payoff}
+\end{figure}
+
+\subsection{Pricing: exact machinery, negative evidence (E6)}
+\label{sec:results-pricing}
+
+The pricing audit is this paper's clean full negative, and we present it with the same prominence as the positives. The machinery itself is exact where declared and runs correctly: the exact value curve $V(b)$ by enumeration, the shadow-price curve $\lambda(b)$, and a greedy-vs-exact gap of at most $0.00405$ on REP(5) (\gExact{} for the curves; the gap \gMeasured). Every registered \emph{prediction} about pricing behavior failed at the frozen tolerances (\gRegNeg{} throughout): $\lambda$ was predicted nonincreasing after its maximum, and mixed degree-1/degree-2 costs instead produce sawtooth marginal values at budget parities; a slack point $b^{*} < b_{\max}$ was predicted, and instead $b^{*} = b_{\max}$ for both code families because the frozen tolerance sits below the smallest genuine marginal value; the consequence test (removing the last pre-slack unit should shift the sampled logical error rate detectably) did not separate: $\Delta = -0.000135$ against a combined standard error of $0.000119$; and permuted proxy costs were strictly worse at only 36.9\% of budget points against a registered 80\% bar. We do not soften this: as instantiated and thresholded here, the pricing primitive produced no positively evidenced result. The readings in Section~\ref{sec:negatives} suggest the failures are threshold-scale and test-design errors rather than refutations of the pricing concept (\gInterp), but on this prototype's evidence the primitive stands negative.
+
+ \section{Results II: negative results as a taxonomy}
+\label{sec:negatives}
+
+Fourteen of the original build's 25 registered predictions failed as frozen. Appendix~\ref{app:predictions} lists every one with its bar, measured value, and verdict; none required changing any frozen parameter to diagnose. Here we do two things: classify the failures, and work one example of each class in enough detail that the reader can judge whether the diagnostic readings are honest. The classification (\gInterp): 
+
+\begin{enumerate}
+\item \textbf{Bounds written at the wrong scale.} The prediction was about a different quantity than the implemented diagnostic computes.
+\item \textbf{Thresholds frozen too strictly.} The predicted effect exists and points the right way, but the frozen numeric bar was set beyond what the effect delivers.
+\item \textbf{Structure the prediction mischaracterized.} The measurement is informative and the machinery correct, but the world disagreed with the registered hypothesis.
+\end{enumerate}
+
+\paragraph{Worked example, class 1 (P1.1).} We registered that the full-schedule residual trace would fall below $10^{-2}$ at $p = 1/20$ and shrink $10\times$ from distance 3 to 5. Measured: $0.0837$ and $0.0740$, a ratio of $1.13$. The bound was written at logical-error-probability scale, but $\operatorname{tr}\Xi$ is the linear-estimator MMSE of a $\pm1$ observable---a different quantity with a different scale and different distance behavior. The failure is real and taught us something concrete: the residual's units are variance of an observable, not failure probability, and predictions must be written in the object's own units. The linear-class limitation the number reflects is independently visible error-by-error: an exact bounded-weight cross-check shows a single linear functional of REP(5)'s four syndrome bits cannot represent majority-logic minimum-weight decoding on 2 of 16 low-weight errors (\gExact). 
+
+\paragraph{Worked example, class 2 (P6.2).} We registered that a slack point exists strictly before budget exhaustion, at tolerance $\lambda_{\mathrm{tol}} = 10^{-9}$. Measured: $b^{*} = b_{\max}$ for both REP(5) and SURF(3), because even the smallest genuine marginal value in these families exceeds the frozen tolerance. The value curve itself is exact and its tail marginals are tiny (of order $10^{-5}$ to $10^{-4}$), so the intended phenomenon---most of the budget buys almost nothing---is visibly present in the curve; the certificate failed because its threshold was frozen three or four orders of magnitude below the phenomenon. A defensible re-thresholding would pass, and we did not do it, because a moved threshold after seeing data is exactly what the discipline forbids.
+
+\paragraph{Worked example, class 3 (P5.3).} The protocol-trap prediction of Section~\ref{sec:results-memory}: we registered that our alternating schedule was an artifact that internalization would dissolve. Internalization preserved all 4 witnesses; the schedule carries genuine predictive content. The machinery did precisely its job---it is the registered hypothesis that was wrong, and the failure sharpened the concept: ``externally scheduled'' does not imply ``predictively empty.'' A deterministic schedule is only an artifact in the trap's sense when its phase carries no information about future observables, and ours did.
+
+One more failure deserves mention here because the entire second half of the paper grows out of it: P2.1, the deployable drift witness that never detected (class 3, with an implementation-defect component). Its diagnosis and repair are Section~\ref{sec:arc}.
+
+ \section{Results III: a registered failure, diagnosed and repaired inside the framework}
+\label{sec:arc}
+
+This section is the paper's centerpiece, and Figure~\ref{fig:cycle} is its map: a registered failure (E2), an exact diagnosis using the framework's own machinery, a corrected statistic re-registered with a \emph{predicted continued failure} among its frozen predictions (E7), and two generalizations---to circuit-level noise (E8) and to closed-loop decoder control (E9). Throughout, E2's committed verdicts stand untouched; everything here is additive.
+
+\begin{figure}[htbp]
+\centering
+\figplaceholder{F2 --- \textbf{The diagnosis-and-repair cycle.} A circular/cyclic flow diagram with five stages arranged clockwise: (1) ``E2: registered prediction P2.1 fails as frozen'' (styled as a red/negative node); (2) ``Exact diagnosis via the framework's own machinery---Walsh--Hadamard pmf inversion, $A^{*}$-lift energy compression, mis-scaled null'' (analysis/magnifying-glass icon); (3) ``Corrected statistic + re-registration, including a prediction the original scenario will STILL fail'' (pencil/registration icon); (4) ``E7: off-support scenario detects dramatically; original scenario's predicted failure holds'' (a split node---half green/positive for the off-support result, half amber/neutral for the honestly-held predicted negative); (5) ``Generalization: E8 circuit-level, E9 closed loop'' (an arrow branching outward to two small boxes labeled ``E8'' and ``E9''). An arrow closes the cycle from stage 5 back to stage 1's position, labeled ``the framework audits and repairs its own instrument''---this label is the figure's single most important piece of text and should be the most visually prominent caption element, larger or bolder than the stage labels.}
+\caption{The diagnosis-and-repair cycle (conceptual figure; spec above).}
+\label{fig:cycle}
+\end{figure}
+
+\subsection{The failure (E2)}
+\label{sec:e2}
+
+E2 tested drift detection on SURF(3): declared model N2 ($p = 3/100$), true model N3 (the same plus an unmodeled correlated $ZZ$ injection, $q = 1/50$, on the frozen qubit pair $(0,3)$). Two witnesses were tested against a matched decoder-failure-rate baseline: W1, an \emph{oracle} witness with simulator access to true logical values (labeled non-deployable from the start), and W2, the deployable-shaped, syndrome-only witness---the one that would matter in practice. Results (\gMeasured): W1 detected at $N = 500$ shots vs.\ the baseline's $1000$---a real $2\times$ improvement, short of the registered $4\times$ bar---and W2 \emph{never detected within the frozen grid} (up to $N = 16000$). Both registered predictions failed (\gRegNeg). Null calibration passed: false-positive rates 0.0 (W1) and 0.02 (W2) at the frozen bar. 
+
+\subsection{The diagnosis: exact, and mostly about the test itself}
+\label{sec:diagnosis}
+
+Before any correction code was written, the failure was analyzed exactly, using the same moment engine the audits are built on; the four findings were then pinned as tests in the repository, so they are commitments, not narrative. The reflexive point deserves emphasis: findings 1 and 2 are instances of the \emph{adequacy-residual} primitive applied to our own instrument---the drift witness was audited for coverage of the drift signal, exactly as schedules are audited for coverage of logicals.
+
+\paragraph{Finding 1: the statistic discards its mean signal (\gExact).} W2 was built from \emph{centered} covariance blocks, making it structurally blind to any first-moment drift signal. The frozen injection's exact mean shift is zero on seven of eight native checks and $-331776/9765625 \approx -0.0340$ on the eighth, with total energy $\|\Delta\mathrm{mean}_L\|^{2} = 0.0011542$. A real, exactly quantified signal was being thrown away whole.
+
+\paragraph{Finding 2: the lift built for the wrong objective compresses the signal $\approx 73\times$ (\gExact).} W2 lifted the syndrome-covariance defect through the coverage-optimal map $A^{*}$---a map fit to predict \emph{logical values}, not to preserve \emph{drift sensitivity}. The drift signal's energy before the lift is $\|\Delta K_{LL}\|_F^{2} = 0.0032632$; after, $4.4703 \times 10^{-5}$. The compression ratio $\approx 73\times$ is our reading of those two exact numbers (\gInterp).
+
+\paragraph{Finding 3: a borrowed null (\gInterp, confirmed by measurement below).} W2's alarm threshold was calibrated on W1's statistic---a differently scaled object---rather than on W2's own null distribution. 
+
+\paragraph{Finding 4: the frozen scenario is structurally hard for \emph{any} syndrome-only method.} The key move: because means of XOR-combinations of checks are Walsh--Hadamard coefficients of the syndrome distribution (Section~\ref{sec:domain}), the full $2^{8}$-outcome native-check syndrome pmf is \emph{exactly} recoverable under both the declared and true models, hence so is the per-shot syndrome-side KL divergence (\gExact). Comparing it with the per-shot KL divergence of the logical-failure channel (\gMeasured, $N = 2 \times 10^{6}$ per scenario) over three injection pairs: 
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{l l r r r}
+\toprule
+Injection pair & Relation to logical support & syndrome KL/shot & logical-failure KL/shot & ratio \\
+ & & (exact) & (measured) & \\
+\midrule
+$(0,3)$ --- the frozen E2 scenario & 2 of 3 qubits of $\bar{Z}$ & 0.006151 & 0.009247 & 0.665 \\ $(2,5)$ & 1 qubit touches $\bar{X}$ & 0.010823 & 0.009841 & 1.100 \\ $(4,8)$ & off both logical supports & 0.051352 & 0.000066 & 773.4 \\ \bottomrule
+\end{tabular}
+\caption{Per-shot information about the drift available to the syndrome channel (exact, Walsh--Hadamard inversion) vs.\ the logical-failure channel (measured). The frozen E2 pair $(0,3)$ sits, by construction, nearly on a minimum-weight logical-failure path: the failure channel sees such drift \emph{better} than the syndrome does (ratio $< 1$), while off-support drift is up to $\approx 773\times$ easier for a syndrome-only method.} \label{tab:kl}
+\end{table}
+
+The structural reading (\gInterp): drift that feeds a minimum-weight failure path is exactly the drift the failure channel is built to notice and the syndrome channel is built to correct silently. The E2 scenario was, by structural accident, close to the worst realistic case for any syndrome-only witness---independent of, and in addition to, findings 1--3. This finding drove the design of the re-registration: the corrected witness had to be tested across the \emph{range} finding 4 exposes, with an honest prediction attached to each regime.
+
+\subsection{The corrected witness, re-registered---including a predicted failure (E7)}
+\label{sec:e7}
+
+The correction unifies findings 1 and 2 in one object: the vector of means of the degree-$\le 2$ probe family (all 8 native checks plus all 28 pairwise XOR products---36 exact Walsh--Hadamard coefficients), used \emph{directly}, with no centering and no lift. The corrected detection statistic is the quadratic form
+\begin{equation}
+T \;=\; (\hat\theta - \theta_{\mathrm{model}})^{\top}\, \Sigma_{\theta}^{+}\, (\hat\theta - \theta_{\mathrm{model}}),
+\label{eq:w2b}
+\end{equation}
+with $\theta_{\mathrm{model}}$ and the estimator covariance $\Sigma_\theta$ exact under the declared model and the threshold calibrated on the statistic's own null by seeded bootstrap. Around it, a ladder of four rungs was registered: the \emph{old} statistic with its null merely recalibrated (isolating finding 3); the quadratic statistic of Eq.~\eqref{eq:w2b}; a matched-filter \emph{naming} step (a dictionary of nine exact per-qubit drift signatures, whitened, inner-product-matched, then forward-mapped to a logical direction); and a CUSUM sequential wrapper~\cite{page1954continuous}---with the baseline given the \emph{same} sequential upgrade, so any win is attributable to information content rather than test-design asymmetry. Seven predictions were frozen from finding 4's numbers before implementation. Three outcomes carry the section:
+
+\paragraph{The off-support scenario: a dramatic, registered win.} On pair $(4,8)$---where finding 4's exact analysis predicted the syndrome channel holds $\approx 773\times$ more per-shot information---the corrected rungs detect at $N = 1000$ (quadratic and naming rungs) and $N = 2000$ (sequential), while \emph{both} baselines never detect within the frozen grid up to $N = 16000$ (\gRegPos{} against a conservative registered $10\times$ bar). 
+
+\paragraph{The original scenario: the predicted failure held.} We registered, in advance, backed by Table~\ref{tab:kl}'s ratio of $0.665$, that on the original E2 pair $(0,3)$ \emph{no corrected rung would beat the baseline}. That is what happened: baseline $N = 1000$; best corrected rungs $N = 4000$ (\gRegPos---a predicted negative that held). We give this result more narrative weight than the win above, deliberately. A correction developed after a failure invites the suspicion of post-hoc storytelling---of a statistic quietly tuned until the old test passes. A frozen, exact-computation-backed prediction that the correction would \emph{still lose} on the original test, which then held, is the strongest evidence this arc can offer that the diagnosis was explanatory rather than curve-fitting. The near-parity scenario $(2,5)$, registered as descriptive with no bar, landed where its ratio of $1.100$ suggested: baseline $1000$; quadratic and naming rungs $2000$; sequential rung $8000$ (\gMeasured). 
+
+\paragraph{The honest residue.} Three E7 predictions failed (\gRegNeg{} each). The recalibrated-null prediction P7.1 failed informatively: we predicted the old statistic's own-null threshold would be $\le 10\%$ of the borrowed one, and measured a ratio of $1.33$---our $O(p)$-vs-$O(p^2)$ reasoning had described the \emph{injected signal's} scale, not the \emph{null-fluctuation} scale a threshold actually calibrates. Naming split: only 3/10 detecting seeds named a qubit in the true injection pair (bar: 8/10), while the forward-mapped logical-direction overlap was $0.869$, comfortably above its $0.6$ bar ---the reading (\gInterp) being that SURF(3) has only two logical operators, so direction overlap is a coarse, near-binary check that detection and direction-naming can pass while qubit-level naming stays hard. And one rung's null false-positive rate came in at 6\% against the 2\% bar (all other rungs passed). 
+
+\begin{figure}[htbp]
+\centering
+\figplaceholder{F6 --- \textbf{E7 corrected witness ladder: detection fraction vs.\ shots, three scenarios.} Data: \texttt{artifacts/e7\_default/ab6885e6/e7\_detection\_latency.csv}, columns \texttt{scenario, N, w2a, w2b, w2d, baseline, baseline\_cusum} (scenario $\in \{0\_3, 2\_5, 4\_8\}$; numeric columns are detection \emph{fractions} in $[0,1]$ at that N across the 10 seeds). Three side-by-side panels (one per scenario), x-axis: N (log scale; use the CSV's actual N values), y-axis: detection fraction $[0,1]$. Five series per panel: \texttt{w2a}, \texttt{w2b} (solid, the headline corrected statistic), \texttt{w2d} (dashed, CUSUM), \texttt{baseline} (solid, black), \texttt{baseline\_cusum} (dashed, black). Caption must state per-panel which scenario is which ($0\_3$ = original E2 scenario, $2\_5$ = near-parity, $4\_8$ = off-support) and must include the P7.3 predicted-and-held-failure framing for the $0\_3$ panel specifically (baseline detects first there---the \emph{expected} outcome, registered in advance, not a surprise). Full-width figure.}
+\caption{Corrected-witness detection latency across the scenario grid (placeholder; spec above).}
+\label{fig:e7}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\figplaceholder{F7 --- \textbf{E7 off-support naming: modal qubit and mean overlap.} Data: \texttt{artifacts/e7\_default/ab6885e6/e7\_naming\_overlap.csv}, columns \texttt{scenario, modal\_qubit, named\_in\_pair\_count, mean\_overlap}. Small supporting figure (or a table---only 3 scenario rows). If plotted: bar chart of \texttt{mean\_overlap} per scenario with a horizontal reference line at 0.6 (the registered bar), and \texttt{named\_in\_pair\_count}/10 as a second bar or annotation. Caption must state the P7.5 split result plainly: overlap is strong (well above 0.6) but named-in-pair count is weak (3/10, below the 8/10 bar)---and the honest reading (SURF(3) has only 2 logical operators, so overlap is a coarse, near-binary check that cannot fully discriminate between qubits).}
+\caption{Naming: strong direction overlap, weak qubit identification (placeholder; spec above).}
+\label{fig:naming}
+\end{figure}
+
+\subsection{Generalization to circuit-level noise (E8)}
+\label{sec:e8}
+
+The corrected statistic generalizes directly to circuit level: detectors replace checks, the degree-$\le 2$ family becomes detectors plus pairwise XOR products (40 detectors, 820 features for the rotated $d{=}3$ Stim memory circuit used), and---because no closed-form moment engine exists at circuit level---$\theta_{\mathrm{model}}$ and $\Sigma_\theta$ are estimated from a large declared-model calibration sample ($2 \times 10^{5}$ shots), with predictions frozen from a disjoint-seed pilot before the scored run (Section~\ref{sec:methods-registration}). The scored drift scenario is a global $2\times$ error-rate increase; the baseline is the PyMatching logical-failure rate under the same detection framing.
+
+Result: the witness detects at $N_{\mathrm{det}} = 50$ vs.\ the baseline's $100$, clearing the pilot-frozen $2\times$ bar exactly---which, on the discrete grid $\{10, 20, 50, 100, 250, 500, 1000, 2000\}$, is the thinnest margin the grid can resolve, and this result must be read with that caveat attached, not as a comfortable win (\gRegPos, margin caveat mandatory). Null false-positive rates were 0\% for both sides (\gRegPos). We report one more thing the deviations log preserves: the pilot had suggested $\approx 5\times$; the scored run delivered $2\times$. The pilot number is a smaller-sample estimate and is not the headline.
+
+\begin{figure}[htbp]
+\centering
+\figplaceholder{F8 --- \textbf{E8 circuit-level detection fractions (global drift).} Data: \texttt{artifacts/e8\_default/cf7094d8/e8\_detection\_latency.csv}, columns \texttt{N, witness\_frac, baseline\_frac}. x-axis: N (log scale, grid $[10,20,50,100,250,500,1000,2000]$), y-axis: detection fraction $[0,1]$. Two series: \texttt{witness\_frac}, \texttt{baseline\_frac}. Mark the crossover points ($N{=}50$ for witness, $N{=}100$ for baseline) with vertical dotted lines or annotations. Caption is \emph{mandatory} to state the margin caveat in the same sentence as the result: the witness clears the registered $2\times$ bar exactly, at the thinnest margin this discrete grid can resolve---not a comfortable win. Do not let the caption imply a wide margin.}
+\caption{Circuit-level detection latency (placeholder; spec above).}
+\label{fig:e8}
+\end{figure}
+
+\subsection{Closing the loop: witness-triggered decoder recalibration (E9)}
+\label{sec:e9}
+
+The final experiment asks whether the witness's information is worth anything \emph{operationally}: does detecting-and-naming drift buy logical fidelity per unit of recalibration budget? On an epoch-discretized circuit-level timeline (72 detectors, 2628 degree-$\le 2$ features) with a heterogeneous drift injected partway through (one measurement-flip channel elevated $20\times$---a uniform global rescale was verified, before freezing anything, to give minimum-weight matching nothing to recalibrate, and the scenario was corrected and logged), five decoder policies run over 10 seeds: \emph{static} (never recalibrate; floor), \emph{oracle} (recalibrate at the true drift epoch from the true model; ceiling), \emph{budget-matched blind schedule}, \emph{high-budget blind schedule} ($\approx 5\times$ the events), and the \emph{witness-triggered} policy (recalibrate when the sequential witness fires, self-correcting on false alarms).
+
+The budget matching deserves one sentence of methodology, because it is where an experiment like this is easiest to rig accidentally: the matched schedule was forced, per seed, to spend \emph{exactly} the same number of recalibration events the witness policy spent on that seed (realized counts $[1,1,2,2,1,1,3,2,1,2]$, identical lists for both policies; mean 1.6), after an earlier draft that matched only the average was caught in internal review and corrected before the run froze.
+
+Results (post-drift logical error rate per epoch, mean over seeds; \gMeasured, with the two scored comparisons \gRegPos):
+\begin{itemize}
+\item Witness-triggered: $0.0930$, within $0.0014$ of the oracle ceiling's $0.0916$ (frozen bar: within $0.01$; \gRegPos). \item Against the genuinely budget-matched blind schedule: $0.0930$ vs.\ $0.1115$---the witness wins by $0.0185$ at \emph{identical} per-seed budgets (\gRegPos). \item The static floor sits at $0.1185$. \item The high-budget schedule ($\approx 5\times$ the events) scores $0.0946$, and its $0.0016$ deficit to the witness policy is smaller than the $\approx 0.002$ estimated paired standard error at 10 seeds---statistically unresolved, and we state so in the same breath as the number (\gMeasured, no bar). \item Pre-drift trigger rates, descriptive: witness 0.0 on the scored seeds; the schedules trigger by construction (0.5 and 1.0 of seeds recalibrating pre-drift at least once). \end{itemize}
+
+Two scope statements bound this result. First, the resolved claim is \emph{witness beats budget-matched blind scheduling}; whether it beats \emph{frequent} blind scheduling is unresolved at this sample size---spending $\approx 5\times$ the budget blindly closes most, not all, of the gap. Second, E9's recalibration deliberately searches only the one channel known by construction to drift: it demonstrates the \emph{timing and budget} value of the witness, not drift \emph{identification}, which is E7's naming step, tested separately. 
+
+\begin{figure}[htbp]
+\centering
+\figplaceholder{F9 --- \textbf{E9 closed-loop policy comparison: post-drift error and recalibration budget.} Data: \texttt{artifacts/e9\_default/f24323a0/e9\_post\_drift\_error.csv}, columns \texttt{policy, mean\_post\_drift\_error, mean\_recalibration\_events} (policy $\in$ \{static, oracle, witness, scheduled\_matched, scheduled\_frequent\}). Grouped bar chart or scatter, x-axis: policy in this fixed order: static, scheduled\_matched, scheduled\_frequent, witness, oracle (floor, the two blind schedules, the targeted method, ceiling---the eye reads left-to-right as ``worse to better''), primary y-axis: \texttt{mean\_post\_drift\_error}. Annotate each bar with its \texttt{mean\_recalibration\_events} (number above the bar, or a secondary faint marker), since the whole point is that witness and scheduled\_matched spend the \emph{same} budget (1.6 events each) but get different results, while scheduled\_frequent spends $\approx 5\times$ the budget. Caption must state the matched-budget fact explicitly (not just via annotation) and must include the P9.3 statistical-uncertainty caveat for the scheduled\_frequent-vs-witness comparison (gap 0.0016 smaller than the estimated paired SE $\approx 0.002$ at 10 seeds---do not caption this as ``witness still wins'').}
+\caption{Closed-loop policy comparison (placeholder; spec above).}
+\label{fig:e9}
+\end{figure}
+
+ \section{Related work}
+\label{sec:related}
+
+The QEC mechanics this paper touches are established, and we state the overlaps specifically rather than generically. Calibrating noise models from pairwise detector correlations---including the $p_{ij}$ estimator and the edge-weight formula $w_{ij} = \log((1-p_{ij})/p_{ij})$ that E9's recalibration procedure uses---is standard experimental practice, deployed at scale in Google's surface-code experiments~\cite{google2023suppressing}; detector statistics have likewise been used to detect and remove correlated/leakage errors~\cite{mcewen2021removing}. Reweighting a matching decoder's graph in response to drifting noise is the direct subject of prior work~\cite{dgr2023reweighting}, and sequential change detection via CUSUM is classical~\cite{page1954continuous}. Our simulation and decoding infrastructure is Stim~\cite{gidney2021stim} and PyMatching~\cite{higgott2022pymatching,higgott2025sparseblossom}, used as documented libraries. Relative to all of this, the present work claims no mechanism novelty. What it adds is orthogonal: a certificate framing in which coverage, existence, memory, and price are typed audit objects derived from one framework; an exact-computation layer (the Walsh--Hadamard syndrome-pmf inversion driving Section~\ref{sec:diagnosis}) used to \emph{explain} a detector-statistic method's failure regime in advance rather than observe it after the fact; and a pre-registration discipline under which the framework's predictions---including predictions of its own failure---were frozen and scored.
+
+On the SBT side, this paper consumes the corpus~\cite{sbt-f1,sbt-f3,sbt-xi,sbt-hol,sbt-pt,sbt-ng,sbt-cast,sbt-xor,sbt-spend,sbt-qm,sbt-hid,sbt-nk} as its specification and tests it; it does not extend the theory. The instantiated formulas are cited object-by-object in Appendix~\ref{app:formulas}.
+
+ \section{Discussion: what this does and does not establish}
+\label{sec:discussion}
+
+\paragraph{Established, on this prototype's evidence.} Four SBT primitives, forced into a real technical domain, each produced a concrete, machine-checkable audit object whose behavior on ground truth matched its intended semantics: a coverage residual that lands exactly on the enumerated optimal MMSE where theory says it must; an existence certificate whose typed statuses do genuine classification work, including refusing a trivialized decoder; an exact memory witness with a quantified, rational worst-case gap and a currentization step that names the hidden coordinate; and a protocol-trap control that operated correctly against our own hypothesis. The falsification discipline was real: 14 of 25 original predictions failed as frozen and none was tuned away. And the discipline was \emph{productive}: the framework's machinery diagnosed one of its own registered failures exactly, predicted in advance both where the corrected instrument would win and where it would keep losing, was right on both, and carried the correction to circuit level and a closed control loop with honest margins attached. 
+
+\paragraph{Not established.} No hardware evidence of any kind; everything is classical simulation of small codes. No claim that $\Xi \succ 0$ precludes a nonlinear decoder. No claim that the corrected witness beats failure-rate monitoring in general---the advantage is scenario-dependent, and the original E2 scenario is our own registered counterexample. No claim that witness-triggering beats \emph{frequent} blind recalibration (unresolved at this sample size); the resolved comparison is budget-matched. No positive evidence for the pricing primitive, whose registered predictions all failed; and no evidence at all regarding transport/functoriality, which was never built. Nothing here validates SBT's broader ambitions in other domains: one domain, honestly instrumented, is one data point.
+
+\paragraph{What the exercise suggests about frameworks for emergence.} The pattern this prototype exhibits---primitives that compile to computable certificates, nulls that can fire against the theory's own favorite conclusions, predictions frozen before contact with data, and a repair loop that runs \emph{inside} the framework---is, we think, the appropriate evidentiary standard for any theory of emergence that wants to be more than vocabulary. SBT met that standard here in four of six attempts, failed it visibly in one, and abstained in one. Whether the framework's primitives continue to earn their keep is now an empirical question with a template: pick a domain with a packaging structure, instantiate, register, run, and report the failures at the same volume as the wins.
+
+ \section{Reproducibility statement}
+\label{sec:repro}
+
+Everything reported above regenerates from the public repository. The known-good environment (exact versions all reported numbers were measured against): Python 3.10.12, numpy 2.2.6, scipy 1.15.3, stim 1.16.0, pymatching 2.4.0, matplotlib 3.10.8, pytest 9.0.2. Setup and verification:
+
+\begin{verbatim}
+pip install -e .
+pytest -q                      # 149 tests pass
+python -m sbqos.reproduce_all  # regenerates all nine experiments, verifies manifests
+python -m sbqos.reproduce_all  # run twice: results are byte-identical
+\end{verbatim}
+
+The full suite passes 149 tests (127 from the original build, 22 from the follow-up); the theorem-anchoring tests are \texttt{test\_thm\_chain\_rule\_rep5\_seeded\_splits\_exact}, \texttt{test\_thm\_top\_ladder\_rep3\_mmse\_matches\_bruteforce\_exact}, and \texttt{test\_thm\_B5\_lumpable\_zero\_deficit\_for\_syndrome\_lens}. \texttt{reproduce\_all} was run twice in a row over all nine experiments with all manifests verifying and byte-identical hashes (wall clock $\approx$ 13--14 minutes per run on the reference machine); each experiment directory contains its frozen configuration, results, SHA-256 manifest, environment record, and every figure's exact data as CSV. The nine manifest root hashes are recorded in the repository report so a reader can verify they regenerated the same evidence, not merely similar evidence. 
+
+ 
+\appendix
+\section{Notation}
+\label{app:notation}
+
+Paper symbols and their meanings, grouped by primitive. The repository uses code-level names documented alongside each symbol in the project's notation file; the paper uses only the symbols below.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{l p{10.5cm}}
+\toprule
+Symbol & Meaning \\
+\midrule
+\multicolumn{2}{l}{\emph{Coverage audit}} \\
+$K_{LL}, K_{DL}, K_{DD}$ & covariance blocks of scheduled-check / logical $\pm1$ observables \\
+$\Xires$ & adequacy residual: logical covariance invisible to the linear span of $L$ \\
+$A^{*}$ & coverage-optimal linear map, $A^{*} = K_{DL}K_{LL}^{+}$ \\
+$\Delta_M$ & discharge: exact marginal residual value of adding candidate family $M$ \\
+$\lambda_{\max}(\Xi - \Omega),\; z$ & blind-spot witness eigenvalue / direction; $\Omega$ = calibrated null allowance \\
+$L^{(2)}$ & degree-$\le2$ family: native checks plus all pairwise XOR products \\
+$\hat\theta, \theta_{\mathrm{model}}, \Sigma_\theta$ & empirical / exact mean vector of $L^{(2)}$ and its estimator covariance \\
+$T$ & corrected quadratic drift statistic, Eq.~\eqref{eq:w2b} \\
+$N_{\mathrm{det}}$ & smallest sample size with detection in $\ge 9/10$ seeds \\
+\midrule
+\multicolumn{2}{l}{\emph{Existence audit}} \\
+$\delta, \varepsilon$ & idempotence defect; retention error (theorem: $\delta \le \varepsilon$) \\
+$CD_\tau$ & closure deficit, $I(X_t; Y_{t+\tau} \mid Y_t)$ \\
+$RM_\tau$ & route mismatch (evolve-then-package vs.\ package-then-evolve) \\
+$\Delta_{\mathrm{pred}}$ & out-of-sample predictive gap (stream proxy for $CD$) \\
+$\mu$ & multiplicity: number of stable logical prototypes \\
+\midrule
+\multicolumn{2}{l}{\emph{Memory audit}} \\
+$Q, M$ & current / predictive quotients (class counts) \\
+MaxFiber & largest number of predictive classes inside one current class \\
+$\Delta^{\max}$ & exact worst-case predictive gap (rational) \\
+\midrule
+\multicolumn{2}{l}{\emph{Pricing audit}} \\
+$V(b), \lambda(b), b^{*}$ & value curve over budget; shadow price $V(b{+}1)-V(b)$; slack point \\
+\midrule
+\multicolumn{2}{l}{\emph{Circuit level / closed loop}} \\
+$p_0, p_1$ & declared / drifted error probability \\
+$d, R$ & code distance, circuit rounds \\
+$g_t, h$ & CUSUM statistic and alarm threshold \\
+$B$ & recalibration budget (number of recalibration events) \\
+\bottomrule
+\end{tabular}
+\caption{Notation.}
+\label{tab:notation}
+\end{table}
+
+ \section{The complete prediction ledger}
+\label{app:predictions}
+
+Every registered prediction, its verdict against its frozen bar, and its artifact. Original build (E1--E6): 25 predictions, 14 \gRegNeg. Follow-up (E7--E9): 9 scored predictions plus 3 declared-descriptive reports. Artifact paths abbreviate \texttt{artifacts/eN\_*/\dots/results.json} as \texttt{eN}.
+
+\begin{table}[htbp]
+\centering\footnotesize
+\begin{tabular}{l p{9.2cm} l l}
+\toprule
+id & short statement & verdict & artifact \\
+\midrule
+P1.1 & REP full-check residual bound and distance suppression & \gRegNeg & e1 \\ P1.2 & single-check ablations strictly increase residual; REP(5) end/middle distinction & \gRegPos & e1 \\ P1.3 & witness overlap threshold and directional naming & \gRegNeg & e1 \\ P1.4 & duplicated-check saturation gives zero discharge & \gRegPos & e1 \\ P2.1 & witnesses detect earlier than matched baseline & \gRegNeg & e2 \\ P2.2 & witness direction names the injected logical direction & \gRegNeg & e2 \\ P2.3 & null false-positive rate at $N{=}4000$ at most 2\% & \gRegPos & e2 \\ P2.4 & N5 drift-witness trace Spearman $\rho \ge 0.9$ & \gRegNeg & e2 \\ P3.1 & greedy residual no worse than tested baselines at every budget & \gRegPos & e3 \\ P3.2 & degree ladder monotone; top rung equals exact MMSE & \gRegPos & e3 \\ P3.3 & duplicate candidates have zero marginal value & \gRegPos & e3 \\ P3.4 & greedy stops before exhausting duplicate-containing list & \gRegPos & e3 \\ P4.1 & baseline $CD$ near zero, multiplicity 2, certified, $\delta$ monotone & \gRegNeg & e4 \\ P4.2 & N4 non-closed while per-mode models have zero deficit & \gRegNeg & e4 \\ P4.3 & N5 finite-horizon $RM \ge 10\times$ baseline & \gRegNeg & e4 \\ P4.4 & broken-decoder trivialization guard & \gRegPos & e4 \\ P4.5 & Pearson $r(CD, \Delta_{\mathrm{pred}}) \ge 0.9$ & \gRegPos & e4 \\ P5.1 & memoryless package: no witnesses, no payoff gap & \gRegPos & e5 \\ P5.2 & N4 witness and MaxFiber nontrivial with positive bounded payoff & \gRegNeg & e5 \\ P5.3 & protocol-trap witnesses vanish after internalization & \gRegNeg & e5 \\ P5.4 & mode-bit currentization passes at cardinality 1; pure checks do not & \gRegPos & e5 \\ P6.1 & $\lambda$ nonincreasing after its maximum & \gRegNeg & e6 \\ P6.2 & slack point before the examined budget maximum & \gRegNeg & e6 \\ P6.3 & consequence test separates $b^{*}{-}1$ from $b^{*}$ by $> 2$ SE & \gRegNeg & e6 \\ P6.4 & proxy costs strictly worse at $\ge 80\%$ of budget points & \gRegNeg & e6 \\ \midrule
+P7.1 & recalibrated own-null threshold $\le 10\%$ of borrowed threshold & \gRegNeg & e7 \\ P7.2 & off-support $(4,8)$: best corrected rung $\ge 10\times$ earlier than baseline & \gRegPos & e7 \\ P7.3 & original $(0,3)$: \emph{predicted} continued failure of every corrected rung & \gRegPos & e7 \\ P7.4 & near-parity $(2,5)$: descriptive, no bar & \gMeasured & e7 \\ P7.5 & off-support naming: $\ge 8/10$ seeds name a true-pair qubit, overlap $\ge 0.6$ & \gRegNeg & e7 \\ P7.6 & null false-positive rate $\le 2\%$ for every rung & \gRegNeg & e7 \\ P7.7 & sequential vs.\ fixed-window reported symmetrically; no bar & \gMeasured & e7 \\ P8.1 & circuit-level witness detects $\ge 2\times$ earlier than baseline & \gRegPos & e8 \\ P8.2 & circuit-level null false-positive rate $\le 2\%$ & \gRegPos & e8 \\ P8.cost & cost/scaling report; descriptive, no bar & \gMeasured & e8 \\ P9.1 & witness-triggered control within 0.01 of oracle & \gRegPos & e9 \\ P9.2 & witness beats per-seed budget-matched blind schedule & \gRegPos & e9 \\ P9.3 & high-budget schedule: descriptive, no bar & \gMeasured & e9 \\ P9.4 & pre-drift trigger rates: descriptive, no bar & \gMeasured & e9 \\ \bottomrule
+\end{tabular}
+\caption{The complete prediction ledger. Verdicts are against bars frozen before implementation (E1--E7) or frozen from a disjoint-seed pilot before the scored run (E8--E9).}
+\label{tab:ledger}
+\end{table}
+
+ \section{Null-battery ledger}
+\label{app:nulls}
+
+The nine standing controls and their outcomes.
+
+\begin{enumerate}
+\item \emph{Protocol trap / schedule internalization} (E5c). Implemented. Outcome is a negative result for the artifact hypothesis, not a positive trap catch: the registered expectation was that internalization would dissolve the frozen schedule's witnesses; instead internalization preserves all 4 witnesses and the package classifies \texttt{genuine\_memory\_after\_internalization}. The control mechanism ran correctly; it is the ``this is an artifact'' prediction that failed as registered. \item \emph{Same-family saturation} (E1 P1.4, E3 P3.3, unit tests). Duplicate-check discharge is exactly zero; duplicate candidates have zero marginal value when passed over. \item \emph{Null-model calibration} (E2 P2.3). W1 false-positive rate 0.0, W2 0.02 at $N{=}4000$; \gRegPos. The follow-up recalibrated every new rung on its own null (E7 P7.6, E8 P8.2), with one rung failing its 2\% bar at 6\% as reported in Section~\ref{sec:e7}. \item \emph{Proxy failure} (E6 P6.4). Implemented; proxy strict-worse fraction 0.369 against the registered 0.8 bar---failed honestly. \item \emph{Slack regime} (E6 P6.2/P6.3, E3 P3.4). E3's selector stops before duplicate exhaustion; E6's frozen tolerance was too strict and $b^{*} = b_{\max}$. \item \emph{No silent caps} (E3 SURF(5), currentization). SURF(5) logs 62 kept adjacent pairs and 214 dropped out of 276 total degree-2 pairs; the currentization candidate list is declared and bounded. \item \emph{Trivialization guard} (E4 P4.4). The broken decoder yields $\delta = 0$, multiplicity 1, status \texttt{trivialized}; \gRegPos. \item \emph{Same-support discipline} (E5, quotient machinery; E7's scenario grid). Declared history catalogs and scenario grids, no post-hoc edits.
+\item \emph{Memory-only comparator} (E5 payoff). An agent given only the memory coordinate does not reproduce a positive machine gap---consistently, since the accuracy-scored machine gap is itself 0.0 at frozen defaults. \end{enumerate}
+
+ \section{Deviations log (summary)}
+\label{app:deviations}
+
+The repository's deviations file records every divergence between frozen design and running code; 8 entries total, summarized here in 2--3 sentences each. Dates and full reasoning are in the file itself. 
+
+\begin{enumerate}
+\item \emph{Finite-horizon route mismatch for N5} (E4). The latching model is absorbing, so the stationary-weight form of $RM$ degenerates; a declared finite-horizon variant was used and the guard documented. \item \emph{Predictive-gap stream length} (E4). The stream proxy's fixed length can wash out fast-absorbing finite-horizon effects; noted as a caveat on $\Delta_{\mathrm{pred}}$, not silently retuned. \item \emph{Packaged belief automaton} (E5). Exact transport closure is impossible on non-closed mixing kernels (a mathematical fact, verified, not an implementation failure); the minimal decoder machine is built on an exact packaged-belief construction instead, with the change declared. \item \emph{Bounded-weight cross-check estimator} (E1; post-close audit). The cross-check originally used an uncentered estimator instead of the affine $A^{*}$ form the decoder actually is; corrected before any follow-up work began, giving REP(3) 4/4 and REP(5) 14/16 with two genuine linear-class failures. This entry was added to the ledger after an external review found the fix documented in prose but missing here. \item \emph{Payoff v2} (E5). A post-registration \gMeasured{} NLL study, separately labeled; alters no frozen verdict. \item \emph{E7 null-calibration granularity}. Own-null thresholds calibrated once per sample size $N$ rather than once per $(N, \mathrm{seed})$ cell; declared, applied identically to witness and baseline sides. \item \emph{E8 scope simplification and pilot-then-freeze}. Distance 3 only, one global drift scenario, full pair family, no sequential rung; pilot seed range and resulting frozen bars logged verbatim. \item \emph{E9 corrections before freezing}. The drift scenario was changed after verifying that a uniform rescale gives matching nothing to recalibrate; the timeline was epoch-discretized; the witness policy needed two pilot-driven fixes (a design that could permanently blind itself on a false alarm, then a noisy-reference bug in the self-correcting version); and the budget-matched schedule was corrected to exact per-seed event matching after internal review. All logged before the scored run froze. \end{enumerate}
+
+ \section{Formula summary}
+\label{app:formulas}
+
+The instantiated objects, with their SBT sources. All formulas below are as implemented; the design documents in the repository are the normative statement.
+
+\paragraph{Observables and moments~\cite{sbt-xi,sbt-f3}.} For $a, e \in \mathbb{F}_2^{2n}$ with symplectic pairing $\langle a, e\rangle$: $\sigma_a(e) = (-1)^{\langle a,e\rangle}$, with $\sigma_a \sigma_b = \sigma_{a \oplus b}$. For independent Pauli noise, $\mathbb{E}[\sigma_a] = \prod_i m_i(a)$ with per-qubit rational factors $m_i$; all covariance blocks follow in closed form. Means of XOR-combinations of a check family are the Walsh--Hadamard coefficients of its joint syndrome pmf, which is therefore exactly recoverable by inversion.
+
+\paragraph{Adequacy residual and chain rule~\cite{sbt-xi}.}
+$\Xires = K_{DD} - K_{DL}K_{LL}^{+}K_{LD}$; \quad $A^{*} = K_{DL}K_{LL}^{+}$;
+\[
+\mathrm{discharge}(M \mid L, D) = K_{DM|L}\,(K_{MM|L})^{+}\,K_{DM|L}^{\top}, \qquad
+\Xi(D \mid L \cup M) = \Xires - \mathrm{discharge}(M \mid L, D),
+\]
+with the conditional blocks $K_{\cdot\cdot|L}$ the usual Schur complements. Blind-spot witness: top eigenpair of $\Xi - \Omega$. Saturation: $\mathrm{discharge} = 0$ exactly for a duplicated probe.
+
+\paragraph{Existence certificate~\cite{sbt-f1,sbt-f3,sbt-xor,sbt-ng,sbt-cast}.}
+$E_{\tau,f} = U_f \circ Q_f \circ P^\tau$;\quad
+$\delta = \max_z \tfrac12 \|(E^2 - E)(\delta_z)\|_1$;\quad
+$\varepsilon = \max_x \|Q_f(u_x P^{\tau}) - \delta_x\|_{TV}$;\quad theorem $\delta \le \varepsilon$.
+$CD_\tau = I(X_t; Y_{t+\tau} \mid Y_t) = \sum_x \pi(x)\, D_{\mathrm{KL}}(p_x^{(\tau)} \,\|\, \bar p_{\Pi(x)}^{(\tau)})$.
+$RM_\tau$: stationary-weighted $\ell_1$ spread of micro transition profiles within each macro fiber. Status $\in$ \{\texttt{certified}, \texttt{degrading}, \texttt{non\_closed}, \texttt{trivialized}\} by frozen thresholds with first-match priority \texttt{trivialized} $\succ$ \texttt{non\_closed} $\succ$ \texttt{degrading} $\succ$ \texttt{certified}.
+
+\paragraph{Predictive quotients~\cite{sbt-hol}.} Histories partitioned by exact equality of current signatures (probabilities of all declared current events) and of future signatures (probabilities of all declared (continuation, later-event) pairs) give $Q$ and $M$; witnesses are pairs equal in the former, distinct in the latter; $\Delta^{\max}$ is the largest entrywise future-observation difference over witness pairs (exact rational). Currentization: smallest declared candidate set whose addition gives witness count 0 and MaxFiber 1. Protocol trap~\cite{sbt-pt}: internalize the schedule as an autonomous state coordinate (random-scan lift) and recompute.
+
+\paragraph{Pricing~\cite{sbt-spend}.} $V(b) = \max_{S:\, \mathrm{cost}(S) \le b} [\operatorname{tr}\Xi(D|L_0) - \operatorname{tr}\Xi(D \mid L_0 \cup S)]$ (exact by enumeration on REP(3)/REP(5) scales); $\lambda(b) = V(b{+}1) - V(b)$; slack point $b^{*}$ = smallest $b$ with $\lambda \le \lambda_{\mathrm{tol}}$ thereafter; proxy null = seeded cost permutation.
+
+\paragraph{Corrected drift witness (Section~\ref{sec:e7}).} $T = (\hat\theta - \theta_{\mathrm{model}})^{\top} \Sigma_\theta^{+} (\hat\theta - \theta_{\mathrm{model}})$ over the degree-$\le2$ family; naming by whitened matched filter against nine exact per-qubit drift signatures; sequential wrapper $g_t = \max(0,\, g_{t-1} + \mathrm{increment}_t)$ with null-simulated threshold~\cite{page1954continuous}, applied identically to witness and baseline.
+
+ 
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}

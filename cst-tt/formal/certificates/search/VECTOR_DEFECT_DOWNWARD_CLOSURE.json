@@ -1,0 +1,7 @@
+{
+  "accepted-upper-premise-pairs": 6561,
+  "counting_argument": "hard coordinates forced to (0,0); soft coordinates have three ordered binary pairs",
+  "ordered_pairs_examined": 531441,
+  "search_id": "VECTOR_DEFECT_DOWNWARD_CLOSURE",
+  "violations": 0
+}

@@ -1,0 +1,33 @@
+{
+  "audit": {
+    "current_collision_present": true,
+    "current_only_predictor_exists": false,
+    "current_only_predictor_impossible": true,
+    "failed_obligations": [],
+    "flat_alternative": false,
+    "memory_or_flatness_satisfied": true,
+    "memory_repair_valid": true,
+    "predictive_divergence_present": true,
+    "predictor_functions_examined": 2,
+    "refined_predictor_correct": true,
+    "refined_predictor_total": true,
+    "route_memory_separates_collision": true
+  },
+  "certificate_id": "MEM-POS-01",
+  "checker": {
+    "function": "audit_memory_repair",
+    "module": "cst_tt.transport",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite predictive-representation repair only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_ref": "models/memory/MEM-POS-01.model.json",
+  "model_sha256": "789f2d5942e9fc93024c98fef4163a2d3acfdab8efdddf43264c01a7624b3467",
+  "result_status": "checked-finite-memory-repair-certificate",
+  "schema_version": "CST-TT-03",
+  "theorem_ids": [
+    "TTN-04"
+  ]
+}

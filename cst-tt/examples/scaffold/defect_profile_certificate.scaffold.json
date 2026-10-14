@@ -1,0 +1,8 @@
+{
+  "audit": {},
+  "certificate_id": "DEF-SCAFFOLD",
+  "model_ref": "models/scaffold/defect-profile.json",
+  "model_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "result_status": "scaffold-only",
+  "schema_version": "CST-TT-07A"
+}

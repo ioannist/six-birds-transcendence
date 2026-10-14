@@ -1,0 +1,72 @@
+{
+  "$id": "https://six-birds.local/cst-tt/schemas/corridor_control_certificate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "audit": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "certificate_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "checker": {
+      "additionalProperties": true,
+      "type": "object"
+    },
+    "control_family": {
+      "enum": [
+        "strict-corridor",
+        "direct-successor",
+        "composition-interface"
+      ]
+    },
+    "control_passed": {
+      "type": "boolean"
+    },
+    "expected_failed_obligation": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "model_ref": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "model_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "observed_failed_obligations": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "result_status": {
+      "enum": [
+        "scaffold-only",
+        "checked-finite-negative-control"
+      ]
+    },
+    "schema_version": {
+      "const": "CST-TT-04"
+    }
+  },
+  "required": [
+    "schema_version",
+    "certificate_id",
+    "control_family",
+    "model_ref",
+    "model_sha256",
+    "result_status",
+    "expected_failed_obligation",
+    "observed_failed_obligations",
+    "control_passed",
+    "audit",
+    "checker"
+  ],
+  "title": "Corridor or direct-successor negative control certificate",
+  "type": "object"
+}

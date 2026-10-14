@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_global_package_composition_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_global_package_composition_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_global_package_composition_transcription.log",
+  "log_sha256": "bf4d9849f9155ada919de180473beccf09f513cf06f626b4d522dd1a220f466c",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:31+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted prefix scope drift\nCAUGHT planted selected arrow drift\nCAUGHT planted shadow scope drift\nPASS cover-selected raw composition: typed index/cover/arrow data, actual outputs, no fallback; all-partial POS04 target/package adapters and direct controls kernel-checked\nScope: closed structural package pipeline at existing POS04 clause grades; full Temporal-FIACH composition remains open"
+}

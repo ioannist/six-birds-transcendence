@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/selftest_validate_lean.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "selftest_validate_lean",
+  "kind": "selftest",
+  "log_path": "lean/.validate-logs/W19a/selftest_validate_lean.log",
+  "log_sha256": "1dd49ac9ca86da894f7ae5b272365e3f27f3941384eed054e893d34b13685d4c",
+  "metrics": {
+    "passed": 17
+  },
+  "recorded_at": "2026-10-13T11:58:46+00:00",
+  "status": "pass",
+  "summary": "PASS sorry: lean/CSTTT/Core/Finite.lean:42: theorem PlantedSorry : True := by sorry\nPASS custom axiom: lean/CSTTT/Core/Finite.lean:42: axiom planted_custom_axiom : False\nPASS def True: lean/CSTTT/Core/Finite.lean:42: def PlantedConstant : Prop := True\nPASS constant function: PlantedConstFunA, PlantedConstFunB, PlantedConstFunC: high-confidence; ignored-input leads=0\nPASS missing registry name: unresolved declaration: CSTTT.PackageTheory.thisNameDoesNotExist\nPASS Prop definition as evidence: TTH-01 theorem=0 statement-only=1; row TTH-01 has statement-only definitions but no theorem-kind or constructive definition evidence\nPASS transitive untrusted axiom: #print axioms CSTTT.PlantedTransitive = ['CSTTT.planted_transitive_axiom']; untrusted axioms in CSTTT.PlantedTransitive: CSTTT.planted_transitive_axiom\nPASS exact_statement inventory drift: inventory_match=False; generated inventory disagrees with CST-TT-09_THEOREM_STATUS.csv\nPASS status_09 inventory drift: inventory_match=False; generated inventory disagrees with CST-TT-09_THEOREM_STATUS.csv\nPASS ceiling_09 inventory drift: inventory_match=False; generated inventory disagrees with CST-TT-09_THEOREM_STATUS.csv\nPASS sorry after inline comment: lean/CSTTT/Core/Finite.lean:42: /- inline -/ theorem PlantedInlineSorry : True := by sorry\nPASS mis-attributed probe block: #check, axioms, and kind named another declaration\nPASS incomplete probe block: missing end marker rejected\nPASS wrapped #print axioms: attributed and parsed across continuation lines\nPASS nested and inline comments: comment tokens removed, following sorry retained\nPASS direct markers: actual declaration, kind and trusted axiom attribution\nPASS direct markers at scale: all 12000 delimiters match without interpreter recursion"
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_raw_corridor_sequence_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_raw_corridor_sequence_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_raw_corridor_sequence_transcription.log",
+  "log_sha256": "c6c3ae2d8dc1f383fc9e42a9eaea32f016bddf1af0f430d43f537e6120a416c2",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:43+00:00",
+  "status": "pass",
+  "summary": "CAUGHT planted prior path residue drift\nCAUGHT planted staged context reuse drift\nCAUGHT planted predictive seed drift\nPASS actual heterogeneous raw corridor chain, full declared raw parameter observations, staged assignment seam, direct missing/clock/funding/loop/context-reuse controls; five planted drifts caught\nScope: corridor geometry and raw parent/adjacency construction; supported execution, runtime seed coherence, funded runtime lineage and full Temporal-FIACH remain"
+}

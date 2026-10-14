@@ -1,0 +1,54 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R",
+    "S-L",
+    "A"
+  ],
+  "conclusion_failure_checks": {
+    "strict_overlap_corridor_absent": true
+  },
+  "countermodel_id": "CM-02",
+  "derived_facts": {
+    "detached": true,
+    "kill_criterion_K_FIACH_04_not_triggered": true
+  },
+  "family": "detached-copy",
+  "model": {
+    "carrier_count": 2,
+    "copy_edges": 1,
+    "exact_temporal_copy": true,
+    "mixed_stage_count": 0,
+    "source_and_target_endpoints_declared": true,
+    "source_derived": true,
+    "source_target_distinct": true,
+    "stage_count": 2,
+    "strict_overlap_corridor": false,
+    "support_pattern": [
+      "source",
+      "target"
+    ],
+    "target_package_pass": true,
+    "target_post_copy_autonomous": true
+  },
+  "name": "Detached exact temporal copy",
+  "premise_checks": {
+    "distinct_carriers": true,
+    "exact_temporal_endpoint_match": true,
+    "source_and_target_endpoints_declared": true,
+    "source_derived_copy": true,
+    "target_autonomous_after_copy": true,
+    "target_package_pass": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "Exact endpoint, package-like, and autonomy-like success do not imply a strict overlap corridor.",
+  "size_measure": "(carrier_count, stage_count, copy_edge_count, mixed_stage_count)",
+  "size_vector": [
+    2,
+    2,
+    1,
+    0
+  ],
+  "target_no_go_id": "TTN-01",
+  "toy_model_ref": "TTM-02"
+}

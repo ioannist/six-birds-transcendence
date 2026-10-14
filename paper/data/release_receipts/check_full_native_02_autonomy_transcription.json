@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_full_native_02_autonomy_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_full_native_02_autonomy_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_full_native_02_autonomy_transcription.log",
+  "log_sha256": "50a984c5c5b6040650f644ff79a71f59eda127c3f6e0481fc3021b4d8640b5ae",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:07+00:00",
+  "status": "pass",
+  "summary": "G31b transcription passed: 11 credited endpoints; 88 maintenance, 11 probe and 88 absent successors;\nSelector permutation regression passed: both three-key acquisitions + all16 positive maintenance successors.\n9 interleaved foreign responses; 8 cold + 64 stronger-fork newborns; 256 ROM/supply/charge factors; frozen pins unchanged."
+}

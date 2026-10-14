@@ -1,0 +1,196 @@
+{
+  "schema": "csttt-native-runtime-composition-model-v1",
+  "grade": "candidate full two-hop raw runtime; no acceptance or TTH-07 promotion yet",
+  "declaration_phase": "raw instructions frozen before their evaluation",
+  "factor_domain": "all eight triples (phase Bool, visible Bool, hidden Bool)",
+  "factor_profile": "positions=phase bit; hazard=visible bit; actionfalse self; actiontrue toggles phase iff visible bit true",
+  "profile_depth": 1,
+  "profile_trajectory": [
+    2,
+    4,
+    4
+  ],
+  "split": [
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      false
+    ]
+  ],
+  "coarse_pair": [
+    [
+      false,
+      false,
+      false
+    ],
+    [
+      false,
+      false,
+      true
+    ]
+  ],
+  "disturbances": [
+    "unit"
+  ],
+  "actions": [
+    false,
+    true
+  ],
+  "outcomes": "all eight internal factors including every zero-weight branch",
+  "rows": "[(self,1)] at safe false action; [(probe(self),1)] at true action; probe toggles phase iff visible bit true",
+  "updater": "factor:=actual chosen outcome; counter:=counter+1; ticks:=ticks+1; retain residue, funding and carrier mode",
+  "histories": "round0 [h,h], round1 [h,h,h,h], round2 eight copies of h; safe false source word is raw consecutive self edges",
+  "receive": "switch actual local source mode to target, duplicate actual incoming history residue exactly as primitive publication; preserve current factor, counter, ticks and path",
+  "arrival_response": "unit disturbance, safe false action",
+  "episode": "first raw episode from actual start factor executes one assigned source edge/receive/post-exit and adds2; second executes three assigned source edges/receive/post-exit and adds4; outputs preserve actual factor and duplicate incoming residue",
+  "carriers": [
+    17,
+    55,
+    101
+  ],
+  "clock_seams": [
+    0,
+    2,
+    6
+  ],
+  "initializers": "first counter/ticks0, actual second counter/ticks2; each actual history initializes its factor and decoded raw tuple",
+  "physical_boundary": "actual first target mode -> actual second source mode; factor/counter/ticks preserved",
+  "future_middle_map": "first target retrospective root0 to next source root2; derive from actual first episode after decoding history half; prove on its whole zero-weight-inclusive closure; physical actual entry2->initializer2 remains separate",
+  "local_owner_embeddings": "first Boolfalse->17,Booltrue->55; second Booltrue->55,Boolfalse->101; first sourcefalse/targettrue, second sourcetrue/targetfalse; both injective",
+  "ledger": {
+    "initial": 1,
+    "cost": 1,
+    "recharge": 1
+  },
+  "resources": "target-owned retained account with positive balance1; source/external role accounts withdrawn",
+  "required_remaining": [
+    "structural closed source/final packages",
+    "all raw primitive/runtime/endpoint/receiver coherence",
+    "actual funded route/seed/clock lineage",
+    "whole-closure episode bridge",
+    "all-partial namespace and staged assignment binding",
+    "full package-qualified nominal final autonomy (operational resource component and direct recharge/presence controls constructed)"
+  ],
+  "controls": [
+    "wrong next initializer",
+    "changed receive owner",
+    "zero source weight",
+    "missing consumed factor/receiver/resource inputs",
+    "broken clock seam",
+    "source support erasure",
+    "unfunded final recharge",
+    "hidden-bit-reset episode breaks zero-weight successor commutation"
+  ],
+  "rejected_four_state_scout": {
+    "factor_domain": [
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        true
+      ]
+    ],
+    "positions": 0,
+    "rows": "[(self,1)]",
+    "profile_trajectory_claim": [
+      1,
+      2,
+      2
+    ],
+    "failure": "actual recursive second profile has one class; direct kernel non-RecursiveProfile retained in FourStateScout.profile_not_recursive"
+  },
+  "publication": "flip local owner, append actual history to itself; resource, rows, receiver and other raw fields retained; restore uses raw owner flip and history half",
+  "expected_actual_times": {
+    "first_init": 0,
+    "first_source_terminal": 1,
+    "first_entry": 2,
+    "next_init": 2,
+    "next_source_terminal": 5,
+    "next_entry": 6
+  },
+  "source_primitive_memory": "Published Input pair=(transformed actual current primitive Input, original current primitive Input); source views use copied primitive source fields, target views use current fields. Primitive reference class and probability tables are copied and independently checked against derived profiles. No derived profile/M classifier, run, future, readout object or acceptance verdict is stored. Target-only interventions retain source primitive Input exactly.",
+  "rejected_linear_clock_scout": {
+    "second_clock": [
+      2,
+      4,
+      6
+    ],
+    "actual_reception": 5,
+    "failure": "ClockScout.old_linear_clock_rejected refutes actual mixed-reception clock agreement; outer seam alone insufficient"
+  },
+  "physical_clocks": {
+    "first": [
+      0,
+      1,
+      2
+    ],
+    "second": [
+      2,
+      5,
+      6
+    ],
+    "construction": "start, start+(2*stride-1), start+2*stride; native stride1 then2; mixed stage bound to actual reception, exit to actual post-exit entry"
+  },
+  "audit_word_obligation": "Actual source terminal and mixed reception use source word length1/3; actual target exit uses word plus post-exit length2/4. Existing identical-word ExecutionBridge.Valid cannot silently certify the latter; retain heterogeneous episode interface and prove actual clock/prefix binding.",
+  "old_parent_interface_obstructions": [
+    "PresentationCoherence.Pass equates physical clock to finite stages.idxOf; second absolute clock starts2 and cannot pass old equality.",
+    "AcquisitionEndpoint.atRoute requires identical source/target history tuple; actual native reception/publication maps length2->4->8.",
+    "NominalHandoff.Laws requires static source presence for EVERY hypothetical mode; actual native run has source-present before receive and source-absent after."
+  ],
+  "stronger_return_obligation": "Keep old exact statements as special cases. Explicit heterogeneous episode interface must bind finite profile index separately to actual physical event clock, compare history via actual raw reception/publication, and prove nominal resource laws over every actual post-withdrawal continuation using a target-mode closure invariant; no silent reuse of old full parent gate.",
+  "physical_attribution_instructions": "Decode raw routes/histories, execute supported sourceTerminal before reception, apply actual receiver, then positive post-exit step. Eventfalse is attributed to initializer->pre-receive terminal, eventtrue to post-receive arrival->entry. Reception preserves clock and changes owner; stored path remains recipe, while executed terminal/reception/exit establish realization.",
+  "objecthood_scout_before_evaluation": {
+    "profile": "same actual eight-factor raw positions/hazards/rows",
+    "policy": "actual canonical source policyfalse, yielding identity kernel",
+    "prototypes": [
+      [
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        false
+      ],
+      [
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        false
+      ]
+    ],
+    "rowScale": 1,
+    "tau": 1,
+    "epsilon": "1/2",
+    "core": "all factors",
+    "anchor": [
+      false,
+      false,
+      false
+    ],
+    "operations": "arbitrary primitive Gaussian row-operation list",
+    "published": "primitive identity P and four class indicator C / half-weight fiber U",
+    "hypothesis_to_test": "actual E has uniform fixed point; Gate uniqueness would force computed pi uniform; actual ObjecthoodRules.Accept rejects every operation list",
+    "stronger_next_candidate": "Keep supported episode policyfalse; add a declared objecthood probe policy and a non-bijective probe kernel giving genuine nonuniformity. Freeze/evaluate separately; do not claim existing safe-policy C1."
+  }
+}

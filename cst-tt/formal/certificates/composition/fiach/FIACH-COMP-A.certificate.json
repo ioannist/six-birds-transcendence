@@ -1,0 +1,99 @@
+{
+  "audit": {
+    "aggregate_valid": true,
+    "autonomy_lane": true,
+    "autonomy_package_contract_linked": true,
+    "autonomy_valid": true,
+    "certificate_id": "FIACH-COMP-A",
+    "component_hashes_valid": true,
+    "component_statuses": {
+      "A": true,
+      "S-L": true,
+      "S-R": true,
+      "S-T": true
+    },
+    "corridor_autonomy_handoff_linked": true,
+    "corridor_package_temporal_frontier_linked": true,
+    "corridor_valid": true,
+    "failed_obligations": [],
+    "ontology_absent": true,
+    "recognition_separate": true,
+    "route_status_linked": true,
+    "source_endpoints_linked": true,
+    "source_package_valid": true,
+    "source_target_distinct": true,
+    "staged_models_linked": true,
+    "staged_preservation_valid": true,
+    "structural_lineage_lane": true,
+    "structural_realization_lane": true,
+    "structural_transport_lane": true,
+    "target_endpoints_linked": true,
+    "target_package_valid": true
+  },
+  "certificate_id": "FIACH-COMP-A",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_temporal_fiach",
+    "module": "cst_tt.fiach",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "exact finite structural precursor only; no consciousness, phenomenal-continuity, survival, or identity conclusion",
+  "component_refs": {
+    "autonomy": "formal/certificates/composition/autonomy/AUT-COMP-A.certificate.json",
+    "corridor": "formal/certificates/corridors/COR-POS-02A.certificate.json",
+    "source_package": "formal/certificates/composition/packages/PKG-POS-05-COMP-SOURCE.certificate.json",
+    "staged_assembly": "formal/certificates/composition/staged/STG-COMP-A.certificate.json",
+    "target_package": "formal/certificates/composition/packages/PKG-POS-06-COMP-MIDDLE.certificate.json"
+  },
+  "component_sha256": {
+    "autonomy": "a8e4074f87f7055f8581bd5052b5c136e4a18415dfa38d19edf041831a028261",
+    "corridor": "fd898498a6395ae8b80610b9736594e187f7419f857fc15bc61eb59230973a5b",
+    "source_package": "a6a570cab6f1d3235f631d5780e6cfa50ba28ba859764387a3df624098486bad",
+    "staged_assembly": "89aa4ae7a08c9bdb835fabcb5946d00b472a82526e8ad525652120202ab1d46c",
+    "target_package": "bf43c52711f4f302dc15adf7e4ffa8d4e4dfb6878f5704943bbf43693584c361"
+  },
+  "lane_results": {
+    "A": true,
+    "S-L": true,
+    "S-R": true,
+    "S-T": true
+  },
+  "model_ref": "models/composition/fiach/FIACH-COMP-A.model.json",
+  "model_sha256": "28fc93d7618ba11dad4cdb9a6a5fcdd754e5124ec3cac79b45a45068dd3a7a06",
+  "recognition_status": "not-addressed",
+  "result_status": "checked-finite-temporal-fiach-certificate",
+  "role": "composition-left",
+  "route_status": "route-indexed",
+  "schema_version": "CST-TT-06",
+  "source": {
+    "code": 17,
+    "label": "source-substrate"
+  },
+  "target": {
+    "code": 55,
+    "label": "intermediate-substrate"
+  },
+  "theorem_evidence": {
+    "component_replay": {
+      "autonomy": true,
+      "corridor": true,
+      "source_package": true,
+      "staged_assembly": true,
+      "target_package": true
+    },
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.TargetTheory.temporalFIACHCertificateSoundness",
+      "CSTTT.TargetTheory.fullTemporalHandoffComposition"
+    ],
+    "theorem_ids": [
+      "TTH-02",
+      "TTH-04",
+      "TTH-05",
+      "TTH-06",
+      "TTH-07",
+      "TTH-08"
+    ]
+  },
+  "title": "left exact finite Temporal-FIACH handoff for full composition"
+}

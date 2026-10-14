@@ -1,0 +1,586 @@
+{
+  "schema": "csttt-designed-model-preregistration-v1",
+  "packet": "G30",
+  "name": "FULL-NATIVE-02",
+  "stage": "preregistration proposed; no implementation or evaluation; independent review pending; OD-1/OD-2 approved by owner 2026-10-12",
+  "specification": "audit/G30_full_native_02_preregistration.md",
+  "target": {
+    "TTF-04": {
+      "statement": "Open fallback target: characterize relation-valued fission, guarded fusion, and empty targets under least operational ancestry.",
+      "ceiling": "relation-valued only"
+    },
+    "TTF-05": {
+      "statement": "Open fallback target: combine predictive ancestry, integrated target package realization, and autonomy into a Temporal-IAPS certificate.",
+      "ceiling": "structural successorship only"
+    }
+  },
+  "source_contract": "Original Prospects 208-232, original Autonomy.System packageInside/targetOwnedResponse, G16 promotion discipline and G27 designed package. Registry meanings stay fixed. Proposed original C5/C6 and finite/full-history readings require owner decisions BEFORE implementation.",
+  "baseline": {
+    "commit": "e4a82ad20ac0263035a68ce06652e65a4e1efed5",
+    "legacy_preregistration": "audit/proposed_models/G17-full-native-package.model.json",
+    "source_sha256": {
+      "audit/proposed_models/G17-full-native-package.model.json": "f90e957c8a44b43c17b8b34d77f146162ecb265376726997b2547ec38d2e349a",
+      "audit/G17_full_native_preregistration.md": "abd17394a756b9a4d1aef68e1bc0c644614058f118dfe543a6359c14f87755fb",
+      "audit/G14b_guarded_fusion_controls.md": "d5d7ca4e492aba23751a9b05bf6a5cb7769c23df5e20735a5c194d3f664866cf",
+      "audit/G15c_original_interface_obstruction.md": "a8a8d2bda77b014ae2797989d246abe49e0bc7918740a85438a2c991258fd025",
+      "audit/G29_shared_raw_adjudication.md": "c6dbeada75f84fc17738c12c0101653907ee5db2470d7ff13922d175bc122cf0",
+      "cst-tt/registries/CST-TT-09_THEOREM_STATUS.csv": "25e2ec4dde9d365c6cefdb548d8236f7b60b046742a62c7b145a3ca872d8461c",
+      "lean/CSTTT/Prospects/Statements.lean": "8151f7dcaef9f9537a8fbe7b72cff4ec915b53e50e39f458e2eeb47a6b8ec037",
+      "lean/CSTTT/Autonomy/System.lean": "1617533a4a4bf2e94de1fd812098240021288a1281f0ba8a77316b78536c53d1",
+      "lean/CSTTT/Core/Carrier.lean": "65594685b18a96c1d08820f3c6513c102a78c3aebb143c2256c695f2707cb57d",
+      "lean/CSTTT/FullNative/AccountExecution.lean": "ea60deede7156a52d6d29edb24cca246031c846941e68335cba9f3f9cee9b9a7",
+      "lean/CSTTT/FullNative/ActualBinding.lean": "c45a8e771c72ff6eee51c9950f643779676533203a66cc680c73d4be8aa75c96",
+      "lean/CSTTT/FullNative/BranchBinding.lean": "61caad1a1a5a9e57bd2c0c358a1a6e945321f5ca84c97c83b845a121bf4d8de2",
+      "lean/CSTTT/FullNative/ClockClosure.lean": "693ee2348968209677974420390824a9e2e849781f0c7c476e4aae842ad8e7e1",
+      "lean/CSTTT/FullNative/CurrentExposure.lean": "4c1b3aa4e3e5326fbe460d4942647ac145376feaf46285278059acbaf735b968",
+      "lean/CSTTT/FullNative/CycleExecution.lean": "c67b148ebfdbcf0e7f4c4dc45a5f34e2d2d8a0fe27cdaa761b8f2fed0c49cbc3",
+      "lean/CSTTT/FullNative/DriveClock.lean": "36bcec3046f2aab8f88594bacc469724b99a22376f867dd912d77a74265cf4ec",
+      "lean/CSTTT/FullNative/EmittedFuture.lean": "7b1dff9074c2df9789265c937d6fae0f37fcc278be23a67b90f41bf4fb15b511",
+      "lean/CSTTT/FullNative/FullInterface.lean": "42e73e476ed478bd5a9a8e73bb331e8e26cec256b5d24239fed21142246d7de1",
+      "lean/CSTTT/FullNative/HistoryFactor.lean": "5d7e48fbd5eb0bb4c0892cca4b25d52e2d4317ae53f307887ae164e28316f0ed",
+      "lean/CSTTT/FullNative/IAPSAdjudication.lean": "605b4fe2b20252811f6b00d8a1cf1b20526e18436a97daae79ae4081ff6647c7",
+      "lean/CSTTT/FullNative/InternalizedCredit.lean": "ee0bc3ccde8d909c99f0a2026bfea62262ee990e92d479840c126e1eb6f900f8",
+      "lean/CSTTT/FullNative/InternalizedExecution.lean": "6244e8635eb81c7396c4cbb54139f66e150a5afedf86d2d2ae24b1a48192535d",
+      "lean/CSTTT/FullNative/JointClaims.lean": "bff8e8cd29d3f2245691d8207fccae29f9f7953a040972ff81f174db39008f33",
+      "lean/CSTTT/FullNative/JointFuture.lean": "a6f2df3cf74123c0ea38ff8662d215284f04c90f1dc33e8a6c37f5f2bca67541",
+      "lean/CSTTT/FullNative/Objecthood.lean": "97f0418acdb7f659827a16fa5866ffec031cd5c004899a5a1319474ec6cae0fc",
+      "lean/CSTTT/FullNative/ObjecthoodBaseline.lean": "5ee3d848d1c67fb7a10c99ac1e6a2ccda0d9e2e75869af5fbfb14fd3cedb1ef2",
+      "lean/CSTTT/FullNative/ObjecthoodDefect.lean": "b296ad8185e35cf2220b1fe00dc38fe299c0cdf13e9f3f073e490fe675c94442",
+      "lean/CSTTT/FullNative/ObjecthoodExecution.lean": "dc643f04175f34bc18ac589389d2a3a67399285faf3467bddbe09f0141569fc4",
+      "lean/CSTTT/FullNative/ObjecthoodPrimitives.lean": "f2115da7eadf19c4ec101777a7f478a48b48c27db82bb710973e2e9c025f7273",
+      "lean/CSTTT/FullNative/OriginalPackage.lean": "09f9c813ba945f1688a422d93f6229c2da0a3a6bced53192585948c6b0efbe2f",
+      "lean/CSTTT/FullNative/PackageCycle.lean": "80097e016312987cccb793ddf6e336b2ce80d9177c0b47c98c57b074a0ee2a5f",
+      "lean/CSTTT/FullNative/PhysicalCycle.lean": "5c6168357f6d73c7f6a7ec926543aacb1f3a860902e63ab386262950c500d668",
+      "lean/CSTTT/FullNative/PhysicalExecution.lean": "cb0a1dd5123f60320ccdd1ab8f25d3b946720de1a6839cf4075fd5c2cb24c9b2",
+      "lean/CSTTT/FullNative/PhysicalFuture.lean": "fd9ee58a203363ed5bbfebf7428a96e75450bc12e3c83b5d782dc0b9cb5183ac",
+      "lean/CSTTT/FullNative/PhysicalProfile.lean": "f09087f816b0b34bdcef8ffdc0f7cbcfcbda557146f7733f26c046ed570d54d2",
+      "lean/CSTTT/FullNative/PositiveMatrix.lean": "17cb745d5c9ee2e31a7efe4080c0fc8d83da1adbac3cdebea96c905469c56097",
+      "lean/CSTTT/FullNative/Primitives.lean": "290cb283f496c6af7603c1dd679854cad272d8628b5b8d988171e625acc59eef",
+      "lean/CSTTT/FullNative/ProgramExecution.lean": "159b0f74571e69fcfb21d8f9493f0b4ee63be56b3f28a5cc38230e6840f3a352",
+      "lean/CSTTT/FullNative/ProvenanceCycle.lean": "a5fc8ac31b7aa52a5304cea2462c9f073975c9ac7a5d97d5cf052afcb6c8a0d1",
+      "lean/CSTTT/FullNative/PublicShadow.lean": "4b4b2a9581b0e7e19c92a7b764f72592062e67661d12ecd0cc590dfc0935887a",
+      "lean/CSTTT/FullNative/ReceiptCredit.lean": "53791045efee325096afa802bb9316ce44b86f28317f3b6fb18f6c8d369f9a28",
+      "lean/CSTTT/FullNative/RecombinationBoundary.lean": "9bfb5acb5d731964e849ebb02277b8cec92d5d1bbc65f3e46b0ef760514942e3",
+      "lean/CSTTT/FullNative/ScheduledExecution.lean": "16152328ddedfaec0d001fbcdd3abdbbfde70039714b40a416c3f649af156464",
+      "lean/CSTTT/FullNative/SharedAttribution.lean": "7303294f53a29c064b87e32b04e4a886cc64850df3319ada7e8692f37ea2084f",
+      "lean/CSTTT/FullNative/SharedPackage.lean": "76f7e2e078f156d20caafd54067d640d305fcc062f78dc85d32761289220fff2",
+      "lean/CSTTT/FullNative/SnapshotExecution.lean": "4f97f7e88fab2103fc90f5cf11e4cea32aec0bead0823b1da68e803ee1c5eef0",
+      "lean/CSTTT/FullNative/TemporalTransport.lean": "a2b7b8cc500c49c2f08d8df6d245747ea509fd022e829b58580a789f1aea041d",
+      "lean/CSTTT/FullNative/ViabilityFactor.lean": "7c32ecb67ebc45ac64a7f4f82012d14af7a1609a420b082de381233406791a1c",
+      "lean/CSTTT/FullNative/WeightedFuture.lean": "786ed4f50c2171c5d539182ceb560862ab3690bc913af1066d962af81bb0e8a6"
+    }
+  },
+  "conservative_extension": {
+    "modes": [
+      "Legacy(existing raw objects)",
+      "FullNative02(new protocol world)"
+    ],
+    "legacy_rule": "Every old operator/observer/readout delegates identically to its existing definition. Old inputs/types/declarations/fixtures unchanged. New protocols reject Legacy; no cross-mode migration or mutable resources.",
+    "proof_obligations": [
+      "Legacy subspace closed under full old action language",
+      "Legacy embedding commutes with every old row and observer, hence all finite-word laws",
+      "New funded owned native rows project by actual installed ROM: canonical32 to identical G17 canonical physical rows/16; flat32 to the registered flattened physical rows/16. Never canonical projection for flat32."
+    ],
+    "readout_scope": "Do not rebind SharedPackage.Accept, G15a Frame/MemoryFrames or G28/G29 predicates. New acceptance is explicitly Accept02.",
+    "preserved_negatives": [
+      "G15c full kernel merge/mass8/impossible original acceptance",
+      "G21 baseline squared operator nonuniqueness",
+      "G25 nine-state logged reversal",
+      "G26 conditioned joint 1/10 versus marginal product 1/100",
+      "G28 actual TTN-02/14 and cyclic scope controls",
+      "G29 old-candidate immediate package rejection and no old joint merger"
+    ]
+  },
+  "primitive_carrier": {
+    "state": [
+      "outside:Bool",
+      "u:Bool",
+      "v:Bool",
+      "replica:Bool",
+      "phase:Bool"
+    ],
+    "addresses": {
+      "default_N": 8,
+      "family": "Finite prefix 0..N-1, N>=4; token stock always four",
+      "capability_per_address": "1/1",
+      "initial_source": 0,
+      "freshness": "Supplied capability unused, never previously born; consume once on birth, never replenish on retirement."
+    },
+    "tokens": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "initial_allocation": [
+      "localGenerator(0)",
+      "unallocated",
+      "unallocated",
+      "externalBridge"
+    ],
+    "allocation_kinds": [
+      "unallocated",
+      "recorded reservation",
+      "live local custody",
+      "live external custody",
+      "retired custody"
+    ],
+    "initial_charge": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+    ],
+    "initial_cursors": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "initial_physical_state": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "resident_fields": [
+      "owner/address",
+      "consumed birth capability and epoch",
+      "immutable installed program",
+      "current State",
+      "exclusive nonempty owned-token set",
+      "actual primary cursor at birth",
+      "actual native receipt list",
+      "immutable typed birth residue"
+    ],
+    "primary": "Minimum owned token ID, fixed during residency; no spare-key fallback.",
+    "history": "Unbounded native receipts and generated accepted protocol ledger. No credit/ancestry/package Boolean input.",
+    "nodes": [
+      "source birth",
+      "resident birth",
+      "current native version",
+      "snapshot event",
+      "paid native event",
+      "paid fusion input version",
+      "fusion event",
+      "prospective absent output reference",
+      "independent hardware origin"
+    ],
+    "node_identity": "Accepted vertices use typed generated event ordinal/role/birth epoch, distinct from address and token serial. Ambient prospective references have a separate tag indexed by parent versions, Bool actions and unused output capability. No accepted edge is created for a prospective reference; any later actual birth has a distinct birth ID.",
+    "append_memory": "Explicit unbounded locally owned mathematical native tape/counters and archived protocol storage. Unit birth storage capability licenses ONE resident slot, not finite-bit capacity. No finite-memory/physical storage-cost claim."
+  },
+  "primitive_dynamics": {
+    "actions": "Bool: false maintenance, true probe; no macro-response",
+    "kernel_order": [
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        true
+      ]
+    ],
+    "inside_maintenance_weights": [
+      [
+        1,
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        1,
+        1,
+        3
+      ],
+      [
+        3,
+        1,
+        1,
+        3
+      ],
+      [
+        2,
+        2,
+        2,
+        2
+      ]
+    ],
+    "outside_maintenance_weights": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "scale": 16,
+    "maintenance": "For each kernel outcome in kernel_order and each replica outcome in [false,true], emit inside,outcome_u,outcome_v,outcome_replica,not current_phase. Each of its two replica edges has the stated kernel weight. Outside rows use [2,2,2,2] in place of a kernel row, so maintenance returns to inside support. Total weight is 16.",
+    "probe": "One edge of weight 16 to outside,current_u,current_v,current_replica,not current_phase, from both inside and outside states.",
+    "public_lens": "0 on every inside state; on outside states 1 + 2*(2*bit(u)+bit(v)) + bit(phase). Replica is never exposed.",
+    "phase": "Flip on every paid enabled native/input advance; no native log reset.",
+    "programs": [
+      "canonical32 = identical G17 program",
+      "flat32 = identical G17 flatten(canonical32) control"
+    ],
+    "flat_weights": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "program_identity": "Whole registered code identity, not acceptance label. Copy exact actual captured code; fusion equal code; no supplied merger program.",
+    "C1": {
+      "stagings": [
+        1,
+        2
+      ],
+      "epsilon": [
+        "0/1",
+        "1/16"
+      ],
+      "C_U": "Derived from actual classes/fibers",
+      "contract": "G27 honest physical C1 with retained baseline two-step countertrace, no finite-history stationarity or all-stagings uniqueness"
+    }
+  },
+  "observer_freeze": {
+    "CURRENT": [
+      "public lens",
+      "enabled false native raw row-weight mass",
+      "enabled true native raw row-weight mass"
+    ],
+    "CURRENT_scope": "Maintained inside support; no predictor, credit, protocol availability or full-receipt channel.",
+    "branch_emissions": "On each actual successor, left emits u and right emits v if inside; both emit false if outside. The joint emitter is the pair on that same successor, retaining coupling. Initial states are not separately emitted.",
+    "native_eight_roles": [
+      "computed predictive class",
+      "local order",
+      "phase",
+      "native progress",
+      "actual local native record count",
+      "immutable typed birth residue",
+      "primary maintenance charge",
+      "owner"
+    ],
+    "native_laws": "All finite Bool words/all traces, INCLUDING initial observation and empty/mismatched traces. Actual context, no supplied matched-context premise.",
+    "native_code": "Derived physical class x actual eight-role context.",
+    "protocol_laws": "Separate typed new commands with full raw-world/optional-resident readout. No claim native quotient classifies all protocol futures.",
+    "audit_payload": "Complete records available for audit, not a ninth observation role.",
+    "time_transport": "Derive copy elapsed counts from consumed source. Fusion keeps two labeled parent transports including both paid input increments; output local count/order start0. Commute native increments; no chosen max/min/average clock or literal root/owner equality.",
+    "cursor_scope": "Serial=4*actual cursor+token. Local count=list length; actual birth cursor retained. No owner=token or cursor-origin-zero assumption after pooling."
+  },
+  "funding_and_receipts": {
+    "native_debit": "1/1",
+    "present_packet_credit": "1/1",
+    "absent_packet_credit": "0/1",
+    "supply_type": "Token x Nat cursor -> Option Unit; renewable retained ports always some Unit; suppliers never issuer.",
+    "absence": "Initial charged step still executed and logs none; charge then0, later primary rows disabled.",
+    "native_cursor": "Increment primary exactly once; all other keys unchanged.",
+    "admin_energy": "0/1 for reserve/snapshot/activation/partition; birth consumes supplied storage capability. Structural costs, no manufacturing/persistence claim.",
+    "fusion_energy": "1/1 per parent primary, two separate packets/debits. Transfer residual stock and cursors without copying/minting.",
+    "retired_stock": "Archived/inaccessible; not silently reallocated.",
+    "native_receipt_fields": [
+      "birth/lease/program epoch",
+      "allocation-derived actual issuer",
+      "primary token",
+      "serial",
+      "before/after State",
+      "Bool action and actual edge weight",
+      "consumed Option Unit",
+      "actual local ordinal/cursor transition"
+    ],
+    "protocol_receipt_fields": [
+      "request/input versions",
+      "actual actors/custody before-after",
+      "consumed snapshot/capability",
+      "input edge identities/native weights",
+      "conditional pair probability and computed W",
+      "contexts/cursors",
+      "retirement/output birth"
+    ],
+    "withdrawal": "Remove active source/bridge/snapshot/migration-driver/external-decoder/scheduler/repair access. Retire keys CURRENTLY held in source/bridge custody (0/3 in default script), never keys legally transferred to a live target. Retained ambient ports follow target leases, not historical token number. Keep local owned code/records/birth residue/keys/slots and environmental ports; minimal source/parent provenance disclosed, no copied source package/self-credit for local C5."
+  },
+  "protocols": {
+    "snapshot": {
+      "guards": "Live installed owned enabled source, latest actual supported receipt matches current State/epoch; capture program/state/version/serial/order/count. No supplied decoder or verdict.",
+      "consume": "Unused authentic reservation and never-born supplied capability, unoccupied output; install exact capture, consume slot, bind custody, native list empty.",
+      "expiry": "No wall-time expiry; wrong epoch, altered payload, stale/spent reservation rejects.",
+      "probability": "1/1 on passing guards"
+    },
+    "bootstrap_fission": {
+      "effect": "Reserve actual charged unallocated keys1/2, install two fresh children from one source capture; source retains key0 until withdrawal; actual custody/birth receipts, no copied local self verdict.",
+      "probability": "1/1 on passing guards",
+      "capture_slots": "One common actual capture writes TWO distinct recipient-bound one-time slots; each consumer consumes its own slot once. No reuse of a spent slot."
+    },
+    "partition_fission": {
+      "guards": "Live composite parent with nonempty owned token set; nonempty disjoint covering partition; two fresh capabilities and actual authenticated custody.",
+      "effect": "Retire parent, copy current code/State to children, transfer partitioned stock/cursors without minting, new local epochs/history empty.",
+      "probability": "1/1 on passing guards"
+    },
+    "fusion": {
+      "request": [
+        "left current version/address",
+        "right current version/address",
+        "left Bool action",
+        "right Bool action",
+        "fresh output capability/address"
+      ],
+      "forbidden_inputs": [
+        "merger program",
+        "coupling matrix",
+        "normalizer",
+        "credits/verdict",
+        "issuer",
+        "package witness"
+      ],
+      "guards": [
+        "distinct live correctly bound parents",
+        "equal installed program identities",
+        "nonempty disjoint token sets",
+        "exclusive custody/reservations and transferred live keys housed at parents",
+        "both primaries charged",
+        "supplied never-born unused output capability and unoccupied address",
+        "positive normalized scale16 native input rows"
+      ],
+      "support": "EVERY tagged native edge pair ((zL,nL),(zR,nR)) with zL=zR in FULL State, including phase/replica; retain edge identities.",
+      "normalizer": "W=sum(nL*nR) over all meeting pairs, computed from installed rows, never input.",
+      "pair_probability": "nL*nR/W for W>0; exact conditional product law. Parent conditional marginals need not equal their unconditioned native laws.",
+      "sampling": "One atomic conditional draw; no hidden rejection trials or uncharged retries.",
+      "paid_inputs": "Before transfer, apply both owned native support advances, primary debit/recharge/cursor+1, allocation-derived parent issuers; records tag conditional context/native weights.",
+      "success": "Retire both parents, transfer ALL their tokens/remaining stock/cursors to fresh output owner, consume capability, install common code at z; min union primary, empty local native list, actual birth cursor and both parent-context roots. No parent cycle counts as output-owned.",
+      "empty": "If hard guards/normalization pass but W=0, probability1/1 EmptySameWorld with ENTIRE world unchanged and returned computed diagnostic referencing prospective absent output; no debit, capability consumption, birth or accepted edge.",
+      "unavailable": "Hard guard failure/missing input rejected with no world change/debit/allocation/edge. Never default to empty.",
+      "atomicity": "No external intermediate interleaving.",
+      "empty_target_scope": "Only the prospective-reference tag tied to an actual computed empty settlement, not arbitrary vacancy or a later resident born at that address; parent versions/actions/output capability identify the reference without changing the world."
+    },
+    "source_only_retirement": {
+      "probability": "1/1",
+      "energy": "0/1",
+      "effect": "Remove source resident/service and retire only keys still in its custody; retain prior recipient-bound snapshot slots and reserved target keys/capabilities. Consumers validate historical capture epoch, not current source presence; no current source decoder needed. Full withdrawal later clears unconsumed slots."
+    },
+    "independent_boot": {
+      "purpose": "Disconnected-twin control in the same raw operator language, not a source-derived installation.",
+      "request": "Fresh supplied address capability, one unallocated key, and one of the two registered immutable ROM program IDs; no issuer, ancestry, credit or package witness.",
+      "guards": "Acquisition-stage hardware authority, unoccupied never-born address/capability, exclusively unallocated charged key. Reserved/live keys reject; no key reused from the main script.",
+      "state": "The frozen all-false initial physical state; no requested physical outcome.",
+      "effect": "Consume one birth capability; install selected actual ROM; bind key to resident owner; generate custody/birth receipt and hardware-origin-to-birth edge; native history empty, no source-root edge. Local credit requires actual warmup.",
+      "energy": "0/1",
+      "probability": "1/1 on passing guards; otherwise unavailable with no state change",
+      "withdrawal": "Acquisition-stage independent-boot authority is removed by withdrawal."
+    }
+  },
+  "least_ancestry": {
+    "raw_relation_input": "None; ledger edges generated by successful installed operations only.",
+    "edges": [
+      "source birth/current version -> paid native event -> after version",
+      "captured source version -> snapshot -> each child birth",
+      "partition parent current version -> each child birth",
+      "each fusion parent version -> paid input version -> fusion event -> output birth",
+      "independent hardware origin -> independently booted resident birth; no source edge"
+    ],
+    "closure": "One strict least edge-containing transitive relation, derive monotonicity/no-ex-nihilo; source ancestry restricts from actual source birth, parent-to-fused uses actual parent versions in SAME relation.",
+    "failure": "Empty/rejected add no accepted edge. Empty-target requires genuine computed empty settlement, not arbitrary address absence.",
+    "independent_boot": "The actual independent-boot command generates hardware-origin-to-birth edges only; no source edge even with equal program/state. No ancestry witness is supplied.",
+    "order": "Generated ordinal/stage parents precede output; no birth reuse.",
+    "predictive_scope": "Copy at captured state; fusion at paid advanced meeting state, common installed code and labeled context rebasing. Not unconditional pre-fusion future identity. No numerical identity assignment."
+  },
+  "receipt_package_boundary": {
+    "epoch": "Current residency/owner/program/lease; immutable code and append-only native records.",
+    "full_validation": "Validate entire current trace from actual birth/lease: supported transitions, consecutive States, actual issuer/binding, serials, cursors, debit/actual packet updates. Packet none is truthful; current funding separate.",
+    "blocks": "ALL contiguous nonempty closed chronological ordinary-maintenance blocks within this epoch, full State including phase/replica.",
+    "directional_test": "Runtime-derived current-program forward/reverse products nonzero and unequal, block packets present, homogeneous locally owned issuance.",
+    "continuing_gate": "Current immutable program/custody/funding law-gated and entire epoch authentic. Recompute witness from records, no primitive credited/sticky Boolean.",
+    "excluded": [
+      "copied source blocks",
+      "parent pre-transfer blocks",
+      "other epoch/owner/program",
+      "administrative/fusion events",
+      "external/mixed issuance"
+    ],
+    "C5_C6": "New explicit completed-local-process evidence plus continuing validity; do not declare open tail closed or alter Legacy C5/C6.",
+    "package": "Accept02 derives all C1..C8 from one actual World/resident/history; G27 honest C1/C2/C3/C4/C7/C8 domains unchanged. NO supplied clause certificates. OD-1 approved by owner 2026-10-12.",
+    "required_current_process_bridge": "Prove block inequality certifies irreversibility of CURRENT immutable installed generator and positive owned access from every maintained current state to the loop. Persistent old badge alone is insufficient.",
+    "control_binding": "Scheduled/internalized controls MUST exercise the new block rule or its proved generic specialization; legacy readouts stay unchanged. Mandatory current-generator and ownership bridge, not retained badge alone."
+  },
+  "autonomy": {
+    "disturbance_class": "Unit, renewable retained ports only, all finite streams.",
+    "actions": [
+      false,
+      true
+    ],
+    "policy": false,
+    "response_support": "ALL positive maintenance kernel/replica outcomes at EVERY actual descendant history, not a selected loop/favorable outcome.",
+    "solvency": "Actual nonnegative stock; native debit1/1 and packet credit1/1; no duplication or spare-key fallback.",
+    "progress": "Each actual response phase flips and strictly increments local order/count/primary cursor; no history reset at recurrence.",
+    "finite_certificate": "Original AutonomyCertificate on derived physical/account factor at fixed owner/code/epoch/root. packageValid means EVERY actual supported descendant lift realizes independently raw-computed WHOLE Accept02. Require nonempty lifts, coverage of every actual positive branch, and factor-response realization at every relevant actual history; no existential lift or certificate-defined readout.",
+    "full_history": "Independent full unbounded-history package closure/strict progress from actual readouts alongside finite certificate, with nonempty lifts and every-branch coverage. Do NOT identify factor with full growing history or full C3 context. OD-2 approved by owner 2026-10-12.",
+    "stronger_required_lift": "Arbitrary finite interleavings of other live residents legal native steps on disjoint keys, including probes; account commutation and protected resident whole-package locality.",
+    "excluded_disturbances": [
+      "absent essential recharge",
+      "forced retirement/fusion",
+      "program replacement",
+      "external driver or undeclared repair"
+    ],
+    "operational_C8_viability": {
+      "result": "Greatest operational C8 viability with unchanged G24 operational safety and retained-successor conditions.",
+      "competitors": "Arbitrary actual-history predicates satisfying operational safety and retained-successor closure; NO Accept02 or directional-block requirement.",
+      "renewable_core": "Includes cold charged inside installed/owned residents; package filtering must not shrink C8.",
+      "absent_supply": "Preserve initially stored-charge step, with empty later invariant kernel."
+    },
+    "package_filtered_autonomy": {
+      "result": "Greatest retained-response invariant subset of independently computed Accept02 at fixed program/owner/epoch/root and declared renewable ports.",
+      "competitors": "Every competing actual-history predicate must lie in Accept02 and be closed under ALL retained supported responses.",
+      "proposed_core": "Authenticated live inside owned charged residency, immutable installed code, actual own directional block and continuing valid audit. Derive WHOLE-package membership and invariance; maximality ONLY against package-filtered competitors. Never supply verdicts.",
+      "cold_residents": "Remain operationally C8 viable but outside this package core when they lack the required block."
+    }
+  },
+  "frozen_scripts": {
+    "default_N": 8,
+    "native_warmup_counts": {
+      "source0": 6,
+      "child1": 6,
+      "child2": 6,
+      "output3": 7
+    },
+    "cycle_kernels": [
+      "00",
+      "01",
+      "11",
+      "00",
+      "01",
+      "11",
+      "00"
+    ],
+    "cycle_replica": false,
+    "cycle_phase": "Alternate from ACTUAL starting phase; no reset.",
+    "shared_sequence": [
+      "source0 own six-edge cycle",
+      "reserve keys1/2, capture actual source head, install children1/2",
+      "child1 own six-edge cycle",
+      "child2 own six-edge cycle",
+      "withdraw source/bridge/snapshots",
+      "fuse1/2 actions false/false into fresh3 with ANY supported meeting pair",
+      "output3 one maintenance entrance to00/replica false then own six-edge cycle"
+    ],
+    "probabilities": "Future proof/derivation: products of actual native rows/16 and conditional pair probability; no successful product supplied.",
+    "validity": "Computed successful fixed acquisition script/withdrawal/prefix with selected mature branch/output and arbitrary supported maintenance continuation; NOT ancestry/package/autonomy conjunction.",
+    "scope": "Source earlier checkpoint; mature children before retirement in one withdrawn World; output later after OWN acquisition. No coexistence fiction.",
+    "stronger_fork": "Composite3 partitions keys1/2 into fresh4/5 and those fuse into fresh6; same guards/local-evidence rules. Guard failures explicit for smaller hardware inventories.",
+    "positive_initial_model": "Fixed canonical initial raw model, no program-choice input to certificate family. Flat/malformed control factories are separately preregistered readout experiments, not after-result exclusions from a universal successful-run claim over arbitrary programs."
+  },
+  "derived_structures": {
+    "never_supplied": [
+      "partitions",
+      "P/C/U",
+      "stationary laws/audit values",
+      "cycle products",
+      "W/meeting probabilities",
+      "ancestry closure",
+      "credit verdict",
+      "whole package",
+      "autonomy",
+      "successful flags"
+    ],
+    "required": [
+      "legacy all-word preservation",
+      "native physical projection indexed by actual installed ROM: canonical32/G17 canonical and flat32/registered flattened",
+      "owned consumed provenance/custody conservation",
+      "least versioned fission/fusion/empty ancestry",
+      "copy/two-parent time transport",
+      "same-raw all-clause package",
+      "greatest operational C8 viability INCLUDING cold charged inside residents; separate greatest Accept02-filtered all-support/all-length full-history autonomy with explicit restricted competitors",
+      "original finite autonomy with universal nonvacuous full-history lifting",
+      "original TTF-04/05 formula landings at unchanged ceilings"
+    ]
+  },
+  "frozen_controls": [
+    "All unchanged Legacy counterexamples",
+    "Missing/misowned/disabled primary or program, duplicate/aliased custody/reservations",
+    "Missing/unequal programs, invalid capture, spent/stale reservation, occupied/spent/unsupplied output",
+    "Same parent; insufficient nonempty split keys",
+    "Phase-opposed maintained parents after actual one-parent native advance: all-outcome empty meeting",
+    "Maintenance/probe inputs: inside/outside empty meeting",
+    "Absent packet with preserved first charged step; no primary fallback",
+    "Cold newborn and copied-parent-only evidence; fresh own warmup required",
+    "Actual flat installed program with fixed warmup: actual credit/package rejects",
+    "Invalid/mixed/current-epoch audit, external issuance, changed binding: past-good evidence cannot mask failure",
+    "Disconnected independently installed twin; equal physical structure does not imply source ancestry",
+    "Pooled token re-fission4/5 and re-fusion6; retirement/housing/cursor conservation",
+    "Destructive gap: actual capture/reservations, source-only retirement before activation, later consume existing one-time target slots and generate OWN local warmup; no current-source dependency."
+  ],
+  "predictions_not_results": [
+    "Proposed authentic own completed block persists under every legal renewable maintenance append with WHOLE package; must prove.",
+    "Proposed fixed script has positive supported fusion and acquired branches/output meet original lanes under approved readings; must prove.",
+    "Proposed phase-opposed full-state meeting yields genuine all-outcome empty settlement, distinct from unavailable inputs; must prove."
+  ],
+  "promotion_conditions": {
+    "TTF-04": "Original relation-valued formula on correct typed versions PLUS positive actual owned fusion, fission, genuine all-outcome empty/unavailable cases, least generated ancestry and exact resource/probability readouts. Empty-only/separately supplied program insufficient.",
+    "TTF-05": "Original IntegratedTemporalIAPS with successful requests, predictive ancestry, same-raw WHOLE C1-C8 package and target-owned all-support/all-length package autonomy, actual withdrawal/solvency/progress, finite original certificate with exact full-history lift. Checkpoint/resource-only insufficient.",
+    "registry": "Kernel proof and semantically faithful original prose return at UNCHANGED ceiling, standard axioms, independent exact transcription, manager gates and independent review. No invented primary kill or fallback activation.",
+    "countermodel_status": "Only actual refutation at original row ceiling justifies finite-countermodel reclassification; candidate-specific failure leaves existence target open."
+  },
+  "kill_criteria": [
+    "Any legacy primitive/observer/declaration/input/negative changes or is reinterpreted",
+    "Any supplied verdict, forged issuer, free derived data, duplicated energy/token or unsupplied hardware required",
+    "Guard/normalization/retirement/housing/cursor/packet/lineage role obligations fail",
+    "Empty merely excludes one chosen outcome or missing input is treated as genuine empty",
+    "Conditional fusion claimed to retain unconditional marginals or arbitrary product factorization",
+    "Copied/parent/protocol block certifies newborn or historical-good block masks invalid current epoch",
+    "ANY valid supported response loses ANY actual whole-package clause",
+    "Finite factor certificate lacks nonempty universal all-supported full-history lift",
+    "Chosen original reading incompatible with proposed receipt or finite/history boundary"
+  ],
+  "failure_outcomes": {
+    "candidate": "Exact countertrace and missing lane reported; relevant TTF-04/05 stay open. No silent weakening.",
+    "different_recipe": "New independently reviewed preregistration BEFORE its evaluation; no after-result tuning.",
+    "impossibility": "If original reading insists on always-closed whole audit with single-step phase flip, or finite full history with indefinite strict record growth, pursue precisely quantified model-independent impossibility. G29/G15c alone are NOT such proofs."
+  },
+  "anti_tuning": "Freeze all numerical primitives, operators, observer/resource boundaries, scripts, scopes and controls before evaluation. No macro-step, log reset, favorable outcome filtering, controller/disturbance narrowing, owner=token/cursor-zero default or post-result recipe change.",
+  "owner_decisions": [
+    {
+      "id": "OD-1",
+      "pending": false,
+      "question": "Original C5/C6 completed-local-block plus authenticated continuing residency, or literal G27 Accept/always-closed whole audit?",
+      "recommendation": "Approve specified process-evidence boundary with current code/custody gates and fresh own evidence each birth; retain old dispatcher separately.",
+      "if_declined": "No TTF-05 promotion; pursue explicitly quantified original-interface impossibility route.",
+      "reviewer": "faithful (a)",
+      "owner_approval": "approved by owner 2026-10-12",
+      "binding_conditions": "Current-generator and ownership bridge mandatory; scheduled/internalized controls exercise the new block rule or its proved generic specialization. Faithful to original prose conditional on these bridges; mathematical change from G27, not unchanged acceptance."
+    },
+    {
+      "id": "OD-2",
+      "pending": false,
+      "question": "Original finite physical/account autonomy certificate plus universal exact full-history lift, or literal finite enumeration of all growing registers?",
+      "recommendation": "Approve specified finite certificate PLUS nonempty all-support full-history package/response/progress theorem.",
+      "if_declined": "No literal finite full-state claim; adjudicate stricter interface via explicit impossibility route.",
+      "reviewer": "faithful (a)",
+      "owner_approval": "approved by owner 2026-10-12",
+      "binding_conditions": "Nonempty lifts; coverage of every actual positive branch; factor-response realization at every relevant history; independent full-history package/progress proofs. No existential lift or certificate-defined readout suffices."
+    }
+  ],
+  "completion_rule": "Preregistration ONLY; no Lean/evaluation/status change. Independent review, owner decisions and manager commit BEFORE implementation; this agent does not commit or push.",
+  "foundation": {
+    "lean": "4.28.0 core only",
+    "python": "3.12",
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "forbidden": [
+      "Mathlib",
+      "sorry",
+      "native_decide",
+      "new axioms",
+      "global environment changes"
+    ],
+    "G30_execution": "Only static JSON serialization/syntax and baseline metadata hashing; no Lean or model evaluation."
+  }
+}

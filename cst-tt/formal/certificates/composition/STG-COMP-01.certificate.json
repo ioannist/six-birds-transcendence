@@ -1,0 +1,41 @@
+{
+  "audit": {
+    "certificate_id": "STG-COMP-01",
+    "component_hashes_valid": true,
+    "composite_maps_factor_through_intermediate": true,
+    "composite_valid": true,
+    "composition_valid": true,
+    "endpoints_compose": true,
+    "failed_obligations": [],
+    "forbidden_verdict_fields_absent": true,
+    "hard_gates_remain_unaveraged": true,
+    "intermediate_value_interface_exact": true,
+    "left_valid": true,
+    "right_valid": true,
+    "shared_intermediate_model_exact": true
+  },
+  "certificate_id": "STG-COMP-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_staged_composition",
+    "module": "cst_tt.handoff_composition",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "exact finite staged-map factorization through one audited intermediate package",
+  "claim_lanes": [
+    "S-T",
+    "S-R"
+  ],
+  "component_refs": {
+    "composite": "formal/certificates/composition/staged/STG-COMP-OUTER.certificate.json",
+    "left": "formal/certificates/composition/staged/STG-COMP-A.certificate.json",
+    "right": "formal/certificates/composition/staged/STG-COMP-B.certificate.json"
+  },
+  "component_sha256": {
+    "composite": "badcf57c7937153a347bfe62f6dc3c7b50b6797845e7af2f4147bb94f599c4f5",
+    "left": "89aa4ae7a08c9bdb835fabcb5946d00b472a82526e8ad525652120202ab1d46c",
+    "right": "3d4eced7eaed1458b47423361a9afc30105b8fc4f56fb739720b43de6b9c1aa6"
+  },
+  "result_status": "checked-finite-staged-package-composition",
+  "schema_version": "CST-TT-06"
+}

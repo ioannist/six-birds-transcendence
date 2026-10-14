@@ -1,0 +1,586 @@
+{
+  "actions": [
+    {
+      "action_id": "advance-safe-0-nominal",
+      "budget_cost": 0,
+      "budget_regeneration": 0,
+      "owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "required_resources": [
+        "target-clock",
+        "target-record",
+        "target-maintenance"
+      ]
+    },
+    {
+      "action_id": "absorb-safe-0-hit",
+      "budget_cost": 0,
+      "budget_regeneration": 0,
+      "owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "required_resources": [
+        "target-clock",
+        "target-record",
+        "target-maintenance",
+        "target-disturbance-sensor"
+      ]
+    },
+    {
+      "action_id": "advance-safe-1-nominal",
+      "budget_cost": 0,
+      "budget_regeneration": 0,
+      "owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "required_resources": [
+        "target-clock",
+        "target-record",
+        "target-maintenance"
+      ]
+    },
+    {
+      "action_id": "absorb-safe-1-hit",
+      "budget_cost": 0,
+      "budget_regeneration": 0,
+      "owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "required_resources": [
+        "target-clock",
+        "target-record",
+        "target-maintenance",
+        "target-disturbance-sensor"
+      ]
+    },
+    {
+      "action_id": "repair-warning-0-nominal",
+      "budget_cost": 1,
+      "budget_regeneration": 1,
+      "owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "regeneration_owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "regeneration_resource": "target-regenerator",
+      "required_resources": [
+        "target-clock",
+        "target-record",
+        "target-maintenance",
+        "target-repair-loop",
+        "target-regenerator"
+      ]
+    },
+    {
+      "action_id": "repair-warning-0-hit",
+      "budget_cost": 1,
+      "budget_regeneration": 1,
+      "owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "regeneration_owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "regeneration_resource": "target-regenerator",
+      "required_resources": [
+        "target-clock",
+        "target-record",
+        "target-maintenance",
+        "target-repair-loop",
+        "target-regenerator"
+      ]
+    },
+    {
+      "action_id": "repair-warning-1-nominal",
+      "budget_cost": 1,
+      "budget_regeneration": 1,
+      "owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "regeneration_owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "regeneration_resource": "target-regenerator",
+      "required_resources": [
+        "target-clock",
+        "target-record",
+        "target-maintenance",
+        "target-repair-loop",
+        "target-regenerator"
+      ]
+    },
+    {
+      "action_id": "repair-warning-1-hit",
+      "budget_cost": 1,
+      "budget_regeneration": 1,
+      "owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "progress_delta": 1,
+      "record_delta": 1,
+      "regeneration_owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "regeneration_resource": "target-regenerator",
+      "required_resources": [
+        "target-clock",
+        "target-record",
+        "target-maintenance",
+        "target-repair-loop",
+        "target-regenerator"
+      ]
+    }
+  ],
+  "boundary": {
+    "boundary_id": "target-boundary-v1",
+    "disturbance_class_fixed_before_evaluation": true,
+    "disturbance_class_id": "nominal-or-single-hit",
+    "fixed_before_evaluation": true
+  },
+  "claim_ceiling": "model-relative post-withdrawal autonomy over the declared disturbance class",
+  "claim_lane": "A",
+  "declared_invariant_state_ids": [
+    "T-SAFE-0",
+    "T-SAFE-1",
+    "T-WARNING-0",
+    "T-WARNING-1"
+  ],
+  "disturbances": [
+    {
+      "disturbance_id": "nominal",
+      "predeclared": true
+    },
+    {
+      "disturbance_id": "hit",
+      "predeclared": true
+    }
+  ],
+  "endpoint_state_id": "T-SAFE-0",
+  "expected_primary_failure": "AUT-O05-target-owned-retained-resources",
+  "finite_horizon": 6,
+  "handoff_endpoint_event_id": "t-exit",
+  "model_id": "AUT-C11",
+  "nonclaims": [
+    "no source-target lineage conclusion",
+    "no consciousness or felt-continuity conclusion",
+    "no indefinite physical persistence outside the model"
+  ],
+  "package_contract": {
+    "package_certificate_ref": "formal/certificates/packages/PKG-POS-04-FIACH-TARGET.certificate.json",
+    "package_certificate_sha256": "eb02e10280c1b0ed2725aa6e76205b404aa96e94f3109fcc1f2fa65a12f041f4",
+    "package_owner": 101,
+    "package_predicate_id": "PKG-POS-04-FIACH-TARGET::IntegratedPkg"
+  },
+  "schema_version": "CST-TT-05-model-v1",
+  "source": {
+    "code": 17,
+    "label": "source-substrate"
+  },
+  "states": [
+    {
+      "budget": 1,
+      "health": "safe",
+      "maintenance_owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "package_valid": true,
+      "public_state": "report:stable",
+      "required_resources": [
+        "target-binding-bus",
+        "target-boundary",
+        "target-budget",
+        "target-clock",
+        "target-credit-ledger",
+        "target-maintenance",
+        "target-object-register",
+        "target-policy",
+        "target-private-state",
+        "target-promotion-audit",
+        "target-public-interface",
+        "target-recombination-table",
+        "target-record",
+        "target-repair-loop",
+        "target-self-register"
+      ],
+      "state_id": "T-SAFE-0",
+      "tick_phase": 0
+    },
+    {
+      "budget": 1,
+      "health": "safe",
+      "maintenance_owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "package_valid": true,
+      "public_state": "report:stable",
+      "required_resources": [
+        "target-binding-bus",
+        "target-boundary",
+        "target-budget",
+        "target-clock",
+        "target-credit-ledger",
+        "target-maintenance",
+        "target-object-register",
+        "target-policy",
+        "target-private-state",
+        "target-promotion-audit",
+        "target-public-interface",
+        "target-recombination-table",
+        "target-record",
+        "target-repair-loop",
+        "target-self-register"
+      ],
+      "state_id": "T-SAFE-1",
+      "tick_phase": 1
+    },
+    {
+      "budget": 1,
+      "health": "warning",
+      "maintenance_owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "package_valid": true,
+      "public_state": "report:stable",
+      "required_resources": [
+        "target-binding-bus",
+        "target-boundary",
+        "target-budget",
+        "target-clock",
+        "target-credit-ledger",
+        "target-maintenance",
+        "target-object-register",
+        "target-policy",
+        "target-private-state",
+        "target-promotion-audit",
+        "target-public-interface",
+        "target-recombination-table",
+        "target-record",
+        "target-repair-loop",
+        "target-self-register"
+      ],
+      "state_id": "T-WARNING-0",
+      "tick_phase": 0
+    },
+    {
+      "budget": 1,
+      "health": "warning",
+      "maintenance_owner": {
+        "code": 101,
+        "label": "target-substrate"
+      },
+      "package_valid": true,
+      "public_state": "report:stable",
+      "required_resources": [
+        "target-binding-bus",
+        "target-boundary",
+        "target-budget",
+        "target-clock",
+        "target-credit-ledger",
+        "target-maintenance",
+        "target-object-register",
+        "target-policy",
+        "target-private-state",
+        "target-promotion-audit",
+        "target-public-interface",
+        "target-recombination-table",
+        "target-record",
+        "target-repair-loop",
+        "target-self-register"
+      ],
+      "state_id": "T-WARNING-1",
+      "tick_phase": 1
+    }
+  ],
+  "supported_public_trace": [
+    "report:stable",
+    "report:stable",
+    "report:stable",
+    "report:stable",
+    "report:stable",
+    "report:stable",
+    "report:stable"
+  ],
+  "target": {
+    "code": 101,
+    "label": "target-substrate"
+  },
+  "tick_modulus": 2,
+  "title": "retained maintenance resource is external-owned",
+  "transitions": [
+    {
+      "action_id": "advance-safe-0-nominal",
+      "disturbance_id": "nominal",
+      "from_state": "T-SAFE-0",
+      "to_state": "T-SAFE-1"
+    },
+    {
+      "action_id": "absorb-safe-0-hit",
+      "disturbance_id": "hit",
+      "from_state": "T-SAFE-0",
+      "to_state": "T-WARNING-1"
+    },
+    {
+      "action_id": "advance-safe-1-nominal",
+      "disturbance_id": "nominal",
+      "from_state": "T-SAFE-1",
+      "to_state": "T-SAFE-0"
+    },
+    {
+      "action_id": "absorb-safe-1-hit",
+      "disturbance_id": "hit",
+      "from_state": "T-SAFE-1",
+      "to_state": "T-WARNING-0"
+    },
+    {
+      "action_id": "repair-warning-0-nominal",
+      "disturbance_id": "nominal",
+      "from_state": "T-WARNING-0",
+      "to_state": "T-SAFE-1"
+    },
+    {
+      "action_id": "repair-warning-0-hit",
+      "disturbance_id": "hit",
+      "from_state": "T-WARNING-0",
+      "to_state": "T-SAFE-1"
+    },
+    {
+      "action_id": "repair-warning-1-nominal",
+      "disturbance_id": "nominal",
+      "from_state": "T-WARNING-1",
+      "to_state": "T-SAFE-0"
+    },
+    {
+      "action_id": "repair-warning-1-hit",
+      "disturbance_id": "hit",
+      "from_state": "T-WARNING-1",
+      "to_state": "T-SAFE-0"
+    }
+  ],
+  "withdrawal": {
+    "bridge_removed": true,
+    "external_decoder_removed": true,
+    "external_scheduler_removed": true,
+    "migration_controller_removed": true,
+    "removed_resources": [
+      {
+        "owner": {
+          "code": 17,
+          "label": "source-substrate"
+        },
+        "resource_id": "source-core",
+        "role": "source"
+      },
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "migration-bridge",
+        "role": "bridge"
+      },
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "migration-controller",
+        "role": "migration-controller"
+      },
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "external-decoder",
+        "role": "external-decoder"
+      },
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "external-scheduler",
+        "role": "external-scheduler"
+      },
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "external-repair",
+        "role": "undeclared-repair"
+      }
+    ],
+    "retained_resources": [
+      {
+        "owner": {
+          "code": 901,
+          "label": "external-support"
+        },
+        "resource_id": "target-binding-bus",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-boundary",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-budget",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-clock",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-credit-ledger",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-disturbance-sensor",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-maintenance",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-object-register",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-policy",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-private-state",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-promotion-audit",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-public-interface",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-recombination-table",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-record",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-regenerator",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-repair-loop",
+        "role": "target-internal"
+      },
+      {
+        "owner": {
+          "code": 101,
+          "label": "target-substrate"
+        },
+        "resource_id": "target-self-register",
+        "role": "target-internal"
+      }
+    ],
+    "source_removed": true,
+    "undeclared_repair_removed": true
+  }
+}

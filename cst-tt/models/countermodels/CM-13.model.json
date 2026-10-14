@@ -1,0 +1,42 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "A"
+  ],
+  "conclusion_failure_checks": {
+    "unbounded_liveness_fails": true
+  },
+  "countermodel_id": "CM-13",
+  "derived_facts": {
+    "first_failure_step": 2
+  },
+  "family": "budget-countdown",
+  "model": {
+    "claimed_finite_horizon": 1,
+    "eventual_failure_reached": true,
+    "finite_horizon_success": true,
+    "live_predicate": "budget>0",
+    "maximum_budget": 2,
+    "state_count": 3,
+    "trace": [
+      2,
+      1,
+      0,
+      0
+    ],
+    "unbounded_liveness": false
+  },
+  "name": "Finite successful trace without indefinite liveness",
+  "premise_checks": {
+    "nontrivial_finite_trace_succeeds": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "A deterministic system can satisfy a nontrivial finite live prefix and still inevitably exhaust its budget.",
+  "size_measure": "(state_count, claimed_horizon)",
+  "size_vector": [
+    3,
+    1
+  ],
+  "target_no_go_id": "TTN-12",
+  "toy_model_ref": "TTM-10"
+}

@@ -1,0 +1,47 @@
+{
+  "checker": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declaration": "CSTTT.Countermodels.cm02_detachedExactTemporalCopy",
+    "lean_source_status": "explicit-proof-source-present",
+    "python_checker": "cst_tt.countermodels:CM-02",
+    "python_status": "passed"
+  },
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R",
+    "S-L",
+    "A"
+  ],
+  "conclusion_failure_status": "certified",
+  "countermodel_id": "CM-02",
+  "finite_model_ref": "models/countermodels/CM-02.model.json",
+  "finite_model_sha256": "76d699ec59f1df3afc653184d8677c9692cec1eabc276b90f5b50c990b8fc46f",
+  "minimality_status": "certified",
+  "model_family": "detached-copy",
+  "name": "Detached exact temporal copy",
+  "premises_status": "certified",
+  "result_status": "checked-finite-countermodel",
+  "schema_version": "CST-TT-01",
+  "scope": "Exact endpoint, package-like, and autonomy-like success do not imply a strict overlap corridor.",
+  "search": {
+    "algorithm": "deterministic-exhaustive-enumeration",
+    "bound": "carrier_count<=2; stage_count<=3; one copy edge; one possible mixed stage; all endpoint flags",
+    "candidates_explored": 192,
+    "lower_bound_argument": "Distinct transport needs two carriers; source derivation needs one copy edge; a detached model has zero mixed stages.",
+    "minimality_result": "proved-by-exhaustive-bounded-search",
+    "ordering": "lexicographic(size_vector, canonical_json(model))",
+    "qualifying_candidates": 3,
+    "same_size_candidates_explored": 8,
+    "same_size_qualifying_candidates": 1,
+    "size_measure": "(carrier_count, stage_count, copy_edge_count, mixed_stage_count)",
+    "smaller_candidates_explored": 144,
+    "witness_size_vector": [
+      2,
+      2,
+      1,
+      0
+    ]
+  },
+  "target_no_go_id": "TTN-01",
+  "toy_model_ref": "TTM-02"
+}

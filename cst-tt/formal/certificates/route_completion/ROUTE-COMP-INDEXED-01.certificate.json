@@ -1,0 +1,48 @@
+{
+  "audit": {
+    "certificate_id": "ROUTE-COMP-INDEXED-01",
+    "clock_translation_holonomy_zero": true,
+    "common_normal_form_present": true,
+    "endpoint_package_unchanged": true,
+    "failed_obligations": [],
+    "flatness_independently_certified": false,
+    "input_fiach_valid": true,
+    "mode_valid": true,
+    "no_unlicensed_memory_erasure": true,
+    "output_route_status": "route-indexed",
+    "route_audit_replayed": true,
+    "route_certificate_hash_valid": true,
+    "route_completion_valid": true,
+    "route_indexed_residue_retained": true
+  },
+  "certificate_id": "ROUTE-COMP-INDEXED-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-06",
+    "function": "audit_route_completion",
+    "module": "cst_tt.handoff_composition",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "route-indexed structural handoff only",
+  "endpoint_package_certificate_ref": "formal/certificates/composition/packages/PKG-POS-07-COMP-TARGET.certificate.json",
+  "fiach_certificate_ref": "formal/certificates/composition/fiach/FIACH-COMP-OUTER.certificate.json",
+  "mode": "route-indexed",
+  "output_route_status": "route-indexed",
+  "result_status": "checked-finite-route-completion",
+  "route_certificate_ref": "formal/certificates/routes/ROUTE-NEG-01.certificate.json",
+  "route_certificate_sha256": "6cbb19e079a1ddcd1794b7c66a2daf800f4371f9a6cbcfc75859f2410102f8e2",
+  "route_memory_retained": true,
+  "schema_version": "CST-TT-06",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.TargetTheory.noUnlicensedRouteMemoryErasure",
+      "CSTTT.TargetTheory.retainedRouteMemoryYieldsIndexedStatus",
+      "CSTTT.TargetTheory.certifiedNormalizationYieldsFlatStatus"
+    ],
+    "theorem_ids": [
+      "TTH-09",
+      "TTN-04",
+      "TTN-05"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+theorem_id,prior_status,new_status,evidence,next_action
+TTH-04,open-scaffold,proof-source-and-executable-certificate-landed,COR-POS-01;COR-COMP-01,integrate with autonomy in CST-TT-05
+TTN-01,checked-finite-countermodel,proof-source-and-checked-finite-countermodel,noMixedStageExcludesAtomicCorridor;CM-02,retain mandatory boundary
+TTN-09,checked-finite-countermodel,proof-source-and-checked-finite-countermodel,realizedGapExcludesAtomicCorridor;CM-12,retain strict no-gap boundary
+TTD-01,open-scaffold,proof-source-and-executable-certificate-landed,DS-POS-01;DS-PATH-POS-01,retain separately named strengthening
+TTD-02,open-scaffold,finite-discriminator-evidence-landed-theorem-open,CMP-01;CMP-03,formal relation theorem in CST-TT-07A
+TTD-03,open-scaffold,proof-source-and-executable-certificate-landed,DS-C01;DS-C02;DS-C03;DS-C15,retain provenance boundary

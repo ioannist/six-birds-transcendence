@@ -1,0 +1,2772 @@
+{
+  "schema": "CST-TT G13 exact operational fallback observations v1",
+  "classification": "b",
+  "declaration_sha256": "1a96b27d7c5b0100de047370ff80d048132e70da98a8a7e95f61299b09c26cad",
+  "declaration_commit": "718649ccfd062113b11223a6de94115766fcc3df",
+  "raw_sources": {
+    "lean/CSTTT/Objecthood/T1Audit.lean": "71073960877131a5d9b3f882efa156b0b4013163144a629a36f12cfa8dff8d93",
+    "lean/CSTTT/POS04/Data.lean": "aa930743032c16594a24399cb74f5facc4693ece1c32cfa82db6fafa0cd7d148",
+    "lean/CSTTT/POS04/C2C3.lean": "95e0d0c566274b56e70a3f085ad64bd9991acf1107110d8ca49d47609bb603f3",
+    "lean/CSTTT/POS04/GenericTransport.lean": "95ec239c6b72e4a079233c1ef95af29a9742417589b6933297c4bc2a79f20797",
+    "lean/CSTTT/Transport/RawBridge.lean": "3a47319c0ff1544f74bd2a67a4ae00f9b6575b373f102a8a0cbf73477fccc357",
+    "lean/CSTTT/Transport/FutureDynamics.lean": "d9d95d03d161c9ab485b260a5de26384548e15618038857c4a5da20eb89c8e9a"
+  },
+  "generated_lean_sha256": "5abf48d0b56cc6b51d363b5125e66519dfe805548c01d151a1b71a58cb866294",
+  "proof_boundary": "Exact finite actual source-checked execution, record interventions, positive-length paths and tri-state Seed. Full package, native autonomy and scientific Gamma/IAPS remain kernel construction obligations.",
+  "controls": [
+    {
+      "case_id": "canonical_p0w0",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p0w0",
+        "twin_payload": "p0w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p0w0",
+        "twin_payload": "p0w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p0w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p0w0"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p0w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p0w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p0w0"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p0w0"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p0w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p0w0",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p0w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p0w0"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p0w0",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p0w0",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "canonical_p0w1",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p0w1",
+        "twin_payload": "p0w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p0w1",
+        "twin_payload": "p0w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p0w1"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p0w1"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p0w1"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p0w1"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p0w1"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p0w1"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p0w1"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p0w1",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p0w1"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p0w1"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p0w1",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p0w1",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "canonical_p1w0",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p1w0",
+        "twin_payload": "p1w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p1w0",
+        "twin_payload": "p1w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p1w0"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p1w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p1w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p1w0",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p1w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p1w0"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p1w0",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p1w0",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "canonical_p1w1",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p1w1",
+        "twin_payload": "p1w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p1w1",
+        "twin_payload": "p1w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w1"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p1w1"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p1w1"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p1w1"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w1"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w1"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w1"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p1w1",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p1w1"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p1w1"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p1w1",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p1w1",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "canonical_p2w1",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p2w1",
+        "twin_payload": "p2w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p2w1",
+        "twin_payload": "p2w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p2w1"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p2w1"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p2w1"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p2w1"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p2w1"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p2w1"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p2w1"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p2w1",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p2w1"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p2w1"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p2w1",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p2w1",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "canonical_p3w0",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p3w0",
+        "twin_payload": "p3w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p3w0",
+        "twin_payload": "p3w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p3w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p3w0"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p3w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p3w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p3w0"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p3w0"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p3w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p3w0",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p3w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p3w0"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p3w0",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p3w0",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "canonical_p3w1",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p3w1",
+        "twin_payload": "p3w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p3w1",
+        "twin_payload": "p3w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p3w1"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p3w1"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p3w1"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p3w1"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p3w1"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p3w1"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p3w1"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p3w1",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p3w1"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p3w1"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p3w1",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p3w1",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "canonical_p4w0",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p4w0",
+        "twin_payload": "p4w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p4w0",
+        "twin_payload": "p4w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p4w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p4w0"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p4w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p4w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p4w0"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p4w0"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p4w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p4w0",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p4w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p4w0"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p4w0",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p4w0",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "canonical_p4w1",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p4w1",
+        "twin_payload": "p4w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p4w1",
+        "twin_payload": "p4w1",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p4w1"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p4w1"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p4w1"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p4w1"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p4w1"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p4w1"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p4w1"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p4w1",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p4w1"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p4w1"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p4w1",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p4w1",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "canonical_p5w0",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p5w0",
+        "twin_payload": "p5w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p5w0",
+        "twin_payload": "p5w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p5w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p5w0"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p5w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p5w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p5w0"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p5w0"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p5w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p5w0",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p5w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p5w0"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p5w0",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p5w0",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "missing_source",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": false,
+        "source_active": null,
+        "target_payload": null,
+        "twin_payload": null,
+        "target_path": null,
+        "twin_path": null,
+        "finite_target_signature_matches_source": null,
+        "derived_targets": null,
+        "derived_paths": null,
+        "target_seed_decision": null,
+        "twin_seed_decision": null,
+        "store": null
+      },
+      "lean": {
+        "derived_paths": null,
+        "derived_targets": null,
+        "execution_present": false,
+        "finite_target_signature_matches_source": null,
+        "source_active": null,
+        "store": null,
+        "target_path": null,
+        "target_payload": null,
+        "target_seed_decision": null,
+        "twin_path": null,
+        "twin_payload": null,
+        "twin_seed_decision": null
+      }
+    },
+    {
+      "case_id": "missing_decoder",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": false,
+        "source_active": null,
+        "target_payload": null,
+        "twin_payload": null,
+        "target_path": null,
+        "twin_path": null,
+        "finite_target_signature_matches_source": null,
+        "derived_targets": null,
+        "derived_paths": null,
+        "target_seed_decision": null,
+        "twin_seed_decision": null,
+        "store": null
+      },
+      "lean": {
+        "derived_paths": null,
+        "derived_targets": null,
+        "execution_present": false,
+        "finite_target_signature_matches_source": null,
+        "source_active": null,
+        "store": null,
+        "target_path": null,
+        "target_payload": null,
+        "target_seed_decision": null,
+        "twin_path": null,
+        "twin_payload": null,
+        "twin_seed_decision": null
+      }
+    },
+    {
+      "case_id": "stale_gap",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": false,
+        "source_active": null,
+        "target_payload": null,
+        "twin_payload": null,
+        "target_path": null,
+        "twin_path": null,
+        "finite_target_signature_matches_source": null,
+        "derived_targets": null,
+        "derived_paths": null,
+        "target_seed_decision": null,
+        "twin_seed_decision": null,
+        "store": null
+      },
+      "lean": {
+        "derived_paths": null,
+        "derived_targets": null,
+        "execution_present": false,
+        "finite_target_signature_matches_source": null,
+        "source_active": null,
+        "store": null,
+        "target_path": null,
+        "target_payload": null,
+        "target_seed_decision": null,
+        "twin_path": null,
+        "twin_payload": null,
+        "twin_seed_decision": null
+      }
+    },
+    {
+      "case_id": "inactive_snapshot",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": false,
+        "source_active": null,
+        "target_payload": null,
+        "twin_payload": null,
+        "target_path": null,
+        "twin_path": null,
+        "finite_target_signature_matches_source": null,
+        "derived_targets": null,
+        "derived_paths": null,
+        "target_seed_decision": null,
+        "twin_seed_decision": null,
+        "store": null
+      },
+      "lean": {
+        "derived_paths": null,
+        "derived_targets": null,
+        "execution_present": false,
+        "finite_target_signature_matches_source": null,
+        "source_active": null,
+        "store": null,
+        "target_path": null,
+        "target_payload": null,
+        "target_seed_decision": null,
+        "twin_path": null,
+        "twin_payload": null,
+        "twin_seed_decision": null
+      }
+    },
+    {
+      "case_id": "record_slot_collision",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": false,
+        "source_active": null,
+        "target_payload": null,
+        "twin_payload": null,
+        "target_path": null,
+        "twin_path": null,
+        "finite_target_signature_matches_source": null,
+        "derived_targets": null,
+        "derived_paths": null,
+        "target_seed_decision": null,
+        "twin_seed_decision": null,
+        "store": null
+      },
+      "lean": {
+        "derived_paths": null,
+        "derived_targets": null,
+        "execution_present": false,
+        "finite_target_signature_matches_source": null,
+        "source_active": null,
+        "store": null,
+        "target_path": null,
+        "target_payload": null,
+        "target_seed_decision": null,
+        "twin_path": null,
+        "twin_payload": null,
+        "twin_seed_decision": null
+      }
+    },
+    {
+      "case_id": "target_slot_collision",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": false,
+        "source_active": null,
+        "target_payload": null,
+        "twin_payload": null,
+        "target_path": null,
+        "twin_path": null,
+        "finite_target_signature_matches_source": null,
+        "derived_targets": null,
+        "derived_paths": null,
+        "target_seed_decision": null,
+        "twin_seed_decision": null,
+        "store": null
+      },
+      "lean": {
+        "derived_paths": null,
+        "derived_targets": null,
+        "execution_present": false,
+        "finite_target_signature_matches_source": null,
+        "source_active": null,
+        "store": null,
+        "target_path": null,
+        "target_payload": null,
+        "target_seed_decision": null,
+        "twin_path": null,
+        "twin_payload": null,
+        "twin_seed_decision": null
+      }
+    },
+    {
+      "case_id": "twin_slot_collision",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": false,
+        "source_active": null,
+        "target_payload": null,
+        "twin_payload": null,
+        "target_path": null,
+        "twin_path": null,
+        "finite_target_signature_matches_source": null,
+        "derived_targets": null,
+        "derived_paths": null,
+        "target_seed_decision": null,
+        "twin_seed_decision": null,
+        "store": null
+      },
+      "lean": {
+        "derived_paths": null,
+        "derived_targets": null,
+        "execution_present": false,
+        "finite_target_signature_matches_source": null,
+        "source_active": null,
+        "store": null,
+        "target_path": null,
+        "target_payload": null,
+        "target_seed_decision": null,
+        "twin_path": null,
+        "twin_payload": null,
+        "twin_seed_decision": null
+      }
+    },
+    {
+      "case_id": "missing_record",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": false,
+        "source_active": null,
+        "target_payload": null,
+        "twin_payload": null,
+        "target_path": null,
+        "twin_path": null,
+        "finite_target_signature_matches_source": null,
+        "derived_targets": null,
+        "derived_paths": null,
+        "target_seed_decision": null,
+        "twin_seed_decision": null,
+        "store": null
+      },
+      "lean": {
+        "derived_paths": null,
+        "derived_targets": null,
+        "execution_present": false,
+        "finite_target_signature_matches_source": null,
+        "source_active": null,
+        "store": null,
+        "target_path": null,
+        "target_payload": null,
+        "target_seed_decision": null,
+        "twin_path": null,
+        "twin_payload": null,
+        "twin_seed_decision": null
+      }
+    },
+    {
+      "case_id": "wrong_kind_record",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": false,
+        "source_active": null,
+        "target_payload": null,
+        "twin_payload": null,
+        "target_path": null,
+        "twin_path": null,
+        "finite_target_signature_matches_source": null,
+        "derived_targets": null,
+        "derived_paths": null,
+        "target_seed_decision": null,
+        "twin_seed_decision": null,
+        "store": null
+      },
+      "lean": {
+        "derived_paths": null,
+        "derived_targets": null,
+        "execution_present": false,
+        "finite_target_signature_matches_source": null,
+        "source_active": null,
+        "store": null,
+        "target_path": null,
+        "target_payload": null,
+        "target_seed_decision": null,
+        "twin_path": null,
+        "twin_payload": null,
+        "twin_seed_decision": null
+      }
+    },
+    {
+      "case_id": "altered_record_payload",
+      "phase": "split_actual_prefix_intervention_suffix",
+      "exact_match": true,
+      "frozen_prediction": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true,
+        "before": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p1w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 4,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          }
+        },
+        "changed": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p1w1"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 4,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          }
+        },
+        "activated": null
+      },
+      "lean": {
+        "activated": null,
+        "before": {
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          },
+          "clock": 4,
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p1w0",
+              "time": 1
+            }
+          }
+        },
+        "changed": {
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          },
+          "clock": 4,
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p1w1",
+              "time": 1
+            }
+          }
+        },
+        "checked_activation_present": false,
+        "graph_preserved": true,
+        "intervention_present": true,
+        "journal_preserved": true,
+        "prefix_present": true
+      }
+    },
+    {
+      "case_id": "altered_predictively_equivalent_record",
+      "phase": "split_actual_prefix_intervention_suffix",
+      "exact_match": true,
+      "frozen_prediction": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true,
+        "before": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p0w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p0w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 4,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p0w0"
+            ]
+          }
+        },
+        "changed": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p0w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p0w1"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 4,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p0w0"
+            ]
+          }
+        },
+        "activated": null
+      },
+      "lean": {
+        "activated": null,
+        "before": {
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p0w0"
+            ]
+          },
+          "clock": 4,
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p0w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p0w0",
+              "time": 1
+            }
+          }
+        },
+        "changed": {
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p0w0"
+            ]
+          },
+          "clock": 4,
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p0w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p0w1",
+              "time": 1
+            }
+          }
+        },
+        "checked_activation_present": false,
+        "graph_preserved": true,
+        "intervention_present": true,
+        "journal_preserved": true,
+        "prefix_present": true
+      }
+    },
+    {
+      "case_id": "future_dated_record",
+      "phase": "split_actual_prefix_intervention_suffix",
+      "exact_match": true,
+      "frozen_prediction": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true,
+        "before": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p1w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 4,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          }
+        },
+        "changed": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 99,
+              "payload": "p1w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 4,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          }
+        },
+        "activated": null
+      },
+      "lean": {
+        "activated": null,
+        "before": {
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          },
+          "clock": 4,
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p1w0",
+              "time": 1
+            }
+          }
+        },
+        "changed": {
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          },
+          "clock": 4,
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p1w0",
+              "time": 99
+            }
+          }
+        },
+        "checked_activation_present": false,
+        "graph_preserved": true,
+        "intervention_present": true,
+        "journal_preserved": true,
+        "prefix_present": true
+      }
+    },
+    {
+      "case_id": "rejuvenated_stale_record",
+      "phase": "split_actual_prefix_intervention_suffix",
+      "exact_match": true,
+      "frozen_prediction": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true
+      },
+      "prediction_holds": true,
+      "python": {
+        "prefix_present": true,
+        "intervention_present": true,
+        "checked_activation_present": false,
+        "journal_preserved": true,
+        "graph_preserved": true,
+        "before": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p1w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 5,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          }
+        },
+        "changed": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 5,
+              "payload": "p1w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 5,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          }
+        },
+        "activated": null
+      },
+      "lean": {
+        "activated": null,
+        "before": {
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          },
+          "clock": 5,
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p1w0",
+              "time": 1
+            }
+          }
+        },
+        "changed": {
+          "active": {
+            "0": false,
+            "1": false
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          },
+          "clock": 5,
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p1w0",
+              "time": 5
+            }
+          }
+        },
+        "checked_activation_present": false,
+        "graph_preserved": true,
+        "intervention_present": true,
+        "journal_preserved": true,
+        "prefix_present": true
+      }
+    },
+    {
+      "case_id": "independent_only_without_decoder",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "twin_payload": "p1w0",
+        "twin_path": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": null,
+        "twin_payload": "p1w0",
+        "target_path": false,
+        "twin_path": false,
+        "finite_target_signature_matches_source": null,
+        "derived_targets": [],
+        "derived_paths": [],
+        "target_seed_decision": null,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p1w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "3": true
+          },
+          "edges": [],
+          "clock": 4,
+          "captured": {}
+        }
+      },
+      "lean": {
+        "derived_paths": [],
+        "derived_targets": [],
+        "execution_present": true,
+        "finite_target_signature_matches_source": null,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "3": true
+          },
+          "captured": {},
+          "clock": 4,
+          "edges": [],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p1w0"
+            }
+          }
+        },
+        "target_path": false,
+        "target_payload": null,
+        "target_seed_decision": null,
+        "twin_path": false,
+        "twin_payload": "p1w0",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "wrong_predictive_decoder",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "target_payload": "p0w0",
+        "twin_payload": "p0w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p0w0",
+        "twin_payload": "p0w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": false,
+        "derived_targets": [
+          2
+        ],
+        "derived_paths": [
+          true
+        ],
+        "target_seed_decision": false,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p1w0"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p0w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p0w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 6,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true
+        ],
+        "derived_targets": [
+          2
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": false,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          },
+          "clock": 6,
+          "edges": [
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p1w0",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p0w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p0w0"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p0w0",
+        "target_seed_decision": false,
+        "twin_path": false,
+        "twin_payload": "p0w0",
+        "twin_seed_decision": false
+      }
+    },
+    {
+      "case_id": "two_source_derived_targets",
+      "phase": "whole",
+      "exact_match": true,
+      "frozen_prediction": {
+        "execution_present": true,
+        "source_active": false,
+        "derived_targets": [
+          2,
+          4
+        ],
+        "derived_paths": [
+          true,
+          true
+        ],
+        "twin_path": false
+      },
+      "prediction_holds": true,
+      "python": {
+        "execution_present": true,
+        "source_active": false,
+        "target_payload": "p1w0",
+        "twin_payload": "p1w0",
+        "target_path": true,
+        "twin_path": false,
+        "finite_target_signature_matches_source": true,
+        "derived_targets": [
+          2,
+          4
+        ],
+        "derived_paths": [
+          true,
+          true
+        ],
+        "target_seed_decision": true,
+        "twin_seed_decision": false,
+        "store": {
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "time": 1,
+              "payload": "p1w0"
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p1w0"
+            },
+            "4": {
+              "kind": "target",
+              "payload": "p1w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p1w0"
+            }
+          },
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "4": true,
+            "3": true
+          },
+          "edges": [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "clock": 7,
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          }
+        }
+      },
+      "lean": {
+        "derived_paths": [
+          true,
+          true
+        ],
+        "derived_targets": [
+          2,
+          4
+        ],
+        "execution_present": true,
+        "finite_target_signature_matches_source": true,
+        "source_active": false,
+        "store": {
+          "active": {
+            "0": false,
+            "1": false,
+            "2": true,
+            "3": true,
+            "4": true
+          },
+          "captured": {
+            "1": [
+              0,
+              1,
+              "p1w0"
+            ]
+          },
+          "clock": 7,
+          "edges": [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "read": {
+            "0": {
+              "kind": "source",
+              "payload": "p1w0"
+            },
+            "1": {
+              "kind": "record",
+              "origin": 0,
+              "payload": "p1w0",
+              "time": 1
+            },
+            "2": {
+              "kind": "target",
+              "payload": "p1w0"
+            },
+            "3": {
+              "kind": "target",
+              "payload": "p1w0"
+            },
+            "4": {
+              "kind": "target",
+              "payload": "p1w0"
+            }
+          }
+        },
+        "target_path": true,
+        "target_payload": "p1w0",
+        "target_seed_decision": true,
+        "twin_path": false,
+        "twin_payload": "p1w0",
+        "twin_seed_decision": false
+      }
+    }
+  ]
+}

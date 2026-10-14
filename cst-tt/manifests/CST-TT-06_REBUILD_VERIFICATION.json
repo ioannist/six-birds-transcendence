@@ -1,0 +1,672 @@
+{
+  "base_commit": "faaf3b714050ac6acc195d0fab0f49dae9f51a87",
+  "base_resolved": "faaf3b714050ac6acc195d0fab0f49dae9f51a87",
+  "base_tag": "CST-TT-05-v1",
+  "builder_returncode": 0,
+  "byte_identical_surface_count": 131,
+  "generated_surface_count": 131,
+  "mismatches": [],
+  "phase": "CST-TT-06",
+  "project": "CST-TT",
+  "pytest_returncode": 0,
+  "schema_version": "1.0",
+  "status": "PASS",
+  "surfaces": [
+    {
+      "path": "CHANGELOG.md",
+      "reproduced": true,
+      "sha256": "d7fd934b0b4e0d94e9e341f0066bad9d757f0f7263fc8c8640db96d74ade6389"
+    },
+    {
+      "path": "README.md",
+      "reproduced": true,
+      "sha256": "38150f1b64cdb38dbfbd5fd7b279393e986cbdf9966ea9754e47d78d5509098e"
+    },
+    {
+      "path": "RESTORE_AND_VERIFY.md",
+      "reproduced": true,
+      "sha256": "039794aa11ef99732f80bc5fd4982b2e2eff5f8f23204e382f3c069c55ab7164"
+    },
+    {
+      "path": "STATE.md",
+      "reproduced": true,
+      "sha256": "cb59db0bd7e296ea18eb049dcf0279694554fcd8720d9cdd23d9ace48cf16678"
+    },
+    {
+      "path": "STATUS.md",
+      "reproduced": true,
+      "sha256": "c152dc1eb9aaff2d18c9df32f342b045aa8ca2b85cd8984ff4a493dd0963acfa"
+    },
+    {
+      "path": "changelog/CST-TT-06.md",
+      "reproduced": true,
+      "sha256": "b73a493c587a264684ef4728eee83861e502c532b0feb4f99669dab311f9293c"
+    },
+    {
+      "path": "docs/CST-TT-06_DECISION_GATE.md",
+      "reproduced": true,
+      "sha256": "d1183f32883ea78066361f659431212e40c9168c767a576d5577669c78ffbfee"
+    },
+    {
+      "path": "docs/FULL_HANDOFF_COMPOSITION_THEOREM.md",
+      "reproduced": true,
+      "sha256": "1ab6f3db7ceb3d1660e16e782bce8902cfb68aaaf4d1229e9bf05db69b3ee5b9"
+    },
+    {
+      "path": "docs/FULL_TOY_SUITE_CLOSURE.md",
+      "reproduced": true,
+      "sha256": "dc26b4ee8ac3d0b5d5ac9dc69c9b643ca7658cdaf8b29df93979660a4321b616"
+    },
+    {
+      "path": "docs/FUSION_RECOMBINATION_BOUNDARY.md",
+      "reproduced": true,
+      "sha256": "f9476874912129bc0e324e4a673232a25bffd934f472956ef669784abc5673ec"
+    },
+    {
+      "path": "docs/PHASE_BOUNDARY.md",
+      "reproduced": true,
+      "sha256": "c6087e0979c047c8986e933efc89d4ddfd4f911b6b7f1f3c0d830ae52752fa10"
+    },
+    {
+      "path": "docs/RELATION_VALUED_TEMPORAL_FISSION.md",
+      "reproduced": true,
+      "sha256": "fe8bc3c4be1879238a0af3f43a5451e638da04efa123874b6140588a9a811d4b"
+    },
+    {
+      "path": "docs/RESTORE_AND_BUILD.md",
+      "reproduced": true,
+      "sha256": "039794aa11ef99732f80bc5fd4982b2e2eff5f8f23204e382f3c069c55ab7164"
+    },
+    {
+      "path": "docs/ROUTE_COMPLETION.md",
+      "reproduced": true,
+      "sha256": "8fced1bddbe7cdf4fb87356f0e7126f48b79eec31942b63cf17515aba0a07c12"
+    },
+    {
+      "path": "docs/TT06_MINIMALITY_AND_INDEPENDENCE.md",
+      "reproduced": true,
+      "sha256": "8c568b4561dd4ad60007c68f1f99d80ce9ec1b5bd9bcba54b896d27ed384af27"
+    },
+    {
+      "path": "examples/scaffold/full_handoff_composition_certificate.scaffold.json",
+      "reproduced": true,
+      "sha256": "8c47490a9760ca32c7b7705d3e267c3cd0900416fb93a2c266b501081601bd47"
+    },
+    {
+      "path": "examples/scaffold/fusion_boundary_certificate.scaffold.json",
+      "reproduced": true,
+      "sha256": "34b45aa91023319a9aaee97572c9e445bf8ad18f0d4c12e26c33b1dae43a7d27"
+    },
+    {
+      "path": "examples/scaffold/route_completion_certificate.scaffold.json",
+      "reproduced": true,
+      "sha256": "ae294666dc80210b8adf72aaf1226152539873a2695bba9341c5f96f3be82332"
+    },
+    {
+      "path": "examples/scaffold/temporal_fission_certificate.scaffold.json",
+      "reproduced": true,
+      "sha256": "23442ef4a06888930303430735a77d6ef9877ee1a902d96383f6bb2bc1690bd7"
+    },
+    {
+      "path": "examples/scaffold/toy_suite_closure_certificate.scaffold.json",
+      "reproduced": true,
+      "sha256": "76aae4e7862e6a891bc10f8e6042c093eb262ae24fdd87630a333b672e403b46"
+    },
+    {
+      "path": "formal/README.md",
+      "reproduced": true,
+      "sha256": "380a48555eb5da37688808c6fb16f8dfd49190c5219ebca9b6157eb548654408"
+    },
+    {
+      "path": "formal/TOOLCHAIN_STATUS.json",
+      "reproduced": true,
+      "sha256": "984d2a8f0a52330dddd9ec9edcf3f7742ce047b96632382af7290d7ffc3ec046"
+    },
+    {
+      "path": "formal/certificates/composition/COR-COMP-FULL-01.certificate.json",
+      "reproduced": true,
+      "sha256": "656e1275a4c515bbbcc1f596fab9226956056a7b14fbf8cfb64a191eeac72f3c"
+    },
+    {
+      "path": "formal/certificates/composition/FIACH-COMP-01.certificate.json",
+      "reproduced": true,
+      "sha256": "335893cfba4e0523cee22b049eca20dd3e2faa22f220c3c97cc549ac9e7db4c9"
+    },
+    {
+      "path": "formal/certificates/composition/STG-COMP-01.certificate.json",
+      "reproduced": true,
+      "sha256": "6363f1e7e54d310e679621466976276fc3b005f362bf6cad1c8798d97d9519fc"
+    },
+    {
+      "path": "formal/certificates/composition/autonomy/AUT-COMP-A.certificate.json",
+      "reproduced": true,
+      "sha256": "a8e4074f87f7055f8581bd5052b5c136e4a18415dfa38d19edf041831a028261"
+    },
+    {
+      "path": "formal/certificates/composition/autonomy/AUT-COMP-B.certificate.json",
+      "reproduced": true,
+      "sha256": "17596f1627cb901703ef0af268eda57eb6bb25f523ecd075b9c36cd8926f0e90"
+    },
+    {
+      "path": "formal/certificates/composition/autonomy/AUT-COMP-OUTER.certificate.json",
+      "reproduced": true,
+      "sha256": "62f6a1ec41e3d56e30feac7a4223c02ebaea02ef9dcdc8f3a7203766885cb903"
+    },
+    {
+      "path": "formal/certificates/composition/corridors/COR-POS-03-FULL-COMPOSITE.certificate.json",
+      "reproduced": true,
+      "sha256": "c9f5b296ae562b10ff8d3ec313601da96712a1ba5b9df11dd51a45a201363341"
+    },
+    {
+      "path": "formal/certificates/composition/fiach/FIACH-COMP-A.certificate.json",
+      "reproduced": true,
+      "sha256": "0b013955ea3e3f44f948a326e900e15ef67960fbbea67f382b4053386797b6c3"
+    },
+    {
+      "path": "formal/certificates/composition/fiach/FIACH-COMP-B.certificate.json",
+      "reproduced": true,
+      "sha256": "680a771c7fe014eb6b44a12eaf9016578181549c980bd15e5780e0e9acf77581"
+    },
+    {
+      "path": "formal/certificates/composition/fiach/FIACH-COMP-OUTER.certificate.json",
+      "reproduced": true,
+      "sha256": "0d50e31963f999e84652da8d8700ac29e34e771cd58e36cf7e35bafed5e8d543"
+    },
+    {
+      "path": "formal/certificates/composition/packages/PKG-POS-05-COMP-SOURCE.certificate.json",
+      "reproduced": true,
+      "sha256": "a6a570cab6f1d3235f631d5780e6cfa50ba28ba859764387a3df624098486bad"
+    },
+    {
+      "path": "formal/certificates/composition/packages/PKG-POS-06-COMP-MIDDLE.certificate.json",
+      "reproduced": true,
+      "sha256": "bf43c52711f4f302dc15adf7e4ffa8d4e4dfb6878f5704943bbf43693584c361"
+    },
+    {
+      "path": "formal/certificates/composition/packages/PKG-POS-07-COMP-TARGET.certificate.json",
+      "reproduced": true,
+      "sha256": "370b792da44f6ddb4045af5392f39b83c09c05a5e417c0b61e10ed381588e445"
+    },
+    {
+      "path": "formal/certificates/composition/staged/STG-COMP-A.certificate.json",
+      "reproduced": true,
+      "sha256": "89aa4ae7a08c9bdb835fabcb5946d00b472a82526e8ad525652120202ab1d46c"
+    },
+    {
+      "path": "formal/certificates/composition/staged/STG-COMP-B.certificate.json",
+      "reproduced": true,
+      "sha256": "3d4eced7eaed1458b47423361a9afc30105b8fc4f56fb739720b43de6b9c1aa6"
+    },
+    {
+      "path": "formal/certificates/composition/staged/STG-COMP-OUTER.certificate.json",
+      "reproduced": true,
+      "sha256": "badcf57c7937153a347bfe62f6dc3c7b50b6797845e7af2f4147bb94f599c4f5"
+    },
+    {
+      "path": "formal/certificates/fission/FISSION-POS-01.certificate.json",
+      "reproduced": true,
+      "sha256": "d6f9368e6d928a8b08009455dbde1f5d7590a024531e4e62ab3a3e76f99458e8"
+    },
+    {
+      "path": "formal/certificates/fission/autonomy/AUT-FIS-LEFT.certificate.json",
+      "reproduced": true,
+      "sha256": "8ed616635694470c33dcea929d93d5ddc30acd0361896892addd6aca698627ca"
+    },
+    {
+      "path": "formal/certificates/fission/autonomy/AUT-FIS-RIGHT.certificate.json",
+      "reproduced": true,
+      "sha256": "3800f6328855ba60d3bbb22defb51c3b0bddc24f999de8ea15c1d324899a3b34"
+    },
+    {
+      "path": "formal/certificates/fission/controls/FIS-C01.certificate.json",
+      "reproduced": true,
+      "sha256": "19f6232c29681050c36c5e5f73693287f4a71952bb819023be2b5f5526cc7eb9"
+    },
+    {
+      "path": "formal/certificates/fission/controls/FIS-C02.certificate.json",
+      "reproduced": true,
+      "sha256": "0501e5a6d6716845df396a9644ee14f1ea7fee2e99dcd41b0f19ab944f4f9ee4"
+    },
+    {
+      "path": "formal/certificates/fission/controls/FIS-C03.certificate.json",
+      "reproduced": true,
+      "sha256": "35235a7a95b8c616c36d3af895c9872b4ef7d5c69bb978aceda47e47e43cf537"
+    },
+    {
+      "path": "formal/certificates/fission/controls/FIS-C04.certificate.json",
+      "reproduced": true,
+      "sha256": "8141292419662b090d524868c0551c221a451844eacac9d04c06a0ced7fe3ead"
+    },
+    {
+      "path": "formal/certificates/fission/controls/FIS-C05.certificate.json",
+      "reproduced": true,
+      "sha256": "19b7bc9eed82689d9ba966bd97206fe3cb07ae36969054d2d297b926910169c8"
+    },
+    {
+      "path": "formal/certificates/fission/controls/FIS-C06.certificate.json",
+      "reproduced": true,
+      "sha256": "da7ada26b15f193e31b6e22006c1c6ef1bea6a9cf15e2a02516862aef8a7d2df"
+    },
+    {
+      "path": "formal/certificates/fission/corridors/COR-FIS-LEFT.certificate.json",
+      "reproduced": true,
+      "sha256": "096b2bfc9925f6d9f9aa262e28275cd3b7f74274acb3418d9ae93e3a9feebadc"
+    },
+    {
+      "path": "formal/certificates/fission/corridors/COR-FIS-RIGHT.certificate.json",
+      "reproduced": true,
+      "sha256": "9bf7a1ae0976904509131548fac69a92865f438795575d9209e15b0660400014"
+    },
+    {
+      "path": "formal/certificates/fission/fiach/FIACH-FIS-LEFT.certificate.json",
+      "reproduced": true,
+      "sha256": "dd0e1a68b4e0010c33e561cd9cc3700a553030c5695a43e38e2dc8443160d63f"
+    },
+    {
+      "path": "formal/certificates/fission/fiach/FIACH-FIS-RIGHT.certificate.json",
+      "reproduced": true,
+      "sha256": "7600a3659ead24cd84b776222d0b6dcb967736db098d4358dfc3499c6a4e8fd3"
+    },
+    {
+      "path": "formal/certificates/fission/packages/PKG-FIS-LEFT.certificate.json",
+      "reproduced": true,
+      "sha256": "24fb0d887e8cb691327b82acf0d8f3cf5334f2d8d8e98fec37cba401601f1b98"
+    },
+    {
+      "path": "formal/certificates/fission/packages/PKG-FIS-RIGHT.certificate.json",
+      "reproduced": true,
+      "sha256": "082eaab0a00f5a3cfbe1eab40332a89f3514e36740bd398eecf09e3c8054eeee"
+    },
+    {
+      "path": "formal/certificates/fission/packages/PKG-FIS-SOURCE.certificate.json",
+      "reproduced": true,
+      "sha256": "c3b2ffd7a46637c27b4a4f341e7453f750308d2ffbdce4a6059081dd237d2d31"
+    },
+    {
+      "path": "formal/certificates/fission/staged/STG-FIS-LEFT.certificate.json",
+      "reproduced": true,
+      "sha256": "05064b819c74ca208919cd63726089563b0e618ae6be831b9c9691cb82a8e84a"
+    },
+    {
+      "path": "formal/certificates/fission/staged/STG-FIS-RIGHT.certificate.json",
+      "reproduced": true,
+      "sha256": "cb18a4e0b7aae843fad368f6cea1b24c4f79f6a2d819841e51703e625721b69e"
+    },
+    {
+      "path": "formal/certificates/fusion/FUSION-BOUNDARY-01.certificate.json",
+      "reproduced": true,
+      "sha256": "6415d1ae59eafc2106f87541cee73492cd41276678ea78f367483b9d9732eb38"
+    },
+    {
+      "path": "formal/certificates/fusion/controls/FUSION-CONTROL-VALID-PACKAGE.certificate.json",
+      "reproduced": true,
+      "sha256": "8b8bf1b251bae5cd7cfd10284cdca8cff7d37d64221c5148d958806d4f08e3b7"
+    },
+    {
+      "path": "formal/certificates/fusion/corridors/COR-FUS-LEFT.certificate.json",
+      "reproduced": true,
+      "sha256": "8d8a5570312e12f7d222005d1bad4009e288fa56610a7498fcf616eb91b14c03"
+    },
+    {
+      "path": "formal/certificates/fusion/corridors/COR-FUS-RIGHT.certificate.json",
+      "reproduced": true,
+      "sha256": "5e8d6204b87c87dd5dc6f14d5aaf45e44b1a0507edbbc95cb5de7689a5e462e4"
+    },
+    {
+      "path": "formal/certificates/fusion/packages/PKG-FUS-CONTROL-VALID.certificate.json",
+      "reproduced": true,
+      "sha256": "b14d80a2888d1e0759f947da339d502b9d0cfdc5c25b92f5f2636ba5b6a39d73"
+    },
+    {
+      "path": "formal/certificates/fusion/packages/PKG-FUS-NEG-01.certificate.json",
+      "reproduced": true,
+      "sha256": "5c470f03835935d2f069890210e0ebbf3debeeabe157037b54937b9c2db5b92a"
+    },
+    {
+      "path": "formal/certificates/route_completion/ROUTE-COMP-FLAT-01.certificate.json",
+      "reproduced": true,
+      "sha256": "ea22af4e5a5de4b2c1c8605f36ec6afa65a0f49ba9596b53e6ebd7264593fcc5"
+    },
+    {
+      "path": "formal/certificates/route_completion/ROUTE-COMP-INDEXED-01.certificate.json",
+      "reproduced": true,
+      "sha256": "9e7c9a4847e4d46dc92736b1c09692b18d159b22c66fb36f1b93378980cd9b8c"
+    },
+    {
+      "path": "formal/certificates/route_completion/controls/ROUTE-COMP-C01.certificate.json",
+      "reproduced": true,
+      "sha256": "4cb06597f6ad3abb6817a9f337dbe4c1aeb09d2ee4506771a969aee592706629"
+    },
+    {
+      "path": "formal/certificates/search/FISSION_SYMMETRY_EXHAUSTION.json",
+      "reproduced": true,
+      "sha256": "a116f7beebc08fb12e32c32b4a594cdc9118b93a587763268ebb91dd59d8783b"
+    },
+    {
+      "path": "formal/certificates/search/FULL_HANDOFF_INTERFACE_EXHAUSTION.json",
+      "reproduced": true,
+      "sha256": "a7d1ee0ea17d335ad1b42b7f087b2e77a59f7103c737ac958a9c470fe33eb130"
+    },
+    {
+      "path": "formal/certificates/search/FUSION_BOUNDARY_EXHAUSTION.json",
+      "reproduced": true,
+      "sha256": "63ee85c212bd4e13e11b45bdd5bf1985aa72115f028779c0cfaf004dc34b9908"
+    },
+    {
+      "path": "formal/certificates/search/ROUTE_COMPLETION_EXHAUSTION.json",
+      "reproduced": true,
+      "sha256": "0fc5fc7a8de56ef02ae7698142599d41570ebdbb19c9c24da9abe1f2c7763e6c"
+    },
+    {
+      "path": "formal/certificates/search/TOY_HIDDEN_EQUIVALENCE_SEARCH.json",
+      "reproduced": true,
+      "sha256": "2eb0ca60bffb601fd1761ea61285da9004e3e9c2a6b2d9d0330eb2d69cca2456"
+    },
+    {
+      "path": "formal/certificates/toy_suite/TOY-SUITE-PRIMARY-01.certificate.json",
+      "reproduced": true,
+      "sha256": "484216e96a69e14773cfa69e01cfbbcbc83741046f5eec086ed8099ae25d105e"
+    },
+    {
+      "path": "manifests/COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "6ebf065e96f91c4e373c7039d2211f138d4a568de72dbbb8b82541cb239a20e7"
+    },
+    {
+      "path": "manifests/CST-TT-06_COMPLETION_REPORT.md",
+      "reproduced": true,
+      "sha256": "6ebf065e96f91c4e373c7039d2211f138d4a568de72dbbb8b82541cb239a20e7"
+    },
+    {
+      "path": "manifests/CST-TT-06_MODEL_CERTIFICATE_DELTA.csv",
+      "reproduced": true,
+      "sha256": "eb776ceed545b864e88bf5d7397f056eaa049b184203fda29a96a23707f6f377"
+    },
+    {
+      "path": "manifests/CST-TT-06_PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "69be0b705051e050196b0996d37864a75ad2eac81b3dbd55c5d13b832b5b8639"
+    },
+    {
+      "path": "manifests/CST-TT-06_THEOREM_STATUS_DELTA.csv",
+      "reproduced": true,
+      "sha256": "199dd42e88bf18b8e29cfdfd7be31694492f94ef7940c3966dbb5bcc37e4486a"
+    },
+    {
+      "path": "manifests/PHASE_SUMMARY.json",
+      "reproduced": true,
+      "sha256": "69be0b705051e050196b0996d37864a75ad2eac81b3dbd55c5d13b832b5b8639"
+    },
+    {
+      "path": "models/composition/FIACH-COMP-01.model.json",
+      "reproduced": true,
+      "sha256": "5fdfeddb562192c8693db83ddab13bd5d1d77d8712d8892d6f0dcce8784ebd43"
+    },
+    {
+      "path": "models/composition/autonomy/AUT-COMP-A.model.json",
+      "reproduced": true,
+      "sha256": "ccbdd0992445ed35acf2268feaeffaa477842198b2b294f24845b8b032da1136"
+    },
+    {
+      "path": "models/composition/autonomy/AUT-COMP-B.model.json",
+      "reproduced": true,
+      "sha256": "527f22e95e27f780b9e62188876a09bb34a5268a831c9fda9583968417937672"
+    },
+    {
+      "path": "models/composition/autonomy/AUT-COMP-OUTER.model.json",
+      "reproduced": true,
+      "sha256": "c6890f901c9eabd0ee0160bd439302b1a094f8a17c6bb0962a7856fa80c2cfb0"
+    },
+    {
+      "path": "models/composition/fiach/FIACH-COMP-A.model.json",
+      "reproduced": true,
+      "sha256": "28fc93d7618ba11dad4cdb9a6a5fcdd754e5124ec3cac79b45a45068dd3a7a06"
+    },
+    {
+      "path": "models/composition/fiach/FIACH-COMP-B.model.json",
+      "reproduced": true,
+      "sha256": "7fb8abaff9ed5cc7ae268e9033da4c028c98f9eac980beb75407bfb8ec600ef5"
+    },
+    {
+      "path": "models/composition/fiach/FIACH-COMP-OUTER.model.json",
+      "reproduced": true,
+      "sha256": "483dc650fe0628f3f337f390b5f388975d6dbdc9d16d8f32e00e0fe90218b281"
+    },
+    {
+      "path": "models/composition/packages/PKG-POS-05-COMP-SOURCE.model.json",
+      "reproduced": true,
+      "sha256": "9482a9e8df2d7879f458ae9f7dd1af616e002420e3fe3bfd14291320752b809d"
+    },
+    {
+      "path": "models/composition/packages/PKG-POS-06-COMP-MIDDLE.model.json",
+      "reproduced": true,
+      "sha256": "adb00adc047066badf566ced137680cd5e3cb24d234e1cdf6039ff169b9ab73c"
+    },
+    {
+      "path": "models/composition/packages/PKG-POS-07-COMP-TARGET.model.json",
+      "reproduced": true,
+      "sha256": "7933a6eda7ad6351db73bd5998fe7efbc14264e49c072b3520a76e4c3007658a"
+    },
+    {
+      "path": "models/composition/staged/STG-COMP-A.assembly.json",
+      "reproduced": true,
+      "sha256": "e6fc627b262c390d6a912d7edf04eae41c38ba19e1b1a50509bca13b27f74e2c"
+    },
+    {
+      "path": "models/composition/staged/STG-COMP-B.assembly.json",
+      "reproduced": true,
+      "sha256": "15429a44d33ec658e87a76e50390d4b1e60d35f821b8d3e6c6f56e9209b09d1f"
+    },
+    {
+      "path": "models/composition/staged/STG-COMP-OUTER.assembly.json",
+      "reproduced": true,
+      "sha256": "5bb05fb8fba11b15f82f3cc2b2e01169a7d8ba36d1540494afb6a10836e2d809"
+    },
+    {
+      "path": "models/corridors/COR-POS-03-FULL-COMPOSITE.model.json",
+      "reproduced": true,
+      "sha256": "e4cd3049d819c37b9c32218e43159bc55b1c46fe871dca298aee11ec385e9945"
+    },
+    {
+      "path": "models/fission/COR-FIS-LEFT.model.json",
+      "reproduced": true,
+      "sha256": "df50a7c71b34c49ffd9698d29f7645e5b4e03ba6be447797abb3c52798ffc899"
+    },
+    {
+      "path": "models/fission/COR-FIS-RIGHT.model.json",
+      "reproduced": true,
+      "sha256": "8badcacaf3769b927bf099534e5af935cd6e2a5f2cfe74e0bd5cb3fe2be78bfe"
+    },
+    {
+      "path": "models/fission/FISSION-POS-01.model.json",
+      "reproduced": true,
+      "sha256": "b35aedc972cb648af1782fe6a4a13355ed857c0ef4d28f67c2d2dfd5ac9a2c69"
+    },
+    {
+      "path": "models/fission/autonomy/AUT-FIS-LEFT.model.json",
+      "reproduced": true,
+      "sha256": "a81c2d67995bde4c7a5de4c3955c8ccf691ccbf11fa75f3dc765f0b4dfe863ef"
+    },
+    {
+      "path": "models/fission/autonomy/AUT-FIS-RIGHT.model.json",
+      "reproduced": true,
+      "sha256": "f7c92e0caf69e75e61caaea4010f69fed0d46ab1eef14e523b6b730d466b06e0"
+    },
+    {
+      "path": "models/fission/controls/FIS-C01.model.json",
+      "reproduced": true,
+      "sha256": "d13581f6ee605c92ea64ebf9ee1171d1cb6a770b5c82f2e0769d2a378f0fa9ea"
+    },
+    {
+      "path": "models/fission/controls/FIS-C02.model.json",
+      "reproduced": true,
+      "sha256": "f9fa233bb373310c95bed5e0914f4b60f9c9ed41a0a8abfb010ebd7410b22e1d"
+    },
+    {
+      "path": "models/fission/controls/FIS-C03.model.json",
+      "reproduced": true,
+      "sha256": "f8ebe7b5cb57568b2765cfee6df0887f04ae5d9ab9235c59e507cf22eead98b0"
+    },
+    {
+      "path": "models/fission/controls/FIS-C04.model.json",
+      "reproduced": true,
+      "sha256": "5ec086ac53f6aad56398478a275cf810e55d257dcebf646e81357d25d0b219b6"
+    },
+    {
+      "path": "models/fission/controls/FIS-C05.model.json",
+      "reproduced": true,
+      "sha256": "0be0306eedb7dd3ee6d6a54c0665f1ec47c7402979b298f90aedd058a349c412"
+    },
+    {
+      "path": "models/fission/controls/FIS-C06.model.json",
+      "reproduced": true,
+      "sha256": "9167fb33686e812da69b4229fda1f7ba5ccce8dff1415e22f405db2f81efd37c"
+    },
+    {
+      "path": "models/fission/fiach/FIACH-FIS-LEFT.model.json",
+      "reproduced": true,
+      "sha256": "3bd5fd91439560294f20962c4432b8974789de0a8dfb9fa9296c68b88048631a"
+    },
+    {
+      "path": "models/fission/fiach/FIACH-FIS-RIGHT.model.json",
+      "reproduced": true,
+      "sha256": "a17060dc7a8384c0ab188aba8744fb7171892017daa8f97c8b05cccfd0b750e4"
+    },
+    {
+      "path": "models/fission/packages/PKG-FIS-LEFT.model.json",
+      "reproduced": true,
+      "sha256": "eca8b37bf7ea5d159b7c6bc9a9369ae5eb9fd5e49352385e847e411feb4b0710"
+    },
+    {
+      "path": "models/fission/packages/PKG-FIS-RIGHT.model.json",
+      "reproduced": true,
+      "sha256": "d8f5031f1b6b1c37c7e673e597ee83b08f69972f9abd5f4771010b1950855561"
+    },
+    {
+      "path": "models/fission/packages/PKG-FIS-SOURCE.model.json",
+      "reproduced": true,
+      "sha256": "42de5d755220aff998bd4c01bc77d395ae78b15a3b736f5cd3b48363f670908e"
+    },
+    {
+      "path": "models/fission/staged/STG-FIS-LEFT.assembly.json",
+      "reproduced": true,
+      "sha256": "6231f7bfd2bbf8d2a074c6ddac693dfa4a16158487cf8ef7908a68555b76937e"
+    },
+    {
+      "path": "models/fission/staged/STG-FIS-RIGHT.assembly.json",
+      "reproduced": true,
+      "sha256": "7ee20dd2a03c6b6f11b193f0b37ab2d4dd64b25824803fb4cb376de97dc4ae9c"
+    },
+    {
+      "path": "models/fusion/COR-FUS-LEFT.model.json",
+      "reproduced": true,
+      "sha256": "3f0d44ce3e3dc1581fa1f5e85db4a84d1f390375ed3f1421444b8005aa839d3f"
+    },
+    {
+      "path": "models/fusion/COR-FUS-RIGHT.model.json",
+      "reproduced": true,
+      "sha256": "8910c0c86d18de587e8c4693334652f1a2e1217ccf5e43cadbb2db9e3e7893f5"
+    },
+    {
+      "path": "models/fusion/FUSION-BOUNDARY-01.model.json",
+      "reproduced": true,
+      "sha256": "b9a468e04e2068a9b0b8d4c45c0e11b0b24cee5e45b77ad59cd8072ab9c8658a"
+    },
+    {
+      "path": "models/fusion/packages/PKG-FUS-CONTROL-VALID.model.json",
+      "reproduced": true,
+      "sha256": "a19a9ce208b9a66a20279eec77c58ceb952fefdb45edd875815620bab52ef4b0"
+    },
+    {
+      "path": "models/fusion/packages/PKG-FUS-NEG-01.model.json",
+      "reproduced": true,
+      "sha256": "d031c00e43cd5893a131880d81afd25e0e31a9a6b14e0eab45ab9259b09122e6"
+    },
+    {
+      "path": "models/toy_suite/TOY-SUITE-PRIMARY-01.model.json",
+      "reproduced": true,
+      "sha256": "27899da26055d8de13ce772cc52a1cd389de008dad02c0348864e8fce146ae0d"
+    },
+    {
+      "path": "models/toy_suite/TOY_FEATURE_MATRIX.json",
+      "reproduced": true,
+      "sha256": "53f2985a9a4b7483fef4ae5d6696c1695d858aff595e0f1ad0d1dc1ff024864f"
+    },
+    {
+      "path": "registries/CERTIFICATE_SCHEMA_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "deb9bb1c1144b42b307a9d0871e3e2d3091f8a8b310fc5207c47fcd9c0ff031e"
+    },
+    {
+      "path": "registries/FISSION_CONTROL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "efaaddde020f330d51c5a3e863856a812066aa193793dc6478336ea5db2e55b6"
+    },
+    {
+      "path": "registries/FULL_HANDOFF_COMPOSITION_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "c972b6992b16589760620426311f8d92b38182ca4b7ab714018bee2128125761"
+    },
+    {
+      "path": "registries/FUSION_BOUNDARY_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "70d52e55254a50d4f9e77af354c6219da85490e66133a6e493569c38bddad73e"
+    },
+    {
+      "path": "registries/PROJECT_REGISTRY.json",
+      "reproduced": true,
+      "sha256": "7c7f3629f2e20542f360dba529c2da20d8aa173880c51a8ca31003520a49e408"
+    },
+    {
+      "path": "registries/ROUTE_COMPLETION_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "66964748121923c836f6c58bcc6102e392410654a9514f9199fff8ad69e6a9d4"
+    },
+    {
+      "path": "registries/TEMPORAL_FISSION_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "91a565350952fffce2184e81a04a7818de3cca4dd7871dc4cf8ed2e8a28b311a"
+    },
+    {
+      "path": "registries/THEOREM_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "658e3e3c9ed3c22c2040e01672e7cabcac62d6bf86e345e17246f4c81a3d01ce"
+    },
+    {
+      "path": "registries/TOY_MODEL_REGISTRY.csv",
+      "reproduced": true,
+      "sha256": "e3e5562ed11c6e7d145fcb3b4813da13b05163a48f3f8283b256c781e9cb73cb"
+    },
+    {
+      "path": "registries/TT06_TOY_CLOSURE.csv",
+      "reproduced": true,
+      "sha256": "3d916262ab8f86a405c83107cafd64e8e765a09d9c907dd2b89ccaa410d009fc"
+    },
+    {
+      "path": "schemas/certificates/full_handoff_composition_certificate.schema.json",
+      "reproduced": true,
+      "sha256": "5758b19cd1b481aa4260bc051016292b9c0d48996ce08381f9e6465e7df732c8"
+    },
+    {
+      "path": "schemas/certificates/fusion_boundary_certificate.schema.json",
+      "reproduced": true,
+      "sha256": "dd946c613bcb369371e8697f6bb99d3956ea7e6e293fd7abc6dd254e7c02b448"
+    },
+    {
+      "path": "schemas/certificates/route_completion_certificate.schema.json",
+      "reproduced": true,
+      "sha256": "a33dc2337e5ab5b6924d213c52a463d2b63c93716e99d5e62699c1c03a91e2f5"
+    },
+    {
+      "path": "schemas/certificates/temporal_fission_certificate.schema.json",
+      "reproduced": true,
+      "sha256": "545ac6f9f3c83613ae438334cd35d36eba3345abcc30cf0bf86c660d3a19eb36"
+    },
+    {
+      "path": "schemas/certificates/toy_suite_closure_certificate.schema.json",
+      "reproduced": true,
+      "sha256": "d0408415ed04133c19dfec5cf435e53db70f41d02615edbd96261a1976838e0b"
+    }
+  ],
+  "validator_returncode": 0
+}

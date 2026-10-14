@@ -1,0 +1,30 @@
+{
+  "certificate_id": "FIACH-COMP-OUTER",
+  "claim_ceiling": "exact finite structural precursor only",
+  "component_refs": {
+    "autonomy": "formal/certificates/composition/autonomy/AUT-COMP-OUTER.certificate.json",
+    "corridor": "formal/certificates/composition/corridors/COR-POS-03-FULL-COMPOSITE.certificate.json",
+    "source_package": "formal/certificates/composition/packages/PKG-POS-05-COMP-SOURCE.certificate.json",
+    "staged_assembly": "formal/certificates/composition/staged/STG-COMP-OUTER.certificate.json",
+    "target_package": "formal/certificates/composition/packages/PKG-POS-07-COMP-TARGET.certificate.json"
+  },
+  "component_sha256": {
+    "autonomy": "62f6a1ec41e3d56e30feac7a4223c02ebaea02ef9dcdc8f3a7203766885cb903",
+    "corridor": "c9f5b296ae562b10ff8d3ec313601da96712a1ba5b9df11dd51a45a201363341",
+    "source_package": "a6a570cab6f1d3235f631d5780e6cfa50ba28ba859764387a3df624098486bad",
+    "staged_assembly": "badcf57c7937153a347bfe62f6dc3c7b50b6797845e7af2f4147bb94f599c4f5",
+    "target_package": "370b792da44f6ddb4045af5392f39b83c09c05a5e417c0b61e10ed381588e445"
+  },
+  "recognition_status": "not-addressed",
+  "route_status": "route-indexed",
+  "schema_version": "CST-TT-06",
+  "source": {
+    "code": 17,
+    "label": "source-substrate"
+  },
+  "target": {
+    "code": 101,
+    "label": "target-substrate"
+  },
+  "title": "composite exact finite Temporal-FIACH handoff for full composition"
+}

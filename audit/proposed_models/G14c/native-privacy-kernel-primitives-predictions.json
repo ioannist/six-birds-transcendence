@@ -1,0 +1,58 @@
+{
+  "id": "NATIVE-PRIVACY-KERNEL-1",
+  "scope": "new ignored mathematical candidate, not evaluated public fixture, full C4 on realized maintained kernel; shared native row projection for C2/C3",
+  "frozen_at_utc": "2026-10-10T15:36:10.685895+00:00",
+  "native_state": "Factor=(outside,privatePhase,recordBit): Bool^3",
+  "kernel_state": "(privatePhase,recordBit): Bool^2 injected (false,privatePhase,recordBit)",
+  "native_rows": {
+    "outside_true": "both actions singleton self weight1",
+    "outside_false_safe_false": "singleton (false,not privatePhase,recordBit) weight1",
+    "outside_false_probe_true": "if privatePhase then singleton(false,false,recordBit), else singleton(true,false,recordBit); weight1"
+  },
+  "positions": "constant0",
+  "hazards": "outside bit",
+  "public_channels": [
+    "position",
+    "availability"
+  ],
+  "kernel_destination": "inside outcomes return (phase,record); outside outcomes return none",
+  "outside_block": 2,
+  "profile_blocks": [
+    0,
+    1,
+    2
+  ],
+  "profile_depth": 1,
+  "profile_trajectory": [
+    1,
+    2,
+    2
+  ],
+  "reference_kernel_classes": "bit(privatePhase)",
+  "reference_native_classes": "if outside then2 else bit(privatePhase)",
+  "split": [
+    [
+      false,
+      false
+    ],
+    [
+      true,
+      false
+    ]
+  ],
+  "safe_connector": "[(false,false),(true,false)] actual safe toggle, loop in public quotient",
+  "prediction_scope": "first-step actual hazard signatures plus exact stable kernel transition refinement; all-query bridge still separate until proved",
+  "predictions": {
+    "native_kernel_rows_nonempty_normalized": true,
+    "strict_promotion": true,
+    "kernel_recursive_stable_profile": "1->2->2 and labels=bit phase",
+    "public_channels_nonempty": "exact position and availability both constant",
+    "full_nonexposure": true,
+    "same_current_different_predictive": true,
+    "connector_supported": true,
+    "added_predictive_current_channel_exposure": true,
+    "missing_input_none": true,
+    "old_surrogate_acceptance": false
+  },
+  "remaining": "full native eight-clause package/physical C5-C7/source-target realization and all-query equivalence are not asserted by this declaration"
+}

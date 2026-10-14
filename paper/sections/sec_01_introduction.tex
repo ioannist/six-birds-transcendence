@@ -1,0 +1,136 @@
+\section{Introduction}
+\label{sec:intro}
+
+Philosophers have long asked what happens to a subject when its organization
+is moved. A teleporter scans a person and builds an exact replica elsewhere. A
+gradual procedure replaces a brain part by part. An upload copies the
+pattern and leaves the original running
+\citep{Parfit1984, Chalmers2010Singularity, Cerullo2015}. The usual question is
+whether the result is the same subject. That question has resisted settlement,
+and we do not try to settle it here. We ask a prior question that can be
+answered exactly. Suppose the organization described by a closure architecture
+for consciousness \citep{TsiokosArchitecture2026} is moved from one finite
+system to a different one. What, precisely, would make the result a
+\emph{continuation} of the source rather than a \emph{copy} of it, and which of
+the conditions involved can be checked?
+
+We show that the question splits into three, and that the three must be
+checked separately. The first is \emph{realization}: does the target system
+satisfy the conditions of the architecture, on its own state space? The second
+is \emph{lineage}: does the episode pass from source to target through handoffs
+in which the two systems are live at the same time, with no gap? The third is
+\emph{autonomy}: once the source and every aid used for the transfer are
+withdrawn, does the target keep itself going? A detached copy can pass the
+first and the third and fail the second. A resumed stream can match the
+source at both ends and still fail the second. A target that runs only while
+an outside resource is supplied fails the third. Similarity of endpoints
+settles none of the three.
+
+Our main result is a precise form of this separation. We define three checks
+whose predicates are defined from the systems' own data. Realization and
+lineage are computed from it. Autonomy additionally requires a supplied proof
+of an invariance obligation. We prove that a certificate passing them is sound: it yields
+realization on the target, a strict live-overlap lineage, and autonomy after
+withdrawal (Theorem~\ref{thm:continuation}, the continuation theorem). The
+proofs are elementary. Local pieces that agree where they overlap glue into a
+single realization on the target. A one-step agreement between source and
+target extends to equality of their observation laws over every finite sequence
+of actions. A certificate of invariance
+yields a strategy that keeps the target going. The work lies elsewhere: in
+formulating checks strong enough to separate continuation from its
+look-alikes, and in exhibiting exact finite systems that pass them and others
+that fail. The theorem comes in two versions. In the operational version, each
+of the three conclusions can fail while the other two hold. In the
+realization-preserving version, autonomy is defined to include realization,
+so it implies it. Our passing examples include a chain of handoffs through
+three distinct systems. On these models four of the eight conditions hold only
+in a simplified form, which we describe.
+
+\begin{figure}[tbp]
+\centering
+\input{figures/fig_three}
+\caption{One handoff and four look-alikes. The top row is a handoff that passes all three checks. Realization is checked on the target's own dynamics. Lineage is checked where source and target are live together, with no gap. Autonomy is checked after the source and every transfer aid are withdrawn. The rows below are separate proved controls. A detached copy and a gap have the same predictive readout as the source at the endpoint, and both fail lineage. The last two rows each change one thing in the passing handoff. Deleting one published cell fails only realization. Withdrawing the target's retained recharge fails only autonomy. A dash marks a check we do not evaluate for that case. Schematic. The rows follow the operational version, in which none of the three checks implies another. On the proved instances, conditions (4) to (7) hold in simplified form.}
+\label{fig:three}
+\end{figure}
+
+The reason endpoint similarity cannot decide the matter is short, and we give
+it informally first.
+\begin{enumerate}
+\item[(P1)] A copy can be built on a different system so that its final
+predictive state matches the source's.
+\item[(P2)] The copy can satisfy the conditions on its own system and keep
+itself going without help.
+\item[(P3)] If there is no stage at which source and copy are live together,
+no handoff carries the source's ongoing organization into the copy.
+\item[(C)] So realization and autonomy can both hold, with matching
+endpoints, while lineage fails. Any criterion that looks only at endpoints, or
+only at the target, cannot tell this copy from a continuation.
+\end{enumerate}
+Section~\ref{sec:copy} turns this argument into a finite countermodel, in which
+the conditions hold in the simplified form described there, and
+shows two further ways to match endpoints without continuing: a gap in which
+the stream stops and later resumes, and a re-encoding of one system that never
+changes system at all.
+
+Three further results complete the picture. First, continuation is a
+relation, not a function. When one source continues symmetrically into two
+targets, no rule that respects the symmetry picks exactly one of them as the
+continuer, and ancestry alone does not settle which, if either, is the
+original (Section~\ref{sec:branching}). Second, what a target inherits
+depends on the route the transfer took. Two histories can end in the same
+current state and still differ in what they predict, so the target's present
+must carry enough to tell such histories apart. Keeping route memory is one way
+to do this, and a flatness or confluence argument is a sufficient, not a
+necessary, ground for dropping it. Holonomy can rule out a present that is fixed by the shared boundary alone
+(Section~\ref{sec:route}). Third, we exhibit one designed model, with a finite
+physical state space and unbounded execution histories, on which all eight
+conditions of the architecture, as adopted at interfaces fixed in advance, are
+computed jointly from a single execution. On this model a weaker form of
+continuation holds, continuation by ancestry, for both branches of a fission
+and for the output of a guarded fusion, each once it has completed its own
+acquisition (Section~\ref{sec:ancestry}). Its lineage is predictive ancestry,
+which is weaker than live overlap. This is
+not a certificate for the full architecture, whose complete panel of checks we
+do not verify.
+
+What we establish, and what we do not, can be said once. Every result is a
+statement about finite systems, some with unbounded histories, and every
+result is checked in the Lean theorem prover \citep{deMouraUllrich2021} using
+its core library and standard axioms only. The results are structural. They
+do not say that any system is conscious, that consciousness can or cannot be
+moved between substrates, or that a continuation is the same person or
+subject. The architecture's postulate of Substrate Indifference remains a
+postulate, and our results about moving structure between finite systems do
+not address it. Nothing here shows that any measurement of a real system identifies these
+structures. Any step from our results to felt continuity needs hypotheses that
+we state and do not assume. Finally, no single model in this
+paper has both strict live-overlap lineage and all eight conditions at the
+grade the architecture specifies. Exhibiting one is an open problem.
+
+Our contributions are four.
+\begin{enumerate}
+\item We state realization, lineage and autonomy as separate predicates on
+finite systems, and prove that a certificate checking them is sound
+(Sections~\ref{sec:checks} and~\ref{sec:continuation}).
+\item We give finite countermodels for the shortcuts: a detached copy, a gap,
+a public shadow, agreement checked only between neighbouring pieces, a clock that ticks without
+progress, a summed defect score, and success up to any finite horizon
+(Sections~\ref{sec:copy} and~\ref{sec:checks}).
+\item We show that continuation is relation-valued under fission, that no
+symmetry-respecting rule selects a unique continuer, and that ancestry alone
+underdetermines identity (Section~\ref{sec:branching}).
+\item We exhibit a model on which all eight conditions are computed jointly,
+and prove continuation by ancestry on it, including guarded fusion
+(Section~\ref{sec:ancestry}).
+\end{enumerate}
+
+Section~\ref{sec:setting} fixes the setting and says how to read our claims.
+Section~\ref{sec:copy} works through the copy example.
+Section~\ref{sec:checks} gives the three checks, and
+Section~\ref{sec:continuation} the continuation theorem.
+Sections~\ref{sec:route} and~\ref{sec:branching} treat routes and branching,
+Section~\ref{sec:ancestry} continuation by ancestry, and
+Section~\ref{sec:modes} direct succession and the reach of the results.
+Section~\ref{sec:objections} answers objections,
+Section~\ref{sec:related} places the work, and
+Section~\ref{sec:conclusion} concludes.

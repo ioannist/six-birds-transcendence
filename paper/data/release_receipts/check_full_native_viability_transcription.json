@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "scripts/check_full_native_viability_transcription.py"
+  ],
+  "cwd": ".",
+  "environment": {},
+  "exit_code": 0,
+  "id": "check_full_native_viability_transcription",
+  "kind": "check",
+  "log_path": "lean/.validate-logs/W19a/check_full_native_viability_transcription.log",
+  "log_sha256": "0e383c358b8ef65d921a6464db856bacb78081feea87393da0ce540c3d3ccee4",
+  "metrics": {},
+  "recorded_at": "2026-10-13T11:34:30+00:00",
+  "status": "pass",
+  "summary": "PASS: caught planted drift: absence erases first stored-charge step\nPASS: caught planted drift: absent supply renews charge\nPASS: caught planted drift: missing program admits predecessor\nPASS: caught planted drift: target root receipt20 replaced by default\nPASS: caught planted drift: phase erased from successor"
+}

@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://six-birds.local/cst-tt/schemas/temporal_fiach_landed_certificate.schema.json",
+  "title": "CST-TT-05 integrated Temporal-FIACH certificate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "certificate_id",
+    "source",
+    "target",
+    "component_refs",
+    "component_sha256",
+    "route_status",
+    "recognition_status",
+    "lane_results",
+    "result_status",
+    "claim_ceiling",
+    "theorem_evidence",
+    "audit",
+    "checker"
+  ],
+  "$defs": {
+    "carrier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "label"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "const": "CST-TT-05"
+    },
+    "certificate_id": {
+      "const": "FIACH-POS-01"
+    },
+    "source": {
+      "$ref": "#/$defs/carrier"
+    },
+    "target": {
+      "$ref": "#/$defs/carrier"
+    },
+    "component_refs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_package",
+        "staged_assembly",
+        "target_package",
+        "corridor",
+        "autonomy"
+      ],
+      "properties": {
+        "source_package": {
+          "type": "string"
+        },
+        "staged_assembly": {
+          "type": "string"
+        },
+        "target_package": {
+          "type": "string"
+        },
+        "corridor": {
+          "type": "string"
+        },
+        "autonomy": {
+          "type": "string"
+        }
+      }
+    },
+    "component_sha256": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_package",
+        "staged_assembly",
+        "target_package",
+        "corridor",
+        "autonomy"
+      ],
+      "properties": {
+        "source_package": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "staged_assembly": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "target_package": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "corridor": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "autonomy": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      }
+    },
+    "route_status": {
+      "enum": [
+        "flat",
+        "route-indexed"
+      ]
+    },
+    "recognition_status": {
+      "enum": [
+        "not-addressed",
+        "assumed-interface",
+        "externally-audited"
+      ]
+    },
+    "lane_results": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "S-T",
+        "S-R",
+        "S-L",
+        "A"
+      ],
+      "properties": {
+        "S-T": {
+          "const": true
+        },
+        "S-R": {
+          "const": true
+        },
+        "S-L": {
+          "const": true
+        },
+        "A": {
+          "const": true
+        }
+      }
+    },
+    "result_status": {
+      "enum": [
+        "scaffold-only",
+        "checked-finite-temporal-fiach-certificate"
+      ]
+    },
+    "claim_ceiling": {
+      "const": "structural precursor only; no consciousness, phenomenal continuity, survival, or identity conclusion"
+    },
+    "theorem_evidence": {
+      "type": "object"
+    },
+    "audit": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "aggregate_valid",
+        "failed_obligations",
+        "component_statuses"
+      ],
+      "properties": {
+        "aggregate_valid": {
+          "const": true
+        }
+      }
+    },
+    "checker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "module",
+        "function",
+        "python_version",
+        "checked_at_phase"
+      ],
+      "properties": {
+        "module": {
+          "const": "cst_tt.fiach"
+        },
+        "function": {
+          "const": "audit_temporal_fiach"
+        },
+        "python_version": {
+          "type": "string"
+        },
+        "checked_at_phase": {
+          "const": "CST-TT-05"
+        }
+      }
+    }
+  }
+}

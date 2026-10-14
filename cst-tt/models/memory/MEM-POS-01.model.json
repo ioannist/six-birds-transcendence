@@ -1,0 +1,27 @@
+{
+  "claim_ceiling": "finite predictive-representation repair only",
+  "claim_lanes": [
+    "S-T"
+  ],
+  "model_id": "MEM-POS-01",
+  "observations": [
+    {
+      "current": "C0",
+      "predictive": "P0",
+      "route": "left",
+      "route_residue": "R0"
+    },
+    {
+      "current": "C0",
+      "predictive": "P1",
+      "route": "right",
+      "route_residue": "R1"
+    }
+  ],
+  "refined_predictor": {
+    "C0|R0": "P0",
+    "C0|R1": "P1"
+  },
+  "schema_version": "CST-TT-03",
+  "title": "route memory repairs a current-equal predictive collision"
+}

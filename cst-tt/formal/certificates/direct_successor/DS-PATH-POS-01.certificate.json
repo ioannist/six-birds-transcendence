@@ -1,0 +1,34 @@
+{
+  "atomic_model_hashes": [
+    "177157f54c427f90b70b6dd24d7686124fc5b646ee275ab0988f781cb13c1069",
+    "22f2e0e8f6cddf1d70137bfefbca8a9a54360c3b0b11d140dd54b3ea8364273b"
+  ],
+  "atomic_model_refs": [
+    "models/direct_successor/DS-POS-02A.model.json",
+    "models/direct_successor/DS-POS-02B.model.json"
+  ],
+  "audit": {
+    "atomic_certificates_valid": true,
+    "atomic_endpoint_edge_present": false,
+    "boundary_events_match": true,
+    "carrier_frontiers_match": true,
+    "failed_obligations": [],
+    "no_temporal_gap": true,
+    "path_has_at_least_one_edge": true,
+    "path_valid": true,
+    "signature_frontiers_match": true
+  },
+  "certificate_id": "DS-PATH-POS-01",
+  "checker": {
+    "checked_at_phase": "CST-TT-04",
+    "function": "audit_direct_successor_path",
+    "module": "cst_tt.corridor",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite path of immediate temporal edges; no new atomic endpoint edge",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "result_status": "checked-finite-direct-successor-path",
+  "schema_version": "CST-TT-04"
+}

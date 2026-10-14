@@ -1,0 +1,199 @@
+{
+  "audit": {
+    "clause_audits": [
+      {
+        "accepted": true,
+        "clause": "C1_OBJECTHOOD",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C2_STRICT_PROMOTION",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C3_REFLEXIVE_SELF_COORDINATE",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C4_INTERFACE_NONEXPOSURE",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C5_ACTION_CREDIT",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C6_TEMPORAL_CLOSURE",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C7_BINDING_RECOMBINATION",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      },
+      {
+        "accepted": true,
+        "clause": "C8_VIABILITY_REPAIR",
+        "errors": [],
+        "hard_gate_passed": true,
+        "scope_exact": true
+      }
+    ],
+    "derived_global_assignment": {
+      "action_credit_owner": 101,
+      "action_token": "action:T:maintain",
+      "arrow_endogenous": true,
+      "binding_integrated": true,
+      "boundary_closed": true,
+      "c1_audit_sealed": true,
+      "control_owner": 101,
+      "credit_audit_sealed": true,
+      "credit_source_internal": true,
+      "cross_predictive_tag": "predictive:T:rank2",
+      "episode_epoch": 2,
+      "external_scheduler": false,
+      "future_sufficient": true,
+      "hidden_state_nonexposed": true,
+      "interface_leak": false,
+      "joint_relation_tag": "xor:T",
+      "left_branch": "T:L",
+      "maintenance_owner": 101,
+      "object_token": "object:T",
+      "order_stable": true,
+      "package_owner": 101,
+      "promotion_audit_sealed": true,
+      "promotion_rank_after": 2,
+      "promotion_rank_before": 1,
+      "public_shadow": "report:stable",
+      "recombination_pairs": [
+        [
+          "T:L",
+          "T:R"
+        ],
+        [
+          "T:R",
+          "T:L"
+        ]
+      ],
+      "recombination_relation_preserved": true,
+      "record_after": 4,
+      "record_before": 3,
+      "repair_budget": 1,
+      "repair_enabled": true,
+      "repair_owner": 101,
+      "right_branch": "T:R",
+      "route_residue": [
+        "route-root",
+        "leg-S-T-mixed",
+        "leg-S-T-target"
+      ],
+      "self_audit_sealed": true,
+      "self_coordinate": "self:T",
+      "self_model_reflexive": true,
+      "strict_test_pass": true,
+      "successor_total_on_viable": true,
+      "temporal_owner": 101,
+      "tick_phase": 2,
+      "tick_progress": 1,
+      "tick_viable": true,
+      "viable": true
+    },
+    "errors": [],
+    "every_clause_accepted": true,
+    "every_hard_gate_passed": true,
+    "every_scope_exact": true,
+    "exact_clause_coverage": true,
+    "failed_obligations": [],
+    "forbidden_field_free": true,
+    "global_constructible": true,
+    "global_restricts_to_every_local": true,
+    "integrated_package_valid": true,
+    "join_tree": {
+      "acyclic": true,
+      "all_nodes_covered": true,
+      "all_overlap_compatible": true,
+      "connected": true,
+      "edge_compatible": true,
+      "edge_count_correct": true,
+      "errors": [],
+      "exactly_one_parent_per_nonroot": true,
+      "root_declared": true,
+      "running_intersection": true,
+      "valid_shape": true
+    },
+    "model_id": "PKG-POS-04-FIACH-TARGET",
+    "supplied_global_matches": true,
+    "target_owned": true,
+    "temporal_substance": {
+      "endogenous_arrow": true,
+      "errors": [],
+      "future_sufficient": true,
+      "genuine_progress": true,
+      "maintenance_owner_matches": true,
+      "no_external_scheduler": true,
+      "order_stable": true,
+      "record_descends": true,
+      "route_residue_retained": true,
+      "successor_available": true,
+      "temporal_owner_matches": true,
+      "valid": true,
+      "viable_tick": true
+    },
+    "unique_clause_slots": true
+  },
+  "certificate_id": "PKG-POS-04-FIACH-TARGET",
+  "checker": {
+    "checked_at_phase": "CST-TT-05",
+    "function": "audit_package",
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite structural target realization aligned to one declared handoff frontier",
+  "claim_lanes": [
+    "S-R"
+  ],
+  "handoff_alignment": {
+    "alignment_fields": [
+      "route_residue",
+      "tick_phase",
+      "record_before",
+      "maintenance_owner"
+    ],
+    "corridor_model_ref": "models/corridors/COR-POS-01.model.json",
+    "corridor_stage": 2
+  },
+  "model_ref": "models/packages/PKG-POS-04-FIACH-TARGET.model.json",
+  "model_sha256": "ca23bf7c1e4b8f62fad351cdc3466f4fd6c194565bc5963c325174239d2a3ce6",
+  "result_status": "checked-finite-handoff-aligned-package-certificate",
+  "schema_version": "CST-TT-05",
+  "theorem_evidence": {
+    "lean_compile_status": "pending-toolchain",
+    "lean_declarations": [
+      "CSTTT.PackageTheory.acyclicLocalWitnessGluing",
+      "CSTTT.PackageTheory.stagedHeterogeneousPackageAssembly"
+    ],
+    "theorem_ids": [
+      "TTH-01",
+      "TTH-02"
+    ]
+  }
+}

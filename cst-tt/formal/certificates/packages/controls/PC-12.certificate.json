@@ -1,0 +1,21 @@
+{
+  "artifact_ref": "models/packages/controls/PC-12.model.json",
+  "artifact_sha256": "8803c33e7e4d40a3694f8d06c6644734c40a12365fae8e7f133e5999407c3164",
+  "checker": {
+    "function": "audit_package",
+    "integrated_package_valid": false,
+    "module": "cst_tt.package_gluing",
+    "python_version": "3.13.5"
+  },
+  "claim_ceiling": "finite package-obligation boundary only",
+  "control_id": "PC-12",
+  "control_kind": "package",
+  "expected_primary_failure": "PKG-O05-running-intersection",
+  "observed_failures": [
+    "PKG-O05-running-intersection",
+    "PKG-O07-global-gluing-and-restriction"
+  ],
+  "positive_baseline_ref": "models/packages/PKG-POS-01-TARGET.model.json",
+  "result_status": "checked-obligation-countermodel",
+  "schema_version": "CST-TT-02"
+}

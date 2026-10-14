@@ -1,0 +1,159 @@
+{
+  "claim_ceiling": "exact finite structural event-successor criterion only",
+  "claim_lanes": [
+    "S-L"
+  ],
+  "episode": {
+    "dependencies": [
+      {
+        "alternative_temporal_parent": false,
+        "child_event_id": "ds-middle-boundary",
+        "counterfactually_necessary": true,
+        "dependency_id": "ds-edge-S-M",
+        "dependency_kind": "live-temporal-handoff",
+        "parent_event_id": "ds-chain-source",
+        "payload": {
+          "maintenance_state": "ds-edge-S-M-target-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 2,
+          "route_residue": [
+            "direct-root",
+            "ds-edge-S-M-edge"
+          ],
+          "tick_index": 1
+        },
+        "payload_sha256": "aa2a8aef2127df2e450a370ef3b288d192a16ce5c1844c8dbab0aa5c133b95aa",
+        "replayable_archive": false,
+        "single_use_temporal_token": true,
+        "storage_mediator": false
+      }
+    ],
+    "events": [
+      {
+        "event_id": "ds-chain-source",
+        "event_kind": "temporal-update",
+        "output_payload": {
+          "maintenance_state": "ds-edge-S-M-target-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 2,
+          "route_residue": [
+            "direct-root",
+            "ds-edge-S-M-edge"
+          ],
+          "tick_index": 1
+        },
+        "owner": {
+          "code": 17,
+          "label": "source-substrate"
+        },
+        "stage": 0
+      },
+      {
+        "event_id": "ds-middle-boundary",
+        "event_kind": "temporal-update",
+        "input_payload": {
+          "maintenance_state": "ds-edge-S-M-target-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 2,
+          "route_residue": [
+            "direct-root",
+            "ds-edge-S-M-edge"
+          ],
+          "tick_index": 1
+        },
+        "output_payload": {
+          "maintenance_state": "ds-edge-M-T-target-maint",
+          "order_rank": 2,
+          "predictive_rank": 2,
+          "progress_rank": 2,
+          "record_value": 4,
+          "route_residue": [
+            "direct-root",
+            "ds-edge-S-M-edge",
+            "ds-edge-M-T-edge"
+          ],
+          "tick_index": 2
+        },
+        "owner": {
+          "code": 55,
+          "label": "intermediate-substrate"
+        },
+        "stage": 1
+      }
+    ],
+    "stages": [
+      {
+        "active_support": [
+          {
+            "code": 17,
+            "label": "source-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 17,
+          "maintenance_state": "ds-edge-S-M-source-maint",
+          "order_rank": 0,
+          "predictive_rank": 0,
+          "progress_rank": 0,
+          "record_value": 0,
+          "route_residue": [
+            "direct-root"
+          ],
+          "tick_index": 0
+        },
+        "stage": 0,
+        "temporal_realized": true
+      },
+      {
+        "active_support": [
+          {
+            "code": 55,
+            "label": "intermediate-substrate"
+          }
+        ],
+        "signature": {
+          "maintenance_owner": 55,
+          "maintenance_state": "ds-edge-S-M-target-maint",
+          "order_rank": 1,
+          "predictive_rank": 1,
+          "progress_rank": 1,
+          "record_value": 2,
+          "route_residue": [
+            "direct-root",
+            "ds-edge-S-M-edge"
+          ],
+          "tick_index": 1
+        },
+        "stage": 1,
+        "temporal_realized": true
+      }
+    ]
+  },
+  "first_target_event_id": "ds-middle-boundary",
+  "kind": "atomic-direct-temporal-successor",
+  "last_source_event_id": "ds-chain-source",
+  "model_id": "DS-POS-02A",
+  "nonclaims": [
+    "not a strict overlap corridor",
+    "no target-package or autonomy verdict",
+    "no phenomenal or personal-status conclusion"
+  ],
+  "operational_dependency_id": "ds-edge-S-M",
+  "route_status": "route-indexed",
+  "schema_version": "CST-TT-04-model-v1",
+  "source_carrier": {
+    "code": 17,
+    "label": "source-substrate"
+  },
+  "target_carrier": {
+    "code": 55,
+    "label": "intermediate-substrate"
+  },
+  "title": "left atomic direct successor for path composition"
+}

@@ -1,0 +1,56 @@
+{
+  "claim_ceiling": "structural-boundary-only",
+  "claim_lanes": [
+    "S-R",
+    "A"
+  ],
+  "conclusion_failure_checks": {
+    "at_least_one_hard_gate_fails": true
+  },
+  "countermodel_id": "CM-10",
+  "derived_facts": {
+    "exact_residual_fraction": [
+      1,
+      10
+    ],
+    "first_failed_gate": 9
+  },
+  "family": "scalar-residual",
+  "model": {
+    "component_count": 10,
+    "defect_sum": 1,
+    "defect_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "every_hard_gate_passes": false,
+    "failed_gate_indices": [
+      9
+    ],
+    "small_aggregate_residual": true,
+    "small_residual_test": "10*1 <= 10",
+    "threshold_denominator": 10,
+    "threshold_numerator": 1
+  },
+  "name": "Small scalar residual hiding a failed hard gate",
+  "premise_checks": {
+    "aggregate_residual_at_most_one_tenth": true
+  },
+  "schema_version": "CST-TT-01-model-v1",
+  "scope": "A mean binary defect at or below one tenth can coexist with a nonnegotiable failed gate.",
+  "size_measure": "(component_count, failed_gate_count)",
+  "size_vector": [
+    10,
+    1
+  ],
+  "target_no_go_id": "TTN-10",
+  "toy_model_ref": "TTM-13"
+}

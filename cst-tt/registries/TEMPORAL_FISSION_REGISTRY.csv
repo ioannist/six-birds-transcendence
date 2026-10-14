@@ -1,0 +1,2 @@
+fission_id,source,left_target,right_target,relation_valued_valid,symmetric,unique_selector_absent,certificate_ref,claim_ceiling
+FISSION-POS-01,17,201,202,true,true,true,formal/certificates/fission/FISSION-POS-01.certificate.json,relation-valued finite temporal fission; no unique continuer or numerical identity conclusion
